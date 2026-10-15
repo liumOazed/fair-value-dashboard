@@ -1,0 +1,485 @@
+{
+ "model": "Modern Graham framework",
+ "probabilities": {
+  "bear": 0.3,
+  "base": 0.5,
+  "bull": 0.2
+ },
+ "assets": [
+  {
+   "ticker": "AAPL",
+   "name": "Apple Inc.",
+   "type": "stock",
+   "fair_value": 173.73,
+   "bear": 140.18,
+   "base": 175.62,
+   "bull": 219.32,
+   "mos": 0.25,
+   "required_return": 0.09,
+   "epv": 91.47,
+   "implied_return": 0.0587,
+   "reverse_g1": 0.2634,
+   "tv_share": 0.572,
+   "notes": "TTM to Jun-2026. FCF margin is flattered by low cash taxes; normalised SBC-adjusted margin 24.5% base.",
+   "valued_on": "2026-10-14",
+   "scenarios": {
+    "bear": {
+     "g1": 0.06,
+     "g10": 0.03,
+     "m": 0.225
+    },
+    "base": {
+     "g1": 0.09,
+     "g10": 0.04,
+     "m": 0.245
+    },
+    "bull": {
+     "g1": 0.12,
+     "g10": 0.05,
+     "m": 0.265
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.07,
+     0.08,
+     0.09,
+     0.1,
+     0.11
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      223.2,
+      237.7,
+      255.5,
+      277.7,
+      306.2
+     ],
+     [
+      187.7,
+      197.1,
+      208.2,
+      221.6,
+      237.9
+     ],
+     [
+      161.7,
+      168.2,
+      175.6,
+      184.3,
+      194.5
+     ],
+     [
+      142.0,
+      146.6,
+      151.8,
+      157.7,
+      164.5
+     ],
+     [
+      126.5,
+      129.8,
+      133.6,
+      137.8,
+      142.6
+     ]
+    ]
+   },
+   "buy_below": 130.3
+  },
+  {
+   "ticker": "MSFT",
+   "name": "Microsoft Corp.",
+   "type": "stock",
+   "fair_value": 319.36,
+   "bear": 194.66,
+   "base": 339.46,
+   "bull": 456.16,
+   "mos": 0.25,
+   "required_return": 0.09,
+   "epv": 126.55,
+   "implied_return": 0.0681,
+   "reverse_g1": 0.2863,
+   "tv_share": 0.622,
+   "notes": "FY26 (Jun-2026). Capex $116B cash (+finance leases) crushes current FCF; margin recovers as build-out matures.",
+   "valued_on": "2026-10-14",
+   "scenarios": {
+    "bear": {
+     "g1": 0.12,
+     "g10": 0.035,
+     "m": 0.18
+    },
+    "base": {
+     "g1": 0.17,
+     "g10": 0.05,
+     "m": 0.25
+    },
+    "bull": {
+     "g1": 0.2,
+     "g10": 0.06,
+     "m": 0.29
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.07,
+     0.08,
+     0.09,
+     0.1,
+     0.11
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      439.7,
+      470.9,
+      508.9,
+      556.4,
+      617.6
+     ],
+     [
+      364.5,
+      384.7,
+      408.5,
+      437.2,
+      472.1
+     ],
+     [
+      309.7,
+      323.5,
+      339.5,
+      358.0,
+      380.0
+     ],
+     [
+      268.2,
+      278.0,
+      289.1,
+      301.8,
+      316.5
+     ],
+     [
+      235.6,
+      242.8,
+      250.8,
+      259.9,
+      270.1
+     ]
+    ]
+   },
+   "buy_below": 239.52
+  },
+  {
+   "ticker": "GOOGL",
+   "name": "Alphabet Inc. (Class A)",
+   "type": "stock",
+   "fair_value": 203.27,
+   "bear": 117.01,
+   "base": 211.06,
+   "bull": 313.18,
+   "mos": 0.3,
+   "required_return": 0.1,
+   "epv": 85.23,
+   "implied_return": 0.0722,
+   "reverse_g1": 0.3379,
+   "tv_share": 0.602,
+   "notes": "TTM to Jun-2026. SBC and TTM revenue are estimates. 'extra' = $131.5B private equity stakes at a 50% haircut.",
+   "valued_on": "2026-10-14",
+   "scenarios": {
+    "bear": {
+     "g1": 0.14,
+     "g10": 0.035,
+     "m": 0.13
+    },
+    "base": {
+     "g1": 0.2,
+     "g10": 0.05,
+     "m": 0.19
+    },
+    "bull": {
+     "g1": 0.24,
+     "g10": 0.06,
+     "m": 0.24
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.08,
+     0.09,
+     0.1,
+     0.11,
+     0.12
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      264.1,
+      278.4,
+      295.3,
+      315.6,
+      340.4
+     ],
+     [
+      225.5,
+      235.3,
+      246.6,
+      259.7,
+      275.3
+     ],
+     [
+      196.2,
+      203.2,
+      211.1,
+      220.1,
+      230.5
+     ],
+     [
+      173.3,
+      178.4,
+      184.1,
+      190.5,
+      197.8
+     ],
+     [
+      155.0,
+      158.8,
+      163.0,
+      167.7,
+      173.0
+     ]
+    ]
+   },
+   "buy_below": 142.29
+  },
+  {
+   "ticker": "AMZN",
+   "name": "Amazon.com Inc.",
+   "type": "stock",
+   "fair_value": 98.07,
+   "bear": 40.15,
+   "base": 101.2,
+   "bull": 177.13,
+   "mos": 0.3,
+   "required_return": 0.105,
+   "epv": 48.93,
+   "implied_return": 0.0634,
+   "reverse_g1": 0.3446,
+   "tv_share": 0.617,
+   "notes": "TTM to Jun-2026. FCF negative on $169B capex. SBC estimated. Anthropic stake NOT valued (upside not counted).",
+   "valued_on": "2026-10-14",
+   "scenarios": {
+    "bear": {
+     "g1": 0.09,
+     "g10": 0.035,
+     "m": 0.05
+    },
+    "base": {
+     "g1": 0.13,
+     "g10": 0.05,
+     "m": 0.085
+    },
+    "bull": {
+     "g1": 0.16,
+     "g10": 0.06,
+     "m": 0.12
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.085,
+     0.095,
+     0.105,
+     0.115,
+     0.125
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      131.3,
+      138.9,
+      147.7,
+      158.2,
+      170.8
+     ],
+     [
+      109.7,
+      115.0,
+      121.0,
+      128.1,
+      136.2
+     ],
+     [
+      93.0,
+      96.9,
+      101.2,
+      106.1,
+      111.7
+     ],
+     [
+      79.9,
+      82.7,
+      85.9,
+      89.4,
+      93.4
+     ],
+     [
+      69.2,
+      71.4,
+      73.8,
+      76.4,
+      79.3
+     ]
+    ]
+   },
+   "buy_below": 68.65
+  },
+  {
+   "ticker": "QQQ",
+   "name": "Invesco QQQ Trust (Nasdaq-100)",
+   "type": "etf",
+   "fair_value": 536.27,
+   "bear": 346.54,
+   "base": 562.21,
+   "bull": 756.02,
+   "mos": 0.3,
+   "required_return": 0.095,
+   "epv": 252.73,
+   "implied_return": 0.08,
+   "reverse_g1": null,
+   "tv_share": 0.569,
+   "notes": "Look-through earnings model. Low-medium confidence: EPS inputs blend trailing GAAP (inflated by unrealised investment gains) and forward consensus.",
+   "valued_on": "2026-10-14",
+   "scenarios": {
+    "bear": {
+     "eps": 26.117878896452886,
+     "g1": 0.08,
+     "g10": 0.035,
+     "conv": 0.7
+    },
+    "base": {
+     "eps": 30.011265029621793,
+     "g1": 0.12,
+     "g10": 0.05,
+     "conv": 0.8
+    },
+    "bull": {
+     "eps": 33.9046511627907,
+     "g1": 0.14,
+     "g10": 0.06,
+     "conv": 0.85
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.075,
+     0.085,
+     0.095,
+     0.105,
+     0.115
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      712.5,
+      755.3,
+      806.6,
+      869.4,
+      947.9
+     ],
+     [
+      601.9,
+      630.5,
+      663.8,
+      703.2,
+      750.5
+     ],
+     [
+      519.5,
+      539.4,
+      562.2,
+      588.5,
+      619.2
+     ],
+     [
+      455.7,
+      470.1,
+      486.4,
+      504.7,
+      525.7
+     ],
+     [
+      405.0,
+      415.7,
+      427.6,
+      440.9,
+      455.9
+     ]
+    ]
+   },
+   "buy_below": 375.39
+  },
+  {
+   "ticker": "GLD",
+   "name": "SPDR Gold Shares",
+   "type": "commodity",
+   "fair_value": 370.0,
+   "bear": 305.25,
+   "base": 379.25,
+   "bull": 462.5,
+   "mos": 0.3,
+   "required_return": null,
+   "epv": null,
+   "implied_return": null,
+   "reverse_g1": null,
+   "tv_share": null,
+   "notes": "No cash flows => no intrinsic value. Scenario REFERENCE range only (low confidence); oz/share is an estimate.",
+   "valued_on": "2026-10-14",
+   "scenarios": {
+    "bear": {
+     "gold": 3300,
+     "why": "Real yields stay >2.5%, USD firm; gold reverts toward the inflation-adjusted 1980 peak (~$3,300-3,500)."
+    },
+    "base": {
+     "gold": 4100,
+     "why": "Range-bound near the 2026 trading range as real yields and central-bank buying offset."
+    },
+    "bull": {
+     "gold": 5000,
+     "why": "Fed pivots / inflation de-anchors; sell-side targets of $4,900-5,000 are reached."
+    }
+   },
+   "buy_below": 259.0
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fair Value Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo"></span><div><h1>Fair Value Dashboard</h1><p id="sub">Modern Graham framework</p></div></div>
+  <div class="actions">
+    <input id="q" type="search" placeholder="Filter ticker or name">
+    <button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="card">
+    <div class="card-head"><h2>Price vs estimated fair value</h2><span class="muted" id="stamp"></span></div>
+    <div class="scroll"><table id="tbl"><thead><tr>
+      <th data-k="ticker">Asset</th><th data-k="price" class="r">Price</th><th data-k="fair_value" class="r">Fair value</th>
+      <th data-k="buy_below" class="r">Buy below</th><th data-k="diff" class="r">Price vs FV</th>
+      <th>Bear · Base · Bull</th><th data-k="status">Status</th><th data-k="implied_return" class="r">Implied return</th><th>3 mo</th>
+    </tr></thead><tbody></tbody></table></div>
+    <p class="foot">Price vs FV = price ÷ fair value − 1. Negative means trading below estimated value. Click a row for the calculation behind it.</p>
+  </section>
+  <section class="card legend">
+    <h2>How to read the status</h2>
+    <div class="bands" id="bands"></div>
+    <p class="muted">Fair value = probability-weighted DCF (30% bear, 50% base, 20% bull) on SBC-adjusted free cash flow. The bull case is never used as the valuation. Estimates, not advice: this is not a recommendation to buy or sell.</p>
+  </section>
+</main>
+<aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
+<div id="scrim" class="scrim"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>
