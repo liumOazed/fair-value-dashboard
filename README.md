@@ -25,6 +25,10 @@ To redo a month after fixing its CSV, run the workflow with **force** ticked.
 
 Edit `data/themes.json` to change the theme filters (that rebuilds the screen without touching the monthly lock).
 
+- **Score v2** is explained at the bottom of the Growth Screen page and in the docstring of `scripts/build_screen.py`. Weights and caps are at the top of that file.
+- **Growth priced in** is an indicative reverse DCF, not a fair value. It uses a sector required return (`REQ_RETURN` in `scripts/build_screen.py`, based on Damodaran's Jan-2026 cost of equity + about 1 point). Where free cash flow is distorted (FCF yield under 25% of earnings yield, or a bank/insurer) it uses the earnings yield and shows `FCF distorted` with no verdict; shrinking sales also get no verdict.
+- **Monthly Top 5** fair values are quick estimates from the CSV (method on the page and in `scripts/fair_value_table.py`). Only stocks in `data/assets.json` have a full, hand-checked fair value.
+
 ## Add a new stock
 Open `data/assets.json` and copy one block in `assets`. Required fields: `ticker`, `name`, `type` (`stock`, `etf` or `commodity`), `fair_value`, `bear`, `base`, `bull`, `mos` (margin of safety, e.g. 0.25), `buy_below` (fair value × (1 − mos)), `valued_on`. The rest (`scenarios`, `sensitivity`, `epv`, `implied_return`, `notes`) is optional and only fills the detail panel. Commit. The price script picks the ticker up on its next run (or run the workflow by hand).
 
