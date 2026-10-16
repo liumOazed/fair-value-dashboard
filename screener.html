@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Growth Screen | Fair Value Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo"></span><div><h1>Fair Value Dashboard</h1><p id="sub">Growth screen</p></div></div>
+  <nav class="tabs"><a href="index.html">Fair Value</a><a href="screener.html" class="on">Growth Screen</a></nav>
+  <div class="actions">
+    <input id="q" type="search" placeholder="Filter ticker or name">
+    <button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="card">
+    <div class="card-head"><h2 id="ttl">Top 50 by Growth Quality Score</h2><span class="muted" id="stamp"></span></div>
+    <div class="chips" id="secchips"></div>
+    <div class="chips" id="thchips"></div>
+    <div class="chips" id="extra"></div>
+    <div class="scroll"><table id="tbl"><thead><tr>
+      <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="rank_change" class="r">Rank change</th>
+      <th data-k="rev_growth_pct" class="r">Sales growth</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r">FCF yield</th>
+      <th data-k="forward_pe" class="r">Fwd P/E</th><th data-k="implied_fcf_growth" class="r">Growth priced in*</th><th>Fair value</th>
+    </tr></thead><tbody></tbody></table></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px">
+      <p class="foot" id="count"></p><button class="toggle" id="more">Show all</button></div>
+    <p class="foot">*Indicative only: the 10-year free-cash-flow growth today's market value already assumes (10% required return, 2.5% terminal growth), compared with recent sales growth. It is not a fair value. Reported FCF can be depressed by heavy investment.</p>
+  </section>
+  <section class="card method">
+    <h2>How the Growth Quality Score works</h2>
+    <p class="muted">A shortlist tool, not a prediction. It replaces the original growth score, which counted growth twice and let energy stocks and one-off spikes dominate.</p>
+    <h3>What it measures (0 to 100)</h3>
+    <ul><li><b>Growth 30%</b>: sales growth, capped at 60% so one-offs cannot dominate.</li><li><b>Profitability 25%</b>: net margin and return on equity.</li>
+    <li><b>Cash generation 20%</b>: free-cash-flow yield.</li><li><b>Valuation 15%</b>: lower forward P/E and EV/EBITDA score higher.</li><li><b>Quality 10%</b>: gross margin.</li></ul>
+    <h3>What is different from before</h3>
+    <ul><li>Every metric is ranked <b>inside the stock's own sector</b>, so energy is compared with energy and tech with tech.</li>
+    <li>Energy and Basic Materials are cyclical, so growth counts 15% and cash generation 35%.</li>
+    <li>Loss-making companies lose 10 points; missing P/E data loses 5.</li>
+    <li>Flags mark one-off growth (over 100%), loss-making and cyclical companies.</li>
+    <li><b>Consistent</b> means the stock was in the top 50 in both of the last two months.</li></ul>
+    <p class="muted">Estimates from screen data only, not investment advice.</p>
+  </section>
+</main>
+<aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
+<div id="scrim" class="scrim"></div>
+<script src="assets/screen.js"></script>
+</body>
+</html>

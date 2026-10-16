@@ -1,0 +1,54 @@
+{
+  "_help": "Edit freely. Each theme is a list of tickers. A ticker can be in several themes. Sectors from the CSV are added automatically.",
+  "Hyperscalers": [
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "GOOG",
+    "META",
+    "ORCL"
+  ],
+  "AI chips & hardware": [
+    "NVDA",
+    "AVGO",
+    "AMD",
+    "MU",
+    "SNDK",
+    "WDC",
+    "STX",
+    "SMCI",
+    "DELL",
+    "TER",
+    "APH",
+    "ANET"
+  ],
+  "Software": [
+    "ADBE",
+    "PLTR",
+    "APP",
+    "ADSK",
+    "FICO",
+    "PTC",
+    "GEN",
+    "CRM",
+    "NOW",
+    "INTU"
+  ],
+  "Payments": [
+    "GPN",
+    "FIS",
+    "CPAY",
+    "V",
+    "MA",
+    "PYPL"
+  ],
+  "Pharma & biotech": [
+    "LLY",
+    "INCY",
+    "MRNA"
+  ],
+  "Index & commodities": [
+    "QQQ",
+    "GLD"
+  ]
+}

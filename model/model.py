@@ -4,7 +4,7 @@ All $ figures in billions unless noted. Inputs sourced from Q2-2026 filings / pr
 """
 import json, math
 
-AS_OF = "2026-10-14"
+AS_OF = "2026-10-16"
 GT = 0.025            # terminal growth
 PROBS = {"bear": 0.30, "base": 0.50, "bull": 0.20}
 
@@ -26,6 +26,30 @@ STOCKS = {
               net_cash=-100.2, extra=0.0, r=0.105, mos=0.30,
               scen=dict(bear=dict(g1=.09,g10=.035,m=.05), base=dict(g1=.13,g10=.05,m=.085), bull=dict(g1=.16,g10=.06,m=.12)),
               notes="TTM to Jun-2026. FCF negative on $169B capex. SBC estimated. Anthropic stake NOT valued (upside not counted)."),
+ "NVDA": dict(name="NVIDIA Corp.", price=217.23, shares=24.147, rev=302.97, fcf=127.01, sbc=7.0,
+              net_cash=23.61, extra=0.0, r=0.10, mos=0.30,
+              scen=dict(bear=dict(g1=.08,g10=.03,m=.32), base=dict(g1=.22,g10=.04,m=.42), bull=dict(g1=.35,g10=.06,m=.50)),
+              notes="TTM to Jul-2026 (FY27 Q2). SBC is an ESTIMATE (about 2.3% of revenue). Data-centre demand is highly cyclical and concentrated: lower confidence. Base case is deliberately below consensus growth. Base case is deliberately below consensus growth."),
+ "AVGO": dict(name="Broadcom Inc.", price=344.33, shares=4.774, rev=89.10, fcf=39.40, sbc=8.9,
+              net_cash=-35.44, extra=0.0, r=0.10, mos=0.30,
+              scen=dict(bear=dict(g1=.12,g10=.03,m=.30), base=dict(g1=.25,g10=.05,m=.38), bull=dict(g1=.35,g10=.06,m=.43)),
+              notes="TTM to Aug-2026 (FY26 Q3). SBC is an ESTIMATE (about 10% of revenue). Net debt from acquisitions. AI custom-chip demand drives growth."),
+ "LLY": dict(name="Eli Lilly and Co.", price=1251.61, shares=0.8915, rev=79.67, fcf=18.19, sbc=2.2,
+              net_cash=-45.16, extra=0.0, r=0.09, mos=0.25,
+              scen=dict(bear=dict(g1=.08,g10=.03,m=.26), base=dict(g1=.20,g10=.04,m=.32), bull=dict(g1=.28,g10=.05,m=.38)),
+              notes="TTM to Jun-2026. SBC is an ESTIMATE. FCF is depressed by $9.9B capex on new plants; margin rises as the build-out matures. Growth rests on obesity drugs; pricing and patent risk."),
+ "ADBE": dict(name="Adobe Inc.", price=251.67, shares=0.3892, rev=25.97, fcf=10.59, sbc=2.1,
+              net_cash=-1.15, extra=0.0, r=0.095, mos=0.30,
+              scen=dict(bear=dict(g1=-.03,g10=.02,m=.26), base=dict(g1=.07,g10=.03,m=.32), bull=dict(g1=.11,g10=.045,m=.36)),
+              notes="TTM to Aug-2026 (FY26 Q3). SBC is an ESTIMATE (about 8% of revenue). The bear case assumes generative-AI tools erode its creative-software moat (sales shrink first, then recover slowly); the market price looks close to that view."),
+ "APP": dict(name="AppLovin Corp.", price=279.29, shares=0.3347, rev=6.83, fcf=4.53, sbc=0.4,
+              net_cash=-0.46, extra=0.0, r=0.11, mos=0.35,
+              scen=dict(bear=dict(g1=.10,g10=.03,m=.45), base=dict(g1=.25,g10=.05,m=.55), bull=dict(g1=.40,g10=.06,m=.62)),
+              notes="TTM to Jun-2026. SBC is an ESTIMATE. Very high margins and heavy reliance on terminal value: lower confidence. Higher required return (11%) and 35% safety margin."),
+ "FICO": dict(name="Fair Isaac Corp.", price=769.93, shares=0.0216, rev=2.39, fcf=1.00, sbc=0.2,
+              net_cash=-5.35, extra=0.0, r=0.095, mos=0.30,
+              scen=dict(bear=dict(g1=.05,g10=.03,m=.33), base=dict(g1=.10,g10=.04,m=.38), bull=dict(g1=.14,g10=.05,m=.43)),
+              notes="TTM to Jun-2026. SBC is an ESTIMATE (about 8% of revenue). Net debt of $5.4B from buybacks. Pricing power in credit scores faces regulatory scrutiny."),
 }
 
 def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False):
@@ -73,7 +97,7 @@ for tk, s in STOCKS.items():
     # implied IRR at current price on base case
     irr = solve(lambda r: dcf(s["rev"], m0, **{k: s["scen"]["base"][k] for k in ("g1","g10")}, m_target=s["scen"]["base"]["m"], r=r, net_cash_plus=nc, shares=s["shares"]) - s["price"], 0.035, 0.30)
     # reverse DCF: first-year growth (fading to base g10) needed to justify price at required return
-    rg = solve(lambda g1: dcf(s["rev"], m0, g1, s["scen"]["base"]["g10"], s["scen"]["base"]["m"], s["r"], nc, s["shares"]) - s["price"], 0.0, 1.5)
+    rg = solve(lambda g1: dcf(s["rev"], m0, g1, s["scen"]["base"]["g10"], s["scen"]["base"]["m"], s["r"], nc, s["shares"]) - s["price"], -0.5, 1.5)
     # sensitivity base case: r vs gT
     rs = [s["r"] - .02, s["r"] - .01, s["r"], s["r"] + .01, s["r"] + .02]
     gs = [.015, .02, .025, .03, .035]
@@ -136,7 +160,7 @@ out["assets"]["GLD"] = dict(
     epv=None, implied_irr=None, scen=gscen, probs=gprobs, oz_per_share=OZ, implied_gold=g["price"] / OZ,
     notes="No cash flows => no intrinsic value. Scenario REFERENCE range only (low confidence); oz/share is an estimate.")
 
-json.dump(out, open("/tmp/claude-0/-home-claude/fc9c1ae0-822b-5ee4-919e-5198119cc063/scratchpad/work/results.json", "w"), indent=1, default=float)
+json.dump(out, open(__import__("os").path.join(__import__("os").path.dirname(__import__("os").path.abspath(__file__)), "results.json"), "w"), indent=1, default=float)
 
 print(f"{'Tkr':6}{'Price':>9}{'Bear':>9}{'Base':>9}{'Bull':>9}{'FV(30/50/20)':>14}{'BuyBelow':>10}{'Diff%':>8}{'EPV':>8}{'IRR':>7}{'revG1':>7}{'TV%':>6}")
 for tk, a in out["assets"].items():

@@ -480,6 +480,534 @@
     }
    },
    "buy_below": 259.0
+  },
+  {
+   "ticker": "NVDA",
+   "name": "NVIDIA Corp.",
+   "type": "stock",
+   "fair_value": 170.59,
+   "bear": 72.48,
+   "base": 163.75,
+   "bull": 334.84,
+   "mos": 0.3,
+   "buy_below": 119.41,
+   "required_return": 0.1,
+   "epv": 53.67,
+   "implied_return": 0.0831,
+   "reverse_g1": 0.2954,
+   "tv_share": 0.572,
+   "notes": "TTM to Jul-2026 (FY27 Q2). SBC is an ESTIMATE (about 2.3% of revenue). Data-centre demand is highly cyclical and concentrated: lower confidence. Base case is deliberately below consensus growth. Base case is deliberately below consensus growth.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": 0.08,
+     "g10": 0.03,
+     "m": 0.32
+    },
+    "base": {
+     "g1": 0.22,
+     "g10": 0.04,
+     "m": 0.42
+    },
+    "bull": {
+     "g1": 0.35,
+     "g10": 0.06,
+     "m": 0.5
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.08,
+     0.09,
+     0.1,
+     0.11,
+     0.12
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      206.2,
+      217.5,
+      230.9,
+      246.9,
+      266.6
+     ],
+     [
+      175.4,
+      183.1,
+      192.1,
+      202.5,
+      214.8
+     ],
+     [
+      152.0,
+      157.5,
+      163.7,
+      170.9,
+      179.1
+     ],
+     [
+      133.7,
+      137.7,
+      142.2,
+      147.3,
+      153.1
+     ],
+     [
+      119.0,
+      122.0,
+      125.4,
+      129.1,
+      133.2
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "AVGO",
+   "name": "Broadcom Inc.",
+   "type": "stock",
+   "fair_value": 239.27,
+   "bear": 108.15,
+   "base": 245.74,
+   "bull": 419.76,
+   "mos": 0.3,
+   "buy_below": 167.49,
+   "required_return": 0.1,
+   "epv": 63.5,
+   "implied_return": 0.0812,
+   "reverse_g1": 0.3383,
+   "tv_share": 0.588,
+   "notes": "TTM to Aug-2026 (FY26 Q3). SBC is an ESTIMATE (about 10% of revenue). Net debt from acquisitions. AI custom-chip demand drives growth.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": 0.12,
+     "g10": 0.03,
+     "m": 0.3
+    },
+    "base": {
+     "g1": 0.25,
+     "g10": 0.05,
+     "m": 0.38
+    },
+    "bull": {
+     "g1": 0.35,
+     "g10": 0.06,
+     "m": 0.43
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.08,
+     0.09,
+     0.1,
+     0.11,
+     0.12
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      313.1,
+      331.3,
+      352.7,
+      378.4,
+      409.8
+     ],
+     [
+      264.1,
+      276.5,
+      290.8,
+      307.5,
+      327.2
+     ],
+     [
+      226.9,
+      235.8,
+      245.7,
+      257.2,
+      270.3
+     ],
+     [
+      197.9,
+      204.3,
+      211.5,
+      219.7,
+      228.9
+     ],
+     [
+      174.5,
+      179.4,
+      184.8,
+      190.7,
+      197.4
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "LLY",
+   "name": "Eli Lilly and Co.",
+   "type": "stock",
+   "fair_value": 868.87,
+   "bear": 406.82,
+   "base": 887.04,
+   "bull": 1516.51,
+   "mos": 0.25,
+   "buy_below": 651.65,
+   "required_return": 0.09,
+   "epv": 267.09,
+   "implied_return": 0.0734,
+   "reverse_g1": 0.2843,
+   "tv_share": 0.624,
+   "notes": "TTM to Jun-2026. SBC is an ESTIMATE. FCF is depressed by $9.9B capex on new plants; margin rises as the build-out matures. Growth rests on obesity drugs; pricing and patent risk.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": 0.08,
+     "g10": 0.03,
+     "m": 0.26
+    },
+    "base": {
+     "g1": 0.2,
+     "g10": 0.04,
+     "m": 0.32
+    },
+    "bull": {
+     "g1": 0.28,
+     "g10": 0.05,
+     "m": 0.38
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.07,
+     0.08,
+     0.09,
+     0.1,
+     0.11
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      1167.3,
+      1254.3,
+      1360.5,
+      1493.3,
+      1664.1
+     ],
+     [
+      957.1,
+      1013.5,
+      1080.1,
+      1160.1,
+      1257.8
+     ],
+     [
+      804.0,
+      842.6,
+      887.0,
+      938.9,
+      1000.2
+     ],
+     [
+      687.8,
+      715.2,
+      746.3,
+      781.8,
+      822.8
+     ],
+     [
+      596.8,
+      616.9,
+      639.4,
+      664.6,
+      693.3
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "ADBE",
+   "name": "Adobe Inc.",
+   "type": "stock",
+   "fair_value": 355.74,
+   "bear": 202.91,
+   "base": 380.16,
+   "bull": 523.94,
+   "mos": 0.3,
+   "buy_below": 249.02,
+   "required_return": 0.095,
+   "epv": 221.81,
+   "implied_return": 0.1289,
+   "reverse_g1": -0.0287,
+   "tv_share": 0.536,
+   "notes": "TTM to Aug-2026 (FY26 Q3). SBC is an ESTIMATE (about 8% of revenue). The bear case assumes generative-AI tools erode its creative-software moat (sales shrink first, then recover slowly); the market price looks close to that view.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": -0.03,
+     "g10": 0.02,
+     "m": 0.26
+    },
+    "base": {
+     "g1": 0.07,
+     "g10": 0.03,
+     "m": 0.32
+    },
+    "bull": {
+     "g1": 0.11,
+     "g10": 0.045,
+     "m": 0.36
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.075,
+     0.085,
+     0.095,
+     0.105,
+     0.115
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      478.0,
+      505.4,
+      538.4,
+      578.7,
+      629.0
+     ],
+     [
+      406.3,
+      424.6,
+      446.0,
+      471.3,
+      501.6
+     ],
+     [
+      352.7,
+      365.5,
+      380.2,
+      397.0,
+      416.7
+     ],
+     [
+      311.2,
+      320.4,
+      330.8,
+      342.6,
+      356.1
+     ],
+     [
+      278.0,
+      284.9,
+      292.5,
+      301.1,
+      310.7
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "APP",
+   "name": "AppLovin Corp.",
+   "type": "stock",
+   "fair_value": 361.65,
+   "bear": 156.06,
+   "base": 350.66,
+   "bull": 697.51,
+   "mos": 0.35,
+   "buy_below": 235.07,
+   "required_return": 0.11,
+   "epv": 100.66,
+   "implied_return": 0.1283,
+   "reverse_g1": 0.1895,
+   "tv_share": 0.539,
+   "notes": "TTM to Jun-2026. SBC is an ESTIMATE. Very high margins and heavy reliance on terminal value: lower confidence. Higher required return (11%) and 35% safety margin.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": 0.1,
+     "g10": 0.03,
+     "m": 0.45
+    },
+    "base": {
+     "g1": 0.25,
+     "g10": 0.05,
+     "m": 0.55
+    },
+    "bull": {
+     "g1": 0.4,
+     "g10": 0.06,
+     "m": 0.62
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.09,
+     0.1,
+     0.11,
+     0.12,
+     0.13
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      434.1,
+      453.7,
+      476.3,
+      502.7,
+      533.9
+     ],
+     [
+      375.2,
+      389.1,
+      404.9,
+      423.0,
+      443.8
+     ],
+     [
+      329.0,
+      339.2,
+      350.7,
+      363.5,
+      378.1
+     ],
+     [
+      292.0,
+      299.7,
+      308.2,
+      317.6,
+      328.1
+     ],
+     [
+      261.7,
+      267.6,
+      274.0,
+      281.1,
+      289.0
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "FICO",
+   "name": "Fair Isaac Corp.",
+   "type": "stock",
+   "fair_value": 604.44,
+   "bear": 355.65,
+   "base": 620.91,
+   "bull": 936.45,
+   "mos": 0.3,
+   "buy_below": 423.11,
+   "required_return": 0.095,
+   "epv": 194.91,
+   "implied_return": 0.0854,
+   "reverse_g1": 0.1393,
+   "tv_share": 0.562,
+   "notes": "TTM to Jun-2026. SBC is an ESTIMATE (about 8% of revenue). Net debt of $5.4B from buybacks. Pricing power in credit scores faces regulatory scrutiny.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": 0.05,
+     "g10": 0.03,
+     "m": 0.33
+    },
+    "base": {
+     "g1": 0.1,
+     "g10": 0.04,
+     "m": 0.38
+    },
+    "bull": {
+     "g1": 0.14,
+     "g10": 0.05,
+     "m": 0.43
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.075,
+     0.085,
+     0.095,
+     0.105,
+     0.115
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      851.0,
+      916.3,
+      994.6,
+      1090.3,
+      1209.9
+     ],
+     [
+      682.0,
+      725.5,
+      776.3,
+      836.3,
+      908.4
+     ],
+     [
+      555.8,
+      586.2,
+      620.9,
+      661.0,
+      707.8
+     ],
+     [
+      458.1,
+      480.1,
+      504.8,
+      532.8,
+      564.8
+     ],
+     [
+      380.4,
+      396.7,
+      414.8,
+      435.1,
+      457.9
+     ]
+    ]
+   }
   }
  ]
 }
