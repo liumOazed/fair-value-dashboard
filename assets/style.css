@@ -56,3 +56,5 @@ main.wide{max-width:min(1800px,98vw);padding-left:20px;padding-right:20px}
 .viewbar{padding:8px 0;margin:10px 0 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 #tbl{min-width:0}.stk{position:sticky;left:0;background:var(--card);z-index:1}
 #tbl td.stk{box-shadow:1px 0 0 var(--line)}
+
+.topscroll{overflow-x:auto;overflow-y:hidden;height:16px;margin-bottom:2px}#tspacer{height:1px}

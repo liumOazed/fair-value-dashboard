@@ -46,6 +46,7 @@ const ALL=[
  {id:"rr",k:"required_return",h:"Required return",r:1,t:"Sector required return used for Growth priced in",v:r=>fmt(r.required_return*100,1,"%"),V:["V","A"]},
  {id:"ig",k:"implied_fcf_growth",h:"Growth priced in*",r:1,v:igf,V:["O","V","A"]},
  {id:"fv",k:null,h:"Fair value",v:fvc,V:["O","V","A"]}];
+{const t=$("#tscroll"),b=$("#bscroll");let lock=0;t.onscroll=()=>{if(lock){lock=0;return}lock=1;b.scrollLeft=t.scrollLeft};b.onscroll=()=>{if(lock){lock=0;return}lock=1;t.scrollLeft=b.scrollLeft};window.addEventListener("resize",()=>render())}
 const VIEWS={"Overview":"O","Valuation":"V","Quality":"Q","All columns":"A"};
 const colsFor=n=>ALL.filter(c=>c.V.includes(VIEWS[n]));
 
@@ -66,6 +67,7 @@ function render(){
  $("#more").style.display=filtered?"none":"";$("#more").textContent=showAll?"Show top 50 only":`Show all ${S.universe}`;
  $("#count").textContent=`${f.length} stock${f.length===1?"":"s"} shown`;
  const cols=colsFor(view);
+ setTimeout(()=>{const t=$("#tscroll"),b=$("#bscroll");$("#tspacer").style.width=$("#tbl").scrollWidth+"px";t.style.display=$("#tbl").scrollWidth>b.clientWidth+2?"":"none"},0);
  $("#tbl thead").innerHTML="<tr>"+cols.map(c=>`<th${c.k?` data-k="${c.k}"`:""} class="${c.r?"r ":""}${c.stk?"stk":""}"${c.t?` title="${c.t}"`:""}>${c.h}${c.k===sortK?(dir>0?" ▲":" ▼"):""}</th>`).join("")+"</tr>";
   $("#tbl tbody").innerHTML=f.slice(0,600).map(r=>`<tr data-t="${r.ticker}">`+cols.map(c=>`<td class="${c.r?"r num":""}${c.stk?" stk":""}">${c.v(r)}</td>`).join("")+"</tr>").join("")||`<tr><td colspan="${cols.length}" class="err">No stocks match these filters</td></tr>`;
  document.querySelectorAll("tbody tr[data-t]").forEach(tr=>tr.onclick=()=>open(tr.dataset.t))}
