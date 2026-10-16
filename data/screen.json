@@ -56,6 +56,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.76,
+"earnings_yield": 9.59,
 "has_fair_value": false
 },
 {
@@ -89,6 +90,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.82,
+"earnings_yield": 8.87,
 "has_fair_value": false
 },
 {
@@ -120,6 +122,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.17,
+"earnings_yield": 9.29,
 "has_fair_value": false
 },
 {
@@ -153,6 +156,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 1.37,
+"earnings_yield": 10.76,
 "has_fair_value": false
 },
 {
@@ -188,6 +192,7 @@
 "implied_basis": "earnings",
 "required_return": 0.115,
 "fcf_conversion": 0.2,
+"earnings_yield": 15.14,
 "has_fair_value": false
 },
 {
@@ -221,6 +226,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.66,
+"earnings_yield": 7.32,
 "has_fair_value": false
 },
 {
@@ -252,6 +258,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.75,
+"earnings_yield": 7.43,
 "has_fair_value": false
 },
 {
@@ -285,6 +292,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.69,
+"earnings_yield": 8.78,
 "has_fair_value": true
 },
 {
@@ -318,6 +326,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.45,
+"earnings_yield": 7.22,
 "has_fair_value": true
 },
 {
@@ -349,6 +358,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.83,
+"earnings_yield": 7.59,
 "has_fair_value": false
 },
 {
@@ -382,6 +392,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.85,
+"earnings_yield": 11.53,
 "has_fair_value": true
 },
 {
@@ -413,6 +424,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.79,
+"earnings_yield": 7.74,
 "has_fair_value": false
 },
 {
@@ -446,6 +458,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.57,
+"earnings_yield": 10.89,
 "has_fair_value": false
 },
 {
@@ -477,6 +490,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.92,
+"earnings_yield": 8.71,
 "has_fair_value": false
 },
 {
@@ -512,6 +526,7 @@
 "implied_basis": "earnings",
 "required_return": 0.115,
 "fcf_conversion": 0.04,
+"earnings_yield": 15.16,
 "has_fair_value": false
 },
 {
@@ -543,6 +558,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.81,
+"earnings_yield": 7.1,
 "has_fair_value": false
 },
 {
@@ -574,6 +590,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.01,
+"earnings_yield": 3.39,
 "has_fair_value": false
 },
 {
@@ -607,6 +624,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 1.0,
+"earnings_yield": 10.68,
 "has_fair_value": false
 },
 {
@@ -638,6 +656,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.77,
+"earnings_yield": 10.65,
 "has_fair_value": false
 },
 {
@@ -673,6 +692,7 @@
 "implied_basis": "earnings",
 "required_return": 0.115,
 "fcf_conversion": 0.11,
+"earnings_yield": 6.87,
 "has_fair_value": true
 },
 {
@@ -706,6 +726,7 @@
 "implied_basis": "fcf",
 "required_return": 0.115,
 "fcf_conversion": 0.33,
+"earnings_yield": 5.52,
 "has_fair_value": true
 },
 {
@@ -737,6 +758,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 2.15,
+"earnings_yield": 5.67,
 "has_fair_value": false
 },
 {
@@ -768,6 +790,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 2.16,
+"earnings_yield": 12.51,
 "has_fair_value": false
 },
 {
@@ -799,6 +822,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.34,
+"earnings_yield": 8.35,
 "has_fair_value": false
 },
 {
@@ -830,6 +854,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.61,
+"earnings_yield": 10.52,
 "has_fair_value": false
 },
 {
@@ -863,6 +888,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.77,
+"earnings_yield": 20.36,
 "has_fair_value": false
 },
 {
@@ -894,6 +920,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.36,
+"earnings_yield": 6.8,
 "has_fair_value": false
 },
 {
@@ -925,6 +952,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.55,
+"earnings_yield": 4.47,
 "has_fair_value": false
 },
 {
@@ -958,6 +986,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.94,
+"earnings_yield": 8.09,
 "has_fair_value": false
 },
 {
@@ -989,6 +1018,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 2.35,
+"earnings_yield": 2.64,
 "has_fair_value": false
 },
 {
@@ -1022,6 +1052,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.7,
+"earnings_yield": 11.92,
 "has_fair_value": false
 },
 {
@@ -1053,6 +1084,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.58,
+"earnings_yield": 6.36,
 "has_fair_value": false
 },
 {
@@ -1084,6 +1116,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -0.35,
+"earnings_yield": 6.36,
 "has_fair_value": false
 },
 {
@@ -1115,6 +1148,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": 0.03,
+"earnings_yield": 12.1,
 "has_fair_value": false
 },
 {
@@ -1146,6 +1180,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.66,
+"earnings_yield": 7.42,
 "has_fair_value": false
 },
 {
@@ -1177,6 +1212,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.49,
+"earnings_yield": 8.03,
 "has_fair_value": false
 },
 {
@@ -1210,6 +1246,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.26,
+"earnings_yield": 4.09,
 "has_fair_value": true
 },
 {
@@ -1241,6 +1278,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.56,
+"earnings_yield": 5.21,
 "has_fair_value": false
 },
 {
@@ -1272,6 +1310,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.68,
+"earnings_yield": 4.82,
 "has_fair_value": false
 },
 {
@@ -1303,6 +1342,7 @@
 "implied_basis": "fcf",
 "required_return": 0.07,
 "fcf_conversion": 0.33,
+"earnings_yield": 11.7,
 "has_fair_value": false
 },
 {
@@ -1334,6 +1374,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 8.14,
 "has_fair_value": false
 },
 {
@@ -1367,6 +1408,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.06,
+"earnings_yield": 6.79,
 "has_fair_value": false
 },
 {
@@ -1398,6 +1440,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.53,
+"earnings_yield": 6.33,
 "has_fair_value": false
 },
 {
@@ -1431,6 +1474,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.96,
+"earnings_yield": 10.21,
 "has_fair_value": false
 },
 {
@@ -1462,6 +1506,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.65,
+"earnings_yield": 5.8,
 "has_fair_value": false
 },
 {
@@ -1495,6 +1540,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.88,
+"earnings_yield": 9.82,
 "has_fair_value": false
 },
 {
@@ -1528,6 +1574,7 @@
 "implied_basis": "earnings",
 "required_return": 0.115,
 "fcf_conversion": 0.2,
+"earnings_yield": 6.99,
 "has_fair_value": false
 },
 {
@@ -1561,6 +1608,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.57,
+"earnings_yield": 8.29,
 "has_fair_value": false
 },
 {
@@ -1592,6 +1640,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.75,
+"earnings_yield": 10.41,
 "has_fair_value": false
 },
 {
@@ -1623,6 +1672,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.33,
+"earnings_yield": 15.83,
 "has_fair_value": false
 },
 {
@@ -1654,6 +1704,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 8.01,
 "has_fair_value": false
 },
 {
@@ -1685,6 +1736,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.79,
+"earnings_yield": 7.4,
 "has_fair_value": false
 },
 {
@@ -1716,6 +1768,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.97,
+"earnings_yield": 9.29,
 "has_fair_value": false
 },
 {
@@ -1747,6 +1800,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.58,
+"earnings_yield": 3.5,
 "has_fair_value": false
 },
 {
@@ -1782,6 +1836,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.86,
+"earnings_yield": 19.6,
 "has_fair_value": false
 },
 {
@@ -1815,6 +1870,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.94,
+"earnings_yield": 7.26,
 "has_fair_value": false
 },
 {
@@ -1846,6 +1902,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.44,
+"earnings_yield": 5.91,
 "has_fair_value": false
 },
 {
@@ -1877,6 +1934,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.52,
+"earnings_yield": 9.88,
 "has_fair_value": false
 },
 {
@@ -1908,6 +1966,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 3.07,
 "has_fair_value": false
 },
 {
@@ -1939,6 +1998,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.08,
+"earnings_yield": 13.02,
 "has_fair_value": false
 },
 {
@@ -1970,6 +2030,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 7.04,
 "has_fair_value": false
 },
 {
@@ -2001,6 +2062,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.93,
+"earnings_yield": 5.18,
 "has_fair_value": false
 },
 {
@@ -2032,6 +2094,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.6,
+"earnings_yield": 5.48,
 "has_fair_value": false
 },
 {
@@ -2063,6 +2126,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.7,
+"earnings_yield": 5.91,
 "has_fair_value": false
 },
 {
@@ -2094,6 +2158,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.92,
+"earnings_yield": 9.92,
 "has_fair_value": false
 },
 {
@@ -2127,6 +2192,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.78,
+"earnings_yield": 15.02,
 "has_fair_value": false
 },
 {
@@ -2158,6 +2224,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.88,
+"earnings_yield": 6.26,
 "has_fair_value": false
 },
 {
@@ -2191,6 +2258,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 1.05,
+"earnings_yield": 7.74,
 "has_fair_value": false
 },
 {
@@ -2222,6 +2290,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.35,
+"earnings_yield": 13.77,
 "has_fair_value": false
 },
 {
@@ -2253,6 +2322,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.64,
+"earnings_yield": 10.49,
 "has_fair_value": false
 },
 {
@@ -2284,6 +2354,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.02,
+"earnings_yield": 7.92,
 "has_fair_value": false
 },
 {
@@ -2315,6 +2386,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.67,
+"earnings_yield": 2.57,
 "has_fair_value": false
 },
 {
@@ -2346,6 +2418,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.75,
+"earnings_yield": 9.36,
 "has_fair_value": false
 },
 {
@@ -2377,6 +2450,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.71,
+"earnings_yield": 6.94,
 "has_fair_value": false
 },
 {
@@ -2408,6 +2482,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.94,
+"earnings_yield": 5.8,
 "has_fair_value": false
 },
 {
@@ -2439,6 +2514,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 16.58,
+"earnings_yield": 0.7,
 "has_fair_value": false
 },
 {
@@ -2470,6 +2546,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 6.66,
 "has_fair_value": false
 },
 {
@@ -2501,6 +2578,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.37,
+"earnings_yield": 5.07,
 "has_fair_value": false
 },
 {
@@ -2532,6 +2610,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.78,
+"earnings_yield": 7.62,
 "has_fair_value": false
 },
 {
@@ -2563,6 +2642,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.54,
+"earnings_yield": 5.29,
 "has_fair_value": false
 },
 {
@@ -2594,6 +2674,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.76,
+"earnings_yield": 3.8,
 "has_fair_value": false
 },
 {
@@ -2625,6 +2706,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.87,
+"earnings_yield": 3.64,
 "has_fair_value": false
 },
 {
@@ -2656,6 +2738,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.86,
+"earnings_yield": 3.85,
 "has_fair_value": false
 },
 {
@@ -2687,6 +2770,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.64,
+"earnings_yield": 2.95,
 "has_fair_value": false
 },
 {
@@ -2718,6 +2802,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 2.79,
+"earnings_yield": 2.7,
 "has_fair_value": false
 },
 {
@@ -2749,6 +2834,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.19,
+"earnings_yield": 6.55,
 "has_fair_value": false
 },
 {
@@ -2780,6 +2866,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.76,
+"earnings_yield": 3.59,
 "has_fair_value": false
 },
 {
@@ -2811,6 +2898,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.86,
+"earnings_yield": 11.55,
 "has_fair_value": false
 },
 {
@@ -2842,6 +2930,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.14,
+"earnings_yield": 7.34,
 "has_fair_value": false
 },
 {
@@ -2875,6 +2964,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.39,
+"earnings_yield": 1.24,
 "has_fair_value": false
 },
 {
@@ -2906,6 +2996,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.6,
+"earnings_yield": 3.7,
 "has_fair_value": false
 },
 {
@@ -2937,6 +3028,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.87,
+"earnings_yield": 3.62,
 "has_fair_value": false
 },
 {
@@ -2970,6 +3062,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.24,
+"earnings_yield": 4.8,
 "has_fair_value": false
 },
 {
@@ -3001,6 +3094,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 0.89,
+"earnings_yield": 4.28,
 "has_fair_value": false
 },
 {
@@ -3032,6 +3126,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.48,
+"earnings_yield": 11.2,
 "has_fair_value": false
 },
 {
@@ -3063,6 +3158,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -0.86,
+"earnings_yield": 7.52,
 "has_fair_value": false
 },
 {
@@ -3094,6 +3190,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.5,
+"earnings_yield": 7.81,
 "has_fair_value": false
 },
 {
@@ -3125,6 +3222,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.44,
+"earnings_yield": 5.09,
 "has_fair_value": false
 },
 {
@@ -3156,6 +3254,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 2.31,
+"earnings_yield": 4.71,
 "has_fair_value": false
 },
 {
@@ -3187,6 +3286,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.46,
+"earnings_yield": 4.44,
 "has_fair_value": false
 },
 {
@@ -3218,6 +3318,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.73,
+"earnings_yield": 8.85,
 "has_fair_value": false
 },
 {
@@ -3249,6 +3350,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.65,
+"earnings_yield": 3.15,
 "has_fair_value": false
 },
 {
@@ -3282,6 +3384,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.47,
+"earnings_yield": 7.84,
 "has_fair_value": false
 },
 {
@@ -3313,6 +3416,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.95,
+"earnings_yield": 9.8,
 "has_fair_value": false
 },
 {
@@ -3344,6 +3448,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 7.25,
 "has_fair_value": false
 },
 {
@@ -3375,6 +3480,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.48,
+"earnings_yield": 3.96,
 "has_fair_value": false
 },
 {
@@ -3406,6 +3512,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 11.64,
 "has_fair_value": false
 },
 {
@@ -3439,6 +3546,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.76,
+"earnings_yield": 4.21,
 "has_fair_value": false
 },
 {
@@ -3472,6 +3580,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 12.35,
 "has_fair_value": false
 },
 {
@@ -3503,6 +3612,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.74,
+"earnings_yield": 6.43,
 "has_fair_value": false
 },
 {
@@ -3534,6 +3644,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.9,
+"earnings_yield": 12.3,
 "has_fair_value": false
 },
 {
@@ -3565,6 +3676,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.18,
+"earnings_yield": 6.81,
 "has_fair_value": false
 },
 {
@@ -3598,6 +3710,7 @@
 "implied_basis": "earnings",
 "required_return": 0.115,
 "fcf_conversion": 0.15,
+"earnings_yield": 6.0,
 "has_fair_value": false
 },
 {
@@ -3629,6 +3742,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -0.8,
+"earnings_yield": 6.29,
 "has_fair_value": false
 },
 {
@@ -3660,6 +3774,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.69,
+"earnings_yield": 6.14,
 "has_fair_value": false
 },
 {
@@ -3691,6 +3806,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.23,
+"earnings_yield": 10.2,
 "has_fair_value": false
 },
 {
@@ -3722,6 +3838,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.22,
+"earnings_yield": 3.62,
 "has_fair_value": false
 },
 {
@@ -3753,6 +3870,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.58,
+"earnings_yield": 10.55,
 "has_fair_value": false
 },
 {
@@ -3784,6 +3902,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.69,
+"earnings_yield": 5.06,
 "has_fair_value": false
 },
 {
@@ -3815,6 +3934,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 0.87,
+"earnings_yield": 5.11,
 "has_fair_value": false
 },
 {
@@ -3846,6 +3966,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.48,
+"earnings_yield": 5.73,
 "has_fair_value": false
 },
 {
@@ -3877,6 +3998,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.59,
+"earnings_yield": 6.22,
 "has_fair_value": false
 },
 {
@@ -3908,6 +4030,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.26,
+"earnings_yield": 9.18,
 "has_fair_value": false
 },
 {
@@ -3939,6 +4062,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.06,
+"earnings_yield": 10.85,
 "has_fair_value": false
 },
 {
@@ -3972,6 +4096,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.35,
+"earnings_yield": 6.97,
 "has_fair_value": false
 },
 {
@@ -4003,6 +4128,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.77,
+"earnings_yield": 4.32,
 "has_fair_value": false
 },
 {
@@ -4034,6 +4160,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 6.07,
 "has_fair_value": false
 },
 {
@@ -4065,6 +4192,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.0,
+"earnings_yield": 5.89,
 "has_fair_value": false
 },
 {
@@ -4096,6 +4224,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.4,
+"earnings_yield": 5.24,
 "has_fair_value": false
 },
 {
@@ -4129,6 +4258,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.84,
+"earnings_yield": 4.18,
 "has_fair_value": false
 },
 {
@@ -4160,6 +4290,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.34,
+"earnings_yield": 4.1,
 "has_fair_value": false
 },
 {
@@ -4191,6 +4322,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 6.0,
 "has_fair_value": false
 },
 {
@@ -4222,6 +4354,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -0.69,
+"earnings_yield": 5.94,
 "has_fair_value": false
 },
 {
@@ -4253,6 +4386,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.49,
+"earnings_yield": 5.98,
 "has_fair_value": false
 },
 {
@@ -4284,6 +4418,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.0,
+"earnings_yield": 16.47,
 "has_fair_value": false
 },
 {
@@ -4315,6 +4450,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.52,
+"earnings_yield": 4.12,
 "has_fair_value": false
 },
 {
@@ -4346,6 +4482,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 7.57,
 "has_fair_value": false
 },
 {
@@ -4377,6 +4514,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.83,
+"earnings_yield": 15.91,
 "has_fair_value": false
 },
 {
@@ -4408,6 +4546,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.25,
+"earnings_yield": 5.99,
 "has_fair_value": false
 },
 {
@@ -4439,6 +4578,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.83,
+"earnings_yield": 4.67,
 "has_fair_value": false
 },
 {
@@ -4470,6 +4610,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.61,
+"earnings_yield": 2.97,
 "has_fair_value": false
 },
 {
@@ -4503,6 +4644,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 1.71,
+"earnings_yield": 6.13,
 "has_fair_value": false
 },
 {
@@ -4536,6 +4678,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.12,
+"earnings_yield": 4.42,
 "has_fair_value": false
 },
 {
@@ -4567,6 +4710,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.06,
+"earnings_yield": 4.81,
 "has_fair_value": false
 },
 {
@@ -4600,6 +4744,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.74,
+"earnings_yield": 10.17,
 "has_fair_value": false
 },
 {
@@ -4631,6 +4776,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.69,
+"earnings_yield": 4.82,
 "has_fair_value": false
 },
 {
@@ -4662,6 +4808,7 @@
 "implied_basis": "fcf",
 "required_return": 0.07,
 "fcf_conversion": 0.44,
+"earnings_yield": 7.66,
 "has_fair_value": false
 },
 {
@@ -4695,6 +4842,7 @@
 "implied_basis": "fcf",
 "required_return": 0.115,
 "fcf_conversion": 0.47,
+"earnings_yield": 3.9,
 "has_fair_value": false
 },
 {
@@ -4726,6 +4874,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.36,
+"earnings_yield": 42.42,
 "has_fair_value": false
 },
 {
@@ -4757,6 +4906,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.96,
+"earnings_yield": 4.47,
 "has_fair_value": false
 },
 {
@@ -4788,6 +4938,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.82,
+"earnings_yield": 2.11,
 "has_fair_value": false
 },
 {
@@ -4819,6 +4970,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 5.87,
 "has_fair_value": false
 },
 {
@@ -4854,6 +5006,7 @@
 "implied_basis": "earnings",
 "required_return": 0.115,
 "fcf_conversion": 0.24,
+"earnings_yield": 2.91,
 "has_fair_value": false
 },
 {
@@ -4887,6 +5040,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.07,
+"earnings_yield": 6.36,
 "has_fair_value": false
 },
 {
@@ -4918,6 +5072,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.22,
+"earnings_yield": 9.33,
 "has_fair_value": false
 },
 {
@@ -4949,6 +5104,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.46,
+"earnings_yield": 5.77,
 "has_fair_value": false
 },
 {
@@ -4982,6 +5138,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.77,
+"earnings_yield": 9.81,
 "has_fair_value": false
 },
 {
@@ -5015,6 +5172,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.72,
+"earnings_yield": 4.18,
 "has_fair_value": false
 },
 {
@@ -5046,6 +5204,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.19,
+"earnings_yield": 13.04,
 "has_fair_value": false
 },
 {
@@ -5077,6 +5236,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.79,
+"earnings_yield": 4.17,
 "has_fair_value": false
 },
 {
@@ -5108,6 +5268,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.86,
+"earnings_yield": 4.61,
 "has_fair_value": false
 },
 {
@@ -5139,6 +5300,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.82,
+"earnings_yield": 8.59,
 "has_fair_value": false
 },
 {
@@ -5172,6 +5334,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.12,
+"earnings_yield": 4.38,
 "has_fair_value": true
 },
 {
@@ -5203,6 +5366,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 7.52,
 "has_fair_value": false
 },
 {
@@ -5234,6 +5398,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 8.28,
 "has_fair_value": false
 },
 {
@@ -5267,6 +5432,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": -1.38,
+"earnings_yield": 8.01,
 "has_fair_value": false
 },
 {
@@ -5298,6 +5464,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.2,
+"earnings_yield": 8.99,
 "has_fair_value": false
 },
 {
@@ -5329,6 +5496,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.8,
+"earnings_yield": 11.51,
 "has_fair_value": false
 },
 {
@@ -5360,6 +5528,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.54,
+"earnings_yield": 7.5,
 "has_fair_value": false
 },
 {
@@ -5391,6 +5560,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.83,
+"earnings_yield": 6.49,
 "has_fair_value": false
 },
 {
@@ -5422,6 +5592,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.02,
+"earnings_yield": 8.77,
 "has_fair_value": false
 },
 {
@@ -5453,6 +5624,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.98,
+"earnings_yield": 6.91,
 "has_fair_value": false
 },
 {
@@ -5484,6 +5656,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.9,
+"earnings_yield": 6.49,
 "has_fair_value": false
 },
 {
@@ -5515,6 +5688,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.41,
+"earnings_yield": 3.66,
 "has_fair_value": false
 },
 {
@@ -5546,6 +5720,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.96,
+"earnings_yield": 4.28,
 "has_fair_value": false
 },
 {
@@ -5579,6 +5754,7 @@
 "implied_basis": "fcf",
 "required_return": 0.115,
 "fcf_conversion": 0.59,
+"earnings_yield": 2.56,
 "has_fair_value": false
 },
 {
@@ -5610,6 +5786,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 8.98,
 "has_fair_value": false
 },
 {
@@ -5641,6 +5818,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 9.64,
 "has_fair_value": false
 },
 {
@@ -5672,6 +5850,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.6,
+"earnings_yield": 4.87,
 "has_fair_value": false
 },
 {
@@ -5703,6 +5882,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.47,
+"earnings_yield": 13.08,
 "has_fair_value": false
 },
 {
@@ -5734,6 +5914,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.5,
+"earnings_yield": 10.54,
 "has_fair_value": false
 },
 {
@@ -5765,6 +5946,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.98,
+"earnings_yield": 4.35,
 "has_fair_value": false
 },
 {
@@ -5796,6 +5978,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.52,
+"earnings_yield": 3.84,
 "has_fair_value": false
 },
 {
@@ -5827,6 +6010,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.46,
+"earnings_yield": 2.86,
 "has_fair_value": false
 },
 {
@@ -5858,6 +6042,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 0.62,
+"earnings_yield": 7.08,
 "has_fair_value": false
 },
 {
@@ -5889,6 +6074,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 9.79,
 "has_fair_value": false
 },
 {
@@ -5920,6 +6106,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.69,
+"earnings_yield": 3.21,
 "has_fair_value": false
 },
 {
@@ -5951,6 +6138,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.85,
+"earnings_yield": 3.96,
 "has_fair_value": false
 },
 {
@@ -5982,6 +6170,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 6.11,
 "has_fair_value": false
 },
 {
@@ -6013,6 +6202,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.34,
+"earnings_yield": 3.99,
 "has_fair_value": false
 },
 {
@@ -6044,6 +6234,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.63,
+"earnings_yield": 3.91,
 "has_fair_value": false
 },
 {
@@ -6075,6 +6266,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 3.61,
+"earnings_yield": 1.57,
 "has_fair_value": false
 },
 {
@@ -6106,6 +6298,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.94,
+"earnings_yield": 6.98,
 "has_fair_value": false
 },
 {
@@ -6137,6 +6330,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.7,
+"earnings_yield": 2.91,
 "has_fair_value": false
 },
 {
@@ -6168,6 +6362,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.95,
+"earnings_yield": 6.93,
 "has_fair_value": false
 },
 {
@@ -6199,6 +6394,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.46,
+"earnings_yield": 4.89,
 "has_fair_value": false
 },
 {
@@ -6230,6 +6426,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.43,
+"earnings_yield": 5.53,
 "has_fair_value": false
 },
 {
@@ -6261,6 +6458,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.83,
+"earnings_yield": 3.92,
 "has_fair_value": false
 },
 {
@@ -6292,6 +6490,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.68,
+"earnings_yield": 9.75,
 "has_fair_value": false
 },
 {
@@ -6323,6 +6522,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.77,
+"earnings_yield": 7.29,
 "has_fair_value": false
 },
 {
@@ -6354,6 +6554,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.2,
+"earnings_yield": 5.95,
 "has_fair_value": false
 },
 {
@@ -6385,6 +6586,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 3.73,
 "has_fair_value": false
 },
 {
@@ -6416,6 +6618,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.79,
+"earnings_yield": 3.81,
 "has_fair_value": false
 },
 {
@@ -6447,6 +6650,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.8,
+"earnings_yield": 7.02,
 "has_fair_value": false
 },
 {
@@ -6478,6 +6682,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.65,
+"earnings_yield": 5.09,
 "has_fair_value": false
 },
 {
@@ -6509,6 +6714,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 9.24,
 "has_fair_value": false
 },
 {
@@ -6540,6 +6746,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.73,
+"earnings_yield": 6.07,
 "has_fair_value": false
 },
 {
@@ -6573,6 +6780,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.03,
+"earnings_yield": 4.2,
 "has_fair_value": true
 },
 {
@@ -6604,6 +6812,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.87,
+"earnings_yield": 7.25,
 "has_fair_value": false
 },
 {
@@ -6635,6 +6844,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.63,
+"earnings_yield": 7.07,
 "has_fair_value": false
 },
 {
@@ -6666,6 +6876,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.9,
+"earnings_yield": 5.38,
 "has_fair_value": false
 },
 {
@@ -6699,6 +6910,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.56,
+"earnings_yield": 3.43,
 "has_fair_value": false
 },
 {
@@ -6730,6 +6942,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.92,
+"earnings_yield": 9.97,
 "has_fair_value": false
 },
 {
@@ -6761,6 +6974,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.32,
+"earnings_yield": 8.07,
 "has_fair_value": false
 },
 {
@@ -6792,6 +7006,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.62,
+"earnings_yield": 10.21,
 "has_fair_value": false
 },
 {
@@ -6823,6 +7038,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.43,
+"earnings_yield": 4.63,
 "has_fair_value": false
 },
 {
@@ -6854,6 +7070,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 8.6,
 "has_fair_value": false
 },
 {
@@ -6885,6 +7102,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.83,
+"earnings_yield": 7.05,
 "has_fair_value": false
 },
 {
@@ -6916,6 +7134,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.66,
+"earnings_yield": 3.16,
 "has_fair_value": false
 },
 {
@@ -6947,6 +7166,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": 0.21,
+"earnings_yield": 3.57,
 "has_fair_value": false
 },
 {
@@ -6980,6 +7200,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.89,
+"earnings_yield": 11.01,
 "has_fair_value": false
 },
 {
@@ -7011,6 +7232,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.08,
+"earnings_yield": 2.86,
 "has_fair_value": false
 },
 {
@@ -7042,6 +7264,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.55,
+"earnings_yield": 6.42,
 "has_fair_value": false
 },
 {
@@ -7075,6 +7298,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.46,
+"earnings_yield": 4.12,
 "has_fair_value": false
 },
 {
@@ -7108,6 +7332,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.88,
+"earnings_yield": 5.31,
 "has_fair_value": false
 },
 {
@@ -7139,6 +7364,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.93,
+"earnings_yield": 8.17,
 "has_fair_value": false
 },
 {
@@ -7170,6 +7396,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.81,
+"earnings_yield": 4.28,
 "has_fair_value": false
 },
 {
@@ -7201,6 +7428,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.76,
+"earnings_yield": 10.16,
 "has_fair_value": false
 },
 {
@@ -7232,6 +7460,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -0.28,
+"earnings_yield": 7.69,
 "has_fair_value": false
 },
 {
@@ -7263,6 +7492,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.86,
+"earnings_yield": 8.89,
 "has_fair_value": false
 },
 {
@@ -7294,6 +7524,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.61,
+"earnings_yield": 5.78,
 "has_fair_value": false
 },
 {
@@ -7325,6 +7556,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.91,
+"earnings_yield": 4.69,
 "has_fair_value": false
 },
 {
@@ -7356,6 +7588,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.11,
+"earnings_yield": 5.84,
 "has_fair_value": false
 },
 {
@@ -7389,6 +7622,7 @@
 "implied_basis": "earnings",
 "required_return": 0.085,
 "fcf_conversion": -0.01,
+"earnings_yield": 22.44,
 "has_fair_value": false
 },
 {
@@ -7420,6 +7654,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.96,
+"earnings_yield": 6.95,
 "has_fair_value": false
 },
 {
@@ -7451,6 +7686,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.41,
+"earnings_yield": 5.06,
 "has_fair_value": false
 },
 {
@@ -7482,6 +7718,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.73,
+"earnings_yield": 4.17,
 "has_fair_value": false
 },
 {
@@ -7513,6 +7750,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 4.29,
 "has_fair_value": false
 },
 {
@@ -7544,6 +7782,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.7,
+"earnings_yield": 3.84,
 "has_fair_value": false
 },
 {
@@ -7575,6 +7814,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.64,
+"earnings_yield": 13.25,
 "has_fair_value": false
 },
 {
@@ -7606,6 +7846,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.29,
+"earnings_yield": 10.57,
 "has_fair_value": false
 },
 {
@@ -7637,6 +7878,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": null,
+"earnings_yield": 6.8,
 "has_fair_value": false
 },
 {
@@ -7668,6 +7910,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.53,
+"earnings_yield": 4.27,
 "has_fair_value": false
 },
 {
@@ -7699,6 +7942,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.79,
+"earnings_yield": 6.09,
 "has_fair_value": false
 },
 {
@@ -7730,6 +7974,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.68,
+"earnings_yield": 3.89,
 "has_fair_value": false
 },
 {
@@ -7763,6 +8008,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 1.47,
+"earnings_yield": 5.51,
 "has_fair_value": false
 },
 {
@@ -7794,6 +8040,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.37,
+"earnings_yield": 5.82,
 "has_fair_value": false
 },
 {
@@ -7827,6 +8074,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.66,
+"earnings_yield": 7.72,
 "has_fair_value": false
 },
 {
@@ -7858,6 +8106,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.37,
+"earnings_yield": 3.8,
 "has_fair_value": false
 },
 {
@@ -7889,6 +8138,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.6,
+"earnings_yield": 7.86,
 "has_fair_value": false
 },
 {
@@ -7920,6 +8170,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.58,
+"earnings_yield": 6.23,
 "has_fair_value": false
 },
 {
@@ -7951,6 +8202,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 3.79,
+"earnings_yield": 1.67,
 "has_fair_value": false
 },
 {
@@ -7982,6 +8234,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.81,
+"earnings_yield": 3.9,
 "has_fair_value": false
 },
 {
@@ -8013,6 +8266,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.68,
+"earnings_yield": 5.18,
 "has_fair_value": false
 },
 {
@@ -8044,6 +8298,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.61,
+"earnings_yield": 2.89,
 "has_fair_value": false
 },
 {
@@ -8075,6 +8330,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 9.7,
 "has_fair_value": false
 },
 {
@@ -8106,6 +8362,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.77,
+"earnings_yield": 6.97,
 "has_fair_value": false
 },
 {
@@ -8139,6 +8396,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.79,
+"earnings_yield": 6.92,
 "has_fair_value": false
 },
 {
@@ -8170,6 +8428,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 2.34,
+"earnings_yield": 8.5,
 "has_fair_value": false
 },
 {
@@ -8201,6 +8460,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.28,
+"earnings_yield": 5.28,
 "has_fair_value": false
 },
 {
@@ -8232,6 +8492,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.58,
+"earnings_yield": 4.58,
 "has_fair_value": false
 },
 {
@@ -8263,6 +8524,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.74,
+"earnings_yield": 9.95,
 "has_fair_value": false
 },
 {
@@ -8294,6 +8556,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.55,
+"earnings_yield": 5.89,
 "has_fair_value": false
 },
 {
@@ -8325,6 +8588,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.19,
+"earnings_yield": 5.83,
 "has_fair_value": false
 },
 {
@@ -8356,6 +8620,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": 0.01,
+"earnings_yield": 7.49,
 "has_fair_value": false
 },
 {
@@ -8389,6 +8654,7 @@
 "implied_basis": "earnings",
 "required_return": 0.085,
 "fcf_conversion": 0.13,
+"earnings_yield": 11.7,
 "has_fair_value": false
 },
 {
@@ -8422,6 +8688,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.39,
+"earnings_yield": 4.45,
 "has_fair_value": false
 },
 {
@@ -8453,6 +8720,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -2.74,
+"earnings_yield": 6.3,
 "has_fair_value": false
 },
 {
@@ -8484,6 +8752,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.73,
+"earnings_yield": 5.22,
 "has_fair_value": false
 },
 {
@@ -8515,6 +8784,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 0.57,
+"earnings_yield": 6.47,
 "has_fair_value": false
 },
 {
@@ -8546,6 +8816,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.24,
+"earnings_yield": 7.43,
 "has_fair_value": false
 },
 {
@@ -8579,6 +8850,7 @@
 "implied_basis": "earnings",
 "required_return": 0.095,
 "fcf_conversion": 0.15,
+"earnings_yield": 8.51,
 "has_fair_value": false
 },
 {
@@ -8610,6 +8882,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.87,
+"earnings_yield": 6.54,
 "has_fair_value": false
 },
 {
@@ -8641,6 +8914,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.17,
+"earnings_yield": 3.62,
 "has_fair_value": false
 },
 {
@@ -8674,6 +8948,7 @@
 "implied_basis": "earnings",
 "required_return": 0.115,
 "fcf_conversion": -2.36,
+"earnings_yield": 12.97,
 "has_fair_value": false
 },
 {
@@ -8705,6 +8980,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 6.64,
 "has_fair_value": false
 },
 {
@@ -8736,6 +9012,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.89,
+"earnings_yield": 7.31,
 "has_fair_value": false
 },
 {
@@ -8767,6 +9044,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.57,
+"earnings_yield": 2.83,
 "has_fair_value": false
 },
 {
@@ -8798,6 +9076,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 5.83,
 "has_fair_value": false
 },
 {
@@ -8829,6 +9108,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 2.06,
+"earnings_yield": 1.84,
 "has_fair_value": false
 },
 {
@@ -8860,6 +9140,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.77,
+"earnings_yield": 2.88,
 "has_fair_value": true
 },
 {
@@ -8891,6 +9172,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.69,
+"earnings_yield": 3.84,
 "has_fair_value": false
 },
 {
@@ -8922,6 +9204,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 5.63,
 "has_fair_value": false
 },
 {
@@ -8953,6 +9236,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.78,
+"earnings_yield": 9.4,
 "has_fair_value": false
 },
 {
@@ -8984,6 +9268,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.51,
+"earnings_yield": 5.22,
 "has_fair_value": false
 },
 {
@@ -9015,6 +9300,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.74,
+"earnings_yield": 6.94,
 "has_fair_value": false
 },
 {
@@ -9046,6 +9332,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 2.19,
+"earnings_yield": 3.64,
 "has_fair_value": false
 },
 {
@@ -9077,6 +9364,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.93,
+"earnings_yield": 4.23,
 "has_fair_value": false
 },
 {
@@ -9111,6 +9399,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.6,
+"earnings_yield": 10.97,
 "has_fair_value": false
 },
 {
@@ -9142,6 +9431,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.86,
+"earnings_yield": 2.23,
 "has_fair_value": false
 },
 {
@@ -9173,6 +9463,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.8,
+"earnings_yield": 6.46,
 "has_fair_value": false
 },
 {
@@ -9204,6 +9495,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.91,
+"earnings_yield": 7.19,
 "has_fair_value": false
 },
 {
@@ -9235,6 +9527,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": 0.05,
+"earnings_yield": 6.94,
 "has_fair_value": false
 },
 {
@@ -9268,6 +9561,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": 0.09,
+"earnings_yield": 4.61,
 "has_fair_value": true
 },
 {
@@ -9299,6 +9593,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.3,
+"earnings_yield": 3.44,
 "has_fair_value": false
 },
 {
@@ -9330,6 +9625,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -3.78,
+"earnings_yield": 5.67,
 "has_fair_value": false
 },
 {
@@ -9361,6 +9657,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.99,
+"earnings_yield": 5.19,
 "has_fair_value": false
 },
 {
@@ -9392,6 +9689,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.62,
+"earnings_yield": 4.36,
 "has_fair_value": false
 },
 {
@@ -9425,6 +9723,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.85,
+"earnings_yield": 9.12,
 "has_fair_value": false
 },
 {
@@ -9456,6 +9755,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.28,
+"earnings_yield": 4.22,
 "has_fair_value": false
 },
 {
@@ -9487,6 +9787,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.61,
+"earnings_yield": 4.08,
 "has_fair_value": false
 },
 {
@@ -9518,6 +9819,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.62,
+"earnings_yield": 6.12,
 "has_fair_value": false
 },
 {
@@ -9549,6 +9851,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.4,
+"earnings_yield": 2.69,
 "has_fair_value": false
 },
 {
@@ -9580,6 +9883,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.26,
+"earnings_yield": 2.59,
 "has_fair_value": false
 },
 {
@@ -9611,6 +9915,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.55,
+"earnings_yield": 5.07,
 "has_fair_value": false
 },
 {
@@ -9642,6 +9947,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.72,
+"earnings_yield": 6.42,
 "has_fair_value": false
 },
 {
@@ -9673,6 +9979,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.2,
+"earnings_yield": 10.03,
 "has_fair_value": false
 },
 {
@@ -9704,6 +10011,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 8.78,
 "has_fair_value": false
 },
 {
@@ -9735,6 +10043,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": 0.21,
+"earnings_yield": 3.61,
 "has_fair_value": false
 },
 {
@@ -9766,6 +10075,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.38,
+"earnings_yield": 5.98,
 "has_fair_value": false
 },
 {
@@ -9797,6 +10107,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.87,
+"earnings_yield": 5.6,
 "has_fair_value": false
 },
 {
@@ -9830,6 +10141,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.36,
+"earnings_yield": 5.94,
 "has_fair_value": false
 },
 {
@@ -9861,6 +10173,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.8,
+"earnings_yield": 5.14,
 "has_fair_value": false
 },
 {
@@ -9892,6 +10205,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.92,
+"earnings_yield": 5.13,
 "has_fair_value": false
 },
 {
@@ -9923,6 +10237,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 10.24,
 "has_fair_value": false
 },
 {
@@ -9954,6 +10269,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.49,
+"earnings_yield": 3.76,
 "has_fair_value": false
 },
 {
@@ -9985,6 +10301,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.22,
+"earnings_yield": 6.44,
 "has_fair_value": false
 },
 {
@@ -10016,6 +10333,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.28,
+"earnings_yield": 4.77,
 "has_fair_value": false
 },
 {
@@ -10047,6 +10365,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.38,
+"earnings_yield": 7.68,
 "has_fair_value": false
 },
 {
@@ -10078,6 +10397,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 2.36,
+"earnings_yield": 2.79,
 "has_fair_value": false
 },
 {
@@ -10109,6 +10429,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.35,
+"earnings_yield": 8.0,
 "has_fair_value": false
 },
 {
@@ -10140,6 +10461,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.19,
+"earnings_yield": 15.22,
 "has_fair_value": false
 },
 {
@@ -10171,6 +10493,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 10.05,
 "has_fair_value": false
 },
 {
@@ -10202,6 +10525,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.6,
+"earnings_yield": 4.13,
 "has_fair_value": false
 },
 {
@@ -10235,6 +10559,7 @@
 "implied_basis": "earnings",
 "required_return": 0.095,
 "fcf_conversion": 0.08,
+"earnings_yield": 8.83,
 "has_fair_value": false
 },
 {
@@ -10268,6 +10593,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.0,
+"earnings_yield": 3.74,
 "has_fair_value": false
 },
 {
@@ -10299,6 +10625,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.77,
+"earnings_yield": 5.09,
 "has_fair_value": false
 },
 {
@@ -10330,6 +10657,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.57,
+"earnings_yield": 6.3,
 "has_fair_value": false
 },
 {
@@ -10361,6 +10689,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.72,
+"earnings_yield": 10.47,
 "has_fair_value": false
 },
 {
@@ -10392,6 +10721,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 9.96,
 "has_fair_value": false
 },
 {
@@ -10423,6 +10753,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.47,
+"earnings_yield": 6.69,
 "has_fair_value": false
 },
 {
@@ -10456,6 +10787,7 @@
 "implied_basis": "fcf",
 "required_return": 0.115,
 "fcf_conversion": 0.33,
+"earnings_yield": 5.41,
 "has_fair_value": false
 },
 {
@@ -10487,6 +10819,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -2.99,
+"earnings_yield": 10.53,
 "has_fair_value": false
 },
 {
@@ -10518,6 +10851,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.56,
+"earnings_yield": 3.92,
 "has_fair_value": false
 },
 {
@@ -10549,6 +10883,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.39,
+"earnings_yield": 2.56,
 "has_fair_value": false
 },
 {
@@ -10580,6 +10915,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.45,
+"earnings_yield": 9.38,
 "has_fair_value": false
 },
 {
@@ -10611,6 +10947,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.52,
+"earnings_yield": 4.09,
 "has_fair_value": false
 },
 {
@@ -10644,6 +10981,7 @@
 "implied_basis": "fcf",
 "required_return": 0.095,
 "fcf_conversion": 0.61,
+"earnings_yield": 4.33,
 "has_fair_value": false
 },
 {
@@ -10675,6 +11013,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.58,
+"earnings_yield": 3.85,
 "has_fair_value": false
 },
 {
@@ -10706,6 +11045,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.31,
+"earnings_yield": 7.36,
 "has_fair_value": false
 },
 {
@@ -10737,6 +11077,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.55,
+"earnings_yield": 7.3,
 "has_fair_value": false
 },
 {
@@ -10770,6 +11111,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.8,
+"earnings_yield": 6.63,
 "has_fair_value": false
 },
 {
@@ -10801,6 +11143,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.59,
+"earnings_yield": 3.29,
 "has_fair_value": false
 },
 {
@@ -10832,6 +11175,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 6.56,
 "has_fair_value": false
 },
 {
@@ -10865,6 +11209,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.37,
+"earnings_yield": 1.78,
 "has_fair_value": false
 },
 {
@@ -10896,6 +11241,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.55,
+"earnings_yield": 5.95,
 "has_fair_value": false
 },
 {
@@ -10927,6 +11273,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.79,
+"earnings_yield": 3.43,
 "has_fair_value": false
 },
 {
@@ -10958,6 +11305,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 14.73,
 "has_fair_value": false
 },
 {
@@ -10989,6 +11337,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.69,
+"earnings_yield": 4.36,
 "has_fair_value": false
 },
 {
@@ -11020,6 +11369,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.7,
+"earnings_yield": 4.06,
 "has_fair_value": false
 },
 {
@@ -11051,6 +11401,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 2.4,
+"earnings_yield": 2.34,
 "has_fair_value": false
 },
 {
@@ -11082,6 +11433,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.36,
+"earnings_yield": 6.76,
 "has_fair_value": false
 },
 {
@@ -11113,6 +11465,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.52,
+"earnings_yield": 4.34,
 "has_fair_value": false
 },
 {
@@ -11146,6 +11499,7 @@
 "implied_basis": "fcf",
 "required_return": 0.115,
 "fcf_conversion": 0.35,
+"earnings_yield": 2.55,
 "has_fair_value": false
 },
 {
@@ -11177,6 +11531,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.97,
+"earnings_yield": 5.98,
 "has_fair_value": false
 },
 {
@@ -11208,6 +11563,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.37,
+"earnings_yield": 5.72,
 "has_fair_value": false
 },
 {
@@ -11239,6 +11595,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 7.13,
 "has_fair_value": false
 },
 {
@@ -11270,6 +11627,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 10.64,
 "has_fair_value": false
 },
 {
@@ -11301,6 +11659,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 7.09,
 "has_fair_value": false
 },
 {
@@ -11332,6 +11691,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 2.75,
 "has_fair_value": false
 },
 {
@@ -11363,6 +11723,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.81,
+"earnings_yield": 4.09,
 "has_fair_value": false
 },
 {
@@ -11394,6 +11755,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 5.72,
 "has_fair_value": false
 },
 {
@@ -11425,6 +11787,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.69,
+"earnings_yield": 7.18,
 "has_fair_value": false
 },
 {
@@ -11456,6 +11819,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.97,
+"earnings_yield": 2.6,
 "has_fair_value": false
 },
 {
@@ -11489,6 +11853,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.44,
+"earnings_yield": 10.09,
 "has_fair_value": false
 },
 {
@@ -11520,6 +11885,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.67,
+"earnings_yield": 7.93,
 "has_fair_value": false
 },
 {
@@ -11551,6 +11917,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.4,
+"earnings_yield": 8.2,
 "has_fair_value": false
 },
 {
@@ -11582,6 +11949,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.43,
+"earnings_yield": 7.14,
 "has_fair_value": false
 },
 {
@@ -11613,6 +11981,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.66,
+"earnings_yield": 6.65,
 "has_fair_value": false
 },
 {
@@ -11644,6 +12013,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.78,
+"earnings_yield": 4.22,
 "has_fair_value": false
 },
 {
@@ -11675,6 +12045,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.16,
+"earnings_yield": 5.9,
 "has_fair_value": false
 },
 {
@@ -11706,6 +12077,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.81,
+"earnings_yield": 6.17,
 "has_fair_value": false
 },
 {
@@ -11737,6 +12109,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.46,
+"earnings_yield": 6.32,
 "has_fair_value": false
 },
 {
@@ -11768,6 +12141,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.74,
+"earnings_yield": 8.51,
 "has_fair_value": false
 },
 {
@@ -11799,6 +12173,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 9.93,
 "has_fair_value": false
 },
 {
@@ -11830,6 +12205,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.61,
+"earnings_yield": 19.53,
 "has_fair_value": false
 },
 {
@@ -11861,6 +12237,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.93,
+"earnings_yield": 8.96,
 "has_fair_value": false
 },
 {
@@ -11892,6 +12269,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.26,
+"earnings_yield": 2.5,
 "has_fair_value": false
 },
 {
@@ -11923,6 +12301,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.96,
+"earnings_yield": 5.93,
 "has_fair_value": false
 },
 {
@@ -11954,6 +12333,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.61,
+"earnings_yield": 8.3,
 "has_fair_value": false
 },
 {
@@ -11985,6 +12365,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.38,
+"earnings_yield": 3.36,
 "has_fair_value": false
 },
 {
@@ -12016,6 +12397,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.74,
+"earnings_yield": 7.34,
 "has_fair_value": false
 },
 {
@@ -12047,6 +12429,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -2.19,
+"earnings_yield": 11.39,
 "has_fair_value": false
 },
 {
@@ -12078,6 +12461,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.6,
+"earnings_yield": 11.82,
 "has_fair_value": false
 },
 {
@@ -12109,6 +12493,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 10.75,
 "has_fair_value": false
 },
 {
@@ -12140,6 +12525,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.55,
+"earnings_yield": 6.52,
 "has_fair_value": false
 },
 {
@@ -12171,6 +12557,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.2,
+"earnings_yield": 1.38,
 "has_fair_value": false
 },
 {
@@ -12202,6 +12589,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.78,
+"earnings_yield": 11.02,
 "has_fair_value": false
 },
 {
@@ -12233,6 +12621,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.8,
+"earnings_yield": 6.61,
 "has_fair_value": false
 },
 {
@@ -12264,6 +12653,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.9,
+"earnings_yield": 16.37,
 "has_fair_value": false
 },
 {
@@ -12297,6 +12687,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -0.09,
+"earnings_yield": 3.77,
 "has_fair_value": false
 },
 {
@@ -12328,6 +12719,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.94,
+"earnings_yield": 5.54,
 "has_fair_value": false
 },
 {
@@ -12359,6 +12751,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.74,
+"earnings_yield": 5.79,
 "has_fair_value": false
 },
 {
@@ -12390,6 +12783,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.49,
+"earnings_yield": 3.88,
 "has_fair_value": false
 },
 {
@@ -12421,6 +12815,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.64,
+"earnings_yield": 4.47,
 "has_fair_value": false
 },
 {
@@ -12452,6 +12847,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.88,
+"earnings_yield": 6.68,
 "has_fair_value": false
 },
 {
@@ -12483,6 +12879,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.9,
+"earnings_yield": 6.19,
 "has_fair_value": false
 },
 {
@@ -12514,6 +12911,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.79,
+"earnings_yield": 3.84,
 "has_fair_value": false
 },
 {
@@ -12545,6 +12943,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -0.37,
+"earnings_yield": 11.23,
 "has_fair_value": false
 },
 {
@@ -12576,6 +12975,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.52,
+"earnings_yield": 7.32,
 "has_fair_value": false
 },
 {
@@ -12607,6 +13007,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.64,
+"earnings_yield": 5.77,
 "has_fair_value": false
 },
 {
@@ -12638,6 +13039,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 3.67,
+"earnings_yield": 0.93,
 "has_fair_value": false
 },
 {
@@ -12669,6 +13071,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.55,
+"earnings_yield": 6.44,
 "has_fair_value": false
 },
 {
@@ -12700,6 +13103,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.69,
+"earnings_yield": 4.28,
 "has_fair_value": false
 },
 {
@@ -12731,6 +13135,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.98,
+"earnings_yield": 4.28,
 "has_fair_value": false
 },
 {
@@ -12764,6 +13169,7 @@
 "implied_basis": "earnings",
 "required_return": 0.085,
 "fcf_conversion": 0.23,
+"earnings_yield": 7.31,
 "has_fair_value": false
 },
 {
@@ -12795,6 +13201,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.38,
+"earnings_yield": 7.14,
 "has_fair_value": false
 },
 {
@@ -12826,6 +13233,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.54,
+"earnings_yield": 6.6,
 "has_fair_value": false
 },
 {
@@ -12857,6 +13265,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.22,
+"earnings_yield": 2.42,
 "has_fair_value": false
 },
 {
@@ -12888,6 +13297,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.47,
+"earnings_yield": 7.2,
 "has_fair_value": false
 },
 {
@@ -12919,6 +13329,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.39,
+"earnings_yield": 6.08,
 "has_fair_value": false
 },
 {
@@ -12950,6 +13361,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.86,
+"earnings_yield": 6.51,
 "has_fair_value": false
 },
 {
@@ -12981,6 +13393,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.57,
+"earnings_yield": 0.61,
 "has_fair_value": false
 },
 {
@@ -13012,6 +13425,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 1.51,
+"earnings_yield": 4.46,
 "has_fair_value": false
 },
 {
@@ -13043,6 +13457,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.51,
+"earnings_yield": 9.5,
 "has_fair_value": false
 },
 {
@@ -13074,6 +13489,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": -0.1,
+"earnings_yield": 2.71,
 "has_fair_value": false
 },
 {
@@ -13105,6 +13521,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 7.6,
 "has_fair_value": false
 },
 {
@@ -13136,6 +13553,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.66,
+"earnings_yield": 3.08,
 "has_fair_value": false
 },
 {
@@ -13169,6 +13587,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.79,
+"earnings_yield": 10.81,
 "has_fair_value": false
 },
 {
@@ -13200,6 +13619,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.99,
+"earnings_yield": 1.09,
 "has_fair_value": false
 },
 {
@@ -13231,6 +13651,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.64,
+"earnings_yield": 5.52,
 "has_fair_value": false
 },
 {
@@ -13262,6 +13683,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.73,
+"earnings_yield": 2.22,
 "has_fair_value": false
 },
 {
@@ -13293,6 +13715,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 3.42,
 "has_fair_value": false
 },
 {
@@ -13324,6 +13747,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.94,
+"earnings_yield": 5.89,
 "has_fair_value": false
 },
 {
@@ -13355,6 +13779,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.66,
+"earnings_yield": 4.2,
 "has_fair_value": false
 },
 {
@@ -13388,6 +13813,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.87,
+"earnings_yield": 15.09,
 "has_fair_value": false
 },
 {
@@ -13419,6 +13845,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.15,
+"earnings_yield": 7.73,
 "has_fair_value": false
 },
 {
@@ -13450,6 +13877,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 10.58,
 "has_fair_value": false
 },
 {
@@ -13481,6 +13909,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": null,
+"earnings_yield": 5.86,
 "has_fair_value": false
 },
 {
@@ -13512,6 +13941,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 9.7,
 "has_fair_value": false
 },
 {
@@ -13545,6 +13975,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.45,
+"earnings_yield": 6.93,
 "has_fair_value": false
 },
 {
@@ -13576,6 +14007,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.52,
+"earnings_yield": 5.82,
 "has_fair_value": false
 },
 {
@@ -13607,6 +14039,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": -0.54,
+"earnings_yield": 2.46,
 "has_fair_value": false
 },
 {
@@ -13638,6 +14071,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.2,
+"earnings_yield": 6.16,
 "has_fair_value": false
 },
 {
@@ -13669,6 +14103,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.63,
+"earnings_yield": 4.93,
 "has_fair_value": false
 },
 {
@@ -13700,6 +14135,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.82,
+"earnings_yield": 8.17,
 "has_fair_value": false
 },
 {
@@ -13731,6 +14167,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.14,
+"earnings_yield": 14.71,
 "has_fair_value": false
 },
 {
@@ -13762,6 +14199,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.06,
+"earnings_yield": 1.23,
 "has_fair_value": false
 },
 {
@@ -13793,6 +14231,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 0.82,
+"earnings_yield": 4.35,
 "has_fair_value": false
 },
 {
@@ -13824,6 +14263,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 3.73,
+"earnings_yield": 1.15,
 "has_fair_value": false
 },
 {
@@ -13855,6 +14295,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.47,
+"earnings_yield": 9.3,
 "has_fair_value": false
 },
 {
@@ -13886,6 +14327,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -0.37,
+"earnings_yield": 7.8,
 "has_fair_value": false
 },
 {
@@ -13917,6 +14359,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": 0.24,
+"earnings_yield": 6.47,
 "has_fair_value": false
 },
 {
@@ -13948,6 +14391,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 1.22,
+"earnings_yield": 0.61,
 "has_fair_value": false
 },
 {
@@ -13979,6 +14423,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": -1.85,
+"earnings_yield": 9.93,
 "has_fair_value": false
 },
 {
@@ -14010,6 +14455,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.73,
+"earnings_yield": 4.41,
 "has_fair_value": false
 },
 {
@@ -14041,6 +14487,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.36,
+"earnings_yield": 9.54,
 "has_fair_value": false
 },
 {
@@ -14072,6 +14519,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.59,
+"earnings_yield": 6.09,
 "has_fair_value": false
 },
 {
@@ -14103,6 +14551,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.95,
+"earnings_yield": 4.82,
 "has_fair_value": false
 },
 {
@@ -14134,6 +14583,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": 0.1,
+"earnings_yield": 6.55,
 "has_fair_value": false
 },
 {
@@ -14165,6 +14615,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.72,
+"earnings_yield": 6.44,
 "has_fair_value": false
 },
 {
@@ -14196,6 +14647,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.28,
+"earnings_yield": 3.1,
 "has_fair_value": false
 },
 {
@@ -14227,6 +14679,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.73,
+"earnings_yield": 7.79,
 "has_fair_value": false
 },
 {
@@ -14258,6 +14711,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": -0.24,
+"earnings_yield": 4.88,
 "has_fair_value": false
 },
 {
@@ -14289,6 +14743,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -2.79,
+"earnings_yield": 6.44,
 "has_fair_value": false
 },
 {
@@ -14322,6 +14777,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.95,
+"earnings_yield": 8.49,
 "has_fair_value": false
 },
 {
@@ -14353,6 +14809,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": -2.96,
+"earnings_yield": 11.81,
 "has_fair_value": false
 },
 {
@@ -14386,6 +14843,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.31,
+"earnings_yield": 9.19,
 "has_fair_value": false
 },
 {
@@ -14417,6 +14875,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.67,
+"earnings_yield": 7.78,
 "has_fair_value": false
 },
 {
@@ -14448,6 +14907,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": 8.11,
 "has_fair_value": false
 },
 {
@@ -14481,6 +14941,7 @@
 "implied_basis": "earnings",
 "required_return": 0.085,
 "fcf_conversion": -0.48,
+"earnings_yield": 3.79,
 "has_fair_value": false
 },
 {
@@ -14514,6 +14975,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 3.65,
+"earnings_yield": 8.61,
 "has_fair_value": false
 },
 {
@@ -14547,6 +15009,7 @@
 "implied_basis": "earnings",
 "required_return": 0.085,
 "fcf_conversion": 0.02,
+"earnings_yield": 4.47,
 "has_fair_value": false
 },
 {
@@ -14580,6 +15043,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.31,
+"earnings_yield": 5.12,
 "has_fair_value": false
 },
 {
@@ -14613,6 +15077,7 @@
 "implied_basis": "fcf",
 "required_return": 0.085,
 "fcf_conversion": 0.62,
+"earnings_yield": 6.63,
 "has_fair_value": false
 },
 {
@@ -14646,6 +15111,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.71,
+"earnings_yield": 7.24,
 "has_fair_value": false
 },
 {
@@ -14679,6 +15145,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 18.54,
+"earnings_yield": 8.19,
 "has_fair_value": false
 },
 {
@@ -14710,6 +15177,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -7.63,
+"earnings_yield": 7.11,
 "has_fair_value": false
 },
 {
@@ -14743,6 +15211,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": null,
+"earnings_yield": null,
 "has_fair_value": false
 },
 {
@@ -14774,6 +15243,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -0.63,
+"earnings_yield": 4.95,
 "has_fair_value": false
 },
 {
@@ -14805,6 +15275,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.66,
+"earnings_yield": 6.39,
 "has_fair_value": false
 },
 {
@@ -14836,6 +15307,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": null,
+"earnings_yield": 5.63,
 "has_fair_value": false
 },
 {
@@ -14867,6 +15339,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 2.13,
+"earnings_yield": 2.78,
 "has_fair_value": false
 },
 {
@@ -14898,6 +15371,7 @@
 "implied_basis": "fcf",
 "required_return": 0.075,
 "fcf_conversion": 1.11,
+"earnings_yield": 1.13,
 "has_fair_value": false
 },
 {
@@ -14929,6 +15403,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.51,
+"earnings_yield": 6.58,
 "has_fair_value": false
 },
 {
@@ -14962,6 +15437,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 1.03,
+"earnings_yield": 9.1,
 "has_fair_value": false
 },
 {
@@ -14993,6 +15469,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.73,
+"earnings_yield": 3.4,
 "has_fair_value": false
 },
 {
@@ -15024,6 +15501,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": 0.19,
+"earnings_yield": 2.83,
 "has_fair_value": false
 },
 {
@@ -15055,6 +15533,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.6,
+"earnings_yield": 5.81,
 "has_fair_value": false
 },
 {
@@ -15088,6 +15567,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.77,
+"earnings_yield": 9.81,
 "has_fair_value": false
 },
 {
@@ -15119,6 +15599,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.69,
+"earnings_yield": 6.59,
 "has_fair_value": false
 },
 {
@@ -15153,6 +15634,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": 0.07,
+"earnings_yield": 3.58,
 "has_fair_value": false
 },
 {
@@ -15184,6 +15666,7 @@
 "implied_basis": "earnings",
 "required_return": 0.07,
 "fcf_conversion": -1.49,
+"earnings_yield": 6.87,
 "has_fair_value": false
 },
 {
@@ -15215,6 +15698,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.63,
+"earnings_yield": 3.19,
 "has_fair_value": false
 },
 {
@@ -15246,6 +15730,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.92,
+"earnings_yield": 3.85,
 "has_fair_value": false
 },
 {
@@ -15279,6 +15764,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 103.66,
+"earnings_yield": 0.2,
 "has_fair_value": false
 },
 {
@@ -15313,6 +15799,7 @@
 "implied_basis": "earnings",
 "required_return": 0.095,
 "fcf_conversion": 0.19,
+"earnings_yield": 6.23,
 "has_fair_value": false
 },
 {
@@ -15344,6 +15831,7 @@
 "implied_basis": "earnings",
 "required_return": 0.105,
 "fcf_conversion": -0.01,
+"earnings_yield": 7.07,
 "has_fair_value": false
 },
 {
@@ -15377,6 +15865,7 @@
 "implied_basis": "earnings",
 "required_return": 0.095,
 "fcf_conversion": -1.7,
+"earnings_yield": 4.74,
 "has_fair_value": false
 },
 {
@@ -15408,6 +15897,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.32,
+"earnings_yield": 6.04,
 "has_fair_value": false
 },
 {
@@ -15439,6 +15929,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": null,
+"earnings_yield": 6.46,
 "has_fair_value": false
 },
 {
@@ -15470,6 +15961,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.86,
+"earnings_yield": 3.32,
 "has_fair_value": false
 },
 {
@@ -15503,6 +15995,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.65,
+"earnings_yield": 4.96,
 "has_fair_value": false
 },
 {
@@ -15536,6 +16029,7 @@
 "implied_basis": "fcf",
 "required_return": 0.105,
 "fcf_conversion": 0.45,
+"earnings_yield": 1.72,
 "has_fair_value": false
 },
 {
@@ -15567,6 +16061,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 0.03,
+"earnings_yield": 3.53,
 "has_fair_value": false
 },
 {
@@ -15601,6 +16096,7 @@
 "implied_basis": "earnings",
 "required_return": 0.095,
 "fcf_conversion": -0.47,
+"earnings_yield": 5.19,
 "has_fair_value": false
 },
 {
@@ -15634,6 +16130,7 @@
 "implied_basis": "earnings",
 "required_return": 0.075,
 "fcf_conversion": 3.57,
+"earnings_yield": 1.52,
 "has_fair_value": false
 },
 {
@@ -15668,6 +16165,7 @@
 "implied_basis": "earnings",
 "required_return": 0.095,
 "fcf_conversion": -1.48,
+"earnings_yield": 7.3,
 "has_fair_value": false
 },
 {
@@ -15701,6 +16199,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": 0.76,
+"earnings_yield": 4.32,
 "has_fair_value": false
 },
 {
@@ -15734,6 +16233,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -2.85,
+"earnings_yield": 25.42,
 "has_fair_value": false
 },
 {
@@ -15767,6 +16267,7 @@
 "implied_basis": "earnings",
 "required_return": 0.09,
 "fcf_conversion": -1.02,
+"earnings_yield": 16.22,
 "has_fair_value": false
 },
 {
@@ -15802,6 +16303,7 @@
 "implied_basis": "fcf",
 "required_return": 0.09,
 "fcf_conversion": null,
+"earnings_yield": null,
 "has_fair_value": false
 }
 ]

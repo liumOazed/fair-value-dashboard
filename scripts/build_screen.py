@@ -120,7 +120,7 @@ for t, r in cur.iterrows():
         old_score=float(r.growth_score), consistent=(t in top_cur and t in top_prev), top50=t in top_cur, flags=r["flag_list"],
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
-        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, fcf_conversion=None if conv is None else round(conv, 2), has_fair_value=t in fv))
+        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
 out = dict(month=cur_m, prev_month=prev_m, built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
