@@ -51,8 +51,11 @@
 "ps": 2.25,
 "fcf_yield_pct": 7.32,
 "market_cap": 17434150912.0,
-"implied_fcf_growth": 0.0249,
+"implied_fcf_growth": 0.0156,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.76,
 "has_fair_value": false
 },
 {
@@ -81,8 +84,11 @@
 "ps": 4.72,
 "fcf_yield_pct": 7.25,
 "market_cap": 121532866560.0,
-"implied_fcf_growth": 0.0263,
+"implied_fcf_growth": 0.0169,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.82,
 "has_fair_value": false
 },
 {
@@ -109,8 +115,11 @@
 "ps": 2.01,
 "fcf_yield_pct": 10.87,
 "market_cap": 31609012224.0,
-"implied_fcf_growth": -0.0304,
+"implied_fcf_growth": -0.0479,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.17,
 "has_fair_value": false
 },
 {
@@ -139,8 +148,11 @@
 "ps": 1.7,
 "fcf_yield_pct": 14.75,
 "market_cap": 14553602048.0,
-"implied_fcf_growth": -0.0747,
+"implied_fcf_growth": -0.0994,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 1.37,
 "has_fair_value": false
 },
 {
@@ -171,8 +183,11 @@
 "ps": 12.58,
 "fcf_yield_pct": 3.03,
 "market_cap": 254752964608.0,
-"implied_fcf_growth": 0.1452,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0566,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.115,
+"fcf_conversion": 0.2,
 "has_fair_value": false
 },
 {
@@ -201,8 +216,11 @@
 "ps": 4.23,
 "fcf_yield_pct": 4.8,
 "market_cap": 24597370880.0,
-"implied_fcf_growth": 0.0827,
+"implied_fcf_growth": 0.0619,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.66,
 "has_fair_value": false
 },
 {
@@ -229,8 +247,11 @@
 "ps": 2.49,
 "fcf_yield_pct": 5.56,
 "market_cap": 12366778368.0,
-"implied_fcf_growth": 0.0627,
+"implied_fcf_growth": 0.0425,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.75,
 "has_fair_value": false
 },
 {
@@ -259,8 +280,11 @@
 "ps": 5.35,
 "fcf_yield_pct": 6.05,
 "market_cap": 12795951104.0,
-"implied_fcf_growth": 0.0511,
+"implied_fcf_growth": 0.0605,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.69,
 "has_fair_value": true
 },
 {
@@ -289,8 +313,11 @@
 "ps": 14.29,
 "fcf_yield_pct": 3.26,
 "market_cap": 97566908416.0,
-"implied_fcf_growth": 0.1352,
+"implied_fcf_growth": 0.113,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.45,
 "has_fair_value": true
 },
 {
@@ -317,8 +344,11 @@
 "ps": 4.33,
 "fcf_yield_pct": 6.31,
 "market_cap": 122407395328.0,
-"implied_fcf_growth": 0.0454,
+"implied_fcf_growth": 0.0257,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.83,
 "has_fair_value": false
 },
 {
@@ -347,8 +377,11 @@
 "ps": 3.67,
 "fcf_yield_pct": 9.8,
 "market_cap": 95376154624.0,
-"implied_fcf_growth": -0.0157,
+"implied_fcf_growth": -0.0072,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.85,
 "has_fair_value": true
 },
 {
@@ -375,8 +408,11 @@
 "ps": 2.87,
 "fcf_yield_pct": 6.1,
 "market_cap": 22938019840.0,
-"implied_fcf_growth": 0.05,
+"implied_fcf_growth": 0.0302,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -405,8 +441,11 @@
 "ps": 2.7,
 "fcf_yield_pct": 6.2,
 "market_cap": 72259133440.0,
-"implied_fcf_growth": 0.0478,
+"implied_fcf_growth": 0.0175,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.57,
 "has_fair_value": false
 },
 {
@@ -433,8 +472,11 @@
 "ps": 5.5,
 "fcf_yield_pct": 8.03,
 "market_cap": 112440549376.0,
-"implied_fcf_growth": 0.0121,
+"implied_fcf_growth": -0.0066,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.92,
 "has_fair_value": false
 },
 {
@@ -465,8 +507,11 @@
 "ps": 13.33,
 "fcf_yield_pct": 0.64,
 "market_cap": 1202927960064.0,
-"implied_fcf_growth": 0.3636,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0568,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.115,
+"fcf_conversion": 0.04,
 "has_fair_value": false
 },
 {
@@ -493,8 +538,11 @@
 "ps": 1.69,
 "fcf_yield_pct": 5.72,
 "market_cap": 12474712064.0,
-"implied_fcf_growth": 0.0588,
+"implied_fcf_growth": 0.0387,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.81,
 "has_fair_value": false
 },
 {
@@ -521,8 +569,11 @@
 "ps": 10.98,
 "fcf_yield_pct": 3.41,
 "market_cap": 76213207040.0,
-"implied_fcf_growth": 0.1291,
+"implied_fcf_growth": 0.07,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.01,
 "has_fair_value": false
 },
 {
@@ -551,8 +602,11 @@
 "ps": 2.11,
 "fcf_yield_pct": 10.69,
 "market_cap": 12482574336.0,
-"implied_fcf_growth": -0.028,
+"implied_fcf_growth": -0.0366,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 1.0,
 "has_fair_value": false
 },
 {
@@ -579,8 +633,11 @@
 "ps": 1.93,
 "fcf_yield_pct": 8.19,
 "market_cap": 10641250304.0,
-"implied_fcf_growth": 0.0094,
+"implied_fcf_growth": -0.0092,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -611,8 +668,11 @@
 "ps": 18.2,
 "fcf_yield_pct": 0.76,
 "market_cap": 5514691870720.0,
-"implied_fcf_growth": 0.3385,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0604,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.115,
+"fcf_conversion": 0.11,
 "has_fair_value": true
 },
 {
@@ -641,8 +701,11 @@
 "ps": 18.81,
 "fcf_yield_pct": 1.83,
 "market_cap": 1676451119104.0,
-"implied_fcf_growth": 0.2143,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.2478,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.115,
+"fcf_conversion": 0.33,
 "has_fair_value": true
 },
 {
@@ -669,8 +732,11 @@
 "ps": 1.75,
 "fcf_yield_pct": 12.2,
 "market_cap": 24459796480.0,
-"implied_fcf_growth": -0.047,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.0061,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 2.15,
 "has_fair_value": false
 },
 {
@@ -697,8 +763,11 @@
 "ps": 0.8,
 "fcf_yield_pct": 27.02,
 "market_cap": 56099065856.0,
-"implied_fcf_growth": -0.1703,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0957,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 2.16,
 "has_fair_value": false
 },
 {
@@ -725,8 +794,11 @@
 "ps": 2.06,
 "fcf_yield_pct": 11.16,
 "market_cap": 41287458816.0,
-"implied_fcf_growth": -0.0342,
+"implied_fcf_growth": -0.0515,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.34,
 "has_fair_value": false
 },
 {
@@ -753,8 +825,11 @@
 "ps": 2.59,
 "fcf_yield_pct": 6.37,
 "market_cap": 127465398272.0,
-"implied_fcf_growth": 0.0441,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0244,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.61,
 "has_fair_value": false
 },
 {
@@ -783,8 +858,11 @@
 "ps": 1.39,
 "fcf_yield_pct": 15.64,
 "market_cap": 16966725632.0,
-"implied_fcf_growth": -0.0835,
+"implied_fcf_growth": -0.076,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -811,8 +889,11 @@
 "ps": 9.86,
 "fcf_yield_pct": 2.47,
 "market_cap": 27404959744.0,
-"implied_fcf_growth": 0.1731,
+"implied_fcf_growth": 0.1498,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.36,
 "has_fair_value": false
 },
 {
@@ -839,8 +920,11 @@
 "ps": 5.98,
 "fcf_yield_pct": 2.44,
 "market_cap": 59842363392.0,
-"implied_fcf_growth": 0.1747,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1515,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -869,8 +953,11 @@
 "ps": 5.08,
 "fcf_yield_pct": 7.63,
 "market_cap": 25515321344.0,
-"implied_fcf_growth": 0.0192,
+"implied_fcf_growth": 0.0282,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.94,
 "has_fair_value": false
 },
 {
@@ -897,8 +984,11 @@
 "ps": 6.12,
 "fcf_yield_pct": 6.21,
 "market_cap": 253147398144.0,
-"implied_fcf_growth": 0.0475,
+"implied_fcf_growth": 0.0278,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 2.35,
 "has_fair_value": false
 },
 {
@@ -927,8 +1017,11 @@
 "ps": 0.72,
 "fcf_yield_pct": 8.33,
 "market_cap": 111043731456.0,
-"implied_fcf_growth": 0.007,
+"implied_fcf_growth": -0.0214,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.7,
 "has_fair_value": false
 },
 {
@@ -955,8 +1048,11 @@
 "ps": 3.05,
 "fcf_yield_pct": 3.7,
 "market_cap": 13076106240.0,
-"implied_fcf_growth": 0.118,
+"implied_fcf_growth": 0.0963,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.58,
 "has_fair_value": false
 },
 {
@@ -983,8 +1079,11 @@
 "ps": 2.14,
 "fcf_yield_pct": -2.24,
 "market_cap": 37800185856.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0208,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -0.35,
 "has_fair_value": false
 },
 {
@@ -1011,8 +1110,11 @@
 "ps": 1.06,
 "fcf_yield_pct": 0.4,
 "market_cap": 20676055040.0,
-"implied_fcf_growth": 0.4338,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.102,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": 0.03,
 "has_fair_value": false
 },
 {
@@ -1039,8 +1141,11 @@
 "ps": 2.94,
 "fcf_yield_pct": 4.9,
 "market_cap": 110376812544.0,
-"implied_fcf_growth": 0.0799,
+"implied_fcf_growth": 0.0592,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.66,
 "has_fair_value": false
 },
 {
@@ -1067,8 +1172,11 @@
 "ps": 5.03,
 "fcf_yield_pct": 3.93,
 "market_cap": 78067687424.0,
-"implied_fcf_growth": 0.1098,
+"implied_fcf_growth": 0.0883,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.49,
 "has_fair_value": false
 },
 {
@@ -1097,8 +1205,11 @@
 "ps": 12.95,
 "fcf_yield_pct": 1.07,
 "market_cap": 1031816085504.0,
-"implied_fcf_growth": 0.2894,
+"implied_fcf_growth": 0.2632,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.26,
 "has_fair_value": true
 },
 {
@@ -1125,8 +1236,11 @@
 "ps": 6.36,
 "fcf_yield_pct": 2.92,
 "market_cap": 161665777664.0,
-"implied_fcf_growth": 0.1502,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1276,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.56,
 "has_fair_value": false
 },
 {
@@ -1153,8 +1267,11 @@
 "ps": 6.99,
 "fcf_yield_pct": 3.27,
 "market_cap": 297414623232.0,
-"implied_fcf_growth": 0.1348,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1126,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.68,
 "has_fair_value": false
 },
 {
@@ -1181,8 +1298,11 @@
 "ps": 0.61,
 "fcf_yield_pct": 3.84,
 "market_cap": 20106633216.0,
-"implied_fcf_growth": 0.113,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0415,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.07,
+"fcf_conversion": 0.33,
 "has_fair_value": false
 },
 {
@@ -1209,8 +1329,11 @@
 "ps": 3.88,
 "fcf_yield_pct": null,
 "market_cap": 262159073280.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0398,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -1239,8 +1362,11 @@
 "ps": 5.61,
 "fcf_yield_pct": 7.23,
 "market_cap": 43681001472.0,
-"implied_fcf_growth": 0.0267,
+"implied_fcf_growth": 0.0357,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.06,
 "has_fair_value": false
 },
 {
@@ -1267,8 +1393,11 @@
 "ps": 3.93,
 "fcf_yield_pct": 3.35,
 "market_cap": 47192252416.0,
-"implied_fcf_growth": 0.1315,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1094,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.53,
 "has_fair_value": false
 },
 {
@@ -1297,8 +1426,11 @@
 "ps": 3.17,
 "fcf_yield_pct": 9.78,
 "market_cap": 51470434304.0,
-"implied_fcf_growth": -0.0154,
+"implied_fcf_growth": -0.0429,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.96,
 "has_fair_value": false
 },
 {
@@ -1325,8 +1457,11 @@
 "ps": 5.98,
 "fcf_yield_pct": 3.79,
 "market_cap": 227881795584.0,
-"implied_fcf_growth": 0.1148,
+"implied_fcf_growth": 0.0931,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.65,
 "has_fair_value": false
 },
 {
@@ -1355,8 +1490,11 @@
 "ps": 3.44,
 "fcf_yield_pct": 8.62,
 "market_cap": 73679634432.0,
-"implied_fcf_growth": 0.0023,
+"implied_fcf_growth": 0.011,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.88,
 "has_fair_value": false
 },
 {
@@ -1385,8 +1523,11 @@
 "ps": 12.68,
 "fcf_yield_pct": 1.38,
 "market_cap": 163851419648.0,
-"implied_fcf_growth": 0.2535,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.058,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.115,
+"fcf_conversion": 0.2,
 "has_fair_value": false
 },
 {
@@ -1415,8 +1556,11 @@
 "ps": 1.41,
 "fcf_yield_pct": 4.76,
 "market_cap": 23192559616.0,
-"implied_fcf_growth": 0.0838,
+"implied_fcf_growth": 0.0736,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.57,
 "has_fair_value": false
 },
 {
@@ -1443,8 +1587,11 @@
 "ps": 0.82,
 "fcf_yield_pct": 7.78,
 "market_cap": 19337048064.0,
-"implied_fcf_growth": 0.0165,
+"implied_fcf_growth": -0.0023,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.75,
 "has_fair_value": false
 },
 {
@@ -1471,8 +1618,11 @@
 "ps": 0.9,
 "fcf_yield_pct": 21.09,
 "market_cap": 20200091648.0,
-"implied_fcf_growth": -0.1296,
+"implied_fcf_growth": -0.1439,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.33,
 "has_fair_value": false
 },
 {
@@ -1499,8 +1649,11 @@
 "ps": 6.49,
 "fcf_yield_pct": null,
 "market_cap": 169025273856.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0378,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -1527,8 +1680,11 @@
 "ps": 2.5,
 "fcf_yield_pct": 5.88,
 "market_cap": 16123627520.0,
-"implied_fcf_growth": 0.055,
+"implied_fcf_growth": 0.035,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -1555,8 +1711,11 @@
 "ps": 1.79,
 "fcf_yield_pct": 9.04,
 "market_cap": 24489582592.0,
-"implied_fcf_growth": -0.0044,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0226,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.97,
 "has_fair_value": false
 },
 {
@@ -1583,8 +1742,11 @@
 "ps": 7.97,
 "fcf_yield_pct": 5.53,
 "market_cap": 13438593024.0,
-"implied_fcf_growth": 0.0634,
+"implied_fcf_growth": 0.0092,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.58,
 "has_fair_value": false
 },
 {
@@ -1615,8 +1777,11 @@
 "ps": 2.12,
 "fcf_yield_pct": 36.41,
 "market_cap": 21611382784.0,
-"implied_fcf_growth": -0.2235,
+"implied_fcf_growth": -0.2348,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.86,
 "has_fair_value": false
 },
 {
@@ -1645,8 +1810,11 @@
 "ps": 2.31,
 "fcf_yield_pct": 6.85,
 "market_cap": 55299940352.0,
-"implied_fcf_growth": 0.0341,
+"implied_fcf_growth": 0.0044,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.94,
 "has_fair_value": false
 },
 {
@@ -1673,8 +1841,11 @@
 "ps": 2.96,
 "fcf_yield_pct": 2.62,
 "market_cap": 9048642560.0,
-"implied_fcf_growth": 0.165,
+"implied_fcf_growth": 0.142,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.44,
 "has_fair_value": false
 },
 {
@@ -1701,8 +1872,11 @@
 "ps": 0.8,
 "fcf_yield_pct": 5.13,
 "market_cap": 54885220352.0,
-"implied_fcf_growth": 0.0736,
+"implied_fcf_growth": 0.0531,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.52,
 "has_fair_value": false
 },
 {
@@ -1729,8 +1903,11 @@
 "ps": 20.51,
 "fcf_yield_pct": null,
 "market_cap": 101146763264.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0834,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -1757,8 +1934,11 @@
 "ps": 6.17,
 "fcf_yield_pct": 1.06,
 "market_cap": 25291749376.0,
-"implied_fcf_growth": 0.2907,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.101,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.08,
 "has_fair_value": false
 },
 {
@@ -1785,8 +1965,11 @@
 "ps": 1.79,
 "fcf_yield_pct": 4.52,
 "market_cap": 173099515904.0,
-"implied_fcf_growth": 0.0908,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0699,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -1813,8 +1996,11 @@
 "ps": 6.97,
 "fcf_yield_pct": 4.83,
 "market_cap": 21846687744.0,
-"implied_fcf_growth": 0.0818,
+"implied_fcf_growth": 0.0611,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.93,
 "has_fair_value": false
 },
 {
@@ -1841,8 +2027,11 @@
 "ps": 5.99,
 "fcf_yield_pct": 8.76,
 "market_cap": 289726922752.0,
-"implied_fcf_growth": 0.0,
+"implied_fcf_growth": -0.0183,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.6,
 "has_fair_value": false
 },
 {
@@ -1869,8 +2058,11 @@
 "ps": 2.53,
 "fcf_yield_pct": 4.16,
 "market_cap": 21155866624.0,
-"implied_fcf_growth": 0.1021,
+"implied_fcf_growth": 0.0808,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.7,
 "has_fair_value": false
 },
 {
@@ -1897,8 +2089,11 @@
 "ps": 2.92,
 "fcf_yield_pct": 9.12,
 "market_cap": 22195515392.0,
-"implied_fcf_growth": -0.0056,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0652,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.92,
 "has_fair_value": false
 },
 {
@@ -1927,8 +2122,11 @@
 "ps": 2.6,
 "fcf_yield_pct": 11.74,
 "market_cap": 13180886016.0,
-"implied_fcf_growth": -0.0414,
+"implied_fcf_growth": -0.0333,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.78,
 "has_fair_value": false
 },
 {
@@ -1955,8 +2153,11 @@
 "ps": 2.6,
 "fcf_yield_pct": 5.51,
 "market_cap": 31667894272.0,
-"implied_fcf_growth": 0.0639,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0437,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.88,
 "has_fair_value": false
 },
 {
@@ -1985,8 +2186,11 @@
 "ps": 3.27,
 "fcf_yield_pct": 8.1,
 "market_cap": 30375059456.0,
-"implied_fcf_growth": 0.0109,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0177,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 1.05,
 "has_fair_value": false
 },
 {
@@ -2013,8 +2217,11 @@
 "ps": 0.57,
 "fcf_yield_pct": 4.85,
 "market_cap": 10270276608.0,
-"implied_fcf_growth": 0.0813,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0605,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.35,
 "has_fair_value": false
 },
 {
@@ -2041,8 +2248,11 @@
 "ps": 2.19,
 "fcf_yield_pct": 6.68,
 "market_cap": 43490861056.0,
-"implied_fcf_growth": 0.0375,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0726,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -2069,8 +2279,11 @@
 "ps": 3.06,
 "fcf_yield_pct": 8.06,
 "market_cap": 20377772032.0,
-"implied_fcf_growth": 0.0116,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0363,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.02,
 "has_fair_value": false
 },
 {
@@ -2097,8 +2310,11 @@
 "ps": 13.07,
 "fcf_yield_pct": 4.28,
 "market_cap": 126216339456.0,
-"implied_fcf_growth": 0.0983,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0415,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.67,
 "has_fair_value": false
 },
 {
@@ -2125,8 +2341,11 @@
 "ps": 3.03,
 "fcf_yield_pct": 6.99,
 "market_cap": 28855406592.0,
-"implied_fcf_growth": 0.0313,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.012,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.75,
 "has_fair_value": false
 },
 {
@@ -2153,8 +2372,11 @@
 "ps": 1.07,
 "fcf_yield_pct": 4.91,
 "market_cap": 21393606656.0,
-"implied_fcf_growth": 0.0796,
+"implied_fcf_growth": 0.0589,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.71,
 "has_fair_value": false
 },
 {
@@ -2181,8 +2403,11 @@
 "ps": 5.5,
 "fcf_yield_pct": -11.25,
 "market_cap": 157991993344.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0094,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.94,
 "has_fair_value": false
 },
 {
@@ -2209,8 +2434,11 @@
 "ps": 4.8,
 "fcf_yield_pct": 11.62,
 "market_cap": 14157676544.0,
-"implied_fcf_growth": -0.0399,
+"implied_fcf_growth": -0.086,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 16.58,
 "has_fair_value": false
 },
 {
@@ -2237,8 +2465,11 @@
 "ps": 8.65,
 "fcf_yield_pct": null,
 "market_cap": 133980921856.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0143,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -2265,8 +2496,11 @@
 "ps": 4.87,
 "fcf_yield_pct": -6.94,
 "market_cap": 25729443840.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0072,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.37,
 "has_fair_value": false
 },
 {
@@ -2293,8 +2527,11 @@
 "ps": 4.54,
 "fcf_yield_pct": 5.94,
 "market_cap": 59896557568.0,
-"implied_fcf_growth": 0.0536,
+"implied_fcf_growth": 0.0631,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.78,
 "has_fair_value": false
 },
 {
@@ -2321,8 +2558,11 @@
 "ps": 5.58,
 "fcf_yield_pct": 2.84,
 "market_cap": 41263706112.0,
-"implied_fcf_growth": 0.154,
+"implied_fcf_growth": 0.1648,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.54,
 "has_fair_value": false
 },
 {
@@ -2349,8 +2589,11 @@
 "ps": 8.09,
 "fcf_yield_pct": 2.9,
 "market_cap": 92901490688.0,
-"implied_fcf_growth": 0.1512,
+"implied_fcf_growth": 0.1285,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.76,
 "has_fair_value": false
 },
 {
@@ -2377,8 +2620,11 @@
 "ps": 5.18,
 "fcf_yield_pct": 3.16,
 "market_cap": 58214584320.0,
-"implied_fcf_growth": 0.1395,
+"implied_fcf_growth": 0.1172,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.87,
 "has_fair_value": false
 },
 {
@@ -2405,8 +2651,11 @@
 "ps": 7.31,
 "fcf_yield_pct": 3.33,
 "market_cap": 96194912256.0,
-"implied_fcf_growth": 0.1323,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1102,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.86,
 "has_fair_value": false
 },
 {
@@ -2433,8 +2682,11 @@
 "ps": 7.09,
 "fcf_yield_pct": 4.82,
 "market_cap": 9466531840.0,
-"implied_fcf_growth": 0.0821,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0265,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.64,
 "has_fair_value": false
 },
 {
@@ -2461,8 +2713,11 @@
 "ps": 5.46,
 "fcf_yield_pct": 7.52,
 "market_cap": 15551110144.0,
-"implied_fcf_growth": 0.0212,
+"implied_fcf_growth": -0.0297,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 2.79,
 "has_fair_value": false
 },
 {
@@ -2489,8 +2744,11 @@
 "ps": 1.4,
 "fcf_yield_pct": 7.77,
 "market_cap": 12934762496.0,
-"implied_fcf_growth": 0.0167,
+"implied_fcf_growth": -0.0022,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.19,
 "has_fair_value": false
 },
 {
@@ -2517,8 +2775,11 @@
 "ps": 13.36,
 "fcf_yield_pct": 2.72,
 "market_cap": 46216884224.0,
-"implied_fcf_growth": 0.1599,
+"implied_fcf_growth": 0.137,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.76,
 "has_fair_value": false
 },
 {
@@ -2545,8 +2806,11 @@
 "ps": 2.37,
 "fcf_yield_pct": 9.96,
 "market_cap": 12096122880.0,
-"implied_fcf_growth": -0.018,
+"implied_fcf_growth": -0.0096,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.86,
 "has_fair_value": false
 },
 {
@@ -2573,8 +2837,11 @@
 "ps": 0.71,
 "fcf_yield_pct": 8.38,
 "market_cap": 67472371712.0,
-"implied_fcf_growth": 0.0062,
+"implied_fcf_growth": -0.0123,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.14,
 "has_fair_value": false
 },
 {
@@ -2603,8 +2870,11 @@
 "ps": 73.02,
 "fcf_yield_pct": 0.48,
 "market_cap": 449492090880.0,
-"implied_fcf_growth": 0.4063,
+"implied_fcf_growth": 0.4201,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.39,
 "has_fair_value": false
 },
 {
@@ -2631,8 +2901,11 @@
 "ps": 12.56,
 "fcf_yield_pct": 2.22,
 "market_cap": 92746752000.0,
-"implied_fcf_growth": 0.1877,
+"implied_fcf_growth": 0.1641,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.6,
 "has_fair_value": false
 },
 {
@@ -2659,8 +2932,11 @@
 "ps": 6.55,
 "fcf_yield_pct": 3.14,
 "market_cap": 32562460672.0,
-"implied_fcf_growth": 0.1403,
+"implied_fcf_growth": 0.118,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.87,
 "has_fair_value": false
 },
 {
@@ -2689,8 +2965,11 @@
 "ps": 8.09,
 "fcf_yield_pct": 1.17,
 "market_cap": 1847400464384.0,
-"implied_fcf_growth": 0.2767,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0618,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.24,
 "has_fair_value": false
 },
 {
@@ -2717,8 +2996,11 @@
 "ps": 6.97,
 "fcf_yield_pct": 3.83,
 "market_cap": 76273000448.0,
-"implied_fcf_growth": 0.1133,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0554,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 0.89,
 "has_fair_value": false
 },
 {
@@ -2745,8 +3027,11 @@
 "ps": 1.13,
 "fcf_yield_pct": 16.62,
 "market_cap": 33143898112.0,
-"implied_fcf_growth": -0.0926,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0811,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.48,
 "has_fair_value": false
 },
 {
@@ -2773,8 +3058,11 @@
 "ps": 1.64,
 "fcf_yield_pct": -6.45,
 "market_cap": 41622261760.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0417,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -0.86,
 "has_fair_value": false
 },
 {
@@ -2801,8 +3089,11 @@
 "ps": 3.01,
 "fcf_yield_pct": 3.88,
 "market_cap": 63258873856.0,
-"implied_fcf_growth": 0.1116,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.09,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.5,
 "has_fair_value": false
 },
 {
@@ -2829,8 +3120,11 @@
 "ps": 4.27,
 "fcf_yield_pct": 2.24,
 "market_cap": 37207334912.0,
-"implied_fcf_growth": 0.1864,
+"implied_fcf_growth": 0.1629,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.44,
 "has_fair_value": false
 },
 {
@@ -2857,8 +3151,11 @@
 "ps": 2.5,
 "fcf_yield_pct": 10.88,
 "market_cap": 15554925568.0,
-"implied_fcf_growth": -0.0305,
+"implied_fcf_growth": -0.0773,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 2.31,
 "has_fair_value": false
 },
 {
@@ -2885,8 +3182,11 @@
 "ps": 5.0,
 "fcf_yield_pct": 6.47,
 "market_cap": 79531843584.0,
-"implied_fcf_growth": 0.0419,
+"implied_fcf_growth": 0.0223,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.46,
 "has_fair_value": false
 },
 {
@@ -2913,8 +3213,11 @@
 "ps": 1.9,
 "fcf_yield_pct": 6.48,
 "market_cap": 174931296256.0,
-"implied_fcf_growth": 0.0417,
+"implied_fcf_growth": 0.0221,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.73,
 "has_fair_value": false
 },
 {
@@ -2941,8 +3244,11 @@
 "ps": 8.84,
 "fcf_yield_pct": 2.06,
 "market_cap": 81535729664.0,
-"implied_fcf_growth": 0.198,
+"implied_fcf_growth": 0.1741,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.65,
 "has_fair_value": false
 },
 {
@@ -2971,8 +3277,11 @@
 "ps": 1.43,
 "fcf_yield_pct": 3.67,
 "market_cap": 55085555712.0,
-"implied_fcf_growth": 0.1191,
+"implied_fcf_growth": 0.1085,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.47,
 "has_fair_value": false
 },
 {
@@ -2999,8 +3308,11 @@
 "ps": 0.8,
 "fcf_yield_pct": 9.34,
 "market_cap": 11159896064.0,
-"implied_fcf_growth": -0.009,
+"implied_fcf_growth": -0.0271,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.95,
 "has_fair_value": false
 },
 {
@@ -3027,8 +3339,11 @@
 "ps": 3.8,
 "fcf_yield_pct": null,
 "market_cap": 295392116736.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0251,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -3055,8 +3370,11 @@
 "ps": 6.81,
 "fcf_yield_pct": 5.85,
 "market_cap": 14898231296.0,
-"implied_fcf_growth": 0.0557,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0021,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.48,
 "has_fair_value": false
 },
 {
@@ -3083,8 +3401,11 @@
 "ps": 3.36,
 "fcf_yield_pct": null,
 "market_cap": 30831532032.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0861,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -3113,8 +3434,11 @@
 "ps": 3.21,
 "fcf_yield_pct": 3.19,
 "market_cap": 78476419072.0,
-"implied_fcf_growth": 0.1382,
+"implied_fcf_growth": 0.1273,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.76,
 "has_fair_value": false
 },
 {
@@ -3143,8 +3467,11 @@
 "ps": 2.46,
 "fcf_yield_pct": null,
 "market_cap": 118445531136.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.094,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -3171,8 +3498,11 @@
 "ps": 1.53,
 "fcf_yield_pct": 4.73,
 "market_cap": 117530189824.0,
-"implied_fcf_growth": 0.0847,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0639,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.74,
 "has_fair_value": false
 },
 {
@@ -3199,8 +3529,11 @@
 "ps": 0.25,
 "fcf_yield_pct": 11.11,
 "market_cap": 71828488192.0,
-"implied_fcf_growth": -0.0335,
+"implied_fcf_growth": -0.0509,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.9,
 "has_fair_value": false
 },
 {
@@ -3227,8 +3560,11 @@
 "ps": 1.6,
 "fcf_yield_pct": -8.04,
 "market_cap": 25072470016.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0292,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.18,
 "has_fair_value": false
 },
 {
@@ -3257,8 +3593,11 @@
 "ps": 17.2,
 "fcf_yield_pct": 0.93,
 "market_cap": 209733681152.0,
-"implied_fcf_growth": 0.3094,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0796,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.115,
+"fcf_conversion": 0.15,
 "has_fair_value": false
 },
 {
@@ -3285,8 +3624,11 @@
 "ps": 2.71,
 "fcf_yield_pct": -5.04,
 "market_cap": 88893849600.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0194,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -0.8,
 "has_fair_value": false
 },
 {
@@ -3313,8 +3655,11 @@
 "ps": 3.67,
 "fcf_yield_pct": 4.22,
 "market_cap": 171013783552.0,
-"implied_fcf_growth": 0.1002,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0789,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.69,
 "has_fair_value": false
 },
 {
@@ -3341,8 +3686,11 @@
 "ps": 1.39,
 "fcf_yield_pct": 2.34,
 "market_cap": 23740225536.0,
-"implied_fcf_growth": 0.1805,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0391,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.23,
 "has_fair_value": false
 },
 {
@@ -3369,8 +3717,11 @@
 "ps": 10.76,
 "fcf_yield_pct": 4.42,
 "market_cap": 52849299456.0,
-"implied_fcf_growth": 0.0939,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0374,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.22,
 "has_fair_value": false
 },
 {
@@ -3397,8 +3748,11 @@
 "ps": 1.31,
 "fcf_yield_pct": 6.07,
 "market_cap": 167198212096.0,
-"implied_fcf_growth": 0.0507,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0308,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.58,
 "has_fair_value": false
 },
 {
@@ -3425,8 +3779,11 @@
 "ps": 4.04,
 "fcf_yield_pct": 3.51,
 "market_cap": 22994587648.0,
-"implied_fcf_growth": 0.1252,
+"implied_fcf_growth": 0.1033,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.69,
 "has_fair_value": false
 },
 {
@@ -3453,8 +3810,11 @@
 "ps": 5.92,
 "fcf_yield_pct": 4.43,
 "market_cap": 16986827776.0,
-"implied_fcf_growth": 0.0936,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0371,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 0.87,
 "has_fair_value": false
 },
 {
@@ -3481,8 +3841,11 @@
 "ps": 3.7,
 "fcf_yield_pct": 2.74,
 "market_cap": 62291038208.0,
-"implied_fcf_growth": 0.1589,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1361,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.48,
 "has_fair_value": false
 },
 {
@@ -3509,8 +3872,11 @@
 "ps": 7.18,
 "fcf_yield_pct": 3.65,
 "market_cap": 462260207616.0,
-"implied_fcf_growth": 0.1199,
+"implied_fcf_growth": 0.0981,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.59,
 "has_fair_value": false
 },
 {
@@ -3537,8 +3903,11 @@
 "ps": 1.39,
 "fcf_yield_pct": 11.53,
 "market_cap": 12702345216.0,
-"implied_fcf_growth": -0.0388,
+"implied_fcf_growth": -0.056,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.26,
 "has_fair_value": false
 },
 {
@@ -3565,8 +3934,11 @@
 "ps": 2.13,
 "fcf_yield_pct": 11.45,
 "market_cap": 19311138816.0,
-"implied_fcf_growth": -0.0378,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0551,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.06,
 "has_fair_value": false
 },
 {
@@ -3595,8 +3967,11 @@
 "ps": 4.3,
 "fcf_yield_pct": 9.39,
 "market_cap": 188936110080.0,
-"implied_fcf_growth": -0.0097,
+"implied_fcf_growth": -0.0011,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.35,
 "has_fair_value": false
 },
 {
@@ -3623,8 +3998,11 @@
 "ps": 1.99,
 "fcf_yield_pct": 3.32,
 "market_cap": 24001468416.0,
-"implied_fcf_growth": 0.1328,
+"implied_fcf_growth": 0.1106,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -3651,8 +4029,11 @@
 "ps": 4.09,
 "fcf_yield_pct": 3.89,
 "market_cap": 105632186368.0,
-"implied_fcf_growth": 0.1112,
+"implied_fcf_growth": 0.0897,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -3679,8 +4060,11 @@
 "ps": 3.56,
 "fcf_yield_pct": 5.9,
 "market_cap": 18795051008.0,
-"implied_fcf_growth": 0.0545,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0346,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.0,
 "has_fair_value": false
 },
 {
@@ -3707,8 +4091,11 @@
 "ps": 2.88,
 "fcf_yield_pct": -7.36,
 "market_cap": 90001162240.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0031,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.4,
 "has_fair_value": false
 },
 {
@@ -3737,8 +4124,11 @@
 "ps": 13.77,
 "fcf_yield_pct": 3.51,
 "market_cap": 483093151744.0,
-"implied_fcf_growth": 0.1252,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0446,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.84,
 "has_fair_value": false
 },
 {
@@ -3765,8 +4155,11 @@
 "ps": 7.39,
 "fcf_yield_pct": 1.41,
 "market_cap": 370363432960.0,
-"implied_fcf_growth": 0.2505,
+"implied_fcf_growth": 0.2253,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.34,
 "has_fair_value": false
 },
 {
@@ -3793,8 +4186,11 @@
 "ps": 5.9,
 "fcf_yield_pct": 3.83,
 "market_cap": 163422732288.0,
-"implied_fcf_growth": 0.1133,
+"implied_fcf_growth": 0.0917,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -3821,8 +4217,11 @@
 "ps": 3.16,
 "fcf_yield_pct": -4.1,
 "market_cap": 95353585664.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0123,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -0.69,
 "has_fair_value": false
 },
 {
@@ -3849,8 +4248,11 @@
 "ps": 5.64,
 "fcf_yield_pct": 2.94,
 "market_cap": 31894185984.0,
-"implied_fcf_growth": 0.1493,
+"implied_fcf_growth": 0.1267,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.49,
 "has_fair_value": false
 },
 {
@@ -3877,8 +4279,11 @@
 "ps": 0.62,
 "fcf_yield_pct": 16.44,
 "market_cap": 77218332672.0,
-"implied_fcf_growth": -0.091,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.1065,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.0,
 "has_fair_value": false
 },
 {
@@ -3905,8 +4310,11 @@
 "ps": 13.85,
 "fcf_yield_pct": 2.16,
 "market_cap": 192231964672.0,
-"implied_fcf_growth": 0.1914,
+"implied_fcf_growth": 0.2027,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.52,
 "has_fair_value": false
 },
 {
@@ -3933,8 +4341,11 @@
 "ps": 4.72,
 "fcf_yield_pct": null,
 "market_cap": 879407726592.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0306,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -3961,8 +4372,11 @@
 "ps": 0.81,
 "fcf_yield_pct": -29.06,
 "market_cap": 10630236160.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.1381,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.83,
 "has_fair_value": false
 },
 {
@@ -3989,8 +4403,11 @@
 "ps": 3.36,
 "fcf_yield_pct": 7.5,
 "market_cap": 84655833088.0,
-"implied_fcf_growth": 0.0216,
+"implied_fcf_growth": 0.0026,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.25,
 "has_fair_value": false
 },
 {
@@ -4017,8 +4434,11 @@
 "ps": 1.76,
 "fcf_yield_pct": 3.9,
 "market_cap": 66855325696.0,
-"implied_fcf_growth": 0.1109,
+"implied_fcf_growth": 0.0893,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.83,
 "has_fair_value": false
 },
 {
@@ -4045,8 +4465,11 @@
 "ps": 13.2,
 "fcf_yield_pct": 1.8,
 "market_cap": 145686609920.0,
-"implied_fcf_growth": 0.2166,
+"implied_fcf_growth": 0.1922,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.61,
 "has_fair_value": false
 },
 {
@@ -4075,8 +4498,11 @@
 "ps": 2.51,
 "fcf_yield_pct": 10.46,
 "market_cap": 17540732928.0,
-"implied_fcf_growth": -0.0249,
+"implied_fcf_growth": -0.0336,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 1.71,
 "has_fair_value": false
 },
 {
@@ -4105,8 +4531,11 @@
 "ps": 9.35,
 "fcf_yield_pct": 0.54,
 "market_cap": 4167227932672.0,
-"implied_fcf_growth": 0.3887,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0727,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.12,
 "has_fair_value": false
 },
 {
@@ -4133,8 +4562,11 @@
 "ps": 3.23,
 "fcf_yield_pct": 5.08,
 "market_cap": 68014784512.0,
-"implied_fcf_growth": 0.075,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0544,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.06,
 "has_fair_value": false
 },
 {
@@ -4163,8 +4595,11 @@
 "ps": 1.54,
 "fcf_yield_pct": 7.53,
 "market_cap": 19467153408.0,
-"implied_fcf_growth": 0.021,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0081,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.74,
 "has_fair_value": false
 },
 {
@@ -4191,8 +4626,11 @@
 "ps": 4.45,
 "fcf_yield_pct": 3.32,
 "market_cap": 73273344000.0,
-"implied_fcf_growth": 0.1328,
+"implied_fcf_growth": 0.1106,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.69,
 "has_fair_value": false
 },
 {
@@ -4219,8 +4657,11 @@
 "ps": 1.73,
 "fcf_yield_pct": 3.36,
 "market_cap": 24167452672.0,
-"implied_fcf_growth": 0.1311,
+"implied_fcf_growth": 0.058,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.07,
+"fcf_conversion": 0.44,
 "has_fair_value": false
 },
 {
@@ -4249,8 +4690,11 @@
 "ps": 7.17,
 "fcf_yield_pct": 1.84,
 "market_cap": 207881011200.0,
-"implied_fcf_growth": 0.2135,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.247,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.115,
+"fcf_conversion": 0.47,
 "has_fair_value": false
 },
 {
@@ -4277,8 +4721,11 @@
 "ps": 0.26,
 "fcf_yield_pct": 15.25,
 "market_cap": 14412298240.0,
-"implied_fcf_growth": -0.0797,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0956,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.36,
 "has_fair_value": false
 },
 {
@@ -4305,8 +4752,11 @@
 "ps": 1.66,
 "fcf_yield_pct": 4.29,
 "market_cap": 21041641472.0,
-"implied_fcf_growth": 0.0979,
+"implied_fcf_growth": 0.0768,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.96,
 "has_fair_value": false
 },
 {
@@ -4333,8 +4783,11 @@
 "ps": 17.42,
 "fcf_yield_pct": 1.73,
 "market_cap": 131158646784.0,
-"implied_fcf_growth": 0.2221,
+"implied_fcf_growth": 0.2337,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.82,
 "has_fair_value": false
 },
 {
@@ -4361,8 +4814,11 @@
 "ps": 1.8,
 "fcf_yield_pct": 3.91,
 "market_cap": 23352848384.0,
-"implied_fcf_growth": 0.1105,
+"implied_fcf_growth": 0.089,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -4393,8 +4849,11 @@
 "ps": 14.04,
 "fcf_yield_pct": 0.7,
 "market_cap": 62678573056.0,
-"implied_fcf_growth": 0.3505,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1821,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.115,
+"fcf_conversion": 0.24,
 "has_fair_value": false
 },
 {
@@ -4423,8 +4882,11 @@
 "ps": 5.15,
 "fcf_yield_pct": 6.78,
 "market_cap": 15223429120.0,
-"implied_fcf_growth": 0.0355,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0447,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.07,
 "has_fair_value": false
 },
 {
@@ -4451,8 +4913,11 @@
 "ps": 1.54,
 "fcf_yield_pct": 2.1,
 "market_cap": 26417854464.0,
-"implied_fcf_growth": 0.1953,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.027,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.22,
 "has_fair_value": false
 },
 {
@@ -4479,8 +4944,11 @@
 "ps": 5.37,
 "fcf_yield_pct": -8.4,
 "market_cap": 26436571136.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0087,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.46,
 "has_fair_value": false
 },
 {
@@ -4509,8 +4977,11 @@
 "ps": 0.84,
 "fcf_yield_pct": 7.54,
 "market_cap": 111603556352.0,
-"implied_fcf_growth": 0.0209,
+"implied_fcf_growth": -0.0082,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -4539,8 +5010,11 @@
 "ps": 15.16,
 "fcf_yield_pct": 3.02,
 "market_cap": 674590031872.0,
-"implied_fcf_growth": 0.1456,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0446,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.72,
 "has_fair_value": false
 },
 {
@@ -4567,8 +5041,11 @@
 "ps": 0.57,
 "fcf_yield_pct": 2.53,
 "market_cap": 36011012096.0,
-"implied_fcf_growth": 0.1698,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0733,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.19,
 "has_fair_value": false
 },
 {
@@ -4595,8 +5072,11 @@
 "ps": 9.64,
 "fcf_yield_pct": 3.28,
 "market_cap": 78646681600.0,
-"implied_fcf_growth": 0.1344,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0448,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -4623,8 +5103,11 @@
 "ps": 3.35,
 "fcf_yield_pct": 3.98,
 "market_cap": 26846584832.0,
-"implied_fcf_growth": 0.1081,
+"implied_fcf_growth": 0.0867,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.86,
 "has_fair_value": false
 },
 {
@@ -4651,8 +5134,11 @@
 "ps": 0.88,
 "fcf_yield_pct": 7.04,
 "market_cap": 79497035776.0,
-"implied_fcf_growth": 0.0303,
+"implied_fcf_growth": 0.0111,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.82,
 "has_fair_value": false
 },
 {
@@ -4681,8 +5167,11 @@
 "ps": 9.44,
 "fcf_yield_pct": 0.54,
 "market_cap": 4208075997184.0,
-"implied_fcf_growth": 0.3887,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.074,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.12,
 "has_fair_value": true
 },
 {
@@ -4709,8 +5198,11 @@
 "ps": 3.41,
 "fcf_yield_pct": null,
 "market_cap": 30985369600.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0296,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -4737,8 +5229,11 @@
 "ps": 1.39,
 "fcf_yield_pct": 5.33,
 "market_cap": 29526730752.0,
-"implied_fcf_growth": 0.0684,
+"implied_fcf_growth": 0.0481,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -4767,8 +5262,11 @@
 "ps": 5.8,
 "fcf_yield_pct": -11.02,
 "market_cap": 416225099776.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0214,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": -1.38,
 "has_fair_value": false
 },
 {
@@ -4795,8 +5293,11 @@
 "ps": 0.96,
 "fcf_yield_pct": 10.78,
 "market_cap": 10649197568.0,
-"implied_fcf_growth": -0.0292,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0467,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.2,
 "has_fair_value": false
 },
 {
@@ -4823,8 +5324,11 @@
 "ps": 1.37,
 "fcf_yield_pct": 9.17,
 "market_cap": 190579539968.0,
-"implied_fcf_growth": -0.0064,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0246,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.8,
 "has_fair_value": false
 },
 {
@@ -4851,8 +5355,11 @@
 "ps": 1.18,
 "fcf_yield_pct": 4.05,
 "market_cap": 92389851136.0,
-"implied_fcf_growth": 0.1058,
+"implied_fcf_growth": 0.0844,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.54,
 "has_fair_value": false
 },
 {
@@ -4879,8 +5386,11 @@
 "ps": 5.31,
 "fcf_yield_pct": 5.38,
 "market_cap": 35064078336.0,
-"implied_fcf_growth": 0.0671,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0768,
+"implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.83,
 "has_fair_value": false
 },
 {
@@ -4907,8 +5417,11 @@
 "ps": 1.82,
 "fcf_yield_pct": 8.94,
 "market_cap": 11779809280.0,
-"implied_fcf_growth": -0.0028,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.0058,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.02,
 "has_fair_value": false
 },
 {
@@ -4935,8 +5448,11 @@
 "ps": 1.74,
 "fcf_yield_pct": 6.75,
 "market_cap": 13290432512.0,
-"implied_fcf_growth": 0.0361,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0167,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.98,
 "has_fair_value": false
 },
 {
@@ -4963,8 +5479,11 @@
 "ps": 1.1,
 "fcf_yield_pct": 5.82,
 "market_cap": 8179215872.0,
-"implied_fcf_growth": 0.0564,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0364,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.9,
 "has_fair_value": false
 },
 {
@@ -4991,8 +5510,11 @@
 "ps": 8.27,
 "fcf_yield_pct": 5.17,
 "market_cap": 29024589824.0,
-"implied_fcf_growth": 0.0726,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0177,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.41,
 "has_fair_value": false
 },
 {
@@ -5019,8 +5541,11 @@
 "ps": 8.85,
 "fcf_yield_pct": 4.11,
 "market_cap": 83350437888.0,
-"implied_fcf_growth": 0.1038,
+"implied_fcf_growth": 0.1139,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.96,
 "has_fair_value": false
 },
 {
@@ -5049,8 +5574,11 @@
 "ps": 24.36,
 "fcf_yield_pct": 1.52,
 "market_cap": 256772734976.0,
-"implied_fcf_growth": 0.24,
+"implied_fcf_growth": 0.2745,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.115,
+"fcf_conversion": 0.59,
 "has_fair_value": false
 },
 {
@@ -5077,8 +5605,11 @@
 "ps": 1.99,
 "fcf_yield_pct": null,
 "market_cap": 30355642368.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0525,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -5105,8 +5636,11 @@
 "ps": 3.65,
 "fcf_yield_pct": null,
 "market_cap": 88669216768.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0616,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -5133,8 +5667,11 @@
 "ps": 1.79,
 "fcf_yield_pct": 2.94,
 "market_cap": 33280477184.0,
-"implied_fcf_growth": 0.1493,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1267,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.6,
 "has_fair_value": false
 },
 {
@@ -5161,8 +5698,11 @@
 "ps": 0.6,
 "fcf_yield_pct": 19.21,
 "market_cap": 39185100800.0,
-"implied_fcf_growth": -0.1149,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.1017,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.47,
 "has_fair_value": false
 },
 {
@@ -5189,8 +5729,11 @@
 "ps": 1.2,
 "fcf_yield_pct": 5.32,
 "market_cap": 32996734976.0,
-"implied_fcf_growth": 0.0687,
+"implied_fcf_growth": 0.0483,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.5,
 "has_fair_value": false
 },
 {
@@ -5217,8 +5760,11 @@
 "ps": 0.31,
 "fcf_yield_pct": 4.24,
 "market_cap": 45819043840.0,
-"implied_fcf_growth": 0.0995,
+"implied_fcf_growth": 0.0783,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.98,
 "has_fair_value": false
 },
 {
@@ -5245,8 +5791,11 @@
 "ps": 10.53,
 "fcf_yield_pct": 1.98,
 "market_cap": 132511907840.0,
-"implied_fcf_growth": 0.2034,
+"implied_fcf_growth": 0.1794,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.52,
 "has_fair_value": false
 },
 {
@@ -5273,8 +5822,11 @@
 "ps": 9.89,
 "fcf_yield_pct": 1.32,
 "market_cap": 90200899584.0,
-"implied_fcf_growth": 0.2598,
+"implied_fcf_growth": 0.2343,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.46,
 "has_fair_value": false
 },
 {
@@ -5301,8 +5853,11 @@
 "ps": 0.85,
 "fcf_yield_pct": 4.4,
 "market_cap": 37201739776.0,
-"implied_fcf_growth": 0.0945,
+"implied_fcf_growth": 0.038,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 0.62,
 "has_fair_value": false
 },
 {
@@ -5329,8 +5884,11 @@
 "ps": 4.54,
 "fcf_yield_pct": null,
 "market_cap": 45870624768.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0636,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -5357,8 +5915,11 @@
 "ps": 9.04,
 "fcf_yield_pct": 2.21,
 "market_cap": 41138712576.0,
-"implied_fcf_growth": 0.1883,
+"implied_fcf_growth": 0.1647,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.69,
 "has_fair_value": false
 },
 {
@@ -5385,8 +5946,11 @@
 "ps": 6.13,
 "fcf_yield_pct": 3.36,
 "market_cap": 18261039104.0,
-"implied_fcf_growth": 0.1311,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.109,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.85,
 "has_fair_value": false
 },
 {
@@ -5413,8 +5977,11 @@
 "ps": 1.11,
 "fcf_yield_pct": 4.08,
 "market_cap": 15831813120.0,
-"implied_fcf_growth": 0.1048,
+"implied_fcf_growth": 0.0834,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -5441,8 +6008,11 @@
 "ps": 4.99,
 "fcf_yield_pct": 1.35,
 "market_cap": 372699791360.0,
-"implied_fcf_growth": 0.2566,
+"implied_fcf_growth": 0.2312,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.34,
 "has_fair_value": false
 },
 {
@@ -5469,8 +6039,11 @@
 "ps": 7.64,
 "fcf_yield_pct": 2.48,
 "market_cap": 49754849280.0,
-"implied_fcf_growth": 0.1725,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1493,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.63,
 "has_fair_value": false
 },
 {
@@ -5497,8 +6070,11 @@
 "ps": 9.81,
 "fcf_yield_pct": 5.68,
 "market_cap": 66291310592.0,
-"implied_fcf_growth": 0.0597,
+"implied_fcf_growth": 0.0058,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 3.61,
 "has_fair_value": false
 },
 {
@@ -5525,8 +6101,11 @@
 "ps": 4.17,
 "fcf_yield_pct": 6.56,
 "market_cap": 34556952576.0,
-"implied_fcf_growth": 0.04,
+"implied_fcf_growth": 0.0493,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.94,
 "has_fair_value": false
 },
 {
@@ -5553,8 +6132,11 @@
 "ps": 6.4,
 "fcf_yield_pct": 2.04,
 "market_cap": 324020404224.0,
-"implied_fcf_growth": 0.1993,
+"implied_fcf_growth": 0.1754,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.7,
 "has_fair_value": false
 },
 {
@@ -5581,8 +6163,11 @@
 "ps": 0.6,
 "fcf_yield_pct": 6.59,
 "market_cap": 26381355008.0,
-"implied_fcf_growth": 0.0394,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0199,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.95,
 "has_fair_value": false
 },
 {
@@ -5609,8 +6194,11 @@
 "ps": 5.94,
 "fcf_yield_pct": 2.27,
 "market_cap": 86158606336.0,
-"implied_fcf_growth": 0.1846,
+"implied_fcf_growth": 0.1611,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.46,
 "has_fair_value": false
 },
 {
@@ -5637,8 +6225,11 @@
 "ps": 5.68,
 "fcf_yield_pct": 2.36,
 "market_cap": 28748814336.0,
-"implied_fcf_growth": 0.1793,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0092,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.43,
 "has_fair_value": false
 },
 {
@@ -5665,8 +6256,11 @@
 "ps": 14.93,
 "fcf_yield_pct": 3.27,
 "market_cap": 25493704704.0,
-"implied_fcf_growth": 0.1348,
+"implied_fcf_growth": 0.1453,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.83,
 "has_fair_value": false
 },
 {
@@ -5693,8 +6287,11 @@
 "ps": 2.11,
 "fcf_yield_pct": 6.6,
 "market_cap": 8457204224.0,
-"implied_fcf_growth": 0.0392,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0197,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.68,
 "has_fair_value": false
 },
 {
@@ -5721,8 +6318,11 @@
 "ps": 2.03,
 "fcf_yield_pct": 5.59,
 "market_cap": 84811726848.0,
-"implied_fcf_growth": 0.0619,
+"implied_fcf_growth": 0.0715,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -5749,8 +6349,11 @@
 "ps": 3.24,
 "fcf_yield_pct": -7.17,
 "market_cap": 32839100416.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0126,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.2,
 "has_fair_value": false
 },
 {
@@ -5777,8 +6380,11 @@
 "ps": 21.29,
 "fcf_yield_pct": null,
 "market_cap": 145539923968.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0586,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -5805,8 +6411,11 @@
 "ps": 9.42,
 "fcf_yield_pct": 3.01,
 "market_cap": 61975900160.0,
-"implied_fcf_growth": 0.1461,
+"implied_fcf_growth": 0.1567,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -5833,8 +6442,11 @@
 "ps": 2.2,
 "fcf_yield_pct": 5.62,
 "market_cap": 33920860160.0,
-"implied_fcf_growth": 0.0612,
+"implied_fcf_growth": 0.041,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.8,
 "has_fair_value": false
 },
 {
@@ -5861,8 +6473,11 @@
 "ps": 9.16,
 "fcf_yield_pct": 3.29,
 "market_cap": 51431505920.0,
-"implied_fcf_growth": 0.134,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0198,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.65,
 "has_fair_value": false
 },
 {
@@ -5889,8 +6504,11 @@
 "ps": 1.93,
 "fcf_yield_pct": null,
 "market_cap": 68538437632.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0562,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -5917,8 +6535,11 @@
 "ps": 6.3,
 "fcf_yield_pct": 4.41,
 "market_cap": 171946934272.0,
-"implied_fcf_growth": 0.0942,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0026,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.73,
 "has_fair_value": false
 },
 {
@@ -5947,8 +6568,11 @@
 "ps": 3.46,
 "fcf_yield_pct": 0.12,
 "market_cap": 2687409848320.0,
-"implied_fcf_growth": 0.6264,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0794,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.03,
 "has_fair_value": true
 },
 {
@@ -5975,8 +6599,11 @@
 "ps": 2.01,
 "fcf_yield_pct": 6.33,
 "market_cap": 7661166080.0,
-"implied_fcf_growth": 0.0449,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0252,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.87,
 "has_fair_value": false
 },
 {
@@ -6003,8 +6630,11 @@
 "ps": 1.14,
 "fcf_yield_pct": 4.46,
 "market_cap": 103396638720.0,
-"implied_fcf_growth": 0.0927,
+"implied_fcf_growth": 0.0716,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.63,
 "has_fair_value": false
 },
 {
@@ -6031,8 +6661,11 @@
 "ps": 2.61,
 "fcf_yield_pct": 4.86,
 "market_cap": 44252712960.0,
-"implied_fcf_growth": 0.081,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0603,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.9,
 "has_fair_value": false
 },
 {
@@ -6061,8 +6694,11 @@
 "ps": 4.57,
 "fcf_yield_pct": 1.92,
 "market_cap": 76972621824.0,
-"implied_fcf_growth": 0.2076,
+"implied_fcf_growth": 0.1958,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.56,
 "has_fair_value": false
 },
 {
@@ -6089,8 +6725,11 @@
 "ps": 2.06,
 "fcf_yield_pct": 9.14,
 "market_cap": 12730110976.0,
-"implied_fcf_growth": -0.0059,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.066,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.92,
 "has_fair_value": false
 },
 {
@@ -6117,8 +6756,11 @@
 "ps": 1.04,
 "fcf_yield_pct": 2.56,
 "market_cap": 14831329280.0,
-"implied_fcf_growth": 0.1682,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1451,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.32,
 "has_fair_value": false
 },
 {
@@ -6145,8 +6787,11 @@
 "ps": 1.99,
 "fcf_yield_pct": 6.33,
 "market_cap": 16943229952.0,
-"implied_fcf_growth": 0.0449,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0252,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.62,
 "has_fair_value": false
 },
 {
@@ -6173,8 +6818,11 @@
 "ps": 5.53,
 "fcf_yield_pct": 1.99,
 "market_cap": 69403983872.0,
-"implied_fcf_growth": 0.2027,
+"implied_fcf_growth": 0.1787,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.43,
 "has_fair_value": false
 },
 {
@@ -6201,8 +6849,11 @@
 "ps": 2.49,
 "fcf_yield_pct": 5.75,
 "market_cap": 10325643264.0,
-"implied_fcf_growth": 0.0581,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.038,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -6229,8 +6880,11 @@
 "ps": 1.64,
 "fcf_yield_pct": 5.87,
 "market_cap": 24484653056.0,
-"implied_fcf_growth": 0.0552,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0353,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.83,
 "has_fair_value": false
 },
 {
@@ -6257,8 +6911,11 @@
 "ps": 6.74,
 "fcf_yield_pct": 2.08,
 "market_cap": 77929783296.0,
-"implied_fcf_growth": 0.1966,
+"implied_fcf_growth": 0.1728,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.66,
 "has_fair_value": false
 },
 {
@@ -6285,8 +6942,11 @@
 "ps": 17.7,
 "fcf_yield_pct": 0.75,
 "market_cap": 411105427456.0,
-"implied_fcf_growth": 0.3404,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1331,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": 0.21,
 "has_fair_value": false
 },
 {
@@ -6315,8 +6975,11 @@
 "ps": 1.32,
 "fcf_yield_pct": 9.84,
 "market_cap": 44937359360.0,
-"implied_fcf_growth": -0.0163,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0789,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.89,
 "has_fair_value": false
 },
 {
@@ -6343,8 +7006,11 @@
 "ps": 8.47,
 "fcf_yield_pct": 3.08,
 "market_cap": 51379638272.0,
-"implied_fcf_growth": 0.143,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0829,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.08,
 "has_fair_value": false
 },
 {
@@ -6371,8 +7037,11 @@
 "ps": 5.42,
 "fcf_yield_pct": 3.5,
 "market_cap": 25270294528.0,
-"implied_fcf_growth": 0.1256,
+"implied_fcf_growth": 0.1036,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -6401,8 +7070,11 @@
 "ps": 6.17,
 "fcf_yield_pct": 1.9,
 "market_cap": 218804224000.0,
-"implied_fcf_growth": 0.2091,
+"implied_fcf_growth": 0.1972,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.46,
 "has_fair_value": false
 },
 {
@@ -6431,8 +7103,11 @@
 "ps": 2.91,
 "fcf_yield_pct": 4.67,
 "market_cap": 51807772672.0,
-"implied_fcf_growth": 0.0864,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0762,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.88,
 "has_fair_value": false
 },
 {
@@ -6459,8 +7134,11 @@
 "ps": 0.44,
 "fcf_yield_pct": 7.58,
 "market_cap": 18506371072.0,
-"implied_fcf_growth": 0.0201,
+"implied_fcf_growth": 0.0012,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.93,
 "has_fair_value": false
 },
 {
@@ -6487,8 +7165,11 @@
 "ps": 3.69,
 "fcf_yield_pct": 3.46,
 "market_cap": 14492099584.0,
-"implied_fcf_growth": 0.1271,
+"implied_fcf_growth": 0.1052,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.81,
 "has_fair_value": false
 },
 {
@@ -6515,8 +7196,11 @@
 "ps": 2.55,
 "fcf_yield_pct": 7.68,
 "market_cap": 162554691584.0,
-"implied_fcf_growth": 0.0183,
+"implied_fcf_growth": -0.0006,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.76,
 "has_fair_value": false
 },
 {
@@ -6543,8 +7227,11 @@
 "ps": 3.81,
 "fcf_yield_pct": -2.13,
 "market_cap": 71104806912.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0007,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -0.28,
 "has_fair_value": false
 },
 {
@@ -6571,8 +7258,11 @@
 "ps": 0.97,
 "fcf_yield_pct": 16.54,
 "market_cap": 12996812800.0,
-"implied_fcf_growth": -0.0919,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0512,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.86,
 "has_fair_value": false
 },
 {
@@ -6599,8 +7289,11 @@
 "ps": 2.83,
 "fcf_yield_pct": -9.28,
 "market_cap": 64587304960.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.009,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.61,
 "has_fair_value": false
 },
 {
@@ -6627,8 +7320,11 @@
 "ps": 4.64,
 "fcf_yield_pct": 4.28,
 "market_cap": 86514786304.0,
-"implied_fcf_growth": 0.0983,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0771,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.91,
 "has_fair_value": false
 },
 {
@@ -6655,8 +7351,11 @@
 "ps": 3.27,
 "fcf_yield_pct": -6.49,
 "market_cap": 27512682496.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0102,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.11,
 "has_fair_value": false
 },
 {
@@ -6685,8 +7384,11 @@
 "ps": 25.04,
 "fcf_yield_pct": -0.15,
 "market_cap": 22474018816.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.161,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.085,
+"fcf_conversion": -0.01,
 "has_fair_value": false
 },
 {
@@ -6713,8 +7415,11 @@
 "ps": 4.52,
 "fcf_yield_pct": 6.64,
 "market_cap": 45900861440.0,
-"implied_fcf_growth": 0.0384,
+"implied_fcf_growth": 0.0476,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.96,
 "has_fair_value": false
 },
 {
@@ -6741,8 +7446,11 @@
 "ps": 3.85,
 "fcf_yield_pct": 2.07,
 "market_cap": 23964854272.0,
-"implied_fcf_growth": 0.1973,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1734,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.41,
 "has_fair_value": false
 },
 {
@@ -6769,8 +7477,11 @@
 "ps": 11.75,
 "fcf_yield_pct": 3.05,
 "market_cap": 39160578048.0,
-"implied_fcf_growth": 0.1443,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0446,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.73,
 "has_fair_value": false
 },
 {
@@ -6797,8 +7508,11 @@
 "ps": 3.25,
 "fcf_yield_pct": 2.76,
 "market_cap": 40430104576.0,
-"implied_fcf_growth": 0.1579,
+"implied_fcf_growth": 0.1351,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -6825,8 +7539,11 @@
 "ps": 6.45,
 "fcf_yield_pct": 2.69,
 "market_cap": 36153204736.0,
-"implied_fcf_growth": 0.1614,
+"implied_fcf_growth": 0.1385,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.7,
 "has_fair_value": false
 },
 {
@@ -6853,8 +7570,11 @@
 "ps": 3.5,
 "fcf_yield_pct": 8.49,
 "market_cap": 18824409088.0,
-"implied_fcf_growth": 0.0044,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.0131,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -6881,8 +7601,11 @@
 "ps": 1.64,
 "fcf_yield_pct": 13.65,
 "market_cap": 31515922432.0,
-"implied_fcf_growth": -0.0633,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0735,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.29,
 "has_fair_value": false
 },
 {
@@ -6909,8 +7632,11 @@
 "ps": 2.25,
 "fcf_yield_pct": null,
 "market_cap": 45769912320.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0157,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -6937,8 +7663,11 @@
 "ps": 3.72,
 "fcf_yield_pct": 2.27,
 "market_cap": 69093343232.0,
-"implied_fcf_growth": 0.1846,
+"implied_fcf_growth": 0.1611,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.53,
 "has_fair_value": false
 },
 {
@@ -6965,8 +7694,11 @@
 "ps": 0.66,
 "fcf_yield_pct": 4.82,
 "market_cap": 71183753216.0,
-"implied_fcf_growth": 0.0821,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0614,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -6993,8 +7725,11 @@
 "ps": 7.22,
 "fcf_yield_pct": 2.63,
 "market_cap": 56794886144.0,
-"implied_fcf_growth": 0.1645,
+"implied_fcf_growth": 0.1415,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.68,
 "has_fair_value": false
 },
 {
@@ -7023,8 +7758,11 @@
 "ps": 1.97,
 "fcf_yield_pct": 8.1,
 "market_cap": 54497808384.0,
-"implied_fcf_growth": 0.0109,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0177,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 1.47,
 "has_fair_value": false
 },
 {
@@ -7051,8 +7789,11 @@
 "ps": 2.97,
 "fcf_yield_pct": -7.98,
 "market_cap": 18085689344.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0098,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.37,
 "has_fair_value": false
 },
 {
@@ -7081,8 +7822,11 @@
 "ps": 2.33,
 "fcf_yield_pct": 5.12,
 "market_cap": 150347382784.0,
-"implied_fcf_growth": 0.0739,
+"implied_fcf_growth": 0.0425,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.66,
 "has_fair_value": false
 },
 {
@@ -7109,8 +7853,11 @@
 "ps": 13.15,
 "fcf_yield_pct": 1.39,
 "market_cap": 255791546368.0,
-"implied_fcf_growth": 0.2525,
+"implied_fcf_growth": 0.2645,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.37,
 "has_fair_value": false
 },
 {
@@ -7137,8 +7884,11 @@
 "ps": 1.32,
 "fcf_yield_pct": 12.56,
 "market_cap": 120322719744.0,
-"implied_fcf_growth": -0.0512,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0353,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.6,
 "has_fair_value": false
 },
 {
@@ -7165,8 +7915,11 @@
 "ps": 2.99,
 "fcf_yield_pct": 3.6,
 "market_cap": 25191936000.0,
-"implied_fcf_growth": 0.1218,
+"implied_fcf_growth": 0.0999,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.58,
 "has_fair_value": false
 },
 {
@@ -7193,8 +7946,11 @@
 "ps": 6.98,
 "fcf_yield_pct": 6.33,
 "market_cap": 12325069824.0,
-"implied_fcf_growth": 0.0449,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.0079,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 3.79,
 "has_fair_value": false
 },
 {
@@ -7221,8 +7977,11 @@
 "ps": 4.48,
 "fcf_yield_pct": 3.14,
 "market_cap": 99446079488.0,
-"implied_fcf_growth": 0.1403,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.118,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.81,
 "has_fair_value": false
 },
 {
@@ -7249,8 +8008,11 @@
 "ps": 2.23,
 "fcf_yield_pct": 3.54,
 "market_cap": 25724719104.0,
-"implied_fcf_growth": 0.124,
+"implied_fcf_growth": 0.1021,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.68,
 "has_fair_value": false
 },
 {
@@ -7277,8 +8039,11 @@
 "ps": 15.58,
 "fcf_yield_pct": 1.77,
 "market_cap": 90930634752.0,
-"implied_fcf_growth": 0.2189,
+"implied_fcf_growth": 0.2305,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.61,
 "has_fair_value": false
 },
 {
@@ -7305,8 +8070,11 @@
 "ps": 3.34,
 "fcf_yield_pct": null,
 "market_cap": 380615294976.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0624,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -7333,8 +8101,11 @@
 "ps": 1.97,
 "fcf_yield_pct": 5.36,
 "market_cap": 9911618560.0,
-"implied_fcf_growth": 0.0676,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0473,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -7363,8 +8134,11 @@
 "ps": 1.91,
 "fcf_yield_pct": 5.48,
 "market_cap": 400579035136.0,
-"implied_fcf_growth": 0.0646,
+"implied_fcf_growth": 0.0336,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -7391,8 +8165,11 @@
 "ps": 1.52,
 "fcf_yield_pct": 19.87,
 "market_cap": 74359087104.0,
-"implied_fcf_growth": -0.1202,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0454,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 2.34,
 "has_fair_value": false
 },
 {
@@ -7419,8 +8196,11 @@
 "ps": 1.71,
 "fcf_yield_pct": 6.76,
 "market_cap": 15454959616.0,
-"implied_fcf_growth": 0.0359,
+"implied_fcf_growth": 0.0165,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.28,
 "has_fair_value": false
 },
 {
@@ -7447,8 +8227,11 @@
 "ps": 6.51,
 "fcf_yield_pct": 2.65,
 "market_cap": 637996498944.0,
-"implied_fcf_growth": 0.1635,
+"implied_fcf_growth": 0.1405,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.58,
 "has_fair_value": false
 },
 {
@@ -7475,8 +8258,11 @@
 "ps": 0.27,
 "fcf_yield_pct": 7.37,
 "market_cap": 109594976256.0,
-"implied_fcf_growth": 0.024,
+"implied_fcf_growth": 0.0049,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.74,
 "has_fair_value": false
 },
 {
@@ -7503,8 +8289,11 @@
 "ps": 8.24,
 "fcf_yield_pct": 3.23,
 "market_cap": 42229784576.0,
-"implied_fcf_growth": 0.1365,
+"implied_fcf_growth": 0.147,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -7531,8 +8320,11 @@
 "ps": 3.71,
 "fcf_yield_pct": -6.94,
 "market_cap": 16412721152.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0099,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.19,
 "has_fair_value": false
 },
 {
@@ -7559,8 +8351,11 @@
 "ps": 2.42,
 "fcf_yield_pct": 0.08,
 "market_cap": 46435131392.0,
-"implied_fcf_growth": 0.6959,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.0412,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": 0.01,
 "has_fair_value": false
 },
 {
@@ -7589,8 +8384,11 @@
 "ps": 2.7,
 "fcf_yield_pct": 1.55,
 "market_cap": 50644000768.0,
-"implied_fcf_growth": 0.2373,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0672,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.085,
+"fcf_conversion": 0.13,
 "has_fair_value": false
 },
 {
@@ -7619,8 +8417,11 @@
 "ps": 5.1,
 "fcf_yield_pct": 1.74,
 "market_cap": 34075809792.0,
-"implied_fcf_growth": 0.2213,
+"implied_fcf_growth": 0.2092,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.39,
 "has_fair_value": false
 },
 {
@@ -7647,8 +8448,11 @@
 "ps": 2.94,
 "fcf_yield_pct": -17.25,
 "market_cap": 53228912640.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0197,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -2.74,
 "has_fair_value": false
 },
 {
@@ -7675,8 +8479,11 @@
 "ps": 3.67,
 "fcf_yield_pct": 3.8,
 "market_cap": 29142636544.0,
-"implied_fcf_growth": 0.1144,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0928,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.73,
 "has_fair_value": false
 },
 {
@@ -7703,8 +8510,11 @@
 "ps": 3.12,
 "fcf_yield_pct": 3.72,
 "market_cap": 11102413824.0,
-"implied_fcf_growth": 0.1173,
+"implied_fcf_growth": 0.0591,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 0.57,
 "has_fair_value": false
 },
 {
@@ -7731,8 +8541,11 @@
 "ps": 2.17,
 "fcf_yield_pct": 9.19,
 "market_cap": 48757239808.0,
-"implied_fcf_growth": -0.0067,
+"implied_fcf_growth": -0.0248,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.24,
 "has_fair_value": false
 },
 {
@@ -7761,8 +8574,11 @@
 "ps": 1.47,
 "fcf_yield_pct": 1.29,
 "market_cap": 53032189952.0,
-"implied_fcf_growth": 0.263,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0049,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.095,
+"fcf_conversion": 0.15,
 "has_fair_value": false
 },
 {
@@ -7789,8 +8605,11 @@
 "ps": 3.07,
 "fcf_yield_pct": 5.7,
 "market_cap": 12022244352.0,
-"implied_fcf_growth": 0.0593,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0392,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.87,
 "has_fair_value": false
 },
 {
@@ -7817,8 +8636,11 @@
 "ps": 2.77,
 "fcf_yield_pct": 0.61,
 "market_cap": 69323325440.0,
-"implied_fcf_growth": 0.3706,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0993,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.17,
 "has_fair_value": false
 },
 {
@@ -7847,8 +8669,11 @@
 "ps": 0.69,
 "fcf_yield_pct": -30.57,
 "market_cap": 26981568512.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0328,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.115,
+"fcf_conversion": -2.36,
 "has_fair_value": false
 },
 {
@@ -7875,8 +8700,11 @@
 "ps": 2.9,
 "fcf_yield_pct": null,
 "market_cap": 205361725440.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0138,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -7903,8 +8731,11 @@
 "ps": 3.94,
 "fcf_yield_pct": 6.47,
 "market_cap": 9600918528.0,
-"implied_fcf_growth": 0.0419,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.026,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.89,
 "has_fair_value": false
 },
 {
@@ -7931,8 +8762,11 @@
 "ps": 6.5,
 "fcf_yield_pct": 1.61,
 "market_cap": 56835555328.0,
-"implied_fcf_growth": 0.232,
+"implied_fcf_growth": 0.2073,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.57,
 "has_fair_value": false
 },
 {
@@ -7959,8 +8793,11 @@
 "ps": 3.39,
 "fcf_yield_pct": 3.9,
 "market_cap": 20475998208.0,
-"implied_fcf_growth": 0.1109,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0893,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -7987,8 +8824,11 @@
 "ps": 10.08,
 "fcf_yield_pct": 3.79,
 "market_cap": 99814309888.0,
-"implied_fcf_growth": 0.1148,
+"implied_fcf_growth": 0.0567,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 2.06,
 "has_fair_value": false
 },
 {
@@ -8015,8 +8855,11 @@
 "ps": 10.41,
 "fcf_yield_pct": 2.22,
 "market_cap": 4860153954304.0,
-"implied_fcf_growth": 0.1877,
+"implied_fcf_growth": 0.1989,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.77,
 "has_fair_value": true
 },
 {
@@ -8043,8 +8886,11 @@
 "ps": 3.05,
 "fcf_yield_pct": 2.67,
 "market_cap": 74870300672.0,
-"implied_fcf_growth": 0.1624,
+"implied_fcf_growth": 0.1395,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.69,
 "has_fair_value": false
 },
 {
@@ -8071,8 +8917,11 @@
 "ps": 1.68,
 "fcf_yield_pct": 3.79,
 "market_cap": 283832713216.0,
-"implied_fcf_growth": 0.1148,
+"implied_fcf_growth": 0.0931,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -8099,8 +8948,11 @@
 "ps": 0.23,
 "fcf_yield_pct": 7.32,
 "market_cap": 34620305408.0,
-"implied_fcf_growth": 0.0249,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0058,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.78,
 "has_fair_value": false
 },
 {
@@ -8127,8 +8979,11 @@
 "ps": 6.7,
 "fcf_yield_pct": 2.64,
 "market_cap": 424340619264.0,
-"implied_fcf_growth": 0.164,
+"implied_fcf_growth": 0.1749,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.51,
 "has_fair_value": false
 },
 {
@@ -8155,8 +9010,11 @@
 "ps": 0.44,
 "fcf_yield_pct": 5.12,
 "market_cap": 37387145216.0,
-"implied_fcf_growth": 0.0739,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0534,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.74,
 "has_fair_value": false
 },
 {
@@ -8183,8 +9041,11 @@
 "ps": 3.46,
 "fcf_yield_pct": 7.97,
 "market_cap": 11053419520.0,
-"implied_fcf_growth": 0.0132,
+"implied_fcf_growth": -0.0371,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 2.19,
 "has_fair_value": false
 },
 {
@@ -8211,8 +9072,11 @@
 "ps": 2.68,
 "fcf_yield_pct": 3.95,
 "market_cap": 250211287040.0,
-"implied_fcf_growth": 0.1092,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0877,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.93,
 "has_fair_value": false
 },
 {
@@ -8242,8 +9106,11 @@
 "ps": 0.6,
 "fcf_yield_pct": 6.61,
 "market_cap": 18564990976.0,
-"implied_fcf_growth": 0.039,
+"implied_fcf_growth": 0.0294,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.6,
 "has_fair_value": false
 },
 {
@@ -8270,8 +9137,11 @@
 "ps": 9.2,
 "fcf_yield_pct": 1.93,
 "market_cap": 41325678592.0,
-"implied_fcf_growth": 0.2069,
+"implied_fcf_growth": 0.1828,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.86,
 "has_fair_value": false
 },
 {
@@ -8298,8 +9168,11 @@
 "ps": 2.53,
 "fcf_yield_pct": 5.18,
 "market_cap": 139935793152.0,
-"implied_fcf_growth": 0.0723,
+"implied_fcf_growth": 0.082,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.8,
 "has_fair_value": false
 },
 {
@@ -8326,8 +9199,11 @@
 "ps": 2.43,
 "fcf_yield_pct": 6.57,
 "market_cap": 18188195840.0,
-"implied_fcf_growth": 0.0398,
+"implied_fcf_growth": 0.0491,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.91,
 "has_fair_value": false
 },
 {
@@ -8354,8 +9230,11 @@
 "ps": 2.68,
 "fcf_yield_pct": 0.32,
 "market_cap": 33563602944.0,
-"implied_fcf_growth": 0.468,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.0316,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": 0.05,
 "has_fair_value": false
 },
 {
@@ -8384,8 +9263,11 @@
 "ps": 11.48,
 "fcf_yield_pct": 0.43,
 "market_cap": 3808562511872.0,
-"implied_fcf_growth": 0.4228,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0981,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": 0.09,
 "has_fair_value": true
 },
 {
@@ -8412,8 +9294,11 @@
 "ps": 18.73,
 "fcf_yield_pct": 1.03,
 "market_cap": 254384898048.0,
-"implied_fcf_growth": 0.2948,
+"implied_fcf_growth": 0.3073,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.3,
 "has_fair_value": false
 },
 {
@@ -8440,8 +9325,11 @@
 "ps": 2.52,
 "fcf_yield_pct": -21.42,
 "market_cap": 24240904192.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0066,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -3.78,
 "has_fair_value": false
 },
 {
@@ -8468,8 +9356,11 @@
 "ps": 4.66,
 "fcf_yield_pct": 5.13,
 "market_cap": 102256672768.0,
-"implied_fcf_growth": 0.0736,
+"implied_fcf_growth": 0.0833,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.99,
 "has_fair_value": false
 },
 {
@@ -8496,8 +9387,11 @@
 "ps": 6.03,
 "fcf_yield_pct": 2.68,
 "market_cap": 73805266944.0,
-"implied_fcf_growth": 0.1619,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1728,
+"implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.62,
 "has_fair_value": false
 },
 {
@@ -8526,8 +9420,11 @@
 "ps": 1.18,
 "fcf_yield_pct": 7.75,
 "market_cap": 26493544448.0,
-"implied_fcf_growth": 0.0171,
+"implied_fcf_growth": -0.0119,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.85,
 "has_fair_value": false
 },
 {
@@ -8554,8 +9451,11 @@
 "ps": 2.23,
 "fcf_yield_pct": 5.39,
 "market_cap": 33612683264.0,
-"implied_fcf_growth": 0.0669,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0466,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.28,
 "has_fair_value": false
 },
 {
@@ -8582,8 +9482,11 @@
 "ps": 5.39,
 "fcf_yield_pct": 2.5,
 "market_cap": 249597902848.0,
-"implied_fcf_growth": 0.1714,
+"implied_fcf_growth": 0.1482,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.61,
 "has_fair_value": false
 },
 {
@@ -8610,8 +9513,11 @@
 "ps": 3.16,
 "fcf_yield_pct": 3.82,
 "market_cap": 61110448128.0,
-"implied_fcf_growth": 0.1137,
+"implied_fcf_growth": 0.1239,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.62,
 "has_fair_value": false
 },
 {
@@ -8638,8 +9544,11 @@
 "ps": 7.84,
 "fcf_yield_pct": 1.07,
 "market_cap": 26092517376.0,
-"implied_fcf_growth": 0.2894,
+"implied_fcf_growth": 0.2632,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.4,
 "has_fair_value": false
 },
 {
@@ -8666,8 +9575,11 @@
 "ps": 20.23,
 "fcf_yield_pct": 0.67,
 "market_cap": 66206429184.0,
-"implied_fcf_growth": 0.3569,
+"implied_fcf_growth": 0.3701,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.26,
 "has_fair_value": false
 },
 {
@@ -8694,8 +9606,11 @@
 "ps": 1.02,
 "fcf_yield_pct": 2.78,
 "market_cap": 17289312256.0,
-"implied_fcf_growth": 0.1569,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1341,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -8722,8 +9637,11 @@
 "ps": 1.64,
 "fcf_yield_pct": 4.65,
 "market_cap": 21941944320.0,
-"implied_fcf_growth": 0.087,
+"implied_fcf_growth": 0.0661,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.72,
 "has_fair_value": false
 },
 {
@@ -8750,8 +9668,11 @@
 "ps": 0.48,
 "fcf_yield_pct": 12.02,
 "market_cap": 28208021504.0,
-"implied_fcf_growth": -0.0448,
+"implied_fcf_growth": -0.0368,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.2,
 "has_fair_value": false
 },
 {
@@ -8778,8 +9699,11 @@
 "ps": 3.19,
 "fcf_yield_pct": null,
 "market_cap": 47960178688.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0495,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -8806,8 +9730,11 @@
 "ps": 13.16,
 "fcf_yield_pct": 0.76,
 "market_cap": 405829877760.0,
-"implied_fcf_growth": 0.3385,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1317,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": 0.21,
 "has_fair_value": false
 },
 {
@@ -8834,8 +9761,11 @@
 "ps": 2.03,
 "fcf_yield_pct": -8.24,
 "market_cap": 11276190720.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0132,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.38,
 "has_fair_value": false
 },
 {
@@ -8862,8 +9792,11 @@
 "ps": 1.64,
 "fcf_yield_pct": 4.9,
 "market_cap": 89778987008.0,
-"implied_fcf_growth": 0.0799,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0592,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.87,
 "has_fair_value": false
 },
 {
@@ -8892,8 +9825,11 @@
 "ps": 3.89,
 "fcf_yield_pct": 2.15,
 "market_cap": 100521230336.0,
-"implied_fcf_growth": 0.1921,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1804,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.36,
 "has_fair_value": false
 },
 {
@@ -8920,8 +9856,11 @@
 "ps": 3.52,
 "fcf_yield_pct": -9.28,
 "market_cap": 47424192512.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0055,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.8,
 "has_fair_value": false
 },
 {
@@ -8948,8 +9887,11 @@
 "ps": 7.21,
 "fcf_yield_pct": 4.69,
 "market_cap": 116289757184.0,
-"implied_fcf_growth": 0.0858,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0188,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.92,
 "has_fair_value": false
 },
 {
@@ -8976,8 +9918,11 @@
 "ps": 3.29,
 "fcf_yield_pct": null,
 "market_cap": 26854232064.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0694,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -9004,8 +9949,11 @@
 "ps": 5.56,
 "fcf_yield_pct": 1.86,
 "market_cap": 166899367936.0,
-"implied_fcf_growth": 0.212,
+"implied_fcf_growth": 0.1878,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.49,
 "has_fair_value": false
 },
 {
@@ -9032,8 +9980,11 @@
 "ps": 2.63,
 "fcf_yield_pct": -7.83,
 "market_cap": 24751198208.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0224,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.22,
 "has_fair_value": false
 },
 {
@@ -9060,8 +10011,11 @@
 "ps": 1.9,
 "fcf_yield_pct": 6.11,
 "market_cap": 17111040000.0,
-"implied_fcf_growth": 0.0498,
+"implied_fcf_growth": 0.0299,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.28,
 "has_fair_value": false
 },
 {
@@ -9088,8 +10042,11 @@
 "ps": 1.95,
 "fcf_yield_pct": 2.9,
 "market_cap": 32403175424.0,
-"implied_fcf_growth": 0.1512,
+"implied_fcf_growth": 0.1285,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.38,
 "has_fair_value": false
 },
 {
@@ -9116,8 +10073,11 @@
 "ps": 6.31,
 "fcf_yield_pct": 6.58,
 "market_cap": 14006796288.0,
-"implied_fcf_growth": 0.0396,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.0128,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 2.36,
 "has_fair_value": false
 },
 {
@@ -9144,8 +10104,11 @@
 "ps": 1.54,
 "fcf_yield_pct": 10.77,
 "market_cap": 112211812352.0,
-"implied_fcf_growth": -0.0291,
+"implied_fcf_growth": -0.0208,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.35,
 "has_fair_value": false
 },
 {
@@ -9172,8 +10135,11 @@
 "ps": 0.44,
 "fcf_yield_pct": 18.09,
 "market_cap": 8932385792.0,
-"implied_fcf_growth": -0.1056,
+"implied_fcf_growth": -0.1207,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.19,
 "has_fair_value": false
 },
 {
@@ -9200,8 +10166,11 @@
 "ps": 3.29,
 "fcf_yield_pct": null,
 "market_cap": 89993052160.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.067,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -9228,8 +10197,11 @@
 "ps": 5.6,
 "fcf_yield_pct": 2.46,
 "market_cap": 120490319872.0,
-"implied_fcf_growth": 0.1736,
+"implied_fcf_growth": 0.1504,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.6,
 "has_fair_value": false
 },
 {
@@ -9258,8 +10230,11 @@
 "ps": 1.55,
 "fcf_yield_pct": 0.74,
 "market_cap": 31762939904.0,
-"implied_fcf_growth": 0.3424,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0101,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.095,
+"fcf_conversion": 0.08,
 "has_fair_value": false
 },
 {
@@ -9288,8 +10263,11 @@
 "ps": 9.4,
 "fcf_yield_pct": 3.72,
 "market_cap": 138547838976.0,
-"implied_fcf_growth": 0.1173,
+"implied_fcf_growth": 0.1276,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.0,
 "has_fair_value": false
 },
 {
@@ -9316,8 +10294,11 @@
 "ps": 3.88,
 "fcf_yield_pct": 3.94,
 "market_cap": 337437851648.0,
-"implied_fcf_growth": 0.1095,
+"implied_fcf_growth": 0.088,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -9344,8 +10325,11 @@
 "ps": 1.6,
 "fcf_yield_pct": 3.61,
 "market_cap": 68684632064.0,
-"implied_fcf_growth": 0.1214,
+"implied_fcf_growth": 0.0995,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.57,
 "has_fair_value": false
 },
 {
@@ -9372,8 +10356,11 @@
 "ps": 0.87,
 "fcf_yield_pct": 7.5,
 "market_cap": 15288716288.0,
-"implied_fcf_growth": 0.0216,
+"implied_fcf_growth": 0.0306,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.72,
 "has_fair_value": false
 },
 {
@@ -9400,8 +10387,11 @@
 "ps": 2.66,
 "fcf_yield_pct": null,
 "market_cap": 217194512384.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0658,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -9428,8 +10418,11 @@
 "ps": 2.05,
 "fcf_yield_pct": 3.13,
 "market_cap": 71113342976.0,
-"implied_fcf_growth": 0.1408,
+"implied_fcf_growth": 0.1184,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.47,
 "has_fair_value": false
 },
 {
@@ -9458,8 +10451,11 @@
 "ps": 2.26,
 "fcf_yield_pct": 1.76,
 "market_cap": 342035464192.0,
-"implied_fcf_growth": 0.2197,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.2534,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.115,
+"fcf_conversion": 0.33,
 "has_fair_value": false
 },
 {
@@ -9486,8 +10482,11 @@
 "ps": 0.22,
 "fcf_yield_pct": -31.51,
 "market_cap": 20547139584.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0435,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -2.99,
 "has_fair_value": false
 },
 {
@@ -9514,8 +10513,11 @@
 "ps": 6.59,
 "fcf_yield_pct": 2.18,
 "market_cap": 48585531392.0,
-"implied_fcf_growth": 0.1902,
+"implied_fcf_growth": 0.1665,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.56,
 "has_fair_value": false
 },
 {
@@ -9542,8 +10544,11 @@
 "ps": 25.13,
 "fcf_yield_pct": 1.01,
 "market_cap": 237446742016.0,
-"implied_fcf_growth": 0.2976,
+"implied_fcf_growth": 0.3101,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.39,
 "has_fair_value": false
 },
 {
@@ -9570,8 +10575,11 @@
 "ps": 0.68,
 "fcf_yield_pct": 4.22,
 "market_cap": 16022233088.0,
-"implied_fcf_growth": 0.1002,
+"implied_fcf_growth": 0.1102,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.45,
 "has_fair_value": false
 },
 {
@@ -9598,8 +10606,11 @@
 "ps": 3.11,
 "fcf_yield_pct": 2.13,
 "market_cap": 58676473856.0,
-"implied_fcf_growth": 0.1934,
+"implied_fcf_growth": 0.1696,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.52,
 "has_fair_value": false
 },
 {
@@ -9628,8 +10639,11 @@
 "ps": 3.91,
 "fcf_yield_pct": 2.66,
 "market_cap": 31698847744.0,
-"implied_fcf_growth": 0.1629,
+"implied_fcf_growth": 0.1517,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"fcf_conversion": 0.61,
 "has_fair_value": false
 },
 {
@@ -9656,8 +10670,11 @@
 "ps": 1.2,
 "fcf_yield_pct": 2.24,
 "market_cap": 22488784896.0,
-"implied_fcf_growth": 0.1864,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1629,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.58,
 "has_fair_value": false
 },
 {
@@ -9684,8 +10701,11 @@
 "ps": 2.31,
 "fcf_yield_pct": 2.26,
 "market_cap": 12269730816.0,
-"implied_fcf_growth": 0.1852,
+"implied_fcf_growth": 0.1617,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.31,
 "has_fair_value": false
 },
 {
@@ -9712,8 +10732,11 @@
 "ps": 0.89,
 "fcf_yield_pct": 4.03,
 "market_cap": 30059223040.0,
-"implied_fcf_growth": 0.1064,
+"implied_fcf_growth": 0.1166,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -9742,8 +10765,11 @@
 "ps": 6.07,
 "fcf_yield_pct": 5.29,
 "market_cap": 184815321088.0,
-"implied_fcf_growth": 0.0694,
+"implied_fcf_growth": 0.0491,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.8,
 "has_fair_value": false
 },
 {
@@ -9770,8 +10796,11 @@
 "ps": 14.03,
 "fcf_yield_pct": 1.95,
 "market_cap": 71597645824.0,
-"implied_fcf_growth": 0.2055,
+"implied_fcf_growth": 0.1814,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.59,
 "has_fair_value": false
 },
 {
@@ -9798,8 +10827,11 @@
 "ps": 5.39,
 "fcf_yield_pct": 4.23,
 "market_cap": 358504693760.0,
-"implied_fcf_growth": 0.0999,
+"implied_fcf_growth": 0.0786,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -9828,8 +10860,11 @@
 "ps": 26.2,
 "fcf_yield_pct": 0.65,
 "market_cap": 81578188800.0,
-"implied_fcf_growth": 0.3613,
+"implied_fcf_growth": 0.3333,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.37,
 "has_fair_value": false
 },
 {
@@ -9856,8 +10891,11 @@
 "ps": 3.02,
 "fcf_yield_pct": 3.27,
 "market_cap": 17661542400.0,
-"implied_fcf_growth": 0.1348,
+"implied_fcf_growth": 0.1453,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -9884,8 +10922,11 @@
 "ps": 5.4,
 "fcf_yield_pct": 2.69,
 "market_cap": 48440889344.0,
-"implied_fcf_growth": 0.1614,
+"implied_fcf_growth": 0.1385,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -9912,8 +10953,11 @@
 "ps": 2.33,
 "fcf_yield_pct": null,
 "market_cap": 23091568640.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.1177,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -9940,8 +10984,11 @@
 "ps": 2.33,
 "fcf_yield_pct": 3.02,
 "market_cap": 145537564672.0,
-"implied_fcf_growth": 0.1456,
+"implied_fcf_growth": 0.1231,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.69,
 "has_fair_value": false
 },
 {
@@ -9968,8 +11015,11 @@
 "ps": 7.62,
 "fcf_yield_pct": 2.84,
 "market_cap": 25209288704.0,
-"implied_fcf_growth": 0.154,
+"implied_fcf_growth": 0.1648,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.7,
 "has_fair_value": false
 },
 {
@@ -9996,8 +11046,11 @@
 "ps": 9.38,
 "fcf_yield_pct": 5.62,
 "market_cap": 18569832448.0,
-"implied_fcf_growth": 0.0612,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0072,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 2.4,
 "has_fair_value": false
 },
 {
@@ -10024,8 +11077,11 @@
 "ps": 3.1,
 "fcf_yield_pct": 9.19,
 "market_cap": 56040153088.0,
-"implied_fcf_growth": -0.0067,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0161,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.36,
 "has_fair_value": false
 },
 {
@@ -10052,8 +11108,11 @@
 "ps": 4.05,
 "fcf_yield_pct": 2.27,
 "market_cap": 48507817984.0,
-"implied_fcf_growth": 0.1846,
+"implied_fcf_growth": 0.1611,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.52,
 "has_fair_value": false
 },
 {
@@ -10082,8 +11141,11 @@
 "ps": 24.18,
 "fcf_yield_pct": 0.89,
 "market_cap": 998682918912.0,
-"implied_fcf_growth": 0.3157,
+"implied_fcf_growth": 0.3528,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.115,
+"fcf_conversion": 0.35,
 "has_fair_value": false
 },
 {
@@ -10110,8 +11172,11 @@
 "ps": 3.0,
 "fcf_yield_pct": 5.82,
 "market_cap": 207203614720.0,
-"implied_fcf_growth": 0.0564,
+"implied_fcf_growth": 0.0659,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.97,
 "has_fair_value": false
 },
 {
@@ -10138,8 +11203,11 @@
 "ps": 2.14,
 "fcf_yield_pct": 2.12,
 "market_cap": 20426674176.0,
-"implied_fcf_growth": 0.194,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1702,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.37,
 "has_fair_value": false
 },
 {
@@ -10166,8 +11234,11 @@
 "ps": 0.69,
 "fcf_yield_pct": 4.77,
 "market_cap": 9358166016.0,
-"implied_fcf_growth": 0.0835,
+"implied_fcf_growth": 0.0627,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -10194,8 +11265,11 @@
 "ps": 2.91,
 "fcf_yield_pct": null,
 "market_cap": 21417269248.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0744,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -10222,8 +11296,11 @@
 "ps": 4.58,
 "fcf_yield_pct": null,
 "market_cap": 98132058112.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0222,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -10250,8 +11327,11 @@
 "ps": 1.33,
 "fcf_yield_pct": 1.77,
 "market_cap": 403522781184.0,
-"implied_fcf_growth": 0.2189,
+"implied_fcf_growth": 0.1945,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -10278,8 +11358,11 @@
 "ps": 3.6,
 "fcf_yield_pct": 3.31,
 "market_cap": 90043457536.0,
-"implied_fcf_growth": 0.1332,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.111,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.81,
 "has_fair_value": false
 },
 {
@@ -10306,8 +11389,11 @@
 "ps": 1.92,
 "fcf_yield_pct": 3.65,
 "market_cap": 44091899904.0,
-"implied_fcf_growth": 0.1199,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0981,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -10334,8 +11420,11 @@
 "ps": 1.68,
 "fcf_yield_pct": 12.15,
 "market_cap": 25072707584.0,
-"implied_fcf_growth": -0.0464,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0238,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.69,
 "has_fair_value": false
 },
 {
@@ -10362,8 +11451,11 @@
 "ps": 6.42,
 "fcf_yield_pct": 2.52,
 "market_cap": 34015553536.0,
-"implied_fcf_growth": 0.1703,
+"implied_fcf_growth": 0.1472,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.97,
 "has_fair_value": false
 },
 {
@@ -10392,8 +11484,11 @@
 "ps": 0.67,
 "fcf_yield_pct": 4.44,
 "market_cap": 102362718208.0,
-"implied_fcf_growth": 0.0933,
+"implied_fcf_growth": 0.061,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.44,
 "has_fair_value": false
 },
 {
@@ -10420,8 +11515,11 @@
 "ps": 2.65,
 "fcf_yield_pct": 5.29,
 "market_cap": 26768478208.0,
-"implied_fcf_growth": 0.0694,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0365,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -10448,8 +11546,11 @@
 "ps": 1.81,
 "fcf_yield_pct": 3.26,
 "market_cap": 15005221888.0,
-"implied_fcf_growth": 0.1352,
+"implied_fcf_growth": 0.113,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.4,
 "has_fair_value": false
 },
 {
@@ -10476,8 +11577,11 @@
 "ps": 0.47,
 "fcf_yield_pct": 3.04,
 "market_cap": 38257950720.0,
-"implied_fcf_growth": 0.1447,
+"implied_fcf_growth": 0.1223,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.43,
 "has_fair_value": false
 },
 {
@@ -10504,8 +11608,11 @@
 "ps": 0.45,
 "fcf_yield_pct": 11.06,
 "market_cap": 7944180736.0,
-"implied_fcf_growth": -0.0329,
+"implied_fcf_growth": -0.0502,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.66,
 "has_fair_value": false
 },
 {
@@ -10532,8 +11639,11 @@
 "ps": 4.69,
 "fcf_yield_pct": 3.31,
 "market_cap": 16806661120.0,
-"implied_fcf_growth": 0.1332,
+"implied_fcf_growth": 0.111,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.78,
 "has_fair_value": false
 },
 {
@@ -10560,8 +11670,11 @@
 "ps": 0.24,
 "fcf_yield_pct": 6.83,
 "market_cap": 99546013696.0,
-"implied_fcf_growth": 0.0345,
+"implied_fcf_growth": 0.0151,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.16,
 "has_fair_value": false
 },
 {
@@ -10588,8 +11701,11 @@
 "ps": 2.59,
 "fcf_yield_pct": 5.01,
 "market_cap": 23645208576.0,
-"implied_fcf_growth": 0.0768,
+"implied_fcf_growth": 0.0563,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.81,
 "has_fair_value": false
 },
 {
@@ -10616,8 +11732,11 @@
 "ps": 0.2,
 "fcf_yield_pct": 9.22,
 "market_cap": 51521953792.0,
-"implied_fcf_growth": -0.0071,
+"implied_fcf_growth": -0.0253,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.46,
 "has_fair_value": false
 },
 {
@@ -10644,8 +11763,11 @@
 "ps": 1.15,
 "fcf_yield_pct": 6.32,
 "market_cap": 38221176832.0,
-"implied_fcf_growth": 0.0451,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0255,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.74,
 "has_fair_value": false
 },
 {
@@ -10672,8 +11794,11 @@
 "ps": 2.92,
 "fcf_yield_pct": null,
 "market_cap": 242071142400.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0655,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -10700,8 +11825,11 @@
 "ps": 0.38,
 "fcf_yield_pct": 31.49,
 "market_cap": 69642764288.0,
-"implied_fcf_growth": -0.197,
+"implied_fcf_growth": -0.2091,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.61,
 "has_fair_value": false
 },
 {
@@ -10728,8 +11856,11 @@
 "ps": 2.03,
 "fcf_yield_pct": 8.36,
 "market_cap": 125481410560.0,
-"implied_fcf_growth": 0.0065,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0521,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.93,
 "has_fair_value": false
 },
 {
@@ -10756,8 +11887,11 @@
 "ps": 10.66,
 "fcf_yield_pct": 0.65,
 "market_cap": 34324432896.0,
-"implied_fcf_growth": 0.3613,
+"implied_fcf_growth": 0.3333,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.26,
 "has_fair_value": false
 },
 {
@@ -10784,8 +11918,11 @@
 "ps": 3.84,
 "fcf_yield_pct": 5.67,
 "market_cap": 16553554944.0,
-"implied_fcf_growth": 0.06,
+"implied_fcf_growth": 0.0695,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.96,
 "has_fair_value": false
 },
 {
@@ -10812,8 +11949,11 @@
 "ps": 2.54,
 "fcf_yield_pct": 5.05,
 "market_cap": 10749478912.0,
-"implied_fcf_growth": 0.0758,
+"implied_fcf_growth": 0.0552,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.61,
 "has_fair_value": false
 },
 {
@@ -10840,8 +11980,11 @@
 "ps": 8.29,
 "fcf_yield_pct": 1.27,
 "market_cap": 49891078144.0,
-"implied_fcf_growth": 0.2652,
+"implied_fcf_growth": 0.2773,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.38,
 "has_fair_value": false
 },
 {
@@ -10868,8 +12011,11 @@
 "ps": 3.34,
 "fcf_yield_pct": 5.43,
 "market_cap": 58709954560.0,
-"implied_fcf_growth": 0.0659,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.0266,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.74,
 "has_fair_value": false
 },
 {
@@ -10896,8 +12042,11 @@
 "ps": 0.66,
 "fcf_yield_pct": -24.96,
 "market_cap": 6731693568.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0543,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -2.19,
 "has_fair_value": false
 },
 {
@@ -10924,8 +12073,11 @@
 "ps": 1.46,
 "fcf_yield_pct": 18.93,
 "market_cap": 38913708032.0,
-"implied_fcf_growth": -0.1126,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0882,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.6,
 "has_fair_value": false
 },
 {
@@ -10952,8 +12104,11 @@
 "ps": 2.97,
 "fcf_yield_pct": null,
 "market_cap": 56561295360.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0757,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -10980,8 +12135,11 @@
 "ps": 3.87,
 "fcf_yield_pct": 3.56,
 "market_cap": 58473943040.0,
-"implied_fcf_growth": 0.1233,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0115,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -11008,8 +12166,11 @@
 "ps": 13.0,
 "fcf_yield_pct": 1.66,
 "market_cap": 165904515072.0,
-"implied_fcf_growth": 0.2278,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.1617,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.2,
 "has_fair_value": false
 },
 {
@@ -11036,8 +12197,11 @@
 "ps": 1.2,
 "fcf_yield_pct": 8.56,
 "market_cap": 25873516544.0,
-"implied_fcf_growth": 0.0032,
+"implied_fcf_growth": 0.012,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.78,
 "has_fair_value": false
 },
 {
@@ -11064,8 +12228,11 @@
 "ps": 0.69,
 "fcf_yield_pct": 5.29,
 "market_cap": 17334484992.0,
-"implied_fcf_growth": 0.0694,
+"implied_fcf_growth": 0.0491,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.8,
 "has_fair_value": false
 },
 {
@@ -11092,8 +12259,11 @@
 "ps": 0.83,
 "fcf_yield_pct": 14.75,
 "market_cap": 14001617920.0,
-"implied_fcf_growth": -0.0747,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.1321,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.9,
 "has_fair_value": false
 },
 {
@@ -11122,8 +12292,11 @@
 "ps": 9.29,
 "fcf_yield_pct": -0.33,
 "market_cap": 43141885952.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.094,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -0.09,
 "has_fair_value": false
 },
 {
@@ -11150,8 +12323,11 @@
 "ps": 4.46,
 "fcf_yield_pct": 5.21,
 "market_cap": 196565843968.0,
-"implied_fcf_growth": 0.0715,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0812,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.94,
 "has_fair_value": false
 },
 {
@@ -11178,8 +12354,11 @@
 "ps": 8.08,
 "fcf_yield_pct": 4.26,
 "market_cap": 85348802560.0,
-"implied_fcf_growth": 0.0989,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0034,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.74,
 "has_fair_value": false
 },
 {
@@ -11206,8 +12385,11 @@
 "ps": 7.21,
 "fcf_yield_pct": 1.89,
 "market_cap": 55317823488.0,
-"implied_fcf_growth": 0.2098,
+"implied_fcf_growth": 0.2213,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.49,
 "has_fair_value": false
 },
 {
@@ -11234,8 +12416,11 @@
 "ps": 3.18,
 "fcf_yield_pct": 2.88,
 "market_cap": 81509924864.0,
-"implied_fcf_growth": 0.1521,
+"implied_fcf_growth": 0.1294,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -11262,8 +12447,11 @@
 "ps": 2.92,
 "fcf_yield_pct": 5.87,
 "market_cap": 81474273280.0,
-"implied_fcf_growth": 0.0552,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0147,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.88,
 "has_fair_value": false
 },
 {
@@ -11290,8 +12478,11 @@
 "ps": 7.34,
 "fcf_yield_pct": 5.6,
 "market_cap": 38542409728.0,
-"implied_fcf_growth": 0.0617,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.005,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.9,
 "has_fair_value": false
 },
 {
@@ -11318,8 +12509,11 @@
 "ps": 3.8,
 "fcf_yield_pct": 3.02,
 "market_cap": 64264921088.0,
-"implied_fcf_growth": 0.1456,
+"implied_fcf_growth": 0.1231,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -11346,8 +12540,11 @@
 "ps": 0.68,
 "fcf_yield_pct": -4.1,
 "market_cap": 20370628608.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0523,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -0.37,
 "has_fair_value": false
 },
 {
@@ -11374,8 +12571,11 @@
 "ps": 3.33,
 "fcf_yield_pct": 3.8,
 "market_cap": 33374674944.0,
-"implied_fcf_growth": 0.1144,
+"implied_fcf_growth": 0.0928,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.52,
 "has_fair_value": false
 },
 {
@@ -11402,8 +12602,11 @@
 "ps": 2.72,
 "fcf_yield_pct": -9.48,
 "market_cap": 18702843904.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0088,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.64,
 "has_fair_value": false
 },
 {
@@ -11430,8 +12633,11 @@
 "ps": 6.79,
 "fcf_yield_pct": 3.41,
 "market_cap": 43610697728.0,
-"implied_fcf_growth": 0.1291,
+"implied_fcf_growth": 0.07,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 3.67,
 "has_fair_value": false
 },
 {
@@ -11458,8 +12664,11 @@
 "ps": 1.74,
 "fcf_yield_pct": 3.57,
 "market_cap": 24987719680.0,
-"implied_fcf_growth": 0.1229,
+"implied_fcf_growth": 0.101,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.55,
 "has_fair_value": false
 },
 {
@@ -11486,8 +12695,11 @@
 "ps": 5.05,
 "fcf_yield_pct": 2.94,
 "market_cap": 26305882112.0,
-"implied_fcf_growth": 0.1493,
+"implied_fcf_growth": 0.16,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.69,
 "has_fair_value": false
 },
 {
@@ -11514,8 +12726,11 @@
 "ps": 3.59,
 "fcf_yield_pct": 4.2,
 "market_cap": 22349352960.0,
-"implied_fcf_growth": 0.1008,
+"implied_fcf_growth": 0.0796,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.98,
 "has_fair_value": false
 },
 {
@@ -11544,8 +12759,11 @@
 "ps": 1.37,
 "fcf_yield_pct": 1.67,
 "market_cap": 53754990592.0,
-"implied_fcf_growth": 0.2269,
-"implied_tag": "In line",
+"implied_fcf_growth": -0.0042,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.085,
+"fcf_conversion": 0.23,
 "has_fair_value": false
 },
 {
@@ -11572,8 +12790,11 @@
 "ps": 1.83,
 "fcf_yield_pct": 2.68,
 "market_cap": 181129445376.0,
-"implied_fcf_growth": 0.1619,
+"implied_fcf_growth": 0.139,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.38,
 "has_fair_value": false
 },
 {
@@ -11600,8 +12821,11 @@
 "ps": 0.17,
 "fcf_yield_pct": 3.57,
 "market_cap": 57295855616.0,
-"implied_fcf_growth": 0.1229,
+"implied_fcf_growth": 0.101,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.54,
 "has_fair_value": false
 },
 {
@@ -11628,8 +12852,11 @@
 "ps": 15.22,
 "fcf_yield_pct": 2.95,
 "market_cap": 47014817792.0,
-"implied_fcf_growth": 0.1488,
+"implied_fcf_growth": 0.0883,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.22,
 "has_fair_value": false
 },
 {
@@ -11656,8 +12883,11 @@
 "ps": 0.88,
 "fcf_yield_pct": 10.61,
 "market_cap": 13378564096.0,
-"implied_fcf_growth": -0.027,
+"implied_fcf_growth": -0.0445,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.47,
 "has_fair_value": false
 },
 {
@@ -11684,8 +12914,11 @@
 "ps": 2.75,
 "fcf_yield_pct": 2.36,
 "market_cap": 12223281152.0,
-"implied_fcf_growth": 0.1793,
+"implied_fcf_growth": 0.1559,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.39,
 "has_fair_value": false
 },
 {
@@ -11712,8 +12945,11 @@
 "ps": 1.71,
 "fcf_yield_pct": 5.57,
 "market_cap": 16482398208.0,
-"implied_fcf_growth": 0.0624,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0422,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.86,
 "has_fair_value": false
 },
 {
@@ -11740,8 +12976,11 @@
 "ps": 13.52,
 "fcf_yield_pct": 0.35,
 "market_cap": 1401338986496.0,
-"implied_fcf_growth": 0.4542,
+"implied_fcf_growth": 0.4239,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.57,
 "has_fair_value": false
 },
 {
@@ -11768,8 +13007,11 @@
 "ps": 2.77,
 "fcf_yield_pct": 6.75,
 "market_cap": 1065966436352.0,
-"implied_fcf_growth": 0.0361,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.0364,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 1.51,
 "has_fair_value": false
 },
 {
@@ -11796,8 +13038,11 @@
 "ps": 1.35,
 "fcf_yield_pct": 4.88,
 "market_cap": 22107844608.0,
-"implied_fcf_growth": 0.0804,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0597,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.51,
 "has_fair_value": false
 },
 {
@@ -11824,8 +13069,11 @@
 "ps": 10.22,
 "fcf_yield_pct": -0.26,
 "market_cap": 43579461632.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.171,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": -0.1,
 "has_fair_value": false
 },
 {
@@ -11852,8 +13100,11 @@
 "ps": 0.42,
 "fcf_yield_pct": 5.11,
 "market_cap": 84323123200.0,
-"implied_fcf_growth": 0.0742,
+"implied_fcf_growth": 0.0536,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -11880,8 +13131,11 @@
 "ps": 2.94,
 "fcf_yield_pct": 2.02,
 "market_cap": 96597131264.0,
-"implied_fcf_growth": 0.2007,
+"implied_fcf_growth": 0.1767,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.66,
 "has_fair_value": false
 },
 {
@@ -11910,8 +13164,11 @@
 "ps": 1.93,
 "fcf_yield_pct": 8.57,
 "market_cap": 13315633152.0,
-"implied_fcf_growth": 0.0031,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0765,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.79,
 "has_fair_value": false
 },
 {
@@ -11938,8 +13195,11 @@
 "ps": 24.79,
 "fcf_yield_pct": 1.07,
 "market_cap": 98332696576.0,
-"implied_fcf_growth": 0.2894,
+"implied_fcf_growth": 0.3018,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.99,
 "has_fair_value": false
 },
 {
@@ -11966,8 +13226,11 @@
 "ps": 3.95,
 "fcf_yield_pct": 3.51,
 "market_cap": 10042930176.0,
-"implied_fcf_growth": 0.1252,
+"implied_fcf_growth": 0.1356,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.64,
 "has_fair_value": false
 },
 {
@@ -11994,8 +13257,11 @@
 "ps": 1.56,
 "fcf_yield_pct": 3.83,
 "market_cap": 147048349696.0,
-"implied_fcf_growth": 0.1133,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0917,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.73,
 "has_fair_value": false
 },
 {
@@ -12022,8 +13288,11 @@
 "ps": 7.32,
 "fcf_yield_pct": 2.29,
 "market_cap": 30274238464.0,
-"implied_fcf_growth": 0.1834,
+"implied_fcf_growth": 0.1599,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -12050,8 +13319,11 @@
 "ps": 4.83,
 "fcf_yield_pct": 5.54,
 "market_cap": 29926924288.0,
-"implied_fcf_growth": 0.0631,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.0727,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.94,
 "has_fair_value": false
 },
 {
@@ -12078,8 +13350,11 @@
 "ps": 6.2,
 "fcf_yield_pct": 2.78,
 "market_cap": 155746566144.0,
-"implied_fcf_growth": 0.1569,
+"implied_fcf_growth": 0.1341,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.66,
 "has_fair_value": false
 },
 {
@@ -12108,8 +13383,11 @@
 "ps": 1.38,
 "fcf_yield_pct": 13.15,
 "market_cap": 20353028096.0,
-"implied_fcf_growth": -0.0578,
+"implied_fcf_growth": -0.0744,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.87,
 "has_fair_value": false
 },
 {
@@ -12136,8 +13414,11 @@
 "ps": 1.46,
 "fcf_yield_pct": 1.13,
 "market_cap": 9796621312.0,
-"implied_fcf_growth": 0.2817,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.0014,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.15,
 "has_fair_value": false
 },
 {
@@ -12164,8 +13445,11 @@
 "ps": 3.16,
 "fcf_yield_pct": null,
 "market_cap": 22899865600.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0737,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -12192,8 +13476,11 @@
 "ps": 2.74,
 "fcf_yield_pct": null,
 "market_cap": 49118167040.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0354,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -12220,8 +13507,11 @@
 "ps": 3.33,
 "fcf_yield_pct": null,
 "market_cap": 31424978944.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0623,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -12250,8 +13540,11 @@
 "ps": 1.85,
 "fcf_yield_pct": 3.09,
 "market_cap": 669213655040.0,
-"implied_fcf_growth": 0.1425,
+"implied_fcf_growth": 0.1082,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.45,
 "has_fair_value": false
 },
 {
@@ -12278,8 +13571,11 @@
 "ps": 1.86,
 "fcf_yield_pct": 3.05,
 "market_cap": 73796132864.0,
-"implied_fcf_growth": 0.1443,
+"implied_fcf_growth": 0.1218,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.52,
 "has_fair_value": false
 },
 {
@@ -12306,8 +13602,11 @@
 "ps": 4.37,
 "fcf_yield_pct": -1.32,
 "market_cap": 33030125568.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.1113,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": -0.54,
 "has_fair_value": false
 },
 {
@@ -12334,8 +13633,11 @@
 "ps": 0.73,
 "fcf_yield_pct": 7.37,
 "market_cap": 329489088512.0,
-"implied_fcf_growth": 0.024,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0049,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.2,
 "has_fair_value": false
 },
 {
@@ -12362,8 +13664,11 @@
 "ps": 13.94,
 "fcf_yield_pct": 3.09,
 "market_cap": 94202576896.0,
-"implied_fcf_growth": 0.1425,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0236,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.63,
 "has_fair_value": false
 },
 {
@@ -12390,8 +13695,11 @@
 "ps": 0.32,
 "fcf_yield_pct": 6.7,
 "market_cap": 17776529408.0,
-"implied_fcf_growth": 0.0371,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0177,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.82,
 "has_fair_value": false
 },
 {
@@ -12418,8 +13726,11 @@
 "ps": 1.42,
 "fcf_yield_pct": -16.72,
 "market_cap": 36778995712.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.1276,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.14,
 "has_fair_value": false
 },
 {
@@ -12446,8 +13757,11 @@
 "ps": 28.31,
 "fcf_yield_pct": 1.3,
 "market_cap": 324999577600.0,
-"implied_fcf_growth": 0.2619,
+"implied_fcf_growth": 0.274,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.06,
 "has_fair_value": false
 },
 {
@@ -12474,8 +13788,11 @@
 "ps": 7.0,
 "fcf_yield_pct": 3.56,
 "market_cap": 29126049792.0,
-"implied_fcf_growth": 0.1233,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0646,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 0.82,
 "has_fair_value": false
 },
 {
@@ -12502,8 +13819,11 @@
 "ps": 1.5,
 "fcf_yield_pct": 4.3,
 "market_cap": 39440044032.0,
-"implied_fcf_growth": 0.0976,
+"implied_fcf_growth": 0.0764,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 3.73,
 "has_fair_value": false
 },
 {
@@ -12530,8 +13850,11 @@
 "ps": 1.53,
 "fcf_yield_pct": 4.41,
 "market_cap": 23971155968.0,
-"implied_fcf_growth": 0.0942,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.057,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.47,
 "has_fair_value": false
 },
 {
@@ -12558,8 +13881,11 @@
 "ps": 0.8,
 "fcf_yield_pct": -2.85,
 "market_cap": 10523787264.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0027,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -0.37,
 "has_fair_value": false
 },
 {
@@ -12586,8 +13912,11 @@
 "ps": 1.39,
 "fcf_yield_pct": 1.54,
 "market_cap": 40630632448.0,
-"implied_fcf_growth": 0.2382,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0513,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": 0.24,
 "has_fair_value": false
 },
 {
@@ -12614,8 +13943,11 @@
 "ps": 50.24,
 "fcf_yield_pct": 0.74,
 "market_cap": 271086747648.0,
-"implied_fcf_growth": 0.3424,
+"implied_fcf_growth": 0.3554,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 1.22,
 "has_fair_value": false
 },
 {
@@ -12642,8 +13974,11 @@
 "ps": 1.75,
 "fcf_yield_pct": -18.33,
 "market_cap": 16319429632.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0654,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": -1.85,
 "has_fair_value": false
 },
 {
@@ -12670,8 +14005,11 @@
 "ps": 4.41,
 "fcf_yield_pct": 3.24,
 "market_cap": 28129085440.0,
-"implied_fcf_growth": 0.1361,
+"implied_fcf_growth": 0.1466,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.73,
 "has_fair_value": false
 },
 {
@@ -12698,8 +14036,11 @@
 "ps": 0.86,
 "fcf_yield_pct": 3.45,
 "market_cap": 13105401856.0,
-"implied_fcf_growth": 0.1275,
+"implied_fcf_growth": 0.1055,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.36,
 "has_fair_value": false
 },
 {
@@ -12726,8 +14067,11 @@
 "ps": 1.13,
 "fcf_yield_pct": 3.6,
 "market_cap": 52515856384.0,
-"implied_fcf_growth": 0.1218,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0999,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.59,
 "has_fair_value": false
 },
 {
@@ -12754,8 +14098,11 @@
 "ps": 5.37,
 "fcf_yield_pct": 4.56,
 "market_cap": 13047394304.0,
-"implied_fcf_growth": 0.0896,
+"implied_fcf_growth": 0.0996,
 "implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.95,
 "has_fair_value": false
 },
 {
@@ -12782,8 +14129,11 @@
 "ps": 1.04,
 "fcf_yield_pct": 0.63,
 "market_cap": 16303345664.0,
-"implied_fcf_growth": 0.3659,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0208,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": 0.1,
 "has_fair_value": false
 },
 {
@@ -12810,8 +14160,11 @@
 "ps": 3.54,
 "fcf_yield_pct": 4.65,
 "market_cap": 15284260864.0,
-"implied_fcf_growth": 0.087,
+"implied_fcf_growth": 0.0969,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.72,
 "has_fair_value": false
 },
 {
@@ -12838,8 +14191,11 @@
 "ps": 1.12,
 "fcf_yield_pct": 0.86,
 "market_cap": 827003568128.0,
-"implied_fcf_growth": 0.3206,
+"implied_fcf_growth": 0.2936,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.28,
 "has_fair_value": false
 },
 {
@@ -12866,8 +14222,11 @@
 "ps": 0.9,
 "fcf_yield_pct": 5.66,
 "market_cap": 10973995008.0,
-"implied_fcf_growth": 0.0602,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0401,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.73,
 "has_fair_value": false
 },
 {
@@ -12894,8 +14253,11 @@
 "ps": 7.92,
 "fcf_yield_pct": -1.15,
 "market_cap": 56362475520.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0902,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": -0.24,
 "has_fair_value": false
 },
 {
@@ -12922,8 +14284,11 @@
 "ps": 3.01,
 "fcf_yield_pct": -17.96,
 "market_cap": 44024229888.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0223,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -2.79,
 "has_fair_value": false
 },
 {
@@ -12952,8 +14317,11 @@
 "ps": 1.08,
 "fcf_yield_pct": 8.06,
 "market_cap": 12407904256.0,
-"implied_fcf_growth": 0.0116,
+"implied_fcf_growth": -0.0071,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.95,
 "has_fair_value": false
 },
 {
@@ -12980,8 +14348,11 @@
 "ps": 0.75,
 "fcf_yield_pct": -35.02,
 "market_cap": 59836510208.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0881,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": -2.96,
 "has_fair_value": false
 },
 {
@@ -13010,8 +14381,11 @@
 "ps": 1.08,
 "fcf_yield_pct": 12.06,
 "market_cap": 26941915136.0,
-"implied_fcf_growth": -0.0453,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0623,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.31,
 "has_fair_value": false
 },
 {
@@ -13038,8 +14412,11 @@
 "ps": 0.74,
 "fcf_yield_pct": 5.25,
 "market_cap": 23131459584.0,
-"implied_fcf_growth": 0.0705,
+"implied_fcf_growth": 0.0501,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.67,
 "has_fair_value": false
 },
 {
@@ -13066,8 +14443,11 @@
 "ps": 3.26,
 "fcf_yield_pct": null,
 "market_cap": 84323819520.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0393,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -13096,8 +14476,11 @@
 "ps": 6.75,
 "fcf_yield_pct": -1.82,
 "market_cap": 83138699264.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0815,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.085,
+"fcf_conversion": -0.48,
 "has_fair_value": false
 },
 {
@@ -13126,8 +14509,11 @@
 "ps": 0.17,
 "fcf_yield_pct": 31.41,
 "market_cap": 30686969856.0,
-"implied_fcf_growth": -0.1965,
+"implied_fcf_growth": -0.2086,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 3.65,
 "has_fair_value": false
 },
 {
@@ -13156,8 +14542,11 @@
 "ps": 3.46,
 "fcf_yield_pct": 0.11,
 "market_cap": 57962848256.0,
-"implied_fcf_growth": 0.6411,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0602,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.085,
+"fcf_conversion": 0.02,
 "has_fair_value": false
 },
 {
@@ -13186,8 +14575,11 @@
 "ps": 3.74,
 "fcf_yield_pct": 1.6,
 "market_cap": 67138084864.0,
-"implied_fcf_growth": 0.2329,
+"implied_fcf_growth": 0.1949,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.31,
 "has_fair_value": false
 },
 {
@@ -13216,8 +14608,11 @@
 "ps": 1.99,
 "fcf_yield_pct": 4.09,
 "market_cap": 72307458048.0,
-"implied_fcf_growth": 0.1044,
+"implied_fcf_growth": 0.0717,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.085,
+"fcf_conversion": 0.62,
 "has_fair_value": false
 },
 {
@@ -13246,8 +14641,11 @@
 "ps": 3.52,
 "fcf_yield_pct": 5.15,
 "market_cap": 13316900864.0,
-"implied_fcf_growth": 0.0731,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.0828,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.71,
 "has_fair_value": false
 },
 {
@@ -13278,6 +14676,9 @@
 "market_cap": 11589699584.0,
 "implied_fcf_growth": -0.3,
 "implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 18.54,
 "has_fair_value": false
 },
 {
@@ -13304,8 +14705,11 @@
 "ps": 3.76,
 "fcf_yield_pct": -54.25,
 "market_cap": 50978070528.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0346,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -7.63,
 "has_fair_value": false
 },
 {
@@ -13334,8 +14738,11 @@
 "ps": 2.88,
 "fcf_yield_pct": 16.47,
 "market_cap": 8167641600.0,
-"implied_fcf_growth": -0.0913,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.133,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -13362,8 +14769,11 @@
 "ps": 1.86,
 "fcf_yield_pct": -3.13,
 "market_cap": 16354292736.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.058,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -0.63,
 "has_fair_value": false
 },
 {
@@ -13390,8 +14800,11 @@
 "ps": 2.78,
 "fcf_yield_pct": 4.2,
 "market_cap": 11459323904.0,
-"implied_fcf_growth": 0.1008,
-"implied_tag": "Demanding",
+"implied_fcf_growth": -0.0091,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.66,
 "has_fair_value": false
 },
 {
@@ -13418,8 +14831,11 @@
 "ps": 1.37,
 "fcf_yield_pct": null,
 "market_cap": 43066441728.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0408,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -13446,8 +14862,11 @@
 "ps": 1.14,
 "fcf_yield_pct": 5.91,
 "market_cap": 21348386816.0,
-"implied_fcf_growth": 0.0543,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.096,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 2.13,
 "has_fair_value": false
 },
 {
@@ -13474,8 +14893,11 @@
 "ps": 7.08,
 "fcf_yield_pct": 1.25,
 "market_cap": 11194812416.0,
-"implied_fcf_growth": 0.2674,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1987,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.075,
+"fcf_conversion": 1.11,
 "has_fair_value": false
 },
 {
@@ -13502,8 +14924,11 @@
 "ps": 2.08,
 "fcf_yield_pct": 3.36,
 "market_cap": 57800134656.0,
-"implied_fcf_growth": 0.1311,
+"implied_fcf_growth": 0.109,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.51,
 "has_fair_value": false
 },
 {
@@ -13532,8 +14957,11 @@
 "ps": 0.73,
 "fcf_yield_pct": 9.37,
 "market_cap": 17565833216.0,
-"implied_fcf_growth": -0.0094,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.0275,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 1.03,
 "has_fair_value": false
 },
 {
@@ -13560,8 +14988,11 @@
 "ps": 3.78,
 "fcf_yield_pct": 2.49,
 "market_cap": 181066940416.0,
-"implied_fcf_growth": 0.172,
+"implied_fcf_growth": 0.1488,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.73,
 "has_fair_value": false
 },
 {
@@ -13588,8 +15019,11 @@
 "ps": 7.81,
 "fcf_yield_pct": 0.55,
 "market_cap": 132447068160.0,
-"implied_fcf_growth": 0.386,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1652,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": 0.19,
 "has_fair_value": false
 },
 {
@@ -13616,8 +15050,11 @@
 "ps": 3.2,
 "fcf_yield_pct": 3.49,
 "market_cap": 12862413824.0,
-"implied_fcf_growth": 0.126,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1364,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.6,
 "has_fair_value": false
 },
 {
@@ -13646,8 +15083,11 @@
 "ps": 0.94,
 "fcf_yield_pct": 7.58,
 "market_cap": 17195538432.0,
-"implied_fcf_growth": 0.0201,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": 0.0012,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.77,
 "has_fair_value": false
 },
 {
@@ -13674,8 +15114,11 @@
 "ps": 2.24,
 "fcf_yield_pct": -11.12,
 "market_cap": 19780448256.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0252,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.69,
 "has_fair_value": false
 },
 {
@@ -13705,8 +15148,11 @@
 "ps": 28.91,
 "fcf_yield_pct": 0.26,
 "market_cap": 87122026496.0,
-"implied_fcf_growth": 0.5005,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.133,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": 0.07,
 "has_fair_value": false
 },
 {
@@ -13733,8 +15179,11 @@
 "ps": 1.54,
 "fcf_yield_pct": -10.25,
 "market_cap": 25345126400.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.0304,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.07,
+"fcf_conversion": -1.49,
 "has_fair_value": false
 },
 {
@@ -13761,8 +15210,11 @@
 "ps": 9.35,
 "fcf_yield_pct": 2.02,
 "market_cap": 11364618240.0,
-"implied_fcf_growth": 0.2007,
+"implied_fcf_growth": 0.1767,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.63,
 "has_fair_value": false
 },
 {
@@ -13789,8 +15241,11 @@
 "ps": 5.86,
 "fcf_yield_pct": 3.55,
 "market_cap": 17060444160.0,
-"implied_fcf_growth": 0.1237,
+"implied_fcf_growth": 0.1018,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.92,
 "has_fair_value": false
 },
 {
@@ -13819,8 +15274,11 @@
 "ps": 2.15,
 "fcf_yield_pct": 20.84,
 "market_cap": 77595885568.0,
-"implied_fcf_growth": -0.1277,
-"implied_tag": "Undemanding",
+"implied_fcf_growth": -0.1421,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 103.66,
 "has_fair_value": false
 },
 {
@@ -13850,8 +15308,11 @@
 "ps": 0.48,
 "fcf_yield_pct": 1.19,
 "market_cap": 19893264384.0,
-"implied_fcf_growth": 0.2743,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0374,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.095,
+"fcf_conversion": 0.19,
 "has_fair_value": false
 },
 {
@@ -13878,8 +15339,11 @@
 "ps": 1.76,
 "fcf_yield_pct": -0.06,
 "market_cap": 44176457728.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0389,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.105,
+"fcf_conversion": -0.01,
 "has_fair_value": false
 },
 {
@@ -13908,8 +15372,11 @@
 "ps": 1.98,
 "fcf_yield_pct": -8.08,
 "market_cap": 21299920896.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.074,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.095,
+"fcf_conversion": -1.7,
 "has_fair_value": false
 },
 {
@@ -13936,8 +15403,11 @@
 "ps": 2.05,
 "fcf_yield_pct": 1.91,
 "market_cap": 45222473728.0,
-"implied_fcf_growth": 0.2084,
+"implied_fcf_growth": 0.1842,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.32,
 "has_fair_value": false
 },
 {
@@ -13964,8 +15434,11 @@
 "ps": 0.61,
 "fcf_yield_pct": null,
 "market_cap": 19654633472.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.0225,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": null,
 "has_fair_value": false
 },
 {
@@ -13992,8 +15465,11 @@
 "ps": 2.79,
 "fcf_yield_pct": 2.86,
 "market_cap": 107114397696.0,
-"implied_fcf_growth": 0.1531,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1304,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.86,
 "has_fair_value": false
 },
 {
@@ -14022,8 +15498,11 @@
 "ps": 5.8,
 "fcf_yield_pct": 3.24,
 "market_cap": 38798442496.0,
-"implied_fcf_growth": 0.1361,
+"implied_fcf_growth": 0.1138,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.65,
 "has_fair_value": false
 },
 {
@@ -14052,8 +15531,11 @@
 "ps": 11.14,
 "fcf_yield_pct": 0.77,
 "market_cap": 635548401664.0,
-"implied_fcf_growth": 0.3366,
+"implied_fcf_growth": 0.3496,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.105,
+"fcf_conversion": 0.45,
 "has_fair_value": false
 },
 {
@@ -14080,8 +15562,11 @@
 "ps": 2.0,
 "fcf_yield_pct": 0.1,
 "market_cap": 13730020352.0,
-"implied_fcf_growth": 0.6573,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0657,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 0.03,
 "has_fair_value": false
 },
 {
@@ -14111,8 +15596,11 @@
 "ps": 4.92,
 "fcf_yield_pct": -2.42,
 "market_cap": 61957799936.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.062,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.095,
+"fcf_conversion": -0.47,
 "has_fair_value": false
 },
 {
@@ -14141,8 +15629,11 @@
 "ps": 8.14,
 "fcf_yield_pct": 5.43,
 "market_cap": 49181843456.0,
-"implied_fcf_growth": 0.0659,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1731,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.075,
+"fcf_conversion": 3.57,
 "has_fair_value": false
 },
 {
@@ -14172,8 +15663,11 @@
 "ps": 0.56,
 "fcf_yield_pct": -10.84,
 "market_cap": 6882440704.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": 0.016,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.095,
+"fcf_conversion": -1.48,
 "has_fair_value": false
 },
 {
@@ -14202,8 +15696,11 @@
 "ps": 3.55,
 "fcf_yield_pct": 3.3,
 "market_cap": 14209961984.0,
-"implied_fcf_growth": 0.1336,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.1114,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": 0.76,
 "has_fair_value": false
 },
 {
@@ -14232,8 +15729,11 @@
 "ps": 1.77,
 "fcf_yield_pct": -72.57,
 "market_cap": 26001846272.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.1734,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -2.85,
 "has_fair_value": false
 },
 {
@@ -14262,8 +15762,11 @@
 "ps": 0.26,
 "fcf_yield_pct": -16.51,
 "market_cap": 48090406912.0,
-"implied_fcf_growth": null,
-"implied_tag": null,
+"implied_fcf_growth": -0.1046,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.09,
+"fcf_conversion": -1.02,
 "has_fair_value": false
 },
 {
@@ -14294,8 +15797,11 @@
 "ps": 34.51,
 "fcf_yield_pct": 0.39,
 "market_cap": 76880863232.0,
-"implied_fcf_growth": 0.4377,
+"implied_fcf_growth": 0.4078,
 "implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.09,
+"fcf_conversion": null,
 "has_fair_value": false
 }
 ]
