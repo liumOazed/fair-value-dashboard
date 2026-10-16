@@ -51,8 +51,3 @@ a.fvlink{color:var(--acc);text-decoration:none;font-weight:600}a.fvlink:hover{te
 .method h3{font-size:13px;margin:14px 0 4px}.method ul{margin:4px 0 0 18px;padding:0;color:var(--tx)}.method li{margin:2px 0}
 .toggle{background:var(--bg);border:1px solid var(--line);color:var(--tx);border-radius:9px;padding:6px 12px;cursor:pointer;font-size:13px}
 main>*{min-width:0}.card{min-width:0}
-
-main.wide{max-width:min(1800px,98vw);padding-left:20px;padding-right:20px}
-.viewbar{padding:8px 0;margin:10px 0 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-#tbl{min-width:0}.stk{position:sticky;left:0;background:var(--card);z-index:1}
-#tbl td.stk{box-shadow:1px 0 0 var(--line)}

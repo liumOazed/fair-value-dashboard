@@ -16,46 +16,13 @@ const secTop={};top.forEach(r=>secTop[r.sector]=(secTop[r.sector]||0)+1);const t
 $("#kpis").innerHTML=[["Stocks screened",S.universe,"latest month: "+S.month],["Top 50",top.length,"by Growth Quality Score"],["Consistent",cons.length,"top 50 in both months"],
  ["Biggest sector in top 50",topSec[0],topSec[1]+" of 50 stocks"],["With a fair value",rows.filter(r=>!!fv[r.ticker]).length,"full model on the Fair Value tab"]]
  .map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v" style="font-size:${String(k[1]).length>8?18:26}px">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
-
-let view="All columns";
-const pc=x=>(x*100).toFixed(0)+"%";
-const tagCls={"Demanding":"bad","Undemanding":"ok","FCF distorted":"warn","Sales shrinking":"","In line":""};
-const flagCls=f=>f==="Loss-making"||f==="One-off growth?"?"bad":f==="Cyclical"?"warn":"";
-const chg=r=>{const rc=r.rank_change;return rc==null?'<span class="flat">new</span>':rc>0?`<span class="up">▲ ${rc}</span>`:rc<0?`<span class="down">▼ ${-rc}</span>`:'<span class="flat">–</span>'};
-const igf=r=>r.implied_fcf_growth==null?"–":pc(r.implied_fcf_growth)+(r.implied_basis==="earnings"?'<span class="muted" title="Based on earnings yield because free cash flow is distorted"> (earnings)</span>':"")+(r.implied_tag?` <span class="pill ${tagCls[r.implied_tag]||""}">${r.implied_tag}</span>`:"");
-const conv=r=>r.fcf_conversion==null?"–":`<span class="${r.fcf_conversion>1.5?"down":r.fcf_conversion<0.25?"warn":""}" title="Free cash flow yield divided by earnings yield">${r.fcf_conversion.toFixed(2)}×</span>`;
-const fvc=r=>{const v=fv[r.ticker];return v?`<a class="fvlink" href="index.html#${r.ticker}" onclick="event.stopPropagation()">${usd(v.fair)}</a> <span class="${v.diff>0?"down":"up"}">${v.diff>0?"+":""}${(v.diff*100).toFixed(0)}%</span>`:'<span class="muted">not modelled</span>'};
-const ALL=[
- {id:"rank",k:"rank",h:"#",v:r=>r.rank,V:["O","A"]},
- {id:"stock",k:"ticker",h:"Stock",stk:1,v:r=>`<div class="tk">${r.ticker}${r.consistent?'<span class="pill ok">Consistent</span>':""}</div><div class="nm">${r.name}${r.flags.map(x=>`<span class="pill ${flagCls(x)}">${x}</span>`).join("")}</div>`,V:["O","V","Q","A"]},
- {id:"sector",k:"sector",h:"Sector",v:r=>`<div>${r.sector}</div><div class="nm">${r.themes.join(" · ")}</div>`,V:["O","A"]},
- {id:"score",k:"score",h:"Score",v:r=>`<span class="sbar"><i style="width:${r.score}%"></i></span><b>${r.score.toFixed(1)}</b>`,V:["O","Q","A"]},
- {id:"chg",k:"rank_change",h:"Rank change",r:1,v:chg,V:["O","A"]},
- {id:"cap",k:"market_cap",h:"Market cap",r:1,v:r=>cap(r.market_cap),V:["V","A"]},
- {id:"sg",k:"rev_growth_pct",h:"Sales growth",r:1,v:r=>fmt(r.rev_growth_pct,1,"%"),V:["O","Q","A"]},
- {id:"gm",k:"gross_margin_pct",h:"Gross margin",r:1,v:r=>fmt(r.gross_margin_pct,1,"%"),V:["Q","A"]},
- {id:"nm",k:"profit_margin_pct",h:"Net margin",r:1,v:r=>fmt(r.profit_margin_pct,1,"%"),V:["O","Q","A"]},
- {id:"roe",k:"roe_pct",h:"ROE",r:1,v:r=>fmt(r.roe_pct,1,"%"),V:["Q","A"]},
- {id:"fy",k:"fcf_yield_pct",h:"FCF yield",r:1,v:r=>fmt(r.fcf_yield_pct,1,"%"),V:["O","V","Q","A"]},
- {id:"ey",k:"earnings_yield",h:"Earnings yield",r:1,t:"Earnings per share ÷ price (uses forward P/E when available)",v:r=>fmt(r.earnings_yield,1,"%"),V:["V","A"]},
- {id:"cv",k:"fcf_conversion",h:"FCF ÷ EY",r:1,t:"FCF yield ÷ earnings yield. Near 1 = cash matches earnings; above 1.5 or below 0.25 = check why",v:conv,V:["V","Q","A"]},
- {id:"pe",k:"pe",h:"P/E",r:1,v:r=>fmt(r.pe,1),V:["V","A"]},
- {id:"fpe",k:"forward_pe",h:"Fwd P/E",r:1,v:r=>fmt(r.forward_pe,1),V:["O","V","A"]},
- {id:"eve",k:"ev_ebitda",h:"EV/EBITDA",r:1,v:r=>fmt(r.ev_ebitda,1),V:["V","A"]},
- {id:"ps",k:"ps",h:"P/S",r:1,v:r=>fmt(r.ps,1),V:["V","A"]},
- {id:"rr",k:"required_return",h:"Required return",r:1,t:"Sector required return used for Growth priced in",v:r=>fmt(r.required_return*100,1,"%"),V:["V","A"]},
- {id:"ig",k:"implied_fcf_growth",h:"Growth priced in*",r:1,v:igf,V:["O","V","A"]},
- {id:"fv",k:null,h:"Fair value",v:fvc,V:["O","V","A"]}];
-const VIEWS={"Overview":"O","Valuation":"V","Quality":"Q","All columns":"A"};
-const colsFor=n=>ALL.filter(c=>c.V.includes(VIEWS[n]));
-
 let sec="All",th="All",only="",showAll=false,filt="",sortK="rank",dir=1;
 function chips(el,label,list,cur,cb){el.innerHTML=`<span class="lbl">${label}</span>`+list.map(n=>`<button class="chip${n===cur?" on":""}" data-v="${n}">${n}</button>`).join("");
  el.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{cb(c.dataset.v);el.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()})}
 chips($("#secchips"),"Sector",["All",...S.sectors],sec,v=>sec=v);
 chips($("#thchips"),"Theme",["All",...S.themes],th,v=>th=v);
-chips($("#viewnav"),"View",Object.keys(VIEWS),view,v=>view=v);
 chips($("#extra"),"Show",["All","Consistent only","Has fair value"],"All",v=>only=v==="All"?"":v);
+const flagCls=f=>f==="Loss-making"||f==="One-off growth?"?"bad":f==="Cyclical"?"warn":"";
 function render(){
  let f=rows.filter(r=>(sec==="All"||r.sector===sec)&&(th==="All"||r.themes.includes(th))&&(only!=="Consistent only"||r.consistent)&&(only!=="Has fair value"||!!fv[r.ticker])&&(r.ticker+r.name).toLowerCase().includes(filt));
  const filtered=sec!=="All"||th!=="All"||only||filt;
@@ -65,10 +32,18 @@ function render(){
  $("#ttl").textContent=filtered?"Filtered stocks":showAll?"All screened stocks":"Top 50 by Growth Quality Score";
  $("#more").style.display=filtered?"none":"";$("#more").textContent=showAll?"Show top 50 only":`Show all ${S.universe}`;
  $("#count").textContent=`${f.length} stock${f.length===1?"":"s"} shown`;
- const cols=colsFor(view);
- $("#tbl thead").innerHTML="<tr>"+cols.map(c=>`<th${c.k?` data-k="${c.k}"`:""} class="${c.r?"r ":""}${c.stk?"stk":""}"${c.t?` title="${c.t}"`:""}>${c.h}${c.k===sortK?(dir>0?" ▲":" ▼"):""}</th>`).join("")+"</tr>";
-  $("#tbl tbody").innerHTML=f.slice(0,600).map(r=>`<tr data-t="${r.ticker}">`+cols.map(c=>`<td class="${c.r?"r num":""}${c.stk?" stk":""}">${c.v(r)}</td>`).join("")+"</tr>").join("")||`<tr><td colspan="${cols.length}" class="err">No stocks match these filters</td></tr>`;
+ $("#tbl tbody").innerHTML=f.slice(0,600).map(r=>{const rc=r.rank_change;const v=fv[r.ticker];
+  const ch=rc==null?'<span class="flat">new</span>':rc>0?`<span class="up">▲ ${rc}</span>`:rc<0?`<span class="down">▼ ${-rc}</span>`:'<span class="flat">–</span>';
+  const pc=x=>(x*100).toFixed(0)+"%";
+  const tagCls={"Demanding":"bad","Undemanding":"ok","FCF distorted":"warn","Sales shrinking":"","In line":""};
+  const ig=r.implied_fcf_growth==null?"–":pc(r.implied_fcf_growth)+(r.implied_basis==="earnings"?'<span class="muted" title="Based on earnings yield because free cash flow is distorted"> (earnings)</span>':"")+(r.implied_tag?` <span class="pill ${tagCls[r.implied_tag]||""}">${r.implied_tag}</span>`:"");
+  return `<tr data-t="${r.ticker}"><td class="num">${r.rank}</td><td><div class="tk">${r.ticker}${r.consistent?'<span class="pill ok">Consistent</span>':""}</div><div class="nm">${r.name}${r.flags.filter(x=>x!=="Cyclical"||1).map(x=>`<span class="pill ${flagCls(x)}">${x}</span>`).join("")}</div></td>
+  <td><div>${r.sector}</div><div class="nm">${r.themes.join(" · ")}</div></td>
+  <td class="num"><span class="sbar"><i style="width:${r.score}%"></i></span><b>${r.score.toFixed(1)}</b></td><td class="r num">${ch}</td>
+  <td class="r num">${fmt(r.rev_growth_pct,1,"%")}</td><td class="r num">${fmt(r.profit_margin_pct,1,"%")}</td><td class="r num">${fmt(r.fcf_yield_pct,1,"%")}</td><td class="r num">${fmt(r.earnings_yield,1,"%")}</td><td class="r num">${r.fcf_conversion==null?"–":`<span class="${r.fcf_conversion>1.5?"down":r.fcf_conversion<0.25?"warn":""}" title="Free cash flow yield divided by earnings yield">${r.fcf_conversion.toFixed(2)}×</span>`}</td><td class="r num">${fmt(r.forward_pe,1)}</td>
+  <td class="r num">${ig}</td><td>${v?`<a class="fvlink" href="index.html#${r.ticker}" onclick="event.stopPropagation()">${usd(v.fair)}</a> <span class="${v.diff>0?"down":"up"}">${v.diff>0?"+":""}${(v.diff*100).toFixed(0)}%</span>`:'<span class="muted">not modelled</span>'}</td></tr>`}).join("")||'<tr><td colspan="13" class="err">No stocks match these filters</td></tr>';
  document.querySelectorAll("tbody tr[data-t]").forEach(tr=>tr.onclick=()=>open(tr.dataset.t))}
+document.querySelectorAll("th[data-k]").forEach(h=>h.onclick=()=>{const k=h.dataset.k;dir=sortK===k?-dir:(k==="rank"||k==="ticker"||k==="sector"?1:-1);sortK=k;render()});
 $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};
 $("#more").onclick=()=>{showAll=!showAll;render()};
 function open(t){const r=rows.find(x=>x.ticker===t);const v=fv[t];
