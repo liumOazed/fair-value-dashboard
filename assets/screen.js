@@ -23,6 +23,9 @@ chips($("#secchips"),"Sector",["All",...S.sectors],sec,v=>sec=v);
 chips($("#thchips"),"Theme",["All",...S.themes],th,v=>th=v);
 chips($("#extra"),"Show",["All","Consistent only","Has fair value"],"All",v=>only=v==="All"?"":v);
 const flagCls=f=>f==="Loss-making"||f==="One-off growth?"?"bad":f==="Cyclical"?"warn":"";
+{const t=$("#tscroll"),b=$("#bscroll");let lock=0;t.onscroll=()=>{if(lock){lock=0;return}lock=1;b.scrollLeft=t.scrollLeft};b.onscroll=()=>{if(lock){lock=0;return}lock=1;t.scrollLeft=b.scrollLeft}}
+function sync(){const t=$("#tscroll"),b=$("#bscroll"),w=$("#tbl").scrollWidth;$("#tspacer").style.width=w+"px";t.style.display=w>b.clientWidth+2?"":"none"}
+window.addEventListener("resize",sync);
 function render(){
  let f=rows.filter(r=>(sec==="All"||r.sector===sec)&&(th==="All"||r.themes.includes(th))&&(only!=="Consistent only"||r.consistent)&&(only!=="Has fair value"||!!fv[r.ticker])&&(r.ticker+r.name).toLowerCase().includes(filt));
  const filtered=sec!=="All"||th!=="All"||only||filt;
@@ -42,6 +45,7 @@ function render(){
   <td class="num"><span class="sbar"><i style="width:${r.score}%"></i></span><b>${r.score.toFixed(1)}</b></td><td class="r num">${ch}</td>
   <td class="r num">${fmt(r.rev_growth_pct,1,"%")}</td><td class="r num">${fmt(r.profit_margin_pct,1,"%")}</td><td class="r num">${fmt(r.fcf_yield_pct,1,"%")}</td><td class="r num">${fmt(r.earnings_yield,1,"%")}</td><td class="r num">${r.fcf_conversion==null?"–":`<span class="${r.fcf_conversion>1.5?"down":r.fcf_conversion<0.25?"warn":""}" title="Free cash flow yield divided by earnings yield">${r.fcf_conversion.toFixed(2)}×</span>`}</td><td class="r num">${fmt(r.forward_pe,1)}</td>
   <td class="r num">${ig}</td><td>${v?`<a class="fvlink" href="index.html#${r.ticker}" onclick="event.stopPropagation()">${usd(v.fair)}</a> <span class="${v.diff>0?"down":"up"}">${v.diff>0?"+":""}${(v.diff*100).toFixed(0)}%</span>`:'<span class="muted">not modelled</span>'}</td></tr>`}).join("")||'<tr><td colspan="13" class="err">No stocks match these filters</td></tr>';
+ setTimeout(sync,0);
  document.querySelectorAll("tbody tr[data-t]").forEach(tr=>tr.onclick=()=>open(tr.dataset.t))}
 document.querySelectorAll("th[data-k]").forEach(h=>h.onclick=()=>{const k=h.dataset.k;dir=sortK===k?-dir:(k==="rank"||k==="ticker"||k==="sector"?1:-1);sortK=k;render()});
 $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};

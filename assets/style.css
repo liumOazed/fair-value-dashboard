@@ -51,3 +51,5 @@ a.fvlink{color:var(--acc);text-decoration:none;font-weight:600}a.fvlink:hover{te
 .method h3{font-size:13px;margin:14px 0 4px}.method ul{margin:4px 0 0 18px;padding:0;color:var(--tx)}.method li{margin:2px 0}
 .toggle{background:var(--bg);border:1px solid var(--line);color:var(--tx);border-radius:9px;padding:6px 12px;cursor:pointer;font-size:13px}
 main>*{min-width:0}.card{min-width:0}
+
+.topscroll{overflow-x:auto;overflow-y:hidden;height:16px;margin-bottom:2px}#tspacer{height:1px}
