@@ -7,6 +7,20 @@
    "by": "local"
   }
  },
- "fair_value": {},
+ "fair_value": {
+  "2026-10": {
+   "ran": "2026-10-16 16:32 UTC",
+   "calendar_month": "2026-10",
+   "forced": false,
+   "by": "liumOazed",
+   "picks": [
+    "APA",
+    "DECK",
+    "INCY",
+    "ADBE",
+    "MKC"
+   ]
+  }
+ },
  "latest_data_month": "2026-10"
 }

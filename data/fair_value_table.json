@@ -1,0 +1,427 @@
+{
+ "months": {
+  "2026-10": {
+   "month": "2026-10",
+   "evaluated": "2026-10-16",
+   "candidates": 50,
+   "passed": 31,
+   "picks": [
+    {
+     "ticker": "APA",
+     "name": "APA Corporation",
+     "sector": "Energy",
+     "score": 81.7,
+     "rank": 4,
+     "consistent": true,
+     "has_full_model": false,
+     "price_at_eval": 48.32,
+     "fair_value": 81.63,
+     "buy_below": 53.06,
+     "scenario_values": {
+      "bear": 72.24,
+      "base": 82.37,
+      "bull": 93.88
+     },
+     "metrics": {
+      "rev_growth_pct": 9.2,
+      "fcf_yield_pct": 14.75,
+      "earnings_yield": 10.76,
+      "fcf_conversion": 1.37,
+      "profit_margin_pct": 19.56,
+      "forward_pe": 9.29
+     },
+     "cash_yield": 0.0898,
+     "cash_basis": "trailing earnings",
+     "trailing_ey": 11.22,
+     "cyclical": true,
+     "growth_input": 0.092,
+     "required_return": 0.085,
+     "scenarios": {
+      "bear": {
+       "g1": 0.023,
+       "g10": 0.02,
+       "ratio": 1.4951
+      },
+      "base": {
+       "g1": 0.046,
+       "g10": 0.03,
+       "ratio": 1.7047
+      },
+      "bull": {
+       "g1": 0.069,
+       "g10": 0.04,
+       "ratio": 1.9428
+      }
+     },
+     "value_to_price": 1.6894,
+     "mos": 0.35
+    },
+    {
+     "ticker": "DECK",
+     "name": "Deckers Outdoor Corporation",
+     "sector": "Consumer Cyclical",
+     "score": 71.7,
+     "rank": 19,
+     "consistent": true,
+     "has_full_model": false,
+     "price_at_eval": 86.06,
+     "fair_value": 113.87,
+     "buy_below": 79.71,
+     "scenario_values": {
+      "bear": 104.5,
+      "base": 114.68,
+      "bull": 125.87
+     },
+     "metrics": {
+      "rev_growth_pct": 5.7,
+      "fcf_yield_pct": 8.19,
+      "earnings_yield": 10.65,
+      "fcf_conversion": 0.77,
+      "profit_margin_pct": 18.36,
+      "forward_pe": 9.39
+     },
+     "cash_yield": 0.0819,
+     "cash_basis": "FCF",
+     "trailing_ey": 9.05,
+     "cyclical": false,
+     "growth_input": 0.057,
+     "required_return": 0.09,
+     "scenarios": {
+      "bear": {
+       "g1": 0.0143,
+       "g10": 0.02,
+       "ratio": 1.2143
+      },
+      "base": {
+       "g1": 0.0285,
+       "g10": 0.03,
+       "ratio": 1.3326
+      },
+      "bull": {
+       "g1": 0.0428,
+       "g10": 0.04,
+       "ratio": 1.4626
+      }
+     },
+     "value_to_price": 1.3231,
+     "mos": 0.3
+    },
+    {
+     "ticker": "INCY",
+     "name": "Incyte Corporation",
+     "sector": "Healthcare",
+     "score": 78.8,
+     "rank": 6,
+     "consistent": true,
+     "has_full_model": false,
+     "price_at_eval": 112.72,
+     "fair_value": 148.06,
+     "buy_below": 103.64,
+     "scenario_values": {
+      "bear": 105.3,
+      "base": 144.52,
+      "bull": 221.06
+     },
+     "metrics": {
+      "rev_growth_pct": 37.7,
+      "fcf_yield_pct": 4.8,
+      "earnings_yield": 7.32,
+      "fcf_conversion": 0.66,
+      "profit_margin_pct": 27.71,
+      "forward_pe": 13.66
+     },
+     "cash_yield": 0.048,
+     "cash_basis": "FCF",
+     "trailing_ey": 6.47,
+     "cyclical": false,
+     "growth_input": 0.377,
+     "required_return": 0.09,
+     "scenarios": {
+      "bear": {
+       "g1": 0.08,
+       "g10": 0.02,
+       "ratio": 0.9342
+      },
+      "base": {
+       "g1": 0.15,
+       "g10": 0.03,
+       "ratio": 1.2821
+      },
+      "bull": {
+       "g1": 0.25,
+       "g10": 0.04,
+       "ratio": 1.9611
+      }
+     },
+     "value_to_price": 1.3135,
+     "mos": 0.3
+    },
+    {
+     "ticker": "ADBE",
+     "name": "Adobe Inc.",
+     "sector": "Technology",
+     "score": 75.0,
+     "rank": 11,
+     "consistent": true,
+     "has_full_model": true,
+     "price_at_eval": 245.16,
+     "fair_value": 284.39,
+     "buy_below": 199.07,
+     "scenario_values": {
+      "bear": 244.62,
+      "base": 287.2,
+      "bull": 337.02
+     },
+     "metrics": {
+      "rev_growth_pct": 12.9,
+      "fcf_yield_pct": 9.8,
+      "earnings_yield": 11.53,
+      "fcf_conversion": 0.85,
+      "profit_margin_pct": 28.05,
+      "forward_pe": 8.67
+     },
+     "cash_yield": 0.0768,
+     "cash_basis": "trailing earnings",
+     "trailing_ey": 7.68,
+     "cyclical": false,
+     "growth_input": 0.129,
+     "required_return": 0.105,
+     "scenarios": {
+      "bear": {
+       "g1": 0.0323,
+       "g10": 0.02,
+       "ratio": 0.9978
+      },
+      "base": {
+       "g1": 0.0645,
+       "g10": 0.03,
+       "ratio": 1.1715
+      },
+      "bull": {
+       "g1": 0.0968,
+       "g10": 0.04,
+       "ratio": 1.3747
+      }
+     },
+     "value_to_price": 1.16,
+     "mos": 0.3
+    },
+    {
+     "ticker": "MKC",
+     "name": "McCormick & Company, Incorporat",
+     "sector": "Consumer Defensive",
+     "score": 73.4,
+     "rank": 16,
+     "consistent": true,
+     "has_full_model": false,
+     "price_at_eval": 45.98,
+     "fair_value": 53.14,
+     "buy_below": 37.2,
+     "scenario_values": {
+      "bear": 43.73,
+      "base": 53.71,
+      "bull": 65.84
+     },
+     "metrics": {
+      "rev_growth_pct": 16.7,
+      "fcf_yield_pct": 5.72,
+      "earnings_yield": 7.1,
+      "fcf_conversion": 0.81,
+      "profit_margin_pct": 21.91,
+      "forward_pe": 14.08
+     },
+     "cash_yield": 0.0572,
+     "cash_basis": "FCF",
+     "trailing_ey": 12.41,
+     "cyclical": false,
+     "growth_input": 0.167,
+     "required_return": 0.09,
+     "scenarios": {
+      "bear": {
+       "g1": 0.0417,
+       "g10": 0.02,
+       "ratio": 0.9511
+      },
+      "base": {
+       "g1": 0.0835,
+       "g10": 0.03,
+       "ratio": 1.1682
+      },
+      "bull": {
+       "g1": 0.1252,
+       "g10": 0.04,
+       "ratio": 1.432
+      }
+     },
+     "value_to_price": 1.1558,
+     "mos": 0.3
+    }
+   ],
+   "runners_up": [
+    {
+     "ticker": "EXPE",
+     "name": "Expedia Group, Inc.",
+     "sector": "Consumer Cyclical",
+     "value_to_price": 1.1556
+    },
+    {
+     "ticker": "HAS",
+     "name": "Hasbro, Inc.",
+     "sector": "Consumer Cyclical",
+     "value_to_price": 1.1121
+    },
+    {
+     "ticker": "FICO",
+     "name": "Fair Isaac Corporation",
+     "sector": "Technology",
+     "value_to_price": 1.0875
+    },
+    {
+     "ticker": "TPR",
+     "name": "Tapestry, Inc.",
+     "sector": "Consumer Cyclical",
+     "value_to_price": 1.0516
+    },
+    {
+     "ticker": "BMY",
+     "name": "Bristol-Myers Squibb Company",
+     "sector": "Healthcare",
+     "value_to_price": 1.0291
+    },
+    {
+     "ticker": "MO",
+     "name": "Altria Group, Inc.",
+     "sector": "Consumer Defensive",
+     "value_to_price": 1.0184
+    },
+    {
+     "ticker": "NRG",
+     "name": "NRG Energy, Inc.",
+     "sector": "Utilities",
+     "value_to_price": 1.0051
+    },
+    {
+     "ticker": "SPG",
+     "name": "Simon Property Group, Inc.",
+     "sector": "Real Estate",
+     "value_to_price": 0.9587
+    },
+    {
+     "ticker": "CF",
+     "name": "CF Industries Holdings, Inc.",
+     "sector": "Basic Materials",
+     "value_to_price": 0.9573
+    },
+    {
+     "ticker": "INTU",
+     "name": "Intuit Inc.",
+     "sector": "Technology",
+     "value_to_price": 0.942
+    }
+   ],
+   "check_first": [
+    {
+     "ticker": "FIS",
+     "name": "Fidelity National Information S",
+     "sector": "Technology",
+     "value_to_price": 3.2549,
+     "reason": "Looks 3.3x undervalued: too cheap to trust without checking for one-off gains or data errors"
+    }
+   ],
+   "skipped": [
+    {
+     "ticker": "NEM",
+     "name": "Newmont Corporation",
+     "reason": "Sales growth swung from 46% to 15% since 2026-07 (acquisition, one-off or commodity cycle)"
+    },
+    {
+     "ticker": "SNDK",
+     "name": "Sandisk Corporation",
+     "reason": "FCF distorted (cash flow far below earnings)"
+    },
+    {
+     "ticker": "EOG",
+     "name": "EOG Resources, Inc.",
+     "reason": "Sales growth swung from 16% to 59% since 2026-07 (acquisition, one-off or commodity cycle)"
+    },
+    {
+     "ticker": "MU",
+     "name": "Micron Technology, Inc.",
+     "reason": "FCF distorted (cash flow far below earnings)"
+    },
+    {
+     "ticker": "NVDA",
+     "name": "NVIDIA Corporation",
+     "reason": "FCF distorted (cash flow far below earnings)"
+    },
+    {
+     "ticker": "AVGO",
+     "name": "Broadcom Inc.",
+     "reason": "Sales growth swung from 48% to 86% since 2026-07 (acquisition, one-off or commodity cycle)"
+    },
+    {
+     "ticker": "CINF",
+     "name": "Cincinnati Financial Corporatio",
+     "reason": "Financial company: free cash flow is not meaningful"
+    },
+    {
+     "ticker": "ALL",
+     "name": "Allstate Corporation (The)",
+     "reason": "Financial company: free cash flow is not meaningful"
+    },
+    {
+     "ticker": "KDP",
+     "name": "Keurig Dr Pepper Inc.",
+     "reason": "Sales growth swung from 9% to 76% since 2026-07 (acquisition, one-off or commodity cycle)"
+    },
+    {
+     "ticker": "GEV",
+     "name": "GE Vernova Inc.",
+     "reason": "FCF unusually high (more than 1.5x earnings, may not last)"
+    },
+    {
+     "ticker": "MPC",
+     "name": "Marathon Petroleum Corporation",
+     "reason": "Sales growth swung from 9% to 54% since 2026-07 (acquisition, one-off or commodity cycle)"
+    },
+    {
+     "ticker": "ED",
+     "name": "Consolidated Edison, Inc.",
+     "reason": "FCF distorted (cash flow far below earnings)"
+    },
+    {
+     "ticker": "EIX",
+     "name": "Edison International",
+     "reason": "FCF distorted (cash flow far below earnings)"
+    },
+    {
+     "ticker": "GS",
+     "name": "Goldman Sachs Group, Inc. (The)",
+     "reason": "Financial company: free cash flow is not meaningful"
+    },
+    {
+     "ticker": "FANG",
+     "name": "Diamondback Energy, Inc.",
+     "reason": "Sales growth swung from 4% to 52% since 2026-07 (acquisition, one-off or commodity cycle)"
+    },
+    {
+     "ticker": "WDC",
+     "name": "Western Digital Corporation",
+     "reason": "FCF distorted (cash flow far below earnings)"
+    },
+    {
+     "ticker": "AMCR",
+     "name": "Amcor plc",
+     "reason": "Sales growth swung from 77% to 26% since 2026-07 (acquisition, one-off or commodity cycle)"
+    },
+    {
+     "ticker": "OMC",
+     "name": "Omnicom Group Inc.",
+     "reason": "Acquisition-like growth (sales up >40% on a thin margin)"
+    }
+   ],
+   "prev_month": "2026-07"
+  }
+ },
+ "latest": "2026-10"
+}
