@@ -1,0 +1,40 @@
+name: Monthly run
+# Buttons on the dashboard open this page. Pick a step and press "Run workflow".
+# Each step runs once per month; a second run that month does nothing (tick "force" only to redo a corrected CSV).
+on:
+  schedule:
+    - cron: "0 3 1 * *"        # 03:00 UTC on the 1st of every month
+  push:
+    paths:
+      - "data/screens/*.csv"   # uploading the new month's CSV runs both steps
+  workflow_dispatch:
+    inputs:
+      step:
+        description: "What to run"
+        type: choice
+        options: [growth, fair_value, both]
+        default: both
+      force:
+        description: "Force re-run even if this month is already done"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency: { group: monthly, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pandas numpy
+      - run: python scripts/monthly.py --step "${{ inputs.step || 'both' }}" ${{ inputs.force && '--force' || '' }}
+      - run: python scripts/update_prices.py || true
+      - name: Commit changes
+        run: |
+          git config user.name "monthly-bot"
+          git config user.email "monthly-bot@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Monthly run: $(date -u +%Y-%m)"
+          git pull --rebase && git push

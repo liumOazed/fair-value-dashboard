@@ -10,7 +10,7 @@
 <body>
 <header class="top">
   <div class="brand"><span class="logo"></span><div><h1>Fair Value Dashboard</h1><p id="sub">Growth screen</p></div></div>
-  <nav class="tabs"><a href="index.html">Fair Value</a><a href="screener.html" class="on">Growth Screen</a></nav>
+  <nav class="tabs"><a href="index.html">Fair Value</a><a href="screener.html" class="on">Growth Screen</a><a href="top5.html">Monthly Top 5</a></nav>
   <div class="actions">
     <input id="q" type="search" placeholder="Filter ticker or name">
     <button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
@@ -18,6 +18,7 @@
 </header>
 <main>
   <section class="kpis" id="kpis"></section>
+  <section class="card" id="runpanel"></section>
   <section class="card">
     <div class="card-head"><h2 id="ttl">Top 50 by Growth Quality Score</h2><span class="muted" id="stamp"></span></div>
     <div class="chips" id="secchips"></div>
@@ -44,7 +45,7 @@
     <li>Energy and Basic Materials are cyclical, so growth counts 15% and cash generation 35%.</li>
     <li>Loss-making companies lose 10 points; missing P/E data loses 5.</li>
     <li>Flags mark one-off growth (over 100%), loss-making and cyclical companies.</li>
-    <li><b>Consistent</b> means the stock was in the top 50 in both of the last two months.</li></ul>
+    <li><b>Consistent</b> means the stock was in the top 50 in at least 3 of the last 4 months, including the latest. August and September 2026 are <b>estimated</b> (straight line between the real July and October files) and are shown with dashed borders; rank change is measured against the last real month.</li></ul>
     <h3>"Growth priced in" labels</h3>
     <ul><li><b>Demanding</b>: the price assumes over 25% more growth than the company has recently delivered.</li><li><b>In line</b>: within about 25% of recent growth.</li><li><b>Undemanding</b>: under 75% of recent growth.</li>
     <li><b>FCF distorted</b>: free cash flow is under 25% of earnings (or it is a financial company), so earnings are used and there is no verdict.</li><li><b>Sales shrinking</b>: no fair comparison, no verdict.</li></ul>
@@ -54,6 +55,7 @@
 </main>
 <aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
 <div id="scrim" class="scrim"></div>
+<script src="assets/runs.js"></script>
 <script src="assets/screen.js"></script>
 </body>
 </html>

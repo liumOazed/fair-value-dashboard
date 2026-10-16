@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monthly Top 5 | Fair Value Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo"></span><div><h1>Fair Value Dashboard</h1><p id="sub">Monthly Top 5</p></div></div>
+  <nav class="tabs"><a href="index.html">Fair Value</a><a href="screener.html">Growth Screen</a><a href="top5.html" class="on">Monthly Top 5</a></nav>
+  <div class="actions"><button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button></div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="card" id="runpanel"></section>
+  <section class="card">
+    <div class="card-head"><h2 id="ttl">Fair Value Table</h2><span class="muted" id="stamp"></span></div>
+    <div class="chips" id="mchips"></div>
+    <div class="scroll topscroll" id="tscroll"><div id="tspacer"></div></div>
+    <div class="scroll" id="bscroll"><table id="tbl"><thead><tr>
+      <th>#</th><th>Stock</th><th class="r">Price at pick</th><th class="r">Price now</th><th class="r">Fair value</th><th class="r">Buy below</th>
+      <th class="r">Price vs fair value</th><th>Status</th><th class="r">Since picked</th><th class="r">Bear / Base / Bull</th><th class="r">Cash yield used</th><th class="r">Growth used</th>
+    </tr></thead><tbody></tbody></table></div>
+    <p class="foot">Quick estimates from screen data (see method below), not the full hand-checked models on the Fair Value tab. Click a row for the calculation. Prices update every weekday.</p>
+  </section>
+  <section class="card" id="others"></section>
+  <section class="card method">
+    <h2>How the Top 5 are chosen</h2>
+    <h3>1. Start with this month's Top 50</h3><ul><li>The 50 highest Growth Quality Scores on the Growth Screen tab.</li></ul>
+    <h3>2. Remove stocks whose numbers can't be trusted</h3>
+    <ul><li>Financial companies (free cash flow isn't meaningful).</li><li>No P/E, or loss-making.</li>
+    <li><b>FCF distorted</b>: free cash flow under 25% of earnings (heavy capex).</li><li><b>FCF unusually high</b>: over 1.5× earnings (often one-off timing, may not last).</li>
+    <li><b>Acquisition-like growth</b>: sales up over 40% on a net margin under 5%, or sales more than doubled.</li>
+    <li><b>Unstable</b>: sales growth swung by over 30 points, or free cash flow flipped sign, since the last real month.</li></ul>
+    <h3>3. Quick fair value (Bear / Base / Bull, like the main model)</h3>
+    <ul><li><b>Cash yield</b> = the lower of FCF yield and trailing earnings yield (actual results, not forecasts). Energy and Basic Materials take a 20% mid-cycle haircut.</li>
+    <li><b>Growth</b>: recent sales growth (0 to 40%, cyclicals capped at 10%). Year-1 growth is 25% / 50% / 75% of it for Bear / Base / Bull (caps 8% / 15% / 25%), fading to 2% / 3% / 4% by year 10.</li>
+    <li>10 years of cash discounted at the sector required return, plus a terminal value at 2.5% growth. Weights 30% / 50% / 20%.</li>
+    <li>Fair value per share = price at evaluation × (value ÷ market value). Buy below = fair value minus a 30% margin of safety (35% for cyclicals).</li></ul>
+    <h3>4. Pick</h3><ul><li>The 5 with the biggest discount to fair value, at most 2 from one sector. Anything that looks more than 2.5× undervalued goes to <b>Check first</b> instead: that is usually a one-off gain or a data error, not a bargain.</li></ul>
+    <h3>Once a month</h3><ul><li>Runs on the 1st, when a new month's CSV is uploaded, or from the button. A second run in the same month does nothing. Past months stay so you can see how earlier picks did.</li></ul>
+    <p class="muted">Estimates from screen data only, not investment advice.</p>
+  </section>
+</main>
+<aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
+<div id="scrim" class="scrim"></div>
+<script src="assets/runs.js"></script>
+<script src="assets/top5.js"></script>
+</body>
+</html>

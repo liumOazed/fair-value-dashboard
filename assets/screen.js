@@ -13,7 +13,7 @@ $("#sub").textContent=`Growth screen · ${S.month} vs ${S.prev_month||"n/a"}`;
 $("#stamp").textContent=`${S.universe} stocks screened · built ${S.built}`;
 const rows=S.rows,top=rows.filter(r=>r.top50),cons=rows.filter(r=>r.consistent);
 const secTop={};top.forEach(r=>secTop[r.sector]=(secTop[r.sector]||0)+1);const topSec=Object.entries(secTop).sort((a,b)=>b[1]-a[1])[0];
-$("#kpis").innerHTML=[["Stocks screened",S.universe,"latest month: "+S.month],["Top 50",top.length,"by Growth Quality Score"],["Consistent",cons.length,"top 50 in both months"],
+$("#kpis").innerHTML=[["Stocks screened",S.universe,"latest month: "+S.month],["Top 50",top.length,"by Growth Quality Score"],["Consistent",cons.length,"top 50 in 3 of last 4 months"],
  ["Biggest sector in top 50",topSec[0],topSec[1]+" of 50 stocks"],["With a fair value",rows.filter(r=>!!fv[r.ticker]).length,"full model on the Fair Value tab"]]
  .map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v" style="font-size:${String(k[1]).length>8?18:26}px">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
 let sec="All",th="All",only="",showAll=false,filt="",sortK="rank",dir=1;
@@ -54,8 +54,10 @@ function open(t){const r=rows.find(x=>x.ticker===t);const v=fv[t];
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
  <p>${r.sector}${r.themes.length?" · "+r.themes.join(" · "):""}${r.consistent?' <span class="pill ok">Consistent</span>':""}${r.flags.map(x=>`<span class="pill ${flagCls(x)}">${x}</span>`).join("")}</p>
  <div class="grid2"><div class="mini">Score now<b>${r.score.toFixed(1)}</b><span class="muted">rank ${r.rank} of ${S.universe}</span></div>
- <div class="mini">Score last month<b>${r.prev_score==null?"–":r.prev_score.toFixed(1)}</b><span class="muted">${r.prev_rank==null?"not in last month's file":"rank "+r.prev_rank}</span></div>
+ <div class="mini">Score in ${S.prev_month||"last month"}<b>${r.prev_score==null?"–":r.prev_score.toFixed(1)}</b><span class="muted">${r.prev_rank==null?"not in that file":"rank "+r.prev_rank}</span></div>
  <div class="mini">Original score<b>${r.old_score.toFixed(1)}</b><span class="muted">the old method, for comparison</span></div><div class="mini">Market cap<b>${cap(r.market_cap)}</b></div></div>
+ <h3>Rank by month</h3><div class="hist">${(r.history||[]).map(h=>`<div class="${h.est?"est":""}" title="${h.est?"estimated month":"real data"}">${h.m}${h.est?" (est.)":""}<b>${h.rank==null?"–":"#"+h.rank}</b><span class="muted">${h.score==null?"":h.score.toFixed(1)}</span></div>`).join("")}</div>
+ <p class="muted">${r.months_in_top50} of the last ${S.window.length} months in the top 50.</p>
  <h3>Key numbers</h3><table class="s"><tr><th style="text-align:left">Metric</th><th>Value</th></tr>
  ${[["Sales growth",fmt(r.rev_growth_pct,1,"%")],["Gross margin",fmt(r.gross_margin_pct,1,"%")],["Net margin",fmt(r.profit_margin_pct,1,"%")],["Return on equity",fmt(r.roe_pct,1,"%")],["FCF yield",fmt(r.fcf_yield_pct,1,"%")],["Earnings yield",fmt(r.earnings_yield,1,"%")],["FCF ÷ earnings yield",r.fcf_conversion==null?"–":r.fcf_conversion.toFixed(2)+"×"],["P/E",fmt(r.pe,1)],["Forward P/E",fmt(r.forward_pe,1)],["EV/EBITDA",fmt(r.ev_ebitda,1)],["Price/Sales",fmt(r.ps,1)]].map(x=>`<tr><td style="text-align:left">${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table>
  <h3>What today's price assumes</h3><p>${r.implied_fcf_growth==null?"Not available (cash flow and earnings are zero or negative).":
@@ -67,4 +69,5 @@ function open(t){const r=rows.find(x=>x.ticker===t);const v=fv[t];
 function close(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on")}
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());
 render();
+RunPanel($("#runpanel"));
 })();

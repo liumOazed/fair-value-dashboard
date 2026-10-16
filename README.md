@@ -10,11 +10,20 @@ A static dashboard comparing live-ish prices with estimated fair values (modern 
 
 Prices refresh automatically every weekday after the US close. No keys or secrets are used.
 
-## Growth Screen tab (monthly)
-Each month, add the new screen CSV to `data/screens/` (name it like `growth_screen_results_2026-11.csv`; the month in the name is what counts). A GitHub job (`build-screen.yml`) rebuilds `data/screen.json` automatically, or run `python scripts/build_screen.py` yourself (needs `pandas`). The page shows the latest month versus the previous one.
-- **Score v2** is explained at the bottom of the Growth Screen page and in the docstring of `scripts/build_screen.py`. Weights and caps are at the top of that file.
-- **Themes** (Hyperscalers, AI chips, ...) live in `data/themes.json`. Edit the lists freely; sectors come from the CSV.
-- **Growth priced in** is an indicative reverse DCF, not a fair value. It uses a sector required return (`REQ_RETURN` in `scripts/build_screen.py`, based on Damodaran's Jan-2026 cost of equity + about 1 point). Where free cash flow is distorted (FCF yield under 25% of earnings yield, or a bank/insurer) it uses the earnings yield and shows `FCF distorted` with no verdict; shrinking sales also get no verdict. Only stocks in `data/assets.json` have a full fair value.
+## Growth Screen and Monthly Top 5 (once a month)
+
+1. Upload the new month's CSV to `data/screens/` as `growth_screen_results_YYYY-MM.csv` (Add file → Upload files on GitHub).
+2. That upload starts the **Monthly run** workflow automatically. It:
+   - fills any missing months in between with estimates (`scripts/backfill.py`, files ending `_estimated.csv`; a real file for that month always replaces its estimate),
+   - scores and ranks every stock and saves the Top 50 (`scripts/build_screen.py`, results cached per month in `data/cache/`),
+   - picks the month's 5 most undervalued stocks for the Fair Value Table (`scripts/fair_value_table.py`).
+3. The dashboard buttons **Calculate Top Growth** and **Evaluate Fair Value** open the same workflow (Actions → Monthly run → Run workflow).
+
+Each step runs **once per month**: `data/runs.json` records what's done, and a second run in the same month stops with
+"Already calculated for <month>". The workflow also runs on the 1st of each month; if the new CSV isn't there yet it says so and does nothing.
+To redo a month after fixing its CSV, run the workflow with **force** ticked.
+
+Edit `data/themes.json` to change the theme filters (that rebuilds the screen without touching the monthly lock).
 
 ## Add a new stock
 Open `data/assets.json` and copy one block in `assets`. Required fields: `ticker`, `name`, `type` (`stock`, `etf` or `commodity`), `fair_value`, `bear`, `base`, `bull`, `mos` (margin of safety, e.g. 0.25), `buy_below` (fair value × (1 − mos)), `valued_on`. The rest (`scenarios`, `sensitivity`, `epv`, `implied_return`, `notes`) is optional and only fills the detail panel. Commit. The price script picks the ticker up on its next run (or run the workflow by hand).

@@ -78,24 +78,47 @@ def implied_growth(y_pct, R):
     return round((lo + hi) / 2, 4)
 
 def month_of(p): return re.search(r"(\d{4}-\d{2})", p).group(1)
-files = sorted(glob.glob(str(ROOT / "data/screens/*.csv")), key=month_of)
-if len(files) < 1: raise SystemExit("No CSVs in data/screens/")
-months = [month_of(f) for f in files]
-frames = {}
-for f, m in zip(files, months):
+CACHE = ROOT / "data/cache"
+def load_month(f):
+    """Score one month, reusing data/cache/scores_YYYY-MM.json when the CSV has not changed (scores are relative
+    within a month, so a month's result never changes unless its own CSV changes)."""
+    import hashlib
+    h = hashlib.sha1(open(f, "rb").read()).hexdigest()[:12]
+    cf = CACHE / f"scores_{month_of(f)}.json"
+    if cf.exists():
+        c = json.load(open(cf))
+        if c.get("csv_hash") == h:
+            d = pd.DataFrame(c["rows"]).set_index("ticker", drop=False); d.attrs["cached"] = True; return d
     d = pd.read_csv(f).drop_duplicates("ticker").set_index("ticker", drop=False)
     d = score_v2(d); d["rank"] = d.score.rank(ascending=False, method="min").astype(int)
-    d["old_rank"] = d.growth_score.rank(ascending=False, method="min").astype(int)
-    frames[m] = d
-cur_m, prev_m = months[-1], (months[-2] if len(months) > 1 else None)
+    CACHE.mkdir(exist_ok=True)
+    keep = d.drop(columns=[c for c in ("g", "roe_c", "fcf_c", "fpe_c", "evx_c") if c in d.columns])
+    json.dump(dict(csv=pathlib.Path(f).name, csv_hash=h, rows=json.loads(keep.to_json(orient="records"))), open(cf, "w"))
+    d.attrs["cached"] = False; return d
+
+allf = glob.glob(str(ROOT / "data/screens/*.csv"))
+by_month = {}
+for f in sorted(allf, key=lambda p: ("_estimated" not in p)):     # real files sort last, so they overwrite estimates
+    by_month[month_of(f)] = f
+months = sorted(by_month)
+if not months: raise SystemExit("No CSVs in data/screens/")
+estimated = {m for m in months if "_estimated" in by_month[m]}
+frames = {m: load_month(by_month[m]) for m in months}
+print("months:", [m + ("*" if m in estimated else "") for m in months], "cache hits:", [m for m in months if frames[m].attrs.get("cached")])
+cur_m = months[-1]
+if cur_m in estimated: raise SystemExit("Latest month is an estimate; add the real CSV")
+real_before = [m for m in months[:-1] if m not in estimated]
+prev_m = real_before[-1] if real_before else None                 # rank change is measured against the last REAL month
 cur = frames[cur_m]; prev = frames[prev_m] if prev_m else None
+WINDOW = months[-4:]                                               # consistency window: latest 4 months (estimates included)
+top_sets = {m: set(frames[m].nsmallest(50, "rank").index) for m in WINDOW}
+NEED = 3 if len(WINDOW) >= 4 else len(WINDOW)
 themes = {k: v for k, v in json.load(open(ROOT / "data/themes.json")).items() if not k.startswith("_")}
 t_of = {}
 for th, tk in themes.items():
     for t in tk: t_of.setdefault(t, []).append(th)
 fv = {a["ticker"] for a in json.load(open(ROOT / "data/assets.json"))["assets"]}
-top_cur = set(cur.nsmallest(50, "rank").index)
-top_prev = set(prev.nsmallest(50, "rank").index) if prev is not None else set()
+top_cur = top_sets[cur_m]
 def num(x): return None if pd.isna(x) else round(float(x), 2)
 rows = []
 for t, r in cur.iterrows():
@@ -117,12 +140,13 @@ for t, r in cur.iterrows():
     rows.append(dict(ticker=t, name=r["name"], sector=r.sector, themes=t_of.get(t, []), score=float(r.score), rank=int(r["rank"]),
         prev_score=None if p is None else float(p.score), prev_rank=None if p is None else int(p["rank"]),
         rank_change=None if p is None else int(p["rank"]) - int(r["rank"]),
-        old_score=float(r.growth_score), consistent=(t in top_cur and t in top_prev), top50=t in top_cur, flags=r["flag_list"],
+        old_score=float(r.growth_score), consistent=(t in top_cur and sum(t in top_sets[m] for m in WINDOW) >= NEED), months_in_top50=sum(t in top_sets[m] for m in WINDOW), top50=t in top_cur,
+        history=[dict(m=m, rank=int(frames[m].loc[t, 'rank']), score=float(frames[m].loc[t, 'score']), est=m in estimated) if t in frames[m].index else dict(m=m, rank=None, score=None, est=m in estimated) for m in months], flags=r["flag_list"],
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
         fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
-out = dict(month=cur_m, prev_month=prev_m, built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
+out = dict(month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
 json.dump(out, open(ROOT / "data/screen.json", "w"), indent=0)
 print("built", cur_m, "vs", prev_m, "rows", len(rows), "consistent", sum(r["consistent"] for r in rows))

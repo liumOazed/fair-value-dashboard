@@ -4,6 +4,13 @@ Uses Yahoo Finance's public chart endpoint (no key needed). Keeps old values if 
 import json, sys, time, urllib.request, datetime, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 assets = json.loads((ROOT / "data/assets.json").read_text())["assets"]
+try:   # also price every stock ever picked in the monthly Fair Value Table, so picks can be tracked
+    _fv = json.loads((ROOT / "data/fair_value_table.json").read_text())["months"]
+    _have = {a["ticker"] for a in assets}
+    for _m in _fv.values():
+        for _p in _m["picks"]:
+            if _p["ticker"] not in _have: assets.append({"ticker": _p["ticker"]}); _have.add(_p["ticker"])
+except Exception: pass
 pfile = ROOT / "data/prices.json"
 try: out = json.loads(pfile.read_text())
 except Exception: out = {"prices": {}}
