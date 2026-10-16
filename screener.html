@@ -16,18 +16,15 @@
     <button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
   </div>
 </header>
-<main>
+<main class="wide">
   <section class="kpis" id="kpis"></section>
   <section class="card">
     <div class="card-head"><h2 id="ttl">Top 50 by Growth Quality Score</h2><span class="muted" id="stamp"></span></div>
     <div class="chips" id="secchips"></div>
     <div class="chips" id="thchips"></div>
     <div class="chips" id="extra"></div>
-    <div class="scroll"><table id="tbl"><thead><tr>
-      <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="rank_change" class="r">Rank change</th>
-      <th data-k="rev_growth_pct" class="r">Sales growth</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r">FCF yield</th><th data-k="earnings_yield" class="r" title="Earnings per share ÷ price (uses forward P/E when available)">Earnings yield</th><th data-k="fcf_conversion" class="r" title="FCF yield ÷ earnings yield. Near 1 = cash matches earnings; above 1.5 or below 0.25 = check why">FCF ÷ EY</th>
-      <th data-k="forward_pe" class="r">Fwd P/E</th><th data-k="implied_fcf_growth" class="r">Growth priced in*</th><th>Fair value</th>
-    </tr></thead><tbody></tbody></table></div>
+    <div class="viewbar chips" id="viewnav"></div>
+    <div class="scroll"><table id="tbl"><thead></thead><tbody></tbody></table></div>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px">
       <p class="foot" id="count"></p><button class="toggle" id="more">Show all</button></div>
     <p class="foot">*Indicative only, not a fair value: the 10-year yearly growth that today's market value already assumes, using a sector required return, compared with recent sales growth. <b>FCF distorted</b> means free cash flow is a poor guide (heavy capex, or a bank/insurer), so earnings are used instead and no Demanding/Undemanding verdict is given. <b>Sales shrinking</b> also gets no verdict.</p>
