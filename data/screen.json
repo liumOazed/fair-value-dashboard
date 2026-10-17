@@ -18,7 +18,7 @@
 "2026-10"
 ],
 "consistent_rule": "in the top 50 in at least 3 of the last 4 months, including the latest",
-"built": "2026-10-16",
+"built": "2026-10-17",
 "universe": 502,
 "sectors": [
 "Basic Materials",
@@ -282,7 +282,7 @@
 "required_return": 0.085,
 "fcf_conversion": 1.37,
 "earnings_yield": 10.76,
-"has_fair_value": false
+"has_fair_value": true
 },
 {
 "ticker": "SNDK",
@@ -406,7 +406,7 @@
 "required_return": 0.09,
 "fcf_conversion": 0.66,
 "earnings_yield": 7.32,
-"has_fair_value": false
+"has_fair_value": true
 },
 {
 "ticker": "HAS",
@@ -1008,7 +1008,7 @@
 "required_return": 0.09,
 "fcf_conversion": 0.81,
 "earnings_yield": 7.1,
-"has_fair_value": false
+"has_fair_value": true
 },
 {
 "ticker": "SPG",
@@ -1187,7 +1187,7 @@
 "required_return": 0.09,
 "fcf_conversion": 0.77,
 "earnings_yield": 10.65,
-"has_fair_value": false
+"has_fair_value": true
 },
 {
 "ticker": "NVDA",

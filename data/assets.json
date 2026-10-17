@@ -1008,6 +1008,358 @@
      ]
     ]
    }
+  },
+  {
+   "ticker": "APA",
+   "name": "APA Corporation",
+   "type": "stock",
+   "fair_value": 32.15,
+   "bear": 15.15,
+   "base": 31.79,
+   "bull": 58.56,
+   "mos": 0.35,
+   "buy_below": 20.9,
+   "required_return": 0.1,
+   "epv": 27.68,
+   "implied_return": 0.0761,
+   "reverse_g1": 0.0476,
+   "tv_share": 0.429,
+   "notes": "TTM to Jun-2026, earned at about $98/bbl realised oil: a cycle high, so every case assumes revenue falls and the cash margin shrinks from today's ~23% (after SBC) toward 10-20%. SBC from filings (~$0.15B/yr). Net debt $3.4B. Oil-price dependent: lower confidence, 10% required return and 35% safety margin.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": -0.08,
+     "g10": 0.0,
+     "m": 0.1
+    },
+    "base": {
+     "g1": -0.04,
+     "g10": 0.02,
+     "m": 0.15
+    },
+    "bull": {
+     "g1": 0.02,
+     "g10": 0.025,
+     "m": 0.2
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.08,
+     0.09,
+     0.1,
+     0.11,
+     0.12
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      40.5,
+      42.7,
+      45.3,
+      48.4,
+      52.2
+     ],
+     [
+      34.3,
+      35.8,
+      37.5,
+      39.5,
+      41.9
+     ],
+     [
+      29.5,
+      30.6,
+      31.8,
+      33.2,
+      34.8
+     ],
+     [
+      25.7,
+      26.5,
+      27.4,
+      28.4,
+      29.5
+     ],
+     [
+      22.7,
+      23.3,
+      23.9,
+      24.6,
+      25.4
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "DECK",
+   "name": "Deckers Outdoor Corp.",
+   "type": "stock",
+   "fair_value": 129.81,
+   "bear": 90.14,
+   "base": 134.67,
+   "bull": 177.19,
+   "mos": 0.3,
+   "buy_below": 90.87,
+   "required_return": 0.095,
+   "epv": 85.24,
+   "implied_return": 0.1379,
+   "reverse_g1": -0.0579,
+   "tv_share": 0.531,
+   "notes": "TTM to Jun-2026. FY27 guidance: revenue $5.86-5.91B (high single digit growth), HOKA low-double-digit, UGG mid-single-digit, operating margin ~21.5% after ~150bp tariff drag. SBC is an ESTIMATE (~1% of revenue). $1.1B net cash, heavy buybacks. Fashion/brand risk: the bear case assumes HOKA growth stalls.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": 0.0,
+     "g10": 0.02,
+     "m": 0.15
+    },
+    "base": {
+     "g1": 0.06,
+     "g10": 0.03,
+     "m": 0.18
+    },
+    "bull": {
+     "g1": 0.1,
+     "g10": 0.04,
+     "m": 0.2
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.075,
+     0.085,
+     0.095,
+     0.105,
+     0.115
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      166.7,
+      175.6,
+      186.4,
+      199.5,
+      216.0
+     ],
+     [
+      143.2,
+      149.2,
+      156.2,
+      164.5,
+      174.4
+     ],
+     [
+      125.7,
+      129.9,
+      134.7,
+      140.2,
+      146.6
+     ],
+     [
+      112.1,
+      115.1,
+      118.5,
+      122.4,
+      126.8
+     ],
+     [
+      101.3,
+      103.5,
+      106.0,
+      108.8,
+      111.9
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "INCY",
+   "name": "Incyte Corp.",
+   "type": "stock",
+   "fair_value": 118.51,
+   "bear": 80.29,
+   "base": 118.96,
+   "bull": 174.7,
+   "mos": 0.35,
+   "buy_below": 77.03,
+   "required_return": 0.095,
+   "epv": 85.36,
+   "implied_return": 0.0993,
+   "reverse_g1": 0.0155,
+   "tv_share": 0.508,
+   "notes": "TTM to Jun-2026, revenue cut by the one-off $246M Opzelura settlement benefit. Net cash $4.5B less ~$1.27B Vega (latarcibart) upfront due in Q3-2026. SBC from filings (~$0.26B/yr). Jakafi is ~60% of sales and faces loss of exclusivity later this decade, so the bear case has shrinking sales and lower margins; 35% safety margin.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": -0.02,
+     "g10": 0.02,
+     "m": 0.18
+    },
+    "base": {
+     "g1": 0.03,
+     "g10": 0.03,
+     "m": 0.24
+    },
+    "bull": {
+     "g1": 0.08,
+     "g10": 0.04,
+     "m": 0.3
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.075,
+     0.085,
+     0.095,
+     0.105,
+     0.115
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      144.1,
+      151.1,
+      159.5,
+      169.8,
+      182.7
+     ],
+     [
+      125.7,
+      130.4,
+      135.9,
+      142.3,
+      150.1
+     ],
+     [
+      112.0,
+      115.2,
+      119.0,
+      123.3,
+      128.3
+     ],
+     [
+      101.3,
+      103.6,
+      106.3,
+      109.3,
+      112.7
+     ],
+     [
+      92.7,
+      94.5,
+      96.4,
+      98.6,
+      101.0
+     ]
+    ]
+   }
+  },
+  {
+   "ticker": "MKC",
+   "name": "McCormick & Co.",
+   "type": "stock",
+   "fair_value": 50.97,
+   "bear": 32.35,
+   "base": 54.22,
+   "bull": 70.77,
+   "mos": 0.3,
+   "buy_below": 35.68,
+   "required_return": 0.08,
+   "epv": 27.23,
+   "implied_return": 0.0866,
+   "reverse_g1": 0.0129,
+   "tv_share": 0.607,
+   "notes": "TTM to Aug-2026. Trailing P/E is distorted by a one-off $867M gain on taking control of McCormick de Mexico (Jan-2026), so this model uses free cash flow. Organic growth ~3-6%. STANDALONE value only: the pending Unilever Foods combination (McCormick holders to own 35%, $15.7B cash to Unilever, close expected mid-2027) would change the per-share value substantially. Lower confidence.",
+   "valued_on": "2026-10-16",
+   "scenarios": {
+    "bear": {
+     "g1": 0.01,
+     "g10": 0.02,
+     "m": 0.1
+    },
+    "base": {
+     "g1": 0.04,
+     "g10": 0.03,
+     "m": 0.125
+    },
+    "bull": {
+     "g1": 0.06,
+     "g10": 0.035,
+     "m": 0.14
+    }
+   },
+   "sensitivity": {
+    "r": [
+     0.06,
+     0.07,
+     0.08,
+     0.09,
+     0.1
+    ],
+    "g": [
+     0.015,
+     0.02,
+     0.025,
+     0.03,
+     0.035
+    ],
+    "grid": [
+     [
+      77.1,
+      85.4,
+      96.1,
+      110.3,
+      130.1
+     ],
+     [
+      59.4,
+      64.4,
+      70.5,
+      78.1,
+      87.9
+     ],
+     [
+      47.2,
+      50.4,
+      54.2,
+      58.8,
+      64.4
+     ],
+     [
+      38.2,
+      40.4,
+      43.0,
+      46.0,
+      49.5
+     ],
+     [
+      31.4,
+      33.0,
+      34.7,
+      36.8,
+      39.1
+     ]
+    ]
+   }
   }
  ]
 }

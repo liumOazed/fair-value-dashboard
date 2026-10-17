@@ -10,7 +10,8 @@ RunPanel($("#runpanel"));
 {const t=$("#tscroll"),b=$("#bscroll");let lock=0;t.onscroll=()=>{if(lock){lock=0;return}lock=1;b.scrollLeft=t.scrollLeft};b.onscroll=()=>{if(lock){lock=0;return}lock=1;t.scrollLeft=b.scrollLeft}}
 function sync(){const t=$("#tscroll"),b=$("#bscroll"),w=$("#tbl").scrollWidth;$("#tspacer").style.width=w+"px";t.style.display=w>b.clientWidth+2?"":"none"}
 window.addEventListener("resize",sync);
-let T={months:{}},P={prices:{}};
+let T={months:{}},P={prices:{}},FULL={};
+try{(await fetch("data/assets.json?"+Date.now()).then(r=>r.json())).assets.forEach(a=>FULL[a.ticker]=a)}catch(e){}
 try{T=await fetch("data/fair_value_table.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()})}catch(e){}
 try{P=await fetch("data/prices.json?"+Date.now()).then(r=>r.json())}catch(e){}
 const months=Object.keys(T.months||{}).sort().reverse();
@@ -31,7 +32,7 @@ function render(){
   ["Below buy price",rows.filter(r=>r.st==="Attractive").length+" of "+rows.length,"price under fair value minus margin of safety"]]
   .map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v" style="font-size:${String(k[1]).length>9?18:26}px">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
  $("#tbl tbody").innerHTML=rows.map((r,i)=>`<tr data-t="${r.ticker}"><td class="num">${i+1}</td>
-  <td><div class="tk">${r.ticker}${r.consistent?'<span class="pill ok">Consistent</span>':""}${r.cyclical?'<span class="pill warn">Cyclical</span>':""}</div><div class="nm">${r.name} · ${r.sector}${r.has_full_model?` · <a class="fvlink" href="index.html#${r.ticker}" onclick="event.stopPropagation()">full model</a>`:""}</div></td>
+  <td><div class="tk">${r.ticker}${r.consistent?'<span class="pill ok">Consistent</span>':""}${r.cyclical?'<span class="pill warn">Cyclical</span>':""}</div><div class="nm">${r.name} · ${r.sector}${FULL[r.ticker]?` · <a class="fvlink" href="index.html#${r.ticker}" onclick="event.stopPropagation()">full model ${usd(FULL[r.ticker].fair_value)}</a>`:""}</div></td>
   <td class="r num">${usd(r.price_at_eval)}</td><td class="r num">${usd(r.now)}</td><td class="r num"><b>${usd(r.fair_value)}</b></td><td class="r num">${usd(r.buy_below)}</td>
   <td class="r num"><span class="${r.diff>0?"down":"up"}">${pct(r.diff)}</span></td><td><span class="badge ${r.cl}">${r.st}</span></td>
   <td class="r num"><span class="${r.since>0?"up":r.since<0?"down":"flat"}">${pct(r.since,1)}</span></td>
@@ -56,7 +57,7 @@ function open(r){const s=r.scenarios,R=(r.required_return*100).toFixed(1);
  <tr><td style="text-align:left"><b>Weighted</b></td><td></td><td></td><td><b>${r.value_to_price.toFixed(2)}×</b></td><td><b>${usd(r.fair_value)}</b></td><td>100%</td></tr></table></div>
  <h3>Step 3 · Discounting</h3><p>Each case projects 10 years of cash, discounts it at the <b>${R}%</b> required return for ${r.sector}, and adds a terminal value at 2.5% growth. "Value ÷ price" is what the business is worth per $1 of today's market value; times the price at evaluation (${usd(r.price_at_eval)}) gives the per-share value.</p>
  <h3>Why it passed the checks</h3><p>FCF is ${r.metrics.fcf_conversion.toFixed(2)}× earnings (between 0.25× and 1.5×), net margin ${r.metrics.profit_margin_pct.toFixed(1)}%, and sales growth didn't swing by more than 30 points since the last real month.</p>
- ${r.has_full_model?`<p><a class="fvlink" href="index.html#${r.ticker}">Compare with the full model on the Fair Value tab</a></p>`:""}
+ ${FULL[r.ticker]?`<h3>Full model</h3><p>The hand-checked model on the Fair Value tab gives <b>${usd(FULL[r.ticker].fair_value)}</b> (buy below ${usd(FULL[r.ticker].buy_below)}) vs this quick estimate of ${usd(r.fair_value)}. Where they differ, trust the full model: it uses filings and normalises the business cycle. <a class="fvlink" href="index.html#${r.ticker}">Open the full calculation</a></p>`:""}
  <p class="muted">Quick estimate from screen data, not investment advice. The market value in the CSV is assumed to match the price on the evaluation day.</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close}
 function close(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on")}

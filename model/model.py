@@ -50,6 +50,22 @@ STOCKS = {
               net_cash=-5.35, extra=0.0, r=0.095, mos=0.30,
               scen=dict(bear=dict(g1=.05,g10=.03,m=.33), base=dict(g1=.10,g10=.04,m=.38), bull=dict(g1=.14,g10=.05,m=.43)),
               notes="TTM to Jun-2026. SBC is an ESTIMATE (about 8% of revenue). Net debt of $5.4B from buybacks. Pricing power in credit scores faces regulatory scrutiny."),
+ "APA": dict(name="APA Corporation", price=49.15, shares=0.34015, rev=8.57, fcf=2.10, sbc=0.15,
+              net_cash=-3.44, extra=0.0, r=0.10, mos=0.35,
+              scen=dict(bear=dict(g1=-.08,g10=.00,m=.10), base=dict(g1=-.04,g10=.02,m=.15), bull=dict(g1=.02,g10=.025,m=.20)),
+              notes="TTM to Jun-2026, earned at about $98/bbl realised oil: a cycle high, so every case assumes revenue falls and the cash margin shrinks from today's ~23% (after SBC) toward 10-20%. SBC from filings (~$0.15B/yr). Net debt $3.4B. Oil-price dependent: lower confidence, 10% required return and 35% safety margin."),
+ "DECK": dict(name="Deckers Outdoor Corp.", price=85.71, shares=0.13618, rev=5.53, fcf=1.12, sbc=0.07,
+              net_cash=1.13, extra=0.0, r=0.095, mos=0.30,
+              scen=dict(bear=dict(g1=.00,g10=.02,m=.15), base=dict(g1=.06,g10=.03,m=.18), bull=dict(g1=.10,g10=.04,m=.20)),
+              notes="TTM to Jun-2026. FY27 guidance: revenue $5.86-5.91B (high single digit growth), HOKA low-double-digit, UGG mid-single-digit, operating margin ~21.5% after ~150bp tariff drag. SBC is an ESTIMATE (~1% of revenue). $1.1B net cash, heavy buybacks. Fashion/brand risk: the bear case assumes HOKA growth stalls."),
+ "INCY": dict(name="Incyte Corp.", price=113.07, shares=0.2027, rev=5.57, fcf=1.92, sbc=0.26,
+              net_cash=3.23, extra=0.0, r=0.095, mos=0.35,
+              scen=dict(bear=dict(g1=-.02,g10=.02,m=.18), base=dict(g1=.03,g10=.03,m=.24), bull=dict(g1=.08,g10=.04,m=.30)),
+              notes="TTM to Jun-2026, revenue cut by the one-off $246M Opzelura settlement benefit. Net cash $4.5B less ~$1.27B Vega (latarcibart) upfront due in Q3-2026. SBC from filings (~$0.26B/yr). Jakafi is ~60% of sales and faces loss of exclusivity later this decade, so the bear case has shrinking sales and lower margins; 35% safety margin."),
+ "MKC": dict(name="McCormick & Co.", price=46.35, shares=0.26906, rev=7.69, fcf=0.926, sbc=0.05,
+              net_cash=-4.69, extra=0.0, r=0.08, mos=0.30,
+              scen=dict(bear=dict(g1=.01,g10=.02,m=.10), base=dict(g1=.04,g10=.03,m=.125), bull=dict(g1=.06,g10=.035,m=.14)),
+              notes="TTM to Aug-2026. Trailing P/E is distorted by a one-off $867M gain on taking control of McCormick de Mexico (Jan-2026), so this model uses free cash flow. Organic growth ~3-6%. STANDALONE value only: the pending Unilever Foods combination (McCormick holders to own 35%, $15.7B cash to Unilever, close expected mid-2027) would change the per-share value substantially. Lower confidence."),
 }
 
 def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False):
