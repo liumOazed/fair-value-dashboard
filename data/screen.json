@@ -1,4 +1,10 @@
 {
+"market": {
+"pe": 24.4,
+"forward_pe": 18.6,
+"n": 477,
+"method": "total market value / total earnings of screened stocks with positive earnings"
+},
 "month": "2026-10",
 "prev_month": "2026-07",
 "months": [
@@ -18,7 +24,7 @@
 "2026-10"
 ],
 "consistent_rule": "in the top 50 in at least 3 of the last 4 months, including the latest",
-"built": "2026-10-17",
+"built": "2026-10-18",
 "universe": 502,
 "sectors": [
 "Basic Materials",
@@ -101,6 +107,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.76,
 "earnings_yield": 9.59,
+"pe_vs_market": -0.6489,
+"fpe_vs_market": -0.4403,
 "has_fair_value": false
 },
 {
@@ -162,6 +170,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.82,
 "earnings_yield": 8.87,
+"pe_vs_market": -0.396,
+"fpe_vs_market": -0.3947,
 "has_fair_value": false
 },
 {
@@ -221,6 +231,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.17,
 "earnings_yield": 9.29,
+"pe_vs_market": -0.323,
+"fpe_vs_market": -0.422,
 "has_fair_value": false
 },
 {
@@ -282,6 +294,8 @@
 "required_return": 0.085,
 "fcf_conversion": 1.37,
 "earnings_yield": 10.76,
+"pe_vs_market": -0.6354,
+"fpe_vs_market": -0.5011,
 "has_fair_value": true
 },
 {
@@ -345,6 +359,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.2,
 "earnings_yield": 15.14,
+"pe_vs_market": -0.0353,
+"fpe_vs_market": -0.6455,
 "has_fair_value": false
 },
 {
@@ -406,6 +422,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.66,
 "earnings_yield": 7.32,
+"pe_vs_market": -0.3677,
+"fpe_vs_market": -0.2667,
 "has_fair_value": true
 },
 {
@@ -465,6 +483,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.75,
 "earnings_yield": 7.43,
+"pe_vs_market": -0.3585,
+"fpe_vs_market": -0.2773,
 "has_fair_value": false
 },
 {
@@ -526,6 +546,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.69,
 "earnings_yield": 8.78,
+"pe_vs_market": -0.2683,
+"fpe_vs_market": -0.3888,
 "has_fair_value": true
 },
 {
@@ -587,6 +609,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.45,
 "earnings_yield": 7.22,
+"pe_vs_market": -0.0397,
+"fpe_vs_market": -0.2568,
 "has_fair_value": true
 },
 {
@@ -646,6 +670,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.83,
 "earnings_yield": 7.59,
+"pe_vs_market": -0.2605,
+"fpe_vs_market": -0.2927,
 "has_fair_value": false
 },
 {
@@ -707,6 +733,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.85,
 "earnings_yield": 11.53,
+"pe_vs_market": -0.4675,
+"fpe_vs_market": -0.5345,
 "has_fair_value": true
 },
 {
@@ -766,6 +794,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.79,
 "earnings_yield": 7.74,
+"pe_vs_market": -0.3581,
+"fpe_vs_market": -0.306,
 "has_fair_value": false
 },
 {
@@ -827,6 +857,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.57,
 "earnings_yield": 10.89,
+"pe_vs_market": -0.5553,
+"fpe_vs_market": -0.507,
 "has_fair_value": false
 },
 {
@@ -886,6 +918,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.92,
 "earnings_yield": 8.71,
+"pe_vs_market": -0.4077,
+"fpe_vs_market": -0.3834,
 "has_fair_value": false
 },
 {
@@ -949,6 +983,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.04,
 "earnings_yield": 15.16,
+"pe_vs_market": -0.0144,
+"fpe_vs_market": -0.6459,
 "has_fair_value": false
 },
 {
@@ -1008,6 +1044,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.81,
 "earnings_yield": 7.1,
+"pe_vs_market": -0.6705,
+"fpe_vs_market": -0.2441,
 "has_fair_value": true
 },
 {
@@ -1067,6 +1105,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.01,
 "earnings_yield": 3.39,
+"pe_vs_market": -0.4105,
+"fpe_vs_market": 0.5859,
 "has_fair_value": false
 },
 {
@@ -1128,6 +1168,8 @@
 "required_return": 0.095,
 "fcf_conversion": 1.0,
 "earnings_yield": 10.68,
+"pe_vs_market": 15.6403,
+"fpe_vs_market": -0.4973,
 "has_fair_value": false
 },
 {
@@ -1187,6 +1229,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.77,
 "earnings_yield": 10.65,
+"pe_vs_market": -0.548,
+"fpe_vs_market": -0.4961,
 "has_fair_value": true
 },
 {
@@ -1250,6 +1294,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.11,
 "earnings_yield": 6.87,
+"pe_vs_market": 0.1884,
+"fpe_vs_market": -0.2181,
 "has_fair_value": true
 },
 {
@@ -1311,6 +1357,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.33,
 "earnings_yield": 5.52,
+"pe_vs_market": 0.8345,
+"fpe_vs_market": -0.0272,
 "has_fair_value": true
 },
 {
@@ -1370,6 +1418,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.15,
 "earnings_yield": 5.67,
+"pe_vs_market": -0.6922,
+"fpe_vs_market": -0.0525,
 "has_fair_value": false
 },
 {
@@ -1429,6 +1479,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.16,
 "earnings_yield": 12.51,
+"pe_vs_market": -0.8153,
+"fpe_vs_market": -0.5707,
 "has_fair_value": false
 },
 {
@@ -1488,6 +1540,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.34,
 "earnings_yield": 8.35,
+"pe_vs_market": 0.2793,
+"fpe_vs_market": -0.3573,
 "has_fair_value": false
 },
 {
@@ -1547,6 +1601,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.61,
 "earnings_yield": 10.52,
+"pe_vs_market": -0.4341,
+"fpe_vs_market": -0.4897,
 "has_fair_value": false
 },
 {
@@ -1608,6 +1664,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.77,
 "earnings_yield": 20.36,
+"pe_vs_market": -0.7904,
+"fpe_vs_market": -0.7363,
 "has_fair_value": false
 },
 {
@@ -1667,6 +1725,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.36,
 "earnings_yield": 6.8,
+"pe_vs_market": 0.3805,
+"fpe_vs_market": -0.2106,
 "has_fair_value": false
 },
 {
@@ -1726,6 +1786,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.55,
 "earnings_yield": 4.47,
+"pe_vs_market": 0.3633,
+"fpe_vs_market": 0.202,
 "has_fair_value": false
 },
 {
@@ -1787,6 +1849,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.94,
 "earnings_yield": 8.09,
+"pe_vs_market": -0.0237,
+"fpe_vs_market": -0.3365,
 "has_fair_value": false
 },
 {
@@ -1846,6 +1910,8 @@
 "required_return": 0.09,
 "fcf_conversion": 2.35,
 "earnings_yield": 2.64,
+"pe_vs_market": 0.1158,
+"fpe_vs_market": 1.0311,
 "has_fair_value": false
 },
 {
@@ -1907,6 +1973,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.7,
 "earnings_yield": 11.92,
+"pe_vs_market": -0.4442,
+"fpe_vs_market": -0.5496,
 "has_fair_value": false
 },
 {
@@ -1966,6 +2034,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.58,
 "earnings_yield": 6.36,
+"pe_vs_market": -0.1648,
+"fpe_vs_market": -0.1563,
 "has_fair_value": false
 },
 {
@@ -2025,6 +2095,8 @@
 "required_return": 0.07,
 "fcf_conversion": -0.35,
 "earnings_yield": 6.36,
+"pe_vs_market": -0.3044,
+"fpe_vs_market": -0.1555,
 "has_fair_value": false
 },
 {
@@ -2084,6 +2156,8 @@
 "required_return": 0.07,
 "fcf_conversion": 0.03,
 "earnings_yield": 12.1,
+"pe_vs_market": -0.7739,
+"fpe_vs_market": -0.5564,
 "has_fair_value": false
 },
 {
@@ -2143,6 +2217,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.66,
 "earnings_yield": 7.42,
+"pe_vs_market": -0.1221,
+"fpe_vs_market": -0.2767,
 "has_fair_value": false
 },
 {
@@ -2202,6 +2278,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.49,
 "earnings_yield": 8.03,
+"pe_vs_market": -0.2397,
+"fpe_vs_market": -0.3313,
 "has_fair_value": false
 },
 {
@@ -2263,6 +2341,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.26,
 "earnings_yield": 4.09,
+"pe_vs_market": 0.6297,
+"fpe_vs_market": 0.3122,
 "has_fair_value": true
 },
 {
@@ -2322,6 +2402,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.56,
 "earnings_yield": 5.21,
+"pe_vs_market": -0.098,
+"fpe_vs_market": 0.0297,
 "has_fair_value": false
 },
 {
@@ -2381,6 +2463,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.68,
 "earnings_yield": 4.82,
+"pe_vs_market": 0.0885,
+"fpe_vs_market": 0.1147,
 "has_fair_value": false
 },
 {
@@ -2440,6 +2524,8 @@
 "required_return": 0.07,
 "fcf_conversion": 0.33,
 "earnings_yield": 11.7,
+"pe_vs_market": 0.035,
+"fpe_vs_market": -0.541,
 "has_fair_value": false
 },
 {
@@ -2499,6 +2585,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 8.14,
+"pe_vs_market": -0.4312,
+"fpe_vs_market": -0.3404,
 "has_fair_value": false
 },
 {
@@ -2560,6 +2648,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.06,
 "earnings_yield": 6.79,
+"pe_vs_market": 0.0766,
+"fpe_vs_market": -0.2097,
 "has_fair_value": false
 },
 {
@@ -2619,6 +2709,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.53,
 "earnings_yield": 6.33,
+"pe_vs_market": -0.0945,
+"fpe_vs_market": -0.1517,
 "has_fair_value": false
 },
 {
@@ -2680,6 +2772,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.96,
 "earnings_yield": 10.21,
+"pe_vs_market": 0.432,
+"fpe_vs_market": -0.474,
 "has_fair_value": false
 },
 {
@@ -2739,6 +2833,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.65,
 "earnings_yield": 5.8,
+"pe_vs_market": 0.0762,
+"fpe_vs_market": -0.0743,
 "has_fair_value": false
 },
 {
@@ -2800,6 +2896,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.88,
 "earnings_yield": 9.82,
+"pe_vs_market": -0.3339,
+"fpe_vs_market": -0.4533,
 "has_fair_value": false
 },
 {
@@ -2861,6 +2959,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.2,
 "earnings_yield": 6.99,
+"pe_vs_market": -0.31,
+"fpe_vs_market": -0.2315,
 "has_fair_value": false
 },
 {
@@ -2922,6 +3022,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.57,
 "earnings_yield": 8.29,
+"pe_vs_market": -0.3771,
+"fpe_vs_market": -0.3527,
 "has_fair_value": false
 },
 {
@@ -2981,6 +3083,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.75,
 "earnings_yield": 10.41,
+"pe_vs_market": -0.2806,
+"fpe_vs_market": -0.4841,
 "has_fair_value": false
 },
 {
@@ -3040,6 +3144,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.33,
 "earnings_yield": 15.83,
+"pe_vs_market": 7.1392,
+"fpe_vs_market": -0.6609,
 "has_fair_value": false
 },
 {
@@ -3099,6 +3205,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 8.01,
+"pe_vs_market": -0.2611,
+"fpe_vs_market": -0.3298,
 "has_fair_value": false
 },
 {
@@ -3158,6 +3266,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.79,
 "earnings_yield": 7.4,
+"pe_vs_market": 0.0132,
+"fpe_vs_market": -0.2748,
 "has_fair_value": false
 },
 {
@@ -3217,6 +3327,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.97,
 "earnings_yield": 9.29,
+"pe_vs_market": -0.3912,
+"fpe_vs_market": -0.4218,
 "has_fair_value": false
 },
 {
@@ -3276,6 +3388,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.58,
 "earnings_yield": 3.5,
+"pe_vs_market": 0.0034,
+"fpe_vs_market": 0.5332,
 "has_fair_value": false
 },
 {
@@ -3339,6 +3453,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.86,
 "earnings_yield": 19.6,
+"pe_vs_market": 0.6137,
+"fpe_vs_market": -0.7261,
 "has_fair_value": false
 },
 {
@@ -3400,6 +3516,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.94,
 "earnings_yield": 7.26,
+"pe_vs_market": -0.3365,
+"fpe_vs_market": -0.2609,
 "has_fair_value": false
 },
 {
@@ -3459,6 +3577,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.44,
 "earnings_yield": 5.91,
+"pe_vs_market": 0.0031,
+"fpe_vs_market": -0.0921,
 "has_fair_value": false
 },
 {
@@ -3518,6 +3638,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.52,
 "earnings_yield": 9.88,
+"pe_vs_market": -0.4244,
+"fpe_vs_market": -0.4567,
 "has_fair_value": false
 },
 {
@@ -3577,6 +3699,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 3.07,
+"pe_vs_market": 1.045,
+"fpe_vs_market": 0.7497,
 "has_fair_value": false
 },
 {
@@ -3636,6 +3760,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.08,
 "earnings_yield": 13.02,
+"pe_vs_market": -0.6316,
+"fpe_vs_market": -0.5875,
 "has_fair_value": false
 },
 {
@@ -3695,6 +3821,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 7.04,
+"pe_vs_market": -0.3207,
+"fpe_vs_market": -0.2377,
 "has_fair_value": false
 },
 {
@@ -3754,6 +3882,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.93,
 "earnings_yield": 5.18,
+"pe_vs_market": 0.0546,
+"fpe_vs_market": 0.0361,
 "has_fair_value": false
 },
 {
@@ -3813,6 +3943,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.6,
 "earnings_yield": 5.48,
+"pe_vs_market": -0.1134,
+"fpe_vs_market": -0.0201,
 "has_fair_value": false
 },
 {
@@ -3872,6 +4004,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.7,
 "earnings_yield": 5.91,
+"pe_vs_market": -0.0832,
+"fpe_vs_market": -0.0908,
 "has_fair_value": false
 },
 {
@@ -3931,6 +4065,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.92,
 "earnings_yield": 9.92,
+"pe_vs_market": -0.571,
+"fpe_vs_market": -0.4585,
 "has_fair_value": false
 },
 {
@@ -3992,6 +4128,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.78,
 "earnings_yield": 15.02,
+"pe_vs_market": -0.4733,
+"fpe_vs_market": -0.6425,
 "has_fair_value": false
 },
 {
@@ -4051,6 +4189,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.88,
 "earnings_yield": 6.26,
+"pe_vs_market": -0.0997,
+"fpe_vs_market": -0.1417,
 "has_fair_value": false
 },
 {
@@ -4112,6 +4252,8 @@
 "required_return": 0.085,
 "fcf_conversion": 1.05,
 "earnings_yield": 7.74,
+"pe_vs_market": -0.5359,
+"fpe_vs_market": -0.3067,
 "has_fair_value": false
 },
 {
@@ -4171,6 +4313,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.35,
 "earnings_yield": 13.77,
+"pe_vs_market": -0.7066,
+"fpe_vs_market": -0.6101,
 "has_fair_value": false
 },
 {
@@ -4230,6 +4374,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.64,
 "earnings_yield": 10.49,
+"pe_vs_market": -0.5084,
+"fpe_vs_market": -0.4884,
 "has_fair_value": false
 },
 {
@@ -4289,6 +4435,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.02,
 "earnings_yield": 7.92,
+"pe_vs_market": -0.2093,
+"fpe_vs_market": -0.3222,
 "has_fair_value": false
 },
 {
@@ -4348,6 +4496,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.67,
 "earnings_yield": 2.57,
+"pe_vs_market": 0.2069,
+"fpe_vs_market": 1.0914,
 "has_fair_value": false
 },
 {
@@ -4407,6 +4557,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.75,
 "earnings_yield": 9.36,
+"pe_vs_market": -0.5341,
+"fpe_vs_market": -0.4266,
 "has_fair_value": false
 },
 {
@@ -4466,6 +4618,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.71,
 "earnings_yield": 6.94,
+"pe_vs_market": -0.432,
+"fpe_vs_market": -0.2263,
 "has_fair_value": false
 },
 {
@@ -4525,6 +4679,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.94,
 "earnings_yield": 5.8,
+"pe_vs_market": -0.3023,
+"fpe_vs_market": -0.0744,
 "has_fair_value": false
 },
 {
@@ -4584,6 +4740,8 @@
 "required_return": 0.075,
 "fcf_conversion": 16.58,
 "earnings_yield": 0.7,
+"pe_vs_market": 1.3337,
+"fpe_vs_market": 6.6587,
 "has_fair_value": false
 },
 {
@@ -4643,6 +4801,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 6.66,
+"pe_vs_market": 0.0443,
+"fpe_vs_market": -0.1939,
 "has_fair_value": false
 },
 {
@@ -4702,6 +4862,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.37,
 "earnings_yield": 5.07,
+"pe_vs_market": -0.0807,
+"fpe_vs_market": 0.0587,
 "has_fair_value": false
 },
 {
@@ -4761,6 +4923,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.78,
 "earnings_yield": 7.62,
+"pe_vs_market": -0.1753,
+"fpe_vs_market": -0.2952,
 "has_fair_value": false
 },
 {
@@ -4820,6 +4984,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.54,
 "earnings_yield": 5.29,
+"pe_vs_market": 0.2102,
+"fpe_vs_market": 0.0143,
 "has_fair_value": false
 },
 {
@@ -4879,6 +5045,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.76,
 "earnings_yield": 3.8,
+"pe_vs_market": 1.2279,
+"fpe_vs_market": 0.4142,
 "has_fair_value": false
 },
 {
@@ -4938,6 +5106,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.87,
 "earnings_yield": 3.64,
+"pe_vs_market": 0.6762,
+"fpe_vs_market": 0.4758,
 "has_fair_value": false
 },
 {
@@ -4997,6 +5167,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.86,
 "earnings_yield": 3.85,
+"pe_vs_market": 0.4667,
+"fpe_vs_market": 0.3942,
 "has_fair_value": false
 },
 {
@@ -5056,6 +5228,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.64,
 "earnings_yield": 2.95,
+"pe_vs_market": -0.0979,
+"fpe_vs_market": 0.8225,
 "has_fair_value": false
 },
 {
@@ -5115,6 +5289,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.79,
 "earnings_yield": 2.7,
+"pe_vs_market": -0.012,
+"fpe_vs_market": 0.9886,
 "has_fair_value": false
 },
 {
@@ -5174,6 +5350,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.19,
 "earnings_yield": 6.55,
+"pe_vs_market": -0.2354,
+"fpe_vs_market": -0.1808,
 "has_fair_value": false
 },
 {
@@ -5233,6 +5411,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.76,
 "earnings_yield": 3.59,
+"pe_vs_market": 0.868,
+"fpe_vs_market": 0.4951,
 "has_fair_value": false
 },
 {
@@ -5292,6 +5472,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.86,
 "earnings_yield": 11.55,
+"pe_vs_market": -0.4196,
+"fpe_vs_market": -0.535,
 "has_fair_value": false
 },
 {
@@ -5351,6 +5533,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.14,
 "earnings_yield": 7.34,
+"pe_vs_market": -0.3659,
+"fpe_vs_market": -0.2689,
 "has_fair_value": false
 },
 {
@@ -5412,6 +5596,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.39,
 "earnings_yield": 1.24,
+"pe_vs_market": 5.4834,
+"fpe_vs_market": 3.3165,
 "has_fair_value": false
 },
 {
@@ -5471,6 +5657,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.6,
 "earnings_yield": 3.7,
+"pe_vs_market": 0.5313,
+"fpe_vs_market": 0.4513,
 "has_fair_value": false
 },
 {
@@ -5530,6 +5718,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.87,
 "earnings_yield": 3.62,
+"pe_vs_market": 0.4005,
+"fpe_vs_market": 0.4842,
 "has_fair_value": false
 },
 {
@@ -5591,6 +5781,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.24,
 "earnings_yield": 4.8,
+"pe_vs_market": 0.1395,
+"fpe_vs_market": 0.1177,
 "has_fair_value": false
 },
 {
@@ -5650,6 +5842,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.89,
 "earnings_yield": 4.28,
+"pe_vs_market": -0.057,
+"fpe_vs_market": 0.2537,
 "has_fair_value": false
 },
 {
@@ -5709,6 +5903,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.48,
 "earnings_yield": 11.2,
+"pe_vs_market": -0.6446,
+"fpe_vs_market": -0.5205,
 "has_fair_value": false
 },
 {
@@ -5768,6 +5964,8 @@
 "required_return": 0.07,
 "fcf_conversion": -0.86,
 "earnings_yield": 7.52,
+"pe_vs_market": -0.388,
+"fpe_vs_market": -0.2861,
 "has_fair_value": false
 },
 {
@@ -5827,6 +6025,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.5,
 "earnings_yield": 7.81,
+"pe_vs_market": -0.2743,
+"fpe_vs_market": -0.3129,
 "has_fair_value": false
 },
 {
@@ -5886,6 +6086,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.44,
 "earnings_yield": 5.09,
+"pe_vs_market": -0.295,
+"fpe_vs_market": 0.0548,
 "has_fair_value": false
 },
 {
@@ -5945,6 +6147,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.31,
 "earnings_yield": 4.71,
+"pe_vs_market": -0.3854,
+"fpe_vs_market": 0.1388,
 "has_fair_value": false
 },
 {
@@ -6004,6 +6208,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.46,
 "earnings_yield": 4.44,
+"pe_vs_market": 3.0146,
+"fpe_vs_market": 0.2101,
 "has_fair_value": false
 },
 {
@@ -6063,6 +6269,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.73,
 "earnings_yield": 8.85,
+"pe_vs_market": -0.303,
+"fpe_vs_market": -0.3935,
 "has_fair_value": false
 },
 {
@@ -6122,6 +6330,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.65,
 "earnings_yield": 3.15,
+"pe_vs_market": 0.5762,
+"fpe_vs_market": 0.7069,
 "has_fair_value": false
 },
 {
@@ -6183,6 +6393,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.47,
 "earnings_yield": 7.84,
+"pe_vs_market": -0.4017,
+"fpe_vs_market": -0.3154,
 "has_fair_value": false
 },
 {
@@ -6242,6 +6454,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.95,
 "earnings_yield": 9.8,
+"pe_vs_market": -0.3932,
+"fpe_vs_market": -0.4522,
 "has_fair_value": false
 },
 {
@@ -6301,6 +6515,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 7.25,
+"pe_vs_market": -0.3627,
+"fpe_vs_market": -0.2596,
 "has_fair_value": false
 },
 {
@@ -6360,6 +6576,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.48,
 "earnings_yield": 3.96,
+"pe_vs_market": 0.0687,
+"fpe_vs_market": 0.3551,
 "has_fair_value": false
 },
 {
@@ -6419,6 +6637,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 11.64,
+"pe_vs_market": -0.5199,
+"fpe_vs_market": -0.5386,
 "has_fair_value": false
 },
 {
@@ -6480,6 +6700,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.76,
 "earnings_yield": 4.21,
+"pe_vs_market": 0.2474,
+"fpe_vs_market": 0.2762,
 "has_fair_value": false
 },
 {
@@ -6541,6 +6763,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 12.35,
+"pe_vs_market": -0.5574,
+"fpe_vs_market": -0.5651,
 "has_fair_value": false
 },
 {
@@ -6600,6 +6824,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.74,
 "earnings_yield": 6.43,
+"pe_vs_market": -0.2325,
+"fpe_vs_market": -0.1652,
 "has_fair_value": false
 },
 {
@@ -6659,6 +6885,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.9,
 "earnings_yield": 12.3,
+"pe_vs_market": -0.5462,
+"fpe_vs_market": -0.5634,
 "has_fair_value": false
 },
 {
@@ -6718,6 +6946,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.18,
 "earnings_yield": 6.81,
+"pe_vs_market": -0.0472,
+"fpe_vs_market": -0.2112,
 "has_fair_value": false
 },
 {
@@ -6779,6 +7009,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.15,
 "earnings_yield": 6.0,
+"pe_vs_market": 1.6907,
+"fpe_vs_market": -0.1056,
 "has_fair_value": false
 },
 {
@@ -6838,6 +7070,8 @@
 "required_return": 0.07,
 "fcf_conversion": -0.8,
 "earnings_yield": 6.29,
+"pe_vs_market": -0.2956,
+"fpe_vs_market": -0.1464,
 "has_fair_value": false
 },
 {
@@ -6897,6 +7131,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.69,
 "earnings_yield": 6.14,
+"pe_vs_market": 0.3385,
+"fpe_vs_market": -0.1252,
 "has_fair_value": false
 },
 {
@@ -6956,6 +7192,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.23,
 "earnings_yield": 10.2,
+"pe_vs_market": -0.4003,
+"fpe_vs_market": -0.4738,
 "has_fair_value": false
 },
 {
@@ -7015,6 +7253,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.22,
 "earnings_yield": 3.62,
+"pe_vs_market": 0.1038,
+"fpe_vs_market": 0.4848,
 "has_fair_value": false
 },
 {
@@ -7074,6 +7314,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.58,
 "earnings_yield": 10.55,
+"pe_vs_market": -0.6717,
+"fpe_vs_market": -0.4908,
 "has_fair_value": false
 },
 {
@@ -7133,6 +7375,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.69,
 "earnings_yield": 5.06,
+"pe_vs_market": -0.0057,
+"fpe_vs_market": 0.0617,
 "has_fair_value": false
 },
 {
@@ -7192,6 +7436,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.87,
 "earnings_yield": 5.11,
+"pe_vs_market": -0.2928,
+"fpe_vs_market": 0.0504,
 "has_fair_value": false
 },
 {
@@ -7251,6 +7497,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.48,
 "earnings_yield": 5.73,
+"pe_vs_market": -0.0024,
+"fpe_vs_market": -0.0625,
 "has_fair_value": false
 },
 {
@@ -7310,6 +7558,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.59,
 "earnings_yield": 6.22,
+"pe_vs_market": 2.0482,
+"fpe_vs_market": -0.1362,
 "has_fair_value": false
 },
 {
@@ -7369,6 +7619,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.26,
 "earnings_yield": 9.18,
+"pe_vs_market": 1.3159,
+"fpe_vs_market": -0.4154,
 "has_fair_value": false
 },
 {
@@ -7428,6 +7680,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.06,
 "earnings_yield": 10.85,
+"pe_vs_market": -0.5609,
+"fpe_vs_market": -0.5051,
 "has_fair_value": false
 },
 {
@@ -7489,6 +7743,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.35,
 "earnings_yield": 6.97,
+"pe_vs_market": -0.1409,
+"fpe_vs_market": -0.23,
 "has_fair_value": false
 },
 {
@@ -7548,6 +7804,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.77,
 "earnings_yield": 4.32,
+"pe_vs_market": 0.1205,
+"fpe_vs_market": 0.2427,
 "has_fair_value": false
 },
 {
@@ -7607,6 +7865,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 6.07,
+"pe_vs_market": 0.1819,
+"fpe_vs_market": -0.1156,
 "has_fair_value": false
 },
 {
@@ -7666,6 +7926,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.0,
 "earnings_yield": 5.89,
+"pe_vs_market": -0.234,
+"fpe_vs_market": -0.0881,
 "has_fair_value": false
 },
 {
@@ -7725,6 +7987,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.4,
 "earnings_yield": 5.24,
+"pe_vs_market": 0.0569,
+"fpe_vs_market": 0.0239,
 "has_fair_value": false
 },
 {
@@ -7786,6 +8050,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.84,
 "earnings_yield": 4.18,
+"pe_vs_market": 0.2393,
+"fpe_vs_market": 0.286,
 "has_fair_value": false
 },
 {
@@ -7845,6 +8111,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.34,
 "earnings_yield": 4.1,
+"pe_vs_market": 0.0573,
+"fpe_vs_market": 0.3106,
 "has_fair_value": false
 },
 {
@@ -7904,6 +8172,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 6.0,
+"pe_vs_market": -0.2226,
+"fpe_vs_market": -0.1052,
 "has_fair_value": false
 },
 {
@@ -7963,6 +8233,8 @@
 "required_return": 0.07,
 "fcf_conversion": -0.69,
 "earnings_yield": 5.94,
+"pe_vs_market": -0.1831,
+"fpe_vs_market": -0.096,
 "has_fair_value": false
 },
 {
@@ -8022,6 +8294,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.49,
 "earnings_yield": 5.98,
+"pe_vs_market": -0.1404,
+"fpe_vs_market": -0.1027,
 "has_fair_value": false
 },
 {
@@ -8081,6 +8355,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.0,
 "earnings_yield": 16.47,
+"pe_vs_market": -0.7166,
+"fpe_vs_market": -0.6739,
 "has_fair_value": false
 },
 {
@@ -8140,6 +8416,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.52,
 "earnings_yield": 4.12,
+"pe_vs_market": 0.9386,
+"fpe_vs_market": 0.3029,
 "has_fair_value": false
 },
 {
@@ -8199,6 +8477,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 7.57,
+"pe_vs_market": -0.4132,
+"fpe_vs_market": -0.2909,
 "has_fair_value": false
 },
 {
@@ -8258,6 +8538,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.83,
 "earnings_yield": 15.91,
+"pe_vs_market": -0.7726,
+"fpe_vs_market": -0.6625,
 "has_fair_value": false
 },
 {
@@ -8317,6 +8599,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.25,
 "earnings_yield": 5.99,
+"pe_vs_market": 0.1925,
+"fpe_vs_market": -0.1034,
 "has_fair_value": false
 },
 {
@@ -8376,6 +8660,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.83,
 "earnings_yield": 4.67,
+"pe_vs_market": -0.6696,
+"fpe_vs_market": 0.1489,
 "has_fair_value": false
 },
 {
@@ -8435,6 +8721,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.61,
 "earnings_yield": 2.97,
+"pe_vs_market": 0.9294,
+"fpe_vs_market": 0.8056,
 "has_fair_value": false
 },
 {
@@ -8496,6 +8784,8 @@
 "required_return": 0.095,
 "fcf_conversion": 1.71,
 "earnings_yield": 6.13,
+"pe_vs_market": 1.2801,
+"fpe_vs_market": -0.1244,
 "has_fair_value": false
 },
 {
@@ -8557,6 +8847,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.12,
 "earnings_yield": 4.42,
+"pe_vs_market": -0.308,
+"fpe_vs_market": 0.2139,
 "has_fair_value": false
 },
 {
@@ -8616,6 +8908,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.06,
 "earnings_yield": 4.81,
+"pe_vs_market": 0.3903,
+"fpe_vs_market": 0.1172,
 "has_fair_value": false
 },
 {
@@ -8677,6 +8971,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.74,
 "earnings_yield": 10.17,
+"pe_vs_market": -0.7032,
+"fpe_vs_market": -0.4723,
 "has_fair_value": false
 },
 {
@@ -8736,6 +9032,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.69,
 "earnings_yield": 4.82,
+"pe_vs_market": -0.0101,
+"fpe_vs_market": 0.1151,
 "has_fair_value": false
 },
 {
@@ -8795,6 +9093,8 @@
 "required_return": 0.07,
 "fcf_conversion": 0.44,
 "earnings_yield": 7.66,
+"pe_vs_market": -0.3219,
+"fpe_vs_market": -0.2993,
 "has_fair_value": false
 },
 {
@@ -8856,6 +9156,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.47,
 "earnings_yield": 3.9,
+"pe_vs_market": 0.724,
+"fpe_vs_market": 0.3767,
 "has_fair_value": false
 },
 {
@@ -8915,6 +9217,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.36,
 "earnings_yield": 42.42,
+"pe_vs_market": -0.882,
+"fpe_vs_market": -0.8734,
 "has_fair_value": false
 },
 {
@@ -8974,6 +9278,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.96,
 "earnings_yield": 4.47,
+"pe_vs_market": 0.3017,
+"fpe_vs_market": 0.2007,
 "has_fair_value": false
 },
 {
@@ -9033,6 +9339,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.82,
 "earnings_yield": 2.11,
+"pe_vs_market": 1.5387,
+"fpe_vs_market": 1.5406,
 "has_fair_value": false
 },
 {
@@ -9092,6 +9400,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 5.87,
+"pe_vs_market": -0.1835,
+"fpe_vs_market": -0.0861,
 "has_fair_value": false
 },
 {
@@ -9155,6 +9465,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.24,
 "earnings_yield": 2.91,
+"pe_vs_market": 1.2586,
+"fpe_vs_market": 0.8473,
 "has_fair_value": false
 },
 {
@@ -9216,6 +9528,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.07,
 "earnings_yield": 6.36,
+"pe_vs_market": -0.4434,
+"fpe_vs_market": -0.1564,
 "has_fair_value": false
 },
 {
@@ -9275,6 +9589,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.22,
 "earnings_yield": 9.33,
+"pe_vs_market": -0.3327,
+"fpe_vs_market": -0.4248,
 "has_fair_value": false
 },
 {
@@ -9334,6 +9650,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.46,
 "earnings_yield": 5.77,
+"pe_vs_market": -0.231,
+"fpe_vs_market": -0.0689,
 "has_fair_value": false
 },
 {
@@ -9395,6 +9713,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.77,
 "earnings_yield": 9.81,
+"pe_vs_market": -0.3383,
+"fpe_vs_market": -0.4529,
 "has_fair_value": false
 },
 {
@@ -9456,6 +9776,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.72,
 "earnings_yield": 4.18,
+"pe_vs_market": 0.2747,
+"fpe_vs_market": 0.2858,
 "has_fair_value": false
 },
 {
@@ -9515,6 +9837,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.19,
 "earnings_yield": 13.04,
+"pe_vs_market": -0.5686,
+"fpe_vs_market": -0.5884,
 "has_fair_value": false
 },
 {
@@ -9574,6 +9898,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.79,
 "earnings_yield": 4.17,
+"pe_vs_market": 0.1786,
+"fpe_vs_market": 0.2884,
 "has_fair_value": false
 },
 {
@@ -9633,6 +9959,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.86,
 "earnings_yield": 4.61,
+"pe_vs_market": -0.0438,
+"fpe_vs_market": 0.164,
 "has_fair_value": false
 },
 {
@@ -9692,6 +10020,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.82,
 "earnings_yield": 8.59,
+"pe_vs_market": -0.2857,
+"fpe_vs_market": -0.3748,
 "has_fair_value": false
 },
 {
@@ -9753,6 +10083,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.12,
 "earnings_yield": 4.38,
+"pe_vs_market": -0.3009,
+"fpe_vs_market": 0.2258,
 "has_fair_value": true
 },
 {
@@ -9812,6 +10144,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 7.52,
+"pe_vs_market": -0.4049,
+"fpe_vs_market": -0.2856,
 "has_fair_value": false
 },
 {
@@ -9871,6 +10205,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 8.28,
+"pe_vs_market": -0.3738,
+"fpe_vs_market": -0.3515,
 "has_fair_value": false
 },
 {
@@ -9932,6 +10268,8 @@
 "required_return": 0.105,
 "fcf_conversion": -1.38,
 "earnings_yield": 8.01,
+"pe_vs_market": -0.117,
+"fpe_vs_market": -0.3297,
 "has_fair_value": false
 },
 {
@@ -9991,6 +10329,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.2,
 "earnings_yield": 8.99,
+"pe_vs_market": -0.6738,
+"fpe_vs_market": -0.4027,
 "has_fair_value": false
 },
 {
@@ -10050,6 +10390,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.8,
 "earnings_yield": 11.51,
+"pe_vs_market": -0.5102,
+"fpe_vs_market": -0.5336,
 "has_fair_value": false
 },
 {
@@ -10109,6 +10451,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.54,
 "earnings_yield": 7.5,
+"pe_vs_market": -0.4081,
+"fpe_vs_market": -0.2843,
 "has_fair_value": false
 },
 {
@@ -10168,6 +10512,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.83,
 "earnings_yield": 6.49,
+"pe_vs_market": -0.1943,
+"fpe_vs_market": -0.1722,
 "has_fair_value": false
 },
 {
@@ -10227,6 +10573,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.02,
 "earnings_yield": 8.77,
+"pe_vs_market": -0.3163,
+"fpe_vs_market": -0.3878,
 "has_fair_value": false
 },
 {
@@ -10286,6 +10634,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.98,
 "earnings_yield": 6.91,
+"pe_vs_market": -0.3648,
+"fpe_vs_market": -0.2227,
 "has_fair_value": false
 },
 {
@@ -10345,6 +10695,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.9,
 "earnings_yield": 6.49,
+"pe_vs_market": -0.232,
+"fpe_vs_market": -0.1723,
 "has_fair_value": false
 },
 {
@@ -10404,6 +10756,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.41,
 "earnings_yield": 3.66,
+"pe_vs_market": 0.206,
+"fpe_vs_market": 0.4674,
 "has_fair_value": false
 },
 {
@@ -10463,6 +10817,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.96,
 "earnings_yield": 4.28,
+"pe_vs_market": 1.9649,
+"fpe_vs_market": 0.2542,
 "has_fair_value": false
 },
 {
@@ -10524,6 +10880,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.59,
 "earnings_yield": 2.56,
+"pe_vs_market": 1.6185,
+"fpe_vs_market": 1.1013,
 "has_fair_value": false
 },
 {
@@ -10583,6 +10941,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 8.98,
+"pe_vs_market": -0.437,
+"fpe_vs_market": -0.4024,
 "has_fair_value": false
 },
 {
@@ -10642,6 +11002,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 9.64,
+"pe_vs_market": -0.5005,
+"fpe_vs_market": -0.4433,
 "has_fair_value": false
 },
 {
@@ -10701,6 +11063,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.6,
 "earnings_yield": 4.87,
+"pe_vs_market": -0.0308,
+"fpe_vs_market": 0.1023,
 "has_fair_value": false
 },
 {
@@ -10760,6 +11124,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.47,
 "earnings_yield": 13.08,
+"pe_vs_market": -0.5734,
+"fpe_vs_market": -0.5896,
 "has_fair_value": false
 },
 {
@@ -10819,6 +11185,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.5,
 "earnings_yield": 10.54,
+"pe_vs_market": -0.5578,
+"fpe_vs_market": -0.4906,
 "has_fair_value": false
 },
 {
@@ -10878,6 +11246,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.98,
 "earnings_yield": 4.35,
+"pe_vs_market": 0.4835,
+"fpe_vs_market": 0.2347,
 "has_fair_value": false
 },
 {
@@ -10937,6 +11307,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.52,
 "earnings_yield": 3.84,
+"pe_vs_market": 0.2549,
+"fpe_vs_market": 0.397,
 "has_fair_value": false
 },
 {
@@ -10996,6 +11368,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.46,
 "earnings_yield": 2.86,
+"pe_vs_market": 1.0332,
+"fpe_vs_market": 0.8795,
 "has_fair_value": false
 },
 {
@@ -11055,6 +11429,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.62,
 "earnings_yield": 7.08,
+"pe_vs_market": 0.2248,
+"fpe_vs_market": -0.2416,
 "has_fair_value": false
 },
 {
@@ -11114,6 +11490,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 9.79,
+"pe_vs_market": -0.2987,
+"fpe_vs_market": -0.4517,
 "has_fair_value": false
 },
 {
@@ -11173,6 +11551,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.69,
 "earnings_yield": 3.21,
+"pe_vs_market": 0.5321,
+"fpe_vs_market": 0.6751,
 "has_fair_value": false
 },
 {
@@ -11232,6 +11612,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.85,
 "earnings_yield": 3.96,
+"pe_vs_market": 0.3586,
+"fpe_vs_market": 0.3558,
 "has_fair_value": false
 },
 {
@@ -11291,6 +11673,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 6.11,
+"pe_vs_market": 0.8504,
+"fpe_vs_market": -0.1215,
 "has_fair_value": false
 },
 {
@@ -11350,6 +11734,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.34,
 "earnings_yield": 3.99,
+"pe_vs_market": 0.4557,
+"fpe_vs_market": 0.3445,
 "has_fair_value": false
 },
 {
@@ -11409,6 +11795,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.63,
 "earnings_yield": 3.91,
+"pe_vs_market": 1.1015,
+"fpe_vs_market": 0.3724,
 "has_fair_value": false
 },
 {
@@ -11468,6 +11856,8 @@
 "required_return": 0.075,
 "fcf_conversion": 3.61,
 "earnings_yield": 1.57,
+"pe_vs_market": 2.5193,
+"fpe_vs_market": 2.4121,
 "has_fair_value": false
 },
 {
@@ -11527,6 +11917,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.94,
 "earnings_yield": 6.98,
+"pe_vs_market": -0.4045,
+"fpe_vs_market": -0.2305,
 "has_fair_value": false
 },
 {
@@ -11586,6 +11978,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.7,
 "earnings_yield": 2.91,
+"pe_vs_market": 0.5315,
+"fpe_vs_market": 0.8477,
 "has_fair_value": false
 },
 {
@@ -11645,6 +12039,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.95,
 "earnings_yield": 6.93,
+"pe_vs_market": -0.3487,
+"fpe_vs_market": -0.2254,
 "has_fair_value": false
 },
 {
@@ -11704,6 +12100,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.46,
 "earnings_yield": 4.89,
+"pe_vs_market": 0.0996,
+"fpe_vs_market": 0.0981,
 "has_fair_value": false
 },
 {
@@ -11763,6 +12161,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.43,
 "earnings_yield": 5.53,
+"pe_vs_market": -0.1224,
+"fpe_vs_market": -0.0291,
 "has_fair_value": false
 },
 {
@@ -11822,6 +12222,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.83,
 "earnings_yield": 3.92,
+"pe_vs_market": 0.2429,
+"fpe_vs_market": 0.3688,
 "has_fair_value": false
 },
 {
@@ -11881,6 +12283,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.68,
 "earnings_yield": 9.75,
+"pe_vs_market": -0.4414,
+"fpe_vs_market": -0.4495,
 "has_fair_value": false
 },
 {
@@ -11940,6 +12344,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.77,
 "earnings_yield": 7.29,
+"pe_vs_market": 0.3001,
+"fpe_vs_market": -0.2638,
 "has_fair_value": false
 },
 {
@@ -11999,6 +12405,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.2,
 "earnings_yield": 5.95,
+"pe_vs_market": -0.1854,
+"fpe_vs_market": -0.098,
 "has_fair_value": false
 },
 {
@@ -12058,6 +12466,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 3.73,
+"pe_vs_market": 0.3864,
+"fpe_vs_market": 0.438,
 "has_fair_value": false
 },
 {
@@ -12117,6 +12527,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.79,
 "earnings_yield": 3.81,
+"pe_vs_market": 0.9959,
+"fpe_vs_market": 0.4091,
 "has_fair_value": false
 },
 {
@@ -12176,6 +12588,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.8,
 "earnings_yield": 7.02,
+"pe_vs_market": -0.1401,
+"fpe_vs_market": -0.2352,
 "has_fair_value": false
 },
 {
@@ -12235,6 +12649,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.65,
 "earnings_yield": 5.09,
+"pe_vs_market": 0.0972,
+"fpe_vs_market": 0.0557,
 "has_fair_value": false
 },
 {
@@ -12294,6 +12710,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 9.24,
+"pe_vs_market": 0.7325,
+"fpe_vs_market": -0.4192,
 "has_fair_value": false
 },
 {
@@ -12353,6 +12771,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.73,
 "earnings_yield": 6.07,
+"pe_vs_market": 0.038,
+"fpe_vs_market": -0.1161,
 "has_fair_value": false
 },
 {
@@ -12414,6 +12834,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.03,
 "earnings_yield": 4.2,
+"pe_vs_market": -0.1887,
+"fpe_vs_market": 0.277,
 "has_fair_value": true
 },
 {
@@ -12473,6 +12895,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.87,
 "earnings_yield": 7.25,
+"pe_vs_market": -0.3542,
+"fpe_vs_market": -0.2593,
 "has_fair_value": false
 },
 {
@@ -12532,6 +12956,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.63,
 "earnings_yield": 7.07,
+"pe_vs_market": -0.353,
+"fpe_vs_market": -0.2402,
 "has_fair_value": false
 },
 {
@@ -12591,6 +13017,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.9,
 "earnings_yield": 5.38,
+"pe_vs_market": 0.3677,
+"fpe_vs_market": -0.0026,
 "has_fair_value": false
 },
 {
@@ -12652,6 +13080,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.56,
 "earnings_yield": 3.43,
+"pe_vs_market": 0.5074,
+"fpe_vs_market": 0.5666,
 "has_fair_value": false
 },
 {
@@ -12711,6 +13141,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.92,
 "earnings_yield": 9.97,
+"pe_vs_market": -0.5486,
+"fpe_vs_market": -0.4616,
 "has_fair_value": false
 },
 {
@@ -12770,6 +13202,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.32,
 "earnings_yield": 8.07,
+"pe_vs_market": -0.3358,
+"fpe_vs_market": -0.3349,
 "has_fair_value": false
 },
 {
@@ -12829,6 +13263,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.62,
 "earnings_yield": 10.21,
+"pe_vs_market": -0.1182,
+"fpe_vs_market": -0.474,
 "has_fair_value": false
 },
 {
@@ -12888,6 +13324,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.43,
 "earnings_yield": 4.63,
+"pe_vs_market": 0.0933,
+"fpe_vs_market": 0.1586,
 "has_fair_value": false
 },
 {
@@ -12947,6 +13385,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 8.6,
+"pe_vs_market": 0.0321,
+"fpe_vs_market": -0.3759,
 "has_fair_value": false
 },
 {
@@ -13006,6 +13446,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.83,
 "earnings_yield": 7.05,
+"pe_vs_market": -0.3095,
+"fpe_vs_market": -0.2384,
 "has_fair_value": false
 },
 {
@@ -13065,6 +13507,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.66,
 "earnings_yield": 3.16,
+"pe_vs_market": 0.5988,
+"fpe_vs_market": 0.6999,
 "has_fair_value": false
 },
 {
@@ -13124,6 +13568,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.21,
 "earnings_yield": 3.57,
+"pe_vs_market": 1.2968,
+"fpe_vs_market": 0.5025,
 "has_fair_value": false
 },
 {
@@ -13185,6 +13631,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.89,
 "earnings_yield": 11.01,
+"pe_vs_market": -0.5836,
+"fpe_vs_market": -0.5125,
 "has_fair_value": false
 },
 {
@@ -13244,6 +13692,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.08,
 "earnings_yield": 2.86,
+"pe_vs_market": 0.6451,
+"fpe_vs_market": 0.8773,
 "has_fair_value": false
 },
 {
@@ -13303,6 +13753,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.55,
 "earnings_yield": 6.42,
+"pe_vs_market": -0.2848,
+"fpe_vs_market": -0.1633,
 "has_fair_value": false
 },
 {
@@ -13364,6 +13816,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.46,
 "earnings_yield": 4.12,
+"pe_vs_market": 0.2509,
+"fpe_vs_market": 0.303,
 "has_fair_value": false
 },
 {
@@ -13425,6 +13879,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.88,
 "earnings_yield": 5.31,
+"pe_vs_market": 0.9248,
+"fpe_vs_market": 0.0109,
 "has_fair_value": false
 },
 {
@@ -13484,6 +13940,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.93,
 "earnings_yield": 8.17,
+"pe_vs_market": -0.3955,
+"fpe_vs_market": -0.3432,
 "has_fair_value": false
 },
 {
@@ -13543,6 +14001,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.81,
 "earnings_yield": 4.28,
+"pe_vs_market": 0.1407,
+"fpe_vs_market": 0.2537,
 "has_fair_value": false
 },
 {
@@ -13602,6 +14062,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.76,
 "earnings_yield": 10.16,
+"pe_vs_market": 0.5348,
+"fpe_vs_market": -0.4714,
 "has_fair_value": false
 },
 {
@@ -13661,6 +14123,8 @@
 "required_return": 0.09,
 "fcf_conversion": -0.28,
 "earnings_yield": 7.69,
+"pe_vs_market": -0.3414,
+"fpe_vs_market": -0.3016,
 "has_fair_value": false
 },
 {
@@ -13720,6 +14184,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.86,
 "earnings_yield": 8.89,
+"pe_vs_market": -0.4836,
+"fpe_vs_market": -0.3963,
 "has_fair_value": false
 },
 {
@@ -13779,6 +14245,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.61,
 "earnings_yield": 5.78,
+"pe_vs_market": -0.1546,
+"fpe_vs_market": -0.071,
 "has_fair_value": false
 },
 {
@@ -13838,6 +14306,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.91,
 "earnings_yield": 4.69,
+"pe_vs_market": 0.4066,
+"fpe_vs_market": 0.1456,
 "has_fair_value": false
 },
 {
@@ -13897,6 +14367,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.11,
 "earnings_yield": 5.84,
+"pe_vs_market": -0.278,
+"fpe_vs_market": -0.0802,
 "has_fair_value": false
 },
 {
@@ -13958,6 +14430,8 @@
 "required_return": 0.085,
 "fcf_conversion": -0.01,
 "earnings_yield": 22.44,
+"pe_vs_market": 0.7107,
+"fpe_vs_market": -0.7607,
 "has_fair_value": false
 },
 {
@@ -14017,6 +14491,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.96,
 "earnings_yield": 6.95,
+"pe_vs_market": 0.5996,
+"fpe_vs_market": -0.2272,
 "has_fair_value": false
 },
 {
@@ -14076,6 +14552,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.41,
 "earnings_yield": 5.06,
+"pe_vs_market": 0.1116,
+"fpe_vs_market": 0.061,
 "has_fair_value": false
 },
 {
@@ -14135,6 +14613,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.73,
 "earnings_yield": 4.17,
+"pe_vs_market": 0.2065,
+"fpe_vs_market": 0.2861,
 "has_fair_value": false
 },
 {
@@ -14194,6 +14674,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 4.29,
+"pe_vs_market": 0.21,
+"fpe_vs_market": 0.251,
 "has_fair_value": false
 },
 {
@@ -14253,6 +14735,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.7,
 "earnings_yield": 3.84,
+"pe_vs_market": 0.3673,
+"fpe_vs_market": 0.397,
 "has_fair_value": false
 },
 {
@@ -14312,6 +14796,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.64,
 "earnings_yield": 13.25,
+"pe_vs_market": -0.5539,
+"fpe_vs_market": -0.5949,
 "has_fair_value": false
 },
 {
@@ -14371,6 +14857,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.29,
 "earnings_yield": 10.57,
+"pe_vs_market": -0.6956,
+"fpe_vs_market": -0.4919,
 "has_fair_value": false
 },
 {
@@ -14430,6 +14918,8 @@
 "required_return": 0.09,
 "fcf_conversion": null,
 "earnings_yield": 6.8,
+"pe_vs_market": -0.1917,
+"fpe_vs_market": -0.2101,
 "has_fair_value": false
 },
 {
@@ -14489,6 +14979,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.53,
 "earnings_yield": 4.27,
+"pe_vs_market": 0.1161,
+"fpe_vs_market": 0.2561,
 "has_fair_value": false
 },
 {
@@ -14548,6 +15040,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.79,
 "earnings_yield": 6.09,
+"pe_vs_market": -0.3359,
+"fpe_vs_market": -0.1189,
 "has_fair_value": false
 },
 {
@@ -14607,6 +15101,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.68,
 "earnings_yield": 3.89,
+"pe_vs_market": 0.4989,
+"fpe_vs_market": 0.3798,
 "has_fair_value": false
 },
 {
@@ -14668,6 +15164,8 @@
 "required_return": 0.085,
 "fcf_conversion": 1.47,
 "earnings_yield": 5.51,
+"pe_vs_market": -0.2638,
+"fpe_vs_market": -0.0259,
 "has_fair_value": false
 },
 {
@@ -14727,6 +15225,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.37,
 "earnings_yield": 5.82,
+"pe_vs_market": -0.1837,
+"fpe_vs_market": -0.0774,
 "has_fair_value": false
 },
 {
@@ -14788,6 +15288,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.66,
 "earnings_yield": 7.72,
+"pe_vs_market": -0.322,
+"fpe_vs_market": -0.3045,
 "has_fair_value": false
 },
 {
@@ -14847,6 +15349,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.37,
 "earnings_yield": 3.8,
+"pe_vs_market": 0.749,
+"fpe_vs_market": 0.4127,
 "has_fair_value": false
 },
 {
@@ -14906,6 +15410,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.6,
 "earnings_yield": 7.86,
+"pe_vs_market": -0.5681,
+"fpe_vs_market": -0.3167,
 "has_fair_value": false
 },
 {
@@ -14965,6 +15471,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.58,
 "earnings_yield": 6.23,
+"pe_vs_market": -0.0749,
+"fpe_vs_market": -0.1379,
 "has_fair_value": false
 },
 {
@@ -15024,6 +15532,8 @@
 "required_return": 0.075,
 "fcf_conversion": 3.79,
 "earnings_yield": 1.67,
+"pe_vs_market": -0.1315,
+"fpe_vs_market": 2.2167,
 "has_fair_value": false
 },
 {
@@ -15083,6 +15593,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.81,
 "earnings_yield": 3.9,
+"pe_vs_market": 0.3868,
+"fpe_vs_market": 0.3778,
 "has_fair_value": false
 },
 {
@@ -15142,6 +15654,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.68,
 "earnings_yield": 5.18,
+"pe_vs_market": 0.012,
+"fpe_vs_market": 0.0375,
 "has_fair_value": false
 },
 {
@@ -15201,6 +15715,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.61,
 "earnings_yield": 2.89,
+"pe_vs_market": 1.6377,
+"fpe_vs_market": 0.8549,
 "has_fair_value": false
 },
 {
@@ -15260,6 +15776,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 9.7,
+"pe_vs_market": -0.4811,
+"fpe_vs_market": -0.4465,
 "has_fair_value": false
 },
 {
@@ -15319,6 +15837,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.77,
 "earnings_yield": 6.97,
+"pe_vs_market": -0.2998,
+"fpe_vs_market": -0.2292,
 "has_fair_value": false
 },
 {
@@ -15380,6 +15900,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.79,
 "earnings_yield": 6.92,
+"pe_vs_market": -0.1875,
+"fpe_vs_market": -0.2244,
 "has_fair_value": false
 },
 {
@@ -15439,6 +15961,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.34,
 "earnings_yield": 8.5,
+"pe_vs_market": -0.6006,
+"fpe_vs_market": -0.3683,
 "has_fair_value": false
 },
 {
@@ -15498,6 +16022,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.28,
 "earnings_yield": 5.28,
+"pe_vs_market": 0.1377,
+"fpe_vs_market": 0.0176,
 "has_fair_value": false
 },
 {
@@ -15557,6 +16083,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.58,
 "earnings_yield": 4.58,
+"pe_vs_market": 0.2709,
+"fpe_vs_market": 0.1711,
 "has_fair_value": false
 },
 {
@@ -15616,6 +16144,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.74,
 "earnings_yield": 9.95,
+"pe_vs_market": -0.0604,
+"fpe_vs_market": -0.4606,
 "has_fair_value": false
 },
 {
@@ -15675,6 +16205,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.55,
 "earnings_yield": 5.89,
+"pe_vs_market": 3.7475,
+"fpe_vs_market": -0.089,
 "has_fair_value": false
 },
 {
@@ -15734,6 +16266,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.19,
 "earnings_yield": 5.83,
+"pe_vs_market": -0.1675,
+"fpe_vs_market": -0.0783,
 "has_fair_value": false
 },
 {
@@ -15793,6 +16327,8 @@
 "required_return": 0.07,
 "fcf_conversion": 0.01,
 "earnings_yield": 7.49,
+"pe_vs_market": -0.0458,
+"fpe_vs_market": -0.2834,
 "has_fair_value": false
 },
 {
@@ -15854,6 +16390,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.13,
 "earnings_yield": 11.7,
+"pe_vs_market": -0.5852,
+"fpe_vs_market": -0.5412,
 "has_fair_value": false
 },
 {
@@ -15915,6 +16453,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.39,
 "earnings_yield": 4.45,
+"pe_vs_market": 0.2743,
+"fpe_vs_market": 0.2068,
 "has_fair_value": false
 },
 {
@@ -15974,6 +16514,8 @@
 "required_return": 0.07,
 "fcf_conversion": -2.74,
 "earnings_yield": 6.3,
+"pe_vs_market": -0.1435,
+"fpe_vs_market": -0.1481,
 "has_fair_value": false
 },
 {
@@ -16033,6 +16575,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.73,
 "earnings_yield": 5.22,
+"pe_vs_market": 0.2962,
+"fpe_vs_market": 0.0289,
 "has_fair_value": false
 },
 {
@@ -16092,6 +16636,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.57,
 "earnings_yield": 6.47,
+"pe_vs_market": 5.226,
+"fpe_vs_market": -0.1706,
 "has_fair_value": false
 },
 {
@@ -16151,6 +16697,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.24,
 "earnings_yield": 7.43,
+"pe_vs_market": 0.2867,
+"fpe_vs_market": -0.277,
 "has_fair_value": false
 },
 {
@@ -16212,6 +16760,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.15,
 "earnings_yield": 8.51,
+"pe_vs_market": -0.2284,
+"fpe_vs_market": -0.3688,
 "has_fair_value": false
 },
 {
@@ -16271,6 +16821,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.87,
 "earnings_yield": 6.54,
+"pe_vs_market": -0.3086,
+"fpe_vs_market": -0.1792,
 "has_fair_value": false
 },
 {
@@ -16330,6 +16882,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.17,
 "earnings_yield": 3.62,
+"pe_vs_market": 0.3752,
+"fpe_vs_market": 0.4844,
 "has_fair_value": false
 },
 {
@@ -16391,6 +16945,8 @@
 "required_return": 0.115,
 "fcf_conversion": -2.36,
 "earnings_yield": 12.97,
+"pe_vs_market": -0.4863,
+"fpe_vs_market": -0.586,
 "has_fair_value": false
 },
 {
@@ -16450,6 +17006,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 6.64,
+"pe_vs_market": -0.2425,
+"fpe_vs_market": -0.1908,
 "has_fair_value": false
 },
 {
@@ -16509,6 +17067,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.89,
 "earnings_yield": 7.31,
+"pe_vs_market": -0.2427,
+"fpe_vs_market": -0.2652,
 "has_fair_value": false
 },
 {
@@ -16568,6 +17128,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.57,
 "earnings_yield": 2.83,
+"pe_vs_market": 0.7464,
+"fpe_vs_market": 0.8957,
 "has_fair_value": false
 },
 {
@@ -16627,6 +17189,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 5.83,
+"pe_vs_market": 0.0539,
+"fpe_vs_market": -0.0793,
 "has_fair_value": false
 },
 {
@@ -16686,6 +17250,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.06,
 "earnings_yield": 1.84,
+"pe_vs_market": 1.6728,
+"fpe_vs_market": 1.9169,
 "has_fair_value": false
 },
 {
@@ -16745,6 +17311,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.77,
 "earnings_yield": 2.88,
+"pe_vs_market": 0.5426,
+"fpe_vs_market": 0.8659,
 "has_fair_value": true
 },
 {
@@ -16804,6 +17372,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.69,
 "earnings_yield": 3.84,
+"pe_vs_market": 0.1585,
+"fpe_vs_market": 0.3966,
 "has_fair_value": false
 },
 {
@@ -16863,6 +17433,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 5.63,
+"pe_vs_market": -0.1852,
+"fpe_vs_market": -0.0468,
 "has_fair_value": false
 },
 {
@@ -16922,6 +17494,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.78,
 "earnings_yield": 9.4,
+"pe_vs_market": 0.347,
+"fpe_vs_market": -0.4288,
 "has_fair_value": false
 },
 {
@@ -16981,6 +17555,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.51,
 "earnings_yield": 5.22,
+"pe_vs_market": 0.3141,
+"fpe_vs_market": 0.0279,
 "has_fair_value": false
 },
 {
@@ -17040,6 +17616,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.74,
 "earnings_yield": 6.94,
+"pe_vs_market": -0.1288,
+"fpe_vs_market": -0.226,
 "has_fair_value": false
 },
 {
@@ -17099,6 +17677,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.19,
 "earnings_yield": 3.64,
+"pe_vs_market": 0.3584,
+"fpe_vs_market": 0.4761,
 "has_fair_value": false
 },
 {
@@ -17158,6 +17738,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.93,
 "earnings_yield": 4.23,
+"pe_vs_market": 0.3463,
+"fpe_vs_market": 0.2696,
 "has_fair_value": false
 },
 {
@@ -17220,6 +17802,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.6,
 "earnings_yield": 10.97,
+"pe_vs_market": null,
+"fpe_vs_market": -0.5107,
 "has_fair_value": false
 },
 {
@@ -17279,6 +17863,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.86,
 "earnings_yield": 2.23,
+"pe_vs_market": 1.0767,
+"fpe_vs_market": 1.4054,
 "has_fair_value": false
 },
 {
@@ -17338,6 +17924,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.8,
 "earnings_yield": 6.46,
+"pe_vs_market": -0.3773,
+"fpe_vs_market": -0.1685,
 "has_fair_value": false
 },
 {
@@ -17397,6 +17985,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.91,
 "earnings_yield": 7.19,
+"pe_vs_market": -0.3136,
+"fpe_vs_market": -0.2528,
 "has_fair_value": false
 },
 {
@@ -17456,6 +18046,8 @@
 "required_return": 0.07,
 "fcf_conversion": 0.05,
 "earnings_yield": 6.94,
+"pe_vs_market": -0.3114,
+"fpe_vs_market": -0.2262,
 "has_fair_value": false
 },
 {
@@ -17517,6 +18109,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.09,
 "earnings_yield": 4.61,
+"pe_vs_market": 0.1584,
+"fpe_vs_market": 0.1647,
 "has_fair_value": true
 },
 {
@@ -17576,6 +18170,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.3,
 "earnings_yield": 3.44,
+"pe_vs_market": 1.1964,
+"fpe_vs_market": 0.5608,
 "has_fair_value": false
 },
 {
@@ -17635,6 +18231,8 @@
 "required_return": 0.07,
 "fcf_conversion": -3.78,
 "earnings_yield": 5.67,
+"pe_vs_market": -0.0987,
+"fpe_vs_market": -0.0534,
 "has_fair_value": false
 },
 {
@@ -17694,6 +18292,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.99,
 "earnings_yield": 5.19,
+"pe_vs_market": -0.0218,
+"fpe_vs_market": 0.0341,
 "has_fair_value": false
 },
 {
@@ -17753,6 +18353,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.62,
 "earnings_yield": 4.36,
+"pe_vs_market": 0.4397,
+"fpe_vs_market": 0.2323,
 "has_fair_value": false
 },
 {
@@ -17814,6 +18416,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.85,
 "earnings_yield": 9.12,
+"pe_vs_market": -0.319,
+"fpe_vs_market": -0.4114,
 "has_fair_value": false
 },
 {
@@ -17873,6 +18477,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.28,
 "earnings_yield": 4.22,
+"pe_vs_market": 6.4399,
+"fpe_vs_market": 0.2734,
 "has_fair_value": false
 },
 {
@@ -17932,6 +18538,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.61,
 "earnings_yield": 4.08,
+"pe_vs_market": 0.4884,
+"fpe_vs_market": 0.3157,
 "has_fair_value": false
 },
 {
@@ -17991,6 +18599,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.62,
 "earnings_yield": 6.12,
+"pe_vs_market": -0.1477,
+"fpe_vs_market": -0.1226,
 "has_fair_value": false
 },
 {
@@ -18050,6 +18660,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.4,
 "earnings_yield": 2.69,
+"pe_vs_market": 0.9771,
+"fpe_vs_market": 0.994,
 "has_fair_value": false
 },
 {
@@ -18109,6 +18721,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.26,
 "earnings_yield": 2.59,
+"pe_vs_market": 2.3805,
+"fpe_vs_market": 1.0743,
 "has_fair_value": false
 },
 {
@@ -18168,6 +18782,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.55,
 "earnings_yield": 5.07,
+"pe_vs_market": 0.1683,
+"fpe_vs_market": 0.0587,
 "has_fair_value": false
 },
 {
@@ -18227,6 +18843,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.72,
 "earnings_yield": 6.42,
+"pe_vs_market": -0.2251,
+"fpe_vs_market": -0.1634,
 "has_fair_value": false
 },
 {
@@ -18286,6 +18904,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.2,
 "earnings_yield": 10.03,
+"pe_vs_market": -0.5117,
+"fpe_vs_market": -0.4648,
 "has_fair_value": false
 },
 {
@@ -18345,6 +18965,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 8.78,
+"pe_vs_market": -0.3578,
+"fpe_vs_market": -0.3883,
 "has_fair_value": false
 },
 {
@@ -18404,6 +19026,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.21,
 "earnings_yield": 3.61,
+"pe_vs_market": 0.8093,
+"fpe_vs_market": 0.4874,
 "has_fair_value": false
 },
 {
@@ -18463,6 +19087,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.38,
 "earnings_yield": 5.98,
+"pe_vs_market": -0.2668,
+"fpe_vs_market": -0.1025,
 "has_fair_value": false
 },
 {
@@ -18522,6 +19148,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.87,
 "earnings_yield": 5.6,
+"pe_vs_market": -0.1704,
+"fpe_vs_market": -0.0418,
 "has_fair_value": false
 },
 {
@@ -18583,6 +19211,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.36,
 "earnings_yield": 5.94,
+"pe_vs_market": 0.4173,
+"fpe_vs_market": -0.0959,
 "has_fair_value": false
 },
 {
@@ -18642,6 +19272,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.8,
 "earnings_yield": 5.14,
+"pe_vs_market": 0.0436,
+"fpe_vs_market": 0.0441,
 "has_fair_value": false
 },
 {
@@ -18701,6 +19333,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.92,
 "earnings_yield": 5.13,
+"pe_vs_market": -0.024,
+"fpe_vs_market": 0.0475,
 "has_fair_value": false
 },
 {
@@ -18760,6 +19394,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 10.24,
+"pe_vs_market": -0.4306,
+"fpe_vs_market": -0.4757,
 "has_fair_value": false
 },
 {
@@ -18819,6 +19455,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.49,
 "earnings_yield": 3.76,
+"pe_vs_market": 0.8026,
+"fpe_vs_market": 0.4261,
 "has_fair_value": false
 },
 {
@@ -18878,6 +19516,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.22,
 "earnings_yield": 6.44,
+"pe_vs_market": -0.2133,
+"fpe_vs_market": -0.1662,
 "has_fair_value": false
 },
 {
@@ -18937,6 +19577,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.28,
 "earnings_yield": 4.77,
+"pe_vs_market": 0.2596,
+"fpe_vs_market": 0.1266,
 "has_fair_value": false
 },
 {
@@ -18996,6 +19638,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.38,
 "earnings_yield": 7.68,
+"pe_vs_market": -0.2125,
+"fpe_vs_market": -0.3007,
 "has_fair_value": false
 },
 {
@@ -19055,6 +19699,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.36,
 "earnings_yield": 2.79,
+"pe_vs_market": 0.4164,
+"fpe_vs_market": 0.9276,
 "has_fair_value": false
 },
 {
@@ -19114,6 +19760,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.35,
 "earnings_yield": 8.0,
+"pe_vs_market": -0.4213,
+"fpe_vs_market": -0.3286,
 "has_fair_value": false
 },
 {
@@ -19173,6 +19821,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.19,
 "earnings_yield": 15.22,
+"pe_vs_market": -0.1966,
+"fpe_vs_market": -0.6471,
 "has_fair_value": false
 },
 {
@@ -19232,6 +19882,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 10.05,
+"pe_vs_market": -0.5285,
+"fpe_vs_market": -0.4657,
 "has_fair_value": false
 },
 {
@@ -19291,6 +19943,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.6,
 "earnings_yield": 4.13,
+"pe_vs_market": 0.3745,
+"fpe_vs_market": 0.3014,
 "has_fair_value": false
 },
 {
@@ -19352,6 +20006,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.08,
 "earnings_yield": 8.83,
+"pe_vs_market": -0.1767,
+"fpe_vs_market": -0.3921,
 "has_fair_value": false
 },
 {
@@ -19413,6 +20069,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.0,
 "earnings_yield": 3.74,
+"pe_vs_market": 2.3219,
+"fpe_vs_market": 0.4374,
 "has_fair_value": false
 },
 {
@@ -19472,6 +20130,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.77,
 "earnings_yield": 5.09,
+"pe_vs_market": -0.083,
+"fpe_vs_market": 0.0541,
 "has_fair_value": false
 },
 {
@@ -19531,6 +20191,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.57,
 "earnings_yield": 6.3,
+"pe_vs_market": -0.3435,
+"fpe_vs_market": -0.1476,
 "has_fair_value": false
 },
 {
@@ -19590,6 +20252,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.72,
 "earnings_yield": 10.47,
+"pe_vs_market": -0.5299,
+"fpe_vs_market": -0.487,
 "has_fair_value": false
 },
 {
@@ -19649,6 +20313,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 9.96,
+"pe_vs_market": -0.4231,
+"fpe_vs_market": -0.4609,
 "has_fair_value": false
 },
 {
@@ -19708,6 +20374,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.47,
 "earnings_yield": 6.69,
+"pe_vs_market": 0.0908,
+"fpe_vs_market": -0.1979,
 "has_fair_value": false
 },
 {
@@ -19769,6 +20437,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.33,
 "earnings_yield": 5.41,
+"pe_vs_market": 0.2822,
+"fpe_vs_market": -0.008,
 "has_fair_value": false
 },
 {
@@ -19828,6 +20498,8 @@
 "required_return": 0.09,
 "fcf_conversion": -2.99,
 "earnings_yield": 10.53,
+"pe_vs_market": -0.047,
+"fpe_vs_market": -0.4901,
 "has_fair_value": false
 },
 {
@@ -19887,6 +20559,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.56,
 "earnings_yield": 3.92,
+"pe_vs_market": 0.4095,
+"fpe_vs_market": 0.369,
 "has_fair_value": false
 },
 {
@@ -19946,6 +20620,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.39,
 "earnings_yield": 2.56,
+"pe_vs_market": 2.5547,
+"fpe_vs_market": 1.0957,
 "has_fair_value": false
 },
 {
@@ -20005,6 +20681,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.45,
 "earnings_yield": 9.38,
+"pe_vs_market": -0.3692,
+"fpe_vs_market": -0.4273,
 "has_fair_value": false
 },
 {
@@ -20064,6 +20742,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.52,
 "earnings_yield": 4.09,
+"pe_vs_market": 0.3025,
+"fpe_vs_market": 0.313,
 "has_fair_value": false
 },
 {
@@ -20125,6 +20805,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.61,
 "earnings_yield": 4.33,
+"pe_vs_market": 0.1813,
+"fpe_vs_market": 0.2397,
 "has_fair_value": false
 },
 {
@@ -20184,6 +20866,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.58,
 "earnings_yield": 3.85,
+"pe_vs_market": 0.1988,
+"fpe_vs_market": 0.393,
 "has_fair_value": false
 },
 {
@@ -20243,6 +20927,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.31,
 "earnings_yield": 7.36,
+"pe_vs_market": -0.3456,
+"fpe_vs_market": -0.2702,
 "has_fair_value": false
 },
 {
@@ -20302,6 +20988,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.55,
 "earnings_yield": 7.3,
+"pe_vs_market": 0.4666,
+"fpe_vs_market": -0.2644,
 "has_fair_value": false
 },
 {
@@ -20363,6 +21051,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.8,
 "earnings_yield": 6.63,
+"pe_vs_market": null,
+"fpe_vs_market": -0.1908,
 "has_fair_value": false
 },
 {
@@ -20422,6 +21112,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.59,
 "earnings_yield": 3.29,
+"pe_vs_market": 0.9391,
+"fpe_vs_market": 0.6337,
 "has_fair_value": false
 },
 {
@@ -20481,6 +21173,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 6.56,
+"pe_vs_market": 3.7546,
+"fpe_vs_market": -0.1816,
 "has_fair_value": false
 },
 {
@@ -20542,6 +21236,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.37,
 "earnings_yield": 1.78,
+"pe_vs_market": 13.9061,
+"fpe_vs_market": 2.0173,
 "has_fair_value": false
 },
 {
@@ -20601,6 +21297,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.55,
 "earnings_yield": 5.95,
+"pe_vs_market": 0.4008,
+"fpe_vs_market": -0.0971,
 "has_fair_value": false
 },
 {
@@ -20660,6 +21358,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.79,
 "earnings_yield": 3.43,
+"pe_vs_market": 0.6563,
+"fpe_vs_market": 0.5674,
 "has_fair_value": false
 },
 {
@@ -20719,6 +21419,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 14.73,
+"pe_vs_market": -0.6989,
+"fpe_vs_market": -0.6356,
 "has_fair_value": false
 },
 {
@@ -20778,6 +21480,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.69,
 "earnings_yield": 4.36,
+"pe_vs_market": 0.0115,
+"fpe_vs_market": 0.2304,
 "has_fair_value": false
 },
 {
@@ -20837,6 +21541,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.7,
 "earnings_yield": 4.06,
+"pe_vs_market": 0.4497,
+"fpe_vs_market": 0.3223,
 "has_fair_value": false
 },
 {
@@ -20896,6 +21602,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.4,
 "earnings_yield": 2.34,
+"pe_vs_market": 0.7489,
+"fpe_vs_market": 1.296,
 "has_fair_value": false
 },
 {
@@ -20955,6 +21663,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.36,
 "earnings_yield": 6.76,
+"pe_vs_market": -0.4987,
+"fpe_vs_market": -0.2054,
 "has_fair_value": false
 },
 {
@@ -21014,6 +21724,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.52,
 "earnings_yield": 4.34,
+"pe_vs_market": 0.6046,
+"fpe_vs_market": 0.2379,
 "has_fair_value": false
 },
 {
@@ -21075,6 +21787,8 @@
 "required_return": 0.115,
 "fcf_conversion": 0.35,
 "earnings_yield": 2.55,
+"pe_vs_market": 5.2868,
+"fpe_vs_market": 1.1085,
 "has_fair_value": false
 },
 {
@@ -21134,6 +21848,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.97,
 "earnings_yield": 5.98,
+"pe_vs_market": -0.2011,
+"fpe_vs_market": -0.1019,
 "has_fair_value": false
 },
 {
@@ -21193,6 +21909,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.37,
 "earnings_yield": 5.72,
+"pe_vs_market": 0.2387,
+"fpe_vs_market": -0.0618,
 "has_fair_value": false
 },
 {
@@ -21252,6 +21970,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 7.13,
+"pe_vs_market": 0.0131,
+"fpe_vs_market": -0.2473,
 "has_fair_value": false
 },
 {
@@ -21311,6 +22031,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 10.64,
+"pe_vs_market": -0.52,
+"fpe_vs_market": -0.4953,
 "has_fair_value": false
 },
 {
@@ -21370,6 +22092,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 7.09,
+"pe_vs_market": -0.2983,
+"fpe_vs_market": -0.2424,
 "has_fair_value": false
 },
 {
@@ -21429,6 +22153,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 2.75,
+"pe_vs_market": 0.818,
+"fpe_vs_market": 0.954,
 "has_fair_value": false
 },
 {
@@ -21488,6 +22214,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.81,
 "earnings_yield": 4.09,
+"pe_vs_market": 0.7175,
+"fpe_vs_market": 0.3143,
 "has_fair_value": false
 },
 {
@@ -21547,6 +22275,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 5.72,
+"pe_vs_market": -0.0237,
+"fpe_vs_market": -0.061,
 "has_fair_value": false
 },
 {
@@ -21606,6 +22336,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.69,
 "earnings_yield": 7.18,
+"pe_vs_market": -0.4257,
+"fpe_vs_market": -0.252,
 "has_fair_value": false
 },
 {
@@ -21665,6 +22397,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.97,
 "earnings_yield": 2.6,
+"pe_vs_market": 1.5523,
+"fpe_vs_market": 1.0613,
 "has_fair_value": false
 },
 {
@@ -21726,6 +22460,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.44,
 "earnings_yield": 10.09,
+"pe_vs_market": -0.4114,
+"fpe_vs_market": -0.4678,
 "has_fair_value": false
 },
 {
@@ -21785,6 +22521,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.67,
 "earnings_yield": 7.93,
+"pe_vs_market": -0.2696,
+"fpe_vs_market": -0.3228,
 "has_fair_value": false
 },
 {
@@ -21844,6 +22582,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.4,
 "earnings_yield": 8.2,
+"pe_vs_market": -0.5532,
+"fpe_vs_market": -0.3454,
 "has_fair_value": false
 },
 {
@@ -21903,6 +22643,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.43,
 "earnings_yield": 7.14,
+"pe_vs_market": -0.1129,
+"fpe_vs_market": -0.2483,
 "has_fair_value": false
 },
 {
@@ -21962,6 +22704,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.66,
 "earnings_yield": 6.65,
+"pe_vs_market": -0.2161,
+"fpe_vs_market": -0.1931,
 "has_fair_value": false
 },
 {
@@ -22021,6 +22765,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.78,
 "earnings_yield": 4.22,
+"pe_vs_market": 0.3553,
+"fpe_vs_market": 0.2716,
 "has_fair_value": false
 },
 {
@@ -22080,6 +22826,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.16,
 "earnings_yield": 5.9,
+"pe_vs_market": -0.063,
+"fpe_vs_market": -0.0907,
 "has_fair_value": false
 },
 {
@@ -22139,6 +22887,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.81,
 "earnings_yield": 6.17,
+"pe_vs_market": -0.0115,
+"fpe_vs_market": -0.1294,
 "has_fair_value": false
 },
 {
@@ -22198,6 +22948,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.46,
 "earnings_yield": 6.32,
+"pe_vs_market": 0.2657,
+"fpe_vs_market": -0.1502,
 "has_fair_value": false
 },
 {
@@ -22257,6 +23009,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.74,
 "earnings_yield": 8.51,
+"pe_vs_market": -0.4589,
+"fpe_vs_market": -0.3691,
 "has_fair_value": false
 },
 {
@@ -22316,6 +23070,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 9.93,
+"pe_vs_market": -0.5213,
+"fpe_vs_market": -0.4595,
 "has_fair_value": false
 },
 {
@@ -22375,6 +23131,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.61,
 "earnings_yield": 19.53,
+"pe_vs_market": 0.4717,
+"fpe_vs_market": -0.7251,
 "has_fair_value": false
 },
 {
@@ -22434,6 +23192,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.93,
 "earnings_yield": 8.96,
+"pe_vs_market": -0.5189,
+"fpe_vs_market": -0.4006,
 "has_fair_value": false
 },
 {
@@ -22493,6 +23253,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.26,
 "earnings_yield": 2.5,
+"pe_vs_market": 6.1707,
+"fpe_vs_market": 1.1515,
 "has_fair_value": false
 },
 {
@@ -22552,6 +23314,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.96,
 "earnings_yield": 5.93,
+"pe_vs_market": 0.1988,
+"fpe_vs_market": -0.0947,
 "has_fair_value": false
 },
 {
@@ -22611,6 +23375,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.61,
 "earnings_yield": 8.3,
+"pe_vs_market": -0.2055,
+"fpe_vs_market": -0.3534,
 "has_fair_value": false
 },
 {
@@ -22670,6 +23436,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.38,
 "earnings_yield": 3.36,
+"pe_vs_market": 2.2482,
+"fpe_vs_market": 0.597,
 "has_fair_value": false
 },
 {
@@ -22729,6 +23497,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.74,
 "earnings_yield": 7.34,
+"pe_vs_market": -0.3773,
+"fpe_vs_market": -0.2685,
 "has_fair_value": false
 },
 {
@@ -22788,6 +23558,8 @@
 "required_return": 0.09,
 "fcf_conversion": -2.19,
 "earnings_yield": 11.39,
+"pe_vs_market": -0.6321,
+"fpe_vs_market": -0.5287,
 "has_fair_value": false
 },
 {
@@ -22847,6 +23619,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.6,
 "earnings_yield": 11.82,
+"pe_vs_market": -0.4384,
+"fpe_vs_market": -0.5458,
 "has_fair_value": false
 },
 {
@@ -22906,6 +23680,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 10.75,
+"pe_vs_market": -0.5637,
+"fpe_vs_market": -0.5004,
 "has_fair_value": false
 },
 {
@@ -22965,6 +23741,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.55,
 "earnings_yield": 6.52,
+"pe_vs_market": 0.5447,
+"fpe_vs_market": -0.176,
 "has_fair_value": false
 },
 {
@@ -23024,6 +23802,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.2,
 "earnings_yield": 1.38,
+"pe_vs_market": 3.2419,
+"fpe_vs_market": 2.8874,
 "has_fair_value": false
 },
 {
@@ -23083,6 +23863,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.78,
 "earnings_yield": 11.02,
+"pe_vs_market": -0.5012,
+"fpe_vs_market": -0.5129,
 "has_fair_value": false
 },
 {
@@ -23142,6 +23924,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.8,
 "earnings_yield": 6.61,
+"pe_vs_market": 19.5714,
+"fpe_vs_market": -0.188,
 "has_fair_value": false
 },
 {
@@ -23201,6 +23985,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.9,
 "earnings_yield": 16.37,
+"pe_vs_market": -0.6812,
+"fpe_vs_market": -0.672,
 "has_fair_value": false
 },
 {
@@ -23262,6 +24048,8 @@
 "required_return": 0.09,
 "fcf_conversion": -0.09,
 "earnings_yield": 3.77,
+"pe_vs_market": 3.5962,
+"fpe_vs_market": 0.4257,
 "has_fair_value": false
 },
 {
@@ -23321,6 +24109,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.94,
 "earnings_yield": 5.54,
+"pe_vs_market": -0.1387,
+"fpe_vs_market": -0.0316,
 "has_fair_value": false
 },
 {
@@ -23380,6 +24170,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.74,
 "earnings_yield": 5.79,
+"pe_vs_market": -0.123,
+"fpe_vs_market": -0.0725,
 "has_fair_value": false
 },
 {
@@ -23439,6 +24231,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.49,
 "earnings_yield": 3.88,
+"pe_vs_market": 0.2246,
+"fpe_vs_market": 0.3832,
 "has_fair_value": false
 },
 {
@@ -23498,6 +24292,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.64,
 "earnings_yield": 4.47,
+"pe_vs_market": 0.1814,
+"fpe_vs_market": 0.2008,
 "has_fair_value": false
 },
 {
@@ -23557,6 +24353,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.88,
 "earnings_yield": 6.68,
+"pe_vs_market": -0.1484,
+"fpe_vs_market": -0.1968,
 "has_fair_value": false
 },
 {
@@ -23616,6 +24414,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.9,
 "earnings_yield": 6.19,
+"pe_vs_market": 1.2307,
+"fpe_vs_market": -0.1326,
 "has_fair_value": false
 },
 {
@@ -23675,6 +24475,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.79,
 "earnings_yield": 3.84,
+"pe_vs_market": 0.228,
+"fpe_vs_market": 0.3982,
 "has_fair_value": false
 },
 {
@@ -23734,6 +24536,8 @@
 "required_return": 0.09,
 "fcf_conversion": -0.37,
 "earnings_yield": 11.23,
+"pe_vs_market": 0.0644,
+"fpe_vs_market": -0.5217,
 "has_fair_value": false
 },
 {
@@ -23793,6 +24597,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.52,
 "earnings_yield": 7.32,
+"pe_vs_market": 0.641,
+"fpe_vs_market": -0.2666,
 "has_fair_value": false
 },
 {
@@ -23852,6 +24658,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.64,
 "earnings_yield": 5.77,
+"pe_vs_market": -0.1515,
+"fpe_vs_market": -0.0698,
 "has_fair_value": false
 },
 {
@@ -23911,6 +24719,8 @@
 "required_return": 0.075,
 "fcf_conversion": 3.67,
 "earnings_yield": 0.93,
+"pe_vs_market": 5.4396,
+"fpe_vs_market": 4.7783,
 "has_fair_value": false
 },
 {
@@ -23970,6 +24780,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.55,
 "earnings_yield": 6.44,
+"pe_vs_market": 0.0432,
+"fpe_vs_market": -0.1664,
 "has_fair_value": false
 },
 {
@@ -24029,6 +24841,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.69,
 "earnings_yield": 4.28,
+"pe_vs_market": 0.8367,
+"fpe_vs_market": 0.2553,
 "has_fair_value": false
 },
 {
@@ -24088,6 +24902,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.98,
 "earnings_yield": 4.28,
+"pe_vs_market": 0.2431,
+"fpe_vs_market": 0.2536,
 "has_fair_value": false
 },
 {
@@ -24149,6 +24965,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.23,
 "earnings_yield": 7.31,
+"pe_vs_market": -0.3871,
+"fpe_vs_market": -0.2659,
 "has_fair_value": false
 },
 {
@@ -24208,6 +25026,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.38,
 "earnings_yield": 7.14,
+"pe_vs_market": -0.1117,
+"fpe_vs_market": -0.2476,
 "has_fair_value": false
 },
 {
@@ -24267,6 +25087,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.54,
 "earnings_yield": 6.6,
+"pe_vs_market": -0.0661,
+"fpe_vs_market": -0.1869,
 "has_fair_value": false
 },
 {
@@ -24326,6 +25148,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.22,
 "earnings_yield": 2.42,
+"pe_vs_market": -0.0368,
+"fpe_vs_market": 1.2189,
 "has_fair_value": false
 },
 {
@@ -24385,6 +25209,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.47,
 "earnings_yield": 7.2,
+"pe_vs_market": -0.1141,
+"fpe_vs_market": -0.2544,
 "has_fair_value": false
 },
 {
@@ -24444,6 +25270,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.39,
 "earnings_yield": 6.08,
+"pe_vs_market": 0.9963,
+"fpe_vs_market": -0.1167,
 "has_fair_value": false
 },
 {
@@ -24503,6 +25331,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.86,
 "earnings_yield": 6.51,
+"pe_vs_market": -0.3456,
+"fpe_vs_market": -0.1752,
 "has_fair_value": false
 },
 {
@@ -24562,6 +25392,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.57,
 "earnings_yield": 0.61,
+"pe_vs_market": 12.3137,
+"fpe_vs_market": 7.8073,
 "has_fair_value": false
 },
 {
@@ -24621,6 +25453,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.51,
 "earnings_yield": 4.46,
+"pe_vs_market": -0.4836,
+"fpe_vs_market": 0.2047,
 "has_fair_value": false
 },
 {
@@ -24680,6 +25514,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.51,
 "earnings_yield": 9.5,
+"pe_vs_market": -0.505,
+"fpe_vs_market": -0.435,
 "has_fair_value": false
 },
 {
@@ -24739,6 +25575,8 @@
 "required_return": 0.105,
 "fcf_conversion": -0.1,
 "earnings_yield": 2.71,
+"pe_vs_market": 6.3274,
+"fpe_vs_market": 0.978,
 "has_fair_value": false
 },
 {
@@ -24798,6 +25636,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 7.6,
+"pe_vs_market": -0.29,
+"fpe_vs_market": -0.2933,
 "has_fair_value": false
 },
 {
@@ -24857,6 +25697,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.66,
 "earnings_yield": 3.08,
+"pe_vs_market": 2.0522,
+"fpe_vs_market": 0.7446,
 "has_fair_value": false
 },
 {
@@ -24918,6 +25760,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.79,
 "earnings_yield": 10.81,
+"pe_vs_market": null,
+"fpe_vs_market": -0.5035,
 "has_fair_value": false
 },
 {
@@ -24977,6 +25821,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.99,
 "earnings_yield": 1.09,
+"pe_vs_market": 20.5397,
+"fpe_vs_market": 3.9452,
 "has_fair_value": false
 },
 {
@@ -25036,6 +25882,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.64,
 "earnings_yield": 5.52,
+"pe_vs_market": -0.1607,
+"fpe_vs_market": -0.027,
 "has_fair_value": false
 },
 {
@@ -25095,6 +25943,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.73,
 "earnings_yield": 2.22,
+"pe_vs_market": 1.7671,
+"fpe_vs_market": 1.4206,
 "has_fair_value": false
 },
 {
@@ -25154,6 +26004,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 3.42,
+"pe_vs_market": 0.4151,
+"fpe_vs_market": 0.5682,
 "has_fair_value": false
 },
 {
@@ -25213,6 +26065,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.94,
 "earnings_yield": 5.89,
+"pe_vs_market": 1.0821,
+"fpe_vs_market": -0.0887,
 "has_fair_value": false
 },
 {
@@ -25272,6 +26126,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.66,
 "earnings_yield": 4.2,
+"pe_vs_market": 0.6152,
+"fpe_vs_market": 0.2788,
 "has_fair_value": false
 },
 {
@@ -25333,6 +26189,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.87,
 "earnings_yield": 15.09,
+"pe_vs_market": null,
+"fpe_vs_market": -0.6441,
 "has_fair_value": false
 },
 {
@@ -25392,6 +26250,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.15,
 "earnings_yield": 7.73,
+"pe_vs_market": -0.3054,
+"fpe_vs_market": -0.3053,
 "has_fair_value": false
 },
 {
@@ -25451,6 +26311,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 10.58,
+"pe_vs_market": -0.5531,
+"fpe_vs_market": -0.4926,
 "has_fair_value": false
 },
 {
@@ -25510,6 +26372,8 @@
 "required_return": 0.09,
 "fcf_conversion": null,
 "earnings_yield": 5.86,
+"pe_vs_market": 0.9383,
+"fpe_vs_market": -0.0843,
 "has_fair_value": false
 },
 {
@@ -25569,6 +26433,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 9.7,
+"pe_vs_market": -0.5291,
+"fpe_vs_market": -0.4462,
 "has_fair_value": false
 },
 {
@@ -25630,6 +26496,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.45,
 "earnings_yield": 6.93,
+"pe_vs_market": -0.1509,
+"fpe_vs_market": -0.2251,
 "has_fair_value": false
 },
 {
@@ -25689,6 +26557,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.52,
 "earnings_yield": 5.82,
+"pe_vs_market": -0.1109,
+"fpe_vs_market": -0.0768,
 "has_fair_value": false
 },
 {
@@ -25748,6 +26618,8 @@
 "required_return": 0.075,
 "fcf_conversion": -0.54,
 "earnings_yield": 2.46,
+"pe_vs_market": 2.2414,
+"fpe_vs_market": 1.1823,
 "has_fair_value": false
 },
 {
@@ -25807,6 +26679,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.2,
 "earnings_yield": 6.16,
+"pe_vs_market": -0.0351,
+"fpe_vs_market": -0.1283,
 "has_fair_value": false
 },
 {
@@ -25866,6 +26740,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.63,
 "earnings_yield": 4.93,
+"pe_vs_market": -0.0873,
+"fpe_vs_market": 0.0882,
 "has_fair_value": false
 },
 {
@@ -25925,6 +26801,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.82,
 "earnings_yield": 8.17,
+"pe_vs_market": 0.2837,
+"fpe_vs_market": -0.3428,
 "has_fair_value": false
 },
 {
@@ -25984,6 +26862,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.14,
 "earnings_yield": 14.71,
+"pe_vs_market": -0.6421,
+"fpe_vs_market": -0.6349,
 "has_fair_value": false
 },
 {
@@ -26043,6 +26923,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.06,
 "earnings_yield": 1.23,
+"pe_vs_market": 39.6256,
+"fpe_vs_market": 3.3722,
 "has_fair_value": false
 },
 {
@@ -26102,6 +26984,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.82,
 "earnings_yield": 4.35,
+"pe_vs_market": 0.1218,
+"fpe_vs_market": 0.234,
 "has_fair_value": false
 },
 {
@@ -26161,6 +27045,8 @@
 "required_return": 0.09,
 "fcf_conversion": 3.73,
 "earnings_yield": 1.15,
+"pe_vs_market": null,
+"fpe_vs_market": 3.6589,
 "has_fair_value": false
 },
 {
@@ -26220,6 +27106,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.47,
 "earnings_yield": 9.3,
+"pe_vs_market": -0.3477,
+"fpe_vs_market": -0.4228,
 "has_fair_value": false
 },
 {
@@ -26279,6 +27167,8 @@
 "required_return": 0.09,
 "fcf_conversion": -0.37,
 "earnings_yield": 7.8,
+"pe_vs_market": -0.3498,
+"fpe_vs_market": -0.3118,
 "has_fair_value": false
 },
 {
@@ -26338,6 +27228,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.24,
 "earnings_yield": 6.47,
+"pe_vs_market": 0.7923,
+"fpe_vs_market": -0.1695,
 "has_fair_value": false
 },
 {
@@ -26397,6 +27289,8 @@
 "required_return": 0.105,
 "fcf_conversion": 1.22,
 "earnings_yield": 0.61,
+"pe_vs_market": 359.948,
+"fpe_vs_market": 7.8515,
 "has_fair_value": false
 },
 {
@@ -26456,6 +27350,8 @@
 "required_return": 0.075,
 "fcf_conversion": -1.85,
 "earnings_yield": 9.93,
+"pe_vs_market": -0.094,
+"fpe_vs_market": -0.4593,
 "has_fair_value": false
 },
 {
@@ -26515,6 +27411,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.73,
 "earnings_yield": 4.41,
+"pe_vs_market": 0.1996,
+"fpe_vs_market": 0.2168,
 "has_fair_value": false
 },
 {
@@ -26574,6 +27472,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.36,
 "earnings_yield": 9.54,
+"pe_vs_market": -0.4018,
+"fpe_vs_market": -0.437,
 "has_fair_value": false
 },
 {
@@ -26633,6 +27533,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.59,
 "earnings_yield": 6.09,
+"pe_vs_market": -0.3105,
+"fpe_vs_market": -0.1188,
 "has_fair_value": false
 },
 {
@@ -26692,6 +27594,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.95,
 "earnings_yield": 4.82,
+"pe_vs_market": 0.6967,
+"fpe_vs_market": 0.1143,
 "has_fair_value": false
 },
 {
@@ -26751,6 +27655,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.1,
 "earnings_yield": 6.55,
+"pe_vs_market": -0.3334,
+"fpe_vs_market": -0.1797,
 "has_fair_value": false
 },
 {
@@ -26810,6 +27716,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.72,
 "earnings_yield": 6.44,
+"pe_vs_market": 0.5817,
+"fpe_vs_market": -0.1663,
 "has_fair_value": false
 },
 {
@@ -26869,6 +27777,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.28,
 "earnings_yield": 3.1,
+"pe_vs_market": 0.586,
+"fpe_vs_market": 0.7299,
 "has_fair_value": false
 },
 {
@@ -26928,6 +27838,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.73,
 "earnings_yield": 7.79,
+"pe_vs_market": 0.3154,
+"fpe_vs_market": -0.3109,
 "has_fair_value": false
 },
 {
@@ -26987,6 +27899,8 @@
 "required_return": 0.105,
 "fcf_conversion": -0.24,
 "earnings_yield": 4.88,
+"pe_vs_market": 1.8994,
+"fpe_vs_market": 0.1002,
 "has_fair_value": false
 },
 {
@@ -27046,6 +27960,8 @@
 "required_return": 0.07,
 "fcf_conversion": -2.79,
 "earnings_yield": 6.44,
+"pe_vs_market": -0.2102,
+"fpe_vs_market": -0.1661,
 "has_fair_value": false
 },
 {
@@ -27107,6 +28023,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.95,
 "earnings_yield": 8.49,
+"pe_vs_market": null,
+"fpe_vs_market": -0.3672,
 "has_fair_value": false
 },
 {
@@ -27166,6 +28084,8 @@
 "required_return": 0.075,
 "fcf_conversion": -2.96,
 "earnings_yield": 11.81,
+"pe_vs_market": -0.2536,
+"fpe_vs_market": -0.5455,
 "has_fair_value": false
 },
 {
@@ -27227,6 +28147,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.31,
 "earnings_yield": 9.19,
+"pe_vs_market": null,
+"fpe_vs_market": -0.4157,
 "has_fair_value": false
 },
 {
@@ -27286,6 +28208,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.67,
 "earnings_yield": 7.78,
+"pe_vs_market": 0.9395,
+"fpe_vs_market": -0.3099,
 "has_fair_value": false
 },
 {
@@ -27345,6 +28269,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": 8.11,
+"pe_vs_market": 0.2164,
+"fpe_vs_market": -0.3376,
 "has_fair_value": false
 },
 {
@@ -27406,6 +28332,8 @@
 "required_return": 0.085,
 "fcf_conversion": -0.48,
 "earnings_yield": 3.79,
+"pe_vs_market": 0.1165,
+"fpe_vs_market": 0.415,
 "has_fair_value": false
 },
 {
@@ -27467,6 +28395,8 @@
 "required_return": 0.09,
 "fcf_conversion": 3.65,
 "earnings_yield": 8.61,
+"pe_vs_market": null,
+"fpe_vs_market": -0.3763,
 "has_fair_value": false
 },
 {
@@ -27528,6 +28458,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.02,
 "earnings_yield": 4.47,
+"pe_vs_market": 0.0703,
+"fpe_vs_market": 0.2015,
 "has_fair_value": false
 },
 {
@@ -27589,6 +28521,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.31,
 "earnings_yield": 5.12,
+"pe_vs_market": -0.194,
+"fpe_vs_market": 0.0481,
 "has_fair_value": false
 },
 {
@@ -27650,6 +28584,8 @@
 "required_return": 0.085,
 "fcf_conversion": 0.62,
 "earnings_yield": 6.63,
+"pe_vs_market": -0.0037,
+"fpe_vs_market": -0.1903,
 "has_fair_value": false
 },
 {
@@ -27711,6 +28647,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.71,
 "earnings_yield": 7.24,
+"pe_vs_market": null,
+"fpe_vs_market": -0.2588,
 "has_fair_value": false
 },
 {
@@ -27772,6 +28710,8 @@
 "required_return": 0.09,
 "fcf_conversion": 18.54,
 "earnings_yield": 8.19,
+"pe_vs_market": 13.0834,
+"fpe_vs_market": -0.3443,
 "has_fair_value": false
 },
 {
@@ -27831,6 +28771,8 @@
 "required_return": 0.07,
 "fcf_conversion": -7.63,
 "earnings_yield": 7.11,
+"pe_vs_market": -0.0758,
+"fpe_vs_market": -0.2444,
 "has_fair_value": false
 },
 {
@@ -27892,6 +28834,8 @@
 "required_return": 0.075,
 "fcf_conversion": null,
 "earnings_yield": null,
+"pe_vs_market": null,
+"fpe_vs_market": null,
 "has_fair_value": false
 },
 {
@@ -27951,6 +28895,8 @@
 "required_return": 0.09,
 "fcf_conversion": -0.63,
 "earnings_yield": 4.95,
+"pe_vs_market": 0.0453,
+"fpe_vs_market": 0.0855,
 "has_fair_value": false
 },
 {
@@ -28010,6 +28956,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.66,
 "earnings_yield": 6.39,
+"pe_vs_market": -0.199,
+"fpe_vs_market": -0.1601,
 "has_fair_value": false
 },
 {
@@ -28069,6 +29017,8 @@
 "required_return": 0.09,
 "fcf_conversion": null,
 "earnings_yield": 5.63,
+"pe_vs_market": -0.0994,
+"fpe_vs_market": -0.0464,
 "has_fair_value": false
 },
 {
@@ -28128,6 +29078,8 @@
 "required_return": 0.075,
 "fcf_conversion": 2.13,
 "earnings_yield": 2.78,
+"pe_vs_market": -0.4681,
+"fpe_vs_market": 0.9334,
 "has_fair_value": false
 },
 {
@@ -28187,6 +29139,8 @@
 "required_return": 0.075,
 "fcf_conversion": 1.11,
 "earnings_yield": 1.13,
+"pe_vs_market": 0.3057,
+"fpe_vs_market": 3.7647,
 "has_fair_value": false
 },
 {
@@ -28246,6 +29200,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.51,
 "earnings_yield": 6.58,
+"pe_vs_market": -0.0383,
+"fpe_vs_market": -0.1839,
 "has_fair_value": false
 },
 {
@@ -28307,6 +29263,8 @@
 "required_return": 0.09,
 "fcf_conversion": 1.03,
 "earnings_yield": 9.1,
+"pe_vs_market": null,
+"fpe_vs_market": -0.4102,
 "has_fair_value": false
 },
 {
@@ -28366,6 +29324,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.73,
 "earnings_yield": 3.4,
+"pe_vs_market": 0.5492,
+"fpe_vs_market": 0.5784,
 "has_fair_value": false
 },
 {
@@ -28425,6 +29385,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.19,
 "earnings_yield": 2.83,
+"pe_vs_market": 1.8981,
+"fpe_vs_market": 0.8969,
 "has_fair_value": false
 },
 {
@@ -28484,6 +29446,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.6,
 "earnings_yield": 5.81,
+"pe_vs_market": 0.8115,
+"fpe_vs_market": -0.0752,
 "has_fair_value": false
 },
 {
@@ -28545,6 +29509,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.77,
 "earnings_yield": 9.81,
+"pe_vs_market": null,
+"fpe_vs_market": -0.4524,
 "has_fair_value": false
 },
 {
@@ -28604,6 +29570,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.69,
 "earnings_yield": 6.59,
+"pe_vs_market": -0.2205,
+"fpe_vs_market": -0.185,
 "has_fair_value": false
 },
 {
@@ -28666,6 +29634,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.07,
 "earnings_yield": 3.58,
+"pe_vs_market": null,
+"fpe_vs_market": 0.5017,
 "has_fair_value": false
 },
 {
@@ -28725,6 +29695,8 @@
 "required_return": 0.07,
 "fcf_conversion": -1.49,
 "earnings_yield": 6.87,
+"pe_vs_market": -0.2067,
+"fpe_vs_market": -0.2182,
 "has_fair_value": false
 },
 {
@@ -28784,6 +29756,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.63,
 "earnings_yield": 3.19,
+"pe_vs_market": 1.5552,
+"fpe_vs_market": 0.6825,
 "has_fair_value": false
 },
 {
@@ -28843,6 +29817,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.92,
 "earnings_yield": 3.85,
+"pe_vs_market": 2.0064,
+"fpe_vs_market": 0.3934,
 "has_fair_value": false
 },
 {
@@ -28904,6 +29880,8 @@
 "required_return": 0.09,
 "fcf_conversion": 103.66,
 "earnings_yield": 0.2,
+"pe_vs_market": null,
+"fpe_vs_market": 25.7075,
 "has_fair_value": false
 },
 {
@@ -28966,6 +29944,8 @@
 "required_return": 0.095,
 "fcf_conversion": 0.19,
 "earnings_yield": 6.23,
+"pe_vs_market": null,
+"fpe_vs_market": -0.1386,
 "has_fair_value": false
 },
 {
@@ -29025,6 +30005,8 @@
 "required_return": 0.105,
 "fcf_conversion": -0.01,
 "earnings_yield": 7.07,
+"pe_vs_market": 4.3704,
+"fpe_vs_market": -0.2404,
 "has_fair_value": false
 },
 {
@@ -29086,6 +30068,8 @@
 "required_return": 0.095,
 "fcf_conversion": -1.7,
 "earnings_yield": 4.74,
+"pe_vs_market": null,
+"fpe_vs_market": 0.1316,
 "has_fair_value": false
 },
 {
@@ -29145,6 +30129,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.32,
 "earnings_yield": 6.04,
+"pe_vs_market": 0.6143,
+"fpe_vs_market": -0.1108,
 "has_fair_value": false
 },
 {
@@ -29204,6 +30190,8 @@
 "required_return": 0.09,
 "fcf_conversion": null,
 "earnings_yield": 6.46,
+"pe_vs_market": -0.357,
+"fpe_vs_market": -0.1689,
 "has_fair_value": false
 },
 {
@@ -29263,6 +30251,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.86,
 "earnings_yield": 3.32,
+"pe_vs_market": 1.2606,
+"fpe_vs_market": 0.6155,
 "has_fair_value": false
 },
 {
@@ -29324,6 +30314,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.65,
 "earnings_yield": 4.96,
+"pe_vs_market": null,
+"fpe_vs_market": 0.0825,
 "has_fair_value": false
 },
 {
@@ -29385,6 +30377,8 @@
 "required_return": 0.105,
 "fcf_conversion": 0.45,
 "earnings_yield": 1.72,
+"pe_vs_market": null,
+"fpe_vs_market": 2.1305,
 "has_fair_value": false
 },
 {
@@ -29444,6 +30438,8 @@
 "required_return": 0.075,
 "fcf_conversion": 0.03,
 "earnings_yield": 3.53,
+"pe_vs_market": 0.2174,
+"fpe_vs_market": 0.521,
 "has_fair_value": false
 },
 {
@@ -29506,6 +30502,8 @@
 "required_return": 0.095,
 "fcf_conversion": -0.47,
 "earnings_yield": 5.19,
+"pe_vs_market": null,
+"fpe_vs_market": 0.0347,
 "has_fair_value": false
 },
 {
@@ -29567,6 +30565,8 @@
 "required_return": 0.075,
 "fcf_conversion": 3.57,
 "earnings_yield": 1.52,
+"pe_vs_market": null,
+"fpe_vs_market": 2.5301,
 "has_fair_value": false
 },
 {
@@ -29629,6 +30629,8 @@
 "required_return": 0.095,
 "fcf_conversion": -1.48,
 "earnings_yield": 7.3,
+"pe_vs_market": null,
+"fpe_vs_market": -0.2645,
 "has_fair_value": false
 },
 {
@@ -29690,6 +30692,8 @@
 "required_return": 0.09,
 "fcf_conversion": 0.76,
 "earnings_yield": 4.32,
+"pe_vs_market": null,
+"fpe_vs_market": 0.2436,
 "has_fair_value": false
 },
 {
@@ -29751,6 +30755,8 @@
 "required_return": 0.09,
 "fcf_conversion": -2.85,
 "earnings_yield": 25.42,
+"pe_vs_market": null,
+"fpe_vs_market": -0.7888,
 "has_fair_value": false
 },
 {
@@ -29812,6 +30818,8 @@
 "required_return": 0.09,
 "fcf_conversion": -1.02,
 "earnings_yield": 16.22,
+"pe_vs_market": null,
+"fpe_vs_market": -0.669,
 "has_fair_value": false
 },
 {
@@ -29875,6 +30883,8 @@
 "required_return": 0.09,
 "fcf_conversion": null,
 "earnings_yield": null,
+"pe_vs_market": null,
+"fpe_vs_market": null,
 "has_fair_value": false
 }
 ]

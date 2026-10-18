@@ -120,6 +120,11 @@ for th, tk in themes.items():
 fv = {a["ticker"] for a in json.load(open(ROOT / "data/assets.json"))["assets"]}
 top_cur = top_sets[cur_m]
 def num(x): return None if pd.isna(x) else round(float(x), 2)
+# Market P/E = index-style aggregate: total market value / total earnings of the stocks with positive earnings.
+_t = cur[cur.pe_ratio > 0]; _f = cur[cur.forward_pe > 0]
+MKT_PE = float(_t.market_cap.sum() / (_t.market_cap / _t.pe_ratio).sum())
+MKT_FPE = float(_f.market_cap.sum() / (_f.market_cap / _f.forward_pe).sum())
+def vs_mkt(x, m): return None if (x is None or pd.isna(x) or x <= 0) else round(float(x) / m - 1, 4)
 rows = []
 for t, r in cur.iterrows():
     rr = CHIP_R if (r.sector == "Technology" and "AI chips & hardware" in t_of.get(t, [])) else REQ_RETURN.get(r.sector, DEFAULT_R)
@@ -144,9 +149,9 @@ for t, r in cur.iterrows():
         history=[dict(m=m, rank=int(frames[m].loc[t, 'rank']), score=float(frames[m].loc[t, 'score']), est=m in estimated) if t in frames[m].index else dict(m=m, rank=None, score=None, est=m in estimated) for m in months], flags=r["flag_list"],
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
-        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2), has_fair_value=t in fv))
+        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2), pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
-out = dict(month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
+out = dict(market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
 json.dump(out, open(ROOT / "data/screen.json", "w"), indent=0)
 print("built", cur_m, "vs", prev_m, "rows", len(rows), "consistent", sum(r["consistent"] for r in rows))

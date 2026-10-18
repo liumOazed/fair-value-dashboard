@@ -50,6 +50,16 @@ function render(){
 document.querySelectorAll("th[data-k]").forEach(h=>h.onclick=()=>{const k=h.dataset.k;dir=sortK===k?-dir:(k==="rank"||k==="ticker"||k==="sector"?1:-1);sortK=k;render()});
 $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};
 $("#more").onclick=()=>{showAll=!showAll;render()};
+function mktTxt(r){const M=S.market,rel=x=>`<b>${Math.abs(x*100).toFixed(0)}% ${x>0?"above":"below"}</b>`;
+ if(r.pe_vs_market==null&&r.fpe_vs_market==null)return`<b>Versus the market:</b> no positive P/E (losses), so no comparison with the market P/E of ${M.pe.toFixed(1)}.`;
+ let t=`<b>Versus the market:</b> `;
+ if(r.pe_vs_market!=null)t+=`its P/E of ${r.pe.toFixed(1)} on last year's earnings is ${rel(r.pe_vs_market)} the market's ${M.pe.toFixed(1)}`;
+ if(r.fpe_vs_market!=null)t+=`${r.pe_vs_market!=null?"; its forward P/E of ":"its forward P/E of "}${r.forward_pe.toFixed(1)} is ${rel(r.fpe_vs_market)} the market's forward ${M.forward_pe.toFixed(1)}`;
+ t+=". ";
+ const x=r.fpe_vs_market??r.pe_vs_market;
+ t+=x>0.25?"Paying this premium only makes sense if growth stays well above the market's.":x<-0.25?"That discount means the market expects weaker growth or sees more risk; if the business holds up, it is cheap.":"Roughly a market multiple on next year's earnings.";
+ if(r.pe>0&&r.forward_pe>0&&(r.pe/r.forward_pe>2||r.forward_pe/r.pe>2))t+=` <span class="muted">Trailing and forward P/E differ by more than 2x, so either the market expects earnings to jump (fast growth or recovery) or one-off items (gains, charges) distort one of them. Check which before relying on either.</span>`;
+ return t}
 function open(t){const r=rows.find(x=>x.ticker===t);const v=fv[t];
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
  <p>${r.sector}${r.themes.length?" · "+r.themes.join(" · "):""}${r.consistent?' <span class="pill ok">Consistent</span>':""}${r.flags.map(x=>`<span class="pill ${flagCls(x)}">${x}</span>`).join("")}</p>
@@ -59,10 +69,11 @@ function open(t){const r=rows.find(x=>x.ticker===t);const v=fv[t];
  <h3>Rank by month</h3><div class="hist">${(r.history||[]).map(h=>`<div class="${h.est?"est":""}" title="${h.est?"estimated month":"real data"}">${h.m}${h.est?" (est.)":""}<b>${h.rank==null?"–":"#"+h.rank}</b><span class="muted">${h.score==null?"":h.score.toFixed(1)}</span></div>`).join("")}</div>
  <p class="muted">${r.months_in_top50} of the last ${S.window.length} months in the top 50.</p>
  <h3>Key numbers</h3><table class="s"><tr><th style="text-align:left">Metric</th><th>Value</th></tr>
- ${[["Sales growth",fmt(r.rev_growth_pct,1,"%")],["Gross margin",fmt(r.gross_margin_pct,1,"%")],["Net margin",fmt(r.profit_margin_pct,1,"%")],["Return on equity",fmt(r.roe_pct,1,"%")],["FCF yield",fmt(r.fcf_yield_pct,1,"%")],["Earnings yield",fmt(r.earnings_yield,1,"%")],["FCF ÷ earnings yield",r.fcf_conversion==null?"–":r.fcf_conversion.toFixed(2)+"×"],["P/E",fmt(r.pe,1)],["Forward P/E",fmt(r.forward_pe,1)],["EV/EBITDA",fmt(r.ev_ebitda,1)],["Price/Sales",fmt(r.ps,1)]].map(x=>`<tr><td style="text-align:left">${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table>
+ ${[["Sales growth",fmt(r.rev_growth_pct,1,"%")],["Gross margin",fmt(r.gross_margin_pct,1,"%")],["Net margin",fmt(r.profit_margin_pct,1,"%")],["Return on equity",fmt(r.roe_pct,1,"%")],["FCF yield",fmt(r.fcf_yield_pct,1,"%")],["Earnings yield",fmt(r.earnings_yield,1,"%")],["FCF ÷ earnings yield",r.fcf_conversion==null?"–":r.fcf_conversion.toFixed(2)+"×"],["P/E",fmt(r.pe,1)],["Market P/E",`${S.market.pe.toFixed(1)} <span class="muted">(forward ${S.market.forward_pe.toFixed(1)})</span>`],["Forward P/E",fmt(r.forward_pe,1)],["EV/EBITDA",fmt(r.ev_ebitda,1)],["Price/Sales",fmt(r.ps,1)]].map(x=>`<tr><td style="text-align:left">${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table>
  <h3>What today's price assumes</h3><p>${r.implied_fcf_growth==null?"Not available (cash flow and earnings are zero or negative).":
  (r.implied_basis==="earnings"?`Free cash flow is <b>distorted</b> for this stock (${r.sector==="Financial Services"?"financial companies' cash flow is not meaningful":"heavy capex swallows most of operating cash flow"}), so I used its <b>earnings yield</b> instead. `:"")+
  `At a ${(r.required_return*100).toFixed(1)}% required return (sector rate), the market value already assumes ${r.implied_basis==="earnings"?"earnings":"free cash flow"} ${r.implied_fcf_growth<0?`<b>shrinking about ${Math.abs(r.implied_fcf_growth*100).toFixed(0)}% a year</b> for 10 years, a pessimistic view that may reflect risks such as lawsuits or regulation`:`growing about <b>${(r.implied_fcf_growth*100).toFixed(0)}% a year</b> for 10 years`}.${r.implied_tag==="Demanding"||r.implied_tag==="Undemanding"||r.implied_tag==="In line"?` Compared with recent sales growth that is <b>${r.implied_tag.toLowerCase()}</b>.`:r.implied_tag==="Sales shrinking"?" Sales are shrinking, so there is no fair comparison and no verdict is given.":""} Indicative only.`}</p>
+ <p>${mktTxt(r)}</p>
  <h3>Fair value</h3><p>${v?`Modelled: fair value <b>${usd(v.fair)}</b> vs price ${usd(v.price)} (${v.diff>0?"+":""}${(v.diff*100).toFixed(0)}%). <a class="fvlink" href="index.html#${t}">Open the full calculation</a>`:"No full fair-value model yet for this stock. A screen score alone does not say whether the price is fair."}</p>
  <p class="muted">Estimates from screen data only, not investment advice.</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close}
