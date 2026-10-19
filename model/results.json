@@ -8,6 +8,34 @@
  },
  "assets": {
   "AAPL": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 205.96570467098155,
+     "base": 208.23797512252582
+    },
+    {
+     "r": 0.09,
+     "fv": 173.7263350609856,
+     "base": 175.62040688520977
+    },
+    {
+     "r": 0.1,
+     "fv": 150.14718107345726,
+     "base": 151.76479320453723
+    },
+    {
+     "r": 0.11,
+     "fv": 132.16760150916835,
+     "base": 133.5745482898378
+    },
+    {
+     "r": 0.12,
+     "fv": 118.01595909583772,
+     "base": 119.25722667553521
+    }
+   ],
+   "r_reason": "Mega-cap, very stable cash flows, huge buybacks: close to an average-risk stock.",
    "name": "Apple Inc.",
    "type": "stock",
    "price": 342.96,
@@ -407,6 +435,34 @@
    "sbc": 13.706
   },
   "MSFT": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 384.1625289478635,
+     "base": 408.5466328272271
+    },
+    {
+     "r": 0.09,
+     "fv": 319.359138466205,
+     "base": 339.4580766209083
+    },
+    {
+     "r": 0.1,
+     "fv": 272.1200654178206,
+     "base": 289.09916083758236
+    },
+    {
+     "r": 0.11,
+     "fv": 236.228972912528,
+     "base": 250.84097926074466
+    },
+    {
+     "r": 0.12,
+     "fv": 208.08818037634433,
+     "base": 220.8470839166328
+    }
+   ],
+   "r_reason": "Diversified software and cloud with recurring revenue and a net cash balance sheet.",
    "name": "Microsoft Corp.",
    "type": "stock",
    "price": 533.69,
@@ -806,6 +862,34 @@
    "sbc": 12.405
   },
   "GOOGL": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 284.1824131159761,
+     "base": 295.3173877245521
+    },
+    {
+     "r": 0.09,
+     "fv": 237.35832064655204,
+     "base": 246.55988693557615
+    },
+    {
+     "r": 0.1,
+     "fv": 203.27022521169494,
+     "base": 211.06237113293014
+    },
+    {
+     "r": 0.11,
+     "fv": 177.40835843984843,
+     "base": 184.1297050736267
+    },
+    {
+     "r": 0.12,
+     "fv": 157.16285163690628,
+     "base": 163.04472950021471
+    }
+   ],
+   "r_reason": "Strong balance sheet, but search faces AI disruption and regulatory risk.",
    "name": "Alphabet Inc. (Class A)",
    "type": "stock",
    "price": 347.64,
@@ -1205,6 +1289,39 @@
    "sbc": 24.5
   },
   "AMZN": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 160.084195338006,
+     "base": 164.83514482337563
+    },
+    {
+     "r": 0.09,
+     "fv": 129.39313831910027,
+     "base": 133.34400392578442
+    },
+    {
+     "r": 0.1,
+     "fv": 107.07269601463703,
+     "base": 110.43846978125899
+    },
+    {
+     "r": 0.105,
+     "fv": 98.06712761266917,
+     "base": 101.19577262654427
+    },
+    {
+     "r": 0.11,
+     "fv": 90.15840293115848,
+     "base": 93.07816565185338
+    },
+    {
+     "r": 0.12,
+     "fv": 76.93467319071652,
+     "base": 79.50355589710618
+    }
+   ],
+   "r_reason": "Thin retail margins and very heavy AI capex make free cash flow volatile.",
    "name": "Amazon.com Inc.",
    "type": "stock",
    "price": 254.08,
@@ -1604,6 +1721,34 @@
    "sbc": 22.0
   },
   "NVDA": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 241.61962243379912,
+     "base": 230.8842750071283
+    },
+    {
+     "r": 0.09,
+     "fv": 200.52570816781184,
+     "base": 192.06006052139722
+    },
+    {
+     "r": 0.1,
+     "fv": 170.58679613662522,
+     "base": 163.749647802514
+    },
+    {
+     "r": 0.11,
+     "fv": 147.8536864362016,
+     "base": 142.23261604305736
+    },
+    {
+     "r": 0.12,
+     "fv": 130.04089094743952,
+     "base": 125.35573300483077
+    }
+   ],
+   "r_reason": "Below the 11.5% chip-group rate: mega-cap, net cash and a dominant position. Still above average for cyclical AI spending, customer concentration and competition. 11-12% is also defensible.",
    "name": "NVIDIA Corp.",
    "type": "stock",
    "price": 217.23,
@@ -2003,6 +2148,34 @@
    "sbc": 7.0
   },
   "AVGO": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 343.771268006455,
+     "base": 352.67096903828633
+    },
+    {
+     "r": 0.09,
+     "fv": 283.30103367331213,
+     "base": 290.8027055590337
+    },
+    {
+     "r": 0.1,
+     "fv": 239.26881130225485,
+     "base": 245.74309195989835
+    },
+    {
+     "r": 0.11,
+     "fv": 205.85355318566653,
+     "base": 211.54052605958879
+    },
+    {
+     "r": 0.12,
+     "fv": 179.6866086671845,
+     "base": 184.7507484230814
+    }
+   ],
+   "r_reason": "Chips plus a large recurring software business (VMware) lower the risk vs the chip group, offset by $35B net debt.",
    "name": "Broadcom Inc.",
    "type": "stock",
    "price": 344.33,
@@ -2402,6 +2575,34 @@
    "sbc": 8.9
   },
   "LLY": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 1058.7289546424377,
+     "base": 1080.1085037259616
+    },
+    {
+     "r": 0.09,
+     "fv": 868.8683831264051,
+     "base": 887.0407234007131
+    },
+    {
+     "r": 0.1,
+     "fv": 730.5015016386917,
+     "base": 746.3051214060645
+    },
+    {
+     "r": 0.11,
+     "fv": 625.4032184497828,
+     "base": 639.3822186459226
+    },
+    {
+     "r": 0.12,
+     "fv": 543.0257727441161,
+     "base": 555.553678971441
+    }
+   ],
+   "r_reason": "Large diversified pharma; obesity-drug growth is strong but competition and pricing pressure are rising.",
    "name": "Eli Lilly and Co.",
    "type": "stock",
    "price": 1251.61,
@@ -2801,6 +3002,39 @@
    "sbc": 2.2
   },
   "ADBE": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 456.3772261426554,
+     "base": 487.9936436761456
+    },
+    {
+     "r": 0.09,
+     "fv": 384.10246954441345,
+     "base": 410.54965641702876
+    },
+    {
+     "r": 0.095,
+     "fv": 355.74237027309135,
+     "base": 380.16124277848957
+    },
+    {
+     "r": 0.1,
+     "fv": 331.18345769474365,
+     "base": 353.84598043695814
+    },
+    {
+     "r": 0.11,
+     "fv": 290.78343052469637,
+     "base": 310.5571526476387
+    },
+    {
+     "r": 0.12,
+     "fv": 258.94466746167006,
+     "base": 276.4425032478531
+    }
+   ],
+   "r_reason": "Recurring subscription revenue, but generative AI threatens its creative-software moat.",
    "name": "Adobe Inc.",
    "type": "stock",
    "price": 251.67,
@@ -3200,6 +3434,34 @@
    "sbc": 2.1
   },
   "APP": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 595.203457920541,
+     "base": 574.3325671214001
+    },
+    {
+     "r": 0.09,
+     "fv": 492.8016324133942,
+     "base": 476.31213831369206
+    },
+    {
+     "r": 0.1,
+     "fv": 418.23702086168333,
+     "base": 404.8953769176139
+    },
+    {
+     "r": 0.11,
+     "fv": 361.6512631706867,
+     "base": 350.6636022546402
+    },
+    {
+     "r": 0.12,
+     "fv": 317.33938055876894,
+     "base": 308.16605852199507
+    }
+   ],
+   "r_reason": "Very high margins that depend on one ad platform, short track record, regulatory and accounting scrutiny.",
    "name": "AppLovin Corp.",
    "type": "stock",
    "price": 279.29,
@@ -3599,6 +3861,39 @@
    "sbc": 0.4
   },
   "FICO": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 854.0668313538774,
+     "base": 875.4296745738903
+    },
+    {
+     "r": 0.09,
+     "fv": 674.7135843786843,
+     "base": 692.5646079190915
+    },
+    {
+     "r": 0.095,
+     "fv": 604.4395102609828,
+     "base": 620.9129109535914
+    },
+    {
+     "r": 0.1,
+     "fv": 543.6456878972192,
+     "base": 558.9263908957929
+    },
+    {
+     "r": 0.11,
+     "fv": 443.7933584145559,
+     "base": 457.11286336662056
+    },
+    {
+     "r": 0.12,
+     "fv": 365.2761351930897,
+     "base": 377.05113051426986
+    }
+   ],
+   "r_reason": "Near-monopoly in credit scores, but pricing power is under regulatory pressure and it carries net debt.",
    "name": "Fair Isaac Corp.",
    "type": "stock",
    "price": 769.93,
@@ -3998,6 +4293,34 @@
    "sbc": 0.2
   },
   "APA": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 45.827570453289084,
+     "base": 45.26860696738312
+    },
+    {
+     "r": 0.09,
+     "fv": 37.95397394599689,
+     "base": 37.51028412031929
+    },
+    {
+     "r": 0.1,
+     "fv": 32.154341965480185,
+     "base": 31.793933627269013
+    },
+    {
+     "r": 0.11,
+     "fv": 27.697937753604915,
+     "base": 27.400174997347158
+    },
+    {
+     "r": 0.12,
+     "fv": 24.161626099698616,
+     "base": 23.91244382368247
+    }
+   ],
+   "r_reason": "Above the 8.5% Energy rate: an oil producer with Egypt and exploration risk, net debt and oil-price dependence.",
    "name": "APA Corporation",
    "type": "stock",
    "price": 49.15,
@@ -4397,6 +4720,39 @@
    "sbc": 0.15
   },
   "DECK": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 163.6197397367034,
+     "base": 169.9158007293589
+    },
+    {
+     "r": 0.09,
+     "fv": 139.3418913558651,
+     "base": 144.60309517106177
+    },
+    {
+     "r": 0.095,
+     "fv": 129.81253085734699,
+     "base": 134.6678452556826
+    },
+    {
+     "r": 0.1,
+     "fv": 121.55869154643925,
+     "base": 126.06263860002113
+    },
+    {
+     "r": 0.11,
+     "fv": 107.97655181666327,
+     "base": 111.90282264746928
+    },
+    {
+     "r": 0.12,
+     "fv": 97.26770964747085,
+     "base": 100.73913676786958
+    }
+   ],
+   "r_reason": "Fashion and brand risk (HOKA, UGG) and tariffs, partly offset by $1.1B net cash.",
    "name": "Deckers Outdoor Corp.",
    "type": "stock",
    "price": 85.71,
@@ -4796,6 +5152,39 @@
    "sbc": 0.07
   },
   "INCY": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 146.15890028575768,
+     "base": 146.63359638486958
+    },
+    {
+     "r": 0.09,
+     "fv": 126.30739780257903,
+     "base": 126.76873667779375
+    },
+    {
+     "r": 0.095,
+     "fv": 118.50851623899149,
+     "base": 118.96312004499512
+    },
+    {
+     "r": 0.1,
+     "fv": 111.74937485162667,
+     "base": 112.1972652356563
+    },
+    {
+     "r": 0.11,
+     "fv": 100.61622968473851,
+     "base": 101.05086453937977
+    },
+    {
+     "r": 0.12,
+     "fv": 91.8261794648135,
+     "base": 92.2478965453609
+    }
+   ],
+   "r_reason": "Jakafi is ~60% of sales and loses patent protection later this decade.",
    "name": "Incyte Corp.",
    "type": "stock",
    "price": 113.07,
@@ -5195,6 +5584,34 @@
    "sbc": 0.26
   },
   "MKC": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 50.96920943395195,
+     "base": 54.22167673072975
+    },
+    {
+     "r": 0.09,
+     "fv": 40.27978538564079,
+     "base": 42.976983939125084
+    },
+    {
+     "r": 0.1,
+     "fv": 32.44816770883308,
+     "base": 34.740304971562004
+    },
+    {
+     "r": 0.11,
+     "fv": 26.465289994565985,
+     "base": 28.44944350468881
+    },
+    {
+     "r": 0.12,
+     "fv": 21.746986708400097,
+     "base": 23.489482426369243
+    }
+   ],
+   "r_reason": "Below the 9% Consumer Defensive rate: spices are very stable demand. Note the pending Unilever Foods deal adds leverage risk.",
    "name": "McCormick & Co.",
    "type": "stock",
    "price": 46.35,
@@ -5594,6 +6011,39 @@
    "sbc": 0.05
   },
   "QQQ": {
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 694.7946636346122,
+     "base": 728.6598599541628
+    },
+    {
+     "r": 0.09,
+     "fv": 580.8809779399758,
+     "base": 609.0492705494962
+    },
+    {
+     "r": 0.095,
+     "fv": 536.2722416239938,
+     "base": 562.2119081704834
+    },
+    {
+     "r": 0.1,
+     "fv": 497.69595250406627,
+     "base": 521.7097387344244
+    },
+    {
+     "r": 0.11,
+     "fv": 434.3716134584552,
+     "base": 455.2274784334815
+    },
+    {
+     "r": 0.12,
+     "fv": 384.6176912823781,
+     "base": 402.9963297474189
+    }
+   ],
+   "r_reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock.",
    "name": "Invesco QQQ Trust (Nasdaq-100)",
    "type": "etf",
    "price": 728.95,

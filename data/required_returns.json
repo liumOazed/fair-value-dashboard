@@ -1,0 +1,25 @@
+{
+ "_about": "Single source of truth for required returns (the yearly return demanded to own a stock). Used by the full fair-value model (model/model.py), the Growth Screen and the Monthly Top 5. Order of use: stock override > theme override > sector default > default. Sector defaults = Damodaran Jan-2026 cost of equity by sector + about 1 point cushion, rounded to 0.5%, floor 7% (https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html). Base build: risk-free ~4-4.5% + equity risk premium ~4-4.5% = ~8.5-9% for an average stock, plus company-specific risk.",
+ "default": 0.09,
+ "sectors": {"Utilities": 0.07, "Financial Services": 0.075, "Real Estate": 0.075, "Energy": 0.085, "Healthcare": 0.09,
+             "Basic Materials": 0.095, "Technology": 0.105, "Communication Services": 0.09, "Consumer Cyclical": 0.09,
+             "Consumer Defensive": 0.09, "Industrials": 0.09},
+ "themes": {"AI chips & hardware": {"r": 0.115, "reason": "Semiconductors and AI hardware are cyclical; group default for chip stocks without their own entry below."}},
+ "stocks": {
+  "AAPL":  {"r": 0.09,  "reason": "Mega-cap, very stable cash flows, huge buybacks: close to an average-risk stock."},
+  "MSFT":  {"r": 0.09,  "reason": "Diversified software and cloud with recurring revenue and a net cash balance sheet."},
+  "GOOGL": {"r": 0.10,  "reason": "Strong balance sheet, but search faces AI disruption and regulatory risk."},
+  "AMZN":  {"r": 0.105, "reason": "Thin retail margins and very heavy AI capex make free cash flow volatile."},
+  "NVDA":  {"r": 0.10,  "reason": "Below the 11.5% chip-group rate: mega-cap, net cash and a dominant position. Still above average for cyclical AI spending, customer concentration and competition. 11-12% is also defensible."},
+  "AVGO":  {"r": 0.10,  "reason": "Chips plus a large recurring software business (VMware) lower the risk vs the chip group, offset by $35B net debt."},
+  "LLY":   {"r": 0.09,  "reason": "Large diversified pharma; obesity-drug growth is strong but competition and pricing pressure are rising."},
+  "ADBE":  {"r": 0.095, "reason": "Recurring subscription revenue, but generative AI threatens its creative-software moat."},
+  "APP":   {"r": 0.11,  "reason": "Very high margins that depend on one ad platform, short track record, regulatory and accounting scrutiny."},
+  "FICO":  {"r": 0.095, "reason": "Near-monopoly in credit scores, but pricing power is under regulatory pressure and it carries net debt."},
+  "APA":   {"r": 0.10,  "reason": "Above the 8.5% Energy rate: an oil producer with Egypt and exploration risk, net debt and oil-price dependence."},
+  "DECK":  {"r": 0.095, "reason": "Fashion and brand risk (HOKA, UGG) and tariffs, partly offset by $1.1B net cash."},
+  "INCY":  {"r": 0.095, "reason": "Jakafi is ~60% of sales and loses patent protection later this decade."},
+  "MKC":   {"r": 0.08,  "reason": "Below the 9% Consumer Defensive rate: spices are very stable demand. Note the pending Unilever Foods deal adds leverage risk."},
+  "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
+ }
+}

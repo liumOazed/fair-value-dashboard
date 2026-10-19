@@ -92,7 +92,35 @@
      ]
     ]
    },
-   "buy_below": 130.3
+   "buy_below": 130.3,
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 205.97,
+     "base": 208.24
+    },
+    {
+     "r": 0.09,
+     "fv": 173.73,
+     "base": 175.62
+    },
+    {
+     "r": 0.1,
+     "fv": 150.15,
+     "base": 151.76
+    },
+    {
+     "r": 0.11,
+     "fv": 132.17,
+     "base": 133.57
+    },
+    {
+     "r": 0.12,
+     "fv": 118.02,
+     "base": 119.26
+    }
+   ],
+   "required_return_reason": "Mega-cap, very stable cash flows, huge buybacks: close to an average-risk stock."
   },
   {
    "ticker": "MSFT",
@@ -180,7 +208,35 @@
      ]
     ]
    },
-   "buy_below": 239.52
+   "buy_below": 239.52,
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 384.16,
+     "base": 408.55
+    },
+    {
+     "r": 0.09,
+     "fv": 319.36,
+     "base": 339.46
+    },
+    {
+     "r": 0.1,
+     "fv": 272.12,
+     "base": 289.1
+    },
+    {
+     "r": 0.11,
+     "fv": 236.23,
+     "base": 250.84
+    },
+    {
+     "r": 0.12,
+     "fv": 208.09,
+     "base": 220.85
+    }
+   ],
+   "required_return_reason": "Diversified software and cloud with recurring revenue and a net cash balance sheet."
   },
   {
    "ticker": "GOOGL",
@@ -268,7 +324,35 @@
      ]
     ]
    },
-   "buy_below": 142.29
+   "buy_below": 142.29,
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 284.18,
+     "base": 295.32
+    },
+    {
+     "r": 0.09,
+     "fv": 237.36,
+     "base": 246.56
+    },
+    {
+     "r": 0.1,
+     "fv": 203.27,
+     "base": 211.06
+    },
+    {
+     "r": 0.11,
+     "fv": 177.41,
+     "base": 184.13
+    },
+    {
+     "r": 0.12,
+     "fv": 157.16,
+     "base": 163.04
+    }
+   ],
+   "required_return_reason": "Strong balance sheet, but search faces AI disruption and regulatory risk."
   },
   {
    "ticker": "AMZN",
@@ -356,7 +440,40 @@
      ]
     ]
    },
-   "buy_below": 68.65
+   "buy_below": 68.65,
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 160.08,
+     "base": 164.84
+    },
+    {
+     "r": 0.09,
+     "fv": 129.39,
+     "base": 133.34
+    },
+    {
+     "r": 0.1,
+     "fv": 107.07,
+     "base": 110.44
+    },
+    {
+     "r": 0.105,
+     "fv": 98.07,
+     "base": 101.2
+    },
+    {
+     "r": 0.11,
+     "fv": 90.16,
+     "base": 93.08
+    },
+    {
+     "r": 0.12,
+     "fv": 76.93,
+     "base": 79.5
+    }
+   ],
+   "required_return_reason": "Thin retail margins and very heavy AI capex make free cash flow volatile."
   },
   {
    "ticker": "QQQ",
@@ -447,7 +564,40 @@
      ]
     ]
    },
-   "buy_below": 375.39
+   "buy_below": 375.39,
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 694.79,
+     "base": 728.66
+    },
+    {
+     "r": 0.09,
+     "fv": 580.88,
+     "base": 609.05
+    },
+    {
+     "r": 0.095,
+     "fv": 536.27,
+     "base": 562.21
+    },
+    {
+     "r": 0.1,
+     "fv": 497.7,
+     "base": 521.71
+    },
+    {
+     "r": 0.11,
+     "fv": 434.37,
+     "base": 455.23
+    },
+    {
+     "r": 0.12,
+     "fv": 384.62,
+     "base": 403.0
+    }
+   ],
+   "required_return_reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."
   },
   {
    "ticker": "GLD",
@@ -567,7 +717,35 @@
       133.2
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 241.62,
+     "base": 230.88
+    },
+    {
+     "r": 0.09,
+     "fv": 200.53,
+     "base": 192.06
+    },
+    {
+     "r": 0.1,
+     "fv": 170.59,
+     "base": 163.75
+    },
+    {
+     "r": 0.11,
+     "fv": 147.85,
+     "base": 142.23
+    },
+    {
+     "r": 0.12,
+     "fv": 130.04,
+     "base": 125.36
+    }
+   ],
+   "required_return_reason": "Below the 11.5% chip-group rate: mega-cap, net cash and a dominant position. Still above average for cyclical AI spending, customer concentration and competition. 11-12% is also defensible."
   },
   {
    "ticker": "AVGO",
@@ -655,7 +833,35 @@
       197.4
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 343.77,
+     "base": 352.67
+    },
+    {
+     "r": 0.09,
+     "fv": 283.3,
+     "base": 290.8
+    },
+    {
+     "r": 0.1,
+     "fv": 239.27,
+     "base": 245.74
+    },
+    {
+     "r": 0.11,
+     "fv": 205.85,
+     "base": 211.54
+    },
+    {
+     "r": 0.12,
+     "fv": 179.69,
+     "base": 184.75
+    }
+   ],
+   "required_return_reason": "Chips plus a large recurring software business (VMware) lower the risk vs the chip group, offset by $35B net debt."
   },
   {
    "ticker": "LLY",
@@ -743,7 +949,35 @@
       693.3
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 1058.73,
+     "base": 1080.11
+    },
+    {
+     "r": 0.09,
+     "fv": 868.87,
+     "base": 887.04
+    },
+    {
+     "r": 0.1,
+     "fv": 730.5,
+     "base": 746.31
+    },
+    {
+     "r": 0.11,
+     "fv": 625.4,
+     "base": 639.38
+    },
+    {
+     "r": 0.12,
+     "fv": 543.03,
+     "base": 555.55
+    }
+   ],
+   "required_return_reason": "Large diversified pharma; obesity-drug growth is strong but competition and pricing pressure are rising."
   },
   {
    "ticker": "ADBE",
@@ -831,7 +1065,40 @@
       310.7
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 456.38,
+     "base": 487.99
+    },
+    {
+     "r": 0.09,
+     "fv": 384.1,
+     "base": 410.55
+    },
+    {
+     "r": 0.095,
+     "fv": 355.74,
+     "base": 380.16
+    },
+    {
+     "r": 0.1,
+     "fv": 331.18,
+     "base": 353.85
+    },
+    {
+     "r": 0.11,
+     "fv": 290.78,
+     "base": 310.56
+    },
+    {
+     "r": 0.12,
+     "fv": 258.94,
+     "base": 276.44
+    }
+   ],
+   "required_return_reason": "Recurring subscription revenue, but generative AI threatens its creative-software moat."
   },
   {
    "ticker": "APP",
@@ -919,7 +1186,35 @@
       289.0
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 595.2,
+     "base": 574.33
+    },
+    {
+     "r": 0.09,
+     "fv": 492.8,
+     "base": 476.31
+    },
+    {
+     "r": 0.1,
+     "fv": 418.24,
+     "base": 404.9
+    },
+    {
+     "r": 0.11,
+     "fv": 361.65,
+     "base": 350.66
+    },
+    {
+     "r": 0.12,
+     "fv": 317.34,
+     "base": 308.17
+    }
+   ],
+   "required_return_reason": "Very high margins that depend on one ad platform, short track record, regulatory and accounting scrutiny."
   },
   {
    "ticker": "FICO",
@@ -1007,7 +1302,40 @@
       457.9
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 854.07,
+     "base": 875.43
+    },
+    {
+     "r": 0.09,
+     "fv": 674.71,
+     "base": 692.56
+    },
+    {
+     "r": 0.095,
+     "fv": 604.44,
+     "base": 620.91
+    },
+    {
+     "r": 0.1,
+     "fv": 543.65,
+     "base": 558.93
+    },
+    {
+     "r": 0.11,
+     "fv": 443.79,
+     "base": 457.11
+    },
+    {
+     "r": 0.12,
+     "fv": 365.28,
+     "base": 377.05
+    }
+   ],
+   "required_return_reason": "Near-monopoly in credit scores, but pricing power is under regulatory pressure and it carries net debt."
   },
   {
    "ticker": "APA",
@@ -1095,7 +1423,35 @@
       25.4
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 45.83,
+     "base": 45.27
+    },
+    {
+     "r": 0.09,
+     "fv": 37.95,
+     "base": 37.51
+    },
+    {
+     "r": 0.1,
+     "fv": 32.15,
+     "base": 31.79
+    },
+    {
+     "r": 0.11,
+     "fv": 27.7,
+     "base": 27.4
+    },
+    {
+     "r": 0.12,
+     "fv": 24.16,
+     "base": 23.91
+    }
+   ],
+   "required_return_reason": "Above the 8.5% Energy rate: an oil producer with Egypt and exploration risk, net debt and oil-price dependence."
   },
   {
    "ticker": "DECK",
@@ -1183,7 +1539,40 @@
       111.9
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 163.62,
+     "base": 169.92
+    },
+    {
+     "r": 0.09,
+     "fv": 139.34,
+     "base": 144.6
+    },
+    {
+     "r": 0.095,
+     "fv": 129.81,
+     "base": 134.67
+    },
+    {
+     "r": 0.1,
+     "fv": 121.56,
+     "base": 126.06
+    },
+    {
+     "r": 0.11,
+     "fv": 107.98,
+     "base": 111.9
+    },
+    {
+     "r": 0.12,
+     "fv": 97.27,
+     "base": 100.74
+    }
+   ],
+   "required_return_reason": "Fashion and brand risk (HOKA, UGG) and tariffs, partly offset by $1.1B net cash."
   },
   {
    "ticker": "INCY",
@@ -1271,7 +1660,40 @@
       101.0
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 146.16,
+     "base": 146.63
+    },
+    {
+     "r": 0.09,
+     "fv": 126.31,
+     "base": 126.77
+    },
+    {
+     "r": 0.095,
+     "fv": 118.51,
+     "base": 118.96
+    },
+    {
+     "r": 0.1,
+     "fv": 111.75,
+     "base": 112.2
+    },
+    {
+     "r": 0.11,
+     "fv": 100.62,
+     "base": 101.05
+    },
+    {
+     "r": 0.12,
+     "fv": 91.83,
+     "base": 92.25
+    }
+   ],
+   "required_return_reason": "Jakafi is ~60% of sales and loses patent protection later this decade."
   },
   {
    "ticker": "MKC",
@@ -1359,7 +1781,35 @@
       39.1
      ]
     ]
-   }
+   },
+   "rate_table": [
+    {
+     "r": 0.08,
+     "fv": 50.97,
+     "base": 54.22
+    },
+    {
+     "r": 0.09,
+     "fv": 40.28,
+     "base": 42.98
+    },
+    {
+     "r": 0.1,
+     "fv": 32.45,
+     "base": 34.74
+    },
+    {
+     "r": 0.11,
+     "fv": 26.47,
+     "base": 28.45
+    },
+    {
+     "r": 0.12,
+     "fv": 21.75,
+     "base": 23.49
+    }
+   ],
+   "required_return_reason": "Below the 9% Consumer Defensive rate: spices are very stable demand. Note the pending Unilever Foods deal adds leverage risk."
   }
  ]
 }

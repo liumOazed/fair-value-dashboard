@@ -16,6 +16,9 @@ for t, a in res["assets"].items():
              epv=round(a["epv"], 2) if a.get("epv") else None, implied_return=round(a["implied_irr"], 4) if a.get("implied_irr") else None,
              reverse_g1=round(a["reverse_g1"], 4) if a.get("reverse_g1") else None, tv_share=round(a["tv_share"], 3) if a.get("tv_share") else None,
              notes=a["notes"], valued_on=res["as_of"], scenarios=a["scen"])
+    if "rate_table" in a:
+        e["rate_table"] = [dict(r=x["r"], fv=round(x["fv"], 2), base=round(x["base"], 2)) for x in a["rate_table"]]
+        e["required_return_reason"] = a.get("r_reason")
     if "sens" in a:
         e["sensitivity"] = dict(r=[round(x, 4) for x in a["sens"]["r"]], g=a["sens"]["g"], grid=[[round(x, 1) for x in row] for row in a["sens"]["grid"]])
     by[t] = e

@@ -32,7 +32,7 @@ Edit `data/themes.json` to change the theme filters (that rebuilds the screen wi
 ## Add a new stock
 Open `data/assets.json` and copy one block in `assets`. Required fields: `ticker`, `name`, `type` (`stock`, `etf` or `commodity`), `fair_value`, `bear`, `base`, `bull`, `mos` (margin of safety, e.g. 0.25), `buy_below` (fair value × (1 − mos)), `valued_on`. The rest (`scenarios`, `sensitivity`, `epv`, `implied_return`, `notes`) is optional and only fills the detail panel. Commit. The price script picks the ticker up on its next run (or run the workflow by hand).
 
-To produce the numbers, add or edit the inputs in `model/model.py` (`STOCKS`), run `python model/model.py` (prints fair values, writes `model/results.json`), then `python scripts/export_assets.py TICKER ...` to copy those results into `data/assets.json`. Also add a starting price for a new ticker to `data/prices.json` (the daily job then keeps it fresh).
+To produce the numbers, add or edit the inputs in `model/model.py` (`STOCKS`), run `python model/model.py` (prints fair values, writes `model/results.json`), then `python scripts/export_assets.py TICKER ...` to copy those results into `data/assets.json`. Every modelled stock needs an entry (rate + reason) in `data/required_returns.json`: that one file sets required returns for the Fair Value tab, the Growth Screen and the Monthly Top 5 (stock > theme > sector), so the tabs never disagree. The drawer shows each stock's fair value at 8-12% next to the rate used. Also add a starting price for a new ticker to `data/prices.json` (the daily job then keeps it fresh).
 
 ## Refresh fair values
 Fair values are slow-moving. Re-run the model after each earnings report (roughly quarterly), paste the new numbers into `data/assets.json`, commit.

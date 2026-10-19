@@ -19,13 +19,15 @@ import numpy as np, pandas as pd
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CYCLICAL = {"Energy", "Basic Materials"}
 GT = 0.025
-# Required return by sector = Damodaran Jan-2026 cost of equity + ~1 point cushion, rounded to 0.5%, floor 7%.
-# https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html  (CSV has sectors only, so these are sector-level compromises)
-REQ_RETURN = {"Utilities": 0.07, "Financial Services": 0.075, "Real Estate": 0.075, "Energy": 0.085, "Healthcare": 0.09,
-              "Basic Materials": 0.095, "Technology": 0.105, "Communication Services": 0.09, "Consumer Cyclical": 0.09,
-              "Consumer Defensive": 0.09, "Industrials": 0.09}
-DEFAULT_R = 0.09
-CHIP_R = 0.115                 # semiconductors / AI hardware (theme override inside Technology)
+# Required returns come from data/required_returns.json (shared with the full model): stock > theme > sector > default.
+RRF = json.load(open(ROOT / "data/required_returns.json"))
+REQ_RETURN, DEFAULT_R = RRF["sectors"], RRF["default"]
+def required_return(t, sector, themes_of):
+    if t in RRF["stocks"]: return RRF["stocks"][t]["r"], "stock", RRF["stocks"][t]["reason"]
+    for th in themes_of:
+        if th in RRF["themes"]: return RRF["themes"][th]["r"], "theme", f"{th}: " + RRF["themes"][th]["reason"]
+    if sector in REQ_RETURN: return REQ_RETURN[sector], "sector", f"{sector} sector default"
+    return DEFAULT_R, "default", "market default"
 MIN_FCF_CONVERSION = 0.25      # FCF yield below 25% of earnings yield = FCF distorted by heavy capex (item 1)
 
 def pct_in_sector(df, col, higher_better=True):
@@ -127,7 +129,7 @@ MKT_FPE = float(_f.market_cap.sum() / (_f.market_cap / _f.forward_pe).sum())
 def vs_mkt(x, m): return None if (x is None or pd.isna(x) or x <= 0) else round(float(x) / m - 1, 4)
 rows = []
 for t, r in cur.iterrows():
-    rr = CHIP_R if (r.sector == "Technology" and "AI chips & hardware" in t_of.get(t, [])) else REQ_RETURN.get(r.sector, DEFAULT_R)
+    rr, rr_src, rr_why = required_return(t, r.sector, t_of.get(t, []))
     pe_for_yield = r.forward_pe if (not pd.isna(r.forward_pe) and r.forward_pe > 0) else (r.pe_ratio if (not pd.isna(r.pe_ratio) and r.pe_ratio > 0) else None)
     ey = 100 / pe_for_yield if pe_for_yield else None                 # earnings yield, %
     conv = None if (ey is None or pd.isna(r.fcf_yield_pct)) else r.fcf_yield_pct / ey   # share of earnings that becomes free cash
@@ -149,7 +151,7 @@ for t, r in cur.iterrows():
         history=[dict(m=m, rank=int(frames[m].loc[t, 'rank']), score=float(frames[m].loc[t, 'score']), est=m in estimated) if t in frames[m].index else dict(m=m, rank=None, score=None, est=m in estimated) for m in months], flags=r["flag_list"],
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
-        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2), pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), has_fair_value=t in fv))
+        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, required_return_source=rr_src, required_return_reason=rr_why, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2), pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
 out = dict(market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
