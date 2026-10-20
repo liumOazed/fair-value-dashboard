@@ -26,13 +26,16 @@ SCORING — honest note:
 v3 METRICS (added 2026-10, appended AFTER growth_score so the original column
 order and the downstream pipeline are unchanged). From yfinance annual
 statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
-  roic_pct            NOPAT / invested capital (total debt + equity), avg of last 2 years
+  roic_pct            NOPAT / operating invested capital, avg of last 2 years. Operating invested capital =
+                      total assets - cash & short-term investments - non-debt current liabilities
+                      (falls back to total debt + equity if those rows are missing)
   net_debt_ebitda     (total debt - cash) / EBITDA (TTM); negative = net cash
   interest_coverage   EBIT / interest expense (latest year); 999 = no interest
   rev_cagr_pct        revenue CAGR over rev_cagr_years (up to 3)
-  eps_cagr_pct        diluted EPS CAGR (only when first and last EPS are positive)
+  eps_cagr_pct        diluted EPS CAGR (only when first and last EPS are positive and the share count
+                      never jumped > 50% in a year, which would suggest a split or share-structure change)
   rev_growth_std      std-dev of yearly revenue growth, in % points (lower = steadier)
-  earnings_cv         std / mean of net income (lower = steadier; blank if mean <= 0)
+  earnings_cv         std / mean of net income (population std; lower = steadier; blank if mean <= 0 or < 3 yrs)
   fcf_cv              std / mean of free cash flow (lower = steadier; blank if mean <= 0)
   fcf_neg_years       years with negative free cash flow, out of fcf_years
   share_change_pct_yr yearly change in share count (+ = dilution, - = buybacks)
@@ -151,6 +154,9 @@ def history_metrics(inc, bal, cfs, info) -> dict:
     eq = _series(bal, "Stockholders Equity", "Common Stock Equity")
     cash = _series(bal, "Cash Cash Equivalents And Short Term Investments", "Cash And Cash Equivalents")
     shares = _series(bal, "Ordinary Shares Number", "Share Issued")
+    assets = _series(bal, "Total Assets")
+    cur_liab = _series(bal, "Current Liabilities")
+    cur_debt = _series(bal, "Current Debt And Capital Lease Obligation", "Current Debt")
     fcf = _series(cfs, "Free Cash Flow")
     ocf = _series(cfs, "Operating Cash Flow")
     capex = _series(cfs, "Capital Expenditure")
@@ -165,10 +171,17 @@ def history_metrics(inc, bal, cfs, info) -> dict:
     t = min(max(t, 0.0), 0.35)
     out["tax_rate"] = round(t, 4)
 
-    # ROIC = EBIT x (1 - t) / invested capital (total debt + equity), average of last two years.
-    # Cash is NOT subtracted: for cash-rich firms that leaves almost no capital and an absurd ROIC.
-    if len(ebit) and len(eq):
+    # ROIC = EBIT x (1 - t) / operating invested capital, average of last two years.
+    # Operating invested capital = total assets - cash & short-term investments - non-debt current liabilities
+    # (payables, accruals, deferred revenue). Independent of buybacks and negative book equity.
+    # Fallback when those rows are missing: total debt + equity.
+    ic = pd.Series(dtype=float)
+    if len(assets) and len(cur_liab):
+        ic = (assets - cash.reindex(assets.index).fillna(0) - (cur_liab.reindex(assets.index) - cur_debt.reindex(assets.index).fillna(0))).dropna()
+    if not len(ic) and len(eq):
         ic = (debt.reindex(eq.index).fillna(0) + eq).dropna()
+    out["roic_basis"] = "operating" if len(assets) and len(cur_liab) else ("debt+equity" if len(eq) else "")
+    if len(ebit) and len(ic):
         ic_avg = ic.iloc[-2:].mean() if len(ic) else np.nan
         out["roic_pct"] = round(float(ebit.iloc[-1]) * (1 - t) / ic_avg * 100, 2) if ic_avg and ic_avg > 0 else np.nan
     else:
@@ -186,7 +199,9 @@ def history_metrics(inc, bal, cfs, info) -> dict:
     g, n = _cagr(rev)
     out["rev_cagr_pct"], out["rev_cagr_years"] = (round(g * 100, 2) if g == g else np.nan), n
     ge, _ = _cagr(eps)
-    out["eps_cagr_pct"] = round(ge * 100, 2) if ge == ge else np.nan
+    jump = bool(len(shares) >= 2 and (shares.pct_change().dropna().abs() > 0.5).any())   # split / share-structure change
+    out["eps_cagr_pct"] = round(ge * 100, 2) if ge == ge and not jump else np.nan
+    out["share_jump"] = jump
     yoy = rev.pct_change().dropna() * 100
     out["rev_growth_std"] = round(float(yoy.std(ddof=0)), 2) if len(yoy) >= 2 else np.nan
     out["earnings_cv"] = round(_cv(ni), 3) if _cv(ni) == _cv(ni) else np.nan
@@ -212,7 +227,8 @@ def history_metrics(inc, bal, cfs, info) -> dict:
 
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
-           "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate"]
+           "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
+           "roic_basis", "share_jump"]
 
 
 def _df_to_json(df):
