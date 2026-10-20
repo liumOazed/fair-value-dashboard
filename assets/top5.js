@@ -22,7 +22,7 @@ function status(price,fair,buy,mos){if(price==null||fair==null)return["Price pen
  if(price<=buy)return["Attractive","b-attr"];if(price<=fair*(1-mos/2))return["Potentially interesting","b-int"];if(price<=fair)return["Little margin","b-lit"];return["Above estimated value","b-abv"]}
 function render(){
  const d=T.months[cur];const now=t=>(P.prices[t]||{}).price??null;
- $("#ttl").textContent=`Fair Value Table · ${nice(cur)}`;$("#stamp").textContent=`evaluated ${d.evaluated} · ${d.candidates} candidates, ${d.passed} passed the checks`;
+ $("#ttl").textContent=`Fair Value Table · ${nice(cur)}`;$("#stamp").textContent=`evaluated ${d.evaluated} · ${d.candidates} candidates, ${d.passed} passed the checks${d.method?" · method: "+d.method:""}`;
  $("#sub").textContent=`Monthly Top 5 · ${nice(cur)}`;
  const rows=d.picks.map(p=>{const n=now(p.ticker)??p.price_at_eval;const[st,cl]=status(n,p.fair_value,p.buy_below,p.mos);return{...p,now:n,st,cl,
    diff:n!=null&&p.fair_value?n/p.fair_value-1:null,since:n!=null&&p.price_at_eval?n/p.price_at_eval-1:null}});

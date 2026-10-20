@@ -420,7 +420,8 @@
      "reason": "Acquisition-like growth (sales up >40% on a thin margin)"
     }
    ],
-   "prev_month": "2026-07"
+   "prev_month": "2026-07",
+   "method": "Score v2, sector required returns, no balance-sheet filter (recorded before the 20 Oct 2026 upgrade; new rules apply from November)"
   }
  },
  "latest": "2026-10"

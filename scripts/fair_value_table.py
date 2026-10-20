@@ -119,6 +119,7 @@ def main():
     except Exception: out = {"months": {}}
     out["months"][S["month"]] = dict(month=S["month"], evaluated=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
                                      candidates=len(top), passed=len(ranked), picks=picks, runners_up=runners, check_first=check, skipped=skipped,
+                                     method=f"Score v{S.get('score_version', 2)}, shared required returns, balance-sheet filter",
                                      prev_month=S.get("prev_month"))
     out["latest"] = max(out["months"])
     json.dump(out, open(f, "w"), indent=1)
