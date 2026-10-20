@@ -1,0 +1,36 @@
+==================================================================
+  ARIA-Growth — Screener (rebuilt)
+==================================================================
+  ✓ S&P 500: 503 tickers
+
+📥 Fetching fundamentals for 503 tickers (slow, ~1/s)...
+  ... 50/503 (50 ok, 0 failed)
+  ... 100/503 (100 ok, 0 failed)
+  ... 150/503 (150 ok, 0 failed)
+  ... 200/503 (200 ok, 0 failed)
+  ... 250/503 (250 ok, 0 failed)
+  ... 300/503 (300 ok, 0 failed)
+  ... 350/503 (350 ok, 0 failed)
+  ... 400/503 (400 ok, 0 failed)
+  ... 450/503 (450 ok, 0 failed)
+  ... 500/503 (500 ok, 0 failed)
+  ✓ 503 tickers with data (0 failed/skipped)
+
+  ✓ 502 stocks screened → data/screens/extra/screen_2026-10-21b_full.csv
+  Score range: 12.4 - 86.5
+
+  Top 10:
+    MU      86.5  rev  379.3%  R40  443.1  [Technology]
+    EOG     85.6  rev   58.7%  R40   84.4  [Energy]
+    OXY     85.0  rev   53.4%  R40   83.7  [Energy]
+    APP     83.1  rev   52.8%  R40  117.4  [Communication Servic]
+    SNDK    82.7  rev  371.6%  R40  428.1  [Technology]
+    FANG    82.4  rev   52.5%  R40   61.5  [Energy]
+    MPC     82.0  rev   53.7%  R40   59.2  [Energy]
+    GPN     80.3  rev   68.6%  R40   59.5  [Industrials]
+    VLO     78.6  rev   51.7%  R40   57.1  [Energy]
+    INCY    78.0  rev   37.7%  R40   65.4  [Healthcare]
+
+  v3 metric coverage (non-blank of 502): {'roic_pct': 472, 'net_debt_ebitda': 470, 'rev_cagr_pct': 502, 'fcf_cv': 449, 'share_change_pct_yr': 500}
+
+  Next: python aria_growth_archive_screen.py --screen data/screens/extra/screen_2026-10-21b_full.csv
