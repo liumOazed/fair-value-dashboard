@@ -65,3 +65,5 @@ code{font-size:11.5px;background:var(--bg);border:1px solid var(--line);border-r
 .hist{display:flex;gap:6px;flex-wrap:wrap}.hist div{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12px;text-align:center}
 .hist div.est{border-style:dashed}.hist b{display:block;font-size:15px}
 details.list summary{cursor:pointer;font-weight:600;margin:6px 0}details.list li{margin:3px 0}
+
+.cmps{display:grid;gap:4px}.cmp{display:grid;grid-template-columns:1fr 90px 34px;align-items:center;gap:8px;font-size:12.5px}.cmp .sbar{width:90px;margin:0}.cmp b{text-align:right}

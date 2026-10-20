@@ -8,6 +8,7 @@ Steps
    | acquisition-like growth (sales > +40% with net margin < 5%) | one-off growth (> +100%) | loss-making | no P/E
    | sales growth changed by more than 30 points since the last real month (acquisition, one-off or commodity swing)
    | free cash flow flipped sign since the last real month (unstable cash flow)
+   | high debt (net debt > 4x EBITDA) | weak interest cover (EBIT < 3x interest)
 3. Quick fair value (same idea as the full model, simplified to what the CSV has):
    cash yield  = the LOWER of FCF yield and TRAILING earnings yield (actual results, not forecasts; forward P/E only if
                  trailing is missing); cyclical sectors x 0.8 (mid-cycle haircut)
@@ -53,6 +54,9 @@ def skip_reason(r):
     if conv is not None and conv > 1.5: return "FCF unusually high (more than 1.5x earnings, may not last)"
     if g is not None and g > 100: return "One-off growth (sales more than doubled)"
     if g is not None and g > 40 and m is not None and m < 5: return "Acquisition-like growth (sales up >40% on a thin margin)"
+    nde, cov = r.get("net_debt_ebitda"), r.get("interest_coverage")
+    if nde is not None and nde > 4: return f"High debt (net debt {nde:.1f}x EBITDA)"
+    if cov is not None and cov < 3 and nde is not None and nde > 0: return f"Weak interest cover (EBIT only {cov:.1f}x interest)"
     if q is not None and g is not None and q.get("rev_growth_pct") is not None and abs(g - q["rev_growth_pct"]) > 30:
         return f"Sales growth swung from {q['rev_growth_pct']:.0f}% to {g:.0f}% since {S['prev_month']} (acquisition, one-off or commodity cycle)"
     if q is not None and q.get("fcf_yield_pct") is not None and (q["fcf_yield_pct"] <= 0) != (fy <= 0):

@@ -22,7 +22,7 @@ function chips(el,label,list,cur,cb){el.innerHTML=`<span class="lbl">${label}</s
 chips($("#secchips"),"Sector",["All",...S.sectors],sec,v=>sec=v);
 chips($("#thchips"),"Theme",["All",...S.themes],th,v=>th=v);
 chips($("#extra"),"Show",["All","Consistent only","Has fair value"],"All",v=>only=v==="All"?"":v);
-const flagCls=f=>f==="Loss-making"||f==="One-off growth?"?"bad":f==="Cyclical"?"warn":"";
+const flagCls=f=>["Loss-making","One-off growth?","High debt","Weak interest cover"].includes(f)?"bad":["Cyclical","Diluting","Below WACC"].includes(f)?"warn":"";
 {const t=$("#tscroll"),b=$("#bscroll");let lock=0;t.onscroll=()=>{if(lock){lock=0;return}lock=1;b.scrollLeft=t.scrollLeft};b.onscroll=()=>{if(lock){lock=0;return}lock=1;t.scrollLeft=b.scrollLeft}}
 function sync(){const t=$("#tscroll"),b=$("#bscroll"),w=$("#tbl").scrollWidth;$("#tspacer").style.width=w+"px";t.style.display=w>b.clientWidth+2?"":"none"}
 window.addEventListener("resize",sync);
@@ -50,6 +50,26 @@ function render(){
 document.querySelectorAll("th[data-k]").forEach(h=>h.onclick=()=>{const k=h.dataset.k;dir=sortK===k?-dir:(k==="rank"||k==="ticker"||k==="sector"?1:-1);sortK=k;render()});
 $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};
 $("#more").onclick=()=>{showAll=!showAll;render()};
+function qualHTML(r){const f=(v,d=1,u="")=>v==null?"–":(+v).toFixed(d)+u,sg=v=>v==null?"–":(v>0?"+":"")+(+v).toFixed(1)+"%";
+ const rows=[
+  ["ROIC (return on all invested capital)",f(r.roic_pct,1,"%")+(r.wacc!=null?` <span class="muted">vs WACC ${(r.wacc*100).toFixed(1)}%</span>`:""),r.roic_spread==null?"":r.roic_spread>=0?`<span class="up">+${(r.roic_spread*100).toFixed(1)} pts above</span>`:`<span class="down">${(r.roic_spread*100).toFixed(1)} pts below</span>`],
+  ["Return on equity",f(r.roe_pct,1,"%"),"kept alongside ROIC"],
+  ["Net debt ÷ EBITDA",r.net_debt_ebitda==null?"–":r.net_debt_ebitda<0?`net cash (${r.net_debt_ebitda.toFixed(1)}×)`:r.net_debt_ebitda.toFixed(1)+"×",r.net_debt_ebitda>4?'<span class="down">high</span>':""],
+  ["Interest coverage (EBIT ÷ interest)",r.interest_coverage==null?"–":r.interest_coverage>=999?"no interest":r.interest_coverage.toFixed(1)+"×",r.interest_coverage!=null&&r.interest_coverage<3?'<span class="down">weak (&lt;3×)</span>':""],
+  [`Revenue CAGR (${r.rev_cagr_years||"–"} yrs)`,f(r.rev_cagr_pct,1,"%"),`this year ${f(r.rev_growth_pct,1,"%")}`],
+  ["EPS CAGR",f(r.eps_cagr_pct,1,"%"),r.eps_cagr_pct==null?"n/a (losses at start)":""],
+  ["Revenue growth volatility",r.rev_growth_std==null?"–":"±"+r.rev_growth_std.toFixed(1)+" pts","std-dev of yearly growth, lower = steadier"],
+  ["Earnings variability",f(r.earnings_cv,2),"std ÷ mean of net income, lower = steadier"],
+  ["FCF variability",f(r.fcf_cv,2),r.fcf_years?`${r.fcf_neg_years} of ${r.fcf_years} years negative`:""],
+  ["Share count change",r.share_change_pct_yr==null?"–":sg(r.share_change_pct_yr)+" a year",r.share_change_pct_yr>3?'<span class="down">diluting</span>':r.share_change_pct_yr<-1?'<span class="up">buybacks</span>':""],
+  ["FCF ÷ net income",f(r.fcf_ni_conversion,2,"×"),"latest fiscal year"],
+  ["Capex % of operating cash flow",f(r.capex_ocf_pct,0,"%"),"capital intensity"],
+  ["Capex ÷ FCF",f(r.capex_fcf,2,"×"),r.capex_fcf==null?"FCF ≤ 0":""]];
+ const C=r.components||{},bar=(k,l)=>`<div class="cmp"><span>${l}</span><span class="sbar"><i style="width:${C[k]||0}%"></i></span><b>${C[k]==null?"–":C[k].toFixed(0)}</b></div>`;
+ return `<h3>Score breakdown</h3><p class="muted">Each part is a percentile inside the stock's sector (100 = best). Score ${r.score.toFixed(1)} (v3); the previous method gave ${r.score_v2==null?"–":r.score_v2.toFixed(1)}.</p>
+ <div class="cmps">${bar("growth","Growth + consistency")}${bar("profit","Profitability (ROIC, ROE, margin)")}${bar("cash","Cash (FCF yield + stability)")}${bar("value","Valuation")}${bar("balance","Balance sheet + dilution")}${bar("quality","Gross margin")}</div>
+ <h3>Quality &amp; durability</h3>${r.v3_source&&r.v3_source!=="own"?`<p class="muted">Multi-year figures come from the screener run <code>${r.v3_source}</code> because this month's CSV predates them.</p>`:""}
+ <table class="s"><tr><th style="text-align:left">Metric</th><th>Value</th><th style="text-align:left">Note</th></tr>${rows.map(x=>`<tr><td style="text-align:left">${x[0]}</td><td>${x[1]}</td><td style="text-align:left;white-space:normal" class="muted">${x[2]}</td></tr>`).join("")}</table>`}
 function mktTxt(r){const M=S.market,rel=x=>`<b>${Math.abs(x*100).toFixed(0)}% ${x>0?"above":"below"}</b>`;
  if(r.pe_vs_market==null&&r.fpe_vs_market==null)return`<b>Versus the market:</b> no positive P/E (losses), so no comparison with the market P/E of ${M.pe.toFixed(1)}.`;
  let t=`<b>Versus the market:</b> `;
@@ -66,6 +86,7 @@ function open(t){const r=rows.find(x=>x.ticker===t);const v=fv[t];
  <div class="grid2"><div class="mini">Score now<b>${r.score.toFixed(1)}</b><span class="muted">rank ${r.rank} of ${S.universe}</span></div>
  <div class="mini">Score in ${S.prev_month||"last month"}<b>${r.prev_score==null?"–":r.prev_score.toFixed(1)}</b><span class="muted">${r.prev_rank==null?"not in that file":"rank "+r.prev_rank}</span></div>
  <div class="mini">Original score<b>${r.old_score.toFixed(1)}</b><span class="muted">the old method, for comparison</span></div><div class="mini">Market cap<b>${cap(r.market_cap)}</b></div></div>
+ ${qualHTML(r)}
  <h3>Rank by month</h3><div class="hist">${(r.history||[]).map(h=>`<div class="${h.est?"est":""}" title="${h.est?"estimated month":"real data"}">${h.m}${h.est?" (est.)":""}<b>${h.rank==null?"–":"#"+h.rank}</b><span class="muted">${h.score==null?"":h.score.toFixed(1)}</span></div>`).join("")}</div>
  <p class="muted">${r.months_in_top50} of the last ${S.window.length} months in the top 50.</p>
  <h3>Key numbers</h3><table class="s"><tr><th style="text-align:left">Metric</th><th>Value</th></tr>

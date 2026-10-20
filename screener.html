@@ -37,9 +37,14 @@
   <section class="card method">
     <h2>How the Growth Quality Score works</h2>
     <p class="muted">A shortlist tool, not a prediction. It replaces the original growth score, which counted growth twice and let energy stocks and one-off spikes dominate.</p>
-    <h3>What it measures (0 to 100)</h3>
-    <ul><li><b>Growth 30%</b>: sales growth, capped at 60% so one-offs cannot dominate.</li><li><b>Profitability 25%</b>: net margin and return on equity.</li>
-    <li><b>Cash generation 20%</b>: free-cash-flow yield.</li><li><b>Valuation 15%</b>: lower forward P/E and EV/EBITDA score higher.</li><li><b>Quality 10%</b>: gross margin.</li></ul>
+    <h3>What it measures (0 to 100), score v3</h3>
+    <ul><li><b>Growth 25%</b>: this year's sales growth (capped at 60%) 50%, 3-year revenue CAGR 30%, consistency 20% (steady yearly growth and steady earnings).</li>
+    <li><b>Profitability 25%</b>: ROIC 60% (return on all invested capital), ROE 20%, net margin 20%. Banks and insurers use ROE and margin only.</li>
+    <li><b>Cash 20%</b>: free-cash-flow yield 60%, FCF stability 40% (low variability, few negative years).</li>
+    <li><b>Valuation 15%</b>: lower forward P/E and EV/EBITDA score higher.</li>
+    <li><b>Balance sheet 10%</b>: net debt / EBITDA 60% (net cash is best), share-count change 40% (buybacks best, dilution worst).</li>
+    <li><b>Quality 5%</b>: gross margin.</li></ul>
+    <p class="muted">Multi-year figures come from ~4 years of annual statements (yfinance), so "CAGR" covers up to 3 yearly steps. Months whose CSV predates these metrics borrow them from the newest full screener run. Flags: <b>High debt</b> (net debt over 4× EBITDA), <b>Weak interest cover</b> (EBIT under 3× interest), <b>Diluting</b> (shares up over 3% a year), <b>Below WACC</b> (ROIC under the blended cost of debt and equity).</p>
     <h3>What is different from before</h3>
     <ul><li>Every metric is ranked <b>inside the stock's own sector</b>, so energy is compared with energy and tech with tech.</li>
     <li>Energy and Basic Materials are cyclical, so growth counts 15% and cash generation 35%.</li>
