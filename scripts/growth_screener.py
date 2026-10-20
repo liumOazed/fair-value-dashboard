@@ -42,6 +42,9 @@ statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
   fcf_conversion      FCF / net income (latest fiscal year, both from the statements)
   capex_ocf_pct       capex as % of operating cash flow (capital intensity, stable)
   capex_fcf           capex / FCF (blank when FCF <= 0)
+  industry, beta      from yfinance .info (industry gives finer peer groups than sector)
+  volatility_1y_pct   annualised standard deviation of daily returns over the last year
+  max_drawdown_1y_pct worst peak-to-trough fall over the last year (negative %)
   cost_of_debt        effective borrowing rate = interest expense / average total debt (same 2 fiscal years)
   total_debt, interest_expense, tax_rate   inputs so the dashboard can compute WACC
 Statements are cached per ticker in .screener_cache/YYYY-MM/ so an interrupted
@@ -231,7 +234,7 @@ def history_metrics(inc, bal, cfs, info) -> dict:
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
-           "roic_basis", "share_jump", "cost_of_debt"]
+           "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct"]
 
 
 def _df_to_json(df):
@@ -240,6 +243,25 @@ def _df_to_json(df):
 
 def _json_to_df(d):
     return pd.DataFrame(d) if d else pd.DataFrame()
+
+
+def market_risk(tk, t: str, cache_dir: Path | None) -> dict:
+    """1-year volatility and maximum drawdown from daily closes (cached per ticker)."""
+    f = cache_dir / f"{t}_px.json" if cache_dir else None
+    if f and f.exists():
+        return json.loads(f.read_text())
+    out = {"volatility_1y_pct": np.nan, "max_drawdown_1y_pct": np.nan}
+    try:
+        px = tk.history(period="1y", auto_adjust=True)["Close"].dropna()
+        if len(px) > 60:
+            r = np.log(px).diff().dropna()
+            out = {"volatility_1y_pct": round(float(r.std() * np.sqrt(252) * 100), 2),
+                   "max_drawdown_1y_pct": round(float((px / px.cummax() - 1).min() * 100), 2)}
+    except Exception:
+        pass
+    if f:
+        f.write_text(json.dumps({k: (None if v != v else v) for k, v in out.items()}))
+    return out
 
 
 def fetch_statements(tk, t: str, cache_dir: Path | None):
@@ -295,10 +317,13 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
                 "fcf_yield_pct": round(fcf / mcap * 100, 2) if fcf and mcap else np.nan,
                 "roe_pct": round(roe * 100, 2) if roe is not None else np.nan,
                 "ev_ebitda": info.get("enterpriseToEbitda"),
+                "industry": info.get("industry") or "",
+                "beta": info.get("beta"),
             }
             if history:
                 try:
                     row.update(history_metrics(*fetch_statements(tk, t, cache_dir), info))
+                    row.update(market_risk(tk, t, cache_dir))
                 except Exception as e:
                     print(f"  ⚠ {t}: statements failed ({e}); v3 metrics left blank")
             rows.append(row)
