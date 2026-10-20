@@ -52,7 +52,7 @@ $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};
 $("#more").onclick=()=>{showAll=!showAll;render()};
 function wTxt(r){const w=r.wacc_detail;if(!w)return"";const p=x=>(x*100).toFixed(1)+"%";
  return `WACC ${p(r.wacc)} = ${p(w.equity_weight)} equity (market value) × ${p(w.cost_equity)} + ${p(w.debt_weight)} debt × ${p(w.cost_debt_used)} × (1 − ${p(w.tax)} tax)`+
-  (w.cost_debt_raw==null?" · no interest data, 5% assumed":Math.abs(w.cost_debt_raw-w.cost_debt_used)>1e-6?` · cost of debt ${p(w.cost_debt_raw)} from interest ÷ debt, limited to 2–10%`:" · cost of debt = interest ÷ debt")}
+  (w.cost_debt_raw==null?" · no interest data, 5% assumed":Math.abs(w.cost_debt_raw-w.cost_debt_used)>1e-6?` · cost of debt ${p(w.cost_debt_raw)} (interest ÷ average debt) limited to 2–10%`:" · cost of debt = interest ÷ average debt")}
 function qualHTML(r){const f=(v,d=1,u="")=>v==null?"–":(+v).toFixed(d)+u,sg=v=>v==null?"–":(v>0?"+":"")+(+v).toFixed(1)+"%";
  const rows=[
   ["ROIC (after-tax operating profit ÷ invested capital)",f(r.roic_pct,1,"%"),(r.roic_basis==="operating"?"operating capital (assets − cash − non-debt current liabilities)":r.roic_basis==="debt+equity"?"debt + equity (operating rows missing)":"")+(r.roic_pct>100?" · very high because the business uses little capital":"")],

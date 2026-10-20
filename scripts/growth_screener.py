@@ -42,6 +42,7 @@ statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
   fcf_conversion      FCF / net income (latest fiscal year, both from the statements)
   capex_ocf_pct       capex as % of operating cash flow (capital intensity, stable)
   capex_fcf           capex / FCF (blank when FCF <= 0)
+  cost_of_debt        effective borrowing rate = interest expense / average total debt (same 2 fiscal years)
   total_debt, interest_expense, tax_rate   inputs so the dashboard can compute WACC
 Statements are cached per ticker in .screener_cache/YYYY-MM/ so an interrupted
 run resumes where it stopped (delete the folder to force a refetch).
@@ -193,6 +194,8 @@ def history_metrics(inc, bal, cfs, info) -> dict:
     out["net_debt_ebitda"] = round(((td or 0) - (tc or 0)) / ebitda, 2) if ebitda and ebitda > 0 else np.nan
     ie = abs(float(intr.iloc[-1])) if len(intr) else 0.0
     out["interest_expense"] = ie if len(intr) else np.nan
+    avg_debt = debt.iloc[-2:].mean() if len(debt) else np.nan
+    out["cost_of_debt"] = round(ie / avg_debt, 4) if len(intr) and avg_debt and avg_debt > 0 else np.nan
     out["interest_coverage"] = (999.0 if ie < 1 else round(float(ebit.iloc[-1]) / ie, 2)) if len(ebit) else np.nan
 
     # growth consistency
@@ -228,7 +231,7 @@ def history_metrics(inc, bal, cfs, info) -> dict:
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
-           "roic_basis", "share_jump"]
+           "roic_basis", "share_jump", "cost_of_debt"]
 
 
 def _df_to_json(df):

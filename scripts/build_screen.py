@@ -69,7 +69,7 @@ SCORE_VERSION = 3
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
-           "roic_basis", "share_jump"]
+           "roic_basis", "share_jump", "cost_of_debt"]
 
 def score_v3(d):
     """Growth Quality Score v3, 0-100. Every metric is ranked inside the stock's own sector (as v2).
@@ -224,7 +224,8 @@ for t, r in cur.iterrows():
     # WACC = equity share x required return + debt share x after-tax cost of debt (interest / debt, clipped 2-10%)
     D = float(r.total_debt) if not pd.isna(r.total_debt) else 0.0
     E = float(r.market_cap) if not pd.isna(r.market_cap) else np.nan
-    rd_raw = (r.interest_expense / D) if (D > 0 and not pd.isna(r.interest_expense)) else None
+    rd_raw = (float(r.cost_of_debt) if not pd.isna(r.cost_of_debt) else                 # interest / average annual debt
+              (r.interest_expense / D) if (D > 0 and not pd.isna(r.interest_expense)) else None)
     rd = 0.05 if rd_raw is None else min(max(rd_raw, 0.02), 0.10)   # guardrail; raw rate is reported, never hidden
     tx = r.tax_rate if not pd.isna(r.tax_rate) else 0.21
     wacc = None if pd.isna(E) or E <= 0 else (E * rr + D * rd * (1 - tx)) / (E + D)
@@ -252,7 +253,7 @@ for t, r in cur.iterrows():
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
         fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, required_return_source=rr_src, required_return_reason=rr_why, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2),
-        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion", "roic_basis", "share_jump")}, fcf_ni_conversion=num(r["fcf_conversion"]),
+        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion", "roic_basis", "share_jump", "cost_of_debt")}, fcf_ni_conversion=num(r["fcf_conversion"]),
         roic_basis=(r["roic_basis"] if isinstance(r["roic_basis"], str) else None), share_jump=bool(r["share_jump"]) if not pd.isna(r["share_jump"]) else False,
         wacc_detail=None if wacc is None else dict(equity_weight=round(E / (E + D), 3), debt_weight=round(D / (E + D), 3), cost_equity=rr,
             cost_debt_raw=None if rd_raw is None else round(float(rd_raw), 4), cost_debt_used=round(rd, 4), tax=round(float(tx), 3)), wacc=None if wacc is None else round(wacc, 4), roic_spread=spread,
