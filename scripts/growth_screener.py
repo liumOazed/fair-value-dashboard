@@ -26,7 +26,7 @@ SCORING — honest note:
 v3 METRICS (added 2026-10, appended AFTER growth_score so the original column
 order and the downstream pipeline are unchanged). From yfinance annual
 statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
-  roic_pct            NOPAT / invested capital (debt + equity - cash), avg of last 2 years
+  roic_pct            NOPAT / invested capital (total debt + equity), avg of last 2 years
   net_debt_ebitda     (total debt - cash) / EBITDA (TTM); negative = net cash
   interest_coverage   EBIT / interest expense (latest year); 999 = no interest
   rev_cagr_pct        revenue CAGR over rev_cagr_years (up to 3)
@@ -36,7 +36,7 @@ statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
   fcf_cv              std / mean of free cash flow (lower = steadier; blank if mean <= 0)
   fcf_neg_years       years with negative free cash flow, out of fcf_years
   share_change_pct_yr yearly change in share count (+ = dilution, - = buybacks)
-  fcf_conversion      FCF / net income (TTM)
+  fcf_conversion      FCF / net income (latest fiscal year, both from the statements)
   capex_ocf_pct       capex as % of operating cash flow (capital intensity, stable)
   capex_fcf           capex / FCF (blank when FCF <= 0)
   total_debt, interest_expense, tax_rate   inputs so the dashboard can compute WACC
@@ -165,9 +165,10 @@ def history_metrics(inc, bal, cfs, info) -> dict:
     t = min(max(t, 0.0), 0.35)
     out["tax_rate"] = round(t, 4)
 
-    # ROIC = EBIT x (1 - t) / invested capital (debt + equity - cash), average of last two years
+    # ROIC = EBIT x (1 - t) / invested capital (total debt + equity), average of last two years.
+    # Cash is NOT subtracted: for cash-rich firms that leaves almost no capital and an absurd ROIC.
     if len(ebit) and len(eq):
-        ic = (debt.reindex(eq.index).fillna(0) + eq - cash.reindex(eq.index).fillna(0)).dropna()
+        ic = (debt.reindex(eq.index).fillna(0) + eq).dropna()
         ic_avg = ic.iloc[-2:].mean() if len(ic) else np.nan
         out["roic_pct"] = round(float(ebit.iloc[-1]) * (1 - t) / ic_avg * 100, 2) if ic_avg and ic_avg > 0 else np.nan
     else:
@@ -200,8 +201,7 @@ def history_metrics(inc, bal, cfs, info) -> dict:
     out["share_change_pct_yr"] = round(sc * 100, 2) if sc == sc else np.nan
 
     # conversion + capital intensity
-    fcf_ttm, ni_ttm = info.get("freeCashflow"), info.get("netIncomeToCommon")
-    out["fcf_conversion"] = round(fcf_ttm / ni_ttm, 2) if fcf_ttm is not None and ni_ttm and ni_ttm > 0 else np.nan
+    out["fcf_conversion"] = round(float(fcf.iloc[-1] / ni.iloc[-1]), 2) if len(fcf) and len(ni) and ni.iloc[-1] > 0 else np.nan
     if len(capex) and len(ocf) and ocf.iloc[-1] > 0:
         out["capex_ocf_pct"] = round(abs(float(capex.iloc[-1])) / float(ocf.iloc[-1]) * 100, 2)
     else:
