@@ -27,7 +27,7 @@
     <div class="scroll topscroll" id="tscroll"><div id="tspacer"></div></div>
     <div class="scroll" id="bscroll"><table id="tbl"><thead><tr>
       <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="rank_change" class="r">Rank change</th>
-      <th data-k="rev_growth_pct" class="r">Sales growth</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r">FCF yield</th><th data-k="earnings_yield" class="r" title="Earnings per share ÷ price (uses forward P/E when available)">Earnings yield</th><th data-k="fcf_conversion" class="r" title="FCF yield ÷ earnings yield. Near 1 = cash matches earnings; above 1.5 or below 0.25 = check why">FCF ÷ EY</th>
+      <th data-k="rev_growth_pct" class="r" title="Latest quarter revenue vs the same quarter a year earlier">Sales growth (qtr YoY)</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r">FCF yield</th><th data-k="earnings_yield" class="r" title="Earnings per share ÷ price (uses forward P/E when available)">Earnings yield</th><th data-k="fcf_conversion" class="r" title="FCF yield ÷ earnings yield. Near 1 = cash matches earnings; above 1.5 or below 0.25 = check why">FCF ÷ EY</th>
       <th data-k="forward_pe" class="r">Fwd P/E</th><th data-k="implied_fcf_growth" class="r">Growth priced in*</th><th>Fair value</th>
     </tr></thead><tbody></tbody></table></div>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px">
@@ -38,13 +38,13 @@
     <h2>How the Growth Quality Score works</h2>
     <p class="muted">A shortlist tool, not a prediction. It replaces the original growth score, which counted growth twice and let energy stocks and one-off spikes dominate.</p>
     <h3>What it measures (0 to 100), score v3</h3>
-    <ul><li><b>Growth 25%</b>: this year's sales growth (capped at 60%) 50%, 3-year revenue CAGR 30%, consistency 20% (steady yearly growth and steady earnings).</li>
+    <ul><li><b>Growth 25%</b>: latest-quarter sales growth (year on year) (capped at 60%) 50%, 3-year revenue CAGR 30%, consistency 20% (steady yearly growth and steady earnings).</li>
     <li><b>Profitability 25%</b>: ROIC 60% (return on all invested capital), ROE 20%, net margin 20%. Banks and insurers use ROE and margin only.</li>
     <li><b>Cash 20%</b>: free-cash-flow yield 60%, FCF stability 40% (low variability, few negative years).</li>
     <li><b>Valuation 15%</b>: lower forward P/E and EV/EBITDA score higher.</li>
     <li><b>Balance sheet 10%</b>: net debt / EBITDA 60% (net cash is best), share-count change 40% (buybacks best, dilution worst).</li>
     <li><b>Quality 5%</b>: gross margin.</li></ul>
-    <p class="muted">Multi-year figures come from ~4 years of annual statements (yfinance), so "CAGR" covers up to 3 yearly steps. Months whose CSV predates these metrics borrow them from the newest full screener run. Flags: <b>High debt</b> (net debt over 4× EBITDA), <b>Weak interest cover</b> (EBIT under 3× interest), <b>Diluting</b> (shares up over 3% a year), <b>Below WACC</b> (ROIC under the blended cost of debt and equity).</p>
+    <p class="muted">Multi-year figures come from ~4 years of annual statements (yfinance), so "CAGR" covers up to 3 yearly steps. Months whose CSV predates these metrics borrow them from the newest full screener run. ROIC uses operating invested capital (total assets − cash − non-debt current liabilities), so buybacks and negative book equity don't distort it. Variability = population standard deviation ÷ average, shown only when the average is positive and there are at least 3 years. WACC uses market-value equity; the cost of debt is interest ÷ debt, limited to 2–10% with the raw figure shown. Flags: <b>High debt</b> (net debt over 4× EBITDA), <b>Weak interest cover</b> (EBIT under 3× interest), <b>Diluting</b> (shares up over 3% a year), <b>Below WACC</b> (ROIC under the blended cost of debt and equity).</p>
     <h3>What is different from before</h3>
     <ul><li>Every metric is ranked <b>inside the stock's own sector</b>, so energy is compared with energy and tech with tech.</li>
     <li>Energy and Basic Materials are cyclical, so growth counts 12% and cash generation 33%.</li>

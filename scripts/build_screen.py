@@ -68,7 +68,8 @@ def score_v2(d):
 SCORE_VERSION = 3
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
-           "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate"]
+           "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
+           "roic_basis", "share_jump"]
 
 def score_v3(d):
     """Growth Quality Score v3, 0-100. Every metric is ranked inside the stock's own sector (as v2).
@@ -143,7 +144,7 @@ def v3_source():
             best = f
     return best
 V3_SRC = v3_source()
-_V3 = pd.read_csv(V3_SRC).drop_duplicates("ticker").set_index("ticker")[V3_COLS] if V3_SRC else None
+_V3 = pd.read_csv(V3_SRC).drop_duplicates("ticker").set_index("ticker").reindex(columns=V3_COLS) if V3_SRC else None
 
 def implied_growth(y_pct, R):
     if y_pct is None or pd.isna(y_pct) or y_pct <= 0: return None
@@ -220,8 +221,8 @@ for t, r in cur.iterrows():
     # WACC = equity share x required return + debt share x after-tax cost of debt (interest / debt, clipped 2-10%)
     D = float(r.total_debt) if not pd.isna(r.total_debt) else 0.0
     E = float(r.market_cap) if not pd.isna(r.market_cap) else np.nan
-    rd = (r.interest_expense / D) if (D > 0 and not pd.isna(r.interest_expense)) else 0.05
-    rd = min(max(rd, 0.02), 0.10)
+    rd_raw = (r.interest_expense / D) if (D > 0 and not pd.isna(r.interest_expense)) else None
+    rd = 0.05 if rd_raw is None else min(max(rd_raw, 0.02), 0.10)   # guardrail; raw rate is reported, never hidden
     tx = r.tax_rate if not pd.isna(r.tax_rate) else 0.21
     wacc = None if pd.isna(E) or E <= 0 else (E * rr + D * rd * (1 - tx)) / (E + D)
     spread = None if (wacc is None or pd.isna(r.roic_pct) or r.sector == "Financial Services") else round(r.roic_pct / 100 - wacc, 4)
@@ -248,7 +249,10 @@ for t, r in cur.iterrows():
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
         fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, required_return_source=rr_src, required_return_reason=rr_why, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2),
-        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion")}, fcf_ni_conversion=num(r["fcf_conversion"]), wacc=None if wacc is None else round(wacc, 4), roic_spread=spread,
+        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion", "roic_basis", "share_jump")}, fcf_ni_conversion=num(r["fcf_conversion"]),
+        roic_basis=(r["roic_basis"] if isinstance(r["roic_basis"], str) else None), share_jump=bool(r["share_jump"]) if not pd.isna(r["share_jump"]) else False,
+        wacc_detail=None if wacc is None else dict(equity_weight=round(E / (E + D), 3), debt_weight=round(D / (E + D), 3), cost_equity=rr,
+            cost_debt_raw=None if rd_raw is None else round(float(rd_raw), 4), cost_debt_used=round(rd, 4), tax=round(float(tx), 3)), wacc=None if wacc is None else round(wacc, 4), roic_spread=spread,
         v3_source=r.v3_source, score_v2=float(r.score_v2), components={k: float(r[f"c_{k}"]) for k in ("growth", "profit", "cash", "value", "balance", "quality")}, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
 out = dict(score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
