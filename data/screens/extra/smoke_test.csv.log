@@ -1,0 +1,25 @@
+==================================================================
+  ARIA-Growth — Screener (rebuilt)
+==================================================================
+
+📥 Fetching fundamentals for 20 tickers (slow, ~1/s)...
+  ✓ 20 tickers with data (0 failed/skipped)
+
+  ✓ 20 stocks screened → data/screens/extra/smoke_test.csv
+  Score range: 27.6 - 82.8
+
+  Top 10:
+    SNDK    82.8  rev  371.6%  R40  428.1  [Technology]
+    INCY    78.3  rev   37.7%  R40   65.4  [Healthcare]
+    KDP     77.2  rev   75.6%  R40   82.7  [Consumer Defensive]
+    NVDA    75.9  rev  105.9%  R40  169.6  [Technology]
+    OMC     72.7  rev   63.4%  R40   65.1  [Communication Servic]
+    PLTR    70.1  rev   92.8%  R40  141.8  [Technology]
+    FICO    68.7  rev   25.7%  R40   59.8  [Technology]
+    ORCL    67.4  rev   29.6%  R40   56.0  [Technology]
+    APA     63.0  rev    9.2%  R40   28.8  [Energy]
+    MKC     57.9  rev   17.4%  R40   36.8  [Consumer Defensive]
+
+  v3 metric coverage (non-blank of 20): {'roic_pct': 19, 'net_debt_ebitda': 19, 'rev_cagr_pct': 20, 'fcf_cv': 18, 'share_change_pct_yr': 20}
+
+  Next: python aria_growth_archive_screen.py --screen data/screens/extra/smoke_test.csv
