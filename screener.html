@@ -26,7 +26,7 @@
     <div class="chips" id="extra"></div>
     <div class="scroll topscroll" id="tscroll"><div id="tspacer"></div></div>
     <div class="scroll" id="bscroll"><table id="tbl"><thead><tr>
-      <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="rank_change" class="r">Rank change</th>
+      <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="safety" title="Financial Safety (0-100, higher = safer) and risk level">Safety</th><th data-k="rank_change" class="r">Rank change</th>
       <th data-k="rev_growth_pct" class="r" title="Latest quarter revenue vs the same quarter a year earlier">Sales growth (qtr YoY)</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r">FCF yield</th><th data-k="earnings_yield" class="r" title="Earnings per share ÷ price (uses forward P/E when available)">Earnings yield</th><th data-k="fcf_conversion" class="r" title="FCF yield ÷ earnings yield. Near 1 = cash matches earnings; above 1.5 or below 0.25 = check why">FCF ÷ EY</th>
       <th data-k="forward_pe" class="r">Fwd P/E</th><th data-k="implied_fcf_growth" class="r">Growth priced in*</th><th>Fair value</th>
     </tr></thead><tbody></tbody></table></div>
@@ -37,14 +37,18 @@
   <section class="card method">
     <h2>How the Growth Quality Score works</h2>
     <p class="muted">A shortlist tool, not a prediction. It replaces the original growth score, which counted growth twice and let energy stocks and one-off spikes dominate.</p>
-    <h3>What it measures (0 to 100), score v3</h3>
-    <ul><li><b>Growth 25%</b>: latest-quarter sales growth (year on year) (capped at 60%) 50%, 3-year revenue CAGR 30%, consistency 20% (steady yearly growth and steady earnings).</li>
-    <li><b>Profitability 25%</b>: ROIC 60% (return on all invested capital), ROE 20%, net margin 20%. Banks and insurers use ROE and margin only.</li>
-    <li><b>Cash 20%</b>: free-cash-flow yield 60%, FCF stability 40% (low variability, few negative years).</li>
-    <li><b>Valuation 15%</b>: lower forward P/E and EV/EBITDA score higher.</li>
-    <li><b>Balance sheet 10%</b>: net debt / EBITDA 60% (net cash is best), share-count change 40% (buybacks best, dilution worst).</li>
-    <li><b>Quality 5%</b>: gross margin.</li></ul>
-    <p class="muted">Multi-year figures come from ~4 years of annual statements (yfinance), so "CAGR" covers up to 3 yearly steps. Months whose CSV predates these metrics borrow them from the newest full screener run. ROIC uses operating invested capital (total assets − cash − non-debt current liabilities), so buybacks and negative book equity don't distort it. Variability = population standard deviation ÷ average, shown only when the average is positive and there are at least 3 years. WACC uses market-value equity; the cost of debt is interest ÷ debt, limited to 2–10% with the raw figure shown. Flags: <b>High debt</b> (net debt over 4× EBITDA), <b>Weak interest cover</b> (EBIT under 3× interest), <b>Diluting</b> (shares up over 3% a year), <b>Below WACC</b> (ROIC under the blended cost of debt and equity).</p>
+    <h3>What it measures (0 to 100), score v4</h3>
+    <ul><li><b>Business quality 30%</b>: ROIC 35, net margin 20, gross margin 20, FCF ÷ net income 15, ROE 10 (only when equity is meaningful).</li>
+    <li><b>Growth &amp; consistency 30%</b>: latest-quarter sales growth (year on year) 25, 3-year revenue CAGR 25, EPS CAGR 20, revenue-growth volatility 15 and earnings variability 15 (steadier is better).</li>
+    <li><b>Valuation 20%</b>: forward P/E 30 and EV/EBITDA 25 (lower is better), FCF yield 30, earnings yield 15.</li>
+    <li><b>Financial resilience 20%</b>: net debt/EBITDA 35, interest cover 25, FCF variability 15, negative-FCF years 15, share-count change 10.</li></ul>
+    <p class="muted">Each metric is a percentile inside the stock's sector; each part re-weights over the metrics that exist. Cyclical sectors (Energy, Basic Materials): growth 15%, quality 35%, valuation 25%, resilience 25%. A part with no data scores at the 30th percentile. No blanket penalties: the score is <b>capped at 50</b> only when FCF was negative in 2+ years and interest cover is weak.</p>
+    <h3>Financial Safety and Risk level</h3>
+    <ul><li><b>Financial Safety</b> (0–100) is the resilience part shown on its own.</li>
+    <li><b>Risk level</b>: <b>High</b> if any serious threshold is hit, <b>Elevated</b> if any warning, otherwise <b>Normal</b>. Serious / warning: net debt over 4× / 3× EBITDA, interest cover under 3× / 5×, negative FCF in 2+ / 1 years, shares up over 5% / 3% a year.</li>
+    <li>Utilities and REITs are financed with more debt by design: net debt limits 6×/7× (utilities) and 6.5×/8× (REITs), interest cover 2.5×/1.8×, and utilities' negative FCF is not counted. Banks and insurers are judged on dilution only.</li>
+    <li><b>Data confidence</b>: High, Medium or Low from missing key metrics, borrowed multi-year data or a ROIC fallback. Industry rank and 1-year volatility, worst fall and beta are shown for context, not scored.</li></ul>
+    <p class="muted">Multi-year figures come from ~4 years of annual statements (yfinance), so "CAGR" covers up to 3 yearly steps. Months whose CSV predates these metrics borrow them from the newest full screener run. ROIC uses operating invested capital (total assets − cash − non-debt current liabilities), so buybacks and negative book equity don't distort it. Variability = population standard deviation ÷ average, shown only when the average is positive and there are at least 3 years. WACC uses market-value equity; the cost of debt is interest ÷ average debt, limited to 2–10% with the raw figure shown. Weights are a reasoned starting point, not yet back-tested.</p>
     <h3>What is different from before</h3>
     <ul><li>Every metric is ranked <b>inside the stock's own sector</b>, so energy is compared with energy and tech with tech.</li>
     <li>Energy and Basic Materials are cyclical, so growth counts 12% and cash generation 33%.</li>

@@ -65,11 +65,11 @@ def score_v2(d):
                    if on] for g, m, s, a, b in zip(d.rev_growth_pct, d.profit_margin_pct, d.sector, d.pe_ratio, d.forward_pe)]
     return d
 
-SCORE_VERSION = 3
+SCORE_VERSION = 4
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
-           "roic_basis", "share_jump", "cost_of_debt"]
+           "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct"]
 
 def score_v3(d):
     """Growth Quality Score v3, 0-100. Every metric is ranked inside the stock's own sector (as v2).
@@ -132,6 +132,100 @@ def score_v3(d):
     d["flag_list"] = flags
     return d
 
+def wavg(parts):
+    """Weighted average of (percentile Series, weight) pairs, re-normalised over the parts that exist per stock."""
+    num = sum(p.fillna(0) * w for p, w in parts)
+    den = sum(p.notna() * w for p, w in parts)
+    return num / den.replace(0, np.nan)
+
+# Risk thresholds: (net debt/EBITDA warning, serious), (interest cover warning, serious), negative-FCF test applies?
+# Utilities and REITs are financed with more debt by design (regulated / property assets), so they get their own limits;
+# utilities' negative FCF is normal (capex funded by borrowing against the rate base) and is not treated as a risk.
+RISK_LIMITS = {"default": ((3, 4), (5, 3), True), "Utilities": ((6, 7), (2.5, 1.8), False), "Real Estate": ((6.5, 8), (2.5, 1.8), True)}
+
+def risk_assessment(r, fin):
+    """Warning / serious thresholds (sector-specific for Utilities and Real Estate; banks use dilution only)."""
+    ser, warn = [], []
+    nde, cov, neg, shr, debt = r.net_debt_ebitda, r.interest_coverage, r.fcf_neg_years, r.share_change_pct_yr, r.total_debt
+    (nw, ns), (cw, cs), fcf_test = RISK_LIMITS.get(r.sector, RISK_LIMITS["default"])
+    if not fin:
+        if nde > ns: ser.append(f"Net debt {nde:.1f}x EBITDA (> {ns}x)")
+        elif nde > nw: warn.append(f"Net debt {nde:.1f}x EBITDA (> {nw}x)")
+        if (debt or 0) > 0 and cov < cs: ser.append(f"Interest cover {cov:.1f}x (< {cs}x)")
+        elif (debt or 0) > 0 and cov < cw: warn.append(f"Interest cover {cov:.1f}x (< {cw}x)")
+        if fcf_test and neg >= 2: ser.append(f"Negative FCF in {int(neg)} of {int(r.fcf_years)} years")
+        elif fcf_test and neg == 1: warn.append(f"Negative FCF in 1 of {int(r.fcf_years)} years")
+    if shr > 5: ser.append(f"Shares up {shr:.1f}% a year (> 5%)")
+    elif shr > 3: warn.append(f"Shares up {shr:.1f}% a year (> 3%)")
+    level = "High" if ser else ("Elevated" if warn else "Normal")
+    return level, ser, warn
+
+def score_v4(d):
+    """Growth Quality Score v4 (0-100) = four parts, each a weighted average of within-sector percentiles:
+      Business quality 30%    ROIC 35, net margin 20, gross margin 20, FCF / net income 15, ROE 10 (when meaningful)
+      Growth & consistency 30% latest-quarter growth 25, 3-yr revenue CAGR 25, EPS CAGR 20,
+                               revenue-growth volatility 15 (lower better), earnings variability 15 (lower better)
+      Valuation 20%           forward P/E 30 (lower better), FCF yield 30, EV/EBITDA 25 (lower better), earnings yield 15
+      Financial resilience 20% net debt/EBITDA 35, interest cover 25, FCF variability 15, negative-FCF years 15,
+                               share-count change 10 (lower better)
+    Cyclical sectors: growth 15, quality 35, valuation 25, resilience 25. A part with no data is filled at the
+    30th percentile (missing data is not rewarded). No blanket penalties; a distress cap of 50 applies when free
+    cash flow was negative in 2+ years AND interest cover is under 3x.
+    Financial Safety = the resilience part on its own. Risk level = High / Elevated / Normal from thresholds."""
+    d = d.copy()
+    fin = d.sector == "Financial Services"
+    P = lambda col, hb=True: pct_in_sector(d, col, hb)
+    d["roic_c"] = d.roic_pct.clip(-20, 80).where(~fin)
+    d["roe_c"] = d.roe_pct.where((d.roe_pct > -50) & (d.roe_pct < 100))           # negative/huge equity: not meaningful
+    d["fni_c"] = d.fcf_conversion.clip(0, 1.5)
+    d["g"] = d.rev_growth_pct.clip(-10, 60)
+    d["cagr_c"] = d.rev_cagr_pct.clip(-20, 40)
+    d["eps_c"] = d.eps_cagr_pct.clip(-30, 60)
+    d["rstd_c"] = d.rev_growth_std.clip(0, 60)
+    d["ecv_c"] = d.earnings_cv.clip(0, 3)
+    d["fpe_c"] = d.forward_pe.where((d.forward_pe > 0) & (d.forward_pe < 100))
+    d["evx_c"] = d.ev_ebitda.where((d.ev_ebitda > 0) & (d.ev_ebitda < 100))
+    d["fcf_c"] = d.fcf_yield_pct.clip(-10, 15)
+    pe_y = d.forward_pe.where(d.forward_pe > 0).fillna(d.pe_ratio.where(d.pe_ratio > 0))
+    d["ey_c"] = (100 / pe_y).clip(0, 20)
+    d["nde_c"] = d.net_debt_ebitda.clip(-5, 10).where(~fin)
+    d["cov_c"] = d.interest_coverage.clip(0, 50).where(~fin)
+    d["fcv_c"] = d.fcf_cv.clip(0, 3).where(~fin)
+    d["neg_c"] = (d.fcf_neg_years / d.fcf_years).where(~fin)
+    d["shr_c"] = d.share_change_pct_yr.clip(-10, 20)
+    comp = pd.DataFrame(index=d.index)
+    comp["quality"] = wavg([(P("roic_c"), .35), (P("profit_margin_pct"), .20), (P("gross_margin_pct"), .20), (P("fni_c"), .15), (P("roe_c"), .10)])
+    comp["growth"] = wavg([(P("g"), .25), (P("cagr_c"), .25), (P("eps_c"), .20), (P("rstd_c", False), .15), (P("ecv_c", False), .15)])
+    comp["value"] = wavg([(P("fpe_c", False), .30), (P("fcf_c"), .30), (P("evx_c", False), .25), (P("ey_c"), .15)])
+    neutral = pd.Series(np.where(fin, 0.5, np.nan), index=d.index)                 # leverage/FCF tests don't fit banks
+    comp["resilience"] = wavg([(P("nde_c", False).fillna(neutral), .35), (P("cov_c").fillna(neutral), .25), (P("fcv_c", False).fillna(neutral), .15),
+                               (P("neg_c", False).fillna(neutral), .15), (P("shr_c", False), .10)])
+    comp = comp.fillna(0.3)
+    base_w = dict(quality=.30, growth=.30, value=.20, resilience=.20)
+    cyc_w = dict(quality=.35, growth=.15, value=.25, resilience=.25)
+    w = d.sector.map(lambda s: cyc_w if s in CYCLICAL else base_w)
+    sc = sum(comp[k] * w.map(lambda x: x[k]) for k in base_w) * 100
+    cov_serious = d.sector.map(lambda x: RISK_LIMITS.get(x, RISK_LIMITS["default"])[1][1])
+    distress = (d.fcf_neg_years >= 2) & (d.interest_coverage < cov_serious) & ~fin & (d.sector != "Utilities")
+    d["distress_cap"] = distress
+    d["score"] = np.where(distress, np.minimum(sc, 50), sc).clip(0, 100).round(1)
+    for k in base_w: d[f"c_{k}"] = (comp[k] * 100).round(0)
+    d["safety"] = (comp["resilience"] * 100).round(0)
+    prev = score_v3(d.drop(columns=["score"]))
+    d["score_v3"] = prev["score"]
+    risk = [risk_assessment(r, fin[i]) for i, r in d.iterrows()]
+    d["risk_level"] = [x[0] for x in risk]; d["risk_serious"] = [x[1] for x in risk]; d["risk_warn"] = [x[2] for x in risk]
+    key = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "fcf_cv", "share_change_pct_yr", "forward_pe", "fcf_yield_pct"]
+    conf = []
+    for i, r in d.iterrows():
+        need = [k for k in key if not (fin[i] and k in ("roic_pct", "net_debt_ebitda", "interest_coverage", "fcf_cv"))]
+        miss = sum(pd.isna(r[k]) for k in need)
+        borrowed = r.get("v3_source", "own") != "own"
+        conf.append("Low" if miss >= 3 else ("Medium" if miss >= 1 or borrowed or r.get("roic_basis") == "debt+equity" else "High"))
+    d["data_confidence"] = conf
+    d["flag_list"] = prev["flag_list"]
+    return d
+
 def v3_source():
     """Newest full-universe screener run in data/screens/extra/ (used as a proxy for months whose CSV predates v3)."""
     best = None
@@ -183,9 +277,9 @@ def load_month(f):
     for c in V3_COLS:
         if c not in d.columns: d[c] = np.nan
     d["v3_source"] = "own" if has_v3 else (pathlib.Path(V3_SRC).name if V3_SRC else "none")
-    d = score_v3(d); d["rank"] = d.score.rank(ascending=False, method="min").astype(int)
+    d = score_v4(d); d["rank"] = d.score.rank(ascending=False, method="min").astype(int)
     CACHE.mkdir(exist_ok=True)
-    keep = d.drop(columns=[c for c in ("g", "roe_c", "fcf_c", "fpe_c", "evx_c", "cagr_c", "rstd_c", "ecv_c", "roic_c", "fcv_c", "nde_c", "shr_c") if c in d.columns])
+    keep = d.drop(columns=[c for c in d.columns if c.endswith("_c") or c == "g"])
     json.dump(dict(csv=pathlib.Path(f).name, csv_hash=h, rows=json.loads(keep.to_json(orient="records"))), open(cf, "w"))
     d.attrs["cached"] = False; return d
 
@@ -218,6 +312,9 @@ _t = cur[cur.pe_ratio > 0]; _f = cur[cur.forward_pe > 0]
 MKT_PE = float(_t.market_cap.sum() / (_t.market_cap / _t.pe_ratio).sum())
 MKT_FPE = float(_f.market_cap.sum() / (_f.market_cap / _f.forward_pe).sum())
 def vs_mkt(x, m): return None if (x is None or pd.isna(x) or x <= 0) else round(float(x) / m - 1, 4)
+_ind = cur[cur.industry.fillna("").astype(str) != ""]
+ind_rank = _ind.groupby("industry").score.rank(ascending=False, method="min").astype(int).to_dict()
+ind_n = _ind.groupby("industry").size().to_dict()
 rows = []
 for t, r in cur.iterrows():
     rr, rr_src, rr_why = required_return(t, r.sector, t_of.get(t, []))
@@ -253,11 +350,14 @@ for t, r in cur.iterrows():
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
         fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, required_return_source=rr_src, required_return_reason=rr_why, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2),
-        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion", "roic_basis", "share_jump", "cost_of_debt")}, fcf_ni_conversion=num(r["fcf_conversion"]),
+        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion", "roic_basis", "share_jump", "cost_of_debt", "industry")}, fcf_ni_conversion=num(r["fcf_conversion"]),
         roic_basis=(r["roic_basis"] if isinstance(r["roic_basis"], str) else None), share_jump=bool(r["share_jump"]) if not pd.isna(r["share_jump"]) else False,
         wacc_detail=None if wacc is None else dict(equity_weight=round(E / (E + D), 3), debt_weight=round(D / (E + D), 3), cost_equity=rr,
             cost_debt_raw=None if rd_raw is None else round(float(rd_raw), 4), cost_debt_used=round(rd, 4), tax=round(float(tx), 3)), wacc=None if wacc is None else round(wacc, 4), roic_spread=spread,
-        v3_source=r.v3_source, score_v2=float(r.score_v2), components={k: float(r[f"c_{k}"]) for k in ("growth", "profit", "cash", "value", "balance", "quality")}, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), has_fair_value=t in fv))
+        v3_source=r.v3_source, score_prev=float(r.score_v3), components={k: float(r[f"c_{k}"]) for k in ("quality", "growth", "value", "resilience")},
+        safety=float(r.safety), risk_level=r.risk_level, risk_serious=list(r.risk_serious), risk_warn=list(r.risk_warn), data_confidence=r.data_confidence,
+        distress_cap=bool(r.distress_cap), industry=(r.industry if isinstance(r.industry, str) and r.industry else None),
+        industry_rank=ind_rank.get(t), industry_n=ind_n.get(r.industry) if isinstance(r.industry, str) else None, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
 out = dict(score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
