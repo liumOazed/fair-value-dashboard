@@ -1,0 +1,49 @@
+name: Run growth screener
+# Runs scripts/growth_screener.py on GitHub's servers (Yahoo is reachable here).
+# - Manual: Actions -> Run growth screener -> Run workflow (leave tickers empty for the full universe).
+# - Request file: committing .github/screener-request.json ({"tickers": "AAPL,MSFT" or "", "out": "path.csv"}) runs it too.
+# Output goes to data/screens/extra/ (not picked up by the monthly run). To use a full run as a month's screen,
+# copy it to data/screens/growth_screen_results_YYYY-MM.csv.
+on:
+  workflow_dispatch:
+    inputs:
+      tickers: { description: "Comma-separated tickers (empty = full S&P 500 + Nasdaq 100)", required: false, default: "" }
+  push:
+    paths: [".github/screener-request.json"]
+permissions:
+  contents: write
+concurrency: { group: screener, cancel-in-progress: false }
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install yfinance pandas numpy lxml
+      - name: Work out request
+        id: req
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, datetime
+          t = os.environ.get("IN_TICKERS", "")
+          out = f"data/screens/extra/screen_{datetime.date.today():%Y-%m-%d}.csv"
+          if os.environ.get("GITHUB_EVENT_NAME") == "push":
+              r = json.load(open(".github/screener-request.json")); t = r.get("tickers", ""); out = r.get("out", out)
+          print(f"tickers={t}"); print(f"out={out}")
+          PY
+        env: { IN_TICKERS: "${{ inputs.tickers }}" }
+      - name: Run screener
+        run: |
+          mkdir -p data/screens/extra
+          if [ -n "${{ steps.req.outputs.tickers }}" ]; then T="--tickers ${{ steps.req.outputs.tickers }}"; else T=""; fi
+          python scripts/growth_screener.py $T --out "${{ steps.req.outputs.out }}" 2>&1 | tee screener.log
+          tail -40 screener.log > "${{ steps.req.outputs.out }}.log"
+      - name: Commit result
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "screener-bot@users.noreply.github.com"
+          git add data/screens/extra/
+          git diff --staged --quiet || git commit -m "Screener run: ${{ steps.req.outputs.out }}"
+          git pull --rebase && git push
