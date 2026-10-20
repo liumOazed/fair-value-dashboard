@@ -172,7 +172,10 @@ def load_month(f):
     if cf.exists():
         c = json.load(open(cf))
         if c.get("csv_hash") == h:
-            d = pd.DataFrame(c["rows"]).set_index("ticker", drop=False); d.attrs["cached"] = True; return d
+            d = pd.DataFrame(c["rows"]).set_index("ticker", drop=False)
+            for col in V3_COLS:                                   # older cache files may predate a column
+                if col not in d.columns: d[col] = np.nan
+            d.attrs["cached"] = True; return d
     d = pd.read_csv(f).drop_duplicates("ticker").set_index("ticker", drop=False)
     has_v3 = "roic_pct" in d.columns and d.roic_pct.notna().sum() > 0.4 * len(d)
     if not has_v3 and _V3 is not None:                       # older CSV: borrow multi-year metrics from the newest full run
