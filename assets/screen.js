@@ -21,18 +21,18 @@ function chips(el,label,list,cur,cb){el.innerHTML=`<span class="lbl">${label}</s
  el.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{cb(c.dataset.v);el.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()})}
 chips($("#secchips"),"Sector",["All",...S.sectors],sec,v=>sec=v);
 chips($("#thchips"),"Theme",["All",...S.themes],th,v=>th=v);
-chips($("#extra"),"Show",["All","Consistent only","Has fair value"],"All",v=>only=v==="All"?"":v);
+chips($("#extra"),"Show",["All","Consistent only","Resilient picks","Has fair value"],"All",v=>only=v==="All"?"":v);
 const flagCls=f=>["Loss-making","One-off growth?","High debt","Weak interest cover"].includes(f)?"bad":["Cyclical","Diluting","Below WACC"].includes(f)?"warn":"";
 {const t=$("#tscroll"),b=$("#bscroll");let lock=0;t.onscroll=()=>{if(lock){lock=0;return}lock=1;b.scrollLeft=t.scrollLeft};b.onscroll=()=>{if(lock){lock=0;return}lock=1;t.scrollLeft=b.scrollLeft}}
 function sync(){const t=$("#tscroll"),b=$("#bscroll"),w=$("#tbl").scrollWidth;$("#tspacer").style.width=w+"px";t.style.display=w>b.clientWidth+2?"":"none"}
 window.addEventListener("resize",sync);
 function render(){
- let f=rows.filter(r=>(sec==="All"||r.sector===sec)&&(th==="All"||r.themes.includes(th))&&(only!=="Consistent only"||r.consistent)&&(only!=="Has fair value"||!!fv[r.ticker])&&(r.ticker+r.name).toLowerCase().includes(filt));
+ let f=rows.filter(r=>(sec==="All"||r.sector===sec)&&(th==="All"||r.themes.includes(th))&&(only!=="Consistent only"||r.consistent)&&(only!=="Has fair value"||!!fv[r.ticker])&&(only!=="Resilient picks"||r.resilient_pick)&&(r.ticker+r.name).toLowerCase().includes(filt));
  const filtered=sec!=="All"||th!=="All"||only||filt;
- if(!filtered&&!showAll)f=f.filter(r=>r.top50);
+ if(!filtered&&!showAll)f=f.filter(r=>r.top50||r.resilient_pick);
  f.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (typeof x==="string"?x.localeCompare(y):(x??-1e9)-(y??-1e9))*dir});
  const lim=filtered||showAll?f.length:f.length;
- $("#ttl").textContent=filtered?"Filtered stocks":showAll?"All screened stocks":"Top 50 by Growth Quality Score";
+ $("#ttl").textContent=filtered?"Filtered stocks":showAll?"All screened stocks":`Top 50 by Growth Quality Score + ${(S.resilient||{picks:[]}).picks.length} resilient compounders`;
  $("#more").style.display=filtered?"none":"";$("#more").textContent=showAll?"Show top 50 only":`Show all ${S.universe}`;
  $("#count").textContent=`${f.length} stock${f.length===1?"":"s"} shown`;
  $("#tbl tbody").innerHTML=f.slice(0,600).map(r=>{const rc=r.rank_change;const v=fv[r.ticker];
@@ -40,7 +40,7 @@ function render(){
   const pc=x=>(x*100).toFixed(0)+"%";
   const tagCls={"Demanding":"bad","Undemanding":"ok","FCF distorted":"warn","Sales shrinking":"","In line":""};
   const ig=r.implied_fcf_growth==null?"–":pc(r.implied_fcf_growth)+(r.implied_basis==="earnings"?'<span class="muted" title="Based on earnings yield because free cash flow is distorted"> (earnings)</span>':"")+(r.implied_tag?` <span class="pill ${tagCls[r.implied_tag]||""}">${r.implied_tag}</span>`:"");
-  return `<tr data-t="${r.ticker}"><td class="num">${r.rank}</td><td><div class="tk">${r.ticker}${r.consistent?'<span class="pill ok">Consistent</span>':""}</div><div class="nm">${r.name}${r.flags.filter(x=>x!=="Cyclical"||1).map(x=>`<span class="pill ${flagCls(x)}">${x}</span>`).join("")}</div></td>
+  return `<tr data-t="${r.ticker}"><td class="num">${r.rank}</td><td><div class="tk">${r.ticker}${r.consistent?'<span class="pill ok">Consistent</span>':""}${r.resilient_pick?'<span class="pill res" title="Added after the top 50: passes every absolute safety test and has high business quality">Resilient</span>':""}</div><div class="nm">${r.name}${r.flags.filter(x=>x!=="Cyclical"||1).map(x=>`<span class="pill ${flagCls(x)}">${x}</span>`).join("")}</div></td>
   <td><div>${r.sector}</div><div class="nm">${r.themes.join(" · ")}</div></td>
   <td class="num"><span class="sbar"><i style="width:${r.score}%"></i></span><b>${r.score.toFixed(1)}</b></td><td class="num">${r.safety==null?"–":`${r.safety.toFixed(0)} <span class="pill ${{High:"bad",Elevated:"warn",Normal:"ok"}[r.risk_level]||""}">${r.risk_level}</span>`}</td><td class="r num">${ch}</td>
   <td class="r num">${fmt(r.rev_growth_pct,1,"%")}</td><td class="r num">${fmt(r.profit_margin_pct,1,"%")}</td><td class="r num">${fmt(r.fcf_yield_pct,1,"%")}</td><td class="r num">${fmt(r.earnings_yield,1,"%")}</td><td class="r num">${r.fcf_conversion==null?"–":`<span class="${r.fcf_conversion>1.5?"down":r.fcf_conversion<0.25?"warn":""}" title="Free cash flow yield divided by earnings yield">${r.fcf_conversion.toFixed(2)}×</span>`}</td><td class="r num">${fmt(r.forward_pe,1)}</td>
@@ -71,7 +71,9 @@ function qualHTML(r){const f=(v,d=1,u="")=>v==null?"–":(+v).toFixed(d)+u,sg=v=
  const C=r.components||{},bar=(k,l)=>`<div class="cmp"><span>${l}</span><span class="sbar"><i style="width:${C[k]||0}%"></i></span><b>${C[k]==null?"–":C[k].toFixed(0)}</b></div>`;
  const lvl={High:"bad",Elevated:"warn",Normal:"ok"}[r.risk_level]||"";
  const cw=r.sector==="Energy"||r.sector==="Basic Materials"?{quality:35,growth:15,value:25,resilience:25}:{quality:30,growth:30,value:20,resilience:20};
- return `<h3>Score breakdown</h3><p class="muted">Each part is a weighted average of percentiles inside the stock's sector (100 = best in sector). Score ${r.score.toFixed(1)} (v4)${r.score_prev!=null?`; v3 gave ${r.score_prev.toFixed(1)}`:""}.${r.distress_cap?' <b class="down">Capped at 50: negative FCF in 2+ years and weak interest cover.</b>':""}</p>
+ return `${r.resilient_pick?`<p class="resbox"><b>Resilient compounder #${r.resilient_rank}</b>: added after the top 50 regardless of rank because it passes every absolute safety test (net debt ≤ 1× EBITDA, interest cover ≥ 10×, no negative FCF year, steady FCF, no dilution, risk Normal), is worth ≥ $10B, grows revenue ≥ 3% a year and has business quality ≥ 60.</p>`:""}
+ ${r.peer_group?`<p class="muted">Ranked against the <b>${r.peer_group}</b> peer group (${((S.peer_groups||{})[r.peer_group]||{tickers:[]}).tickers.length} stocks) instead of ${r.sector}: ${((S.peer_groups||{})[r.peer_group]||{}).reason||""}</p>`:""}
+ <h3>Score breakdown</h3><p class="muted">Each part is a weighted average of percentiles inside the stock's sector (100 = best in sector). Score ${r.score.toFixed(1)} (v4)${r.score_prev!=null?`; v3 gave ${r.score_prev.toFixed(1)}`:""}.${r.distress_cap?' <b class="down">Capped at 50: negative FCF in 2+ years and weak interest cover.</b>':""}</p>
  <div class="cmps">${bar("quality",`Business quality · ${cw.quality}%`)}${bar("growth",`Growth &amp; consistency · ${cw.growth}%`)}${bar("value",`Valuation · ${cw.value}%`)}${bar("resilience",`Financial resilience · ${cw.resilience}%`)}</div>
  <h3>Risk</h3><div class="grid2"><div class="mini">Financial Safety<b>${r.safety==null?"–":r.safety.toFixed(0)} / 100</b><span class="muted">resilience part on its own</span></div>
  <div class="mini">Risk level<b><span class="pill ${lvl}" style="font-size:14px;margin:0">${r.risk_level||"–"}</span></b><span class="muted">data confidence: ${r.data_confidence||"–"}</span></div></div>

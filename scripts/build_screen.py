@@ -25,6 +25,7 @@ RRF = json.load(open(ROOT / "data/required_returns.json"))
 REQ_RETURN, DEFAULT_R = RRF["sectors"], RRF["default"]
 def required_return(t, sector, themes_of):
     if t in RRF["stocks"]: return RRF["stocks"][t]["r"], "stock", RRF["stocks"][t]["reason"]
+    if t in PEER_OF: return PEER[PEER_OF[t]]["required_return"], "peer group", f"{PEER_OF[t]}: " + PEER[PEER_OF[t]]["reason"]
     for th in themes_of:
         if th in RRF["themes"]: return RRF["themes"][th]["r"], "theme", f"{th}: " + RRF["themes"][th]["reason"]
     if sector in REQ_RETURN: return REQ_RETURN[sector], "sector", f"{sector} sector default"
@@ -33,9 +34,10 @@ MIN_FCF_CONVERSION = 0.25      # FCF yield below 25% of earnings yield = FCF dis
 
 def pct_in_sector(df, col, higher_better=True):
     s = df[col]
-    sec = df.groupby("sector")[col].rank(pct=True)
+    key = "peer" if "peer" in df.columns else "sector"
+    sec = df.groupby(key)[col].rank(pct=True)
     allr = s.rank(pct=True)
-    n = df.groupby("sector")[col].transform("count")
+    n = df.groupby(key)[col].transform("count")
     out = np.where(n >= 8, sec, allr)            # small sectors fall back to the whole market
     out = pd.Series(out, index=df.index)
     if not higher_better: out = 1 - out
@@ -83,7 +85,7 @@ def score_v3(d):
     Cyclical sectors (Energy, Basic Materials): growth 12%, cash 33%. Loss-making -10, no P/E -5.
     Missing metrics are not rewarded (component filled at the 30th percentile, as v2)."""
     d = d.copy()
-    fin = d.sector == "Financial Services"
+    fin = (d.peer if "peer" in d.columns else d.sector) == "Financial Services"     # banks/insurers only (fee-based peers excluded)
     comp = pd.DataFrame(index=d.index)
     d["g"] = d.rev_growth_pct.clip(-10, 60)
     d["cagr_c"] = d.rev_cagr_pct.clip(-20, 40)
@@ -173,7 +175,7 @@ def score_v4(d):
     cash flow was negative in 2+ years AND interest cover is under 3x.
     Financial Safety = the resilience part on its own. Risk level = High / Elevated / Normal from thresholds."""
     d = d.copy()
-    fin = d.sector == "Financial Services"
+    fin = (d.peer if "peer" in d.columns else d.sector) == "Financial Services"     # banks/insurers only (fee-based peers excluded)
     P = lambda col, hb=True: pct_in_sector(d, col, hb)
     d["roic_c"] = d.roic_pct.clip(-20, 80).where(~fin)
     d["roe_c"] = d.roe_pct.where((d.roe_pct > -50) & (d.roe_pct < 100))           # negative/huge equity: not meaningful
@@ -238,6 +240,10 @@ def v3_source():
             best = f
     return best
 V3_SRC = v3_source()
+PG_FILE = ROOT / "data/peer_groups.json"
+PEER = json.load(open(PG_FILE)) if PG_FILE.exists() else {}
+PEER = {k: v for k, v in PEER.items() if not k.startswith("_")}
+PEER_OF = {t: g for g, v in PEER.items() for t in v["tickers"]}
 _V3 = pd.read_csv(V3_SRC).drop_duplicates("ticker").set_index("ticker").reindex(columns=V3_COLS) if V3_SRC else None
 
 def implied_growth(y_pct, R):
@@ -261,7 +267,7 @@ def load_month(f):
     """Score one month, reusing data/cache/scores_YYYY-MM.json when the CSV has not changed (scores are relative
     within a month, so a month's result never changes unless its own CSV changes)."""
     import hashlib
-    h = hashlib.sha1(open(f, "rb").read() + f"v{SCORE_VERSION}|{V3_SRC}".encode()).hexdigest()[:12]   # CSV + score version + proxy source
+    h = hashlib.sha1(open(f, "rb").read() + f"v{SCORE_VERSION}|{V3_SRC}|{json.dumps(PEER, sort_keys=True)}".encode()).hexdigest()[:12]   # CSV + score version + proxy source
     cf = CACHE / f"scores_{month_of(f)}.json"
     if cf.exists():
         c = json.load(open(cf))
@@ -276,6 +282,7 @@ def load_month(f):
         d = d.drop(columns=[c for c in V3_COLS if c in d.columns]).join(_V3, how="left")
     for c in V3_COLS:
         if c not in d.columns: d[c] = np.nan
+    d["peer"] = [PEER_OF.get(t, sec) for t, sec in zip(d.index, d.sector)]
     d["v3_source"] = "own" if has_v3 else (pathlib.Path(V3_SRC).name if V3_SRC else "none")
     d = score_v4(d); d["rank"] = d.score.rank(ascending=False, method="min").astype(int)
     CACHE.mkdir(exist_ok=True)
@@ -326,12 +333,12 @@ for t, r in cur.iterrows():
     rd = 0.05 if rd_raw is None else min(max(rd_raw, 0.02), 0.10)   # guardrail; raw rate is reported, never hidden
     tx = r.tax_rate if not pd.isna(r.tax_rate) else 0.21
     wacc = None if pd.isna(E) or E <= 0 else (E * rr + D * rd * (1 - tx)) / (E + D)
-    spread = None if (wacc is None or pd.isna(r.roic_pct) or r.sector == "Financial Services") else round(r.roic_pct / 100 - wacc, 4)
+    spread = None if (wacc is None or pd.isna(r.roic_pct) or r.peer == "Financial Services") else round(r.roic_pct / 100 - wacc, 4)
     flags_out = list(r["flag_list"]) + (["Below WACC"] if spread is not None and spread < 0 else [])
     pe_for_yield = r.forward_pe if (not pd.isna(r.forward_pe) and r.forward_pe > 0) else (r.pe_ratio if (not pd.isna(r.pe_ratio) and r.pe_ratio > 0) else None)
     ey = 100 / pe_for_yield if pe_for_yield else None                 # earnings yield, %
     conv = None if (ey is None or pd.isna(r.fcf_yield_pct)) else r.fcf_yield_pct / ey   # share of earnings that becomes free cash
-    capex_heavy = ey is not None and (r.sector == "Financial Services" or pd.isna(r.fcf_yield_pct) or r.fcf_yield_pct <= 0 or (conv is not None and conv < MIN_FCF_CONVERSION))   # banks/insurers: FCF is not meaningful
+    capex_heavy = ey is not None and (r.peer == "Financial Services" or pd.isna(r.fcf_yield_pct) or r.fcf_yield_pct <= 0 or (conv is not None and conv < MIN_FCF_CONVERSION))   # banks/insurers: FCF is not meaningful
     basis = "earnings" if capex_heavy else "fcf"
     ig = implied_growth(ey if capex_heavy else r.fcf_yield_pct, rr)
     g = r.rev_growth_pct
@@ -357,9 +364,32 @@ for t, r in cur.iterrows():
         v3_source=r.v3_source, score_prev=float(r.score_v3), components={k: float(r[f"c_{k}"]) for k in ("quality", "growth", "value", "resilience")},
         safety=float(r.safety), risk_level=r.risk_level, risk_serious=list(r.risk_serious), risk_warn=list(r.risk_warn), data_confidence=r.data_confidence,
         distress_cap=bool(r.distress_cap), industry=(r.industry if isinstance(r.industry, str) and r.industry else None),
-        industry_rank=ind_rank.get(t), industry_n=ind_n.get(r.industry) if isinstance(r.industry, str) else None, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), has_fair_value=t in fv))
+        industry_rank=ind_rank.get(t), industry_n=ind_n.get(r.industry) if isinstance(r.industry, str) else None, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), peer_group=PEER_OF.get(t), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
-out = dict(score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
+# ---- Resilient compounders: 5 extra stocks outside the top 50, picked on absolute safety + business quality ----
+RES_RULES = dict(min_cap=10e9, max_nde=1.0, min_cov=10, max_neg_fcf=0, max_fcf_cv=0.5, max_share_chg=0.5, min_quality=60, min_cagr=3.0, n=5)
+def res_ok(r):
+    R = RES_RULES
+    if r["top50"] or (r["market_cap"] or 0) < R["min_cap"] or r["risk_level"] != "Normal": return False
+    if r.get("peer_group") is None and r["sector"] == "Financial Services": return False      # banks/insurers: tests don't apply
+    nde, cov = r["net_debt_ebitda"], r["interest_coverage"]
+    return (nde is not None and nde <= R["max_nde"] and (cov is None or cov >= R["min_cov"]) and r["fcf_neg_years"] == 0
+            and r["fcf_cv"] is not None and r["fcf_cv"] <= R["max_fcf_cv"] and r["share_change_pct_yr"] is not None
+            and r["share_change_pct_yr"] <= R["max_share_chg"] and r["components"]["quality"] >= R["min_quality"]
+            and r["rev_cagr_pct"] is not None and r["rev_cagr_pct"] >= R["min_cagr"])
+passed = sorted([r for r in rows if res_ok(r)], key=lambda r: (-r["components"]["quality"], -r["score"]))
+picks, seen = [], set()
+for r in passed:                                             # one pick per company (GOOG / GOOGL)
+    if r["name"] in seen: continue
+    seen.add(r["name"]); picks.append(r)
+    if len(picks) == RES_RULES["n"]: break
+for i, r in enumerate(rows):
+    r["resilient_pick"] = r in picks
+    r["resilient_rank"] = picks.index(r) + 1 if r in picks else None
+RESILIENT = dict(rules=RES_RULES, passed=len(passed), picks=[r["ticker"] for r in picks])
+print("resilient compounders:", RESILIENT["picks"], f"({len(passed)} passed)")
+
+out = dict(resilient=RESILIENT, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
 json.dump(out, open(ROOT / "data/screen.json", "w"), indent=0)
 print("built", cur_m, "vs", prev_m, "rows", len(rows), "consistent", sum(r["consistent"] for r in rows))

@@ -43,6 +43,11 @@
     <li><b>Valuation 20%</b>: forward P/E 30 and EV/EBITDA 25 (lower is better), FCF yield 30, earnings yield 15.</li>
     <li><b>Financial resilience 20%</b>: net debt/EBITDA 35, interest cover 25, FCF variability 15, negative-FCF years 15, share-count change 10.</li></ul>
     <p class="muted">Each metric is a percentile inside the stock's sector; each part re-weights over the metrics that exist. Cyclical sectors (Energy, Basic Materials): growth 15%, quality 35%, valuation 25%, resilience 25%. A part with no data scores at the 30th percentile. No blanket penalties: the score is <b>capped at 50</b> only when FCF was negative in 2+ years and interest cover is weak.</p>
+    <h3>Resilient compounders (5 added after the top 50)</h3>
+    <ul><li>Stocks outside the top 50, worth at least $10B, that pass <b>every</b> absolute test: net debt ≤ 1× EBITDA (or net cash), interest cover ≥ 10× (or no interest), no negative free-cash-flow year, FCF variability ≤ 0.5, share count not growing (≤ +0.5% a year), risk level Normal, 3-year revenue growth ≥ 3% a year and business quality ≥ 60.</li>
+    <li>The 5 with the highest business quality are added regardless of their overall rank (one per company, so GOOG/GOOGL count once). Banks and insurers can't qualify; fee-based financials can.</li></ul>
+    <h3>Peer groups</h3>
+    <ul><li>Some companies are ranked against a custom peer group instead of their yfinance sector (<code>data/peer_groups.json</code>, editable). <b>Fee-based financials</b> (payments, exchanges, ratings and data firms such as V, MA, SPGI, ICE) earn fees rather than lend, so they're compared with each other and get the normal ROIC and balance-sheet tests instead of the bank treatment.</li></ul>
     <h3>Financial Safety and Risk level</h3>
     <ul><li><b>Financial Safety</b> (0–100) is the resilience part shown on its own.</li>
     <li><b>Risk level</b>: <b>High</b> if any serious threshold is hit, <b>Elevated</b> if any warning, otherwise <b>Normal</b>. Serious / warning: net debt over 4× / 3× EBITDA, interest cover under 3× / 5×, negative FCF in 2+ / 1 years, shares up over 5% / 3% a year.</li>

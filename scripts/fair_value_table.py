@@ -2,7 +2,7 @@
 """Monthly Fair Value Table: pick the 5 most undervalued stocks from the current Top 50 (quick estimates).
 
 Steps
-1. Candidates = this month's Top 50 by Growth Quality Score (data/screen.json).
+1. Candidates = this month's Top 50 by Growth Quality Score plus the 5 resilient compounders (data/screen.json).
 2. Sanity filters (a stock is skipped, with the reason recorded, if any apply):
    financial company (FCF not meaningful) | FCF distorted (FCF < 25% of earnings) | FCF unusually high (> 1.5x earnings)
    | acquisition-like growth (sales > +40% with net margin < 5%) | one-off growth (> +100%) | loss-making | no P/E
@@ -47,7 +47,7 @@ TOO_CHEAP = 2.5
 def skip_reason(r):
     q = PREV.get(r["ticker"])
     ey, fy, conv, g, m = r["earnings_yield"], r["fcf_yield_pct"], r["fcf_conversion"], r["rev_growth_pct"], r["profit_margin_pct"]
-    if r["sector"] == "Financial Services": return "Financial company: free cash flow is not meaningful"
+    if r["sector"] == "Financial Services" and not r.get("peer_group"): return "Financial company: free cash flow is not meaningful"
     if ey is None: return "No P/E (no earnings to cross-check)"
     if m is not None and m < 0: return "Loss-making"
     if fy is None or fy <= 0 or (conv is not None and conv < 0.25): return "FCF distorted (cash flow far below earnings)"
@@ -88,7 +88,7 @@ def price(t):
         except Exception: print("no price for", t, e, file=sys.stderr); return None
 
 def main():
-    top = [r for r in S["rows"] if r["top50"]]
+    top = [r for r in S["rows"] if r["top50"] or r.get("resilient_pick")]       # top 50 + resilient compounders
     picks, skipped, ranked = [], [], []
     for r in top:
         why = skip_reason(r)

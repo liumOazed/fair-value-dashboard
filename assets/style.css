@@ -69,3 +69,5 @@ details.list summary{cursor:pointer;font-weight:600;margin:6px 0}details.list li
 .cmps{display:grid;gap:4px}.cmp{display:grid;grid-template-columns:1fr 90px 34px;align-items:center;gap:8px;font-size:12.5px}.cmp .sbar{width:90px;margin:0}.cmp b{text-align:right}
 
 ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
+
+.pill.res{color:var(--acc);border-color:color-mix(in srgb,var(--acc) 40%,transparent)}.resbox{border:1px solid color-mix(in srgb,var(--acc) 35%,transparent);background:color-mix(in srgb,var(--acc) 6%,transparent);border-radius:10px;padding:8px 12px;font-size:12.5px}

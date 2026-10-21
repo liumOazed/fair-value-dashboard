@@ -1,0 +1,8 @@
+{
+ "_about": "Peer groups that replace the yfinance sector for scoring. Stocks listed here are ranked against each other instead of their sector, and get the normal (non-bank) tests: ROIC, debt, interest cover, free cash flow. Edit freely; the screen rebuilds on the next monthly run. Display and sector filters still use the original sector.",
+ "Fee-based financials": {
+  "reason": "Earn fees from payments, exchanges, ratings and data rather than lending, so bank comparisons (P/E ~10-15, no leverage tests) don't fit.",
+  "required_return": 0.09,
+  "tickers": ["V", "MA", "PYPL", "FIS", "GPN", "CPAY", "JKHY", "BR", "SPGI", "MCO", "MSCI", "ICE", "CME", "NDAQ", "CBOE", "FDS"]
+ }
+}
