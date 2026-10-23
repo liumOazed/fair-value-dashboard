@@ -2,7 +2,7 @@
 """Backtest data (P3), run on GitHub Actions (SEC, Wikipedia and Yahoo are reachable there).
 
 Writes three compact files to data/backtest/ so the backtest itself can run anywhere:
-  membership.json   S&P 500 members on each quarter-end since 2010, rebuilt from Wikipedia's current list + change log
+  membership.json   S&P 500 members on each quarter-end since 2010 (fja05680/sp500 historical components dataset)
   facts.json.gz     per company: ANNUAL (10-K, fiscal-year) figures AS FIRST REPORTED, each with its filing date
                     (point in time: later restatements are ignored, a figure only exists after it was filed)
   prices.json.gz    per ticker: monthly close, dividend-adjusted close and split history (Yahoo), plus SPY and RSP
@@ -31,31 +31,21 @@ def get(url, headers, tries=3):
             time.sleep(2 * (i + 1))
 
 # ---------------------------------------------------------------- membership
+MEMBERS_URL = "https://raw.githubusercontent.com/fja05680/sp500/master/S%26P%20500%20Historical%20Components%20%26%20Changes%20(Updated).csv"
+
 def membership():
-    t = pd.read_html(io.BytesIO(get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", UA_WEB)))
-    flat = lambda df: ["_".join([str(x) for x in c if "Unnamed" not in str(x)]).strip("_") if isinstance(c, tuple) else str(c) for c in df.columns]
-    cur = next(x for x in t if "Symbol" in flat(x))
-    ch = next(x for x in t if any("Added" in c for c in flat(x)) and any("Removed" in c for c in flat(x)))
-    cur_set = set(cur["Symbol"].astype(str).str.replace(".", "-", regex=False))
-    ch.columns = flat(ch)
-    print("change-table columns:", list(ch.columns))
-    dcol = [c for c in ch.columns if "date" in c.lower()][0]
-    acol = [c for c in ch.columns if "Added" in c and "Ticker" in c][0]
-    rcol = [c for c in ch.columns if "Removed" in c and "Ticker" in c][0]
-    ch["d"] = pd.to_datetime(ch[dcol], errors="coerce")
-    ch = ch.dropna(subset=["d"]).sort_values("d", ascending=False)
-    norm = lambda x: None if pd.isna(x) or not str(x).strip() else str(x).strip().replace(".", "-")
+    """S&P 500 members on each quarter-end since 2010, from the public fja05680/sp500 dataset (dated snapshots of
+    the index since 1996, maintained from Wikipedia's change log)."""
+    h = pd.read_csv(io.BytesIO(get(MEMBERS_URL, UA_WEB)))
+    h["date"] = pd.to_datetime(h["date"]); h = h.sort_values("date")
     dates = pd.date_range("2010-03-31", datetime.date.today(), freq="QE")
-    members, s, i = {}, set(cur_set), 0
-    rows = ch[["d", acol, rcol]].values.tolist()
-    for d in sorted(dates, reverse=True):                      # walk back in time, undoing changes after d
-        while i < len(rows) and rows[i][0] > d:
-            a, r = norm(rows[i][1]), norm(rows[i][2])
-            if a: s.discard(a)
-            if r: s.add(r)
-            i += 1
-        members[d.strftime("%Y-%m-%d")] = sorted(s)
-    return members, sorted(cur_set)
+    members = {}
+    for d in dates:
+        row = h[h.date <= d].iloc[-1]
+        members[d.strftime("%Y-%m-%d")] = sorted(t.strip().replace(".", "-") for t in row.tickers.split(",") if t.strip())
+    cur = members[max(members)]
+    print(f"membership source: {len(h)} snapshots, latest {h.date.max().date()}")
+    return members, cur
 
 # ---------------------------------------------------------------- SEC facts
 DUR = {  # annual duration concepts, in order of preference
