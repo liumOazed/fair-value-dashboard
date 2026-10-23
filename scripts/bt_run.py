@@ -146,7 +146,8 @@ def stats(r):
     if not len(r): return {}
     cum = np.cumprod(1 + r)
     dd = float((cum / np.maximum.accumulate(cum) - 1).min())
-    return dict(ann=float(cum[-1] ** (4 / len(r)) - 1), vol=float(r.std() * 2), maxdd=dd, n=len(r))
+    ann, vol = float(cum[-1] ** (4 / len(r)) - 1), float(r.std() * 2)
+    return dict(ann=ann, vol=vol, maxdd=dd, n=len(r), ret_vol=ann / vol if vol > 0 else None)
 
 def bootstrap(x, n=10000, block=4, seed=SEED):
     x = np.array(x, float); L = len(x)
@@ -218,6 +219,14 @@ def main():
                notes=["Survivorship: companies without a price history today are missing, so compare groups with each other, not with SPY.",
                       "Annual SEC figures as first reported, filed before each date; trailing P/E (no historical forecasts); today's sectors and required returns.",
                       "Equal weight, dividend-adjusted, quarterly rebalance, no trading costs."])
+    def word(p):
+        return ("clear edge" if p >= 0.95 else "weak evidence of an edge" if p >= 0.80 else "no reliable edge" if p > 0.20 else "the opposite tends to win")
+    gs = out["groups"]
+    out["summary"] = [f"{k}: {v['ann_mean']*100:+.1f}% a year on average; positive in {v['bootstrap']['p_pos']*100:.0f}% of bootstrap samples, so {word(v['bootstrap']['p_pos'])}."
+                      for k, v in out["spreads"].items() if v.get("bootstrap")]
+    out["summary"].append(f"Risk: the best score quintile had {gs['Q1']['vol']*100:.0f}% volatility and a {gs['Q1']['maxdd']*100:.0f}% worst drop, "
+                          f"against {gs['Q5']['vol']*100:.0f}% and {gs['Q5']['maxdd']*100:.0f}% for the worst quintile (return per unit of volatility "
+                          f"{gs['Q1']['ret_vol']:.2f} vs {gs['Q5']['ret_vol']:.2f}).")
     json.dump(out, open(B / "results.json", "w"), indent=1)
     for k, v in out["spreads"].items(): print(f"{k:28} ann {v['ann_mean']:+.2%}  hit {v['hit']:.0%}  bootstrap {v['bootstrap']}")
 

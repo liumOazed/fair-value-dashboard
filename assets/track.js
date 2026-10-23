@@ -35,22 +35,27 @@ const L=v=>Math.log(v),X=i=>pl+i/(n)*(W-pl-pr),Y=v=>pt+(L(hi)-L(v))/(L(hi)-L(lo)
 const ticks=[0.5,1,1.5,2,3,4,5,6,8,10].filter(v=>v>=lo*0.98&&v<=hi*1.02);
 const grid=ticks.map(v=>`<line x1="${pl}" x2="${W-pr}" y1="${Y(v)}" y2="${Y(v)}" class="bgr"/><text x="${pl-6}" y="${Y(v)+4}" text-anchor="end" class="mct">${v}×</text>`).join("");
 const years=D.map((d,i)=>[d,i]).filter(([d])=>d.endsWith("12-31")&&+d.slice(0,4)%2===0).map(([d,i])=>`<text x="${X(i+1)}" y="${H-8}" text-anchor="middle" class="mct">${d.slice(0,4)}</text>`).join("");
+const ends=SER.map(([k])=>({k,y:Y(G[k].cum[G[k].cum.length-1])})).sort((a,b)=>a.y-b.y);
+for(let i=1;i<ends.length;i++)if(ends[i].y-ends[i-1].y<14)ends[i].y=ends[i-1].y+14;           // keep end labels apart
+const ly=Object.fromEntries(ends.map(e=>[e.k,e.y]));
 const lines=SER.map(([k,c])=>{const pts=[[X(0),Y(1)],...G[k].cum.map((v,i)=>[X(i+1),Y(v)])];const last=pts[pts.length-1];
- return `<polyline fill="none" stroke="${c}" stroke-width="2" points="${pts.map(p=>p.map(x=>x.toFixed(1)).join(",")).join(" ")}"/><text x="${last[0]+6}" y="${last[1]+4}" class="mct" style="fill:var(--tx)">${LAB[k].split(" (")[0]} ${G[k].cum[G[k].cum.length-1].toFixed(1)}×</text>`}).join("");
+ return `<polyline fill="none" stroke="${c}" stroke-width="2" points="${pts.map(p=>p.map(x=>x.toFixed(1)).join(",")).join(" ")}"/><text x="${last[0]+6}" y="${ly[k]+4}" class="mct" style="fill:var(--tx)">${LAB[k].split(" (")[0]} ${G[k].cum[G[k].cum.length-1].toFixed(1)}×</text>`}).join("");
 const chart=`<div class="btwrap"><svg viewBox="0 0 ${W} ${H}" class="mcsvg" id="btsvg" role="img" aria-label="Growth of $1, best vs worst score quintile vs all stocks">${grid}${years}${lines}<line id="btx" y1="${pt}" y2="${H-pb}" class="bxh" style="display:none"/></svg><div id="bttip" class="bttip" style="display:none"></div></div>
  <div class="chips">${SER.map(([k,c])=>`<span class="lg"><i style="background:${c}"></i>${LAB[k]}</span>`).join("")}</div>`;
-const row=k=>`<tr><td style="text-align:left">${LAB[k]}</td><td>${pc(G[k].ann)}</td><td>${pc(G[k].vol,0)}</td><td>${pc(G[k].maxdd,0)}</td></tr>`;
-const grp=(title,keys)=>`<tr><th colspan="4" style="text-align:left;padding-top:12px">${title}</th></tr>`+keys.map(row).join("");
+const row=k=>`<tr><td style="text-align:left">${LAB[k]}</td><td>${pc(G[k].ann)}</td><td>${pc(G[k].vol,0)}</td><td>${pc(G[k].maxdd,0)}</td><td>${G[k].ret_vol==null?"–":G[k].ret_vol.toFixed(2)}</td></tr>`;
+const grp=(title,keys)=>`<tr><th colspan="5" style="text-align:left;padding-top:12px">${title}</th></tr>`+keys.map(row).join("");
 const S=R.spreads;
 el.innerHTML=`<div class="card-head"><h2>Historical backtest, ${D[0].slice(0,4)}–${D[n-1].slice(0,4)} (relative)</h2><span class="muted">${n} quarters · built ${R.built}</span></div>
  <p class="warnbox"><b>Compare groups with each other, not with SPY.</b> Companies that were later acquired or went bankrupt have no price history in free data, so every group here is flattered by roughly the same amount (survivorship bias). The <i>gaps</i> between groups are the honest part.</p>
  <p class="muted">Each quarter from ${D[0]}: that day's S&P 500 members, scored with the live score v4 using only annual SEC figures filed before that day (as first reported), held for one quarter, equal weight, dividends included, no trading costs. Differences from the live screen: annual figures instead of the latest quarter, trailing P/E instead of forward, today's sector labels.</p>
+ <h3>What it says</h3><ul class="rk">${(R.summary||[]).map(x=>`<li>${x}</li>`).join("")}</ul>
+ <p class="muted"><b>In short:</b> over 2013–2026 the Growth Quality Score did <b>not</b> reliably pick higher-returning stocks, and neither did the quick fair value. Its value showed up as <b>lower risk</b>: the best-scored stocks earned about the same return with clearly less volatility and smaller drawdowns. Treat the screen as a quality-and-risk filter, and the fair-value models (not the score) as the price discipline.</p>
  <h3>Growth of $1 (log scale)</h3>${chart}
  <h3>Are the gaps real? (block bootstrap)</h3>
  <div class="scroll"><table class="s"><tr><th style="text-align:left">Gap between groups</th><th>Average a year</th><th>Quarters won</th><th>Likely range (5th–95th)</th><th>Chance the gap is positive</th></tr>
  ${Object.entries(S).map(([k,v])=>`<tr><td style="text-align:left">${k}</td><td><b class="${v.ann_mean>0?"up":"down"}">${pc(v.ann_mean)}</b></td><td>${(v.hit*100).toFixed(0)}%</td><td>${v.bootstrap?pc(v.bootstrap.p5)+" to "+pc(v.bootstrap.p95):"–"}</td><td>${v.bootstrap?(v.bootstrap.p_pos*100).toFixed(0)+"%":"–"}</td></tr>`).join("")}</table></div>
  <p class="muted">Block bootstrap: the quarterly gaps are resampled in 4-quarter blocks 10,000 times (keeping runs of good and bad quarters together) to see how much the average could have come out differently by luck.</p>
- <h3>Every group</h3><div class="scroll"><table class="s"><tr><th style="text-align:left">Group</th><th>Return a year</th><th>Volatility</th><th>Worst drop</th></tr>
+ <h3>Every group</h3><div class="scroll"><table class="s"><tr><th style="text-align:left">Group</th><th>Return a year</th><th>Volatility</th><th>Worst drop</th><th title="Return a year divided by volatility: higher = more return per unit of risk">Return ÷ volatility</th></tr>
  ${grp("Growth Quality Score (v4)",["Q1","Q2","Q3","Q4","Q5","TOP50"])}${grp("Quick fair value (Monthly Top 5 method)",["V1","V2","V3","V4","V5"])}${grp("Risk level",["NORMAL","HIGH"])}${grp("Combined",["TOP50_CHEAP"])}${grp("Baselines",["ALL","SPY","RSP"])}</table></div>
  <p class="muted">Coverage: ${R.coverage[0].scored} of ${R.coverage[0].members} members scored in ${R.coverage[0].date.slice(0,4)}, ${R.coverage[n-1].scored} of ${R.coverage[n-1].members} in ${R.coverage[n-1].date.slice(0,4)} (the rest lack SEC data or prices). Not investment advice.</p>`;
 const svg=$("#btsvg"),xl=$("#btx"),tip=$("#bttip");

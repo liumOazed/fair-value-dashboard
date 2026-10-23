@@ -46,3 +46,10 @@ Fair values are slow-moving. Re-run the model after each earnings report (roughl
 - `docs/fair_value_model.xlsx` step-by-step calculations (import to Google Sheets via File → Import)
 
 Preview locally: `python -m http.server` then open http://localhost:8000.
+
+## Backtest (relative, 2013 onwards)
+`python scripts/bt_fetch.py` (on a home computer, with `SEC_CONTACT=you@example.com`; it caches and can be re-run) downloads S&P 500
+membership history (fja05680/sp500), annual SEC figures as first reported and monthly prices into `data/backtest/`.
+`python scripts/bt_run.py` rebuilds the screen every quarter from filings available at the time, scores it with the live
+score v4, compares groups (score and fair-value quintiles, top 50, risk level) and block-bootstraps the gaps. Results appear on
+the Track record page. Survivorship-biased: compare groups with each other, not with SPY.
