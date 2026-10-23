@@ -1,11 +1,10 @@
-change-table columns: ['vteS&P 500 companies', 'vteS&P 500 companies.1']
 Traceback (most recent call last):
-  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 168, in <module>
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 170, in <module>
     main()
-  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 136, in main
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 138, in main
     mem, cur = membership()
                ^^^^^^^^^^^^
-  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 40, in membership
-    dcol = [c for c in ch.columns if "date" in c.lower()][0]
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
-IndexError: list index out of range
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 38, in membership
+    ch = next(x for x in t if any("Added" in c for c in flat(x)) and any("Removed" in c for c in flat(x)))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
