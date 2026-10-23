@@ -1,0 +1,304 @@
+{
+ "month": "2026-10",
+ "groups": {
+  "top5": {
+   "label": "Monthly Top 5 picks",
+   "date": "2026-10-16",
+   "spy": 763.25,
+   "stocks": [
+    {
+     "ticker": "APA",
+     "entry": 48.32
+    },
+    {
+     "ticker": "DECK",
+     "entry": 86.06
+    },
+    {
+     "ticker": "INCY",
+     "entry": 112.72
+    },
+    {
+     "ticker": "ADBE",
+     "entry": 245.16
+    },
+    {
+     "ticker": "MKC",
+     "entry": 45.98
+    }
+   ]
+  },
+  "top50": {
+   "label": "Growth Screen top 50",
+   "date": "2026-10-23",
+   "spy": 763.96,
+   "stocks": [
+    {
+     "ticker": "NEM",
+     "entry": 114.11
+    },
+    {
+     "ticker": "CF",
+     "entry": 118.56
+    },
+    {
+     "ticker": "EXPE",
+     "entry": 298.49
+    },
+    {
+     "ticker": "DECK",
+     "entry": 85.28
+    },
+    {
+     "ticker": "ADBE",
+     "entry": 270.55
+    },
+    {
+     "ticker": "EOG",
+     "entry": 157.96
+    },
+    {
+     "ticker": "BKNG",
+     "entry": 161.1
+    },
+    {
+     "ticker": "EIX",
+     "entry": 57.9
+    },
+    {
+     "ticker": "MO",
+     "entry": 76.07
+    },
+    {
+     "ticker": "INCY",
+     "entry": 116.93
+    },
+    {
+     "ticker": "CPRT",
+     "entry": 29.09
+    },
+    {
+     "ticker": "INTU",
+     "entry": 354.9
+    },
+    {
+     "ticker": "TPL",
+     "entry": 333.67
+    },
+    {
+     "ticker": "HST",
+     "entry": 24.87
+    },
+    {
+     "ticker": "ADSK",
+     "entry": 254.95
+    },
+    {
+     "ticker": "SNDK",
+     "entry": 1260.93
+    },
+    {
+     "ticker": "VICI",
+     "entry": 24.02
+    },
+    {
+     "ticker": "RDDT",
+     "entry": 150.26
+    },
+    {
+     "ticker": "SPG",
+     "entry": 212.04
+    },
+    {
+     "ticker": "APA",
+     "entry": 49.44
+    },
+    {
+     "ticker": "APP",
+     "entry": 264.28
+    },
+    {
+     "ticker": "TPR",
+     "entry": 113.92
+    },
+    {
+     "ticker": "FICO",
+     "entry": 823.27
+    },
+    {
+     "ticker": "VEEV",
+     "entry": 322.55
+    },
+    {
+     "ticker": "NVDA",
+     "entry": 212.21
+    },
+    {
+     "ticker": "AOS",
+     "entry": 62.47
+    },
+    {
+     "ticker": "MNST",
+     "entry": 47.3
+    },
+    {
+     "ticker": "ZTS",
+     "entry": 82.0
+    },
+    {
+     "ticker": "LULU",
+     "entry": 104.06
+    },
+    {
+     "ticker": "VRSK",
+     "entry": 203.33
+    },
+    {
+     "ticker": "ALLE",
+     "entry": 176.52
+    },
+    {
+     "ticker": "REGN",
+     "entry": 819.09
+    },
+    {
+     "ticker": "SNA",
+     "entry": 356.46
+    },
+    {
+     "ticker": "PEG",
+     "entry": 72.72
+    },
+    {
+     "ticker": "EME",
+     "entry": 660.41
+    },
+    {
+     "ticker": "PM",
+     "entry": 201.74
+    },
+    {
+     "ticker": "FTNT",
+     "entry": 172.98
+    },
+    {
+     "ticker": "RMD",
+     "entry": 253.06
+    },
+    {
+     "ticker": "PSA",
+     "entry": 309.13
+    },
+    {
+     "ticker": "VLTO",
+     "entry": 104.9
+    },
+    {
+     "ticker": "HIG",
+     "entry": 139.45
+    },
+    {
+     "ticker": "AMP",
+     "entry": 496.83
+    },
+    {
+     "ticker": "V",
+     "entry": 414.34
+    },
+    {
+     "ticker": "ALGN",
+     "entry": 155.51
+    },
+    {
+     "ticker": "PPG",
+     "entry": 113.09
+    },
+    {
+     "ticker": "REG",
+     "entry": 74.38
+    },
+    {
+     "ticker": "FIX",
+     "entry": 1279.37
+    },
+    {
+     "ticker": "CL",
+     "entry": 97.39
+    },
+    {
+     "ticker": "CRH",
+     "entry": 86.43
+    },
+    {
+     "ticker": "ED",
+     "entry": 116.26
+    }
+   ]
+  },
+  "resilient": {
+   "label": "Resilient compounders",
+   "date": "2026-10-23",
+   "spy": 763.96,
+   "stocks": [
+    {
+     "ticker": "MA",
+     "entry": 633.21
+    },
+    {
+     "ticker": "ABNB",
+     "entry": 175.76
+    },
+    {
+     "ticker": "CTAS",
+     "entry": 224.04
+    },
+    {
+     "ticker": "DXCM",
+     "entry": 78.32
+    },
+    {
+     "ticker": "IDXX",
+     "entry": 566.76
+    }
+   ]
+  },
+  "fv_below": {
+   "label": "Full models: price below fair value",
+   "date": "2026-10-23",
+   "spy": 763.96,
+   "stocks": [
+    {
+     "ticker": "ADBE",
+     "entry": 270.55
+    },
+    {
+     "ticker": "APP",
+     "entry": 264.28
+    },
+    {
+     "ticker": "DECK",
+     "entry": 85.28
+    },
+    {
+     "ticker": "INCY",
+     "entry": 116.93
+    },
+    {
+     "ticker": "MKC",
+     "entry": 48.71
+    }
+   ]
+  },
+  "fv_buy": {
+   "label": "Full models: price below buy-below",
+   "date": "2026-10-23",
+   "spy": 763.96,
+   "stocks": [
+    {
+     "ticker": "DECK",
+     "entry": 85.28
+    }
+   ]
+  }
+ }
+}
