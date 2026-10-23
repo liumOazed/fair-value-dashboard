@@ -117,7 +117,7 @@ def metrics(t, F, P, d):
     # per-share figures on today's split basis
     sp = P.get("splits", [])
     sh = [(e, x * split_factor_after(sp, e)) for e, x in g["dil_shares"]]
-    S = np.array([x for _, x in sh], float)
+    S = np.array([x for _, x in sh if x and x > 0], float)
     out["share_change_pct_yr"] = ((S[-1] / S[0]) ** (1 / (len(S) - 1)) - 1) * 100 if len(S) >= 2 and S[0] > 0 else np.nan
     out["share_jump"] = bool(len(S) >= 2 and np.any(np.abs(S[1:] / S[:-1] - 1) > 0.5))
     E = np.array([x / split_factor_after(sp, e) for e, x in g["eps"]], float)

@@ -52,7 +52,8 @@ def membership():
 
 # ---------------------------------------------------------------- SEC facts
 DUR = {  # annual duration concepts, in order of preference
- "revenue": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet", "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueGoodsNet"],
+ "revenue": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet", "RevenueFromContractWithCustomerIncludingAssessedTax",
+             "SalesRevenueGoodsNet", "SalesRevenueServicesNet", "RevenuesNetOfInterestExpense", "RegulatedAndUnregulatedOperatingRevenue"],
  "net_income": ["NetIncomeLoss", "ProfitLoss", "NetIncomeLossAvailableToCommonStockholdersBasic"],
  "gross_profit": ["GrossProfit"],
  "cost_of_revenue": ["CostOfRevenue", "CostOfGoodsAndServicesSold", "CostOfGoodsSold"],
@@ -79,8 +80,11 @@ INST = {  # balance-sheet (instant) concepts
 }
 
 def annual_series(facts, names, instant):
-    """First-reported fiscal-year values: {period_end: [value, filed]} from 10-K filings only."""
+    """First-reported fiscal-year values: {period_end: [value, filed]} from 10-K filings only.
+    Companies switch XBRL labels over time (e.g. SalesRevenueNet -> RevenueFromContractWithCustomer...), so all listed
+    labels are MERGED by period end; where two labels cover the same period, the earlier-listed label wins."""
     gaap = facts.get("facts", {}).get("us-gaap", {})
+    merged = {}
     for n in names:
         if n not in gaap: continue
         units = gaap[n]["units"]
@@ -95,14 +99,12 @@ def annual_series(facts, names, instant):
             end, filed = x["end"], x["filed"]
             if end not in best or filed < best[end][1]:        # keep the value AS FIRST REPORTED
                 best[end] = [x["val"], filed]
-        if instant:                                           # keep fiscal-year-end balances only (from 10-K)
-            best = {e: v for e, v in best.items()}
-        if len(best) >= 2:
-            return {e: best[e] for e in sorted(best)}
-    return {}
+        for e, v in best.items():
+            merged.setdefault(e, v)                           # earlier-listed label wins on overlap
+    return {e: merged[e] for e in sorted(merged)} if len(merged) >= 2 else {}
 
 def company_facts(cik):
-    f = CACHE / f"cf_{cik}.json"
+    f = CACHE / f"cf2_{cik}.json"                    # v2: labels merged across XBRL concepts
     if f.exists(): return json.loads(f.read_text())
     b = get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json", UA_SEC)
     d = json.loads(b)
