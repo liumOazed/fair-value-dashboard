@@ -1,0 +1,29 @@
+name: Backtest data
+# Downloads S&P 500 membership history, SEC annual figures (as first reported) and monthly prices for the backtest.
+on:
+  workflow_dispatch: {}
+  push:
+    paths: [".github/backtest-request.json"]
+permissions:
+  contents: write
+concurrency: { group: backtest, cancel-in-progress: false }
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/cache@v4
+        with: { path: .bt_cache, key: bt-cache-v1-${{ github.run_id }}, restore-keys: bt-cache-v1- }
+      - run: pip install pandas numpy lxml
+      - run: python scripts/bt_fetch.py $(python -c "import json;print('--limit',json.load(open('.github/backtest-request.json')).get('limit',0))" 2>/dev/null) 2>&1 | tee bt_fetch.log
+      - run: cp bt_fetch.log data/backtest/fetch.log
+      - name: Commit
+        run: |
+          git config user.name "backtest-bot"
+          git config user.email "backtest-bot@users.noreply.github.com"
+          git add data/backtest/
+          git diff --staged --quiet || git commit -m "Backtest data $(date -u +%Y-%m-%d)"
+          git pull --rebase && git push

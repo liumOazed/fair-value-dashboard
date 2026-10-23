@@ -1,0 +1,167 @@
+#!/usr/bin/env python3
+"""Backtest data (P3), run on GitHub Actions (SEC, Wikipedia and Yahoo are reachable there).
+
+Writes three compact files to data/backtest/ so the backtest itself can run anywhere:
+  membership.json   S&P 500 members on each quarter-end since 2010, rebuilt from Wikipedia's current list + change log
+  facts.json.gz     per company: ANNUAL (10-K, fiscal-year) figures AS FIRST REPORTED, each with its filing date
+                    (point in time: later restatements are ignored, a figure only exists after it was filed)
+  prices.json.gz    per ticker: monthly close, dividend-adjusted close and split history (Yahoo), plus SPY and RSP
+Known limit (survivorship): companies that were acquired, went bankrupt or changed ticker have no prices or CIK here,
+so they drop out. The backtest therefore compares rules WITHIN the same universe; it cannot judge absolute returns.
+Usage: python scripts/bt_fetch.py [--limit N]
+"""
+import argparse, datetime, gzip, io, json, pathlib, sys, time, urllib.request
+import pandas as pd
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+OUT = ROOT / "data/backtest"
+UA_SEC = {"User-Agent": "fair-value-dashboard research (github.com/liumOazed/fair-value-dashboard)", "Accept-Encoding": "gzip"}
+UA_WEB = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+CACHE = ROOT / ".bt_cache"
+
+def get(url, headers, tries=3):
+    for i in range(tries):
+        try:
+            r = urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=40)
+            b = r.read()
+            if r.headers.get("Content-Encoding") == "gzip": b = gzip.decompress(b)
+            return b
+        except Exception as e:
+            if i == tries - 1: raise
+            time.sleep(2 * (i + 1))
+
+# ---------------------------------------------------------------- membership
+def membership():
+    t = pd.read_html(io.BytesIO(get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", UA_WEB)))
+    cur = t[0]; ch = t[1]
+    cur_set = set(cur["Symbol"].astype(str).str.replace(".", "-", regex=False))
+    ch.columns = ["_".join([str(x) for x in c if "Unnamed" not in str(x)]).strip("_") if isinstance(c, tuple) else str(c) for c in ch.columns]
+    dcol = [c for c in ch.columns if c.lower().startswith("date")][0]
+    acol = [c for c in ch.columns if "Added" in c and "Ticker" in c][0]
+    rcol = [c for c in ch.columns if "Removed" in c and "Ticker" in c][0]
+    ch["d"] = pd.to_datetime(ch[dcol], errors="coerce")
+    ch = ch.dropna(subset=["d"]).sort_values("d", ascending=False)
+    norm = lambda x: None if pd.isna(x) or not str(x).strip() else str(x).strip().replace(".", "-")
+    dates = pd.date_range("2010-03-31", datetime.date.today(), freq="QE")
+    members, s, i = {}, set(cur_set), 0
+    rows = ch[["d", acol, rcol]].values.tolist()
+    for d in sorted(dates, reverse=True):                      # walk back in time, undoing changes after d
+        while i < len(rows) and rows[i][0] > d:
+            a, r = norm(rows[i][1]), norm(rows[i][2])
+            if a: s.discard(a)
+            if r: s.add(r)
+            i += 1
+        members[d.strftime("%Y-%m-%d")] = sorted(s)
+    return members, sorted(cur_set)
+
+# ---------------------------------------------------------------- SEC facts
+DUR = {  # annual duration concepts, in order of preference
+ "revenue": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet", "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueGoodsNet"],
+ "net_income": ["NetIncomeLoss", "ProfitLoss", "NetIncomeLossAvailableToCommonStockholdersBasic"],
+ "gross_profit": ["GrossProfit"],
+ "cost_of_revenue": ["CostOfRevenue", "CostOfGoodsAndServicesSold", "CostOfGoodsSold"],
+ "operating_income": ["OperatingIncomeLoss"],
+ "dna": ["DepreciationDepletionAndAmortization", "DepreciationAndAmortization", "DepreciationAmortizationAndAccretionNet", "Depreciation"],
+ "ocf": ["NetCashProvidedByUsedInOperatingActivities", "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"],
+ "capex": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"],
+ "interest": ["InterestExpense", "InterestExpenseNonoperating", "InterestExpenseDebt", "InterestPaidNet"],
+ "tax": ["IncomeTaxExpenseBenefit"],
+ "pretax": ["IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"],
+ "eps": ["EarningsPerShareDiluted", "EarningsPerShareBasicAndDiluted", "EarningsPerShareBasic"],
+ "dil_shares": ["WeightedAverageNumberOfDilutedSharesOutstanding"],
+}
+INST = {  # balance-sheet (instant) concepts
+ "assets": ["Assets"], "cur_liab": ["LiabilitiesCurrent"],
+ "cash": ["CashAndCashEquivalentsAtCarryingValue", "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents", "Cash"],
+ "st_inv": ["ShortTermInvestments", "MarketableSecuritiesCurrent", "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
+ "ltd_noncur": ["LongTermDebtNoncurrent", "LongTermDebtAndCapitalLeaseObligations"],
+ "ltd_cur": ["LongTermDebtCurrent", "LongTermDebtAndCapitalLeaseObligationsCurrent", "DebtCurrent"],
+ "ltd_total": ["LongTermDebt"],
+ "st_debt": ["ShortTermBorrowings", "CommercialPaper"],
+ "equity": ["StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"],
+}
+
+def annual_series(facts, names, instant):
+    """First-reported fiscal-year values: {period_end: [value, filed]} from 10-K filings only."""
+    gaap = facts.get("facts", {}).get("us-gaap", {})
+    for n in names:
+        if n not in gaap: continue
+        units = gaap[n]["units"]
+        u = units.get("USD") or units.get("USD/shares") or units.get("shares") or next(iter(units.values()))
+        best = {}
+        for x in u:
+            if not str(x.get("form", "")).startswith("10-K"): continue
+            if not instant:
+                if "start" not in x: continue
+                days = (datetime.date.fromisoformat(x["end"]) - datetime.date.fromisoformat(x["start"])).days
+                if not 340 <= days <= 380: continue
+            end, filed = x["end"], x["filed"]
+            if end not in best or filed < best[end][1]:        # keep the value AS FIRST REPORTED
+                best[end] = [x["val"], filed]
+        if instant:                                           # keep fiscal-year-end balances only (from 10-K)
+            best = {e: v for e, v in best.items()}
+        if len(best) >= 2:
+            return {e: best[e] for e in sorted(best)}
+    return {}
+
+def company_facts(cik):
+    f = CACHE / f"cf_{cik}.json"
+    if f.exists(): return json.loads(f.read_text())
+    b = get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json", UA_SEC)
+    d = json.loads(b)
+    keep = {k: annual_series(d, v, False) for k, v in DUR.items()}
+    keep.update({k: annual_series(d, v, True) for k, v in INST.items()})
+    f.write_text(json.dumps(keep))
+    return keep
+
+# ---------------------------------------------------------------- prices
+def prices(t):
+    f = CACHE / f"px_{t}.json"
+    if f.exists(): return json.loads(f.read_text())
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=max&interval=1mo&events=div,split"
+    r = json.loads(get(url, UA_WEB))["chart"]["result"][0]
+    ts = r.get("timestamp") or []
+    q = r["indicators"]["quote"][0]["close"]; adj = r["indicators"].get("adjclose", [{}])[0].get("adjclose", q)
+    out = dict(d=[datetime.datetime.utcfromtimestamp(x).strftime("%Y-%m-%d") for x in ts], close=q, adj=adj,
+               splits=[[datetime.datetime.utcfromtimestamp(int(k)).strftime("%Y-%m-%d"), v["numerator"] / v["denominator"]]
+                       for k, v in (r.get("events", {}).get("splits") or {}).items()])
+    f.write_text(json.dumps(out))
+    return out
+
+def main():
+    ap = argparse.ArgumentParser(); ap.add_argument("--limit", type=int, default=0); a = ap.parse_args()
+    CACHE.mkdir(exist_ok=True); OUT.mkdir(parents=True, exist_ok=True)
+    mem, cur = membership()
+    universe = sorted({t for v in mem.values() for t in v})
+    print(f"membership: {len(mem)} quarter-ends, {len(universe)} tickers ever in the index since 2010 ({len(cur)} now)")
+    json.dump(mem, open(OUT / "membership.json", "w"))
+    tick = json.loads(get("https://www.sec.gov/files/company_tickers.json", UA_SEC))
+    cik_of = {v["ticker"].replace(".", "-"): int(v["cik_str"]) for v in tick.values()}
+    if a.limit: universe = universe[: a.limit]
+    facts, px, miss_cik, miss_px = {}, {}, [], []
+    for i, t in enumerate(universe, 1):
+        cik = cik_of.get(t)
+        if cik is None: miss_cik.append(t)
+        else:
+            try: facts[t] = dict(cik=cik, **company_facts(cik))
+            except Exception as e: print("facts failed", t, e); miss_cik.append(t)
+            time.sleep(0.12)
+        try:
+            p = prices(t)
+            if p["d"]: px[t] = p
+            else: miss_px.append(t)
+        except Exception as e:
+            miss_px.append(t)
+        time.sleep(0.25)
+        if i % 50 == 0: print(f"  {i}/{len(universe)}  facts {len(facts)}  prices {len(px)}", flush=True)
+    for b in ("SPY", "RSP"):
+        px[b] = prices(b)
+    json.dump(facts, gzip.open(OUT / "facts.json.gz", "wt"))
+    json.dump(px, gzip.open(OUT / "prices.json.gz", "wt"))
+    json.dump(dict(built=datetime.date.today().isoformat(), tickers=len(universe), with_facts=len(facts), with_prices=len(px) - 2,
+                   no_cik=miss_cik, no_prices=miss_px), open(OUT / "coverage.json", "w"), indent=1)
+    print(f"done: facts {len(facts)}, prices {len(px) - 2}; no CIK {len(miss_cik)}, no prices {len(miss_px)}")
+
+if __name__ == "__main__":
+    main()
