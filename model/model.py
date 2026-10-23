@@ -4,7 +4,7 @@ All $ figures in billions unless noted. Inputs sourced from Q2-2026 filings / pr
 """
 import json, math
 
-AS_OF = "2026-10-16"
+AS_OF = "2026-10-23"   # method change: FCF before interest at the required return, minus net debt
 GT = 0.025            # terminal growth
 PROBS = {"bear": 0.30, "base": 0.50, "bull": 0.20}
 import pathlib
@@ -92,7 +92,7 @@ FIN = {
 # DCF_METHOD: "equity" = original (FCF after interest at the required return, minus net debt; double-counts debt cost)
 #             "fcff_re" = FCF before interest at the required return (hurdle for the whole business), minus net debt
 #             "fcff_wacc" = textbook: FCF before interest at WACC, minus net debt (rewards leverage unless the equity rate is re-levered)
-DCF_METHOD = "equity"
+DCF_METHOD = "fcff_re"
 
 def wacc_of(t, s, re):
     """Blended cost of capital: market-value equity at the required return + debt at the after-tax cost of debt."""

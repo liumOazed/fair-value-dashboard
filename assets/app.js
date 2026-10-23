@@ -47,8 +47,20 @@ document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.d
 $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};render();
 function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  const sc=["bear","base","bull"].map(k=>{const v=s[k]||{};const pr=A.probabilities[k];
-  const desc=r.type==="stock"?`growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, FCF margin ${(v.m*100).toFixed(1)}%`:r.type==="etf"?`EPS ${v.eps.toFixed(1)}, growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, cash conversion ${(v.conv*100).toFixed(0)}%`:`${v.why}`;
+  const addb=r.wacc&&r.rev?(r.wacc.after_tax_interest||0)/r.rev:0;
+  const desc=r.type==="stock"?`growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, FCF margin ${(v.m*100).toFixed(1)}%${addb>=0.0005?` (+${(addb*100).toFixed(1)}% interest add-back = ${((v.m+addb)*100).toFixed(1)}% before interest)`:""}`:r.type==="etf"?`EPS ${v.eps.toFixed(1)}, growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, cash conversion ${(v.conv*100).toFixed(0)}%`:`${v.why}`;
   return `<tr><td style="text-align:left"><b>${k[0].toUpperCase()+k.slice(1)}</b></td><td>${usd(r[k])}</td><td>${r.type==="commodity"?"":(pr*100)+"%"}</td><td style="text-align:left;white-space:normal">${desc}</td></tr>`}).join("");
+ let fc="";if(r.forecast){const B=x=>"$"+x.toFixed(1)+"B",pc=x=>(x*100).toFixed(1)+"%",F=r.forecast,w=r.wacc||{},fi=r.fcf_inputs||{};
+  const tab=k=>{const d=F[k];return `<div class="fct" data-k="${k}" style="${k==="base"?"":"display:none"}"><div class="scroll"><table class="s"><tr><th style="text-align:left">Year</th><th>Growth</th><th>Revenue</th><th>Cash margin</th><th>Cash flow</th><th>Worth today</th></tr>`+
+   d.rows.map(x=>`<tr><td style="text-align:left">${x.t}</td><td>${pc(x.g)}</td><td>${B(x.rev)}</td><td>${pc(x.m)}</td><td>${B(x.fcf)}</td><td title="× ${x.df.toFixed(3)} discount">${B(x.pv)}</td></tr>`).join("")+
+   `<tr><td style="text-align:left" colspan="5">10 years of cash flow, in today's money</td><td><b>${B(d.pv_fcf)}</b></td></tr>
+   <tr><td style="text-align:left" colspan="5">+ value after year 10 (grows 2.5% a year forever: ${B(d.tv)} in year-10 money)</td><td><b>${B(d.pv_tv)}</b></td></tr>
+   <tr><td style="text-align:left" colspan="5">= value of the business</td><td><b>${B(d.ev)}</b></td></tr>
+   <tr><td style="text-align:left" colspan="5">${r.net_cash>=0?"+ net cash":"− net debt"}</td><td>${B(Math.abs(r.net_cash))}</td></tr>
+   <tr><td style="text-align:left" colspan="5">= value for shareholders ÷ ${r.shares.toFixed(3)}B shares</td><td><b>$${d.per_share.toFixed(2)}</b></td></tr></table></div></div>`};
+  fc=`<h3>How the value is built, year by year</h3>
+  <p class="muted">Method: free cash flow <b>before interest</b>, discounted at the ${pc(r.required_return)} required return, then net debt subtracted. Starting cash margin ${pc(r.start_margin)} = (FCF $${(+fi.fcf).toFixed(2)}B − stock pay $${(+fi.sbc).toFixed(2)}B + after-tax interest $${(w.after_tax_interest||0).toFixed(2)}B) ÷ revenue $${r.rev.toFixed(2)}B. Growth fades in a straight line from year 1 to year 10; the margin moves to the scenario target over 5 years.${w.wacc?` For reference, WACC would be ${pc(w.wacc)} (${pc(w.equity_weight)} equity at ${pc(w.cost_equity)}, ${pc(w.debt_weight)} debt at ${pc(w.cost_debt)} before ${pc(w.tax)} tax); it isn't used for discounting so that debt never raises the value.`:""}</p>
+  <div class="chips fctabs">${["bear","base","bull"].map(k=>`<button class="chip${k==="base"?" on":""}" data-k="${k}">${k[0].toUpperCase()+k.slice(1)} · $${F[k].per_share.toFixed(2)}</button>`).join("")}</div>${["bear","base","bull"].map(tab).join("")}`}
  let rt="";if(r.rate_table){const px=(P.prices[r.ticker]||{}).price;
   rt=`<h3>Fair value at different required returns</h3><p class="muted">${r.required_return_reason?`<b>Why ${(r.required_return*100).toFixed(1)}%:</b> ${r.required_return_reason}`:""}</p><table class="s"><tr><th style="text-align:left">Required return</th><th>Fair value</th><th>Buy below</th><th>Price vs fair value</th><th>Base case</th></tr>`+
   r.rate_table.map(x=>{const on=Math.abs(x.r-r.required_return)<1e-9,d=px?px/x.fv-1:null;return`<tr><td style="text-align:left" class="${on?"hl":""}">${(x.r*100).toFixed(1)}%${on?" ⭐ used":""}</td><td class="${on?"hl":""}">$${x.fv.toFixed(2)}</td><td>$${(x.fv*(1-r.mos)).toFixed(2)}</td><td class="${d==null?"":d>0?"down":"up"}">${d==null?"–":(d>0?"+":"")+(d*100).toFixed(0)+"%"}</td><td>$${x.base.toFixed(2)}</td></tr>`}).join("")+
@@ -62,8 +74,9 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  <div class="mini">No-growth value (EPV)<b>${usd(r.epv)}</b></div><div class="mini">Implied annual return at this price<b>${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</b></div></div>
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
  ${r.reverse_g1!=null?`<h3>What the price implies</h3><p>${r.reverse_g1<0?`At today's price and a ${(r.required_return*100).toFixed(1)}% required return, the market is pricing in year-1 sales <b>shrinking about ${Math.abs(r.reverse_g1*100).toFixed(0)}%</b>, then recovering to the base long-run rate. That is a pessimistic view.`:`To justify today's price at a ${(r.required_return*100).toFixed(1)}% required return, year-1 growth would need to be about <b>${(r.reverse_g1*100).toFixed(0)}%</b> fading to the base long-run rate.`} Terminal value is ${(r.tv_share*100).toFixed(0)}% of the base DCF.</p>`:""}
- ${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
- $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close}
+ ${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
+ $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;
+ document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
 function close(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on")}
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());

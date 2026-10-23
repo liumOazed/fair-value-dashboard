@@ -77,3 +77,6 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 .qa-i{font-size:15px}.qa-w{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-left:4px}
 .qa-yes .qa-w{color:var(--good)}.qa-partly .qa-w{color:var(--warn)}.qa-no .qa-w{color:var(--bad)}.qa-na .qa-w{color:var(--mut)}
 .qa{margin-bottom:12px}
+
+.fct table.s td,.fct table.s th{padding:5px 6px}
+.fct td[colspan]{white-space:normal}
