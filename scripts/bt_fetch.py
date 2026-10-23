@@ -10,14 +10,15 @@ Known limit (survivorship): companies that were acquired, went bankrupt or chang
 so they drop out. The backtest therefore compares rules WITHIN the same universe; it cannot judge absolute returns.
 Run it on a HOME computer: the SEC blocks cloud servers such as GitHub Actions (HTTP 403).
 Needs Python 3.9+ and pandas. It can be stopped and re-run: finished companies are cached in .bt_cache/.
-Usage: python scripts/bt_fetch.py [--limit N]
+Usage: SEC_CONTACT=you@example.com python scripts/bt_fetch.py [--limit N]
 """
-import argparse, datetime, gzip, io, json, pathlib, sys, time, urllib.request
+import argparse, datetime, gzip, io, json, os, pathlib, sys, time, urllib.request
 import pandas as pd
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/backtest"
-UA_SEC = {"User-Agent": "fair-value-dashboard liumOazed@users.noreply.github.com", "Accept-Encoding": "gzip"}   # SEC fair-access policy: identify with a contact
+# SEC fair-access policy: identify with a real contact. Set SEC_CONTACT=you@example.com (the default identity is blocked).
+UA_SEC = {"User-Agent": f"fair-value-dashboard {os.environ.get('SEC_CONTACT', 'liumOazed@users.noreply.github.com')}", "Accept-Encoding": "gzip"}
 UA_WEB = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 CACHE = ROOT / ".bt_cache"
 
