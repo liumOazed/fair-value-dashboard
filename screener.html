@@ -26,7 +26,7 @@
     <div class="chips" id="extra"></div>
     <div class="scroll topscroll" id="tscroll"><div id="tspacer"></div></div>
     <div class="scroll" id="bscroll"><table id="tbl"><thead><tr>
-      <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="safety" title="Financial Safety (0-100, higher = safer) and risk level">Safety</th><th data-k="rank_change" class="r">Rank change</th>
+      <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="safety" title="Financial Safety (0-100, higher = safer) and risk level">Safety</th><th data-k="checks_score" title="Revenue growing? · Profits healthy? · Cash flow strong? · Debt manageable? · Position improving? (hover an icon for the reason)">Checks</th><th data-k="rank_change" class="r">Rank change</th>
       <th data-k="rev_growth_pct" class="r" title="Latest quarter revenue vs the same quarter a year earlier">Sales growth (qtr YoY)</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r">FCF yield</th><th data-k="earnings_yield" class="r" title="Earnings per share ÷ price (uses forward P/E when available)">Earnings yield</th><th data-k="fcf_conversion" class="r" title="FCF yield ÷ earnings yield. Near 1 = cash matches earnings; above 1.5 or below 0.25 = check why">FCF ÷ EY</th>
       <th data-k="forward_pe" class="r">Fwd P/E</th><th data-k="implied_fcf_growth" class="r">Growth priced in*</th><th>Fair value</th>
     </tr></thead><tbody></tbody></table></div>
@@ -43,6 +43,12 @@
     <li><b>Valuation 20%</b>: forward P/E 30 and EV/EBITDA 25 (lower is better), FCF yield 30, earnings yield 15.</li>
     <li><b>Financial resilience 20%</b>: net debt/EBITDA 35, interest cover 25, FCF variability 15, negative-FCF years 15, share-count change 10.</li></ul>
     <p class="muted">Each metric is a percentile inside the stock's sector; each part re-weights over the metrics that exist. Cyclical sectors (Energy, Basic Materials): growth 15%, quality 35%, valuation 25%, resilience 25%. A part with no data scores at the 30th percentile. No blanket penalties: the score is <b>capped at 50</b> only when FCF was negative in 2+ years and interest cover is weak.</p>
+    <h3>Quick answers (Checks column)</h3>
+    <ul><li><b>Revenue growing?</b> Yes if the latest quarter and the 3-year CAGR are both above 5%; No if both are flat or falling; Partly otherwise, or when the latest jump is far above the 3-year trend (likely an acquisition).</li>
+    <li><b>Profits healthy?</b> Yes if net margin is at least 10%, ROIC is at or above the cost of capital and EPS isn't shrinking; No if loss-making, or thin margin and ROIC well below the cost of capital. Banks: return on equity ≥ 12%.</li>
+    <li><b>Cash flow strong?</b> Yes if FCF was positive every year, is at least 0.8× net income and steady; No if negative in 2+ years or negative now. N/A for banks; utilities' negative FCF counts only as Partly.</li>
+    <li><b>Debt manageable?</b> Uses the same warning and serious limits as the Risk level (higher limits for utilities and REITs). N/A for banks.</li>
+    <li><b>Financial position improving?</b> Compares the oldest and latest annual statements: leverage, net margin, FCF growth, share count and whether growth is accelerating. Yes if improvements outnumber deteriorations by 2+, No if the reverse.</li></ul>
     <h3>Resilient compounders (5 added after the top 50)</h3>
     <ul><li>Stocks outside the top 50, worth at least $10B, that pass <b>every</b> absolute test: net debt ≤ 1× EBITDA (or net cash), interest cover ≥ 10× (or no interest), no negative free-cash-flow year, FCF variability ≤ 0.5, share count not growing (≤ +0.5% a year), risk level Normal, 3-year revenue growth ≥ 3% a year and business quality ≥ 60.</li>
     <li>The 5 with the highest business quality are added regardless of their overall rank (one per company, so GOOG/GOOGL count once). Banks and insurers can't qualify; fee-based financials can.</li></ul>

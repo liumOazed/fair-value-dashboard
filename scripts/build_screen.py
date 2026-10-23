@@ -71,7 +71,8 @@ SCORE_VERSION = 4
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
-           "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct"]
+           "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct",
+           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct"]
 
 def score_v3(d):
     """Growth Quality Score v3, 0-100. Every metric is ranked inside the stock's own sector (as v2).
@@ -366,6 +367,97 @@ for t, r in cur.iterrows():
         distress_cap=bool(r.distress_cap), industry=(r.industry if isinstance(r.industry, str) and r.industry else None),
         industry_rank=ind_rank.get(t), industry_n=ind_n.get(r.industry) if isinstance(r.industry, str) else None, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), peer_group=PEER_OF.get(t), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
+# ---- Quick answers: five plain questions per stock, answered from the metrics above ----
+def _p(x, d=1): return f"{x:+.{d}f}" if x is not None else "n/a"
+def quick_answers(r):
+    bank = r["sector"] == "Financial Services" and not r.get("peer_group")
+    util = r["sector"] == "Utilities"
+    A = []
+    # 1. Is revenue growing?
+    g, c, n, sd = r["rev_growth_pct"], r["rev_cagr_pct"], r.get("rev_cagr_years"), r["rev_growth_std"]
+    if g is None and c is None: v, t = "na", "No revenue data."
+    else:
+        v = ("yes" if (g or 0) > 5 and (c is None or c > 5) else "no" if (g is None or g <= 0) and (c is None or c <= 0) else "partly")
+        t = f"Latest quarter {_p(g)}% year on year" + (f"; {_p(c)}% a year over {int(n or 3)} years" if c is not None else "")
+        if sd is not None: t += ", steady" if sd < 5 else (f", uneven (±{sd:.0f} pts a year)" if sd > 15 else "")
+        if g is not None and c is not None and g > 100: t += ". The jump looks one-off (acquisition or cycle)"
+        elif g is not None and c is not None and g > c + 30:
+            v = "partly"; t += ". Far above its own 3-year trend, so likely an acquisition or one-off"
+        elif g is not None and c is not None and g > 5 and c <= 0: t += ". Recent pick-up after a flat or shrinking period"
+        elif g is not None and c is not None and g <= 0 < c: t += ". Growth has stalled recently"
+    A.append(dict(q="Is revenue growing?", v=v, t=t + "."))
+    # 2. Are profits healthy?
+    nm, roic, sp, eps, roe = r["profit_margin_pct"], r["roic_pct"], r["roic_spread"], r["eps_cagr_pct"], r["roe_pct"]
+    if nm is None: v, t = "na", "No profit data."
+    elif bank:
+        v = "no" if nm < 0 else ("yes" if (roe or 0) >= 12 and nm >= 10 else "partly")
+        t = f"Net margin {nm:.1f}%, return on equity {roe:.1f}%" if roe is not None else f"Net margin {nm:.1f}%"
+    else:
+        v = "no" if nm < 0 or (sp is not None and sp < -0.03 and nm < 5) else ("yes" if nm >= 10 and (sp is None or sp >= 0) and (eps is None or eps >= 0) else "partly")
+        t = f"Net margin {nm:.1f}%" + (f", ROIC {roic:.0f}% vs {r['wacc']*100:.1f}% cost of capital ({_p(sp*100)} pts)" if sp is not None else "")
+        if eps is not None: t += f", EPS {_p(eps)}% a year"
+        if nm < 0: t += ". Loss-making"
+        elif sp is not None and sp < 0: t += ". Earns less than its cost of capital"
+    A.append(dict(q="Are profits healthy?", v=v, t=t + "."))
+    # 3. Is cash flow strong?
+    neg, yrs, conv, fy, cv = r["fcf_neg_years"], r["fcf_years"], r["fcf_ni_conversion"], r["fcf_yield_pct"], r["fcf_cv"]
+    if bank: v, t = "na", "Free cash flow isn't a meaningful test for banks and insurers"
+    elif yrs is None and fy is None: v, t = "na", "No cash-flow data"
+    else:
+        if util and (neg or 0) >= 1: v = "partly"
+        elif (neg or 0) >= 2 or (fy is not None and fy <= 0): v = "no"
+        elif (neg or 0) == 0 and (conv is None or conv >= 0.8) and (cv is None or cv <= 0.5) and (fy or 0) > 0: v = "yes"
+        else: v = "partly"
+        t = (f"FCF positive in {int(yrs - neg)} of {int(yrs)} years" if yrs else "FCF history n/a") + (f", {conv:.2f}x net income" if conv is not None else "") + (f", FCF yield {fy:.1f}%" if fy is not None else "")
+        if cv is not None and cv > 0.5: t += ", uneven from year to year"
+        if util and (neg or 0) >= 1: t += ". Negative FCF is normal for utilities (capex funded by borrowing)"
+    A.append(dict(q="Is cash flow strong?", v=v, t=t + "."))
+    # 4. Is debt manageable?
+    nde, cov = r["net_debt_ebitda"], r["interest_coverage"]
+    ser = [x for x in r["risk_serious"] if x.startswith(("Net debt", "Interest"))]; war = [x for x in r["risk_warn"] if x.startswith(("Net debt", "Interest"))]
+    if bank: v, t = "na", "Leverage ratios don't apply to banks and insurers"
+    elif nde is None: v, t = "partly", "EBITDA is negative or missing, so leverage can't be judged"
+    else:
+        v = "no" if ser else ("partly" if war else "yes")
+        t = ("Net cash" if nde < 0 else f"Net debt {nde:.1f}x EBITDA") + (", no meaningful interest" if cov is not None and cov >= 999 else f", interest covered {cov:.1f}x" if cov is not None else "")
+        lim = lambda x: x.split(" (")[0].split(" ")[0].lower() + (" debt" if x.startswith("Net") else " cover") + " " + x.split("(")[1].rstrip(")")
+        if ser: t += ". Over the serious limit: " + ", ".join(lim(x) for x in ser)
+        if war: t += (", " if ser else ". ") + "over the warning limit: " + ", ".join(lim(x) for x in war)
+        if util or r["sector"] == "Real Estate": t += f" ({r['sector']} limits are higher by design)"
+    A.append(dict(q="Is debt manageable?", v=v, t=t + "."))
+    # 5. Is the financial position improving?
+    up, down = [], []
+    then = r.get("nd_ebitda_then")
+    if not bank and then is not None and nde is not None:
+        if nde < then - 0.3: up.append(f"leverage down ({then:.1f}x → {nde:.1f}x)")
+        elif nde > then + 0.3: down.append(f"leverage up ({then:.1f}x → {nde:.1f}x)")
+    mc = r.get("margin_change_pts")
+    if mc is not None:
+        if mc > 1: up.append(f"net margin {_p(mc)} pts")
+        elif mc < -1: down.append(f"net margin {_p(mc)} pts")
+    fc = r.get("fcf_cagr_pct")
+    if not bank and fc is not None:
+        if fc > 5: up.append(f"FCF growing {fc:.0f}% a year")
+        elif fc < -5: down.append(f"FCF shrinking {abs(fc):.0f}% a year")
+    sc = r["share_change_pct_yr"]
+    if sc is not None:
+        if sc < -0.5: up.append(f"share count falling {abs(sc):.1f}% a year")
+        elif sc > 2: down.append(f"share count rising {sc:.1f}% a year")
+    if g is not None and c is not None and g < 100:
+        if g > c + 5: up.append("growth accelerating")
+        elif g < c - 5: down.append("growth slowing")
+    if len(up) + len(down) < 2: v, t = "na", "Not enough history to judge the trend"
+    else:
+        net = len(up) - len(down)
+        v = "yes" if net >= 2 else ("no" if net <= -2 else "partly")
+        t = ("Better: " + ", ".join(up) if up else "") + (". " if up and down else "") + ("Worse: " + ", ".join(down) if down else "")
+    A.append(dict(q="Is the financial position improving?", v=v, t=t + "."))
+    return A
+
+for r in rows:
+    r["answers"] = quick_answers(r)
+    r["checks_score"] = sum(a["v"] == "yes" for a in r["answers"]) - sum(a["v"] == "no" for a in r["answers"])
+
 # ---- Resilient compounders: 5 extra stocks outside the top 50, picked on absolute safety + business quality ----
 RES_RULES = dict(min_cap=10e9, max_nde=1.0, min_cov=10, max_neg_fcf=0, max_fcf_cv=0.5, max_share_chg=0.5, min_quality=60, min_cagr=3.0, n=5)
 def res_ok(r):

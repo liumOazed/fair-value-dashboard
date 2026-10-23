@@ -71,3 +71,9 @@ details.list summary{cursor:pointer;font-weight:600;margin:6px 0}details.list li
 ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 
 .pill.res{color:var(--acc);border-color:color-mix(in srgb,var(--acc) 40%,transparent)}.resbox{border:1px solid color-mix(in srgb,var(--acc) 35%,transparent);background:color-mix(in srgb,var(--acc) 6%,transparent);border-radius:10px;padding:8px 12px;font-size:12.5px}
+
+.chk{font-size:13px;margin-right:1px;cursor:help}.nowrap{white-space:nowrap}
+.qa{display:grid;gap:6px}.qa-row{display:grid;grid-template-columns:22px 1fr;gap:6px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px}
+.qa-i{font-size:15px}.qa-w{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-left:4px}
+.qa-yes .qa-w{color:var(--good)}.qa-partly .qa-w{color:var(--warn)}.qa-no .qa-w{color:var(--bad)}.qa-na .qa-w{color:var(--mut)}
+.qa{margin-bottom:12px}
