@@ -42,6 +42,9 @@ statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
   fcf_conversion      FCF / net income (latest fiscal year, both from the statements)
   capex_ocf_pct       capex as % of operating cash flow (capital intensity, stable)
   capex_fcf           capex / FCF (blank when FCF <= 0)
+  nd_ebitda_then      net debt / EBITDA in the OLDEST annual statement (compare with net_debt_ebitda for the trend)
+  margin_change_pts   net margin, latest fiscal year minus oldest (percentage points)
+  fcf_cagr_pct        free-cash-flow CAGR (only when first and last FCF are positive)
   industry, beta      from yfinance .info (industry gives finer peer groups than sector)
   volatility_1y_pct   annualised standard deviation of daily returns over the last year
   max_drawdown_1y_pct worst peak-to-trough fall over the last year (negative %)
@@ -217,6 +220,21 @@ def history_metrics(inc, bal, cfs, info) -> dict:
     out["fcf_neg_years"] = int((fcf <= 0).sum()) if len(fcf) else np.nan
     out["fcf_years"] = int(len(fcf)) if len(fcf) else np.nan
 
+    # trends: leverage then vs now, margin change, FCF growth
+    ebitda_s = _series(inc, "EBITDA", "Normalized EBITDA")
+    if len(ebitda_s) and len(debt) and ebitda_s.iloc[0] > 0:
+        d0 = debt.iloc[0] - (cash.iloc[0] if len(cash) else 0)
+        out["nd_ebitda_then"] = round(float(d0 / ebitda_s.iloc[0]), 2)
+    else:
+        out["nd_ebitda_then"] = np.nan
+    if len(ni) >= 2 and len(rev) >= 2:
+        m = (ni / rev.reindex(ni.index)).dropna() * 100
+        out["margin_change_pts"] = round(float(m.iloc[-1] - m.iloc[0]), 2) if len(m) >= 2 else np.nan
+    else:
+        out["margin_change_pts"] = np.nan
+    gf, _ = _cagr(fcf)
+    out["fcf_cagr_pct"] = round(gf * 100, 2) if gf == gf else np.nan
+
     # dilution / buybacks (per year)
     sc, _ = _cagr(shares)
     out["share_change_pct_yr"] = round(sc * 100, 2) if sc == sc else np.nan
@@ -234,7 +252,8 @@ def history_metrics(inc, bal, cfs, info) -> dict:
 V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "rev_cagr_years", "eps_cagr_pct",
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
-           "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct"]
+           "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct",
+           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct"]
 
 
 def _df_to_json(df):
