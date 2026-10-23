@@ -36,7 +36,8 @@ def membership():
     cur = t[0]; ch = t[1]
     cur_set = set(cur["Symbol"].astype(str).str.replace(".", "-", regex=False))
     ch.columns = ["_".join([str(x) for x in c if "Unnamed" not in str(x)]).strip("_") if isinstance(c, tuple) else str(c) for c in ch.columns]
-    dcol = [c for c in ch.columns if c.lower().startswith("date")][0]
+    print("change-table columns:", list(ch.columns))
+    dcol = [c for c in ch.columns if "date" in c.lower()][0]
     acol = [c for c in ch.columns if "Added" in c and "Ticker" in c][0]
     rcol = [c for c in ch.columns if "Removed" in c and "Ticker" in c][0]
     ch["d"] = pd.to_datetime(ch[dcol], errors="coerce")

@@ -23,8 +23,8 @@ SEED = 20261023
 # reuse the live scoring and quick fair value code
 ns = {"__file__": str(ROOT / "scripts/build_screen.py")}
 exec(open(ROOT / "scripts/build_screen.py").read().split("allf = glob.glob")[0], ns)
-fv_ns = {"__file__": str(ROOT / "scripts/fair_value_table.py")}
-exec(open(ROOT / "scripts/fair_value_table.py").read().split("PREV = {}")[0], fv_ns)
+fv_ns = {"__file__": str(ROOT / "scripts/fair_value_table.py"), "__name__": "fair_value_table"}
+exec(open(ROOT / "scripts/fair_value_table.py").read(), fv_ns)              # main() is not run (__name__ guard)
 score_v4, required_return, V3_COLS = ns["score_v4"], ns["required_return"], ns["V3_COLS"]
 evaluate = fv_ns["evaluate"]
 
