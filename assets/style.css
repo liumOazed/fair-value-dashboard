@@ -80,3 +80,7 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 
 .fct table.s td,.fct table.s th{padding:5px 6px}
 .fct td[colspan]{white-space:normal}
+
+.mcsvg{width:100%;height:auto;display:block;margin:6px 0}.mcb{fill:var(--acc);opacity:.85}.mcb:hover{opacity:1}
+.mcax{stroke:var(--line);stroke-width:1}.mcfv{stroke:var(--tx);stroke-width:1.5;stroke-dasharray:3 3}.mcpx{stroke:var(--warn);stroke-width:2}
+.mct{font-size:11px;fill:var(--mut)}.mcl{fill:var(--tx);font-size:12px}.mctb{fill:var(--acc);opacity:.8}.mctb:hover{opacity:1}

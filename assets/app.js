@@ -50,6 +50,31 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
   const addb=r.wacc&&r.rev?(r.wacc.after_tax_interest||0)/r.rev:0;
   const desc=r.type==="stock"?`growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, FCF margin ${(v.m*100).toFixed(1)}%${addb>=0.0005?` (+${(addb*100).toFixed(1)}% interest add-back = ${((v.m+addb)*100).toFixed(1)}% before interest)`:""}`:r.type==="etf"?`EPS ${v.eps.toFixed(1)}, growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, cash conversion ${(v.conv*100).toFixed(0)}%`:`${v.why}`;
   return `<tr><td style="text-align:left"><b>${k[0].toUpperCase()+k.slice(1)}</b></td><td>${usd(r[k])}</td><td>${r.type==="commodity"?"":(pr*100)+"%"}</td><td style="text-align:left;white-space:normal">${desc}</td></tr>`}).join("");
+ let mcH="";if(r.mc){const M=r.mc,q=M.quantiles,px=(P.prices[r.ticker]||{}).price,$f=x=>"$"+(x>=1000?x.toFixed(0):x.toFixed(2));
+  const F=x=>{if(x<=q[0])return 0;if(x>=q[100])return 1;let i=0;while(q[i+1]<x)i++;const w=q[i+1]-q[i];return (i+(w>0?(x-q[i])/w:0))/100};
+  const pAbove=px?1-F(px):null,pMos=px?1-F(px/(1-r.mos)):null,pBelowHalf=px?F(px*0.5):null;
+  // histogram from quantiles (1% of runs between consecutive quantiles), trimmed to the 1st-99th percentile
+  const lo=q[1],hi=q[99],nb=28,bw=(hi-lo)/nb,bins=new Array(nb).fill(0);
+  for(let i=1;i<99;i++){const a=q[i],b=q[i+1],w=b-a;for(let k=0;k<nb;k++){const x0=lo+k*bw,x1=x0+bw,ov=Math.max(0,Math.min(b,x1)-Math.max(a,x0));if(w>0)bins[k]+=ov/w;else if(a>=x0&&a<x1)bins[k]+=1}}
+  const W=500,H=166,pl=8,pr=8,pt=34,pb=26,X=x=>pl+(x-lo)/(hi-lo)*(W-pl-pr),mx=Math.max(...bins),Y=v=>H-pb-v/mx*(H-pt-pb);
+  const bars=bins.map((c,k)=>{const x=X(lo+k*bw)+1,w=Math.max(1,X(lo+(k+1)*bw)-X(lo+k*bw)-2),y=Y(c);return `<rect class="mcb" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${w.toFixed(1)}" height="${(H-pb-y).toFixed(1)}" rx="2"><title>${$f(lo+k*bw)}–${$f(lo+(k+1)*bw)}: ${c.toFixed(1)}% of runs</title></rect>`}).join("");
+  const mark=(x,lab,cls,row)=>x<lo||x>hi?"":`<line x1="${X(x)}" x2="${X(x)}" y1="${row?pt-6:pt-22}" y2="${H-pb}" class="${cls}"/><text x="${Math.min(Math.max(X(x),60),W-60)}" y="${row?pt-9:pt-25}" text-anchor="middle" class="mct">${lab}</text>`;
+  const svg=`<svg viewBox="0 0 ${W} ${H}" class="mcsvg" role="img" aria-label="Distribution of simulated value per share"><line x1="${pl}" x2="${W-pr}" y1="${H-pb}" y2="${H-pb}" class="mcax"/>${bars}${mark(r.fair_value,"Fair value "+$f(r.fair_value),"mcfv",0)}${px?mark(px,"Price "+$f(px),"mcpx",1):""}
+   <text x="${pl}" y="${H-8}" class="mct">${$f(lo)}</text><text x="${W-pr}" y="${H-8}" text-anchor="end" class="mct">${$f(hi)}</text><text x="${W/2}" y="${H-8}" text-anchor="middle" class="mct">value per share (1st–99th percentile of runs)</text></svg>`;
+  const T=M.tornado,tl=Math.min(...T.rows.map(o=>Math.min(o.low,o.high)),T.base),th=Math.max(...T.rows.map(o=>Math.max(o.low,o.high)),T.base),TX=x=>235+(x-tl)/(th-tl)*190;
+  const torn=`<svg viewBox="0 0 ${W} ${T.rows.length*30+24}" class="mcsvg" role="img" aria-label="Sensitivity of base-case value"><line x1="${TX(T.base)}" x2="${TX(T.base)}" y1="4" y2="${T.rows.length*30+6}" class="mcfv"/>`+
+   T.rows.map((o,i)=>{const a=Math.min(o.low,o.high),b=Math.max(o.low,o.high),y=10+i*30,pin=v=>Math.abs(v)<1?(v*100).toFixed(1)+"%":v;
+    return `<text x="0" y="${y+13}" class="mct mcl">${o.label.replace(" (+1 / -1 pt)","").replace(" (2% / 3%)","")}${o.choice?" *":""}</text><rect class="mctb" x="${TX(a)}" y="${y+2}" width="${Math.max(2,TX(b)-TX(a))}" height="16" rx="3"><title>${o.label}: ${pin(o.low_in)} → ${$f(o.low)}, ${pin(o.high_in)} → ${$f(o.high)}</title></rect><text x="${TX(a)-4}" y="${y+14}" text-anchor="end" class="mct">${$f(a)}</text><text x="${TX(b)+4}" y="${y+14}" class="mct">${$f(b)}</text>`}).join("")+
+   `<text x="${TX(T.base)}" y="${T.rows.length*30+20}" text-anchor="middle" class="mct">base case ${$f(T.base)}</text></svg>`;
+  const pct=x=>x==null?"–":(x*100).toFixed(0)+"%";
+  mcH=`<h3>Range of outcomes (Monte Carlo)</h3>
+  <p class="muted">${M.n.toLocaleString()} runs: each picks Bear / Base / Bull with the 30 / 50 / 20 weights, then varies growth, long-run growth and margin together (correlated) and terminal growth around 2.5%. The ${(r.required_return*100).toFixed(1)}% required return is fixed: it's your choice, not an uncertainty.</p>
+  ${svg}
+  <div class="grid2"><div class="mini">Model-implied chance value is above today's price<b>${pct(pAbove)}</b><span class="muted">price ${px?$f(px):"–"}</span></div>
+  <div class="mini">Chance of a ${(r.mos*100).toFixed(0)}% margin of safety<b>${pct(pMos)}</b><span class="muted">value at least ${px?$f(px/(1-r.mos)):"–"}</span></div></div>
+  <table class="s" style="margin-top:8px"><tr><th style="text-align:left">Percentile</th><th>10th</th><th>25th</th><th>Median</th><th>75th</th><th>90th</th></tr><tr><td style="text-align:left">Value per share</td><td>${$f(M.p10)}</td><td>${$f(M.p25)}</td><td>${$f(M.p50)}</td><td>${$f(M.p75)}</td><td>${$f(M.p90)}</td></tr></table>
+  <p class="muted">These probabilities are model-implied: only as good as the assumption ranges. Chance the value is below half today's price: ${pct(pBelowHalf)}. A Sobol (quasi-Monte Carlo) check with ${M.sobol.n.toLocaleString()} points gives a median of ${$f(M.sobol.p50)} (${((M.sobol.p50/M.p50-1)*100).toFixed(1)}% difference), so the estimate is stable.</p>
+  <h3>What moves the value most</h3><p class="muted">Base case with one input moved to its bear and bull value, the others unchanged. * The required return is a choice, shown for comparison.</p>${torn}`}
  let fc="";if(r.forecast){const B=x=>"$"+x.toFixed(1)+"B",pc=x=>(x*100).toFixed(1)+"%",F=r.forecast,w=r.wacc||{},fi=r.fcf_inputs||{};
   const tab=k=>{const d=F[k];return `<div class="fct" data-k="${k}" style="${k==="base"?"":"display:none"}"><div class="scroll"><table class="s"><tr><th style="text-align:left">Year</th><th>Growth</th><th>Revenue</th><th>Cash margin</th><th>Cash flow</th><th>Worth today</th></tr>`+
    d.rows.map(x=>`<tr><td style="text-align:left">${x.t}</td><td>${pc(x.g)}</td><td>${B(x.rev)}</td><td>${pc(x.m)}</td><td>${B(x.fcf)}</td><td title="× ${x.df.toFixed(3)} discount">${B(x.pv)}</td></tr>`).join("")+
@@ -74,7 +99,7 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  <div class="mini">No-growth value (EPV)<b>${usd(r.epv)}</b></div><div class="mini">Implied annual return at this price<b>${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</b></div></div>
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
  ${r.reverse_g1!=null?`<h3>What the price implies</h3><p>${r.reverse_g1<0?`At today's price and a ${(r.required_return*100).toFixed(1)}% required return, the market is pricing in year-1 sales <b>shrinking about ${Math.abs(r.reverse_g1*100).toFixed(0)}%</b>, then recovering to the base long-run rate. That is a pessimistic view.`:`To justify today's price at a ${(r.required_return*100).toFixed(1)}% required return, year-1 growth would need to be about <b>${(r.reverse_g1*100).toFixed(0)}%</b> fading to the base long-run rate.`} Terminal value is ${(r.tv_share*100).toFixed(0)}% of the base DCF.</p>`:""}
- ${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
+ ${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
 function close(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on")}
