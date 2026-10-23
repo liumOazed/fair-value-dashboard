@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Backtest data (P3), run on GitHub Actions (SEC, Wikipedia and Yahoo are reachable there).
+"""Backtest data (P3), fetched on a home computer from the SEC, Yahoo and the fja05680/sp500 dataset.
 
 Writes three compact files to data/backtest/ so the backtest itself can run anywhere:
   membership.json   S&P 500 members on each quarter-end since 2010 (fja05680/sp500 historical components dataset)
@@ -8,7 +8,7 @@ Writes three compact files to data/backtest/ so the backtest itself can run anyw
   prices.json.gz    per ticker: monthly close, dividend-adjusted close and split history (Yahoo), plus SPY and RSP
 Known limit (survivorship): companies that were acquired, went bankrupt or changed ticker have no prices or CIK here,
 so they drop out. The backtest therefore compares rules WITHIN the same universe; it cannot judge absolute returns.
-Run it on a HOME computer: the SEC blocks cloud servers such as GitHub Actions (HTTP 403).
+The SEC answers HTTP 403 when it blocks the contact in the User-Agent, so set SEC_CONTACT to a real email address.
 Needs Python 3.9+ and pandas. It can be stopped and re-run: finished companies are cached in .bt_cache/.
 Usage: SEC_CONTACT=you@example.com python scripts/bt_fetch.py [--limit N]
 """
