@@ -75,6 +75,32 @@ STOCKS = {
               notes="TTM to Aug-2026. Trailing P/E is distorted by a one-off $867M gain on taking control of McCormick de Mexico (Jan-2026), so this model uses free cash flow. Organic growth ~3-6%. STANDALONE value only: the pending Unilever Foods combination (McCormick holders to own 35%, $15.7B cash to Unilever, close expected mid-2027) would change the per-share value substantially. Lower confidence."),
 }
 
+# ---------------------------------------------------------------- capital structure (for WACC)
+# Gross debt and after-tax cost of debt make the DCF consistent: free cash flow BEFORE interest (FCFF) is discounted at
+# WACC, then net debt is subtracted. Source: yfinance annual statements via the screener run of 2026-10-23.
+# debt = total debt incl. leases ($B); rd = interest expense / average debt (clipped to 2-10% when used); tax = effective rate.
+FIN = {
+ "AAPL": dict(debt=84.34, interest=3.933, rd=0.0383, tax=0.156), "MSFT": dict(debt=128.81, interest=3.051, rd=0.0520, tax=0.194),
+ "GOOGL": dict(debt=120.79, interest=0.736, rd=0.0180, tax=0.168), "AMZN": dict(debt=251.64, interest=2.274, rd=0.0160, tax=0.196),
+ "NVDA": dict(debt=38.86, interest=0.259, rd=0.0246, tax=0.151), "AVGO": dict(debt=59.42, interest=3.210, rd=0.0484, tax=0.256),
+ "LLY": dict(debt=54.91, interest=0.781, rd=0.0205, tax=0.198), "ADBE": dict(debt=6.79, interest=0.263, rd=0.0414, tax=0.180),
+ "APP": dict(debt=3.52, interest=0.207, rd=0.0583, tax=0.132), "FICO": dict(debt=5.60, interest=0.134, rd=0.0504, tax=0.188),
+ "APA": dict(debt=3.88, interest=0.278, rd=0.0517, tax=0.350), "DECK": dict(debt=0.47, interest=0.003, rd=0.0078, tax=0.228),
+ "INCY": dict(debt=0.04, interest=0.002, rd=0.0578, tax=0.227), "MKC": dict(debt=5.02, interest=0.196, rd=0.0452, tax=0.214),
+}
+
+# DCF_METHOD: "equity" = original (FCF after interest at the required return, minus net debt; double-counts debt cost)
+#             "fcff_re" = FCF before interest at the required return (hurdle for the whole business), minus net debt
+#             "fcff_wacc" = textbook: FCF before interest at WACC, minus net debt (rewards leverage unless the equity rate is re-levered)
+DCF_METHOD = "equity"
+
+def wacc_of(t, s, re):
+    """Blended cost of capital: market-value equity at the required return + debt at the after-tax cost of debt."""
+    f = FIN[t]
+    E, D = s["price"] * s["shares"], f["debt"]
+    rd = min(max(f["rd"], 0.02), 0.10)
+    return (E * re + D * rd * (1 - f["tax"])) / (E + D)
+
 def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False):
     rev, pv, rows = rev0, 0.0, []
     for t in range(1, 11):
@@ -107,30 +133,40 @@ def solve(f, lo, hi, tol=1e-6):
 out = {"as_of": AS_OF, "terminal_growth": GT, "probabilities": PROBS, "assets": {}}
 
 for tk, s in STOCKS.items():
-    s["r"] = req_return(tk)
-    m0 = (s["fcf"] - s["sbc"]) / s["rev"]
+    s["r"] = req_return(tk)                                   # cost of equity (required return)
+    f = FIN[tk]
+    aint = 0.0 if DCF_METHOD == "equity" else f["interest"] * (1 - f["tax"])   # after-tax interest added back: FCF -> FCFF
+    add = aint / s["rev"]                                     # kept as a constant share of revenue in every year
+    m0 = (s["fcf"] - s["sbc"] + aint) / s["rev"]              # starting FCFF margin (after SBC)
+    W = (lambda re: wacc_of(tk, s, re)) if DCF_METHOD == "fcff_wacc" else (lambda re: re)
+    w = W(s["r"])
     nc = s["net_cash"] + s["extra"]
+    S2 = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}   # scenario margins stated to equity, + interest share
     res = {}
-    for sc, p in s["scen"].items():
-        d = dcf(s["rev"], m0, p["g1"], p["g10"], p["m"], s["r"], nc, s["shares"], detail=True)
+    for sc, p in S2.items():
+        d = dcf(s["rev"], m0, p["g1"], p["g10"], p["m"], w, nc, s["shares"], detail=True)
         res[sc] = dict(params=p, per_share=d["per_share"], detail=d)
     fv = sum(PROBS[k] * res[k]["per_share"] for k in res)
     base = res["base"]["per_share"]
     # EPV (no-growth floor): normalised SBC-adj FCF / r
-    epv = (s["rev"] * s["scen"]["base"]["m"] / s["r"] + nc) / s["shares"]
-    # implied IRR at current price on base case
-    irr = solve(lambda r: dcf(s["rev"], m0, **{k: s["scen"]["base"][k] for k in ("g1","g10")}, m_target=s["scen"]["base"]["m"], r=r, net_cash_plus=nc, shares=s["shares"]) - s["price"], 0.035, 0.30)
-    # reverse DCF: first-year growth (fading to base g10) needed to justify price at required return
-    rg = solve(lambda g1: dcf(s["rev"], m0, g1, s["scen"]["base"]["g10"], s["scen"]["base"]["m"], s["r"], nc, s["shares"]) - s["price"], -0.5, 1.5)
-    # sensitivity base case: r vs gT
+    B = S2["base"]
+    epv = (s["rev"] * B["m"] / w + nc) / s["shares"]          # no-growth value: base FCFF / WACC - net debt
+    # implied return to shareholders at the current price (solve the cost of equity, WACC follows)
+    irr = solve(lambda re: dcf(s["rev"], m0, B["g1"], B["g10"], B["m"], W(re), nc, s["shares"]) - s["price"], 0.035, 0.30)
+    # reverse DCF: first-year growth (fading to base g10) needed to justify price at the required return
+    rg = solve(lambda g1: dcf(s["rev"], m0, g1, B["g10"], B["m"], w, nc, s["shares"]) - s["price"], -0.5, 1.5)
+    # sensitivity base case: required return (-> WACC) vs terminal growth
     rs = [s["r"] - .02, s["r"] - .01, s["r"], s["r"] + .01, s["r"] + .02]
     gs = [.015, .02, .025, .03, .035]
-    sens = [[dcf(s["rev"], m0, s["scen"]["base"]["g1"], s["scen"]["base"]["g10"], s["scen"]["base"]["m"], r, nc, s["shares"], gt=g) for g in gs] for r in rs]
+    sens = [[dcf(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"], gt=g) for g in gs] for r in rs]
     rates = sorted(set(RATE_GRID + [s["r"]]))
-    rate_table = [dict(r=r, fv=sum(PROBS[k] * dcf(s["rev"], m0, s["scen"][k]["g1"], s["scen"][k]["g10"], s["scen"][k]["m"], r, nc, s["shares"]) for k in PROBS),
-                       base=dcf(s["rev"], m0, s["scen"]["base"]["g1"], s["scen"]["base"]["g10"], s["scen"]["base"]["m"], r, nc, s["shares"])) for r in rates]
+    rate_table = [dict(r=r, wacc=W(r), fv=sum(PROBS[k] * dcf(s["rev"], m0, S2[k]["g1"], S2[k]["g10"], S2[k]["m"], W(r), nc, s["shares"]) for k in PROBS),
+                       base=dcf(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"])) for r in rates]
+    E_ = s["price"] * s["shares"]
     out["assets"][tk] = dict(
         rate_table=rate_table, r_reason=RR["stocks"][tk]["reason"],
+        dcf_method=DCF_METHOD, wacc=dict(wacc=wacc_of(tk, s, s["r"]), discount_rate=w, cost_equity=s["r"], equity_weight=E_ / (E_ + f["debt"]), debt_weight=f["debt"] / (E_ + f["debt"]),
+                  cost_debt=min(max(f["rd"], 0.02), 0.10), cost_debt_raw=f["rd"], tax=f["tax"], debt=f["debt"], after_tax_interest=aint),
         name=s["name"], type="stock", price=s["price"], shares=s["shares"], r=s["r"], mos=s["mos"],
         start_margin=m0, net_cash=nc, rev=s["rev"], notes=s["notes"],
         bear=res["bear"]["per_share"], base=base, bull=res["bull"]["per_share"],
