@@ -15,7 +15,7 @@ import pandas as pd
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/backtest"
-UA_SEC = {"User-Agent": "fair-value-dashboard research (github.com/liumOazed/fair-value-dashboard)", "Accept-Encoding": "gzip"}
+UA_SEC = {"User-Agent": "fair-value-dashboard liumOazed@users.noreply.github.com", "Accept-Encoding": "gzip"}   # SEC fair-access policy: identify with a contact
 UA_WEB = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 CACHE = ROOT / ".bt_cache"
 
