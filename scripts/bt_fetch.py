@@ -8,6 +8,8 @@ Writes three compact files to data/backtest/ so the backtest itself can run anyw
   prices.json.gz    per ticker: monthly close, dividend-adjusted close and split history (Yahoo), plus SPY and RSP
 Known limit (survivorship): companies that were acquired, went bankrupt or changed ticker have no prices or CIK here,
 so they drop out. The backtest therefore compares rules WITHIN the same universe; it cannot judge absolute returns.
+Run it on a HOME computer: the SEC blocks cloud servers such as GitHub Actions (HTTP 403).
+Needs Python 3.9+ and pandas. It can be stopped and re-run: finished companies are cached in .bt_cache/.
 Usage: python scripts/bt_fetch.py [--limit N]
 """
 import argparse, datetime, gzip, io, json, pathlib, sys, time, urllib.request
@@ -116,8 +118,8 @@ def prices(t):
     r = json.loads(get(url, UA_WEB))["chart"]["result"][0]
     ts = r.get("timestamp") or []
     q = r["indicators"]["quote"][0]["close"]; adj = r["indicators"].get("adjclose", [{}])[0].get("adjclose", q)
-    out = dict(d=[datetime.datetime.utcfromtimestamp(x).strftime("%Y-%m-%d") for x in ts], close=q, adj=adj,
-               splits=[[datetime.datetime.utcfromtimestamp(int(k)).strftime("%Y-%m-%d"), v["numerator"] / v["denominator"]]
+    out = dict(d=[datetime.datetime.fromtimestamp(x, datetime.timezone.utc).strftime("%Y-%m-%d") for x in ts], close=q, adj=adj,
+               splits=[[datetime.datetime.fromtimestamp(int(k), datetime.timezone.utc).strftime("%Y-%m-%d"), v["numerator"] / v["denominator"]]
                        for k, v in (r.get("events", {}).get("splits") or {}).items()])
     f.write_text(json.dumps(out))
     return out

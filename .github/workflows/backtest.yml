@@ -1,5 +1,6 @@
 name: Backtest data
-# Downloads S&P 500 membership history, SEC annual figures (as first reported) and monthly prices for the backtest.
+# NOTE: the SEC blocks GitHub's servers (HTTP 403), so the data fetch must run on a home computer:
+#   python scripts/bt_fetch.py   then push data/backtest/. This workflow is kept for re-running the backtest only.
 on:
   workflow_dispatch: {}
   push:
@@ -21,7 +22,6 @@ jobs:
           key: bt-cache-v1-${{ github.run_id }}
           restore-keys: bt-cache-v1-
       - run: pip install pandas numpy lxml
-      - run: python scripts/sec_diag.py | tee data/backtest/sec_diag.log || true
       - name: Fetch
         run: |
           LIMIT=$(python -c "import json; print(json.load(open('.github/backtest-request.json')).get('limit', 0))" || echo 0)
