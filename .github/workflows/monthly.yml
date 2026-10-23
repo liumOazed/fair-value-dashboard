@@ -31,6 +31,7 @@ jobs:
       - run: pip install pandas numpy
       - run: python scripts/monthly.py --step "${{ inputs.step || 'both' }}" ${{ inputs.force && '--force' || '' }}
       - run: python scripts/update_prices.py || true
+      - run: python scripts/track.py --snapshot || true     # record this month's signals for the forward test
       - name: Commit changes
         run: |
           git config user.name "monthly-bot"

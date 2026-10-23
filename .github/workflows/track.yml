@@ -1,0 +1,27 @@
+name: Forward test
+# Records this month's signals (once) and refreshes their performance vs SPY.
+# Also runs after the monthly run and every weekday with the price update.
+on:
+  workflow_dispatch: {}
+  push:
+    paths: [".github/track-request.json"]
+  schedule:
+    - cron: "45 21 * * 1-5"    # weekdays after the US close
+permissions:
+  contents: write
+concurrency: { group: track, cancel-in-progress: false }
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python scripts/track.py --snapshot
+      - name: Commit
+        run: |
+          git config user.name "track-bot"
+          git config user.email "track-bot@users.noreply.github.com"
+          git add data/tracking/
+          git diff --staged --quiet || git commit -m "Forward test: $(date -u +%Y-%m-%d)"
+          git pull --rebase && git push
