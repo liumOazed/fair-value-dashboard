@@ -21,6 +21,7 @@ jobs:
           key: bt-cache-v1-${{ github.run_id }}
           restore-keys: bt-cache-v1-
       - run: pip install pandas numpy lxml
+      - run: python scripts/sec_diag.py | tee data/backtest/sec_diag.log || true
       - name: Fetch
         run: |
           LIMIT=$(python -c "import json; print(json.load(open('.github/backtest-request.json')).get('limit', 0))" || echo 0)
