@@ -33,9 +33,11 @@ def get(url, headers, tries=3):
 # ---------------------------------------------------------------- membership
 def membership():
     t = pd.read_html(io.BytesIO(get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", UA_WEB)))
-    cur = t[0]; ch = t[1]
+    flat = lambda df: ["_".join([str(x) for x in c if "Unnamed" not in str(x)]).strip("_") if isinstance(c, tuple) else str(c) for c in df.columns]
+    cur = next(x for x in t if "Symbol" in flat(x))
+    ch = next(x for x in t if any("Added" in c for c in flat(x)) and any("Removed" in c for c in flat(x)))
     cur_set = set(cur["Symbol"].astype(str).str.replace(".", "-", regex=False))
-    ch.columns = ["_".join([str(x) for x in c if "Unnamed" not in str(x)]).strip("_") if isinstance(c, tuple) else str(c) for c in ch.columns]
+    ch.columns = flat(ch)
     print("change-table columns:", list(ch.columns))
     dcol = [c for c in ch.columns if "date" in c.lower()][0]
     acol = [c for c in ch.columns if "Added" in c and "Ticker" in c][0]
