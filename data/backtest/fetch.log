@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 167, in <module>
+    main()
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 135, in main
+    mem, cur = membership()
+               ^^^^^^^^^^^^
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_fetch.py", line 39, in membership
+    dcol = [c for c in ch.columns if c.lower().startswith("date")][0]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
