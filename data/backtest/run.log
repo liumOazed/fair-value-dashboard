@@ -4,7 +4,13 @@ Traceback (most recent call last):
   File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_run.py", line 163, in main
     mem, facts, px, cur, t_of = load()
                                 ^^^^^^
-  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_run.py", line 32, in load
-    mem = json.load(open(B / "membership.json"))
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/fair-value-dashboard/fair-value-dashboard/data/backtest/membership.json'
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/scripts/bt_run.py", line 33, in load
+    facts = json.load(gzip.open(B / "facts.json.gz", "rt"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/gzip.py", line 65, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/gzip.py", line 201, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/fair-value-dashboard/fair-value-dashboard/data/backtest/facts.json.gz'
