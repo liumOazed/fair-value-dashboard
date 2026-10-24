@@ -125,6 +125,12 @@ function drawMC(r,w){const M=r.mc,box=$("#mcbox");if(!box)return;const px=(P.pri
  <div class="mini">Chance value is above price<b class="up">${pf(pAbove)}</b><span class="muted">model-implied</span></div>
  <div class="mini">Chance value is below price<b class="down">${pf(pAbove==null?null:1-pAbove)}</b><span class="muted">below half the price: ${pf(pHalf)}</span></div>
  <div class="mini">Chance of a ${(r.mos*100).toFixed(0)}% margin of safety<b>${pf(pMos)}</b><span class="muted">value ≥ ${px?$f(px/(1-r.mos)):"–"}</span></div></div>
+ <div class="wts" title="What-if weights: view only. The official fair value and the main table keep ${KS.map(k=>(P0[k]*100).toFixed(0)).join("/")}.">
+  <span class="wl">Odds</span>
+  <label class="wk wk-bear"><span class="sw mc-bear"></span>Bear<input type="range" min="0" max="100" step="5" value="${Math.round(wn("bear")*100)}" data-k="bear" aria-label="Bear weight"><b>${Math.round(wn("bear")*100)}%</b></label>
+  <span class="wk wk-base"><span class="sw mc-base"></span>Base <b>${Math.round(wn("base")*100)}%</b></span>
+  <label class="wk wk-bull"><span class="sw mc-bull"></span>Bull<input type="range" min="0" max="100" step="5" value="${Math.round(wn("bull")*100)}" data-k="bull" aria-label="Bull weight"><b>${Math.round(wn("bull")*100)}%</b></label>
+  ${isDef?"":`<button class="wreset" id="wreset" title="Back to the model's ${KS.map(k=>(P0[k]*100).toFixed(0)).join("/")}" aria-label="Reset weights">↺</button>`}</div>
  ${svg}<div class="mcleg">${KS.map(k=>`<span><span class="sw mc-${k}"></span>${KN[k]} ${(wn(k)*100).toFixed(0)}%</span>`).join("")}<span><span class="ln fv"></span>${isDef?"Fair value":"What-if fair value"}</span><span><span class="ln px"></span>Price</span></div>
  <p class="muted"><b>${isDef?"Fair value":"What-if fair value"} ${$f(fv)} vs median ${$f(med)}:</b> fair value is the weighted average of the three scenario values; the median is the middle run. ${Math.abs(fv/med-1)<0.02?"They are close, so the outcomes are fairly balanced.":right?"The average is higher because a minority of strong (mostly Bull) runs stretch far to the right.":"The average is lower because weak (mostly Bear) runs stretch far to the left."} The 10th percentile is a severe but not worst-case simulated value, not a price forecast.</p>
  <div class="scroll"><table class="s" style="margin-top:8px"><tr><th style="text-align:left">Percentile</th><th>10th</th><th>25th</th><th>Median</th><th>75th</th><th>90th</th></tr><tr><td style="text-align:left">Value per share</td>${[.1,.25,.5,.75,.9].map(p=>`<td>${$f(pc(p))}</td>`).join("")}</tr>
@@ -134,14 +140,11 @@ function drawMC(r,w){const M=r.mc,box=$("#mcbox");if(!box)return;const px=(P.pri
  ${RX?`<h3>Yearly return if you buy at today's price</h3>
  <p>Median <b>${rp(rq(.5))}</b> a year (10th percentile ${rp(rq(.1))}, 90th ${rp(rq(.9))}). Chance of beating your ${(r.required_return*100).toFixed(1)}% required return: <b>${pf(pBeat)}</b>, the same as the chance the value is above the price, by construction.</p>
  <p class="muted">For each run: the yearly return that makes its 10 years of cash flow plus the value after year 10 cost exactly today's price. It's the return from the business's own cash if you hold for the long run and the stock ends up priced on the same assumptions. It is not a share-price forecast, and it can't show a loss: the model's floor is about terminal growth (2.5%), so a low number here means "poor return", not "safe".${ir.inside?"":" Today's price is outside the range stored for this stock, so these figures are clipped."}</p>`:""}
- <h3>What-if weights</h3><p class="muted">The model uses ${KS.map(k=>(P0[k]*100).toFixed(0)).join(" / ")}. Move the sliders to see how a different view of the odds changes everything above. This doesn't change the table on the main page.</p>
- <div class="wts"><label>Bear <b>${Math.round(wn("bear")*100)}%</b><input type="range" min="0" max="100" step="5" value="${Math.round(wn("bear")*100)}" data-k="bear"></label>
- <label>Bull <b>${Math.round(wn("bull")*100)}%</b><input type="range" min="0" max="100" step="5" value="${Math.round(wn("bull")*100)}" data-k="bull"></label>
- <div>Base <b>${Math.round(wn("base")*100)}%</b><div class="muted">the rest</div></div><button class="chip" id="wreset"${isDef?" disabled":""}>Reset ${KS.map(k=>(P0[k]*100).toFixed(0)).join("/")}</button></div>
+
  <p class="muted">These probabilities are model-implied: only as good as the assumption ranges. A Sobol (quasi-Monte Carlo) check with ${M.sobol.n.toLocaleString()} points gives a median of ${$f(M.sobol.p50)} vs ${$f(M.p50)} at the model weights (${((M.sobol.p50/M.p50-1)*100).toFixed(1)}% difference), so the estimate is numerically stable. Stable is not the same as right: it can't test whether the assumption ranges themselves are realistic.</p>`;
  box.querySelectorAll(".wts input").forEach(inp=>{const k=inp.dataset.k,o=k==="bear"?"bull":"bear",ov=Math.round(wn(o)*100)/100;
   const cl=()=>Math.min(+inp.value/100,1-ov);
-  inp.oninput=()=>{const v=cl();inp.previousElementSibling.textContent=Math.round(v*100)+"%";box.querySelector(".wts div b").textContent=Math.round((1-v-ov)*100)+"%"};
+  inp.oninput=()=>{const v=cl();inp.nextElementSibling.textContent=Math.round(v*100)+"%";box.querySelector(".wk-base b").textContent=Math.round((1-v-ov)*100)+"%"};
   inp.onchange=()=>{const v=cl(),nw={};nw[k]=v;nw[o]=ov;nw.base=Math.max(0,1-v-ov);drawMC(r,nw)}});
  const rb=box.querySelector("#wreset");if(rb)rb.onclick=()=>drawMC(r,{bear:P0.bear,base:P0.base,bull:P0.bull})}
 function close(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on")}
