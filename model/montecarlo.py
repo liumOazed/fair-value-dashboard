@@ -37,25 +37,47 @@ def inputs(tk):
     sc = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}
     return s, r, m0, sc, s["net_cash"] + s["extra"]
 
-def value(rev0, m0, g1, g10, m, gt, r, nc, shares):
-    """Vectorised DCF identical to model.dcf (growth fades linearly, margin ramps over 5 years)."""
+def paths(rev0, m0, g1, g10, m):
+    """Cash-flow paths (n, 10): growth fades linearly from year 1 to year 10, margin ramps to target over 5 years."""
     t = np.arange(1, T + 1)
     g = g1[:, None] + (g10 - g1)[:, None] * (t - 1) / 9
     rev = rev0 * np.cumprod(1 + g, axis=1)
     mt = m0 + (m - m0)[:, None] * np.minimum(t, 5) / 5
-    fcf = rev * mt
-    df = (1 + r) ** -t
-    pv = (fcf * df).sum(axis=1)
-    tv = fcf[:, -1] * (1 + gt) / (r - gt) * df[-1]
-    return (pv + tv + nc) / shares
+    return rev * mt
 
-def simulate(tk, u):
-    """u: (n, 5) uniforms -> regime, 3 correlated shocks, terminal growth."""
+def pv_paths(fcf, gt, r, nc, shares):
+    """Value per share of cash-flow paths; r may be a scalar or one rate per run."""
+    t = np.arange(1, T + 1)
+    r = np.broadcast_to(np.asarray(r, float), (len(fcf),))
+    df = (1 + r[:, None]) ** -t
+    tv = fcf[:, -1] * (1 + gt) / (r - gt) * df[:, -1]
+    return ((fcf * df).sum(axis=1) + tv + nc) / shares
+
+def value(rev0, m0, g1, g10, m, gt, r, nc, shares):
+    """Vectorised DCF identical to model.dcf."""
+    return pv_paths(paths(rev0, m0, g1, g10, m), gt, r, nc, shares)
+
+def implied_returns(fcf, gt, nc, shares, price, hi=0.60, it=60):
+    """Per run: the yearly return that makes that run's cash flows (10 years + value after year 10) cost exactly
+    `price` today. Bisection; the value after year 10 needs a return above terminal growth, so the floor is gt + 0.25 pt."""
+    lo = gt + 0.0025; a = lo.copy(); b = np.full_like(lo, hi)
+    for _ in range(it):
+        mid = (a + b) / 2
+        up = pv_paths(fcf, gt, mid, nc, shares) > price      # still worth more than the price -> return is higher
+        a = np.where(up, mid, a); b = np.where(up, b, mid)
+    return (a + b) / 2
+
+def simulate(tk, u, stratify=False, full=False):
+    """u: (n, 5) uniforms -> regime, 3 correlated shocks, terminal growth.
+    stratify=True gives each regime exactly its weight in runs (30/50/20), so the page can re-weight regimes exactly."""
     s, r, m0, sc, nc = inputs(tk)
     n = len(u)
-    cum = np.cumsum([M["PROBS"][k] for k in KEYS])
-    reg = np.searchsorted(cum, u[:, 0] * cum[-1])
-    reg = np.minimum(reg, 2)
+    if stratify:
+        cnt = [round(M["PROBS"][k] * n) for k in KEYS]; cnt[1] = n - cnt[0] - cnt[2]
+        reg = np.repeat(np.arange(3), cnt)
+    else:
+        cum = np.cumsum([M["PROBS"][k] for k in KEYS])
+        reg = np.minimum(np.searchsorted(cum, u[:, 0] * cum[-1]), 2)
     z = norm.ppf(np.clip(u[:, 1:4], 1e-9, 1 - 1e-9)) @ L.T
     P = {p: np.array([sc[k][p] for k in KEYS]) for p in ("g1", "g10", "m")}
     sd = {p: max((P[p][2] - P[p][0]) / 8, 0.002) for p in P}
@@ -64,7 +86,11 @@ def simulate(tk, u):
     m = P["m"][reg] + z[:, 2] * sd["m"]
     gt = np.clip(M["GT"] + norm.ppf(np.clip(u[:, 4], 1e-9, 1 - 1e-9)) * 0.004, 0.01, 0.035)
     g10 = np.minimum(g10, r - 0.01); gt = np.minimum(gt, r - 0.015); m = np.maximum(m, 0.005)
-    return value(s["rev"], m0, g1, g10, m, gt, r, nc, s["shares"]), reg
+    fcf = paths(s["rev"], m0, g1, g10, m)
+    v = pv_paths(fcf, gt, r, nc, s["shares"])
+    if full:
+        return v, reg, dict(fcf=fcf, gt=gt, nc=nc, shares=s["shares"], r=r)
+    return v, reg
 
 def tornado(tk):
     """Base case; move one input to its bear and bull value (others at base). Sorted by total swing."""
@@ -89,7 +115,7 @@ def main():
         tk = a["ticker"]
         if tk not in M["STOCKS"]:
             continue
-        v, reg = simulate(tk, rng.random((N, 5)))
+        v, reg, X = simulate(tk, rng.random((N, 5)), stratify=True, full=True)
         sob = qmc.Sobol(d=5, scramble=True, seed=SEED).random_base2(m=14)        # 16,384 points
         vs, _ = simulate(tk, sob)
         q = np.quantile(v, np.linspace(0, 1, 101))
@@ -101,6 +127,20 @@ def main():
             sobol=dict(n=len(sob), p10=round(pc(vs, 10), 2), p50=round(pc(vs, 50), 2), p90=round(pc(vs, 90), 2)),
             tornado={k: (round(x, 2) if isinstance(x, float) else x) for k, x in tornado(tk).items()},
             note="Model-implied: Bear/Base/Bull drawn 30/50/20 with correlated noise on growth and margin; required return fixed.")
+        # per-regime distributions (the page re-weights them for the what-if weights)
+        q101 = np.linspace(0, 1, 101); q21 = np.linspace(0, 1, 21)
+        a["mc"]["regimes"] = {k: dict(weight=M["PROBS"][k], quantiles=[round(float(x), 2) for x in np.quantile(v[reg == i], q101)])
+                              for i, k in enumerate(KEYS)}
+        # implied yearly return at a grid of prices (multiples of fair value); the page interpolates at the live price
+        grid = [round(float(x), 4) for x in np.exp(np.linspace(np.log(0.3), np.log(3.0), 17))]
+        irr = {k: [] for k in KEYS}
+        for gmul in grid:
+            ir = implied_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"])
+            for i, k in enumerate(KEYS):
+                irr[k].append([round(float(x), 4) for x in np.quantile(ir[reg == i], q21)])
+        a["mc"]["irr"] = dict(price_multiples=grid, fair_value=a["fair_value"], quantiles_step=0.05, regimes=irr,
+                              note="Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. "
+                                   "Floor = terminal growth + 0.25 pt, cap 60%.")
         a["mc"]["tornado"]["rows"] = [{k: (round(x, 4) if isinstance(x, float) else x) for k, x in o.items()} for o in a["mc"]["tornado"]["rows"]]
         print(f"{tk:5} FV {a['fair_value']:9.2f}  MC mean {a['mc']['mean']:9.2f}  p10 {a['mc']['p10']:9.2f}  p50 {a['mc']['p50']:9.2f}  p90 {a['mc']['p90']:9.2f}"
               f"  | Sobol p50 {a['mc']['sobol']['p50']:9.2f} ({a['mc']['sobol']['p50'] / a['mc']['p50'] - 1:+.2%})")
