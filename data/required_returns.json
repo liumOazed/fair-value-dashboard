@@ -20,6 +20,22 @@
   "DECK":  {"r": 0.095, "reason": "Fashion and brand risk (HOKA, UGG) and tariffs, partly offset by $1.1B net cash."},
   "INCY":  {"r": 0.095, "reason": "Jakafi is ~60% of sales and loses patent protection later this decade."},
   "MKC":   {"r": 0.08,  "reason": "Below the 9% Consumer Defensive rate: spices are very stable demand. Note the pending Unilever Foods deal adds leverage risk."},
+  "EXPE":{"r": 0.105, "reason": "Online travel agent: cyclical, and the most exposed to AI agents booking directly with hotels and airlines."},
+  "BKNG":{"r": 0.095, "reason": "Dominant online travel platform with strong direct traffic; travel is cyclical and AI agents are a new disintermediation risk."},
+  "INTU":{"r": 0.10,  "reason": "Sticky TurboTax / QuickBooks franchises, but AI tax and bookkeeping agents are a real threat to pricing power."},
+  "ADSK":{"r": 0.10,  "reason": "Design software with high switching costs; exposed to construction and manufacturing cycles and AI-native design tools."},
+  "TPR": {"r": 0.10,  "reason": "Fashion brand (Coach) risk and tariffs; store leases add leverage."},
+  "VEEV":{"r": 0.095, "reason": "Mission-critical life-sciences software with large net cash; risk from Salesforce competition in CRM."},
+  "MNST":{"r": 0.085, "reason": "Below the 9% Consumer Defensive rate: very stable demand, no debt, long growth record."},
+  "ALLE":{"r": 0.09,  "reason": "Steady locks and access-control business; tied to the non-residential construction cycle, moderate debt."},
+  "FTNT":{"r": 0.10,  "reason": "Cybersecurity is durable demand, but firewall hardware refresh cycles make growth lumpy."},
+  "RMD": {"r": 0.09,  "reason": "Healthcare device leader with recurring masks revenue; GLP-1 drugs are a long-term demand risk."},
+  "V":   {"r": 0.085, "reason": "Above the 7.5% financials rate: payment networks are very durable but face regulation and new payment rails."},
+  "MA":  {"r": 0.085, "reason": "Above the 7.5% financials rate: payment networks are very durable but face regulation and new payment rails."},
+  "FIX": {"r": 0.11,  "reason": "Construction contractor at a cyclical peak driven by AI data-centre spending; earnings can fall fast if that slows."},
+  "CTAS":{"r": 0.085, "reason": "Very steady recurring uniform and facility services with a long record; slightly below the 9% industrials rate."},
+  "DXCM":{"r": 0.10,  "reason": "Growing device market but strong Abbott competition, pricing pressure and recent product-quality issues."},
+  "IDXX":{"r": 0.09,  "reason": "Recurring veterinary test revenue and a strong installed base; sensitive to vet-visit volumes."},
   "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
  }
 }
