@@ -92,9 +92,9 @@ const cdfQ=(q,x)=>{const n=q.length-1;if(x<=q[0])return 0;if(x>=q[n])return 1;le
 function mix(Q,w){const tot=KS.reduce((s,k)=>s+w[k],0)||1;const F=x=>KS.reduce((s,k)=>s+w[k]/tot*cdfQ(Q[k],x),0);
  const lo0=Math.min(...KS.map(k=>Q[k][0])),hi0=Math.max(...KS.map(k=>Q[k][Q[k].length-1]));
  const inv=p=>{let a=lo0,b=hi0;for(let i=0;i<60;i++){const m=(a+b)/2;if(F(m)<p)a=m;else b=m}return (a+b)/2};return {F,inv,tot}}
-function irrAt(I,m){const g=I.price_multiples,L=Math.log(m);let j=0;while(j<g.length-2&&Math.log(g[j+1])<L)j++;
+function irrAt(I,m,key){const g=I.price_multiples,L=Math.log(m);let j=0;while(j<g.length-2&&Math.log(g[j+1])<L)j++;
  const t=Math.min(1,Math.max(0,(L-Math.log(g[j]))/(Math.log(g[j+1])-Math.log(g[j]))));const out={};
- KS.forEach(k=>{const a=I.regimes[k][j],b=I.regimes[k][j+1];out[k]=a.map((x,i)=>x+(b[i]-x)*t)});return {Q:out,inside:m>=g[0]&&m<=g[g.length-1]}}
+ KS.forEach(k=>{const a=I[key][k][j],b=I[key][k][j+1];out[k]=a.map((x,i)=>x+(b[i]-x)*t)});return {Q:out,inside:m>=g[0]&&m<=g[g.length-1]}}
 function drawMC(r,w){const M=r.mc,box=$("#mcbox");if(!box)return;const px=(P.prices[r.ticker]||{}).price,$f=x=>"$"+(x>=1000?x.toFixed(0):x.toFixed(2));
  const P0=A.probabilities,isDef=KS.every(k=>Math.abs(w[k]-P0[k])<1e-9);
  const Q={};KS.forEach(k=>Q[k]=M.regimes[k].quantiles);const X=mix(Q,w),tot=X.tot,wn=k=>w[k]/tot;
@@ -113,18 +113,23 @@ function drawMC(r,w){const M=r.mc,box=$("#mcbox");if(!box)return;const px=(P.pri
  const svg=`<svg viewBox="0 0 ${W} ${H}" class="mcsvg" role="img" aria-label="Distribution of simulated value per share by case"><line x1="${pl}" x2="${W-pr}" y1="${H-pb}" y2="${H-pb}" class="mcax"/>${bars}${mark(fv,(isDef?"Fair value ":"What-if fair value ")+$f(fv),"mcfv",0)}${px?mark(px,"Price "+$f(px),"mcpx",1):""}
   <text x="${pl}" y="${H-8}" class="mct">${$f(lo)}</text><text x="${W-pr}" y="${H-8}" text-anchor="end" class="mct">${$f(hi)}</text><text x="${W/2}" y="${H-8}" text-anchor="middle" class="mct">value per share (1st–99th percentile of runs)</text></svg>`;
  // implied yearly return at the live price
- const I=M.irr,ir=px&&I?irrAt(I,px/I.fair_value):null,RX=ir?mix(ir.Q,w):null,rq=p=>RX?RX.inv(p):null,rp=x=>x==null?"–":(x*100).toFixed(1)+"%";
- const pBeat=RX?1-RX.F(r.required_return):null;
+ const I=M.irr,m0=px&&I?px/I.fair_value:null,ir=m0?irrAt(I,m0,"regimes"):null,hr=m0&&I.hold10?irrAt(I,m0,"hold10"):null;
+ const RX=ir?mix(ir.Q,w):null,HX=hr?mix(hr.Q,w):null,rq=p=>RX?RX.inv(p):null,hq=p=>HX?HX.inv(p):null,rp=x=>x==null?"–":(x*100).toFixed(1)+"%";
+ const rr=r.required_return,rrs=(rr*100).toFixed(1)+"%",pBeat=HX?1-HX.F(rr):RX?1-RX.F(rr):null,pLoss=HX?HX.F(0):null;
+ const avg=KS.every(k=>M.regimes[k].mean!=null)?KS.reduce((s,k)=>s+wn(k)*M.regimes[k].mean,0):null;
  // per-case table
- const rows=KS.map(k=>{const q=Q[k],F1=x=>cdfQ(q,x),iq=ir?ir.Q[k]:null;return `<tr><td style="text-align:left"><span class="sw mc-${k}"></span><b>${KN[k]}</b></td><td>${(wn(k)*100).toFixed(0)}%</td><td>${$f(q[50])}</td><td>${$f(q[10])} – ${$f(q[90])}</td><td>${px?pf(1-F1(px)):"–"}</td><td>${iq?rp(iq[10]):"–"}</td></tr>`}).join("");
- const right=fv>=med;
- box.innerHTML=`<p class="muted">${M.n.toLocaleString()} runs: Bear / Base / Bull in proportion to the weights, each with growth, long-run growth and margin varied together (correlated) and terminal growth around 2.5%. The ${(r.required_return*100).toFixed(1)}% required return is fixed: it's your choice, not an uncertainty.</p>
+ const rows=KS.map(k=>{const q=Q[k],F1=x=>cdfQ(q,x),iq=hr?hr.Q[k]:ir?ir.Q[k]:null;return `<tr><td style="text-align:left"><span class="sw mc-${k}"></span><b>${KN[k]}</b></td><td>${(wn(k)*100).toFixed(0)}%</td><td>${$f(q[50])}</td><td>${$f(q[10])} – ${$f(q[90])}</td><td>${px?pf(1-F1(px)):"–"}</td><td>${iq?rp(iq[10]):"–"}</td></tr>`}).join("");
+ const right=fv>=med,P5=[.1,.25,.5,.75,.9];
+ box.innerHTML=`<p class="muted">${M.n.toLocaleString()} runs: Bear / Base / Bull in proportion to the weights, each with growth, long-run growth and margin varied together (correlated) and terminal growth around 2.5%. The ${rrs} required return is fixed: it's your choice, not an uncertainty. <b>Values</b> are what the business is worth <b>today</b> at ${rrs}; <b>returns</b> are what you'd earn a year buying at today's price.</p>
  <div class="grid3"><div class="mini">Today's price<b>${px?$f(px):"–"}</b><span class="muted">live</span></div>
- <div class="mini">Median value<b>${$f(med)}</b><span class="muted">${rel(med)}</span></div>
+ <div class="mini">Median value today<b>${$f(med)}</b><span class="muted">${rel(med)} · the middle run</span></div>
+ <div class="mini">Average value today<b>${avg==null?"–":$f(avg)}</b><span class="muted">${avg==null?"":rel(avg)+" · mean of all runs"}</span></div>
  <div class="mini">Downside (10th percentile)<b>${$f(p10)}</b><span class="muted">${rel(p10)}</span></div>
  <div class="mini">Chance value is above price<b class="up">${pf(pAbove)}</b><span class="muted">model-implied</span></div>
  <div class="mini">Chance value is below price<b class="down">${pf(pAbove==null?null:1-pAbove)}</b><span class="muted">below half the price: ${pf(pHalf)}</span></div>
- <div class="mini">Chance of a ${(r.mos*100).toFixed(0)}% margin of safety<b>${pf(pMos)}</b><span class="muted">value ≥ ${px?$f(px/(1-r.mos)):"–"}</span></div></div>
+ <div class="mini">Chance of a ${(r.mos*100).toFixed(0)}% margin of safety<b>${pf(pMos)}</b><span class="muted">value ≥ ${px?$f(px/(1-r.mos)):"–"}</span></div>
+ <div class="mini">10-year return, median<b>${rp(hq(.5))}</b><span class="muted">a year · beats ${rrs}: ${pf(pBeat)}</span></div>
+ <div class="mini">Chance of a loss over 10 years<b class="${pLoss>.1?"down":""}">${pf(pLoss)}</b><span class="muted">yearly return below 0%</span></div></div>
  <div class="wts" title="What-if weights: view only. The official fair value and the main table keep ${KS.map(k=>(P0[k]*100).toFixed(0)).join("/")}.">
   <span class="wl">Odds</span>
   <label class="wk wk-bear"><span class="sw mc-bear"></span>Bear<input type="range" min="0" max="100" step="5" value="${Math.round(wn("bear")*100)}" data-k="bear" aria-label="Bear weight"><b>${Math.round(wn("bear")*100)}%</b></label>
@@ -132,14 +137,18 @@ function drawMC(r,w){const M=r.mc,box=$("#mcbox");if(!box)return;const px=(P.pri
   <label class="wk wk-bull"><span class="sw mc-bull"></span>Bull<input type="range" min="0" max="100" step="5" value="${Math.round(wn("bull")*100)}" data-k="bull" aria-label="Bull weight"><b>${Math.round(wn("bull")*100)}%</b></label>
   ${isDef?"":`<button class="wreset" id="wreset" title="Back to the model's ${KS.map(k=>(P0[k]*100).toFixed(0)).join("/")}" aria-label="Reset weights">↺</button>`}</div>
  ${svg}<div class="mcleg">${KS.map(k=>`<span><span class="sw mc-${k}"></span>${KN[k]} ${(wn(k)*100).toFixed(0)}%</span>`).join("")}<span><span class="ln fv"></span>${isDef?"Fair value":"What-if fair value"}</span><span><span class="ln px"></span>Price</span></div>
- <p class="muted"><b>${isDef?"Fair value":"What-if fair value"} ${$f(fv)} vs median ${$f(med)}:</b> fair value is the weighted average of the three scenario values; the median is the middle run. ${Math.abs(fv/med-1)<0.02?"They are close, so the outcomes are fairly balanced.":right?"The average is higher because a minority of strong (mostly Bull) runs stretch far to the right.":"The average is lower because weak (mostly Bear) runs stretch far to the left."} The 10th percentile is a severe but not worst-case simulated value, not a price forecast.</p>
- <div class="scroll"><table class="s" style="margin-top:8px"><tr><th style="text-align:left">Percentile</th><th>10th</th><th>25th</th><th>Median</th><th>75th</th><th>90th</th></tr><tr><td style="text-align:left">Value per share</td>${[.1,.25,.5,.75,.9].map(p=>`<td>${$f(pc(p))}</td>`).join("")}</tr>
- ${RX?`<tr><td style="text-align:left">Yearly return at today's price</td>${[.1,.25,.5,.75,.9].map(p=>`<td>${rp(rq(p))}</td>`).join("")}</tr>`:""}</table></div>
+ <p class="muted"><b>${isDef?"Fair value":"What-if fair value"} ${$f(fv)}, average ${avg==null?"–":$f(avg)}, median ${$f(med)}:</b> fair value weights the three scenario values; the average is the mean of all runs (close to fair value); the median is the middle run. ${Math.abs(fv/med-1)<0.02?"Average and median are close, so outcomes are fairly balanced.":right?"The average sits above the median because a minority of strong (mostly Bull) runs stretch far to the right.":"The average sits below the median because weak (mostly Bear) runs stretch far to the left."} The 10th percentile is a severe but not worst-case simulated value, not a price forecast.</p>
+ <div class="scroll"><table class="s" style="margin-top:8px"><tr><th style="text-align:left">Percentile</th><th>10th</th><th>25th</th><th>Median</th><th>75th</th><th>90th</th></tr><tr><td style="text-align:left">Value today, per share</td>${P5.map(p=>`<td>${$f(pc(p))}</td>`).join("")}</tr>
+ ${HX?`<tr><td style="text-align:left">Yearly return, 10-year hold</td>${P5.map(p=>`<td>${rp(hq(p))}</td>`).join("")}</tr>`:""}
+ ${RX?`<tr><td style="text-align:left">Yearly return, hold for good</td>${P5.map(p=>`<td>${rp(rq(p))}</td>`).join("")}</tr>`:""}</table></div>
  <h3>Where the outcomes come from</h3><p class="muted">The same runs split by case. If the right tail is mostly Bull, the upside depends on the optimistic story coming true.</p>
- <div class="scroll"><table class="s"><tr><th style="text-align:left">Case</th><th>Weight</th><th>Median value</th><th>10th – 90th</th><th>Above price</th><th>Median return / yr</th></tr>${rows}</table></div>
- ${RX?`<h3>Yearly return if you buy at today's price</h3>
- <p>Median <b>${rp(rq(.5))}</b> a year (10th percentile ${rp(rq(.1))}, 90th ${rp(rq(.9))}). Chance of beating your ${(r.required_return*100).toFixed(1)}% required return: <b>${pf(pBeat)}</b>, the same as the chance the value is above the price, by construction.</p>
- <p class="muted">For each run: the yearly return that makes its 10 years of cash flow plus the value after year 10 cost exactly today's price. It's the return from the business's own cash if you hold for the long run and the stock ends up priced on the same assumptions. It is not a share-price forecast, and it can't show a loss: the model's floor is about terminal growth (2.5%), so a low number here means "poor return", not "safe".${ir.inside?"":" Today's price is outside the range stored for this stock, so these figures are clipped."}</p>`:""}
+ <div class="scroll"><table class="s"><tr><th style="text-align:left">Case</th><th>Weight</th><th>Median value today</th><th>10th – 90th</th><th>Above price</th><th>Median 10-yr return</th></tr>${rows}</table></div>
+ ${HX||RX?`<h3>Yearly return if you buy at today's price</h3>
+ <div class="scroll"><table class="s"><tr><th style="text-align:left">Version</th><th>Median</th><th>10th – 90th</th><th style="text-align:left;white-space:normal">What it assumes</th></tr>
+ ${HX?`<tr><td style="text-align:left"><b>10-year hold</b></td><td><b>${rp(hq(.5))}</b></td><td>${rp(hq(.1))} – ${rp(hq(.9))}</td><td style="text-align:left;white-space:normal">You buy at ${$f(px)}, receive 10 years of the business's free cash flow, then sell at the end of year 10 at the price that gives the next buyer ${rrs} (the gap closes in year 10). Can be negative: chance of a loss ${pf(pLoss)}.</td></tr>`:""}
+ ${RX?`<tr><td style="text-align:left"><b>Hold for good</b></td><td>${rp(rq(.5))}</td><td>${rp(rq(.1))} – ${rp(rq(.9))}</td><td style="text-align:left;white-space:normal">You never sell: 10 years of cash flow, then cash growing at terminal growth forever. Can't go below about 2.5%, so a low number means "poor return", not "safe".</td></tr>`:""}</table></div>
+ <p class="muted"><b>Why the median return can be positive while the median value is below the price:</b> the value is worth-it-at-${rrs} today, not a future price. Paying more than that still earns a positive return, just less than ${rrs}. (A bond paying $10 a year forever is worth $100 at 10%; buy it for $125 and you still earn 8%.)</p>
+ <p class="muted"><b>Why "beats ${rrs}" equals "value above price" (${pf(pBeat)} both):</b> in each run, the value falls as the discount rate rises. The return is the rate where value = price, so value at ${rrs} ≥ price exactly when the return ≥ ${rrs}. That holds for both versions here; it would not if the exit were priced differently (say, at a fixed P/E). Free cash flow is counted as yours whether it's paid as dividends, buybacks or kept in the business.${(ir&&!ir.inside)?" Today's price is outside the range stored for this stock, so these figures are clipped.":""}</p>`:""}
 
  <p class="muted">These probabilities are model-implied: only as good as the assumption ranges. A Sobol (quasi-Monte Carlo) check with ${M.sobol.n.toLocaleString()} points gives a median of ${$f(M.sobol.p50)} vs ${$f(M.p50)} at the model weights (${((M.sobol.p50/M.p50-1)*100).toFixed(1)}% difference), so the estimate is numerically stable. Stable is not the same as right: it can't test whether the assumption ranges themselves are realistic.</p>`;
  box.querySelectorAll(".wts input").forEach(inp=>{const k=inp.dataset.k,o=k==="bear"?"bull":"bear",ov=Math.round(wn(o)*100)/100;

@@ -107,6 +107,22 @@ def tornado(tk):
     for o in out: o["swing"] = abs(o["high"] - o["low"])
     return dict(base=base, rows=sorted(out, key=lambda o: -o["swing"]))
 
+def hold_returns(fcf, gt, nc, shares, price, r, lo=-0.6, hi=0.8, it=60):
+    """Per run: yearly return if you buy at `price`, collect 10 years of cash flow and sell at the end of year 10 at the
+    price that gives the next buyer the required return r (the gap closes in year 10). At return = r this is exactly the
+    model value, so 'return beats r' <=> 'value at r beats price'. Can be negative."""
+    t = np.arange(1, T + 1)
+    exit_ = fcf[:, -1] * (1 + gt) / (r - gt)
+    def val(x):
+        df = (1 + x[:, None]) ** -t
+        return ((fcf * df).sum(axis=1) + exit_ * df[:, -1] + nc) / shares
+    a = np.full(len(fcf), lo); b = np.full(len(fcf), hi)
+    for _ in range(it):
+        mid = (a + b) / 2
+        up = val(mid) > price
+        a = np.where(up, mid, a); b = np.where(up, b, mid)
+    return (a + b) / 2
+
 def main():
     path = ROOT / "data/assets.json"
     doc = json.load(open(path))
@@ -129,16 +145,18 @@ def main():
             note="Model-implied: Bear/Base/Bull drawn 30/50/20 with correlated noise on growth and margin; required return fixed.")
         # per-regime distributions (the page re-weights them for the what-if weights)
         q101 = np.linspace(0, 1, 101); q21 = np.linspace(0, 1, 21)
-        a["mc"]["regimes"] = {k: dict(weight=M["PROBS"][k], quantiles=[round(float(x), 2) for x in np.quantile(v[reg == i], q101)])
+        a["mc"]["regimes"] = {k: dict(weight=M["PROBS"][k], mean=round(float(v[reg == i].mean()), 2), quantiles=[round(float(x), 2) for x in np.quantile(v[reg == i], q101)])
                               for i, k in enumerate(KEYS)}
         # implied yearly return at a grid of prices (multiples of fair value); the page interpolates at the live price
         grid = [round(float(x), 4) for x in np.exp(np.linspace(np.log(0.3), np.log(3.0), 17))]
-        irr = {k: [] for k in KEYS}
+        irr = {k: [] for k in KEYS}; hold = {k: [] for k in KEYS}
         for gmul in grid:
             ir = implied_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"])
+            hr = hold_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"], X["r"])
             for i, k in enumerate(KEYS):
                 irr[k].append([round(float(x), 4) for x in np.quantile(ir[reg == i], q21)])
-        a["mc"]["irr"] = dict(price_multiples=grid, fair_value=a["fair_value"], quantiles_step=0.05, regimes=irr,
+                hold[k].append([round(float(x), 4) for x in np.quantile(hr[reg == i], q21)])
+        a["mc"]["irr"] = dict(price_multiples=grid, fair_value=a["fair_value"], quantiles_step=0.05, regimes=irr, hold10=hold,
                               note="Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. "
                                    "Floor = terminal growth + 0.25 pt, cap 60%.")
         a["mc"]["tornado"]["rows"] = [{k: (round(x, 4) if isinstance(x, float) else x) for k, x in o.items()} for o in a["mc"]["tornado"]["rows"]]
