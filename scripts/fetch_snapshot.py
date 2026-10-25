@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch the extra history the Fair Value snapshot needs (runs on GitHub; Yahoo via yfinance).
 Per stock: dividend history, 4-5 annual years of income / balance sheet / cash flow (margins, ROIC, payout, buybacks),
-the latest quarterly balance sheet (current ratio, cash vs debt) and 6 years of month-end prices (for P/E, EV/EBITDA and
+the latest quarterly balance sheet (current ratio, cash vs debt) and 6 years of month-end prices (split-adjusted) plus the split history (for P/E, EV/EBITDA and
 FCF-yield ranges). Debt maturities are not in Yahoo's free data, so they are not fetched.
 Usage: python scripts/fetch_snapshot.py [--tickers AAPL,MSFT] --out data/snapshot_raw.json
 (default tickers: every stock in data/assets.json)
@@ -70,6 +70,8 @@ def fetch(t):
     if divs is not None and len(divs):
         cut = divs.index[-1] - __import__("pandas").Timedelta(days=365)
         last12 = float(divs[divs.index > cut].sum())
+    sp = get(tk, "splits")
+    splits = {str(d)[:10]: float(v) for d, v in sp.items()} if sp is not None and len(sp) else {}
     px = get(tk, "history", period="6y", interval="1mo", auto_adjust=False)
     prices = {}
     if px is not None and not px.empty:
@@ -84,7 +86,7 @@ def fetch(t):
         dividends=dict(by_year=dps, ttm=last12, last_date=str(divs.index[-1])[:10] if divs is not None and len(divs) else None),
         annual=dict(inc=table(get(tk, "income_stmt"), INC), bal=table(get(tk, "balance_sheet"), BAL), cfs=table(get(tk, "cashflow"), CFS)),
         quarterly_bal=table(get(tk, "quarterly_balance_sheet"), BAL, 1),
-        monthly_prices=prices,
+        monthly_prices=prices, splits=splits,
     )
 
 

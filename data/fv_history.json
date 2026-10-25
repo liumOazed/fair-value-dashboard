@@ -1,0 +1,355 @@
+{
+ "_about": "Fair value recorded at each model refresh (export_assets.py). Price = live price when exported. Recording started 2026-10-25 (earlier values used a different method).",
+ "AAPL": [
+  {
+   "date": "2026-10-23",
+   "fv": 178.61,
+   "bear": 144.39,
+   "base": 180.56,
+   "bull": 225.09,
+   "price": 347.73,
+   "method": "fcff_re"
+  }
+ ],
+ "MSFT": [
+  {
+   "date": "2026-10-23",
+   "fv": 329.27,
+   "bear": 202.63,
+   "base": 349.71,
+   "bull": 468.11,
+   "price": 524.51,
+   "method": "fcff_re"
+  }
+ ],
+ "GOOGL": [
+  {
+   "date": "2026-10-23",
+   "fv": 204.71,
+   "bear": 118.13,
+   "base": 212.55,
+   "bull": 314.97,
+   "price": 320.21,
+   "method": "fcff_re"
+  }
+ ],
+ "AMZN": [
+  {
+   "date": "2026-10-23",
+   "fv": 101.55,
+   "bear": 43.05,
+   "base": 104.77,
+   "bull": 181.27,
+   "price": 248.0,
+   "method": "fcff_re"
+  }
+ ],
+ "QQQ": [
+  {
+   "date": "2026-10-14",
+   "fv": 536.27,
+   "bear": 346.54,
+   "base": 562.21,
+   "bull": 756.02,
+   "price": 704.4,
+   "method": null
+  }
+ ],
+ "GLD": [
+  {
+   "date": "2026-10-14",
+   "fv": 370.0,
+   "bear": 305.25,
+   "base": 379.25,
+   "bull": 462.5,
+   "price": 366.61,
+   "method": null
+  }
+ ],
+ "NVDA": [
+  {
+   "date": "2026-10-23",
+   "fv": 170.87,
+   "bear": 72.64,
+   "base": 164.03,
+   "bull": 335.33,
+   "price": 210.96,
+   "method": "fcff_re"
+  }
+ ],
+ "AVGO": [
+  {
+   "date": "2026-10-23",
+   "fv": 256.7,
+   "bear": 118.33,
+   "base": 263.73,
+   "bull": 446.69,
+   "price": 321.68,
+   "method": "fcff_re"
+  }
+ ],
+ "LLY": [
+  {
+   "date": "2026-10-23",
+   "fv": 891.61,
+   "bear": 420.97,
+   "base": 910.7,
+   "bull": 1549.82,
+   "price": 1273.46,
+   "method": "fcff_re"
+  }
+ ],
+ "ADBE": [
+  {
+   "date": "2026-10-23",
+   "fv": 365.06,
+   "bear": 209.26,
+   "base": 390.08,
+   "bull": 536.2,
+   "price": 263.82,
+   "method": "fcff_re"
+  }
+ ],
+ "APP": [
+  {
+   "date": "2026-10-23",
+   "fv": 378.6,
+   "bear": 164.9,
+   "base": 367.37,
+   "bull": 727.21,
+   "price": 260.25,
+   "method": "fcff_re"
+  }
+ ],
+ "FICO": [
+  {
+   "date": "2026-10-23",
+   "fv": 707.55,
+   "bear": 438.75,
+   "base": 726.18,
+   "bull": 1064.2,
+   "price": 815.31,
+   "method": "fcff_re"
+  }
+ ],
+ "APA": [
+  {
+   "date": "2026-10-23",
+   "fv": 37.62,
+   "bear": 19.51,
+   "base": 37.26,
+   "bull": 65.67,
+   "price": 51.9,
+   "method": "fcff_re"
+  }
+ ],
+ "DECK": [
+  {
+   "date": "2026-10-23",
+   "fv": 130.1,
+   "bear": 90.36,
+   "base": 134.96,
+   "bull": 177.54,
+   "price": 81.09,
+   "method": "fcff_re"
+  }
+ ],
+ "INCY": [
+  {
+   "date": "2026-10-23",
+   "fv": 118.62,
+   "bear": 80.38,
+   "base": 119.08,
+   "bull": 174.85,
+   "price": 115.71,
+   "method": "fcff_re"
+  }
+ ],
+ "MKC": [
+  {
+   "date": "2026-10-23",
+   "fv": 62.27,
+   "bear": 42.18,
+   "base": 65.8,
+   "bull": 83.6,
+   "price": 48.12,
+   "method": "fcff_re"
+  }
+ ],
+ "EXPE": [
+  {
+   "date": "2026-10-24",
+   "fv": 371.08,
+   "bear": 228.91,
+   "base": 395.61,
+   "bull": 522.98,
+   "price": 289.01,
+   "method": "fcff_re"
+  }
+ ],
+ "BKNG": [
+  {
+   "date": "2026-10-24",
+   "fv": 217.63,
+   "bear": 155.06,
+   "base": 229.05,
+   "bull": 282.9,
+   "price": 155.83,
+   "method": "fcff_re"
+  }
+ ],
+ "INTU": [
+  {
+   "date": "2026-10-24",
+   "fv": 393.48,
+   "bear": 270.78,
+   "base": 410.81,
+   "bull": 534.24,
+   "price": 343.39,
+   "method": "fcff_re"
+  }
+ ],
+ "ADSK": [
+  {
+   "date": "2026-10-24",
+   "fv": 212.89,
+   "bear": 144.6,
+   "base": 222.38,
+   "bull": 291.61,
+   "price": 252.2,
+   "method": "fcff_re"
+  }
+ ],
+ "TPR": [
+  {
+   "date": "2026-10-24",
+   "fv": 90.81,
+   "bear": 50.59,
+   "base": 97.99,
+   "bull": 133.2,
+   "price": 110.37,
+   "method": "fcff_re"
+  }
+ ],
+ "VEEV": [
+  {
+   "date": "2026-10-24",
+   "fv": 204.3,
+   "bear": 156.82,
+   "base": 212.01,
+   "bull": 256.25,
+   "price": 323.04,
+   "method": "fcff_re"
+  }
+ ],
+ "MNST": [
+  {
+   "date": "2026-10-24",
+   "fv": 24.41,
+   "bear": 17.65,
+   "base": 25.45,
+   "bull": 31.97,
+   "price": 46.19,
+   "method": "fcff_re"
+  }
+ ],
+ "ALLE": [
+  {
+   "date": "2026-10-24",
+   "fv": 136.4,
+   "bear": 91.59,
+   "base": 145.59,
+   "bull": 180.63,
+   "price": 178.98,
+   "method": "fcff_re"
+  }
+ ],
+ "FTNT": [
+  {
+   "date": "2026-10-24",
+   "fv": 67.83,
+   "bear": 49.02,
+   "base": 69.95,
+   "bull": 90.74,
+   "price": 179.99,
+   "method": "fcff_re"
+  }
+ ],
+ "RMD": [
+  {
+   "date": "2026-10-24",
+   "fv": 197.5,
+   "bear": 144.98,
+   "base": 205.64,
+   "bull": 255.95,
+   "price": 252.86,
+   "method": "fcff_re"
+  }
+ ],
+ "V": [
+  {
+   "date": "2026-10-24",
+   "fv": 299.91,
+   "bear": 236.98,
+   "base": 309.49,
+   "bull": 370.36,
+   "price": 407.92,
+   "method": "fcff_re"
+  }
+ ],
+ "FIX": [
+  {
+   "date": "2026-10-24",
+   "fv": 739.17,
+   "bear": 309.54,
+   "base": 797.72,
+   "bull": 1237.25,
+   "price": 1160.86,
+   "method": "fcff_re"
+  }
+ ],
+ "MA": [
+  {
+   "date": "2026-10-24",
+   "fv": 481.22,
+   "bear": 369.36,
+   "base": 504.03,
+   "bull": 591.98,
+   "price": 623.6,
+   "method": "fcff_re"
+  }
+ ],
+ "CTAS": [
+  {
+   "date": "2026-10-24",
+   "fv": 98.15,
+   "bear": 73.95,
+   "base": 103.42,
+   "bull": 121.29,
+   "price": 224.1,
+   "method": "fcff_re"
+  }
+ ],
+ "DXCM": [
+  {
+   "date": "2026-10-24",
+   "fv": 56.64,
+   "bear": 34.4,
+   "base": 60.08,
+   "bull": 81.36,
+   "price": 77.94,
+   "method": "fcff_re"
+  }
+ ],
+ "IDXX": [
+  {
+   "date": "2026-10-24",
+   "fv": 296.32,
+   "bear": 215.92,
+   "base": 309.9,
+   "bull": 382.94,
+   "price": 560.38,
+   "method": "fcff_re"
+  }
+ ]
+}

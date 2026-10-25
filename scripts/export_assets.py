@@ -32,4 +32,18 @@ for t, a in res["assets"].items():
     by[t] = e
 doc["assets"] = list(by.values())
 json.dump(doc, open(path, "w"), indent=1)
+# fair value history: one point per ticker per valuation (date, fair value, bear/base/bull, price on the day), appended
+hp = ROOT / "data/fv_history.json"
+hist = json.load(open(hp)) if hp.exists() else {"_about": "Fair value recorded at each model refresh (export_assets.py). Price = live price when exported."}
+prices = json.load(open(ROOT / "data/prices.json")).get("prices", {})
+for t, e in by.items():
+    if only and t not in only: continue
+    pt = dict(date=e["valued_on"], fv=e["fair_value"], bear=e["bear"], base=e["base"], bull=e["bull"],
+              price=(prices.get(t) or {}).get("price"), method=e.get("dcf_method"))
+    L = hist.setdefault(t, [])
+    if L and L[-1]["date"] == pt["date"]:
+        L[-1] = pt                      # same valuation date: keep the latest numbers
+    elif not L or abs(L[-1]["fv"] - pt["fv"]) > 1e-9 or L[-1]["date"] != pt["date"]:
+        L.append(pt)
+json.dump(hist, open(hp, "w"), indent=1)
 print("updated", sorted(only) if only else "all", "->", len(doc["assets"]), "assets")
