@@ -11,8 +11,8 @@ function status(a){const p=a.price,fv=a.fair_value;
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 $("#theme").onclick=()=>{const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1020";const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
 $("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
-let A,P,TH={};
-try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help}
+let A,P,TH={},SN={stocks:{}},FH={};
+try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))])}
 catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open this page through GitHub Pages (or a local server such as <code>python -m http.server</code>), not by double-clicking the file.</div>';return}
 let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  const r={...a,price,prev:p.prev_close,history:p.history||[]};
@@ -76,14 +76,11 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  let sens="";if(r.sensitivity){sens=`<h3>Sensitivity (base case value per share)</h3><div class="scroll"><table class="s"><tr><th>Required return ↓ / terminal growth →</th>${r.sensitivity.g.map(g=>`<th>${(g*100).toFixed(1)}%</th>`).join("")}</tr>`+
   r.sensitivity.grid.map((row,i)=>`<tr><th>${(r.sensitivity.r[i]*100).toFixed(1)}%</th>${row.map((v,j)=>`<td class="${i==2&&j==2?"hl":""}">${v.toFixed(0)}</td>`).join("")}</tr>`).join("")+"</table></div>"}
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
- <p><span class="badge ${BANDS[r.status][1]}">${BANDS[r.status][0]}</span></p>
- <div class="grid2"><div class="mini">Price<b>${usd(r.price)}</b></div><div class="mini">Fair value<b>${usd(r.fair_value)}</b></div>
- <div class="mini">Buy below (${(r.mos*100).toFixed(0)}% MoS)<b>${usd(r.buy_below)}</b></div><div class="mini">Price vs fair value<b>${pct(r.diff)}</b></div>
- <div class="mini">No-growth value (EPV)<b>${usd(r.epv)}</b></div><div class="mini">Implied annual return at this price<b>${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</b></div></div>
+ ${snapHTML(r)}
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
  ${r.reverse_g1!=null?`<h3>What the price implies</h3><p>${r.reverse_g1<0?`At today's price and a ${(r.required_return*100).toFixed(1)}% required return, the market is pricing in year-1 sales <b>shrinking about ${Math.abs(r.reverse_g1*100).toFixed(0)}%</b>, then recovering to the base long-run rate. That is a pessimistic view.`:`To justify today's price at a ${(r.required_return*100).toFixed(1)}% required return, year-1 growth would need to be about <b>${(r.reverse_g1*100).toFixed(0)}%</b> fading to the base long-run rate.`} Terminal value is ${(r.tv_share*100).toFixed(0)}% of the base DCF.</p>`:""}
  ${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
- $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
+ $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;bindSnap();if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
 
 // ---------- Monte Carlo section: mixes the three regime distributions with weights w (30/50/20 by default) ----------
@@ -156,6 +153,74 @@ function drawMC(r,w){const M=r.mc,box=$("#mcbox");if(!box)return;const px=(P.pri
   inp.oninput=()=>{const v=cl();inp.nextElementSibling.textContent=Math.round(v*100)+"%";box.querySelector(".wk-base b").textContent=Math.round((1-v-ov)*100)+"%"};
   inp.onchange=()=>{const v=cl(),nw={};nw[k]=v;nw[o]=ov;nw.base=Math.max(0,1-v-ov);drawMC(r,nw)}});
  const rb=box.querySelector("#wreset");if(rb)rb.onclick=()=>drawMC(r,{bear:P0.bear,base:P0.base,bull:P0.bull})}
+// ---------- Snapshot: flags, five quality cards, valuation strip, what to watch, fair value history ----------
+const GC={Strong:"g-s",OK:"g-o",Weak:"g-w",Reinvests:"g-n","n/a":"g-n"};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function spark2(tr){if(!tr||!tr.points||tr.points.length<2)return "";const v=tr.points.map(p=>p[1]),ref=tr.ref,all=ref!=null?[...v,ref]:v,mn=Math.min(...all),mx=Math.max(...all),w=116,h=30,
+ X=i=>3+i/(v.length-1)*(w-6),Y=x=>h-4-(x-mn)/((mx-mn)||1)*(h-8);
+ return `<svg class="spk" viewBox="0 0 ${w} ${h}" aria-label="${esc(tr.label)}"><title>${esc(tr.label)}: ${tr.points.map(p=>p[0]+" "+p[1]+(tr.unit||"")).join(", ")}${ref!=null?" (cost of capital "+ref+"%)":""}</title>${ref!=null?`<line x1="2" x2="${w-2}" y1="${Y(ref)}" y2="${Y(ref)}" class="spkref"/>`:""}<polyline points="${v.map((x,i)=>X(i).toFixed(1)+","+Y(x).toFixed(1)).join(" ")}" class="spkl"/><circle cx="${X(v.length-1)}" cy="${Y(v[v.length-1])}" r="2.6" class="spkd"/></svg>`}
+const pbar=(p,name)=>p==null?"":`<span class="pbar" title="${p}th percentile in ${esc(name||"sector")} (higher = better)"><i style="left:${Math.min(97,Math.max(3,p))}%"></i></span><span class="pct">${p}th</span>`;
+function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=1000?x.toLocaleString("en-US",{maximumFractionDigits:0}):x.toFixed(2));
+ // flags (static from the build + live price-based)
+ const fl=[...(S?S.flags:[])];
+ if(r.diff>0.5)fl.unshift({t:`Price ${(r.diff*100).toFixed(0)}% above fair value`,d:"Even the bull case may not justify today's price; see the valuation strip."});
+ if(px<=r.buy_below)fl.unshift({t:"Below buy-below price",d:`Price is under ${$f(r.buy_below)}, the fair value less the ${(r.mos*100).toFixed(0)}% margin of safety.`});
+ const flags=fl.length?`<div class="flags">${fl.map(f=>`<details class="flag"><summary>${esc(f.t)}</summary><div>${esc(f.d)}</div></details>`).join("")}</div>`:"";
+ // quality cards
+ let q="";if(S){const sn=S.valuation.sector_pct.name;
+  q=`<div class="snaphd"><b>Business quality</b><span class="muted">Is it a good company? (price not included)</span></div><div class="cards">`+
+  S.cards.map((c,i)=>`<button class="qc" data-i="${i}" aria-expanded="false"><span class="qt">${c.title}</span><span class="gr ${GC[c.grade]||"g-n"}"><i></i>${c.grade}</span>
+   <span class="qq">${esc(c.question)}</span><span class="qh">${c.headline.map(esc).join(" · ")||"–"}</span>${spark2(c.trend)}</button>`).join("")+`</div><div id="qdet" class="qdet" hidden></div>`;
+  window.__snapCards=S.cards.map(c=>`<div class="qdh"><b>${c.title}</b> <span class="gr ${GC[c.grade]||"g-n"}"><i></i>${c.grade}</span> <span class="muted">${esc(c.question)}${c.note?" "+esc(c.note):""}</span></div>
+   <div class="scroll"><table class="s qtab"><tr><th style="text-align:left">Metric</th><th>Value</th><th>Grade</th><th style="text-align:left">vs ${esc(sn)}</th></tr>`+
+   c.metrics.map(m=>`<tr class="${m.graded?"":"info"}"><td style="text-align:left;white-space:normal">${esc(m.label)}${m.note?`<div class="muted mnote">${esc(m.note)}</div>`:""}</td><td>${esc(m.value)}</td>
+    <td>${m.graded?`<span class="gd ${["g-w","g-o","g-s"][m.score]}" title="${["Weak","OK","Strong"][m.score]}"></span>`:`<span class="muted" title="Shown for context, not graded here">info</span>`}</td><td style="text-align:left">${pbar(m.pct,sn)}</td></tr>`).join("")+
+   `</table></div>${c.trend&&c.trend.points&&c.trend.points.length?`<p class="muted">${esc(c.trend.label)}: ${c.trend.points.map(p=>p[0]+" "+p[1]+(c.trend.unit||"")).join(" · ")}</p>`:""}`)}
+ // valuation strip
+ const lo=Math.min(r.bear,px,r.buy_below)*0.92,hi=Math.max(r.bull,px)*1.06,X=v=>((v-lo)/(hi-lo)*100).toFixed(2)+"%";
+ let pA=null,h10=null;if(r.mc&&r.mc.regimes){const Q={};KS.forEach(k=>Q[k]=r.mc.regimes[k].quantiles);const w={bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull};pA=1-mix(Q,w).F(px);
+  if(r.mc.irr&&r.mc.irr.hold10){const hr=irrAt(r.mc.irr,px/r.mc.irr.fair_value,"hold10");h10=mix(hr.Q,w).inv(.5)}}
+ const V=S&&S.valuation,L=V&&V.live,live={pe:L&&L.trailing_eps>0?px/L.trailing_eps:V&&V.now.pe,ev_ebitda:L&&L.ebitda>0&&L.shares?(px*L.shares+(L.net_debt||0))/L.ebitda:V&&V.now.ev_ebitda,fcf_yield:L&&L.fcf_ttm&&L.shares?L.fcf_ttm/(px*L.shares)*100:V&&V.now.fcf_yield};
+ const mrow=(k,lab,low,unit)=>{const h=V.history[k]||[],now=live[k];if(now==null||!isFinite(now))return "";const vals=h.map(x=>x[1]);const mn=Math.min(...vals,now),mx=Math.max(...vals,now),pos=x=>((x-mn)/((mx-mn)||1)*100).toFixed(1)+"%";
+  const hmn=Math.min(...vals),hmx=Math.max(...vals),where=!vals.length?"":now>hmx?"above its range":now<hmn?"below its range":now>hmn+(hmx-hmn)*2/3?"top of its range":now<hmn+(hmx-hmn)/3?"bottom of its range":"middle of its range";
+  const cheap=!vals.length?null:low?(now<hmn+(hmx-hmn)/3):(now>hmn+(hmx-hmn)*2/3);const dear=!vals.length?null:low?(now>hmn+(hmx-hmn)*2/3):(now<hmn+(hmx-hmn)/3);
+  return `<tr><td style="text-align:left">${lab}</td><td><b>${now.toFixed(1)}${unit}</b></td><td style="text-align:left">${vals.length?`<span class="vr" title="${h.map(x=>x[0]+": "+x[1]+unit).join(", ")}"><span class="vrb" style="left:${pos(hmn)};width:calc(${pos(hmx)} - ${pos(hmn)})"></span><i class="${cheap?"up":dear?"down":""}" style="left:${pos(now)}"></i></span> <span class="muted">${hmn.toFixed(1)}–${hmx.toFixed(1)}${unit} · ${where}</span>`:"–"}</td><td style="text-align:left">${pbar(V.sector_pct[k],V.sector_pct.name)}</td></tr>`};
+ const vt=V?`<div class="scroll"><table class="s vtab"><tr><th style="text-align:left">Multiple</th><th>Now</th><th style="text-align:left">vs its own last ${Math.max(...["pe","ev_ebitda","fcf_yield"].map(k=>(V.history[k]||[]).length))} years</th><th style="text-align:left" title="Percentile in the sector; further right = cheaper">vs sector</th></tr>
+  ${mrow("pe","P/E",true,"")}${mrow("ev_ebitda","EV / EBITDA",true,"")}${mrow("fcf_yield","FCF yield",false,"%")}</table></div>`:"";
+ const val=`<div class="snaphd"><b>Valuation</b><span class="muted">Is it a good price?</span><span class="badge ${BANDS[r.status][1]}" style="margin-left:auto">${BANDS[r.status][0]}</span></div>
+ <div class="vstrip"><div class="vbar"><span class="vband" style="left:${X(r.bear)};width:calc(${X(r.bull)} - ${X(r.bear)})"></span><span class="vbb" style="left:${X(r.buy_below)}" title="Buy below ${$f(r.buy_below)}"></span><span class="vfv" style="left:${X(r.fair_value)}"></span><span class="vpx ${r.diff>0?"bad":"good"}" style="left:${X(px)}" title="Price ${$f(px)}"></span></div>
+  <div class="vlab"><span style="left:${X(r.bear)}">Bear ${$f(r.bear)}</span><span style="left:${X(r.fair_value)}"><b>FV ${$f(r.fair_value)}</b></span><span style="left:${X(r.bull)}">Bull ${$f(r.bull)}</span></div></div>
+ <p class="vline">Price <b>${$f(px)}</b> is <b class="${r.diff>0?"down":"up"}">${Math.abs(r.diff*100).toFixed(0)}% ${r.diff>0?"above":"below"}</b> fair value · buy below ${$f(r.buy_below)} (${(r.mos*100).toFixed(0)}% margin of safety)</p>
+ <div class="vstats"><div><span>Chance value > price</span><b>${pA==null?"–":(pA*100).toFixed(0)+"%"}</b></div><div><span>10-yr return (median)</span><b>${h10==null?"–":(h10*100).toFixed(1)+"%"}</b></div>
+  <div><span>Growth priced in (year 1)</span><b>${r.reverse_g1==null?"–":(r.reverse_g1>0?"+":"")+(r.reverse_g1*100).toFixed(0)+"%"}</b></div><div><span>No-growth value (EPV)</span><b>${r.epv?$f(r.epv):"–"}</b></div></div>${vt}`;
+ // what to watch: the two biggest drivers (not the required return)
+ let watch="";if(r.mc&&r.mc.tornado&&r.scenarios&&r.scenarios.base){const b=r.scenarios.base,addb=r.wacc&&r.rev?(r.wacc.after_tax_interest||0)/r.rev:0,pc=x=>(x*100).toFixed(1).replace(".0","")+"%";
+  const KEY=l=>l.startsWith("Year-1")?"g1":l.startsWith("Target")?"m":l.startsWith("Long-run")?"g10":l.startsWith("Terminal")?"gt":null;
+  const items=r.mc.tornado.rows.filter(o=>!o.choice).slice(0,2).map(o=>{const k=KEY(o.label),base=k==="g1"?b.g1:k==="g10"?b.g10:k==="m"?b.m+addb:0.025;
+   const check=k==="g1"?`Each quarter: is revenue growing near ${pc(base)} a year?${r.reverse_g1!=null?` Today's price needs about ${pc(r.reverse_g1)}.`:""}`:k==="m"?`Each quarter: free cash flow minus stock pay${addb>0.0005?" (plus after-tax interest)":""}, as a share of revenue, vs ${pc(base)}.`:k==="g10"?"Yearly: is the market still growing and is the company holding its share?":"Mostly the economy and inflation; little to check quarter to quarter.";
+   return `<li><b>${o.label.replace(" (2% / 3%)","")}</b>: base ${pc(base)}. Bear ${pc(o.low_in)} → ${$f(o.low)}, bull ${pc(o.high_in)} → ${$f(o.high)}. <span class="muted">${check}</span></li>`});
+  watch=`<div class="snaphd"><b>What to watch</b><span class="muted">The inputs that move the value most</span></div><ul class="watch">${items.join("")}</ul>`}
+ // fair value history vs price
+ let fh="";const H=(FH[r.ticker]||[]).filter(x=>x&&x.fv!=null),pr=S&&S.prices&&S.prices.length>3?S.prices:null;
+ if(pr&&H.length){const pts=[...pr.map(p=>[p[0],p[1]]),["now",px]],last=H[H.length-1],W=500,Hh=150,pl=8,prr=78,pt=10,pb=22;
+  const vals=[...pts.map(p=>p[1]),last.bear,last.bull,...H.map(x=>x.fv)],mn=Math.min(...vals)*0.95,mx=Math.max(...vals)*1.04,XX=i=>pl+i/(pts.length-1)*(W-pl-prr),YY=v=>pt+(1-(v-mn)/(mx-mn))*(Hh-pt-pb);
+  const idx=d=>{const m=d.slice(0,7);let i=pts.findIndex(p=>p[0]>=m);return i<0?pts.length-1:i};
+  const steps=H.map((h,i)=>{const x0=XX(idx(h.date)),x1=i+1<H.length?XX(idx(H[i+1].date)):XX(pts.length-1);return `<line x1="${x0}" x2="${x1}" y1="${YY(h.fv)}" y2="${YY(h.fv)}" class="fhfv"/><circle cx="${x0}" cy="${YY(h.fv)}" r="3" class="fhpt"><title>${h.date}: fair value ${$f(h.fv)} (bear ${$f(h.bear)}, bull ${$f(h.bull)})</title></circle>`}).join("");
+  const x0=XX(idx(last.date)),x1=XX(pts.length-1);
+  fh=`<div class="snaphd"><b>Fair value over time</b><span class="muted">Price (monthly) vs each recorded valuation</span></div>
+  <svg viewBox="0 0 ${W} ${Hh}" class="mcsvg" role="img" aria-label="Price and fair value over time">
+   <rect x="${x0}" y="${YY(last.bull)}" width="${Math.max(2,x1-x0)}" height="${YY(last.bear)-YY(last.bull)}" class="fhband"><title>Bear ${$f(last.bear)} to bull ${$f(last.bull)}</title></rect>
+   <line x1="${pl}" x2="${W-prr}" y1="${YY(last.fv)}" y2="${YY(last.fv)}" class="fhguide"/>
+   <polyline points="${pts.map((p,i)=>XX(i).toFixed(1)+","+YY(p[1]).toFixed(1)).join(" ")}" class="fhpx"/>${steps}
+   <circle cx="${XX(pts.length-1)}" cy="${YY(px)}" r="4" class="fhnow"><title>Price now ${$f(px)}</title></circle>
+   <text x="${W-prr+6}" y="${YY(px)+4}" class="mct fhtx">Price ${$f(px)}</text><text x="${W-prr+6}" y="${YY(last.fv)+4}" class="mct fhtx">FV ${$f(last.fv)}</text>
+   <text x="${pl}" y="${Hh-6}" class="mct">${pts[0][0]}</text><text x="${W-prr}" y="${Hh-6}" text-anchor="end" class="mct">now</text></svg>
+  <p class="muted">Line: monthly price. Dashes and dots: fair value at each refresh (${H.length} recorded so far; recording started ${H[0].date}, earlier values used another method). Shaded: bear–bull range of the latest valuation. A fair value that keeps rising with the price supports the thesis; one that falls while the price holds up is a warning.</p>`}
+ else if(H.length){fh=`<div class="snaphd"><b>Fair value over time</b></div><p class="muted">${H.map(h=>`${h.date}: ${$f(h.fv)}`).join(" · ")}</p>`}
+ return flags+q+val+watch+fh}
+function bindSnap(){const det=$("#qdet");if(!det)return;document.querySelectorAll(".qc").forEach(b=>b.onclick=()=>{const open=b.getAttribute("aria-expanded")==="true";
+ document.querySelectorAll(".qc").forEach(x=>{x.setAttribute("aria-expanded","false");x.classList.remove("on")});
+ if(open){det.hidden=true;return}b.setAttribute("aria-expanded","true");b.classList.add("on");det.innerHTML=window.__snapCards[+b.dataset.i];det.hidden=false})}
 function close(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on")}
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());

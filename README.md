@@ -47,6 +47,18 @@ Fair values are slow-moving. Re-run the model after each earnings report (roughl
 
 Preview locally: `python -m http.server` then open http://localhost:8000.
 
+## Stock snapshot (top of each Fair Value drawer)
+
+Click a stock to see, before the detail:
+- **Flags**: anything you must know (FCF normalised, cyclical, dilution, pending deal, dividend cut, price far above fair value, ...). Click a flag for the reason.
+- **Business quality**: five cards (Earnings, Cash flow, Business performance, Financial strength, Dividends & buybacks), each graded Strong / OK / Weak with a headline number and a 4-5 year sparkline. Click a card for every metric, its grade and its sector percentile. Price is never part of these grades.
+  Each metric is graded in one card only (margins under Business performance, P/E under Valuation); repeats are shown in grey as "info". Companies with no dividend are graded on buybacks, or shown as "Reinvests". Debt maturities are not in free data.
+- **Valuation**: bear / fair / bull range with the live price and buy-below level, chance the value is above the price, 10-year return, growth priced in, and P/E, EV/EBITDA and FCF yield against the stock's own last 4-5 years and its sector.
+- **What to watch**: the two inputs that move the value most, with the base / bear / bull values and what to check each quarter.
+- **Fair value over time**: monthly price vs every recorded valuation (`data/fv_history.json`, appended by `export_assets.py`; recording started 2026-10-25).
+
+Data: `scripts/fetch_snapshot.py` (GitHub job **Refresh stock snapshot**, 2nd of each month) fetches dividends, annual statements, liquidity, splits and 6 years of prices into `data/snapshot_raw.json`; `scripts/build_snapshot.py` grades them into `data/snapshot.json` using the Growth Screen metrics for sector percentiles.
+
 ## Backtest (relative, 2013 onwards)
 `python scripts/bt_fetch.py` (on a home computer, with `SEC_CONTACT=you@example.com`; it caches and can be re-run) downloads S&P 500
 membership history (fja05680/sp500), annual SEC figures as first reported and monthly prices into `data/backtest/`.
