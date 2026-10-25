@@ -253,7 +253,7 @@ V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
            "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct",
-           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct"]
+           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct", "operating_margin_pct"]
 
 
 def _df_to_json(df):
@@ -337,6 +337,7 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
                 "roe_pct": round(roe * 100, 2) if roe is not None else np.nan,
                 "ev_ebitda": info.get("enterpriseToEbitda"),
                 "industry": info.get("industry") or "",
+                "operating_margin_pct": round(info["operatingMargins"] * 100, 2) if info.get("operatingMargins") is not None else np.nan,
                 "beta": info.get("beta"),
             }
             if history:

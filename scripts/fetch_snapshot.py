@@ -107,7 +107,18 @@ def main():
             res[t] = {"ticker": t, "error": str(e)}
             print("FAIL", t, e)
         time.sleep(1)
-    doc = {"fetched": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "source": "Yahoo Finance via yfinance", "stocks": res}
+    # operating margin for every Growth Screen stock, so each stock's margin can be ranked against its industry
+    uni = {}
+    if not a.tickers:
+        import yfinance as yf
+        for t in [r["ticker"] for r in json.load(open(ROOT / "data/screen.json"))["rows"]]:
+            try:
+                inf = yf.Ticker(t).info or {}
+                uni[t] = num(inf.get("operatingMargins"))
+            except Exception:
+                uni[t] = None
+        print("universe operating margins:", sum(v is not None for v in uni.values()), "of", len(uni))
+    doc = {"fetched": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "source": "Yahoo Finance via yfinance", "stocks": res, "universe_op_margin": uni}
     pathlib.Path(a.out).write_text(json.dumps(doc, separators=(",", ":")))
 
 
