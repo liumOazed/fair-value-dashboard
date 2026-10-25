@@ -70,7 +70,7 @@
 "2026-10"
 ],
 "consistent_rule": "in the top 50 in at least 3 of the last 4 months, including the latest",
-"built": "2026-10-23",
+"built": "2026-10-25",
 "universe": 502,
 "sectors": [
 "Basic Materials",
@@ -91,6 +91,11 @@
 "Software",
 "Payments",
 "Pharma & biotech",
+"Consumer brands",
+"Travel",
+"Medical devices & diagnostics",
+"Industrials & services",
+"Energy",
 "Index & commodities"
 ],
 "rows": [
@@ -395,7 +400,9 @@
 "ticker": "EXPE",
 "name": "Expedia Group, Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 79.1,
 "rank": 3,
 "prev_score": 77.3,
@@ -442,12 +449,12 @@
 "ps": 2.01,
 "fcf_yield_pct": 10.87,
 "market_cap": 31609012224.0,
-"implied_fcf_growth": -0.0479,
+"implied_fcf_growth": -0.0221,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Cyclical sector default",
+"required_return": 0.105,
+"required_return_source": "stock",
+"required_return_reason": "Online travel agent: cyclical, and the most exposed to AI agents booking directly with hotels and airlines.",
 "fcf_conversion": 1.17,
 "earnings_yield": 9.29,
 "roic_pct": 34.01,
@@ -477,13 +484,13 @@
 "wacc_detail": {
 "equity_weight": 0.847,
 "debt_weight": 0.153,
-"cost_equity": 0.09,
+"cost_equity": 0.105,
 "cost_debt_raw": 0.0462,
 "cost_debt_used": 0.0462,
 "tax": 0.182
 },
-"wacc": 0.082,
-"roic_spread": 0.2581,
+"wacc": 0.0947,
+"roic_spread": 0.2454,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 80.5,
 "components": {
@@ -514,7 +521,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 13.0%, ROIC 34% vs 8.2% cost of capital (+25.8 pts), EPS +65.3% a year."
+"t": "Net margin 13.0%, ROIC 34% vs 9.5% cost of capital (+24.5 pts), EPS +65.3% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -540,7 +547,9 @@
 "ticker": "DECK",
 "name": "Deckers Outdoor Corporation",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 78.9,
 "rank": 4,
 "prev_score": 76.8,
@@ -832,7 +841,9 @@
 "ticker": "EOG",
 "name": "EOG Resources, Inc.",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 74.8,
 "rank": 6,
 "prev_score": 73.9,
@@ -979,7 +990,9 @@
 "ticker": "BKNG",
 "name": "Booking Holdings Inc. Common St",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 74.7,
 "rank": 7,
 "prev_score": 75.3,
@@ -1026,12 +1039,12 @@
 "ps": 4.33,
 "fcf_yield_pct": 6.31,
 "market_cap": 122407395328.0,
-"implied_fcf_growth": 0.0257,
+"implied_fcf_growth": 0.0357,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Cyclical sector default",
+"required_return": 0.095,
+"required_return_source": "stock",
+"required_return_reason": "Dominant online travel platform with strong direct traffic; travel is cyclical and AI agents are a new disintermediation risk.",
 "fcf_conversion": 0.83,
 "earnings_yield": 7.59,
 "roic_pct": null,
@@ -1061,12 +1074,12 @@
 "wacc_detail": {
 "equity_weight": 0.854,
 "debt_weight": 0.146,
-"cost_equity": 0.09,
+"cost_equity": 0.095,
 "cost_debt_raw": 0.0889,
 "cost_debt_used": 0.0889,
 "tax": 0.209
 },
-"wacc": 0.0871,
+"wacc": 0.0914,
 "roic_spread": null,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 76.5,
@@ -1757,12 +1770,12 @@
 "ps": 3.44,
 "fcf_yield_pct": 8.62,
 "market_cap": 73679634432.0,
-"implied_fcf_growth": 0.011,
+"implied_fcf_growth": 0.0023,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.105,
-"required_return_source": "sector",
-"required_return_reason": "Technology sector default",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Sticky TurboTax / QuickBooks franchises, but AI tax and bookkeeping agents are a real threat to pricing power.",
 "fcf_conversion": 0.88,
 "earnings_yield": 9.82,
 "roic_pct": 22.22,
@@ -1792,13 +1805,13 @@
 "wacc_detail": {
 "equity_weight": 0.897,
 "debt_weight": 0.103,
-"cost_equity": 0.105,
+"cost_equity": 0.1,
 "cost_debt_raw": 0.034,
 "cost_debt_used": 0.034,
 "tax": 0.241
 },
-"wacc": 0.0969,
-"roic_spread": 0.1253,
+"wacc": 0.0924,
+"roic_spread": 0.1298,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 67.5,
 "components": {
@@ -1829,7 +1842,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 21.3%, ROIC 22% vs 9.7% cost of capital (+12.5 pts), EPS +25.0% a year."
+"t": "Net margin 21.3%, ROIC 22% vs 9.2% cost of capital (+13.0 pts), EPS +25.0% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -2196,12 +2209,12 @@
 "ps": 5.61,
 "fcf_yield_pct": 7.23,
 "market_cap": 43681001472.0,
-"implied_fcf_growth": 0.0357,
+"implied_fcf_growth": 0.0267,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.105,
-"required_return_source": "sector",
-"required_return_reason": "Technology sector default",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Design software with high switching costs; exposed to construction and manufacturing cycles and AI-native design tools.",
 "fcf_conversion": 1.06,
 "earnings_yield": 6.79,
 "roic_pct": 30.38,
@@ -2231,13 +2244,13 @@
 "wacc_detail": {
 "equity_weight": 0.922,
 "debt_weight": 0.078,
-"cost_equity": 0.105,
+"cost_equity": 0.1,
 "cost_debt_raw": 0.0268,
 "cost_debt_used": 0.0268,
 "tax": 0.3
 },
-"wacc": 0.0983,
-"roic_spread": 0.2055,
+"wacc": 0.0936,
+"roic_spread": 0.2102,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 67.7,
 "components": {
@@ -2268,7 +2281,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 21.1%, ROIC 30% vs 9.8% cost of capital (+20.5 pts), EPS +11.4% a year."
+"t": "Net margin 21.1%, ROIC 30% vs 9.4% cost of capital (+21.0 pts), EPS +11.4% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -2892,7 +2905,9 @@
 "ticker": "APA",
 "name": "APA Corporation",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 68.2,
 "rank": 20,
 "prev_score": 67.6,
@@ -3189,7 +3204,9 @@
 "ticker": "TPR",
 "name": "Tapestry, Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 67.7,
 "rank": 22,
 "prev_score": 64.9,
@@ -3236,12 +3253,12 @@
 "ps": 2.87,
 "fcf_yield_pct": 6.1,
 "market_cap": 22938019840.0,
-"implied_fcf_growth": 0.0302,
+"implied_fcf_growth": 0.05,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Cyclical sector default",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Fashion brand (Coach) risk and tariffs; store leases add leverage.",
 "fcf_conversion": 0.79,
 "earnings_yield": 7.74,
 "roic_pct": 37.35,
@@ -3271,13 +3288,13 @@
 "wacc_detail": {
 "equity_weight": 0.853,
 "debt_weight": 0.147,
-"cost_equity": 0.09,
+"cost_equity": 0.1,
 "cost_debt_raw": 0.0141,
 "cost_debt_used": 0.02,
 "tax": 0.179
 },
-"wacc": 0.0792,
-"roic_spread": 0.2943,
+"wacc": 0.0877,
+"roic_spread": 0.2858,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 67.5,
 "components": {
@@ -3308,7 +3325,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 19.1%, ROIC 37% vs 7.9% cost of capital (+29.4 pts), EPS +23.3% a year."
+"t": "Net margin 19.1%, ROIC 37% vs 8.8% cost of capital (+28.6 pts), EPS +23.3% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -3485,7 +3502,9 @@
 "ticker": "VEEV",
 "name": "Veeva Systems Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Software"
+],
 "score": 67.1,
 "rank": 24,
 "prev_score": 70.6,
@@ -3532,12 +3551,12 @@
 "ps": 13.36,
 "fcf_yield_pct": 2.72,
 "market_cap": 46216884224.0,
-"implied_fcf_growth": 0.137,
+"implied_fcf_growth": 0.1487,
 "implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Healthcare sector default",
+"required_return": 0.095,
+"required_return_source": "stock",
+"required_return_reason": "Mission-critical life-sciences software with large net cash; risk from Salesforce competition in CRM.",
 "fcf_conversion": 0.76,
 "earnings_yield": 3.59,
 "roic_pct": 87.46,
@@ -3567,13 +3586,13 @@
 "wacc_detail": {
 "equity_weight": 0.997,
 "debt_weight": 0.003,
-"cost_equity": 0.09,
+"cost_equity": 0.095,
 "cost_debt_raw": null,
 "cost_debt_used": 0.05,
 "tax": 0.239
 },
-"wacc": 0.0898,
-"roic_spread": 0.7848,
+"wacc": 0.0948,
+"roic_spread": 0.7798,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 61.2,
 "components": {
@@ -3604,7 +3623,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 29.3%, ROIC 87% vs 9.0% cost of capital (+78.5 pts), EPS +21.9% a year."
+"t": "Net margin 29.3%, ROIC 87% vs 9.5% cost of capital (+78.0 pts), EPS +21.9% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -3924,7 +3943,9 @@
 "ticker": "MNST",
 "name": "Monster Beverage Corporation",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 66.2,
 "rank": 27,
 "prev_score": 66.5,
@@ -3971,12 +3992,12 @@
 "ps": 8.84,
 "fcf_yield_pct": 2.06,
 "market_cap": 81535729664.0,
-"implied_fcf_growth": 0.1741,
+"implied_fcf_growth": 0.1614,
 "implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Defensive sector default",
+"required_return": 0.085,
+"required_return_source": "stock",
+"required_return_reason": "Below the 9% Consumer Defensive rate: very stable demand, no debt, long growth record.",
 "fcf_conversion": 0.65,
 "earnings_yield": 3.15,
 "roic_pct": 34.18,
@@ -4006,13 +4027,13 @@
 "wacc_detail": {
 "equity_weight": 0.999,
 "debt_weight": 0.001,
-"cost_equity": 0.09,
+"cost_equity": 0.085,
 "cost_debt_raw": null,
 "cost_debt_used": 0.05,
 "tax": 0.233
 },
-"wacc": 0.0899,
-"roic_spread": 0.2519,
+"wacc": 0.0849,
+"roic_spread": 0.2569,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 62.0,
 "components": {
@@ -4043,7 +4064,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 23.1%, ROIC 34% vs 9.0% cost of capital (+25.2 pts), EPS +20.3% a year."
+"t": "Net margin 23.1%, ROIC 34% vs 8.5% cost of capital (+25.7 pts), EPS +20.3% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -4214,7 +4235,9 @@
 "ticker": "LULU",
 "name": "lululemon athletica inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 65.8,
 "rank": 28,
 "prev_score": 68.4,
@@ -4504,7 +4527,9 @@
 "ticker": "ALLE",
 "name": "Allegion plc",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 65.1,
 "rank": 31,
 "prev_score": 67.0,
@@ -4555,8 +4580,8 @@
 "implied_tag": "In line",
 "implied_basis": "fcf",
 "required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Industrials sector default",
+"required_return_source": "stock",
+"required_return_reason": "Steady locks and access-control business; tied to the non-residential construction cycle, moderate debt.",
 "fcf_conversion": 0.58,
 "earnings_yield": 6.36,
 "roic_pct": 19.63,
@@ -5086,7 +5111,9 @@
 "ticker": "EME",
 "name": "EMCOR Group, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 64.6,
 "rank": 35,
 "prev_score": 64.1,
@@ -5376,7 +5403,9 @@
 "ticker": "FTNT",
 "name": "Fortinet, Inc.",
 "sector": "Technology",
-"themes": [],
+"themes": [
+"Software"
+],
 "score": 64.1,
 "rank": 37,
 "prev_score": 64.7,
@@ -5423,12 +5452,12 @@
 "ps": 17.42,
 "fcf_yield_pct": 1.73,
 "market_cap": 131158646784.0,
-"implied_fcf_growth": 0.2337,
+"implied_fcf_growth": 0.2221,
 "implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.105,
-"required_return_source": "sector",
-"required_return_reason": "Technology sector default",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Cybersecurity is durable demand, but firewall hardware refresh cycles make growth lumpy.",
 "fcf_conversion": 0.82,
 "earnings_yield": 2.11,
 "roic_pct": 95.43,
@@ -5458,13 +5487,13 @@
 "wacc_detail": {
 "equity_weight": 0.996,
 "debt_weight": 0.004,
-"cost_equity": 0.105,
+"cost_equity": 0.1,
 "cost_debt_raw": 0.0202,
 "cost_debt_used": 0.0202,
 "tax": 0.19
 },
-"wacc": 0.1046,
-"roic_spread": 0.8497,
+"wacc": 0.0996,
+"roic_spread": 0.8547,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 62.3,
 "components": {
@@ -5495,7 +5524,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 28.2%, ROIC 95% vs 10.5% cost of capital (+85.0 pts), EPS +31.7% a year."
+"t": "Net margin 28.2%, ROIC 95% vs 10.0% cost of capital (+85.5 pts), EPS +31.7% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -5521,7 +5550,9 @@
 "ticker": "RMD",
 "name": "ResMed Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 64.0,
 "rank": 38,
 "prev_score": 68.0,
@@ -5572,8 +5603,8 @@
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
 "required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Healthcare sector default",
+"required_return_source": "stock",
+"required_return_reason": "Healthcare device leader with recurring masks revenue; GLP-1 drugs are a long-term demand risk.",
 "fcf_conversion": 0.49,
 "earnings_yield": 5.98,
 "roic_pct": 24.49,
@@ -6295,12 +6326,12 @@
 "ps": 15.16,
 "fcf_yield_pct": 3.02,
 "market_cap": 674590031872.0,
-"implied_fcf_growth": 0.1231,
+"implied_fcf_growth": 0.1112,
 "implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "peer group",
-"required_return_reason": "Fee-based financials: Earn fees from payments, exchanges, ratings and data rather than lending, so bank comparisons (P/E ~10-15, no leverage tests) don't fit.",
+"required_return": 0.085,
+"required_return_source": "stock",
+"required_return_reason": "Above the 7.5% financials rate: payment networks are very durable but face regulation and new payment rails.",
 "fcf_conversion": 0.72,
 "earnings_yield": 4.18,
 "roic_pct": 42.35,
@@ -6330,13 +6361,13 @@
 "wacc_detail": {
 "equity_weight": 0.966,
 "debt_weight": 0.034,
-"cost_equity": 0.09,
+"cost_equity": 0.085,
 "cost_debt_raw": 0.0256,
 "cost_debt_used": 0.0256,
 "tax": 0.171
 },
-"wacc": 0.0877,
-"roic_spread": 0.3358,
+"wacc": 0.0828,
+"roic_spread": 0.3407,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 63.3,
 "components": {
@@ -6367,7 +6398,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 50.8%, ROIC 42% vs 8.8% cost of capital (+33.6 pts), EPS +13.4% a year."
+"t": "Net margin 50.8%, ROIC 42% vs 8.3% cost of capital (+34.1 pts), EPS +13.4% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -6833,7 +6864,9 @@
 "ticker": "FIX",
 "name": "Comfort Systems USA, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 62.8,
 "rank": 47,
 "prev_score": 54.0,
@@ -6880,12 +6913,12 @@
 "ps": 5.18,
 "fcf_yield_pct": 3.16,
 "market_cap": 58214584320.0,
-"implied_fcf_growth": 0.1172,
+"implied_fcf_growth": 0.1603,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Industrials sector default",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Construction contractor at a cyclical peak driven by AI data-centre spending; earnings can fall fast if that slows.",
 "fcf_conversion": 0.87,
 "earnings_yield": 3.64,
 "roic_pct": 55.31,
@@ -6915,13 +6948,13 @@
 "wacc_detail": {
 "equity_weight": 0.994,
 "debt_weight": 0.006,
-"cost_equity": 0.09,
+"cost_equity": 0.11,
 "cost_debt_raw": 0.0176,
 "cost_debt_used": 0.02,
 "tax": 0.209
 },
-"wacc": 0.0895,
-"roic_spread": 0.4636,
+"wacc": 0.1094,
+"roic_spread": 0.4437,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 61.2,
 "components": {
@@ -6952,7 +6985,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 12.8%, ROIC 55% vs 8.9% cost of capital (+46.4 pts), EPS +61.8% a year."
+"t": "Net margin 12.8%, ROIC 55% vs 10.9% cost of capital (+44.4 pts), EPS +61.8% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -6978,7 +7011,9 @@
 "ticker": "CL",
 "name": "Colgate-Palmolive Company",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 62.8,
 "rank": 47,
 "prev_score": 64.4,
@@ -7908,12 +7943,12 @@
 "ps": 13.77,
 "fcf_yield_pct": 3.51,
 "market_cap": 483093151744.0,
-"implied_fcf_growth": 0.1033,
+"implied_fcf_growth": 0.0916,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "peer group",
-"required_return_reason": "Fee-based financials: Earn fees from payments, exchanges, ratings and data rather than lending, so bank comparisons (P/E ~10-15, no leverage tests) don't fit.",
+"required_return": 0.085,
+"required_return_source": "stock",
+"required_return_reason": "Above the 7.5% financials rate: payment networks are very durable but face regulation and new payment rails.",
 "fcf_conversion": 0.84,
 "earnings_yield": 4.18,
 "roic_pct": 73.9,
@@ -7943,13 +7978,13 @@
 "wacc_detail": {
 "equity_weight": 0.951,
 "debt_weight": 0.049,
-"cost_equity": 0.09,
+"cost_equity": 0.085,
 "cost_debt_raw": 0.0388,
 "cost_debt_used": 0.0388,
 "tax": 0.194
 },
-"wacc": 0.0871,
-"roic_spread": 0.6519,
+"wacc": 0.0824,
+"roic_spread": 0.6566,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 61.6,
 "components": {
@@ -7980,7 +8015,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 46.3%, ROIC 74% vs 8.7% cost of capital (+65.2 pts), EPS +17.4% a year."
+"t": "Net margin 46.3%, ROIC 74% vs 8.2% cost of capital (+65.7 pts), EPS +17.4% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -8153,7 +8188,9 @@
 "ticker": "ABNB",
 "name": "Airbnb, Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 62.2,
 "rank": 54,
 "prev_score": 64.3,
@@ -8298,7 +8335,9 @@
 "ticker": "CTAS",
 "name": "Cintas Corporation",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 61.9,
 "rank": 57,
 "prev_score": 63.2,
@@ -8345,12 +8384,12 @@
 "ps": 6.74,
 "fcf_yield_pct": 2.08,
 "market_cap": 77929783296.0,
-"implied_fcf_growth": 0.1728,
+"implied_fcf_growth": 0.1601,
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Industrials sector default",
+"required_return": 0.085,
+"required_return_source": "stock",
+"required_return_reason": "Very steady recurring uniform and facility services with a long record; slightly below the 9% industrials rate.",
 "fcf_conversion": 0.66,
 "earnings_yield": 3.16,
 "roic_pct": 25.15,
@@ -8380,13 +8419,13 @@
 "wacc_detail": {
 "equity_weight": 0.966,
 "debt_weight": 0.034,
-"cost_equity": 0.09,
+"cost_equity": 0.085,
 "cost_debt_raw": 0.0397,
 "cost_debt_used": 0.0397,
 "tax": 0.202
 },
-"wacc": 0.088,
-"roic_spread": 0.1635,
+"wacc": 0.0832,
+"roic_spread": 0.1683,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 58.8,
 "components": {
@@ -8417,7 +8456,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 17.8%, ROIC 25% vs 8.8% cost of capital (+16.4 pts), EPS +14.8% a year."
+"t": "Net margin 17.8%, ROIC 25% vs 8.3% cost of capital (+16.8 pts), EPS +14.8% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -8885,7 +8924,9 @@
 "ticker": "DXCM",
 "name": "DexCom, Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 61.4,
 "rank": 61,
 "prev_score": 61.5,
@@ -8932,12 +8973,12 @@
 "ps": 6.55,
 "fcf_yield_pct": 3.14,
 "market_cap": 32562460672.0,
-"implied_fcf_growth": 0.118,
+"implied_fcf_growth": 0.1403,
 "implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Healthcare sector default",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Growing device market but strong Abbott competition, pricing pressure and recent product-quality issues.",
 "fcf_conversion": 0.87,
 "earnings_yield": 3.62,
 "roic_pct": 22.74,
@@ -8967,13 +9008,13 @@
 "wacc_detail": {
 "equity_weight": 0.959,
 "debt_weight": 0.041,
-"cost_equity": 0.09,
+"cost_equity": 0.1,
 "cost_debt_raw": 0.0092,
 "cost_debt_used": 0.02,
 "tax": 0.232
 },
-"wacc": 0.0869,
-"roic_spread": 0.1405,
+"wacc": 0.0965,
+"roic_spread": 0.1309,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 56.9,
 "components": {
@@ -9004,7 +9045,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 20.1%, ROIC 23% vs 8.7% cost of capital (+14.1 pts), EPS +36.6% a year."
+"t": "Net margin 20.1%, ROIC 23% vs 9.7% cost of capital (+13.1 pts), EPS +36.6% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -9175,7 +9216,9 @@
 "ticker": "PG",
 "name": "Procter & Gamble Company (The)",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 61.1,
 "rank": 63,
 "prev_score": 63.9,
@@ -10202,7 +10245,9 @@
 "ticker": "ROL",
 "name": "Rollins, Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 60.7,
 "rank": 68,
 "prev_score": 58.7,
@@ -10637,7 +10682,9 @@
 "ticker": "RL",
 "name": "Ralph Lauren Corporation",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 60.6,
 "rank": 72,
 "prev_score": 60.4,
@@ -12541,7 +12588,9 @@
 "ticker": "ISRG",
 "name": "Intuitive Surgical, Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 59.4,
 "rank": 86,
 "prev_score": 59.1,
@@ -12976,7 +13025,9 @@
 "ticker": "IDXX",
 "name": "IDEXX Laboratories, Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 59.2,
 "rank": 89,
 "prev_score": 59.4,
@@ -13027,8 +13078,8 @@
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
 "required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Healthcare sector default",
+"required_return_source": "stock",
+"required_return_reason": "Recurring veterinary test revenue and a strong installed base; sensitive to vet-visit volumes.",
 "fcf_conversion": 0.69,
 "earnings_yield": 3.21,
 "roic_pct": 44.52,
@@ -13558,7 +13609,9 @@
 "ticker": "ITW",
 "name": "Illinois Tool Works Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 59.1,
 "rank": 92,
 "prev_score": 60.9,
@@ -13850,7 +13903,9 @@
 "ticker": "TT",
 "name": "Trane Technologies plc",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 59.1,
 "rank": 92,
 "prev_score": 58.0,
@@ -13995,7 +14050,9 @@
 "ticker": "PEP",
 "name": "Pepsico, Inc.",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 59.0,
 "rank": 96,
 "prev_score": 59.1,
@@ -14725,7 +14782,9 @@
 "ticker": "PAYX",
 "name": "Paychex, Inc.",
 "sector": "Technology",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 58.7,
 "rank": 100,
 "prev_score": 56.5,
@@ -14870,7 +14929,9 @@
 "ticker": "ADP",
 "name": "Automatic Data Processing, Inc.",
 "sector": "Technology",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 58.7,
 "rank": 100,
 "prev_score": 61.3,
@@ -15163,7 +15224,9 @@
 "ticker": "COST",
 "name": "Costco Wholesale Corporation",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 58.6,
 "rank": 103,
 "prev_score": 59.3,
@@ -15753,7 +15816,9 @@
 "ticker": "GWW",
 "name": "W.W. Grainger, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 58.3,
 "rank": 108,
 "prev_score": 59.0,
@@ -16047,7 +16112,9 @@
 "ticker": "KO",
 "name": "Coca-Cola Company (The)",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 58.2,
 "rank": 109,
 "prev_score": 59.7,
@@ -16192,7 +16259,9 @@
 "ticker": "SYK",
 "name": "Stryker Corporation",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 58.2,
 "rank": 109,
 "prev_score": 51.0,
@@ -16337,7 +16406,9 @@
 "ticker": "MDT",
 "name": "Medtronic plc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 58.1,
 "rank": 112,
 "prev_score": 56.5,
@@ -17812,7 +17883,9 @@
 "ticker": "FAST",
 "name": "Fastenal Company",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 57.5,
 "rank": 121,
 "prev_score": 59.3,
@@ -17957,7 +18030,9 @@
 "ticker": "PODD",
 "name": "Insulet Corporation",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 57.4,
 "rank": 123,
 "prev_score": 54.8,
@@ -19567,7 +19642,9 @@
 "ticker": "BSX",
 "name": "Boston Scientific Corporation",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 56.9,
 "rank": 134,
 "prev_score": 59.0,
@@ -21768,7 +21845,9 @@
 "ticker": "MKC",
 "name": "McCormick & Company, Incorporat",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 55.9,
 "rank": 149,
 "prev_score": 54.0,
@@ -22501,7 +22580,9 @@
 "ticker": "ZBH",
 "name": "Zimmer Biomet Holdings, Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 55.6,
 "rank": 153,
 "prev_score": 58.1,
@@ -22795,7 +22876,9 @@
 "ticker": "CMG",
 "name": "Chipotle Mexican Grill, Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 55.6,
 "rank": 153,
 "prev_score": 53.7,
@@ -23969,7 +24052,9 @@
 "ticker": "EW",
 "name": "Edwards Lifesciences Corporatio",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 55.2,
 "rank": 164,
 "prev_score": 53.9,
@@ -26901,7 +26986,9 @@
 "ticker": "AAPL",
 "name": "Apple Inc.",
 "sector": "Technology",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 54.0,
 "rank": 183,
 "prev_score": 55.8,
@@ -27046,7 +27133,9 @@
 "ticker": "HSY",
 "name": "The Hershey Company",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 54.0,
 "rank": 183,
 "prev_score": 50.4,
@@ -27537,7 +27626,7 @@
 "fcf_conversion": 0.86,
 "earnings_yield": 6.51,
 "roic_pct": 48.45,
-"net_debt_ebitda": -0.0,
+"net_debt_ebitda": 0.0,
 "interest_coverage": 62.1,
 "rev_cagr_pct": -0.63,
 "rev_cagr_years": 3.0,
@@ -27610,12 +27699,12 @@
 {
 "q": "Is debt manageable?",
 "v": "yes",
-"t": "Net debt -0.0x EBITDA, interest covered 62.1x."
+"t": "Net debt 0.0x EBITDA, interest covered 62.1x."
 },
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: share count falling 4.5% a year. Worse: leverage up (-0.7x \u2192 -0.0x), net margin -3.4 pts, FCF shrinking 16% a year, growth slowing."
+"t": "Better: share count falling 4.5% a year. Worse: leverage up (-0.7x \u2192 0.0x), net margin -3.4 pts, FCF shrinking 16% a year, growth slowing."
 }
 ],
 "checks_score": 0,
@@ -27626,7 +27715,9 @@
 "ticker": "DVN",
 "name": "Devon Energy Corporation",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 53.7,
 "rank": 189,
 "prev_score": 55.0,
@@ -28943,7 +29034,9 @@
 "ticker": "PH",
 "name": "Parker-Hannifin Corporation",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 53.2,
 "rank": 197,
 "prev_score": 54.3,
@@ -31005,7 +31098,9 @@
 "ticker": "STE",
 "name": "STERIS plc (Ireland)",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 52.6,
 "rank": 209,
 "prev_score": 51.8,
@@ -31733,7 +31828,9 @@
 "ticker": "MAR",
 "name": "Marriott International",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 52.2,
 "rank": 217,
 "prev_score": 52.2,
@@ -32029,7 +32126,9 @@
 "ticker": "URI",
 "name": "United Rentals, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 52.2,
 "rank": 217,
 "prev_score": 51.3,
@@ -33500,7 +33599,9 @@
 "ticker": "EQT",
 "name": "EQT Corporation",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 51.7,
 "rank": 229,
 "prev_score": 57.7,
@@ -34016,7 +34117,7 @@
 "beta": null,
 "volatility_1y_pct": 83.16,
 "max_drawdown_1y_pct": -43.85,
-"nd_ebitda_then": -0.0,
+"nd_ebitda_then": 0.0,
 "margin_change_pts": -10.7,
 "fcf_cagr_pct": 11.02,
 "fcf_ni_conversion": 1.8,
@@ -34081,7 +34182,7 @@
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: FCF growing 11% a year. Worse: leverage up (-0.0x \u2192 4.3x), net margin -10.7 pts, growth slowing."
+"t": "Better: FCF growing 11% a year. Worse: leverage up (0.0x \u2192 4.3x), net margin -10.7 pts, growth slowing."
 }
 ],
 "checks_score": -1,
@@ -36144,7 +36245,9 @@
 "ticker": "DAL",
 "name": "Delta Air Lines, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 51.1,
 "rank": 246,
 "prev_score": 52.2,
@@ -36733,7 +36836,9 @@
 "ticker": "COP",
 "name": "ConocoPhillips",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 50.8,
 "rank": 251,
 "prev_score": 49.6,
@@ -37617,7 +37722,9 @@
 "ticker": "CCL",
 "name": "Carnival Corporation Ltd.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 50.7,
 "rank": 255,
 "prev_score": 50.7,
@@ -38508,7 +38615,9 @@
 "ticker": "HAL",
 "name": "Halliburton Company",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 50.3,
 "rank": 262,
 "prev_score": 53.2,
@@ -40560,7 +40669,9 @@
 "ticker": "ETN",
 "name": "Eaton Corporation, PLC",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 49.8,
 "rank": 276,
 "prev_score": 53.2,
@@ -40707,7 +40818,9 @@
 "ticker": "HLT",
 "name": "Hilton Worldwide Holdings Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 49.8,
 "rank": 276,
 "prev_score": 52.9,
@@ -43785,7 +43898,9 @@
 "ticker": "ABT",
 "name": "Abbott Laboratories",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 48.8,
 "rank": 298,
 "prev_score": 46.9,
@@ -45699,7 +45814,9 @@
 "ticker": "CVX",
 "name": "Chevron Corporation",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 47.5,
 "rank": 312,
 "prev_score": 43.6,
@@ -46593,7 +46710,9 @@
 "ticker": "A",
 "name": "Agilent Technologies, Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 47.2,
 "rank": 317,
 "prev_score": 49.4,
@@ -46883,7 +47002,9 @@
 "ticker": "UAL",
 "name": "United Airlines Holdings, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 47.1,
 "rank": 320,
 "prev_score": 49.3,
@@ -47763,7 +47884,9 @@
 "ticker": "XOM",
 "name": "ExxonMobil Holdings Corporation",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 46.8,
 "rank": 326,
 "prev_score": 46.5,
@@ -48056,7 +48179,9 @@
 "ticker": "FANG",
 "name": "Diamondback Energy, Inc.",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 46.7,
 "rank": 328,
 "prev_score": 39.8,
@@ -48353,7 +48478,9 @@
 "ticker": "BDX",
 "name": "Becton, Dickinson and Company",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 46.6,
 "rank": 330,
 "prev_score": 48.6,
@@ -48948,7 +49075,9 @@
 "ticker": "SLB",
 "name": "SLB Limited",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 46.5,
 "rank": 332,
 "prev_score": 51.4,
@@ -49242,7 +49371,9 @@
 "ticker": "OXY",
 "name": "Occidental Petroleum Corporatio",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 46.3,
 "rank": 336,
 "prev_score": 42.7,
@@ -51166,7 +51297,9 @@
 "ticker": "RCL",
 "name": "Royal Caribbean Cruises Ltd.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 45.7,
 "rank": 347,
 "prev_score": 46.9,
@@ -52949,7 +53082,9 @@
 "ticker": "EMR",
 "name": "Emerson Electric Company",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 45.0,
 "rank": 360,
 "prev_score": 47.6,
@@ -56495,7 +56630,9 @@
 "ticker": "ROK",
 "name": "Rockwell Automation, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 43.2,
 "rank": 382,
 "prev_score": 44.8,
@@ -57976,7 +58113,9 @@
 "ticker": "NKE",
 "name": "Nike, Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 42.3,
 "rank": 395,
 "prev_score": 40.7,
@@ -58272,7 +58411,9 @@
 "ticker": "JCI",
 "name": "Johnson Controls International ",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 42.0,
 "rank": 397,
 "prev_score": 44.4,
@@ -59009,7 +59150,9 @@
 "ticker": "PWR",
 "name": "Quanta Services, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 41.5,
 "rank": 402,
 "prev_score": 40.5,
@@ -61234,7 +61377,9 @@
 "ticker": "TMO",
 "name": "Thermo Fisher Scientific Inc",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 40.5,
 "rank": 416,
 "prev_score": 39.6,
@@ -62878,7 +63023,9 @@
 "ticker": "NCLH",
 "name": "Norwegian Cruise Line Holdings ",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Travel"
+],
 "score": 39.5,
 "rank": 428,
 "prev_score": 39.8,
@@ -66751,7 +66898,9 @@
 "ticker": "DHR",
 "name": "Danaher Corporation",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 36.8,
 "rank": 453,
 "prev_score": 35.2,
@@ -70235,7 +70384,9 @@
 "ticker": "EL",
 "name": "Estee Lauder Companies, Inc. (T",
 "sector": "Consumer Defensive",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 31.5,
 "rank": 476,
 "prev_score": 30.3,
@@ -70542,7 +70693,9 @@
 "ticker": "SBUX",
 "name": "Starbucks Corporation",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 30.4,
 "rank": 479,
 "prev_score": 30.2,
@@ -72213,7 +72366,9 @@
 "ticker": "CARR",
 "name": "Carrier Global Corporation",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 27.5,
 "rank": 488,
 "prev_score": 27.0,
