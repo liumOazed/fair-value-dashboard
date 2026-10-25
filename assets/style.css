@@ -154,3 +154,4 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 .qtab .pbar{width:44px}@media(max-width:560px){.qtab td:first-child{min-width:130px}}
 @media(max-width:560px){.vtab .muted{display:block;white-space:normal}}
 .qtab td:first-child{min-width:170px}.qtab td:nth-child(2){white-space:nowrap}
+.chip .cnt{font-size:11px;opacity:.65;margin-left:2px}

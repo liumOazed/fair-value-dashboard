@@ -30,12 +30,15 @@ function range(r){const lo=Math.min(r.bear,r.price)*0.9,hi=Math.max(r.bull,r.pri
 function spark(h){if(h.length<3)return '<span class="muted">n/a</span>';const mn=Math.min(...h),mx=Math.max(...h),w=90,ht=28;
  const pts=h.map((v,i)=>`${(i/(h.length-1)*w).toFixed(1)},${(ht-2-(v-mn)/(mx-mn||1)*(ht-4)).toFixed(1)}`).join(" ");
  return `<svg width="${w}" height="${ht}"><polyline points="${pts}" fill="none" stroke="${h[h.length-1]>=h[0]?"var(--good)":"var(--bad)"}" stroke-width="1.6"/></svg>`}
-let sortK="ticker",dir=1,filt="",theme="All";
+let sortK="ticker",dir=1,filt="",theme="All",pf="all";
 const inTheme=r=>theme==="All"||(theme==="Other"?!Object.values(TH).some(l=>l.includes(r.ticker)):(TH[theme]||[]).includes(r.ticker));
 const names=["All",...Object.keys(TH).filter(k=>rows.some(r=>TH[k].includes(r.ticker))),...(rows.some(r=>!Object.values(TH).some(l=>l.includes(r.ticker)))?["Other"]:[])];
 $("#themechips").innerHTML='<span class="lbl">Group</span>'+names.map(n=>`<button class="chip${n==="All"?" on":""}" data-th="${n}">${n}</button>`).join("");
+const PF={all:["All",()=>true],below:["Below fair value",r=>r.diff<=0],int:["Interesting or better",r=>r.status<=1]};
+$("#pricechips").innerHTML='<span class="lbl">Price</span>'+Object.entries(PF).map(([k,v])=>`<button class="chip${k==="all"?" on":""}" data-pf="${k}">${v[0]} <span class="cnt">${rows.filter(v[1]).length}</span></button>`).join("");
+document.querySelectorAll("#pricechips .chip").forEach(c=>c.onclick=()=>{pf=c.dataset.pf;document.querySelectorAll("#pricechips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
 document.querySelectorAll("#themechips .chip").forEach(c=>c.onclick=()=>{theme=c.dataset.th;document.querySelectorAll("#themechips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
-function render(){const f=rows.filter(r=>(r.ticker+r.name).toLowerCase().includes(filt)&&inTheme(r));
+function render(){const f=rows.filter(r=>(r.ticker+r.name).toLowerCase().includes(filt)&&inTheme(r)&&PF[pf][1](r));
  f.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (typeof x==="string"?x.localeCompare(y):(x??1e9)-(y??1e9))*dir});
  $("#tbl tbody").innerHTML=f.map(r=>`<tr data-t="${r.ticker}"><td><div class="tk">${r.ticker}</div><div class="nm">${r.name}</div></td>
  <td class="r num">${usd(r.price)}<div class="nm ${r.day>0?"neg":"pos"}" style="color:var(--mut)">${r.day==null?"":pct(r.day,2)+" today"}</div></td>
