@@ -153,3 +153,4 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 @media(max-width:560px){.cards{grid-template-columns:1fr 1fr}.vstats{grid-template-columns:1fr 1fr}.vtab th:nth-child(4),.vtab td:nth-child(4){display:none}}
 .qtab .pbar{width:44px}@media(max-width:560px){.qtab td:first-child{min-width:130px}}
 @media(max-width:560px){.vtab .muted{display:block;white-space:normal}}
+.qtab td:first-child{min-width:170px}.qtab td:nth-child(2){white-space:nowrap}

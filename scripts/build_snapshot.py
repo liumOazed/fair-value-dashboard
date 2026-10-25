@@ -65,9 +65,9 @@ def card_grade(ms):
     return "Strong" if a >= 1.45 else "OK" if a >= 0.75 else "Weak"
 
 
-def M(label, value, score=None, graded=True, pct=None, note=None, raw=None):
+def M(label, value, score=None, graded=True, pct=None, note=None, raw=None, grp=None):
     return dict(label=label, value=value if value is not None else "–", score=score if graded else None,
-                graded=graded and score is not None, pct=pct, note=note, raw=raw)
+                graded=graded and score is not None, pct=pct, note=note, raw=raw, grp=grp)
 
 
 def build():
@@ -78,6 +78,14 @@ def build():
     by_sector = {}
     for r in scr["rows"]:
         by_sector.setdefault(r.get("peer_group") or r.get("sector"), []).append(r)
+    uop = raw.get("universe_op_margin") or {}
+    opm = lambda r: r.get("operating_margin_pct") if ok(r.get("operating_margin_pct")) else (uop[r["ticker"]] * 100 if ok(uop.get(r["ticker"])) else None)
+    for r in scr["rows"]:
+        r["_opm"] = opm(r)
+    by_ind = {}
+    for r in scr["rows"]:
+        if r.get("industry"):
+            by_ind.setdefault(r["industry"], []).append(r)
     out = {"_about": __doc__.strip().split("\n")[0], "built_from": raw.get("fetched"), "stocks": {}}
 
     for t, R in raw["stocks"].items():
@@ -86,6 +94,12 @@ def build():
         s = rows.get(t, {})
         grp = by_sector.get(s.get("peer_group") or s.get("sector"), [])
         P = lambda key, higher=True: pct_rank([x.get(key) for x in grp], s.get(key), higher)
+        # margins differ by industry (software ~80% gross, hardware ~40%): rank them within the industry when it has
+        # at least 8 companies with data, otherwise within the sector
+        ind = by_ind.get(s.get("industry"), [])
+        mgrp, mname = (ind, s.get("industry")) if sum(ok(x.get("_opm")) for x in ind) >= 8 else (grp, s.get("peer_group") or s.get("sector"))
+        PM = lambda key: pct_rank([x.get(key) for x in mgrp], s.get(key), True)
+        s_opm = s.get("_opm")
         inc, bal, cfs = R["annual"]["inc"], R["annual"]["bal"], R["annual"]["cfs"]
         mcap = s.get("market_cap") or ((R.get("price") or 0) * (R.get("shares") or 0)) or None
         price = R.get("price")
@@ -100,8 +114,6 @@ def build():
             M("EPS growth, CAGR", fmt_pct(s["eps_cagr_pct"] / 100 if ok(s.get("eps_cagr_pct")) else None, sign=True), g3(s.get("eps_cagr_pct"), 10, 3), pct=P("eps_cagr_pct")),
             M("Earnings stability (variation)", None if not ok(s.get("earnings_cv")) else f"{s['earnings_cv']:.2f}", g3(s.get("earnings_cv"), 0.15, 0.35, higher=False),
               pct=P("earnings_cv", False), note="Year-to-year variation of earnings; lower is steadier."),
-            M("Net margin", fmt_pct(s["profit_margin_pct"] / 100 if ok(s.get("profit_margin_pct")) else None), graded=False, pct=P("profit_margin_pct"),
-              note="Shown for context; margins are graded under Business performance."),
             M("P/E · forward P/E", None if not ok(s.get("pe")) else f"{s['pe']:.1f} · {s['forward_pe']:.1f}" if ok(s.get("forward_pe")) else f"{s['pe']:.1f}",
               graded=False, note="Graded under Valuation."),
         ]
@@ -160,8 +172,12 @@ def build():
               g3(roic_tr, 0.0, -0.05)),
             M("ROIC above cost of capital", None if not roic or not ok(wacc) else f"{above} of {len(roic)} years", g3(above / len(roic) if roic and ok(wacc) else None, 0.99, 0.5),
               note="A lasting gap is the clearest measurable sign of a competitive advantage."),
-            M("Gross margin (level)", fmt_pct(s["gross_margin_pct"] / 100 if ok(s.get("gross_margin_pct")) else None, 0),
-              g3(P("gross_margin_pct"), 60, 35), pct=P("gross_margin_pct"), note="Graded against the sector (pricing power)."),
+            M("Operating margin", fmt_pct(s_opm / 100 if ok(s_opm) else None, 1), g3(PM("_opm"), 60, 35), pct=PM("_opm"), grp=mname,
+              note=f"Profit from the business itself, after all running costs. Graded against {mname} ({len(mgrp)} companies)."),
+            M("Gross margin", fmt_pct(s["gross_margin_pct"] / 100 if ok(s.get("gross_margin_pct")) else None, 1), graded=False, pct=PM("gross_margin_pct"), grp=mname,
+              note=f"After the cost of making the product: the purest pricing-power signal, but very industry-dependent (ranked against {mname}). Its trend is graded below."),
+            M("Net margin", fmt_pct(s["profit_margin_pct"] / 100 if ok(s.get("profit_margin_pct")) else None, 1), graded=False, pct=PM("profit_margin_pct"), grp=mname,
+              note=f"The bottom line, after interest, tax and one-offs; can be distorted by one-time items (ranked against {mname})."),
             M("Gross margin trend", None if not ok(gm_tr) else f"{gm_tr * 100:+.1f} pts", g3(gm_tr, 0.0, -0.02)),
             M("Operating margin trend", None if not ok(om_tr) else f"{om[0][1] * 100:.0f}% → {om[-1][1] * 100:.0f}% ({om_tr * 100:+.1f} pts)", g3(om_tr, 0.0, -0.02)),
             M("Revenue consistency (growth variation)", None if not ok(s.get("rev_growth_std")) else f"{s['rev_growth_std']:.1f} pts", g3(s.get("rev_growth_std"), 5, 12, False),

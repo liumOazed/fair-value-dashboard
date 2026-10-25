@@ -172,9 +172,9 @@ function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=
   S.cards.map((c,i)=>`<button class="qc" data-i="${i}" aria-expanded="false"><span class="qt">${c.title}</span><span class="gr ${GC[c.grade]||"g-n"}"><i></i>${c.grade}</span>
    <span class="qq">${esc(c.question)}</span><span class="qh">${c.headline.map(esc).join(" · ")||"–"}</span>${spark2(c.trend)}</button>`).join("")+`</div><div id="qdet" class="qdet" hidden></div>`;
   window.__snapCards=S.cards.map(c=>`<div class="qdh"><b>${c.title}</b> <span class="gr ${GC[c.grade]||"g-n"}"><i></i>${c.grade}</span> <span class="muted">${esc(c.question)}${c.note?" "+esc(c.note):""}</span></div>
-   <div class="scroll"><table class="s qtab"><tr><th style="text-align:left">Metric</th><th>Value</th><th>Grade</th><th style="text-align:left">vs ${esc(sn)}</th></tr>`+
+   <div class="scroll"><table class="s qtab"><tr><th style="text-align:left">Metric</th><th>Value</th><th>Grade</th><th style="text-align:left" title="Percentile among ${esc(sn)} companies (or the industry, where the note says so)">vs peers</th></tr>`+
    c.metrics.map(m=>`<tr class="${m.graded?"":"info"}"><td style="text-align:left;white-space:normal">${esc(m.label)}${m.note?`<div class="muted mnote">${esc(m.note)}</div>`:""}</td><td>${esc(m.value)}</td>
-    <td>${m.graded?`<span class="gd ${["g-w","g-o","g-s"][m.score]}" title="${["Weak","OK","Strong"][m.score]}"></span>`:`<span class="muted" title="Shown for context, not graded here">info</span>`}</td><td style="text-align:left">${pbar(m.pct,sn)}</td></tr>`).join("")+
+    <td>${m.graded?`<span class="gd ${["g-w","g-o","g-s"][m.score]}" title="${["Weak","OK","Strong"][m.score]}"></span>`:`<span class="muted" title="Shown for context, not graded here">info</span>`}</td><td style="text-align:left">${pbar(m.pct,m.grp||sn)}</td></tr>`).join("")+
    `</table></div>${c.trend&&c.trend.points&&c.trend.points.length?`<p class="muted">${esc(c.trend.label)}: ${c.trend.points.map(p=>p[0]+" "+p[1]+(c.trend.unit||"")).join(" · ")}</p>`:""}`)}
  // valuation strip
  const lo=Math.min(r.bear,px,r.buy_below)*0.92,hi=Math.max(r.bull,px)*1.06,X=v=>((v-lo)/(hi-lo)*100).toFixed(2)+"%";
