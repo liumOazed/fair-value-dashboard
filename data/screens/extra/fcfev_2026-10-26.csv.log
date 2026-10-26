@@ -1,0 +1,40 @@
+  df.drop(
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:518: Pandas4Warning: The inplace keyword in DataFrame.rename is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  df.rename(columns={
+==================================================================
+  ARIA-Growth — Screener (rebuilt)
+==================================================================
+  ✓ S&P 500: 503 tickers
+
+📥 Fetching fundamentals for 503 tickers (slow, ~1/s)...
+  ... 50/503 (50 ok, 0 failed)
+  ... 100/503 (100 ok, 0 failed)
+  ... 150/503 (150 ok, 0 failed)
+  ... 200/503 (200 ok, 0 failed)
+  ... 250/503 (250 ok, 0 failed)
+  ... 300/503 (300 ok, 0 failed)
+  ... 350/503 (350 ok, 0 failed)
+  ... 400/503 (400 ok, 0 failed)
+  ... 450/503 (450 ok, 0 failed)
+  ... 500/503 (500 ok, 0 failed)
+  ✓ 503 tickers with data (0 failed/skipped)
+
+  ✓ 502 stocks screened → data/screens/extra/fcfev_2026-10-26.csv
+  Score range: 5.8 - 90.7
+
+  Top 10:
+    MU      90.7  rev  379.3%  R40  443.1  [Technology]
+    EOG     88.3  rev   58.7%  R40   84.4  [Energy]
+    SNDK    87.1  rev  371.6%  R40  428.1  [Technology]
+    OXY     86.7  rev   53.4%  R40   83.7  [Energy]
+    APP     85.5  rev   52.8%  R40  117.4  [Communication Servic]
+    MPC     83.5  rev   53.7%  R40   59.2  [Energy]
+    VLO     81.8  rev   51.9%  R40   60.7  [Energy]
+    INCY    81.7  rev   37.7%  R40   65.4  [Healthcare]
+    FANG    80.2  rev   52.5%  R40   61.5  [Energy]
+    FIX     79.6  rev   53.7%  R40   66.7  [Industrials]
+
+  v3 metric coverage (non-blank of 502): {'roic_pct': 472, 'net_debt_ebitda': 470, 'rev_cagr_pct': 502, 'fcf_cv': 450, 'share_change_pct_yr': 501}
+
+  Next: python aria_growth_archive_screen.py --screen data/screens/extra/fcfev_2026-10-26.csv
