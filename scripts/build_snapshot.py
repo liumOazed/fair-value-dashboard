@@ -354,7 +354,7 @@ def build():
             flags.append(dict(t=f"{tv * 100:.0f}% of value after year 10", d="Most of the value depends on the long run, so small changes in long-term assumptions move it a lot."))
 
         prices = [[k, mp[k]] for k in mkeys[-25:]]
-        out["stocks"][t] = dict(cards=cards, valuation=dict(history=hist, now=now, sector_pct=sect, live=live), prices=prices, flags=flags,
+        out["stocks"][t] = dict(all_checks=bool(s.get("all_checks")), checks=[dict(q=x["q"], v=x["v"]) for x in (s.get("answers") or [])], cards=cards, valuation=dict(history=hist, now=now, sector_pct=sect, live=live), prices=prices, flags=flags,
                                 cyclical=any(f["t"] == "Cyclical" for f in flags))
     json.dump(out, open(ROOT / "data/snapshot.json", "w"), separators=(",", ":"))
     print("snapshot:", len(out["stocks"]), "stocks")
