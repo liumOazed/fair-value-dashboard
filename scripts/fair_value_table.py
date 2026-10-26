@@ -47,12 +47,12 @@ TOO_CHEAP = 2.5
 
 def skip_reason(r):
     q = PREV.get(r["ticker"])
-    ey, fy, conv, g, m = r["earnings_yield"], r["fcf_yield_pct"], r["fcf_conversion"], r["rev_growth_pct"], r["profit_margin_pct"]
+    ey, fy, conv, g, m = r["earnings_yield"], r["fcf_yield_pct"], r.get("fcf_ni"), r["rev_growth_pct"], r["profit_margin_pct"]
     if r["sector"] == "Financial Services" and not r.get("peer_group"): return "Financial company: free cash flow is not meaningful"
     if ey is None: return "No P/E (no earnings to cross-check)"
     if m is not None and m < 0: return "Loss-making"
     if fy is None or fy <= 0 or (conv is not None and conv < 0.25): return "FCF distorted (cash flow far below earnings)"
-    if conv is not None and conv > 1.5: return "FCF unusually high (more than 1.5x earnings, may not last)"
+    if conv is not None and conv > 1.5: return "FCF unusually high (more than 1.5x net income, may not last)"
     if g is not None and g > 100: return "One-off growth (sales more than doubled)"
     if g is not None and g > 40 and m is not None and m < 5: return "Acquisition-like growth (sales up >40% on a thin margin)"
     nde, cov = r.get("net_debt_ebitda"), r.get("interest_coverage")
@@ -60,7 +60,8 @@ def skip_reason(r):
     if cov is not None and cov < 3 and nde is not None and nde > 0: return f"Weak interest cover (EBIT only {cov:.1f}x interest)"
     if q is not None and g is not None and q.get("rev_growth_pct") is not None and abs(g - q["rev_growth_pct"]) > 30:
         return f"Sales growth swung from {q['rev_growth_pct']:.0f}% to {g:.0f}% since {S['prev_month']} (acquisition, one-off or commodity cycle)"
-    if q is not None and q.get("fcf_yield_pct") is not None and (q["fcf_yield_pct"] <= 0) != (fy <= 0):
+    same_basis = (q or {}).get("fcf_basis") == r.get("fcf_basis") or (q is not None and "fcf_basis" not in q and r.get("fcf_basis") == "Yahoo")
+    if q is not None and same_basis and q.get("fcf_yield_pct") is not None and (q["fcf_yield_pct"] <= 0) != (fy <= 0):   # only compare like with like
         return f"Free cash flow flipped sign since {S['prev_month']} (unstable)"
     return None
 
@@ -112,7 +113,7 @@ def main():
                           buy_below=None if fair is None else round(fair * (1 - ev["mos"]), 2),
                           scenario_values=None if p is None else {k: round(p * v["ratio"], 2) for k, v in ev["scenarios"].items()},
                           metrics=dict(rev_growth_pct=r["rev_growth_pct"], fcf_yield_pct=r["fcf_yield_pct"], earnings_yield=r["earnings_yield"],
-                                       fcf_conversion=r["fcf_conversion"], profit_margin_pct=r["profit_margin_pct"], forward_pe=r["forward_pe"]), **ev))
+                                       fcf_ni=r.get("fcf_ni"), fcf_ni_basis=r.get("fcf_ni_basis"), profit_margin_pct=r["profit_margin_pct"], forward_pe=r["forward_pe"]), **ev))
     runners = [dict(ticker=r["ticker"], name=r["name"], sector=r["sector"], value_to_price=ev["value_to_price"])
                for r, ev in ranked if r["ticker"] not in {p["ticker"] for p in picks}][:10]
     f = ROOT / "data/fair_value_table.json"

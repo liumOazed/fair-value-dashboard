@@ -27,7 +27,7 @@
     <div class="scroll topscroll" id="tscroll"><div id="tspacer"></div></div>
     <div class="scroll" id="bscroll"><table id="tbl"><thead><tr>
       <th data-k="rank">#</th><th data-k="ticker">Stock</th><th data-k="sector">Sector</th><th data-k="score">Score</th><th data-k="safety" title="Financial Safety (0-100, higher = safer) and risk level">Safety</th><th data-k="checks_score" title="Revenue growing? · Profits healthy? · Cash flow strong? · Debt manageable? · Position improving? (hover an icon for the reason)">Checks</th><th data-k="rank_change" class="r">Rank change</th>
-      <th data-k="rev_growth_pct" class="r" title="Latest quarter revenue vs the same quarter a year earlier">Sales growth (qtr YoY)</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r">FCF yield</th><th data-k="earnings_yield" class="r" title="Earnings per share ÷ price (uses forward P/E when available)">Earnings yield</th><th data-k="fcf_conversion" class="r" title="FCF yield ÷ earnings yield. Near 1 = cash matches earnings; above 1.5 or below 0.25 = check why">FCF ÷ EY</th>
+      <th data-k="rev_growth_pct" class="r" title="Latest quarter revenue vs the same quarter a year earlier">Sales growth (qtr YoY)</th><th data-k="profit_margin_pct" class="r">Net margin</th><th data-k="fcf_yield_pct" class="r" title="Free cash flow from the cash-flow statement (operating cash flow − capex, last 4 quarters) ÷ market value">FCF yield</th><th data-k="earnings_yield" class="r" title="Trailing net income ÷ market value: same period as the FCF yield (the forward figure is in the stock's details)">Earnings yield</th><th data-k="fcf_ni" class="r" title="Free cash flow ÷ net income from the statements, 3 years combined. Near 1 = profits arrive as cash; above 1.5 or below 0.25 = check why. ⚠ = the latest year is far from the 3-year norm (working-capital swing)">FCF ÷ NI</th>
       <th data-k="forward_pe" class="r">Fwd P/E</th><th data-k="implied_fcf_growth" class="r">Growth priced in*</th><th>Fair value</th>
     </tr></thead><tbody></tbody></table></div>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px">
@@ -38,9 +38,9 @@
     <h2>How the Growth Quality Score works</h2>
     <p class="muted">A shortlist tool, not a prediction. It replaces the original growth score, which counted growth twice and let energy stocks and one-off spikes dominate.</p>
     <h3>What it measures (0 to 100), score v4</h3>
-    <ul><li><b>Business quality 30%</b>: ROIC 35, net margin 20, gross margin 20, FCF ÷ net income 15, ROE 10 (only when equity is meaningful).</li>
+    <ul><li><b>Business quality 30%</b>: ROIC 35, net margin 20, gross margin 20, FCF ÷ net income 15 (statements, 3 years combined from November 2026; latest year before), ROE 10 (only when equity is meaningful).</li>
     <li><b>Growth &amp; consistency 30%</b>: latest-quarter sales growth (year on year) 25, 3-year revenue CAGR 25, EPS CAGR 20, revenue-growth volatility 15 and earnings variability 15 (steadier is better).</li>
-    <li><b>Valuation 20%</b>: forward P/E 30 and EV/EBITDA 25 (lower is better), FCF yield 30, earnings yield 15.</li>
+    <li><b>Valuation 20%</b>: forward P/E 30 and EV/EBITDA 25 (lower is better), FCF yield 30, earnings yield 15. From November 2026 the FCF yield uses statement free cash flow (last 4 quarters) instead of Yahoo's estimate, and the earnings yield uses <i>trailing</i> earnings, so it no longer repeats the forward P/E.</li>
     <li><b>Financial resilience 20%</b>: net debt/EBITDA 35, interest cover 25, FCF variability 15, negative-FCF years 15, share-count change 10.</li></ul>
     <p class="muted">Each metric is a percentile inside the stock's sector; each part re-weights over the metrics that exist. Cyclical sectors (Energy, Basic Materials): growth 15%, quality 35%, valuation 25%, resilience 25%. A part with no data scores at the 30th percentile. No blanket penalties: the score is <b>capped at 50</b> only when FCF was negative in 2+ years and interest cover is weak.</p>
     <h3>Quick answers (Checks column)</h3>

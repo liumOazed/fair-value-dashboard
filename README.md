@@ -48,6 +48,16 @@ Fair values are slow-moving. Re-run the model after each earnings report (roughl
 
 Preview locally: `python -m http.server` then open http://localhost:8000.
 
+## Cash-flow definitions (one per question)
+
+| Question | Metric | Definition |
+|---|---|---|
+| Are profits real cash? | **FCF ÷ net income** | Statement free cash flow (operating cash flow − capex) ÷ reported net income, **3 fiscal years combined** (latest year when history is short). A "Cash swing" flag appears when the latest year is more than 30% away from the 3-year figure. |
+| Cash return for the price | **FCF yield** | Statement free cash flow, last 4 quarters (latest fiscal year if quarters are missing) ÷ market value. Yahoo's computed "levered FCF" is kept only as `fcf_yield_yahoo_pct` for reference. |
+| Profit return for the price | **Earnings yield** | Trailing net income (last 4 quarters) ÷ market value, the same period as the FCF yield. The forward (analyst) earnings yield is shown separately. |
+
+The old "FCF ÷ EY" column was dropped: done consistently it equals FCF ÷ net income, and it mixed Yahoo's FCF with forward earnings. These definitions apply to Growth Screen scores and the Monthly Top 5 from November 2026; October stays as recorded.
+
 ## Stock snapshot (top of each Fair Value drawer)
 
 Click a stock to see, before the detail:

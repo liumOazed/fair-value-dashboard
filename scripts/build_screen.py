@@ -30,7 +30,7 @@ def required_return(t, sector, themes_of):
         if th in RRF["themes"]: return RRF["themes"][th]["r"], "theme", f"{th}: " + RRF["themes"][th]["reason"]
     if sector in REQ_RETURN: return REQ_RETURN[sector], "sector", f"{sector} sector default"
     return DEFAULT_R, "default", "market default"
-MIN_FCF_CONVERSION = 0.25      # FCF yield below 25% of earnings yield = FCF distorted by heavy capex (item 1)
+MIN_FCF_CONVERSION = 0.25      # FCF below 25% of net income (statement figures, same period) = FCF distorted by heavy capex (item 1)
 
 def pct_in_sector(df, col, higher_better=True):
     s = df[col]
@@ -72,7 +72,8 @@ V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
            "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct",
-           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct", "operating_margin_pct"]
+           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct", "operating_margin_pct",
+           "fcf_ni_3y", "fcf_ttm", "ni_ttm", "fcf_yield_yahoo_pct", "earnings_yield_pct", "earnings_yield_fwd_pct", "fcf_basis"]
 
 def score_v3(d):
     """Growth Quality Score v3, 0-100. Every metric is ranked inside the stock's own sector (as v2).
@@ -180,7 +181,8 @@ def score_v4(d):
     P = lambda col, hb=True: pct_in_sector(d, col, hb)
     d["roic_c"] = d.roic_pct.clip(-20, 80).where(~fin)
     d["roe_c"] = d.roe_pct.where((d.roe_pct > -50) & (d.roe_pct < 100))           # negative/huge equity: not meaningful
-    d["fni_c"] = d.fcf_conversion.clip(0, 1.5)
+    # cash conversion: 3-year cumulative FCF / net income when the CSV has it (Nov-2026 on), else the latest fiscal year
+    d["fni_c"] = (d.fcf_ni_3y.fillna(d.fcf_conversion) if "fcf_ni_3y" in d.columns else d.fcf_conversion).clip(0, 1.5)
     d["g"] = d.rev_growth_pct.clip(-10, 60)
     d["cagr_c"] = d.rev_cagr_pct.clip(-20, 40)
     d["eps_c"] = d.eps_cagr_pct.clip(-30, 60)
@@ -191,6 +193,9 @@ def score_v4(d):
     d["fcf_c"] = d.fcf_yield_pct.clip(-10, 15)
     pe_y = d.forward_pe.where(d.forward_pe > 0).fillna(d.pe_ratio.where(d.pe_ratio > 0))
     d["ey_c"] = (100 / pe_y).clip(0, 20)
+    if "earnings_yield_pct" in d.columns and d.earnings_yield_pct.notna().sum() > 100:
+        # from Nov-2026: TRAILING earnings yield, so it adds information instead of repeating the forward P/E (30%)
+        d["ey_c"] = d.earnings_yield_pct.clip(-20, 20)
     d["nde_c"] = d.net_debt_ebitda.clip(-5, 10).where(~fin)
     d["cov_c"] = d.interest_coverage.clip(0, 50).where(~fin)
     d["fcv_c"] = d.fcf_cv.clip(0, 3).where(~fin)
@@ -336,9 +341,18 @@ for t, r in cur.iterrows():
     wacc = None if pd.isna(E) or E <= 0 else (E * rr + D * rd * (1 - tx)) / (E + D)
     spread = None if (wacc is None or pd.isna(r.roic_pct) or r.peer == "Financial Services") else round(r.roic_pct / 100 - wacc, 4)
     flags_out = list(r["flag_list"]) + (["Below WACC"] if spread is not None and spread < 0 else [])
-    pe_for_yield = r.forward_pe if (not pd.isna(r.forward_pe) and r.forward_pe > 0) else (r.pe_ratio if (not pd.isna(r.pe_ratio) and r.pe_ratio > 0) else None)
-    ey = 100 / pe_for_yield if pe_for_yield else None                 # earnings yield, %
-    conv = None if (ey is None or pd.isna(r.fcf_yield_pct)) else r.fcf_yield_pct / ey   # share of earnings that becomes free cash
+    # earnings yield = TRAILING earnings / price (same period as the trailing FCF yield); forward shown separately
+    ey_t = r.get("earnings_yield_pct")
+    ey = (float(ey_t) if not pd.isna(ey_t) else None) if ey_t is not None else None
+    if ey is None and not pd.isna(r.pe_ratio) and r.pe_ratio > 0: ey = 100 / r.pe_ratio
+    ey_f = r.get("earnings_yield_fwd_pct")
+    ey_fwd = float(ey_f) if ey_f is not None and not pd.isna(ey_f) else (100 / r.forward_pe if not pd.isna(r.forward_pe) and r.forward_pe > 0 else None)
+    # one cash-conversion figure: statement FCF / statement net income, 3-year cumulative (latest year if not available)
+    c3, c1 = r.get("fcf_ni_3y"), r.fcf_conversion
+    c3 = None if c3 is None or pd.isna(c3) else float(c3); c1 = None if pd.isna(c1) else float(c1)
+    conv = c3 if c3 is not None else c1
+    swing = c3 is not None and c1 is not None and c3 > 0 and abs(c1 / c3 - 1) > 0.30      # latest year far from the 3-year norm
+    if swing: flags_out.append("Cash swing")
     capex_heavy = ey is not None and (r.peer == "Financial Services" or pd.isna(r.fcf_yield_pct) or r.fcf_yield_pct <= 0 or (conv is not None and conv < MIN_FCF_CONVERSION))   # banks/insurers: FCF is not meaningful
     basis = "earnings" if capex_heavy else "fcf"
     ig = implied_growth(ey if capex_heavy else r.fcf_yield_pct, rr)
@@ -357,8 +371,10 @@ for t, r in cur.iterrows():
         history=[dict(m=m, rank=int(frames[m].loc[t, 'rank']), score=float(frames[m].loc[t, 'score']), est=m in estimated) if t in frames[m].index else dict(m=m, rank=None, score=None, est=m in estimated) for m in months], flags=flags_out,
         rev_growth_pct=num(r.rev_growth_pct), gross_margin_pct=num(r.gross_margin_pct), profit_margin_pct=num(r.profit_margin_pct),
         roe_pct=num(r.roe_pct), pe=num(r.pe_ratio), forward_pe=num(r.forward_pe), ev_ebitda=num(r.ev_ebitda), ps=num(r.ps_ratio),
-        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, required_return_source=rr_src, required_return_reason=rr_why, fcf_conversion=None if conv is None else round(conv, 2), earnings_yield=None if ey is None else round(ey, 2),
-        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion", "roic_basis", "share_jump", "cost_of_debt", "industry")}, fcf_ni_conversion=num(r["fcf_conversion"]),
+        fcf_yield_pct=num(r.fcf_yield_pct), market_cap=num(r.market_cap), implied_fcf_growth=ig, implied_tag=tag, implied_basis=basis, required_return=rr, required_return_source=rr_src, required_return_reason=rr_why, fcf_ni=None if conv is None else round(conv, 2), fcf_ni_basis=("3y" if c3 is not None else ("latest FY" if c1 is not None else None)), cash_swing=bool(swing),
+        earnings_yield=None if ey is None else round(ey, 2), earnings_yield_fwd=None if ey_fwd is None else round(ey_fwd, 2),
+        fcf_basis=(r.get("fcf_basis") if isinstance(r.get("fcf_basis"), str) else "Yahoo"),
+        **{c: num(r[c]) for c in V3_COLS if c not in ("total_debt", "interest_expense", "fcf_conversion", "roic_basis", "share_jump", "cost_of_debt", "industry", "fcf_basis", "earnings_yield_pct", "earnings_yield_fwd_pct")}, fcf_ni_conversion=num(r["fcf_conversion"]),
         roic_basis=(r["roic_basis"] if isinstance(r["roic_basis"], str) else None), share_jump=bool(r["share_jump"]) if not pd.isna(r["share_jump"]) else False,
         wacc_detail=None if wacc is None else dict(equity_weight=round(E / (E + D), 3), debt_weight=round(D / (E + D), 3), cost_equity=rr,
             cost_debt_raw=None if rd_raw is None else round(float(rd_raw), 4), cost_debt_used=round(rd, 4), tax=round(float(tx), 3)), wacc=None if wacc is None else round(wacc, 4), roic_spread=spread,
@@ -400,7 +416,7 @@ def quick_answers(r):
         elif sp is not None and sp < 0: t += ". Earns less than its cost of capital"
     A.append(dict(q="Are profits healthy?", v=v, t=t + "."))
     # 3. Is cash flow strong?
-    neg, yrs, conv, fy, cv = r["fcf_neg_years"], r["fcf_years"], r["fcf_ni_conversion"], r["fcf_yield_pct"], r["fcf_cv"]
+    neg, yrs, conv, fy, cv = r["fcf_neg_years"], r["fcf_years"], r["fcf_ni"], r["fcf_yield_pct"], r["fcf_cv"]
     if bank: v, t = "na", "Free cash flow isn't a meaningful test for banks and insurers"
     elif yrs is None and fy is None: v, t = "na", "No cash-flow data"
     else:
@@ -408,7 +424,7 @@ def quick_answers(r):
         elif (neg or 0) >= 2 or (fy is not None and fy <= 0): v = "no"
         elif (neg or 0) == 0 and (conv is None or conv >= 0.8) and (cv is None or cv <= 0.5) and (fy or 0) > 0: v = "yes"
         else: v = "partly"
-        t = (f"FCF positive in {int(yrs - neg)} of {int(yrs)} years" if yrs else "FCF history n/a") + (f", {conv:.2f}x net income" if conv is not None else "") + (f", FCF yield {fy:.1f}%" if fy is not None else "")
+        t = (f"FCF positive in {int(yrs - neg)} of {int(yrs)} years" if yrs else "FCF history n/a") + (f", {conv:.2f}x net income" + (" over 3 years" if r.get("fcf_ni_basis") == "3y" else "") if conv is not None else "") + (f", FCF yield {fy:.1f}%" if fy is not None else "")
         if cv is not None and cv > 0.5: t += ", uneven from year to year"
         if util and (neg or 0) >= 1: t += ". Negative FCF is normal for utilities (capex funded by borrowing)"
     A.append(dict(q="Is cash flow strong?", v=v, t=t + "."))

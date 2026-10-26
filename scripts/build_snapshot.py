@@ -125,6 +125,11 @@ def build():
 
         # ---------- Cash flow: are profits turning into actual cash?
         fc, oc = series(cfs, "fcf"), series(cfs, "ocf")
+        pairs = [(cfs[d]["fcf"], inc[d]["ni"]) for d in sorted(cfs) if d in inc and ok(cfs[d].get("fcf")) and ok(inc[d].get("ni"))]
+        last3 = pairs[-3:]
+        cv3 = sum(f for f, _ in last3) / sum(n for _, n in last3) if len(last3) >= 2 and sum(n for _, n in last3) > 0 else None
+        cv1 = pairs[-1][0] / pairs[-1][1] if pairs and pairs[-1][1] > 0 else None
+        swing = ok(cv3) and ok(cv1) and cv3 > 0 and abs(cv1 / cv3 - 1) > 0.30
         fi = assets[t].get("fcf_inputs") or {}
         fcf_ttm = float(fi["fcf"]) * 1e9 if ok(fi.get("fcf")) else (fc[-1][1] if fc else None)   # the model's (TTM / normalised) FCF
         rev_last = rv[-1][1] if rv else None
@@ -134,8 +139,9 @@ def build():
         cash = [
             M("Operating cash flow · free cash flow (latest year)", None if not (oc and fc) else f"${oc[-1][1] / 1e9:.2f}B · ${fc[-1][1] / 1e9:.2f}B", graded=False),
             M("FCF margin", fmt_pct(fmargin), g3(fmargin, 0.15, 0.05)),
-            M("FCF / net income", fmt_x(s.get("fcf_ni_conversion"), 2), g3(s.get("fcf_ni_conversion"), 0.9, 0.6), pct=P("fcf_ni_conversion"),
-              note="Above ~0.9x means profits are backed by cash."),
+            M("FCF / net income (3 years combined)", fmt_x(cv3, 2) if ok(cv3) else fmt_x(cv1, 2), g3(cv3 if ok(cv3) else cv1, 0.9, 0.6), pct=P("fcf_ni"),
+              note="Free cash flow ÷ net income from the statements, same years. Above ~0.9x means profits arrive as cash."
+                   + (f" Latest year {cv1:.2f}x: far from the 3-year norm (working-capital swing), so the 3-year figure is the one graded." if swing else "")),
             M("FCF growth, CAGR", fmt_pct(s["fcf_cagr_pct"] / 100 if ok(s.get("fcf_cagr_pct")) else None, sign=True), g3(s.get("fcf_cagr_pct"), 8, 0), pct=P("fcf_cagr_pct")),
             M("FCF stability (variation)", None if not ok(s.get("fcf_cv")) else f"{s['fcf_cv']:.2f}", g3(s.get("fcf_cv"), 0.25, 0.5, False), pct=P("fcf_cv", False)),
             M("Negative-FCF years", None if not ok(s.get("fcf_neg_years")) else f"{int(s['fcf_neg_years'])} of {int(s.get('fcf_years') or 0)}",
@@ -147,7 +153,7 @@ def build():
         ccard = dict(key="cash", title="Cash flow", question="Are its profits turning into actual cash?", metrics=cash,
                      trend=dict(label="Free cash flow by year ($B)", points=[[y, round(v / 1e9, 2)] for y, v in fc]),
                      headline=[x for x in [f"FCF margin {fmt_pct(fmargin, 0)}" if ok(fmargin) else None,
-                                           f"{s['fcf_ni_conversion']:.2f}x net income" if ok(s.get("fcf_ni_conversion")) else None] if x])
+                                           f"{(cv3 if ok(cv3) else cv1):.2f}x net income" if ok(cv3) or ok(cv1) else None] if x])
 
         # ---------- Business performance: efficient and consistent?
         roic = []
@@ -347,6 +353,8 @@ def build():
             flags.append(dict(t="Risk", d=w))
         if cut:
             flags.append(dict(t="Dividend cut", d=f"Dividend per share fell in {full[-1][0]}."))
+        if swing:
+            flags.append(dict(t="Cash swing", d=f"Free cash flow was {cv1:.2f}x net income last year vs {cv3:.2f}x over 3 years: a working-capital or capex swing, so one year can mislead."))
         if s.get("data_confidence") == "Low":
             flags.append(dict(t="Low data confidence", d="Several inputs are missing or estimated."))
         tv = assets[t].get("tv_share")
