@@ -4,7 +4,7 @@ All $ figures in billions unless noted. Inputs sourced from Q2-2026 filings / pr
 """
 import json, math
 
-AS_OF = "2026-10-24"   # method change: FCF before interest at the required return, minus net debt
+AS_OF = "2026-10-26"   # method change: FCF before interest at the required return, minus net debt
 GT = 0.025            # terminal growth
 PROBS = {"bear": 0.30, "base": 0.50, "bull": 0.20}
 import pathlib
@@ -137,6 +137,54 @@ STOCKS = {
               net_cash=-0.899, extra=0.0, mos=0.3,
               scen=dict(bear=dict(g1=0.04,g10=0.03,m=0.22), base=dict(g1=0.085,g10=0.045,m=0.25), bull=dict(g1=0.11,g10=0.055,m=0.27)),
               notes="TTM to Jun-2026. Veterinary diagnostics with recurring test revenue; SBC-adjusted cash margin ~26%. Analysts expect ~9% growth. Risk: fewer US vet visits; bear case 4% growth."),
+ "VRSN": dict(name="VeriSign Inc.", price=300.32, shares=0.0897, rev=1.732, fcf=1.024, sbc=0.077,
+              net_cash=-1.316, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.01,m=0.5), base=dict(g1=0.06,g10=0.03,m=0.55), bull=dict(g1=0.09,g10=0.04,m=0.58)),
+              notes="TTM to Sep-2026. Sole registry for .com and .net: a regulated near-monopoly with a ~55% SBC-adjusted cash margin; growth comes from contractual price increases and domain volumes. Negative equity from buybacks; net debt $1.3B. Risk: falling domain registrations and price-cap changes at contract renewal (bear case 2% growth)."),
+ "NDAQ": dict(name="Nasdaq Inc.", price=102.56, shares=0.559, rev=5.78, fcf=2.258, sbc=0.177,
+              net_cash=-8.381, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.03,g10=0.03,m=0.32), base=dict(g1=0.08,g10=0.045,m=0.36), bull=dict(g1=0.11,g10=0.055,m=0.39)),
+              notes="TTM to Sep-2026. Revenue = NET revenue (after transaction rebates and brokerage fees, $5.78B), the basis margins are measured on; gross revenue $9.2B. Exchanges plus financial technology (Adenza, Verafin) and index licensing. Net debt $8.4B (Adenza deal) is the main risk; the Growth Screen flags it High risk on debt."),
+ "MCO": dict(name="Moody's Corp.", price=483.45, shares=0.17242, rev=8.176, fcf=2.977, sbc=0.233,
+              net_cash=-5.871, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.03,m=0.29), base=dict(g1=0.07,g10=0.045,m=0.33), bull=dict(g1=0.1,g10=0.055,m=0.36)),
+              notes="TTM to Sep-2026. Credit ratings (a duopoly with S&P) plus Moody's Analytics data and software. SBC-adjusted cash margin ~34%. Analysts expect ~7% growth. Risk: bond-issuance downturns hit ratings revenue (bear case 2%), and AI pressure on analytics."),
+ "SPGI": dict(name="S&P Global Inc.", price=450.31, shares=0.2948, rev=14.27, fcf=5.05, sbc=0.24,
+              net_cash=-11.49, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.03,g10=0.03,m=0.3), base=dict(g1=0.07,g10=0.045,m=0.34), bull=dict(g1=0.09,g10=0.055,m=0.37)),
+              notes="TTM to Jun-2026, PRO FORMA for the Mobility spin-off (completed 1 Jul 2026): Mobility's ~$1.85B revenue and an estimated ~$0.5B of its free cash flow removed. 2026 guidance ex-Mobility: revenue +5.9-7.9%, adjusted EPS $17.50-17.75. Net debt $11.5B (June balance sheet). Ratings, indices, market data. Lower confidence on the pro-forma split."),
+ "NFLX": dict(name="Netflix Inc.", price=65.85, shares=4.164, rev=49.735, fcf=11.375, sbc=0.54,
+              net_cash=-6.909, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.06,g10=0.03,m=0.2), base=dict(g1=0.11,g10=0.05,m=0.26), bull=dict(g1=0.14,g10=0.06,m=0.3)),
+              notes="TTM to Sep-2026 (prices after the 10-for-1 split). 2026 guidance: revenue ~$51.1B (+13%), operating margin 31.5%, free cash flow ~$12B (cut from $12.5B). Net income is boosted by a one-off break-up fee, so the model uses free cash flow. Base case lifts the SBC-adjusted cash margin from ~22% to 26% as content spend grows slower than revenue. Risks: ad growth (forecast cut), competition for viewing time."),
+ "CBOE": dict(name="Cboe Global Markets Inc.", price=340.42, shares=0.10443, rev=5.061, fcf=1.875, sbc=0.053,
+              net_cash=0.811, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=-0.04,g10=0.025,m=0.3), base=dict(g1=0.04,g10=0.04,m=0.34), bull=dict(g1=0.08,g10=0.05,m=0.37)),
+              notes="TTM to Jun-2026 (gross revenue; margins on the same basis). Options exchanges (SPX, VIX): 2026 trading volumes were exceptionally high, so the bear case has revenue falling 4% as volatility normalises and analysts expect only ~3% growth next year. Small net cash."),
+ "GRMN": dict(name="Garmin Ltd.", price=293.74, shares=0.1929, rev=7.671, fcf=1.6, sbc=0.173,
+              net_cash=2.488, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.03,g10=0.03,m=0.15), base=dict(g1=0.1,g10=0.045,m=0.19), bull=dict(g1=0.13,g10=0.055,m=0.21)),
+              notes="TTM to Jun-2026. Fitness, outdoor, marine, aviation and auto devices; no debt and $2.5B net cash. Revenue +11% TTM; analysts expect ~12%. SBC-adjusted cash margin ~19%. Risk: consumer-spending slowdown and tariffs (bear case 3% growth)."),
+ "FDS": dict(name="FactSet Research Systems Inc.", price=331.32, shares=0.03557, rev=2.476, fcf=0.707, sbc=0.084,
+              net_cash=-1.277, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.02,m=0.21), base=dict(g1=0.06,g10=0.035,m=0.25), bull=dict(g1=0.08,g10=0.045,m=0.28)),
+              notes="FY to Aug-2026. Financial data and analytics subscriptions; very steady (FCF rose every year). Analysts expect ~6% growth. Shares have de-rated on fears that AI tools commoditise financial data and research workflows; the bear case has 2% growth and lower margins. Net debt $1.3B."),
+ "CRM": dict(name="Salesforce Inc.", price=248.57, shares=0.823, rev=43.938, fcf=14.4, sbc=3.665,
+              net_cash=-30.34, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.04,g10=0.03,m=0.2), base=dict(g1=0.095,g10=0.045,m=0.25), bull=dict(g1=0.12,g10=0.055,m=0.28)),
+              notes="TTM to Jul-2026. In May-2026 Salesforce borrowed ~$25B for a $25B accelerated buyback, so net debt is $30B; FCF is set to $14.4B (reported $15.2B less the extra after-tax interest at the new run-rate) and interest to ~$1.5B a year. FY27 revenue guidance $45.9-46.2B (~+10%). Stock pay is large (~8% of revenue). Risk: AI agents changing seat-based CRM pricing (bear case 4% growth)."),
+ "HWM": dict(name="Howmet Aerospace Inc.", price=185.91, shares=0.3989, rev=9.117, fcf=1.791, sbc=0.091,
+              net_cash=-4.101, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.03,g10=0.025,m=0.14), base=dict(g1=0.14,g10=0.045,m=0.19), bull=dict(g1=0.18,g10=0.055,m=0.22)),
+              notes="TTM to Jun-2026. Jet-engine and airframe components; revenue +24% on the aircraft build-up and spares demand. Analysts expect ~14% next year. Aerospace is cyclical: the bear case has deliveries stalling (3% growth, margin 14%). Net debt $4.1B."),
+ "ADP": dict(name="Automatic Data Processing Inc.", price=304.16, shares=0.3962, rev=21.948, fcf=4.776, sbc=0.243,
+              net_cash=-1.041, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.18), base=dict(g1=0.06,g10=0.04,m=0.21), bull=dict(g1=0.08,g10=0.05,m=0.23)),
+              notes="FY to Jun-2026. Payroll and HR outsourcing; ~$1B+ of revenue is interest earned on client funds, which falls if rates drop. Very steady: 50+ years of dividend increases. Analysts expect ~6% growth. Corporate net debt ~$1B (client funds excluded). Risk: weaker hiring and lower interest rates (bear case 2%)."),
+ "AME": dict(name="AMETEK Inc.", price=240.03, shares=0.2292, rev=7.864, fcf=1.825, sbc=0.049,
+              net_cash=-1.541, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.03,m=0.19), base=dict(g1=0.1,g10=0.045,m=0.22), bull=dict(g1=0.14,g10=0.055,m=0.24)),
+              notes="TTM to Jun-2026. Electronic instruments and electromechanical devices; grows by steady bolt-on acquisitions (analysts' ~16% includes deals). SBC-adjusted cash margin ~23%. Net debt $1.5B. Risk: industrial slowdown (bear case 2% growth)."),
 }
 
 # ---------------------------------------------------------------- capital structure (for WACC)
@@ -167,6 +215,18 @@ FIN = {
  "CTAS": dict(debt=2.706, interest=0.106, rd=0.0392, tax=0.2),
  "DXCM": dict(debt=1.398, interest=0.015, rd=0.0107, tax=0.22),
  "IDXX": dict(debt=1.096, interest=0.038, rd=0.0347, tax=0.2),
+ "VRSN": dict(debt=1.792, interest=0.078, rd=0.0435, tax=0.236),
+ "NDAQ": dict(debt=9.216, interest=0.335, rd=0.0363, tax=0.2),
+ "MCO": dict(debt=7.492, interest=0.258, rd=0.0344, tax=0.22),
+ "SPGI": dict(debt=15.622, interest=0.316, rd=0.0202, tax=0.226),
+ "NFLX": dict(debt=15.132, interest=0.857, rd=0.0566, tax=0.166),
+ "CBOE": dict(debt=1.58, interest=0.053, rd=0.0335, tax=0.285),
+ "GRMN": dict(debt=0.178, interest=0.0, rd=0.0500, tax=0.173),
+ "FDS": dict(debt=1.542, interest=0.055, rd=0.0357, tax=0.179),
+ "CRM": dict(debt=41.743, interest=1.5, rd=0.0359, tax=0.222),
+ "HWM": dict(debt=4.664, interest=0.168, rd=0.0360, tax=0.18),
+ "ADP": dict(debt=5.271, interest=0.459, rd=0.0871, tax=0.23),
+ "AME": dict(debt=2.036, interest=0.096, rd=0.0472, tax=0.174),
 }
 
 # DCF_METHOD: "equity" = original (FCF after interest at the required return, minus net debt; double-counts debt cost)

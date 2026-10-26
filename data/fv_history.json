@@ -351,5 +351,137 @@
    "price": 560.38,
    "method": "fcff_re"
   }
+ ],
+ "VRSN": [
+  {
+   "date": "2026-10-26",
+   "fv": 204.27,
+   "bear": 150.9,
+   "base": 212.36,
+   "bull": 264.08,
+   "price": 300.32,
+   "method": "fcff_re"
+  }
+ ],
+ "NDAQ": [
+  {
+   "date": "2026-10-26",
+   "fv": 70.59,
+   "bear": 47.77,
+   "base": 74.03,
+   "bull": 96.19,
+   "price": 102.56,
+   "method": "fcff_re"
+  }
+ ],
+ "MCO": [
+  {
+   "date": "2026-10-26",
+   "fv": 294.91,
+   "bear": 204.01,
+   "base": 308.38,
+   "bull": 397.58,
+   "price": 483.45,
+   "method": "fcff_re"
+  }
+ ],
+ "SPGI": [
+  {
+   "date": "2026-10-26",
+   "fv": 297.99,
+   "bear": 215.59,
+   "base": 312.27,
+   "bull": 385.91,
+   "price": 450.31,
+   "method": "fcff_re"
+  }
+ ],
+ "NFLX": [
+  {
+   "date": "2026-10-26",
+   "fv": 62.3,
+   "bear": 39.73,
+   "base": 65.76,
+   "bull": 87.53,
+   "price": 65.85,
+   "method": "fcff_re"
+  }
+ ],
+ "CBOE": [
+  {
+   "date": "2026-10-26",
+   "fv": 290.9,
+   "bear": 190.87,
+   "base": 306.84,
+   "bull": 401.1,
+   "price": 340.42,
+   "method": "fcff_re"
+  }
+ ],
+ "GRMN": [
+  {
+   "date": "2026-10-26",
+   "fv": 174.14,
+   "bear": 113.13,
+   "base": 186.3,
+   "bull": 235.27,
+   "price": 293.74,
+   "method": "fcff_re"
+  }
+ ],
+ "FDS": [
+  {
+   "date": "2026-10-26",
+   "fv": 276.69,
+   "bear": 193.36,
+   "base": 290.53,
+   "bull": 367.07,
+   "price": 331.32,
+   "method": "fcff_re"
+  }
+ ],
+ "CRM": [
+  {
+   "date": "2026-10-26",
+   "fv": 232.03,
+   "bear": 145.92,
+   "base": 248.21,
+   "bull": 320.76,
+   "price": 248.57,
+   "method": "fcff_re"
+  }
+ ],
+ "HWM": [
+  {
+   "date": "2026-10-26",
+   "fv": 96.66,
+   "bear": 44.59,
+   "base": 106.45,
+   "bull": 150.26,
+   "price": 185.91,
+   "method": "fcff_re"
+  }
+ ],
+ "ADP": [
+  {
+   "date": "2026-10-26",
+   "fv": 246.44,
+   "bear": 181.68,
+   "base": 258.05,
+   "bull": 314.57,
+   "price": 304.16,
+   "method": "fcff_re"
+  }
+ ],
+ "AME": [
+  {
+   "date": "2026-10-26",
+   "fv": 165.02,
+   "bear": 103.24,
+   "base": 175.19,
+   "bull": 232.25,
+   "price": 240.03,
+   "method": "fcff_re"
+  }
  ]
 }
