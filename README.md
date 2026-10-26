@@ -77,3 +77,45 @@ membership history (fja05680/sp500), annual SEC figures as first reported and mo
 `python scripts/bt_run.py` rebuilds the screen every quarter from filings available at the time, scores it with the live
 score v4, compares groups (score and fair-value quintiles, top 50, risk level) and block-bootstraps the gaps. Results appear on
 the Track record page. Survivorship-biased: compare groups with each other, not with SPY.
+
+## Changelog (since the first push, 15 Oct 2026)
+
+Functional changes only (layout and wording tweaks left out). Score and Top 5 rule changes apply from the month shown; earlier months stay as recorded.
+
+| Date | Area | Change | Why / effect |
+|---|---|---|---|
+| 15 Oct | Fair Value | First version: 10 assets, DCF fair value, bear/base/bull, margin of safety bands | — |
+| 16 Oct | Growth Screen | New tab: score v2, themes, 6 more fair values | Rank the S&P 500 on growth quality |
+| 16 Oct | Growth Screen | "Growth priced in": reverse DCF at sector required returns, earnings fallback when FCF is distorted, no verdict when sales shrink | Shows what today's price assumes |
+| 16 Oct | Growth Screen | Earnings yield and FCF ÷ EY columns; synced scrollbar above the table | (FCF ÷ EY replaced on 26 Oct, see below) |
+| 16 Oct | Monthly | Monthly pipeline: once-a-month lock, Aug/Sep estimated backfill, Calculate Top Growth / Evaluate Fair Value buttons, Monthly Top 5 table | One reproducible run per month |
+| 17 Oct | Fair Value | Full models for APA, DECK, INCY, MKC; Top 5 page shows full-model value next to the quick estimate | October Top 5 checked with full models |
+| 18 Oct | Growth Screen | Market P/E (trailing and forward, index-style) and a market comparison | Context for each stock's P/E |
+| 19 Oct | All tabs | One required-return file (`data/required_returns.json`) for every tab; fair value at 8–12% table in the drawer | Tabs can't disagree on the hurdle rate |
+| 20 Oct | Screener | v3 metrics: ROIC, net debt/EBITDA, interest cover, 3-yr CAGRs, volatility, FCF stability, share change, capex ratios; runs on GitHub | Quality and balance-sheet data |
+| 20 Oct | Growth Screen | Score v3 (ROIC, balance sheet, consistency, FCF stability, dilution); WACC and flags; Top 5 balance-sheet filters | — |
+| 21 Oct | Screener | ROIC on operating invested capital; EPS CAGR split guard; cost of debt = interest ÷ average debt; industry, beta, volatility, max drawdown | Fixes buyback and split distortions |
+| 21 Oct | Growth Screen | **Score v4**: Quality 30 / Growth 30 / Valuation 20 / Resilience 20; Financial Safety score; sector-aware risk levels (utilities, REITs); distress cap; data confidence | Current scoring method |
+| 22 Oct | Growth Screen | Fee-based financials peer group (V, MA, exchanges, data firms); **5 resilient compounders** added after the Top 50 | Durable businesses not missed for valuation |
+| 22 Oct | Monthly Top 5 | Resilient picks join the candidates (from Nov) | — |
+| 23 Oct | Growth Screen | Trend fields; **5 quick-answer questions** per stock and a Checks column | Plain-language health check |
+| 23 Oct | Fair Value | **DCF method fixed**: FCF *before* interest at the required return, minus net debt (was double-counting debt cost); year-by-year forecast tables | Debt can never raise a value |
+| 23 Oct | Fair Value | **Monte Carlo** (20k runs, 30/50/20 regimes, correlated inputs, Sobol check) and sensitivity chart | Range of outcomes, not one number |
+| 23 Oct | Track record | **Forward test** vs SPY (monthly signals, daily refresh) | Honest live check of the method |
+| 23 Oct | Track record | **Backtest 2013–2026** (SEC facts as first reported, membership history, block bootstrap) | Result: no reliable return edge from the score, but clearly lower risk |
+| 24 Oct | Fair Value | Monte Carlo: below-price and downside tiles, Bear/Base/Bull split, what-if weights, **10-year-hold return** (can be negative) and hold-for-good return, chance of a loss, average vs median | Answers "what might I earn at this price?" |
+| 24 Oct | Fair Value | **16 more full models** (EXPE, BKNG, INTU, ADSK, TPR, VEEV, MNST, ALLE, FTNT, RMD, V, FIX, MA, CTAS, DXCM, IDXX); "Fetch model inputs" workflow | 32 assets |
+| 25 Oct | Fair Value | **Stock snapshot**: flags, five graded quality cards (Earnings, Cash flow, Business performance, Financial strength, Dividends & buybacks), valuation strip, what to watch, fair value history (`data/fv_history.json`) | Compact one-screen view per stock |
+| 25 Oct | Data | Monthly "Refresh stock snapshot" job: dividends, annual statements, liquidity, splits, 6-yr prices | Keeps the snapshot current |
+| 25 Oct | Fair Value / Growth Screen | New groups: Consumer brands, Travel, Medical devices & diagnostics, Industrials & services, Energy | Nothing left in "Other" |
+| 25 Oct | Snapshot | Operating margin graded against the industry (sector if fewer than 8 peers); gross and net margin as context | Fair margin comparison (e.g. Apple vs software firms) |
+| 25 Oct | Fair Value | Price filters: Below fair value, Interesting or better | — |
+| 25 Oct | Automation | Quarterly fair-value refresh task updated for all stocks and the snapshot | — |
+| 26 Oct | Monthly | Monthly run makes the month's screener CSV itself on GitHub (guarded: fewer than 450 stocks → warning) | Nothing to upload by hand |
+| 26 Oct | Growth Screen | **Passes all 5 checks**: 5/5 badge, added to the list after the resilient picks, filter chip; groups for financial data & exchanges, aerospace & defense, media & streaming | Healthy businesses not missed |
+| 26 Oct | Monthly Top 5 | 5/5-check stocks join the candidates (from Nov) | 79 candidates instead of 55 |
+| 26 Oct | Fair Value | **12 more full models** (VRSN, NDAQ, MCO, SPGI pro forma ex-Mobility, NFLX, CBOE, GRMN, FDS, CRM incl. $25B buyback debt, HWM, ADP, AME) | 44 assets |
+| 26 Oct | Fair Value | Health filter "Clean bill of health (5/5)" | — |
+| 26 Oct | Cash-flow metrics | One **FCF ÷ net income** (statements, 3 years combined, Cash swing flag) replaces FCF ÷ EY; **FCF yield from statement cash flow** instead of Yahoo's levered estimate; trailing earnings yield (forward shown separately); score's earnings-yield part no longer repeats forward P/E (from Nov) | Same period, same definitions everywhere; removes wrong "FCF distorted" tags (NVDA, MSFT, GOOGL…) |
+| 26 Oct | Growth Screen | **FCF / EV** column (FCF before interest ÷ enterprise value, %), display only | Cash yield of the whole business; debt can't flatter it |
+| 25–26 Oct | Fixes | Dividend history robust to Yahoo gaps and payment-frequency changes; dividend-cut flag only for consecutive years; split-safe P/E history; duplicate operating-margin field that would have broken the monthly build | — |
