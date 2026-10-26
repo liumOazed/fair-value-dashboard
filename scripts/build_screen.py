@@ -508,6 +508,15 @@ ALLCHECKS = dict(rule="yes to all 5 quick questions", passed=sum(r["all_checks"]
                  picks=[r["ticker"] for r in sorted((r for r in rows if r["checks_pick"]), key=lambda r: -r["score"])])
 print("all 5 checks:", ALLCHECKS["passed"], "passed;", len(ALLCHECKS["picks"]), "added:", ALLCHECKS["picks"])
 
+# ---- FCF / EV (display only, not scored): from the month's CSV, else the newest supplementary scan
+_sup = sorted(glob.glob(str(ROOT / "data/screens/extra/fcfev_*.csv")))
+SUP = pd.read_csv(_sup[-1]).drop_duplicates("ticker").set_index("ticker")["fcff_ev_pct"].to_dict() if _sup else {}
+for r in rows:
+    if r.get("fcff_ev_pct") is None and SUP.get(r["ticker"]) == SUP.get(r["ticker"]):
+        r["fcff_ev_pct"] = num(SUP.get(r["ticker"]))
+        r["fcff_ev_src"] = pathlib.Path(_sup[-1]).name if r["fcff_ev_pct"] is not None else None
+    if r["sector"] == "Financial Services" and not r.get("peer_group"):
+        r["fcff_ev_pct"] = None                                    # banks / insurers: enterprise value is not meaningful
 out = dict(resilient=RESILIENT, all_checks=ALLCHECKS, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
 json.dump(out, open(ROOT / "data/screen.json", "w"), indent=0)
