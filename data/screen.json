@@ -28246,7 +28246,7 @@
 "fcf_conversion": 0.86,
 "earnings_yield": 6.51,
 "roic_pct": 48.45,
-"net_debt_ebitda": 0.0,
+"net_debt_ebitda": -0.0,
 "interest_coverage": 62.1,
 "rev_cagr_pct": -0.63,
 "rev_cagr_years": 3.0,
@@ -28320,12 +28320,12 @@
 {
 "q": "Is debt manageable?",
 "v": "yes",
-"t": "Net debt 0.0x EBITDA, interest covered 62.1x."
+"t": "Net debt -0.0x EBITDA, interest covered 62.1x."
 },
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: share count falling 4.5% a year. Worse: leverage up (-0.7x \u2192 0.0x), net margin -3.4 pts, FCF shrinking 16% a year, growth slowing."
+"t": "Better: share count falling 4.5% a year. Worse: leverage up (-0.7x \u2192 -0.0x), net margin -3.4 pts, FCF shrinking 16% a year, growth slowing."
 }
 ],
 "checks_score": 0,
@@ -34873,7 +34873,7 @@
 "beta": null,
 "volatility_1y_pct": 83.16,
 "max_drawdown_1y_pct": -43.85,
-"nd_ebitda_then": 0.0,
+"nd_ebitda_then": -0.0,
 "margin_change_pts": -10.7,
 "fcf_cagr_pct": 11.02,
 "operating_margin_pct": null,
@@ -34939,7 +34939,7 @@
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: FCF growing 11% a year. Worse: leverage up (0.0x \u2192 4.3x), net margin -10.7 pts, growth slowing."
+"t": "Better: FCF growing 11% a year. Worse: leverage up (-0.0x \u2192 4.3x), net margin -10.7 pts, growth slowing."
 }
 ],
 "checks_score": -1,
