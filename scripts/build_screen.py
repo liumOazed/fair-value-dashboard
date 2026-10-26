@@ -73,7 +73,8 @@ V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
            "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct",
            "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct", "operating_margin_pct",
-           "fcf_ni_3y", "fcf_ttm", "ni_ttm", "fcf_yield_yahoo_pct", "earnings_yield_pct", "earnings_yield_fwd_pct", "fcf_basis"]
+           "fcf_ni_3y", "fcf_ttm", "ni_ttm", "fcf_yield_yahoo_pct", "earnings_yield_pct", "earnings_yield_fwd_pct", "fcf_basis",
+           "enterprise_value", "fcff_ev_pct"]
 
 def score_v3(d):
     """Growth Quality Score v3, 0-100. Every metric is ranked inside the stock's own sector (as v2).
@@ -237,7 +238,7 @@ def score_v4(d):
 def v3_source():
     """Newest full-universe screener run in data/screens/extra/ (used as a proxy for months whose CSV predates v3)."""
     best = None
-    for f in sorted(glob.glob(str(ROOT / "data/screens/extra/*.csv"))):
+    for f in sorted(glob.glob(str(ROOT / "data/screens/extra/*_full.csv"))):   # full runs only (supplements never change scores)
         try:
             x = pd.read_csv(f)
         except Exception:

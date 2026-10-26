@@ -44,6 +44,7 @@ statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
   fcf_yield_pct       statement free cash flow (last 4 quarters, else latest fiscal year) / market cap
                       (Yahoo's computed "levered" FCF is kept only as fcf_yield_yahoo_pct)
   earnings_yield_pct  trailing net income (last 4 quarters) / market cap;  earnings_yield_fwd_pct = 1 / forward P/E
+  fcff_ev_pct         (statement FCF + interest x (1 - tax)) / enterprise value: cash yield of the whole business
   capex_ocf_pct       capex as % of operating cash flow (capital intensity, stable)
   capex_fcf           capex / FCF (blank when FCF <= 0)
   nd_ebitda_then      net debt / EBITDA in the OLDEST annual statement (compare with net_debt_ebitda for the trend)
@@ -261,7 +262,8 @@ V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
            "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct",
            "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct", "operating_margin_pct",
-           "fcf_ni_3y", "fcf_ttm", "ni_ttm", "fcf_yield_yahoo_pct", "earnings_yield_pct", "earnings_yield_fwd_pct", "fcf_basis"]
+           "fcf_ni_3y", "fcf_ttm", "ni_ttm", "fcf_yield_yahoo_pct", "earnings_yield_pct", "earnings_yield_fwd_pct", "fcf_basis",
+           "enterprise_value", "fcff_ev_pct"]
 
 
 def _df_to_json(df):
@@ -387,6 +389,13 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
                     row["fcf_basis"] = "TTM" if tt["fcf_ttm"] == tt["fcf_ttm"] else ("FY" if base == base else "Yahoo")
                     if base == base and mcap:
                         row["fcf_yield_pct"] = round(base / mcap * 100, 2)            # statement free cash flow / market value
+                    # FCF / EV: cash flow to ALL capital providers (statement FCF + after-tax interest) / enterprise value
+                    ev = info.get("enterpriseValue")
+                    row["enterprise_value"] = ev
+                    ie = row.get("interest_expense"); tx = row.get("tax_rate")
+                    ie = ie if ie == ie and ie is not None else 0.0
+                    tx = min(max(tx, 0.0), 0.35) if tx == tx and tx is not None else 0.21
+                    row["fcff_ev_pct"] = round((base + ie * (1 - tx)) / ev * 100, 2) if base == base and ev and ev > 0 else np.nan
                     pe_t = info.get("trailingPE")
                     row["earnings_yield_pct"] = (round(tt["ni_ttm"] / mcap * 100, 2) if tt["ni_ttm"] == tt["ni_ttm"] and mcap
                                                  else (round(100 / pe_t, 2) if pe_t and pe_t > 0 else np.nan))
