@@ -40,6 +40,10 @@ statements (usually 4 fiscal years, so "multi-year" = up to 3 yearly steps):
   fcf_neg_years       years with negative free cash flow, out of fcf_years
   share_change_pct_yr yearly change in share count (+ = dilution, - = buybacks)
   fcf_conversion      FCF / net income (latest fiscal year, both from the statements)
+  fcf_ni_3y           FCF / net income, cumulative over the last 3 fiscal years (statements; the graded conversion)
+  fcf_yield_pct       statement free cash flow (last 4 quarters, else latest fiscal year) / market cap
+                      (Yahoo's computed "levered" FCF is kept only as fcf_yield_yahoo_pct)
+  earnings_yield_pct  trailing net income (last 4 quarters) / market cap;  earnings_yield_fwd_pct = 1 / forward P/E
   capex_ocf_pct       capex as % of operating cash flow (capital intensity, stable)
   capex_fcf           capex / FCF (blank when FCF <= 0)
   nd_ebitda_then      net debt / EBITDA in the OLDEST annual statement (compare with net_debt_ebitda for the trend)
@@ -241,6 +245,9 @@ def history_metrics(inc, bal, cfs, info) -> dict:
 
     # conversion + capital intensity
     out["fcf_conversion"] = round(float(fcf.iloc[-1] / ni.iloc[-1]), 2) if len(fcf) and len(ni) and ni.iloc[-1] > 0 else np.nan
+    # same periods, statement figures: cumulative free cash flow / cumulative net income over the last 3 fiscal years
+    f3, n3 = fcf.iloc[-3:], ni.reindex(fcf.index).iloc[-3:] if len(fcf) else ni.iloc[0:0]
+    out["fcf_ni_3y"] = round(float(f3.sum() / n3.sum()), 2) if len(f3) >= 2 and len(n3.dropna()) == len(f3) and n3.sum() > 0 else np.nan
     if len(capex) and len(ocf) and ocf.iloc[-1] > 0:
         out["capex_ocf_pct"] = round(abs(float(capex.iloc[-1])) / float(ocf.iloc[-1]) * 100, 2)
     else:
@@ -253,7 +260,8 @@ V3_COLS = ["roic_pct", "net_debt_ebitda", "interest_coverage", "rev_cagr_pct", "
            "rev_growth_std", "earnings_cv", "fcf_cv", "fcf_neg_years", "fcf_years", "share_change_pct_yr",
            "fcf_conversion", "capex_ocf_pct", "capex_fcf", "total_debt", "interest_expense", "tax_rate",
            "roic_basis", "share_jump", "cost_of_debt", "industry", "beta", "volatility_1y_pct", "max_drawdown_1y_pct",
-           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct", "operating_margin_pct"]
+           "nd_ebitda_then", "margin_change_pts", "fcf_cagr_pct", "operating_margin_pct",
+           "fcf_ni_3y", "fcf_ttm", "ni_ttm", "fcf_yield_yahoo_pct", "earnings_yield_pct", "earnings_yield_fwd_pct", "fcf_basis"]
 
 
 def _df_to_json(df):
@@ -302,6 +310,31 @@ def fetch_statements(tk, t: str, cache_dir: Path | None):
     return inc, bal, cfs
 
 
+def ttm_statements(tk):
+    """Last-4-quarter (TTM) free cash flow = operating cash flow + capex (capex is negative) and net income, from the
+    quarterly statements. None when fewer than 4 quarters are available."""
+    out = {"fcf_ttm": np.nan, "ni_ttm": np.nan}
+    try:
+        qc, qi = tk.quarterly_cashflow, tk.quarterly_income_stmt
+    except Exception:
+        return out
+    def last4(df, *names):
+        if df is None or getattr(df, "empty", True):
+            return None
+        for n in names:
+            if n in df.index:
+                v = pd.to_numeric(df.loc[n], errors="coerce").iloc[:4]
+                if len(v) == 4 and v.notna().all():
+                    return float(v.sum())
+        return None
+    ocf, capex = last4(qc, "Operating Cash Flow", "Cash Flow From Continuing Operating Activities"), last4(qc, "Capital Expenditure")
+    fcf = (ocf + capex) if ocf is not None and capex is not None else last4(qc, "Free Cash Flow")
+    ni = last4(qi, "Net Income Common Stockholders", "Net Income")
+    out["fcf_ttm"] = fcf if fcf is not None else np.nan
+    out["ni_ttm"] = ni if ni is not None else np.nan
+    return out
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # FUNDAMENTALS (yfinance .info — current snapshot only)
 # ══════════════════════════════════════════════════════════════════════════════
@@ -333,7 +366,9 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
                 "forward_pe": info.get("forwardPE"),
                 "market_cap": mcap,
                 # v2 metrics (quality + cleaner valuation)
-                "fcf_yield_pct": round(fcf / mcap * 100, 2) if fcf and mcap else np.nan,
+                "fcf_yield_pct": round(fcf / mcap * 100, 2) if fcf and mcap else np.nan,   # replaced below by statement FCF when available
+                "fcf_yield_yahoo_pct": round(fcf / mcap * 100, 2) if fcf and mcap else np.nan,  # Yahoo's computed "levered" FCF: reference only
+                "earnings_yield_fwd_pct": round(100 / info["forwardPE"], 2) if info.get("forwardPE") and info["forwardPE"] > 0 else np.nan,
                 "roe_pct": round(roe * 100, 2) if roe is not None else np.nan,
                 "ev_ebitda": info.get("enterpriseToEbitda"),
                 "industry": info.get("industry") or "",
@@ -344,6 +379,17 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
                 try:
                     row.update(history_metrics(*fetch_statements(tk, t, cache_dir), info))
                     row.update(market_risk(tk, t, cache_dir))
+                    tt = ttm_statements(tk)
+                    row.update(tt)
+                    inc_, bal_, cfs_ = fetch_statements(tk, t, cache_dir)
+                    fy_fcf = _series(cfs_, "Free Cash Flow")
+                    base = tt["fcf_ttm"] if tt["fcf_ttm"] == tt["fcf_ttm"] else (float(fy_fcf.iloc[-1]) if len(fy_fcf) else np.nan)
+                    row["fcf_basis"] = "TTM" if tt["fcf_ttm"] == tt["fcf_ttm"] else ("FY" if base == base else "Yahoo")
+                    if base == base and mcap:
+                        row["fcf_yield_pct"] = round(base / mcap * 100, 2)            # statement free cash flow / market value
+                    pe_t = info.get("trailingPE")
+                    row["earnings_yield_pct"] = (round(tt["ni_ttm"] / mcap * 100, 2) if tt["ni_ttm"] == tt["ni_ttm"] and mcap
+                                                 else (round(100 / pe_t, 2) if pe_t and pe_t > 0 else np.nan))
                 except Exception as e:
                     print(f"  ⚠ {t}: statements failed ({e}); v3 metrics left blank")
             rows.append(row)
