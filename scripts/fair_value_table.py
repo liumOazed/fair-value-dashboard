@@ -2,7 +2,8 @@
 """Monthly Fair Value Table: pick the 5 most undervalued stocks from the current Top 50 (quick estimates).
 
 Steps
-1. Candidates = this month's Top 50 by Growth Quality Score plus the 5 resilient compounders (data/screen.json).
+1. Candidates = this month's Top 50 by Growth Quality Score, the 5 resilient compounders and every stock passing all
+   5 quick checks (data/screen.json; the 5/5 group joined from November 2026).
 2. Sanity filters (a stock is skipped, with the reason recorded, if any apply):
    financial company (FCF not meaningful) | FCF distorted (FCF < 25% of earnings) | FCF unusually high (> 1.5x earnings)
    | acquisition-like growth (sales > +40% with net margin < 5%) | one-off growth (> +100%) | loss-making | no P/E
@@ -88,7 +89,7 @@ def price(t):
         except Exception: print("no price for", t, e, file=sys.stderr); return None
 
 def main():
-    top = [r for r in S["rows"] if r["top50"] or r.get("resilient_pick")]       # top 50 + resilient compounders
+    top = [r for r in S["rows"] if r["top50"] or r.get("resilient_pick") or r.get("checks_pick")]   # top 50 + resilient + all 5 checks
     picks, skipped, ranked = [], [], []
     for r in top:
         why = skip_reason(r)

@@ -27,7 +27,7 @@ function render(){
  const rows=d.picks.map(p=>{const n=now(p.ticker)??p.price_at_eval;const[st,cl]=status(n,p.fair_value,p.buy_below,p.mos);return{...p,now:n,st,cl,
    diff:n!=null&&p.fair_value?n/p.fair_value-1:null,since:n!=null&&p.price_at_eval?n/p.price_at_eval-1:null}});
  const disc=rows.filter(r=>r.diff!=null);
- $("#kpis").innerHTML=[["Month",nice(cur),"evaluated "+d.evaluated],["Checked",`${d.passed} of ${d.candidates}`,"Top 50 stocks with trustworthy numbers"],
+ $("#kpis").innerHTML=[["Month",nice(cur),"evaluated "+d.evaluated],["Checked",`${d.passed} of ${d.candidates}`,"candidates with trustworthy numbers"],
   (()=>{const a=disc.length?disc.reduce((x,r)=>x+r.diff,0)/disc.length:null;return["Average gap",a==null?"–":Math.abs(a*100).toFixed(0)+"% "+(a<0?"below":"above"),"picks' price now vs fair value"]})(),
   ["Below buy price",rows.filter(r=>r.st==="Attractive").length+" of "+rows.length,"price under fair value minus margin of safety"]]
   .map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v" style="font-size:${String(k[1]).length>9?18:26}px">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
