@@ -34,7 +34,11 @@
     "NOW",
     "INTU",
     "VEEV",
-    "FTNT"
+    "FTNT",
+    "WDAY",
+    "GDDY",
+    "VRSN",
+    "ORCL"
   ],
   "Payments": [
     "GPN",
@@ -66,7 +70,10 @@
     "RL",
     "CMG",
     "SBUX",
-    "COST"
+    "COST",
+    "ROST",
+    "TJX",
+    "GRMN"
   ],
   "Travel": [
     "BKNG",
@@ -117,7 +124,9 @@
     "ADP",
     "FAST",
     "GWW",
-    "URI"
+    "URI",
+    "AME",
+    "MSI"
   ],
   "Energy": [
     "APA",
@@ -131,6 +140,35 @@
     "HAL",
     "SLB",
     "EQT"
+  ],
+  "Financial data & exchanges": [
+    "SPGI",
+    "MCO",
+    "MSCI",
+    "FDS",
+    "BR",
+    "VRSK",
+    "ICE",
+    "CME",
+    "CBOE",
+    "NDAQ"
+  ],
+  "Aerospace & defense": [
+    "GE",
+    "HWM",
+    "TDG",
+    "RTX",
+    "LMT",
+    "GD",
+    "NOC",
+    "LHX",
+    "AXON"
+  ],
+  "Media & streaming": [
+    "NFLX",
+    "DIS",
+    "WBD",
+    "TTWO"
   ],
   "Index & commodities": [
     "QQQ",
