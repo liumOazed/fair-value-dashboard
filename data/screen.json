@@ -12097,7 +12097,7 @@
 "pe_vs_market": 0.2429,
 "fpe_vs_market": 0.3688,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13888,7 +13888,7 @@
 "pe_vs_market": -0.1134,
 "fpe_vs_market": -0.0201,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15087,7 +15087,7 @@
 "pe_vs_market": -0.1409,
 "fpe_vs_market": -0.23,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15387,7 +15387,7 @@
 "pe_vs_market": -0.0218,
 "fpe_vs_market": 0.0341,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -19005,7 +19005,7 @@
 "pe_vs_market": 0.4989,
 "fpe_vs_market": 0.3798,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -23354,7 +23354,7 @@
 "pe_vs_market": 0.2246,
 "fpe_vs_market": 0.3832,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -25604,7 +25604,7 @@
 "pe_vs_market": 1.0332,
 "fpe_vs_market": 0.8795,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -28757,7 +28757,7 @@
 "pe_vs_market": -0.1224,
 "fpe_vs_market": -0.0291,
 "peer_group": "Fee-based financials",
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -36716,7 +36716,7 @@
 "pe_vs_market": 0.1786,
 "fpe_vs_market": 0.2884,
 "peer_group": "Fee-based financials",
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -39734,7 +39734,7 @@
 "pe_vs_market": -0.2427,
 "fpe_vs_market": -0.2652,
 "peer_group": "Fee-based financials",
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -45279,7 +45279,7 @@
 "pe_vs_market": -0.024,
 "fpe_vs_market": 0.0475,
 "peer_group": "Fee-based financials",
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -57532,7 +57532,7 @@
 "pe_vs_market": 0.0972,
 "fpe_vs_market": 0.0557,
 "peer_group": "Fee-based financials",
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",

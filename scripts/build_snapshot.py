@@ -259,7 +259,8 @@ def build():
         po_ni = divp / last_ni if (last_ni := (ni[-1][1] if ni else None)) and divp > 0 else None
         po_fcf = divp / fc[-1][1] if fc and fc[-1][1] > 0 and divp > 0 else None
         cover = fc[-1][1] / divp if fc and divp > 0 else None
-        cut = payer and len(full) >= 2 and full[-1][1] < full[-2][1] * 0.95
+        cut = (payer and len(full) >= 2 and full[-1][0] == full[-2][0] + 1 and full[-1][1] < full[-2][1] * 0.95
+               and pmax.get(full[-1][0], 0) < pmax.get(full[-2][0], 0) * 0.95)     # consecutive years, total AND annualised rate down
         div = [
             M("Dividend yield", fmt_pct(dyield, 2) if payer else "no dividend", graded=False, note="Not graded: a low yield isn't a weakness for a company that reinvests or buys back stock."),
             M("Dividend per share growth, 5-year CAGR", fmt_pct(g5, 1, True), g3(g5, 0.07, 0.02) if payer else None, graded=payer),
