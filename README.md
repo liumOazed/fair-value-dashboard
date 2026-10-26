@@ -84,7 +84,7 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 
 | Date | Area | Change | Why / effect |
 |---|---|---|---|
-| 15 Oct | Fair Value | First version: 10 assets, DCF fair value, bear/base/bull, margin of safety bands | — |
+| 15 Oct | Fair Value | First version: 6 assets (AAPL, MSFT, GOOGL, AMZN, QQQ, GLD), DCF fair value, bear/base/bull, margin-of-safety bands, daily prices | — |
 | 16 Oct | Growth Screen | New tab: score v2, themes, 6 more fair values | Rank the S&P 500 on growth quality |
 | 16 Oct | Growth Screen | "Growth priced in": reverse DCF at sector required returns, earnings fallback when FCF is distorted, no verdict when sales shrink | Shows what today's price assumes |
 | 16 Oct | Growth Screen | Earnings yield and FCF ÷ EY columns; synced scrollbar above the table | (FCF ÷ EY replaced on 26 Oct, see below) |
