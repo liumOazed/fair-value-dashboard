@@ -34,7 +34,7 @@ try: runs = json.load(open(RUNS))
 except Exception: runs = {}
 runs.setdefault("growth", {}); runs.setdefault("fair_value", {})
 if cal > month and month in runs["growth"] and not a.force:
-    note(f"No CSV for {nice(cal)} yet. Upload data/screens/growth_screen_results_{cal}.csv, then run again.", "warning")
+    note(f"No CSV for {nice(cal)} yet. The Monthly run workflow makes it on the 1st (or run it from the Actions tab); you can also upload data/screens/growth_screen_results_{cal}.csv.", "warning")
 changed = False
 def stamp(): return dict(ran=today.strftime("%Y-%m-%d %H:%M UTC"), calendar_month=cal, forced=a.force, by=os.environ.get("GITHUB_ACTOR", "local"))
 

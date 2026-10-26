@@ -1,6 +1,9 @@
 name: Monthly run
 # Buttons on the dashboard open this page. Pick a step and press "Run workflow".
 # Each step runs once per month; a second run that month does nothing (tick "force" only to redo a corrected CSV).
+# On the 1st (and on a manual run) it first makes this month's screener CSV itself if none was uploaded:
+# scripts/growth_screener.py runs here on GitHub (~20 min) and saves data/screens/growth_screen_results_YYYY-MM.csv.
+# Uploading your own CSV for the month still works and is never overwritten.
 on:
   schedule:
     - cron: "0 3 1 * *"        # 03:00 UTC on the 1st of every month
@@ -24,11 +27,32 @@ concurrency: { group: monthly, cancel-in-progress: false }
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install pandas numpy
+      - name: Make this month's screener CSV if none was uploaded
+        if: github.event_name != 'push'
+        run: |
+          M=$(date -u +%Y-%m)
+          OUT="data/screens/growth_screen_results_${M}.csv"
+          if [ -f "$OUT" ]; then echo "$OUT already exists (uploaded or made earlier): using it"; exit 0; fi
+          pip install yfinance lxml
+          python scripts/growth_screener.py --out /tmp/screen.csv 2>&1 | tail -40
+          python - "$OUT" <<'PY'
+          import sys, shutil, pandas as pd
+          out = sys.argv[1]
+          d = pd.read_csv("/tmp/screen.csv")
+          ok = len(d) >= 450 and d["rev_growth_pct"].notna().sum() >= 400
+          print(f"screener rows: {len(d)}, with revenue growth: {d['rev_growth_pct'].notna().sum()}")
+          if not ok:
+              shutil.copy("/tmp/screen.csv", out.replace("data/screens/", "data/screens/extra/").replace(".csv", "_incomplete.csv"))
+              print("::warning::Screener run looks incomplete (Yahoo limits?). Saved to data/screens/extra/ for inspection; upload a CSV or re-run.")
+          else:
+              shutil.copy("/tmp/screen.csv", out); print("saved", out)
+          PY
       - run: python scripts/monthly.py --step "${{ inputs.step || 'both' }}" ${{ inputs.force && '--force' || '' }}
       - run: python scripts/update_prices.py || true
       - run: python scripts/track.py --snapshot || true     # record this month's signals for the forward test

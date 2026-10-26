@@ -15,7 +15,7 @@ window.RunPanel=async function(el){
  el.innerHTML=`<div class="card-head"><h2>Monthly run</h2><span class="muted">data month: ${nice(dm)} · each step runs once a month</span></div>
  <div class="runrow">
  ${btn("Calculate Top Growth",gDone,false,`Done for ${nice(dm)} on ${day((g[dm]||{}).ran)}. Locked until next month.`,
-   newMonth?`New month: upload <code>growth_screen_results_${cal}.csv</code> to <code>data/screens/</code> (that runs both steps automatically), or click to run.`:"Opens GitHub: choose <b>growth</b> and press Run workflow.")}
+   newMonth?`New month: runs by itself on the 1st (it makes <code>growth_screen_results_${cal}.csv</code> on GitHub, ~20 min). Click to run it now, or upload your own CSV to <code>data/screens/</code>.`:"Opens GitHub: choose <b>growth</b> and press Run workflow.")}
  ${btn("Evaluate Fair Value",fDone,!gDone&&!newMonth,`Done for ${nice(dm)} on ${day((f[dm]||{}).ran)}: ${((f[dm]||{}).picks||[]).join(", ")}. Locked until next month.`,
    !gDone&&!newMonth?"Run Calculate Top Growth first.":"Opens GitHub: choose <b>fair_value</b> and press Run workflow.")}
  </div>`;

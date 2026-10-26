@@ -12,8 +12,9 @@ Prices refresh automatically every weekday after the US close. No keys or secret
 
 ## Growth Screen and Monthly Top 5 (once a month)
 
-1. Upload the new month's CSV to `data/screens/` as `growth_screen_results_YYYY-MM.csv` (Add file → Upload files on GitHub).
-2. That upload starts the **Monthly run** workflow automatically. It:
+1. Nothing to do: on the 1st of each month (03:00 UTC) the **Monthly run** workflow runs the screener itself on GitHub (`scripts/growth_screener.py`, ~20 min) and saves `data/screens/growth_screen_results_YYYY-MM.csv`. If the run looks incomplete (fewer than 450 stocks, e.g. Yahoo limits) it saves it to `data/screens/extra/` instead and warns; then run the workflow again or upload a CSV.
+   You can still upload your own CSV for a month (Add file → Upload files on GitHub); an uploaded file is never overwritten and starts the run immediately.
+2. The **Monthly run** then:
    - fills any missing months in between with estimates (`scripts/backfill.py`, files ending `_estimated.csv`; a real file for that month always replaces its estimate),
    - scores and ranks every stock and saves the Top 50 (`scripts/build_screen.py`, results cached per month in `data/cache/`),
    - picks the month's 5 most undervalued stocks for the Fair Value Table (`scripts/fair_value_table.py`).
