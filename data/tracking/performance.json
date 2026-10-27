@@ -1,48 +1,48 @@
 {
- "updated": "2026-10-26 06:36 UTC",
- "spy": 759.97,
+ "updated": "2026-10-27 00:51 UTC",
+ "spy": 765.37,
  "groups": [
   {
    "month": "2026-10",
    "key": "top5",
    "label": "Monthly Top 5 picks",
    "date": "2026-10-16",
-   "days": 10,
+   "days": 11,
    "n": 5,
-   "ret": 0.0331,
-   "spy_ret": -0.0043,
-   "excess": 0.0374,
+   "ret": 0.0213,
+   "spy_ret": 0.0028,
+   "excess": 0.0185,
    "beat": 0.8,
    "stocks": [
     {
      "ticker": "APA",
      "entry": 48.32,
-     "now": 51.9,
-     "ret": 0.0741
+     "now": 51.66,
+     "ret": 0.0691
     },
     {
      "ticker": "DECK",
      "entry": 86.06,
-     "now": 81.09,
-     "ret": -0.0578
+     "now": 80.37,
+     "ret": -0.0661
     },
     {
      "ticker": "INCY",
      "entry": 112.72,
-     "now": 115.71,
-     "ret": 0.0265
+     "now": 113.31,
+     "ret": 0.0052
     },
     {
      "ticker": "ADBE",
      "entry": 245.16,
-     "now": 263.82,
-     "ret": 0.0761
+     "now": 258.62,
+     "ret": 0.0549
     },
     {
      "ticker": "MKC",
      "entry": 45.98,
-     "now": 48.12,
-     "ret": 0.0465
+     "now": 47.97,
+     "ret": 0.0433
     }
    ]
   },
@@ -51,312 +51,312 @@
    "key": "top50",
    "label": "Growth Screen top 50",
    "date": "2026-10-23",
-   "days": 3,
+   "days": 4,
    "n": 50,
-   "ret": -0.0133,
-   "spy_ret": -0.0052,
-   "excess": -0.008,
-   "beat": 0.26,
+   "ret": -0.0152,
+   "spy_ret": 0.0018,
+   "excess": -0.017,
+   "beat": 0.22,
    "stocks": [
     {
      "ticker": "NEM",
      "entry": 114.11,
-     "now": 108.87,
-     "ret": -0.0459
+     "now": 110.39,
+     "ret": -0.0326
     },
     {
      "ticker": "CF",
      "entry": 118.56,
-     "now": 120.68,
-     "ret": 0.0179
+     "now": 120.84,
+     "ret": 0.0192
     },
     {
      "ticker": "EXPE",
      "entry": 298.49,
-     "now": 289.01,
-     "ret": -0.0318
+     "now": 283.97,
+     "ret": -0.0486
     },
     {
      "ticker": "DECK",
      "entry": 85.28,
-     "now": 81.09,
-     "ret": -0.0491
+     "now": 80.37,
+     "ret": -0.0576
     },
     {
      "ticker": "ADBE",
      "entry": 270.55,
-     "now": 263.82,
-     "ret": -0.0249
+     "now": 258.62,
+     "ret": -0.0441
     },
     {
      "ticker": "EOG",
      "entry": 157.96,
-     "now": 163.03,
-     "ret": 0.0321
+     "now": 163.68,
+     "ret": 0.0362
     },
     {
      "ticker": "BKNG",
      "entry": 161.1,
-     "now": 155.83,
-     "ret": -0.0327
+     "now": 153.14,
+     "ret": -0.0494
     },
     {
      "ticker": "EIX",
      "entry": 57.9,
-     "now": 57.35,
-     "ret": -0.0095
+     "now": 57.78,
+     "ret": -0.0021
     },
     {
      "ticker": "MO",
      "entry": 76.07,
-     "now": 74.31,
-     "ret": -0.0231
+     "now": 73.62,
+     "ret": -0.0322
     },
     {
      "ticker": "INCY",
      "entry": 116.93,
-     "now": 115.71,
-     "ret": -0.0104
+     "now": 113.31,
+     "ret": -0.031
     },
     {
      "ticker": "CPRT",
      "entry": 29.09,
-     "now": 29.0,
-     "ret": -0.0031
+     "now": 29.15,
+     "ret": 0.0021
     },
     {
      "ticker": "INTU",
      "entry": 354.9,
-     "now": 343.39,
-     "ret": -0.0324
+     "now": 339.89,
+     "ret": -0.0423
     },
     {
      "ticker": "TPL",
      "entry": 333.67,
-     "now": 338.26,
-     "ret": 0.0138
+     "now": 333.46,
+     "ret": -0.0006
     },
     {
      "ticker": "HST",
      "entry": 24.87,
-     "now": 24.72,
-     "ret": -0.006
+     "now": 25.06,
+     "ret": 0.0076
     },
     {
      "ticker": "ADSK",
      "entry": 254.95,
-     "now": 252.2,
-     "ret": -0.0108
+     "now": 249.45,
+     "ret": -0.0216
     },
     {
      "ticker": "SNDK",
      "entry": 1260.93,
-     "now": 1238.03,
-     "ret": -0.0182
+     "now": 1255.58,
+     "ret": -0.0042
     },
     {
      "ticker": "VICI",
      "entry": 24.02,
-     "now": 23.76,
-     "ret": -0.0108
+     "now": 24.02,
+     "ret": 0.0
     },
     {
      "ticker": "RDDT",
      "entry": 150.26,
-     "now": 144.25,
-     "ret": -0.04
+     "now": 138.45,
+     "ret": -0.0786
     },
     {
      "ticker": "SPG",
      "entry": 212.04,
-     "now": 211.63,
-     "ret": -0.0019
+     "now": 212.69,
+     "ret": 0.0031
     },
     {
      "ticker": "APA",
      "entry": 49.44,
-     "now": 51.9,
-     "ret": 0.0498
+     "now": 51.66,
+     "ret": 0.0449
     },
     {
      "ticker": "APP",
      "entry": 264.28,
-     "now": 260.25,
-     "ret": -0.0152
+     "now": 260.74,
+     "ret": -0.0134
     },
     {
      "ticker": "TPR",
      "entry": 113.92,
-     "now": 110.37,
-     "ret": -0.0312
+     "now": 110.9,
+     "ret": -0.0265
     },
     {
      "ticker": "FICO",
      "entry": 823.27,
-     "now": 815.31,
-     "ret": -0.0097
+     "now": 708.07,
+     "ret": -0.1399
     },
     {
      "ticker": "VEEV",
      "entry": 322.55,
-     "now": 323.04,
-     "ret": 0.0015
+     "now": 318.18,
+     "ret": -0.0135
     },
     {
      "ticker": "NVDA",
      "entry": 212.21,
-     "now": 210.96,
-     "ret": -0.0059
+     "now": 216.0,
+     "ret": 0.0179
     },
     {
      "ticker": "AOS",
      "entry": 62.47,
-     "now": 61.65,
-     "ret": -0.0131
+     "now": 61.91,
+     "ret": -0.009
     },
     {
      "ticker": "MNST",
      "entry": 47.3,
-     "now": 46.19,
-     "ret": -0.0235
+     "now": 46.44,
+     "ret": -0.0182
     },
     {
      "ticker": "ZTS",
      "entry": 82.0,
-     "now": 81.03,
-     "ret": -0.0118
+     "now": 80.97,
+     "ret": -0.0126
     },
     {
      "ticker": "LULU",
      "entry": 104.06,
-     "now": 99.01,
-     "ret": -0.0485
+     "now": 102.91,
+     "ret": -0.0111
     },
     {
      "ticker": "VRSK",
      "entry": 203.33,
-     "now": 195.88,
-     "ret": -0.0366
+     "now": 196.19,
+     "ret": -0.0351
     },
     {
      "ticker": "ALLE",
      "entry": 176.52,
-     "now": 178.98,
-     "ret": 0.0139
+     "now": 178.22,
+     "ret": 0.0096
     },
     {
      "ticker": "REGN",
      "entry": 819.09,
-     "now": 805.02,
-     "ret": -0.0172
+     "now": 807.67,
+     "ret": -0.0139
     },
     {
      "ticker": "SNA",
      "entry": 356.46,
-     "now": 357.02,
-     "ret": 0.0016
+     "now": 357.88,
+     "ret": 0.004
     },
     {
      "ticker": "PEG",
      "entry": 72.72,
-     "now": 72.02,
-     "ret": -0.0096
+     "now": 72.11,
+     "ret": -0.0084
     },
     {
      "ticker": "EME",
      "entry": 660.41,
-     "now": 647.66,
-     "ret": -0.0193
+     "now": 665.93,
+     "ret": 0.0084
     },
     {
      "ticker": "PM",
      "entry": 201.74,
-     "now": 199.47,
-     "ret": -0.0113
+     "now": 201.87,
+     "ret": 0.0006
     },
     {
      "ticker": "FTNT",
      "entry": 172.98,
-     "now": 179.99,
-     "ret": 0.0405
+     "now": 183.33,
+     "ret": 0.0598
     },
     {
      "ticker": "RMD",
      "entry": 253.06,
-     "now": 252.86,
-     "ret": -0.0008
+     "now": 253.2,
+     "ret": 0.0006
     },
     {
      "ticker": "PSA",
      "entry": 309.13,
-     "now": 309.89,
-     "ret": 0.0025
+     "now": 306.97,
+     "ret": -0.007
     },
     {
      "ticker": "VLTO",
      "entry": 104.9,
-     "now": 104.33,
-     "ret": -0.0054
+     "now": 103.35,
+     "ret": -0.0148
     },
     {
      "ticker": "HIG",
      "entry": 139.45,
-     "now": 136.76,
-     "ret": -0.0193
+     "now": 135.94,
+     "ret": -0.0252
     },
     {
      "ticker": "AMP",
      "entry": 496.83,
-     "now": 492.19,
-     "ret": -0.0093
+     "now": 493.6,
+     "ret": -0.0065
     },
     {
      "ticker": "V",
      "entry": 414.34,
-     "now": 407.92,
-     "ret": -0.0155
+     "now": 404.16,
+     "ret": -0.0246
     },
     {
      "ticker": "ALGN",
      "entry": 155.51,
-     "now": 154.51,
-     "ret": -0.0064
+     "now": 152.26,
+     "ret": -0.0209
     },
     {
      "ticker": "PPG",
      "entry": 113.09,
-     "now": 110.61,
-     "ret": -0.0219
+     "now": 109.9,
+     "ret": -0.0282
     },
     {
      "ticker": "REG",
      "entry": 74.38,
-     "now": 73.98,
-     "ret": -0.0054
+     "now": 73.67,
+     "ret": -0.0095
     },
     {
      "ticker": "FIX",
      "entry": 1279.37,
-     "now": 1160.86,
-     "ret": -0.0926
+     "now": 1244.19,
+     "ret": -0.0275
     },
     {
      "ticker": "CL",
      "entry": 97.39,
-     "now": 94.04,
-     "ret": -0.0344
+     "now": 93.1,
+     "ret": -0.044
     },
     {
      "ticker": "CRH",
      "entry": 86.43,
-     "now": 84.89,
-     "ret": -0.0178
+     "now": 85.43,
+     "ret": -0.0116
     },
     {
      "ticker": "ED",
      "entry": 116.26,
-     "now": 115.74,
-     "ret": -0.0045
+     "now": 115.42,
+     "ret": -0.0072
     }
    ]
   },
@@ -365,42 +365,42 @@
    "key": "resilient",
    "label": "Resilient compounders",
    "date": "2026-10-23",
-   "days": 3,
+   "days": 4,
    "n": 5,
-   "ret": -0.0105,
-   "spy_ret": -0.0052,
-   "excess": -0.0053,
-   "beat": 0.4,
+   "ret": -0.008,
+   "spy_ret": 0.0018,
+   "excess": -0.0099,
+   "beat": 0.6,
    "stocks": [
     {
      "ticker": "MA",
      "entry": 633.21,
-     "now": 623.6,
-     "ret": -0.0152
+     "now": 613.5,
+     "ret": -0.0311
     },
     {
      "ticker": "ABNB",
      "entry": 175.76,
-     "now": 172.01,
-     "ret": -0.0213
+     "now": 171.05,
+     "ret": -0.0268
     },
     {
      "ticker": "CTAS",
      "entry": 224.04,
-     "now": 224.1,
-     "ret": 0.0003
+     "now": 225.93,
+     "ret": 0.0084
     },
     {
      "ticker": "DXCM",
      "entry": 78.32,
-     "now": 77.94,
-     "ret": -0.0049
+     "now": 78.57,
+     "ret": 0.0032
     },
     {
      "ticker": "IDXX",
      "entry": 566.76,
-     "now": 560.38,
-     "ret": -0.0113
+     "now": 570.21,
+     "ret": 0.0061
     }
    ]
   },
@@ -409,42 +409,42 @@
    "key": "fv_below",
    "label": "Full models: price below fair value",
    "date": "2026-10-23",
-   "days": 3,
+   "days": 4,
    "n": 5,
-   "ret": -0.0223,
-   "spy_ret": -0.0052,
-   "excess": -0.0171,
+   "ret": -0.0323,
+   "spy_ret": 0.0018,
+   "excess": -0.0341,
    "beat": 0.0,
    "stocks": [
     {
      "ticker": "ADBE",
      "entry": 270.55,
-     "now": 263.82,
-     "ret": -0.0249
+     "now": 258.62,
+     "ret": -0.0441
     },
     {
      "ticker": "APP",
      "entry": 264.28,
-     "now": 260.25,
-     "ret": -0.0152
+     "now": 260.74,
+     "ret": -0.0134
     },
     {
      "ticker": "DECK",
      "entry": 85.28,
-     "now": 81.09,
-     "ret": -0.0491
+     "now": 80.37,
+     "ret": -0.0576
     },
     {
      "ticker": "INCY",
      "entry": 116.93,
-     "now": 115.71,
-     "ret": -0.0104
+     "now": 113.31,
+     "ret": -0.031
     },
     {
      "ticker": "MKC",
      "entry": 48.71,
-     "now": 48.12,
-     "ret": -0.0121
+     "now": 47.97,
+     "ret": -0.0152
     }
    ]
   },
@@ -453,18 +453,18 @@
    "key": "fv_buy",
    "label": "Full models: price below buy-below",
    "date": "2026-10-23",
-   "days": 3,
+   "days": 4,
    "n": 1,
-   "ret": -0.0491,
-   "spy_ret": -0.0052,
-   "excess": -0.0439,
+   "ret": -0.0576,
+   "spy_ret": 0.0018,
+   "excess": -0.0594,
    "beat": 0.0,
    "stocks": [
     {
      "ticker": "DECK",
      "entry": 85.28,
-     "now": 81.09,
-     "ret": -0.0491
+     "now": 80.37,
+     "ret": -0.0576
     }
    ]
   }
