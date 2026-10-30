@@ -140,6 +140,1386 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "GOOGL": {
+   "capex_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 14.8,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+     "quote": "Q4 2024 column of Q4 2025 release: Purchases of property and equipment (14,276) $M; Total revenues $96,469M (14276/96469 = 14.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 19.1,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf",
+     "quote": "Q1 2025 column of Q1 2026 release: Purchases of property and equipment (17,197) $M; Total revenues $90,234M (17197/90234 = 19.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 23.3,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+     "quote": "Q2 2025 column of Q2 2026 release: Purchases of property and equipment (22,446) $M; Total revenues $96,428M (22446/96428 = 23.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.4,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+     "quote": "Q3 2025 column of Q3 2026 release: Purchases of property and equipment (23,953) $M; Total revenues $102,346M (23953/102346 = 23.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24.5,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+     "quote": "Q4 2025 column of Q4 2025 release: Purchases of property and equipment (27,851) $M; Total revenues $113,828M (27851/113828 = 24.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 32.5,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf",
+     "quote": "Q1 2026 column of Q1 2026 release: Purchases of property and equipment (35,674) $M; Total revenues $109,896M (35674/109896 = 32.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 37.5,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+     "quote": "Q2 2026 column of Q2 2026 release: Purchases of property and equipment (44,924) $M; Total revenues $119,796M (44924/119796 = 37.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 40.3,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+     "quote": "Q3 2026 column of Q3 2026 release: Purchases of property and equipment (51,355) $M; Total revenues $127,577M (51355/127577 = 40.3%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "google_cloud_backlog": [
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 106,
+     "source": "https://vectorshift.ai/research/companies/alphabet/earnings/2025-q2",
+     "quote": "Anat Ashkenazi (CFO), Q2 2025 earnings call: \"Google Cloud backlog increased 18% sequentially in Q2 and 38% year-over-year, reaching $106 billion at the end of the quarter\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 155,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_news/2025/Oct/29/attachments/2025q3-alphabet-earnings-release.pdf",
+     "quote": "Q3 2025 earnings release: \"Google Cloud accelerated, ending the quarter with $155 billion in backlog.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 240,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Feb/04/2025_Q4_Earnings_Transcript.pdf",
+     "quote": "Anat Ashkenazi (CFO), Q4 2025 earnings call: \"Google Cloud's backlog increased 55% sequentially and more than doubled year-over-year, reaching $240 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 462,
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/04/29/alphabet-googl-q1-2026-earnings-call-transcript/",
+     "quote": "Anat Ashkenazi (CFO), Q1 2026 earnings call: \"And Google Cloud's backlog nearly doubled sequentially, reaching $462 billion at the end of the first quarter.\" (Release: \"backlog nearly doubling quarter on quarter to over $460 billion\")",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 514,
+     "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/",
+     "quote": "Sundar Pichai, Q2 2026 earnings call remarks: \"And Cloud backlog grew to $514 billion.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 561,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Oct/28/2026_Q3_Earnings_Transcript.pdf",
+     "quote": "Anat Ashkenazi (CFO), Q3 2026 earnings call: \"Google Cloud's backlog was $561 billion in the third quarter, with the majority of the backlog related to typical GCP...\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "google_cloud_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 17.5,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+     "quote": "Q4 2024 column of Q4 2025 release: Google Cloud revenues $11,955M; Google Cloud segment operating income $2,093M (2093/11955 = 17.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 17.8,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf",
+     "quote": "Q1 2025 column of Q1 2026 release: Google Cloud revenues $12,260M; Google Cloud segment operating income $2,177M (2177/12260 = 17.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 20.7,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+     "quote": "Q2 2025 column of Q2 2026 release: Google Cloud revenues $13,624M; Google Cloud segment operating income $2,826M (2826/13624 = 20.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.7,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+     "quote": "Q3 2025 column of Q3 2026 release: Google Cloud revenues $15,157M; Google Cloud segment operating income $3,594M (3594/15157 = 23.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 30.1,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+     "quote": "Q4 2025 column of Q4 2025 release: Google Cloud revenues $17,664M; Google Cloud segment operating income $5,313M (5313/17664 = 30.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 32.9,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf",
+     "quote": "Q1 2026 column of Q1 2026 release: Google Cloud revenues $20,028M; Google Cloud segment operating income $6,598M (6598/20028 = 32.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 35.6,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+     "quote": "Q2 2026 column of Q2 2026 release: Google Cloud revenues $24,768M; Google Cloud segment operating income $8,814M (8814/24768 = 35.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 36.2,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+     "quote": "Q3 2026 column of Q3 2026 release: Google Cloud revenues $30,709M; Google Cloud segment operating income $11,121M (11121/30709 = 36.2%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "google_cloud_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 30.1,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2024/q4/2024q4-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q4 2023 vs Q4 2024): Google Cloud $9,192M vs $11,955M (11955/9192 - 1 = 30.1%). Release text: \"Google Cloud revenues increased 30% to $12.0 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 28.1,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q1/2025q1-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q1 2024 vs Q1 2025): Google Cloud $9,574M vs $12,260M (12260/9574 - 1 = 28.1%). Release text: \"Google Cloud revenues increased 28% to $12.3 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 31.7,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q2/2025q2-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q2 2024 vs Q2 2025): Google Cloud $10,347M vs $13,624M (13624/10347 - 1 = 31.7%). Release text: \"Google Cloud revenues increased 32% to $13.6 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 33.5,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_news/2025/Oct/29/attachments/2025q3-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q3 2024 vs Q3 2025): Google Cloud $11,353M vs $15,157M (15157/11353 - 1 = 33.5%). Release text: \"Google Cloud revenues increased 34% to $15.2 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 47.8,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q4 2024 vs Q4 2025): Google Cloud $11,955M vs $17,664M (17664/11955 - 1 = 47.8%). Release text: \"revenues increased 48% to $17.7 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 63.4,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q1 2025 vs Q1 2026): Google Cloud $12,260M vs $20,028M (20028/12260 - 1 = 63.4%). Release text: \"revenues increased 63% to $20.0 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 81.8,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q2 2025 vs Q2 2026): Google Cloud $13,624M vs $24,768M (24768/13624 - 1 = 81.8%). Release text: \"revenues increased 82% to $24.8 billion\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 102.6,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Three Months Ended, Q3 2025 vs Q3 2026): Google Cloud $15,157M vs $30,709M (30709/15157 - 1 = 102.6%). Release text: \"revenues increased 103% to $30.7 billion\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "search_other_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 12.5,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2024/q4/2024q4-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q4 2023 vs Q4 2024): Google Search & other $48,020M vs $54,034M (54034/48020 - 1 = 12.5%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 9.8,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q1/2025q1-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q1 2024 vs Q1 2025): Google Search & other $46,156M vs $50,702M (50702/46156 - 1 = 9.8%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 11.7,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q2/2025q2-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q2 2024 vs Q2 2025): Google Search & other $48,509M vs $54,190M (54190/48509 - 1 = 11.7%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 14.5,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_news/2025/Oct/29/attachments/2025q3-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q3 2024 vs Q3 2025): Google Search & other $49,385M vs $56,567M (56567/49385 - 1 = 14.5%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 16.7,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q4 2024 vs Q4 2025): Google Search & other $54,034M vs $63,073M (63073/54034 - 1 = 16.7%). Release text: \"led by 17% growth in Google Search & other\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 19.1,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q1 2025 vs Q1 2026): Google Search & other $50,702M vs $60,399M (60399/50702 - 1 = 19.1%). Release text: \"19% revenue growth\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 16.8,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q2 2025 vs Q2 2026): Google Search & other $54,190M vs $63,271M (63271/54190 - 1 = 16.8%). Release text: \"led by 17% growth in Google Search & other\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12.0,
+     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+     "quote": "Revenue table (Q3 2025 vs Q3 2026): Google Search & other $56,567M vs $63,350M (63350/56567 - 1 = 12.0%). Release text: \"led by 12% growth in Google Search & other\"",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "AMZN": {
+   "advertising_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 18.0,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q4 2024 $17,288M vs Q4 2023 $14,654M, Y/Y % Change 18% as reported (17288/14654 - 1 = 18.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 17.7,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-First-Quarter-Results/",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q1 2025 $13,921M vs Q1 2024 $11,824M, Y/Y % Change 18% as reported (13921/11824 - 1 = 17.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 22.9,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Second-Quarter-Results/",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q2 2025 $15,694M vs Q2 2024 $12,771M, Y/Y % Change 23% as reported (15694/12771 - 1 = 22.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.5,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Third-Quarter-Results/",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q3 2025 $17,703M vs Q3 2024 $14,331M, Y/Y % Change 24% as reported (17703/14331 - 1 = 23.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 23.3,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q4 2025 $21,317M vs Q4 2024 $17,288M, Y/Y % Change 23% as reported (21317/17288 - 1 = 23.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 23.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000012/amzn-20260331xex991.htm",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q1 2026 $17,243M vs Q1 2025 $13,921M, Y/Y % Change 24% as reported (17243/13921 - 1 = 23.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 26.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000024/amzn-20260630xex991.htm",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q2 2026 $19,809M vs Q2 2025 $15,694M, Y/Y % Change 26% as reported (19809/15694 - 1 = 26.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm",
+     "quote": "Net Sales supplemental table: \"Advertising services\" Q3 2026 $19,637M vs Q3 2025 $17,703M, Y/Y % Change 11% as reported (19637/17703 - 1 = 10.9%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "aws_backlog": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 189,
+     "source": "https://transcripts.platformaeronaut.com/transcripts/AMZN-1Q25-transcript",
+     "quote": "Dave Fildes (IR), Q1 2025 earnings call, answering a question on the AWS backlog: \"The backlog is $189 billion for Q1.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 195,
+     "source": "https://transcripts.platformaeronaut.com/transcripts/AMZN-2Q25-transcript",
+     "quote": "Dave Fildes (IR), Q2 2025 earnings call, on the AWS backlog: \"So at the end of the quarter, at June 30, that was $195 billion. So that's up about 25% year over year.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 200,
+     "source": "https://transcripts.platformaeronaut.com/transcripts/AMZN-3Q25-transcript",
+     "quote": "Andy Jassy, Q3 2025 earnings call: \"Backlog grew to $200 billion by Q3 quarter end and doesn't include several unannounced new deals in October\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 244,
+     "source": "https://www.aol.com/finance/amazon-amzn-q4-2025-earnings-005233264.html",
+     "quote": "Andy Jassy, Q4 2025 earnings call: \"Which is on backlog, our backlog is $244 billion.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 364,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000014/amzn-20260331.htm",
+     "quote": "10-Q Q1 2026, Note 1: \"we have performance obligations, primarily related to AWS ... those commitments not yet recognized were approximately $364 billion as of March 31, 2026.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 496,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000026/amzn-20260630.htm",
+     "quote": "10-Q Q2 2026, Note 1: \"we have performance obligations, primarily related to AWS, associated with commitments in customer contracts ... those commitments not yet recognized were approximately $496 billion as of June 30, 2026.\" (Jassy on the call: \"Our backlog stands at $496 billion, growing triple digits year-over-year.\")",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 578,
+     "source": "https://singjupost.com/amazon-com-inc-q3-2026-earnings-call-transcript/",
+     "quote": "Andy Jassy, Q3 2026 earnings call (AWS section): \"Backlog is $578 billion, growing triple digits year over year and well diversified.\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "aws_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 36.9,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "AWS segment, three months ended: Net sales $28,786M ... Operating income $10,632M (10632/28786 = 36.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 39.5,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-First-Quarter-Results/",
+     "quote": "AWS segment, three months ended: Net sales $29,267M ... Operating income $11,547M (11547/29267 = 39.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 32.9,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Second-Quarter-Results/",
+     "quote": "AWS segment, three months ended: Net sales $30,873M ... Operating income $10,160M (10160/30873 = 32.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 34.6,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Third-Quarter-Results/",
+     "quote": "AWS segment, three months ended: Net sales $33,006M ... Operating income $11,434M (11434/33006 = 34.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 35.0,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "AWS segment, three months ended: Net sales $35,579M ... Operating income $12,465M (12465/35579 = 35.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 37.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000012/amzn-20260331xex991.htm",
+     "quote": "AWS segment, three months ended: Net sales $37,587M ... Operating income $14,161M (14161/37587 = 37.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 39.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000024/amzn-20260630xex991.htm",
+     "quote": "AWS segment, three months ended: Net sales $42,232M ... Operating income $16,621M (16621/42232 = 39.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 38.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm",
+     "quote": "AWS segment, three months ended: Net sales $45,984M ... Operating income $17,773M (17773/45984 = 38.7%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "aws_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 18.9,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "\"AWS segment sales increased 19% year-over-year to $28.8 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q4 2024 $28,786M vs Q4 2023 $24,204M (28786/24204 - 1 = 18.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 16.9,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-First-Quarter-Results/",
+     "quote": "\"AWS segment sales increased 17% year-over-year to $29.3 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q1 2025 $29,267M vs Q1 2024 $25,037M (29267/25037 - 1 = 16.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17.5,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Second-Quarter-Results/",
+     "quote": "\"AWS segment sales increased 17.5% year-over-year to $30.9 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q2 2025 $30,873M vs Q2 2024 $26,281M (30873/26281 - 1 = 17.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 20.2,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Third-Quarter-Results/",
+     "quote": "\"AWS segment sales increased 20% year-over-year to $33.0 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q3 2025 $33,006M vs Q3 2024 $27,452M (33006/27452 - 1 = 20.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 23.6,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "\"AWS segment sales increased 24% year-over-year to $35.6 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q4 2025 $35,579M vs Q4 2024 $28,786M (35579/28786 - 1 = 23.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 28.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000012/amzn-20260331xex991.htm",
+     "quote": "\"AWS segment sales increased 28% year-over-year to $37.6 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q1 2026 $37,587M vs Q1 2025 $29,267M (37587/29267 - 1 = 28.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 36.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000024/amzn-20260630xex991.htm",
+     "quote": "\"AWS segment sales increased 37% year-over-year to $42.2 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q2 2026 $42,232M vs Q2 2025 $30,873M (42232/30873 - 1 = 36.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 39.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm",
+     "quote": "\"AWS segment sales increased 39% year-over-year to $46.0 billion.\" (as reported, not FX-adjusted). Net Sales table: AWS Q3 2026 $45,984M vs Q3 2025 $33,006M (45984/33006 - 1 = 39.3%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "capex_operating_cash_flow": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 61.0,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (December 31, 2024): \"Purchases of property and equipment\" (27,834); \"Net cash provided by (used in) operating activities\" 45,636 (27834/45636 = 61.0%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 147.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000012/amzn-20260331xex991.htm",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (March 31, 2025): \"Purchases of property and equipment\" (25,019); \"Net cash provided by (used in) operating activities\" 17,015 (25019/17015 = 147.0%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 99.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000024/amzn-20260630xex991.htm",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (June 30, 2025): \"Purchases of property and equipment\" (32,183); \"Net cash provided by (used in) operating activities\" 32,515 (32183/32515 = 99.0%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 98.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (September 30, 2025): \"Purchases of property and equipment\" (35,095); \"Net cash provided by (used in) operating activities\" 35,525 (35095/35525 = 98.8%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 72.6,
+     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (December 31, 2025): \"Purchases of property and equipment\" (39,522); \"Net cash provided by (used in) operating activities\" 54,459 (39522/54459 = 72.6%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 169.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000012/amzn-20260331xex991.htm",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (March 31, 2026): \"Purchases of property and equipment\" (44,203); \"Net cash provided by (used in) operating activities\" 26,032 (44203/26032 = 169.8%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 119.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000024/amzn-20260630xex991.htm",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (June 30, 2026): \"Purchases of property and equipment\" (54,208); \"Net cash provided by (used in) operating activities\" 45,387 (54208/45387 = 119.4%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 182.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm",
+     "quote": "Quarterly figures from the release's Consolidated Statements of Cash Flows, \"Three Months Ended\" column (September 30, 2026): \"Purchases of property and equipment\" (77,259); \"Net cash provided by (used in) operating activities\" 42,422 (77259/42422 = 182.1%). Gross purchases of P&E, not net of proceeds/incentives; not TTM.",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "V": {
+   "payments_volume_growth_constant": [
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000044/q12026earningsrelease.htm",
+     "quote": "Payments volume for the three months ended December 31, 2025 increased 8% over the prior year on a constant-dollar basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000077/q22026earningsrelease.htm",
+     "quote": "Payments volume for the three months ended March 31, 2026 increased 9% over the prior year on a constant-dollar basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000103/q32026earningsrelease.htm",
+     "quote": "Payments volume for the three months ended June 30, 2026 increased 10% over the prior year on a constant-dollar basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000126/q42026earningsrelease.htm",
+     "quote": "Payments volume for the three months ended September 30, 2026 increased 9% over the prior year on a constant-dollar basis.",
+     "added": "2026-10-30"
+    }
+   ],
+   "cross_border_volume_growth_ex_intra_europe": [
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000044/q12026earningsrelease.htm",
+     "quote": "Cross-border volume excluding transactions within Europe ... for the three months ended December 31, 2025, increased 11% on a constant-dollar basis over the prior year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000077/q22026earningsrelease.htm",
+     "quote": "Cross-border volume excluding transactions within Europe ... for the three months ended March 31, 2026, increased 11% on a constant-dollar basis over the prior year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000103/q32026earningsrelease.htm",
+     "quote": "Cross-border volume excluding transactions within Europe ... for the three months ended June 30, 2026, increased 12% on a constant-dollar basis over the prior year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000126/q42026earningsrelease.htm",
+     "quote": "Cross-border volume excluding transactions within Europe ... for the three months ended September 30, 2026, increased 14% on a constant-dollar basis over the prior year.",
+     "added": "2026-10-30"
+    }
+   ],
+   "processed_transactions_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000044/q12026earningsrelease.htm",
+     "quote": "Total processed transactions, which represent transactions processed by Visa, for the three months ended December 31, 2025 were 69.4 billion, a 9% increase over the prior year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000077/q22026earningsrelease.htm",
+     "quote": "Total processed transactions, which represent transactions processed by Visa, for the three months ended March 31, 2026 were 66.1 billion, a 9% increase over the prior year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000103/q32026earningsrelease.htm",
+     "quote": "Total processed transactions, which represent transactions processed by Visa, for the three months ended June 30, 2026 were 71.7 billion, a 10% increase over the prior year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000126/q42026earningsrelease.htm",
+     "quote": "Total processed transactions, which represent transactions processed by Visa, for the three months ended September 30, 2026 were 74.2 billion, a 10% increase over the prior year.",
+     "added": "2026-10-30"
+    }
+   ],
+   "client_incentives_gross_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 28.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000045/v-20251231.htm",
+     "quote": "10-Q Note 2 Revenue, three months ended Dec 31, 2024: Client incentives $(3,797) million; Net revenue $9,510 million. 3,797 / (9,510 + 3,797) = 3,797 / 13,307 = 28.53% -> 28.5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 28.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000079/v-20260331.htm",
+     "quote": "10-Q Note 3 Revenue, three months ended Mar 31, 2025: Client incentives $(3,734) million; Net revenue $9,594 million. 3,734 / (9,594 + 3,734) = 3,734 / 13,328 = 28.02% -> 28.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 28.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000104/v-20260630.htm",
+     "quote": "10-Q Note 3 Revenue, three months ended Jun 30, 2025: Client incentives $(3,972) million; Net revenue $10,172 million. 3,972 / (10,172 + 3,972) = 3,972 / 14,144 = 28.08% -> 28.1%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 28.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000077/q42025earningsrelease.htm",
+     "quote": "Q4 FY25 earnings release income statement summary: 'Client incentives -4,248 17 %'; 'Net revenue $ 10,724 12 %': Client incentives $(4,248) million; Net revenue $10,724 million. 4,248 / (10,724 + 4,248) = 4,248 / 14,972 = 28.37% -> 28.4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 28.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000045/v-20251231.htm",
+     "quote": "10-Q Note 2 Revenue, three months ended Dec 31, 2025: Client incentives $(4,269) million; Net revenue $10,901 million. 4,269 / (10,901 + 4,269) = 4,269 / 15,170 = 28.14% -> 28.1%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 27.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000079/v-20260331.htm",
+     "quote": "10-Q Note 3 Revenue, three months ended Mar 31, 2026: Client incentives $(4,245) million; Net revenue $11,230 million. 4,245 / (11,230 + 4,245) = 4,245 / 15,475 = 27.43% -> 27.4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 28.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000104/v-20260630.htm",
+     "quote": "10-Q Note 3 Revenue, three months ended Jun 30, 2026: Client incentives $(4,680) million; Net revenue $11,633 million. 4,680 / (11,633 + 4,680) = 4,680 / 16,313 = 28.69% -> 28.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 29.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000126/q42026earningsrelease.htm",
+     "quote": "Q4 FY26 earnings release income statement summary / revenue table: 'Client incentives (5,123) 21%'; 'Net revenue $ 12,139 $ 10,724': Client incentives $(5,123) million; Net revenue $12,139 million. 5,123 / (12,139 + 5,123) = 5,123 / 17,262 = 29.68% -> 29.7%",
+     "added": "2026-10-30"
+    }
+   ],
+   "value_added_services_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 28,
+     "source": "https://s1.q4cdn.com/050606653/files/doc_financials/2026/q1/CORRECTED-TRANSCRIPT_-Visa-Inc-V-US-Q1-2026-Earnings-Call-29-January-2026-5_00-PM-ET.pdf",
+     "quote": "Value-added services revenue grew 28% year-over-year in constant dollars to $3.2 billion (CFO Chris Suh, earnings call prepared remarks; constant-dollar basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 27,
+     "source": "https://s1.q4cdn.com/050606653/files/doc_financials/2026/q2/CORRECTED-TRANSCRIPT_-Visa-Inc-V-US-Q2-2026-Earnings-Call-28-April-2026-5_00-PM-ET-4.pdf",
+     "quote": "Value-added services revenue grew 27% year-over-year in constant dollars to $3.3 billion (CFO Chris Suh, earnings call prepared remarks; constant-dollar basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 34,
+     "source": "https://s1.q4cdn.com/050606653/files/doc_financials/2026/q3/Visa-Inc-V-US-Q3-2026-Earnings-Call-28-July-2026-5_00-PM-ET.pdf",
+     "quote": "Value-added services revenue grew 34% year-over-year in constant dollars to $3.8 billion (CFO Chris Suh, earnings call prepared remarks; constant-dollar basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 31,
+     "source": "https://bullfincher.io/companies/visa/earnings-call/fy2026-q4",
+     "quote": "Value-added services revenue grew 31% year-over-year in constant dollars to $4 billion (CFO Chris Suh, earnings call prepared remarks; constant-dollar basis)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "MA": {
+   "gross_dollar_volume_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 11.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000003/ma12312025-exx991xearnings.htm",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q4 2024: \"Worldwide | 2,568 | 9.0 % | 11.7 % | 2,111 | 12.8 % | 50,696 | 11.6 % | 457 | 7.2 % | 3,268 | 3,127\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 9.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000029/ma03312026-exx991xearnings.htm",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q1 2025: \"Worldwide | 2,424 | 5.5% | 9.3% | 1,992 | 10.3% | 48,217 | 9.2% | 432 | 5.1% | 3,055 | 3,177\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 9.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000081/ma06302026-exx991xearnings.htm",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q2 2025: \"Worldwide | 2,640 | 9.5% | 9.1% | 2,182 | 10.1% | 52,297 | 9.9% | 457 | 4.3% | 3,115 | 3,230\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8.7,
+     "source": "https://s25.q4cdn.com/479285134/files/content_files/3Q26-Mastercard-Earnings-Release.pdf",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q3 2025: \"Worldwide 2,754 9.8 % 8.7 % 2,285 10.2 % 54,410 9.9 % 469 2.3 % 3,087 3,303\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000003/ma12312025-exx991xearnings.htm",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q4 2025: \"Worldwide | 2,819 | 9.8 % | 7.4 % | 2,344 | 8.8 % | 55,306 | 9.1 % | 475 | 0.9 % | 3,067 | 3,391\". Headline: \"Fourth quarter gross dollar volume up 7% and purchase volume up 9%, on a local currency basis\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 7.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000029/ma03312026-exx991xearnings.htm",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q1 2026: \"Worldwide | 2,703 | 11.5% | 7.3% | 2,251 | 8.9% | 52,332 | 8.5% | 452 | 0.1% | 2,852 | 3,408\". Headline: \"First quarter gross dollar volume up 7% and purchase volume up 9%, on a local currency basis\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 8.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000081/ma06302026-exx991xearnings.htm",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q2 2026: \"Worldwide | 2,881 | 9.2% | 8.0% | 2,417 | 9.6% | 57,096 | 9.2% | 464 | 0.4% | 2,917 | 3,463\". Headline: \"Second quarter gross dollar volume up 8% and purchase volume up 10%, on a local currency basis\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7.5,
+     "source": "https://s25.q4cdn.com/479285134/files/content_files/3Q26-Mastercard-Earnings-Release.pdf",
+     "quote": "Operating performance table, All Mastercard Credit, Charge and Debit Programs (columns: GDV $B, growth USD, growth local currency, ...). Q3 2026: \"Worldwide 2,952 7.2 % 7.5 % 2,483 8.9 % 59,480 9.3 % 469 0.4 % 2,923 3,539\". Headline: \"Third quarter gross dollar volume up 7% and purchase volume up 9%, on a local currency basis\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "cross_border_volume_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 15.0,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2025/q4/4Q25-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q4 2025 earnings presentation, slide 10 Business Update (YoY growth, Mastercard-branded programs, local currency): \"Cross-border volume\" row: 2025 Q3 15% | Oct 14% | Nov 15% | Dec 14% | Q4 14%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 14.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000003/ma12312025-exx991xearnings.htm",
+     "quote": "\"Cross-border volume growth of 14% on a local currency basis.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 13.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000029/ma03312026-exx991xearnings.htm",
+     "quote": "\"Cross-border volume growth of 13% on a local currency basis.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000081/ma06302026-exx991xearnings.htm",
+     "quote": "\"Cross-border volume growth of 12% on a local currency basis.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 11.0,
+     "source": "https://s25.q4cdn.com/479285134/files/content_files/3Q26-Mastercard-Earnings-Release.pdf",
+     "quote": "\"Cross-border volume growth of 11% on a local currency basis.\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "switched_transactions_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10.0,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2025/q4/4Q25-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q4 2025 earnings presentation, slide 10 Business Update (YoY growth): \"Switched transactions\" row: 2025 Q3 10% | Oct 10% | Nov 10% | Dec 10% | Q4 10%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 10.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000003/ma12312025-exx991xearnings.htm",
+     "quote": "\"Switched transactions growth of 10%.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000029/ma03312026-exx991xearnings.htm",
+     "quote": "\"Switched transactions growth of 9%.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000081/ma06302026-exx991xearnings.htm",
+     "quote": "\"Switched transactions growth of 9%.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 9.0,
+     "source": "https://s25.q4cdn.com/479285134/files/content_files/3Q26-Mastercard-Earnings-Release.pdf",
+     "quote": "\"Switched transactions growth of 9%.\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "value_added_services_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 26.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000003/ma12312025-exx991xearnings.htm",
+     "quote": "\"Value-added services and solutions net revenue increased 26%, or 22% on a currency-neutral basis.\" (value is as reported; currency-neutral 22%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 22.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000029/ma03312026-exx991xearnings.htm",
+     "quote": "\"Value-added services and solutions net revenue increased 22%, or 18% on a currency-neutral basis.\" (value is as reported; currency-neutral 18%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 20.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001141391/000114139126000081/ma06302026-exx991xearnings.htm",
+     "quote": "\"Value-added services and solutions net revenue increased 20%, or 18% on a currency-neutral basis.\" (value is as reported; currency-neutral 18%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 19.0,
+     "source": "https://s25.q4cdn.com/479285134/files/content_files/3Q26-Mastercard-Earnings-Release.pdf",
+     "quote": "\"Value-added services and solutions net revenue increased 19%, as reported and on a currency-neutral basis.\" (as reported; currency-neutral also 19%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "rebates_incentives_gross_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 38.4,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2025/q4/4Q25-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q4'25 earnings presentation: \"Payment Network is presented net of rebates and incentives of $5,631 million and $4,677 million\" (Q4'25, Q4'24); net revenue Q4'24 $7,489M. Computed: 4,677 / (7,489 + 4,677) = 4,677 / 12,166 = 38.44% -> 38.4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 38.7,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2026/q1/1Q26-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q1'26 earnings presentation: \"Payment Network is presented net of rebates and incentives of $5,639 million and $4,579 million\" (Q1'26, Q1'25); net revenue Q1'25 $7,250M. Computed: 4,579 / (7,250 + 4,579) = 4,579 / 11,829 = 38.71% -> 38.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 37.7,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2026/q2/2Q26-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q2'26 earnings presentation: \"Payment Network is presented net of rebates and incentives of $5,997 million and $4,923 million\" (Q2'26, Q2'25); net revenue Q2'25 $8,133M. Computed: 4,923 / (8,133 + 4,923) = 4,923 / 13,056 = 37.71% -> 37.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 38.5,
+     "source": "https://s25.q4cdn.com/479285134/files/content_files/3Q26-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q3'26 earnings presentation: \"Payment Network is presented net of rebates and incentives of $6,369 million and $5,389 million\" (Q3'26, Q3'25); net revenue Q3'25 $8,602M. Computed: 5,389 / (8,602 + 5,389) = 5,389 / 13,991 = 38.52% -> 38.5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 39.0,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2025/q4/4Q25-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q4'25 earnings presentation: \"Payment Network is presented net of rebates and incentives of $5,631 million and $4,677 million\" (Q4'25, Q4'24); net revenue Q4'25 $8,806M. Computed: 5,631 / (8,806 + 5,631) = 5,631 / 14,437 = 39.00% -> 39.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 40.2,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2026/q1/1Q26-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q1'26 earnings presentation: \"Payment Network is presented net of rebates and incentives of $5,639 million and $4,579 million\" (Q1'26, Q1'25); net revenue Q1'26 $8,398M. Computed: 5,639 / (8,398 + 5,639) = 5,639 / 14,037 = 40.17% -> 40.2%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 39.3,
+     "source": "https://s25.q4cdn.com/479285134/files/doc_financials/2026/q2/2Q26-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q2'26 earnings presentation: \"Payment Network is presented net of rebates and incentives of $5,997 million and $4,923 million\" (Q2'26, Q2'25); net revenue Q2'26 $9,277M. Computed: 5,997 / (9,277 + 5,997) = 5,997 / 15,274 = 39.26% -> 39.3%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 39.4,
+     "source": "https://s25.q4cdn.com/479285134/files/content_files/3Q26-Mastercard-Earnings-Presentation.pdf",
+     "quote": "Q3'26 earnings presentation: \"Payment Network is presented net of rebates and incentives of $6,369 million and $5,389 million\" (Q3'26, Q3'25); net revenue Q3'26 $9,807M. Computed: 6,369 / (9,807 + 6,369) = 6,369 / 16,176 = 39.37% -> 39.4%",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "AAPL": {
+   "iphone_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q4 FY24",
+     "value": 5.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000120/a8-kex991q4202409282024.htm",
+     "quote": "Net sales by category, three months ended: iPhone $46,222M vs $43,805M year-ago ((46222/43805-1) = 5.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": -0.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000007/a8-kex991q1202512282024.htm",
+     "quote": "Net sales by category, three months ended: iPhone $69,138M vs $69,702M year-ago ((69138/69702-1) = -0.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 1.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000055/a8-kex991q2202503292025.htm",
+     "quote": "Net sales by category, three months ended: iPhone $46,841M vs $45,963M year-ago ((46841/45963-1) = 1.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 13.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000071/a8-kex991q3202506282025.htm",
+     "quote": "Net sales by category, three months ended: iPhone $44,582M vs $39,296M year-ago ((44582/39296-1) = 13.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 6.1,
+     "source": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+     "quote": "Net sales by category, three months ended: iPhone $49,025M vs $46,222M year-ago ((49025/46222-1) = 6.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 23.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+     "quote": "Net sales by category, three months ended: iPhone $85,269M vs $69,138M year-ago ((85269/69138-1) = 23.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 21.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000011/a8-kex991q2202603282026.htm",
+     "quote": "Net sales by category, three months ended: iPhone $56,994M vs $46,841M year-ago ((56994/46841-1) = 21.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 21.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
+     "quote": "Net sales by category, three months ended: iPhone $54,252M vs $44,582M year-ago ((54252/44582-1) = 21.7%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "services_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q4 FY24",
+     "value": 11.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000120/a8-kex991q4202409282024.htm",
+     "quote": "Net sales by category, three months ended: Services $24,972M vs $22,314M year-ago ((24972/22314-1) = 11.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 13.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000007/a8-kex991q1202512282024.htm",
+     "quote": "Net sales by category, three months ended: Services $26,340M vs $23,117M year-ago ((26340/23117-1) = 13.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 11.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000055/a8-kex991q2202503292025.htm",
+     "quote": "Net sales by category, three months ended: Services $26,645M vs $23,867M year-ago ((26645/23867-1) = 11.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 13.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000071/a8-kex991q3202506282025.htm",
+     "quote": "Net sales by category, three months ended: Services $27,423M vs $24,213M year-ago ((27423/24213-1) = 13.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 15.1,
+     "source": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+     "quote": "Net sales by category, three months ended: Services $28,750M vs $24,972M year-ago ((28750/24972-1) = 15.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 13.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+     "quote": "Net sales by category, three months ended: Services $30,013M vs $26,340M year-ago ((30013/26340-1) = 13.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 16.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000011/a8-kex991q2202603282026.htm",
+     "quote": "Net sales by category, three months ended: Services $30,976M vs $26,645M year-ago ((30976/26645-1) = 16.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 12.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
+     "quote": "Net sales by category, three months ended: Services $30,739M vs $27,423M year-ago ((30739/27423-1) = 12.1%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "greater_china_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q4 FY24",
+     "value": -0.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000120/a8-kex991q4202409282024.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $15,033M vs $15,084M year-ago ((15033/15084-1) = -0.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": -11.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000007/a8-kex991q1202512282024.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $18,513M vs $20,819M year-ago ((18513/20819-1) = -11.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": -2.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000055/a8-kex991q2202503292025.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $16,002M vs $16,372M year-ago ((16002/16372-1) = -2.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 4.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000071/a8-kex991q3202506282025.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $15,369M vs $14,728M year-ago ((15369/14728-1) = 4.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": -3.6,
+     "source": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $14,493M vs $15,033M year-ago ((14493/15033-1) = -3.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 37.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $25,526M vs $18,513M year-ago ((25526/18513-1) = 37.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 28.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000011/a8-kex991q2202603282026.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $20,497M vs $16,002M year-ago ((20497/16002-1) = 28.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 22.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $18,816M vs $15,369M year-ago ((18816/15369-1) = 22.4%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "services_gross_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q4 FY24",
+     "value": 74.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000120/a8-kex991q4202409282024.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $24,972M; Cost of sales Services $6,485M; Services gross margin = 24972-6485 = $18,487M; 18487/24972 = 74.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 75.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000007/a8-kex991q1202512282024.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $26,340M; Cost of sales Services $6,578M; Services gross margin = 26340-6578 = $19,762M; 19762/26340 = 75.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 75.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000055/a8-kex991q2202503292025.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $26,645M; Cost of sales Services $6,462M; Services gross margin = 26645-6462 = $20,183M; 20183/26645 = 75.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 75.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000071/a8-kex991q3202506282025.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $27,423M; Cost of sales Services $6,698M; Services gross margin = 27423-6698 = $20,725M; 20725/27423 = 75.6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 75.3,
+     "source": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $28,750M; Cost of sales Services $7,106M; Services gross margin = 28750-7106 = $21,644M; 21644/28750 = 75.3%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 76.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $30,013M; Cost of sales Services $7,047M; Services gross margin = 30013-7047 = $22,966M; 22966/30013 = 76.5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 76.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000011/a8-kex991q2202603282026.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $30,976M; Cost of sales Services $7,224M; Services gross margin = 30976-7224 = $23,752M; 23752/30976 = 76.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 75.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $30,739M; Cost of sales Services $7,494M; Services gross margin = 30739-7494 = $23,245M; 23245/30739 = 75.6%",
+     "added": "2026-10-30"
+    }
+   ],
+   "active_installed_base_annual": [
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 2350000000,
+     "source": "https://www.nasdaq.com/articles/apple-aapl-q1-2025-earnings-call-transcript",
+     "quote": "Tim Cook (Q1 FY25 earnings call): \"I'm also pleased to announce that we reached a new record for our install base with over 2.35 billion active devices.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 2500000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000005/a8-kex991q1202612272025.htm",
+     "quote": "Tim Cook (Q1 FY26 press release): \"our installed base now has more than 2.5 billion active devices.\"",
+     "added": "2026-10-30"
+    }
+   ]
   }
  }
 }

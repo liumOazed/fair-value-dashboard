@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "GOOGL",
-  "AMZN",
-  "V",
-  "MA",
-  "AAPL",
   "NVDA",
   "AVGO",
   "LLY",
@@ -44,8 +39,19 @@
   "APA",
   "MSFT"
  ],
- "done": [],
+ "done": [
+  "GOOGL",
+  "AMZN",
+  "V",
+  "MA",
+  "AAPL"
+ ],
  "notes": {
-  "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history."
+  "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history.",
+  "GOOGL": "Cloud backlog not stated for Q4 2024, Q1 2025. Q1 2026 and Q2 2025 backlog from third-party call transcripts.",
+  "AMZN": "AWS backlog not stated Q4 2024; backlog from 10-Qs (Q1-Q2 2026) or call transcripts (others). Capex/OCF uses quarterly figures.",
+  "V": "Q1-Q4 FY26 filled. FY25 growth rates (payments volume, cross-border, processed transactions, VAS) not pulled; VAS growth is constant-dollar from calls only (Q4 FY26 from third-party transcript).",
+  "MA": "Cross-border and switched transactions growth not stated for Q4 2024-Q2 2025 in sourced releases; VAS growth not stated for year-earlier quarters. Rebates from slide footnotes.",
+  "AAPL": "Q4 FY26 not yet reported (due 2 Nov 2026). Installed base stated only Q1 FY25 (2.35B) and Q1 FY26 (2.5B). Services gross margin computed from services sales and cost of sales."
  }
 }
