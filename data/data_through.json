@@ -1,8 +1,8 @@
 {
  "_about": "Last period end included in each full fair-value model (TTM / fiscal year). Maintained by the daily earnings-update task; used to decide which companies have reported a newer quarter.",
  "AAPL": "2026-06-30",
- "MSFT": "2026-06-30",
- "GOOGL": "2026-06-30",
+ "MSFT": "2026-09-30",
+ "GOOGL": "2026-09-30",
  "AMZN": "2026-06-30",
  "NVDA": "2026-07-31",
  "AVGO": "2026-08-31",
@@ -22,7 +22,7 @@
  "VEEV": "2026-07-31",
  "MNST": "2026-06-30",
  "ALLE": "2026-09-30",
- "FTNT": "2026-06-30",
+ "FTNT": "2026-09-30",
  "RMD": "2026-06-30",
  "V": "2026-09-30",
  "FIX": "2026-09-30",
@@ -36,10 +36,10 @@
  "SPGI": "2026-09-30",
  "NFLX": "2026-09-30",
  "CBOE": "2026-06-30",
- "GRMN": "2026-06-30",
+ "GRMN": "2026-09-30",
  "FDS": "2026-08-31",
  "CRM": "2026-07-31",
  "HWM": "2026-06-30",
- "ADP": "2026-06-30",
+ "ADP": "2026-09-30",
  "AME": "2026-06-30"
 }

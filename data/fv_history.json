@@ -20,6 +20,15 @@
    "bull": 468.11,
    "price": 524.51,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 338.91,
+   "bear": 206.96,
+   "base": 360.21,
+   "bull": 483.61,
+   "price": 530.14,
+   "method": "fcff_re"
   }
  ],
  "GOOGL": [
@@ -30,6 +39,15 @@
    "base": 212.55,
    "bull": 314.97,
    "price": 320.21,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 212.22,
+   "bear": 121.07,
+   "base": 220.5,
+   "bull": 328.25,
+   "price": 283.82,
    "method": "fcff_re"
   }
  ],
@@ -291,6 +309,15 @@
    "bull": 90.74,
    "price": 179.99,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 70.92,
+   "bear": 51.47,
+   "base": 73.12,
+   "bull": 94.61,
+   "price": 139.1,
+   "method": "fcff_re"
   }
  ],
  "RMD": [
@@ -472,6 +499,15 @@
    "bull": 235.27,
    "price": 293.74,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 174.61,
+   "bear": 112.26,
+   "base": 187.02,
+   "bull": 237.09,
+   "price": 279.94,
+   "method": "fcff_re"
   }
  ],
  "FDS": [
@@ -515,6 +551,15 @@
    "base": 258.05,
    "bull": 314.57,
    "price": 304.16,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 246.05,
+   "bear": 180.56,
+   "base": 257.78,
+   "bull": 314.93,
+   "price": 286.08,
    "method": "fcff_re"
   }
  ],

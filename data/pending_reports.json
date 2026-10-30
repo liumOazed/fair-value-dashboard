@@ -3,41 +3,6 @@
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
-   "ticker": "MSFT",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-28",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 2
-  },
-  {
-   "ticker": "GOOGL",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-28",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 2
-  },
-  {
-   "ticker": "FTNT",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-28",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 2
-  },
-  {
-   "ticker": "GRMN",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-28",
-   "yahoo_latest_quarter": "2026-09-26",
-   "waiting_days": 2
-  },
-  {
-   "ticker": "ADP",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-28",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 2
-  },
-  {
    "ticker": "AMZN",
    "data_through": "2026-06-30",
    "reported_on": "2026-10-29",
@@ -206,6 +171,16 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "MSFT",
+   "next_report": "2027-01-27",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "ADP",
+   "next_report": "2027-01-27",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "DECK",
    "next_report": "2027-01-28",
    "data_through": "2026-09-30"
@@ -213,6 +188,16 @@
   {
    "ticker": "NDAQ",
    "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "GOOGL",
+   "next_report": "2027-02-03",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "FTNT",
+   "next_report": "2027-02-04",
    "data_through": "2026-09-30"
   },
   {
@@ -232,6 +217,11 @@
   },
   {
    "ticker": "MCO",
+   "next_report": "2027-02-17",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "GRMN",
    "next_report": "2027-02-17",
    "data_through": "2026-09-30"
   },
