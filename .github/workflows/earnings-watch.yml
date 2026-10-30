@@ -7,9 +7,6 @@ name: Earnings watch
 on:
   schedule: [{ cron: "30 1 * * *" }]
   workflow_dispatch:
-    inputs:
-      validate: { description: "Dry run against data/.validate (no commit of model changes)", type: boolean, default: false }
-      tickers: { description: "Dry-run tickers (validate only)", required: false, default: "" }
   push:
     paths: [".github/earnings-watch-request.json"]
 permissions:
@@ -25,23 +22,14 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install yfinance pandas lxml numpy scipy
 
-      - name: Validation dry run
-        if: ${{ inputs.validate }}
-        run: |
-          python scripts/auto_update.py --dry-run --model data/.validate/model_old.py --through data/.validate/through_old.json --tickers "${{ inputs.tickers }}"
-          git config user.name "earnings-bot"; git config user.email "earnings-bot@users.noreply.github.com"
-          git add -f data/.auto_update_dryrun.json; git commit -m "Auto-update validation dry run"; git pull --rebase && git push
 
       - name: Earnings calendar and pending list
-        if: ${{ !inputs.validate }}
         run: python scripts/earnings_watch.py
 
       - name: Auto-update numbers
-        if: ${{ !inputs.validate }}
         run: python scripts/auto_update.py 2>&1 | tee auto.log
 
       - name: Rebuild model, Monte Carlo and snapshot
-        if: ${{ !inputs.validate }}
         run: |
           UP=$(cat data/.auto_updated.txt 2>/dev/null || true)
           if [ -z "$UP" ]; then echo "nothing auto-updated"; exit 0; fi
@@ -57,7 +45,6 @@ jobs:
           python scripts/earnings_watch.py --pending
 
       - name: Commit result
-        if: ${{ !inputs.validate }}
         run: |
           git config user.name "earnings-bot"
           git config user.email "earnings-bot@users.noreply.github.com"
