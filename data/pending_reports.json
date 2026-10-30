@@ -32,6 +32,21 @@
    "data_through": "2026-06-30"
   },
   {
+   "ticker": "SHOP",
+   "next_report": "2026-11-03",
+   "data_through": "2026-06-30"
+  },
+  {
+   "ticker": "XYZ",
+   "next_report": "2026-11-03",
+   "data_through": "2026-06-30"
+  },
+  {
+   "ticker": "FISV",
+   "next_report": "2026-11-03",
+   "data_through": "2026-06-30"
+  },
+  {
    "ticker": "APP",
    "next_report": "2026-11-04",
    "data_through": "2026-06-30"
@@ -48,6 +63,11 @@
   },
   {
    "ticker": "EXPE",
+   "next_report": "2026-11-04",
+   "data_through": "2026-06-30"
+  },
+  {
+   "ticker": "CRCL",
    "next_report": "2026-11-04",
    "data_through": "2026-06-30"
   },
@@ -137,13 +157,43 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "RMD",
+   "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "MA",
+   "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "NDAQ",
    "next_report": "2027-01-28",
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "AXP",
+   "next_report": "2027-01-29",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "PYPL",
+   "next_report": "2027-02-02",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "GOOGL",
    "next_report": "2027-02-03",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "LLY",
+   "next_report": "2027-02-03",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "AMZN",
+   "next_report": "2027-02-04",
    "data_through": "2026-09-30"
   },
   {
@@ -157,8 +207,18 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "INCY",
+   "next_report": "2027-02-09",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "SPGI",
    "next_report": "2027-02-09",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "DXCM",
+   "next_report": "2027-02-11",
    "data_through": "2026-09-30"
   },
   {
@@ -178,6 +238,11 @@
   },
   {
    "ticker": "FIX",
+   "next_report": "2027-02-18",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "HWM",
    "next_report": "2027-02-18",
    "data_through": "2026-09-30"
   }
