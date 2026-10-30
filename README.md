@@ -48,6 +48,13 @@ Fair values are slow-moving. Re-run the model after each earnings report (roughl
 
 Preview locally: `python -m http.server` then open http://localhost:8000.
 
+## Earnings updates (daily, as companies report)
+
+Fair values update the morning after each company reports, instead of once a quarter.
+1. **Earnings watch** (GitHub job, daily 07:30 Dhaka / 01:30 UTC): `scripts/earnings_watch.py` refreshes the earnings calendar (`data/earnings_calendar.json`) and lists every company that has reported a quarter newer than its model (`data/pending_reports.json`, using `data/data_through.json`).
+2. **Daily earnings fair-value update** (scheduled Claude task, daily 08:47 Dhaka): reads the pending list; for each company it takes the new quarter from the company's own release / SEC filing (not Yahoo, which lags by days), updates the trailing-12-month inputs and notes, re-runs the model, Monte Carlo and snapshot, records the fair value history, advances `data_through`, commits, and sends a phone notification. Companies whose release isn't found stay pending for the next day. On days with nothing pending it stops immediately.
+This replaces the old quarterly refresh task. The Growth Screen and Monthly Top 5 stay monthly (1st of each month).
+
 ## Cash-flow definitions (one per question)
 
 | Question | Metric | Definition |
@@ -119,3 +126,4 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 | 26 Oct | Cash-flow metrics | One **FCF ÷ net income** (statements, 3 years combined, Cash swing flag) replaces FCF ÷ EY; **FCF yield from statement cash flow** instead of Yahoo's levered estimate; trailing earnings yield (forward shown separately); score's earnings-yield part no longer repeats forward P/E (from Nov) | Same period, same definitions everywhere; removes wrong "FCF distorted" tags (NVDA, MSFT, GOOGL…) |
 | 26 Oct | Growth Screen | **FCF / EV** column (FCF before interest ÷ enterprise value, %), display only | Cash yield of the whole business; debt can't flatter it |
 | 25–26 Oct | Fixes | Dividend history robust to Yahoo gaps and payment-frequency changes; dividend-cut flag only for consecutive years; split-safe P/E history; duplicate operating-margin field that would have broken the monthly build | — |
+| 30 Oct | Automation | **Daily earnings updates**: earnings calendar + pending list (GitHub job) and a daily task that updates each model from the company's own filing the morning after it reports; quarterly refresh task retired | Models current within a day of each report instead of up to 3 months |
