@@ -48,6 +48,10 @@ Fair values are slow-moving. Re-run the model after each earnings report (roughl
 
 Preview locally: `python -m http.server` then open http://localhost:8000.
 
+## Business drivers (company KPIs)
+
+Each Fair Value drawer has a **Business drivers** table: 4-6 KPIs chosen for that company (`data/kpi_defs.json`, e.g. Azure growth for MSFT, payments volume for V, room nights for BKNG), with the latest value, change vs a year earlier, the last 8 quarters and a trend judged against the company's own history (▲ improving / ● steady / ▼ worse; "worse" means worse for the business). A KPI that moves the wrong way 3 quarters running adds a flag. Values come from the companies' own releases and filings: each point in `data/kpis.json` keeps the source link and the exact quoted line (hover a value). `scripts/kpi_add.py` validates every addition. The **KPI backfill** task fills the history (queue in `data/kpi_backfill.json`); the daily earnings task adds each new quarter.
+
 ## Earnings updates (daily, as companies report)
 
 Fair values update the morning after each company reports, instead of once a quarter.
@@ -128,3 +132,4 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 | 25–26 Oct | Fixes | Dividend history robust to Yahoo gaps and payment-frequency changes; dividend-cut flag only for consecutive years; split-safe P/E history; duplicate operating-margin field that would have broken the monthly build | — |
 | 30 Oct | Automation | **Daily earnings updates**: earnings calendar + pending list (GitHub job) and a daily task that updates each model from the company's own filing the morning after it reports; quarterly refresh task retired | Models current within a day of each report instead of up to 3 months |
 | 30 Oct | Fair Value snapshot | **Layer-1 metrics**: incremental ROIC (3 years) and R&D ÷ revenue (Business performance); FCF margin trend, stock pay ÷ revenue (and ÷ FCF), capex ÷ depreciation, depreciation ÷ revenue for capital-heavy firms (Cash flow); inventory vs sales growth (Financial strength). Snapshot fetch adds depreciation and R&D | Answers 'are new investments paying off?', 'how much goes to stock pay?', 'more or less cash-generative?' |
+| 30 Oct | Fair Value | **Business drivers** (Phase B): 187 company-specific KPIs for 42 stocks, latest vs 1 year, 8-quarter sparkline, trend vs own history, 3-quarter worsening flag, source + quote for every value; MSFT pilot loaded, backfill task fills the rest | Is the business story still on track? |

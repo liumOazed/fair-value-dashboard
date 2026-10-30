@@ -11,8 +11,8 @@ function status(a){const p=a.price,fv=a.fair_value;
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 $("#theme").onclick=()=>{const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1020";const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
 $("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
-let A,P,TH={},SN={stocks:{}},FH={};
-try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))])}
+let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}};
+try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))])}
 catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open this page through GitHub Pages (or a local server such as <code>python -m http.server</code>), not by double-clicking the file.</div>';return}
 let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  const r={...a,price,prev:p.prev_close,history:p.history||[]};
@@ -171,6 +171,7 @@ function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=
  const fl=[...(S?S.flags:[])];
  if(r.diff>0.5)fl.unshift({t:`Price ${(r.diff*100).toFixed(0)}% above fair value`,d:"Even the bull case may not justify today's price; see the valuation strip."});
  if(px<=r.buy_below)fl.unshift({t:"Below buy-below price",d:`Price is under ${$f(r.buy_below)}, the fair value less the ${(r.mos*100).toFixed(0)}% margin of safety.`});
+ const DR=driversData(r.ticker);DR.rows.forEach(x=>{if(x.worse3)fl.push({t:`${x.d.label}: worse 3 quarters running`,d:`Each of the last three quarters moved in the wrong direction (${x.pts.slice(-4).map(p=>p.label+" "+fmtK(x.d,p.value)).join(" → ")}). Check whether the story is changing.`})});
  const flags=fl.length?`<div class="flags">${fl.map(f=>`<details class="flag"><summary>${esc(f.t)}</summary><div>${esc(f.d)}</div></details>`).join("")}</div>`:"";
  // quality cards
  let q="";if(S){const sn=S.valuation.sector_pct.name;
@@ -223,7 +224,34 @@ function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=
    <text x="${pl}" y="${Hh-6}" class="mct">${pts[0][0]}</text><text x="${W-prr}" y="${Hh-6}" text-anchor="end" class="mct">now</text></svg>
   <p class="muted">Line: monthly price. Dashes and dots: fair value at each refresh (${H.length} recorded so far; recording started ${H[0].date}, earlier values used another method). Shaded: bear–bull range of the latest valuation. A fair value that keeps rising with the price supports the thesis; one that falls while the price holds up is a warning.</p>`}
  else if(H.length){fh=`<div class="snaphd"><b>Fair value over time</b></div><p class="muted">${H.map(h=>`${h.date}: ${$f(h.fv)}`).join(" · ")}</p>`}
- return flags+q+val+watch+fh}
+ return flags+q+driversHTML(DR)+val+watch+fh}
+// ---------- Business drivers (Phase B): company-specific KPIs from quarterly releases, judged against the company's own history
+const fmtK=(d,v)=>v==null?"–":d.unit==="text"?String(v):d.unit==="pct"?(+v).toFixed(1).replace(/\.0$/,"")+"%":d.unit==="usd_b"?"$"+(+v).toFixed(v>=100?0:1)+"B":d.unit==="usd"?"$"+(+v).toFixed(2):d.unit==="x"?(+v).toFixed(2)+"×":Math.abs(v)>=1e6?(v/1e6).toFixed(1)+"M":Math.abs(v)>=1e3?(v/1e3).toFixed(1)+"k":String(v);
+function driversData(t){const defs=((KD.stocks||{})[t]||{}).kpis||[],data=(KP.stocks||{})[t]||{};
+ const rows=defs.map(d=>{const pts=(data[d.id]||[]).slice().sort((a,b)=>a.period<b.period?-1:1),last=pts[pts.length-1];if(!last)return {d,pts};
+  const ly=new Date(last.period);ly.setFullYear(ly.getFullYear()-1);const ya=pts.find(p=>Math.abs(new Date(p.period)-ly)<25*864e5);
+  const num=d.unit!=="text";let chg=null,chgTxt="–",base=ya,basis="vs 1y";
+  if(num&&!ya&&pts.length>=2){base=pts[pts.length-2];basis="vs prev qtr"}
+  if(num&&base){chg=d.unit==="pct"||d.unit==="x"?last.value-base.value:(base.value?last.value/base.value-1:null);
+   chgTxt=chg==null?"–":d.unit==="pct"?(chg>0?"+":"")+chg.toFixed(1).replace(/\.0$/,"")+" pts":d.unit==="x"?(chg>0?"+":"")+chg.toFixed(2)+"×":(chg>0?"+":"")+(chg*100).toFixed(0)+"%"}
+  const tol=d.unit==="pct"?1:d.unit==="x"?0.05:0.02;let tr=null;
+  if(chg!=null){tr=Math.abs(chg)<=tol||d.better==="none"?0:((chg>0)===(d.better==="up")?1:-1)}
+  let worse3=false;if(num&&d.better!=="none"&&pts.length>=4){const L=pts.slice(-4).map(p=>p.value);worse3=[1,2,3].every(i=>d.better==="up"?L[i]<L[i-1]:L[i]>L[i-1])}
+  return {d,pts,last,chg,chgTxt,basis,tr,worse3}});
+ return {rows,latest:rows.filter(x=>x.last).map(x=>x.last).sort((a,b)=>a.period<b.period?1:-1)[0]}}
+function sparkK(pts){const v=pts.slice(-8).map(p=>+p.value).filter(x=>isFinite(x));if(v.length<2)return "";const w=90,h=22,mn=Math.min(...v),mx=Math.max(...v),X=i=>2+i/(v.length-1)*(w-4),Y=x=>h-3-(x-mn)/((mx-mn)||1)*(h-6);
+ return `<svg class="kspk" viewBox="0 0 ${w} ${h}"><polyline points="${v.map((x,i)=>X(i).toFixed(1)+","+Y(x).toFixed(1)).join(" ")}" class="spkl"/><circle cx="${X(v.length-1)}" cy="${Y(v[v.length-1])}" r="2.4" class="spkd"/></svg>`}
+function driversHTML(DR){if(!DR.rows.length)return "";const have=DR.rows.filter(x=>x.last);
+ const sc=have.filter(x=>x.tr!=null&&x.d.better!=="none"),up=sc.filter(x=>x.tr>0).length;
+ const TR={1:'<span class="up">▲ improving</span>',0:'<span class="muted">● steady</span>',"-1":'<span class="down">▼ worse</span>'};
+ const body=DR.rows.map(x=>{const d=x.d;if(!x.last)return `<tr class="info"><td style="text-align:left">${esc(d.label)}</td><td colspan="4" style="text-align:left" class="muted">awaiting data</td></tr>`;
+  const tip=`${x.last.label} (${x.last.period}): “${x.last.quote}”`;
+  return `<tr><td style="text-align:left;white-space:normal">${esc(d.label)}</td><td title="${esc(tip)}"><b>${esc(fmtK(d,x.last.value))}</b> <a href="${esc(x.last.source)}" target="_blank" rel="noopener" class="src" title="${esc(tip)}">↗</a><div class="muted mnote">${esc(x.last.label)}</div></td>
+   <td>${d.unit==="text"?"–":esc(x.chgTxt)}${x.basis!=="vs 1y"&&x.chg!=null?'<div class="muted mnote">vs prev qtr</div>':""}</td><td>${d.unit==="text"?"":sparkK(x.pts)}</td><td>${x.tr==null?'<span class="muted">–</span>':TR[x.tr]}${x.worse3?' <span class="down" title="Worse 3 quarters running">⚠</span>':""}</td></tr>`}).join("");
+ return `<div class="snaphd"><b>Business drivers</b><span class="muted">What moves this business · from its quarterly releases${DR.latest?" · latest "+esc(DR.latest.label):""}</span>${sc.length?`<span class="badge" style="margin-left:auto">${up} of ${sc.length} improving</span>`:""}</div>
+ ${have.length?"":`<p class="muted">Company KPIs are being collected from the releases; this table fills in over the next days.</p>`}
+ <div class="scroll"><table class="s ktab"><tr><th style="text-align:left">KPI</th><th>Latest</th><th title="Change vs the same quarter a year earlier (points for percentages)">vs 1y</th><th>Last 8 qtrs</th><th>Trend</th></tr>${body}</table></div>
+ <p class="muted">Judged against the company's own history, not other companies. Hover a value (or open ↗) for the exact quote and filing.</p>`}
 function bindSnap(){const det=$("#qdet");if(!det)return;document.querySelectorAll(".qc").forEach(b=>b.onclick=()=>{const open=b.getAttribute("aria-expanded")==="true";
  document.querySelectorAll(".qc").forEach(x=>{x.setAttribute("aria-expanded","false");x.classList.remove("on")});
  if(open){det.hidden=true;return}b.setAttribute("aria-expanded","true");b.classList.add("on");det.innerHTML=window.__snapCards[+b.dataset.i];det.hidden=false})}

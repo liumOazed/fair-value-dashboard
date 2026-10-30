@@ -1,0 +1,145 @@
+{
+ "_about": "Quarterly business-driver values extracted from company releases/filings. Each point: period (fiscal quarter end, YYYY-MM-DD), label (e.g. 'Q3 2026' or 'Q1 FY27'), value (number, or text for unit=text), source (URL), quote (the exact sentence or table line), added (date).",
+ "stocks": {
+  "MSFT": {
+   "azure_other_cloud_services_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 40,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/metrics",
+     "quote": "Azure and other cloud services revenue growth: 40% / 39% (GAAP / constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 40,
+     "source": "https://www.microsoft.com/en-us/investor/earnings/FY-2026-Q3/press-release-webcast",
+     "quote": "Azure and other cloud services revenue increased 40% (up 39% in constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 43,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323632/msft-ex99_1.htm",
+     "quote": "Azure and other cloud services revenue increased 43%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 48,
+     "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+     "quote": "Azure revenue increased 48%",
+     "added": "2026-10-30"
+    }
+   ],
+   "microsoft_cloud_revenue": [
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 49.1,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/metrics",
+     "quote": "Microsoft Cloud revenue: $49.1 billion, growth 26% / 25% (GAAP / constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 54.5,
+     "source": "https://www.microsoft.com/en-us/investor/earnings/FY-2026-Q3/press-release-webcast",
+     "quote": "Microsoft Cloud revenue was $54.5 billion and increased 29% (up 25% in constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 59.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323632/msft-ex99_1.htm",
+     "quote": "Microsoft Cloud revenue was $59.3 billion and increased 27%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 63.9,
+     "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+     "quote": "Microsoft Cloud revenue was $63.9 billion and increased 30% (up 31% in constant currency)",
+     "added": "2026-10-30"
+    }
+   ],
+   "commercial_remaining_performance_obligation_grow": [
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 99,
+     "source": "https://www.microsoft.com/en-us/investor/earnings/FY-2026-Q3/press-release-webcast",
+     "quote": "commercial remaining performance obligation increased 99% to $627 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 84,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323632/msft-ex99_1.htm",
+     "quote": "commercial remaining performance obligation increased 84% to $678 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 73,
+     "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+     "quote": "Commercial remaining performance obligation increased 73% to $677 billion",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 48.9,
+     "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+     "quote": "Prior-year quarter (three months ended Sept. 30, 2025): revenue $77,673 million, operating income $37,961 million (48.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 46.3,
+     "source": "https://www.microsoft.com/en-us/investor/earnings/FY-2026-Q3/press-release-webcast",
+     "quote": "Revenue was $82.9 billion ... Operating income was $38.4 billion (38.4 / 82.9 = 46.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 45.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323632/msft-ex99_1.htm",
+     "quote": "Revenue was $90.0 billion ... Operating income was $40.6 billion (40.6 / 90.0 = 45.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 49.7,
+     "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+     "quote": "Revenue was $92.3 billion ... Operating income was $45.9 billion (45.9 / 92.3 = 49.7%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "capex_incl_finance_leases_revenue": [
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 49.0,
+     "source": "https://www.tradingkey.com/news/transcripts/262249601-tradingkey",
+     "quote": "CFO: \"Capital expenditures were $45.2 billion\" (incl. $7.4B finance leases); revenue $92.3B (45.2 / 92.3 = 49.0%)",
+     "added": "2026-10-30"
+    }
+   ]
+  }
+ }
+}

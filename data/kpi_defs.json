@@ -1,0 +1,1337 @@
+{
+ "_about": "Business drivers per company (Phase B). unit: pct = percentage (growth rates and ratios; year-on-year change shown in points), usd_b = US$ billions, usd = US$, num = count, x = multiple, text = qualitative. better: up / down / none (which direction is good for the business). Values live in data/kpis.json, one entry per quarter with its source.",
+ "stocks": {
+  "MSFT": {
+   "name": "Microsoft",
+   "kpis": [
+    {
+     "id": "azure_other_cloud_services_growth",
+     "label": "Azure & other cloud services growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "microsoft_cloud_revenue",
+     "label": "Microsoft Cloud revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "commercial_remaining_performance_obligation_grow",
+     "label": "Commercial remaining performance obligation growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "capex_incl_finance_leases_revenue",
+     "label": "Capex incl. finance leases ÷ revenue",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "GOOGL": {
+   "name": "Alphabet",
+   "kpis": [
+    {
+     "id": "google_cloud_revenue_growth",
+     "label": "Google Cloud revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "google_cloud_operating_margin",
+     "label": "Google Cloud operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "search_other_revenue_growth",
+     "label": "Search & other revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "google_cloud_backlog",
+     "label": "Google Cloud backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "capex_revenue",
+     "label": "Capex ÷ revenue",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "AMZN": {
+   "name": "Amazon",
+   "kpis": [
+    {
+     "id": "aws_revenue_growth",
+     "label": "AWS revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "aws_operating_margin",
+     "label": "AWS operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "aws_backlog",
+     "label": "AWS backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "capex_operating_cash_flow",
+     "label": "Capex ÷ operating cash flow",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "advertising_revenue_growth",
+     "label": "Advertising revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "NVDA": {
+   "name": "NVIDIA",
+   "kpis": [
+    {
+     "id": "data_center_revenue_growth",
+     "label": "Data Center revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "inventory_supply_commitments_vs_revenue",
+     "label": "Inventory + supply commitments vs revenue",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "top_customer_concentration_10_k",
+     "label": "Top-customer concentration (10-K)",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "r_d_revenue",
+     "label": "R&D ÷ revenue",
+     "unit": "pct",
+     "better": "none"
+    }
+   ]
+  },
+  "AVGO": {
+   "name": "Broadcom",
+   "kpis": [
+    {
+     "id": "ai_semiconductor_revenue",
+     "label": "AI semiconductor revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "infrastructure_software_vmware_revenue_growth",
+     "label": "Infrastructure software (VMware) revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_ebitda",
+     "label": "Net debt ÷ EBITDA",
+     "unit": "x",
+     "better": "down"
+    }
+   ]
+  },
+  "ADBE": {
+   "name": "Adobe",
+   "kpis": [
+    {
+     "id": "digital_media_arr_subscription_revenue_growth",
+     "label": "Digital Media ARR / subscription revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "remaining_performance_obligations_growth",
+     "label": "Remaining performance obligations growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin_gaap",
+     "label": "Operating margin (GAAP)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "sbc_revenue",
+     "label": "SBC ÷ revenue",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "APP": {
+   "name": "AppLovin",
+   "kpis": [
+    {
+     "id": "advertising_revenue_growth",
+     "label": "Advertising revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "fcf_margin",
+     "label": "FCF margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "share_count_change",
+     "label": "Share count change",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "FICO": {
+   "name": "Fair Isaac",
+   "kpis": [
+    {
+     "id": "scores_revenue_growth",
+     "label": "Scores revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "mortgage_originations_scores_revenue",
+     "label": "Mortgage-originations scores revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "software_arr_growth",
+     "label": "Software ARR growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "software_dollar_based_net_retention",
+     "label": "Software dollar-based net retention",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "INTU": {
+   "name": "Intuit",
+   "kpis": [
+    {
+     "id": "online_ecosystem_revenue_growth",
+     "label": "Online Ecosystem revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "consumer_turbotax_revenue_growth",
+     "label": "Consumer (TurboTax) revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "credit_karma_revenue_growth",
+     "label": "Credit Karma revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "quickbooks_online_accounting_growth",
+     "label": "QuickBooks Online Accounting growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "sbc_revenue",
+     "label": "SBC ÷ revenue",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "ADSK": {
+   "name": "Autodesk",
+   "kpis": [
+    {
+     "id": "total_billings_growth",
+     "label": "Total billings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "remaining_performance_obligations_growth",
+     "label": "Remaining performance obligations growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_revenue_retention_company_range",
+     "label": "Net revenue retention (company range)",
+     "unit": "text",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "VEEV": {
+   "name": "Veeva Systems",
+   "kpis": [
+    {
+     "id": "subscription_revenue_growth",
+     "label": "Subscription revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "remaining_performance_obligations_growth",
+     "label": "Remaining performance obligations growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "vault_crm_wins_migrations",
+     "label": "Vault CRM wins / migrations",
+     "unit": "text",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "FTNT": {
+   "name": "Fortinet",
+   "kpis": [
+    {
+     "id": "billings_growth",
+     "label": "Billings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "product_revenue_growth_firewall_refresh",
+     "label": "Product revenue growth (firewall refresh)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "service_revenue_growth",
+     "label": "Service revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "deferred_revenue_growth",
+     "label": "Deferred revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "VRSN": {
+   "name": "VeriSign",
+   "kpis": [
+    {
+     "id": "domain_name_base_com_net_growth",
+     "label": "Domain name base (.com/.net) growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "new_registrations",
+     "label": "New registrations",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "renewal_rate",
+     "label": "Renewal rate",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "price_increases_contract",
+     "label": "Price increases (contract)",
+     "unit": "text",
+     "better": "none"
+    }
+   ]
+  },
+  "CRM": {
+   "name": "Salesforce",
+   "kpis": [
+    {
+     "id": "subscription_support_revenue_growth",
+     "label": "Subscription & support revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "current_rpo_growth",
+     "label": "Current RPO growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "data_cloud_ai_arr",
+     "label": "Data Cloud & AI ARR",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_buyback_borrowing",
+     "label": "Net debt (buyback borrowing)",
+     "unit": "usd_b",
+     "better": "down"
+    }
+   ]
+  },
+  "V": {
+   "name": "Visa",
+   "kpis": [
+    {
+     "id": "payments_volume_growth_constant",
+     "label": "Payments volume growth (constant $)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "cross_border_volume_growth_ex_intra_europe",
+     "label": "Cross-border volume growth (ex intra-Europe)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "processed_transactions_growth",
+     "label": "Processed transactions growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "client_incentives_gross_revenue",
+     "label": "Client incentives ÷ gross revenue",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "value_added_services_revenue_growth",
+     "label": "Value-added services revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "MA": {
+   "name": "Mastercard",
+   "kpis": [
+    {
+     "id": "gross_dollar_volume_growth",
+     "label": "Gross dollar volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "cross_border_volume_growth",
+     "label": "Cross-border volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "switched_transactions_growth",
+     "label": "Switched transactions growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "value_added_services_revenue_growth",
+     "label": "Value-added services revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "rebates_incentives_gross_revenue",
+     "label": "Rebates & incentives ÷ gross revenue",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "NDAQ": {
+   "name": "Nasdaq",
+   "kpis": [
+    {
+     "id": "annualized_recurring_revenue_growth",
+     "label": "Annualized recurring revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "solutions_revenue_growth_organic",
+     "label": "Solutions revenue growth (organic)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "etp_aum_tracking_nasdaq_indices",
+     "label": "ETP AUM tracking Nasdaq indices",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_ebitda",
+     "label": "Net debt ÷ EBITDA",
+     "unit": "x",
+     "better": "down"
+    }
+   ]
+  },
+  "MCO": {
+   "name": "Moody's",
+   "kpis": [
+    {
+     "id": "mis_ratings_transaction_revenue_issuance",
+     "label": "MIS ratings transaction revenue (issuance)",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "moody_s_analytics_arr_growth",
+     "label": "Moody's Analytics ARR growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "ma_retention_rate",
+     "label": "MA retention rate",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "SPGI": {
+   "name": "S&P Global",
+   "kpis": [
+    {
+     "id": "ratings_transaction_vs_non_transaction_revenue",
+     "label": "Ratings transaction vs non-transaction revenue",
+     "unit": "text",
+     "better": "up"
+    },
+    {
+     "id": "indices_revenue_and_etf_aum",
+     "label": "Indices revenue and ETF AUM",
+     "unit": "text",
+     "better": "up"
+    },
+    {
+     "id": "market_intelligence_organic_subscription_growth",
+     "label": "Market Intelligence organic subscription growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "CBOE": {
+   "name": "Cboe Global Markets",
+   "kpis": [
+    {
+     "id": "options_average_daily_volume",
+     "label": "Options average daily volume",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "organic_net_revenue_growth",
+     "label": "Organic net revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "data_access_solutions_growth",
+     "label": "Data & Access Solutions growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "FDS": {
+   "name": "FactSet",
+   "kpis": [
+    {
+     "id": "organic_asv_growth",
+     "label": "Organic ASV growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "client_retention_asv_and_count",
+     "label": "Client retention (ASV and count)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "share_buybacks",
+     "label": "Share buybacks",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "AAPL": {
+   "name": "Apple",
+   "kpis": [
+    {
+     "id": "iphone_revenue_growth",
+     "label": "iPhone revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "services_revenue_growth",
+     "label": "Services revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "services_gross_margin",
+     "label": "Services gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "greater_china_revenue_growth",
+     "label": "Greater China revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "active_installed_base_annual",
+     "label": "Active installed base (annual)",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "DECK": {
+   "name": "Deckers",
+   "kpis": [
+    {
+     "id": "hoka_revenue_growth",
+     "label": "HOKA revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "ugg_revenue_growth",
+     "label": "UGG revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "direct_to_consumer_growth",
+     "label": "Direct-to-consumer growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "inventory_growth_vs_sales",
+     "label": "Inventory growth vs sales",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "TPR": {
+   "name": "Tapestry",
+   "kpis": [
+    {
+     "id": "coach_revenue_growth_constant_currency",
+     "label": "Coach revenue growth (constant currency)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "kate_spade_revenue_growth",
+     "label": "Kate Spade revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "inventory_growth_vs_sales",
+     "label": "Inventory growth vs sales",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "MNST": {
+   "name": "Monster Beverage",
+   "kpis": [
+    {
+     "id": "net_sales_growth_currency_adjusted",
+     "label": "Net sales growth (currency-adjusted)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "international_share_of_sales",
+     "label": "International share of sales",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "price_vs_volume_cases",
+     "label": "Price vs volume (cases)",
+     "unit": "text",
+     "better": "none"
+    }
+   ]
+  },
+  "MKC": {
+   "name": "McCormick",
+   "kpis": [
+    {
+     "id": "organic_sales_growth",
+     "label": "Organic sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "volume_mix_vs_price",
+     "label": "Volume/mix vs price",
+     "unit": "text",
+     "better": "none"
+    },
+    {
+     "id": "consumer_vs_flavor_solutions_growth",
+     "label": "Consumer vs Flavor Solutions growth",
+     "unit": "text",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_gross_margin",
+     "label": "Adjusted gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_ebitda_unilever_deal",
+     "label": "Net debt ÷ EBITDA (Unilever deal)",
+     "unit": "x",
+     "better": "down"
+    }
+   ]
+  },
+  "GRMN": {
+   "name": "Garmin",
+   "kpis": [
+    {
+     "id": "revenue_growth_by_segment_fitness_outdoor_aviati",
+     "label": "Revenue growth by segment (Fitness, Outdoor, Aviation, Marine, Auto OEM)",
+     "unit": "text",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "inventory_growth_vs_sales",
+     "label": "Inventory growth vs sales",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "EXPE": {
+   "name": "Expedia",
+   "kpis": [
+    {
+     "id": "gross_bookings_growth",
+     "label": "Gross bookings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "room_nights_growth",
+     "label": "Room nights growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "b2b_bookings_growth",
+     "label": "B2B bookings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "revenue_gross_bookings_take_rate",
+     "label": "Revenue ÷ gross bookings (take rate)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "marketing_revenue",
+     "label": "Marketing ÷ revenue",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "BKNG": {
+   "name": "Booking Holdings",
+   "kpis": [
+    {
+     "id": "room_nights_growth",
+     "label": "Room nights growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_bookings_growth",
+     "label": "Gross bookings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "take_rate",
+     "label": "Take rate",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "marketing_revenue_direct_mix",
+     "label": "Marketing ÷ revenue (direct mix)",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "NFLX": {
+   "name": "Netflix",
+   "kpis": [
+    {
+     "id": "revenue_growth_constant_currency",
+     "label": "Revenue growth (constant currency)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "advertising_revenue_growth",
+     "label": "Advertising revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "content_cash_spend_vs_amortization",
+     "label": "Content cash spend vs amortization",
+     "unit": "x",
+     "better": "down"
+    },
+    {
+     "id": "free_cash_flow",
+     "label": "Free cash flow",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "LLY": {
+   "name": "Eli Lilly",
+   "kpis": [
+    {
+     "id": "mounjaro_zepbound_revenue",
+     "label": "Mounjaro + Zepbound revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "top_2_drugs_share_of_revenue",
+     "label": "Top-2 drugs' share of revenue",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "r_d_revenue",
+     "label": "R&D ÷ revenue",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "pipeline_milestones_e_g_orforglipron",
+     "label": "Pipeline milestones (e.g. orforglipron)",
+     "unit": "text",
+     "better": "none"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "INCY": {
+   "name": "Incyte",
+   "kpis": [
+    {
+     "id": "jakafi_revenue_growth",
+     "label": "Jakafi revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "opzelura_revenue_growth",
+     "label": "Opzelura revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "non_jakafi_share_of_revenue",
+     "label": "Non-Jakafi share of revenue",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "r_d_revenue",
+     "label": "R&D ÷ revenue",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "jakafi_patent_expiry_timing",
+     "label": "Jakafi patent expiry timing",
+     "unit": "text",
+     "better": "none"
+    }
+   ]
+  },
+  "RMD": {
+   "name": "ResMed",
+   "kpis": [
+    {
+     "id": "device_revenue_growth",
+     "label": "Device revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "masks_accessories_revenue_growth",
+     "label": "Masks & accessories revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "software_saas_revenue_growth",
+     "label": "Software (SaaS) revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "DXCM": {
+   "name": "DexCom",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth_us_vs_international",
+     "label": "Organic revenue growth (US vs international)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "type_2_new_patient_adoption_if_disclosed",
+     "label": "Type-2 / new patient adoption (if disclosed)",
+     "unit": "text",
+     "better": "up"
+    },
+    {
+     "id": "recall_warning_letter_status",
+     "label": "Recall / warning-letter status",
+     "unit": "text",
+     "better": "none"
+    }
+   ]
+  },
+  "IDXX": {
+   "name": "IDEXX Laboratories",
+   "kpis": [
+    {
+     "id": "cag_diagnostics_recurring_revenue_organic_growth",
+     "label": "CAG Diagnostics recurring revenue organic growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "premium_instrument_placements",
+     "label": "Premium instrument placements",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "us_clinical_visit_trends",
+     "label": "US clinical visit trends",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ALLE": {
+   "name": "Allegion",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth_americas_international",
+     "label": "Organic revenue growth (Americas, International)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "price_vs_volume",
+     "label": "Price vs volume",
+     "unit": "text",
+     "better": "none"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "electronic_products_share_of_revenue",
+     "label": "Electronic products share of revenue",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "FIX": {
+   "name": "Comfort Systems USA",
+   "kpis": [
+    {
+     "id": "backlog_growth",
+     "label": "Backlog growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "same_store_backlog_growth",
+     "label": "Same-store backlog growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "book_to_bill",
+     "label": "Book-to-bill",
+     "unit": "x",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "data_centre_share_of_revenue",
+     "label": "Data-centre share of revenue",
+     "unit": "pct",
+     "better": "none"
+    }
+   ]
+  },
+  "CTAS": {
+   "name": "Cintas",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth",
+     "label": "Organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "uniform_rental_facility_services_growth",
+     "label": "Uniform rental & facility services growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ADP": {
+   "name": "Automatic Data Processing",
+   "kpis": [
+    {
+     "id": "employer_services_new_business_bookings_growth",
+     "label": "Employer Services new business bookings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "pays_per_control_growth",
+     "label": "Pays per control growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "client_retention",
+     "label": "Client retention",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "client_funds_interest_revenue",
+     "label": "Client funds interest revenue",
+     "unit": "usd_b",
+     "better": "none"
+    },
+    {
+     "id": "peo_worksite_employees",
+     "label": "PEO worksite employees",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "AME": {
+   "name": "AMETEK",
+   "kpis": [
+    {
+     "id": "organic_sales_growth",
+     "label": "Organic sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "orders_and_book_to_bill",
+     "label": "Orders and book-to-bill",
+     "unit": "x",
+     "better": "up"
+    },
+    {
+     "id": "backlog",
+     "label": "Backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "HWM": {
+   "name": "Howmet Aerospace",
+   "kpis": [
+    {
+     "id": "commercial_aerospace_revenue_growth",
+     "label": "Commercial aerospace revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "defense_aerospace_revenue_growth",
+     "label": "Defense aerospace revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "engine_products_revenue_growth",
+     "label": "Engine Products revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "fcf_conversion",
+     "label": "FCF conversion",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "APA": {
+   "name": "APA Corporation",
+   "kpis": [
+    {
+     "id": "production_boe_d_growth",
+     "label": "Production (BOE/d) growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "realised_oil_price",
+     "label": "Realised oil price",
+     "unit": "usd",
+     "better": "none"
+    },
+    {
+     "id": "egypt_production_and_receivables",
+     "label": "Egypt production and receivables",
+     "unit": "text",
+     "better": "none"
+    },
+    {
+     "id": "capex_operating_cash_flow",
+     "label": "Capex ÷ operating cash flow",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "fcf_at_60_oil_model_bear_case",
+     "label": "FCF at $60 oil (model bear case)",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  }
+ }
+}
