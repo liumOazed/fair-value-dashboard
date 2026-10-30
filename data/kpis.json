@@ -2942,6 +2942,1526 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "EXPE": {
+   "b2b_bookings_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 19,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442424000049/earningsrelease-q32024.htm",
+     "quote": "B2B had yet another strong quarter with gross bookings up 19% year-over-year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 24,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442425000005/earningsrelease-q42024.htm",
+     "quote": "B2C and B2B gross bookings growth accelerated 5-points to 9% and 24% respectively in the fourth quarter.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000025/earningsrelease-q12025.htm",
+     "quote": "B2C gross bookings grew 1% and B2B gross bookings grew 14% given the segment's greater international exposure.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000039/earningsrelease-q22025.htm",
+     "quote": "Total gross bookings grew 5%, driven by 17% growth in B2B gross bookings; B2C gross bookings grew 1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 26,
+     "source": "https://www.businesswire.com/news/home/20251106685763/en/Expedia-Group-Reports-Third-Quarter-2025-Results",
+     "quote": "Total gross bookings grew 12%, driven by a 26% increase in B2B; B2C gross bookings grew 7%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "B2B gross bookings (Segment P&L) Q4 2025 $8,659M vs Q4 2024 $6,986M, Y/Y 24%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 22,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000031/earningsrelease-q12026.htm",
+     "quote": "Total gross bookings grew 13%, while B2B gross bookings grew 22% and B2C grew gross bookings 10%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
+     "quote": "B2B gross bookings (Segment P&L) Q2 2026 $10,742M vs Q2 2025 $8,844M, Y/Y 21%",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_bookings_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442424000049/earningsrelease-q32024.htm",
+     "quote": "Gross bookings | $27,498 | $25,685 | 7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442425000005/earningsrelease-q42024.htm",
+     "quote": "Gross bookings | $24,422 | $21,672 | 13%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000025/earningsrelease-q12025.htm",
+     "quote": "Gross bookings | $31,451 | $30,164 | 4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000039/earningsrelease-q22025.htm",
+     "quote": "Gross bookings | $30,409 | $28,837 | 5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 12,
+     "source": "https://www.businesswire.com/news/home/20251106685763/en/Expedia-Group-Reports-Third-Quarter-2025-Results",
+     "quote": "Gross bookings $30,727 $27,498 12%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Gross bookings | $27,003 | $24,422 | 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000031/earningsrelease-q12026.htm",
+     "quote": "Gross bookings | $35,530 | $31,451 | 13%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
+     "quote": "Gross bookings | $33,928 | $30,409 | 12%",
+     "added": "2026-10-30"
+    }
+   ],
+   "marketing_revenue": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 50.5,
+     "source": "https://www.businesswire.com/news/home/20251106685763/en/Expedia-Group-Reports-Third-Quarter-2025-Results",
+     "quote": "Statement of operations, three months ended 2024-09-30: Revenue $4,060M; Selling and marketing - direct 1,855; Selling and marketing - indirect 197 ((1855+197)/4060 = 2052/4060 = 50.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 54.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Statement of operations, three months ended 2024-12-31: Revenue $3,184M; Selling and marketing - direct 1,548; Selling and marketing - indirect 201 ((1548+201)/3184 = 1749/3184 = 54.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 65.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000031/earningsrelease-q12026.htm",
+     "quote": "Statement of operations, three months ended 2025-03-31: Revenue $2,988M; Selling and marketing - direct 1,757; Selling and marketing - indirect 199 ((1757+199)/2988 = 1956/2988 = 65.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 56.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
+     "quote": "Statement of operations, three months ended 2025-06-30: Revenue $3,786M; Selling and marketing - direct 1,920; Selling and marketing - indirect 213 ((1920+213)/3786 = 2133/3786 = 56.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 49.6,
+     "source": "https://www.businesswire.com/news/home/20251106685763/en/Expedia-Group-Reports-Third-Quarter-2025-Results",
+     "quote": "Statement of operations, three months ended 2025-09-30: Revenue $4,412M; Selling and marketing - direct 1,976; Selling and marketing - indirect 211 ((1976+211)/4412 = 2187/4412 = 49.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 53.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Statement of operations, three months ended 2025-12-31: Revenue $3,547M; Selling and marketing - direct 1,696; Selling and marketing - indirect 213 ((1696+213)/3547 = 1909/3547 = 53.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 60.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000031/earningsrelease-q12026.htm",
+     "quote": "Statement of operations, three months ended 2026-03-31: Revenue $3,426M; Selling and marketing - direct 1,856; Selling and marketing - indirect 202 ((1856+202)/3426 = 2058/3426 = 60.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 54.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
+     "quote": "Statement of operations, three months ended 2026-06-30: Revenue $4,315M; Selling and marketing - direct 2,119; Selling and marketing - indirect 217 ((2119+217)/4315 = 2336/4315 = 54.1%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "revenue_gross_bookings_take_rate": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 14.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Trended metrics: Q3 2024 Revenue $4,060M; Gross bookings $27,498M (4060/27498 = 14.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 13.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Trended metrics: Q4 2024 Revenue $3,184M; Gross bookings $24,422M (3184/24422 = 13.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 9.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Trended metrics: Q1 2025 Revenue $2,988M; Gross bookings $31,451M (2988/31451 = 9.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 12.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Trended metrics: Q2 2025 Revenue $3,786M; Gross bookings $30,409M (3786/30409 = 12.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 14.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Trended metrics: Q3 2025 Revenue $4,412M; Gross bookings $30,727M (4412/30727 = 14.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 13.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Trended metrics: Q4 2025 Revenue $3,547M; Gross bookings $27,003M (3547/27003 = 13.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
+     "quote": "Trended metrics: Q1 2026 Revenue $3,426M; Gross bookings $35,530M (3426/35530 = 9.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
+     "quote": "Trended metrics: Q2 2026 Revenue $4,315M; Gross bookings $33,928M (4315/33928 = 12.7%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "room_nights_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442424000049/earningsrelease-q32024.htm",
+     "quote": "Booked room nights | 97.4 | 89.3 | 9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442425000005/earningsrelease-q42024.htm",
+     "quote": "Booked room nights | 86.4 | 77.4 | 12%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000025/earningsrelease-q12025.htm",
+     "quote": "Booked room nights | 107.7 | 101.2 | 6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000039/earningsrelease-q22025.htm",
+     "quote": "Booked room nights | 105.5 | 98.9 | 7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 11,
+     "source": "https://www.businesswire.com/news/home/20251106685763/en/Expedia-Group-Reports-Third-Quarter-2025-Results",
+     "quote": "Booked room nights 108.2 97.4 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000005/earningsrelease-q42025.htm",
+     "quote": "Booked room nights | 94.0 | 86.4 | 9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000031/earningsrelease-q12026.htm",
+     "quote": "Booked room nights | 113.9 | 107.7 | 6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
+     "quote": "Booked room nights | 111.5 | 105.5 | 6%",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "CRM": {
+   "subscription_support_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 9,
+     "source": "https://investor.salesforce.com/news/news-details/2024/Salesforce-Announces-Third-Quarter-Fiscal-2025-Results/default.aspx",
+     "quote": "inclusive of Subscription & Support Revenue of $8.88 Billion, up 9% both Y/Y & in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000002/crm-q4fy25xexhibit991.htm",
+     "quote": "inclusive of subscription & support revenue of $9.5 billion, up 8% Y/Y, up 9% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm",
+     "quote": "First quarter subscription & support revenue of $9.3 billion, up 8% Y/Y and 9% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 11,
+     "source": "https://sec.gov/Archives/edgar/data/1108524/000110852425000083/crm-q2fy26xexhibit991.htm",
+     "quote": "Second quarter subscription & support revenue of $9.7 billion, up 11% Y/Y and 9% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm",
+     "quote": "Third quarter subscription & support revenue of $9.7 billion, up 10% Y/Y and 9% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+     "quote": "Fourth quarter subscription & support revenue of $10.7 billion, up 13% Y/Y and 11% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 14,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-First-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "First quarter subscription & support revenue of $10.6 billion, up 14% Y/Y and 12% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 12,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "Subscription and support revenue of $10.8 billion, up 12% Y/Y and 11% in CC, including $440 million Informatica contribution",
+     "added": "2026-10-30"
+    }
+   ],
+   "current_rpo_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 10,
+     "source": "https://investor.salesforce.com/news/news-details/2024/Salesforce-Announces-Third-Quarter-Fiscal-2025-Results/default.aspx",
+     "quote": "Current Remaining Performance Obligation of $26.4 Billion, up 10% both Y/Y & in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000002/crm-q4fy25xexhibit991.htm",
+     "quote": "Current remaining performance obligation of $30.2 billion, up 9% Y/Y, up 11% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm",
+     "quote": "Current remaining performance obligation of $29.6 billion, up 12% Y/Y and 11% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 11,
+     "source": "https://sec.gov/Archives/edgar/data/1108524/000110852425000083/crm-q2fy26xexhibit991.htm",
+     "quote": "Current remaining performance obligation of $29.4 billion, up 11% Y/Y and 10% in CC",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm",
+     "quote": "Current remaining performance obligation of $29.4 billion, up 11% year-over-year (\"Y/Y\") and in constant currency (\"CC\")",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+     "quote": "Current remaining performance obligation of $35.1 billion, up 16% year-over-year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 14,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-First-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "Current remaining performance obligation of $33.6 billion, up 14% year-over-year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 14,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "Current remaining performance obligation (\"cRPO\") of $33.5 billion, up 14% year-over-year",
+     "added": "2026-10-30"
+    }
+   ],
+   "data_cloud_ai_arr": [
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 0.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000002/crm-q4fy25xexhibit991.htm",
+     "quote": "$900 million Data Cloud & AI annual recurring revenue, up 120% year-over-year (\"Y/Y\") [definition: Data Cloud & AI ARR]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 1.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm",
+     "quote": "Data Cloud and AI annual recurring revenue over $1 billion, up more than 120% Y/Y [lower bound: 'over']",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 1.2,
+     "source": "https://sec.gov/Archives/edgar/data/1108524/000110852425000083/crm-q2fy26xexhibit991.htm",
+     "quote": "Data Cloud and AI annual recurring revenue over $1.2 billion, up 120% Y/Y [lower bound: 'over']",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 1.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm",
+     "quote": "Agentforce and Data 360 annual recurring revenue (\"ARR\") reached nearly $1.4 billion, up 114% Y/Y [renamed metric: Agentforce and Data 360 ARR; 'nearly']",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 2.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+     "quote": "Agentforce and Data 360 annual recurring revenue (\"ARR\") exceeds $2.9 billion, up over 200% Y/Y ... including $1.1 billion Informatica Cloud ARR and $800 million Agentforce ARR [definition change: now includes Informatica Cloud ARR]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 3.4,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-First-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "Agentforce and Data 360 annual recurring revenue (\"ARR\") reaches nearly $3.4 billion, up over 200% Y/Y ... including $1.1 billion Informatica Cloud ARR and $1.2 billion Agentforce ARR [includes Informatica]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 3.9,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "Agentforce and Data 360 annual recurring revenue (\"ARR\") reached nearly $3.9 billion, up over 210% Y/Y [note: 'Effective Q2 FY27, Agentforce ARR includes our AI offerings, Slackbot and Headless 360']",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 20.0,
+     "source": "https://investor.salesforce.com/news/news-details/2024/Salesforce-Announces-Third-Quarter-Fiscal-2025-Results/default.aspx",
+     "quote": "Third Quarter GAAP Operating Margin of 20.0% and non-GAAP Operating Margin of 33.1%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 18.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+     "quote": "Q4 FY26 release statements of operations, three months ended Jan 31, 2025: Total revenues 9,993; Income from operations 1,820 (1820/9993 = 18.2%); reconciliation table shows GAAP operating margin 18.2%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 19.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm",
+     "quote": "First quarter GAAP operating margin of 19.8% and non-GAAP operating margin of 32.3%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 22.8,
+     "source": "https://sec.gov/Archives/edgar/data/1108524/000110852425000083/crm-q2fy26xexhibit991.htm",
+     "quote": "Second quarter GAAP operating margin of 22.8% and non-GAAP operating margin of 34.3%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 21.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm",
+     "quote": "Third quarter GAAP operating margin of 21.3% and non-GAAP operating margin of 35.5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 16.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+     "quote": "Three months ended Jan 31, 2026: Total revenues 11,201; Income from operations 1,869 (1869/11201 = 16.7%); reconciliation table GAAP operating margin 16.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 21.1,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-First-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "First quarter GAAP operating margin of 21.1% and non-GAAP operating margin of 34.8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 20.5,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "GAAP operating margin of 20.5% and non-GAAP operating margin of 34.1% (Income from operations 2,331 / Total revenues 11,345 = 20.5%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "net_debt_buyback_borrowing": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": -4.33,
+     "source": "https://investor.salesforce.com/news/news-details/2024/Salesforce-Announces-Third-Quarter-Fiscal-2025-Results/default.aspx",
+     "quote": "Balance sheet Oct 31, 2024 ($M, excl. leases): Debt, current 0; Noncurrent debt 8,432; Cash and cash equivalents 7,997; Marketable securities 4,760 ((0+8432) - (7997+4760) = -4,325M = -4.325B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": -5.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+     "quote": "Balance sheet Jan 31, 2025 (no current debt line) ($M, excl. leases): Debt, current 0; Noncurrent debt 8,433; Cash and cash equivalents 8,848; Marketable securities 5,184 ((0+8433) - (8848+5184) = -5,599M = -5.599B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": -8.97,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm",
+     "quote": "Balance sheet Apr 30, 2025 (no current debt line) ($M, excl. leases): Debt, current 0; Noncurrent debt 8,435; Cash and cash equivalents 10,928; Marketable securities 6,480 ((0+8435) - (10928+6480) = -8,973M = -8.973B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": -6.94,
+     "source": "https://sec.gov/Archives/edgar/data/1108524/000110852425000083/crm-q2fy26xexhibit991.htm",
+     "quote": "Balance sheet Jul 31, 2025 (no current debt line) ($M, excl. leases): Debt, current 0; Noncurrent debt 8,436; Cash and cash equivalents 10,365; Marketable securities 5,007 ((0+8436) - (10365+5007) = -6,936M = -6.936B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": -2.89,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm",
+     "quote": "Balance sheet Oct 31, 2025 (no current debt line) ($M, excl. leases): Debt, current 0; Noncurrent debt 8,438; Cash and cash equivalents 8,978; Marketable securities 2,345 ((0+8438) - (8978+2345) = -2,885M = -2.885B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 4.87,
+     "source": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+     "quote": "Balance sheet Jan 31, 2026 ($M, excl. leases): Debt, current 4,000; Noncurrent debt 10,439; Cash and cash equivalents 7,327; Marketable securities 2,238 ((4000+10439) - (7327+2238) = 4,874M = 4.874B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 27.44,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-First-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "Balance sheet Apr 30, 2026 ($M, excl. leases): Debt, current 0; Noncurrent debt 39,280; Cash and cash equivalents 8,935; Marketable securities 2,902 ((0+39280) - (8935+2902) = 27,443M = 27.443B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 27.89,
+     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx",
+     "quote": "Balance sheet Jul 31, 2026 ($M, excl. leases): Debt, current 0; Noncurrent debt 39,288; Cash and cash equivalents 8,310; Marketable securities 3,093 ((0+39288) - (8310+3093) = 27,885M = 27.885B)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "ADBE": {
+   "digital_media_arr_subscription_revenue_growth": [
+    {
+     "period": "2024-11-29",
+     "label": "Q4 FY2024",
+     "value": 12.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634324000250/adbeex991q424.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended Nov 29, 2024 | Dec 1, 2023: 'Subscription | $5,365 | $4,763' (5365/4763 - 1 = 12.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q1 FY2025",
+     "value": 11.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000052/adbeex991q125.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended Feb 28, 2025 | Mar 1, 2024: 'Subscription | $5,483 | $4,916' (5483/4916 - 1 = 11.5%); release also states Digital Media ARR '$17.63 billion' 'representing 12.6 percent year-over-year growth'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-30",
+     "label": "Q2 FY2025",
+     "value": 11.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000064/adbeex991q225.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended May 30, 2025 | May 31, 2024: 'Subscription | $5,641 | $5,060' (5641/5060 - 1 = 11.5%); release also states Digital Media ARR '$18.09 billion' 'representing 12.1 percent year-over-year growth'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-29",
+     "label": "Q3 FY2025",
+     "value": 11.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000102/adbeex991q325.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended Aug 29, 2025 | Aug 30, 2024: 'Subscription | $5,791 | $5,180' (5791/5180 - 1 = 11.8%); release also states Digital Media ARR '$18.59 billion' 'representing 11.7 percent year-over-year growth'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-28",
+     "label": "Q4 FY2025",
+     "value": 11.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended Nov 28, 2025 | Nov 29, 2024: 'Subscription | $5,989 | $5,365' (5989/5365 - 1 = 11.6%); release also states 'Total Customer Group subscription revenue was $5.96 billion which represents 12% year-over-year growth' and 'Digital Media ARR exiting the year was $19.20 billion, representing 11.5% year-over-year growth'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-27",
+     "label": "Q1 FY2026",
+     "value": 13.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended Feb 27, 2026 | Feb 28, 2025: 'Subscription | $6,198 | $5,483' (6198/5483 - 1 = 13.0%); headline: 'Total subscription revenue and RPO increases 13% year over year'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-29",
+     "label": "Q2 FY2026",
+     "value": 13.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000109/adbeex991q226.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended May 29, 2026 | May 30, 2025: 'Subscription | $6,416 | $5,641' (6416/5641 - 1 = 13.7%); release also states 'Total Customer Group subscription revenue was $6.39 billion, which represents 14% year-over-year growth'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-28",
+     "label": "Q3 FY2026",
+     "value": 13.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000147/adbeex991q326.htm",
+     "quote": "METRIC: total subscription revenue growth y/y (income statement). Condensed Consolidated Statements of Income, three months ended Aug 28, 2026 | Aug 29, 2025: 'Subscription | $6,582 | $5,791' (6582/5791 - 1 = 13.7%); release also states 'Total Customer Group subscription revenue was $6.56 billion, which represents 14% year-over-year growth'",
+     "added": "2026-10-30"
+    }
+   ],
+   "remaining_performance_obligations_growth": [
+    {
+     "period": "2024-11-29",
+     "label": "Q4 FY2024",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634324000250/adbeex991q424.htm",
+     "quote": "Headline: 'Record RPO of $19.96 billion, 16 percent year-over-year growth'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q1 FY2025",
+     "value": 12.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000052/adbeex991q125.htm",
+     "quote": "'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $19.69 billion' (this release); prior year: Q1 FY2024 10-Q (https://www.sec.gov/Archives/edgar/data/796343/000079634324000065/adbe-20240301.htm): 'As of March 1, 2024, remaining performance obligations were approximately $17.58 billion.' (19.69/17.58 - 1 = 12.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-30",
+     "label": "Q2 FY2025",
+     "value": 10.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000064/adbeex991q225.htm",
+     "quote": "'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $19.69 billion' (this release); prior year: Q2 FY2024 10-Q (https://www.sec.gov/Archives/edgar/data/796343/000079634324000150/adbe-20240531.htm): 'As of May 31, 2024, remaining performance obligations were approximately $17.86 billion.' (19.69/17.86 - 1 = 10.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-29",
+     "label": "Q3 FY2025",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000102/adbeex991q325.htm",
+     "quote": "Headline: 'RPO Surpasses $20 Billion, Accelerating to 13 Percent Year-Over-Year Growth'; 'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $20.44 billion'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-28",
+     "label": "Q4 FY2025",
+     "value": 12.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm",
+     "quote": "'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $22.52 billion' (this release); prior year: Q4 FY2024 release (https://www.sec.gov/Archives/edgar/data/796343/000079634324000250/adbeex991q424.htm): 'Remaining Performance Obligations (\"RPO\") exiting the quarter were $19.96 billion.' (22.52/19.96 - 1 = 12.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-27",
+     "label": "Q1 FY2026",
+     "value": 12.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm",
+     "quote": "Headline: 'Total subscription revenue and RPO increases 13% year over year'. 'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $22.22 billion' (this release); prior year: Q1 FY2025 release (https://www.sec.gov/Archives/edgar/data/796343/000079634325000052/adbeex991q125.htm): 'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $19.69 billion' (22.22/19.69 - 1 = 12.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-29",
+     "label": "Q2 FY2026",
+     "value": 13.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000109/adbeex991q226.htm",
+     "quote": "'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $22.27 billion' (this release); prior year: Q2 FY2025 release (https://www.sec.gov/Archives/edgar/data/796343/000079634325000064/adbeex991q225.htm): 'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $19.69 billion' (22.27/19.69 - 1 = 13.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-28",
+     "label": "Q3 FY2026",
+     "value": 8.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000147/adbeex991q326.htm",
+     "quote": "'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $22.16 billion' (this release); prior year: Q3 FY2025 release (https://www.sec.gov/Archives/edgar/data/796343/000079634325000102/adbeex991q325.htm): 'Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $20.44 billion' (22.16/20.44 - 1 = 8.4%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin_gaap": [
+    {
+     "period": "2024-11-29",
+     "label": "Q4 FY2024",
+     "value": 34.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended Nov 29, 2024 (prior-year column of Q4 FY2025 release) ($M): 'Operating income 1,957' ... 'Total revenue 5,606' (1957/5606 = 34.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q1 FY2025",
+     "value": 37.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended Feb 28, 2025 (prior-year column of Q1 FY2026 release) ($M): 'Operating income 2,163' ... 'Total revenue 5,714' (2163/5714 = 37.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-30",
+     "label": "Q2 FY2025",
+     "value": 35.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000109/adbeex991q226.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended May 30, 2025 (prior-year column of Q2 FY2026 release) ($M): 'Operating income 2,109' ... 'Total revenue 5,873' (2109/5873 = 35.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-29",
+     "label": "Q3 FY2025",
+     "value": 36.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000147/adbeex991q326.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended Aug 29, 2025 (prior-year column of Q3 FY2026 release; same figures in Q3 FY2025 release) ($M): 'Operating income 2,173' ... 'Total revenue 5,988' (2173/5988 = 36.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-28",
+     "label": "Q4 FY2025",
+     "value": 36.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended Nov 28, 2025 ($M): 'Operating income 2,261' ... 'Total revenue 6,194' (2261/6194 = 36.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-27",
+     "label": "Q1 FY2026",
+     "value": 37.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended Feb 27, 2026 ($M): 'Operating income 2,418' ... 'Total revenue 6,398' (2418/6398 = 37.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-29",
+     "label": "Q2 FY2026",
+     "value": 33.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000109/adbeex991q226.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended May 29, 2026 ($M): 'Operating income 2,238' ... 'Total revenue 6,618' (2238/6618 = 33.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-28",
+     "label": "Q3 FY2026",
+     "value": 34.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000147/adbeex991q326.htm",
+     "quote": "Condensed Consolidated Statements of Income, three months ended Aug 28, 2026 ($M): 'Operating income 2,354' ... 'Total revenue 6,760' (2354/6760 = 34.8%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "sbc_revenue": [
+    {
+     "period": "2024-11-29",
+     "label": "Q4 FY2024",
+     "value": 7.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended Nov 29, 2024 (prior-year column of Q4 FY2025 release) ($M): 'Stock-based compensation 441'; Income statement 'Total revenue 5,606' (441/5606 = 7.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q1 FY2025",
+     "value": 8.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended Feb 28, 2025 (prior-year column of Q1 FY2026 release) ($M): 'Stock-based compensation 475'; Income statement 'Total revenue 5,714' (475/5714 = 8.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-30",
+     "label": "Q2 FY2025",
+     "value": 8.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000109/adbeex991q226.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended May 30, 2025 (prior-year column of Q2 FY2026 release) ($M): 'Stock-based compensation 481'; Income statement 'Total revenue 5,873' (481/5873 = 8.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-29",
+     "label": "Q3 FY2025",
+     "value": 8.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000147/adbeex991q326.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended Aug 29, 2025 (prior-year column of Q3 FY2026 release; same figures in Q3 FY2025 release) ($M): 'Stock-based compensation 497'; Income statement 'Total revenue 5,988' (497/5988 = 8.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-28",
+     "label": "Q4 FY2025",
+     "value": 7.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended Nov 28, 2025 ($M): 'Stock-based compensation 489'; Income statement 'Total revenue 6,194' (489/6194 = 7.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-27",
+     "label": "Q1 FY2026",
+     "value": 8.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended Feb 27, 2026 ($M): 'Stock-based compensation 509'; Income statement 'Total revenue 6,398' (509/6398 = 8.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-29",
+     "label": "Q2 FY2026",
+     "value": 8.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000109/adbeex991q226.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended May 29, 2026 ($M): 'Stock-based compensation 534'; Income statement 'Total revenue 6,618' (534/6618 = 8.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-28",
+     "label": "Q3 FY2026",
+     "value": 8.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000796343/000079634326000147/adbeex991q326.htm",
+     "quote": "Condensed Consolidated Statements of Cash Flows, three months ended Aug 28, 2026 ($M): 'Stock-based compensation 539'; Income statement 'Total revenue 6,760' (539/6760 = 8.0%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "INTU": {
+   "online_ecosystem_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q1 FY25",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687824000051/fy25q1earningspressrelease.htm",
+     "quote": "Online Ecosystem revenue increased to $1.9 billion, up 20 percent.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q2 FY25",
+     "value": 21,
+     "source": "https://www.businesswire.com/news/home/20250225842551/en/Intuit-Reports-Strong-Second-Quarter-Results-and-Reiterates-Full-Year-Guidance",
+     "quote": "Online Ecosystem revenue increased to $2.0 billion, up 21 percent",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q3 FY25",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000020/fy25q3earningspressrelease.htm",
+     "quote": "Online Ecosystem revenue increased to $2.1 billion, up 20 percent.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q4 FY25",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687825000031/fy25q4earningspressrelease.htm",
+     "quote": "Online Ecosystem revenue grew 21 percent for the quarter and 20 percent for the year to $8.3 billion.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q1 FY26",
+     "value": 21,
+     "source": "https://investors.intuit.com/_assets/_7dae0bd2b94ee55dfc5335ce9c879dc5/intuit/news/2025-11-20_Intuit_Reports_Strong_First_Quarter_Results_and_1286.pdf",
+     "quote": "grew Online Ecosystem revenue to $2.4 billion, up 21 percent",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q2 FY26",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000012/fy26q2earningspressrelease.htm",
+     "quote": "Online Ecosystem revenue increased to $2.5 billion, up 21 percent.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q3 FY26",
+     "value": 19,
+     "source": "https://investors.intuit.com/_assets/_6a9ee074199c0a511699c988d19108db/intuit/news/2026-05-20_Intuit_Reports_Strong_Third_Quarter_Results_and_1312.pdf",
+     "quote": "Online Ecosystem revenue increased to $2.5 billion, up 19 percent",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q4 FY26",
+     "value": 17,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
+     "quote": "Online Ecosystem revenue increased 17 percent to $2.6 billion.",
+     "added": "2026-10-30"
+    }
+   ],
+   "consumer_turbotax_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q1 FY25",
+     "value": -6,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687824000051/fy25q1earningspressrelease.htm",
+     "quote": "Consumer Group revenue of $176 million was down 6 percent in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q2 FY25",
+     "value": 3,
+     "source": "https://www.businesswire.com/news/home/20250225842551/en/Intuit-Reports-Strong-Second-Quarter-Results-and-Reiterates-Full-Year-Guidance",
+     "quote": "Consumer Group revenue of $509 million was up 3 percent in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q3 FY25",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000020/fy25q3earningspressrelease.htm",
+     "quote": "Consumer Group revenue of $4.0 billion was up 11 percent in the quarter.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q4 FY25",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687825000031/fy25q4earningspressrelease.htm",
+     "quote": "Increased Consumer Group revenue 21 percent to $137 million.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q1 FY26",
+     "value": 6,
+     "source": "https://investors.intuit.com/_assets/_7dae0bd2b94ee55dfc5335ce9c879dc5/intuit/news/2025-11-20_Intuit_Reports_Strong_First_Quarter_Results_and_1286.pdf",
+     "quote": "TurboTax revenue grew 6 percent to $198 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q2 FY26",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000012/fy26q2earningspressrelease.htm",
+     "quote": "TurboTax revenue grew 12 percent to $581 million.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q3 FY26",
+     "value": 7,
+     "source": "https://investors.intuit.com/_assets/_6a9ee074199c0a511699c988d19108db/intuit/news/2026-05-20_Intuit_Reports_Strong_Third_Quarter_Results_and_1312.pdf",
+     "quote": "TurboTax revenue grew 7 percent to $4.4 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q4 FY26",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
+     "quote": "TurboTax revenue increased 3 percent to $153 million.",
+     "added": "2026-10-30"
+    }
+   ],
+   "credit_karma_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q1 FY25",
+     "value": 29,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687824000051/fy25q1earningspressrelease.htm",
+     "quote": "Credit Karma revenue grew 29 percent to $524 million in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q2 FY25",
+     "value": 36,
+     "source": "https://www.businesswire.com/news/home/20250225842551/en/Intuit-Reports-Strong-Second-Quarter-Results-and-Reiterates-Full-Year-Guidance",
+     "quote": "Credit Karma revenue grew 36 percent to $511 million in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q3 FY25",
+     "value": 31,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000020/fy25q3earningspressrelease.htm",
+     "quote": "Credit Karma revenue grew 31 percent to $579 million in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q4 FY25",
+     "value": 34,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687825000031/fy25q4earningspressrelease.htm",
+     "quote": "Grew Credit Karma revenue 34 percent to $649 million.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q1 FY26",
+     "value": 27,
+     "source": "https://investors.intuit.com/_assets/_7dae0bd2b94ee55dfc5335ce9c879dc5/intuit/news/2025-11-20_Intuit_Reports_Strong_First_Quarter_Results_and_1286.pdf",
+     "quote": "Credit Karma revenue grew 27 percent to $651 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q2 FY26",
+     "value": 23,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000012/fy26q2earningspressrelease.htm",
+     "quote": "Credit Karma revenue grew 23 percent to $616 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q3 FY26",
+     "value": 15,
+     "source": "https://investors.intuit.com/_assets/_6a9ee074199c0a511699c988d19108db/intuit/news/2026-05-20_Intuit_Reports_Strong_Third_Quarter_Results_and_1312.pdf",
+     "quote": "Credit Karma revenue grew 15 percent to $631 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q4 FY26",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
+     "quote": "Credit Karma revenue increased 16 percent to $743 million",
+     "added": "2026-10-30"
+    }
+   ],
+   "quickbooks_online_accounting_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q1 FY25",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687824000051/fy25q1earningspressrelease.htm",
+     "quote": "QuickBooks Online Accounting revenue grew 21 percent in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q2 FY25",
+     "value": 22,
+     "source": "https://www.businesswire.com/news/home/20250225842551/en/Intuit-Reports-Strong-Second-Quarter-Results-and-Reiterates-Full-Year-Guidance",
+     "quote": "QuickBooks Online Accounting revenue grew 22 percent in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q3 FY25",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000020/fy25q3earningspressrelease.htm",
+     "quote": "QuickBooks Online Accounting revenue grew 21 percent in the quarter,",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q4 FY25",
+     "value": 23,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687825000031/fy25q4earningspressrelease.htm",
+     "quote": "QuickBooks Online Accounting revenue grew 23 percent for the quarter and 22 percent for the year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q1 FY26",
+     "value": 25,
+     "source": "https://investors.intuit.com/_assets/_7dae0bd2b94ee55dfc5335ce9c879dc5/intuit/news/2025-11-20_Intuit_Reports_Strong_First_Quarter_Results_and_1286.pdf",
+     "quote": "QuickBooks Online Accounting revenue grew 25 percent in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q2 FY26",
+     "value": 24,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000012/fy26q2earningspressrelease.htm",
+     "quote": "QuickBooks Online Accounting revenue grew 24 percent in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q3 FY26",
+     "value": 22,
+     "source": "https://investors.intuit.com/_assets/_6a9ee074199c0a511699c988d19108db/intuit/news/2026-05-20_Intuit_Reports_Strong_Third_Quarter_Results_and_1312.pdf",
+     "quote": "QuickBooks Online Accounting revenue grew 22 percent in the quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q4 FY26",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
+     "quote": "QuickBooks Online Accounting revenue increased 20 percent driven by higher effective prices, customer growth, and mix shift.",
+     "added": "2026-10-30"
+    }
+   ],
+   "sbc_revenue": [
+    {
+     "period": "2024-10-31",
+     "label": "Q1 FY25",
+     "value": 15.6,
+     "source": "https://investors.intuit.com/_assets/_7dae0bd2b94ee55dfc5335ce9c879dc5/intuit/news/2025-11-20_Intuit_Reports_Strong_First_Quarter_Results_and_1286.pdf",
+     "quote": "Q1 FY26 release Table A (prior-year-year three-month column): Total share-based compensation expense $511M ... Total net revenue $3,283M (511/3283 = 15.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q2 FY25",
+     "value": 12.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000012/fy26q2earningspressrelease.htm",
+     "quote": "Q2 FY26 release Table A (prior-year-year three-month column): Total share-based compensation expense $498M ... Total net revenue $3,963M (498/3963 = 12.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q3 FY25",
+     "value": 6.0,
+     "source": "https://investors.intuit.com/_assets/_6a9ee074199c0a511699c988d19108db/intuit/news/2026-05-20_Intuit_Reports_Strong_Third_Quarter_Results_and_1312.pdf",
+     "quote": "Q3 FY26 release Table A (prior-year-year three-month column): Total share-based compensation expense $469M ... Total net revenue $7,754M (469/7754 = 6.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q4 FY25",
+     "value": 12.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
+     "quote": "Q4 FY26 release Table A (prior-year-year three-month column): Total share-based compensation expense $490M ... Total net revenue $3,831M (490/3831 = 12.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q1 FY26",
+     "value": 14.0,
+     "source": "https://investors.intuit.com/_assets/_7dae0bd2b94ee55dfc5335ce9c879dc5/intuit/news/2025-11-20_Intuit_Reports_Strong_First_Quarter_Results_and_1286.pdf",
+     "quote": "Q1 FY26 release Table A (current-year three-month column): Total share-based compensation expense $543M ... Total net revenue $3,885M (543/3885 = 14.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q2 FY26",
+     "value": 11.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000012/fy26q2earningspressrelease.htm",
+     "quote": "Q2 FY26 release Table A (current-year three-month column): Total share-based compensation expense $521M ... Total net revenue $4,651M (521/4651 = 11.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q3 FY26",
+     "value": 5.7,
+     "source": "https://investors.intuit.com/_assets/_6a9ee074199c0a511699c988d19108db/intuit/news/2026-05-20_Intuit_Reports_Strong_Third_Quarter_Results_and_1312.pdf",
+     "quote": "Q3 FY26 release Table A (current-year three-month column): Total share-based compensation expense $485M ... Total net revenue $8,558M (485/8558 = 5.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q4 FY26",
+     "value": 11.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
+     "quote": "Q4 FY26 release Table A (current-year three-month column): Total share-based compensation expense $507M ... Total net revenue $4,354M (507/4354 = 11.6%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "ADSK": {
+   "total_billings_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 28,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939724000175/q325pressrelease.htm",
+     "quote": "Total billings increased 28 percent to $1.54 billion.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 23,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000013/q425pressrelease.htm",
+     "quote": "Total billings increased 23 percent to $2.11 billion.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 29,
+     "source": "https://www.sec.gov//Archives/edgar/data/769397/000076939725000067/q126pressrelease.htm",
+     "quote": "Billings | $1,434 | 29% (First Quarter Fiscal 2026 key metrics table)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 36,
+     "source": "https://sec.gov/Archives/edgar/data/769397/000076939725000114/q226pressrelease.htm",
+     "quote": "Billings | $ 1,678 | 36 % (Second Quarter Fiscal 2026 key metrics table)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000126/q326pressrelease.htm",
+     "quote": "Billings | $ 1,855 | 21 % (Third Quarter Fiscal 2026 key metrics table)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 33,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000010/q426pressrelease.htm",
+     "quote": "Billings | $ | 2,804 | 33 % (Fourth Quarter Fiscal 2026 key metrics table)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 18,
+     "source": "https://investors.autodesk.com/node/35981/pdf",
+     "quote": "Billings $ 1,688 18 % (First Quarter Fiscal 2027 key metrics table)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 10,
+     "source": "https://autodeskinc.gcs-web.com/node/36196/pdf",
+     "quote": "Billings $ 1,854 10 % (Second Quarter Fiscal 2027 key metrics table)",
+     "added": "2026-10-30"
+    }
+   ],
+   "remaining_performance_obligations_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 17,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939724000175/q325pressrelease.htm",
+     "quote": "Remaining performance obligations (\"RPO\") increased 17 percent to $6.11 billion.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000013/q425pressrelease.htm",
+     "quote": "Remaining performance obligations (\"RPO\") increased 14 percent to $6.94 billion.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 21,
+     "source": "https://www.sec.gov//Archives/edgar/data/769397/000076939725000067/q126pressrelease.htm",
+     "quote": "Remaining performance obligations (\"RPO\") | 7,157 | 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 24,
+     "source": "https://sec.gov/Archives/edgar/data/769397/000076939725000114/q226pressrelease.htm",
+     "quote": "Remaining performance obligations (\"RPO\") | 7,297 | 24 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000126/q326pressrelease.htm",
+     "quote": "Remaining performance obligations (\"RPO\") | 7,361 | 20 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000010/q426pressrelease.htm",
+     "quote": "Remaining performance obligations | 8,300 | 20 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 9,
+     "source": "https://investors.autodesk.com/node/35981/pdf",
+     "quote": "Remaining performance obligations (\"RPO\") 7,808 9 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 2,
+     "source": "https://autodeskinc.gcs-web.com/node/36196/pdf",
+     "quote": "Remaining performance obligations (\"RPO\")(1) 7,433 2 %",
+     "added": "2026-10-30"
+    }
+   ],
+   "net_revenue_retention_company_range": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": "100-110%",
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939724000175/q325pressrelease.htm",
+     "quote": "Net revenue retention rate remained within the range of 100 to 110 percent, on a constant currency basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": "100-110%",
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000013/q425pressrelease.htm",
+     "quote": "Net revenue retention rate was within the range of 100 to 110 percent on a constant currency basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": "slightly >110%",
+     "source": "https://investors.autodesk.com/static-files/98ca80ac-7ac3-4203-b1cb-1dd6cfb88357",
+     "quote": "NRR Slightly above 110%, in constant currency, in part due to our new transaction model",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": ">110%",
+     "source": "https://investors.autodesk.com/static-files/d3377a6a-daf2-4e2e-86f0-a3096b19b3bc",
+     "quote": "NR3 Above 110%, in constant currency, in part due to new transaction model",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": ">110%",
+     "source": "https://investors.autodesk.com/static-files/e40092a4-d635-4a2d-ad69-10aff8e10f5d",
+     "quote": "NR3 Above 110%, in constant currency, in part due to new transaction model",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": ">110%",
+     "source": "https://investors.autodesk.com/static-files/123efa7a-026f-4a6a-999a-4fffa4b3c18f",
+     "quote": "NR3 Above 110%, in constant currency, in part due to new transaction model",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": ">110%",
+     "source": "https://investors.autodesk.com/static-files/7dbbc501-da4c-457c-98bf-650c27c66e68",
+     "quote": "NR3 Above 110%, in constant currency, in part due to new transaction model",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": "~110% (top end of 100-110%)",
+     "source": "https://investors.autodesk.com/static-files/1c44dc7d-9678-4ee5-aad2-149044c65872",
+     "quote": "NR3 Approximated the top end of the range of 100% to 110% in constant currency",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 22,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939724000175/q325pressrelease.htm",
+     "quote": "GAAP operating margin was 22 percent, down 2 percentage points;",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 22,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000013/q425pressrelease.htm",
+     "quote": "GAAP operating margin was 22 percent, compared to 21 percent;",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 14,
+     "source": "https://www.sec.gov//Archives/edgar/data/769397/000076939725000067/q126pressrelease.htm",
+     "quote": "GAAP Operating Margin (1) | 14% | (7) ppt",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 25,
+     "source": "https://sec.gov/Archives/edgar/data/769397/000076939725000114/q226pressrelease.htm",
+     "quote": "GAAP Operating Margin | 25 % | 2 ppt",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 25,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000126/q326pressrelease.htm",
+     "quote": "GAAP Operating Margin | 25 % | 3 ppt",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 22,
+     "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000010/q426pressrelease.htm",
+     "quote": "GAAP Operating Margin | 22 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 28,
+     "source": "https://investors.autodesk.com/node/35981/pdf",
+     "quote": "GAAP Operating Margin 28 % 14 ppt",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 29,
+     "source": "https://autodeskinc.gcs-web.com/node/36196/pdf",
+     "quote": "GAAP Operating Margin 29 % 4 ppt",
+     "added": "2026-10-30"
+    }
+   ]
   }
  }
 }

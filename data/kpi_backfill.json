@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "EXPE",
-  "CRM",
-  "ADBE",
-  "INTU",
-  "ADSK",
   "FTNT",
   "VEEV",
   "APP",
@@ -44,7 +39,12 @@
   "AVGO",
   "LLY",
   "NFLX",
-  "BKNG"
+  "BKNG",
+  "EXPE",
+  "CRM",
+  "ADBE",
+  "INTU",
+  "ADSK"
  ],
  "notes": {
   "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history.",
@@ -57,6 +57,11 @@
   "AVGO": "Q4 FY24-Q3 FY26 filled. Net debt/EBITDA not available for Q3 FY26: release and call no longer state adjusted EBITDA. AI revenue for Q4 FY24 and Q4 FY25 from call transcripts.",
   "LLY": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Pipeline milestones for the last 4 quarters only. Sourced from investor.lilly.com releases (sec.gov refused).",
   "NFLX": "Q4 2024-Q3 2026 filled. Advertising revenue growth not disclosed quarterly (only full-year statements such as 'more than doubled', '$1.5B+ in 2025'). Content ratio computed from 'Additions to content assets' / amortization.",
-  "BKNG": "Q3 2024-Q2 2026 filled; Q3 2026 due 3 Nov 2026. Performance/brand marketing no longer split: marketing ratio uses the single 'Marketing expenses' line."
+  "BKNG": "Q3 2024-Q2 2026 filled; Q3 2026 due 3 Nov 2026. Performance/brand marketing no longer split: marketing ratio uses the single 'Marketing expenses' line.",
+  "EXPE": "Q3 2024-Q2 2026 filled (Q3 2026 due 4 Nov 2026). Take rate = revenue / gross bookings; marketing ratio = direct + indirect selling & marketing / revenue.",
+  "CRM": "Q3 FY25-Q2 FY27 filled. Data Cloud/AI ARR not stated Q3 FY25; series not like-for-like (renamed Agentforce & Data 360 ARR from Q3 FY26, includes ~$1.1B Informatica from Q4 FY26, Slackbot/Headless 360 from Q2 FY27); several values are 'over'/'nearly'. Net debt = current + noncurrent debt (ex leases) - cash - marketable securities; jump in Q1 FY27 from ~$25B ASR borrowing.",
+  "ADBE": "Q4 FY24-Q3 FY26 filled. Digital Media ARR no longer reported in FY26 (only Total Adobe ARR, no growth rate), so that KPI uses total subscription revenue growth (computed from income statement) for all 8 quarters. RPO growth mostly computed from RPO $; SBC from cash-flow statement.",
+  "INTU": "Q1 FY25-Q4 FY26 filled. FY26 segment regroup: Consumer now = TurboTax + Credit Karma + ProTax, so TurboTax KPI uses 'TurboTax revenue' growth in FY26 and old Consumer Group growth in FY25 (not strictly comparable). Online Ecosystem growth includes Mailchimp.",
+  "ADSK": "Q3 FY25-Q2 FY27 filled. Net revenue retention from earnings slides from Q1 FY26 (releases only define it); text values abbreviate slide wording (exact wording in quotes)."
  }
 }
