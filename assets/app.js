@@ -226,7 +226,7 @@ function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=
  else if(H.length){fh=`<div class="snaphd"><b>Fair value over time</b></div><p class="muted">${H.map(h=>`${h.date}: ${$f(h.fv)}`).join(" · ")}</p>`}
  return flags+q+driversHTML(DR)+val+watch+fh}
 // ---------- Business drivers (Phase B): company-specific KPIs from quarterly releases, judged against the company's own history
-const fmtK=(d,v)=>v==null?"–":d.unit==="text"?String(v):d.unit==="pct"?(+v).toFixed(1).replace(/\.0$/,"")+"%":d.unit==="usd_b"?"$"+(+v).toFixed(v>=100?0:1)+"B":d.unit==="usd"?"$"+(+v).toFixed(2):d.unit==="x"?(+v).toFixed(2)+"×":Math.abs(v)>=1e6?(v/1e6).toFixed(1)+"M":Math.abs(v)>=1e3?(v/1e3).toFixed(1)+"k":String(v);
+const fmtK=(d,v)=>v==null?"–":d.unit==="text"?String(v):d.unit==="pct"?(+v).toFixed(1).replace(/\.0$/,"")+"%":d.unit==="usd_b"?"$"+(+v).toFixed(v>=100?0:1)+"B":d.unit==="usd"?"$"+(+v).toFixed(2):d.unit==="x"?(+v).toFixed(2)+"×":Math.abs(v)>=1e9?(v/1e9).toFixed(2).replace(/\.?0+$/,"")+"B":Math.abs(v)>=1e6?(v/1e6).toFixed(1)+"M":Math.abs(v)>=1e3?(v/1e3).toFixed(1)+"k":String(v);
 function driversData(t){const defs=((KD.stocks||{})[t]||{}).kpis||[],data=(KP.stocks||{})[t]||{};
  const rows=defs.map(d=>{const pts=(data[d.id]||[]).slice().sort((a,b)=>a.period<b.period?-1:1),last=pts[pts.length-1];if(!last)return {d,pts};
   const ly=new Date(last.period);ly.setFullYear(ly.getFullYear()-1);const ya=pts.find(p=>Math.abs(new Date(p.period)-ly)<25*864e5);
