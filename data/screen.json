@@ -100,7 +100,7 @@
 "2026-10"
 ],
 "consistent_rule": "in the top 50 in at least 3 of the last 4 months, including the latest",
-"built": "2026-10-26",
+"built": "2026-10-30",
 "universe": 502,
 "sectors": [
 "Basic Materials",
@@ -24500,12 +24500,12 @@
 "ps": 1.32,
 "fcf_yield_pct": 9.84,
 "market_cap": 44937359360.0,
-"implied_fcf_growth": -0.0342,
+"implied_fcf_growth": -0.0163,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "peer group",
-"required_return_reason": "Fee-based financials: Earn fees from payments, exchanges, ratings and data rather than lending, so bank comparisons (P/E ~10-15, no leverage tests) don't fit.",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Large digital wallet with slowing growth and competition at checkout from Apple Pay and others.",
 "fcf_ni": 1.06,
 "fcf_ni_basis": "latest FY",
 "cash_swing": false,
@@ -24546,13 +24546,13 @@
 "wacc_detail": {
 "equity_weight": 0.76,
 "debt_weight": 0.24,
-"cost_equity": 0.09,
+"cost_equity": 0.1,
 "cost_debt_raw": 0.0444,
 "cost_debt_used": 0.0444,
 "tax": 0.168
 },
-"wacc": 0.0772,
-"roic_spread": 0.1683,
+"wacc": 0.0848,
+"roic_spread": 0.1607,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 57.8,
 "components": {
@@ -24573,7 +24573,7 @@
 "pe_vs_market": -0.5836,
 "fpe_vs_market": -0.5125,
 "peer_group": "Fee-based financials",
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -24583,7 +24583,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 14.4%, ROIC 25% vs 7.7% cost of capital (+16.8 pts), EPS +37.3% a year."
+"t": "Net margin 14.4%, ROIC 25% vs 8.5% cost of capital (+16.1 pts), EPS +37.3% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -30307,7 +30307,7 @@
 "earnings_yield_fwd": 6.51,
 "fcf_basis": "Yahoo",
 "roic_pct": 48.45,
-"net_debt_ebitda": 0.0,
+"net_debt_ebitda": -0.0,
 "interest_coverage": 62.1,
 "rev_cagr_pct": -0.63,
 "rev_cagr_years": 3.0,
@@ -30387,12 +30387,12 @@
 {
 "q": "Is debt manageable?",
 "v": "yes",
-"t": "Net debt 0.0x EBITDA, interest covered 62.1x."
+"t": "Net debt -0.0x EBITDA, interest covered 62.1x."
 },
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: share count falling 4.5% a year. Worse: leverage up (-0.7x \u2192 0.0x), net margin -3.4 pts, FCF shrinking 16% a year, growth slowing."
+"t": "Better: share count falling 4.5% a year. Worse: leverage up (-0.7x \u2192 -0.0x), net margin -3.4 pts, FCF shrinking 16% a year, growth slowing."
 }
 ],
 "checks_score": 0,
@@ -31694,7 +31694,9 @@
 "ticker": "AXP",
 "name": "American Express Company",
 "sector": "Financial Services",
-"themes": [],
+"themes": [
+"Payments"
+],
 "score": 53.2,
 "rank": 197,
 "prev_score": 53.0,
@@ -31741,12 +31743,12 @@
 "ps": 2.9,
 "fcf_yield_pct": null,
 "market_cap": 205361725440.0,
-"implied_fcf_growth": 0.0122,
+"implied_fcf_growth": 0.0567,
 "implied_tag": "FCF distorted",
 "implied_basis": "earnings",
-"required_return": 0.075,
-"required_return_source": "sector",
-"required_return_reason": "Financial Services sector default",
+"required_return": 0.095,
+"required_return_source": "stock",
+"required_return_reason": "Premium card issuer and network: durable brand, but it lends, so credit losses rise in recessions.",
 "fcf_ni": 1.48,
 "fcf_ni_basis": "latest FY",
 "cash_swing": false,
@@ -31787,12 +31789,12 @@
 "wacc_detail": {
 "equity_weight": 0.777,
 "debt_weight": 0.223,
-"cost_equity": 0.075,
+"cost_equity": 0.095,
 "cost_debt_raw": 0.1513,
 "cost_debt_used": 0.1,
 "tax": 0.215
 },
-"wacc": 0.0758,
+"wacc": 0.0913,
 "roic_spread": null,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 60.4,
@@ -31814,7 +31816,7 @@
 "pe_vs_market": -0.2425,
 "fpe_vs_market": -0.1908,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -37416,7 +37418,7 @@
 "beta": null,
 "volatility_1y_pct": 83.16,
 "max_drawdown_1y_pct": -43.85,
-"nd_ebitda_then": 0.0,
+"nd_ebitda_then": -0.0,
 "margin_change_pts": -10.7,
 "fcf_cagr_pct": 11.02,
 "operating_margin_pct": null,
@@ -37488,7 +37490,7 @@
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: FCF growing 11% a year. Worse: leverage up (0.0x \u2192 4.3x), net margin -10.7 pts, growth slowing."
+"t": "Better: FCF growing 11% a year. Worse: leverage up (-0.0x \u2192 4.3x), net margin -10.7 pts, growth slowing."
 }
 ],
 "checks_score": -1,
@@ -71205,7 +71207,9 @@
 "ticker": "XYZ",
 "name": "Block, Inc.",
 "sector": "Technology",
-"themes": [],
+"themes": [
+"Payments"
+],
 "score": 38.8,
 "rank": 441,
 "prev_score": 36.6,
@@ -71252,12 +71256,12 @@
 "ps": 1.76,
 "fcf_yield_pct": -0.06,
 "market_cap": 44176457728.0,
-"implied_fcf_growth": 0.3512,
+"implied_fcf_growth": 0.3638,
 "implied_tag": "FCF distorted",
 "implied_basis": "earnings",
-"required_return": 0.105,
-"required_return_source": "sector",
-"required_return_reason": "Technology sector default",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Two growing ecosystems (Cash App, Square) but high volatility, heavy stock pay and consumer-credit exposure.",
 "fcf_ni": 1.86,
 "fcf_ni_basis": "latest FY",
 "cash_swing": false,
@@ -71298,13 +71302,13 @@
 "wacc_detail": {
 "equity_weight": 0.86,
 "debt_weight": 0.14,
-"cost_equity": 0.105,
+"cost_equity": 0.11,
 "cost_debt_raw": 0.0043,
 "cost_debt_used": 0.02,
 "tax": 0.228
 },
-"wacc": 0.0925,
-"roic_spread": 0.0381,
+"wacc": 0.0968,
+"roic_spread": 0.0338,
 "v3_source": "screen_2026-10-23_full.csv",
 "score_prev": 30.3,
 "components": {
@@ -71327,7 +71331,7 @@
 "pe_vs_market": 4.3704,
 "fpe_vs_market": -0.2404,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -71337,7 +71341,7 @@
 {
 "q": "Are profits healthy?",
 "v": "partly",
-"t": "Net margin 1.4%, ROIC 13% vs 9.2% cost of capital (+3.8 pts)."
+"t": "Net margin 1.4%, ROIC 13% vs 9.7% cost of capital (+3.4 pts)."
 },
 {
 "q": "Is cash flow strong?",
