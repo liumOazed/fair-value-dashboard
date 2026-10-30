@@ -91,7 +91,16 @@ def yahoo(t):
         if "fcf" not in rec and "ocf" in rec and "capex" in rec:
             rec["fcf"] = rec["ocf"] + rec["capex"]
         q.setdefault(p, {}).update(rec)
-    return q, frame(get("quarterly_balance_sheet"), ["cash", "debt", "shares"])
+    trail = {}
+    for fn, keys in (("get_income_stmt", ["rev", "gross", "ni", "interest"]), ("get_cash_flow", ["fcf", "ocf", "capex", "sbc"])):
+        try:
+            for p, rec in frame(getattr(tk, fn)(freq="trailing"), keys).items():
+                if "fcf" in keys and "fcf" not in rec and "ocf" in rec and "capex" in rec:
+                    rec["fcf"] = rec["ocf"] + rec["capex"]
+                trail.setdefault(p, {}).update(rec)
+        except Exception:
+            pass
+    return q, frame(get("quarterly_balance_sheet"), ["cash", "debt", "shares"]), trail
 
 
 def near(dates, target, tol=20):
@@ -140,7 +149,7 @@ def plan(t, src, through, prices):
     text = b.group(0)
     notes = re.search(r'notes="(.*?)"\)', text, re.S).group(1)
     cfg = CFG.get(t, {})
-    q, bal = yahoo(t)
+    q, bal, trail = yahoo(t)
     if not q:
         return "waiting", dict(reason="Yahoo returned no quarterly statements")
     periods = sorted(q, reverse=True)
@@ -172,6 +181,13 @@ def plan(t, src, through, prices):
 
     latest = max(new)
     prev_end = near(q.keys(), through)
+    tl = near(trail.keys(), latest)
+
+    def trailing(k):
+        """Yahoo's own TTM figure for the new quarter (fallback when the year-ago quarter is blank)."""
+        v = trail.get(tl, {}).get(k) if tl else None
+        return None if v is None else v / 1e9
+    adjusted = any(w in notes for w in ("NORMALISED", "PRO FORMA", "one-off", "excluding", "own definition"))
     new_vals = dict(old)
     # revenue
     if cfg.get("scale"):
@@ -184,20 +200,30 @@ def plan(t, src, through, prices):
         flags.append(f"Pro forma / net-revenue model: revenue and FCF scaled by Yahoo TTM growth ({(g - 1) * 100:+.1f}%) - check against the release")
     else:
         dr = delta(rk)
-        if dr is None:
+        if dr is not None:
+            new_vals["rev"] = old["rev"] + dr
+        elif trailing(rk) and not adjusted and len(new) == 1:
+            new_vals["rev"] = trailing(rk)
+            flags.append(f"Year-ago quarter blank in Yahoo: revenue set to Yahoo's TTM ({trailing(rk):.3f}) - check the definition matches")
+        else:
             return "manual", dict(reason=f"Yahoo is missing {rk} for the new or year-ago quarter")
-        new_vals["rev"] = old["rev"] + dr
         if "NORMALISED" in notes and fk == "fcf":
             new_vals["fcf"] = old["fcf"] / old["rev"] * new_vals["rev"]
             flags.append("FCF NORMALISED: kept the normalised margin on the new revenue - check one-offs / working capital in the release")
         else:
             df_ = delta(fk)
-            if df_ is None:
+            if df_ is not None:
+                new_vals["fcf"] = old["fcf"] + df_
+            elif trailing(fk) is not None and not adjusted and len(new) == 1:
+                new_vals["fcf"] = trailing(fk)
+                flags.append(f"Year-ago quarter blank in Yahoo: {fk} set to Yahoo's TTM ({trailing(fk):.3f}) - check the definition matches")
+            else:
                 return "manual", dict(reason=f"Yahoo is missing {fk} for the new or year-ago quarter")
-            new_vals["fcf"] = old["fcf"] + df_
     # stock pay
     if "sbc" not in cfg.get("keep", []):
         s4 = ttm("sbc", latest)
+        if s4 is None and trailing("sbc"):
+            s4 = trailing("sbc")
         if s4 is not None and s4 > 0:
             if re.search(r"SBC (is )?an? ESTIMATE", notes) or "SBC estimated" in notes:
                 flags.append(f"SBC was an estimate ({old['sbc']}); now Yahoo's reported TTM {s4:.3f} - remove 'ESTIMATE' from the notes")
