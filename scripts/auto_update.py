@@ -152,7 +152,11 @@ def plan(t, src, through, prices):
     q, bal, trail = yahoo(t)
     if not q:
         return "waiting", dict(reason="Yahoo returned no quarterly statements")
-    periods = sorted(q, reverse=True)
+    rk, fk = cfg.get("rev", "rev"), cfg.get("fcf", "fcf")
+    # Yahoo often adds an empty column for a new quarter before filling it: only count quarters with numbers
+    periods = sorted([p for p in q if q[p].get(rk) is not None], reverse=True)
+    if not periods:
+        return "waiting", dict(reason="Yahoo has no quarterly revenue yet")
     new = [p for p in periods if p > through + dt.timedelta(days=20)]
     if not new:
         return "waiting", dict(reason=f"Yahoo's latest quarter is {periods[0]} (model already through {through})")
@@ -162,7 +166,8 @@ def plan(t, src, through, prices):
     fb = fin_block(src, t)
     fin_old = {k: val(fb.group(0), k) for k in ("debt", "interest", "rd", "tax")} if fb else None
     flags, ch = [], {}
-    rk, fk = cfg.get("rev", "rev"), cfg.get("fcf", "fcf")
+    if any(q[p].get(fk) is None for p in new) and not cfg.get("scale") and not ("NORMALISED" in notes and fk == "fcf"):
+        return "waiting", dict(reason=f"Yahoo has the new quarter's income statement but not its cash flow ({fk}) yet")
 
     def delta(k):
         s = 0.0
