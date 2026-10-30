@@ -1,3 +1,5 @@
 scripts/.screener_cache/
 __pycache__/
 .bt_cache/
+data/.auto_updated.txt
+data/.auto_update_dryrun.json

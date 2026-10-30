@@ -1,9 +1,15 @@
 name: Earnings watch
-# Daily at 01:30 UTC (07:30 Dhaka), before the daily earnings-update task (09:00 Dhaka):
-# refreshes the earnings calendar and the list of companies that have reported a newer quarter than their model.
+# Daily at 01:30 UTC (07:30 Dhaka). No Claude needed:
+#  1. refreshes the earnings calendar and the list of companies that reported a newer quarter than their model;
+#  2. auto-updates those models' numbers once Yahoo shows the new quarter (scripts/auto_update.py);
+#  3. re-runs the model, Monte Carlo and snapshot for the updated companies and commits.
+# What needs reading (guidance, assumptions, notes, KPIs) goes to data/review_queue.json for the twice-weekly Claude review.
 on:
   schedule: [{ cron: "30 1 * * *" }]
   workflow_dispatch:
+    inputs:
+      validate: { description: "Dry run against data/.validate (no commit of model changes)", type: boolean, default: false }
+      tickers: { description: "Dry-run tickers (validate only)", required: false, default: "" }
   push:
     paths: [".github/earnings-watch-request.json"]
 permissions:
@@ -12,17 +18,53 @@ concurrency: { group: earnings-watch, cancel-in-progress: false }
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install yfinance pandas lxml
-      - run: python scripts/earnings_watch.py
+      - run: pip install yfinance pandas lxml numpy scipy
+
+      - name: Validation dry run
+        if: ${{ inputs.validate }}
+        run: |
+          python scripts/auto_update.py --dry-run --model data/.validate/model_old.py --through data/.validate/through_old.json --tickers "${{ inputs.tickers }}"
+          git config user.name "earnings-bot"; git config user.email "earnings-bot@users.noreply.github.com"
+          git add -f data/.auto_update_dryrun.json; git commit -m "Auto-update validation dry run"; git pull --rebase && git push
+
+      - name: Earnings calendar and pending list
+        if: ${{ !inputs.validate }}
+        run: python scripts/earnings_watch.py
+
+      - name: Auto-update numbers
+        if: ${{ !inputs.validate }}
+        run: python scripts/auto_update.py 2>&1 | tee auto.log
+
+      - name: Rebuild model, Monte Carlo and snapshot
+        if: ${{ !inputs.validate }}
+        run: |
+          UP=$(cat data/.auto_updated.txt 2>/dev/null || true)
+          if [ -z "$UP" ]; then echo "nothing auto-updated"; exit 0; fi
+          python model/model.py
+          python scripts/auto_update.py --finalize
+          python model/model.py
+          UP=$(cat data/.auto_updated.txt)
+          if [ -n "$UP" ]; then
+            python scripts/export_assets.py $UP
+            python model/montecarlo.py
+            python scripts/build_snapshot.py
+          fi
+          python scripts/earnings_watch.py --pending
+
       - name: Commit result
+        if: ${{ !inputs.validate }}
         run: |
           git config user.name "earnings-bot"
           git config user.email "earnings-bot@users.noreply.github.com"
-          git add data/earnings_calendar.json data/pending_reports.json
-          git diff --staged --quiet || git commit -m "Earnings watch $(date -u +%Y-%m-%d)"
+          UP=$(cat data/.auto_updated.txt 2>/dev/null || true)
+          git add data/earnings_calendar.json data/pending_reports.json data/review_queue.json data/data_through.json \
+                  model/model.py model/results.json data/assets.json data/fv_history.json data/snapshot.json 2>/dev/null || true
+          MSG="Earnings watch $(date -u +%Y-%m-%d)"
+          if [ -n "$UP" ]; then MSG="Earnings auto-update $(date -u +%Y-%m-%d): $UP (numbers from Yahoo; text review pending)"; fi
+          git diff --staged --quiet || git commit -m "$MSG"
           git pull --rebase && git push
