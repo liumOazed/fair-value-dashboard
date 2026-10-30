@@ -17,7 +17,11 @@ catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open t
 let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  const r={...a,price,prev:p.prev_close,history:p.history||[]};
  if(price!=null){r.diff=price/a.fair_value-1;r.status=status(r);r.day=p.prev_close?price/p.prev_close-1:null}return r}).filter(r=>r.price!=null);
-$("#stamp").textContent="Prices: "+(P.source||"")+" · updated "+new Date(P.updated).toLocaleString();
+{const M=P.market||{},ny={timeZone:"America/New_York"},at=new Date(M.as_of||P.updated);
+ $("#stamp").textContent=M.state==="open"?"● Market open · latest prices as of "+at.toLocaleTimeString("en-US",{...ny,hour:"numeric",minute:"2-digit"})+" New York time (Yahoo, ~15 min delay)"
+  :M.state==="closed"?"Market closed · closing prices of "+at.toLocaleDateString("en-US",{...ny,weekday:"short",month:"short",day:"numeric"})
+  :"Prices: "+(P.source||"")+" · updated "+new Date(P.updated).toLocaleString();
+ if(M.state==="open")$("#stamp").style.color="var(--good,#1a7f37)"}
 $("#sub").textContent=A.model+" · valuations as of "+A.assets.map(a=>a.valued_on).sort().pop();
 // KPIs
 const n=rows.length,under=rows.filter(r=>r.diff<=0).length,att=rows.filter(r=>r.status<=1).length;

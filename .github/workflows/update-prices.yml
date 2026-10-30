@@ -1,13 +1,18 @@
 name: Update prices
+# Every 30 minutes on weekdays from 13:00 to 21:30 UTC (covers the US session in both summer and winter time):
+# while the market is open the Fair Value page shows the latest (delayed) price, after the close the official close.
+# Commits only when a price changed, so runs before the open / after the close are no-ops.
 on:
   schedule:
-    - cron: "30 21 * * 1-5"   # weekdays after the US close (21:30 UTC)
+    - cron: "*/30 13-21 * * 1-5"
   workflow_dispatch: {}
 permissions:
   contents: write
+concurrency: { group: prices, cancel-in-progress: false }
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,5 +23,7 @@ jobs:
           git config user.name "price-bot"
           git config user.email "price-bot@users.noreply.github.com"
           git add data/prices.json
-          git diff --staged --quiet || git commit -m "Update prices"
-          git push
+          git diff --staged --quiet && exit 0
+          STATE=$(python -c "import json;print(json.load(open('data/prices.json')).get('market',{}).get('state','?'))")
+          git commit -m "Prices ($STATE) $(date -u +%H:%M) UTC"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
