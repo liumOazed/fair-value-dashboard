@@ -11,14 +11,16 @@ import argparse, json, math, pathlib, time
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 INC = {"rev": ["Total Revenue", "Operating Revenue"], "gross": ["Gross Profit"], "op": ["Operating Income", "Total Operating Income As Reported"],
        "ni": ["Net Income Common Stockholders", "Net Income"], "eps": ["Diluted EPS", "Basic EPS"], "ebitda": ["EBITDA", "Normalized EBITDA"],
-       "pretax": ["Pretax Income"], "tax": ["Tax Provision"], "interest": ["Interest Expense", "Interest Expense Non Operating"]}
+       "pretax": ["Pretax Income"], "tax": ["Tax Provision"], "interest": ["Interest Expense", "Interest Expense Non Operating"],
+       "rd": ["Research And Development", "Research Development"], "dep_inc": ["Reconciled Depreciation"]}
 BAL = {"equity": ["Stockholders Equity", "Total Equity Gross Minority Interest"], "debt": ["Total Debt"],
        "cash": ["Cash Cash Equivalents And Short Term Investments", "Cash And Cash Equivalents"],
        "cur_assets": ["Current Assets"], "cur_liab": ["Current Liabilities"], "shares": ["Ordinary Shares Number", "Share Issued"],
        "inventory": ["Inventory"], "receivables": ["Accounts Receivable", "Receivables"]}
 CFS = {"ocf": ["Operating Cash Flow"], "capex": ["Capital Expenditure"], "fcf": ["Free Cash Flow"], "sbc": ["Stock Based Compensation"],
        "div_paid": ["Cash Dividends Paid", "Common Stock Dividend Paid"], "buyback": ["Repurchase Of Capital Stock", "Common Stock Payments"],
-       "issued": ["Issuance Of Capital Stock", "Common Stock Issuance"]}
+       "issued": ["Issuance Of Capital Stock", "Common Stock Issuance"],
+       "dep": ["Depreciation And Amortization", "Depreciation Amortization Depletion", "Depreciation"]}
 
 
 def num(x):
