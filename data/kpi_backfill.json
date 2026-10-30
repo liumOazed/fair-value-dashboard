@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "FTNT",
-  "VEEV",
-  "APP",
-  "FICO",
-  "VRSN",
   "SPGI",
   "MCO",
   "NDAQ",
@@ -44,7 +39,12 @@
   "CRM",
   "ADBE",
   "INTU",
-  "ADSK"
+  "ADSK",
+  "FTNT",
+  "VEEV",
+  "APP",
+  "FICO",
+  "VRSN"
  ],
  "notes": {
   "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history.",
@@ -62,6 +62,11 @@
   "CRM": "Q3 FY25-Q2 FY27 filled. Data Cloud/AI ARR not stated Q3 FY25; series not like-for-like (renamed Agentforce & Data 360 ARR from Q3 FY26, includes ~$1.1B Informatica from Q4 FY26, Slackbot/Headless 360 from Q2 FY27); several values are 'over'/'nearly'. Net debt = current + noncurrent debt (ex leases) - cash - marketable securities; jump in Q1 FY27 from ~$25B ASR borrowing.",
   "ADBE": "Q4 FY24-Q3 FY26 filled. Digital Media ARR no longer reported in FY26 (only Total Adobe ARR, no growth rate), so that KPI uses total subscription revenue growth (computed from income statement) for all 8 quarters. RPO growth mostly computed from RPO $; SBC from cash-flow statement.",
   "INTU": "Q1 FY25-Q4 FY26 filled. FY26 segment regroup: Consumer now = TurboTax + Credit Karma + ProTax, so TurboTax KPI uses 'TurboTax revenue' growth in FY26 and old Consumer Group growth in FY25 (not strictly comparable). Online Ecosystem growth includes Mailchimp.",
-  "ADSK": "Q3 FY25-Q2 FY27 filled. Net revenue retention from earnings slides from Q1 FY26 (releases only define it); text values abbreviate slide wording (exact wording in quotes)."
+  "ADSK": "Q3 FY25-Q2 FY27 filled. Net revenue retention from earnings slides from Q1 FY26 (releases only define it); text values abbreviate slide wording (exact wording in quotes).",
+  "FTNT": "Q4 2024-Q3 2026 filled (Q3 2026 reported 28 Oct 2026). Service revenue growth (Q2 2025-Q3 2026), deferred revenue growth (Q1 2025-Q3 2026) and Q2 2025 product growth not stated as %: computed from income-statement / balance-sheet figures (current + non-current deferred revenue). Q3 2026 release via GlobeNewswire copy (sec.gov refused).",
+  "VEEV": "Q3 FY25-Q2 FY27 filled (Q3 FY27 due early Dec). RPO not disclosed (10-Q says RPO beyond one year 'not significant'; releases never state RPO), so RPO growth skipped. Operating margin = GAAP operating income / total revenues. Vault CRM text for last 4 quarters only; Q1 FY26 and Q4 FY26 quotes join fragments.",
+  "APP": "Q3 2024-Q2 2026 filled (Q3 2026 due 4 Nov 2026). Basis changes after 2025 Apps sale: ad growth = Advertising segment to Q1 2025, then total continuing-ops revenue; EBITDA margins Q3 2024-Q1 2025 are restated continuing-ops; FCF from Q2 2025 includes discontinued-ops cash flows. Share change = diluted weighted-average shares y/y.",
+  "FICO": "Q4 FY24-Q3 FY26 filled (Q4 FY26 due 4 Nov 2026). Q4 FY24 mortgage originations revenue $ not found (only +52% y/y); mortgage $ from investor-presentation slides, rounded to $1M.",
+  "VRSN": "Q4 2024-Q3 2026 filled. Q3 2026 renewal rate not yet available (no preliminary rate given; final comes with Q4 2026). Only price change in window: .com $10.26 -> $10.97 from 1 Nov 2026 (announced Q1 2026). Quotes are shortened fragments joined with '...', some reconstructed to standard release wording; Q3 2026 source is a finviz copy of the Business Wire release."
  }
 }

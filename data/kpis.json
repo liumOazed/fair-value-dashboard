@@ -4462,6 +4462,1166 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "FTNT": {
+   "billings_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000007/ftntq4-2024ex991.htm",
+     "quote": "Billings of $2.00 billion, up 7% year over year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 14,
+     "source": "https://mfn.se/all/a/fortinet/fortinet-reports-first-quarter-2025-financial-results-6b4b001d",
+     "quote": "Billings of $1.60 billion, up 14% year over year (Financial highlights: total billings $1.60 billion, an increase of 13.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 15,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000025/ftntq2-2025ex991.htm",
+     "quote": "Billings grew 15% year over year to $1.78 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000036/ftntq3-2025ex991.htm",
+     "quote": "Billings grew 14% year over year to $1.81 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000003/ftntq4-2025ex991.htm",
+     "quote": "Billings grew 18% to $2.37 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 31,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000010/ftntq1-2026ex991.htm",
+     "quote": "Billings grew 31% year over year to $2.09 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 33,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000018/ftntq2-2026ex991.htm",
+     "quote": "Billings grew 33% year over year to $2.37 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 29,
+     "source": "https://via.ritzau.dk/pressemeddelelse/15255649/fortinet-inc?publisherId=90446",
+     "quote": "Billings grew 29% year over year to $2.34 billion",
+     "added": "2026-10-30"
+    }
+   ],
+   "product_revenue_growth_firewall_refresh": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000007/ftntq4-2024ex991.htm",
+     "quote": "Product revenue of $574 million, up 18% year over year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 12,
+     "source": "https://mfn.se/all/a/fortinet/fortinet-reports-first-quarter-2025-financial-results-6b4b001d",
+     "quote": "Product revenue of $459 million, up 12% year over year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 12.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000025/ftntq2-2025ex991.htm",
+     "quote": "Not stated as %; computed from income statement: Product revenue $508.9M (Q2 2025) vs $451.9M (Q2 2024) (508.9/451.9-1 = 12.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000036/ftntq3-2025ex991.htm",
+     "quote": "Product revenue grew 18% year over year to $559.3 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000003/ftntq4-2025ex991.htm",
+     "quote": "Product revenue grew 20% year over year to $691 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 41,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000010/ftntq1-2026ex991.htm",
+     "quote": "Product revenue grew 41% year over year to $645 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 52,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000018/ftntq2-2026ex991.htm",
+     "quote": "Product revenue grew 52% year over year to $773 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 37,
+     "source": "https://via.ritzau.dk/pressemeddelelse/15255649/fortinet-inc?publisherId=90446",
+     "quote": "Product revenue grew 37% year over year to $765 million",
+     "added": "2026-10-30"
+    }
+   ],
+   "service_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 17.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000007/ftntq4-2024ex991.htm",
+     "quote": "Service revenue was $1.09 billion for the fourth quarter of 2024, an increase of 17.2% compared to $927.0 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 14.4,
+     "source": "https://mfn.se/all/a/fortinet/fortinet-reports-first-quarter-2025-financial-results-6b4b001d",
+     "quote": "Service revenue was $1.08 billion for the first quarter of 2025, an increase of 14.4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 14.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000025/ftntq2-2025ex991.htm",
+     "quote": "Not stated as %; computed from income statement: Service revenue $1,121.1M (Q2 2025) vs $982.4M (Q2 2024) (1121.1/982.4-1 = 14.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 12.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000036/ftntq3-2025ex991.htm",
+     "quote": "Not stated as %; computed from income statement: Service revenue $1,165.6M (Q3 2025) vs $1,034.2M (Q3 2024) (1165.6/1034.2-1 = 12.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 11.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000003/ftntq4-2025ex991.htm",
+     "quote": "Not stated as %; computed from income statement: Service revenue $1,213.9M (Q4 2025) vs $1,086.1M (Q4 2024) (1213.9/1086.1-1 = 11.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 11.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000010/ftntq1-2026ex991.htm",
+     "quote": "Not stated as %; computed from income statement: Service revenue $1,204.5M (Q1 2026) vs $1,080.6M (Q1 2025) (1204.5/1080.6-1 = 11.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 13.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000018/ftntq2-2026ex991.htm",
+     "quote": "Not stated as %; computed from income statement: Service revenue $1,274.9M (Q2 2026) vs $1,121.1M (Q2 2025) (1274.9/1121.1-1 = 13.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12.7,
+     "source": "https://via.ritzau.dk/pressemeddelelse/15255649/fortinet-inc?publisherId=90446",
+     "quote": "Not stated as %; computed from income statement: Service revenue $1,313.4M (Q3 2026) vs $1,165.6M (Q3 2025) (1313.4/1165.6-1 = 12.7%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "deferred_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 10.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000007/ftntq4-2024ex991.htm",
+     "quote": "Total deferred revenue was $6.36 billion as of December 31, 2024, an increase of 10.9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10.9,
+     "source": "https://investor.fortinet.com/node/26626/html",
+     "quote": "Total deferred revenue (current + non-current) 2025-03-31: $3,339.4M + $3,079.0M = $6,418.4M vs 2024-03-31: $2,912.0M + $2,877.9M = $5,789.9M (prior-year balance from https://www.sec.gov/Archives/edgar/data/1262039/000126203924000017/ftntq1-2024ex991.htm) (6418.4/5789.9-1 = 10.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 11.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000025/ftntq2-2025ex991.htm",
+     "quote": "Total deferred revenue (current + non-current) 2025-06-30: $3,412.5M + $3,155.1M = $6,567.6M vs 2024-06-30: $2,975.3M + $2,920.9M = $5,896.2M (prior-year balance from https://www.sec.gov/Archives/edgar/data/1262039/000126203924000034/ftntq2-2024ex991corrected.htm) (6567.6/5896.2-1 = 11.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000036/ftntq3-2025ex991.htm",
+     "quote": "Total deferred revenue (current + non-current) 2025-09-30: $3,460.5M + $3,189.9M = $6,650.4M vs 2024-09-30: $3,081.2M + $2,930.5M = $6,011.7M (prior-year balance from https://www.sec.gov/Archives/edgar/data/1262039/000126203924000040/ftntq3-2024ex991.htm) (6650.4/6011.7-1 = 10.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 11.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000003/ftntq4-2025ex991.htm",
+     "quote": "Total deferred revenue (current + non-current) 2025-12-31: $3,636.0M + $3,479.8M = $7,115.8M vs 2024-12-31: $3,276.2M + $3,084.7M = $6,360.9M (prior-year balance from https://www.sec.gov/Archives/edgar/data/1262039/000126203925000007/ftntq4-2024ex991.htm) (7115.8/6360.9-1 = 11.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 14.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000010/ftntq1-2026ex991.htm",
+     "quote": "Total deferred revenue (current + non-current) 2026-03-31: $3,726.3M + $3,625.2M = $7,351.5M vs 2025-03-31: $3,339.4M + $3,079.0M = $6,418.4M (prior-year balance from https://investor.fortinet.com/node/26626/html) (7351.5/6418.4-1 = 14.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 16.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000018/ftntq2-2026ex991.htm",
+     "quote": "Total deferred revenue (current + non-current) 2026-06-30: $3,841.8M + $3,833.9M = $7,675.7M vs 2025-06-30: $3,412.5M + $3,155.1M = $6,567.6M (prior-year balance from https://www.sec.gov/Archives/edgar/data/1262039/000126203925000025/ftntq2-2025ex991.htm) (7675.7/6567.6-1 = 16.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 19.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001262039/000126203926000027/ftnt-20260930.htm",
+     "quote": "Total deferred revenue (current + non-current) 2026-09-30: $3,961.0M + $3,973.4M = $7,934.4M vs 2025-09-30: $3,460.5M + $3,189.9M = $6,650.4M (prior-year balance from https://www.sec.gov/Archives/edgar/data/1262039/000126203925000036/ftntq3-2025ex991.htm) (7934.4/6650.4-1 = 19.3%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "VEEV": {
+   "subscription_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 17,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_news/2024/12/1/Veeva-Announces-Fiscal-2025-Third-Quarter-Results-2024.pdf",
+     "quote": "Subscription Services Revenues of $580.9M, up 17% Year Over Year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 17,
+     "source": "https://www.sec.gov/Archives/edgar/data/1393052/000139305225000006/veev-20250131q425xex991.htm",
+     "quote": "Q4 Subscription Services Revenues of $608.6M, up 17% Year Over Year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 19,
+     "source": "https://s2.q4cdn.com/456805372/files/doc_news/2025/May/28/VEEV-Q1-26-Earnings-Release.pdf",
+     "quote": "Subscription services revenues for the first quarter were $634.8 million, up from $534.0 million one year ago, an increase of 19% year over year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 17,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2026/q2/earnings-result/VEEV-Q2-26-Earnings-Release.pdf",
+     "quote": "Subscription Services Revenues of $659.2M, up 17% Year Over Year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 17,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2026/q3/earnings-result/VEEV-Q3-26-Earnings-Release.pdf",
+     "quote": "Subscription Services Revenues of $682.5M, up 17% Year Over Year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/1393052/000139305226000007/veev-20260131q426xex991.htm",
+     "quote": "Q4 Subscription Revenues of $707.7M, up 16% Year Over Year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 15,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2027/q1/earnings-result/VEEV-Q1-27-Earnings-Release.pdf",
+     "quote": "Subscription Revenues of $730.2M, up 15% Year Over Year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001393052/000139305226000032/veev-20260731xex991.htm",
+     "quote": "Subscription Revenues of $766.8M, up 16% Year Over Year",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 25.9,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_news/2024/12/1/Veeva-Announces-Fiscal-2025-Third-Quarter-Results-2024.pdf",
+     "quote": "GAAP operating income $181.4M ... total revenues $699.2M (three months, from consolidated statements of comprehensive income; 181.4/699.2 = 25.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 26.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1393052/000139305225000006/veev-20250131q425xex991.htm",
+     "quote": "GAAP operating income $188.4M ... total revenues $720.9M (three months, from consolidated statements of comprehensive income; 188.4/720.9 = 26.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 30.8,
+     "source": "https://s2.q4cdn.com/456805372/files/doc_news/2025/May/28/VEEV-Q1-26-Earnings-Release.pdf",
+     "quote": "GAAP operating income $233.7M ... total revenues $759.0M (three months, from consolidated statements of comprehensive income; 233.7/759.0 = 30.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 24.8,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2026/q2/earnings-result/VEEV-Q2-26-Earnings-Release.pdf",
+     "quote": "GAAP operating income $195.9M ... total revenues $789.1M (three months, from consolidated statements of comprehensive income; 195.9/789.1 = 24.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 29.7,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2026/q3/earnings-result/VEEV-Q3-26-Earnings-Release.pdf",
+     "quote": "GAAP operating income $240.9M ... total revenues $811.2M (three months, from consolidated statements of comprehensive income; 240.9/811.2 = 29.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 29.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1393052/000139305226000007/veev-20260131q426xex991.htm",
+     "quote": "GAAP operating income $245.9M ... total revenues $836.0M (three months, from consolidated statements of comprehensive income; 245.9/836.0 = 29.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 30.9,
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2027/q1/earnings-result/VEEV-Q1-27-Earnings-Release.pdf",
+     "quote": "GAAP operating income $273.1M ... total revenues $882.9M (three months, from consolidated statements of comprehensive income; 273.1/882.9 = 30.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 29.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001393052/000139305226000032/veev-20260731xex991.htm",
+     "quote": "GAAP operating income $275.0M ... total revenues $928.0M (three months, from consolidated statements of comprehensive income; 275.0/928.0 = 29.6%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "vault_crm_wins_migrations": [
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": "23 new Vault CRM customers; 115 live; top-20 biopharma rollout in Japan",
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2026/q3/earnings-result/VEEV-Q3-26-Earnings-Release.pdf",
+     "quote": "Veeva Vault CRM had a strong quarter, with 23 new customer additions and now has a total of 115 customers live.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": "125+ live incl. 2 top-20 biopharmas; 10 top-20 biopharmas committed",
+     "source": "https://www.sec.gov/Archives/edgar/data/1393052/000139305226000007/veev-20260131q426xex991.htm",
+     "quote": "More than 125 customers are live on Vault CRM including 2 top 20 biopharmas in major markets ... Veeva ended the year with 10 top 20 biopharmas committed to Vault CRM globally",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": "27 new Vault CRM customers; 150+ customers live",
+     "source": "https://s206.q4cdn.com/200001835/files/doc_earnings/2027/q1/earnings-result/VEEV-Q1-27-Earnings-Release.pdf",
+     "quote": "Veeva added 27 new Vault CRM customers in the quarter and now has more than 150 customers live.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": "180+ live incl. 5 top-20; 3 new commits in Aug; 12 top-20 committed",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001393052/000139305226000032/veev-20260731xex991.htm",
+     "quote": "Vault CRM leadership grew with more than 180 customers live, including five top 20 biopharmas. In August, two top 20 biopharmas and one large enterprise biopharma committed to Vault CRM, bringing total top 20 commitments to 12 globally.",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "APP": {
+   "advertising_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 66,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100824000059/a3q24applovinshareholder.htm",
+     "quote": "Our Software Platform revenue grew in the third quarter to $835 million (+66% year-over-year) [Software Platform = later-renamed Advertising segment]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 73,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000006/exhibit991-4q24earningspre.htm",
+     "quote": "Advertising Revenue | $999,487 | $576,489 | 73% (Advertising segment, Q4 2024 vs Q4 2023)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 71,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000051/exhibit991-1q25earningspre.htm",
+     "quote": "Advertising Revenue | $1,158,974 | $678,370 | 71 % (Advertising segment, Q1 2025 vs Q1 2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 77,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000069/exhibit991-2q25earningspre.htm",
+     "quote": "Revenue | $1,259 | $711 | 77 % (continuing operations; 'Results related to our Apps business are presented as discontinued operations')",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 68,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000079/exhibit991-3q25earningspre.htm",
+     "quote": "Revenue | $1,405 | $835 | 68 % (continuing operations, Apps sold)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 66,
+     "source": "https://s21.q4cdn.com/165405286/files/doc_financials/2025/q4/v2/4Q25-AppLovin-Press-Release.pdf",
+     "quote": "Revenue $1,658 $999 66% (continuing operations, Apps sold)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 59,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000042/exhibit991-1q26earningspre.htm",
+     "quote": "Revenue | $1,842 | $1,159 | 59% (continuing operations)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 53,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
+     "quote": "Revenue | $1,924 | $1,259 | 53% (continuing operations)",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 77,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000079/exhibit991-3q25earningspre.htm",
+     "quote": "Adjusted EBITDA margin | 82 % | 77 % (Q3 2025 vs Q3 2024, continuing-ops basis as restated in 3Q25 release; original 3Q24 letter: Software Platform segment 78%, total 60%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 77,
+     "source": "https://s21.q4cdn.com/165405286/files/doc_financials/2025/q4/v2/4Q25-AppLovin-Press-Release.pdf",
+     "quote": "Adjusted EBITDA margin 84 % 77 % 82 % 75 % (Q4 2024 = 77%, continuing-ops basis as restated in 4Q25 release; original 4Q24 release: Advertising segment 78%, total 62%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 81,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000042/exhibit991-1q26earningspre.htm",
+     "quote": "Adjusted EBITDA margin | 85% | 81% (Q1 2025 = 81%, continuing-ops basis; matches Advertising segment margin 81% in 1Q25 release, total was 68%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 81,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000069/exhibit991-2q25earningspre.htm",
+     "quote": "Adjusted EBITDA margin | 81 % | 72 % (Q2 2025, continuing operations)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 82,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000079/exhibit991-3q25earningspre.htm",
+     "quote": "Adjusted EBITDA margin | 82 % | 77 % (Q3 2025, continuing operations)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 84,
+     "source": "https://s21.q4cdn.com/165405286/files/doc_financials/2025/q4/v2/4Q25-AppLovin-Press-Release.pdf",
+     "quote": "Adjusted EBITDA margin 84 % 77 % 82 % 75 % (Q4 2025 = 84%, continuing operations)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 85,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000042/exhibit991-1q26earningspre.htm",
+     "quote": "Adjusted EBITDA margin | 85% | 81% (Q1 2026, continuing operations)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 84,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
+     "quote": "Adjusted EBITDA margin | 84% | 81% (Q2 2026, continuing operations)",
+     "added": "2026-10-30"
+    }
+   ],
+   "fcf_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 45.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100824000059/a3q24applovinshareholder.htm",
+     "quote": "Free Cash Flow $545,095K; total revenue $1,198,235K (incl. Apps; 'Revenue was $1.20 billion') (545095/1198235 = 45.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 50.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000006/exhibit991-4q24earningspre.htm",
+     "quote": "Free Cash Flow $695,162K; Total Revenue $1,372,779K (incl. Apps) (695162/1372779 = 50.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 55.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000051/exhibit991-1q25earningspre.htm",
+     "quote": "Free Cash Flow | $825,731 ; Total Revenue | $1,484,021 (incl. Apps) (825731/1484021 = 55.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 61.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000069/exhibit991-2q25earningspre.htm",
+     "quote": "Free Cash Flow $768,063K; revenue $1,258,754K (continuing ops revenue; FCF includes Apps/discontinued cash flows) (768063/1258754 = 61.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 74.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000079/exhibit991-3q25earningspre.htm",
+     "quote": "Free Cash Flow $1,048,999K ('Free Cash Flow was $1.05 billion'); revenue $1,405,045K (1048999/1405045 = 74.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 79.0,
+     "source": "https://s21.q4cdn.com/165405286/files/doc_financials/2025/q4/v2/4Q25-AppLovin-Press-Release.pdf",
+     "quote": "Free Cash Flow $1,309,159K; Revenue $1,657,944K (1309159/1657944 = 79.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 69.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000042/exhibit991-1q26earningspre.htm",
+     "quote": "Free Cash Flow | $1,286,748 ; revenue $1,842,449K (1286748/1842449 = 69.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 44.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
+     "quote": "Free Cash Flow $863,317K ('Free Cash Flow was $863.3 million'); revenue $1,923,686K (863317/1923686 = 44.9%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "share_count_change": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": -2.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100824000059/a3q24applovinshareholder.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted 348,225,463 (3Q24) vs 356,906,222 (3Q23) (348225463/356906222 - 1 = -2.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": -0.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000006/exhibit991-4q24earningspre.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted | 346,423,848 | 347,492,545 (346423848/347492545 - 1 = -0.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": -1.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000051/exhibit991-1q25earningspre.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted | 344,877,542 | 348,596,295 (344877542/348596295 - 1 = -1.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": -1.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000069/exhibit991-2q25earningspre.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted | 342,194,433 | 347,964,201 (342194433/347964201 - 1 = -1.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -2.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000079/exhibit991-3q25earningspre.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted | 340,974 | 348,225 (thousands) (340974/348225 - 1 = -2.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -1.9,
+     "source": "https://s21.q4cdn.com/165405286/files/doc_financials/2025/q4/v2/4Q25-AppLovin-Press-Release.pdf",
+     "quote": "Diluted weighted-average shares, three months: Diluted 339,898 346,424 (thousands) (339898/346424 - 1 = -1.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -1.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000042/exhibit991-1q26earningspre.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted | 338,729 | 344,878 (thousands) (338729/344878 - 1 = -1.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -1.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted | 337,031 | 342,194 (thousands) (337031/342194 - 1 = -1.5%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "FICO": {
+   "scores_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q4 FY24",
+     "value": 27.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000162828024045723/exhibit991erq42024.htm",
+     "quote": "Scores revenues ... were $249.2 million in the fourth quarter, compared to $195.6 million in the prior year period, an increase of 27%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 23.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000007/exhibit991erq12025.htm",
+     "quote": "Scores revenues ... were $235.7 million in the first quarter, compared to $192.1 million in the prior year period, an increase of 23%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 25.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000015/exhibit991erq22025.htm",
+     "quote": "Scores revenues ... were $297.0 million in the second quarter, compared to $236.9 million in the prior year period, an increase of 25%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 34.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000024/exhibit991erq32025.htm",
+     "quote": "Scores revenues ... were $324.3 million in the third quarter, compared to $241.4 million in the prior year period, an increase of 34%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 25.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000026/exhibit991erq42025.htm",
+     "quote": "Scores revenues ... were $311.6 million in the fourth quarter, compared to $249.2 million in the prior year period, an increase of 25%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 29.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000010/exhibit991erq12026.htm",
+     "quote": "Scores revenues ... were $304.5 million in the first quarter, compared to $235.7 million in the prior year period, an increase of 29%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 60.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000020/exhibit991erq22026.htm",
+     "quote": "Scores revenues ... were $475.0 million in the second quarter, compared to $297.0 million in the prior year period, an increase of 60%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 41.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000031/exhibit991erq32026.htm",
+     "quote": "Scores revenues ... were $458.9 million in the third quarter, compared to $324.3 million in the prior year period, an increase of 41%.",
+     "added": "2026-10-30"
+    }
+   ],
+   "mortgage_originations_scores_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 0.08,
+     "source": "https://investors.fico.com/static-files/ec69308e-295c-48d9-ac48-4e09433ecd04",
+     "quote": "Q1 FY2026 Investor Presentation, Scores Revenue Segment Mix ($M): Mortgage Originations Q1-25 = 80 (B2B 182; Rest of B2B 103). $80M -> 0.0800",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 0.132,
+     "source": "https://investors.fico.com/static-files/66ef723c-1f2e-4501-a452-ab2f3d02ae85",
+     "quote": "Q2 FY2026 Investor Presentation, B2B Revenue Mix ($M): Mortgage Originations Q2-25 = 132 (B2B 242; Rest of B2B 110). $132M -> 0.1320",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 0.144,
+     "source": "https://investors.fico.com/static-files/8cca812a-c1bf-4f9c-8a9e-225d9c76606e",
+     "quote": "Q3 FY2026 Investor Presentation, Scores - Financial Trends ($M): Mortgage Q3-25 = 144 (B2B 268; Rest of B2B 125). $144M -> 0.1440",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 0.14,
+     "source": "https://investors.fico.com/static-files/8cca812a-c1bf-4f9c-8a9e-225d9c76606e",
+     "quote": "Q3 FY2026 Investor Presentation, Scores - Financial Trends ($M): Mortgage Q4-25 = 140 (B2B 255; Rest of B2B 115). $140M -> 0.1400",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 0.127,
+     "source": "https://investors.fico.com/static-files/8cca812a-c1bf-4f9c-8a9e-225d9c76606e",
+     "quote": "Q3 FY2026 Investor Presentation, Scores - Financial Trends ($M): Mortgage Q1-26 = 127 (B2B 249; Rest of B2B 122). $127M -> 0.1270",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 0.3,
+     "source": "https://investors.fico.com/static-files/8cca812a-c1bf-4f9c-8a9e-225d9c76606e",
+     "quote": "Q3 FY2026 Investor Presentation, Scores - Financial Trends ($M): Mortgage Q2-26 = 300 (B2B 418; Rest of B2B 118). $300M -> 0.3000",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 0.282,
+     "source": "https://investors.fico.com/static-files/8cca812a-c1bf-4f9c-8a9e-225d9c76606e",
+     "quote": "Q3 FY2026 Investor Presentation, Scores - Financial Trends ($M): Mortgage Q3-26 = 282 (B2B 400; Rest of B2B 118; mortgage 71% of B2B). $282M -> 0.2820",
+     "added": "2026-10-30"
+    }
+   ],
+   "software_arr_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q4 FY24",
+     "value": 8.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000162828024045723/exhibit991erq42024.htm",
+     "quote": "Software Annual Recurring Revenue was up 8% year-over-year, consisting of 31% platform ARR growth and no growth in non-platform.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 6.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000007/exhibit991erq12025.htm",
+     "quote": "Software Annual Recurring Revenue was up 6% year-over-year, consisting of 20% platform ARR growth",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 3.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000015/exhibit991erq22025.htm",
+     "quote": "Software Annual Recurring Revenue at March 31, 2025 was up 3% year-over-year, consisting of 17% in platform ARR growth and a 3% decline in non-platform ARR.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 4.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000024/exhibit991erq32025.htm",
+     "quote": "Software Annual Recurring Revenue at June 30, 2025 was up 4% year-over-year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 4.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000026/exhibit991erq42025.htm",
+     "quote": "Software Annual Recurring Revenue on September 30, 2025 was up 4% year-over-year, consisting of a 16% increase in platform ARR and a 2% decline in non-platform ARR.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 5.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000010/exhibit991erq12026.htm",
+     "quote": "Software Annual Recurring Revenue on December 31, 2025, was up 5% year-over-year, consisting of a 33% increase in platform ARR and an 8% decline in non-platform ARR.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 10.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000020/exhibit991erq22026.htm",
+     "quote": "On March 31, 2026, Software Annual Recurring Revenue was up 10% year-over-year, consisting of a 49% increase in platform ARR and an 8% decline in non-platform ARR.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 10.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000031/exhibit991erq32026.htm",
+     "quote": "On June 30, 2026, Software Annual Recurring Revenue (ARR) was up 10% year-over-year, consisting of a 62% increase in platform ARR and a 17% decline in non-platform ARR.",
+     "added": "2026-10-30"
+    }
+   ],
+   "software_dollar_based_net_retention": [
+    {
+     "period": "2024-09-30",
+     "label": "Q4 FY24",
+     "value": 106.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000162828024045723/exhibit991erq42024.htm",
+     "quote": "Software Dollar-Based Net Retention Rate was 106% on September 30, 2024, with platform software at 123% and non-platform software at 99%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q1 FY25",
+     "value": 105.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000007/exhibit991erq12025.htm",
+     "quote": "The Software Dollar-Based Net Retention Rate was 105% on December 31, 2024",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q2 FY25",
+     "value": 102.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000015/exhibit991erq22025.htm",
+     "quote": "The total Software Dollar-Based Net Retention Rate was 102% on March 31, 2025, with platform software at 110% and non-platform software at 96%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q3 FY25",
+     "value": 103.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000024/exhibit991erq32025.htm",
+     "quote": "The total Software Dollar-Based Net Retention Rate was 103% on June 30, 2025",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q4 FY25",
+     "value": 102.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000026/exhibit991erq42025.htm",
+     "quote": "The total Software Dollar-Based Net Retention Rate was 102% on September 30, 2025, with platform software at 112% and non-platform software at 97%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q1 FY26",
+     "value": 103.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000010/exhibit991erq12026.htm",
+     "quote": "The total Software Dollar-Based Net Retention Rate was 103% on December 31, 2025, with platform software at 122% and non-platform software at 91%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q2 FY26",
+     "value": 109.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000020/exhibit991erq22026.htm",
+     "quote": "The total Software Dollar-Based Net Retention Rate was 109% on March 31, 2026, with platform software at 136% and non-platform software at 90%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q3 FY26",
+     "value": 109.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000031/exhibit991erq32026.htm",
+     "quote": "The total Software Dollar-Based Net Retention Rate was 109% on June 30, 2026, with platform software at 148% and non-platform software at 82%.",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "VRSN": {
+   "domain_name_base_com_net_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": -2.1,
+     "source": "https://investor.verisign.com/news-releases/news-release-details/verisign-reports-fourth-quarter-and-full-year-2024-results/",
+     "quote": "169.0 million .com and .net domain name registrations ... a 2.1 percent decrease from the end of the fourth quarter of 2023.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": -1.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000020/q12025earningsrelease.htm",
+     "quote": "169.8 million .com and .net domain name registrations ... a 1.5 percent decrease from the end of the first quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": -0.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000034/q22025earningsrelease.htm",
+     "quote": "170.5 million .com and .net domain name registrations ... a 0.1 percent decrease from the end of the second quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000045/q32025earningsrelease.htm",
+     "quote": "171.9 million .com and .net domain name registrations ... a 1.4 percent increase from the end of the third quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2.6,
+     "source": "https://investor.verisign.com/static-files/ecd8b964-77a7-40ee-94c3-ebcab7866fbe",
+     "quote": "173.5 million .com and .net domain name registrations ... a 2.6 percent increase from the end of the fourth quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001014473/000101447326000019/q12026earningsrelease.htm",
+     "quote": "176.1 million .com and .net domain name registrations ... a 3.7 percent increase from the end of the first quarter of 2025",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001014473/000101447326000026/q22026earningsrelease.htm",
+     "quote": "179.1 million .com and .net domain name registrations ... a 5.1 percent increase from the end of the second quarter of 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6.1,
+     "source": "https://finviz.com/news/406822/verisign-reports-third-quarter-2026-results",
+     "quote": "182.5 million .com and .net domain name registrations ... a 6.1 percent increase from the end of the third quarter of 2025.",
+     "added": "2026-10-30"
+    }
+   ],
+   "new_registrations": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 9500000,
+     "source": "https://investor.verisign.com/news-releases/news-release-details/verisign-reports-fourth-quarter-and-full-year-2024-results/",
+     "quote": "Verisign processed 9.5 million new domain name registrations for .com and .net, as compared to 9.0 million for the fourth quarter of 2023.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10100000,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000020/q12025earningsrelease.htm",
+     "quote": "Verisign processed 10.1 million new domain name registrations for .com and .net, as compared to 9.5 million for the first quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 10400000,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000034/q22025earningsrelease.htm",
+     "quote": "Verisign processed 10.4 million new domain name registrations for .com and .net, as compared to 9.2 million for the second quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10600000,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000045/q32025earningsrelease.htm",
+     "quote": "Verisign processed 10.6 million new domain name registrations for .com and .net, as compared to 9.3 million for the third quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 10700000,
+     "source": "https://investor.verisign.com/static-files/ecd8b964-77a7-40ee-94c3-ebcab7866fbe",
+     "quote": "Verisign processed 10.7 million new domain name registrations for .com and .net, as compared to 9.5 million for the fourth quarter of 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 11500000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001014473/000101447326000019/q12026earningsrelease.htm",
+     "quote": "Verisign processed 11.5 million new domain name registrations for .com and .net, as compared to 10.1 million for the first quarter of 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12700000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001014473/000101447326000026/q22026earningsrelease.htm",
+     "quote": "Verisign processed 12.7 million new domain name registrations for .com and .net, as compared to 10.4 million for the second quarter of 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 13100000,
+     "source": "https://finviz.com/news/406822/verisign-reports-third-quarter-2026-results",
+     "quote": "Verisign processed 13.1 million new domain name registrations for .com and .net, as compared to 10.6 million for the third quarter of 2025.",
+     "added": "2026-10-30"
+    }
+   ],
+   "renewal_rate": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 74.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000020/q12025earningsrelease.htm",
+     "quote": "The final .com and .net renewal rate for the fourth quarter of 2024 was 74.0 percent compared with 73.2 percent for the same quarter in 2023.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 75.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000034/q22025earningsrelease.htm",
+     "quote": "The final .com and .net renewal rate for the first quarter of 2025 was 75.5 percent compared with 74.1 percent for the same quarter in 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 75.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447325000045/q32025earningsrelease.htm",
+     "quote": "The final .com and .net renewal rate for the second quarter of 2025 was 75.5 percent compared with 72.7 percent for the same quarter in 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 75.4,
+     "source": "https://investor.verisign.com/static-files/ecd8b964-77a7-40ee-94c3-ebcab7866fbe",
+     "quote": "The final .com and .net renewal rate for the third quarter of 2025 was 75.4 percent compared with 72.2 percent for the same quarter in 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 75.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001014473/000101447326000019/q12026earningsrelease.htm",
+     "quote": "The final .com and .net renewal rate for the fourth quarter of 2025 was 75.0 percent compared with 74.0 percent for the same quarter in 2024.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 76.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001014473/000101447326000026/q22026earningsrelease.htm",
+     "quote": "The final .com and .net renewal rate for the first quarter of 2026 was 76.3 percent compared with 75.5 percent for the same quarter in 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 75.2,
+     "source": "https://finviz.com/news/406822/verisign-reports-third-quarter-2026-results",
+     "quote": "The final .com and .net renewal rate for the second quarter of 2026 was 75.2 percent compared with 75.5 percent for the same quarter in 2025.",
+     "added": "2026-10-30"
+    }
+   ],
+   "price_increases_contract": [
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": ".com $10.26 -> $10.97 effective 1 Nov 2026 (announced 23 Apr 2026)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001014473/000101447326000019/q12026earningsrelease.htm",
+     "quote": "Verisign announces that it will increase the annual registry-level wholesale fee for each new and renewal .com domain name registration ... from $10.26 to $10.97 effective Nov. 1, 2026",
+     "added": "2026-10-30"
+    }
+   ]
   }
  }
 }
