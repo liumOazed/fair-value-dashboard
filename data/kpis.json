@@ -4,11 +4,43 @@
   "MSFT": {
    "azure_other_cloud_services_growth": [
     {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 31,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q2/press-release-webcast",
+     "quote": "Server products and cloud services revenue increased 21% driven by Azure and other cloud services revenue growth of 31%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 33,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q3/press-release-webcast",
+     "quote": "driven by Azure and other cloud services revenue growth of 33% (up 35% in constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 39,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast",
+     "quote": "Server products and cloud services revenue increased 27% driven by Azure and other cloud services revenue growth of 39%",
+     "added": "2026-10-30"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q1 FY26",
      "value": 40,
      "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/metrics",
      "quote": "Azure and other cloud services revenue growth: 40% / 39% (GAAP / constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 39,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q2/press-release-webcast",
+     "quote": "Azure and other cloud services revenue increased 39% (up 38% in constant currency)",
      "added": "2026-10-30"
     },
     {
@@ -38,11 +70,43 @@
    ],
    "microsoft_cloud_revenue": [
     {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 40.9,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q2/press-release-webcast",
+     "quote": "This quarter Microsoft Cloud revenue was $40.9 billion, up 21% year-over-year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 42.4,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q3/press-release-webcast",
+     "quote": "We delivered a strong quarter with Microsoft Cloud revenue of $42.4 billion, up 20% (up 22% in constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 46.7,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast",
+     "quote": "highlighted by Microsoft Cloud revenue reaching $46.7 billion, up 27% (up 25% in constant currency) year-over-year",
+     "added": "2026-10-30"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q1 FY26",
      "value": 49.1,
      "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/metrics",
      "quote": "Microsoft Cloud revenue: $49.1 billion, growth 26% / 25% (GAAP / constant currency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 51.5,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q2/press-release-webcast",
+     "quote": "Microsoft Cloud revenue was $51.5 billion and increased 26% (up 24% in constant currency)",
      "added": "2026-10-30"
     },
     {
@@ -72,6 +136,46 @@
    ],
    "commercial_remaining_performance_obligation_grow": [
     {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 34,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q2",
+     "quote": "Commercial remaining performance obligation increased to $298 billion, up 34% and 36% in constant currency.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 34,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+     "quote": "Commercial remaining performance obligation increased to $315 billion, up 34% and 33% in constant currency.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 37,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+     "quote": "Commercial remaining performance obligation increased to $368 billion, up 37% and 35% in constant currency.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 51,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+     "quote": "Commercial remaining performance obligation increased to $392 billion and was up 51% year-over-year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 110,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+     "quote": "[Commercial remaining performance obligation] increased to $625 billion and was up 110% year-over-year (CFO remarks; ~45% of balance tied to OpenAI)",
+     "added": "2026-10-30"
+    },
+    {
      "period": "2026-03-31",
      "label": "Q3 FY26",
      "value": 99,
@@ -98,11 +202,43 @@
    ],
    "operating_margin": [
     {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 45.5,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q2/press-release-webcast",
+     "quote": "Revenue was $69.6 billion ... Operating income was $31.7 billion (31.7/69.6 = 45.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 45.6,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q3/press-release-webcast",
+     "quote": "Revenue was $70.1 billion ... Operating income was $32.0 billion (32.0/70.1 = 45.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 44.9,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast",
+     "quote": "Revenue was $76.4 billion ... Operating income was $34.3 billion (34.3/76.4 = 44.9%)",
+     "added": "2026-10-30"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q1 FY26",
      "value": 48.9,
      "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
      "quote": "Prior-year quarter (three months ended Sept. 30, 2025): revenue $77,673 million, operating income $37,961 million (48.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 47.1,
+     "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q2/press-release-webcast",
+     "quote": "Revenue was $81.3 billion ... Operating income was $38.3 billion (38.3/81.3 = 47.1%)",
      "added": "2026-10-30"
     },
     {
@@ -131,6 +267,62 @@
     }
    ],
    "capex_incl_finance_leases_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 32.5,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q2",
+     "quote": "CFO remarks: \"Capital expenditures including finance leases were $22.6 billion\"; press release (https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q2/press-release-webcast): \"Revenue was $69.6 billion\" (22.6/69.6 = 32.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 30.5,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+     "quote": "CFO remarks: \"Capital expenditures including finance leases were $21.4 billion\"; press release (https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q3/press-release-webcast): \"Revenue was $70.1 billion\" (21.4/70.1 = 30.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 31.7,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+     "quote": "CFO remarks: \"Capital expenditures were $24.2 billion, including $6.5 billion of finance leases\"; press release (https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast): \"Revenue was $76.4 billion\" (24.2/76.4 = 31.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 44.9,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+     "quote": "CFO remarks: \"Capital expenditures were $34.9 billion ... including $11.1 billion of finance leases\"; press release (https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast): \"Revenue was $77.7 billion\" (34.9/77.7 = 44.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 46.1,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+     "quote": "CFO remarks: \"Capital expenditures were $37.5 billion ... This quarter, total finance leases were $6.7 billion [total capex; difference vs cash paid for PP&E ($29.9B) is primarily finance leases]\"; press release (https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q2/press-release-webcast): \"Revenue was $81.3 billion\" (37.5/81.3 = 46.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 38.5,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+     "quote": "CFO remarks: \"Capital expenditures were $31.9 billion ... This quarter, total finance leases were $4.7 billion\"; press release (https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast): \"Revenue was $82.9 billion\" (31.9/82.9 = 38.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 45.6,
+     "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+     "quote": "CFO remarks: \"Capital expenditures were $41 billion ... This quarter, total finance leases were $5.6 billion\"; press release (https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast): \"Revenue was $90.0 billion\" (41.0/90.0 = 45.6%)",
+     "added": "2026-10-30"
+    },
     {
      "period": "2026-09-30",
      "label": "Q1 FY27",
@@ -10203,6 +10395,1100 @@
      "value": 96.2,
      "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
      "quote": "Free Cash Flow | $562 | $423 | 33% ... Adjusted Net income [3Q25 | 2Q26 | 3Q26] | $385 | $534 | $584 (562/584 = 96.2%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "APA": {
+   "production_boe_d_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -0.78,
+     "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166625000028/exhibit9913q25earningsrele.htm",
+     "quote": "Reported Production Information, Total BOE/d (3Q25 | 2Q25 | 3Q24 | 3Q25 to 2Q25 | 3Q25 to 3Q24 | 9M25 | 9M24): \"Total(1) 463,815 465,078 467,480 —% (1)% 465,938 443,437\" — reported (not adjusted) production; (463,815/467,480 - 1 = -0.78%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -5.84,
+     "source": "https://investor.apacorp.com/node/51721/html",
+     "quote": "Reported Production Information, Total BOE/d (4Q25 | 3Q25 | 4Q24 | 4Q25 to 3Q25 | 4Q25 to 4Q24 | FY25 | FY24): \"Total (1) 459,767 463,815 488,308 (1)% (6)% 464,383 454,716\" — reported (not adjusted) production; (459,767/488,308 - 1 = -5.84%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -5.68,
+     "source": "https://investor.apacorp.com/node/51906/html",
+     "quote": "Reported Production Information, Total BOE/d (1Q26 | 4Q25 | 1Q25 | 1Q26 to 4Q25 | 1Q26 to 1Q25): \"Total (1) 442,352 459,767 468,978 (4)% (6)%\" — reported (not adjusted) production; (442,352/468,978 - 1 = -5.68%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -11.85,
+     "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
+     "quote": "Reported Production Information, Total BOE/d (2Q26 | 1Q26 | 2Q25 | 2Q26 to 1Q26 | 2Q26 to 2Q25 | 6M26 | 6M25): \"Total 409,959 442,352 465,078 (7)% (12)% 426,066 467,017\" — reported (not adjusted) production; (409,959/465,078 - 1 = -11.85%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "realised_oil_price": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 78.06,
+     "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166625000028/exhibit9913q25earningsrele.htm",
+     "quote": "Average Oil Price Per Barrel (3Q25 | 2Q25 | 3Q24 | 9M25 | 9M24): \"Total 67.43 65.58 78.06 68.94 80.31\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 72.42,
+     "source": "https://investor.apacorp.com/node/51721/html",
+     "quote": "Average Oil Price Per Barrel (4Q25 | 3Q25 | 4Q24 | FY25 | FY24): \"Total 61.03 67.43 72.42 66.92 78.08\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 73.73,
+     "source": "https://investor.apacorp.com/node/51906/html",
+     "quote": "Average Oil Price Per Barrel (1Q26 | 4Q25 | 1Q25): \"Total 78.69 61.03 73.73\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 65.58,
+     "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
+     "quote": "Average Oil Price Per Barrel (2Q26 | 1Q26 | 2Q25 | 6M26 | 6M25): \"Total 98.24 78.69 65.58 87.89 69.72\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 67.43,
+     "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166625000028/exhibit9913q25earningsrele.htm",
+     "quote": "Average Oil Price Per Barrel (3Q25 | 2Q25 | 3Q24 | 9M25 | 9M24): \"Total 67.43 65.58 78.06 68.94 80.31\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 61.03,
+     "source": "https://investor.apacorp.com/node/51721/html",
+     "quote": "Average Oil Price Per Barrel (4Q25 | 3Q25 | 4Q24 | FY25 | FY24): \"Total 61.03 67.43 72.42 66.92 78.08\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 78.69,
+     "source": "https://investor.apacorp.com/node/51906/html",
+     "quote": "Average Oil Price Per Barrel (1Q26 | 4Q25 | 1Q25): \"Total 78.69 61.03 73.73\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 98.24,
+     "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
+     "quote": "Average Oil Price Per Barrel (2Q26 | 1Q26 | 2Q25 | 6M26 | 6M25): \"Total 98.24 78.69 65.58 87.89 69.72\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "egypt_production_and_receivables": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": "Egypt gross oil production 136,670 b/d; receivables not disclosed in release",
+     "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166625000028/exhibit9913q25earningsrele.htm",
+     "quote": "Egypt Gross Production (3Q25 | 2Q25 | 3Q24 | 9M25 | 9M24): \"Oil (b/d) 124,944 123,852 136,670 125,595 138,039\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": "Egypt gross oil production 134,504 b/d; receivables not disclosed in release",
+     "source": "https://investor.apacorp.com/node/51721/html",
+     "quote": "Egypt Gross Production (4Q25 | 3Q25 | 4Q24 | FY25 | FY24): \"Oil (b/d) 125,262 124,944 134,504 125,511 137,150\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": "Egypt gross oil production 128,025 b/d; receivables not disclosed in release",
+     "source": "https://investor.apacorp.com/node/51906/html",
+     "quote": "Egypt Gross Production (1Q26 | 4Q25 | 1Q25): \"Oil (b/d) 121,472 125,262 128,025\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": "Egypt gross oil production 123,852 b/d; receivables not disclosed in release",
+     "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
+     "quote": "Egypt Gross Production (2Q26 | 1Q26 | 2Q25 | 6M26 | 6M25): \"Oil (b/d) 117,056 121,472 123,852 119,252 125,927\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": "Egypt gross oil production 124,944 b/d; receivables not disclosed in release",
+     "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166625000028/exhibit9913q25earningsrele.htm",
+     "quote": "Egypt Gross Production (3Q25 | 2Q25 | 3Q24 | 9M25 | 9M24): \"Oil (b/d) 124,944 123,852 136,670 125,595 138,039\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "Egypt gross oil production 125,262 b/d; receivables not disclosed in release",
+     "source": "https://investor.apacorp.com/node/51721/html",
+     "quote": "Egypt Gross Production (4Q25 | 3Q25 | 4Q24 | FY25 | FY24): \"Oil (b/d) 125,262 124,944 134,504 125,511 137,150\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": "Egypt gross oil production 121,472 b/d; receivables not disclosed in release",
+     "source": "https://investor.apacorp.com/node/51906/html",
+     "quote": "Egypt Gross Production (1Q26 | 4Q25 | 1Q25): \"Oil (b/d) 121,472 125,262 128,025\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": "Egypt gross oil production 117,056 b/d; nearly half of Egypt gas production on revised pricing; receivables not disclosed",
+     "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
+     "quote": "Egypt Gross Production (2Q26 | 1Q26 | 2Q25 | 6M26 | 6M25): \"Oil (b/d) 117,056 121,472 123,852 119,252 125,927\"; \"Nearly half of Egypt's gas production is now benefiting from the revised pricing agreement.\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "capex_operating_cash_flow": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 50.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166625000028/exhibit9913q25earningsrele.htm",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment 542 670 1,900 2,055\" ... \"Net cash provided by operating activities $1,460 $1,339 $3,737 $2,584\" (Q3 2024: 670/1339 = 50.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 54.8,
+     "source": "https://investor.apacorp.com/node/51721/html",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment 434 568 2,334 2,623\" ... \"Net cash provided by operating activities 808 1,036 4,545 3,620\" (Q4 2024: 568/1036 = 54.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 64.8,
+     "source": "https://investor.apacorp.com/node/51906/html",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment $ 564 $ 710\" ... \"Net cash provided by operating activities $ 554 $ 1,096\" (Q1 2025: 710/1096 = 64.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 54.9,
+     "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment $ 546 $ 648 $ 1,110 $ 1,358\" ... \"Net cash provided by operating activities $ 1,706 $ 1,181 $ 2,260 $ 2,277\" (Q2 2025: 648/1181 = 54.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 37.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166625000028/exhibit9913q25earningsrele.htm",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment 542 670 1,900 2,055\" ... \"Net cash provided by operating activities $1,460 $1,339 $3,737 $2,584\" (Q3 2025: 542/1460 = 37.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 53.7,
+     "source": "https://investor.apacorp.com/node/51721/html",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment 434 568 2,334 2,623\" ... \"Net cash provided by operating activities 808 1,036 4,545 3,620\" (Q4 2025: 434/808 = 53.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 101.8,
+     "source": "https://investor.apacorp.com/node/51906/html",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment $ 564 $ 710\" ... \"Net cash provided by operating activities $ 554 $ 1,096\" (Q1 2026: 564/554 = 101.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32.0,
+     "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment $ 546 $ 648 $ 1,110 $ 1,358\" ... \"Net cash provided by operating activities $ 1,706 $ 1,181 $ 2,260 $ 2,277\" (Q2 2026: 546/1706 = 32.0%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "AXP": {
+   "billed_business_growth_fx_adjusted": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 8,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth (Q4'25 tables), columns Reported Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 then FX-Adjusted (G) Q4'25 Q3'25 Q2'25 Q1'25 Q4'24, then FY'25 reported/FX-adj: \"Billed business 9 9 7 6 8 8 8 7 6 8 8 7\" -> FX-adjusted Q4 2024 = 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 6,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth (Q4'25 tables), columns Reported Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 then FX-Adjusted (G) Q4'25 Q3'25 Q2'25 Q1'25 Q4'24, then FY'25 reported/FX-adj: \"Billed business 9 9 7 6 8 8 8 7 6 8 8 7\" -> FX-adjusted Q1 2025 = 6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth (Q4'25 tables), columns Reported Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 then FX-Adjusted (G) Q4'25 Q3'25 Q2'25 Q1'25 Q4'24, then FY'25 reported/FX-adj: \"Billed business 9 9 7 6 8 8 8 7 6 8 8 7\" -> FX-adjusted Q2 2025 = 7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth, columns Reported Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 then FX-Adjusted (F) Q3'26 Q2'26 Q1'26 Q4'25 Q3'25, then YTD'26 reported/FX-adj: \"Billed business 8 9 10 9 9 8 9 9 8 8 9 9\" -> FX-adjusted Q3 2025 = 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth, columns Reported Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 then FX-Adjusted (F) Q3'26 Q2'26 Q1'26 Q4'25 Q3'25, then YTD'26 reported/FX-adj: \"Billed business 8 9 10 9 9 8 9 9 8 8 9 9\" -> FX-adjusted Q4 2025 = 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth, columns Reported Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 then FX-Adjusted (F) Q3'26 Q2'26 Q1'26 Q4'25 Q3'25, then YTD'26 reported/FX-adj: \"Billed business 8 9 10 9 9 8 9 9 8 8 9 9\" -> FX-adjusted Q1 2026 = 9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth, columns Reported Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 then FX-Adjusted (F) Q3'26 Q2'26 Q1'26 Q4'25 Q3'25, then YTD'26 reported/FX-adj: \"Billed business 8 9 10 9 9 8 9 9 8 8 9 9\" -> FX-adjusted Q2 2026 = 9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Network Volumes Related Growth, columns Reported Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 then FX-Adjusted (F) Q3'26 Q2'26 Q1'26 Q4'25 Q3'25, then YTD'26 reported/FX-adj: \"Billed business 8 9 10 9 9 8 9 9 8 8 9 9\" -> FX-adjusted Q3 2026 = 8%",
+     "added": "2026-10-30"
+    }
+   ],
+   "card_member_loans_growth": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_financials/2025/q1/Q1-2025-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q1'25 Q4'24 Q3'24 Q2'24 Q1'24 YOY%: \"Total Card Member loans $ 139,203 $ 139,674 $ 134,548 $ 130,851 $ 126,619 10\" -> reported 10% (139,203/126,619 - 1 = 9.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 9,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_financials/2025/q2/Q2-2025-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q2'25 Q1'25 Q4'24 Q3'24 Q2'24 YOY%: \"Total Card Member loans $ 142,275 $ 139,203 $ 139,674 $ 134,548 $ 130,851 9\" -> reported 9% (142,275/130,851 - 1 = 8.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_financials/2025/q3/Q3-2025-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q3'25 Q2'25 Q1'25 Q4'24 Q3'24 YOY%: \"Total Card Member loans $ 144,814 $ 142,275 $ 139,203 $ 139,674 $ 134,548 8\" -> reported 8% (144,814/134,548 - 1 = 7.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 9,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 YOY% FY'25 FY'24 YOY%: \"Total Card Member loans $151,832 $144,814 $142,275 $139,203 $139,674 9 $151,832 $139,674 9\" -> reported 9% (151,832/139,674 - 1 = 8.7%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "net_write_off_rate_principal": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1.9,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Consolidated net write-off rate, Card Member loans and receivables, consumer and small business, columns Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 ... FY'25 FY'24: \"Net write-off rate (principal only) (H)(I) 2.1% 1.9% 2.0% 2.1% 1.9% ... 2.0% 2.0%\" -> Q4 2024 = 1.9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2.1,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q1/supplemental-info/Q1-2026-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information (Q1'26 tables, Card balances basis), columns Q1'26 Q4'25 Q3'25 Q2'25 Q1'25: \"Net write-off rate (principal only) - consumer and small business (G)(H) 2.0 % 2.1 % 1.9 % 2.0 % 2.1 %\" -> Q1 2025 = 2.1%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 2.0,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q1/supplemental-info/Q1-2026-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information (Q1'26 tables, Card balances basis), columns Q1'26 Q4'25 Q3'25 Q2'25 Q1'25: \"Net write-off rate (principal only) - consumer and small business (G)(H) 2.0 % 2.1 % 1.9 % 2.0 % 2.1 %\" -> Q2 2025 = 2.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.9,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Net write-off rate (principal only) - consumer and small business (G)(H) 1.8% 2.0% 2.0% 2.1% 1.9% 1.9% 2.0%\" -> Q3 2025 = 1.9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2.1,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Net write-off rate (principal only) - consumer and small business (G)(H) 1.8% 2.0% 2.0% 2.1% 1.9% 1.9% 2.0%\" -> Q4 2025 = 2.1%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.0,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Net write-off rate (principal only) - consumer and small business (G)(H) 1.8% 2.0% 2.0% 2.1% 1.9% 1.9% 2.0%\" -> Q1 2026 = 2.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2.0,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Net write-off rate (principal only) - consumer and small business (G)(H) 1.8% 2.0% 2.0% 2.1% 1.9% 1.9% 2.0%\" -> Q2 2026 = 2.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.8,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Credit Related Statistical Information, columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Net write-off rate (principal only) - consumer and small business (G)(H) 1.8% 2.0% 2.0% 2.1% 1.9% 1.9% 2.0%\" -> Q3 2026 = 1.8%; press release: \"The third-quarter net write-off rate was 1.8 percent, down from 1.9 percent a year ago.\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "card_fee_revenue_growth": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 18,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_financials/2025/q1/Q1-2025-Earnings-Tables.pdf",
+     "quote": "Consolidated Statements of Income, columns Q1'25 Q4'24 Q3'24 Q2'24 Q1'24 YOY%: \"Net card fees $ 2,333 $ 2,245 $ 2,170 $ 2,060 $ 1,974 18\" -> 18% (2,333/1,974 - 1 = 18.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 20,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_financials/2025/q2/Q2-2025-Earnings-Tables.pdf",
+     "quote": "Consolidated Statements of Income, columns Q2'25 Q1'25 Q4'24 Q3'24 Q2'24 YOY%: \"Net card fees 2,480 2,333 2,245 2,170 2,060 20\" -> 20% (2,480/2,060 - 1 = 20.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 18,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_financials/2025/q3/Q3-2025-Earnings-Tables.pdf",
+     "quote": "Consolidated Statements of Income, columns Q3'25 Q2'25 Q1'25 Q4'24 Q3'24 YOY% YTD'25 YTD'24 YOY%: \"Net card fees 2,551 2,480 2,333 2,245 2,170 18 7,364 6,204 19\" -> 18% (2,551/2,170 - 1 = 17.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 17,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Consolidated Statements of Income, columns Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 YOY% FY'25 FY'24 YOY%: \"Net card fees 2,629 2,551 2,480 2,333 2,245 17 9,993 8,449 18\" -> 17% (2,629/2,245 - 1 = 17.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 18,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q1/supplemental-info/Q1-2026-Earnings-Tables.pdf",
+     "quote": "Consolidated Statements of Income, columns Q1'26 Q4'25 Q3'25 Q2'25 Q1'25 YOY%: \"Net card fees 2,752 2,629 2,551 2,480 2,333 18\" -> 18% (2,752/2,333 - 1 = 18.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 15,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q2/supplemental-info/Q2-2026-Earnings-Tables.pdf",
+     "quote": "Consolidated Statements of Income, columns Q2'26 Q1'26 Q4'25 Q3'25 Q2'25 YOY% YTD'26 YTD'25 YOY%: \"Net card fees 2,862 2,752 2,629 2,551 2,480 15 5,614 4,813 17\" -> 15% (2,862/2,480 - 1 = 15.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 16,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Consolidated Statements of Income, columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YOY% YTD'26 YTD'25 YOY%: \"Net card fees 2,969 2,862 2,752 2,629 2,551 16 8,583 7,364 17\" -> 16% (2,969/2,551 - 1 = 16.4%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "proprietary_new_cards_acquired": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 3000000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 FY'25 FY'24: \"Proprietary new cards acquired 2.9 3.2 3.1 3.4 3.0 12.5 13.0\" -> Q4 2024 = 3.0 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 3400000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 FY'25 FY'24: \"Proprietary new cards acquired 2.9 3.2 3.1 3.4 3.0 12.5 13.0\" -> Q1 2025 = 3.4 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 3100000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2025/q4/supplemental-info/Q4-2025-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q4'25 Q3'25 Q2'25 Q1'25 Q4'24 FY'25 FY'24: \"Proprietary new cards acquired 2.9 3.2 3.1 3.4 3.0 12.5 13.0\" -> Q2 2025 = 3.1 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 3200000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Proprietary new cards acquired 3.1 3.0 3.1 2.9 3.2 9.2 9.6\" -> Q3 2025 = 3.2 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2900000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Proprietary new cards acquired 3.1 3.0 3.1 2.9 3.2 9.2 9.6\" -> Q4 2025 = 2.9 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3100000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Proprietary new cards acquired 3.1 3.0 3.1 2.9 3.2 9.2 9.6\" -> Q1 2026 = 3.1 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3000000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Proprietary new cards acquired 3.1 3.0 3.1 2.9 3.2 9.2 9.6\" -> Q2 2026 = 3.0 million",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3100000,
+     "source": "https://s26.q4cdn.com/747928648/files/doc_earnings/2026/q3/supplemental-info/Q3-2026-Earnings-Tables.pdf",
+     "quote": "Selected Card Related Statistical Information (millions), columns Q3'26 Q2'26 Q1'26 Q4'25 Q3'25 YTD'26 YTD'25: \"Proprietary new cards acquired 3.1 3.0 3.1 2.9 3.2 9.2 9.6\" -> Q3 2026 = 3.1 million",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "SHOP": {
+   "gmv_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 24,
+     "source": "https://www.newsfilecorp.com/release/229588/Shopify-Q3-2024-Revenue-Growth-Accelerates-to-26-Free-Cash-Flow-Margin-Expands-to-19",
+     "quote": "Constant Currency Analysis, three months ended September 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2023 as reported 56,205 | 1,714 | 486 | 1,228 | 901 | 122; 2024 as reported 69,715 | 2,162 | 610 | 1,552 | 1,118 | 283; Percentage change YoY 24% | 26% | 26% | 26% | 24% | 132%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 26,
+     "source": "https://www.sec.gov/Archives/edgar/data/1594805/000159480525000011/exhibit991pressreleaseq420.htm",
+     "quote": "Constant Currency Analysis, three months ended December 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2023 as reported 75,125 | 2,144 | 525 | 1,619 | 1,062 | 289; 2024 as reported 94,460 | 2,812 | 666 | 2,146 | 1,352 | 465; Percentage change YoY 26% | 31% | 27% | 33% | 27% | 61%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 23,
+     "source": "https://www.shopify.com/investors/press-releases/merchant-success-drives-shopifys-excellent-q1---delivering-strong-revenue-growth-and-profitability",
+     "quote": "Constant Currency Analysis, three months ended March 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 60,855 | 1,861 | 511 | 1,350 | 957 | 86; 2025 as reported 74,750 | 2,360 | 620 | 1,740 | 1,169 | 203; Percentage change YoY 23% | 27% | 21% | 29% | 22% | 136%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 31,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-another-exceptional-quarter-in-q2",
+     "quote": "Constant Currency Analysis, three months ended June 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 67,245 | 2,045 | 563 | 1,482 | 1,045 | 241; 2025 as reported 87,837 | 2,680 | 656 | 2,024 | 1,302 | 291; Percentage change YoY 31% | 31% | 17% | 37% | 25% | 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 32,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-beats-across-the-board-q3-shows-growth-efficiency-brand-wins",
+     "quote": "Constant Currency Analysis, three months ended September 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 69,715 | 2,162 | 610 | 1,552 | 1,118 | 283; 2025 as reported 92,013 | 2,844 | 699 | 2,145 | 1,391 | 343; Percentage change YoY 32% | 32% | 15% | 38% | 24% | 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 31,
+     "source": "https://www.newsfilecorp.com/release/283507/Shopifys-Standout-2025-The-Launchpad-for-a-New-Era-of-Commerce-in-2026",
+     "quote": "Constant Currency Analysis, three months ended December 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 94,460 | 2,812 | 666 | 2,146 | 1,352 | 465; 2025 as reported 123,841 | 3,672 | 777 | 2,895 | 1,693 | 631; Percentage change YoY 31% | 31% | 17% | 35% | 25% | 36%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 35,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-again-merchants-clear-100-billion-q1-gmv",
+     "quote": "Constant Currency Analysis, three months ended March 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2025 as reported 74,750 | 2,360 | 620 | 1,740 | 1,169 | 203; 2026 as reported 100,743 | 3,170 | 750 | 2,420 | 1,546 | 382; Percentage change YoY 35% | 34% | 21% | 39% | 32% | 88%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32,
+     "source": "https://shopifyinvestors.gcs-web.com/node/12761/html",
+     "quote": "Constant Currency Analysis, three months ended June 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2025 as reported 87,837 | 2,680 | 656 | 2,024 | 1,302 | 291; 2026 as reported 115,567 | 3,583 | 802 | 2,781 | 1,708 | 488; Percentage change YoY 32% | 34% | 22% | 37% | 31% | 68%",
+     "added": "2026-10-30"
+    }
+   ],
+   "subscription_solutions_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 26,
+     "source": "https://www.newsfilecorp.com/release/229588/Shopify-Q3-2024-Revenue-Growth-Accelerates-to-26-Free-Cash-Flow-Margin-Expands-to-19",
+     "quote": "Constant Currency Analysis, three months ended September 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2023 as reported 56,205 | 1,714 | 486 | 1,228 | 901 | 122; 2024 as reported 69,715 | 2,162 | 610 | 1,552 | 1,118 | 283; Percentage change YoY 24% | 26% | 26% | 26% | 24% | 132%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 27,
+     "source": "https://www.sec.gov/Archives/edgar/data/1594805/000159480525000011/exhibit991pressreleaseq420.htm",
+     "quote": "Constant Currency Analysis, three months ended December 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2023 as reported 75,125 | 2,144 | 525 | 1,619 | 1,062 | 289; 2024 as reported 94,460 | 2,812 | 666 | 2,146 | 1,352 | 465; Percentage change YoY 26% | 31% | 27% | 33% | 27% | 61%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 21,
+     "source": "https://www.shopify.com/investors/press-releases/merchant-success-drives-shopifys-excellent-q1---delivering-strong-revenue-growth-and-profitability",
+     "quote": "Constant Currency Analysis, three months ended March 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 60,855 | 1,861 | 511 | 1,350 | 957 | 86; 2025 as reported 74,750 | 2,360 | 620 | 1,740 | 1,169 | 203; Percentage change YoY 23% | 27% | 21% | 29% | 22% | 136%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-another-exceptional-quarter-in-q2",
+     "quote": "Constant Currency Analysis, three months ended June 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 67,245 | 2,045 | 563 | 1,482 | 1,045 | 241; 2025 as reported 87,837 | 2,680 | 656 | 2,024 | 1,302 | 291; Percentage change YoY 31% | 31% | 17% | 37% | 25% | 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 15,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-beats-across-the-board-q3-shows-growth-efficiency-brand-wins",
+     "quote": "Constant Currency Analysis, three months ended September 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 69,715 | 2,162 | 610 | 1,552 | 1,118 | 283; 2025 as reported 92,013 | 2,844 | 699 | 2,145 | 1,391 | 343; Percentage change YoY 32% | 32% | 15% | 38% | 24% | 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 17,
+     "source": "https://www.newsfilecorp.com/release/283507/Shopifys-Standout-2025-The-Launchpad-for-a-New-Era-of-Commerce-in-2026",
+     "quote": "Constant Currency Analysis, three months ended December 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 94,460 | 2,812 | 666 | 2,146 | 1,352 | 465; 2025 as reported 123,841 | 3,672 | 777 | 2,895 | 1,693 | 631; Percentage change YoY 31% | 31% | 17% | 35% | 25% | 36%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 21,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-again-merchants-clear-100-billion-q1-gmv",
+     "quote": "Constant Currency Analysis, three months ended March 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2025 as reported 74,750 | 2,360 | 620 | 1,740 | 1,169 | 203; 2026 as reported 100,743 | 3,170 | 750 | 2,420 | 1,546 | 382; Percentage change YoY 35% | 34% | 21% | 39% | 32% | 88%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 22,
+     "source": "https://shopifyinvestors.gcs-web.com/node/12761/html",
+     "quote": "Constant Currency Analysis, three months ended June 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2025 as reported 87,837 | 2,680 | 656 | 2,024 | 1,302 | 291; 2026 as reported 115,567 | 3,583 | 802 | 2,781 | 1,708 | 488; Percentage change YoY 32% | 34% | 22% | 37% | 31% | 68%",
+     "added": "2026-10-30"
+    }
+   ],
+   "merchant_solutions_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 26,
+     "source": "https://www.newsfilecorp.com/release/229588/Shopify-Q3-2024-Revenue-Growth-Accelerates-to-26-Free-Cash-Flow-Margin-Expands-to-19",
+     "quote": "Constant Currency Analysis, three months ended September 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2023 as reported 56,205 | 1,714 | 486 | 1,228 | 901 | 122; 2024 as reported 69,715 | 2,162 | 610 | 1,552 | 1,118 | 283; Percentage change YoY 24% | 26% | 26% | 26% | 24% | 132%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 33,
+     "source": "https://www.sec.gov/Archives/edgar/data/1594805/000159480525000011/exhibit991pressreleaseq420.htm",
+     "quote": "Constant Currency Analysis, three months ended December 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2023 as reported 75,125 | 2,144 | 525 | 1,619 | 1,062 | 289; 2024 as reported 94,460 | 2,812 | 666 | 2,146 | 1,352 | 465; Percentage change YoY 26% | 31% | 27% | 33% | 27% | 61%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 29,
+     "source": "https://www.shopify.com/investors/press-releases/merchant-success-drives-shopifys-excellent-q1---delivering-strong-revenue-growth-and-profitability",
+     "quote": "Constant Currency Analysis, three months ended March 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 60,855 | 1,861 | 511 | 1,350 | 957 | 86; 2025 as reported 74,750 | 2,360 | 620 | 1,740 | 1,169 | 203; Percentage change YoY 23% | 27% | 21% | 29% | 22% | 136%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 37,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-another-exceptional-quarter-in-q2",
+     "quote": "Constant Currency Analysis, three months ended June 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 67,245 | 2,045 | 563 | 1,482 | 1,045 | 241; 2025 as reported 87,837 | 2,680 | 656 | 2,024 | 1,302 | 291; Percentage change YoY 31% | 31% | 17% | 37% | 25% | 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 38,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-beats-across-the-board-q3-shows-growth-efficiency-brand-wins",
+     "quote": "Constant Currency Analysis, three months ended September 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 69,715 | 2,162 | 610 | 1,552 | 1,118 | 283; 2025 as reported 92,013 | 2,844 | 699 | 2,145 | 1,391 | 343; Percentage change YoY 32% | 32% | 15% | 38% | 24% | 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 35,
+     "source": "https://www.newsfilecorp.com/release/283507/Shopifys-Standout-2025-The-Launchpad-for-a-New-Era-of-Commerce-in-2026",
+     "quote": "Constant Currency Analysis, three months ended December 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2024 as reported 94,460 | 2,812 | 666 | 2,146 | 1,352 | 465; 2025 as reported 123,841 | 3,672 | 777 | 2,895 | 1,693 | 631; Percentage change YoY 31% | 31% | 17% | 35% | 25% | 36%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 39,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-again-merchants-clear-100-billion-q1-gmv",
+     "quote": "Constant Currency Analysis, three months ended March 31 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2025 as reported 74,750 | 2,360 | 620 | 1,740 | 1,169 | 203; 2026 as reported 100,743 | 3,170 | 750 | 2,420 | 1,546 | 382; Percentage change YoY 35% | 34% | 21% | 39% | 32% | 88%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 37,
+     "source": "https://shopifyinvestors.gcs-web.com/node/12761/html",
+     "quote": "Constant Currency Analysis, three months ended June 30 (columns: GMV | Revenue | Subscription solutions revenue | Merchant solutions revenue | Gross profit | Operating income): 2025 as reported 87,837 | 2,680 | 656 | 2,024 | 1,302 | 291; 2026 as reported 115,567 | 3,583 | 802 | 2,781 | 1,708 | 488; Percentage change YoY 32% | 34% | 22% | 37% | 31% | 68%",
+     "added": "2026-10-30"
+    }
+   ],
+   "free_cash_flow_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 19,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-beats-across-the-board-q3-shows-growth-efficiency-brand-wins",
+     "quote": "Free Cash Flow Reconciliation (three months ended September 30, 2025 | 2024): Free cash flow 507 | 421; Revenue 2,844 | 2,162; Free cash flow margin 18% | 19%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 22,
+     "source": "https://www.newsfilecorp.com/release/283507/Shopifys-Standout-2025-The-Launchpad-for-a-New-Era-of-Commerce-in-2026",
+     "quote": "Free Cash Flow Reconciliation (three months ended December 31, 2025 | 2024): Free cash flow 715 | 611; Revenue 3,672 | 2,812; Free cash flow margin 19% | 22%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 15,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-again-merchants-clear-100-billion-q1-gmv",
+     "quote": "Free Cash Flow Reconciliation (three months ended March 31, 2026 | 2025): Free cash flow 476 | 363; Revenue 3,170 | 2,360; Free cash flow margin 15% | 15%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 16,
+     "source": "https://shopifyinvestors.gcs-web.com/node/12761/html",
+     "quote": "Free Cash Flow Reconciliation (three months ended June 30, 2026 | 2025): Free cash flow 654 | 422; Revenue 3,583 | 2,680; Free cash flow margin 18% | 16%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 18,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-beats-across-the-board-q3-shows-growth-efficiency-brand-wins",
+     "quote": "Free Cash Flow Reconciliation (three months ended September 30, 2025 | 2024): Free cash flow 507 | 421; Revenue 2,844 | 2,162; Free cash flow margin 18% | 19%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 19,
+     "source": "https://www.newsfilecorp.com/release/283507/Shopifys-Standout-2025-The-Launchpad-for-a-New-Era-of-Commerce-in-2026",
+     "quote": "Free Cash Flow Reconciliation (three months ended December 31, 2025 | 2024): Free cash flow 715 | 611; Revenue 3,672 | 2,812; Free cash flow margin 19% | 22%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 15,
+     "source": "https://www.shopify.com/investors/press-releases/shopify-delivers-again-merchants-clear-100-billion-q1-gmv",
+     "quote": "Shopify achieved 34% revenue growth and 15% free cash flow margins. / Free cash flow margin 15% | 15% (three months ended March 31, 2026 | 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 18,
+     "source": "https://shopifyinvestors.gcs-web.com/node/12761/html",
+     "quote": "Free Cash Flow Reconciliation (three months ended June 30, 2026 | 2025): Free cash flow 654 | 422; Revenue 3,583 | 2,680; Free cash flow margin 18% | 16%",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_payments_volume_gmv_penetration": [
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 64,
+     "source": "https://www.investing.com/news/company-news/shopify-q2-2026-slides-ai-commerce-drives-32-gmv-growth-93CH-4838120",
+     "quote": "Investing.com summary of Shopify's Q2 2026 earnings slides (Aug 5, 2026): \"Shopify Payments continued its expansion, processing $78 billion in gross payments volume during Q2 2026\" ... reaching 68% penetration of total GMV, up from 64% a year earlier.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 65,
+     "source": "https://fool.com/earnings/call-transcripts/2025/11/27/shopify-shop-q3-2025-earnings-call-transcript",
+     "quote": "Q3 2025 earnings call (Harley Finkelstein): \"Payments continues to lead the way for driving growth, hitting 65% penetration of GMV in Q3.\" (CFO Jeff Hoffmeister: \"...increased penetration of Shopify Payments, which reached 65% for the quarter.\")",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 67,
+     "source": "https://www.investing.com/news/company-news/shopify-q1-2026-slides-revenue-surges-34-stock-falls-on-concerns-93CH-4659839",
+     "quote": "Investing.com summary of Shopify's Q1 2026 earnings slides: \"Gross Payments Volume reached $67 billion in Q1 2026, representing 67% penetration of total GMV—up from 60% in Q1 2024.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 68,
+     "source": "https://www.investing.com/news/company-news/shopify-q2-2026-slides-ai-commerce-drives-32-gmv-growth-93CH-4838120",
+     "quote": "Investing.com summary of Shopify's Q2 2026 earnings slides (Aug 5, 2026): \"Shopify Payments continued its expansion, processing $78 billion in gross payments volume during Q2 2026\" ... reaching 68% penetration of total GMV, up from 64% a year earlier.",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "PYPL": {
+   "total_payment_volume_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000021/pypl4q-25earningsrelease.htm",
+     "quote": "Supplemental Operating Data, three months ended Dec 31, 2024: TPV(4) $437,836; Current quarter vs prior year quarter 7%; (FXN) 7% (reported basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000065/pypl1q-26earningsrelease.htm",
+     "quote": "Supplemental Operating Data, three months ended Mar 31, 2025: TPV(4) $417,208; Current quarter vs prior year quarter 3%; (FXN) 4% (reported basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000080/pypl2q-26earningsrelease.htm",
+     "quote": "Supplemental Operating Data, three months ended Jun 30, 2025: TPV(4) $443,547; Current quarter vs prior year quarter 6%; (FXN) 5% (reported basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000086/pypl3q-26earningsrelease.htm",
+     "quote": "Supplemental Operating Data, three months ended Sep 30, 2025: TPV(4) $458,088; Current quarter vs prior year quarter 8%; (FXN) 7% (reported basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000021/pypl4q-25earningsrelease.htm",
+     "quote": "4Q'25 total payment volume (\"TPV\") increased 9% (6% FXN) to $475.1 billion (reported basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000065/pypl1q-26earningsrelease.htm",
+     "quote": "Total payment volume (\"TPV\") increased 11% to $464.0 billion; 8% FXN. (reported basis; 8% FXN)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000080/pypl2q-26earningsrelease.htm",
+     "quote": "Total payment volume (\"TPV\") increased 10% to $486.4 billion; 9% FXN. (reported basis; 9% FXN)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000086/pypl3q-26earningsrelease.htm",
+     "quote": "Total payment volume (\"TPV\") increased 6% to $487.1 billion; 7% FXN. (reported basis; 7% FXN)",
+     "added": "2026-10-30"
+    }
+   ],
+   "transaction_margin_dollars_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391725000017/pypl4q-24earningsrelease.htm",
+     "quote": "Transaction margin dollars increased 7% to $3.9 billion. (4Q'24, total TM$)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391725000062/pypl1q-25earningsrelease.htm",
+     "quote": "Transaction margin dollars (\"TM $\") increased 7% to $3.7 billion; TM $ excluding interest on customer balances increased 7% to $3.4 billion. (total TM$)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391725000158/pypl2q-25earningsrelease.htm",
+     "quote": "Transaction margin dollars (\"TM $\") increased 7% to $3.8 billion; TM $ excluding interest on customer balances increased 8% to $3.5 billion (total TM$)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391725000194/pypl3q-25earningsrelease.htm",
+     "quote": "Transaction margin dollars (\"TM$\") increased 6% to $3.9 billion; TM$ excluding interest on customer balances increased 7% to $3.6 billion. (total TM$)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000021/pypl4q-25earningsrelease.htm",
+     "quote": "Transaction margin dollars (\"TM$\") increased 3% to $4.0 billion; TM$ excluding interest on customer balances increased 4% to $3.7 billion (total TM$)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000065/pypl1q-26earningsrelease.htm",
+     "quote": "Transaction margin dollars (\"TM$\") increased 3% to $3.8 billion; TM$ excluding interest on customer balances increased 3% to $3.5 billion. (total TM$)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000080/pypl2q-26earningsrelease.htm",
+     "quote": "Transaction margin dollars (\"TM$\") increased 1% to $3.9 billion; TM$ excluding interest on customer balances increased 3% to $3.6 billion. (total TM$)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000086/pypl3q-26earningsrelease.htm",
+     "quote": "Transaction margin dollars (\"TM$\") increased 2% to $4.0 billion; TM$ excluding interest on customer balances increased 3% to $3.7 billion. (total TM$)",
+     "added": "2026-10-30"
+    }
+   ],
+   "active_accounts": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 434000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000021/pypl4q-25earningsrelease.htm",
+     "quote": "Supplemental Operating Data: Active accounts(1) 439 | 438 | 438 | 436 | 434 (columns Dec 31, 2025 ... Dec 31, 2024; in millions)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 436000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000065/pypl1q-26earningsrelease.htm",
+     "quote": "Supplemental Operating Data: Active accounts(1) 439 | 439 | 438 | 438 | 436 (columns Mar 31, 2026 ... Mar 31, 2025; in millions)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 438000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000080/pypl2q-26earningsrelease.htm",
+     "quote": "Supplemental Operating Data: Active accounts(1) 439 | 439 | 439 | 438 | 438 (columns Jun 30, 2026 ... Jun 30, 2025; in millions)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 438000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000086/pypl3q-26earningsrelease.htm",
+     "quote": "Supplemental Operating Data: Active accounts(1) 440 | 439 | 439 | 439 | 438 (columns Sep 30, 2026 ... Sep 30, 2025; in millions)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 439000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000021/pypl4q-25earningsrelease.htm",
+     "quote": "Active accounts increased 1.1%, or by 4.7 million, to 439 million.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 439000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000065/pypl1q-26earningsrelease.htm",
+     "quote": "Active accounts increased 1% to 439 million.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 439000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000080/pypl2q-26earningsrelease.htm",
+     "quote": "Active accounts increased 0.3% to 439 million.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 440000000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000086/pypl3q-26earningsrelease.htm",
+     "quote": "Active accounts increased 0.6% to 440 million.",
+     "added": "2026-10-30"
+    }
+   ],
+   "branded_checkout_volume_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 6,
+     "source": "https://s205.q4cdn.com/875401827/files/doc_financials/2024/q4/PYPL-Holdings_Q4-2024-Earnings-Call-Transcript.pdf",
+     "quote": "Global branded checkout volumes increased 6% on a currency-neutral basis in the fourth quarter. (Q4 2024 earnings call; global branded checkout, FX-neutral)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 5,
+     "source": "https://s205.q4cdn.com/875401827/files/doc_financials/2025/q2/CORRECTED-TRANSCRIPT_-PayPal-Holdings-Inc-PYPL-US-Q2-2025-Earnings-Call-29-July-2025-8_00-AM-ET.pdf",
+     "quote": "In the second quarter, online branded checkout volumes grew 5% on a currency-neutral basis. (Q2 2025 earnings call, FX-neutral)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 5,
+     "source": "https://s205.q4cdn.com/875401827/files/doc_financials/2025/q3/CORRECTED-TRANSCRIPT_-PayPal-Holdings-Inc-PYPL-US-Q3-2025-Earnings-Call-28-October-2025-8_00-AM-ET.pdf",
+     "quote": "On an online-only branded checkout basis, volume grew 5% on a currency-neutral basis. (Q3 2025 earnings call, FX-neutral)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1,
+     "source": "https://s205.q4cdn.com/875401827/files/doc_financials/2025/q4/IR-Newsletter-PYPL-4Q-25-Earnings.pdf",
+     "quote": "At the same time, online branded checkout performance was below our expectations, with TPV growing 1% FXN in 4Q. (FX-neutral)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2,
+     "source": "https://s205.q4cdn.com/875401827/files/doc_financials/2026/q1/PYPL-1Q-26-Earnings-IR-Newsletter.pdf",
+     "quote": "Branded checkout saw TPV growth of 2% on a currency-neutral basis, a slight improvement from the fourth quarter. (FX-neutral)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2,
+     "source": "https://s205.q4cdn.com/875401827/files/doc_financials/2026/q2/PYPL-2Q-26-Earnings-IR-Newsletter.pdf",
+     "quote": "Branded checkout TPV continued to stabilize, growing 2% on a currency-neutral basis, consistent with last quarter. (FX-neutral)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1,
+     "source": "https://s205.q4cdn.com/875401827/files/content_files/PYPL-3Q-26-Earnings-IR-Newsletter.pdf",
+     "quote": "In the third quarter, branded checkout TPV growth was 1% FXN, despite tariff-related pressure in Europe. (FX-neutral)",
+     "added": "2026-10-30"
+    }
+   ],
+   "venmo_revenue_growth": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 20,
+     "source": "https://s205.q4cdn.com/875401827/files/doc_financials/2025/q1/PYPL-Holdings_Q1-2025-Earnings-Call-Transcript.pdf",
+     "quote": "When you add it all up, the Venmo business grew revenue by 20%. (Q1 2025 earnings call)",
      "added": "2026-10-30"
     }
    ]

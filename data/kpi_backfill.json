@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "APA",
-  "MSFT",
-  "AXP",
-  "SHOP",
-  "PYPL",
   "XYZ",
   "ADYEY",
   "FISV",
@@ -51,10 +46,15 @@
   "CTAS",
   "ADP",
   "AME",
-  "HWM"
+  "HWM",
+  "APA",
+  "MSFT",
+  "AXP",
+  "SHOP",
+  "PYPL"
  ],
  "notes": {
-  "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history.",
+  "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
   "GOOGL": "Cloud backlog not stated for Q4 2024, Q1 2025. Q1 2026 and Q2 2025 backlog from third-party call transcripts.",
   "AMZN": "AWS backlog not stated Q4 2024; backlog from 10-Qs (Q1-Q2 2026) or call transcripts (others). Capex/OCF uses quarterly figures.",
   "V": "Q1-Q4 FY26 filled. FY25 growth rates (payments volume, cross-border, processed transactions, VAS) not pulled; VAS growth is constant-dollar from calls only (Q4 FY26 from third-party transcript).",
@@ -84,7 +84,7 @@
   "TPR": "Q1 FY25-Q4 FY26 filled (Q1 FY27 due 5 Nov 2026). Gross margin GAAP; Q4 FY26 83.3% includes a one-off benefit (non-GAAP 78.1%). Kate Spade growth = reported basis (constant currency in quote). FY25 inventory excludes Stuart Weitzman held for sale (Q3-Q4 FY25), so FY25 points and FY26 y/y not fully comparable. Some quotes are table values from fetch summaries.",
   "MNST": "Q3 2024-Q2 2026 (Q3 2026 due early Nov). Currency-adjusted growth and price/volume text for last 4 quarters only (year-earlier not stated in those releases). Price impact never quantified; case growth in text computed from energy-drink 192-oz case tables. International share is 'approximately'.",
   "MKC": "Q4 FY24-Q3 FY26 (adj. GM 8 quarters; other KPIs last 4 only: releases don't restate prior-year growth). Leverage from calls (standalone, pre-deal): Q4 FY25 'below 2.7x' recorded as 2.7; Q1 FY26 actual not found (paywalled call; deal release's '4.0x or less at close' is pro-forma, not recorded); Q2-Q3 FY26 from third-party transcripts. Unilever Foods RMT announced 31 Mar 2026, close by mid-2027. Q2 FY26 adj. GM includes ~140bp IEEPA refund. Reported growth includes McCormick de Mexico consolidation.",
-  "GRMN": "Q4 2024-Q3 2026 filled (Q3 2026 reported 28 Oct 2026). Periods are 52/53-week fiscal quarter ends. Q4 2025 Outdoor shown as '\u2014%' in release, recorded as 0%. Year-earlier inventory from prior-year releases (URL in quote). Q4 2025 release from garmin.com PDF.",
+  "GRMN": "Q4 2024-Q3 2026 filled (Q3 2026 reported 28 Oct 2026). Periods are 52/53-week fiscal quarter ends. Q4 2025 Outdoor shown as '—%' in release, recorded as 0%. Year-earlier inventory from prior-year releases (URL in quote). Q4 2025 release from garmin.com PDF.",
   "INCY": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Q3 2026 R&D/revenue 115% reflects ~$1.23B Vega Therapeutics acquired IPR&D charge; Q2 2026 Opzelura +173% includes $246M one-time non-cash accrual reversal. Jakafi patent expiry (mid/late 2028) only from FY2025 10-K (one point; not restated in 2026 10-Qs/releases checked).",
   "RMD": "Q2 FY25-Q1 FY27 filled (Q1 FY27 reported 29 Oct 2026). Growth = reported-currency % change as published (whole %). RCS Q1 FY27 -7% reported due to MatrixCare divestiture (+5% core cc). GAAP gross margin; Q1 FY27 on reclassified basis (Q1 FY26 recast 61.2% vs 61.5% original kept); Q4 FY26 GM hit by $42M Astral field safety notification.",
   "DXCM": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Growth = worldwide organic y/y; U.S. organic never disclosed (U.S. reported growth in quote). GM = GAAP. Type-2 adoption is qualitative (no new-patient counts). Recall/warning-letter status only Q4 2025 (10-K) and Q1 2026 (10-Q); Q2/Q3 2026 10-Q legal notes not retrievable; no G7 recall disclosed in text reached.",
@@ -94,6 +94,10 @@
   "CTAS": "Q2 FY25-Q1 FY27 filled from releases (Q1 FY27 via finviz reprint of release). Uniform Rental & Facility Services growth = total segment revenue growth computed from segment revenue (no segment organic rate in releases). GAAP gross and operating margin.",
   "ADP": "Q2 FY25-Q1 FY27 filled: U.S. pays per control growth, interest on client funds, average PEO worksite employees. ES new business bookings growth not disclosed quarterly (FY only: FY26 +6% to $2.2B). Client retention disclosed only for the fiscal year (92.1% FY25 and FY26), not quarterly.",
   "AME": "Q3 2025-Q2 2026 filled (Q3 2026 due 3 Nov 2026); adjusted operating margin also Q3 2024-Q2 2025. Organic growth, orders and backlog are call-only (third-party transcripts); year-earlier values not stated. Book-to-bill Q3 2025 and Q1 2026 computed from orders/sales (Q1 2026 orders rounded $2.2B). Adjusted margin = adjusted operating income/sales (excludes the 'core' margin that also strips acquisition dilution).",
-  "HWM": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Defense aerospace growth Q4 2024 and Q1 2025 described only in words, omitted. Engine Products growth as stated (2026 releases restate prior-year segment sales). FCF conversion = FCF / adjusted net income excl. special items, computed per quarter."
+  "HWM": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Defense aerospace growth Q4 2024 and Q1 2025 described only in words, omitted. Engine Products growth as stated (2026 releases restate prior-year segment sales). FCF conversion = FCF / adjusted net income excl. special items, computed per quarter.",
+  "APA": "Q3 2024-Q2 2026 filled (Q3 2026 due 5 Nov 2026). Production growth = reported (not adjusted) total BOE/d y/y, computed from stated levels, Q3 2025-Q2 2026 only. Capex/OCF = upstream capital investment / net cash from operations (Q1 2026 >100% on weak OCF). Egypt receivables not disclosed in releases or checked 10-Q text (text gives Egypt gross oil output only). FCF at $60 oil not disclosed (model-only KPI).",
+  "AXP": "Q4 2024-Q3 2026 from AXP earnings tables (Q3 2026 reported Oct 2026). Billed business = FX-adjusted network volumes growth line. Write-off rate = consolidated consumer + small business principal-only line, not total company. From Q1 2026 AXP reports loans and receivables combined as 'Card balances' (Q3 2026 +7%), so loan growth stops at Q4 2025; Q4 2024 loan and card-fee growth not retrieved. New cards rounded to 0.1M.",
+  "SHOP": "Q3 2024-Q2 2026 filled (Q3 2026 due 3 Nov 2026). GMV, segment growth and FCF margin = as-reported y/y from releases. GPV share of GMV not in releases: Q3 2025 from call transcript, Q2 2025/Q1 2026/Q2 2026 from third-party summaries of earnings slides; Q3 2024-Q1 2025 and Q4 2025 missing. From Apr 2026 merchant cash advance flows moved from operating to investing cash flow, affecting FCF.",
+  "PYPL": "Q4 2024-Q3 2026 filled (Q3 2026 reported 27 Oct 2026). TPV and TM$ growth reported basis (TM$ total, not ex-interest). Branded checkout growth is FX-neutral from calls/IR newsletters; wording varies (online / unqualified / global Q4 2024); Q1 2025 only 'more than 4%', skipped. Venmo revenue growth quarterly only Q1 2025 (20%); other quarters give only Venmo TPV or full-year figures (not disclosed)."
  }
 }
