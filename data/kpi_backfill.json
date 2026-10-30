@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "INCY",
-  "RMD",
-  "DXCM",
-  "IDXX",
-  "ALLE",
   "FIX",
   "CTAS",
   "ADP",
@@ -44,7 +39,12 @@
   "TPR",
   "MNST",
   "MKC",
-  "GRMN"
+  "GRMN",
+  "INCY",
+  "RMD",
+  "DXCM",
+  "IDXX",
+  "ALLE"
  ],
  "notes": {
   "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history.",
@@ -77,6 +77,11 @@
   "TPR": "Q1 FY25-Q4 FY26 filled (Q1 FY27 due 5 Nov 2026). Gross margin GAAP; Q4 FY26 83.3% includes a one-off benefit (non-GAAP 78.1%). Kate Spade growth = reported basis (constant currency in quote). FY25 inventory excludes Stuart Weitzman held for sale (Q3-Q4 FY25), so FY25 points and FY26 y/y not fully comparable. Some quotes are table values from fetch summaries.",
   "MNST": "Q3 2024-Q2 2026 (Q3 2026 due early Nov). Currency-adjusted growth and price/volume text for last 4 quarters only (year-earlier not stated in those releases). Price impact never quantified; case growth in text computed from energy-drink 192-oz case tables. International share is 'approximately'.",
   "MKC": "Q4 FY24-Q3 FY26 (adj. GM 8 quarters; other KPIs last 4 only: releases don't restate prior-year growth). Leverage from calls (standalone, pre-deal): Q4 FY25 'below 2.7x' recorded as 2.7; Q1 FY26 actual not found (paywalled call; deal release's '4.0x or less at close' is pro-forma, not recorded); Q2-Q3 FY26 from third-party transcripts. Unilever Foods RMT announced 31 Mar 2026, close by mid-2027. Q2 FY26 adj. GM includes ~140bp IEEPA refund. Reported growth includes McCormick de Mexico consolidation.",
-  "GRMN": "Q4 2024-Q3 2026 filled (Q3 2026 reported 28 Oct 2026). Periods are 52/53-week fiscal quarter ends. Q4 2025 Outdoor shown as '—%' in release, recorded as 0%. Year-earlier inventory from prior-year releases (URL in quote). Q4 2025 release from garmin.com PDF."
+  "GRMN": "Q4 2024-Q3 2026 filled (Q3 2026 reported 28 Oct 2026). Periods are 52/53-week fiscal quarter ends. Q4 2025 Outdoor shown as '—%' in release, recorded as 0%. Year-earlier inventory from prior-year releases (URL in quote). Q4 2025 release from garmin.com PDF.",
+  "INCY": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Q3 2026 R&D/revenue 115% reflects ~$1.23B Vega Therapeutics acquired IPR&D charge; Q2 2026 Opzelura +173% includes $246M one-time non-cash accrual reversal. Jakafi patent expiry (mid/late 2028) only from FY2025 10-K (one point; not restated in 2026 10-Qs/releases checked).",
+  "RMD": "Q2 FY25-Q1 FY27 filled (Q1 FY27 reported 29 Oct 2026). Growth = reported-currency % change as published (whole %). RCS Q1 FY27 -7% reported due to MatrixCare divestiture (+5% core cc). GAAP gross margin; Q1 FY27 on reclassified basis (Q1 FY26 recast 61.2% vs 61.5% original kept); Q4 FY26 GM hit by $42M Astral field safety notification.",
+  "DXCM": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Growth = worldwide organic y/y; U.S. organic never disclosed (U.S. reported growth in quote). GM = GAAP. Type-2 adoption is qualitative (no new-patient counts). Recall/warning-letter status only Q4 2025 (10-K) and Q1 2026 (10-Q); Q2/Q3 2026 10-Q legal notes not retrievable; no G7 recall disclosed in text reached.",
+  "IDXX": "Q3 2024-Q2 2026 filled; Q3 2026 not yet reported (due 2 Nov 2026). Organic growth and GAAP operating margin from releases; premium placements and US clinical visits from calls/prepared remarks (some third-party transcripts; placement wording varies CAG premium vs total premium). Q4 2024 visits only 'nearly 3%' decline, omitted.",
+  "ALLE": "Q4 2024-Q3 2026 filled (Q3 2026 reported Oct 2026). Organic growth = total company (Americas/International in quote); adjusted operating margin from release schedules. Price/volume described only in words (no % split). Electronics share of revenue not disclosed (only qualitative electronics growth on calls)."
  }
 }

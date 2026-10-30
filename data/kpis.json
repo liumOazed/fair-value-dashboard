@@ -7964,6 +7964,1160 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "INCY": {
+   "non_jakafi_share_of_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 34.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000006/incy-q42025xexx991.htm",
+     "quote": "Total revenues 1,178,698 ($K); Jakafi net sales 773,114 ($K) ((1178698-773114)/1178698 = 34.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 32.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000023/incy-q12026xexx991.htm",
+     "quote": "Total revenues 1,052,898 ($K); Jakafi net sales 709,412 ($K) ((1052898-709412)/1052898 = 32.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 37.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000053/incy-q22026xexx991.htm",
+     "quote": "Total revenues 1,215,529 ($K); Jakafi net sales 763,788 ($K) ((1215529-763788)/1215529 = 37.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 42.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+     "quote": "Total revenues 1,365,980 ($K); Jakafi net sales 791,071 ($K) ((1365980-791071)/1365980 = 42.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 45.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000006/incy-q42025xexx991.htm",
+     "quote": "Total revenues 1,506,835 ($K); Jakafi net sales 828,244 ($K) ((1506835-828244)/1506835 = 45.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 40.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000023/incy-q12026xexx991.htm",
+     "quote": "Total revenues 1,272,676 ($K); Jakafi net sales 757,755 ($K) ((1272676-757755)/1272676 = 40.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 51.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000053/incy-q22026xexx991.htm",
+     "quote": "Total revenues 1,674,039 ($K); Jakafi net sales 816,659 ($K) ((1674039-816659)/1674039 = 51.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 46.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+     "quote": "Total revenues 1,557,204 ($K); Jakafi net sales 826,501 ($K) ((1557204-826501)/1557204 = 46.9%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "r_d_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 39.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000006/incy-q42025xexx991.htm",
+     "quote": "Research and development 466,034 ($K); Total revenues 1,178,698 ($K) (466034/1178698 = 39.5%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 41.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000023/incy-q12026xexx991.htm",
+     "quote": "Research and development 437,279 ($K); Total revenues 1,052,898 ($K) (437279/1052898 = 41.5%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 40.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000053/incy-q22026xexx991.htm",
+     "quote": "Research and development 494,917 ($K); Total revenues 1,215,529 ($K) (494917/1215529 = 40.7%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 37.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+     "quote": "Research and development 506,584 ($K); Total revenues 1,365,980 ($K) (506584/1365980 = 37.1%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 40.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000006/incy-q42025xexx991.htm",
+     "quote": "Research and development 611,372 ($K); Total revenues 1,506,835 ($K) (611372/1506835 = 40.6%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 40.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000023/incy-q12026xexx991.htm",
+     "quote": "Research and development 515,903 ($K); Total revenues 1,272,676 ($K) (515903/1272676 = 40.5%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 30.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000053/incy-q22026xexx991.htm",
+     "quote": "Research and development 516,950 ($K); Total revenues 1,674,039 ($K) (516950/1674039 = 30.9%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 115.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+     "quote": "Research and development 1,791,656 ($K); Total revenues 1,557,204 ($K) (1791656/1557204 = 115.1%). Q3 2026 R&D includes ~$1.23B acquired IPR&D charge for Vega Therapeutics acquisition upfront payment.",
+     "added": "2026-10-30"
+    }
+   ],
+   "jakafi_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 11.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000162828025004514/incy-q42024xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $773,114 | $695,127 | 11% | 11%\" (773114/695127-1 = 11.2%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 24.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916925000053/incy-q12025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $709,412 | $571,839 | 24% | NA\" (709412/571839-1 = 24.1%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 8.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916925000100/incy-q22025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $763,788 | $705,973 | 8% | NA\" (763788/705973-1 = 8.2%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 6.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916925000115/incy-q32025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $791,071 | $741,181 | 7% | NA\" (791071/741181-1 = 6.7%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000006/incy-q42025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $828,244 | $773,114 | 7%\" (828244/773114-1 = 7.1%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000023/incy-q12026xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $757,755 | $709,412 | 7% | NA\" (757755/709412-1 = 6.8%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000053/incy-q22026xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $816,659 | $763,788 | 7% | NA\" (816659/763788-1 = 6.9%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Jakafi | $826,501 | $791,071 | 4% | NA\" (826501/791071-1 = 4.5%).",
+     "added": "2026-10-30"
+    }
+   ],
+   "opzelura_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 47.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000162828025004514/incy-q42024xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 161,602 | 109,243 | 48% | 48%\" (161602/109243-1 = 47.9%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 38.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916925000053/incy-q12025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 118,705 | 85,724 | 38% | 39%\" (118705/85724-1 = 38.5%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 35.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916925000100/incy-q22025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 164,499 | 121,695 | 35% | 34%\" (164499/121695-1 = 35.2%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 35.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916925000115/incy-q32025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 187,968 | 139,272 | 35% | 33%\" (187968/139272-1 = 35.0%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 28.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000006/incy-q42025xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 207,283 | 161,602 | 28%\" (207283/161602-1 = 28.3%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 20.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000023/incy-q12026xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 143,015 | 118,705 | 20% | 18%\" (143015/118705-1 = 20.5%).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 173.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000053/incy-q22026xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 449,736 | 164,499 | 173% | 173%\" (449736/164499-1 = 173.4%). Release: 'The increase was driven in part by a one-time, non-cash benefit of $246 million' (reversal of accruals).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 35.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+     "quote": "Revenue Details ($K, cur | prior-yr | % chg as reported): \"Opzelura | 254,880 | 187,968 | 36% | 36%\" (254880/187968-1 = 35.6%).",
+     "added": "2026-10-30"
+    }
+   ],
+   "jakafi_patent_expiry_timing": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "Composition-of-matter/use patents on ruxolitinib and its salt expire mid- and late-2028 (incl. extensions); Estimated Minimum Market Exclusivity Date 2028 in US, EU, Japan",
+     "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000010/incy-20251231.htm",
+     "quote": "FY2025 10-K: \"We hold patents that cover the composition of matter and use of ruxolitinib and its salt. These patents, including applicable extensions, currently expire in mid and late 2028, respectively.\" Footnote: ruxolitinib phosphate salt patents have \"anticipated expiration dates of late-2028 in the US and mid-2028 in the EU and Japan.\" Table: Estimated Minimum Market Exclusivity Date for JAKAFI/JAKAVI 2028 (US, EU, Japan).",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "RMD": {
+   "device_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 10.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525017218/d888970dex991.htm",
+     "quote": "Revenue by product, three months ended Dec 31: Total Devices $669.3 (2024) vs $606.0 (2023), % change 10%, constant currency 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 6.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525091357/d830100dex991.htm",
+     "quote": "Three months ended Mar 31: Total Devices $676.2 (2025) vs $638.2 (2024), % change 6%, constant currency 7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525170512/d926247dex991.htm",
+     "quote": "Three months ended Jun 30: Total Devices $693.9 (2025) vs $635.1 (2024), % change 9%, constant currency 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525258519/d92301dex991.htm",
+     "quote": "Three months ended Sep 30: Total Devices $680.3 (2025) vs $625.8 (2024), % change 9%, constant currency 7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312526029326/d80310dex991.htm",
+     "quote": "Three months ended Dec 31: Total Devices $726.2 (2025) vs $669.3 (2024), % change 9%, constant currency 7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526197192/d146862dex991.htm",
+     "quote": "Three months ended Mar 31: Total Devices $735.7 (2026) vs $676.2 (2025), % change 9%, constant currency 6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 8.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526337962/d158732dex991.htm",
+     "quote": "Three months ended Jun 30: Total Devices $750 (2026) vs $694 (2025), % change 8%, constant currency 7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526437783/d170451dex991.htm",
+     "quote": "Three months ended Sep 30: Total Sleep Devices $716 (2026) vs $655 (2025), % change 9%, core constant currency 9% (new 'Sleep Devices' presentation; prior-year recast)",
+     "added": "2026-10-30"
+    }
+   ],
+   "masks_accessories_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525017218/d888970dex991.htm",
+     "quote": "Three months ended Dec 31: Total Masks and other $456.3 (2024) vs $411.9 (2023), % change 11%, constant currency 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525091357/d830100dex991.htm",
+     "quote": "Three months ended Mar 31: Total Masks and other $454.4 (2025) vs $410.8 (2024), % change 11%, constant currency 12%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 12.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525170512/d926247dex991.htm",
+     "quote": "Three months ended Jun 30: Total Masks and other $487.1 (2025) vs $436.2 (2024), % change 12%, constant currency 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525258519/d92301dex991.htm",
+     "quote": "Three months ended Sep 30: Total Masks and other $489.1 (2025) vs $442.0 (2024), % change 11%, constant currency 10%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 16.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312526029326/d80310dex991.htm",
+     "quote": "Three months ended Dec 31: Total Masks and other $529.7 (2025) vs $456.3 (2024), % change 16%, constant currency 14%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 15.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526197192/d146862dex991.htm",
+     "quote": "Three months ended Mar 31: Total Masks and other $524.8 (2026) vs $454.4 (2025), % change 15%, constant currency 12%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526337962/d158732dex991.htm",
+     "quote": "Three months ended Jun 30: Total Masks and other $542 (2026) vs $487 (2025), % change 11%, constant currency 10%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 10.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526437783/d170451dex991.htm",
+     "quote": "Three months ended Sep 30: Total Masks and other $540 (2026) vs $489 (2025), % change 10%, core constant currency 10%",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 58.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312526029326/d80310dex991.htm",
+     "quote": "Gross margin (GAAP), three months ended Dec 31: 61.8% (2025) vs 58.6% (2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 59.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526197192/d146862dex991.htm",
+     "quote": "GAAP gross margin, three months ended Mar 31: 62.2% (2026) vs 59.3% (2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 60.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526337962/d158732dex991.htm",
+     "quote": "GAAP gross margin, three months ended Jun 30: 58.8% (2026) vs 60.8% (2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 61.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525258519/d92301dex991.htm",
+     "quote": "GAAP gross margin 61.5% (Sep 30, 2025) vs 58.6% (Sep 30, 2024); 'Gross margin increased by 290 basis points'. Note: Q1 FY27 release recasts Q1 FY26 to 61.2% after reclassifying restructuring/amortization presentation.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 61.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312526029326/d80310dex991.htm",
+     "quote": "Gross margin up 320 bps to 61.8%; non-GAAP gross margin up 310 bps to 62.3%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 62.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526197192/d146862dex991.htm",
+     "quote": "GAAP gross margin up 290 bps to 62.2%; non-GAAP gross margin up 290 bps to 62.8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 58.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526337962/d158732dex991.htm",
+     "quote": "GAAP gross margin of 58.8%. ... The primary difference is our $42 million Astral field safety notification expenses. (Gross profit 861,216 / net revenue 1,463,647 = 58.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 61.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526437783/d170451dex991.htm",
+     "quote": "Healthy profitability: GAAP gross margin of 61.5%. (table: 61.5% vs 61.2% prior year as recast, +30 bps)",
+     "added": "2026-10-30"
+    }
+   ],
+   "software_saas_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 8.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525017218/d888970dex991.htm",
+     "quote": "Three months ended Dec 31: Residential Care Software $156.5 (2024) vs $144.9 (2023), % change 8%, constant currency 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525091357/d830100dex991.htm",
+     "quote": "Three months ended Mar 31: Residential Care Software $161.2 (2025) vs $148.0 (2024), % change 9%, constant currency 10%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 10.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525170512/d926247dex991.htm",
+     "quote": "Three months ended Jun 30: Residential Care Software $167.0 (2025) vs $151.9 (2024), % change 10%, constant currency 9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 6.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312525258519/d92301dex991.htm",
+     "quote": "Three months ended Sep 30: Residential Care Software $166.1 (2025) vs $156.8 (2024), % change 6%, constant currency 5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 7.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943819/000119312526029326/d80310dex991.htm",
+     "quote": "Three months ended Dec 31: Residential Care Software $166.9 (2025) vs $156.5 (2024), % change 7%, constant currency 5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 6.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526197192/d146862dex991.htm",
+     "quote": "Three months ended Mar 31: Residential Care Software $170.9 (2026) vs $161.2 (2025), % change 6%, constant currency 4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 3.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526337962/d158732dex991.htm",
+     "quote": "Three months ended Jun 30: Residential Care Software $172 (2026) vs $167 (2025), % change 3, constant currency 2",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": -7.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943819/000119312526437783/d170451dex991.htm",
+     "quote": "Three months ended Sep 30: Residential Care Software $155 (2026) vs $166 (2025), % change (7)%, core constant currency 5% (core excludes divested MatrixCare; 'Residential Care Software revenue increased 5%'; Brightree and MEDIFOX DAN increased by 8%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "DXCM": {
+   "organic_revenue_growth_us_vs_international": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 8.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000029/dxcm12312024-exhibit991.htm",
+     "quote": "\"Revenue grew 8% year-over-year to $1.114 billion on a reported basis and 8% year-over-year on an organic basis.\" \"U.S. revenue grew 4% and international revenue grew 17% on a reported basis and 19% on an organic basis, all on a year-over-year basis.\" -> Worldwide organic +8%; U.S. +4% (reported); International +17% reported / +19% organic",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 14.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000111/dxcm03312025-exhibit991.htm",
+     "quote": "\"Revenue grew 12% year-over-year to $1.036 billion on a reported basis and 14% year-over-year on an organic basis.\" \"U.S. revenue grew 15% and international revenue grew 7% on a reported basis and 12% on an organic basis, all on a year-over-year basis.\" -> Worldwide organic +14%; U.S. +15% (reported); International +7% reported / +12% organic",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 15.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000241/dxcm06302025-exhibit991.htm",
+     "quote": "\"Revenue grew 15% year-over-year to $1.157 billion on a reported basis and 15% year-over-year on an organic basis.\" \"U.S. revenue grew 15% and international revenue grew 16% on a reported basis and 14% on an organic basis, all on a year-over-year basis.\" -> Worldwide organic +15%; U.S. +15% (reported); International +16% reported / +14% organic",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 20.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000278/dxcm09302025-exhibit991.htm",
+     "quote": "\"Revenue grew 22% year-over-year to $1.209 billion on a reported basis and 20% year-over-year on an organic basis.\" \"U.S. revenue grew 21% and international revenue grew 22% on a reported basis and 18% on an organic basis, all on a year-over-year basis.\" -> Worldwide organic +20%; U.S. +21% (reported); International +22% reported / +18% organic",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 12.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355726000025/dxcm12312025-exhibit991.htm",
+     "quote": "\"Revenue grew 13% year-over-year to $1.260 billion on a reported basis and 12% year-over-year on an organic basis.\" \"U.S. revenue grew 11% and international revenue grew 18% on a reported basis and 15% on an organic basis\" -> Worldwide organic +12%; U.S. +11% (reported); International +18% reported / +15% organic",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 12.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000072/dxcm3312026-exhibit991.htm",
+     "quote": "\"Revenue grew 15% year-over-year to $1.192 billion on a reported basis and 12% year-over-year on an organic basis.\" \"U.S. revenue grew 11% and international revenue grew 26% on a reported basis and 17% on an organic basis\" -> Worldwide organic +12%; U.S. +11% (reported); International +26% reported / +17% organic",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000142/dxcm06302026-exhibit991.htm",
+     "quote": "\"Revenue grew 13% year-over-year to $1.308 billion on a reported basis and 12% year-over-year on an organic basis.\" \"U.S. revenue grew 11% and international revenue grew 19% on a reported basis and 16% on an organic basis\" -> Worldwide organic +12%; U.S. +11% (reported); International +19% reported / +16% organic",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000193/dxcm09302026-exhibit991.htm",
+     "quote": "\"Revenue grew 11% year-over-year to $1.344 billion on a reported basis and 11% year-over-year on an organic basis.\" \"U.S. revenue grew 14% and international revenue grew 5% on a reported basis and 5% on an organic basis, all on a year-over-year basis.\" -> Worldwide organic +11%; U.S. +14% (reported); International +5% reported / +5% organic",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 58.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000029/dxcm12312024-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $655.8 million or 58.9% of revenue for the fourth quarter of 2024\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 56.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000111/dxcm03312025-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $589.0 million or 56.9% of revenue for the first quarter of 2025\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 59.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000241/dxcm06302025-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $688.8 million or 59.5% of revenue for the second quarter of 2025\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 60.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355725000278/dxcm09302025-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $731.4 million or 60.5% of revenue for the third quarter of 2025\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 62.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355726000025/dxcm12312025-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $792.7 million or 62.9% of revenue for the fourth quarter of 2025\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 62.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000072/dxcm3312026-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $750.3 million or 62.9% of revenue for the first quarter of 2026\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 63.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000142/dxcm06302026-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $830.0 million or 63.4% of revenue for the second quarter of 2026\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 64.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000193/dxcm09302026-exhibit991.htm",
+     "quote": "\"GAAP gross profit totaled $864.4 million or 64.3% of revenue for the third quarter of 2026\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "type_2_new_patient_adoption_if_disclosed": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "Type 2 coverage expanded in Quebec (RAMQ); 2025 'significantly expanded access to Dexcom CGM'",
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355726000025/dxcm12312025-exhibit991.htm",
+     "quote": "\"Expanded access to Dexcom CGM in Québec under the Régie de l'assurance maladie du Québec (RAMQ)\" ... \"bringing coverage to eligible adults with type 2 diabetes\"; CEO: \"2025 was another great year for Dexcom as we significantly expanded access to Dexcom CGM\". New patient starts not quantified in release.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": "ATTD 2026 data: significant A1C improvement in type 2 not on insulin; no new-patient figure in release",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000072/dxcm3312026-exhibit991.htm",
+     "quote": "\"significant improvement in A1C for people with type 2 diabetes who are not on insulin therapy\" (ATTD 2026 clinical evidence bullet). Release does not mention new patient starts.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": "Robust new patient starts (global starts in line with prior record); coverage for all PwD at 4 largest commercial PBMs; CMS non-insulin decision expected by YE, modeled mid-2027; Dexcom Flex 15-day sensor for type 2 basal",
+     "source": "https://www.webull.com/news/15341695165670400",
+     "quote": "CFO Sylvain: \"It was another robust quarter of new patient starts, and it was nice to see the sequential uptick in The US.\" CEO Leach: \"global new customer starts remained in line with our previous record from last quarter.\" \"we now have coverage for all people with diabetes across the 4 largest commercial PBMs.\" \"We do expect to hear back from CMS on that decision before the end of this year.\" \"DexCom Flex is our newest 15-day sensor designed to address type 2 basal.\" (Q2 2026 call transcript, Jul 30 2026)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": "CONNECT RCT (NEJM) on G7 outcomes in type 2 not on insulin; no new-patient figure in release",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000193/dxcm09302026-exhibit991.htm",
+     "quote": "\"showcasing outcomes driven by Dexcom G7 that redefine the standard of care for people with Type 2 diabetes not on insulin.\" (CONNECT randomized trial, NEJM). Release does not mention new patient starts; Q3 2026 call transcript not found.",
+     "added": "2026-10-30"
+    }
+   ],
+   "recall_warning_letter_status": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "FDA warning letter (Mar 2025) responses submitted, no close-out disclosed; letter does not restrict production/distribution",
+     "source": "https://www.sec.gov/Archives/edgar/data/1093557/000109355726000027/dxcm-20251231.htm",
+     "quote": "FY2025 10-K: \"In March 2025, we received an FDA warning letter following inspections of our facilities in San Diego, California,\" ... \"While the warning letter does not restrict our ability to produce, market, manufacture or distribute products,\" ... company \"submitted responses to the Form 483 and to the FDA warning letter.\" No G7 receiver/sensor recall disclosed in accessible text.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": "Securities class action, derivative actions and G6/G7 class action litigation pending; outcome not estimable; warning letter/recall not mentioned in Q1 10-Q text",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001093557/000109355726000073/dxcm-20260331.htm",
+     "quote": "Q1 2026 10-Q Note 5 Contingencies: \"Due to uncertainty surrounding the securities class action litigation, the derivative actions,\" ... \"the G6 and G7 Class Action Litigation, we are unable to reasonably estimate the ultimate outcome\" ... \"We intend to defend against these claims vigorously in all of these actions.\"",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "IDXX": {
+   "cag_diagnostics_recurring_revenue_organic_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 6.7,
+     "source": "https://ir.idexx.com/sec-filings/all-sec-filings/content/0001104659-24-112975/tm2427217d1_ex99-1.htm",
+     "quote": "Organic growth table, CAG Diagnostics recurring revenue: reported 6.7%, currency 0.1%, organic 6.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 6.6,
+     "source": "https://ir.idexx.com/sec-filings/all-sec-filings/content/0001104659-25-008331/tm255269d1_ex99-1.htm",
+     "quote": "Organic growth table (Q4), CAG Diagnostics recurring revenue: $757,451 vs $712,089, reported 6.4%, currency (0.2)%, organic 6.6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4.5,
+     "source": "https://ir.idexx.com/sec-filings/all-sec-filings/content/0001104659-25-042955/tm2513742d1_ex99-1.htm",
+     "quote": "Organic growth table, CAG Diagnostics recurring revenue: reported 3.3%, currency (1.2)%, organic 4.5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7.4,
+     "source": "https://ir.idexx.com/sec-filings/all-sec-filings/content/0001104659-25-073304/tm2522386d1_ex99-1.htm",
+     "quote": "Organic growth table, CAG Diagnostics recurring revenue: $877,995 vs $808,454, reported 8.6%, currency 1.2%, organic 7.4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10.1,
+     "source": "https://www.idexx.com/files/8k20251103.pdf",
+     "quote": "CAG Diagnostics recurring revenue: $ 873,273 $ 783,443 $ 89,830 11.5% 1.3% — 10.1%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 10.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/874716/000110465926008904/tm264623d1_ex99-1.htm",
+     "quote": "Organic growth table (Q4), CAG Diagnostics recurring revenue: $849,664 vs $757,451, reported 12.2%, currency 1.9%, organic 10.2%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926055203/tm2613510d1_ex99-1.htm",
+     "quote": "Organic growth table, CAG Diagnostics recurring revenue: $920,313 vs $806,267, reported 14.1%, currency 3.1%, organic 11.0%; \"CAG Diagnostics recurring revenue growth of 14% as reported and 11% organic\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926090033/tm2622041d1_ex99-1.htm",
+     "quote": "Organic growth table, CAG Diagnostics recurring revenue (3 mo. ended 6/30/26): reported 11.0%, currency 0.7%, organic 10.3%; text: \"CAG Diagnostics recurring revenue growth of 11% as reported and 10% organic\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "premium_instrument_placements": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 4128,
+     "source": "https://idexx.com/files/2024-q3-prepared-remarks.pdf",
+     "quote": "\"We achieved 4,128 CAG global premium instrument placements in Q3\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 4625,
+     "source": "https://idexx.com/files/2024-q4-prepared-remarks.pdf",
+     "quote": "\"In the fourth quarter, we placed 4,625 premium instruments — down (12)% from high prior year levels.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4163,
+     "source": "https://www.idexx.com/files/2025-q1-prepared-remarks.pdf",
+     "quote": "\"During Q1, we placed 4,163 CAG premium instruments, a decline of 13% against high prior year levels.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 6070,
+     "source": "https://www.marketbeat.com/earnings/reports/2025-8-4-idexx-laboratories-inc-stock",
+     "quote": "\"Total premium placements reached 6,070 units, an increase of 23% year-over-year.\" (Q2 2025 call)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 5665,
+     "source": "https://www.idexx.com/files/2025-q3-prepared-remarks.pdf",
+     "quote": "\"Total premium placements reached 5,665 units an increase of 37% year-over-year.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 6567,
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/02/02/idexx-idxx-q4-2025-earnings-call-transcript/",
+     "quote": "\"In the fourth quarter, we placed 6,567 premium instruments, up 42% from the prior year.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4650,
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/05/05/idexx-idxx-q1-2026-earnings-call-transcript/",
+     "quote": "\"CAG premium instrument placements reached 4,650 units during the first quarter, an increase of 12% year-over-year\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5265,
+     "source": "https://www.webull.com/news/15344824561263616",
+     "quote": "\"CAG premium instrument placements reached 5,265 units during the second quarter.\" (Q2 2026 call)",
+     "added": "2026-10-30"
+    }
+   ],
+   "us_clinical_visit_trends": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": -2.1,
+     "source": "https://idexx.com/files/2024-q3-prepared-remarks.pdf",
+     "quote": "\"contributed to a 2.1% decline in same store clinical visit growth in Q3\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": -2.6,
+     "source": "https://www.idexx.com/files/2025-q1-prepared-remarks.pdf",
+     "quote": "\"which declined an estimated 2.6% overall in the quarter\" (U.S. same-store clinical visits)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": -2.5,
+     "source": "https://www.marketbeat.com/earnings/reports/2025-8-4-idexx-laboratories-inc-stock",
+     "quote": "\"leading to a 2.5% decline in U.S. same-store clinical visit growth levels in the quarter.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -1.2,
+     "source": "https://www.idexx.com/files/2025-q3-prepared-remarks.pdf",
+     "quote": "\"U.S. same-store clinical visits declined 1.2% in the quarter\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -1.7,
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/02/02/idexx-idxx-q4-2025-earnings-call-transcript/",
+     "quote": "\"US same-store clinical visit declines of approximately 1.7% in Q4 and 1.9% for the full year 2025.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -1.0,
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/05/05/idexx-idxx-q1-2026-earnings-call-transcript/",
+     "quote": "\"U.S. same-store clinical visits declined minus 1% in the quarter\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -1.3,
+     "source": "https://www.webull.com/news/15344824561263616",
+     "quote": "\"U.S. same-store clinical visits declined an estimated 1.3% in the quarter.\"",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 31.2,
+     "source": "https://www.idexx.com/files/8k20251103.pdf",
+     "quote": "Q3 2025 release reconciliation: \"Operating margin and margin gain 32.1% 31.2% 100bps\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 27.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/874716/000110465926008904/tm264623d1_ex99-1.htm",
+     "quote": "Q4 2025 release reconciliation, three months ended Dec 31, 2024: operating margin 27.4% (28.9% vs 27.4%, 150 bps)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 31.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926055203/tm2613510d1_ex99-1.htm",
+     "quote": "Q1 2026 release reconciliation: \"Operating margin and margin gain | 31.8% | 31.7% | 10 bps\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 33.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926090033/tm2622041d1_ex99-1.htm",
+     "quote": "Q2 2026 release reconciliation: \"Operating margin and margin gain | 35.0% | 33.6% | 140 bps\" ($373,046 / $1,109,457 = 33.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 32.1,
+     "source": "https://www.idexx.com/files/8k20251103.pdf",
+     "quote": "\"Operating margin was 32.1% for the quarter, higher than the prior year period by 100 basis points as reported\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 28.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/874716/000110465926008904/tm264623d1_ex99-1.htm",
+     "quote": "\"Operating margin was 28.9% in the quarter, 150 basis points higher than the prior year period results on a reported basis\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 31.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926055203/tm2613510d1_ex99-1.htm",
+     "quote": "\"Operating margin was 31.8% for the quarter, higher than the prior year period by 10 basis points as reported\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 35.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926090033/tm2622041d1_ex99-1.htm",
+     "quote": "\"Operating margin was 35.0% for the quarter, higher than the prior year period by 140 basis points as reported\" (income from operations $425,566 / revenue $1,216,585 = 35.0%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "ALLE": {
+   "organic_revenue_growth_americas_international": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 3.5,
+     "source": "https://www.allegion.com/content/dam/allegion-corp/migration/news/2026/Q4-FY%202025%20Allegion%20Earnings%20Call_Press%20Release_FINAL.pdf",
+     "quote": "Schedule 5, three months ended Dec 31, 2024 column: Total organic growth (non-GAAP) 3.5%; Americas 4.6%, International (0.7)%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000013/exhibit991-pressreleasedat.htm",
+     "quote": "Schedule 5, three months ended March 31, 2025 column: Total organic growth (non-GAAP) 4.0%; Americas 4.9%, International 0.9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 3.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000026/exhibit991-pressreleasedat.htm",
+     "quote": "Schedule 5, three months ended June 30, 2025 column: Total organic growth (non-GAAP) 3.2%; Americas 4.5%, International (2.2)%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 5.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000032/exhibit991-pressreleasedat.htm",
+     "quote": "Schedule 5, three months ended Sept 30, 2025 column: Total organic growth (non-GAAP) 5.9%; Americas 6.4%, International 3.6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.3,
+     "source": "https://www.allegion.com/content/dam/allegion-corp/migration/news/2026/Q4-FY%202025%20Allegion%20Earnings%20Call_Press%20Release_FINAL.pdf",
+     "quote": "Schedule 5: Total organic growth (non-GAAP) 3.3% (Q4 2025); Americas 4.8%, International (2.3)%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000013/exhibit991-pressreleasedat.htm",
+     "quote": "Schedule 5: Total organic growth (non-GAAP) 2.6% (Q1 2026); Americas 4.5%, International (5.3)%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000026/exhibit991-pressreleasedat.htm",
+     "quote": "Schedule 5: Total organic growth (non-GAAP) 6.9% (Q2 2026); Americas 8.9%, International (1.2)%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000032/exhibit991-pressreleasedat.htm",
+     "quote": "Organic growth (non-GAAP) | 7.2% | 5.9% (Total); Americas 9.1%, International (0.2)%. 'The Americas segment revenues were up 11.7% (up 9.1% on an organic basis).' 'The International segment revenues were up 1.8% (down 0.2% on an organic basis).'",
+     "added": "2026-10-30"
+    }
+   ],
+   "price_vs_volume": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "Price up, volume down (no % split disclosed)",
+     "source": "https://www.allegion.com/content/dam/allegion-corp/migration/news/2026/Q4-FY%202025%20Allegion%20Earnings%20Call_Press%20Release_FINAL.pdf",
+     "quote": "The organic revenue increase was driven by price realization partially offset by volume declines.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": "Price up, volume down (no % split disclosed)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000013/exhibit991-pressreleasedat.htm",
+     "quote": "Organic increase driven by price realization, partially offset by volume declines (Q1 2026 release); Americas residential flat with 'price realization offsetting volume declines.'",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": "Price up, volume up (no % split disclosed)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000026/exhibit991-pressreleasedat.htm",
+     "quote": "The organic revenue increase was driven by volume growth and price realization.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": "Price up, volume up (no % split disclosed)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000032/exhibit991-pressreleasedat.htm",
+     "quote": "The organic increase was driven by volume growth and price realization. (International: 'volume declines, which more than offset favorable pricing.')",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 22.1,
+     "source": "https://www.allegion.com/content/dam/allegion-corp/migration/news/2026/Q4-FY%202025%20Allegion%20Earnings%20Call_Press%20Release_FINAL.pdf",
+     "quote": "The adjusted operating margin in fourth-quarter 2025 was 22.4%, compared with 22.1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 22.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000013/exhibit991-pressreleasedat.htm",
+     "quote": "The adjusted operating margin in first-quarter 2026 was 21.2%, compared with 22.7%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 23.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000026/exhibit991-pressreleasedat.htm",
+     "quote": "The adjusted operating margin in second-quarter 2026 was 24.2%, compared with 23.7%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 24.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000032/exhibit991-pressreleasedat.htm",
+     "quote": "The adjusted operating margin in third-quarter 2026 was 24.7%, compared with 24.1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 22.4,
+     "source": "https://www.allegion.com/content/dam/allegion-corp/migration/news/2026/Q4-FY%202025%20Allegion%20Earnings%20Call_Press%20Release_FINAL.pdf",
+     "quote": "The adjusted operating margin in fourth-quarter 2025 was 22.4%, compared with 22.1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 21.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000013/exhibit991-pressreleasedat.htm",
+     "quote": "The adjusted operating margin in first-quarter 2026 was 21.2%, compared with 22.7%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 24.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000026/exhibit991-pressreleasedat.htm",
+     "quote": "The adjusted operating margin in second-quarter 2026 was 24.2%, compared with 23.7%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 24.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001579241/000157924126000032/exhibit991-pressreleasedat.htm",
+     "quote": "The adjusted operating margin in third-quarter 2026 was 24.7%, compared with 24.1%.",
+     "added": "2026-10-30"
+    }
+   ]
   }
  }
 }
