@@ -636,5 +636,82 @@
    "price": 240.03,
    "method": "fcff_re"
   }
+ ],
+ "AXP": [
+  {
+   "date": "2026-10-30",
+   "fv": 323.03,
+   "bear": 228.78,
+   "base": 343.85,
+   "bull": 412.34,
+   "price": 319.63,
+   "method": "fcff_re"
+  }
+ ],
+ "SHOP": [
+  {
+   "date": "2026-10-30",
+   "fv": 63.91,
+   "bear": 35.68,
+   "base": 67.2,
+   "bull": 98.03,
+   "price": 155.38,
+   "method": "fcff_re"
+  }
+ ],
+ "PYPL": [
+  {
+   "date": "2026-10-30",
+   "fv": 89.73,
+   "bear": 49.19,
+   "base": 97.76,
+   "bull": 130.47,
+   "price": 57.36,
+   "method": "fcff_re"
+  }
+ ],
+ "XYZ": [
+  {
+   "date": "2026-10-30",
+   "fv": 115.16,
+   "bear": 67.79,
+   "base": 121.52,
+   "bull": 170.31,
+   "price": 75.86,
+   "method": "fcff_re"
+  }
+ ],
+ "ADYEY": [
+  {
+   "date": "2026-10-30",
+   "fv": 10.44,
+   "bear": 5.98,
+   "base": 11.14,
+   "bull": 15.4,
+   "price": 9.14,
+   "method": "fcff_re"
+  }
+ ],
+ "FISV": [
+  {
+   "date": "2026-10-30",
+   "fv": 60.25,
+   "bear": 33.09,
+   "base": 64.92,
+   "bull": 89.3,
+   "price": 50.39,
+   "method": "fcff_re"
+  }
+ ],
+ "CRCL": [
+  {
+   "date": "2026-10-30",
+   "fv": 48.74,
+   "bear": 16.48,
+   "base": 42.57,
+   "bull": 112.55,
+   "price": 71.61,
+   "method": "fcff_re"
+  }
  ]
 }

@@ -48,6 +48,13 @@
   "HWM": {"r": 0.095, "reason": "Strong position in engine parts, but aerospace is cyclical and it carries net debt."},
   "ADP": {"r": 0.085, "reason": "Very steady payroll franchise with a long record; sensitive to employment and interest rates."},
   "AME": {"r": 0.09, "reason": "Steady diversified industrial with a long record of acquisitions; moderate debt."},
+  "AXP":  {"r": 0.095, "reason": "Premium card issuer and network: durable brand, but it lends, so credit losses rise in recessions."},
+  "SHOP": {"r": 0.11, "reason": "Fast-growing commerce platform priced for continued high growth; very volatile shares (beta ~2.6)."},
+  "PYPL": {"r": 0.1, "reason": "Large digital wallet with slowing growth and competition at checkout from Apple Pay and others."},
+  "XYZ":  {"r": 0.11, "reason": "Two growing ecosystems (Cash App, Square) but high volatility, heavy stock pay and consumer-credit exposure."},
+  "ADYEY":{"r": 0.1, "reason": "High-quality global acquirer with net cash, but growth swings with large merchants; euro-reported (FX risk for USD holders)."},
+  "FISV": {"r": 0.1, "reason": "Sticky bank-technology franchise, but heavy debt and a recent guidance reset."},
+  "CRCL": {"r": 0.12, "reason": "Young public company; income depends on interest rates, USDC adoption and crypto regulation."},
   "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
  }
 }

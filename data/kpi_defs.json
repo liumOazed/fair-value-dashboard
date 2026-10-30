@@ -1332,6 +1332,239 @@
      "better": "up"
     }
    ]
+  },
+  "AXP": {
+   "name": "American Express Co.",
+   "kpis": [
+    {
+     "id": "billed_business_growth_fx_adjusted",
+     "label": "Billed business growth (FX-adjusted)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "card_member_loans_growth",
+     "label": "Card Member loans growth",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "net_write_off_rate_principal",
+     "label": "Net write-off rate (principal)",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "card_fee_revenue_growth",
+     "label": "Card fee revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "proprietary_new_cards_acquired",
+     "label": "Proprietary new cards acquired",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "SHOP": {
+   "name": "Shopify Inc.",
+   "kpis": [
+    {
+     "id": "gmv_growth",
+     "label": "GMV growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_payments_volume_gmv_penetration",
+     "label": "Gross payments volume ÷ GMV (penetration)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "merchant_solutions_revenue_growth",
+     "label": "Merchant Solutions revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "subscription_solutions_revenue_growth",
+     "label": "Subscription Solutions revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "free_cash_flow_margin",
+     "label": "Free cash flow margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "PYPL": {
+   "name": "PayPal Holdings Inc.",
+   "kpis": [
+    {
+     "id": "total_payment_volume_growth",
+     "label": "Total payment volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "transaction_margin_dollars_growth",
+     "label": "Transaction margin dollars growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "active_accounts",
+     "label": "Active accounts",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "branded_checkout_volume_growth",
+     "label": "Branded checkout volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "venmo_revenue_growth",
+     "label": "Venmo revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "XYZ": {
+   "name": "Block Inc.",
+   "kpis": [
+    {
+     "id": "gross_profit_growth",
+     "label": "Gross profit growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "cash_app_gross_profit_growth",
+     "label": "Cash App gross profit growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "square_gross_profit_growth",
+     "label": "Square gross profit growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "square_gross_payment_volume_growth",
+     "label": "Square gross payment volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "cash_app_monthly_transacting_actives",
+     "label": "Cash App monthly transacting actives",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "ADYEY": {
+   "name": "Adyen N.V. (ADR)",
+   "kpis": [
+    {
+     "id": "processed_volume_growth",
+     "label": "Processed volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_revenue_growth",
+     "label": "Net revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "ebitda_margin",
+     "label": "EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "take_rate_net_revenue_processed_volume",
+     "label": "Take rate (net revenue ÷ processed volume)",
+     "unit": "pct",
+     "better": "none"
+    }
+   ]
+  },
+  "FISV": {
+   "name": "Fiserv Inc.",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth",
+     "label": "Organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "clover_revenue_growth",
+     "label": "Clover revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_ebitda",
+     "label": "Net debt ÷ EBITDA",
+     "unit": "x",
+     "better": "down"
+    }
+   ]
+  },
+  "CRCL": {
+   "name": "Circle Internet Group",
+   "kpis": [
+    {
+     "id": "usdc_in_circulation",
+     "label": "USDC in circulation",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "reserve_return_rate",
+     "label": "Reserve return rate",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "revenue_less_distribution_costs_margin",
+     "label": "Revenue less distribution costs margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda",
+     "label": "Adjusted EBITDA",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "other_revenue",
+     "label": "Other revenue",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
   }
  }
 }
