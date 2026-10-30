@@ -9118,6 +9118,1094 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "ADP": {
+   "pays_per_control_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 1,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q2/ADP-2Q26-Earnings-Release.pdf",
+     "quote": "Key Statistics: Change in pays per control - U.S. (A) 1 % 1 % 1 % 2 % (three months ended Dec 31 2025 = 1%, 2024 = 1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 1,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q3/ADP-3Q26-Earnings-Release.pdf",
+     "quote": "Key Statistics: Change in pays per control - U.S. (A) 1 % 1 % 1 % 1 % (three months ended March 31 2026 = 1%, 2025 = 1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 1,
+     "source": "https://sec.gov/Archives/edgar/data/8670/000000867026000025/q4fy26exhibit99.htm",
+     "quote": "Key Statistics: Change in pays per control - U.S. (A) | 1% | 1% | 1% | 1% (three months 2026, 2025; twelve months 2026, 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 0,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q1/ADP-1Q26-Earnings-Release.pdf",
+     "quote": "U.S. pays per control was approximately flat | Key Statistics: Change in pays per control - U.S. (A) 0 % 2 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 1,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q2/ADP-2Q26-Earnings-Release.pdf",
+     "quote": "U.S. pays per control increased 1% | Key Statistics: Change in pays per control - U.S. (A) 1 % 1 % 1 % 2 % (three months 2025, 2024; six months 2025, 2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 1,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q3/ADP-3Q26-Earnings-Release.pdf",
+     "quote": "U.S. pays per control increased 1% | Key Statistics: Change in pays per control - U.S. (A) 1 % 1 % 1 % 1 % (three months 2026, 2025; nine months 2026, 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 1,
+     "source": "https://sec.gov/Archives/edgar/data/8670/000000867026000025/q4fy26exhibit99.htm",
+     "quote": "U.S. pays per control increased 1% for the fourth quarter and for the fiscal year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 2,
+     "source": "https://www.stocktitan.net/sec-filings/ADP/8-k-automatic-data-processing-inc-reports-material-event-ab9599a498ea.html",
+     "quote": "U.S. pays per control increased 2% | Key Statistics: Change in pays per control - U.S. (a) 2 % 0 % (three months ended Sep 30, 2026 vs 2025)",
+     "added": "2026-10-30"
+    }
+   ],
+   "client_funds_interest_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 0.2728,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q2/ADP-2Q26-Earnings-Release.pdf",
+     "quote": "Interest on funds held for clients 308.6 272.8 595.5 526.1 (three months ended Dec 31 2024 = 272.8 $M; 272.8/1000 = 0.2728)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 0.3552,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q3/ADP-3Q26-Earnings-Release.pdf",
+     "quote": "Interest on funds held for clients 403.9 355.2 999.4 881.3 (three months ended March 31 2025 = 355.2 $M; 355.2/1000 = 0.3552)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 0.3078,
+     "source": "https://sec.gov/Archives/edgar/data/8670/000000867026000025/q4fy26exhibit99.htm",
+     "quote": "Interest on funds held for clients | 355.4 | 307.8 | 1,354.8 | 1,189.1 (three months ended June 30 2025 = 307.8 $M; 307.8/1000 = 0.3078)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 0.2868,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q1/ADP-1Q26-Earnings-Release.pdf",
+     "quote": "Interest on funds held for clients increased 13% to $287 million | Interest on funds held for clients 286.8 253.3 ($ millions; 286.8/1000 = 0.2868)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 0.3086,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q2/ADP-2Q26-Earnings-Release.pdf",
+     "quote": "Interest on funds held for clients increased 13% to $309 million | Interest on funds held for clients 308.6 272.8 595.5 526.1 ($ millions; 308.6/1000 = 0.3086)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 0.4039,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q3/ADP-3Q26-Earnings-Release.pdf",
+     "quote": "Interest on funds held for clients increased 14% to $404 million | Interest on funds held for clients 403.9 355.2 999.4 881.3 ($ millions; 403.9/1000 = 0.4039)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 0.3554,
+     "source": "https://sec.gov/Archives/edgar/data/8670/000000867026000025/q4fy26exhibit99.htm",
+     "quote": "Interest on funds held for clients increased 15% to $355 million for the fourth quarter | Interest on funds held for clients | 355.4 | 307.8 | 1,354.8 | 1,189.1 ($ millions; 355.4/1000 = 0.3554)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 0.3293,
+     "source": "https://www.stocktitan.net/sec-filings/ADP/8-k-automatic-data-processing-inc-reports-material-event-ab9599a498ea.html",
+     "quote": "Interest on funds held for clients increased 15% to $329 million | Interest on funds held for clients 329.3 286.8 ($ millions; 329.3/1000 = 0.3293)",
+     "added": "2026-10-30"
+    }
+   ],
+   "peo_worksite_employees": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 746000,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q2/ADP-2Q26-Earnings-Release.pdf",
+     "quote": "Average paid PEO worksite employees during the period 758,000 746,000 756,000 741,000 (three months ended Dec 31 2024 = 746,000)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 748000,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q3/ADP-3Q26-Earnings-Release.pdf",
+     "quote": "Average paid PEO worksite employees during the period 762,000 748,000 758,000 744,000 (three months ended March 31 2025 = 748,000)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 761000,
+     "source": "https://sec.gov/Archives/edgar/data/8670/000000867026000025/q4fy26exhibit99.htm",
+     "quote": "Average paid PEO worksite employees during the period | 775,000 | 761,000 | 762,000 | 748,000 (three months ended June 30 2025 = 761,000)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 754000,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q1/ADP-1Q26-Earnings-Release.pdf",
+     "quote": "Average worksite employees paid by PEO Services increased 2% to about 754,000 | Average paid PEO worksite employees during the period 754,000 737,000",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 758000,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q2/ADP-2Q26-Earnings-Release.pdf",
+     "quote": "Average worksite employees paid by PEO Services increased 2% to about 758,000 | Average paid PEO worksite employees during the period 758,000 746,000 756,000 741,000",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 762000,
+     "source": "https://s205.q4cdn.com/887941133/files/doc_financials/2026/q3/ADP-3Q26-Earnings-Release.pdf",
+     "quote": "Average worksite employees paid by PEO Services increased 2% to about 762,000 | Average paid PEO worksite employees during the period 762,000 748,000 758,000 744,000",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 775000,
+     "source": "https://sec.gov/Archives/edgar/data/8670/000000867026000025/q4fy26exhibit99.htm",
+     "quote": "Average worksite employees paid by PEO Services increased 2% to about 775,000 for the fourth quarter | Average paid PEO worksite employees during the period | 775,000 | 761,000 | 762,000 | 748,000",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 771000,
+     "source": "https://www.stocktitan.net/sec-filings/ADP/8-k-automatic-data-processing-inc-reports-material-event-ab9599a498ea.html",
+     "quote": "Average worksite employees paid by PEO Services increased 2% to about 771,000 | Average paid PEO worksite employees during the period 771,000 754,000",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "AME": {
+   "organic_sales_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 4,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2025-q3.html",
+     "quote": "Organic sales were up 4%, acquisitions added 6 points, and foreign currency translation was a 1 point benefit.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2025-q4.html",
+     "quote": "Organic sales were up 5%, acquisitions added 7 points in the quarter, and foreign currency was a 1-point tailwind.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2026-q1.html",
+     "quote": "Organic sales were up 5%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10,
+     "source": "https://earningswhispers.com/transcript/AME/Q22026",
+     "quote": "Organic sales were up 10%.",
+     "added": "2026-10-30"
+    }
+   ],
+   "orders_and_book_to_bill": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.04,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2025-q3.html",
+     "quote": "with overall orders up 13% to a record $1.97 billion and organic orders up 7% ... sales $1,892.6M (release Net sales 1,892,641) (1970/1892.6 = 1.04x)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.02,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2025-q4.html",
+     "quote": "the book-to-bill of AMETEK was 1.02 [Also: \"with overall orders up 18% to a record $2 billion and organic orders up 7%\"]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1.14,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2026-q1.html",
+     "quote": "Overall orders were a record $2.2 billion, up 23% versus the prior year ... sales $1,928.4M (release: \"Net sales | $1,928,437\") (2200/1928.4 = 1.14x; orders stated rounded to $0.1B)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.12,
+     "source": "https://earningswhispers.com/transcript/AME/Q22026",
+     "quote": "And we had a positive book to bill of 1.12 in the quarter, both groups positive. [Also: \"Overall orders were a record $2.3 billion, up 28% versus the prior year.\"]",
+     "added": "2026-10-30"
+    }
+   ],
+   "backlog": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 3.54,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2025-q3.html",
+     "quote": "leading to a record backlog of $3.54 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.58,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2025-q4.html",
+     "quote": "a record backlog of $3.58 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3.87,
+     "source": "https://vectorshift.ai/research/companies/ametek/earnings/2026-q1.html",
+     "quote": "record backlog of $3.87 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 4.11,
+     "source": "https://earningswhispers.com/transcript/AME/Q22026",
+     "quote": "...leading to a record backlog of $4.11 billion.",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 26.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000075/ametek8kexhibit991103025.htm",
+     "quote": "Adjusted Operating income margin (Non-GAAP) | 27.0% | 26.1% (Q3 2024 had no adjustments: Operating income (GAAP) 445,851 = Adjusted 445,851)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 26.6,
+     "source": "https://ametekinc.gcs-web.com/node/26221/pdf",
+     "quote": "Operating income (GAAP) $ 505,482 $ 468,981; Acquisition-related costs(1) 17,551 —; Adjusted Operating income (Non-GAAP) $ 523,033 $ 468,981; Net sales $ 1,998,448 $ 1,761,602 (468,981/1,761,602 = 26.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 26.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000141/ametek8kexhibit99104302026.htm",
+     "quote": "Adjusted Operating income margin (Non-GAAP) | 27.9% | 26.3% | 1.6% (Q1 2025 had no adjustments: Operating income (GAAP) $454,829 = Adjusted $454,829)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 26.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000173/ametek8kexhibit99108042026.htm",
+     "quote": "Adjusted operating income margin (Non-GAAP) | 26.6% | 26.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 26.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000075/ametek8kexhibit991103025.htm",
+     "quote": "Adjusted Operating income (Non-GAAP) 496,130 | 445,851; Net sales 1,892,641 | 1,708,564 (496,130/1,892,641 = 26.2%; table's 'Adjusted Operating income margin' of 27.0% additionally excludes acquisition dilution, not used for consistency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 26.2,
+     "source": "https://ametekinc.gcs-web.com/node/26221/pdf",
+     "quote": "Adjusted Operating income (Non-GAAP) $ 523,033 $ 468,981; Net sales $ 1,998,448 $ 1,761,602 (523,033/1,998,448 = 26.2%); call: \"Operating margins were 26.2% in the quarter.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 26.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000141/ametek8kexhibit99104302026.htm",
+     "quote": "Adjusted operating income increased 14% to $516.6 million and operating margins were 26.8% in the quarter (table's 27.9% 'Adjusted Operating income margin' additionally excludes dilution from acquisitions and FX; not used for consistency)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 26.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000173/ametek8kexhibit99108042026.htm",
+     "quote": "Adjusted operating income margin (Non-GAAP) | 26.6% | 26.0%",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "CTAS": {
+   "organic_revenue_growth": [
+    {
+     "period": "2024-11-30",
+     "label": "Q2 FY25",
+     "value": 7.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325424000057/ex992024-11x30.htm",
+     "quote": "The organic revenue growth rate for the second quarter of fiscal 2025 ... was 7.1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q3 FY25",
+     "value": 7.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000162828025014841/ex992025-2x28.htm",
+     "quote": "The organic revenue growth rate for the third quarter of fiscal 2025 ... was 7.9%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q4 FY25",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325425000013/ex992025-5x31.htm",
+     "quote": "The organic revenue growth rate for the fourth quarter of fiscal 2025 ... was 9.0%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q1 FY26",
+     "value": 7.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325425000029/ex992025-8x31.htm",
+     "quote": "The organic revenue growth rate for the first quarter of fiscal 2026 ... was 7.8%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q2 FY26",
+     "value": 8.6,
+     "source": "https://www.businesswire.com/news/home/20251218008892/en/Cintas-Corporation-Announces-Fiscal-2026-Second-Quarter-Results",
+     "quote": "The organic revenue growth rate for the second quarter of fiscal 2026, ... was 8.6%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q3 FY26",
+     "value": 8.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000006/ex992026-2x28.htm",
+     "quote": "The organic revenue growth rate for the third quarter of fiscal 2026 ... was 8.2%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q4 FY26",
+     "value": 8.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000025/ex992026-5x31.htm",
+     "quote": "The organic revenue growth rate for the fourth quarter of fiscal 2026 ... was 8.4%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q1 FY27",
+     "value": 8.9,
+     "source": "https://finviz.com/news/394699/cintas-corporation-announces-fiscal-2027-first-quarter-results",
+     "quote": "The organic revenue growth rate for the first quarter of fiscal 2027, which adjusts for the impacts of acquisitions, foreign currency exchange rate fluctuations and workday differences, was 8.9%.",
+     "added": "2026-10-30"
+    }
+   ],
+   "uniform_rental_facility_services_growth": [
+    {
+     "period": "2024-11-30",
+     "label": "Q2 FY25",
+     "value": 7.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325424000057/ex992024-11x30.htm",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended Nov 30, 2024 vs 2023: Uniform rental and facility services revenue $1,990.4M vs $1,850.5M (1990.4/1850.5 - 1 = 7.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q3 FY25",
+     "value": 7.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000162828025014841/ex992025-2x28.htm",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended Feb 28, 2025 vs Feb 29, 2024: Uniform rental and facility services revenue $2,021,144 vs $1,876,642 (in thousands) (2021144/1876642 - 1 = 7.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q4 FY25",
+     "value": 6.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325425000013/ex992025-5x31.htm",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended May 31, 2025 vs 2024: Uniform rental and facility services revenue $2,030,680 vs $1,911,190 (in thousands) (2030680/1911190 - 1 = 6.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q1 FY26",
+     "value": 8.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325425000029/ex992025-8x31.htm",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended Aug 31, 2025 vs 2024: Uniform rental and facility services revenue $2,091,066 vs $1,933,839 (in thousands) (2091066/1933839 - 1 = 8.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q2 FY26",
+     "value": 8.3,
+     "source": "https://www.businesswire.com/news/home/20251218008892/en/Cintas-Corporation-Announces-Fiscal-2026-Second-Quarter-Results",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended Nov 30, 2025 vs 2024: Uniform rental and facility services revenue $2,155,400 vs $1,990,410 (in thousands) (2155400/1990410 - 1 = 8.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q3 FY26",
+     "value": 7.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000006/ex992026-2x28.htm",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended Feb 28, 2026 vs 2025: Uniform rental and facility services revenue $2,177,453 vs $2,021,144 (in thousands) (2177453/2021144 - 1 = 7.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q4 FY26",
+     "value": 8.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000025/ex992026-5x31.htm",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended May 31, 2026 vs 2025: Uniform rental and facility services revenue $2,197,705 vs $2,030,680 (in thousands) (2197705/2030680 - 1 = 8.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q1 FY27",
+     "value": 9.7,
+     "source": "https://finviz.com/news/394699/cintas-corporation-announces-fiscal-2027-first-quarter-results",
+     "quote": "Total (not organic; segment organic rate not stated in release) growth computed from segment revenue, three months ended Aug 31, 2026 vs 2025: Uniform rental and facility services revenue $2,294,736 vs $2,091,066 (in thousands) (2294736/2091066 - 1 = 9.7%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-11-30",
+     "label": "Q2 FY25",
+     "value": 49.8,
+     "source": "https://www.businesswire.com/news/home/20251218008892/en/Cintas-Corporation-Announces-Fiscal-2026-Second-Quarter-Results",
+     "quote": "Gross margin as a percentage of revenue was 50.4% for the second quarter of fiscal 2026 compared to 49.8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q3 FY25",
+     "value": 50.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000162828025014841/ex992025-2x28.htm",
+     "quote": "Gross margin as a percentage of revenue was 50.6% for the third quarter of fiscal 2025 compared to 49.4%...",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q4 FY25",
+     "value": 49.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000025/ex992026-5x31.htm",
+     "quote": "Gross margin as a percent of revenue was 51.0% for the fourth quarter of fiscal 2026 ... compared to 49.7% in last year's fourth quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q1 FY26",
+     "value": 50.3,
+     "source": "https://finviz.com/news/394699/cintas-corporation-announces-fiscal-2027-first-quarter-results",
+     "quote": "Gross margin as a percent of revenue was 51.5% for the first quarter of fiscal 2027, compared to 50.3% in last year's first quarter.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q2 FY26",
+     "value": 50.4,
+     "source": "https://www.businesswire.com/news/home/20251218008892/en/Cintas-Corporation-Announces-Fiscal-2026-Second-Quarter-Results",
+     "quote": "Gross margin as a percentage of revenue was 50.4% for the second quarter of fiscal 2026 compared to 49.8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q3 FY26",
+     "value": 51.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000006/ex992026-2x28.htm",
+     "quote": "Gross margin as a percent of revenue was 51.0% for the third quarter of fiscal 2026, an all-time high.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q4 FY26",
+     "value": 51.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000025/ex992026-5x31.htm",
+     "quote": "Gross margin as a percent of revenue was 51.0% for the fourth quarter of fiscal 2026 ... compared to 49.7% in last year's fourth quarter",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q1 FY27",
+     "value": 51.5,
+     "source": "https://finviz.com/news/394699/cintas-corporation-announces-fiscal-2027-first-quarter-results",
+     "quote": "Gross margin as a percent of revenue was 51.5% for the first quarter of fiscal 2027, compared to 50.3% in last year's first quarter.",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-11-30",
+     "label": "Q2 FY25",
+     "value": 23.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325424000057/ex992024-11x30.htm",
+     "quote": "Operating income as a percentage of revenue was 23.1% in the second quarter of fiscal 2025 (Operating income $591.4M / revenue $2,561.8M = 23.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q3 FY25",
+     "value": 23.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000006/ex992026-2x28.htm",
+     "quote": "Operating income as a percent of revenue was 23.2% in the third quarter of fiscal 2026 compared to 23.4%. (Operating income $609,853K / revenue $2,609,159K = 23.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q4 FY25",
+     "value": 22.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000025/ex992026-5x31.htm",
+     "quote": "Operating income as a percent of revenue was 23.2% in the fourth quarter of fiscal 2026 ... compared to 22.4% (Operating income $597,452K / revenue $2,667,652K = 22.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q1 FY26",
+     "value": 22.7,
+     "source": "https://finviz.com/news/394699/cintas-corporation-announces-fiscal-2027-first-quarter-results",
+     "quote": "Operating income as a percent of revenue was 23.6% in the first quarter of fiscal 2027 compared to 22.7% in last year's first quarter. (Operating income $617,859K / revenue $2,718,122K = 22.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q2 FY26",
+     "value": 23.4,
+     "source": "https://www.businesswire.com/news/home/20251218008892/en/Cintas-Corporation-Announces-Fiscal-2026-Second-Quarter-Results",
+     "quote": "Operating income as a percentage of revenue was 23.4% in the second quarter of fiscal 2026 (Operating income $655,714K / revenue $2,799,992K = 23.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q3 FY26",
+     "value": 23.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000006/ex992026-2x28.htm",
+     "quote": "Operating income as a percent of revenue was 23.2% in the third quarter of fiscal 2026 compared to 23.4%. (Operating income $659,904K / revenue $2,841,444K = 23.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q4 FY26",
+     "value": 23.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000025/ex992026-5x31.htm",
+     "quote": "Operating income as a percent of revenue was 23.2% in the fourth quarter of fiscal 2026 ... compared to 22.4% (Operating income $673,035K / revenue $2,905,203K = 23.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q1 FY27",
+     "value": 23.6,
+     "source": "https://finviz.com/news/394699/cintas-corporation-announces-fiscal-2027-first-quarter-results",
+     "quote": "Operating income as a percent of revenue was 23.6% in the first quarter of fiscal 2027 compared to 22.7% in last year's first quarter. (Operating income $711,887K / revenue $3,013,981K = 23.6%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "FIX": {
+   "backlog_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 99.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017529/fix-20260219xex99d1.htm",
+     "quote": "\"Backlog as of December 31, 2025 was $11.94 billion as compared to $9.38 billion as of September 30, 2025 and $5.99 billion as of December 31, 2024.\" (11.94/5.99 - 1 = 99.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 80.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926047679/fix-20260423xex99d1.htm",
+     "quote": "\"Backlog as of March 31, 2026 was $12.45 billion as compared to $11.94 billion ... and $6.89 billion as of March 31, 2025.\" (12.45/6.89 - 1 = 80.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 73.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926086255/fix-20260723xex99d1.htm",
+     "quote": "\"Backlog as of June 30, 2026 was $14.06 billion as compared to $12.45 billion as of March 31, 2026 and $8.12 billion as of June 30, 2025.\" (14.06/8.12 - 1 = 73.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 89.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926118156/fix-ex99d1.htm",
+     "quote": "\"Backlog as of September 30, 2026 was $17.81 billion as compared to $14.06 billion as of June 30, 2026 and $9.38 billion as of September 30, 2025.\" (17.81/9.38 - 1 = 89.9%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "same_store_backlog_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 93.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017529/fix-20260219xex99d1.htm",
+     "quote": "\"On a same-store basis, backlog increased from $5.99 billion as of December 31, 2024 to $11.58 billion as of December 31, 2025.\" (11.58/5.99 - 1 = 93.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 77.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926047679/fix-20260423xex99d1.htm",
+     "quote": "\"On a same-store basis, backlog increased from $6.89 billion as of March 31, 2025 to $12.21 billion as of March 31, 2026.\" (12.21/6.89 - 1 = 77.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 68.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926086255/fix-20260723xex99d1.htm",
+     "quote": "\"On a same-store basis, backlog increased from $8.12 billion as of June 30, 2025 to $13.70 billion as of June 30, 2026.\" (13.7/8.12 - 1 = 68.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 85.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926118156/fix-ex99d1.htm",
+     "quote": "\"On a same-store basis, backlog increased from $9.38 billion as of September 30, 2025 to $17.39 billion as of September 30, 2026.\" (17.39/9.38 - 1 = 85.4%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 23.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017529/fix-20260219xex99d1.htm",
+     "quote": "Three months ended December 31 (in thousands), 2025 vs 2024: Revenue 2,646,067 | 1,867,804 ... Gross profit 674,715 | 433,738 (433,738/1,867,804 = 23.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 22.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926047679/fix-20260423xex99d1.htm",
+     "quote": "Three months ended March 31 (in thousands): \"Revenue | $2,865,332 | 100.0% | $1,831,286 | 100.0%\" ... \"Gross profit | 754,412 | 26.3% | 403,416 | 22.0%\" (403,416/1,831,286 = 22.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 23.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926086255/fix-20260723xex99d1.htm",
+     "quote": "Three months ended June 30 (in thousands): \"Revenue | $3,265,656 | 100.0% | $2,173,319 | 100.0%\" ... \"Gross profit | 844,228 | 25.9% | 509,897 | 23.5%\" (509,897/2,173,319 = 23.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 24.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926118156/fix-ex99d1.htm",
+     "quote": "Three months ended September 30 (in thousands): \"Revenue | $3,766,302 | 100.0% | $2,450,969 | 100.0%\" ... \"Gross profit | 934,482 | 24.8% | 607,871 | 24.8%\" (607,871/2,450,969 = 24.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 25.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017529/fix-20260219xex99d1.htm",
+     "quote": "Three months ended December 31 (in thousands), 2025 vs 2024: Revenue 2,646,067 | 1,867,804 ... Gross profit 674,715 | 433,738 (674,715/2,646,067 = 25.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 26.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926047679/fix-20260423xex99d1.htm",
+     "quote": "Three months ended March 31 (in thousands): \"Revenue | $2,865,332 | 100.0% | $1,831,286 | 100.0%\" ... \"Gross profit | 754,412 | 26.3% | 403,416 | 22.0%\" (754,412/2,865,332 = 26.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 25.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926086255/fix-20260723xex99d1.htm",
+     "quote": "Three months ended June 30 (in thousands): \"Revenue | $3,265,656 | 100.0% | $2,173,319 | 100.0%\" ... \"Gross profit | 844,228 | 25.9% | 509,897 | 23.5%\" (844,228/3,265,656 = 25.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 24.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926118156/fix-ex99d1.htm",
+     "quote": "Three months ended September 30 (in thousands): \"Revenue | $3,766,302 | 100.0% | $2,450,969 | 100.0%\" ... \"Gross profit | 934,482 | 24.8% | 607,871 | 24.8%\" (934,482/3,766,302 = 24.8%)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "HWM": {
+   "commercial_aerospace_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925012529/tm256423d1_ex99-1.htm",
+     "quote": "primarily driven by growth in the commercial aerospace market of 13%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925043005/tm2513739d1_ex99-1.htm",
+     "quote": "primarily driven by growth in the commercial aerospace market of 9%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925072451/tm2522109d1_ex99-1.htm",
+     "quote": "driven by growth in the commercial aerospace market of 8%, growth in the defense aerospace market of 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 15,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925104005/tm2529740d1_ex99-1.htm",
+     "quote": "driven by growth in the commercial aerospace market of 15%, growth in the defense aerospace market of 24%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465926013832/tm266060d1_ex99-1.htm",
+     "quote": "driven by growth in the commercial aerospace market of 13%, growth in the defense aerospace market of 20%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926056645/tm2613779d1_ex99-1.htm",
+     "quote": "20% growth in the commercial aerospace market, 10% growth in the defense aerospace market",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 28,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926091610/tm2622325d1_ex99-1.htm",
+     "quote": "Revenue was driven by 28% growth in the commercial aerospace market, 11% growth in the defense aerospace market",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 32,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
+     "quote": "32% growth in the commercial aerospace market, 10% growth in the defense aerospace market",
+     "added": "2026-10-30"
+    }
+   ],
+   "defense_aerospace_revenue_growth": [
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925072451/tm2522109d1_ex99-1.htm",
+     "quote": "driven by growth in the commercial aerospace market of 8%, growth in the defense aerospace market of 21%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 24,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925104005/tm2529740d1_ex99-1.htm",
+     "quote": "driven by growth in the commercial aerospace market of 15%, growth in the defense aerospace market of 24%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465926013832/tm266060d1_ex99-1.htm",
+     "quote": "driven by growth in the commercial aerospace market of 13%, growth in the defense aerospace market of 20%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926056645/tm2613779d1_ex99-1.htm",
+     "quote": "20% growth in the commercial aerospace market, 10% growth in the defense aerospace market",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926091610/tm2622325d1_ex99-1.htm",
+     "quote": "Revenue was driven by 28% growth in the commercial aerospace market, 11% growth in the defense aerospace market",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
+     "quote": "32% growth in the commercial aerospace market, 10% growth in the defense aerospace market",
+     "added": "2026-10-30"
+    }
+   ],
+   "engine_products_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925012529/tm256423d1_ex99-1.htm",
+     "quote": "Engine Products reported fourth quarter 2024 revenue of $972 million, an increase of 14% year over year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925043005/tm2513739d1_ex99-1.htm",
+     "quote": "Engine Products reported first quarter 2025 revenue of $996 million, an increase of 13% year over year.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925072451/tm2522109d1_ex99-1.htm",
+     "quote": "Engine Products reported second quarter 2025 revenue of $1.1 billion, an increase of 13% year over year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 17,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925104005/tm2529740d1_ex99-1.htm",
+     "quote": "Engine Products reported third quarter 2025 revenue of $1.1 billion, an increase of 17% year over year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465926013832/tm266060d1_ex99-1.htm",
+     "quote": "Engine Products reported fourth quarter 2025 revenue of $1.2 billion, an increase of 20% year over year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 29,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926056645/tm2613779d1_ex99-1.htm",
+     "quote": "Engine Products reported first quarter 2026 revenue of $1.25 billion, an increase of 29% year over year (Third-party sales | $1,253 | $974 | 29%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926091610/tm2622325d1_ex99-1.htm",
+     "quote": "Engine Products reported second quarter 2026 revenue of $1.37 billion, an increase of 32% year over year (Third-party sales | $1,373 | $1,038 | 32%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 33,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
+     "quote": "Engine Products reported third quarter 2026 revenue of $1.45 billion, an increase of 33% year over year (Third-party sales | $1,451 | $1,087 | 33%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 26.8,
+     "source": "https://www.howmet.com/wp-content/uploads/sites/3/2026/02/Howmet-Aerospace-Reports-Fourth-Quarter-and-Full-Year-2025-Results.pdf",
+     "quote": "Adjusted EBITDA margin excluding Special items [4Q24 | 3Q25 | 4Q25 | FY24 | FY25] 26.8 % 29.4 % 30.1 % 25.8 % 29.3 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 28.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926056645/tm2613779d1_ex99-1.htm",
+     "quote": "Adjusted EBITDA Margin | 32.0% | 28.8% | 320 | bps (1Q26 vs 1Q25)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 28.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926091610/tm2622325d1_ex99-1.htm",
+     "quote": "Adjusted EBITDA Margin | 32.1% | 28.7% | 340 | bps (2Q26 vs 2Q25)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 29.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
+     "quote": "Adjusted EBITDA Margin | 32.5% | 29.4% | 310 | bps (3Q26 vs 3Q25)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 30.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465926013832/tm266060d1_ex99-1.htm",
+     "quote": "Adjusted EBITDA margin excluding special items was up approximately 330 basis points year over year at 30.1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 32.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926056645/tm2613779d1_ex99-1.htm",
+     "quote": "Adjusted EBITDA Margin | 32.0% | 28.8% | 320 | bps",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926091610/tm2622325d1_ex99-1.htm",
+     "quote": "Adjusted EBITDA Margin | 32.1% | 28.7% | 340 | bps",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 32.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
+     "quote": "Adjusted EBITDA margin expanded 310 basis points year over year to 32.5%. (Adjusted EBITDA Margin | 32.5% | 29.4% | 310 | bps)",
+     "added": "2026-10-30"
+    }
+   ],
+   "fcf_conversion": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 124.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465925012529/tm256423d1_ex99-1.htm",
+     "quote": "$378 million of Free Cash Flow [Q4 2024 release]; Net income excluding Special items [4Q24 | 3Q25 | 4Q25] $303 | $385 | $426 [Q4 2025 release, https://www.sec.gov/Archives/edgar/data/4281/000110465926013832/tm266060d1_ex99-1.htm] (378/303 = 124.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 38.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926056645/tm2613779d1_ex99-1.htm",
+     "quote": "Free Cash Flow | $359 | $134 | 168% ... Adjusted Net income [1Q25 | 4Q25 | 1Q26] | $351 | $426 | $494 (134/351 = 38.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 92.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926091610/tm2622325d1_ex99-1.htm",
+     "quote": "Free Cash Flow | $479 | $344 | 39% ... Adjusted Net income [2Q25 | 1Q26 | 2Q26] | $371 | $494 | $534 (344/371 = 92.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 109.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
+     "quote": "Free Cash Flow | $562 | $423 | 33% ... Adjusted Net income [3Q25 | 2Q26 | 3Q26] | $385 | $534 | $584 (423/385 = 109.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 124.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/4281/000110465926013832/tm266060d1_ex99-1.htm",
+     "quote": "Free cash flow (a) [1Q25..4Q25] $134 | $344 | $423 | $530 ... Net income excluding Special items [4Q24 | 3Q25 | 4Q25] $303 | $385 | $426 (530/426 = 124.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 72.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926056645/tm2613779d1_ex99-1.htm",
+     "quote": "Free Cash Flow | $359 | $134 | 168% ... Adjusted Net income [1Q25 | 4Q25 | 1Q26] | $351 | $426 | $494 (359/494 = 72.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 89.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926091610/tm2622325d1_ex99-1.htm",
+     "quote": "Free Cash Flow | $479 | $344 | 39% ... Adjusted Net income [2Q25 | 1Q26 | 2Q26] | $371 | $494 | $534 (479/534 = 89.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 96.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000004281/000110465926119857/tm2628456d1_ex99-1.htm",
+     "quote": "Free Cash Flow | $562 | $423 | 33% ... Adjusted Net income [3Q25 | 2Q26 | 3Q26] | $385 | $534 | $584 (562/584 = 96.2%)",
+     "added": "2026-10-30"
+    }
+   ]
   }
  }
 }
