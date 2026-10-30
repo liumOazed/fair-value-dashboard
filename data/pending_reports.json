@@ -3,41 +3,6 @@
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
-   "ticker": "DECK",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-22",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 8
-  },
-  {
-   "ticker": "ALLE",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-22",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 8
-  },
-  {
-   "ticker": "FIX",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-22",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 8
-  },
-  {
-   "ticker": "V",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-27",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 3
-  },
-  {
-   "ticker": "SPGI",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-27",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 3
-  },
-  {
    "ticker": "MSFT",
    "data_through": "2026-06-30",
    "reported_on": "2026-10-28",
@@ -236,6 +201,16 @@
    "data_through": "2026-08-31"
   },
   {
+   "ticker": "V",
+   "next_report": "2027-01-26",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "DECK",
+   "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "NDAQ",
    "next_report": "2027-01-28",
    "data_through": "2026-09-30"
@@ -246,8 +221,23 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "SPGI",
+   "next_report": "2027-02-09",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "ALLE",
+   "next_report": "2027-02-16",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "MCO",
    "next_report": "2027-02-17",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "FIX",
+   "next_report": "2027-02-18",
    "data_through": "2026-09-30"
   }
  ]

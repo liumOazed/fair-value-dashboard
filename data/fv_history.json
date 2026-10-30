@@ -152,6 +152,15 @@
    "bull": 177.54,
    "price": 81.09,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 122.8,
+   "bear": 87.73,
+   "base": 127.84,
+   "bull": 162.79,
+   "price": 82.76,
+   "method": "fcff_re"
   }
  ],
  "INCY": [
@@ -262,6 +271,15 @@
    "bull": 180.63,
    "price": 178.98,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 138.03,
+   "bear": 92.46,
+   "base": 147.38,
+   "bull": 183.03,
+   "price": 187.06,
+   "method": "fcff_re"
   }
  ],
  "FTNT": [
@@ -295,6 +313,15 @@
    "bull": 370.36,
    "price": 407.92,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 281.5,
+   "bear": 222.74,
+   "base": 290.44,
+   "bull": 347.27,
+   "price": 410.54,
+   "method": "fcff_re"
   }
  ],
  "FIX": [
@@ -305,6 +332,15 @@
    "base": 797.72,
    "bull": 1237.25,
    "price": 1160.86,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 827.84,
+   "bear": 347.82,
+   "base": 893.21,
+   "bull": 1384.42,
+   "price": 1326.23,
    "method": "fcff_re"
   }
  ],
@@ -393,6 +429,15 @@
    "base": 312.27,
    "bull": 385.91,
    "price": 450.31,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-10-30",
+   "fv": 309.03,
+   "bear": 224.14,
+   "base": 323.74,
+   "bull": 399.61,
+   "price": 460.66,
    "method": "fcff_re"
   }
  ],
