@@ -1,0 +1,28 @@
+name: Earnings watch
+# Daily at 01:30 UTC (07:30 Dhaka), before the daily earnings-update task (09:00 Dhaka):
+# refreshes the earnings calendar and the list of companies that have reported a newer quarter than their model.
+on:
+  schedule: [{ cron: "30 1 * * *" }]
+  workflow_dispatch:
+  push:
+    paths: [".github/earnings-watch-request.json"]
+permissions:
+  contents: write
+concurrency: { group: earnings-watch, cancel-in-progress: false }
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install yfinance pandas lxml
+      - run: python scripts/earnings_watch.py
+      - name: Commit result
+        run: |
+          git config user.name "earnings-bot"
+          git config user.email "earnings-bot@users.noreply.github.com"
+          git add data/earnings_calendar.json data/pending_reports.json
+          git diff --staged --quiet || git commit -m "Earnings watch $(date -u +%Y-%m-%d)"
+          git pull --rebase && git push
