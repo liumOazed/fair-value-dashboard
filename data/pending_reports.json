@@ -3,55 +3,6 @@
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
-   "ticker": "AMZN",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
-   "ticker": "LLY",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
-   "ticker": "INCY",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
-   "ticker": "RMD",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
-   "ticker": "MA",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
-   "ticker": "DXCM",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
-   "ticker": "HWM",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
    "ticker": "CBOE",
    "data_through": "2026-06-30",
    "reported_on": "2026-10-30",
