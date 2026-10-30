@@ -5622,6 +5622,1086 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "SPGI": {
+   "ratings_transaction_vs_non_transaction_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": "Transaction $0.521B, non-transaction $0.541B",
+     "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm",
+     "quote": "Ratings ... 585 | 521 | 12% ... Ratings ... | 602 | 541 | 11% (2024 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": "Transaction $0.620B, non-transaction $0.529B",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000019/spgi1q2026-earningsrelease.htm",
+     "quote": "Ratings Non-subscription / Transaction: 712 | 620 | 15% ... Non-transaction: 590 | 529 | 11% (2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": "Transaction $0.597B, non-transaction $0.551B",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000040/spgi2q2026-earningsrelease.htm",
+     "quote": "Ratings | | $— | $— | N/M | $746 | $597 | 25% | $593 | $551 | 8% (2025 columns)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": "Transaction $0.668B, non-transaction $0.572B",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm",
+     "quote": "Non-subscription / Transaction (b) | Ratings | $677 | $668 | 1% ... Non-transaction (c) | Ratings | $594 | $572 | 4% (2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "Transaction $0.585B (+12%), non-transaction $0.602B (+11%)",
+     "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm",
+     "quote": "Ratings | | | — | — | N/M | | 585 | | | 521 | | | 12% ... Ratings ... | 602 | | | 541 | | | 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": "Transaction $0.712B (+15%), non-transaction $0.590B (+11%)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000019/spgi1q2026-earningsrelease.htm",
+     "quote": "Ratings Non-subscription / Transaction: 712 | 620 | 15% ... Non-transaction: 590 | 529 | 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": "Transaction $0.746B (+25%), non-transaction $0.593B (+8%)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000040/spgi2q2026-earningsrelease.htm",
+     "quote": "Ratings | | $— | $— | N/M | $746 | $597 | 25% | $593 | $551 | 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": "Transaction $0.677B (+1%), non-transaction $0.594B (+4%)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm",
+     "quote": "Non-subscription / Transaction (b) | Ratings | $677 | $668 | 1% ... Non-transaction (c) | Ratings | $594 | $572 | 4%",
+     "added": "2026-10-30"
+    }
+   ],
+   "indices_revenue_and_etf_aum": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": "Revenue $0.436B",
+     "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm",
+     "quote": "Indices ... | 498 | 436 | 14% (2024 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": "Revenue $0.445B",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000019/spgi1q2026-earningsrelease.htm",
+     "quote": "Indices | $519 | $445 | 17% (2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": "Revenue $0.446B",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000040/spgi2q2026-earningsrelease.htm",
+     "quote": "Indices | | 534 | 446 | 20% (2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": "Revenue $0.462B",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm",
+     "quote": "Indices | 554 | 462 | 20% (2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "Revenue $0.498B (+14%); ETF AUM not disclosed",
+     "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm",
+     "quote": "Indices ... | 498 | 436 | 14% ... Indices revenue increased 14%, largely driven by growth in asset-linked fees, which benefited from higher AUM and inflows",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": "Revenue $0.519B (+17%); ETF AUM not disclosed (asset-linked fees +18%)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000019/spgi1q2026-earningsrelease.htm",
+     "quote": "Indices | $519 | $445 | 17% ... Call: Revenue associated with asset link fees grew 18% in the first quarter.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": "Revenue $0.534B (+20%); ETF AUM $6.35T (quarter-end)",
+     "source": "https://www.marketbeat.com/earnings/reports/2026-7-28-sp-global-inc-stock/",
+     "quote": "Release Exhibit 4: Indices | | 534 | 446 | 20% ... Call: ETF AUM for S&P Dow Jones Indices ended the quarter at $6.35 trillion.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": "Revenue $0.554B (+20%); ETF AUM $6.5T (+26% y/y, quarter-end, record)",
+     "source": "https://singjupost.com/sp-global-q3-2026-earnings-call-transcript/",
+     "quote": "Release Exhibit 4: Indices | 554 | 462 | 20% ... Call: we achieved a new record quarter for ETF AUM of $6.5 trillion ... we ended the quarter with ETF assets under management up 26%.",
+     "added": "2026-10-30"
+    }
+   ],
+   "market_intelligence_organic_subscription_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7,
+     "source": "https://www.marketbeat.com/instant-alerts/sp-global-q4-earnings-call-highlights-2026-02-11/?.tsrc=rss",
+     "quote": "Subscription revenue, about 85% of the segment, rose about 7% both organically and as reported. (MarketBeat call summary; release: Market Intelligence revenue increased 7%, driven by strong organic subscription revenue growth)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6,
+     "source": "https://financialfilings.com/filings/sp-global-inc/call-transcript/2026/48444593/",
+     "quote": "Subscription revenue increased a solid 6%, both on a reported and organic basis, driven by strong renewals",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6,
+     "source": "https://www.marketbeat.com/earnings/reports/2026-7-28-sp-global-inc-stock/",
+     "quote": "In the second quarter, subscription revenue increased a solid 6% on both a reported and organic basis.",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 46.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm",
+     "quote": "Adjusted operating profit margin increased 60 basis points to 47.3% (47.3 - 0.6 = 46.7; includes Mobility)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 50.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000019/spgi1q2026-earningsrelease.htm",
+     "quote": "adjusted operating profit margin increased 100 basis points to 51.8% (51.8 - 1.0 = 50.8; includes Mobility)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 52.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000040/spgi2q2026-earningsrelease.htm",
+     "quote": "adjusted operating profit margin increased 200 basis points to 54.3% (54.3 - 2.0 = 52.3; pro forma excluding Mobility)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 52.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm",
+     "quote": "adjusted operating profit margin increased 60 basis points to 53.5% (53.5 - 0.6 = 52.9; recast excluding Mobility)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 47.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm",
+     "quote": "Adjusted operating profit margin increased 60 basis points to 47.3%, primarily due to profit growth ... in our Ratings and Indices divisions.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 51.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000019/spgi1q2026-earningsrelease.htm",
+     "quote": "adjusted operating profit margin increased 100 basis points to 51.8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 54.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000040/spgi2q2026-earningsrelease.htm",
+     "quote": "and adjusted operating profit margin increased 200 basis points to 54.3%. (pro forma, excluding Mobility)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 53.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000064040/000006404026000053/spgi3q2026-earningsrelease.htm",
+     "quote": "adjusted operating profit margin increased 60 basis points to 53.5%",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "MCO": {
+   "mis_ratings_transaction_revenue_issuance": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.485,
+     "source": "https://www.boardroomalpha.com/sec/mco-8-k-2026-02-18-0001628280-26-008788/a4q25earningsrelease.htm",
+     "quote": "Three months ended Dec 31, 2024 (transaction, recurring, total): Total MIS $485 $324 $809 ($ millions)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.732,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026026383/a1q26earningsrelease.htm",
+     "quote": "Table 6 transaction revenue: Total MIS | $790 | $732 ($ millions, Q1 2026 vs Q1 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.663,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026049104/a2q26earningsrelease.htm",
+     "quote": "Total MIS Transaction Revenue | $891 | $663 | 34% ($ millions, Q2 2026 vs Q2 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.753,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026066594/a3q26earningsrelease.htm",
+     "quote": "MIS Transactional Revenue | $714 | $753 | (5)% ($ millions, Q3 2026 vs Q3 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.593,
+     "source": "https://www.boardroomalpha.com/sec/mco-8-k-2026-02-18-0001628280-26-008788/a4q25earningsrelease.htm",
+     "quote": "Three months ended Dec 31, 2025 (transaction, recurring, total): Total MIS $593 $353 $946 ($ millions)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.79,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026026383/a1q26earningsrelease.htm",
+     "quote": "Table 6 transaction revenue: Total MIS | $790 | $732 ($ millions, Q1 2026 vs Q1 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.891,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026049104/a2q26earningsrelease.htm",
+     "quote": "Total MIS Transaction Revenue | $891 | $663 | 34% ($ millions, Q2 2026 vs Q2 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.714,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026066594/a3q26earningsrelease.htm",
+     "quote": "MIS Transactional Revenue | $714 | $753 | (5)% ($ millions, Q3 2026 vs Q3 2025)",
+     "added": "2026-10-30"
+    }
+   ],
+   "moody_s_analytics_arr_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8,
+     "source": "https://www.boardroomalpha.com/sec/mco-8-k-2026-02-18-0001628280-26-008788/a4q25earningsrelease.htm",
+     "quote": "ARR of $3.5 billion increased $265 million, representing 8% growth versus December 31, 2024. ... Total MA ARR $3,498 $3,233 $265 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026026383/a1q26earningsrelease.htm",
+     "quote": "ARR increased 8% year-over-year to $3.6 billion, led by Decision Solutions which increased 10% year-over-year. ... Total MA ARR | $3,607 | $3,343 | $264 | 8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026049104/a2q26earningsrelease.htm",
+     "quote": "ARR increased 9% year-over-year to $3.7 billion, led by Decision Solutions, which increased 10% year-over-year. ... Total MA ARR | $3,661 | $3,372 | $289 | 9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026066594/a3q26earningsrelease.htm",
+     "quote": "ARR increased 8% year-over-year to $3.7 billion, led by Decision Solutions, which increased 10% year-over-year. ... Total MA ARR $3,688 vs $3,418, 8%",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 43.8,
+     "source": "https://www.boardroomalpha.com/sec/mco-8-k-2026-02-18-0001628280-26-008788/a4q25earningsrelease.htm",
+     "quote": "Table 7 (three months ended Dec 31): Adjusted Operating Margin 48.7 % 43.8 % (2025 / 2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 51.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026026383/a1q26earningsrelease.htm",
+     "quote": "MCO Adjusted Operating Margin | 53.2% | 51.7% | 150 bps",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 50.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026049104/a2q26earningsrelease.htm",
+     "quote": "MCO Adjusted Operating Margin | 55.3% | 50.9% | 440 bps",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 52.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026066594/a3q26earningsrelease.htm",
+     "quote": "MCO Adjusted Operating Margin | 52.6% | 52.9% | (30) bps",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 48.7,
+     "source": "https://www.boardroomalpha.com/sec/mco-8-k-2026-02-18-0001628280-26-008788/a4q25earningsrelease.htm",
+     "quote": "MCO's operating margin was 40.8%. MCO's adjusted operating margin was 48.7%. ... Adjusted Operating Margin 48.7 % 43.8 % (three months 2025 / 2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 53.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026026383/a1q26earningsrelease.htm",
+     "quote": "MCO's operating margin was 44.3%; MCO's Adjusted Operating Margin expanded by 150 bps to 53.2%. ... MCO Adjusted Operating Margin | 53.2% | 51.7% | 150 bps",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 55.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026049104/a2q26earningsrelease.htm",
+     "quote": "MCO's operating margin was 47.9%; MCO's Adjusted Operating Margin expanded by 440 bps to 55.3%. ... MCO Adjusted Operating Margin | 55.3% | 50.9% | 440 bps",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 52.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001059556/000162828026066594/a3q26earningsrelease.htm",
+     "quote": "MCO's operating margin was 44.8% and MCO's Adjusted Operating Margin was 52.6%. ... MCO Adjusted Operating Margin | 52.6% | 52.9% | (30) bps",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "NDAQ": {
+   "annualized_recurring_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 7,
+     "source": "https://ir.nasdaq.com/node/108491",
+     "quote": "Annualized Recurring Revenue (ARR)5 of $2.8 billion increased 7% over the fourth quarter of 2023.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525092227/d859494dex991.htm",
+     "quote": "Annualized Recurring Revenue (ARR) of $2.8 billion increased 8% over the first quarter of 2024, or up 9% on an organic basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 10,
+     "source": "https://ir.nasdaq.com/node/109336",
+     "quote": "Annualized Recurring Revenue (ARR)4 of $2.9 billion increased 10% over the second quarter of 2024, or up 9% on an organic basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10,
+     "source": "https://mondovisione.com/media-and-resources/news/nasdaq-reports-third-quarter-2025-results-surpassing-1-billion-in-solutions-q-20251021/",
+     "quote": "Annualized Recurring Revenue (ARR)4 of $3.0 billion increased 10% over the third quarter of 2024, or up 9% on an organic basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 10,
+     "source": "https://ir.nasdaq.com/node/109901",
+     "quote": "ARR was $3.1 billion as of the fourth quarter of 2025, growing 10% year-over-year on both a reported and organic basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 13,
+     "source": "https://ir.nasdaq.com/node/110321",
+     "quote": "ARR | $3,188 | 13% | 12% ... increased 13% on a reported basis over the first quarter of 2025, or 12% on an organic basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 11,
+     "source": "https://ir.nasdaq.com/node/110756",
+     "quote": "Annualized Recurring Revenue (ARR)3,4 of $3.3 billion increased 11% on a reported basis over the second quarter of 2025 ... or 12% on an organic basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001120193/000112019326000017/earningsrelease3q26ex-991.htm",
+     "quote": "Annualized Recurring Revenue (ARR)3,4 of $3.4 billion increased 12% on a reported basis over the third quarter of 2025 ... or 14% on an organic basis.",
+     "added": "2026-10-30"
+    }
+   ],
+   "solutions_revenue_growth_organic": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525092227/d859494dex991.htm",
+     "quote": "Solutions revenues (3) 947 871 76 9% — — 76 9% (Organic Impact) ... Solutions revenue | $ 947 | 9 % | 11 % | 9 % (YoY | Adjusted YoY | Organic YoY)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 10,
+     "source": "https://ir.nasdaq.com/node/109336",
+     "quote": "Solutions revenues (3) 991 901 90 10 % 4 — % 86 10 % (Adjusted/Organic Impact)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10,
+     "source": "https://mondovisione.com/media-and-resources/news/nasdaq-reports-third-quarter-2025-results-surpassing-1-billion-in-solutions-q-20251021/",
+     "quote": "Solutions revenues (4) 1,003 906 97 11% 2 —% 95 10% (Adjusted/Organic Impact) ... or 10% on an organic basis, reflecting strong growth from Financial Technology and Index.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 12,
+     "source": "https://ir.nasdaq.com/node/109901",
+     "quote": "Fourth quarter 2025 Solutions revenue was $1.1 billion, up 13% versus the prior year period, or 12% on an organic basis ... Solutions revenue(2) $ 1,071 $ 949 $ 122 13 % $ 5 — % $ 117 12 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 14,
+     "source": "https://ir.nasdaq.com/node/110321",
+     "quote": "Solutions revenue3 grew 14% on both a reported and organic basis. ... Solutions revenue (2) $ 1,082 $ 947 $ 135 14 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 17,
+     "source": "https://ir.nasdaq.com/node/110756",
+     "quote": "Solutions revenue | $1,160 | 17% | 17% | 17% ... Solutions revenue 2 $ 1,160 $ 991 $ 169 17 % $ (1 ) (1 )% $ 170 17 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001120193/000112019326000017/earningsrelease3q26ex-991.htm",
+     "quote": "Solutions revenue3 increased 17%, or 18% on an organic basis. ... Solutions revenue2 $ 1,172 $ 1,003 $ 169 17 % $ (9 ) (1) % $ 178 18 %",
+     "added": "2026-10-30"
+    }
+   ],
+   "etp_aum_tracking_nasdaq_indices": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 647,
+     "source": "https://ir.nasdaq.com/node/109901",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 882 $ 647 $ 882 $ 647 (Q4 2024 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 622,
+     "source": "https://ir.nasdaq.com/node/110321",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 836 $ 622 (Q1 2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 745,
+     "source": "https://ir.nasdaq.com/node/110756",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 1,114 $ 745 $ 1,114 $ 745 (Q2 2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 829,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001120193/000112019326000017/earningsrelease3q26ex-991.htm",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 1,160 $ 829 $ 1,160 $ 829 (Q3 2025 column)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 882,
+     "source": "https://ir.nasdaq.com/node/109901",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 882 $ 647 $ 882 $ 647",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 836,
+     "source": "https://ir.nasdaq.com/node/110321",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 836 $ 622",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1114,
+     "source": "https://ir.nasdaq.com/node/110756",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 1,114 $ 745 $ 1,114 $ 745",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1160,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001120193/000112019326000017/earningsrelease3q26ex-991.htm",
+     "quote": "Period end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) $ 1,160 $ 829 $ 1,160 $ 829",
+     "added": "2026-10-30"
+    }
+   ],
+   "net_debt_ebitda": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2.9,
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/01/29/nasdaq-ndaq-q4-2025-earnings-call-transcript/",
+     "quote": "end the year with a gross leverage ratio of 2.9 times, beating our expectation of 3.0x (CFO Sarah Youngwood, Q4 2025 earnings call; gross debt/EBITDA basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.5,
+     "source": "https://bullfincher.io/companies/nasdaq/earnings-call/fy2026-q3",
+     "quote": "We finished the quarter with a gross leverage of 2.5x. (CFO Sarah Youngwood, Q3 2026 earnings call; gross debt/EBITDA basis, not net)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "CBOE": {
+   "options_average_daily_volume": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 15673000,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026005944/cboe-20260206xex991.htm",
+     "quote": "Total Company Options ADV (in thousands): 4Q 2025 | 3Q 2025 | 2Q 2025 | 1Q 2025 | 4Q 2024 -> 19,419 | 18,775 | 17,301 | 18,183 | 15,673 (4Q 2024 = 15,673; multi-listed 11,633 + index 4,040)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 18183000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026029103/cboe-20260501xex991.htm",
+     "quote": "Total Company Options ADV (in thousands): 1Q 2026 | 4Q 2025 | 3Q 2025 | 2Q 2025 | 1Q 2025 -> 20,076 | 19,419 | 18,775 | 17,301 | 18,183 (1Q 2025 = 18,183; multi-listed 13,412 + index 4,771)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17301000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026051217/cboe-20260731xex991.htm",
+     "quote": "Total Company Options ADV (in thousands): 2Q 2026 | 1Q 2026 | 4Q 2025 | 3Q 2025 | 2Q 2025 -> 21,862 | 20,076 | 19,419 | 18,775 | 17,301 (2Q 2025 = 17,301; multi-listed 12,615 + index 4,686)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 18775000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026068432/cboe-20261030xex991.htm",
+     "quote": "Total Company Options ADV (in thousands): 3Q 2026 | 2Q 2026 | 1Q 2026 | 4Q 2025 | 3Q 2025 -> 21,347 | 21,862 | 20,076 | 19,419 | 18,775 (3Q 2025 = 18,775; multi-listed 13,911 + index 4,864)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 19419000,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026005944/cboe-20260206xex991.htm",
+     "quote": "Total Company Options ADV (in thousands) | 19,419 (4Q 2025) ... Multi-listed options 13,965 ... Index options 5,454",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 20076000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026029103/cboe-20260501xex991.htm",
+     "quote": "Total Company Options ADV (in thousands): | 20,076 (1Q 2026) ... Multi-listed options 13,940 ... Index options 6,136",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 21862000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026051217/cboe-20260731xex991.htm",
+     "quote": "Total Company Options ADV (in thousands): | 21,862 (2Q 2026) ... Multi-listed options 15,654 ... Index options 6,208",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 21347000,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026068432/cboe-20261030xex991.htm",
+     "quote": "Total Company Options ADV (in thousands): | 21,347 (3Q 2026) ... Multi-listed options 15,296 ... Index options 6,051",
+     "added": "2026-10-30"
+    }
+   ],
+   "organic_net_revenue_growth": [
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 25,
+     "source": "https://s202.q4cdn.com/174824971/files/doc_financials/2026/q2/2Q26-Cboe-Earnings-Slides.pdf",
+     "quote": "Organic net revenue (three months ended June 30) Total 2026 $731.6 | 2025 $587.3 | Y/Y Change 25% (Inorganic net revenue: -)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 18.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026068432/cboe-20261030xex991.htm",
+     "quote": "Reconciliation of Revenues Less Cost of Revenues to Organic Net Revenue (three months ended Sept 30, Total 2026 | 2025): Organic net revenue | $709.3 | $598.1 (709.3/598.1 - 1 = 18.6%); reported net revenue $712.2 vs $605.5, 'net revenue growth of 18 percent'",
+     "added": "2026-10-30"
+    }
+   ],
+   "data_access_solutions_growth": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828025021670/cboe-20250502xex991.htm",
+     "quote": "Data Vantage recorded 8 percent net revenue growth.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828025037143/cboe-20250801xex991.htm",
+     "quote": "Data Vantage produced 11 percent net revenue growth",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828025047668/cboe-20251031xex991.htm",
+     "quote": "Data Vantage net revenue grew 12 percent on a year-over-year basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026005944/cboe-20260206xex991.htm",
+     "quote": "Data Vantage net revenue increased 9 percent on a year-over-year basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 19,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026029103/cboe-20260501xex991.htm",
+     "quote": "our Data Vantage business grew 19 percent on a year-over-year basis.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 15,
+     "source": "https://s202.q4cdn.com/174824971/files/doc_financials/2026/q2/2Q26-Cboe-Earnings-Slides.pdf",
+     "quote": "2Q26 Data Vantage net revenue of $177.8 million up 15% YoY organically",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 15.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026068432/cboe-20261030xex991.htm",
+     "quote": "Data Vantage (formerly Data and Access Solutions) organic net revenue $176.7 (3Q26) | $152.5 (3Q25) (176.7/152.5 - 1 = 15.9%, organic); reported: 'Data Vantage delivered record quarterly net revenue, up 13 percent from a year ago.'",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 61.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026005944/cboe-20260206xex991.htm",
+     "quote": "Adjusted operating margin (14) | 67.1 % | 61.0 % (three months ended Dec 31, 2025 | 2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 66.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026029103/cboe-20260501xex991.htm",
+     "quote": "Adjusted operating margin (8) | 72.4% | 66.0% (three months ended March 31, 2026 | 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 63.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026051217/cboe-20260731xex991.htm",
+     "quote": "Adjusted operating margin (8) | 70.4% | 63.7% (three months ended June 30, 2026 | 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 65.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828025047668/cboe-20251031xex991.htm",
+     "quote": "Adjusted operating margin (16) | 65.3 % | 61.7 % (three months ended Sept 30, 2025 | 2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 67.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026005944/cboe-20260206xex991.htm",
+     "quote": "Adjusted operating margin (14) | 67.1 % | 61.0 % (three months ended Dec 31, 2025 | 2024)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 72.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026029103/cboe-20260501xex991.htm",
+     "quote": "Adjusted operating margin (8) | 72.4% | 66.0% (three months ended March 31, 2026 | 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 70.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026051217/cboe-20260731xex991.htm",
+     "quote": "Adjusted operating margin (8) | 70.4% | 63.7% (three months ended June 30, 2026 | 2025)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 71.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001374310/000162828026068432/cboe-20261030xex991.htm",
+     "quote": "Adjusted operating margin (10) | 71.4% | 65.3% (three months ended Sept 30, 2026 | 2025)",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "FDS": {
+   "organic_asv_growth": [
+    {
+     "period": "2024-11-30",
+     "label": "Q1 FY25",
+     "value": 4.5,
+     "source": "https://www.nasdaq.com/press-release/factset-reports-results-first-quarter-2025-2024-12-19",
+     "quote": "Organic ASV was $2,258.8 million at November 30, 2024, up $98.1 million from the prior year, for a growth rate of 4.5%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q2 FY25",
+     "value": 4.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013237/000101323725000042/fdsq22025earningsrelease.htm",
+     "quote": "Organic ASV was $2,276.2 million at February 28, 2025, up $90.7 million from the prior year, for a growth rate of 4.1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q3 FY25",
+     "value": 4.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013237/000101323725000064/fdsq32025earningsrelease.htm",
+     "quote": "Organic ASV was $2,296.9 million at May 31, 2025, up $98.5 million from the prior year, for a growth rate of 4.5%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q4 FY25",
+     "value": 5.7,
+     "source": "https://www.globenewswire.com/news-release/2025/09/18/3152236/0/en/FactSet-Reports-Results-for-Fourth-Quarter-and-Fiscal-2025.html",
+     "quote": "Organic ASV was $2,370.9 million at August 31, 2025, up $127.3 million from the prior year, for a growth rate of 5.7%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q1 FY26",
+     "value": 5.9,
+     "source": "https://investor.factset.com/news-releases/news-release-details/factset-reports-results-first-quarter-fiscal-2026/",
+     "quote": "Organic ASV was $2,389.6 million at November 30, 2025, up $132.9 million from the prior year, for a growth rate of 5.9%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q2 FY26",
+     "value": 6.7,
+     "source": "https://investor.factset.com/node/19096/html",
+     "quote": "Organic ASV was $2,449.1 million at February 28, 2026, up $152.9 million from the prior year, for a growth rate of 6.7%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q3 FY26",
+     "value": 7.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026046338/fdsq32026earningsrelease.htm",
+     "quote": "Organic ASV was $2,485.6 million at May 31, 2026, up $165.0 million from the prior year, for a growth rate of 7.1%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q4 FY26",
+     "value": 7.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026063888/fdsq42026earningsrelease.htm",
+     "quote": "Organic ASV was $2,568.2 million at August 31, 2026, up $168.2 million from the prior year, for a growth rate of 7.0%.",
+     "added": "2026-10-30"
+    }
+   ],
+   "client_retention_asv_and_count": [
+    {
+     "period": "2024-11-30",
+     "label": "Q1 FY25",
+     "value": 95,
+     "source": "https://www.nasdaq.com/press-release/factset-reports-results-first-quarter-2025-2024-12-19",
+     "quote": "Annual ASV retention was greater than 95%. ... When expressed as a percentage of clients, annual retention was 91%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q2 FY25",
+     "value": 95,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013237/000101323725000042/fdsq22025earningsrelease.htm",
+     "quote": "Annual ASV retention was greater than 95%. ... When expressed as a percentage of clients, annual retention was 91%.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q3 FY25",
+     "value": 95,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013237/000101323725000064/fdsq32025earningsrelease.htm",
+     "quote": "Annual ASV retention was greater than 95% as of May 31, 2025. ... When expressed as a percentage of clients, annual retention was 91% as of May 31, 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q4 FY25",
+     "value": 95,
+     "source": "https://www.globenewswire.com/news-release/2025/09/18/3152236/0/en/FactSet-Reports-Results-for-Fourth-Quarter-and-Fiscal-2025.html",
+     "quote": "Annual ASV retention was greater than 95% as of August 31, 2025. ... When expressed as a percentage of clients, annual retention was 91% as of August 31, 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q1 FY26",
+     "value": 95,
+     "source": "https://investor.factset.com/news-releases/news-release-details/factset-reports-results-first-quarter-fiscal-2026/",
+     "quote": "Annual ASV retention was greater than 95% as of November 30, 2025. ... When expressed as a percentage of clients, annual retention was 91% as of November 30, 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q2 FY26",
+     "value": 95,
+     "source": "https://investor.factset.com/node/19096/html",
+     "quote": "Annual ASV retention was greater than 95% as of February 28, 2026. ... When expressed as a percentage of clients, annual retention was 91% as of February 28, 2026.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q3 FY26",
+     "value": 95,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026046338/fdsq32026earningsrelease.htm",
+     "quote": "... annual ASV retention remained above 95%. (\"above\" 95%; no client-count retention stated in this release)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q4 FY26",
+     "value": 95,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026063888/fdsq42026earningsrelease.htm",
+     "quote": "Annual ASV retention remained above 95%. (\"above\" 95%; no client-count retention stated in this release)",
+     "added": "2026-10-30"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-11-30",
+     "label": "Q1 FY25",
+     "value": 37.6,
+     "source": "https://investor.factset.com/news-releases/news-release-details/factset-reports-results-first-quarter-fiscal-2026/",
+     "quote": "Three Months Ended November 30, 2025 | 2024 ... Adjusted operating margin | 36.2% | 37.6% (matches Q1 FY25 release)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q2 FY25",
+     "value": 37.3,
+     "source": "https://investor.factset.com/node/19096/html",
+     "quote": "Three Months Ended February 28, 2026 | 2025 ... Adjusted operating margin | 35.0 % | 37.3 % (matches Q2 FY25 release)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q3 FY25",
+     "value": 36.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026046338/fdsq32026earningsrelease.htm",
+     "quote": "Three Months Ended May 31, 2026 | 2025 ... Adjusted operating margin | 34.0% | 36.8% (matches Q3 FY25 release)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q4 FY25",
+     "value": 33.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026063888/fdsq42026earningsrelease.htm",
+     "quote": "Three Months Ended August 31, 2026 | 2025 ... Adjusted operating margin | 33.0% | 33.8% (matches Q4 FY25 release: 33.8% vs 35.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q1 FY26",
+     "value": 36.2,
+     "source": "https://investor.factset.com/news-releases/news-release-details/factset-reports-results-first-quarter-fiscal-2026/",
+     "quote": "Three Months Ended November 30, 2025 | 2024 ... Adjusted operating margin | 36.2% | 37.6%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q2 FY26",
+     "value": 35.0,
+     "source": "https://investor.factset.com/node/19096/html",
+     "quote": "Three Months Ended February 28, 2026 | 2025 ... Adjusted operating margin | 35.0 % | 37.3 %",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q3 FY26",
+     "value": 34.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026046338/fdsq32026earningsrelease.htm",
+     "quote": "Three Months Ended May 31, 2026 | 2025 ... Adjusted operating margin | 34.0% | 36.8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q4 FY26",
+     "value": 33.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026063888/fdsq42026earningsrelease.htm",
+     "quote": "Three Months Ended August 31, 2026 | 2025 ... Adjusted operating margin | 33.0% | 33.8%",
+     "added": "2026-10-30"
+    }
+   ],
+   "share_buybacks": [
+    {
+     "period": "2024-11-30",
+     "label": "Q1 FY25",
+     "value": 0.0488,
+     "source": "https://www.nasdaq.com/press-release/factset-reports-results-first-quarter-2025-2024-12-19",
+     "quote": "FactSet repurchased 104,475 shares of its common stock for $48.8 million at an average price of $467.00 ... during the first quarter of fiscal 2025 under the Company's share repurchase program.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-02-28",
+     "label": "Q2 FY25",
+     "value": 0.0644,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013237/000101323725000042/fdsq22025earningsrelease.htm",
+     "quote": "FactSet repurchased 136,714 shares of its common stock for $64.4 million at an average price of $470.70",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-05-31",
+     "label": "Q3 FY25",
+     "value": 0.0807,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013237/000101323725000064/fdsq32025earningsrelease.htm",
+     "quote": "FactSet repurchased 184,050 shares of its common stock for $80.7 million at an average price of $438.45 ... during the third quarter of fiscal 2025 under the Company's share repurchase program.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-08-31",
+     "label": "Q4 FY25",
+     "value": 0.1066,
+     "source": "https://www.globenewswire.com/news-release/2025/09/18/3152236/0/en/FactSet-Reports-Results-for-Fourth-Quarter-and-Fiscal-2025.html",
+     "quote": "FactSet repurchased 259,721 shares of its common stock for $106.6 million at an average price of $410.51",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-11-30",
+     "label": "Q1 FY26",
+     "value": 0.1399,
+     "source": "https://investor.factset.com/news-releases/news-release-details/factset-reports-results-first-quarter-fiscal-2026/",
+     "quote": "FactSet repurchased 478,100 shares of its common stock for $139.9 million at an average price of $292.61 during the first quarter of fiscal 2026",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-02-28",
+     "label": "Q2 FY26",
+     "value": 0.163,
+     "source": "https://investor.factset.com/node/19096/html",
+     "quote": "FactSet repurchased 651,750 shares of its common stock for $163.0 million at an average price of $250.14 ... during the second quarter of fiscal 2026 under the Company's share repurchase program.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-05-31",
+     "label": "Q3 FY26",
+     "value": 0.2031,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026046338/fdsq32026earningsrelease.htm",
+     "quote": "FactSet repurchased 926,370 shares of its common stock for $203.1 million at an average price of $219.21",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-08-31",
+     "label": "Q4 FY26",
+     "value": 0.138,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013237/000162828026063888/fdsq42026earningsrelease.htm",
+     "quote": "FactSet repurchased 552,064 shares of its common stock for $138.0 million at an average price of $249.90 during the fourth quarter of fiscal 2026",
+     "added": "2026-10-30"
+    }
+   ]
   }
  }
 }

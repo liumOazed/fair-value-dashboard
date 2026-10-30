@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "SPGI",
-  "MCO",
-  "NDAQ",
-  "CBOE",
-  "FDS",
   "DECK",
   "TPR",
   "MNST",
@@ -44,7 +39,12 @@
   "VEEV",
   "APP",
   "FICO",
-  "VRSN"
+  "VRSN",
+  "SPGI",
+  "MCO",
+  "NDAQ",
+  "CBOE",
+  "FDS"
  ],
  "notes": {
   "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history.",
@@ -67,6 +67,11 @@
   "VEEV": "Q3 FY25-Q2 FY27 filled (Q3 FY27 due early Dec). RPO not disclosed (10-Q says RPO beyond one year 'not significant'; releases never state RPO), so RPO growth skipped. Operating margin = GAAP operating income / total revenues. Vault CRM text for last 4 quarters only; Q1 FY26 and Q4 FY26 quotes join fragments.",
   "APP": "Q3 2024-Q2 2026 filled (Q3 2026 due 4 Nov 2026). Basis changes after 2025 Apps sale: ad growth = Advertising segment to Q1 2025, then total continuing-ops revenue; EBITDA margins Q3 2024-Q1 2025 are restated continuing-ops; FCF from Q2 2025 includes discontinued-ops cash flows. Share change = diluted weighted-average shares y/y.",
   "FICO": "Q4 FY24-Q3 FY26 filled (Q4 FY26 due 4 Nov 2026). Q4 FY24 mortgage originations revenue $ not found (only +52% y/y); mortgage $ from investor-presentation slides, rounded to $1M.",
-  "VRSN": "Q4 2024-Q3 2026 filled. Q3 2026 renewal rate not yet available (no preliminary rate given; final comes with Q4 2026). Only price change in window: .com $10.26 -> $10.97 from 1 Nov 2026 (announced Q1 2026). Quotes are shortened fragments joined with '...', some reconstructed to standard release wording; Q3 2026 source is a finviz copy of the Business Wire release."
+  "VRSN": "Q4 2024-Q3 2026 filled. Q3 2026 renewal rate not yet available (no preliminary rate given; final comes with Q4 2026). Only price change in window: .com $10.26 -> $10.97 from 1 Nov 2026 (announced Q1 2026). Quotes are shortened fragments joined with '...', some reconstructed to standard release wording; Q3 2026 source is a finviz copy of the Business Wire release.",
+  "SPGI": "Q4 2024-Q3 2026 filled (Q3 2026 reported 27 Oct 2026). ETF AUM not in releases: from calls for Q2 2026 ($6.35T) and Q3 2026 ($6.5T) only; year-earlier ratings/indices points are $ only. MI organic subscription growth only on calls (Q4 2025 from MarketBeat summary); Q3 2026 skipped (call says 'grew 6% to 7% on an organic basis', ambiguous); year-earlier not stated. Adjusted margin: year-earlier computed from stated bp change; includes Mobility to Q1 2026, ex-Mobility from Q2 2026 (spin-off), so series not like-for-like.",
+  "MCO": "Q4 2024-Q3 2026 filled (Q3 2026 reported 21 Oct 2026). MA retention rate not disclosed in quarterly releases (skipped). MA ARR growth for Q4 2024-Q3 2025 not stated in current releases (not collected). Q4 2025 release via Boardroom Alpha copy of the 8-K.",
+  "NDAQ": "Q4 2024-Q3 2026 filled (Q3 2026 reported 22 Oct 2026). Leverage is GROSS debt/EBITDA as stated on calls (Q4 2025 2.9x, Q3 2026 2.5x); Q1-Q2 2026 transcripts unreadable, releases give no ratio/EBITDA. ARR growth = reported basis (organic in quote). Solutions organic growth Q4 2024 skipped (organic % not quoted verbatim).",
+  "CBOE": "Q4 2024-Q3 2026 filled (Q3 2026 reported 30 Oct 2026). Options ADV = Total Company Options ADV. Organic net revenue growth only Q2 2026 (slides) and Q3 2026 (computed from organic table); other quarters not stated (Q4 2025/Q1 2026 slides could not be fetched). Data & Access Solutions renamed Data Vantage; Q3 2026 organic (computed), Q2 2026 organic, others reported growth from CFO remarks; Q4 2024 not disclosed.",
+  "FDS": "Q1 FY25-Q4 FY26 filled (Q4 FY26 reported 30 Sep 2026). Retention is a floor ('greater than/above 95%') recorded as 95; client-count retention (91%) stated Q1 FY25-Q2 FY26 only. Organic ASV prior-year base restated each year."
  }
 }
