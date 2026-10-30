@@ -136,9 +136,29 @@ def build():
         fmargin = fcf_ttm / rev_last if ok(fcf_ttm) and ok(rev_last) and rev_last else None
         if ok(fmargin) and len(fc) and len(rv):           # prefer the same-year ratio
             fmargin = fc[-1][1] / rv[-1][1]
+        yrs = sorted(d for d in cfs if d in inc and ok(inc[d].get("rev")) and inc[d]["rev"])
+        fm = [(d[:4], cfs[d]["fcf"] / inc[d]["rev"]) for d in yrs if ok(cfs[d].get("fcf"))]
+        fm_tr = fm[-1][1] - fm[0][1] if len(fm) >= 2 else None
+        ly = yrs[-1] if yrs else None
+        sbc_r = (cfs[ly]["sbc"] / inc[ly]["rev"]) if ly and ok(cfs[ly].get("sbc")) else None
+        sbc_f = (cfs[ly]["sbc"] / cfs[ly]["fcf"]) if ly and ok(cfs[ly].get("sbc")) and ok(cfs[ly].get("fcf")) and cfs[ly]["fcf"] > 0 else None
+        dep = lambda d: cfs[d].get("dep") if ok(cfs[d].get("dep")) else inc.get(d, {}).get("dep_inc")
+        cd = [(d[:4], abs(cfs[d]["capex"]) / dep(d)) for d in yrs if ok(cfs[d].get("capex")) and ok(dep(d)) and dep(d) > 0]
+        cd3 = sum(x for _, x in cd[-3:]) / len(cd[-3:]) if cd else None
+        capex_rev = (abs(cfs[ly]["capex"]) / inc[ly]["rev"]) if ly and ok(cfs[ly].get("capex")) else None
+        if ok(capex_rev) and capex_rev < 0.05:
+            cd_word = "asset-light"     # capex tiny vs revenue: depreciation is mostly amortised acquisitions, so the ratio means little
+        else:
+            cd_word = None if not ok(cd3) else ("investing for growth" if cd3 > 1.5 else "about upkeep" if cd3 >= 0.8 else "below upkeep: check")
+        dr = [(d[:4], dep(d) / inc[d]["rev"]) for d in yrs if ok(dep(d))]
+        heavy = ok(s.get("capex_ocf_pct")) and s["capex_ocf_pct"] > 30
         cash = [
             M("Operating cash flow · free cash flow (latest year)", None if not (oc and fc) else f"${oc[-1][1] / 1e9:.2f}B · ${fc[-1][1] / 1e9:.2f}B", graded=False),
             M("FCF margin", fmt_pct(fmargin), g3(fmargin, 0.15, 0.05)),
+            M("FCF margin trend", None if not ok(fm_tr) else f"{fm[0][1] * 100:.0f}% → {fm[-1][1] * 100:.0f}% ({fm[0][0]}–{fm[-1][0]}, {fm_tr * 100:+.1f} pts)",
+              g3(fm_tr, 0.0, -0.03), note="Free cash flow as a share of revenue, first vs latest fiscal year: is the business becoming more or less cash-generative?"),
+            M("Stock pay ÷ revenue", fmt_pct(sbc_r, 1), g3(sbc_r, 0.03, 0.08, False),
+              note="Stock-based compensation ÷ revenue (latest fiscal year): a real cost paid in shares." + (f" It equals {sbc_f * 100:.0f}% of free cash flow." if ok(sbc_f) else "")),
             M("FCF / net income (3 years combined)", fmt_x(cv3, 2) if ok(cv3) else fmt_x(cv1, 2), g3(cv3 if ok(cv3) else cv1, 0.9, 0.6), pct=P("fcf_ni"),
               note="Free cash flow ÷ net income from the statements, same years. Above ~0.9x means profits arrive as cash."
                    + (f" Latest year {cv1:.2f}x: far from the 3-year norm (working-capital swing), so the 3-year figure is the one graded." if swing else "")),
@@ -148,25 +168,38 @@ def build():
               g3(s.get("fcf_neg_years"), 0, 1, False)),
             M("Capex / operating cash flow", fmt_pct(s["capex_ocf_pct"] / 100 if ok(s.get("capex_ocf_pct")) else None, 0), g3(s.get("capex_ocf_pct"), 25, 50, False),
               pct=P("capex_ocf_pct", False), note="How much of the cash must be reinvested just to run and grow the business."),
+            M("Capex ÷ depreciation (3-yr average)", None if not ok(cd3) else f"{cd3:.1f}x · {cd_word}", graded=False,
+              note="Above ~1.5x the company is building new capacity; about 1x it is replacing what wears out; well below 1x it may be under-investing. Not good or bad on its own."
+                   + (f" Capex is only {capex_rev * 100:.1f}% of revenue here, so depreciation is mostly amortisation of past acquisitions and the ratio says little." if cd_word == "asset-light" else "")),
             M("FCF yield", fmt_pct(fcf_ttm / mcap if ok(fcf_ttm) and mcap else None), graded=False, note="Graded under Valuation."),
-        ]
+        ] + ([M("Depreciation ÷ revenue", f"{dr[0][1] * 100:.1f}% → {dr[-1][1] * 100:.1f}% ({dr[0][0]}–{dr[-1][0]})", graded=False,
+                note="Capital-heavy business: a rising share means past investment is weighing on future margins.")] if heavy and len(dr) >= 2 else [])
         ccard = dict(key="cash", title="Cash flow", question="Are its profits turning into actual cash?", metrics=cash,
-                     trend=dict(label="Free cash flow by year ($B)", points=[[y, round(v / 1e9, 2)] for y, v in fc]),
+                     trend=dict(label="FCF margin by year", points=[[y, round(v * 100, 1)] for y, v in fm], unit="%") if len(fm) >= 2 else
+                     dict(label="Free cash flow by year ($B)", points=[[y, round(v / 1e9, 2)] for y, v in fc]),
                      headline=[x for x in [f"FCF margin {fmt_pct(fmargin, 0)}" if ok(fmargin) else None,
                                            f"{(cv3 if ok(cv3) else cv1):.2f}x net income" if ok(cv3) or ok(cv1) else None] if x])
 
         # ---------- Business performance: efficient and consistent?
-        roic = []
+        roic, nic = [], []          # nic: (year, NOPAT, invested capital) for incremental ROIC
         for d in sorted(inc):
             i, b = inc[d], bal.get(d, {})
             tr = (i.get("tax") / i["pretax"]) if ok(i.get("tax")) and ok(i.get("pretax")) and i["pretax"] > 0 else 0.21
             tr = min(max(tr, 0.0), 0.35)
             ic = (b.get("equity") or 0) + (b.get("debt") or 0) - (b.get("cash") or 0)
             if ok(i.get("op")) and ic > 0:
-                roic.append((d[:4], i["op"] * (1 - tr) / ic))
+                roic.append((d[:4], i["op"] * (1 - tr) / ic)); nic.append((d[:4], i["op"] * (1 - tr), ic))
         gm = [(d[:4], r["gross"] / r["rev"]) for d, r in sorted(inc.items()) if ok(r.get("gross")) and ok(r.get("rev")) and r["rev"]]
         om = [(d[:4], r["op"] / r["rev"]) for d, r in sorted(inc.items()) if ok(r.get("op")) and ok(r.get("rev")) and r["rev"]]
         wacc = s.get("wacc")
+        inc_roic, inc_note = None, None
+        if len(nic) >= 3:
+            (y0, n0, c0), (y1, n1, c1) = nic[max(0, len(nic) - 4)], nic[-1]
+            if c1 - c0 > 0.05 * c0:
+                inc_roic = (n1 - n0) / (c1 - c0); inc_note = f"{y0}–{y1}: extra after-tax operating profit ÷ extra invested capital"
+            else:
+                inc_note = f"Invested capital barely grew or shrank {y0}–{y1} (buybacks, asset-light), so the ratio isn't meaningful."
+        rd = [(d[:4], inc[d]["rd"] / inc[d]["rev"]) for d in sorted(inc) if ok(inc[d].get("rd")) and ok(inc[d].get("rev")) and inc[d]["rev"]]
         above = sum(1 for _, x in roic if ok(wacc) and x > wacc)
         roic_tr = roic[-1][1] - roic[0][1] if len(roic) >= 2 else None
         om_tr = om[-1][1] - om[0][1] if len(om) >= 2 else None
@@ -178,6 +211,9 @@ def build():
               g3(roic_tr, 0.0, -0.05)),
             M("ROIC above cost of capital", None if not roic or not ok(wacc) else f"{above} of {len(roic)} years", g3(above / len(roic) if roic and ok(wacc) else None, 0.99, 0.5),
               note="A lasting gap is the clearest measurable sign of a competitive advantage."),
+            M("Incremental ROIC (3 years)", fmt_pct(inc_roic, 0) if ok(inc_roic) else ("n/a" if inc_note else None),
+              g3(inc_roic, 0.15, wacc if ok(wacc) else 0.08) if ok(inc_roic) else None,
+              note=(inc_note or "") + " Shows whether NEW investment earns good returns, not just the existing business."),
             M("Operating margin", fmt_pct(s_opm / 100 if ok(s_opm) else None, 1), g3(PM("_opm"), 60, 35), pct=PM("_opm"), grp=mname,
               note=f"Profit from the business itself, after all running costs. Graded against {mname} ({len(mgrp)} companies)."),
             M("Gross margin", fmt_pct(s["gross_margin_pct"] / 100 if ok(s.get("gross_margin_pct")) else None, 1), graded=False, pct=PM("gross_margin_pct"), grp=mname,
@@ -186,6 +222,8 @@ def build():
               note=f"The bottom line, after interest, tax and one-offs; can be distorted by one-time items (ranked against {mname})."),
             M("Gross margin trend", None if not ok(gm_tr) else f"{gm_tr * 100:+.1f} pts", g3(gm_tr, 0.0, -0.02)),
             M("Operating margin trend", None if not ok(om_tr) else f"{om[0][1] * 100:.0f}% → {om[-1][1] * 100:.0f}% ({om_tr * 100:+.1f} pts)", g3(om_tr, 0.0, -0.02)),
+            *([M("R&D ÷ revenue", f"{rd[-1][1] * 100:.1f}%" + (f" ({rd[0][1] * 100:.1f}% in {rd[0][0]})" if len(rd) >= 2 else ""), graded=False,
+                 note="Research & development spending as a share of revenue: how much is reinvested to stay competitive.")] if rd else []),
             M("Revenue consistency (growth variation)", None if not ok(s.get("rev_growth_std")) else f"{s['rev_growth_std']:.1f} pts", g3(s.get("rev_growth_std"), 5, 12, False),
               pct=P("rev_growth_std", False)),
             M("Share count change a year", fmt_pct(s["share_change_pct_yr"] / 100 if ok(s.get("share_change_pct_yr")) else None, 1, True),
@@ -206,6 +244,10 @@ def build():
         nde = s.get("net_debt_ebitda")
         light = s.get("sector") in ("Technology", "Financial Services") or (s.get("industry") or "").startswith("Software")
         rl = s.get("risk_level")
+        by = sorted(d for d in bal if ok(bal[d].get("inventory")) and d in inc and ok(inc[d].get("rev")))
+        inv_g = sal_g = None; ly2 = by[-1] if by else ""
+        if len(by) >= 2 and inc[by[-1]]["rev"] and bal[by[-1]]["inventory"] / inc[by[-1]]["rev"] >= 0.05 and bal[by[-2]]["inventory"] > 0:
+            inv_g = bal[by[-1]]["inventory"] / bal[by[-2]]["inventory"] - 1; sal_g = inc[by[-1]]["rev"] / inc[by[-2]]["rev"] - 1
         fin = [
             M("Net debt / EBITDA", "net cash" if ok(nde) and nde < 0 else fmt_x(nde), g3(nde, 1.0, 3.0, False), pct=P("net_debt_ebitda", False)),
             M("Interest coverage", "no meaningful debt" if not ok(s.get("interest_coverage")) and (not ok(qdebt) or (qdebt or 0) < 1e8) else fmt_x(s.get("interest_coverage")),
@@ -217,6 +259,8 @@ def build():
               g3((qcash / qdebt) if ok(qcash) and ok(qdebt) and qdebt else (9 if ok(qcash) else None), 1.0, 0.3)),
             M("Risk check (sector limits)", rl or None, {"Normal": 2, "Elevated": 1, "High": 0}.get(rl),
               note="; ".join((s.get("risk_serious") or []) + (s.get("risk_warn") or [])) or "No warnings on debt, interest cover or cash flow."),
+            *([M("Inventory growth vs sales growth", f"inventory {inv_g * 100:+.0f}% vs sales {sal_g * 100:+.0f}% ({ly2[:4]})", g3(inv_g - sal_g, 0.05, 0.15, False),
+                 note="Inventory growing much faster than sales can mean unsold stock and future discounts or write-downs.")] if ok(inv_g) and ok(sal_g) else []),
             M("Debt maturities", "not in free data", graded=False, note="Yahoo's free data has no maturity schedule; check the 10-K debt note before buying a leveraged name."),
         ]
         fcard = dict(key="strength", title="Financial strength", question="Can it withstand difficult years?", metrics=fin,
