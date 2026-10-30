@@ -1520,6 +1520,1428 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "NVDA": {
+   "data_center_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 112,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000315/q3fy25cfocommentary.htm",
+     "quote": "Data Center revenue was a record, up 112% from a year ago and up 17% sequentially. Table: Data Center | $30,771 | $26,272 | $14,514 | Up 17% | Up 112%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 93,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000021/q4fy25cfocommentary.htm",
+     "quote": "Data Center revenue for the fourth quarter was a record, up 93% from a year ago and up 16% sequentially. Table: Data Center | $35,580 | $30,771 | $18,404 | Up 16% | Up 93%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 73,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000115/q1fy26cfocommentary.htm",
+     "quote": "Data Center revenue for the first quarter was $39.1 billion, up 73% from a year ago and up 10% sequentially. Table: Data Center | $39,112 | $35,580 | $22,563 | 10% | 73%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 56,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26cfocommentary.htm",
+     "quote": "Data Center revenue for the second quarter was $41.1 billion, up 56% from a year ago and up 5% sequentially. Table: Data Center | $41,096 | $39,112 | $26,272 | 5% | 56%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 66,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26cfocommentary.htm",
+     "quote": "Data Center revenue table ($M): Q3 FY26 $51,215 | Q2 FY26 $41,096 | Q3 FY25 $30,771 | Y/Y 66%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 75,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26cfocommentary.htm",
+     "quote": "Data Center revenue for the fourth quarter was a record $62.3 billion, up 75% from a year ago and up 22% sequentially. Table: Data Center | $62,314 | $51,215 | $35,580 | 75%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 92,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27cfocommentary.htm",
+     "quote": "Data Center | $75,246 | $62,314 | $39,112 | 21% | 92% (Q1 FY27 | Q4 FY26 | Q1 FY26 | Q/Q | Y/Y)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 117,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27cfocommentary.htm",
+     "quote": "Data Center revenue for the second quarter was a record $89.0 billion, up 117% from a year ago and up 18% sequentially. Table: Data Center | $89,023 | $75,246 | $41,096 | 117%",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 74.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm",
+     "quote": "GAAP: Gross margin | 73.4% | 72.4% | 74.6% (Q3 FY26 | Q2 FY26 | Q3 FY25)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 73.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm",
+     "quote": "GAAP: Gross margin | 75.0% | 73.4% | 73.0% | 1.6 pts | 2.0 pts (Q4 FY26 | Q3 FY26 | Q4 FY25)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 60.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm",
+     "quote": "GAAP: Gross margin | 74.9% | 75.0% | 60.5% | (0.1) pts | 14.4 pts (Q1 FY27 | Q4 FY26 | Q1 FY26)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 72.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+     "quote": "GAAP: Gross margin | 75.0% | 74.9% | 72.4% | 0.1 pts | 2.6 pts (Q2 FY27 | Q1 FY27 | Q2 FY26)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 73.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm",
+     "quote": "GAAP: Gross margin | 73.4% | 72.4% | 74.6% (Q3 FY26 | Q2 FY26 | Q3 FY25)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 75.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm",
+     "quote": "GAAP: Gross margin | 75.0% | 73.4% | 73.0% | 1.6 pts | 2.0 pts (Q4 FY26 | Q3 FY26 | Q4 FY25)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 74.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm",
+     "quote": "GAAP: Gross margin | 74.9% | 75.0% | 60.5% | (0.1) pts | 14.4 pts (Q1 FY27 | Q4 FY26 | Q1 FY26)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 75.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+     "quote": "GAAP: Gross margin | 75.0% | 74.9% | 72.4% | 0.1 pts | 2.6 pts (Q2 FY27 | Q1 FY27 | Q2 FY26)",
+     "added": "2026-10-30"
+    }
+   ],
+   "r_d_revenue": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 9.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q3 FY25, $M): Revenue $35,082 ... Research and development $3,390 (3390/35082 = 9.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 9.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q4 FY25, $M): Revenue $39,331 ... Research and development $3,714 (3714/39331 = 9.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 9.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q1 FY26, $M): Revenue $44,062 ... Research and development $3,989 (3989/44062 = 9.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 9.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q2 FY26, $M): Revenue $46,743 ... Research and development $4,291 (4291/46743 = 9.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 8.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q3 FY26, $M): Revenue $57,006 ... Research and development $4,705 (4705/57006 = 8.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 8.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q4 FY26, $M): Revenue $68,127 ... Research and development $5,512 (5512/68127 = 8.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 7.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q1 FY27, $M): Revenue $81,615 ... Research and development $6,321 (6321/81615 = 7.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 7.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q2 FY27, $M): Revenue $96,221 ... Research and development $7,054 (7054/96221 = 7.3%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "inventory_supply_commitments_vs_revenue": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 104.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000315/q3fy25cfocommentary.htm",
+     "quote": "Inventory was $7.7 billion with 78 days sales of inventory (DSI). Purchase commitments and obligations for inventory and manufacturing capacity were $28.9 billion. [Excludes $5.2B prepayments and $13.2B other non-inventory obligations.] Revenue $35,082M (Q3 FY26 PR comparison column) ((7,700 + 28,900)/35,082 = 104.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 103.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000021/q4fy25cfocommentary.htm",
+     "quote": "Inventory was $10.1 billion with 86 days sales of inventory (DSI). Purchase commitments and obligations for inventory and manufacturing capacity were $30.8 billion. [Excludes $5.1B prepayments and non-inventory obligations.] Inventories $10,080M and Revenue $39,331M (Q4 FY26 PR comparison columns) ((10,080 + 30,800)/39,331 = 103.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 93.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000115/q1fy26cfocommentary.htm",
+     "quote": "Inventory was $11.3 billion with 59 days sales of inventory (DSI). Purchase commitments and obligations for inventory and manufacturing capacity were $29.8 billion. [Definition excludes $4.2B supply/capacity prepayments and non-inventory obligations.] Revenue $44,062M (Q1 FY27 PR comparison column) ((11,300 + 29,800)/44,062 = 93.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 130.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26cfocommentary.htm",
+     "quote": "Inventory was $15.0 billion, up from $11.3 billion sequentially, to support the ramp of Blackwell Ultra. Total purchase commitments were $45.8 billion, comprised of inventory, manufacturing capacity, [and non-inventory purchase obligations]. Revenue $46,743M (Q2 FY27 PR comparison column) ((15,000 + 45,800)/46,743 = 130.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 122.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26cfocommentary.htm",
+     "quote": "Inventory was $19.8 billion, up from $15.0 billion sequentially, and total supply-related commitments were $50.3 billion. Balance sheet (Q3 FY26 PR) Inventories $19,784M; Revenue $57,006M ((19,784 + 50,300)/57,006 = 122.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 171.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26cfocommentary.htm",
+     "quote": "Inventory was $21.4 billion, up from $19.8 billion sequentially, and total supply-related commitments were $95.2 billion. Balance sheet (Q4 FY26 PR) Inventories $21,403M; Revenue $68,127M ((21,403 + 95,200)/68,127 = 171.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 177.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27cfocommentary.htm",
+     "quote": "Inventory was $25.8 billion, up from $21.4 billion sequentially, and total supply-related commitments were $119.0 billion. Balance sheet (Q1 FY27 PR) Inventories $25,797M; Revenue $81,615M ((25,797 + 119,000)/81,615 = 177.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 322.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27cfocommentary.htm",
+     "quote": "Inventory was $31.6 billion, up from $25.8 billion sequentially, as we prepare for the introduction of Vera Rubin ... Our commitments increased from $119 billion last quarter to $279 billion, primarily related to the procurement of memory. (supply and capacity category of commitments table = $279B). Balance sheet (Q2 FY27 PR) Inventories $31,575M; Revenue $96,221M ((31,575 + 279,000)/96,221 = 322.8%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "top_customer_concentration_10_k": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 12,
+     "source": "https://www.opencapital.sh/filings/0001045810-25-000230.md",
+     "quote": "10-Q Q3 FY26 comparison: For the third quarter of fiscal year 2025, sales to three direct customers each represented 12% of total revenue",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 12,
+     "source": "https://www.opencapital.sh/filings/0001045810-25-000023.md",
+     "quote": "FY2025 10-K (full-year figure; no Q4 quarterly figure disclosed): Sales to direct Customers A, B and C represented 12%, 11% and 11% of total revenue, respectively, for fiscal year 2025.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 16,
+     "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/q1/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf",
+     "quote": "10-Q Q1 FY27 comparison: For the first quarter of fiscal year 2026, sales to two direct customers represented 16% and 14% of total revenue",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 23,
+     "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/2e217538-c226-4d05-8f74-aaca89a21b33.pdf",
+     "quote": "10-Q Q2 FY26: For the second quarter of fiscal year 2026, sales to one direct customer, Customer A, represented 23% of total revenue (Q2 FY27 10-Q also: two direct customers represented 23% and 16%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 22,
+     "source": "https://www.opencapital.sh/filings/0001045810-25-000230.md",
+     "quote": "10-Q Q3 FY26: four direct customers with sales greater than 10% of total revenue included: Customer A at 22%, Customer B at 15%, Customer C at 13%, and Customer D at 11%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 22,
+     "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/q4/10K-NVDA.pdf",
+     "quote": "FY2026 10-K (full-year figure; no Q4 quarterly figure disclosed): For fiscal year 2026, sales to one direct customer represented 22% of total revenue",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 21,
+     "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/q1/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf",
+     "quote": "10-Q Q1 FY27: three direct customers represented 21%, 17%, and 16% of total revenue",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 16,
+     "source": "https://www.opencapital.sh/filings/0001045810-26-000075.md",
+     "quote": "10-Q Q2 FY27: For the second quarter of fiscal year 2027, one direct customer represented 16% of total revenue",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "AVGO": {
+   "ai_semiconductor_revenue": [
+    {
+     "period": "2024-10-31",
+     "label": "Q4 FY24",
+     "value": 3.7,
+     "source": "https://www.fool.com/earnings/call-transcripts/2024/12/12/broadcom-avgo-q4-2024-earnings-call-transcript/",
+     "quote": "Q4 AI revenue grew a strong 150% year on year to $3.7 billion. (Q4 FY24 earnings call)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q1 FY25",
+     "value": 4.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000009/avgo-02022025x8kxex99.htm",
+     "quote": "Q1 AI revenue grew 77% year-over-year to $4.1 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q2 FY25",
+     "value": 4.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm",
+     "quote": "Q2 AI revenue grew 46% year-over-year to over $4.4 billion driven by robust demand for AI networking",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q3 FY25",
+     "value": 5.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm",
+     "quote": "Q3 AI revenue growth accelerated to 63% year-over-year to $5.2 billion",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q4 FY25",
+     "value": 6.5,
+     "source": "https://www.marketbeat.com/earnings/reports/2025-12-11-broadcom-inc-stock/",
+     "quote": "And this robust growth was driven by the AI Semiconductor revenue of $6.5 billion, which was up 74% year-on-year. (Hock Tan, Q4 FY25 earnings call)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q1 FY26",
+     "value": 8.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm",
+     "quote": "Q1 AI revenue of $8.4 billion grew 106% year-over-year, above our forecast",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q2 FY26",
+     "value": 10.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm",
+     "quote": "Q2 semiconductor revenue from AI of $10.8 billion grew 143% year-over-year",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q3 FY26",
+     "value": 16.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "quote": "Q3 AI semiconductor revenue of $16.7 billion grew 221% year-over-year, and 54% quarter-over-quarter",
+     "added": "2026-10-30"
+    }
+   ],
+   "infrastructure_software_vmware_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q4 FY24",
+     "value": 195.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q4 24 | Q4 23 | Change): Infrastructure software | 5,824 | 1,969 | +196 % (5824/1969 - 1 = 195.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q1 FY25",
+     "value": 46.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000009/avgo-02022025x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q1 25 | Q1 24 | Change): Infrastructure software | 6,704 | 4,571 | +47% (6704/4571 - 1 = 46.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q2 FY25",
+     "value": 24.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q2 25 | Q2 24 | Change): Infrastructure software | 6,596 | 5,285 | +25 % (6596/5285 - 1 = 24.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q3 FY25",
+     "value": 17.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q3 25 | Q3 24 | Change): Infrastructure software | 6,786 | 5,798 | +17% (6786/5798 - 1 = 17.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q4 FY25",
+     "value": 19.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000116/avgo-11022025x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q4 25 | Q4 24 | Change): Infrastructure software | 6,943 | 5,824 | +19 % (6943/5824 - 1 = 19.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q1 FY26",
+     "value": 1.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q1 26 | Q1 25 | Change): Infrastructure software | 6,796 | 6,704 | +1 % (6796/6704 - 1 = 1.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q2 FY26",
+     "value": 8.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q2 26 | Q2 25 | Change): Infrastructure software | 7,178 | 6,596 | +9% (7178/6596 - 1 = 8.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q3 FY26",
+     "value": 29.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "quote": "Net revenue by segment ($M, Q3 26 | Q3 25 | Change): Infrastructure software | 8,752 | 6,786 | +29% (8752/6786 - 1 = 29.0%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q4 FY24",
+     "value": 64.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $14,054 ... Gross margin $9,002 (9002/14054 = 64.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q1 FY25",
+     "value": 68.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000009/avgo-02022025x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $14,916 ... Gross margin $10,145 (10145/14916 = 68.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q2 FY25",
+     "value": 68.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $15,004 ... Gross margin $10,197 (10197/15004 = 68.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q3 FY25",
+     "value": 67.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $15,952 ... Gross margin $10,703 (10703/15952 = 67.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q4 FY25",
+     "value": 68.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000116/avgo-11022025x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $18,015 ... Gross margin $12,249 (12249/18015 = 68.0%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q1 FY26",
+     "value": 68.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $19,311 ... Gross margin $13,157 (13157/19311 = 68.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q2 FY26",
+     "value": 69.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $22,187 ... Gross margin $15,415 (15415/22187 = 69.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q3 FY26",
+     "value": 69.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "quote": "GAAP condensed statement of operations (fiscal quarter, $M): Net revenue $29,591 ... Gross margin $20,456 (20456/29591 = 69.1%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "net_debt_ebitda": [
+    {
+     "period": "2024-10-31",
+     "label": "Q4 FY24",
+     "value": 1.83,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm",
+     "quote": "Balance sheet at November 3, 2024 ($M): 'Cash and cash equivalents | $9,348', 'Short-term debt | 1,271', 'Long-term debt | 66,295'. Adjusted EBITDA ($M): Q1 25 release highlights: 'Adjusted EBITDA | $ 10,083 | $ 7,156' (Q1 25 | Q1 24); Q2 25 release highlights: 'Adjusted EBITDA | $ 10,001 | $ 7,429' (Q2 25 | Q2 24); Q3 25 release highlights: 'Adjusted EBITDA | $10,702 | $8,223' (Q3 25 | Q3 24); 'Adjusted EBITDA of $9,089 million for the fourth quarter' (Q4 FY24 release). Net debt = 1271+66295-9348 = 58218; TTM adj. EBITDA = 7156+7429+8223+9089 = 31897; 58218/31897 = 1.83x. EBITDA sources: Q4 FY24..Q2 FY26 SEC 8-K Ex.99.1 releases (e.g. https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm, https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q1 FY25",
+     "value": 1.64,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000009/avgo-02022025x8kxex99.htm",
+     "quote": "Balance sheet at February 2, 2025 ($M): 'Cash and cash equivalents | $9,307', 'Short-term debt | 5,653', 'Long-term debt | 60,926'. Adjusted EBITDA ($M): Q2 25 release highlights: 'Adjusted EBITDA | $ 10,001 | $ 7,429' (Q2 25 | Q2 24); Q3 25 release highlights: 'Adjusted EBITDA | $10,702 | $8,223' (Q3 25 | Q3 24); 'Adjusted EBITDA of $9,089 million for the fourth quarter' (Q4 FY24 release); 'Adjusted EBITDA of $10,083 million for the first quarter' (Q1 FY25 release). Net debt = 5653+60926-9307 = 57272; TTM adj. EBITDA = 7429+8223+9089+10083 = 34824; 57272/34824 = 1.64x. EBITDA sources: Q4 FY24..Q2 FY26 SEC 8-K Ex.99.1 releases (e.g. https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm, https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q2 FY25",
+     "value": 1.55,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm",
+     "quote": "Balance sheet at May 4, 2025 ($M): 'Cash and cash equivalents | $9,472', 'Short-term debt | 5,531', 'Long-term debt | 61,751'. Adjusted EBITDA ($M): Q3 25 release highlights: 'Adjusted EBITDA | $10,702 | $8,223' (Q3 25 | Q3 24); 'Adjusted EBITDA of $9,089 million for the fourth quarter' (Q4 FY24 release); 'Adjusted EBITDA of $10,083 million for the first quarter' (Q1 FY25 release); 'Adjusted EBITDA of $10,001 million for the second quarter' (Q2 FY25 release). Net debt = 5531+61751-9472 = 57810; TTM adj. EBITDA = 8223+9089+10083+10001 = 37396; 57810/37396 = 1.55x. EBITDA sources: Q4 FY24..Q2 FY26 SEC 8-K Ex.99.1 releases (e.g. https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm, https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q3 FY25",
+     "value": 1.34,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm",
+     "quote": "Balance sheet at August 3, 2025 ($M): 'Cash and cash equivalents | $10,718', 'Short-term debt | 1,399', 'Long-term debt | 62,830'. Adjusted EBITDA ($M): 'Adjusted EBITDA of $9,089 million for the fourth quarter' (Q4 FY24 release); 'Adjusted EBITDA of $10,083 million for the first quarter' (Q1 FY25 release); 'Adjusted EBITDA of $10,001 million for the second quarter' (Q2 FY25 release); 'Adjusted EBITDA of $10,702 million for the third quarter' (Q3 FY25 release). Net debt = 1399+62830-10718 = 53511; TTM adj. EBITDA = 9089+10083+10001+10702 = 39875; 53511/39875 = 1.34x. EBITDA sources: Q4 FY24..Q2 FY26 SEC 8-K Ex.99.1 releases (e.g. https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm, https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q4 FY25",
+     "value": 1.14,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000116/avgo-11022025x8kxex99.htm",
+     "quote": "Balance sheet at November 2, 2025 ($M): 'Cash and cash equivalents | $16,178', 'Short-term debt | 3,152', 'Long-term debt | 61,984'. Adjusted EBITDA ($M): 'Adjusted EBITDA of $10,083 million for the first quarter' (Q1 FY25 release); 'Adjusted EBITDA of $10,001 million for the second quarter' (Q2 FY25 release); 'Adjusted EBITDA of $10,702 million for the third quarter' (Q3 FY25 release); 'Adjusted EBITDA of $12,218 million for the fourth quarter' (Q4 FY25 release). Net debt = 3152+61984-16178 = 48958; TTM adj. EBITDA = 10083+10001+10702+12218 = 43004; 48958/43004 = 1.14x. EBITDA sources: Q4 FY24..Q2 FY26 SEC 8-K Ex.99.1 releases (e.g. https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm, https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q1 FY26",
+     "value": 1.13,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000011/avgo-02012026x8kxex99.htm",
+     "quote": "Balance sheet at February 1, 2026 ($M): 'Cash and cash equivalents | $14,174', 'Short-term debt | 2,252', 'Long-term debt | 63,805'. Adjusted EBITDA ($M): 'Adjusted EBITDA of $10,001 million for the second quarter' (Q2 FY25 release); 'Adjusted EBITDA of $10,702 million for the third quarter' (Q3 FY25 release); 'Adjusted EBITDA of $12,218 million for the fourth quarter' (Q4 FY25 release); 'Adjusted EBITDA of $13,128 million for the first quarter' (Q1 FY26 release). Net debt = 2252+63805-14174 = 51883; TTM adj. EBITDA = 10001+10702+12218+13128 = 46049; 51883/46049 = 1.13x. EBITDA sources: Q4 FY24..Q2 FY26 SEC 8-K Ex.99.1 releases (e.g. https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm, https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q2 FY26",
+     "value": 0.88,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm",
+     "quote": "Balance sheet at May 3, 2026 ($M): 'Cash and cash equivalents | $19,628', 'Short-term debt | 2,252', 'Long-term debt | 62,655'. Adjusted EBITDA ($M): 'Adjusted EBITDA of $10,702 million for the third quarter' (Q3 FY25 release); 'Adjusted EBITDA of $12,218 million for the fourth quarter' (Q4 FY25 release); 'Adjusted EBITDA of $13,128 million for the first quarter' (Q1 FY26 release); 'Adjusted EBITDA of $15,244 million for the second quarter' (Q2 FY26 release). Net debt = 2252+62655-19628 = 45279; TTM adj. EBITDA = 10702+12218+13128+15244 = 51292; 45279/51292 = 0.88x. EBITDA sources: Q4 FY24..Q2 FY26 SEC 8-K Ex.99.1 releases (e.g. https://www.sec.gov/Archives/edgar/data/1730168/000173016825000061/avgo-05042025x8kxex99.htm, https://www.sec.gov/Archives/edgar/data/1730168/000173016825000094/avgo-08032025x8kxex99.htm).",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "LLY": {
+   "mounjaro_zepbound_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 5.44,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Mounjaro | $ 7,409 | $ 3,530 | 110 %\"; \"Zepbound(1) | 4,261 | 1,907 | 123 %\" (Q4 2024: 3.53+1.907 = 5.437 -> 5.44)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 6.15,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Mounjaro | $ 8,662 | $ 3,842 | 125 %\"; \"Zepbound(1) | 4,160 | 2,312 | 80 %\" (Q1 2025: 3.842+2.312 = 6.154 -> 6.15)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 8.58,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Mounjaro | $ 9,943 | $ 5,199 | 91 %\"; \"Zepbound(1) | 4,928 | 3,381 | 46 %\" (Q2 2025: 5.199+3.381 = 8.580 -> 8.58)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10.1,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Mounjaro | $ 10,723 | $ 6,515 | 65 %\"; \"Zepbound(1) | 5,352 | 3,588 | 49 %\" (Q3 2025: 6.515+3.588 = 10.103 -> 10.10)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 11.67,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Mounjaro | $ 7,409 | $ 3,530 | 110 %\"; \"Zepbound(1) | 4,261 | 1,907 | 123 %\" (Q4 2025: 7.409+4.261 = 11.670 -> 11.67)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 12.82,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Mounjaro | $ 8,662 | $ 3,842 | 125 %\"; \"Zepbound(1) | 4,160 | 2,312 | 80 %\" (Q1 2026: 8.662+4.16 = 12.822 -> 12.82)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 14.87,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Mounjaro | $ 9,943 | $ 5,199 | 91 %\"; \"Zepbound(1) | 4,928 | 3,381 | 46 %\" (Q2 2026: 9.943+4.928 = 14.871 -> 14.87)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 16.07,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Mounjaro | $ 10,723 | $ 6,515 | 65 %\"; \"Zepbound(1) | 5,352 | 3,588 | 49 %\" (Q3 2026: 10.723+5.352 = 16.075 -> 16.07)",
+     "added": "2026-10-30"
+    }
+   ],
+   "top_2_drugs_share_of_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 40.2,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Mounjaro | $ 7,409 | $ 3,530 | 110 %\"; \"Zepbound(1) | 4,261 | 1,907 | 123 %\"; \"Revenue | $ 19,292 | $ 13,533 | 43 %\" (Q4 2024: (3,530+1,907)/13,533*100 = 40.18%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 48.3,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Mounjaro | $ 8,662 | $ 3,842 | 125 %\"; \"Zepbound(1) | 4,160 | 2,312 | 80 %\"; \"Revenue | $ 19,799 | $ 12,729 | 56 %\" (Q1 2025: (3,842+2,312)/12,729*100 = 48.35%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 55.1,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Mounjaro | $ 9,943 | $ 5,199 | 91 %\"; \"Zepbound(1) | 4,928 | 3,381 | 46 %\"; \"Revenue | $ 22,974 | $ 15,558 | 48 %\" (Q2 2025: (5,199+3,381)/15,558*100 = 55.15%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 57.4,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Mounjaro | $ 10,723 | $ 6,515 | 65 %\"; \"Zepbound(1) | 5,352 | 3,588 | 49 %\"; \"Revenue | $ 24,397 | $ 17,601 | 39 %\" (Q3 2025: (6,515+3,588)/17,601*100 = 57.40%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 60.5,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Mounjaro | $ 7,409 | $ 3,530 | 110 %\"; \"Zepbound(1) | 4,261 | 1,907 | 123 %\"; \"Revenue | $ 19,292 | $ 13,533 | 43 %\" (Q4 2025: (7,409+4,261)/19,292*100 = 60.49%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 64.8,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Mounjaro | $ 8,662 | $ 3,842 | 125 %\"; \"Zepbound(1) | 4,160 | 2,312 | 80 %\"; \"Revenue | $ 19,799 | $ 12,729 | 56 %\" (Q1 2026: (8,662+4,160)/19,799*100 = 64.76%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 64.7,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Mounjaro | $ 9,943 | $ 5,199 | 91 %\"; \"Zepbound(1) | 4,928 | 3,381 | 46 %\"; \"Revenue | $ 22,974 | $ 15,558 | 48 %\" (Q2 2026: (9,943+4,928)/22,974*100 = 64.73%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 65.9,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Mounjaro | $ 10,723 | $ 6,515 | 65 %\"; \"Zepbound(1) | 5,352 | 3,588 | 49 %\"; \"Revenue | $ 24,397 | $ 17,601 | 39 %\" (Q3 2026: (10,723+5,352)/24,397*100 = 65.89%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "r_d_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 22.3,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Research and development | 3,802 | 3,023 | 26 %\"; \"Revenue | $ 19,292 | $ 13,533 | 43 %\" (Q4 2024: 3,023/13,533*100 = 22.34%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 21.5,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Research and development | 3,510 | 2,734 | 28 %\"; \"Revenue | $ 19,799 | $ 12,729 | 56 %\" (Q1 2025: 2,734/12,729*100 = 21.48%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 21.4,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Research and development | 3,819 | 3,336 | 14 %\"; \"Revenue | $ 22,974 | $ 15,558 | 48 %\" (Q2 2025: 3,336/15,558*100 = 21.44%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 19.7,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Research and development | 4,247 | 3,466 | 23 %\"; \"Revenue | $ 24,397 | $ 17,601 | 39 %\" (Q3 2025: 3,466/17,601*100 = 19.69%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 19.7,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Research and development | 3,802 | 3,023 | 26 %\"; \"Revenue | $ 19,292 | $ 13,533 | 43 %\" (Q4 2025: 3,802/19,292*100 = 19.71%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 17.7,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Research and development | 3,510 | 2,734 | 28 %\"; \"Revenue | $ 19,799 | $ 12,729 | 56 %\" (Q1 2026: 3,510/19,799*100 = 17.73%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 16.6,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Research and development | 3,819 | 3,336 | 14 %\"; \"Revenue | $ 22,974 | $ 15,558 | 48 %\" (Q2 2026: 3,819/22,974*100 = 16.62%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 17.4,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Research and development | 4,247 | 3,466 | 23 %\"; \"Revenue | $ 24,397 | $ 17,601 | 39 %\" (Q3 2026: 4,247/24,397*100 = 17.41%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 82.2,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Gross Margin as a percent of revenue - As Reported | 82.5 % | 82.2 %\" (Q4 2024 = 82.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 82.5,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Gross Margin as a percent of revenue - As Reported | 81.9 % | 82.5 %\" (Q1 2025 = 82.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 84.3,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Gross margin as a percent of revenue - As Reported | 85.8 % | 84.3 %\" (Q2 2025 = 84.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 82.9,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Gross margin as a percent of revenue - As Reported | 83.9 % | 82.9 %\" (Q3 2025 = 82.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 82.5,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "Table columns (Q4 2025 | Q4 2024, $ millions): \"Gross Margin as a percent of revenue - As Reported | 82.5 % | 82.2 %\" (Q4 2025 = 82.5%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 81.9,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q1 2026 | Q1 2025, $ millions): \"Gross Margin as a percent of revenue - As Reported | 81.9 % | 82.5 %\" (Q1 2026 = 81.9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 85.8,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q2 2026 | Q2 2025, $ millions): \"Gross margin as a percent of revenue - As Reported | 85.8 % | 84.3 %\" (Q2 2026 = 85.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 83.9,
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "Table columns (Q3 2026 | Q3 2025, $ millions): \"Gross margin as a percent of revenue - As Reported | 83.9 % | 82.9 %\" (Q3 2026 = 83.9%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "pipeline_milestones_e_g_orforglipron": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": "Orforglipron submitted for obesity in US/Japan; retatrutide positive Ph3 in obesity+knee OA; Jaypirca expanded FDA nod",
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "quote": "\"submissions for orforglipron for obesity to regulatory authorities in the U.S. and Japan\"; positive Phase 3 results for \"retatrutide for people with obesity and knee osteoarthritis\"; \"U.S. FDA approves expanded indication for Lilly's Jaypirca (pirtobrutinib)\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": "FDA approves Foundayo (orforglipron) for obesity; positive orforglipron Ph3 in T2D; retatrutide cut A1C and weight in first Ph3",
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-first-quarter-2026-financial-results-raises-full",
+     "quote": "\"FDA approves Lilly's Foundayo™ (orforglipron), the only GLP-1 pill for weight loss\"; \"Pipeline progress included positive Phase 3 results from Foundayo (orforglipron) in adults with type 2 diabetes\"; \"Lilly's triple agonist, retatrutide, demonstrated significant reductions in A1C and weight in first Phase 3 trial\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": "Orforglipron submitted in US for T2D; retatrutide positive in 3 more Ph3 obesity trials, BLA planned Q1 2027",
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+     "quote": "\"Pipeline highlights included positive data from three additional Phase 3 trials of retatrutide in obesity.\" ... \"with plans to submit a Biologics License Application to the U.S. FDA in the first quarter of 2027.\" ... \"and the submission for orforglipron for type 2 diabetes in the U.S.\"",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": "Mounjaro FDA-approved for CV risk reduction; retatrutide beat Ozempic in H2H Ph3; Inluriyo+Verzenio FDA approval",
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full",
+     "quote": "\"FDA approves Lilly's Mounjaro (tirzepatide) to reduce cardiovascular risk in adults\"; \"positive topline results from a head-to-head Phase 3 trial of retatrutide versus Ozempic 2 mg\"; \"U.S. FDA approves Inluriyo (imlunestrant) in combination with Verzenio\"",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "NFLX": {
+   "revenue_growth_constant_currency": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 19.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000033/ex991_q424.htm",
+     "quote": "Revenue in Q4 increased 16% year over year, or 19% on a foreign exchange (F/X) neutral basis",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 16.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000175/ex991_q125.htm",
+     "quote": "Revenue in Q1 grew 13% year over year, or 16% on a foreign exchange (F/X) neutral basis",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000322/ex991_q225.htm",
+     "quote": "Our Q2 revenue increased by 16% year over year (17% on a foreign exchange (F/X) neutral basis).",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 17.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000404/ex991_q325.htm",
+     "quote": "Revenue in Q3 grew 17% year over year on both a reported and foreign exchange (F/X) neutral basis",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 17.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm",
+     "quote": "Q4 revenue grew 18% year over year (+17% on a foreign exchange (F/X) neutral basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 14.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+     "quote": "Revenue in Q1 grew 16% year over year (+14% on a foreign exchange (F/X) neutral basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000211/ex991_q226.htm",
+     "quote": "Revenue in Q2 grew 13% year over year (+12% on a foreign exchange (F/X) neutral basis)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+     "quote": "Revenue in Q3 grew 12% year over year (+11% on a foreign exchange (F/X) neutral basis), and was in-line with our forecast.",
+     "added": "2026-10-30"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 22.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm",
+     "quote": "Summary table, Operating Margin row, Q4'24 column: 22.2 %. Check: Operating income 2,272,766 / Revenues 10,246,513 = 22.2%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 31.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+     "quote": "operating margin of 32.3% was up versus 31.7% in Q1'25.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 34.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000211/ex991_q226.htm",
+     "quote": "Operating income in Q2 was $4.2B, up 11% year over year, and operating margin was 33.4% versus 34.1% in Q2'25.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 28.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+     "quote": "operating margin of 34.6% was up versus 28.2% in Q3'25.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm",
+     "quote": "operating margin expanded two percentage points year over year to 25%; summary table Operating Margin Q4'25: 24.5%. Check: Operating income 2,956,663 / Revenues 12,050,762 = 24.5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 32.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+     "quote": "operating margin of 32.3% was up versus 31.7% in Q1'25.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 33.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000211/ex991_q226.htm",
+     "quote": "Operating income in Q2 was $4.2B, up 11% year over year, and operating margin was 33.4% versus 34.1% in Q2'25.",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 34.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+     "quote": "operating margin of 34.6% was up versus 28.2% in Q3'25.",
+     "added": "2026-10-30"
+    }
+   ],
+   "content_cash_spend_vs_amortization": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1.06,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm",
+     "quote": "Cash flow statement, three months ended Dec 31, 2024 (in thousands): Additions to content assets (4,429,402); Amortization of content assets 4,161,501. 4,429,402 / 4,161,501 = 1.0644 -> 1.06x",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.93,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+     "quote": "Cash flow statement, three months ended Mar 31, 2025 (in thousands): Additions to content assets (3,549,657); Amortization of content assets 3,823,112. 3,549,657 / 3,823,112 = 0.9285 -> 0.93x",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 1.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000211/ex991_q226.htm",
+     "quote": "Cash flow statement, three months ended Jun 30, 2025 (in thousands): Additions to content assets (3,835,813); Amortization of content assets 3,832,074. 3,835,813 / 3,832,074 = 1.0010 -> 1.00x",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.16,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+     "quote": "Cash flow statement, three months ended Sep 30, 2025 (in thousands): Additions to content assets (4,653,935); Amortization of content assets 4,002,744. 4,653,935 / 4,002,744 = 1.1627 -> 1.16x",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.06,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm",
+     "quote": "Cash flow statement, three months ended Dec 31, 2025 (in thousands): Additions to content assets (5,057,212); Amortization of content assets 4,764,236. 5,057,212 / 4,764,236 = 1.0615 -> 1.06x",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1.15,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+     "quote": "Cash flow statement, three months ended Mar 31, 2026 (in thousands): Additions to content assets (4,846,917); Amortization of content assets 4,217,900. 4,846,917 / 4,217,900 = 1.1491 -> 1.15x",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000211/ex991_q226.htm",
+     "quote": "Cash flow statement, three months ended Jun 30, 2026 (in thousands): Additions to content assets (4,927,523); Amortization of content assets 4,311,309. 4,927,523 / 4,311,309 = 1.1429 -> 1.14x",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.22,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+     "quote": "Cash flow statement, three months ended Sep 30, 2026 (in thousands): Additions to content assets (5,159,790); Amortization of content assets 4,235,454. 5,159,790 / 4,235,454 = 1.2182 -> 1.22x",
+     "added": "2026-10-30"
+    }
+   ],
+   "free_cash_flow": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm",
+     "quote": "Free cash flow (FCF) in Q4'25 totaled $1.9B vs. $1.4B in Q4'24. [Non-GAAP free cash flow Q4'24 $1,378,220 thousand]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+     "quote": "Free cash flow rose to $5.1B in Q1'26, up from $2.7B in Q1'25. [Non-GAAP free cash flow Q1'25 $2,660,922 thousand]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 2.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000211/ex991_q226.htm",
+     "quote": "Free cash flow in Q2'26 totaled $1.5B vs. $2.3B in Q2'25 [Non-GAAP free cash flow Q2'25 $2,267,369 thousand]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 2.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+     "quote": "Free cash flow (FCF) in Q3'26 totaled $2.9B vs. $2.7B in Q3'25. [Non-GAAP free cash flow Q3'25 $2,660,455 thousand]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm",
+     "quote": "Free cash flow (FCF) in Q4'25 totaled $1.9B vs. $1.4B in Q4'24. [Non-GAAP free cash flow $1,872,307 thousand]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+     "quote": "Free cash flow rose to $5.1B in Q1'26, up from $2.7B in Q1'25. [Non-GAAP free cash flow $5,094,075 thousand]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000211/ex991_q226.htm",
+     "quote": "Free cash flow in Q2'26 totaled $1.5B vs. $2.3B in Q2'25 [Non-GAAP free cash flow $1,525,168 thousand]",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000290/ex991_q326.htm",
+     "quote": "Free cash flow (FCF) in Q3'26 totaled $2.9B vs. $2.7B in Q3'25. [Non-GAAP free cash flow $2,883,513 thousand]",
+     "added": "2026-10-30"
+    }
+   ]
+  },
+  "BKNG": {
+   "room_nights_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 8.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "Q3 2025 earnings release statistical data (headers: '(Unaudited) 3Q23 4Q23 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25'), 3Q24 column: room nights \"Year/Year Growth 14.9 % 9.2 % 8.5 % 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 %\" -> 3Q24 = 8.1%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 13.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "Q4 2025 earnings release statistical data (headers: '(Unaudited) 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 FY 2024 FY 2025'), 4Q24 column: room nights \"Year/Year Growth 8.5 % 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 % 9.0 % 9.1 % 8.0 %\" -> 4Q24 = 13.2%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 7.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "Q1 2026 earnings release statistical data (headers: '1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26'), 1Q25 column: room nights \"Year/Year Growth 8.5 % 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 % 9.0 % 5.9 %\" -> 1Q25 = 7.2%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q25 column: room nights \"Year/Year Growth 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 % 9.0 % 5.9 % 5.3 %\" -> 2Q25 = 7.7%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "\"Room nights grew 8% compared to the third quarter of 2024.\" Table: Q3 2025 earnings release statistical data (headers: '(Unaudited) 3Q23 4Q23 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25'), 3Q25 column: room nights \"Year/Year Growth 14.9 % 9.2 % 8.5 % 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 %\" -> 3Q25 = 8.2%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "\"Room nights grew 9% compared to 2024.\" Table: Q4 2025 earnings release statistical data (headers: '(Unaudited) 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 FY 2024 FY 2025'), 4Q25 column: room nights \"Year/Year Growth 8.5 % 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 % 9.0 % 9.1 % 8.0 %\" -> 4Q25 = 9.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "\"Room nights grew 6% compared to the first quarter of 2025.\" Table: Q1 2026 earnings release statistical data (headers: '1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26'), 1Q26 column: room nights \"Year/Year Growth 8.5 % 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 % 9.0 % 5.9 %\" -> 1Q26 = 5.9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "\"Room nights grew 5% compared to the second quarter of 2025.\" Table: Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q26 column: room nights \"Year/Year Growth 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 % 9.0 % 5.9 % 5.3 %\" -> 2Q26 = 5.3%",
+     "added": "2026-10-30"
+    }
+   ],
+   "gross_bookings_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 9.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "Q3 2025 earnings release statistical data (headers: '(Unaudited) 3Q23 4Q23 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25'), 3Q24 column: gross bookings \"Year/Year Growth 24.0 % 16.1 % 10.4 % 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 %\" -> 3Q24 = 9.1% as reported (constant currency basis: 9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 17.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "Q4 2025 earnings release statistical data (headers: '(Unaudited) 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 FY 2024 FY 2025'), 4Q24 column: gross bookings \"Year/Year Growth 10.4 % 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 % 15.8 % 9.9 % 12.4 %\" -> 4Q24 = 17.3% as reported (constant currency basis: 18%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 7.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "Q1 2026 earnings release statistical data (headers: '1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26'), 1Q25 column: gross bookings \"Year/Year Growth 10.4 % 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 % 15.8 % 15.2 %\" -> 1Q25 = 7.2% as reported (constant currency basis: 10%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 12.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q25 column: gross bookings \"Year/Year Growth 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 % 15.8 % 15.2 % 9.0 %\" -> 2Q25 = 12.8% as reported (constant currency basis: 9%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 14.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "\"Gross bookings grew 14% compared to the third quarter of 2024, or 10% on a constant currency basis.\" Table: Q3 2025 earnings release statistical data (headers: '(Unaudited) 3Q23 4Q23 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25'), 3Q25 column: gross bookings \"Year/Year Growth 24.0 % 16.1 % 10.4 % 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 %\" -> 3Q25 = 14.3% as reported (constant currency basis: 10%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 15.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "\"Gross bookings grew 16% compared to 2024, or approximately 11% on a constant currency basis.\" Table: Q4 2025 earnings release statistical data (headers: '(Unaudited) 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 FY 2024 FY 2025'), 4Q25 column: gross bookings \"Year/Year Growth 10.4 % 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 % 15.8 % 9.9 % 12.4 %\" -> 4Q25 = 15.8% as reported (constant currency basis: 11%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 15.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "\"Gross bookings grew 15% compared to the first quarter of 2025, or approximately 8% on a constant currency basis.\" Table: Q1 2026 earnings release statistical data (headers: '1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26'), 1Q26 column: gross bookings \"Year/Year Growth 10.4 % 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 % 15.8 % 15.2 %\" -> 1Q26 = 15.2% as reported (constant currency basis: 8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "\"Gross bookings grew 9% compared to the second quarter of 2025, or approximately 8% on a constant currency basis.\" Table: Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q26 column: gross bookings \"Year/Year Growth 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 % 15.8 % 15.2 % 9.0 %\" -> 2Q26 = 9.0% as reported (constant currency basis: 8%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "take_rate": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 18.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended September 30, 2025 | 2024 | Nine Months 2025 | 2024): \"Total revenues $ 9,008 $ 7,994 $ 20,568 $ 18,268\" -> total revenues $7,994M; Q3 2025 earnings release statistical data (headers: '(Unaudited) 3Q23 4Q23 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25'), 3Q24 column: \"Total Gross Bookings $ 39.8 $ 31.7 $ 43.5 $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7\" -> gross bookings $43.4B. (7.994/43.4 = 18.4%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 14.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended December 31, 2025 | 2024 | Year Ended 2025 | 2024): \"Total revenues $ 6,349 $ 5,471 26,917 23,739\" -> total revenues $5,471M; Q4 2025 earnings release statistical data (headers: '(Unaudited) 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 FY 2024 FY 2025'), 4Q24 column: \"Total Gross Bookings $ 43.5 $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7 $ 43.0 $ 165.6 $ 186.1\" -> gross bookings $37.2B. (5.471/37.2 = 14.7%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended March 31, 2026 | 2025): \"Total revenues 5,532 4,762\" -> total revenues $4,762M; Q1 2026 earnings release statistical data (headers: '1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26'), 1Q25 column: \"Total Gross Bookings $ 43.5 $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7 $ 43.0 $ 53.8\" -> gross bookings $46.7B. (4.762/46.7 = 10.2%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 14.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended June 30, 2026 | 2025): \"Total revenues 7,352 6,798\" -> total revenues $6,798M; Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q25 column: \"Total Gross Bookings $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7 $ 43.0 $ 53.8 $ 51.0\" -> gross bookings $46.7B. (6.798/46.7 = 14.6%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 18.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended September 30, 2025 | 2024 | Nine Months 2025 | 2024): \"Total revenues $ 9,008 $ 7,994 $ 20,568 $ 18,268\" -> total revenues $9,008M; Q3 2025 earnings release statistical data (headers: '(Unaudited) 3Q23 4Q23 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25'), 3Q25 column: \"Total Gross Bookings $ 39.8 $ 31.7 $ 43.5 $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7\" -> gross bookings $49.7B. (9.008/49.7 = 18.1%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 14.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended December 31, 2025 | 2024 | Year Ended 2025 | 2024): \"Total revenues $ 6,349 $ 5,471 26,917 23,739\" -> total revenues $6,349M; Q4 2025 earnings release statistical data (headers: '(Unaudited) 1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 FY 2024 FY 2025'), 4Q25 column: \"Total Gross Bookings $ 43.5 $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7 $ 43.0 $ 165.6 $ 186.1\" -> gross bookings $43.0B. (6.349/43.0 = 14.8%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 10.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended March 31, 2026 | 2025): \"Total revenues 5,532 4,762\" -> total revenues $5,532M; Q1 2026 earnings release statistical data (headers: '1Q24 2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26'), 1Q26 column: \"Total Gross Bookings $ 43.5 $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7 $ 43.0 $ 53.8\" -> gross bookings $53.8B. (5.532/53.8 = 10.3%)",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 14.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended June 30, 2026 | 2025): \"Total revenues 7,352 6,798\" -> total revenues $7,352M; Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q26 column: \"Total Gross Bookings $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7 $ 43.0 $ 53.8 $ 51.0\" -> gross bookings $51.0B. (7.352/51.0 = 14.4%)",
+     "added": "2026-10-30"
+    }
+   ],
+   "marketing_revenue_direct_mix": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 26.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended September 30, 2025 | 2024 | Nine Months 2025 | 2024): \"Marketing expenses 2,340 $ 2,151 $ 6,256 $ 5,700\"; \"Total revenues $ 9,008 $ 7,994 $ 20,568 $ 18,268\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 2,151/7,994 = 26.9%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 28.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended December 31, 2025 | 2024 | Year Ended 2025 | 2024): \"Marketing expenses 1,930 1,578 8,186 7,278\"; \"Total revenues $ 6,349 $ 5,471 26,917 23,739\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 1,578/5,471 = 28.8%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 37.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended March 31, 2026 | 2025): \"Marketing expenses 2,068 1,777\"; \"Total revenues 5,532 4,762\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 1,777/4,762 = 37.3%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 31.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended June 30, 2026 | 2025): \"Marketing expenses 2,371 2,139\"; \"Total revenues 7,352 6,798\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 2,139/6,798 = 31.5%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 26.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000050/q3-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended September 30, 2025 | 2024 | Nine Months 2025 | 2024): \"Marketing expenses 2,340 $ 2,151 $ 6,256 $ 5,700\"; \"Total revenues $ 9,008 $ 7,994 $ 20,568 $ 18,268\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 2,340/9,008 = 26.0%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 30.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000008/q4-25bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended December 31, 2025 | 2024 | Year Ended 2025 | 2024): \"Marketing expenses 1,930 1,578 8,186 7,278\"; \"Total revenues $ 6,349 $ 5,471 26,917 23,739\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 1,930/6,349 = 30.4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 37.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000024/q1-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended March 31, 2026 | 2025): \"Marketing expenses 2,068 1,777\"; \"Total revenues 5,532 4,762\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 2,068/5,532 = 37.4%",
+     "added": "2026-10-30"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended June 30, 2026 | 2025): \"Marketing expenses 2,371 2,139\"; \"Total revenues 7,352 6,798\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 2,371/7,352 = 32.2%",
+     "added": "2026-10-30"
+    }
+   ]
   }
  }
 }

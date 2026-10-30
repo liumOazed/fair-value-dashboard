@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "NVDA",
-  "AVGO",
-  "LLY",
-  "NFLX",
-  "BKNG",
   "EXPE",
   "CRM",
   "ADBE",
@@ -44,7 +39,12 @@
   "AMZN",
   "V",
   "MA",
-  "AAPL"
+  "AAPL",
+  "NVDA",
+  "AVGO",
+  "LLY",
+  "NFLX",
+  "BKNG"
  ],
  "notes": {
   "MSFT": "Pilot done 30 Oct for Q1 FY26, Q3 FY26, Q4 FY26, Q1 FY27; fill Q2 FY26 and capex history.",
@@ -52,6 +52,11 @@
   "AMZN": "AWS backlog not stated Q4 2024; backlog from 10-Qs (Q1-Q2 2026) or call transcripts (others). Capex/OCF uses quarterly figures.",
   "V": "Q1-Q4 FY26 filled. FY25 growth rates (payments volume, cross-border, processed transactions, VAS) not pulled; VAS growth is constant-dollar from calls only (Q4 FY26 from third-party transcript).",
   "MA": "Cross-border and switched transactions growth not stated for Q4 2024-Q2 2025 in sourced releases; VAS growth not stated for year-earlier quarters. Rebates from slide footnotes.",
-  "AAPL": "Q4 FY26 not yet reported (due 2 Nov 2026). Installed base stated only Q1 FY25 (2.35B) and Q1 FY26 (2.5B). Services gross margin computed from services sales and cost of sales."
+  "AAPL": "Q4 FY26 not yet reported (due 2 Nov 2026). Installed base stated only Q1 FY25 (2.35B) and Q1 FY26 (2.5B). Services gross margin computed from services sales and cost of sales.",
+  "NVDA": "Q3 FY25-Q2 FY27 filled (Q3 FY27 due late Nov 2026). Top-customer share for Q4 FY25/Q4 FY26 uses 10-K full-year figure (no quarterly figure). Supply-commitment definition changes over time (inventory purchase obligations to Q1 FY26; total purchase commitments Q2 FY26; total supply-related commitments Q3 FY26-Q1 FY27; $279B supply and capacity Q2 FY27), so that series is not like-for-like.",
+  "AVGO": "Q4 FY24-Q3 FY26 filled. Net debt/EBITDA not available for Q3 FY26: release and call no longer state adjusted EBITDA. AI revenue for Q4 FY24 and Q4 FY25 from call transcripts.",
+  "LLY": "Q4 2024-Q3 2026 filled (Q3 2026 reported 29 Oct 2026). Pipeline milestones for the last 4 quarters only. Sourced from investor.lilly.com releases (sec.gov refused).",
+  "NFLX": "Q4 2024-Q3 2026 filled. Advertising revenue growth not disclosed quarterly (only full-year statements such as 'more than doubled', '$1.5B+ in 2025'). Content ratio computed from 'Additions to content assets' / amortization.",
+  "BKNG": "Q3 2024-Q2 2026 filled; Q3 2026 due 3 Nov 2026. Performance/brand marketing no longer split: marketing ratio uses the single 'Marketing expenses' line."
  }
 }
