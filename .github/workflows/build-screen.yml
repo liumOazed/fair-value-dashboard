@@ -18,8 +18,8 @@ jobs:
       - run: python scripts/build_screen.py
       - name: Commit changes
         run: |
-          git config user.name "screen-bot"
-          git config user.email "screen-bot@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/screen.json data/cache
           git diff --staged --quiet || git commit -m "Rebuild growth screen"
           git push

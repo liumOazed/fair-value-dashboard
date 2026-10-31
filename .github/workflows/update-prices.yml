@@ -24,8 +24,8 @@ jobs:
         run: python scripts/drop_watch.py || echo "drop watch failed (prices still committed)"
       - name: Commit changes
         run: |
-          git config user.name "price-bot"
-          git config user.email "price-bot@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/prices.json; if [ -f data/drops.json ]; then git add data/drops.json; fi
           git diff --staged --quiet && exit 0
           STATE=$(python -c "import json;print(json.load(open('data/prices.json')).get('market',{}).get('state','?'))")

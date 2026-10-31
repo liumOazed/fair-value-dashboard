@@ -46,8 +46,8 @@ jobs:
 
       - name: Commit result
         run: |
-          git config user.name "earnings-bot"
-          git config user.email "earnings-bot@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           UP=$(cat data/.auto_updated.txt 2>/dev/null || true)
           git add data/earnings_calendar.json data/pending_reports.json data/review_queue.json data/data_through.json \
                   model/model.py model/results.json data/assets.json data/fv_history.json data/snapshot.json 2>/dev/null || true
