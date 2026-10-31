@@ -1,0 +1,22 @@
+name: Debug snippet
+# Runs .github/debug/snippet.py with yfinance installed and commits its output to .github/debug/out.txt (developer tool).
+on:
+  push:
+    paths: [".github/debug/snippet.py"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q yfinance pandas
+      - run: python .github/debug/snippet.py > .github/debug/out.txt 2>&1 || true
+      - run: |
+          git config user.name "debug-bot"; git config user.email "debug-bot@users.noreply.github.com"
+          git add .github/debug/out.txt; git commit -m "Debug output" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
