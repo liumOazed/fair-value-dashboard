@@ -28,7 +28,7 @@ TODAY = NOW.date()
 T_DAY, T_WEEK, T_HIGH, REL = -0.07, -0.12, -0.25, -0.05
 E_DAY, E_WEEK, E_REL = -0.12, -0.20, -0.10
 KEEP_OPEN = 30          # days after the last trigger
-EVIDENCE_V = 3          # bump when the evidence logic changes (forces a refresh)
+EVIDENCE_V = 4          # bump when the evidence logic changes (forces a refresh)
 
 
 def load(p, default):
@@ -77,7 +77,7 @@ def peer_moves(t, screen, themes):
         basis, names = f"industry: {me['industry']}", [r["ticker"] for r in peers]
     else:
         grp = next((g for g, L in themes.items() if isinstance(L, list) and t in L and g != "Index & commodities"), None)
-        names, basis = ([x for x in themes.get(grp, []) if x != t][:8], f"group: {grp}") if grp else ([], "none")
+        names, basis = ([x for x in themes.get(grp, []) if x != t and not (x in rows and same_co(rows[x]))][:8], f"group: {grp}") if grp else ([], "none")
     res = {}
     for p in names:
         try:
