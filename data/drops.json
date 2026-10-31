@@ -18,7 +18,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": "2026-10-28",
     "last_report": "2026-10-28",
@@ -138,7 +138,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-08-05",
@@ -258,7 +258,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-08-05",
@@ -376,7 +376,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": "2026-10-29",
     "last_report": "2026-10-29",
@@ -434,12 +434,6 @@
       "date": "2026-10-30"
      },
      {
-      "title": "ResMed Inc. Stock 12\u2011Month Price Target Raised to $273.52, Implies 8% Upside",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZFd1OE5INEExMWVmdmhnSzdBV3U2MkFyZndJLWg4TlItaXRLQnNGV0dVT2dtRWE3V0lFZlJzUHFuaWNrYzIwdzZLREtzbkJ2bWxwQkJ1STJuOHJGTnRPYkFZNklRUnZET2tSR2hJd1gzdTZ1MVY5cENsWXE1VVIta2VSY2pfVmRqaFBXV1lxblJGN3J2MlktTFhQV0RsQ2hvTDJGU1RrbU5DbE0yMUdQWVB3MkdnTDI0T1dqUmV6LVhZOHN2R0RnRGlpMHR1Wms?oc=5",
-      "date": "2026-10-30"
-     },
-     {
       "title": "ResMed (RMD) Looks Fully Valued After Another Earnings Beat",
       "publisher": "Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUUhGczYxa0RjbE5HMC1vTjVTaWRLa2dZb1hWV3dudXdwZVYzTlNxVWZRM0ExTEwxWWNIVjdtRTBrTVV6OHF6dk5hb2JHWEVSRTZoNUtpZ0ZrZF9NTWZkY193akU5dWJ0Wks0ZmtUcFFReDNIMW1ERDltekM2TUljZVpRWGp5MXFISVRmOElIMVljblNOajdVcFJB?oc=5",
@@ -449,6 +443,12 @@
       "title": "ResMed (NYSE:RMD) Price Target Raised to $288.00",
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX1JGYU82dndPbklpMmtUMXROMXNrQU9TS3NNR0VCcmFmNWtTOGdsYmo1M05ESkhNVlJnZ3o0Y2wxdjFGWWQtbWVYdDNOeEtZMWlRakJJMERXbEFRdnBjcy1xcHVIRTRJYmloM0tweURuTGtnUVJMc0U3bHdqZnpYa1oyMU1hdHhYQXlaM3hVaHdGOWNpeXZhUV9KWTlIbWlsNFZHXy1IYU1JZw?oc=5",
+      "date": "2026-10-30"
+     },
+     {
+      "title": "Wells Fargo & Company Issues Positive Forecast for ResMed (NYSE:RMD) Stock Price",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaDA4MXU1cmpOQmU1QVNZMzBnRlRJWDJPdmhTTEhHOGJMc3ozNFR4UUpPSm54VGY5eDFqOXotNTgtSXpxWVRhejFtVHZHVnJ0LTNfM2VzTlJSTy1oMm1EYnVmLUVmV3BwTVc5Y09tUzdkbWUzeXNpcHc2TC1rXzQxWmNsRkdfUmI2MmY2Ui1rc2xlR3owMzRIRUY2X1FXSGZGR3JrUlhUbGh5QjF1ekZGM0piLWNZWC1LZGFqN2g0ZUZ0VlNqZ3YzbU1EYi13Ym05aEhJaw?oc=5",
       "date": "2026-10-30"
      }
     ]
@@ -494,22 +494,21 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": "2026-10-28",
     "last_report": "2026-10-28",
     "peers": {
      "basis": "group: Hyperscalers",
-     "n": 5,
+     "n": 4,
      "median": {
-      "day": -0.015259765898342215,
-      "week": -0.030846749582598254,
-      "high": -0.20910766728662833
+      "day": -0.015392022456187926,
+      "week": -0.01790191340132069,
+      "high": -0.18143219537730837
      },
      "tickers": [
       "MSFT",
       "AMZN",
-      "GOOG",
       "META",
       "ORCL"
      ]
@@ -610,7 +609,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-07-29",
@@ -729,7 +728,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2025-08-14",
@@ -847,7 +846,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-10-22",
@@ -896,8 +895,8 @@
      },
      {
       "title": "Comfort Systems vs. Trane: Which HVAC Stock Is a Better Buy?",
-      "publisher": "The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQmt1VFZCMVRrYnpfdEJ6MWRUb0RJZFdESlozWFphVnlUWVQtRHZjcFBJbVdCbV9tQjNsNDBoUjEwX3VyUUVSR3dhTzZzMFlDWWotRFNNeThJamo4OEJjUEJZc0ppUTM1OW5fMHdoejdkNThraVJTb2JjbEwwRmlURXJCa0oxTkJDcjRWajVGcG1DYjU3blRlbDJjbkhHeDc1T2pGMW84QXl0d1F4TE9XRnhnWnpjUE5ma0c4TlFTbndNMFFKb0JrX1Jsb1p3QUk0OFMtQ0RwUQ?oc=5",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeDJ4M3M0OUd1MGk0ZVJUeG1PTVo4blUwOG54NW5uN3g0OFpGVGFJYTdPWEx5bzNRZXdkU1dBWHBqMHNHbm1uN01pQ0VpZVdLb25naEhoQnRheUstaGlBTTJsSVhUbGY3R3lMckw2Y2ZMQ1h3MW1JblNHdUQ4cTVVSlJYTDV2ZHBEZ3VUd0t2d3d0Y1Y0bHlXdWtxcHBOc3RtQWJZaDV0WHcxanUwZjJxQ3Njcw?oc=5",
       "date": "2026-10-30"
      },
      {
@@ -913,9 +912,9 @@
       "date": "2026-10-30"
      },
      {
-      "title": "Can Comfort Systems USA (NYSE:FIX) Sustain Its Backlog Growth?",
-      "publisher": "Kalkine Media",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZU1oNkdSUkpfaVZobGo2QXJvOEhIRDlIM244ODRHdzZISmE3Yk1lUmhOU29CdUR6eUhsXy1DUGdwQ0dWVW9mcEozclJ3d2NHLUpXWTV1WFZqOHgwVUEtLWVZZ0lFZGtpRUJXSVczOGk4TnlVd1A3WHItSVU3bFNwMWtlbU9TTm9peWxwVlE3UnZDZTYtdEk5LWY4Nm4zamUtNVE?oc=5",
+      "title": "1,191 Comfort Systems USA, Inc. $FIX Shares Sold by VestGen Advisors LLC",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUl8wZ3RGaU01OWJaUEEzSHNuWTg5Z1lQTWRoakladWEydy1nR3R2VzdyQXdVNkdHT0FhanV1Nm5qanZJMmpESWlNR2U4TXZjWTJlUVE2MERrM2xrUENxSHZpenR2a1A5bnl4SkJSZzYxejlhOWliSVhBLUdRVkczT1FjVHAxMXE5Z1N0dk9KSTlMN2s5U2s5MlFNeXJENjFReS1VNVBLS3lHTk1lX3dmTVh3cnpaSEdUR1c1a2xHMnAwbkZ1bzdXQQ?oc=5",
       "date": "2026-10-29"
      }
     ]
@@ -960,7 +959,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-09-02",
@@ -1001,9 +1000,21 @@
     },
     "news": [
      {
-      "title": "Broadcom (NASDAQ:AVGO) Stock Falls 5.5% - Time to Sell?",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRXEtbEpscFFkZlllS2k2V0dGMHN3VVlaT2hPdjRwM1BQa0Z1LTFTWWt6RjItMEVBNXQxLTNKSU1TZUFrZWw5OHY5QmVITWRKbkVoMWc3NXkwQ0hzTGwxRkVYandjendsVjdJS3RwRU9ZNU4wR1lnekdhbC1oQzFlbEphUzJOUUNZMVdtWElPNW93RXE0S2ItYVhOdjZIMjhJZzFYY0dTdmpYQVZN?oc=5",
+      "title": "Broadcom Heads These 3 Top Undervalued Stocks To Watch",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZmJvSFB5MlNiMUd6aWFiLTlTQTdCWEc1S2paczU2MTIzSHZfZWV6VHBxalgyeTVkRjFUYW1DMEJvS1NPUzlfWHYtVk9fdDJOTDJ2RGdZdjJGbFZ1Mzh6N2ZyWkJZbnZaQkhxZzhkUno3ckdMbkQ4cGNFU2llcXAtdUV2TEE2VWFYWmd0VzRXUHZKYTVpaGxDNEQ0YWw3dw?oc=5",
+      "date": "2026-10-31"
+     },
+     {
+      "title": "Former SEC Chair: Broadcom\u2019s $63 Billion Package Feels Like \u201cThat 08 Off-Balance Sheet Craze\u201d",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeVJObVFkTEpHX1J0dWJKWWcwMHVXZ2xEbm90MWsyQUFjNmlsN3lVdWJUbnJQTi1sSlo3bHl5U2JFWVJFRVdMNktUbDE1NDFOc1dsTXloMjg4SkJBTnozSGFmV05yNHlTVEt4N0dZbzU0ajlQSkJKZ29BWDF0TTFqMU1QcjNHb3ZUOWlieF9yZVY0LUFfcHlEUQ?oc=5",
+      "date": "2026-10-30"
+     },
+     {
+      "title": "Broadcom Stocks Decline 5.24% With Residual Support in AI Financing",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPOXRKZU81YTVfLWZLUWg1blpiZ1BvRGV6QlM3cVVucHc0X0RPcno5eHczX1VKc2p1QzA3Q3ZJNC1BNVdyYjZnMm5leDFnbW81YmtNRGRXckFWRURCbVhhcU1fV0t2ZUI3M3llOWYwTWw4R3NNbXNnVm9oSnIzRDhoX1FxT2RMenhkakpWQV8yMl8tSWItQXZVQQ?oc=5",
       "date": "2026-10-30"
      },
      {
@@ -1022,18 +1033,6 @@
       "title": "Broadcom Stock Outlook Hinges On AI Chip Growth And Anthropic Partnership",
       "publisher": "Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSy1lUGhZQnBubnhjQnlqUmtKQk5qOFc0SWhvM2RjZG9MSTkyOHFTQjZWVlctUDU2akxqSTAxWGtkd0NtdG8xYWtUWnQ0dUVCWl9IWUFBY0dVU0RNWGdocW9GX01WSVdfMDExYnFUTHhJbEdtcDZjQ0tLNnhWbmtnQWx0V0UtMV9JUjI1dzZvNDZfQ0JpNktXalkyaVA?oc=5",
-      "date": "2026-10-30"
-     },
-     {
-      "title": "History Says Now Is the Perfect Time to Buy Broadcom Stock",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaGNVQ0xlNWwtaUw5UTI1blZqQmo4bmN3QUVORTFjc1dtc1FyVjFGd0xWREM5aEZ3N1BDaWJLbTNyVFpQczB2UHhMTUhGQTJlS0ZCcS03UXlOczBZUldaMldNNXFaODZPVGN1MUFoMTFjdXpnVFNvdzhpdlVrNkg3MzdLWHctc2hRUTFOMDVsTFpaeDZ6X191YTNR?oc=5",
-      "date": "2026-10-30"
-     },
-     {
-      "title": "5 AI Stocks Set to Win Big From Anthropic's Spending Spree",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaGtVVWNtM2Q2Wm1nNW1Hc19zQmV1QlRWUHhXZzhKbnFMT0F0QUx1cDRuRDdZLU43SmgwZTR3eEN0Z0l3VGwtUENYeVd3RmRGQ2FkMjg5WTFIYnVnaG14aEpoRjVJNmE2RTRINEYtUm5mRWV1TVctU3JnMkZjaVo0MzNwNVZMU2I0djdDR2tBSVVKbjE0MEEyVw?oc=5",
       "date": "2026-10-30"
      }
     ]
@@ -1078,7 +1077,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-08-04",
@@ -1196,7 +1195,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": "2026-10-29",
     "last_report": "2026-10-29",
@@ -1314,7 +1313,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-08-04",
@@ -1370,21 +1369,21 @@
       "date": "2026-10-30"
      },
      {
-      "title": "Business Brain Showa-ota to Exit GSX Stake via Share Buyback, Booking Large Gain",
-      "publisher": "TipRanks",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQalN5QmZiY2R3ZEJIMk5TRlRFTGJLaTF5X0FBMldzQURGZzJ0d21BMHVuU19aUkVNS1RzMXlaOHBqY25vc01jTE5JdG5wbWhmSXJKUFhPNzFxSWlHU3g3WExNQm1mcEx6N3pFbTFDcGRHOUtacUt0a00xYkFxdjRiTTJaWllPaW44M0Y0T2N1UGtaS041X25HX3UtaWtETUtUNnE1VGhuVWlCNmRTTy1ncGg1OGNGTXhZQ0VMY2d1eHltSXlDUlR2QmJzYw?oc=5",
-      "date": "2026-10-30"
-     },
-     {
-      "title": "Sudarshan Pharma Share Price Reverses After Q2 Results: Rebound?",
-      "publisher": "Univest",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTTFkaWRHT3QwWDZ4c3ZXV1cwV3p3bTduUTJYVWZlRm1fZUVuNFZNbXlMdTNuekpPV0k1cUNIWnBuaTBpajdjY2dOdU9jZVdvRDYyZHlPd043eTVzS1NVb18wMnlYQ1R0R1NoWENSdnM4bkluYmpPMGptNmhtcWhTN3ZYU19VR2hOQzRrLTRmd2I?oc=5",
+      "title": "Booking Holdings' Q3 Earnings Ahead: What's in Store for the Stock?",
+      "publisher": "Zacks Investment Research",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQd1hPZjZhTm5sQXF2cnBkVkc3WmZtbjFqUDZzS0pFLW9XNUhZeld0dmVPa3lqMUlDa3FhNkpGaHh2aHZKeXdMVWZGQkJzUlFaNjJEb1pEQ3pfRloySWYtX2Jrc29IanVNd1ZTRHVZOGxFYWtPQVZSQV9yVWR4UkJwMHpmcl85RmdITGdnOGNvNWxURlZ2LWo2LWtGdlZJaEF0WU1HUm1Lbw?oc=5",
       "date": "2026-10-30"
      },
      {
       "title": "Booking Holdings stock: Smith Group cuts stake by 38.2%",
       "publisher": "ad-hoc-news.de",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRlRZS3RvTEgtbGR1OUZSbXdBcV9zWERINW4wNmc3M1NmRG5oQXRMRVVXeWRzUnEzRDVING5Ud215SzREeGN5TTBDMjlpQ0JVbURnSWdPaFpmUklSRFp0UFRoWHQ5d3RPM2x2M044N0ZtbVk4c3pGM09iVklwSUY5N21qUTZsd2puQ3djR04xb01vWTVGWFoxQU85MzJxcl96TEI5eXZJQWR1N0hYcENnLWdpT0g4RUk?oc=5",
+      "date": "2026-10-30"
+     },
+     {
+      "title": "What Does Booking Holdings Offer That Expedia Does Not?",
+      "publisher": "Trefis",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbE9LVDJmTnI5RTFqYlQzVHVIM0gwWFloSTdaWmVFb24wZll4TUNGTjg5a2wxN0pIREM5U0E3bDlYZURtV1Q0WFZrUWwwQ3Rva3ZOMVhtUHg0ZzEtT3JOaU9laWNJbExRUkdJOE95WGJvamxBSWZoM0U5VThMQVJURFJ1TDBINEtHZGxvZk85VGFIZnBmSVdkV1dNVUt6SkNXb1dfOEg2bDFiWW5tbFhFREdyNFJaUQ?oc=5",
       "date": "2026-10-30"
      }
     ]
@@ -1429,7 +1428,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-08-13",
@@ -1547,7 +1546,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-10-22",
@@ -1588,12 +1587,6 @@
     },
     "news": [
      {
-      "title": "Deckers Outdoor Corporation (DECK) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QazU2bWxBTS00WE53dFhEaHBLTWdnT3FnZ09PVTIzTU5mYlRFVVdmdTNkS3h2TDIzbXhDZEtSeUlFVjRDWGRDTDNxQXVQNlZ3R0E?oc=5",
-      "date": "2026-10-31"
-     },
-     {
       "title": "Deckers Outdoor rated Buy on growth from HOKA p...",
       "publisher": "Pluang",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVVBYTmJwOUE4MW16bW5VRmt0TGpTYTRsTlEzSnh0elJ6Qkk0X2RkWXE5T0RyaG8zbFZuaGJQZ0JJQXd3U1h5WlVvaEMteGRMMmxMd00tUmNKZldaek9QUFF2UF9ZaDIyNHB0ZlZWQXQ0OGV5LWE0X2VXVzdVN0tINDR4VG5SdmdFSGgxN09CWkN0YmZ2SzRuSDE2S2Vob2s?oc=5",
@@ -1621,6 +1614,12 @@
       "title": "Penobscot Investment Management Company Inc. Sells 18,545 Shares of Deckers Outdoor Corporation $DECK",
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQMU5pdUdfYVJxSk9BWXJlUk8tMmg2R1dLTm5rVTB0ckFJWE5WS0p5MUhzSTE2S0szQ1VfMm54SW9ZZ1lTbVlpMVh2QWpEUzlqT0NnaGNrc2FRaVRCVWpaMHlmalNEMjB0S1hpTkgtUWFXS1RIUFpZd29aRUsySVhCRm9KMVg5LUw1aUhpaFNlaGVKV25DYndZQ0VZYm4zZGQySG94UEpLWERJVE5LWS1tcUo4ZFJ4UVk3NExaTjNzNkJiWDBqcE9adGxMX2x2MEo4eVI5ZHZ1Zkdqc3ZmVnJjdEsxQmt0Y0Vtd3QxV2pIS0g?oc=5",
+      "date": "2026-10-29"
+     },
+     {
+      "title": "12,975 Shares in Deckers Outdoor Corporation $DECK Bought by Citizens Financial Group Inc. RI",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTmRjNFU0eVN2Nm9ZdmQydTl1b05lYzROSjN2MERpTjVNeWlubTc0UHVwQkNaODRGMnN6UlYyeWt6TXY1dktweWJMQm9NejFjemFENzhhanFfYWl5dUNaQy1rbkJuOWNKajlSSHNXMDE0ZlNvOHAxU2FtaGRwUUpzQUppWElwaXI2YVRLVnRHX2cwc2R6ZDd5UWFEaHR2SGh5d0U2VFBVOUhVVG5tMVRLWTNOVFB5c2pIRzdqYmxzOUQ1Sk9jRTBGNUlZbVBrajNXdUlYamxBUUpjWjhaNHlWMGZBX3Zndw?oc=5",
       "date": "2026-10-29"
      }
     ]
@@ -1665,7 +1664,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-10-20",
@@ -1782,7 +1781,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-09-10",
@@ -1900,7 +1899,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-10-01",
@@ -2014,7 +2013,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-08-25",
@@ -2132,7 +2131,7 @@
    "needs_verdict": true,
    "verdict": null,
    "evidence": {
-    "v": 3,
+    "v": 4,
     "updated": "2026-10-31",
     "earnings_on": null,
     "last_report": "2026-08-06",
@@ -2259,6 +2258,6 @@
   "INTU",
   "FISV"
  ],
- "updated": "2026-10-31T07:55:34Z",
+ "updated": "2026-10-31T07:57:49Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than QQQ. Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than QQQ."
 }
