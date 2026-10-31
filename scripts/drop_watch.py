@@ -214,7 +214,8 @@ def main():
         still.add(t)
         rnd = lambda d: {k: (round(v, 4) if v is not None else None) for k, v in d.items()} if d else None
         if ev is None:
-            ev = dict(id=f"{t}-{TODAY}", ticker=t, name=x["name"], opened=TODAY.isoformat(), price_at_open=p["price"],
+            day = (p.get("time") or TODAY.isoformat())[:10]          # the US trading session of the drop
+            ev = dict(id=f"{t}-{day}", ticker=t, name=x["name"], opened=day, price_at_open=p["price"],
                       qqq_at_open=(P.get("QQQ") or {}).get("price"), fair_value_at_open=x["fair_value"],
                       buy_below_at_open=x["buy_below"], valued_on=x.get("valued_on"), triggers=[], emergency=False,
                       needs_verdict=True, verdict=None, evidence={}, outcome={})
