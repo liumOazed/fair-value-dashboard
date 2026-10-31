@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """Price-drop watch: the four-step check when a Fair Value stock falls (runs on GitHub after every price update).
 
-Step 1 (trigger), compared with QQQ over the same window:
-  * day:  down 7%+ since the previous close and at least 5 points worse than QQQ
-  * week: down 12%+ over 5 sessions and at least 5 points worse than QQQ
-  * high: 25%+ below its 52-week high and at least 5 points further below its high than QQQ
+Step 1 (trigger), compared with the S&P 500 (SPY) over the same window:
+  * day:  down 7%+ since the previous close and at least 5 points worse than SPY
+  * week: down 12%+ over 5 sessions and at least 5 points worse than SPY
+  * high: 25%+ below its 52-week high and at least 5 points further below its high than SPY
     (a "slide": shown in a quieter list; day/week triggers are "alerts")
-  * EMERGENCY: down 12%+ in a day or 20%+ in a week AND at least 10 points worse than QQQ
+  * EMERGENCY: down 12%+ in a day or 20%+ in a week AND at least 10 points worse than SPY
     (a quick Claude check the next morning instead of waiting for the twice-weekly review)
-Step 2 evidence (Yahoo via yfinance, refreshed at most once a day per event): QQQ move, industry peers' median move,
+Step 2 evidence (refreshed at most once a day per event): the move of the stock's SECTOR (S&P 500 equal-weight sector
+  ETF from data/sector_map.json, so a big company is not a large part of its own benchmark), industry peers' median move,
   an earnings report in the days before, analysts' EPS-estimate revisions, latest headlines, plus a provisional cause.
   The verdict (temporary vs lasting, and why) is written by Claude:  --verdict (see below).
 Steps 3-4 are computed on the page from the snapshot, business drivers and the model, so they are always current.
-Events stay open until 30 days after the last trigger, then move to the log; returns vs QQQ 30 and 90 days after the
-drop are recorded so the framework can be judged later.
+Events stay open until 30 days after the last trigger, then move to the log; returns 30 and 90 days after the
+drop are recorded (vs SPY and vs the sector) so the framework can be judged later.
 
 Usage: python scripts/drop_watch.py
        python scripts/drop_watch.py --verdict PYPL --label temporary|lasting|unclear --confidence low|medium|high \
@@ -28,7 +29,7 @@ TODAY = NOW.date()
 T_DAY, T_WEEK, T_HIGH, REL = -0.07, -0.12, -0.25, -0.05
 E_DAY, E_WEEK, E_REL = -0.12, -0.20, -0.10
 KEEP_OPEN = 30          # days after the last trigger
-EVIDENCE_V = 4          # bump when the evidence logic changes (forces a refresh)
+EVIDENCE_V = 5          # bump when the evidence logic changes (forces a refresh)
 
 
 def load(p, default):
@@ -144,9 +145,12 @@ def news(t, name, k=6):
 
 def provisional(ev):
     """A first read of the cause from the data alone (Claude's verdict replaces it)."""
-    E, m, q = ev["evidence"], ev["moves"], ev["qqq"]
+    E, m, q = ev["evidence"], ev["moves"], ev["spy"]
     k = "day" if "day" in ev["triggers"] else "week" if "week" in ev["triggers"] else "high"
     peers = (E.get("peers") or {}).get("median") or {}
+    sec, sname = ev.get("sector_moves") or {}, ev.get("sector") or "sector"
+    if sec.get(k) is not None and m[k] and sec[k] <= 0.6 * m[k]:
+        return dict(cause=f"Sector-wide: {sname} fell {sec[k] * 100:.0f}% too (rates, recession worries or sector rotation)", lean="temporary" if not (E.get("estimates") or {}).get("+1y", {}).get("chg", 0) <= -0.05 else "unclear")
     est = (E.get("estimates") or {}).get("+1y", {}).get("chg")
     cut = est is not None and est <= -0.05
     if peers.get(k) is not None and m[k] and peers[k] <= 0.6 * m[k]:
@@ -158,9 +162,9 @@ def provisional(ev):
     if cut:
         return dict(cause=f"Company-specific: next-year EPS forecasts cut {est * 100:.0f}% in 30 days", lean="unclear")
     if q and q.get(k) is not None and m[k] and q[k] <= 0.5 * m[k]:
-        return dict(cause=f"Largely market-wide: QQQ {q[k] * 100:.0f}% vs this stock {m[k] * 100:.0f}%", lean="temporary")
+        return dict(cause=f"Largely market-wide: S&P 500 {q[k] * 100:.0f}% vs this stock {m[k] * 100:.0f}%", lean="temporary")
     if k == "high":
-        return dict(cause=f"Long slide: {m[k] * 100:.0f}% below its 52-week high (QQQ {q[k] * 100:.0f}%), more than its peers: read why", lean="unclear")
+        return dict(cause=f"Long slide: {m[k] * 100:.0f}% below its 52-week high (S&P 500 {q[k] * 100:.0f}%, {sname} {sec.get(k, 0) * 100:.0f}%): read why", lean="unclear")
     return dict(cause="Company-specific, no clear cause in the data: read the headlines", lean="unclear")
 
 
@@ -200,7 +204,12 @@ def main():
     screen = load(ROOT / "data/screen.json", {"rows": []})["rows"]
     themes = load(ROOT / "data/themes.json", {})
     cal = load(ROOT / "data/earnings_calendar.json", {"stocks": {}})["stocks"]
-    q = moves(P.get("QQQ"))
+    SM = load(ROOT / "data/sector_map.json", {"market": "SPY", "sectors": {}, "stocks": {}})
+    MKT = SM.get("market", "SPY")
+    q = moves(P.get(MKT))
+    def sector_of(t):
+        s_ = SM["stocks"].get(t)
+        return (s_, (SM["sectors"].get(s_) or {}).get("equal_weight")) if s_ else (None, None)
     still = set()
     for x in assets:
         t, p = x["ticker"], P.get(x["ticker"])
@@ -216,7 +225,7 @@ def main():
         if ev is None:
             day = (p.get("time") or TODAY.isoformat())[:10]          # the US trading session of the drop
             ev = dict(id=f"{t}-{day}", ticker=t, name=x["name"], opened=day, price_at_open=p["price"],
-                      qqq_at_open=(P.get("QQQ") or {}).get("price"), fair_value_at_open=x["fair_value"],
+                      spy_at_open=(P.get(MKT) or {}).get("price"), fair_value_at_open=x["fair_value"],
                       buy_below_at_open=x["buy_below"], valued_on=x.get("valued_on"), triggers=[], emergency=False,
                       needs_verdict=True, verdict=None, evidence={}, outcome={})
             D["open"].append(ev); print("NEW drop event", t, trig, "EMERGENCY" if emer else "")
@@ -225,7 +234,11 @@ def main():
             ev["needs_verdict"] = True          # a sharp new drop on top of a slide: look again
         ev["kind"] = "alert" if {"day", "week"} & set(ev["triggers"]) else "slide"
         ev["last_triggered"] = TODAY.isoformat()
-        ev["moves"], ev["qqq"] = rnd(m), rnd(q)
+        ev["moves"], ev["spy"] = rnd(m), rnd(q)
+        sname, setf = sector_of(t)
+        ev["sector"], ev["sector_etf"], ev["sector_moves"] = sname, setf, rnd(moves(P.get(setf))) if setf else None
+        if setf and "sector_at_open" not in ev:
+            ev["sector_at_open"] = (P.get(setf) or {}).get("price")
         ev["worst"] = {k: min(v, (ev.get("worst") or {}).get(k, 0) or 0) for k, v in rnd(m).items() if v is not None}
         if emer and not ev["emergency"]:
             ev["emergency"] = True
@@ -245,11 +258,16 @@ def main():
             ev["closed"] = TODAY.isoformat(); D["open"].remove(ev); D["log"].insert(0, ev)
     for ev in D["open"] + D["log"]:
         age = (TODAY - dt.date.fromisoformat(ev["opened"])).days
-        p, qq = (P.get(ev["ticker"]) or {}).get("price"), (P.get("QQQ") or {}).get("price")
+        p, qq = (P.get(ev["ticker"]) or {}).get("price"), (P.get(MKT) or {}).get("price")
+        sp = (P.get(ev.get("sector_etf")) or {}).get("price") if ev.get("sector_etf") else None
         for k, days in (("d30", 30), ("d90", 90)):
-            if age >= days and k not in ev["outcome"] and p and qq and ev.get("qqq_at_open"):
-                r, rq = p / ev["price_at_open"] - 1, qq / ev["qqq_at_open"] - 1
-                ev["outcome"][k] = dict(stock=round(r, 4), qqq=round(rq, 4), vs_qqq=round(r - rq, 4), on=TODAY.isoformat())
+            if age >= days and k not in ev["outcome"] and p and qq and ev.get("spy_at_open"):
+                r, rq = p / ev["price_at_open"] - 1, qq / ev["spy_at_open"] - 1
+                o = dict(stock=round(r, 4), spy=round(rq, 4), vs_spy=round(r - rq, 4), on=TODAY.isoformat())
+                if sp and ev.get("sector_at_open"):
+                    rs = sp / ev["sector_at_open"] - 1
+                    o.update(sector=round(rs, 4), vs_sector=round(r - rs, 4))
+                ev["outcome"][k] = o
     D["open"].sort(key=lambda e: (not e["emergency"], e.get("kind") != "alert", (e.get("moves") or {}).get("day") or 0))
     D["emergency_pending"] = [e["ticker"] for e in D["open"] if e["emergency"] and e.get("needs_verdict")]
     D["review_pending"] = [e["ticker"] for e in D["open"] if e.get("needs_verdict")]
@@ -263,7 +281,8 @@ def save(D):
         return                      # nothing changed: keep the file (no commit)
     D["updated"] = NOW.strftime("%Y-%m-%dT%H:%M:%SZ")
     D["rules"] = ("Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse "
-                  "than QQQ. Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than QQQ.")
+                  "than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. "
+                  "Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers.")
     json.dump(D, open(PATH, "w"), indent=1, default=str)
 
 

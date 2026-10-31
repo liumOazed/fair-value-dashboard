@@ -291,15 +291,16 @@ function health(t){const DRV=driversData(t).rows.filter(x=>x.last),worse=DRV.fil
  let mlv=M.lv;if(w3>=2&&mlv==="g")mlv="a";else if(w3>=2&&mlv==="a")mlv="r";
  return [["Revenue still growing?",R.lv,v(R.ms)],["Profits and cash flow healthy?",C.lv,v(C.ms)],["Debt manageable?",B.lv,v(B.ms)],
   ["Competitive edge intact? (proxies)",mlv,v(M.ms)+(DRV.length?` · business drivers: <b>${DRV.length-worse} of ${DRV.length}</b> not worsening${w3?`, ${w3} worse 3 quarters running`:""}`:"")]]}
-function dropCard(e){const r=rows.find(x=>x.ticker===e.ticker);if(!r)return "";const m=e.moves||{},q=e.qqq||{},E=e.evidence||{},V=e.verdict,P0=e.provisional||{};
- const mv=[m.day!=null?["today",m.day,q.day]:null,m.week!=null?["5 days",m.week,q.week]:null,m.high!=null?["from 52-wk high",m.high,q.high]:null].filter(Boolean);
- const chips=mv.map(([l,v,qq])=>`<span class="mchip${v<=-0.07?" bad":""}"><b>${pct(v)}</b> ${l}<span class="muted"> · QQQ ${pct(qq)}</span></span>`).join("");
+function dropCard(e){const r=rows.find(x=>x.ticker===e.ticker);if(!r)return "";const m=e.moves||{},q=e.spy||e.qqq||{},sm=e.sector_moves||{},E=e.evidence||{},V=e.verdict,P0=e.provisional||{};
+ const mv=[["today","day"],["5 days","week"],["from 52-wk high","high"]].filter(([,k])=>m[k]!=null);
+ const chips=mv.map(([l,k])=>`<span class="mchip${m[k]<=-0.07?" bad":""}" title="S&P 500 (SPY) ${pct(q[k])}${e.sector?` · ${esc(e.sector)} (${esc(e.sector_etf)}, equal-weight) ${pct(sm[k])}`:""}"><b>${pct(m[k])}</b> ${l}<span class="muted"> · S&amp;P ${pct(q[k])}${sm[k]!=null?` · sector ${pct(sm[k])}`:""}</span></span>`).join("");
  // step 2
  const lean=V?V.label:P0.lean||"unclear",LB={temporary:["Looks temporary","g"],lasting:["Looks lasting","r"],unclear:["Unclear","a"]};
  const est=(E.estimates||{})["+1y"],rv=(E.estimates||{}).revisions_30d,pr=(E.peers||{}),pm=pr.median;
  const k=e.triggers.includes("day")?"day":e.triggers.includes("week")?"week":"high";
  const DRV=driversData(e.ticker).rows.filter(x=>x.last),wd=DRV.filter(x=>x.worse3).map(x=>x.d.label);
- const ev=[["Market",`QQQ ${pct(q[k])} over the same period`],
+ const ev=[["Market",`S&amp;P 500 (SPY) ${pct(q[k])} over the same period`],
+  ["Sector",e.sector?`${esc(e.sector)} ${pct(sm[k])} (${esc(e.sector_etf)}, equal-weight S&amp;P 500 sector fund)`:"n/a"],
   ["Industry peers",pm?`median ${pct(pm[k])} (${esc(pr.basis)}, ${pr.n} stocks)`:`not enough peers (${esc(pr.basis||"–")})`],
   ["Earnings",E.earnings_on?`reported ${E.earnings_on}: the drop followed the results`:`no report in the week before${E.last_report?" (last: "+E.last_report+")":""}`],
   ["Analyst forecasts",est?`next-year EPS ${pct(est.chg)} in 30 days${rv?` (${rv.up} raised, ${rv.down} cut)`:""}`:"n/a"],
@@ -323,14 +324,14 @@ function dropCard(e){const r=rows.find(x=>x.ticker===e.ticker);if(!r)return "";c
   <div class="mchips">${chips}</div></div><div class="dverdict d-${ov[1]}">${ov[0]}${V?"":'<span class="mnote">provisional</span>'}</div></div>
   ${step(1,"x","Price fell",(()=>{const L={day:"today",week:"in 5 trading days",high:"below its 52-week high"},v=m[k],qq=q[k];
    const since=r.price/e.price_at_open-1;
-   return `${k==="high"?`${pct(v,0).replace("-","")} ${L[k]}`:`Down ${pct(v).replace("-","")} ${L[k]}`}, ${Math.abs((v-(qq||0))*100).toFixed(0)} points worse than QQQ.`+
+   return `${k==="high"?`${pct(v,0).replace("-","")} ${L[k]}`:`Down ${pct(v).replace("-","")} ${L[k]}`}, ${Math.abs((v-(qq||0))*100).toFixed(0)} points worse than the S&amp;P 500${sm[k]!=null?` and ${Math.abs((v-sm[k])*100).toFixed(0)} points ${v<=sm[k]?"worse":"better"} than its sector (${esc(e.sector)})`:""}.`+
     ` Flagged ${esc(e.opened)} at ${usd(e.price_at_open)}${Math.abs(since)>=0.005?`; ${pct(since)} since`:""}.`})())}
   ${step(2,LB[lean][1],"Why did it fall?",s2,`<ul class="dev">${ev.map(x=>`<li><span class="muted">${x[0]}</span> ${x[1]}</li>`).join("")}</ul>${news?`<div class="muted mnote">Headlines (past week)</div><ul class="dnews">${news}</ul>`:""}`)}
   ${step(3,l3,"Is the business still healthy?",H.map(h=>`<div class="hrow">${dot(h[1])}<span>${h[0]}</span></div>`).join(""),H.map(h=>`<div class="hrow">${dot(h[1])}<span>${h[2]||"no data"}</span></div>`).join(""))}
   ${step(4,l4,"Is the price low enough for this business?",s4)}</article>`}
-function dropLog(L){if(!L.length)return `<p class="muted" style="padding:16px">Closed drops (30 days after the last trigger) land here with the stock's return vs QQQ 30 and 90 days later, so the four-step check can be judged over time.</p>`;
- const f=o=>o?`<span class="${o.vs_qqq>=0?"up":"down"}">${pct(o.vs_qqq)}</span>`:"–";
- return `<div class="scroll"><table class="s"><tr><th style="text-align:left">Stock</th><th>Dropped</th><th>Verdict</th><th>30 days vs QQQ</th><th>90 days vs QQQ</th></tr>${L.map(e=>`<tr><td style="text-align:left"><button class="dtk" data-open="${e.ticker}">${e.ticker}</button></td><td>${esc(e.opened)}</td><td>${e.verdict?esc(e.verdict.label):"–"}</td><td>${f(e.outcome.d30)}</td><td>${f(e.outcome.d90)}</td></tr>`).join("")}</table></div>`}
+function dropLog(L){if(!L.length)return `<p class="muted" style="padding:16px">Closed drops (30 days after the last trigger) land here with the stock's return vs the S&amp;P 500 and vs its sector 30 and 90 days later, so the four-step check can be judged over time.</p>`;
+ const f=(o,k)=>o&&o[k]!=null?`<span class="${o[k]>=0?"up":"down"}">${pct(o[k])}</span>`:"–";
+ return `<div class="scroll"><table class="s"><tr><th style="text-align:left">Stock</th><th>Dropped</th><th>Verdict</th><th>30 days vs S&amp;P · sector</th><th>90 days vs S&amp;P · sector</th></tr>${L.map(e=>`<tr><td style="text-align:left"><button class="dtk" data-open="${e.ticker}">${e.ticker}</button></td><td>${esc(e.opened)}</td><td>${e.verdict?esc(e.verdict.label):"–"}</td><td>${f(e.outcome.d30,"vs_spy")} · ${f(e.outcome.d30,"vs_sector")}</td><td>${f(e.outcome.d90,"vs_spy")} · ${f(e.outcome.d90,"vs_sector")}</td></tr>`).join("")}</table></div>`}
 dropUI();
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());

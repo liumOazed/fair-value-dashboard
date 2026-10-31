@@ -1,0 +1,101 @@
+{
+ "_about": "Official S&P (GICS) sector of each Fair Value stock and its sector benchmark: the S&P 500 EQUAL-WEIGHT sector ETF (Invesco RSP*), so a big company is not a large part of its own benchmark; 'cap_weighted' is the SPDR fund, kept for reference. Market benchmark: SPY. Note: V, MA, PYPL, FISV and XYZ are Financials since the 2023 GICS change; ADP is Industrials; GOOGL and NFLX are Communication Services; AMZN is Consumer Discretionary. Add new stocks here.",
+ "market": "SPY",
+ "sectors": {
+  "Information Technology": {
+   "equal_weight": "RSPT",
+   "cap_weighted": "XLK"
+  },
+  "Financials": {
+   "equal_weight": "RSPF",
+   "cap_weighted": "XLF"
+  },
+  "Health Care": {
+   "equal_weight": "RSPH",
+   "cap_weighted": "XLV"
+  },
+  "Consumer Discretionary": {
+   "equal_weight": "RSPD",
+   "cap_weighted": "XLY"
+  },
+  "Consumer Staples": {
+   "equal_weight": "RSPS",
+   "cap_weighted": "XLP"
+  },
+  "Industrials": {
+   "equal_weight": "RSPN",
+   "cap_weighted": "XLI"
+  },
+  "Energy": {
+   "equal_weight": "RSPG",
+   "cap_weighted": "XLE"
+  },
+  "Communication Services": {
+   "equal_weight": "RSPC",
+   "cap_weighted": "XLC"
+  },
+  "Materials": {
+   "equal_weight": "RSPM",
+   "cap_weighted": "XLB"
+  },
+  "Real Estate": {
+   "equal_weight": "RSPR",
+   "cap_weighted": "XLRE"
+  },
+  "Utilities": {
+   "equal_weight": "RSPU",
+   "cap_weighted": "XLU"
+  }
+ },
+ "stocks": {
+  "AAPL": "Information Technology",
+  "ADBE": "Information Technology",
+  "ADP": "Industrials",
+  "ADSK": "Information Technology",
+  "ADYEY": "Financials",
+  "ALLE": "Industrials",
+  "AME": "Industrials",
+  "AMZN": "Consumer Discretionary",
+  "APA": "Energy",
+  "APP": "Information Technology",
+  "AVGO": "Information Technology",
+  "AXP": "Financials",
+  "BKNG": "Consumer Discretionary",
+  "CBOE": "Financials",
+  "CRCL": "Financials",
+  "CRM": "Information Technology",
+  "CTAS": "Industrials",
+  "DECK": "Consumer Discretionary",
+  "DXCM": "Health Care",
+  "EXPE": "Consumer Discretionary",
+  "FDS": "Financials",
+  "FICO": "Information Technology",
+  "FISV": "Financials",
+  "FIX": "Industrials",
+  "FTNT": "Information Technology",
+  "GOOGL": "Communication Services",
+  "GRMN": "Consumer Discretionary",
+  "HWM": "Industrials",
+  "IDXX": "Health Care",
+  "INCY": "Health Care",
+  "INTU": "Information Technology",
+  "LLY": "Health Care",
+  "MA": "Financials",
+  "MCO": "Financials",
+  "MKC": "Consumer Staples",
+  "MNST": "Consumer Staples",
+  "MSFT": "Information Technology",
+  "NDAQ": "Financials",
+  "NFLX": "Communication Services",
+  "NVDA": "Information Technology",
+  "PYPL": "Financials",
+  "RMD": "Health Care",
+  "SHOP": "Information Technology",
+  "SPGI": "Financials",
+  "TPR": "Consumer Discretionary",
+  "V": "Financials",
+  "VEEV": "Health Care",
+  "VRSN": "Information Technology",
+  "XYZ": "Financials"
+ }
+}

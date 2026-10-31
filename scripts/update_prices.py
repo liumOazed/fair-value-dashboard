@@ -13,6 +13,12 @@ try:   # also price every stock ever picked in the monthly Fair Value Table, so 
         for _p in _m["picks"]:
             if _p["ticker"] not in _have: assets.append({"ticker": _p["ticker"]}); _have.add(_p["ticker"])
 except Exception: pass
+try:   # benchmarks for the price-drop check: SPY and every sector ETF in data/sector_map.json
+    _sm = json.loads((ROOT / "data/sector_map.json").read_text())
+    _have = {a["ticker"] for a in assets}
+    for _t in [_sm.get("market", "SPY")] + [v["equal_weight"] for v in _sm["sectors"].values()]:
+        if _t not in _have: assets.append({"ticker": _t}); _have.add(_t)
+except Exception: pass
 pfile = ROOT / "data/prices.json"
 try: out = json.loads(pfile.read_text())
 except Exception: out = {"prices": {}}
