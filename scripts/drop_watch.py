@@ -28,6 +28,7 @@ TODAY = NOW.date()
 T_DAY, T_WEEK, T_HIGH, REL = -0.07, -0.12, -0.25, -0.05
 E_DAY, E_WEEK, E_REL = -0.12, -0.20, -0.10
 KEEP_OPEN = 30          # days after the last trigger
+EVIDENCE_V = 2          # bump when the evidence logic changes (forces a refresh)
 
 
 def load(p, default):
@@ -168,7 +169,7 @@ def evidence(ev, screen, themes, cal):
     past = [dt.date.fromisoformat(x) for x in (cal.get(t, {}).get("past") or [])]
     opened = dt.date.fromisoformat(ev["opened"])
     rep = [d for d in past if -1 <= (opened - d).days <= 7]
-    return dict(updated=TODAY.isoformat(), earnings_on=max(rep).isoformat() if rep else None,
+    return dict(v=EVIDENCE_V, updated=TODAY.isoformat(), earnings_on=max(rep).isoformat() if rep else None,
                 last_report=max(past).isoformat() if past else None,
                 peers=peer_moves(t, screen, themes), estimates=estimates(tk), news=news(t, ev.get("name")))
 
@@ -229,7 +230,8 @@ def main():
                 ev["needs_verdict"] = True      # escalated after the last verdict: look again
     # refresh evidence (once a day per event), provisional cause, close old events, outcomes
     for ev in list(D["open"]):
-        if not a.no_evidence and (ev.get("evidence") or {}).get("updated") != TODAY.isoformat():
+        E0 = ev.get("evidence") or {}
+        if not a.no_evidence and (E0.get("updated") != TODAY.isoformat() or E0.get("v") != EVIDENCE_V):
             try:
                 ev["evidence"] = evidence(ev, screen, themes, cal)
             except Exception as e:
