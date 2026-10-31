@@ -1,9 +1,11 @@
-import yfinance as yf, json
-print(yf.__version__)
-tk = yf.Ticker("APP")
-n = tk.news
-print(type(n), len(n) if n else n)
-if n: print(json.dumps(n[0], default=str)[:1500])
-try:
-    g = tk.get_news(count=5, tab="news"); print("get_news", len(g)); print(json.dumps(g[0], default=str)[:800] if g else "")
-except Exception as e: print("get_news err", e)
+import urllib.request, xml.etree.ElementTree as ET
+for url in ["https://feeds.finance.yahoo.com/rss/2.0/headline?s=APP&region=US&lang=en-US",
+            "https://news.google.com/rss/search?q=AppLovin+APP+stock+when:7d&hl=en-US&gl=US&ceid=US:en"]:
+    try:
+        x = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
+        items = ET.fromstring(x).findall(".//item")
+        print(url[:40], len(items))
+        for it in items[:5]:
+            print("  ", it.findtext("pubDate"), "|", it.findtext("title"), "|", (it.findtext("source") or ""), "|", (it.findtext("link") or "")[:80])
+    except Exception as e:
+        print(url[:40], "ERR", e)
