@@ -28,7 +28,7 @@ TODAY = NOW.date()
 T_DAY, T_WEEK, T_HIGH, REL = -0.07, -0.12, -0.25, -0.05
 E_DAY, E_WEEK, E_REL = -0.12, -0.20, -0.10
 KEEP_OPEN = 30          # days after the last trigger
-EVIDENCE_V = 2          # bump when the evidence logic changes (forces a refresh)
+EVIDENCE_V = 3          # bump when the evidence logic changes (forces a refresh)
 
 
 def load(p, default):
@@ -69,7 +69,9 @@ def closes_1y(t):
 def peer_moves(t, screen, themes):
     rows = {r["ticker"]: r for r in screen}
     me = rows.get(t)
-    ind = [r for r in screen if me and me.get("industry") and r.get("industry") == me["industry"] and r["ticker"] != t]
+    stem = lambda n: (n or "").lower().replace(",", " ").split()[0] if n else ""
+    same_co = lambda r: me and stem(r.get("name")) == stem(me.get("name"))      # other share classes (GOOG/GOOGL, FOX/FOXA)
+    ind = [r for r in screen if me and me.get("industry") and r.get("industry") == me["industry"] and r["ticker"] != t and not same_co(r)]
     if len(ind) >= 3:
         peers = sorted(ind, key=lambda r: -(r.get("market_cap") or 0))[:8]
         basis, names = f"industry: {me['industry']}", [r["ticker"] for r in peers]
