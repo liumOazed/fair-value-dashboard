@@ -158,3 +158,41 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 .pill.chk{color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,transparent)}
 .kspk{width:90px;height:22px;display:block}.ktab td{vertical-align:middle}.ktab td:first-child{min-width:170px}.src{text-decoration:none;color:var(--acc);font-size:11px}
 @media(max-width:560px){.ktab th:nth-child(4),.ktab td:nth-child(4){display:none}}
+/* Price drops: four-step check window */
+.dropbtn{margin-left:auto;margin-right:12px;border:1px solid var(--line);background:var(--card);color:var(--tx);border-radius:999px;padding:5px 12px;font-family:inherit;font-weight:600;font-size:12.5px;cursor:pointer;white-space:nowrap}
+.dropbtn.al{border-color:color-mix(in srgb,var(--warn) 55%,var(--line));color:var(--warn)}
+.dropbtn.em{border-color:var(--bad);color:var(--bad);animation:dpulse 2s ease-in-out infinite}
+.dropbtn .muted{font-weight:500}
+@keyframes dpulse{50%{box-shadow:0 0 0 4px color-mix(in srgb,var(--bad) 18%,transparent)}}
+.dwin{position:fixed;inset:0;display:none;align-items:flex-start;justify-content:center;z-index:11;padding:4vh 16px;pointer-events:none}
+.dwin.on{display:flex}
+.dwin-in{pointer-events:auto;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);width:min(780px,100%);max-height:92vh;overflow:auto;padding:20px 22px}
+.dwh{display:flex;gap:12px;align-items:flex-start}.dwh h2{margin:0 0 4px;font-size:19px}.dwh p{margin:0;font-size:12.5px}.dwh .x{margin-left:auto;position:static}
+.dtabs{display:flex;gap:6px;margin:14px 0 10px;border-bottom:1px solid var(--line)}
+.dtabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--mut);padding:7px 10px;font-family:inherit;font-weight:600;font-size:13px;cursor:pointer}
+.dtabs button.on{color:var(--tx);border-bottom-color:var(--acc)}.dtabs .cnt{font-weight:500;opacity:.7}
+.dcard{border:1px solid var(--line);border-radius:12px;padding:14px 14px 6px;margin:10px 0}
+.dcard.em{border-color:color-mix(in srgb,var(--bad) 50%,var(--line))}
+.dtop{display:flex;gap:10px;align-items:flex-start;margin-bottom:6px}.dtop>div:first-child{flex:1;min-width:0}
+.dtk{background:none;border:0;padding:0;font-family:inherit;font-weight:700;font-size:16px;color:var(--acc);cursor:pointer}
+.emtag{font-size:11px;font-weight:700;color:var(--bad);border:1px solid var(--bad);border-radius:999px;padding:1px 7px;margin-left:4px}
+.mchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.mchip{font-size:12px;border-radius:8px;padding:3px 8px;background:color-mix(in srgb,var(--line) 55%,transparent)}
+.mchip.bad b{color:var(--bad)}
+.dverdict{font-weight:700;font-size:13px;border-radius:10px;padding:6px 10px;text-align:center;white-space:nowrap}
+.dverdict .mnote{display:block;font-weight:500;font-size:10.5px;opacity:.75}
+.dverdict.d-g{background:color-mix(in srgb,var(--good) 14%,transparent);color:var(--good)}
+.dverdict.d-a{background:color-mix(in srgb,var(--warn) 14%,transparent);color:var(--warn)}
+.dverdict.d-r{background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad)}
+.dstep{display:flex;gap:11px;padding:9px 0;border-top:1px dashed var(--line)}
+.dnum{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-family:inherit;font-weight:700;font-size:12px;color:#fff;background:var(--mut);margin-top:1px}
+.dnum.d-g{background:var(--good)}.dnum.d-a{background:var(--warn)}.dnum.d-r{background:var(--bad)}.dnum.d-x,.dnum.d-na{background:var(--mut)}
+.dbody{flex:1;min-width:0;font-size:13px}.dq{font-weight:650;margin-bottom:2px}.da{line-height:1.5}
+.dsum{margin-top:4px}
+.dbody details{margin-top:5px}.dbody summary{cursor:pointer;color:var(--acc);font-size:12px}
+.hrow{display:flex;gap:7px;align-items:baseline;line-height:1.55}
+.ddot{flex:none;width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--mut);transform:translateY(-1px)}
+.ddot.d-g{background:var(--good)}.ddot.d-a{background:var(--warn)}.ddot.d-r{background:var(--bad)}
+.dev,.dnews{margin:6px 0;padding-left:16px}.dev li,.dnews li{margin:3px 0}.dnews a{color:var(--tx)}
+.dfoot{font-size:11.5px;margin-top:12px}
+@media (max-width:600px){.dtop{flex-direction:column}.dverdict{align-self:flex-start}.dropbtn{margin:6px 0}.card-head{flex-wrap:wrap}}

@@ -11,8 +11,8 @@ function status(a){const p=a.price,fv=a.fair_value;
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 $("#theme").onclick=()=>{const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1020";const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
 $("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
-let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}};
-try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))])}
+let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null;
+try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null)}
 catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open this page through GitHub Pages (or a local server such as <code>python -m http.server</code>), not by double-clicking the file.</div>';return}
 let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  const r={...a,price,prev:p.prev_close,history:p.history||[]};
@@ -260,6 +260,78 @@ function bindSnap(){const det=$("#qdet");if(!det)return;document.querySelectorAl
  document.querySelectorAll(".qc").forEach(x=>{x.setAttribute("aria-expanded","false");x.classList.remove("on")});
  if(open){det.hidden=true;return}b.setAttribute("aria-expanded","true");b.classList.add("on");det.innerHTML=window.__snapCards[+b.dataset.i];det.hidden=false})}
 function close(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on")}
+// ---------- Price drops: the four-step check ----------
+function dropUI(){const D=DR0;if(!D||!(D.open||[]).length&&!(D.log||[]).length)return;
+ const al=D.open.filter(e=>e.kind==="alert"),sl=D.open.filter(e=>e.kind!=="alert"),em=al.some(e=>e.emergency);
+ const b=document.createElement("button");b.id="dropbtn";b.className="dropbtn"+(em?" em":al.length?" al":"");
+ b.innerHTML=al.length?`⚠ ${al.length} price drop${al.length>1?"s":""}${sl.length?` <span class="muted">· ${sl.length} long slides</span>`:""}`:`${sl.length} long slide${sl.length>1?"s":""}`;
+ b.title="Stocks that fell sharply: why, is the business still healthy, and is it cheap enough?";
+ const head=document.querySelector(".card-head");head.insertBefore(b,$("#stamp"));
+ const w=document.createElement("div");w.id="dropwin";w.className="dwin";w.setAttribute("role","dialog");w.setAttribute("aria-label","Price drops");
+ w.innerHTML=`<div class="dwin-in"><div class="dwh"><div><h2>Price drops · the four-step check</h2><p class="muted">1 Price fell → 2 Why? → 3 Is the business still healthy? → 4 Is the price low enough for this business? A drop is only an opportunity if the reason is temporary and the business is intact.</p></div><button class="x" id="dwx" aria-label="Close">✕</button></div>
+  <div class="dtabs"><button class="on" data-v="al">Sharp drops <span class="cnt">${al.length}</span></button><button data-v="sl">Long slides <span class="cnt">${sl.length}</span></button><button data-v="log">Past drops <span class="cnt">${(D.log||[]).length}</span></button></div>
+  <div id="dwbody"></div><p class="muted dfoot">${esc(D.rules||"")} Prices, triggers and evidence update every 30 minutes on GitHub; the “why” verdict is Claude's reading of the news and results (twice a week; the next morning for emergencies). A checklist for research, not advice.</p></div>`;
+ document.body.appendChild(w);
+ const show=v=>{w.querySelectorAll(".dtabs button").forEach(x=>x.classList.toggle("on",x.dataset.v===v));
+  $("#dwbody").innerHTML=v==="log"?dropLog(D.log||[]):(v==="al"?al:sl).map(dropCard).join("")||`<p class="muted" style="padding:16px">None right now.</p>`;
+  $("#dwbody").querySelectorAll("[data-open]").forEach(x=>x.onclick=()=>{hideW();open(x.dataset.open)})};
+ const hideW=()=>{w.classList.remove("on");$("#scrim").classList.remove("on")};
+ b.onclick=()=>{show(al.length?"al":"sl");w.classList.add("on");$("#scrim").classList.add("on")};
+ w.querySelectorAll(".dtabs button").forEach(x=>x.onclick=()=>show(x.dataset.v));$("#dwx").onclick=hideW;
+ $("#scrim").addEventListener("click",hideW);document.addEventListener("keydown",e=>e.key==="Escape"&&hideW())}
+const dot=c=>`<span class="ddot d-${c}"></span>`;
+const lvl=v=>v==null?"na":v>=1.45?"g":v>=0.75?"a":"r";
+function smet(t,label){const S=(SN.stocks||{})[t];if(!S)return null;for(const c of S.cards||[])for(const m of c.metrics||[])if(m.label.startsWith(label))return m;return null}
+function sgrade(t,keys){const ms=keys.map(k=>smet(t,k)).filter(Boolean),sc=ms.filter(m=>m.graded&&m.score!=null).map(m=>m.score);
+ return {lv:lvl(sc.length?sc.reduce((a,b)=>a+b,0)/sc.length:null),ms}}
+function health(t){const DRV=driversData(t).rows.filter(x=>x.last),worse=DRV.filter(x=>x.worse3||x.tr===-1).length,w3=DRV.filter(x=>x.worse3).length;
+ const v=(ms,n=2)=>ms.map(m=>`${m.label.replace(" (YoY)","").replace(" (3 years combined)","")}: <b>${esc(m.value)}</b>`).join(" · ");
+ const R=sgrade(t,["Revenue growth, latest quarter","Revenue growth, 3-year CAGR"]),C=sgrade(t,["FCF margin trend","Operating margin trend","FCF / net income"]);
+ const B=sgrade(t,["Net debt / EBITDA","Interest coverage"]),M=sgrade(t,["ROIC vs cost of capital","ROIC above cost of capital","Gross margin trend"]);
+ let mlv=M.lv;if(w3>=2&&mlv==="g")mlv="a";else if(w3>=2&&mlv==="a")mlv="r";
+ return [["Revenue still growing?",R.lv,v(R.ms)],["Profits and cash flow healthy?",C.lv,v(C.ms)],["Debt manageable?",B.lv,v(B.ms)],
+  ["Competitive edge intact? (proxies)",mlv,v(M.ms)+(DRV.length?` · business drivers: <b>${DRV.length-worse} of ${DRV.length}</b> not worsening${w3?`, ${w3} worse 3 quarters running`:""}`:"")]]}
+function dropCard(e){const r=rows.find(x=>x.ticker===e.ticker);if(!r)return "";const m=e.moves||{},q=e.qqq||{},E=e.evidence||{},V=e.verdict,P0=e.provisional||{};
+ const mv=[m.day!=null?["today",m.day,q.day]:null,m.week!=null?["5 days",m.week,q.week]:null,m.high!=null?["from 52-wk high",m.high,q.high]:null].filter(Boolean);
+ const chips=mv.map(([l,v,qq])=>`<span class="mchip${v<=-0.07?" bad":""}"><b>${pct(v)}</b> ${l}<span class="muted"> · QQQ ${pct(qq)}</span></span>`).join("");
+ // step 2
+ const lean=V?V.label:P0.lean||"unclear",LB={temporary:["Looks temporary","g"],lasting:["Looks lasting","r"],unclear:["Unclear","a"]};
+ const est=(E.estimates||{})["+1y"],rv=(E.estimates||{}).revisions_30d,pr=(E.peers||{}),pm=pr.median;
+ const k=e.triggers.includes("day")?"day":e.triggers.includes("week")?"week":"high";
+ const DRV=driversData(e.ticker).rows.filter(x=>x.last),wd=DRV.filter(x=>x.worse3).map(x=>x.d.label);
+ const ev=[["Market",`QQQ ${pct(q[k])} over the same period`],
+  ["Industry peers",pm?`median ${pct(pm[k])} (${esc(pr.basis)}, ${pr.n} stocks)`:`not enough peers (${esc(pr.basis||"–")})`],
+  ["Earnings",E.earnings_on?`reported ${E.earnings_on}: the drop followed the results`:`no report in the week before${E.last_report?" (last: "+E.last_report+")":""}`],
+  ["Analyst forecasts",est?`next-year EPS ${pct(est.chg)} in 30 days${rv?` (${rv.up} raised, ${rv.down} cut)`:""}`:"n/a"],
+  ["Business drivers",DRV.length?(wd.length?`worse 3 quarters running: ${wd.map(esc).join(", ")}`:"none worse 3 quarters running"):"not collected yet"]];
+ const news=(E.news||[]).slice(0,5).map(n=>`<li><a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a> <span class="muted">${esc(n.publisher||"")} · ${esc(n.date)}</span></li>`).join("");
+ const s2=V?`<b>${LB[lean][0]}</b> · ${esc(V.cause)}<div class="dsum">${esc(V.summary)}</div><div class="muted mnote">Claude's read, ${esc(V.date)}, ${esc(V.confidence)} confidence${V.model_changed?" · fair value updated for it":""}</div>`
+  :`<b>${LB[lean][0]}</b> <span class="muted">(first read from the data)</span> · ${esc(P0.cause||"")}<div class="muted mnote">Claude's reading of the news and results: ${e.emergency?"tomorrow morning (emergency drop)":"next review (Tue / Fri)"}</div>`;
+ // step 3
+ const H=health(e.ticker),reds=H.filter(h=>h[1]==="r").length,l3=reds?"r":H.some(h=>h[1]==="a")?"a":H.every(h=>h[1]==="na")?"na":"g";
+ // step 4
+ const below=r.price<=r.fair_value,l4=r.price<=r.buy_below?"g":below?"a":"r";
+ const base=(r.scenarios||{}).base||{},stale=lean==="lasting"&&!(V&&V.model_changed);
+ const s4=`Price ${usd(r.price)} vs fair value <b>${usd(r.fair_value)}</b> (${pct(r.diff)}) and buy-below ${usd(r.buy_below)}.`+
+  (r.implied_return!=null?` Expected return at this price <b>${(r.implied_return*100).toFixed(1)}%</b> a year vs ${(r.required_return*100).toFixed(1)}% required.`:"")+
+  (r.reverse_g1!=null&&base.g1!=null?` Today's price assumes about <b>${(r.reverse_g1*100).toFixed(0)}%</b> growth next year; our base case has ${(base.g1*100).toFixed(0)}%.`:"")+
+  (stale?` <span class="down">The fair value (from ${esc(r.valued_on)}) does not yet reflect this setback, so it is probably too high.</span>`:"");
+ // overall
+ const ov=lean==="lasting"||reds>=2?["Value-trap risk","r"]:lean==="temporary"&&reds===0&&below?["Worth a look","g"]:["Wait for clarity","a"];
+ const step=(n,lv,q,a,more)=>`<div class="dstep"><div class="dnum d-${lv}">${n}</div><div class="dbody"><div class="dq">${q}</div><div class="da">${a}</div>${more?`<details><summary>Evidence</summary>${more}</details>`:""}</div></div>`;
+ return `<article class="dcard${e.emergency?" em":""}"><div class="dtop"><div><button class="dtk" data-open="${e.ticker}">${e.ticker}</button> <span class="muted">${esc(r.name)}</span>${e.emergency?' <span class="emtag">Emergency drop</span>':""}
+  <div class="mchips">${chips}</div></div><div class="dverdict d-${ov[1]}">${ov[0]}${V?"":'<span class="mnote">provisional</span>'}</div></div>
+  ${step(1,"x","Price fell",(()=>{const L={day:"today",week:"in 5 trading days",high:"below its 52-week high"},v=m[k],qq=q[k];
+   const since=r.price/e.price_at_open-1;
+   return `${k==="high"?`${pct(v,0).replace("-","")} ${L[k]}`:`Down ${pct(v).replace("-","")} ${L[k]}`}, ${Math.abs((v-(qq||0))*100).toFixed(0)} points worse than QQQ.`+
+    ` Flagged ${esc(e.opened)} at ${usd(e.price_at_open)}${Math.abs(since)>=0.005?`; ${pct(since)} since`:""}.`})())}
+  ${step(2,LB[lean][1],"Why did it fall?",s2,`<ul class="dev">${ev.map(x=>`<li><span class="muted">${x[0]}</span> ${x[1]}</li>`).join("")}</ul>${news?`<div class="muted mnote">Headlines (past week)</div><ul class="dnews">${news}</ul>`:""}`)}
+  ${step(3,l3,"Is the business still healthy?",H.map(h=>`<div class="hrow">${dot(h[1])}<span>${h[0]}</span></div>`).join(""),H.map(h=>`<div class="hrow">${dot(h[1])}<span>${h[2]||"no data"}</span></div>`).join(""))}
+  ${step(4,l4,"Is the price low enough for this business?",s4)}</article>`}
+function dropLog(L){if(!L.length)return `<p class="muted" style="padding:16px">Closed drops (30 days after the last trigger) land here with the stock's return vs QQQ 30 and 90 days later, so the four-step check can be judged over time.</p>`;
+ const f=o=>o?`<span class="${o.vs_qqq>=0?"up":"down"}">${pct(o.vs_qqq)}</span>`:"–";
+ return `<div class="scroll"><table class="s"><tr><th style="text-align:left">Stock</th><th>Dropped</th><th>Verdict</th><th>30 days vs QQQ</th><th>90 days vs QQQ</th></tr>${L.map(e=>`<tr><td style="text-align:left"><button class="dtk" data-open="${e.ticker}">${e.ticker}</button></td><td>${esc(e.opened)}</td><td>${e.verdict?esc(e.verdict.label):"–"}</td><td>${f(e.outcome.d30)}</td><td>${f(e.outcome.d90)}</td></tr>`).join("")}</table></div>`}
+dropUI();
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());
 })();

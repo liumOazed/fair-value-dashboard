@@ -78,7 +78,8 @@
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
     "lean": "temporary"
-   }
+   },
+   "kind": "alert"
   },
   {
    "id": "APP-2026-10-31",
@@ -148,7 +149,8 @@
    "provisional": {
     "cause": "Company-specific, no clear cause in the data: read the headlines",
     "lean": "unclear"
-   }
+   },
+   "kind": "alert"
   },
   {
    "id": "CRCL-2026-10-31",
@@ -229,7 +231,8 @@
    "provisional": {
     "cause": "Company-specific, no clear cause in the data: read the headlines",
     "lean": "unclear"
-   }
+   },
+   "kind": "alert"
   },
   {
    "id": "RMD-2026-10-31",
@@ -307,394 +310,8 @@
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
     "lean": "temporary"
-   }
-  },
-  {
-   "id": "FIX-2026-10-31",
-   "ticker": "FIX",
-   "name": "Comfort Systems USA Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 1232.66,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 827.84,
-   "buy_below_at_open": 538.09,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-10-22",
-    "peers": {
-     "basis": "industry: Engineering & Construction",
-     "n": 3,
-     "median": {
-      "day": -0.014173416450183995,
-      "week": 0.06590374823860179,
-      "high": -0.2095028422030859
-     },
-     "tickers": [
-      "PWR",
-      "EME",
-      "J"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 51.00548,
-      "d30": 48.97338,
-      "chg": 0.04149397080618078
-     },
-     "+1y": {
-      "current": 67.05584,
-      "d30": 60.17848,
-      "chg": 0.11428271368768383
-     },
-     "revisions_30d": {
-      "up": 7,
-      "down": 0
-     }
-    },
-    "news": []
    },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": -0.0706,
-    "week": 0.0619,
-    "high": -0.4035
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": -0.0706,
-    "week": 0,
-    "high": -0.4035
-   },
-   "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "AVGO-2026-10-31",
-   "ticker": "AVGO",
-   "name": "Broadcom Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 326.08,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 256.7,
-   "buy_below_at_open": 179.69,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-09-02",
-    "peers": {
-     "basis": "industry: Semiconductors",
-     "n": 8,
-     "median": {
-      "day": -0.07675008881390993,
-      "week": -0.026579607558090745,
-      "high": -0.24682296737484405
-     },
-     "tickers": [
-      "NVDA",
-      "MU",
-      "AMD",
-      "INTC",
-      "TXN",
-      "MRVL",
-      "QCOM",
-      "ADI"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 11.66568,
-      "d30": 11.65601,
-      "chg": 0.0008296149368436367
-     },
-     "+1y": {
-      "current": 19.46507,
-      "d30": 19.3807,
-      "chg": 0.004353299932406962
-     },
-     "revisions_30d": {
-      "up": 13,
-      "down": 26
-     }
-    },
-    "news": []
-   },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": -0.0548,
-    "week": 0.0137,
-    "high": -0.3229
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": -0.0548,
-    "week": 0,
-    "high": -0.3229
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -25% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "IDXX-2026-10-31",
-   "ticker": "IDXX",
-   "name": "IDEXX Laboratories Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 551.21,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 296.32,
-   "buy_below_at_open": 207.42,
-   "valued_on": "2026-10-24",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-08-04",
-    "peers": {
-     "basis": "industry: Diagnostics & Research",
-     "n": 8,
-     "median": {
-      "day": -0.02679433471809789,
-      "week": 0.00895287475101969,
-      "high": -0.03628166276290373
-     },
-     "tickers": [
-      "TMO",
-      "DHR",
-      "A",
-      "IQV",
-      "WAT",
-      "ILMN",
-      "MTD",
-      "DGX"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 14.87645,
-      "d30": 14.83498,
-      "chg": 0.002795420014047867
-     },
-     "+1y": {
-      "current": 16.73288,
-      "d30": 16.7397,
-      "chg": -0.0004074147087461677
-     },
-     "revisions_30d": {
-      "up": 11,
-      "down": 2
-     }
-    },
-    "news": []
-   },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": -0.043,
-    "week": -0.0164,
-    "high": -0.281
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": -0.043,
-    "week": -0.0164,
-    "high": -0.281
-   },
-   "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "HWM-2026-10-31",
-   "ticker": "HWM",
-   "name": "Howmet Aerospace Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 199.22,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 104.18,
-   "buy_below_at_open": 72.92,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": "2026-10-29",
-    "last_report": "2026-10-29",
-    "peers": {
-     "basis": "industry: Aerospace & Defense",
-     "n": 8,
-     "median": {
-      "day": -0.009444092531045722,
-      "week": 0.04200303257791571,
-      "high": -0.20871384661979525
-     },
-     "tickers": [
-      "GE",
-      "RTX",
-      "BA",
-      "LMT",
-      "GD",
-      "NOC",
-      "TDG",
-      "HONA"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 5.45533,
-      "d30": 5.33752,
-      "chg": 0.02207204844197319
-     },
-     "+1y": {
-      "current": 6.6096,
-      "d30": 6.46127,
-      "chg": 0.022956787133179724
-     },
-     "revisions_30d": {
-      "up": 4,
-      "down": 2
-     }
-    },
-    "news": []
-   },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": -0.0326,
-    "week": 0.0716,
-    "high": -0.3193
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": -0.0326,
-    "week": 0,
-    "high": -0.3193
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -21% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "BKNG-2026-10-31",
-   "ticker": "BKNG",
-   "name": "Booking Holdings Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 148.13,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 217.63,
-   "buy_below_at_open": 152.34,
-   "valued_on": "2026-10-24",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-08-04",
-    "peers": {
-     "basis": "industry: Travel Services",
-     "n": 5,
-     "median": {
-      "day": -0.010819912979601054,
-      "week": 0.10417461699622188,
-      "high": -0.1518093998221155
-     },
-     "tickers": [
-      "ABNB",
-      "RCL",
-      "CCL",
-      "EXPE",
-      "NCLH"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 10.45977,
-      "d30": 10.44835,
-      "chg": 0.0010929955447511741
-     },
-     "+1y": {
-      "current": 12.37401,
-      "d30": 12.36832,
-      "chg": 0.0004600463118678011
-     },
-     "revisions_30d": {
-      "up": 0,
-      "down": 3
-     }
-    },
-    "news": []
-   },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": -0.0153,
-    "week": -0.0494,
-    "high": -0.3257
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": -0.0153,
-    "week": -0.0494,
-    "high": -0.3257
-   },
-   "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
+   "kind": "alert"
   },
   {
    "id": "GOOGL-2026-10-31",
@@ -769,219 +386,8 @@
    "provisional": {
     "cause": "Industry-wide: peers fell -12% too (rates, sector rotation or an industry worry)",
     "lean": "temporary"
-   }
-  },
-  {
-   "id": "TPR-2026-10-31",
-   "ticker": "TPR",
-   "name": "Tapestry Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 116.29,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 90.81,
-   "buy_below_at_open": 59.03,
-   "valued_on": "2026-10-24",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-08-13",
-    "peers": {
-     "basis": "industry: Luxury Goods",
-     "n": 0,
-     "median": null,
-     "tickers": []
-    },
-    "estimates": {
-     "0y": {
-      "current": 7.96136,
-      "d30": 7.97284,
-      "chg": -0.0014398884211899166
-     },
-     "+1y": {
-      "current": 8.88732,
-      "d30": 8.89953,
-      "chg": -0.0013719825653714102
-     },
-     "revisions_30d": {
-      "up": 7,
-      "down": 3
-     }
-    },
-    "news": []
    },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": -0.0132,
-    "week": 0.0536,
-    "high": -0.2943
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": -0.0132,
-    "week": 0,
-    "high": -0.2943
-   },
-   "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "DECK-2026-10-31",
-   "ticker": "DECK",
-   "name": "Deckers Outdoor Corp.",
-   "opened": "2026-10-31",
-   "price_at_open": 81.99,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 122.8,
-   "buy_below_at_open": 85.96,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-10-22",
-    "peers": {
-     "basis": "industry: Footwear & Accessories",
-     "n": 1,
-     "median": null,
-     "tickers": [
-      "NKE"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 7.85974,
-      "d30": 7.51256,
-      "chg": 0.04621327483574178
-     },
-     "+1y": {
-      "current": 8.11496,
-      "d30": 8.35079,
-      "chg": -0.028240441922261272
-     },
-     "revisions_30d": {
-      "up": 17,
-      "down": 1
-     }
-    },
-    "news": []
-   },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": -0.0093,
-    "week": 0.0111,
-    "high": -0.3221
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": -0.0093,
-    "week": 0,
-    "high": -0.3221
-   },
-   "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "NFLX-2026-10-31",
-   "ticker": "NFLX",
-   "name": "Netflix Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 62.08,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 62.3,
-   "buy_below_at_open": 43.61,
-   "valued_on": "2026-10-26",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-10-20",
-    "peers": {
-     "basis": "industry: Entertainment",
-     "n": 7,
-     "median": {
-      "day": -0.01120543005626451,
-      "week": -0.05045040349302554,
-      "high": -0.10135900211320403
-     },
-     "tickers": [
-      "DIS",
-      "LYV",
-      "TKO",
-      "FOXA",
-      "FOX",
-      "NWS",
-      "NWSA"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 3.58373,
-      "d30": 3.58362,
-      "chg": 3.069521880116888e-05
-     },
-     "+1y": {
-      "current": 3.76666,
-      "d30": 3.80891,
-      "chg": -0.011092412264926188
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 7
-     }
-    },
-    "news": []
-   },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": 0.0005,
-    "week": -0.0573,
-    "high": -0.4637
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": 0,
-    "week": -0.0573,
-    "high": -0.4637
-   },
-   "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
+   "kind": "alert"
   },
   {
    "id": "FICO-2026-10-31",
@@ -1061,161 +467,8 @@
    "provisional": {
     "cause": "Company-specific: next-year EPS forecasts cut -11% in 30 days",
     "lean": "unclear"
-   }
-  },
-  {
-   "id": "ADBE-2026-10-31",
-   "ticker": "ADBE",
-   "name": "Adobe Inc.",
-   "opened": "2026-10-31",
-   "price_at_open": 250.23,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 365.06,
-   "buy_below_at_open": 255.54,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-09-10",
-    "peers": {
-     "basis": "industry: Software - Application",
-     "n": 8,
-     "median": {
-      "day": -0.007472987757051519,
-      "week": -0.045942332470320146,
-      "high": -0.20514187472523654
-     },
-     "tickers": [
-      "CRM",
-      "UBER",
-      "NOW",
-      "ADP",
-      "DDOG",
-      "CDNS",
-      "INTU",
-      "WDAY"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 24.47602,
-      "d30": 24.39502,
-      "chg": 0.0033203498091003425
-     },
-     "+1y": {
-      "current": 27.50756,
-      "d30": 27.53806,
-      "chg": -0.0011075580487514003
-     },
-     "revisions_30d": {
-      "up": 21,
-      "down": 10
-     }
-    },
-    "news": []
    },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": 0.0085,
-    "week": -0.0515,
-    "high": -0.3001
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": 0,
-    "week": -0.0515,
-    "high": -0.3001
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -21% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "MKC-2026-10-31",
-   "ticker": "MKC",
-   "name": "McCormick & Co.",
-   "opened": "2026-10-31",
-   "price_at_open": 47.29,
-   "qqq_at_open": 690.49,
-   "fair_value_at_open": 62.27,
-   "buy_below_at_open": 43.59,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "updated": "2026-10-31",
-    "earnings_on": null,
-    "last_report": "2026-10-01",
-    "peers": {
-     "basis": "industry: Packaged Foods",
-     "n": 4,
-     "median": {
-      "day": 0.02361969919197482,
-      "week": -0.0017616355674990314,
-      "high": -0.15801928587213948
-     },
-     "tickers": [
-      "KHC",
-      "GIS",
-      "SJM",
-      "HRL"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 3.08974,
-      "d30": 3.08717,
-      "chg": 0.0008324776413348722
-     },
-     "+1y": {
-      "current": 3.22139,
-      "d30": 3.29584,
-      "chg": -0.022589081994271565
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 9
-     }
-    },
-    "news": []
-   },
-   "outcome": {},
-   "last_triggered": "2026-10-31",
-   "moves": {
-    "day": 0.0105,
-    "week": -0.0172,
-    "high": -0.34
-   },
-   "qqq": {
-    "day": -0.0347,
-    "week": -0.0197,
-    "high": -0.0911
-   },
-   "worst": {
-    "day": 0,
-    "week": -0.0172,
-    "high": -0.34
-   },
-   "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
+   "kind": "alert"
   },
   {
    "id": "ADYEY-2026-10-31",
@@ -1295,7 +548,771 @@
    "provisional": {
     "cause": "Company-specific: next-year EPS forecasts cut -9% in 30 days",
     "lean": "unclear"
-   }
+   },
+   "kind": "alert"
+  },
+  {
+   "id": "FIX-2026-10-31",
+   "ticker": "FIX",
+   "name": "Comfort Systems USA Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 1232.66,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 827.84,
+   "buy_below_at_open": 538.09,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-10-22",
+    "peers": {
+     "basis": "industry: Engineering & Construction",
+     "n": 3,
+     "median": {
+      "day": -0.014173416450183995,
+      "week": 0.06590374823860179,
+      "high": -0.2095028422030859
+     },
+     "tickers": [
+      "PWR",
+      "EME",
+      "J"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 51.00548,
+      "d30": 48.97338,
+      "chg": 0.04149397080618078
+     },
+     "+1y": {
+      "current": 67.05584,
+      "d30": 60.17848,
+      "chg": 0.11428271368768383
+     },
+     "revisions_30d": {
+      "up": 7,
+      "down": 0
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": -0.0706,
+    "week": 0.0619,
+    "high": -0.4035
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": -0.0706,
+    "week": 0,
+    "high": -0.4035
+   },
+   "provisional": {
+    "cause": "Long slide: -40% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "AVGO-2026-10-31",
+   "ticker": "AVGO",
+   "name": "Broadcom Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 326.08,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 256.7,
+   "buy_below_at_open": 179.69,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-09-02",
+    "peers": {
+     "basis": "industry: Semiconductors",
+     "n": 8,
+     "median": {
+      "day": -0.07675008881390993,
+      "week": -0.026579607558090745,
+      "high": -0.24682296737484405
+     },
+     "tickers": [
+      "NVDA",
+      "MU",
+      "AMD",
+      "INTC",
+      "TXN",
+      "MRVL",
+      "QCOM",
+      "ADI"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 11.66568,
+      "d30": 11.65601,
+      "chg": 0.0008296149368436367
+     },
+     "+1y": {
+      "current": 19.46507,
+      "d30": 19.3807,
+      "chg": 0.004353299932406962
+     },
+     "revisions_30d": {
+      "up": 13,
+      "down": 26
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": -0.0548,
+    "week": 0.0137,
+    "high": -0.3229
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": -0.0548,
+    "week": 0,
+    "high": -0.3229
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -25% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "IDXX-2026-10-31",
+   "ticker": "IDXX",
+   "name": "IDEXX Laboratories Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 551.21,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 296.32,
+   "buy_below_at_open": 207.42,
+   "valued_on": "2026-10-24",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-08-04",
+    "peers": {
+     "basis": "industry: Diagnostics & Research",
+     "n": 8,
+     "median": {
+      "day": -0.02679433471809789,
+      "week": 0.00895287475101969,
+      "high": -0.03628166276290373
+     },
+     "tickers": [
+      "TMO",
+      "DHR",
+      "A",
+      "IQV",
+      "WAT",
+      "ILMN",
+      "MTD",
+      "DGX"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 14.87645,
+      "d30": 14.83498,
+      "chg": 0.002795420014047867
+     },
+     "+1y": {
+      "current": 16.73288,
+      "d30": 16.7397,
+      "chg": -0.0004074147087461677
+     },
+     "revisions_30d": {
+      "up": 11,
+      "down": 2
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": -0.043,
+    "week": -0.0164,
+    "high": -0.281
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": -0.043,
+    "week": -0.0164,
+    "high": -0.281
+   },
+   "provisional": {
+    "cause": "Long slide: -28% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "HWM-2026-10-31",
+   "ticker": "HWM",
+   "name": "Howmet Aerospace Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 199.22,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 104.18,
+   "buy_below_at_open": 72.92,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": "2026-10-29",
+    "last_report": "2026-10-29",
+    "peers": {
+     "basis": "industry: Aerospace & Defense",
+     "n": 8,
+     "median": {
+      "day": -0.009444092531045722,
+      "week": 0.04200303257791571,
+      "high": -0.20871384661979525
+     },
+     "tickers": [
+      "GE",
+      "RTX",
+      "BA",
+      "LMT",
+      "GD",
+      "NOC",
+      "TDG",
+      "HONA"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 5.45533,
+      "d30": 5.33752,
+      "chg": 0.02207204844197319
+     },
+     "+1y": {
+      "current": 6.6096,
+      "d30": 6.46127,
+      "chg": 0.022956787133179724
+     },
+     "revisions_30d": {
+      "up": 4,
+      "down": 2
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": -0.0326,
+    "week": 0.0716,
+    "high": -0.3193
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": -0.0326,
+    "week": 0,
+    "high": -0.3193
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -21% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "BKNG-2026-10-31",
+   "ticker": "BKNG",
+   "name": "Booking Holdings Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 148.13,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 217.63,
+   "buy_below_at_open": 152.34,
+   "valued_on": "2026-10-24",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-08-04",
+    "peers": {
+     "basis": "industry: Travel Services",
+     "n": 5,
+     "median": {
+      "day": -0.010819912979601054,
+      "week": 0.10417461699622188,
+      "high": -0.1518093998221155
+     },
+     "tickers": [
+      "ABNB",
+      "RCL",
+      "CCL",
+      "EXPE",
+      "NCLH"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 10.45977,
+      "d30": 10.44835,
+      "chg": 0.0010929955447511741
+     },
+     "+1y": {
+      "current": 12.37401,
+      "d30": 12.36832,
+      "chg": 0.0004600463118678011
+     },
+     "revisions_30d": {
+      "up": 0,
+      "down": 3
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": -0.0153,
+    "week": -0.0494,
+    "high": -0.3257
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": -0.0153,
+    "week": -0.0494,
+    "high": -0.3257
+   },
+   "provisional": {
+    "cause": "Long slide: -33% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "TPR-2026-10-31",
+   "ticker": "TPR",
+   "name": "Tapestry Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 116.29,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 90.81,
+   "buy_below_at_open": 59.03,
+   "valued_on": "2026-10-24",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-08-13",
+    "peers": {
+     "basis": "industry: Luxury Goods",
+     "n": 0,
+     "median": null,
+     "tickers": []
+    },
+    "estimates": {
+     "0y": {
+      "current": 7.96136,
+      "d30": 7.97284,
+      "chg": -0.0014398884211899166
+     },
+     "+1y": {
+      "current": 8.88732,
+      "d30": 8.89953,
+      "chg": -0.0013719825653714102
+     },
+     "revisions_30d": {
+      "up": 7,
+      "down": 3
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": -0.0132,
+    "week": 0.0536,
+    "high": -0.2943
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": -0.0132,
+    "week": 0,
+    "high": -0.2943
+   },
+   "provisional": {
+    "cause": "Long slide: -29% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "DECK-2026-10-31",
+   "ticker": "DECK",
+   "name": "Deckers Outdoor Corp.",
+   "opened": "2026-10-31",
+   "price_at_open": 81.99,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 122.8,
+   "buy_below_at_open": 85.96,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-10-22",
+    "peers": {
+     "basis": "industry: Footwear & Accessories",
+     "n": 1,
+     "median": null,
+     "tickers": [
+      "NKE"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 7.85974,
+      "d30": 7.51256,
+      "chg": 0.04621327483574178
+     },
+     "+1y": {
+      "current": 8.11496,
+      "d30": 8.35079,
+      "chg": -0.028240441922261272
+     },
+     "revisions_30d": {
+      "up": 17,
+      "down": 1
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": -0.0093,
+    "week": 0.0111,
+    "high": -0.3221
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": -0.0093,
+    "week": 0,
+    "high": -0.3221
+   },
+   "provisional": {
+    "cause": "Long slide: -32% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "NFLX-2026-10-31",
+   "ticker": "NFLX",
+   "name": "Netflix Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 62.08,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 62.3,
+   "buy_below_at_open": 43.61,
+   "valued_on": "2026-10-26",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-10-20",
+    "peers": {
+     "basis": "industry: Entertainment",
+     "n": 7,
+     "median": {
+      "day": -0.01120543005626451,
+      "week": -0.05045040349302554,
+      "high": -0.10135900211320403
+     },
+     "tickers": [
+      "DIS",
+      "LYV",
+      "TKO",
+      "FOXA",
+      "FOX",
+      "NWS",
+      "NWSA"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 3.58373,
+      "d30": 3.58362,
+      "chg": 3.069521880116888e-05
+     },
+     "+1y": {
+      "current": 3.76666,
+      "d30": 3.80891,
+      "chg": -0.011092412264926188
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 7
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": 0.0005,
+    "week": -0.0573,
+    "high": -0.4637
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": 0,
+    "week": -0.0573,
+    "high": -0.4637
+   },
+   "provisional": {
+    "cause": "Long slide: -46% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "ADBE-2026-10-31",
+   "ticker": "ADBE",
+   "name": "Adobe Inc.",
+   "opened": "2026-10-31",
+   "price_at_open": 250.23,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 365.06,
+   "buy_below_at_open": 255.54,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-09-10",
+    "peers": {
+     "basis": "industry: Software - Application",
+     "n": 8,
+     "median": {
+      "day": -0.007472987757051519,
+      "week": -0.045942332470320146,
+      "high": -0.20514187472523654
+     },
+     "tickers": [
+      "CRM",
+      "UBER",
+      "NOW",
+      "ADP",
+      "DDOG",
+      "CDNS",
+      "INTU",
+      "WDAY"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 24.47602,
+      "d30": 24.39502,
+      "chg": 0.0033203498091003425
+     },
+     "+1y": {
+      "current": 27.50756,
+      "d30": 27.53806,
+      "chg": -0.0011075580487514003
+     },
+     "revisions_30d": {
+      "up": 21,
+      "down": 10
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": 0.0085,
+    "week": -0.0515,
+    "high": -0.3001
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": 0,
+    "week": -0.0515,
+    "high": -0.3001
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -21% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
+   },
+   "kind": "slide"
+  },
+  {
+   "id": "MKC-2026-10-31",
+   "ticker": "MKC",
+   "name": "McCormick & Co.",
+   "opened": "2026-10-31",
+   "price_at_open": 47.29,
+   "qqq_at_open": 690.49,
+   "fair_value_at_open": 62.27,
+   "buy_below_at_open": 43.59,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": true,
+   "verdict": null,
+   "evidence": {
+    "updated": "2026-10-31",
+    "earnings_on": null,
+    "last_report": "2026-10-01",
+    "peers": {
+     "basis": "industry: Packaged Foods",
+     "n": 4,
+     "median": {
+      "day": 0.02361969919197482,
+      "week": -0.0017616355674990314,
+      "high": -0.15801928587213948
+     },
+     "tickers": [
+      "KHC",
+      "GIS",
+      "SJM",
+      "HRL"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 3.08974,
+      "d30": 3.08717,
+      "chg": 0.0008324776413348722
+     },
+     "+1y": {
+      "current": 3.22139,
+      "d30": 3.29584,
+      "chg": -0.022589081994271565
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 9
+     }
+    },
+    "news": []
+   },
+   "outcome": {},
+   "last_triggered": "2026-10-31",
+   "moves": {
+    "day": 0.0105,
+    "week": -0.0172,
+    "high": -0.34
+   },
+   "qqq": {
+    "day": -0.0347,
+    "week": -0.0197,
+    "high": -0.0911
+   },
+   "worst": {
+    "day": 0,
+    "week": -0.0172,
+    "high": -0.34
+   },
+   "provisional": {
+    "cause": "Long slide: -34% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
   },
   {
    "id": "INTU-2026-10-31",
@@ -1372,9 +1389,10 @@
     "high": -0.4958
    },
    "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
+    "cause": "Long slide: -50% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
   },
   {
    "id": "FISV-2026-10-31",
@@ -1451,9 +1469,10 @@
     "high": -0.2839
    },
    "provisional": {
-    "cause": "Market-wide fall (QQQ -9%) and more for this stock",
-    "lean": "temporary"
-   }
+    "cause": "Long slide: -28% below its 52-week high (QQQ -9%), more than its peers: read why",
+    "lean": "unclear"
+   },
+   "kind": "slide"
   }
  ],
  "log": [],
@@ -1465,22 +1484,22 @@
   "APP",
   "CRCL",
   "RMD",
+  "GOOGL",
+  "FICO",
+  "ADYEY",
   "FIX",
   "AVGO",
   "IDXX",
   "HWM",
   "BKNG",
-  "GOOGL",
   "TPR",
   "DECK",
   "NFLX",
-  "FICO",
   "ADBE",
   "MKC",
-  "ADYEY",
   "INTU",
   "FISV"
  ],
- "updated": "2026-10-31T07:44:23Z",
+ "updated": "2026-10-31T07:49:37Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than QQQ. Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than QQQ."
 }
