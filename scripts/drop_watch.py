@@ -5,6 +5,7 @@ Step 1 (trigger), compared with QQQ over the same window:
   * day:  down 7%+ since the previous close and at least 5 points worse than QQQ
   * week: down 12%+ over 5 sessions and at least 5 points worse than QQQ
   * high: 25%+ below its 52-week high and at least 5 points further below its high than QQQ
+    (a "slide": shown in a quieter list; day/week triggers are "alerts")
   * EMERGENCY: down 12%+ in a day or 20%+ in a week AND at least 10 points worse than QQQ
     (a quick Claude check the next morning instead of waiting for the twice-weekly review)
 Step 2 evidence (Yahoo via yfinance, refreshed at most once a day per event): QQQ move, industry peers' median move,
@@ -67,9 +68,9 @@ def closes_1y(t):
 def peer_moves(t, screen, themes):
     rows = {r["ticker"]: r for r in screen}
     me = rows.get(t)
-    if me and me.get("industry"):
-        peers = sorted([r for r in screen if r.get("industry") == me["industry"] and r["ticker"] != t],
-                       key=lambda r: -(r.get("market_cap") or 0))[:8]
+    ind = [r for r in screen if me and me.get("industry") and r.get("industry") == me["industry"] and r["ticker"] != t]
+    if len(ind) >= 3:
+        peers = sorted(ind, key=lambda r: -(r.get("market_cap") or 0))[:8]
         basis, names = f"industry: {me['industry']}", [r["ticker"] for r in peers]
     else:
         grp = next((g for g, L in themes.items() if isinstance(L, list) and t in L and g != "Index & commodities"), None)
@@ -110,22 +111,32 @@ def estimates(tk):
     return out
 
 
-def news(tk, k=6):
-    out = []
-    try:
-        for n in (tk.news or [])[:k * 2]:
-            c = n.get("content") or n
-            title = c.get("title")
-            link = (c.get("canonicalUrl") or {}).get("url") or c.get("link") or (c.get("clickThroughUrl") or {}).get("url")
-            pub = (c.get("provider") or {}).get("displayName") or c.get("publisher")
-            when = c.get("pubDate") or (dt.datetime.fromtimestamp(n["providerPublishTime"], dt.timezone.utc).isoformat() if n.get("providerPublishTime") else None)
-            if title:
-                out.append(dict(title=title, link=link, publisher=pub, date=(when or "")[:10]))
-            if len(out) >= k:
-                break
-    except Exception:
-        pass
-    return out
+def news(t, name, k=6):
+    """Latest headlines (past 7 days): Google News RSS, then Yahoo Finance RSS (yfinance's news list is empty from GitHub)."""
+    import email.utils, re as _re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+    short = _re.sub(r"[,.]?\s+(Inc|Corp|Corporation|Co|Company|Holdings|Group|plc|N\.V|Ltd|Limited|Incorporated)\b.*$", "", name or t).strip()
+    urls = ["https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": f'"{short}" stock when:7d', "hl": "en-US", "gl": "US", "ceid": "US:en"}),
+            f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={t}&region=US&lang=en-US"]
+    for url in urls:
+        try:
+            x = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
+            items = []
+            for it in ET.fromstring(x).findall(".//item"):
+                title, src = it.findtext("title") or "", it.findtext("source") or ""
+                if src and title.endswith(" - " + src):
+                    title = title[: -len(src) - 3]
+                try:
+                    d = email.utils.parsedate_to_datetime(it.findtext("pubDate")).astimezone(dt.timezone.utc)
+                except Exception:
+                    d = None
+                items.append(dict(title=title, publisher=src or None, link=it.findtext("link"), date=d.date().isoformat() if d else "", _d=d))
+            items = [x for x in items if x["_d"] and (NOW - x["_d"]).days <= 10]
+            items.sort(key=lambda x: x["_d"], reverse=True)
+            if items:
+                return [{k: v for k, v in x.items() if k != "_d"} for x in items[:k]]
+        except Exception:
+            pass
+    return []
 
 
 def provisional(ev):
@@ -143,8 +154,10 @@ def provisional(ev):
         return dict(cause="Earnings reaction, but analysts have not cut next year's forecasts (yet)", lean="temporary")
     if cut:
         return dict(cause=f"Company-specific: next-year EPS forecasts cut {est * 100:.0f}% in 30 days", lean="unclear")
-    if q and q.get(k) is not None and q[k] <= -0.05:
-        return dict(cause=f"Market-wide fall (QQQ {q[k] * 100:.0f}%) and more for this stock", lean="temporary")
+    if q and q.get(k) is not None and m[k] and q[k] <= 0.5 * m[k]:
+        return dict(cause=f"Largely market-wide: QQQ {q[k] * 100:.0f}% vs this stock {m[k] * 100:.0f}%", lean="temporary")
+    if k == "high":
+        return dict(cause=f"Long slide: {m[k] * 100:.0f}% below its 52-week high (QQQ {q[k] * 100:.0f}%), more than its peers: read why", lean="unclear")
     return dict(cause="Company-specific, no clear cause in the data: read the headlines", lean="unclear")
 
 
@@ -157,7 +170,7 @@ def evidence(ev, screen, themes, cal):
     rep = [d for d in past if -1 <= (opened - d).days <= 7]
     return dict(updated=TODAY.isoformat(), earnings_on=max(rep).isoformat() if rep else None,
                 last_report=max(past).isoformat() if past else None,
-                peers=peer_moves(t, screen, themes), estimates=estimates(tk), news=news(tk))
+                peers=peer_moves(t, screen, themes), estimates=estimates(tk), news=news(t, ev.get("name")))
 
 
 def main():
@@ -204,6 +217,9 @@ def main():
                       needs_verdict=True, verdict=None, evidence={}, outcome={})
             D["open"].append(ev); print("NEW drop event", t, trig, "EMERGENCY" if emer else "")
         ev["triggers"] = sorted(set(ev["triggers"]) | set(trig), key=["day", "week", "high"].index)
+        if {"day", "week"} & set(trig) and ev.get("kind") == "slide" and ev.get("verdict"):
+            ev["needs_verdict"] = True          # a sharp new drop on top of a slide: look again
+        ev["kind"] = "alert" if {"day", "week"} & set(ev["triggers"]) else "slide"
         ev["last_triggered"] = TODAY.isoformat()
         ev["moves"], ev["qqq"] = rnd(m), rnd(q)
         ev["worst"] = {k: min(v, (ev.get("worst") or {}).get(k, 0) or 0) for k, v in rnd(m).items() if v is not None}
@@ -229,7 +245,7 @@ def main():
             if age >= days and k not in ev["outcome"] and p and qq and ev.get("qqq_at_open"):
                 r, rq = p / ev["price_at_open"] - 1, qq / ev["qqq_at_open"] - 1
                 ev["outcome"][k] = dict(stock=round(r, 4), qqq=round(rq, 4), vs_qqq=round(r - rq, 4), on=TODAY.isoformat())
-    D["open"].sort(key=lambda e: (not e["emergency"], (e.get("moves") or {}).get("day") or 0))
+    D["open"].sort(key=lambda e: (not e["emergency"], e.get("kind") != "alert", (e.get("moves") or {}).get("day") or 0))
     D["emergency_pending"] = [e["ticker"] for e in D["open"] if e["emergency"] and e.get("needs_verdict")]
     D["review_pending"] = [e["ticker"] for e in D["open"] if e.get("needs_verdict")]
     save(D)
