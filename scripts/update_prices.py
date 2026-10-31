@@ -17,7 +17,7 @@ pfile = ROOT / "data/prices.json"
 try: out = json.loads(pfile.read_text())
 except Exception: out = {"prices": {}}
 def fetch(t):
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=3mo&interval=1d"
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=1y&interval=1d"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     r = json.load(urllib.request.urlopen(req, timeout=20))["chart"]["result"][0]
     bars = [(ts, c) for ts, c in zip(r.get("timestamp") or [], r["indicators"]["quote"][0]["close"]) if c is not None]
@@ -34,7 +34,9 @@ def fetch(t):
         MARKET = dict(state="open" if reg["start"] <= now < reg["end"] else "closed",
                       session_start=datetime.datetime.fromtimestamp(reg["start"], datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                       session_end=datetime.datetime.fromtimestamp(reg["end"], datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
+    hi = max(closes + [price]) if closes else price
     return dict(price=round(price, 2), prev_close=round(prev, 2), history=[round(c, 2) for c in closes[-65:]],
+                high_52w=round(hi, 2), ref_5d=round(closes[-6], 2) if len(closes) >= 6 else None,
                 time=datetime.datetime.fromtimestamp(m.get("regularMarketTime", 0), datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
 MARKET = None
 ok = changed = 0
