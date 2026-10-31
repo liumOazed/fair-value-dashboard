@@ -1,3 +1,7 @@
-import sys; sys.path.insert(0, "scripts"); import drop_watch as W
-for t, n in (("APP", "AppLovin Corporation"), ("FICO", "Fair Isaac Corporation"), ("RMD", "ResMed Inc.")):
-    print(t, [(x["date"], x["publisher"], x["title"][:90]) for x in W.news(t, n)][:4])
+import json, urllib.request
+for t in "SPY RSPT RSPF RSPH RSPD RSPS RSPN RSPG RSPC RSPM RSPR RSPU XLK XLF XLV XLY XLP XLI XLE XLC XLB XLRE XLU".split():
+    try:
+        r = json.load(urllib.request.urlopen(urllib.request.Request(f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=5d&interval=1d", headers={"User-Agent": "Mozilla/5.0"}), timeout=20))["chart"]["result"][0]["meta"]
+        print(t, r.get("regularMarketPrice"), r.get("longName") or r.get("shortName"))
+    except Exception as e:
+        print(t, "ERR", e)
