@@ -5,6 +5,12 @@
    "calendar_month": "2026-10",
    "forced": false,
    "by": "local"
+  },
+  "2026-11": {
+   "ran": "2026-11-01 10:18 UTC",
+   "calendar_month": "2026-11",
+   "forced": false,
+   "by": "liumOazed"
   }
  },
  "fair_value": {
@@ -20,7 +26,20 @@
     "ADBE",
     "MKC"
    ]
+  },
+  "2026-11": {
+   "ran": "2026-11-01 10:18 UTC",
+   "calendar_month": "2026-11",
+   "forced": false,
+   "by": "liumOazed",
+   "picks": [
+    "LULU",
+    "RDDT",
+    "CF",
+    "DECK",
+    "EME"
+   ]
   }
  },
- "latest_data_month": "2026-10"
+ "latest_data_month": "2026-11"
 }

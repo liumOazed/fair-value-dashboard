@@ -422,7 +422,437 @@
    ],
    "prev_month": "2026-07",
    "method": "Score v2, sector required returns, no balance-sheet filter (recorded before the 20 Oct 2026 upgrade; new rules apply from November)"
+  },
+  "2026-11": {
+   "month": "2026-11",
+   "evaluated": "2026-11-01",
+   "candidates": 82,
+   "passed": 62,
+   "picks": [
+    {
+     "ticker": "LULU",
+     "name": "lululemon athletica inc.",
+     "sector": "Consumer Cyclical",
+     "score": 67.8,
+     "rank": 22,
+     "consistent": true,
+     "has_full_model": false,
+     "price_at_eval": 107.24,
+     "fair_value": 168.24,
+     "buy_below": 117.77,
+     "scenario_values": {
+      "bear": 163.25,
+      "base": 168.74,
+      "bull": 174.45
+     },
+     "metrics": {
+      "rev_growth_pct": -4.3,
+      "fcf_yield_pct": 10.9,
+      "earnings_yield": 11.42,
+      "fcf_ni": 0.84,
+      "fcf_ni_basis": "3y",
+      "profit_margin_pct": 12.78,
+      "forward_pe": 12.4
+     },
+     "cash_yield": 0.109,
+     "cash_basis": "FCF",
+     "trailing_ey": 11.33,
+     "cyclical": false,
+     "growth_input": 0.0,
+     "required_return": 0.09,
+     "scenarios": {
+      "bear": {
+       "g1": 0.0,
+       "g10": 0.02,
+       "ratio": 1.5223
+      },
+      "base": {
+       "g1": 0.0,
+       "g10": 0.03,
+       "ratio": 1.5735
+      },
+      "bull": {
+       "g1": 0.0,
+       "g10": 0.04,
+       "ratio": 1.6267
+      }
+     },
+     "value_to_price": 1.5688,
+     "mos": 0.3
+    },
+    {
+     "ticker": "RDDT",
+     "name": "Reddit, Inc.",
+     "sector": "Communication Services",
+     "score": 72.6,
+     "rank": 8,
+     "consistent": false,
+     "has_full_model": false,
+     "price_at_eval": 91.73,
+     "fair_value": 134.09,
+     "buy_below": 93.86,
+     "scenario_values": {
+      "bear": 95.37,
+      "base": 130.88,
+      "bull": 200.2
+     },
+     "metrics": {
+      "rev_growth_pct": 53.0,
+      "fcf_yield_pct": 5.75,
+      "earnings_yield": 5.34,
+      "fcf_ni": 1.29,
+      "fcf_ni_basis": "latest FY",
+      "profit_margin_pct": 32.1,
+      "forward_pe": 9.82
+     },
+     "cash_yield": 0.0534,
+     "cash_basis": "trailing earnings",
+     "trailing_ey": 5.34,
+     "cyclical": false,
+     "growth_input": 0.4,
+     "required_return": 0.09,
+     "scenarios": {
+      "bear": {
+       "g1": 0.08,
+       "g10": 0.02,
+       "ratio": 1.0397
+      },
+      "base": {
+       "g1": 0.15,
+       "g10": 0.03,
+       "ratio": 1.4268
+      },
+      "bull": {
+       "g1": 0.25,
+       "g10": 0.04,
+       "ratio": 2.1825
+      }
+     },
+     "value_to_price": 1.4618,
+     "mos": 0.3
+    },
+    {
+     "ticker": "CF",
+     "name": "CF Industries Holdings, Inc.",
+     "sector": "Basic Materials",
+     "score": 80.0,
+     "rank": 2,
+     "consistent": true,
+     "has_full_model": false,
+     "price_at_eval": 123.3,
+     "fair_value": 164.48,
+     "buy_below": 106.91,
+     "scenario_values": {
+      "bear": 144.96,
+      "base": 165.99,
+      "bull": 189.99
+     },
+     "metrics": {
+      "rev_growth_pct": 17.6,
+      "fcf_yield_pct": 10.2,
+      "earnings_yield": 11.25,
+      "fcf_ni": 1.09,
+      "fcf_ni_basis": "3y",
+      "profit_margin_pct": 27.12,
+      "forward_pe": 10.85
+     },
+     "cash_yield": 0.0816,
+     "cash_basis": "FCF",
+     "trailing_ey": 10.93,
+     "cyclical": true,
+     "growth_input": 0.1,
+     "required_return": 0.095,
+     "scenarios": {
+      "bear": {
+       "g1": 0.025,
+       "g10": 0.02,
+       "ratio": 1.1757
+      },
+      "base": {
+       "g1": 0.05,
+       "g10": 0.03,
+       "ratio": 1.3462
+      },
+      "bull": {
+       "g1": 0.075,
+       "g10": 0.04,
+       "ratio": 1.5409
+      }
+     },
+     "value_to_price": 1.334,
+     "mos": 0.35
+    },
+    {
+     "ticker": "DECK",
+     "name": "Deckers Outdoor Corporation",
+     "sector": "Consumer Cyclical",
+     "score": 79.1,
+     "rank": 4,
+     "consistent": true,
+     "has_full_model": true,
+     "price_at_eval": 81.99,
+     "fair_value": 108.31,
+     "buy_below": 75.82,
+     "scenario_values": {
+      "bear": 101.7,
+      "base": 108.92,
+      "bull": 116.69
+     },
+     "metrics": {
+      "rev_growth_pct": 3.5,
+      "fcf_yield_pct": 10.21,
+      "earnings_yield": 9.21,
+      "fcf_ni": 1.09,
+      "fcf_ni_basis": "3y",
+      "profit_margin_pct": 19.0,
+      "forward_pe": 10.02
+     },
+     "cash_yield": 0.0921,
+     "cash_basis": "trailing earnings",
+     "trailing_ey": 9.21,
+     "cyclical": false,
+     "growth_input": 0.035,
+     "required_return": 0.095,
+     "scenarios": {
+      "bear": {
+       "g1": 0.0088,
+       "g10": 0.02,
+       "ratio": 1.2404
+      },
+      "base": {
+       "g1": 0.0175,
+       "g10": 0.03,
+       "ratio": 1.3285
+      },
+      "bull": {
+       "g1": 0.0263,
+       "g10": 0.04,
+       "ratio": 1.4232
+      }
+     },
+     "value_to_price": 1.321,
+     "mos": 0.3
+    },
+    {
+     "ticker": "EME",
+     "name": "EMCOR Group, Inc.",
+     "sector": "Industrials",
+     "score": 71.9,
+     "rank": 10,
+     "consistent": true,
+     "has_full_model": false,
+     "price_at_eval": 679.55,
+     "fair_value": 875.06,
+     "buy_below": 612.54,
+     "scenario_values": {
+      "bear": 637.42,
+      "base": 882.53,
+      "bull": 1212.86
+     },
+     "metrics": {
+      "rev_growth_pct": 28.8,
+      "fcf_yield_pct": 4.98,
+      "earnings_yield": 5.19,
+      "fcf_ni": 1.15,
+      "fcf_ni_basis": "3y",
+      "profit_margin_pct": 7.78,
+      "forward_pe": 17.21
+     },
+     "cash_yield": 0.0498,
+     "cash_basis": "FCF",
+     "trailing_ey": 5.09,
+     "cyclical": false,
+     "growth_input": 0.288,
+     "required_return": 0.09,
+     "scenarios": {
+      "bear": {
+       "g1": 0.072,
+       "g10": 0.02,
+       "ratio": 0.938
+      },
+      "base": {
+       "g1": 0.144,
+       "g10": 0.03,
+       "ratio": 1.2987
+      },
+      "bull": {
+       "g1": 0.216,
+       "g10": 0.04,
+       "ratio": 1.7848
+      }
+     },
+     "value_to_price": 1.2877,
+     "mos": 0.3
+    }
+   ],
+   "runners_up": [
+    {
+     "ticker": "ADBE",
+     "name": "Adobe Inc.",
+     "sector": "Technology",
+     "value_to_price": 1.2405
+    },
+    {
+     "ticker": "HST",
+     "name": "Host Hotels & Resorts, Inc.",
+     "sector": "Real Estate",
+     "value_to_price": 1.1655
+    },
+    {
+     "ticker": "APP",
+     "name": "Applovin Corporation",
+     "sector": "Communication Services",
+     "value_to_price": 1.1652
+    },
+    {
+     "ticker": "LII",
+     "name": "Lennox International, Inc.",
+     "sector": "Industrials",
+     "value_to_price": 1.1377
+    },
+    {
+     "ticker": "APA",
+     "name": "APA Corporation",
+     "sector": "Energy",
+     "value_to_price": 1.074
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont Corporation",
+     "sector": "Basic Materials",
+     "value_to_price": 1.0573
+    },
+    {
+     "ticker": "REGN",
+     "name": "Regeneron Pharmaceuticals, Inc.",
+     "sector": "Healthcare",
+     "value_to_price": 1.018
+    },
+    {
+     "ticker": "ZTS",
+     "name": "Zoetis Inc.",
+     "sector": "Healthcare",
+     "value_to_price": 1.0118
+    },
+    {
+     "ticker": "MO",
+     "name": "Altria Group, Inc.",
+     "sector": "Consumer Defensive",
+     "value_to_price": 0.9622
+    },
+    {
+     "ticker": "BR",
+     "name": "Broadridge Financial Solutions,",
+     "sector": "Technology",
+     "value_to_price": 0.8995
+    }
+   ],
+   "check_first": [],
+   "skipped": [
+    {
+     "ticker": "EXPE",
+     "name": "Expedia Group, Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "BKNG",
+     "name": "Booking Holdings Inc. Common St",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "SNDK",
+     "name": "Sandisk Corporation",
+     "reason": "One-off growth (sales more than doubled)"
+    },
+    {
+     "ticker": "MU",
+     "name": "Micron Technology, Inc.",
+     "reason": "One-off growth (sales more than doubled)"
+    },
+    {
+     "ticker": "EIX",
+     "name": "Edison International",
+     "reason": "FCF distorted (cash flow far below earnings)"
+    },
+    {
+     "ticker": "SPG",
+     "name": "Simon Property Group, Inc.",
+     "reason": "High debt (net debt 5.5x EBITDA)"
+    },
+    {
+     "ticker": "VICI",
+     "name": "VICI Properties Inc.",
+     "reason": "High debt (net debt 5.5x EBITDA)"
+    },
+    {
+     "ticker": "TPR",
+     "name": "Tapestry, Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "INTU",
+     "name": "Intuit Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "VEEV",
+     "name": "Veeva Systems Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "NVDA",
+     "name": "NVIDIA Corporation",
+     "reason": "One-off growth (sales more than doubled)"
+    },
+    {
+     "ticker": "AMP",
+     "name": "Ameriprise Financial, Inc.",
+     "reason": "Financial company: free cash flow is not meaningful"
+    },
+    {
+     "ticker": "FICO",
+     "name": "Fair Isaac Corporation",
+     "reason": "High debt (net debt 4.2x EBITDA)"
+    },
+    {
+     "ticker": "ADSK",
+     "name": "Autodesk, Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "ALL",
+     "name": "Allstate Corporation (The)",
+     "reason": "Financial company: free cash flow is not meaningful"
+    },
+    {
+     "ticker": "REG",
+     "name": "Regency Centers Corporation",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "HIG",
+     "name": "The Hartford Insurance Group, I",
+     "reason": "Financial company: free cash flow is not meaningful"
+    },
+    {
+     "ticker": "CRM",
+     "name": "Salesforce, Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "WDAY",
+     "name": "Workday, Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    },
+    {
+     "ticker": "MRVL",
+     "name": "Marvell Technology, Inc.",
+     "reason": "FCF unusually high (more than 1.5x net income, may not last)"
+    }
+   ],
+   "method": "Score v4, shared required returns, balance-sheet filter",
+   "prev_month": "2026-10"
   }
  },
- "latest": "2026-10"
+ "latest": "2026-11"
 }

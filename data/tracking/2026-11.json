@@ -1,0 +1,360 @@
+{
+ "month": "2026-11",
+ "groups": {
+  "top5": {
+   "label": "Monthly Top 5 picks",
+   "date": "2026-11-01",
+   "spy": 755.72,
+   "stocks": [
+    {
+     "ticker": "LULU",
+     "entry": 107.24
+    },
+    {
+     "ticker": "RDDT",
+     "entry": 91.73
+    },
+    {
+     "ticker": "CF",
+     "entry": 123.3
+    },
+    {
+     "ticker": "DECK",
+     "entry": 81.99
+    },
+    {
+     "ticker": "EME",
+     "entry": 679.55
+    }
+   ]
+  },
+  "top50": {
+   "label": "Growth Screen top 50",
+   "date": "2026-11-01",
+   "spy": 755.72,
+   "stocks": [
+    {
+     "ticker": "NEM",
+     "entry": 106.61
+    },
+    {
+     "ticker": "CF",
+     "entry": 123.3
+    },
+    {
+     "ticker": "EXPE",
+     "entry": 285.93
+    },
+    {
+     "ticker": "DECK",
+     "entry": 81.99
+    },
+    {
+     "ticker": "BKNG",
+     "entry": 148.13
+    },
+    {
+     "ticker": "ADBE",
+     "entry": 250.23
+    },
+    {
+     "ticker": "SNDK",
+     "entry": 1150.89
+    },
+    {
+     "ticker": "RDDT",
+     "entry": 91.73
+    },
+    {
+     "ticker": "MU",
+     "entry": 884.74
+    },
+    {
+     "ticker": "EME",
+     "entry": 679.55
+    },
+    {
+     "ticker": "EIX",
+     "entry": 58.79
+    },
+    {
+     "ticker": "EOG",
+     "entry": 165.54
+    },
+    {
+     "ticker": "SPG",
+     "entry": 217.75
+    },
+    {
+     "ticker": "VICI",
+     "entry": 24.46
+    },
+    {
+     "ticker": "FIX",
+     "entry": 1232.66
+    },
+    {
+     "ticker": "MO",
+     "entry": 78.03
+    },
+    {
+     "ticker": "APP",
+     "entry": 228.5
+    },
+    {
+     "ticker": "TPR",
+     "entry": 116.29
+    },
+    {
+     "ticker": "HST",
+     "entry": 25.3
+    },
+    {
+     "ticker": "INTU",
+     "entry": 341.09
+    },
+    {
+     "ticker": "CPRT",
+     "entry": 30.13
+    },
+    {
+     "ticker": "LULU",
+     "entry": 107.24
+    },
+    {
+     "ticker": "VEEV",
+     "entry": 312.96
+    },
+    {
+     "ticker": "NVDA",
+     "entry": 204.64
+    },
+    {
+     "ticker": "RMD",
+     "entry": 229.94
+    },
+    {
+     "ticker": "AMP",
+     "entry": 490.83
+    },
+    {
+     "ticker": "AOS",
+     "entry": 63.07
+    },
+    {
+     "ticker": "MNST",
+     "entry": 47.34
+    },
+    {
+     "ticker": "TPL",
+     "entry": 331.68
+    },
+    {
+     "ticker": "ZTS",
+     "entry": 79.72
+    },
+    {
+     "ticker": "REGN",
+     "entry": 927.89
+    },
+    {
+     "ticker": "SNA",
+     "entry": 355.66
+    },
+    {
+     "ticker": "FICO",
+     "entry": 711.23
+    },
+    {
+     "ticker": "PM",
+     "entry": 208.79
+    },
+    {
+     "ticker": "ADSK",
+     "entry": 249.61
+    },
+    {
+     "ticker": "ALL",
+     "entry": 259.87
+    },
+    {
+     "ticker": "PPG",
+     "entry": 119.52
+    },
+    {
+     "ticker": "FTNT",
+     "entry": 136.08
+    },
+    {
+     "ticker": "DXCM",
+     "entry": 82.29
+    },
+    {
+     "ticker": "APA",
+     "entry": 52.82
+    },
+    {
+     "ticker": "META",
+     "entry": 614.99
+    },
+    {
+     "ticker": "REG",
+     "entry": 74.59
+    },
+    {
+     "ticker": "HIG",
+     "entry": 132.59
+    },
+    {
+     "ticker": "ABNB",
+     "entry": 164.39
+    },
+    {
+     "ticker": "LII",
+     "entry": 344.08
+    },
+    {
+     "ticker": "TT",
+     "entry": 410.0
+    },
+    {
+     "ticker": "GOOG",
+     "entry": 278.22
+    },
+    {
+     "ticker": "PSA",
+     "entry": 324.77
+    },
+    {
+     "ticker": "INCY",
+     "entry": 120.39
+    },
+    {
+     "ticker": "ALGN",
+     "entry": 149.89
+    }
+   ]
+  },
+  "resilient": {
+   "label": "Resilient compounders",
+   "date": "2026-11-01",
+   "spy": 755.72,
+   "stocks": [
+    {
+     "ticker": "V",
+     "entry": 413.59
+    },
+    {
+     "ticker": "VLTO",
+     "entry": 111.1
+    },
+    {
+     "ticker": "IDXX",
+     "entry": 551.21
+    },
+    {
+     "ticker": "CTAS",
+     "entry": 219.82
+    },
+    {
+     "ticker": "MA",
+     "entry": 638.01
+    }
+   ]
+  },
+  "fv_below": {
+   "label": "Full models: price below fair value",
+   "date": "2026-11-01",
+   "spy": 755.72,
+   "stocks": [
+    {
+     "ticker": "ADBE",
+     "entry": 250.23
+    },
+    {
+     "ticker": "APP",
+     "entry": 228.5
+    },
+    {
+     "ticker": "DECK",
+     "entry": 81.99
+    },
+    {
+     "ticker": "INCY",
+     "entry": 120.39
+    },
+    {
+     "ticker": "MKC",
+     "entry": 47.29
+    },
+    {
+     "ticker": "EXPE",
+     "entry": 285.93
+    },
+    {
+     "ticker": "BKNG",
+     "entry": 148.13
+    },
+    {
+     "ticker": "INTU",
+     "entry": 341.09
+    },
+    {
+     "ticker": "NFLX",
+     "entry": 62.08
+    },
+    {
+     "ticker": "CRM",
+     "entry": 229.17
+    },
+    {
+     "ticker": "AXP",
+     "entry": 319.11
+    },
+    {
+     "ticker": "PYPL",
+     "entry": 57.01
+    },
+    {
+     "ticker": "XYZ",
+     "entry": 76.22
+    },
+    {
+     "ticker": "ADYEY",
+     "entry": 9.16
+    },
+    {
+     "ticker": "FISV",
+     "entry": 50.02
+    }
+   ]
+  },
+  "fv_buy": {
+   "label": "Full models: price below buy-below",
+   "date": "2026-11-01",
+   "spy": 755.72,
+   "stocks": [
+    {
+     "ticker": "ADBE",
+     "entry": 250.23
+    },
+    {
+     "ticker": "APP",
+     "entry": 228.5
+    },
+    {
+     "ticker": "DECK",
+     "entry": 81.99
+    },
+    {
+     "ticker": "BKNG",
+     "entry": 148.13
+    },
+    {
+     "ticker": "PYPL",
+     "entry": 57.01
+    }
+   ]
+  }
+ }
+}
