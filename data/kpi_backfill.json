@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "STE",
-  "WDAY",
-  "BR",
-  "MSI",
-  "BKR",
   "RSG",
   "WAB",
   "MRVL",
@@ -84,7 +79,12 @@
   "SYK",
   "CMG",
   "KLAC",
-  "CME"
+  "CME",
+  "STE",
+  "WDAY",
+  "BR",
+  "MSI",
+  "BKR"
  ],
  "notes": {
   "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
@@ -146,6 +146,11 @@
   "SYK": "Q4'25-Q3'26 filled from Stryker release PDFs. Releases do not state year-earlier organic growth (total or segment), so Q4'24-Q3'25 organic KPIs not filled; adjusted operating margin has all 8 quarters ('Adjusted percent net sales' reconciliation line). Segment named 'Orthopaedics'.",
   "CMG": "All 4 KPIs for Q4'24-Q3'26. New restaurants = company-owned openings only (partner-operated international excluded). Q1'26 margin is unadjusted 23.3% (release headlines adjusted 23.7% excl. $11.9M labor legal accrual). Q3'26 source is a Finviz copy of the release (sec.gov refused).",
   "KLAC": "All 4 KPIs for Q2 FY25-Q1 FY27, all computed from GAAP release tables (no stated %). Operating income = revenue - COGS - R&D - SG&A - impairment; Q2 FY25 operating margin 32.6% includes $239.1M impairment. Sources mostly finviz/edgar.tools copies of the releases (sec.gov blocked).",
-  "CME": "All 4 KPIs for Q4'24-Q3'26. Growth rates computed from income-statement $ (current vs year-earlier quarter; market data 20% also stated Q2/Q3'26). ADV from release 5-quarter table (thousands/1000); Q4'24-Q3'25 ADV cited to later release tables."
+  "CME": "All 4 KPIs for Q4'24-Q3'26. Growth rates computed from income-statement $ (current vs year-earlier quarter; market data 20% also stated Q2/Q3'26). ADV from release 5-quarter table (thousands/1000); Q4'24-Q3'25 ADV cited to later release tables.",
+  "STE": "Q2 FY26-Q1 FY27 filled (Q2 FY27 not yet reported on 2 Nov 2026; due 5 Nov). Organic cc growth non-GAAP (continuing ops through Q4 FY26). Healthcare/AST growth = whole-number % stated in release (table precision in quotes). Year-earlier growth rates not stated in releases, so growth KPIs have 4 quarters; backlog = total backlog (continuing ops), 8 quarters from release comparison columns.",
+  "WDAY": "Q3 FY25-Q2 FY27 filled, all 4 KPIs x 8 quarters, each from that quarter's own release (later releases don't restate year-earlier backlog). Q3 FY26 cRPO includes Paradox acquisition.",
+  "BR": "Q1-Q4 FY26 filled (Q1 FY27 not yet reported on 2 Nov 2026; due 3 Nov), plus FY25 year-earlier columns for closed sales, adjusted operating margin, event-driven revenue (8 quarters). Recurring revenue cc growth only stated for current quarter, so FY25 not filled. Closed sales from 'Select Operating Metrics' ($M -> $B).",
+  "MSI": "Q3 2025-Q2 2026 filled (Q3 2026 due 4 Nov 2026). Year-earlier backlog not filled (releases give only rounded increase); year-earlier segment growth rates not stated. Non-GAAP op margin 8 quarters. Q2 2026 margin 32.9% includes one-time IEEPA tariff refund (~190bp, per third-party report).",
+  "BKR": "Q4 2025-Q3 2026 plus year-earlier: orders and IET orders 8 quarters. RPO Q4'25-Q3'26 stated; Q3'25 derived from Q4'25 release ('up $0.6B sequentially'); Q4'24-Q2'25 RPO not filled. Company-wide adjusted EBITDA margin not reported as a %: computed as adjusted EBITDA / revenue (8 quarters)."
  }
 }

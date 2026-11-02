@@ -15262,6 +15262,1088 @@
      "added": "2026-11-02"
     }
    ]
+  },
+  "STE": {
+   "constant_currency_organic_revenue_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q2 FY26",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000175789825000011/ste9302025ex991.htm",
+     "quote": "Constant currency organic revenue growth from continuing operations for the second quarter was 9%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026005473/ste12312025ex991.htm",
+     "quote": "Constant currency organic revenue growth from continuing operations for the third quarter was 8%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026033580/ste03312026ex991.htm",
+     "quote": "Constant currency organic revenue growth from continuing operations grew 5% in the fourth quarter.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
+     "quote": "Constant currency organic revenue growth was 6% in the first quarter.",
+     "added": "2026-11-02"
+    }
+   ],
+   "healthcare_segment_revenue_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q2 FY26",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000175789825000011/ste9302025ex991.htm",
+     "quote": "revenue as reported grew 9% in the second quarter to $1,033.8 million compared with $944.2 million ... in the second quarter of fiscal 2025. (1,033.8/944.2 - 1 = 9.5%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026005473/ste12312025ex991.htm",
+     "quote": "revenue as reported grew 9% in the third quarter to $1.1 billion ... compared with $976.0 million in the third quarter of fiscal 2025. (segment table: 1,063.8/976.0 - 1 = 9.0%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026033580/ste03312026ex991.htm",
+     "quote": "Healthcare revenue as reported grew 7% in the fourth quarter to $1.14 billion (segment table: Healthcare $1,136.3 vs $1,057.2; 1,136.3/1,057.2 - 1 = 7.5%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
+     "quote": "Healthcare revenue as reported grew 8% in the first quarter to $1.05 billion (segment table: Healthcare $1,048.3 vs $974.7; 1,048.3/974.7 - 1 = 7.6%)",
+     "added": "2026-11-02"
+    }
+   ],
+   "applied_sterilization_technologies_revenue_growt": [
+    {
+     "period": "2025-09-30",
+     "label": "Q2 FY26",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000175789825000011/ste9302025ex991.htm",
+     "quote": "increased 10% as reported to $281.5 million compared with $256.7 million in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026005473/ste12312025ex991.htm",
+     "quote": "increased 11% as reported to $286.6 million compared with $258.1 million in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026033580/ste03312026ex991.htm",
+     "quote": "Fiscal 2026 fourth quarter revenue for Applied Sterilization Technologies (AST) increased 6% as reported to $289.2 million (vs $273.9 million; 289.2/273.9 - 1 = 5.6%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
+     "quote": "Fiscal 2027 first quarter revenue for Applied Sterilization Technologies (AST) increased 6% as reported to $297.6 million (vs $281.2 million; 297.6/281.2 - 1 = 5.8%)",
+     "added": "2026-11-02"
+    }
+   ],
+   "backlog": [
+    {
+     "period": "2024-09-30",
+     "label": "Q2 FY25",
+     "value": 0.4809,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000175789825000011/ste9302025ex991.htm",
+     "quote": "Total Backlog - Continuing Operations: Q2 FY2025 480.9 (Healthcare 405.3; Life Sciences 75.6)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q3 FY25",
+     "value": 0.52,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026005473/ste12312025ex991.htm",
+     "quote": "Total Backlog - Continuing Operations: Dec 31, 2024 $520.0 (Healthcare $434.9; Life Sciences $85.1)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q4 FY25",
+     "value": 0.4529,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026033580/ste03312026ex991.htm",
+     "quote": "Backlog March 31, 2025: Healthcare $369.2; Life Sciences $83.7; Total (Continuing Operations) $452.9",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q1 FY26",
+     "value": 0.5145,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
+     "quote": "Backlog ($ millions): Healthcare $403.5 / Life Sciences 111.0 / Total $514.5 (Q1 FY2026)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q2 FY26",
+     "value": 0.5413,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000175789825000011/ste9302025ex991.htm",
+     "quote": "Total Backlog - Continuing Operations: Q2 FY2026 541.3 (Healthcare 427.5; Life Sciences 113.7)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 0.5423,
+     "source": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026005473/ste12312025ex991.htm",
+     "quote": "Total Backlog - Continuing Operations: Dec 31, 2025 $542.3 (Healthcare $429.0; Life Sciences $113.4)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 0.4907,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026033580/ste03312026ex991.htm",
+     "quote": "Backlog March 31, 2026: Healthcare $392.1; Life Sciences $98.7; Total (Continuing Operations) $490.7",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 0.5539,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
+     "quote": "Backlog ($ millions): Healthcare $444.0 / Life Sciences 109.9 / Total $553.9 (Q1 FY2027)",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "WDAY": {
+   "subscription_revenue_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 15.8,
+     "source": "https://newsroom.workday.com/2024-11-26-Workday-Announces-Fiscal-2025-Third-Quarter-Financial-Results",
+     "quote": "Subscription revenues were $1.959 billion, an increase of 15.8% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 15.9,
+     "source": "https://newsroom.workday.com/2025-02-25-Workday-Announces-Fiscal-2025-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "Subscription revenues were $2.040 billion, an increase of 15.9% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 13.4,
+     "source": "https://newsroom.workday.com/2025-05-22-Workday-Announces-Fiscal-2026-First-Quarter-Financial-Results",
+     "quote": "Subscription revenues were $2.059 billion, an increase of 13.4% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 14.0,
+     "source": "https://newsroom.workday.com/2025-08-21-Workday-Announces-Fiscal-2026-Second-Quarter-Financial-Results?es_id=d00b1c32f3",
+     "quote": "Subscription revenues were $2.169 billion, an increase of 14.0% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 14.6,
+     "source": "https://newsroom.workday.com/2025-11-25-Workday-Announces-Fiscal-2026-Third-Quarter-Financial-Results",
+     "quote": "Subscription revenues were $2.244 billion, an increase of 14.6% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 15.7,
+     "source": "https://newsroom.workday.com/2026-02-24-Workday-Announces-Fiscal-2026-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "Subscription revenues were $2.360 billion, an increase of 15.7% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 14.3,
+     "source": "https://newsroom.workday.com/2026-05-21-Workday-Announces-Fiscal-2027-First-Quarter-Financial-Results",
+     "quote": "Subscription revenues were $2.354 billion, an increase of 14.3% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 13.9,
+     "source": "https://newsroom.workday.com/2026-08-27-Workday-Announces-Fiscal-2027-Second-Quarter-Financial-Results",
+     "quote": "Subscription revenues were $2.471 billion, an increase of 13.9% from the same period last year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "12_month_subscription_revenue_backlog_growth": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 15.3,
+     "source": "https://newsroom.workday.com/2024-11-26-Workday-Announces-Fiscal-2025-Third-Quarter-Financial-Results",
+     "quote": "12-month subscription revenue backlog was $6.98 billion, up 15.3% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 15.2,
+     "source": "https://newsroom.workday.com/2025-02-25-Workday-Announces-Fiscal-2025-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "12-month subscription revenue backlog was $7.63 billion, up 15.2% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 15.6,
+     "source": "https://newsroom.workday.com/2025-05-22-Workday-Announces-Fiscal-2026-First-Quarter-Financial-Results",
+     "quote": "12-month subscription revenue backlog was $7.63 billion, up 15.6% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 16.4,
+     "source": "https://newsroom.workday.com/2025-08-21-Workday-Announces-Fiscal-2026-Second-Quarter-Financial-Results?es_id=d00b1c32f3",
+     "quote": "12-month subscription revenue backlog was $7.91 billion, up 16.4% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 17.6,
+     "source": "https://newsroom.workday.com/2025-11-25-Workday-Announces-Fiscal-2026-Third-Quarter-Financial-Results",
+     "quote": "12-month subscription revenue backlog was $8.21 billion, up 17.6% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 15.8,
+     "source": "https://newsroom.workday.com/2026-02-24-Workday-Announces-Fiscal-2026-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "12-month subscription revenue backlog was $8.833 billion, up 15.8% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 15.5,
+     "source": "https://newsroom.workday.com/2026-05-21-Workday-Announces-Fiscal-2027-First-Quarter-Financial-Results",
+     "quote": "12-month subscription revenue backlog was $8.806 billion, up 15.5% from the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 14.2,
+     "source": "https://newsroom.workday.com/2026-08-27-Workday-Announces-Fiscal-2027-Second-Quarter-Financial-Results",
+     "quote": "12-month subscription revenue backlog was $9.034 billion, up 14.2% from the same period last year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "total_subscription_revenue_backlog": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 22.19,
+     "source": "https://newsroom.workday.com/2024-11-26-Workday-Announces-Fiscal-2025-Third-Quarter-Financial-Results",
+     "quote": "Total subscription revenue backlog was $22.19 billion, increasing 20.3% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 25.06,
+     "source": "https://newsroom.workday.com/2025-02-25-Workday-Announces-Fiscal-2025-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "Total subscription revenue backlog was $25.06 billion, increasing 19.7% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 24.62,
+     "source": "https://newsroom.workday.com/2025-05-22-Workday-Announces-Fiscal-2026-First-Quarter-Financial-Results",
+     "quote": "Total subscription revenue backlog was $24.62 billion, increasing 19.1% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 25.37,
+     "source": "https://newsroom.workday.com/2025-08-21-Workday-Announces-Fiscal-2026-Second-Quarter-Financial-Results?es_id=d00b1c32f3",
+     "quote": "Total subscription revenue backlog was $25.37 billion, increasing 17.6% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 25.96,
+     "source": "https://newsroom.workday.com/2025-11-25-Workday-Announces-Fiscal-2026-Third-Quarter-Financial-Results",
+     "quote": "Total subscription revenue backlog was $25.96 billion, increasing 17.0% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 28.101,
+     "source": "https://newsroom.workday.com/2026-02-24-Workday-Announces-Fiscal-2026-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "Total subscription revenue backlog was $28.101 billion, increasing 12.2% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 27.294,
+     "source": "https://newsroom.workday.com/2026-05-21-Workday-Announces-Fiscal-2027-First-Quarter-Financial-Results",
+     "quote": "Total subscription revenue backlog was $27.294 billion, increasing 10.9% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 27.403,
+     "source": "https://newsroom.workday.com/2026-08-27-Workday-Announces-Fiscal-2027-Second-Quarter-Financial-Results",
+     "quote": "Total subscription revenue backlog was $27.403 billion, increasing 8.0% year-over-year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "non_gaap_operating_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 26.3,
+     "source": "https://newsroom.workday.com/2024-11-26-Workday-Announces-Fiscal-2025-Third-Quarter-Financial-Results",
+     "quote": "Non-GAAP operating income for the third quarter was $569 million, or 26.3% of revenues, compared to a non-GAAP operating income of $462 million, or 24.8% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 26.4,
+     "source": "https://newsroom.workday.com/2025-02-25-Workday-Announces-Fiscal-2025-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "Non-GAAP operating income for the fourth quarter was $584 million, or 26.4% of revenues, compared to a non-GAAP operating income of $462 million, or 24.0% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 30.2,
+     "source": "https://newsroom.workday.com/2025-05-22-Workday-Announces-Fiscal-2026-First-Quarter-Financial-Results",
+     "quote": "Non-GAAP operating income for the first quarter was $677 million, or 30.2% of revenues, compared to a non-GAAP operating income of $515 million, or 25.9% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 29.0,
+     "source": "https://newsroom.workday.com/2025-08-21-Workday-Announces-Fiscal-2026-Second-Quarter-Financial-Results?es_id=d00b1c32f3",
+     "quote": "Non-GAAP operating income for the second quarter was $680 million, or 29.0% of revenues, compared to a non-GAAP operating income of $518 million, or 24.9% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 28.5,
+     "source": "https://newsroom.workday.com/2025-11-25-Workday-Announces-Fiscal-2026-Third-Quarter-Financial-Results",
+     "quote": "Non-GAAP operating income for the third quarter was $692 million, or 28.5% of revenues, compared to a non-GAAP operating income of $569 million, or 26.3% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 30.6,
+     "source": "https://newsroom.workday.com/2026-02-24-Workday-Announces-Fiscal-2026-Fourth-Quarter-and-Full-Year-Financial-Results",
+     "quote": "Non-GAAP operating income for the fourth quarter was $774 million, or 30.6% of revenues, compared to a non-GAAP operating income of $584 million, or 26.4% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 31.8,
+     "source": "https://newsroom.workday.com/2026-05-21-Workday-Announces-Fiscal-2027-First-Quarter-Financial-Results",
+     "quote": "Non-GAAP operating income for the first quarter was $809 million, or 31.8% of revenues, compared to a non-GAAP operating income of $677 million, or 30.2% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 31.1,
+     "source": "https://newsroom.workday.com/2026-08-27-Workday-Announces-Fiscal-2027-Second-Quarter-Financial-Results",
+     "quote": "Non-GAAP operating income for the second quarter was $824 million, or 31.1% of revenues, compared to a non-GAAP operating income of $680 million, or 29.0% of revenues, in the same period last year.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "BR": {
+   "recurring_revenue_growth_constant_currency": [
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331225000032/ex991earningsrelease1q2026.htm",
+     "quote": "Recurring revenue growth constant currency (Non-GAAP) was 8%, driven by organic growth and acquisitions in ICS and GTO.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000005/ex991earningsrelease2q2026.htm",
+     "quote": "Recurring revenue growth constant currency (Non-GAAP) was 8%, driven by organic growth and acquisitions in ICS and GTO.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000013/ex991earningsrelease3q2026.htm",
+     "quote": "Recurring revenue growth constant currency (Non-GAAP) was 6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
+     "quote": "Recurring revenue growth constant currency (Non-GAAP) was 8%",
+     "added": "2026-11-02"
+    }
+   ],
+   "closed_sales": [
+    {
+     "period": "2024-09-30",
+     "label": "Q1 FY25",
+     "value": 0.0575,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331225000032/ex991earningsrelease1q2026.htm",
+     "quote": "Closed sales (a) | $32.5 | $57.5 | (43%) ($ millions, three months ended; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 0.0457,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000005/ex991earningsrelease2q2026.htm",
+     "quote": "Closed sales (a) | 56.8 | 45.7 | 24 % ($ millions, three months ended; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 0.0712,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000013/ex991earningsrelease3q2026.htm",
+     "quote": "Closed sales (a) | $57.5 | $71.2 | (19%) | $146.8 | $174.3 | (16%) ($ millions, three months ended; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 0.1135,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
+     "quote": "Closed sales (a) | $158.3 | $113.5 | 39% | $305.1 | $287.9 | 6% ($ millions, three months ended; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 0.0325,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331225000032/ex991earningsrelease1q2026.htm",
+     "quote": "Closed sales (a) | $32.5 | $57.5 | (43%) ($ millions, three months ended)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 0.0568,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000005/ex991earningsrelease2q2026.htm",
+     "quote": "Closed sales (a) | 56.8 | 45.7 | 24 % ($ millions, three months ended)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 0.0575,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000013/ex991earningsrelease3q2026.htm",
+     "quote": "Closed sales (a) | $57.5 | $71.2 | (19%) | $146.8 | $174.3 | (16%) ($ millions, three months ended)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 0.1583,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
+     "quote": "Closed sales (a) | $158.3 | $113.5 | 39% | $305.1 | $287.9 | 6% ($ millions, three months ended)",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q1 FY25",
+     "value": 13.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331225000032/ex991earningsrelease1q2026.htm",
+     "quote": "Adjusted Operating income margin was 15.8% compared to 13.0% for the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 16.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000005/ex991earningsrelease2q2026.htm",
+     "quote": "Adjusted Operating income margin was 15.5% compared to 16.6% for the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 22.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000013/ex991earningsrelease3q2026.htm",
+     "quote": "Adjusted Operating income margin was 21.5% compared to 22.4% for the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 27.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
+     "quote": "Adjusted Operating income margin was 26.9% compared to 27.0% for the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 15.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331225000032/ex991earningsrelease1q2026.htm",
+     "quote": "Adjusted Operating income margin was 15.8% compared to 13.0% for the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 15.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000005/ex991earningsrelease2q2026.htm",
+     "quote": "Adjusted Operating income margin was 15.5% compared to 16.6% for the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 21.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000013/ex991earningsrelease3q2026.htm",
+     "quote": "Adjusted Operating income margin was 21.5% compared to 22.4% for the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 26.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
+     "quote": "Adjusted Operating income margin was 26.9% compared to 27.0% for the prior year period.",
+     "added": "2026-11-02"
+    }
+   ],
+   "event_driven_revenue": [
+    {
+     "period": "2024-09-30",
+     "label": "Q1 FY25",
+     "value": 0.063,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331225000032/ex991earningsrelease1q2026.htm",
+     "quote": "Total ICS Event-driven revenues | 113.8 | 63.0 | 81% ($ millions, three months ended); prior-year column",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 0.1246,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000005/ex991earningsrelease2q2026.htm",
+     "quote": "Event-driven revenues | 90.6 | 124.6 | (27 %) ($ millions, three months ended); prior-year column",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 0.0527,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000013/ex991earningsrelease3q2026.htm",
+     "quote": "Event-driven revenues | 72.7 | 52.7 | 38% | 277.0 | 240.3 | 15% ($ millions, three months ended); prior-year column",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 0.0789,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
+     "quote": "Event-driven revenues | 71.1 | 78.9 | (10%) | 348.1 | 319.3 | 9% ($ millions, three months ended); prior-year column",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 0.1138,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331225000032/ex991earningsrelease1q2026.htm",
+     "quote": "Total ICS Event-driven revenues | 113.8 | 63.0 | 81% ($ millions, three months ended)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 0.0906,
+     "source": "https://www.sec.gov/Archives/edgar/data/1383312/000138331226000005/ex991earningsrelease2q2026.htm",
+     "quote": "Event-driven revenues | 90.6 | 124.6 | (27 %) ($ millions, three months ended)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 0.0727,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000013/ex991earningsrelease3q2026.htm",
+     "quote": "Event-driven revenues | 72.7 | 52.7 | 38% | 277.0 | 240.3 | 15% ($ millions, three months ended)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 0.0711,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
+     "quote": "Event-driven revenues | 71.1 | 78.9 | (10%) | 348.1 | 319.3 | 9% ($ millions, three months ended)",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "MSI": {
+   "ending_backlog": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 14.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850525000050/msiq32025pressrelease.htm",
+     "quote": "record Q3 backlog of $14.6 billion, up 3% or $467 million from the year-ago quarter",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 15.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000006/msiq42025pressrelease.htm",
+     "quote": "Record ending backlog of $15.7 billion, up $1 billion versus the prior year, driven by record orders",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 15.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000018/msiq12026pressrelease.htm",
+     "quote": "ended the quarter with record Q1 backlog of $15.7 billion, up 11% or $1.6 billion from the year-ago quarter",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 15.6,
+     "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
+     "quote": "The company ended the quarter with record Q2 backlog of $15.6 billion, up 11% or $1.5 billion from the year-ago quarter",
+     "added": "2026-11-02"
+    }
+   ],
+   "software_services_revenue_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850525000050/msiq32025pressrelease.htm",
+     "quote": "The Software and Services segment grew 11% driven by growth in MCN, Command Center and Video. | Sales | $1,112 | $1,006 | 11 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 15,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000006/msiq42025pressrelease.htm",
+     "quote": "The Software and Services segment grew 15% driven by growth in all three technologies. | Software and Services Segment | Sales | $1,222 | $1,061 | 15%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000018/msiq12026pressrelease.htm",
+     "quote": "The Software and Services segment grew 18% driven by growth in MCN, Command Center and Video.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10,
+     "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
+     "quote": "The Software and Services segment grew 10% driven by growth in MCN, Command Center and Video.",
+     "added": "2026-11-02"
+    }
+   ],
+   "products_systems_integration_revenue_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850525000050/msiq32025pressrelease.htm",
+     "quote": "The Products and Systems Integration segment grew 6% driven by growth in Mission Critical Networks | Sales | $1,897 | $1,784 | 6 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000006/msiq42025pressrelease.htm",
+     "quote": "The Products and Systems Integration segment grew 11% | Products and Systems Integration Segment | Sales | $2,158 | $1,949 | 11%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000018/msiq12026pressrelease.htm",
+     "quote": "The Products and Systems Integration segment grew 1% driven by growth in Video Security and Access Control",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 15,
+     "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
+     "quote": "The Products and Systems Integration segment grew 15% driven by growth in Mission Critical Networks",
+     "added": "2026-11-02"
+    }
+   ],
+   "non_gaap_operating_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 29.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850525000050/msiq32025pressrelease.htm",
+     "quote": "Non-GAAP operating margin was 30.5% of sales, up 80 basis points from 29.7% in the year-ago quarter.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 30.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000006/msiq42025pressrelease.htm",
+     "quote": "non-GAAP operating margin was 32.1% of sales, up from 30.4% in the year-ago quarter",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 28.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000018/msiq12026pressrelease.htm",
+     "quote": "Non-GAAP operating margin was 28.8% of sales, up 50 basis points from 28.3% in the year-ago quarter.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 29.6,
+     "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
+     "quote": "Non-GAAP operating margin was 32.9% of sales, up 330 basis points from 29.6% a year ago.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 30.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850525000050/msiq32025pressrelease.htm",
+     "quote": "Non-GAAP operating margin was 30.5% of sales, up 80 basis points from 29.7% in the year-ago quarter.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 32.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000006/msiq42025pressrelease.htm",
+     "quote": "non-GAAP operating margin was 32.1% of sales, up from 30.4% in the year-ago quarter",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 28.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000018/msiq12026pressrelease.htm",
+     "quote": "Non-GAAP operating margin was 28.8% of sales, up 50 basis points from 28.3% in the year-ago quarter.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32.9,
+     "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
+     "quote": "Non-GAAP operating margin was 32.9% of sales, up 330 basis points from 29.6% a year ago.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "BKR": {
+   "total_orders": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 7.496,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "(in millions) | December 31, 2025 | September 30, 2025 | December 31, 2024\nOrders | 7,886 | 8,207 | 7,496",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 6.459,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000012/earningsreleaseex991033120.htm",
+     "quote": "(in millions) | March 31, 2026 | December 31, 2025 | March 31, 2025 | Sequential | Year-over-year\nOrders | $8,159 | $7,886 | $6,459 | 3% | 26%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7.032,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000021/earningsreleaseex991063020.htm",
+     "quote": "(in millions) | June 30, 2026 | March 31, 2026 | June 30, 2025 | Sequential | Year-over-year\nOrders | $10,501 | $8,159 | $7,032 | 29% | 49%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8.207,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000033/earningsreleaseex991093020.htm",
+     "quote": "(in millions) | September 30, 2026 | June 30, 2026 | September 30, 2025 | Sequential | Year-over-year\nOrders | $10,764 | $10,501 | $8,207 | 2% | 31%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7.886,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "(in millions) | December 31, 2025 | September 30, 2025 | December 31, 2024\nOrders | 7,886 | 8,207 | 7,496",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 8.159,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000012/earningsreleaseex991033120.htm",
+     "quote": "(in millions) | March 31, 2026 | December 31, 2025 | March 31, 2025 | Sequential | Year-over-year\nOrders | $8,159 | $7,886 | $6,459 | 3% | 26%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10.501,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000021/earningsreleaseex991063020.htm",
+     "quote": "(in millions) | June 30, 2026 | March 31, 2026 | June 30, 2025 | Sequential | Year-over-year\nOrders | $10,501 | $8,159 | $7,032 | 29% | 49%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10.764,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000033/earningsreleaseex991093020.htm",
+     "quote": "(in millions) | September 30, 2026 | June 30, 2026 | September 30, 2025 | Sequential | Year-over-year\nOrders | $10,764 | $10,501 | $8,207 | 2% | 31%",
+     "added": "2026-11-02"
+    }
+   ],
+   "industrial_energy_technology_orders": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 3.756,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "IET segment results (in millions) | December 31, 2025 | September 30, 2025 | December 31, 2024\nOrders | 4,024 | 4,139 | 3,756",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 3.178,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000012/earningsreleaseex991033120.htm",
+     "quote": "IET segment results (in millions) | March 31, 2026 | December 31, 2025 | March 31, 2025 | Sequential | Year-over-year\nOrders | $4,887 | $4,024 | $3,178 | 21% | 54%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 3.53,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000021/earningsreleaseex991063020.htm",
+     "quote": "IET segment results (in millions) | June 30, 2026 | March 31, 2026 | June 30, 2025 | Sequential | Year-over-year\nOrders | $7,088 | $4,887 | $3,530 | 45% | F",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 4.139,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000033/earningsreleaseex991093020.htm",
+     "quote": "IET segment results (in millions) | September 30, 2026 | June 30, 2026 | September 30, 2025 | Sequential | Year-over-year\nOrders | $5,886 | $7,088 | $4,139 | (17%) | 42%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 4.024,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "IET segment results (in millions) | December 31, 2025 | September 30, 2025 | December 31, 2024\nOrders | 4,024 | 4,139 | 3,756",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4.887,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000012/earningsreleaseex991033120.htm",
+     "quote": "IET segment results (in millions) | March 31, 2026 | December 31, 2025 | March 31, 2025 | Sequential | Year-over-year\nOrders | $4,887 | $4,024 | $3,178 | 21% | 54%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 7.088,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000021/earningsreleaseex991063020.htm",
+     "quote": "IET segment results (in millions) | June 30, 2026 | March 31, 2026 | June 30, 2025 | Sequential | Year-over-year\nOrders | $7,088 | $4,887 | $3,530 | 45% | F",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5.886,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000033/earningsreleaseex991093020.htm",
+     "quote": "IET segment results (in millions) | September 30, 2026 | June 30, 2026 | September 30, 2025 | Sequential | Year-over-year\nOrders | $5,886 | $7,088 | $4,139 | (17%) | 42%",
+     "added": "2026-11-02"
+    }
+   ],
+   "remaining_performance_obligations": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 35.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "Remaining Performance Obligations (\"RPO\") in the fourth quarter of 2025 ended at $35.9 billion, an increase of $0.6 billion from the third quarter of 2025. Derived Q3 2025 RPO = 35.9 - 0.6 = 35.3",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 35.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "Remaining Performance Obligations (\"RPO\") in the fourth quarter of 2025 ended at $35.9 billion, an increase of $0.6 billion from the third quarter of 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 36.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000012/earningsreleaseex991033120.htm",
+     "quote": "RPO ... ended at $36.1 billion, an increase of $0.2 billion from the fourth quarter of 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 40.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000021/earningsreleaseex991063020.htm",
+     "quote": "Remaining Performance Obligations (\"RPO\") in the second quarter of 2026 ended at $40.1 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 46.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000033/earningsreleaseex991093020.htm",
+     "quote": "Remaining Performance Obligations (\"RPO\") in the third quarter of 2026 ended at $46.4 billion, an increase of $6.4 billion from the second quarter of 2026.",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 17.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "(in millions) | December 31, 2025 | September 30, 2025 | December 31, 2024\nRevenue | 7,386 | 7,010 | 7,364; Adjusted EBITDA | 1,337 | 1,238 | 1,310. Q4 2024: adjusted EBITDA margin = 1,310 / 7,364 = 17.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 16.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000012/earningsreleaseex991033120.htm",
+     "quote": "(in millions) | March 31, 2026 | December 31, 2025 | March 31, 2025 | Sequential | Year-over-year\nRevenue | 6,587 | 7,386 | 6,427 ...; Adjusted EBITDA* | 1,158 | 1,337 | 1,037. Q1 2025: adjusted EBITDA margin = 1,037 / 6,427 = 16.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000021/earningsreleaseex991063020.htm",
+     "quote": "(in millions) | June 30, 2026 | March 31, 2026 | June 30, 2025 | Sequential | Year-over-year\nRevenue | 6,742 | 6,587 | 6,910 ...; Adjusted EBITDA* | 1,231 | 1,158 | 1,212. Q2 2025: adjusted EBITDA margin = 1,212 / 6,910 = 17.5%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 17.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000033/earningsreleaseex991093020.htm",
+     "quote": "(in millions) | September 30, 2026 | June 30, 2026 | September 30, 2025 | Sequential | Year-over-year\nRevenue | 8,025 | 6,742 | 7,010 ...; Adjusted EBITDA* | 1,415 | 1,231 | 1,238. Q3 2025: adjusted EBITDA margin = 1,238 / 7,010 = 17.7%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 18.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000003/earningsreleaseex991123120.htm",
+     "quote": "(in millions) | December 31, 2025 | September 30, 2025 | December 31, 2024\nRevenue | 7,386 | 7,010 | 7,364; Adjusted EBITDA | 1,337 | 1,238 | 1,310. Q4 2025: adjusted EBITDA margin = 1,337 / 7,386 = 18.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 17.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000012/earningsreleaseex991033120.htm",
+     "quote": "(in millions) | March 31, 2026 | December 31, 2025 | March 31, 2025 | Sequential | Year-over-year\nRevenue | 6,587 | 7,386 | 6,427 ...; Adjusted EBITDA* | 1,158 | 1,337 | 1,037. Q1 2026: adjusted EBITDA margin = 1,158 / 6,587 = 17.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 18.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000021/earningsreleaseex991063020.htm",
+     "quote": "(in millions) | June 30, 2026 | March 31, 2026 | June 30, 2025 | Sequential | Year-over-year\nRevenue | 6,742 | 6,587 | 6,910 ...; Adjusted EBITDA* | 1,231 | 1,158 | 1,212. Q2 2026: adjusted EBITDA margin = 1,231 / 6,742 = 18.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 17.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001701605/000170160526000033/earningsreleaseex991093020.htm",
+     "quote": "(in millions) | September 30, 2026 | June 30, 2026 | September 30, 2025 | Sequential | Year-over-year\nRevenue | 8,025 | 6,742 | 7,010 ...; Adjusted EBITDA* | 1,415 | 1,231 | 1,238. Q3 2026: adjusted EBITDA margin = 1,415 / 8,025 = 17.6%",
+     "added": "2026-11-02"
+    }
+   ]
   }
  }
 }
