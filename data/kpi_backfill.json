@@ -1,9 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
- "todo": [
-  "NRG",
-  "FIS"
- ],
+ "todo": [],
  "done": [
   "GOOGL",
   "AMZN",
@@ -84,7 +81,9 @@
   "ZTS",
   "MO",
   "HAS",
-  "BMY"
+  "BMY",
+  "NRG",
+  "FIS"
  ],
  "notes": {
   "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
@@ -166,6 +165,8 @@
   "ZTS": "Q3 2026 not yet reported (due Nov 5, 2026): Q3 2024-Q2 2026. Segment and Simparica growth = reported (incl. FX). Simparica from slide reconciliation tables; Q3 2025 computed from call transcripts (356/333). Not disclosed: Q3 2024 organic operational growth (release gives only operational 14%); Q1 2025 and Q3 2024 Simparica reported growth (only operational stated).",
   "MO": "Q4 2024-Q3 2026, all KPIs. Shipment volume = reported domestic cigarette shipment volume % change; on! growth = Table 6 % change; Q4 2025 adj. EPS 'unchanged at $1.30' (base restated from $1.29).",
   "HAS": "Q4 2024-Q3 2026, all KPIs. Adj. op margin from Total Company non-GAAP reconciliation (Q4 2024 stated in text); inventory growth computed from balance-sheet inventories except Q4 2024 ('owned inventory down 17%'); Q1 2026 Consumer Products 'flat' = 0.",
-  "BMY": "Q4 2024-Q3 2026, all KPIs, reported (not ex-FX) YoY %. Eliquis/Opdivo from release product revenue tables; Q3 2026 from results slides, Legacy +1% from CFO on call (sec.gov blocked Q3 Ex. 99.1)."
+  "BMY": "Q4 2024-Q3 2026, all KPIs, reported (not ex-FX) YoY %. Eliquis/Opdivo from release product revenue tables; Q3 2026 from results slides, Legacy +1% from CFO on call (sec.gov blocked Q3 Ex. 99.1).",
+  "NRG": "Q3 2024-Q2 2026 filled for adjusted EBITDA and FCF before growth (three-month figures, Table 1 of the earnings releases). Net debt / adjusted EBITDA not disclosed: releases state no ratio or net debt figure. Home retail customers not added: filings only say 'approximately 8 million residential customers (6 million retail energy, 2 million smart home)', a rounded total incl. smart home, unchanged every quarter. Q3 2026 due 2026-11-09.",
+  "FIS": "Q3 2024-Q2 2026 filled for all 4 KPIs. Segment growth = GAAP reported; Banking Solutions jumps to 45%/44% in Q1/Q2 2026 because of the Issuer Solutions acquisition (pro forma 7.7%/6.1%), and Q1 2025 Banking revenue was restated. Recurring revenue growth is adjusted basis to Q4 2025, Pro Forma basis (incl. Issuer Solutions both years) from Q1 2026. Q3 2026 due 2026-11-04."
  }
 }

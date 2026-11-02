@@ -20248,6 +20248,406 @@
      "added": "2026-11-02"
     }
    ]
+  },
+  "NRG": {
+   "adjusted_ebitda": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 1.055,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387125000023/nrgq32025ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 9/30/2025 | 9/30/2024: Adjusted EBITDA | $1,205 | $1,055",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.902,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000002/ex991-q42025.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 12/31/25 | 12/31/24 | Twelve Months: Adjusted EBITDAa | $847 | $902 | $4,087 | $3,789",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 1.126,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000010/nrgq12026ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 3/31/2026 | 3/31/2025: Adjusted EBITDAa | $1,080 | $1,126",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.909,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm",
+     "quote": "Table 1 (In millions) | 6/30/2026 | 6/30/2025 (three months) | 6/30/2026 | 6/30/2025 (six months): Adjusted EBITDAa | $1,217 | $909 | $2,297 | $2,035",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.205,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387125000023/nrgq32025ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 9/30/2025 | 9/30/2024: Adjusted EBITDA | $1,205 | $1,055",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.847,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000002/ex991-q42025.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 12/31/25 | 12/31/24 | Twelve Months: Adjusted EBITDAa | $847 | $902 | $4,087 | $3,789",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1.08,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000010/nrgq12026ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 3/31/2026 | 3/31/2025: Adjusted EBITDAa | $1,080 | $1,126",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.217,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm",
+     "quote": "Table 1 (In millions) | 6/30/2026 | 6/30/2025 (three months) | 6/30/2026 | 6/30/2025 (six months): Adjusted EBITDAa | $1,217 | $909 | $2,297 | $2,035",
+     "added": "2026-11-02"
+    }
+   ],
+   "free_cash_flow_before_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 0.815,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387125000023/nrgq32025ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 9/30/2025 | 9/30/2024: Free Cash Flow Before Growth Investments (FCFbG) | $828 | $815",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.624,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000002/ex991-q42025.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 12/31/25 | 12/31/24 | Twelve Months: Free Cash Flow Before Growth Investments (FCFbG)a | $175 | $624 | $2,210 | $2,062",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.293,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000010/nrgq12026ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 3/31/2026 | 3/31/2025: Free Cash Flow Before Growth Investments (FCFbG)a | $(66) | $293",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.914,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm",
+     "quote": "Table 1 (In millions) | 6/30/2026 | 6/30/2025 (three months) | 6/30/2026 | 6/30/2025 (six months): Free Cash Flow Before Growth Investments (FCFbG)a | $1,025 | $914 | $959 | $1,207",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.828,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387125000023/nrgq32025ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 9/30/2025 | 9/30/2024: Free Cash Flow Before Growth Investments (FCFbG) | $828 | $815",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.175,
+     "source": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000002/ex991-q42025.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 12/31/25 | 12/31/24 | Twelve Months: Free Cash Flow Before Growth Investments (FCFbG)a | $175 | $624 | $2,210 | $2,062",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -0.066,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000010/nrgq12026ex991.htm",
+     "quote": "Table 1 (In millions), Three Months Ended 3/31/2026 | 3/31/2025: Free Cash Flow Before Growth Investments (FCFbG)a | $(66) | $293",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.025,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm",
+     "quote": "Table 1 (In millions) | 6/30/2026 | 6/30/2025 (three months) | 6/30/2026 | 6/30/2025 (six months): Free Cash Flow Before Growth Investments (FCFbG)a | $1,025 | $914 | $959 | $1,207",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "FIS": {
+   "banking_solutions_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689324000133/q32024ex991.htm",
+     "quote": "Third quarter revenue increased 3% on a GAAP basis and 3% on an adjusted basis ... Banking Solutions Revenue 1,779 1,732 3% 3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000010/q42024ex991.htm",
+     "quote": "Fourth quarter revenue increased 1% on a GAAP basis and 2% on an adjusted basis ... Banking Solutions Revenue $ 1,717 $ 1,694 1% 2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000053/q12025ex991.htm",
+     "quote": "First quarter revenue increased 2% on a GAAP basis and 2% on an adjusted basis as compared to the prior-year period ... Banking Solutions Revenue 1,718 1,685 2% 2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000115/q22025ex991.htm",
+     "quote": "Second quarter revenue increased 6% on a GAAP basis and 6% on an adjusted basis ... Banking Solutions Revenue 1,808 1,711 6% 6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 6,
+     "source": "https://www.businesswire.com/news/home/20251105537304/en",
+     "quote": "Third quarter revenue increased 6% on a GAAP basis and 6% on an adjusted basis as compared to the prior-year period to $1.9 billion, including recurring revenue growth of 6%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 9,
+     "source": "https://www.businesswire.com/news/home/20260224901786/en",
+     "quote": "Fourth quarter revenue increased 9% on a GAAP basis and 8% on an adjusted basis ... Banking Solutions Revenue $ 1,866 $ 1,717 9% 8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 45,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000038/q12026ex991.htm",
+     "quote": "revenue increased 45% on a GAAP basis and 44% on an adjusted basis as compared to the prior-year period ... Banking Solutions Revenue | 2,374 | 1,633 | 45% | 44% | 7.7% (Pro Forma growth 7.7%; includes acquired Issuer Solutions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 44,
+     "source": "https://www.businesswire.com/news/home/20260804945638/en/",
+     "quote": "Second quarter revenue increased 44% on a GAAP basis and adjusted basis as compared to the prior-year period to $2.5 billion. ... On a Pro Forma basis, revenue increased 6.1% as compared to the prior-year period",
+     "added": "2026-11-02"
+    }
+   ],
+   "capital_market_solutions_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689324000133/q32024ex991.htm",
+     "quote": "Third quarter revenue increased by 8% on a GAAP basis and 7% on an adjusted basis ... Capital Market Solutions Revenue 730 677 8% 7%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000010/q42024ex991.htm",
+     "quote": "Fourth quarter revenue increased by 9% on a GAAP basis and 9% on an adjusted basis ... Capital Market Solutions Revenue 821 755 9% 9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000053/q12025ex991.htm",
+     "quote": "First quarter revenue increased by 8% on a GAAP basis and 9% on an adjusted basis as compared to the prior-year period ... Capital Market Solutions Revenue 764 706 8% 9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000115/q22025ex991.htm",
+     "quote": "Second quarter revenue increased by 6% on a GAAP basis and 5% on an adjusted basis ... Capital Market Solutions Revenue 765 722 6% 5%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 7,
+     "source": "https://www.businesswire.com/news/home/20251105537304/en",
+     "quote": "Third quarter revenue increased by 7% on a GAAP basis and 6% on an adjusted basis as compared to the prior-year period to $783 million, reflecting recurring revenue growth of 8%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8,
+     "source": "https://www.businesswire.com/news/home/20260224901786/en",
+     "quote": "Fourth quarter revenue increased by 8% on a GAAP basis and 6% on an adjusted basis ... Capital Market Solutions Revenue 883 821 8% 6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000038/q12026ex991.htm",
+     "quote": "revenue increased by 5% on a GAAP basis and 3% on an adjusted basis as compared to the prior-year period to $823 million ... Capital Market Solutions Revenue | 823 | 787 | 5% | 3% | 2.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3.5,
+     "source": "https://www.businesswire.com/news/home/20260804945638/en/",
+     "quote": "Second quarter revenue increased by 3.5% on a GAAP basis and 3.2% on an adjusted basis ... Capital Market Solutions Revenue 810 783 3.5% 3.2% 3.2%",
+     "added": "2026-11-02"
+    }
+   ],
+   "recurring_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689324000133/q32024ex991.htm",
+     "quote": "On an adjusted basis, revenue increased 4% as compared to the prior-year period ... primarily driven by 6% adjusted recurring revenue growth.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000010/q42024ex991.htm",
+     "quote": "reflecting recurring revenue growth of 2% and non-recurring revenue growth of 7% (consolidated, adjusted basis; adjusted revenue +4%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000053/q12025ex991.htm",
+     "quote": "On an adjusted basis, revenue increased 4% as compared to the prior-year period reflecting recurring revenue growth of 4%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000115/q22025ex991.htm",
+     "quote": "On an adjusted basis, revenue increased 5% as compared to the prior-year period reflecting recurring revenue growth of 6%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 6,
+     "source": "https://www.businesswire.com/news/home/20251105537304/en",
+     "quote": "On an adjusted basis, revenue increased 6% as compared to the prior-year period reflecting recurring revenue growth of 6%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8,
+     "source": "https://www.businesswire.com/news/home/20260224901786/en",
+     "quote": "On an adjusted basis, revenue increased 7% as compared to the prior-year period, reflecting recurring revenue growth of 8%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000038/q12026ex991.htm",
+     "quote": "revenue increased 6.5% as compared to the prior-year period, including recurring revenue growth of 4.8%. (Pro Forma basis, includes Issuer Solutions in both periods)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5.1,
+     "source": "https://www.businesswire.com/news/home/20260804945638/en/",
+     "quote": "Revenue increased 29% on a GAAP basis to $3.4 billion, increasing 31% on an adjusted basis and 5.3% on a Pro Forma basis ... including recurring revenue growth of 5.1%.",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 41.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689324000133/q32024ex991.htm",
+     "quote": "Adjusted EBITDA margin contracted by 140 basis points (bps) over the prior-year period to 41.3% | Adjusted EBITDA Margin 41.3% 42.7% (140) bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 42.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000010/q42024ex991.htm",
+     "quote": "Adjusted EBITDA margin expanded by 103 basis points (bps) over the prior-year period to 42.9% | Adjusted EBITDA Margin 42.9 % 41.9 % 103 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 37.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000053/q12025ex991.htm",
+     "quote": "Adjusted EBITDA margin contracted by 142 basis points (bps) over the prior-year period to 37.8% | Adjusted EBITDA Margin 37.8 % 39.3 % (142) bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 39.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689325000115/q22025ex991.htm",
+     "quote": "Adjusted EBITDA margin was relatively flat as compared to the prior-year period at 39.8%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 41.8,
+     "source": "https://www.businesswire.com/news/home/20251105537304/en",
+     "quote": "Adjusted EBITDA margin expanded by 53 basis points (bps) over the prior-year period to 41.8% | Adjusted EBITDA Margin 41.8 % 41.3 % 53 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 42.5,
+     "source": "https://www.businesswire.com/news/home/20260224901786/en",
+     "quote": "Adjusted EBITDA margin contracted by 36 basis points (bps) compared to the prior-year period to 42.5% | Adjusted EBITDA Margin 42.5 % 42.9 % (36) bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 39.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000038/q12026ex991.htm",
+     "quote": "Adjusted EBITDA margin expanded by 176 basis points (bps) compared to the prior-year period to 39.6% | Adjusted EBITDA Margin | 39.6% | 37.8% | 176 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 41.7,
+     "source": "https://www.businesswire.com/news/home/20260804945638/en/",
+     "quote": "Adjusted EBITDA margin expanded by 193 basis points (bps) compared to the prior-year period to 41.7% | Adjusted EBITDA Margin 41.7 % 39.8 % 193 bps",
+     "added": "2026-11-02"
+    }
+   ]
   }
  }
 }
