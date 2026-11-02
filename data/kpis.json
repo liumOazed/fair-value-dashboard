@@ -12760,6 +12760,1330 @@
      "added": "2026-11-02"
     }
    ]
+  },
+  "META": {
+   "family_daily_active_people": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 3.35,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000014/meta-12312024xexhibit991.htm",
+     "quote": "DAP was 3.35 billion on average for December 2024, an increase of 5% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 3.43,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000050/meta-03312025xexhibit991.htm",
+     "quote": "DAP was 3.43 billion on average for March 2025, an increase of 6% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 3.48,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036719/meta-06302025xexhibit991.htm",
+     "quote": "DAP was 3.48 billion on average for June 2025, an increase of 6% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 3.54,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm",
+     "quote": "DAP was 3.54 billion on average for September 2025, an increase of 8% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.58,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm",
+     "quote": "DAP was 3.58 billion on average for December 2025, an increase of 7% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3.56,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026028364/meta-03312026xexhibit991.htm",
+     "quote": "Family daily active people (DAP) – DAP was 3.56 billion on average for March 2026, an increase of 4% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050596/meta-06302026xexhibit991.htm",
+     "quote": "DAP was 3.60 billion on average for June 2026, an increase of 3% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3.64,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066700/meta-09302026xexhibit991.htm",
+     "quote": "DAP was 3.64 billion on average for September 2026, an increase of 3% year-over-year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "ad_impressions_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000014/meta-12312024xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 6% and 11% year-over-year [fourth quarter and full year 2024, respectively]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000050/meta-03312025xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 5% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036719/meta-06302025xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 11% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 14% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 18% and 12% year-over-year [fourth quarter and full year 2025, respectively]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 19,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026028364/meta-03312026xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 19% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050596/meta-06302026xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 14% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066700/meta-09302026xexhibit991.htm",
+     "quote": "Ad impressions delivered across our Family of Apps increased by 10% year-over-year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "average_price_per_ad_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000014/meta-12312024xexhibit991.htm",
+     "quote": "Average price per ad increased by 14% and 10% year-over-year for the fourth quarter and full year 2024, respectively.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000050/meta-03312025xexhibit991.htm",
+     "quote": "Average price per ad increased by 10% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036719/meta-06302025xexhibit991.htm",
+     "quote": "Average price per ad increased by 9% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm",
+     "quote": "Average price per ad increased by 10% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm",
+     "quote": "Average price per ad increased by 6% and 9% year-over-year for the fourth quarter and full year 2025, respectively.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026028364/meta-03312026xexhibit991.htm",
+     "quote": "Average price per ad increased by 12% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050596/meta-06302026xexhibit991.htm",
+     "quote": "Average price per ad increased by 12% year-over-year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066700/meta-09302026xexhibit991.htm",
+     "quote": "Average price per ad increased by 14% year-over-year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "reality_labs_operating_loss": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 4.967,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000014/meta-12312024xexhibit991.htm",
+     "quote": "Reality Labs | (4,967) | (4,646) [segment income (loss) from operations, $ millions, three months ended Dec 31, 2024 vs 2023]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4.21,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000050/meta-03312025xexhibit991.htm",
+     "quote": "Reality Labs | (4,210) | (3,846) [segment income (loss) from operations, $ millions, three months ended Mar 31, 2025 vs 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 4.53,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036719/meta-06302025xexhibit991.htm",
+     "quote": "Reality Labs | (4,530) | (4,488) [segment income (loss) from operations, $ millions, three months ended Jun 30, 2025 vs 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 4.432,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm",
+     "quote": "Reality Labs | (4,432) | (4,428) [segment income (loss) from operations, $ millions, three months ended Sep 30, 2025 vs 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 6.021,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm",
+     "quote": "Reality Labs | (6,021) | (4,967) [segment income (loss) from operations, $ millions, three months ended Dec 31, 2025 vs 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4.028,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026028364/meta-03312026xexhibit991.htm",
+     "quote": "Reality Labs | (4,028) | (4,210) [segment income (loss) from operations, $ millions, three months ended Mar 31, 2026 vs 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 4.619,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050596/meta-06302026xexhibit991.htm",
+     "quote": "Reality Labs | (4,619) | (4,530) [segment income (loss) from operations, $ millions, three months ended Jun 30, 2026 vs 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4.129,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066700/meta-09302026xexhibit991.htm",
+     "quote": "Reality Labs | (4,129) | (4,432) [segment income (loss) from operations, $ millions, three months ended Sep 30, 2026 vs 2025]",
+     "added": "2026-11-02"
+    }
+   ],
+   "capital_expenditures": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 14.84,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000014/meta-12312024xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $14.84 billion [Q4 2024; full year 2024: $39.23 billion]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 13.69,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000050/meta-03312025xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $13.69 billion.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17.01,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036719/meta-06302025xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $17.01 billion.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 19.37,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $19.37 billion.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 22.14,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-12312025xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $22.14 billion [Q4 2025; full year 2025: $72.22 billion]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 19.84,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026028364/meta-03312026xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $19.84 billion.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 31.08,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050596/meta-06302026xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $31.08 billion.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 34.91,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066700/meta-09302026xexhibit991.htm",
+     "quote": "Capital expenditures, including principal payments on finance leases, were $34.91 billion.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "TT": {
+   "bookings_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000005/exhibit991-q42024earningsr.htm",
+     "quote": "Strong bookings of $4.7 billion, up 3 percent; organic bookings were up 2 percent. | Bookings | $4,659 | $4,534 | 3% | 2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000121/exhibit991-q12025earningsr.htm",
+     "quote": "Strong bookings of $5.3 billion, up 4 percent. Book-to-bill of 113 percent. | Bookings | $5,283 | $5,073 | 4% | 4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000149/exhibit991-q22025earningsr.htm",
+     "quote": "Record enterprise bookings of $5.6 billion, up 5 percent; organic bookings up 4 percent",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 15,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828025047261/exhibit991-q32025earningsr.htm",
+     "quote": "Record enterprise bookings of $6 billion, up 15 percent; organic bookings up 13 percent | Bookings | $5,979 | $5,213 | 15% | 13%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026003953/exhibit991-q42025earningsr.htm",
+     "quote": "Strong bookings of $5.8 billion, up 24 percent; organic bookings up 22 percent. | Bookings | $5,760 | $4,659 | 24% | 22%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 27,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026028547/exhibit991-q12026earningsr.htm",
+     "quote": "Record bookings of $6.7 billion, up 27 percent; organic bookings up 24 percent. | Bookings | $6,691 | $5,283 | 27% | 24%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 39,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026050743/exhibit991-q22026earningsr.htm",
+     "quote": "Record bookings of $7.8 billion, up 39 percent; organic bookings up 37 percent. | Bookings | $7,818 | $5,626 | 39% | 37%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 21,
+     "source": "https://www.thailand-business-news.com/pr-news/trane-technologies-reports-strong-third-quarter-results-raises-full-year-revenue-guidance-reaffirms-full-year-eps-guidance",
+     "quote": "Bookings | $7,248 | $5,979 | 21 % | 20 %",
+     "added": "2026-11-02"
+    }
+   ],
+   "backlog": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 6.75,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000005/exhibit991-q42024earningsr.htm",
+     "quote": "$6.75 billion backlog, well positioned for growth in 2025",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 7.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000121/exhibit991-q12025earningsr.htm",
+     "quote": "Enterprise backlog of $7.3 billion, up approximately $500 million versus year-end 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000149/exhibit991-q22025earningsr.htm",
+     "quote": "Enterprise backlog of $7.1 billion, up 6 percent versus year-end 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 7.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828025047261/exhibit991-q32025earningsr.htm",
+     "quote": "Enterprise backlog of $7.2 billion, up 7 percent versus year-end 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026003953/exhibit991-q42025earningsr.htm",
+     "quote": "Record backlog of $7.8 billion, up 15 percent versus year-end 2024; Americas Commercial HVAC up 25 percent",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 10.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026028547/exhibit991-q12026earningsr.htm",
+     "quote": "Record backlog of $10.7 billion, up over 30 percent versus year-end 2025; Americas Commercial HVAC up over 40 percent",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 12.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026050743/exhibit991-q22026earningsr.htm",
+     "quote": "Record backlog of $12.1 billion, up 70 percent; Americas Commercial HVAC up 90 percent",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12.5,
+     "source": "https://www.thailand-business-news.com/pr-news/trane-technologies-reports-strong-third-quarter-results-raises-full-year-revenue-guidance-reaffirms-full-year-eps-guidance",
+     "quote": "Backlog of $12.5 billion, up 73 percent; Americas Commercial HVAC up approximately 80 percent",
+     "added": "2026-11-02"
+    }
+   ],
+   "organic_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000005/exhibit991-q42024earningsr.htm",
+     "quote": "Enterprise reported revenues and organic revenues were both up 10 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000121/exhibit991-q12025earningsr.htm",
+     "quote": "Enterprise reported revenues and organic revenues were both up 11 percent. | Net Revenues | $4,688 | $4,216 | 11% | 11%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000149/exhibit991-q22025earningsr.htm",
+     "quote": "Enterprise reported revenues were up 8 percent; organic revenues were up 7 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828025047261/exhibit991-q32025earningsr.htm",
+     "quote": "Enterprise reported revenues were up 6 percent; organic revenues were up 4 percent. | Net Revenues | $5,743 | $5,441 | 6% | 4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026003953/exhibit991-q42025earningsr.htm",
+     "quote": "Reported revenues of $5.1 billion, up 6 percent; organic revenues* up 4 percent | Net Revenues | $5,145 | $4,874 | 6% | 4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026028547/exhibit991-q12026earningsr.htm",
+     "quote": "Enterprise reported revenues were up 6 percent; organic revenues were up 3 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026050743/exhibit991-q22026earningsr.htm",
+     "quote": "Enterprise reported revenues were up 11 percent; organic revenues were up 9 percent. | Net Revenues | $6,354 | $5,746 | 11% | 9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 16,
+     "source": "https://www.thailand-business-news.com/pr-news/trane-technologies-reports-strong-third-quarter-results-raises-full-year-revenue-guidance-reaffirms-full-year-eps-guidance",
+     "quote": "Reported revenues of $6.8 billion, up 18 percent; organic revenues* up 16 percent | Net Revenues | $6,760 | $5,743 | 18 % | 16 %",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 16.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000005/exhibit991-q42024earningsr.htm",
+     "quote": "Adjusted Operating Margin | 16.3% | 15.6% | 70 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 16.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000121/exhibit991-q12025earningsr.htm",
+     "quote": "Adjusted Operating Margin* | 16.2% | 15.2% | 100 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 20.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000146625825000149/exhibit991-q22025earningsr.htm",
+     "quote": "Adjusted Operating Margin* | 20.3% | 19.4% | 90 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 20.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828025047261/exhibit991-q32025earningsr.htm",
+     "quote": "Adjusted Operating Margin* | 20.6% | 18.9% | 170 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 16.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026003953/exhibit991-q42025earningsr.htm",
+     "quote": "Adjusted Operating Margin* | 16.3% | 16.3% | 0 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 16.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026028547/exhibit991-q12026earningsr.htm",
+     "quote": "Adjusted Operating Margin* | 16.0% | 16.2% | (20) bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 19.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001466258/000162828026050743/exhibit991-q22026earningsr.htm",
+     "quote": "Adjusted Operating Margin* | 19.7% | 20.3% | (60) bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 20.2,
+     "source": "https://www.thailand-business-news.com/pr-news/trane-technologies-reports-strong-third-quarter-results-raises-full-year-revenue-guidance-reaffirms-full-year-eps-guidance",
+     "quote": "Adjusted Operating Margin* | 20.2 % | 20.6 % | (40) bps",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "RL": {
+   "revenue_growth_constant_currency": [
+    {
+     "period": "2025-09-27",
+     "label": "Q2 FY26",
+     "value": 14,
+     "source": "https://www.businesswire.com/news/home/20251105660239/en/Ralph-Lauren-Reports-Better-Than-Expected-Second-Quarter-Fiscal-2026-Results-and-Raises-Full-Year-Outlook",
+     "quote": "revenue increased 17% to $2.0 billion on a reported basis and was up 14% in constant currency.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-27",
+     "label": "Q3 FY26",
+     "value": 10.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026005615/rl-20251227ex991xpressrele.htm",
+     "quote": "Net revenues | $ 2,406.0 | $ 2,143.5 | 12.2 % | 10.0 % (revenue increased 12% to $2.4 billion on a reported basis and was up 10% in constant currency.)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-28",
+     "label": "Q4 FY26",
+     "value": 12.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026037053/rl-20260328xex991xpressrel.htm",
+     "quote": "revenue increased 17% to $2.0 billion on a reported basis and 12% in constant currency. (reconciliation table: net revenues +16.6% reported, +12.1% constant currency)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-27",
+     "label": "Q1 FY27",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
+     "quote": "revenue increased 14% to $2.0 billion on a reported basis and was up 13% in constant currency.",
+     "added": "2026-11-02"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-09-28",
+     "label": "Q2 FY25",
+     "value": 67.0,
+     "source": "https://www.businesswire.com/news/home/20251105660239/en/Ralph-Lauren-Reports-Better-Than-Expected-Second-Quarter-Fiscal-2026-Results-and-Raises-Full-Year-Outlook",
+     "quote": "Gross profit margin | 68.0 % | 67.0 % (reported gross margin; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-28",
+     "label": "Q3 FY25",
+     "value": 68.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026005615/rl-20251227ex991xpressrele.htm",
+     "quote": "Gross profit margin | 69.9 % | 68.4 % (reported gross margin; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-29",
+     "label": "Q4 FY25",
+     "value": 68.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026037053/rl-20260328xex991xpressrel.htm",
+     "quote": "Gross profit margin | 69.7% | 68.6% (reported gross margin; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-28",
+     "label": "Q1 FY26",
+     "value": 72.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
+     "quote": "Gross profit margin | 73.7% | 72.3% (reported gross margin; prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-27",
+     "label": "Q2 FY26",
+     "value": 68.0,
+     "source": "https://www.businesswire.com/news/home/20251105660239/en/Ralph-Lauren-Reports-Better-Than-Expected-Second-Quarter-Fiscal-2026-Results-and-Raises-Full-Year-Outlook",
+     "quote": "gross margin was 68.0%, 100 basis points above the prior year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-27",
+     "label": "Q3 FY26",
+     "value": 69.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026005615/rl-20251227ex991xpressrele.htm",
+     "quote": "gross margin was 69.9%, 150 basis points above the prior year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-28",
+     "label": "Q4 FY26",
+     "value": 69.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026037053/rl-20260328xex991xpressrel.htm",
+     "quote": "Gross profit for the fourth quarter of Fiscal 2026 was $1.4 billion and gross margin was 69.7%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-27",
+     "label": "Q1 FY27",
+     "value": 73.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
+     "quote": "gross margin was 73.7%, 140 basis points above the prior year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "average_unit_retail_growth": [
+    {
+     "period": "2025-09-27",
+     "label": "Q2 FY26",
+     "value": 12,
+     "source": "https://www.businesswire.com/news/home/20251105660239/en/Ralph-Lauren-Reports-Better-Than-Expected-Second-Quarter-Fiscal-2026-Results-and-Raises-Full-Year-Outlook",
+     "quote": "Increased average unit retail (\"AUR\") by 12% across our direct-to-consumer network in the second quarter",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-27",
+     "label": "Q3 FY26",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026005615/rl-20251227ex991xpressrele.htm",
+     "quote": "Increased average unit retail (\"AUR\") by 18% across our direct-to-consumer network in the third quarter",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-28",
+     "label": "Q4 FY26",
+     "value": 16,
+     "source": "https://www.nasdaq.com/articles/ralph-lauren-q4-earnings-call-highlights",
+     "quote": "Average unit retail rose 16% in the quarter. (call highlights; press release says only 'Increased AUR by mid-teens for both the fourth quarter and full year.')",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-27",
+     "label": "Q1 FY27",
+     "value": 15,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
+     "quote": "Increased Average Unit Retail (\"AUR\") by 15% across our direct-to-consumer network in the first quarter",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-09-28",
+     "label": "Q2 FY25",
+     "value": 11.4,
+     "source": "https://www.businesswire.com/news/home/20251105660239/en/Ralph-Lauren-Reports-Better-Than-Expected-Second-Quarter-Fiscal-2026-Results-and-Raises-Full-Year-Outlook",
+     "quote": "Adjusted operating margin in reported currency | 14.1% | 11.4% (prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-28",
+     "label": "Q3 FY25",
+     "value": 18.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026005615/rl-20251227ex991xpressrele.htm",
+     "quote": "Adjusted operating margin in reported currency | 20.9 % | 18.7 % (prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-29",
+     "label": "Q4 FY25",
+     "value": 10.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026037053/rl-20260328xex991xpressrel.htm",
+     "quote": "Adjusted operating margin in reported currency | 11.0% | 10.3% (prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-28",
+     "label": "Q1 FY26",
+     "value": 17.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
+     "quote": "Adjusted operating margin in reported currency | 18.7% | 17.0% (prior-year column)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-27",
+     "label": "Q2 FY26",
+     "value": 14.1,
+     "source": "https://www.businesswire.com/news/home/20251105660239/en/Ralph-Lauren-Reports-Better-Than-Expected-Second-Quarter-Fiscal-2026-Results-and-Raises-Full-Year-Outlook",
+     "quote": "On an adjusted basis, operating income was $283 million and operating margin was 14.1%, 270 basis points above the prior year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-27",
+     "label": "Q3 FY26",
+     "value": 20.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026005615/rl-20251227ex991xpressrele.htm",
+     "quote": "On an adjusted basis, operating income was $503 million and operating margin was 20.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-28",
+     "label": "Q4 FY26",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026037053/rl-20260328xex991xpressrel.htm",
+     "quote": "On an adjusted basis, operating income was $218 million and operating margin was 11.0%, 70 basis points above the prior year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-27",
+     "label": "Q1 FY27",
+     "value": 18.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
+     "quote": "On an adjusted basis, operating income was $366 million and operating margin was 18.7%, 170 basis points above the prior year",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "ROST": {
+   "comparable_store_sales_growth": [
+    {
+     "period": "2025-01-31",
+     "label": "Q4 2024",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000003/q4fy25exhibit991.htm",
+     "quote": "Comparable store sales rose a robust 9% for the quarter on top of a solid 3% gain last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 2025",
+     "value": 0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000025/q126exhibit991.htm",
+     "quote": "Comparable store sales rose a very robust 17% for the quarter versus flat sales last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 2025",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
+     "quote": "Comparable store sales rose a very strong 10% for the quarter on top of a 2% gain last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573225000055/q325exhibit991.htm",
+     "quote": "Comparable store sales increased a strong 7%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000003/q4fy25exhibit991.htm",
+     "quote": "Comparable store sales rose a robust 9% for the quarter on top of a solid 3% gain last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 2026",
+     "value": 17,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000025/q126exhibit991.htm",
+     "quote": "Comparable store sales rose a very robust 17% for the quarter versus flat sales last year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
+     "quote": "Comparable store sales rose a very strong 10% for the quarter on top of a 2% gain last year.",
+     "added": "2026-11-02"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 2024",
+     "value": 11.91,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573225000055/q325exhibit991.htm",
+     "quote": "Computed from table, three months ended November 2, 2024: 'Operating income | 604,216' / 'Sales | $5,071,354' = 11.91%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 2024",
+     "value": 12.36,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000003/q4fy25exhibit991.htm",
+     "quote": "Computed from table, three months ended February 1, 2025: 'Operating income | 731,024' / 'Sales | 5,912,279' = 12.36%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 2025",
+     "value": 12.17,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000025/q126exhibit991.htm",
+     "quote": "Computed from table, three months ended May 3, 2025: 'Operating income | 606,470' / 'Sales | $4,984,971' = 12.17%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 2025",
+     "value": 11.54,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
+     "quote": "Computed from table, three months ended August 2, 2025: 'Operating income | 638,274' / 'Sales | $5,529,152' = 11.54%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 2025",
+     "value": 11.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573225000055/q325exhibit991.htm",
+     "quote": "resulted in an operating margin of 11.6% that was much stronger than expected.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 2025",
+     "value": 12.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000003/q4fy25exhibit991.htm",
+     "quote": "Fourth quarter operating margin of 12.3% exceeded the Company's plan of 11.5% to 11.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 2026",
+     "value": 13.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000025/q126exhibit991.htm",
+     "quote": "First quarter operating margin of 13.4% was well above the Company's plan of 11.8% to 12.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 2026",
+     "value": 17.62,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
+     "quote": "Not stated as a % level (release: 'Operating margin increased 610 basis points, including 405 basis points from the tariff refunds.'). Computed from table, three months ended August 1, 2026: 'Operating income | 1,103,618' / 'Sales | $6,264,886' = 17.62%",
+     "added": "2026-11-02"
+    }
+   ],
+   "stores_at_quarter_end": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 2024",
+     "value": 2192,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573225000055/q325exhibit991.htm",
+     "quote": "Store count at end of period | 2,273 | 2,192 (November 1, 2025 | November 2, 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 2024",
+     "value": 2186,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000003/q4fy25exhibit991.htm",
+     "quote": "Store count at end of period | 2,267 | 2,186 (January 31, 2026 | February 1, 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 2025",
+     "value": 2205,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000025/q126exhibit991.htm",
+     "quote": "Store count at end of period | 2,282 | 2,205 (May 2, 2026 | May 3, 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 2025",
+     "value": 2233,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
+     "quote": "Store count at end of period | 2,328 | 2,233 (August 1, 2026 | August 2, 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 2025",
+     "value": 2273,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573225000055/q325exhibit991.htm",
+     "quote": "Store count at end of period | 2,273 | 2,192 (November 1, 2025 | November 2, 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 2025",
+     "value": 2267,
+     "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000003/q4fy25exhibit991.htm",
+     "quote": "Store count at end of period | 2,267 | 2,186 (January 31, 2026 | February 1, 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 2026",
+     "value": 2282,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000025/q126exhibit991.htm",
+     "quote": "Store count at end of period | 2,282 | 2,205 (May 2, 2026 | May 3, 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 2026",
+     "value": 2328,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
+     "quote": "Store count at end of period | 2,328 | 2,233 (August 1, 2026 | August 2, 2025)",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "GDDY": {
+   "total_bookings_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 8.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000018/gddyex991x20241231xq4earni.htm",
+     "quote": "Total bookings | $1,222.5 | $1,123.9 | 8.8% | 8.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 7.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000075/gddyex991-20250331xq1earni.htm",
+     "quote": "Total bookings | $ 1,417.0 | $ 1,312.7 | 7.9 % | 8.7 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 6.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000151/gddyex991-20250630xq2earni.htm",
+     "quote": "Total bookings | $ 1,345.3 | $ 1,261.9 | 6.6 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 9.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000206/gddyex991-20250930xq3earni.htm",
+     "quote": "Total bookings | $ 1,354.5 | $ 1,241.7 | 9.1 % (reported) | 9.0 % (constant currency)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5.0,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "Total bookings | $ 1,283.2 | $ 1,222.5 | 5.0 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000035/gddyex991-20260331xq1earni.htm",
+     "quote": "Total bookings | $1,455.3 | $1,417.0 | 2.7% ('Total bookings of $1.5 billion, up 3% year-over-year on a reported basis and 2% on a constant currency basis.')",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+     "quote": "Total bookings | $1,422.1 | $1,345.3 | 5.7% | 5.2% (Q2 2026 vs Q2 2025, reported | constant currency)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+     "quote": "Total bookings | $1,431.7 | $1,354.5 | 5.7% | 5.7% (Q3 2026 vs Q3 2025; 'Total bookings of $1.4 billion, up 6% year-over-year on a reported and constant currency basis.')",
+     "added": "2026-11-02"
+    }
+   ],
+   "applications_commerce_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 16.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000018/gddyex991x20241231xq4earni.htm",
+     "quote": "Applications and commerce revenue | $441.2 | $377.4 | 16.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 16.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000075/gddyex991-20250331xq1earni.htm",
+     "quote": "Applications and commerce revenue | $ 446.4 | $ 383.1 | 16.5 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 14.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000151/gddyex991-20250630xq2earni.htm",
+     "quote": "Applications and commerce revenue | $ 463.9 | $ 405.6 | 14.4 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 13.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000206/gddyex991-20250930xq3earni.htm",
+     "quote": "Applications and commerce revenue | $ 481.0 | $ 423.1 | 13.7 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 12.8,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "Applications and commerce revenue | $ 497.7 | $ 441.2 | 12.8 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 11.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000035/gddyex991-20260331xq1earni.htm",
+     "quote": "Applications and Commerce revenue | $498.2 | $446.4 | 11.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+     "quote": "Applications and Commerce revenue | $514.8 | $463.9 | 11.0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 9.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+     "quote": "Applications and Commerce revenue | $524.3 | $481.0 | 9.0%",
+     "added": "2026-11-02"
+    }
+   ],
+   "average_revenue_per_user_arpu": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 220,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "Average revenue per user (ARPU) | $ | 242 | | $ | 220 | | 10.0 | % (prior-year column = Q4 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 225,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000035/gddyex991-20260331xq1earni.htm",
+     "quote": "Average revenue per user (ARPU) | $246 | $225 | 9.3% (prior-year column = Q1 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 230,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+     "quote": "Average revenue per user (ARPU) | $250 | $230 | 8.7% (prior-year column = Q2 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 237,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+     "quote": "Average revenue per user (ARPU) | $253 | $237 | 6.8% (prior-year column = Q3 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 242,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "Average revenue per user (ARPU) | $ | 242 | | $ | 220 | | 10.0 | %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 246,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000035/gddyex991-20260331xq1earni.htm",
+     "quote": "Average revenue per user (ARPU) | $246 | $225 | 9.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 250,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+     "quote": "Average revenue per user (ARPU) | $250 | $230 | 8.7%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 253,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+     "quote": "Average revenue per user (ARPU) | $253 | $237 | 6.8%",
+     "added": "2026-11-02"
+    }
+   ],
+   "customers": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 20.511,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "Total customers at period end | 20,422 | | 20,511 | | (0.4) | % (thousands; prior-year column = Q4 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 20.484,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000075/gddyex991-20250331xq1earni.htm",
+     "quote": "Total customers at period end | 20,484 | 20,995 | -2.4 % (thousands)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 20.409,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000151/gddyex991-20250630xq2earni.htm",
+     "quote": "Total customers at period end | 20,409 | 20,866 | -2.2 % (thousands)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 20.413,
+     "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971125000206/gddyex991-20250930xq3earni.htm",
+     "quote": "Total customers at period end | 20,413 | 20,725 | -1.5 % (thousands)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 20.422,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "Total customers at period end | 20,422 | | 20,511 | | (0.4) | % (thousands)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 20.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000035/gddyex991-20260331xq1earni.htm",
+     "quote": "Total customers of 20.4 million, up 13 thousand since December 31, 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 20.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+     "quote": "Total customers of 20.5 million, up 22 thousand during the quarter and 35 thousand since December 31, 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 20.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+     "quote": "Total customers of 20.5 million, up 40 thousand during the quarter and 75 thousand since December 31, 2025.",
+     "added": "2026-11-02"
+    }
+   ],
+   "normalized_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 32.3,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "NEBITDA margin | 33.8% | | 32.3% | | 160 bps (prior-year column = Q4 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 30.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000035/gddyex991-20260331xq1earni.htm",
+     "quote": "NEBITDA Margin | 32.6% | 30.5% | 210bps (prior-year column = Q1 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 31.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+     "quote": "NEBITDA Margin | 33.4% | 31.3% | 210bps (prior-year column = Q2 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 32.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+     "quote": "NEBITDA Margin | 33.5% | 32.3% | 120bps (prior-year column = Q3 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 33.8,
+     "source": "https://www.boardroomalpha.com/sec/gddy-8-k-2026-02-24-0001609711-26-000008/gddyex991x20251231xq4earni.htm",
+     "quote": "NEBITDA margin | 33.8% | | 32.3% | | 160 bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 32.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000035/gddyex991-20260331xq1earni.htm",
+     "quote": "NEBITDA Margin | 32.6% | 30.5% | 210bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 33.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+     "quote": "NEBITDA Margin | 33.4% | 31.3% | 210bps",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 33.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000117/gddyex991-20260930xq3earni.htm",
+     "quote": "NEBITDA Margin | 33.5% | 32.3% | 120bps",
+     "added": "2026-11-02"
+    }
+   ]
   }
  }
 }
