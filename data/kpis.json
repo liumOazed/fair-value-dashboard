@@ -17806,6 +17806,1142 @@
      "added": "2026-11-02"
     }
    ]
+  },
+  "CF": {
+   "gross_ammonia_production_thousand_tons": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 2433,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324404/000132440425000028/cf-11052025_ex991xearnings.htm",
+     "quote": "Production volume by product tons (000s) [cols: Q3 2025, Q3 2024, 9M 2025, 9M 2024]: Ammonia(4) | 2,440 | 2,433 | 7,614 | 7,183",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 2617,
+     "source": "https://www.businesswire.com/news/home/20260218721950/en/CF-Industries-Holdings-Inc.-Reports-Full-Year-2025-Net-Earnings-of-%241.46-Billion-Adjusted-EBITDA-of-%242.89-Billion",
+     "quote": "Gross ammonia production (000s) [cols: Q4 2025, Q4 2024, FY 2025, FY 2024]: Ammonia (5) 2,506 2,617 10,120 9,800",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2617,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000011/cf-05062026_ex991xearnings.htm",
+     "quote": "Gross ammonia production (000s) [cols: Q1 2026, Q1 2025]: Ammonia(5) | 2,457 | 2,617",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 2557,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
+     "quote": "Gross ammonia production (000s) [cols: Q2 2026, Q2 2025, H1 2026, H1 2025]: Ammonia(5) | 2,397 | 2,557 | 4,854 | 5,174",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 2440,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324404/000132440425000028/cf-11052025_ex991xearnings.htm",
+     "quote": "Production volume by product tons (000s) [cols: Q3 2025, Q3 2024, 9M 2025, 9M 2024]: Ammonia(4) | 2,440 | 2,433 | 7,614 | 7,183",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2506,
+     "source": "https://www.businesswire.com/news/home/20260218721950/en/CF-Industries-Holdings-Inc.-Reports-Full-Year-2025-Net-Earnings-of-%241.46-Billion-Adjusted-EBITDA-of-%242.89-Billion",
+     "quote": "Gross ammonia production (000s) [cols: Q4 2025, Q4 2024, FY 2025, FY 2024]: Ammonia (5) 2,506 2,617 10,120 9,800",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2457,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000011/cf-05062026_ex991xearnings.htm",
+     "quote": "Gross ammonia production (000s) [cols: Q1 2026, Q1 2025]: Ammonia(5) | 2,457 | 2,617",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2397,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
+     "quote": "Gross ammonia production (000s) [cols: Q2 2026, Q2 2025, H1 2026, H1 2025]: Ammonia(5) | 2,397 | 2,557 | 4,854 | 5,174",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_ebitda": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 0.511,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324404/000132440425000028/cf-11052025_ex991xearnings.htm",
+     "quote": "Adjusted EBITDA(1) | 667 | 511 [dollars in millions; cols: Q3 2025, Q3 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.562,
+     "source": "https://www.businesswire.com/news/home/20260218721950/en/CF-Industries-Holdings-Inc.-Reports-Full-Year-2025-Net-Earnings-of-%241.46-Billion-Adjusted-EBITDA-of-%242.89-Billion",
+     "quote": "Adjusted EBITDA (1) 821 562 2,893 2,284 [dollars in millions; cols: Q4 2025, Q4 2024, FY 2025, FY 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.644,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000011/cf-05062026_ex991xearnings.htm",
+     "quote": "Adjusted EBITDA(1) | 983 | 644 [dollars in millions; cols: Q1 2026, Q1 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.761,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
+     "quote": "Adjusted EBITDA(1) | 1,192 | 761 | 2,175 | 1,405 [dollars in millions; cols: Q2 2026, Q2 2025, H1 2026, H1 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.667,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324404/000132440425000028/cf-11052025_ex991xearnings.htm",
+     "quote": "Adjusted EBITDA(1) | 667 | 511 [dollars in millions; cols: Q3 2025, Q3 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.821,
+     "source": "https://www.businesswire.com/news/home/20260218721950/en/CF-Industries-Holdings-Inc.-Reports-Full-Year-2025-Net-Earnings-of-%241.46-Billion-Adjusted-EBITDA-of-%242.89-Billion",
+     "quote": "Adjusted EBITDA (1) 821 562 2,893 2,284 [dollars in millions; cols: Q4 2025, Q4 2024, FY 2025, FY 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.983,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000011/cf-05062026_ex991xearnings.htm",
+     "quote": "Adjusted EBITDA(1) | 983 | 644 [dollars in millions; cols: Q1 2026, Q1 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.192,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
+     "quote": "Adjusted EBITDA(1) | 1,192 | 761 | 2,175 | 1,405 [dollars in millions; cols: Q2 2026, Q2 2025, H1 2026, H1 2025]",
+     "added": "2026-11-02"
+    }
+   ],
+   "average_selling_price_per_ton": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 372,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324404/000132440425000028/cf-11052025_ex991xearnings.htm",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $418 | $372 [cols: Q3 2025, Q3 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 461,
+     "source": "https://www.businesswire.com/news/home/20260218721950/en/CF-Industries-Holdings-Inc.-Reports-Full-Year-2025-Net-Earnings-of-%241.46-Billion-Adjusted-EBITDA-of-%242.89-Billion",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton $ 557 $ 461 $ 473 $ 425 [cols: Q4 2025, Q4 2024, FY 2025, FY 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 454,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000011/cf-05062026_ex991xearnings.htm",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $568 | $454 [cols: Q1 2026, Q1 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 452,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $677 | $452 | $616 | $453 [cols: Q2 2026, Q2 2025, H1 2026, H1 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 418,
+     "source": "https://www.sec.gov/Archives/edgar/data/1324404/000132440425000028/cf-11052025_ex991xearnings.htm",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $418 | $372 [cols: Q3 2025, Q3 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 557,
+     "source": "https://www.businesswire.com/news/home/20260218721950/en/CF-Industries-Holdings-Inc.-Reports-Full-Year-2025-Net-Earnings-of-%241.46-Billion-Adjusted-EBITDA-of-%242.89-Billion",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton $ 557 $ 461 $ 473 $ 425 [cols: Q4 2025, Q4 2024, FY 2025, FY 2024]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 568,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000011/cf-05062026_ex991xearnings.htm",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $568 | $454 [cols: Q1 2026, Q1 2025]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 677,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $677 | $452 | $616 | $453 [cols: Q2 2026, Q2 2025, H1 2026, H1 2025]",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "EME": {
+   "remaining_performance_obligations": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 10.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000027/eme-ex991_20251231xq4.htm",
+     "quote": "were a record $13.25 billion, compared to $10.10 billion as of December 31 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 11.75,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000048/eme-ex991_2026331xq1.htm",
+     "quote": "$11.75 billion as of March 31, 2025",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 11.91,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000112/eme-ex991_2026630xq2.htm",
+     "quote": "compared to $11.91 billion as of June 30, 2025",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 12.61,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563425000082/eme-ex991_2025930xq3.htm",
+     "quote": "as of September 30, 2025, were a record $12.61 billion,",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 13.25,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000027/eme-ex991_20251231xq4.htm",
+     "quote": "were a record $13.25 billion, compared to $10.10 billion as of December 31 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 15.62,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000048/eme-ex991_2026331xq1.htm",
+     "quote": "as of March 31, 2026 were a record $15.62 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 17.14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000112/eme-ex991_2026630xq2.htm",
+     "quote": "Remaining performance obligations (“RPOs”) as of June 30, 2026 were a record $17.14 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 18.57,
+     "source": "https://www.earningswhispers.com/transcript/EME/Q32026",
+     "quote": "remaining performance obligations reached a record $18.57 billion.",
+     "added": "2026-11-02"
+    }
+   ],
+   "revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 19.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000027/eme-ex991_20251231xq4.htm",
+     "quote": "totaled $4.51 billion, an increase of 19.7%, compared to $3.77 billion for the fourth quarter of 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 19.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000048/eme-ex991_2026331xq1.htm",
+     "quote": "Record Quarterly Revenues of $4.63 billion, 19.7% Increase Year-over-Year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 19.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000112/eme-ex991_2026630xq2.htm",
+     "quote": "revenues totaled a quarterly record of $5.15 billion, an increase of 19.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 28.8,
+     "source": "https://www.earningswhispers.com/transcript/EME/Q32026",
+     "quote": "Revenues of $5.54 billion established a new quarterly record for MCOR, increasing 28.8% or 25.5% on an organic basis.",
+     "added": "2026-11-02"
+    }
+   ],
+   "organic_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 9.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000027/eme-ex991_20251231xq4.htm",
+     "quote": "On an organic basis, fourth quarter revenues increased 9.5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 16.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000048/eme-ex991_2026331xq1.htm",
+     "quote": "On an organic basis, when adjusting for incremental acquisition contribution and the impact of the sale of the Company's United Kingdom operations, first quarter revenues increased by 16.8%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 19.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000112/eme-ex991_2026630xq2.htm",
+     "quote": "second quarter revenues increased by 19.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 25.5,
+     "source": "https://www.earningswhispers.com/transcript/EME/Q32026",
+     "quote": "Revenues of $5.54 billion established a new quarterly record for MCOR, increasing 28.8% or 25.5% on an organic basis.",
+     "added": "2026-11-02"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 10.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000027/eme-ex991_20251231xq4.htm",
+     "quote": "operating income of $388.6 million, or 10.3% of revenues, for the fourth quarter of 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 8.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000048/eme-ex991_2026331xq1.htm",
+     "quote": "compared to operating income of $318.8 million, or 8.2% of revenues, for the first quarter of 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 9.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000112/eme-ex991_2026630xq2.htm",
+     "quote": "compared to operating income of $415.2 million, or 9.6% of revenues, for the second quarter of 2025",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 9.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563425000082/eme-ex991_2025930xq3.htm",
+     "quote": "Operating income for the third quarter of 2025 was $405.7 million, or 9.4% of revenues,",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 12.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000027/eme-ex991_20251231xq4.htm",
+     "quote": "for the fourth quarter of 2025 was $573.8 million, or 12.7% of revenues",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 8.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000048/eme-ex991_2026331xq1.htm",
+     "quote": "$403.8 million, or 8.7% of revenues",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000105634/000010563426000112/eme-ex991_2026630xq2.htm",
+     "quote": "Operating income for the second quarter of 2026 was $547.3 million, or 10.6% of revenues",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 9.8,
+     "source": "https://www.earningswhispers.com/transcript/EME/Q32026",
+     "quote": "On a GAAP basis, we generated operating income of $545.8 million or 9.8% of revenues.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "HST": {
+   "comparable_hotel_revpar_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075025000164/hst-ex991.htm",
+     "quote": "Comparable hotel RevPAR was $208.07 for the third quarter of 2025, representing an increase of 0.2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 4.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000038/hst-ex991.htm",
+     "quote": "Comparable hotel RevPAR was $227.14, representing an increase of 4.6% compared to the same period in 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000077/hst-ex991.htm",
+     "quote": "Comparable hotel RevPAR was $244.11, representing an increase of 4.4% over the first quarter of 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 7.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
+     "quote": "Comparable hotel RevPAR was $251.53, an increase of 7.0%, compared to the same period in 2025",
+     "added": "2026-11-02"
+    }
+   ],
+   "comparable_hotel_total_revpar_growth": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075025000164/hst-ex991.htm",
+     "quote": "Comparable hotel Total RevPAR was $335.42 for the third quarter of 2025, representing an increase of 0.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000038/hst-ex991.htm",
+     "quote": "Comparable hotel Total RevPAR was $380.71 for the fourth quarter of 2025, representing an increase of 5.4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000077/hst-ex991.htm",
+     "quote": "Comparable hotel Total RevPAR | 418.20 | 399.66 | 4.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
+     "quote": "Comparable hotel Total RevPAR ... an increase of 5.9% compared to the same period in 2025",
+     "added": "2026-11-02"
+    }
+   ],
+   "comparable_hotel_ebitda_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 24.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075025000164/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 23.9 % | 24.4 % | 29.2 % | 29.6 % (Q3 2025 | Q3 2024 | YTD 2025 | YTD 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 28.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000038/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 28.0 % | 28.3 % | 28.9 % | 29.3 % (Q4 2025 | Q4 2024 | FY 2025 | FY 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 32.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000077/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 32.7% | 32.0% (Q1 2026 | Q1 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 31.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 31.9% | 31.3% (Q2 2026 | Q2 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075025000164/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 23.9 % | 24.4 % | 29.2 % | 29.6 % (Q3 2025 | Q3 2024 | YTD 2025 | YTD 2024); comparable hotel EBITDA margin decrease of 50 basis points to 23.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 28.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000038/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 28.0 % | 28.3 % | 28.9 % | 29.3 % (Q4 2025 | Q4 2024 | FY 2025 | FY 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 32.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000077/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 32.7% | 32.0% (Q1 2026 | Q1 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 31.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 31.9% | 31.3% (Q2 2026 | Q2 2025); a comparable hotel EBITDA margin increase of 60 basis points to 31.9%",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_ffo_per_share": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 0.36,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075025000164/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.35 | 0.36 | (2.8)% (Q3 2025 | Q3 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.45,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000038/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.51 | 0.45 | 13.3% (Q4 2025 | Q4 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.64,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000077/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.67 | 0.64 | 4.7% (Q1 2026 | Q1 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.58,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.63 | 0.58 | 8.6% (Q2 2026 | Q2 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.35,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075025000164/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.35 | 0.36 | (2.8)% (Q3 2025 | Q3 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.51,
+     "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000038/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.51 | 0.45 | 13.3% (Q4 2025 | Q4 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.67,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000077/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.67 | 0.64 | 4.7% (Q1 2026 | Q1 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.63,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.63 | 0.58 | 8.6% (Q2 2026 | Q2 2025)",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "LII": {
+   "revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 16.5,
+     "source": "https://investor.lennox.com/node/28961",
+     "quote": "Revenue: $1.3 billion was up 16% and up 22% for core operations. Segment table (Dec 31, 2024 / 2023): Total segment sales $ 1,345.0 $ 1,154.8. Computed: 1345.0/1154.8-1 = +16.5%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2.4,
+     "source": "https://investor.lennox.com/node/29226",
+     "quote": "Revenue grew 2% to $1.1 billion. Segment table (March 31, 2025 / 2024): Total segment sales $ 1,072.6 $ 1,047.1. Computed: 1072.6/1047.1-1 = +2.4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 3.4,
+     "source": "https://investor.lennox.com/node/29446",
+     "quote": "Revenue grew 3% to $1.5 billion. Segment table (June 30, 2025 / 2024): Total net sales $1,500.9 $1,451.1. Computed: 1500.9/1451.1-1 = +3.4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -4.8,
+     "source": "https://investor.lennox.com/node/29606",
+     "quote": "Revenue declined 5% to $1.4 billion. Segment table (Sept 30, 2025 / 2024): Total net sales $1,426.8 $1,498.1. Computed: 1426.8/1498.1-1 = -4.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -11.2,
+     "source": "https://investor.lennox.com/node/29756",
+     "quote": "Revenue declined 11% to $1.2 billion. Segment table (Dec 31, 2025 / 2024): Total net sales $ 1,195.0 $ 1,345.0. Computed: 1195.0/1345.0-1 = -11.2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5.8,
+     "source": "https://investor.lennox.com/node/30021",
+     "quote": "Revenue increased 6% to $1.1 billion. Segment table (March 31, 2026 / 2025): Total net sales $1,135.1 $1,072.6. Computed: 1135.1/1072.6-1 = +5.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3.0,
+     "source": "https://www.investor.lennox.com/node/30191",
+     "quote": "Revenue increased 3% to $1.5 billion. Segment table (June 30, 2026 / 2025): Total net sales $1,545.3 $1,500.9. Computed: 1545.3/1500.9-1 = +3.0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10.2,
+     "source": "https://www.miningstockeducation.com/2026/10/lennox-reports-2026-third-quarter-earnings-results/",
+     "quote": "Revenue of $1.6 billion, up 10%. Segment table (three months ended Sept 30, 2026 / 2025): Total net sales $1,572.5 $1,426.8. Computed: 1572.5/1426.8-1 = +10.2%",
+     "added": "2026-11-02"
+    }
+   ],
+   "home_comfort_solutions_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 25.1,
+     "source": "https://investor.lennox.com/node/28961",
+     "quote": "Home Comfort Solutions: Business segment revenue was $887 million, up 25%. Table: Home Comfort Solutions $887.4 $709.4. Computed: 887.4/709.4-1 = +25.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 6.9,
+     "source": "https://investor.lennox.com/node/29226",
+     "quote": "Home Comfort Solutions: Business segment revenue was $721 million, up 7%. Table: Home Comfort Solutions $ 721.4 $ 674.6. Computed: 721.4/674.6-1 = +6.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 2.7,
+     "source": "https://investor.lennox.com/node/29446",
+     "quote": "Home Comfort Solutions: Business segment revenue was $1.0 billion, up 3%. Table: Home Comfort Solutions $ 1,009.3 $ 982.3. Computed: 1009.3/982.3-1 = +2.7%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -11.6,
+     "source": "https://investor.lennox.com/node/29606",
+     "quote": "Home Comfort Solutions: Business segment revenue was $913 million, down 12%. Table: Home Comfort Solutions $912.9 $1,032.8. Computed: 912.9/1032.8-1 = -11.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -21.1,
+     "source": "https://investor.lennox.com/node/29756",
+     "quote": "Home Comfort Solutions revenue declined 21% in the fourth quarter, ... Table: Home Comfort Solutions $ 699.8 $ 887.4. Computed: 699.8/887.4-1 = -21.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -9.9,
+     "source": "https://investor.lennox.com/node/30021",
+     "quote": "Business segment revenue was $650 million, down 10%. Table: Home Comfort Solutions $650.0 $721.4. Computed: 650.0/721.4-1 = -9.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -7.3,
+     "source": "https://www.investor.lennox.com/node/30191",
+     "quote": "Business segment revenue was $936 million, down 7%. Table: Home Comfort Solutions $935.6 $1,009.3. Computed: 935.6/1009.3-1 = -7.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.7,
+     "source": "https://www.miningstockeducation.com/2026/10/lennox-reports-2026-third-quarter-earnings-results/",
+     "quote": "Home Comfort Solutions revenue increased 3% in the third quarter, while segment margin declined 490 basis points. Table: Home Comfort Solutions $937.2 $912.9. Computed: 937.2/912.9-1 = +2.7%",
+     "added": "2026-11-02"
+    }
+   ],
+   "building_climate_solutions_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 17.3,
+     "source": "https://investor.lennox.com/node/28961",
+     "quote": "Building Climate Solutions: Business segment revenue was $458 million, up 17%. Table: Building Climate Solutions $457.6 $390.0. Computed: 457.6/390.0-1 = +17.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": -5.7,
+     "source": "https://investor.lennox.com/node/29226",
+     "quote": "Building Climate Solutions: Business segment revenue was $351 million, down 6%. Table: Building Climate Solutions 351.2 372.5. Computed: 351.2/372.5-1 = -5.7%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 4.9,
+     "source": "https://investor.lennox.com/node/29446",
+     "quote": "Building Climate Solutions: Business segment revenue was $492 million, up 5%. Table: Building Climate Solutions 491.6 468.8. Computed: 491.6/468.8-1 = +4.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 10.4,
+     "source": "https://investor.lennox.com/node/29606",
+     "quote": "Building Climate Solutions: Business segment revenue was $514 million, up 10%. Table: Building Climate Solutions 513.9 465.3. Computed: 513.9/465.3-1 = +10.4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8.2,
+     "source": "https://investor.lennox.com/node/29756",
+     "quote": "The Building Climate Solutions segment delivered 8% revenue growth in the fourth quarter, Table: Building Climate Solutions 495.2 457.6. Computed: 495.2/457.6-1 = +8.2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 38.1,
+     "source": "https://investor.lennox.com/node/30021",
+     "quote": "Business segment revenue was $485 million, up 38%. Table: Building Climate Solutions 485.1 351.2. Computed: 485.1/351.2-1 = +38.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 24.0,
+     "source": "https://www.investor.lennox.com/node/30191",
+     "quote": "Business segment revenue was $610 million, up 24%. Table: Building Climate Solutions 609.7 491.6. Computed: 609.7/491.6-1 = +24.0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 23.6,
+     "source": "https://www.miningstockeducation.com/2026/10/lennox-reports-2026-third-quarter-earnings-results/",
+     "quote": "Building Climate Solutions revenue increased 24% in the third quarter, including organic growth of 15%. Table: Building Climate Solutions 635.3 513.9. Computed: 635.3/513.9-1 = +23.6%",
+     "added": "2026-11-02"
+    }
+   ],
+   "total_segment_profit_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 18.8,
+     "source": "https://investor.lennox.com/node/29756",
+     "quote": "Q4 2025 release prior-year column: Total segment profit 212.0 253.3; Total net sales $ 1,195.0 $ 1,345.0; margin 17.7%, down 110 basis points. Computed: 253.3/1345.0 = 18.8% (= 17.7 + 1.1).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 15.7,
+     "source": "https://investor.lennox.com/node/30021",
+     "quote": "Q1 2026 release (recast prior year): Total segment profit, including unallocated Corporate and other expenses 163.5 168.0; Total net sales $1,135.1 $1,072.6; margin 14.4%, down 130 basis points. Computed: 168.0/1072.6 = 15.7% (= 14.4 + 1.3). Note: original Q1 2025 release stated 'segment profit margin of 14.5%' on a prior basis.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 23.3,
+     "source": "https://www.investor.lennox.com/node/30191",
+     "quote": "Q2 2026 release (recast prior year): Total segment profit, including unallocated Corporate and other expenses $355.0 $349.0; Total net sales $1,545.3 $1,500.9; margin 23.0%, down 30 basis points. Computed: 349.0/1500.9 = 23.3% (= 23.0 + 0.3). Note: original Q2 2025 release stated 'segment profit margin of 23.6%' on a prior basis.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.0,
+     "source": "https://www.miningstockeducation.com/2026/10/lennox-reports-2026-third-quarter-earnings-results/",
+     "quote": "Q3 2026 release (recast prior year): Total segment profit, including unallocated Corporate and other expenses 323.3 328.8; Total net sales $1,572.5 $1,426.8; 'total segment margin declined 240 basis points to 20.6%'. Computed: 328.8/1426.8 = 23.0% (= 20.6 + 2.4). Note: original Q3 2025 release stated 'segment profit margin of 21.7%' on a prior basis.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 17.7,
+     "source": "https://investor.lennox.com/node/29756",
+     "quote": "Segment Profit: $212 million, down 16%, and segment profit margin of 17.7%, down 110 basis points",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 14.4,
+     "source": "https://investor.lennox.com/node/30021",
+     "quote": "Total Segment Profit: $164 million, down 3%, and total segment profit margin of 14.4%, down 130 basis points",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 23.0,
+     "source": "https://www.investor.lennox.com/node/30191",
+     "quote": "Total Segment Profit: $355 million, up 2%, and total segment profit margin of 23.0%, down 30 basis points",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 20.6,
+     "source": "https://www.miningstockeducation.com/2026/10/lennox-reports-2026-third-quarter-earnings-results/",
+     "quote": "Total segment profit was $323 million, down 2%, and total segment margin declined 240 basis points to 20.6%.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "NEM": {
+   "all_in_sustaining_cost_per_ounce": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1319,
+     "source": "https://last10k.com/sec-filings/nem/0001164727-26-000009.htm",
+     "quote": "Newmont Q4/FY2025 earnings release (Ex. 99.1, Feb 19 2026): 2024 2025 ... Q1 Q2 Q3 Q4 FY Q1 Q2 Q3 Q4 FY -- Gold By-Product AISC ($/oz) 3 $ 1,373 $ 1,412 $ 1,542 $ 1,319 $ 1,408 $ 1,447 $ 1,375 $ 1,303 $ 1,302 $ 1,358 (4)%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 1447,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Gold By-Product AISC ($/oz) (3) | $1,447 | $1,375 | $1,303 | $1,302 | $1,358 | $1,029 | $1,621 | $1,454",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 1375,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Gold By-Product AISC ($/oz) (3) | $1,447 | $1,375 | $1,303 | $1,302 | $1,358 | $1,029 | $1,621 | $1,454",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1303,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Gold By-Product AISC ($/oz) (3) | $1,447 | $1,375 | $1,303 | $1,302 | $1,358 | $1,029 | $1,621 | $1,454",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1302,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Gold By-Product AISC ($/oz) (3) | $1,447 | $1,375 | $1,303 | $1,302 | $1,358 | $1,029 | $1,621 | $1,454",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1029,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Gold By-Product AISC ($/oz) (3) | $1,447 | $1,375 | $1,303 | $1,302 | $1,358 | $1,029 | $1,621 | $1,454",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1621,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Gold By-Product AISC ($/oz) (3) | $1,447 | $1,375 | $1,303 | $1,302 | $1,358 | $1,029 | $1,621 | $1,454",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1454,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Gold By-Product AISC ($/oz) (3) | $1,447 | $1,375 | $1,303 | $1,302 | $1,358 | $1,029 | $1,621 | $1,454",
+     "added": "2026-11-02"
+    }
+   ],
+   "attributable_gold_production_thousand_oz": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1899,
+     "source": "https://last10k.com/sec-filings/nem/0001164727-26-000009.htm",
+     "quote": "Newmont Q4/FY2025 earnings release (Ex. 99.1, Feb 19 2026): 2024 2025 Operating Results Q1 Q2 Q3 Q4 FY Q1 Q2 Q3 Q4 FY -- Total Attributable Gold Production 1,675 1,607 1,668 1,899 6,849 1,537 1,478 1,421 1,453 5,889",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 1537,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Total Attributable Gold Production | 1,537 | 1,478 | 1,421 | 1,453 | 5,889 | 1,301 | 1,293 | 1,302",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 1478,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Total Attributable Gold Production | 1,537 | 1,478 | 1,421 | 1,453 | 5,889 | 1,301 | 1,293 | 1,302",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1421,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Total Attributable Gold Production | 1,537 | 1,478 | 1,421 | 1,453 | 5,889 | 1,301 | 1,293 | 1,302",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1453,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Total Attributable Gold Production | 1,537 | 1,478 | 1,421 | 1,453 | 5,889 | 1,301 | 1,293 | 1,302",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1301,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Total Attributable Gold Production | 1,537 | 1,478 | 1,421 | 1,453 | 5,889 | 1,301 | 1,293 | 1,302",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1293,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Total Attributable Gold Production | 1,537 | 1,478 | 1,421 | 1,453 | 5,889 | 1,301 | 1,293 | 1,302",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1302,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Total Attributable Gold Production | 1,537 | 1,478 | 1,421 | 1,453 | 5,889 | 1,301 | 1,293 | 1,302",
+     "added": "2026-11-02"
+    }
+   ],
+   "average_realized_gold_price": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 2643,
+     "source": "https://last10k.com/sec-filings/nem/0001164727-26-000009.htm",
+     "quote": "Newmont Q4/FY2025 earnings release (Ex. 99.1, Feb 19 2026): 2024 2025 ... Q1 Q2 Q3 Q4 FY Q1 Q2 Q3 Q4 FY -- Average realized gold price ($/oz) $ 2,090 $ 2,347 $ 2,518 $ 2,643 $ 2,408 $ 2,944 $ 3,320 $ 3,539 $ 4,216 $ 3,498 45%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2944,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Average realized gold price ($/oz) | $2,944 | $3,320 | $3,539 | $4,216 | $3,498 | $4,900 | $4,414 | $4,317",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 3320,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Average realized gold price ($/oz) | $2,944 | $3,320 | $3,539 | $4,216 | $3,498 | $4,900 | $4,414 | $4,317",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 3539,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Average realized gold price ($/oz) | $2,944 | $3,320 | $3,539 | $4,216 | $3,498 | $4,900 | $4,414 | $4,317",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 4216,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Average realized gold price ($/oz) | $2,944 | $3,320 | $3,539 | $4,216 | $3,498 | $4,900 | $4,414 | $4,317",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4900,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Average realized gold price ($/oz) | $2,944 | $3,320 | $3,539 | $4,216 | $3,498 | $4,900 | $4,414 | $4,317",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 4414,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Average realized gold price ($/oz) | $2,944 | $3,320 | $3,539 | $4,216 | $3,498 | $4,900 | $4,414 | $4,317",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4317,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Average realized gold price ($/oz) | $2,944 | $3,320 | $3,539 | $4,216 | $3,498 | $4,900 | $4,414 | $4,317",
+     "added": "2026-11-02"
+    }
+   ],
+   "free_cash_flow": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1.636,
+     "source": "https://last10k.com/sec-filings/nem/0001164727-26-000009.htm",
+     "quote": "Newmont Q4/FY2025 earnings release (Ex. 99.1, Feb 19 2026): 2024 2025 ... Q1 Q2 Q3 Q4 FY Q1 Q2 Q3 Q4 FY -- Free cash flow ($M) 8 $ (74) $ 594 $ 760 $ 1,636 $ 2,916 $ 1,205 $ 1,710 $ 1,571 $ 2,813 $ 7,299 150% -> Q4 2024 1,636 $M / 1000 = 1.636 US$B",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 1.205,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Free cash flow ($M) (7) | $1,205 | $1,710 | $1,571 | $2,813 | $7,299 | $3,144 | $2,205 | $1,912 -> 1,205 $M / 1000 = 1.205 US$B",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 1.71,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Free cash flow ($M) (7) | $1,205 | $1,710 | $1,571 | $2,813 | $7,299 | $3,144 | $2,205 | $1,912 -> 1,710 $M / 1000 = 1.71 US$B",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.571,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Free cash flow ($M) (7) | $1,205 | $1,710 | $1,571 | $2,813 | $7,299 | $3,144 | $2,205 | $1,912 -> 1,571 $M / 1000 = 1.571 US$B",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2.813,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Free cash flow ($M) (7) | $1,205 | $1,710 | $1,571 | $2,813 | $7,299 | $3,144 | $2,205 | $1,912 -> 2,813 $M / 1000 = 2.813 US$B",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3.144,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Free cash flow ($M) (7) | $1,205 | $1,710 | $1,571 | $2,813 | $7,299 | $3,144 | $2,205 | $1,912 -> 3,144 $M / 1000 = 3.144 US$B",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2.205,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Free cash flow ($M) (7) | $1,205 | $1,710 | $1,571 | $2,813 | $7,299 | $3,144 | $2,205 | $1,912 -> 2,205 $M / 1000 = 2.205 US$B",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.912,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+     "quote": "Operating Results | Q1 | Q2 | Q3 | Q4 | FY | Q1 | Q2 | Q3 | Q4 | YTD (2025 Q1-Q4,FY; 2026 Q1-Q3,YTD) -- Free cash flow ($M) (7) | $1,205 | $1,710 | $1,571 | $2,813 | $7,299 | $3,144 | $2,205 | $1,912 -> 1,912 $M / 1000 = 1.912 US$B",
+     "added": "2026-11-02"
+    }
+   ]
   }
  }
 }
