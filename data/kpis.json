@@ -16344,6 +16344,1468 @@
      "added": "2026-11-02"
     }
    ]
+  },
+  "RSG": {
+   "average_yield_core_price_on_total_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 4.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000081/exhibit991q42024.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.4 percent, and volume decreased revenue by 1.2 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000169/exhibit991q12025.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.5 percent, and volume decreased revenue by 1.2 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 4.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000215/exhibit991q22025.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.1 percent, and volume increased revenue by 0.2 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 4.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000162828025047534/exhibit991q32025.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.0 percent, and volume decreased total revenue by 0.3 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.7,
+     "source": "https://republicservicesinc.gcs-web.com/node/29876",
+     "quote": "Revenue growth from average yield on total revenue was 3.7 percent, and volume decreased total revenue by 1.0 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000210/exhibit991q12026.htm",
+     "quote": "Revenue growth from average yield on total revenue was 3.4 percent, and volume decreased revenue by 0.8 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000273/exhibit991q22026.htm",
+     "quote": "Revenue growth from average yield on total revenue was 3.4 percent, and volume decreased revenue by 1.6 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.9,
+     "source": "https://finviz.com/news/412071/republic-services-inc-reports-third-quarter-2026-results",
+     "quote": "Revenue growth from average yield on total revenue was 2.9 percent, and volume decreased revenue by 0.6 percent.",
+     "added": "2026-11-02"
+    }
+   ],
+   "volume_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": -1.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000081/exhibit991q42024.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.4 percent, and volume decreased revenue by 1.2 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": -1.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000169/exhibit991q12025.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.5 percent, and volume decreased revenue by 1.2 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000215/exhibit991q22025.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.1 percent, and volume increased revenue by 0.2 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -0.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000162828025047534/exhibit991q32025.htm",
+     "quote": "Revenue growth from average yield on total revenue was 4.0 percent, and volume decreased total revenue by 0.3 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -1.0,
+     "source": "https://republicservicesinc.gcs-web.com/node/29876",
+     "quote": "Revenue growth from average yield on total revenue was 3.7 percent, and volume decreased total revenue by 1.0 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -0.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000210/exhibit991q12026.htm",
+     "quote": "Revenue growth from average yield on total revenue was 3.4 percent, and volume decreased revenue by 0.8 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -1.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000273/exhibit991q22026.htm",
+     "quote": "Revenue growth from average yield on total revenue was 3.4 percent, and volume decreased revenue by 1.6 percent.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -0.6,
+     "source": "https://finviz.com/news/412071/republic-services-inc-reports-third-quarter-2026-results",
+     "quote": "Revenue growth from average yield on total revenue was 2.9 percent, and volume decreased revenue by 0.6 percent.",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 31.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000081/exhibit991q42024.htm",
+     "quote": "adjusted EBITDA margin, a non-GAAP measure, was 31.0 percent of revenue",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 31.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000169/exhibit991q12025.htm",
+     "quote": "adjusted EBITDA margin, a non-GAAP measure, was 31.6 percent of revenue",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 32.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000215/exhibit991q22025.htm",
+     "quote": "adjusted EBITDA margin, a non-GAAP measure, was 32.1 percent of revenue, an increase of 100 basis points",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 32.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000162828025047534/exhibit991q32025.htm",
+     "quote": "adjusted EBITDA margin, a non-GAAP measure, was 32.8 percent of revenue, an increase of 80 basis points over the prior year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 31.3,
+     "source": "https://republicservicesinc.gcs-web.com/node/29876",
+     "quote": "Adjusted EBITDA and adjusted EBITDA margin | $ 1,295 | 31.3 % | $ 1,253 | 31.0 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 32.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000210/exhibit991q12026.htm",
+     "quote": "adjusted EBITDA margin, a non-GAAP measure, was 32.1 percent of revenue",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000273/exhibit991q22026.htm",
+     "quote": "Adjusted EBITDA margin, a non-GAAP measure, was 32.1 percent of revenue, which remained consistent with the prior year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 31.8,
+     "source": "https://finviz.com/news/412071/republic-services-inc-reports-third-quarter-2026-results",
+     "quote": "Adjusted EBITDA margin, a non-GAAP measure, was 31.8 percent of revenue.",
+     "added": "2026-11-02"
+    }
+   ],
+   "recycled_commodity_price_per_ton": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 153,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000081/exhibit991q42024.htm",
+     "quote": "The Company's average recycled commodity price per ton sold at our recycling centers during the fourth quarter was $153.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 155,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000169/exhibit991q12025.htm",
+     "quote": "The Company's average recycled commodity price per ton sold at its recycling centers during the first quarter was $155.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 149,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000215/exhibit991q22025.htm",
+     "quote": "The Company's average recycled commodity price per ton sold at its recycling centers during the second quarter was $149.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 126,
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000162828025047534/exhibit991q32025.htm",
+     "quote": "The Company's average recycled commodity price per ton sold at its recycling centers during the third quarter was $126.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 112,
+     "source": "https://republicservicesinc.gcs-web.com/node/29876",
+     "quote": "The Company's average recycled commodity price per ton sold at our recycling centers during the fourth quarter was $112.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 120,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000210/exhibit991q12026.htm",
+     "quote": "The Company's average recycled commodity price per ton sold at its recycling centers during the first quarter was $120.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 136,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001060391/000106039126000273/exhibit991q22026.htm",
+     "quote": "The Company's average recycled commodity price per ton sold at its recycling centers during the second quarter was $136.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 142,
+     "source": "https://finviz.com/news/412071/republic-services-inc-reports-third-quarter-2026-results",
+     "quote": "The Company's average recycled commodity price per ton sold at its recycling centers during the third quarter was $142.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "WAB": {
+   "total_backlog": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 22.272,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025005014/a4q2024pressrelease.htm",
+     "quote": "Total Backlog | $22,272 | $21,999 | 1.2 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 22.302,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025018921/a1q25pressreleaseword.htm",
+     "quote": "Total Backlog | $22,302 | $22,083 | 1.0 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 21.828,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025035831/a2q25pressreleaseword.htm",
+     "quote": "Total Backlog | $21,828 | $22,075 | -1.1 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 25.577,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025045773/a3q25pressreleaseword.htm",
+     "quote": "Total Backlog | $25,577 | $22,234 | 15.0 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 27.407,
+     "source": "https://www.businesswire.com/news/home/20260211879056/en/Wabtec-Delivers-Strong-Fourth-Quarter-2025-Results-Announces-2026-Full-Year-Guidance",
+     "quote": "Total Backlog | $27,407 | $22,272 | 23.1 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 30.802,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000162828026026384/a1q26pressreleaseword.htm",
+     "quote": "Total Backlog | $30,802 | $22,302 | 38.1% ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 30.932,
+     "source": "https://www.businesswire.com/news/home/20260722925768/en/",
+     "quote": "Total Backlog | $ 30,932 | $ 21,828 | 41.7% ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 31.435,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000094345226000017/a3q26pressreleaseword.htm",
+     "quote": "Total Backlog | $31,435 | $25,577 | 22.9% ($ millions; At September 30, 2026, the multi-year backlog was $5.86 billion higher than the prior year period)",
+     "added": "2026-11-02"
+    }
+   ],
+   "12_month_backlog": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 7.681,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025005014/a4q2024pressrelease.htm",
+     "quote": "12-Month Backlog | $7,681 | $7,457 | 3.0 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 8.196,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025018921/a1q25pressreleaseword.htm",
+     "quote": "12-Month Backlog | $8,196 | $7,710 | 6.3 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 8.21,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025035831/a2q25pressreleaseword.htm",
+     "quote": "12-Month Backlog | $8,210 | $7,334 | 11.9 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8.267,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025045773/a3q25pressreleaseword.htm",
+     "quote": "12-Month Backlog | $8,267 | $7,624 | 8.4 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8.234,
+     "source": "https://www.businesswire.com/news/home/20260211879056/en/Wabtec-Delivers-Strong-Fourth-Quarter-2025-Results-Announces-2026-Full-Year-Guidance",
+     "quote": "12-Month Backlog | $8,234 | $7,681 | 7.2 % ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9.247,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000162828026026384/a1q26pressreleaseword.htm",
+     "quote": "12-Month Backlog | $9,247 | $8,196 | 12.8% ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9.14,
+     "source": "https://www.businesswire.com/news/home/20260722925768/en/",
+     "quote": "12-Month Backlog | $ 9,140 | $ 8,210 | 11.3% ($ millions)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8.992,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000094345226000017/a3q26pressreleaseword.htm",
+     "quote": "12-Month Backlog | $8,992 | $8,267 | 8.8% ($ millions)",
+     "added": "2026-11-02"
+    }
+   ],
+   "freight_segment_sales_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025005014/a4q2024pressrelease.htm",
+     "quote": "Freight segment sales were up modestly in the quarter | Net Sales | $1,794 | $1,789 | 0.3 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 4.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025018921/a1q25pressreleaseword.htm",
+     "quote": "Freight segment sales for the first quarter were up 4.2%, primarily driven by Services which was up 16.9%. | Net Sales | $1,901 | $1,824 | 4.2 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": -0.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025035831/a2q25pressreleaseword.htm",
+     "quote": "Freight segment sales for the second quarter were largely flat compared to the year ago quarter. | Net Sales | $1,919 | $1,920 | -0.1 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025045773/a3q25pressreleaseword.htm",
+     "quote": "Freight segment sales for the third quarter were up 8.4%. | Net Sales | $2,093 | $1,930 | 8.4 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 18.3,
+     "source": "https://www.businesswire.com/news/home/20260211879056/en/Wabtec-Delivers-Strong-Fourth-Quarter-2025-Results-Announces-2026-Full-Year-Guidance",
+     "quote": "Freight segment sales for the fourth quarter were up 18.3%. | Net Sales | $2,123 | $1,794 | 18.3 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 11.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000162828026026384/a1q26pressreleaseword.htm",
+     "quote": "Freight segment sales for the first quarter were up 11.3%. | Net Sales | $2,115 | $1,901 | 11.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 16.9,
+     "source": "https://www.businesswire.com/news/home/20260722925768/en/",
+     "quote": "Freight segment sales for the second quarter were up 16.9%. | Net Sales | $ 2,243 | $ 1,919 | 16.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000094345226000017/a3q26pressreleaseword.htm",
+     "quote": "Freight segment sales for the third quarter were up 6.9%. | Net Sales | $2,237 | $2,093 | 6.9%",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 16.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025005014/a4q2024pressrelease.htm",
+     "quote": "Adjusted Operating Margin | 16.9 % | 17.0 % | (0.1) pts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 21.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025018921/a1q25pressreleaseword.htm",
+     "quote": "Adjusted Operating Margin | 21.7 % | 19.8 % | 1.9 pts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 21.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025035831/a2q25pressreleaseword.htm",
+     "quote": "Adjusted Operating Margin | 21.1 % | 19.3 % | 1.8 pts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 21.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828025045773/a3q25pressreleaseword.htm",
+     "quote": "Adjusted Operating Margin | 21.0 % | 19.7 % | 1.3 pts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 17.7,
+     "source": "https://www.businesswire.com/news/home/20260211879056/en/Wabtec-Delivers-Strong-Fourth-Quarter-2025-Results-Announces-2026-Full-Year-Guidance",
+     "quote": "Adjusted Operating Margin | 17.7 % | 16.9 % | 0.8 pts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 21.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000162828026026384/a1q26pressreleaseword.htm",
+     "quote": "Adjusted Operating Margin | 21.9% | 21.7% | 0.2 pts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 21.9,
+     "source": "https://www.businesswire.com/news/home/20260722925768/en/",
+     "quote": "Adjusted Operating Margin | 21.9% | 21.1% | 0.8 pts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 22.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000943452/000094345226000017/a3q26pressreleaseword.htm",
+     "quote": "Adjusted Operating Margin | 22.9% | 21.0% | 1.9 pts",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "MRVL": {
+   "data_center_revenue_growth": [
+    {
+     "period": "2024-11-02",
+     "label": "Q3 FY25",
+     "value": 98,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563224000197/q325_8kx1122024ex-991.htm",
+     "quote": "Revenue by End Market (in millions) table: Data center $1,101.1 vs year-earlier $555.8 (October 28, 2023); % Change YoY: 98%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-01",
+     "label": "Q4 FY25",
+     "value": 78,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000051/q425_8kx212025ex-991.htm",
+     "quote": "Revenue by End Market (in millions) table: Data center $1,365.8 vs year-earlier $765.3 (February 3, 2024); % Change YoY: 78%. Release text: \"strong growth in our data center end market, where revenue increased 78% year-over-year in the fourth quarter\"",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-03",
+     "label": "Q1 FY26",
+     "value": 76,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000115/q126_8kx532025ex-991.htm",
+     "quote": "Revenue by End Market (in millions) table: Data center $1,440.6 vs year-earlier $816.4 (May 4, 2024); % Change YoY: 76%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-02",
+     "label": "Q2 FY26",
+     "value": 69,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563225000187/q226_8kx822025ex-991.htm",
+     "quote": "Revenue by End Market (in millions) table: Data center $1,490.5 vs year-earlier $880.9 (Aug 3, 2024); % Change YoY: 69%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-01",
+     "label": "Q3 FY26",
+     "value": 38,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000193/q326_8kx1112025ex-991.htm",
+     "quote": "Revenue by End Market (in millions) table: Data center $1,517.9 vs year-earlier $1,101.1 (Nov 2, 2024); % Change YoY: 38%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000006/q426_8kx1312026ex-991.htm",
+     "quote": "Revenue by End Market (in millions) table: Data center $1,651.3 vs year-earlier $1,365.8 (February 1, 2025); % Change YoY: 21%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 FY27",
+     "value": 27,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563226000014/q127_8kx522026ex-991.htm",
+     "quote": "Revenue by End Market (in millions) table: Data center $1,832.7 vs year-earlier $1,440.6 (May 3, 2025); % Change YoY: 27%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 FY27",
+     "value": 46,
+     "source": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+     "quote": "Revenue by End Market (in millions) table: Data center $2,171.5 vs year-earlier $1,490.5 (Aug 2, 2025); % Change YoY: 46%. CEO: \"Data Center portfolio, where revenue growth accelerated to 46% year over year\"",
+     "added": "2026-11-02"
+    }
+   ],
+   "data_center_share_of_revenue": [
+    {
+     "period": "2024-11-02",
+     "label": "Q3 FY25",
+     "value": 73,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563224000197/q325_8kx1122024ex-991.htm",
+     "quote": "Revenue by End Market % of Total table: Data center 73% (Data center $1,101.1M of Total Net Revenue $1,516.1M).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-01",
+     "label": "Q4 FY25",
+     "value": 75,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000051/q425_8kx212025ex-991.htm",
+     "quote": "Revenue by End Market % of Total table: Data center 75% (Data center $1,365.8M of Total Net Revenue $1,817.4M).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-03",
+     "label": "Q1 FY26",
+     "value": 76,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000115/q126_8kx532025ex-991.htm",
+     "quote": "Revenue by End Market % of Total table: Data center 76% (Data center $1,440.6M of Total Net Revenue $1,895.3M).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-02",
+     "label": "Q2 FY26",
+     "value": 74,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563225000187/q226_8kx822025ex-991.htm",
+     "quote": "Revenue by End Market % of Total table: Data center 74% (Data center $1,490.5M of Total Net Revenue $2,006.1M).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-01",
+     "label": "Q3 FY26",
+     "value": 73,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000193/q326_8kx1112025ex-991.htm",
+     "quote": "Revenue by End Market % of Total table: Data center 73% (Data center $1,517.9M of Total Net Revenue $2,074.5M).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 74,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000006/q426_8kx1312026ex-991.htm",
+     "quote": "Revenue by End Market % of Total table: Data center 74% (Data center $1,651.3M of Total Net Revenue $2,218.7M).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 FY27",
+     "value": 76,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563226000014/q127_8kx522026ex-991.htm",
+     "quote": "Revenue by End Market % of Total table: Data center 76% (Data center $1,832.7M of Total Net Revenue $2,417.8M).",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 FY27",
+     "value": 79,
+     "source": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+     "quote": "Revenue by End Market % of Total table: Data center 79% (Data center $2,171.5M of Total Net Revenue $2,739.3M).",
+     "added": "2026-11-02"
+    }
+   ],
+   "non_gaap_gross_margin": [
+    {
+     "period": "2024-11-02",
+     "label": "Q3 FY25",
+     "value": 60.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563224000197/q325_8kx1122024ex-991.htm",
+     "quote": "60.5% non-GAAP gross margin",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-01",
+     "label": "Q4 FY25",
+     "value": 60.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000051/q425_8kx212025ex-991.htm",
+     "quote": "60.1% non-GAAP gross margin",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-03",
+     "label": "Q1 FY26",
+     "value": 59.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000115/q126_8kx532025ex-991.htm",
+     "quote": "59.8% non-GAAP gross margin",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-02",
+     "label": "Q2 FY26",
+     "value": 59.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563225000187/q226_8kx822025ex-991.htm",
+     "quote": "59.4% non-GAAP gross margin",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-01",
+     "label": "Q3 FY26",
+     "value": 59.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000193/q326_8kx1112025ex-991.htm",
+     "quote": "59.7% non-GAAP gross margin",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 59.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000006/q426_8kx1312026ex-991.htm",
+     "quote": "59.0% non-GAAP gross margin",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 FY27",
+     "value": 58.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563226000014/q127_8kx522026ex-991.htm",
+     "quote": "58.9% non-GAAP gross margin",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 FY27",
+     "value": 58.9,
+     "source": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+     "quote": "58.9% non-GAAP gross margin",
+     "added": "2026-11-02"
+    }
+   ],
+   "next_quarter_revenue_guidance_midpoint": [
+    {
+     "period": "2024-11-02",
+     "label": "Q3 FY25",
+     "value": 1.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563224000197/q325_8kx1122024ex-991.htm",
+     "quote": "Net revenue is expected to be $1.800 billion +/- 5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-01",
+     "label": "Q4 FY25",
+     "value": 1.875,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000051/q425_8kx212025ex-991.htm",
+     "quote": "Net revenue is expected to be $1.875 billion +/- 5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-03",
+     "label": "Q1 FY26",
+     "value": 2.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000115/q126_8kx532025ex-991.htm",
+     "quote": "Net revenue is expected to be $2.000 billion +/- 5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-02",
+     "label": "Q2 FY26",
+     "value": 2.06,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563225000187/q226_8kx822025ex-991.htm",
+     "quote": "Net revenue is expected to be $2.060 billion +/- 5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-01",
+     "label": "Q3 FY26",
+     "value": 2.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563225000193/q326_8kx1112025ex-991.htm",
+     "quote": "Net revenue is expected to be $2.200 billion +/- 5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 2.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000006/q426_8kx1312026ex-991.htm",
+     "quote": "Net revenue is expected to be $2.400 billion +/- 5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 FY27",
+     "value": 2.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563226000014/q127_8kx522026ex-991.htm",
+     "quote": "Net revenue is expected to be $2.700 billion +/- 5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 FY27",
+     "value": 3.15,
+     "source": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+     "quote": "Net revenue is expected to be $3.150 billion +/- 5%.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "LULU": {
+   "comparable_sales_growth": [
+    {
+     "period": "2024-10-27",
+     "label": "Q3 2024",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718724000040/lulu-20241027xex991.htm",
+     "quote": "Comparable sales increased 4%, or 3% on a constant dollar basis. (value = reported-basis headline; constant dollar 3%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-02",
+     "label": "Q4 2024",
+     "value": 3,
+     "source": "https://www.businesswire.com/news/home/20250327623807/en/lululemon-athletica-inc.-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2024-Results",
+     "quote": "Comparable sales, which excludes net revenue from the 53rd week of 2024, increased 3%, or 4% on a constant dollar basis.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-04",
+     "label": "Q1 2025",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000026/lulu-20250504xex991.htm",
+     "quote": "Comparable sales increased 1%. (constant dollar also 1% per reconciliation table)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-03",
+     "label": "Q2 2025",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000038/lulu-20250803xex991.htm",
+     "quote": "Comparable sales increased 1%. (constant dollar also 1% per reconciliation table)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-02",
+     "label": "Q3 2025",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000054/lulu-20251102xex991.htm",
+     "quote": "Comparable sales increased 1%, or 2% on a constant dollar basis. (value = reported-basis headline; constant dollar 2%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-02-01",
+     "label": "Q4 2025",
+     "value": 3,
+     "source": "https://corporate.lululemon.com/newsroom/press-releases/2026/03-17-2026-200620717",
+     "quote": "Comparable sales increased 3%, or 2% on a constant dollar basis. (comparable sales calculated on a one-week shifted basis; constant dollar 2%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-03",
+     "label": "Q1 2026",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000077/lulu-20260503xex991.htm",
+     "quote": "Comparable sales increased 1%, or decreased 2% on a constant dollar basis. (value = reported-basis headline; constant dollar -2%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-02",
+     "label": "Q2 2026",
+     "value": -9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000126/lulu-20260802xex991.htm",
+     "quote": "Comparable sales decreased 9%, or 10% on a constant dollar basis. (value = reported-basis headline; constant dollar -10%)",
+     "added": "2026-11-02"
+    }
+   ],
+   "americas_revenue_growth": [
+    {
+     "period": "2024-10-27",
+     "label": "Q3 2024",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718724000040/lulu-20241027xex991.htm",
+     "quote": "Americas net revenue increased 2%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-02",
+     "label": "Q4 2024",
+     "value": 7,
+     "source": "https://www.businesswire.com/news/home/20250327623807/en/lululemon-athletica-inc.-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2024-Results",
+     "quote": "Americas net revenue increased 7%, or 8% on a constant dollar basis. (Q4 2024 was a 14-week quarter)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-04",
+     "label": "Q1 2025",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000026/lulu-20250504xex991.htm",
+     "quote": "Americas net revenue increased 3%, or 4% on a constant dollar basis.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-03",
+     "label": "Q2 2025",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000038/lulu-20250803xex991.htm",
+     "quote": "Americas net revenue increased 1%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-02",
+     "label": "Q3 2025",
+     "value": -2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000054/lulu-20251102xex991.htm",
+     "quote": "Americas net revenue decreased 2%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-02-01",
+     "label": "Q4 2025",
+     "value": -4,
+     "source": "https://corporate.lululemon.com/newsroom/press-releases/2026/03-17-2026-200620717",
+     "quote": "Americas net revenue decreased 4%, or 5% on a constant dollar basis.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-03",
+     "label": "Q1 2026",
+     "value": -3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000077/lulu-20260503xex991.htm",
+     "quote": "Americas net revenue decreased 3%, or 4% on a constant dollar basis.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-02",
+     "label": "Q2 2026",
+     "value": -8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000126/lulu-20260802xex991.htm",
+     "quote": "Americas net revenue decreased 8%.",
+     "added": "2026-11-02"
+    }
+   ],
+   "china_mainland_revenue_growth": [
+    {
+     "period": "2024-10-27",
+     "label": "Q3 2024",
+     "value": 39,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718724000040/lulu-20241027xex991.htm",
+     "quote": "Constant dollar net revenue table, China Mainland row: Change 39%, Foreign exchange (3)%, Change in constant dollars 36% (no China bullet in release)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-02",
+     "label": "Q4 2024",
+     "value": 46,
+     "source": "https://www.businesswire.com/news/home/20250327623807/en/lululemon-athletica-inc.-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2024-Results",
+     "quote": "Fourth quarter constant dollar net revenue table, China Mainland row: Change 46%, Foreign exchange 2%, Change in constant dollars 48% (no China bullet in release)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-04",
+     "label": "Q1 2025",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000026/lulu-20250504xex991.htm",
+     "quote": "Constant dollar net revenue table, China Mainland row: Change 21%, Foreign exchange 1%, Change in constant dollars 22% (no China bullet in release)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-03",
+     "label": "Q2 2025",
+     "value": 25,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000038/lulu-20250803xex991.htm",
+     "quote": "Constant dollar net revenue table, China Mainland row: Change 25%, Foreign exchange (1)%, Change in constant dollars 24% (no China bullet in release)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-02",
+     "label": "Q3 2025",
+     "value": 46,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000054/lulu-20251102xex991.htm",
+     "quote": "Constant dollar net revenue table, China Mainland row: Change 46%, Foreign exchange 1%, Change in constant dollars 47% (no China bullet in release)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-02-01",
+     "label": "Q4 2025",
+     "value": 24,
+     "source": "https://corporate.lululemon.com/newsroom/press-releases/2026/03-17-2026-200620717",
+     "quote": "Fourth quarter constant dollar net revenue table, China Mainland row: Change 24%, Foreign exchange (3)%, Change in constant dollars 21% (no China bullet in release)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-03",
+     "label": "Q1 2026",
+     "value": 30,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000077/lulu-20260503xex991.htm",
+     "quote": "Constant dollar net revenue table, China Mainland row: Change 30%, Foreign exchange (7)%, Change in constant dollars 23% (no China bullet in release)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-02",
+     "label": "Q2 2026",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000126/lulu-20260802xex991.htm",
+     "quote": "Constant dollar net revenue table, China Mainland row: Change 4%, Foreign exchange (6)%, Change in constant dollars (2)% (no China bullet in release)",
+     "added": "2026-11-02"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-10-27",
+     "label": "Q3 2024",
+     "value": 58.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718724000040/lulu-20241027xex991.htm",
+     "quote": "Gross margin increased 150 basis points to 58.5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-02",
+     "label": "Q4 2024",
+     "value": 60.4,
+     "source": "https://www.businesswire.com/news/home/20250327623807/en/lululemon-athletica-inc.-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2024-Results",
+     "quote": "Gross profit increased 15% to $2.2 billion and gross margin increased 100 basis points to 60.4%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-04",
+     "label": "Q1 2025",
+     "value": 58.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000026/lulu-20250504xex991.htm",
+     "quote": "Gross profit increased 8% to $1.4 billion and gross margin increased 60 basis points to 58.3%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-03",
+     "label": "Q2 2025",
+     "value": 58.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000038/lulu-20250803xex991.htm",
+     "quote": "Gross profit increased 5% to $1.5 billion and gross margin decreased 110 basis points to 58.5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-02",
+     "label": "Q3 2025",
+     "value": 55.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000054/lulu-20251102xex991.htm",
+     "quote": "Gross profit increased 2% to $1.4 billion and gross margin decreased 290 basis points to 55.6%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-02-01",
+     "label": "Q4 2025",
+     "value": 54.9,
+     "source": "https://corporate.lululemon.com/newsroom/press-releases/2026/03-17-2026-200620717",
+     "quote": "Gross profit decreased 8% to $2.0 billion and gross margin decreased 550 basis points to 54.9%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-03",
+     "label": "Q1 2026",
+     "value": 54.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000077/lulu-20260503xex991.htm",
+     "quote": "Gross profit decreased 3% to $1.3 billion and gross margin decreased 410 basis points to 54.2%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-02",
+     "label": "Q2 2026",
+     "value": 60.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000126/lulu-20260802xex991.htm",
+     "quote": "Gross profit decreased 1% to $1.5 billion and gross margin increased 200 basis points to 60.5%.",
+     "added": "2026-11-02"
+    }
+   ],
+   "inventory_growth": [
+    {
+     "period": "2024-10-27",
+     "label": "Q3 2024",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718724000040/lulu-20241027xex991.htm",
+     "quote": "Inventories at the end of the third quarter of 2024 increased 8% to $1.8 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-02-02",
+     "label": "Q4 2024",
+     "value": 9,
+     "source": "https://www.businesswire.com/news/home/20250327623807/en/lululemon-athletica-inc.-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2024-Results",
+     "quote": "Inventories at the end of 2024 increased by 9% to $1.4 billion.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-05-04",
+     "label": "Q1 2025",
+     "value": 23,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000026/lulu-20250504xex991.htm",
+     "quote": "Inventories at the end of the first quarter of 2025 increased 23% to $1.7 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-08-03",
+     "label": "Q2 2025",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000038/lulu-20250803xex991.htm",
+     "quote": "Inventories at the end of the second quarter of 2025 increased 21% to $1.7 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-11-02",
+     "label": "Q3 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000054/lulu-20251102xex991.htm",
+     "quote": "Inventories at the end of the third quarter of 2025 increased 11% to $2.0 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-02-01",
+     "label": "Q4 2025",
+     "value": 18,
+     "source": "https://corporate.lululemon.com/newsroom/press-releases/2026/03-17-2026-200620717",
+     "quote": "Inventories at the end of 2025 increased by 18% to $1.7 billion.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-05-03",
+     "label": "Q1 2026",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000077/lulu-20260503xex991.htm",
+     "quote": "Inventories at the end of the first quarter of 2026 increased by 2% to $1.7 billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-08-02",
+     "label": "Q2 2026",
+     "value": -1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001397187/000139718726000126/lulu-20260802xex991.htm",
+     "quote": "Inventories at the end of the second quarter of 2026 decreased by 1% to $1.7 billion compared to the end of the second quarter of 2025.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "RDDT": {
+   "daily_active_uniques": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 101.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000016/earningspressreleaseq424.htm",
+     "quote": "Daily Active Uniques (“DAUq”) increased 39% year-over-year to 101.7 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 108.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000100/earningspressreleaseq125.htm",
+     "quote": "Daily Active Uniques (“DAUq”) increased 31% year-over-year to 108.1 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 110.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000194/earningspressreleaseq225.htm",
+     "quote": "Daily Active Uniques (“DAUq”) increased 21% year-over-year to 110.4 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 116.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000225/earningspressreleaseq325.htm",
+     "quote": "Daily Active Uniques (“DAUq”) increased 19% year-over-year to 116.0 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 121.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000020/earningspressreleaseq425.htm",
+     "quote": "Daily Active Uniques (“DAUq”) increased 19% year-over-year to 121.4 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 126.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000067/earningspressreleaseq126.htm",
+     "quote": "Daily Active Uniques (“DAUq”) increased 17% year-over-year to 126.8 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 130.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000098/earningspressreleaseq226.htm",
+     "quote": "Daily Active Uniques (“DAUq”) increased 18% year-over-year to 130.3 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 130.3,
+     "source": "https://s203.q4cdn.com/380862485/files/content_files/Q3-26-Earnings-Press-Release.pdf",
+     "quote": "Daily Active Uniques (“DAUq”) increased 12% year-over-year to 130.3 million",
+     "added": "2026-11-02"
+    }
+   ],
+   "weekly_active_uniques": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 379.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000016/earningspressreleaseq424.htm",
+     "quote": "WAUq: Global 379.4 267.5 42% (Q4 2024 vs Q4 2023 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 401.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000100/earningspressreleaseq125.htm",
+     "quote": "WAUq: Global 401.3 306.2 31% (Q1 2025 vs Q1 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 416.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000194/earningspressreleaseq225.htm",
+     "quote": "WAUq: Global 416.4 342.3 22% (Q2 2025 vs Q2 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 443.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000225/earningspressreleaseq325.htm",
+     "quote": "WAUq: Global 443.8 365.4 21% (Q3 2025 vs Q3 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 471.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000020/earningspressreleaseq425.htm",
+     "quote": "WAUq: Global 471.6 379.4 24% (Q4 2025 vs Q4 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 493.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000067/earningspressreleaseq126.htm",
+     "quote": "WAUq: Global 493.1 401.3 23% (Q1 2026 vs Q1 2025 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 514.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000098/earningspressreleaseq226.htm",
+     "quote": "Weekly Active Uniques (“WAUq”) increased 24% year-over-year to 514.6 million, crossing half a billion",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 515.2,
+     "source": "https://s203.q4cdn.com/380862485/files/content_files/Q3-26-Earnings-Press-Release.pdf",
+     "quote": "Weekly Active Uniques (“WAUq”) increased 16% year-over-year to 515.2 million",
+     "added": "2026-11-02"
+    }
+   ],
+   "average_revenue_per_unique_arpu": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 4.21,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000016/earningspressreleaseq424.htm",
+     "quote": "ARPU: Global $4.21 $3.42 23% (Q4 2024 vs Q4 2023 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 3.63,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000100/earningspressreleaseq125.htm",
+     "quote": "ARPU: Global $3.63 $2.94 23% (Q1 2025 vs Q1 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 4.53,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000194/earningspressreleaseq225.htm",
+     "quote": "ARPU: Global $4.53 $3.08 47% (Q2 2025 vs Q2 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 5.04,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000225/earningspressreleaseq325.htm",
+     "quote": "ARPU: Global $5.04 $3.58 41% (Q3 2025 vs Q3 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5.98,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000020/earningspressreleaseq425.htm",
+     "quote": "ARPU: Global $5.98 $4.21 42% (Q4 2025 vs Q4 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5.23,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000067/earningspressreleaseq126.htm",
+     "quote": "ARPU: Global $5.23 $3.63 44% (Q1 2026 vs Q1 2025 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6.18,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000098/earningspressreleaseq226.htm",
+     "quote": "ARPU: Global $6.18 $4.53 36% (Q2 2026 vs Q2 2025 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6.87,
+     "source": "https://s203.q4cdn.com/380862485/files/content_files/Q3-26-Earnings-Press-Release.pdf",
+     "quote": "ARPU: Global $ 6.87 $ 5.04 36% (Q3 2026 vs Q3 2025 table row)",
+     "added": "2026-11-02"
+    }
+   ],
+   "advertising_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 60,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000016/earningspressreleaseq424.htm",
+     "quote": "Ad revenue increased 60% year-over-year to $394.5 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 61,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000100/earningspressreleaseq125.htm",
+     "quote": "Ad revenue increased 61% year-over-year to $358.6 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 84,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000194/earningspressreleaseq225.htm",
+     "quote": "Ad revenue increased 84% year-over-year to $465 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 74,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000225/earningspressreleaseq325.htm",
+     "quote": "Ad revenue increased 74% year-over-year to $549 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 75,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000020/earningspressreleaseq425.htm",
+     "quote": "Ad revenue increased 75% year-over-year to $690 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 74,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000067/earningspressreleaseq126.htm",
+     "quote": "Ad revenue increased 74% year-over-year to $625 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 64,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000098/earningspressreleaseq226.htm",
+     "quote": "Ad revenue increased 64% year-over-year to $762 million",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 54,
+     "source": "https://s203.q4cdn.com/380862485/files/content_files/Q3-26-Earnings-Press-Release.pdf",
+     "quote": "Ad revenue increased 54% year-over-year to $847 million",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 36.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000016/earningspressreleaseq424.htm",
+     "quote": "Adjusted EBITDA margin 36.1% 9.3% (Q4 2024 vs Q4 2023 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 29.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000100/earningspressreleaseq125.htm",
+     "quote": "Adjusted EBITDA margin 29.4% 4.1% (Q1 2025 vs Q1 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 33.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000194/earningspressreleaseq225.htm",
+     "quote": "Adjusted EBITDA margin 33.4% 14.0% (Q2 2025 vs Q2 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 40.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000225/earningspressreleaseq325.htm",
+     "quote": "Adjusted EBITDA margin 40.3% 27.0% (Q3 2025 vs Q3 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 45.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000020/earningspressreleaseq425.htm",
+     "quote": "Adjusted EBITDA margin 45.1% 36.1% (Q4 2025 vs Q4 2024 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 40.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000067/earningspressreleaseq126.htm",
+     "quote": "Adjusted EBITDA margin 40.1% 29.4% (Q1 2026 vs Q1 2025 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 42.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000098/earningspressreleaseq226.htm",
+     "quote": "Adjusted EBITDA margin* 42.6% 33.4% (Q2 2026 vs Q2 2025 table row)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 44.9,
+     "source": "https://s203.q4cdn.com/380862485/files/content_files/Q3-26-Earnings-Press-Release.pdf",
+     "quote": "Adjusted EBITDA margin* 44.9 % 40.3 % (Q3 2026 vs Q3 2025 table row)",
+     "added": "2026-11-02"
+    }
+   ]
   }
  }
 }

@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "RSG",
-  "WAB",
-  "MRVL",
-  "LULU",
-  "RDDT",
   "CF",
   "EME",
   "HST",
@@ -84,7 +79,12 @@
   "WDAY",
   "BR",
   "MSI",
-  "BKR"
+  "BKR",
+  "RSG",
+  "WAB",
+  "MRVL",
+  "LULU",
+  "RDDT"
  ],
  "notes": {
   "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
@@ -151,6 +151,11 @@
   "WDAY": "Q3 FY25-Q2 FY27 filled, all 4 KPIs x 8 quarters, each from that quarter's own release (later releases don't restate year-earlier backlog). Q3 FY26 cRPO includes Paradox acquisition.",
   "BR": "Q1-Q4 FY26 filled (Q1 FY27 not yet reported on 2 Nov 2026; due 3 Nov), plus FY25 year-earlier columns for closed sales, adjusted operating margin, event-driven revenue (8 quarters). Recurring revenue cc growth only stated for current quarter, so FY25 not filled. Closed sales from 'Select Operating Metrics' ($M -> $B).",
   "MSI": "Q3 2025-Q2 2026 filled (Q3 2026 due 4 Nov 2026). Year-earlier backlog not filled (releases give only rounded increase); year-earlier segment growth rates not stated. Non-GAAP op margin 8 quarters. Q2 2026 margin 32.9% includes one-time IEEPA tariff refund (~190bp, per third-party report).",
-  "BKR": "Q4 2025-Q3 2026 plus year-earlier: orders and IET orders 8 quarters. RPO Q4'25-Q3'26 stated; Q3'25 derived from Q4'25 release ('up $0.6B sequentially'); Q4'24-Q2'25 RPO not filled. Company-wide adjusted EBITDA margin not reported as a %: computed as adjusted EBITDA / revenue (8 quarters)."
+  "BKR": "Q4 2025-Q3 2026 plus year-earlier: orders and IET orders 8 quarters. RPO Q4'25-Q3'26 stated; Q3'25 derived from Q4'25 release ('up $0.6B sequentially'); Q4'24-Q2'25 RPO not filled. Company-wide adjusted EBITDA margin not reported as a %: computed as adjusted EBITDA / revenue (8 quarters).",
+  "WAB": "Freight growth Q4 2024 and Q2 2025 from segment net sales table (text says 'up modestly'/'largely flat'). Backlog tables in $M converted to $B.",
+  "MRVL": "From Q4 FY26 only two end markets (Data center, Communications and other); data center series unchanged. Guidance midpoint = next quarter's revenue guidance given in that release.",
+  "LULU": "Comparable sales = reported basis (constant-dollar in quote); Q4 2024 excludes 53rd week, Q4 2025 one-week shifted basis. China Mainland growth from constant-dollar revenue table (reported change). Q2 2026 GAAP gross margin includes 560 bps tariff-refund benefit.",
+  "RDDT": "DAUq/WAUq in millions. Some quotes are table rows.",
+  "RSG": "Yield = average yield on total revenue (core price stated separately, not used). Q3 2026 source is the PR Newswire copy (SEC exhibit not fetchable)."
  }
 }
