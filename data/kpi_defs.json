@@ -1565,6 +1565,563 @@
      "better": "up"
     }
    ]
+  },
+  "SPG": {
+   "name": "Simon Property Group",
+   "kpis": [
+    {
+     "id": "occupancy_rate_us_malls_and_outlets",
+     "label": "Occupancy rate (US malls and outlets)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "base_minimum_rent_per_sq_ft_growth",
+     "label": "Base minimum rent per sq ft growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "real_estate_ffo_per_share",
+     "label": "Real estate FFO per share",
+     "unit": "usd",
+     "better": "up"
+    },
+    {
+     "id": "domestic_property_noi_growth",
+     "label": "Domestic property NOI growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "META": {
+   "name": "Meta Platforms Inc.",
+   "kpis": [
+    {
+     "id": "family_daily_active_people",
+     "label": "Family daily active people",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "ad_impressions_growth",
+     "label": "Ad impressions growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "average_price_per_ad_growth",
+     "label": "Average price per ad growth",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "reality_labs_operating_loss",
+     "label": "Reality Labs operating loss",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "capital_expenditures",
+     "label": "Capital expenditures",
+     "unit": "usd_b",
+     "better": "none"
+    }
+   ]
+  },
+  "TT": {
+   "name": "Trane Technologies plc",
+   "kpis": [
+    {
+     "id": "bookings_growth",
+     "label": "Bookings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "backlog",
+     "label": "Backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "organic_revenue_growth",
+     "label": "Organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "RL": {
+   "name": "Ralph Lauren Corp.",
+   "kpis": [
+    {
+     "id": "revenue_growth_constant_currency",
+     "label": "Revenue growth (constant currency)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "average_unit_retail_growth",
+     "label": "Average unit retail growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ROST": {
+   "name": "Ross Stores Inc.",
+   "kpis": [
+    {
+     "id": "comparable_store_sales_growth",
+     "label": "Comparable store sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "stores_at_quarter_end",
+     "label": "Stores at quarter end",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "GDDY": {
+   "name": "GoDaddy Inc.",
+   "kpis": [
+    {
+     "id": "total_bookings_growth",
+     "label": "Total bookings growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "applications_commerce_revenue_growth",
+     "label": "Applications & Commerce revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "average_revenue_per_user_arpu",
+     "label": "Average revenue per user (ARPU)",
+     "unit": "usd",
+     "better": "up"
+    },
+    {
+     "id": "customers",
+     "label": "Customers",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "normalized_ebitda_margin",
+     "label": "Normalized EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "FAST": {
+   "name": "Fastenal Co.",
+   "kpis": [
+    {
+     "id": "daily_sales_growth",
+     "label": "Daily sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "active_onsite_locations",
+     "label": "Active Onsite locations",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "SYK": {
+   "name": "Stryker Corp.",
+   "kpis": [
+    {
+     "id": "organic_net_sales_growth",
+     "label": "Organic net sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "medsurg_neurotechnology_organic_growth",
+     "label": "MedSurg & Neurotechnology organic growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "orthopaedics_organic_growth",
+     "label": "Orthopaedics organic growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "CMG": {
+   "name": "Chipotle Mexican Grill",
+   "kpis": [
+    {
+     "id": "comparable_restaurant_sales_growth",
+     "label": "Comparable restaurant sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "transactions_growth_comparable",
+     "label": "Transactions growth (comparable)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "restaurant_level_operating_margin",
+     "label": "Restaurant-level operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "new_restaurants_opened",
+     "label": "New restaurants opened",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "KLAC": {
+   "name": "KLA Corp.",
+   "kpis": [
+    {
+     "id": "semiconductor_process_control_revenue_growth",
+     "label": "Semiconductor process control revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "services_revenue_growth",
+     "label": "Services revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "CME": {
+   "name": "CME Group Inc.",
+   "kpis": [
+    {
+     "id": "average_daily_volume_million_contracts",
+     "label": "Average daily volume (million contracts)",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "average_rate_per_contract",
+     "label": "Average rate per contract",
+     "unit": "usd",
+     "better": "none"
+    },
+    {
+     "id": "clearing_and_transaction_fees_growth",
+     "label": "Clearing and transaction fees growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "market_data_revenue_growth",
+     "label": "Market data revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "STE": {
+   "name": "STERIS plc",
+   "kpis": [
+    {
+     "id": "constant_currency_organic_revenue_growth",
+     "label": "Constant-currency organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "healthcare_segment_revenue_growth",
+     "label": "Healthcare segment revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "applied_sterilization_technologies_revenue_growt",
+     "label": "Applied Sterilization Technologies revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "backlog",
+     "label": "Backlog",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "WDAY": {
+   "name": "Workday Inc.",
+   "kpis": [
+    {
+     "id": "subscription_revenue_growth",
+     "label": "Subscription revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "12_month_subscription_revenue_backlog_growth",
+     "label": "12-month subscription revenue backlog growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "total_subscription_revenue_backlog",
+     "label": "Total subscription revenue backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "non_gaap_operating_margin",
+     "label": "Non-GAAP operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "BR": {
+   "name": "Broadridge Financial Solutions",
+   "kpis": [
+    {
+     "id": "recurring_revenue_growth_constant_currency",
+     "label": "Recurring revenue growth (constant currency)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "closed_sales",
+     "label": "Closed sales",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "event_driven_revenue",
+     "label": "Event-driven revenue",
+     "unit": "usd_b",
+     "better": "none"
+    }
+   ]
+  },
+  "MSI": {
+   "name": "Motorola Solutions Inc.",
+   "kpis": [
+    {
+     "id": "ending_backlog",
+     "label": "Ending backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "software_services_revenue_growth",
+     "label": "Software & Services revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "products_systems_integration_revenue_growth",
+     "label": "Products & Systems Integration revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "non_gaap_operating_margin",
+     "label": "Non-GAAP operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "BKR": {
+   "name": "Baker Hughes Co.",
+   "kpis": [
+    {
+     "id": "total_orders",
+     "label": "Total orders",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "industrial_energy_technology_orders",
+     "label": "Industrial & Energy Technology orders",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "remaining_performance_obligations",
+     "label": "Remaining performance obligations",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "RSG": {
+   "name": "Republic Services Inc.",
+   "kpis": [
+    {
+     "id": "average_yield_core_price_on_total_revenue",
+     "label": "Average yield (core price) on total revenue",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "volume_growth",
+     "label": "Volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "recycled_commodity_price_per_ton",
+     "label": "Recycled commodity price per ton",
+     "unit": "usd",
+     "better": "none"
+    }
+   ]
+  },
+  "WAB": {
+   "name": "Wabtec Corp.",
+   "kpis": [
+    {
+     "id": "total_backlog",
+     "label": "Total backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "12_month_backlog",
+     "label": "12-month backlog",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "freight_segment_sales_growth",
+     "label": "Freight segment sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "MRVL": {
+   "name": "Marvell Technology Inc.",
+   "kpis": [
+    {
+     "id": "data_center_revenue_growth",
+     "label": "Data center revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "data_center_share_of_revenue",
+     "label": "Data center share of revenue",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "non_gaap_gross_margin",
+     "label": "Non-GAAP gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "next_quarter_revenue_guidance_midpoint",
+     "label": "Next-quarter revenue guidance (midpoint)",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
   }
  }
 }

@@ -20,7 +20,9 @@
     "DELL",
     "TER",
     "APH",
-    "ANET"
+    "ANET",
+    "KLAC",
+    "MRVL"
   ],
   "Software": [
     "ADBE",
@@ -132,7 +134,9 @@
     "GWW",
     "URI",
     "AME",
-    "MSI"
+    "MSI",
+    "RSG",
+    "WAB"
   ],
   "Energy": [
     "APA",
@@ -145,7 +149,8 @@
     "FANG",
     "HAL",
     "SLB",
-    "EQT"
+    "EQT",
+    "BKR"
   ],
   "Financial data & exchanges": [
     "SPGI",
@@ -175,6 +180,9 @@
     "DIS",
     "WBD",
     "TTWO"
+  ],
+  "Real estate": [
+    "SPG"
   ],
   "Index & commodities": [
     "QQQ",
