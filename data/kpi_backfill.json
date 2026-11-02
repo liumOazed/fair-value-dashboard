@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "REGN",
-  "ZTS",
-  "MO",
-  "HAS",
-  "BMY",
   "NRG",
   "FIS"
  ],
@@ -84,7 +79,12 @@
   "EME",
   "HST",
   "LII",
-  "NEM"
+  "NEM",
+  "REGN",
+  "ZTS",
+  "MO",
+  "HAS",
+  "BMY"
  ],
  "notes": {
   "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
@@ -161,6 +161,11 @@
   "EME": "Q4 2024-Q3 2026. Revenue growth and organic growth only for Q4 2025-Q3 2026 (year-earlier rates not stated). Q3 2026 from call transcript (sec.gov refused the release; 10-Q figures agree). Q4 2025 GAAP operating margin 12.7% includes $144.9M gain on sale of UK operations (9.7% excluding it).",
   "HST": "Q3 2024-Q2 2026 (Q3 2026 reports Nov 5). RevPAR and Total RevPAR growth only for Q3 2025-Q2 2026 (releases state no year-earlier growth rates).",
   "LII": "Q4 2024-Q3 2026, all KPIs. Growth rates computed from segment revenue tables (company's rounded % in quotes). 2025 segment margins are the recast values from 2026 releases. Q3 2026 from a republished copy of the release (sec.gov/PR Newswire not reachable).",
-  "NEM": "Q4 2024-Q3 2026, all KPIs. AISC = gold by-product AISC. Q4 2024 from Q4/FY2025 release via last10k.com copy."
+  "NEM": "Q4 2024-Q3 2026, all KPIs. AISC = gold by-product AISC. Q4 2024 from Q4/FY2025 release via last10k.com copy.",
+  "REGN": "Q4 2024-Q3 2026, all 4 KPIs, from investor.regeneron.com releases; % as reported, none computed.",
+  "ZTS": "Q3 2026 not yet reported (due Nov 5, 2026): Q3 2024-Q2 2026. Segment and Simparica growth = reported (incl. FX). Simparica from slide reconciliation tables; Q3 2025 computed from call transcripts (356/333). Not disclosed: Q3 2024 organic operational growth (release gives only operational 14%); Q1 2025 and Q3 2024 Simparica reported growth (only operational stated).",
+  "MO": "Q4 2024-Q3 2026, all KPIs. Shipment volume = reported domestic cigarette shipment volume % change; on! growth = Table 6 % change; Q4 2025 adj. EPS 'unchanged at $1.30' (base restated from $1.29).",
+  "HAS": "Q4 2024-Q3 2026, all KPIs. Adj. op margin from Total Company non-GAAP reconciliation (Q4 2024 stated in text); inventory growth computed from balance-sheet inventories except Q4 2024 ('owned inventory down 17%'); Q1 2026 Consumer Products 'flat' = 0.",
+  "BMY": "Q4 2024-Q3 2026, all KPIs, reported (not ex-FX) YoY %. Eliquis/Opdivo from release product revenue tables; Q3 2026 from results slides, Legacy +1% from CFO on call (sec.gov blocked Q3 Ex. 99.1)."
  }
 }
