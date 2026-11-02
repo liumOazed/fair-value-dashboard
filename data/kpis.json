@@ -11492,6 +11492,1274 @@
      "added": "2026-10-30"
     }
    ]
+  },
+  "ADYEY": {
+   "processed_volume_growth": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 6,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q1-2025-business-update",
+     "quote": "Processed volume was €314.8 billion, up 6% YoY, or up 25% YoY excluding the previously referenced single large-volume customer. (headline total incl. large customer)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "H1 2025",
+     "value": 5,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2025-financial-results",
+     "quote": "Processed volume was €649.0 billion, up 5% YoY, 23% excluding a single large volume customer. (headline total incl. large customer) [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 8,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q3-2025-business-update",
+     "quote": "Processed volume was €346.9 billion, up 8% YoY, or up 19% YoY excluding a single large-volume customer. (headline total incl. large customer)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "H2 2025",
+     "value": 12,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h2-2025-financial-results-3pgu2",
+     "quote": "Processed volume was €745.3 billion, up 19% YoY excluding a single large-volume customer, or 12% including this customer. (headline total incl. large customer) [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 21,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q1-2026-business-update-4gyhh5",
+     "quote": "Processed volume was €382.0 billion, up 21% YoY.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "H1 2026",
+     "value": 24,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2026-financial-results-3wjne",
+     "quote": "Processed volume was €803.8 billion, up 24% YoY. [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 30,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q3-2026-business-update-6r9vz0",
+     "quote": "Processed volume was €451.1 billion, up 30% YoY.",
+     "added": "2026-11-02"
+    }
+   ],
+   "net_revenue_growth": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 22,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q1-2025-business-update",
+     "quote": "Net revenue was €534.7 million, up 22% year-over-year (\"YoY\") (up 21% on a constant currency basis). (reported figure used)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "H1 2025",
+     "value": 20,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2025-financial-results",
+     "quote": "Net revenue was €1,093.5 million, up 20% year-on-year (\"YoY\") (21% on a constant currency basis). (reported figure used) [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 20,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q3-2025-business-update",
+     "quote": "Net revenue was €598.4 million, up 20% year-over-year (\"YoY\") (up 23% on a constant currency basis). (reported figure used)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "H2 2025",
+     "value": 17,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h2-2025-financial-results-3pgu2",
+     "quote": "Net revenue [1] was €1,270.7 million, up 17% YoY, or 21% on a constant currency basis. (reported figure used) [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 16,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q1-2026-business-update-4gyhh5",
+     "quote": "Net revenue was €620.8 million, up 16% year-over-year (\"YoY\"), or 20% on a constant currency basis. (reported figure used)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "H1 2026",
+     "value": 19,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2026-financial-results-3wjne",
+     "quote": "Net revenue was €1,302.9 million, up 19% year-on-year (YoY) (21% on a constant currency basis). (reported figure used) [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 23,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q3-2026-business-update-6r9vz0",
+     "quote": "Net revenue was €738.1 million, up 23% year-over-year (\"YoY\"), or 22% on a constant currency basis. (reported figure used)",
+     "added": "2026-11-02"
+    }
+   ],
+   "take_rate_net_revenue_processed_volume": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.1699,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q1-2025-business-update",
+     "quote": "Net revenue was €534.7 million, up 22% year-over-year (\"YoY\") (up 21% on a constant currency basis). Processed volume was €314.8 billion, up 6% YoY, or up 25% YoY excluding the previously referenced single large-volume customer. Computed: 534.7 / 314,800 = 0.1699%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "H1 2025",
+     "value": 0.1685,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2025-financial-results",
+     "quote": "Net revenue was €1,093.5 million, up 20% year-on-year (\"YoY\") (21% on a constant currency basis). Processed volume was €649.0 billion, up 5% YoY, 23% excluding a single large volume customer. Computed: 1,093.5 / 649,000 = 0.1685% [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.1725,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q3-2025-business-update",
+     "quote": "Net revenue was €598.4 million, up 20% year-over-year (\"YoY\") (up 23% on a constant currency basis). Processed volume was €346.9 billion, up 8% YoY, or up 19% YoY excluding a single large-volume customer. Computed: 598.4 / 346,900 = 0.1725%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "H2 2025",
+     "value": 0.1705,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h2-2025-financial-results-3pgu2",
+     "quote": "Net revenue [1] was €1,270.7 million, up 17% YoY, or 21% on a constant currency basis. Processed volume was €745.3 billion, up 19% YoY excluding a single large-volume customer, or 12% including this customer. Computed: 1,270.7 / 745,300 = 0.1705% [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.1625,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q1-2026-business-update-4gyhh5",
+     "quote": "Net revenue was €620.8 million, up 16% year-over-year (\"YoY\"), or 20% on a constant currency basis. Processed volume was €382.0 billion, up 21% YoY. Computed: 620.8 / 382,000 = 0.1625%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "H1 2026",
+     "value": 0.1621,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2026-financial-results-3wjne",
+     "quote": "Net revenue was €1,302.9 million, up 19% year-on-year (YoY) (21% on a constant currency basis). Processed volume was €803.8 billion, up 24% YoY. Computed: 1,302.9 / 803,800 = 0.1621% [half-year figure; quarterly breakdown not disclosed in release]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.1636,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-q3-2026-business-update-6r9vz0",
+     "quote": "Net revenue was €738.1 million, up 23% year-over-year (\"YoY\"), or 22% on a constant currency basis. Processed volume was €451.1 billion, up 30% YoY. Computed: 738.1 / 451,100 = 0.1636%",
+     "added": "2026-11-02"
+    }
+   ],
+   "ebitda_margin": [
+    {
+     "period": "2025-06-30",
+     "label": "H1 2025",
+     "value": 50,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2025-financial-results",
+     "quote": "EBITDA was €543.7 million, up 28% YoY, with EBITDA margin landing at 50%. [half-year disclosure]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "H2 2025",
+     "value": 55,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h2-2025-financial-results-3pgu2",
+     "quote": "EBITDA [1] was €702.1 million, up 23% YoY, with EBITDA margin [1] landing at 55%. [half-year disclosure]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "H1 2026",
+     "value": 49,
+     "source": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2026-financial-results-3wjne",
+     "quote": "EBITDA was €641.5 million, with an EBITDA margin of 49%, or 50% excluding one-time transaction costs. [half-year disclosure]",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "CRCL": {
+   "usdc_in_circulation": [
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 61.3,
+     "source": "https://www.businesswire.com/news/home/20250812836620/en/Circle-Reports-Second-Quarter-2025-Results",
+     "quote": "USDC in circulation grew 90% year-over-year to $61.3 billion at quarter end",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 73.7,
+     "source": "https://www.businesswire.com/news/home/20251112229900/en/Circle-Reports-Third-Quarter-2025-Results/",
+     "quote": "USDC in circulation of $73.7 billion at quarter end grew 108% year-over-year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 75.3,
+     "source": "https://www.businesswire.com/news/home/20260225882643/en/Circle-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results",
+     "quote": "USDC in Circulation, end of period | $75.3 | 72% | $75.3 | 72%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 77.0,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "USDC in Circulation, end of period $77.0 28%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 73.3,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "USDC in Circulation, end of period $73.3 19%",
+     "added": "2026-11-02"
+    }
+   ],
+   "reserve_return_rate": [
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 4.1,
+     "source": "https://www.businesswire.com/news/home/20250812836620/en/Circle-Reports-Second-Quarter-2025-Results",
+     "quote": "Reserve Return Rate | 4.1% | (103bps)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 4.2,
+     "source": "https://www.businesswire.com/news/home/20251112229900/en/Circle-Reports-Third-Quarter-2025-Results/",
+     "quote": "Reserve Return Rate | 4.2% | (96bps)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.8,
+     "source": "https://www.businesswire.com/news/home/20260225882643/en/Circle-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results",
+     "quote": "Reserve Return Rate | 3.8% | (68bps) | 4.1% | (90bps)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3.5,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "Reserve Return Rate 3.5% (66bps)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3.5,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Reserve Return Rate 3.5% (66bps)",
+     "added": "2026-11-02"
+    }
+   ],
+   "revenue_less_distribution_costs_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 42,
+     "source": "https://www.businesswire.com/news/home/20251112229900/en/Circle-Reports-Third-Quarter-2025-Results/",
+     "quote": "Quarterly table (Sep 30 2025, Jun 30 2025, Mar 31 2025, Dec 31 2024, Sep 30 2024): RLDC Margin | 39% | 38% | 40% | 30% | 42%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 30,
+     "source": "https://www.businesswire.com/news/home/20260225882643/en/Circle-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results",
+     "quote": "Quarterly table (Q4'25, Q3'25, Q2'25, Q1'25, Q4'24): RLDC Margin(1) | 40% | 39% | 38% | 40% | 30%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 40,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "Quarterly table (Mar 31 2026, Dec 31 2025, Sep 30 2025, Jun 30 2025, Mar 31 2025): RLDC Margin(1) 41% 40% 39% 38% 40%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 38,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Quarterly table (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): RLDC Margin (1) 41% 41% 40% 39% 38%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 39,
+     "source": "https://www.businesswire.com/news/home/20251112229900/en/Circle-Reports-Third-Quarter-2025-Results/",
+     "quote": "Quarterly table (Sep 30 2025, Jun 30 2025, Mar 31 2025, Dec 31 2024, Sep 30 2024): RLDC Margin | 39% | 38% | 40% | 30% | 42%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 40,
+     "source": "https://www.businesswire.com/news/home/20260225882643/en/Circle-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results",
+     "quote": "Quarterly table (Q4'25, Q3'25, Q2'25, Q1'25, Q4'24): RLDC Margin(1) | 40% | 39% | 38% | 40% | 30%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 41,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "Quarterly table (Mar 31 2026, Dec 31 2025, Sep 30 2025, Jun 30 2025, Mar 31 2025): RLDC Margin(1) 41% 40% 39% 38% 40%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 41,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Quarterly table (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): RLDC Margin (1) 41% 41% 40% 39% 38%",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_ebitda": [
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.122439,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "Adjusted EBITDA (New Definition), $ thousands (Mar 31 2026, Dec 31 2025, Sep 30 2025, Jun 30 2025, Mar 31 2025): Adjusted EBITDA (New Definition) $ 151,401 $ 175,910 $ 171,476 $ 132,997 $ 122,439",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.132997,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Adjusted EBITDA (New Definition), $ thousands (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): Adjusted EBITDA (New Definition) $ 143,478 $ 151,401 $ 175,910 $ 171,476 $ 132,997",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.171476,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Adjusted EBITDA (New Definition), $ thousands (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): Adjusted EBITDA (New Definition) $ 143,478 $ 151,401 $ 175,910 $ 171,476 $ 132,997 [new definition; Q3'25 release reported $166,461K under prior definition]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.17591,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Adjusted EBITDA (New Definition), $ thousands (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): Adjusted EBITDA (New Definition) $ 143,478 $ 151,401 $ 175,910 $ 171,476 $ 132,997 [new definition; Q4'25 release reported $167,482K under prior definition]",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.151401,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "Adjusted EBITDA (New Definition), $ thousands (Mar 31 2026, Dec 31 2025, Sep 30 2025, Jun 30 2025, Mar 31 2025): Adjusted EBITDA (New Definition) $ 151,401 $ 175,910 $ 171,476 $ 132,997 $ 122,439",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.143478,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Adjusted EBITDA (New Definition), $ thousands (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): Adjusted EBITDA (New Definition) $ 143,478 $ 151,401 $ 175,910 $ 171,476 $ 132,997",
+     "added": "2026-11-02"
+    }
+   ],
+   "other_revenue": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 0.000547,
+     "source": "https://www.businesswire.com/news/home/20251112229900/en/Circle-Reports-Third-Quarter-2025-Results/",
+     "quote": "Statement of operations, $ thousands: Other revenue 28,518 (three months ended Sep 30, 2025), 547 (three months ended Sep 30, 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.0024,
+     "source": "https://www.businesswire.com/news/home/20260225882643/en/Circle-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results",
+     "quote": "Statement of operations, $ thousands: Other revenue 36,836 (three months ended Dec 31, 2025) vs 2,400 (three months ended Dec 31, 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.020662,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "Three Months Ended March 31, 2026 March 31, 2025 ... Other revenue 41,625 20,662 ($ thousands)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.023804,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Statement of operations, $ thousands (3M Jun 30 2026, 3M Jun 30 2025, 6M 2026, 6M 2025): Other revenue 33,582 23,804 75,207 44,466",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.028518,
+     "source": "https://www.businesswire.com/news/home/20251112229900/en/Circle-Reports-Third-Quarter-2025-Results/",
+     "quote": "Statement of operations, $ thousands: Other revenue 28,518 (three months ended Sep 30, 2025), 547 (three months ended Sep 30, 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.036836,
+     "source": "https://www.businesswire.com/news/home/20260225882643/en/Circle-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results",
+     "quote": "Statement of operations, $ thousands: Other revenue 36,836 (three months ended Dec 31, 2025) vs 2,400 (three months ended Dec 31, 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.041625,
+     "source": "https://app.edgar.tools/filing/1876042/0001876042-26-000148/final_05x11q1epr30.htm",
+     "quote": "Three Months Ended March 31, 2026 March 31, 2025 ... Other revenue 41,625 20,662 ($ thousands)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.033582,
+     "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
+     "quote": "Statement of operations, $ thousands (3M Jun 30 2026, 3M Jun 30 2025, 6M 2026, 6M 2025): Other revenue 33,582 23,804 75,207 44,466",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "FISV": {
+   "organic_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 15,
+     "source": "https://investors.fiserv.com/static-files/0af01f98-8fb3-46ad-ae7a-d2001f1d44ea",
+     "quote": "Organic revenue growth was 15% in the third quarter of 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 13,
+     "source": "https://investors.fiserv.com/static-files/c12b0c82-2ba1-4109-8466-84ffef850aba",
+     "quote": "Organic revenue growth was 13% in the fourth quarter of 2024",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 7,
+     "source": "https://investors.fiserv.com/static-files/d1b03bac-278a-4d05-b59c-ac6ebd299701",
+     "quote": "Organic revenue growth was 7% in the first quarter of 2025",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 8,
+     "source": "https://investors.fiserv.com/static-files/0e497302-e3e4-4d3b-ae0c-98a8445b5752",
+     "quote": "Organic revenue growth was 8% in the second quarter of 2025",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/798354/000079835425000168/fiq325earningsrelease.htm",
+     "quote": "Organic revenue growth was 1% in the third quarter of 2025 | table: Organic revenue $4,925 $4,881 1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0,
+     "source": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000006/fisv4q25earningsrelease.htm",
+     "quote": "Organic revenue was flat in the fourth quarter of 2025 | table: Organic revenue $4,882 $4,900 —%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000014/fisvq126earningsrelease.htm",
+     "quote": "Organic revenue decreased 4% in the first quarter of 2026 | table: Organic revenue $4,617 $4,789 (4)%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000028/fisvq226earningsrelease.htm",
+     "quote": "Organic revenue decreased 5% in the second quarter of 2026, with a 1% decline in the Merchant Solutions segment and an 8% decline in the Financial Solutions segment.",
+     "added": "2026-11-02"
+    }
+   ],
+   "clover_revenue_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 28,
+     "source": "https://investors.fiserv.com/static-files/f7bf4fa6-15e3-41c3-84ab-5ba97547137e",
+     "quote": "28% Clover revenue growth, with VAS penetration of 21%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 29,
+     "source": "https://investors.fiserv.com/static-files/432d4ac9-d439-49f7-aacd-34307b93cd7a",
+     "quote": "$2.7 billion of 2024 Clover revenue, 29% growth for 4Q and full-year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 27,
+     "source": "https://investors.fiserv.com/static-files/9faefe89-b124-4d10-b18a-466adf9c5526",
+     "quote": "27% Clover revenue growth, with VAS penetration of 24%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 30,
+     "source": "https://investors.fiserv.com/static-files/04de312d-e481-44ea-ab64-c6fb61460dc4",
+     "quote": "30% Clover revenue growth, with VAS penetration of 24%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 26,
+     "source": "https://investors.fiserv.com/static-files/eae7ab19-ca4d-43cf-8aaa-67c9041b489f",
+     "quote": "26% Clover revenue growth, with VAS penetration of 26%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 12,
+     "source": "https://investors.fiserv.com/static-files/2c7e8f1e-2c9e-461a-b793-cbf13069d465",
+     "quote": "4Q Clover revenue up 12% with VAS penetration of 27%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6,
+     "source": "https://investors.fiserv.com/static-files/1d0baaf4-a622-4235-8e19-f864e5c6a693",
+     "quote": "1Q Clover revenue up mid-teens excluding year ago higher nonrecurring revenue; 6% reported",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2,
+     "source": "https://investors.fiserv.com/static-files/87b5e411-60f5-4aa5-a5ff-f8d8beed29ef",
+     "quote": "2Q Clover revenue up 13%, excluding impact of data, hardware, and Argentina anticipation; Total revenue up 2% (reported Clover growth 2%; call: \"Clover revenue increased 2% on a reported basis.\")",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 40.2,
+     "source": "https://investors.fiserv.com/static-files/0af01f98-8fb3-46ad-ae7a-d2001f1d44ea",
+     "quote": "Adjusted operating margin 40.2% 38.5% 38.2% 36.5% (3Q24, 3Q23, YTD24, YTD23)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 42.9,
+     "source": "https://investors.fiserv.com/static-files/c12b0c82-2ba1-4109-8466-84ffef850aba",
+     "quote": "Adjusted operating margin 42.9% 41.1% 39.4% 37.7% (4Q24, 4Q23, FY24, FY23)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 37.8,
+     "source": "https://investors.fiserv.com/static-files/d1b03bac-278a-4d05-b59c-ac6ebd299701",
+     "quote": "Adjusted operating margin 37.8% 35.8% (1Q25, 1Q24)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 39.6,
+     "source": "https://investors.fiserv.com/static-files/0e497302-e3e4-4d3b-ae0c-98a8445b5752",
+     "quote": "Adjusted operating margin 39.6% 38.4% 38.7% 37.2% (2Q25, 2Q24, YTD25, YTD24)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 37.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/798354/000079835425000168/fiq325earningsrelease.htm",
+     "quote": "Adjusted operating margin 37.0% 40.2% (3Q25, 3Q24)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 34.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/798354/000079835426000006/fisv4q25earningsrelease.htm",
+     "quote": "Adjusted operating margin 34.9% 42.9% (4Q25, 4Q24)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 29.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000014/fisvq126earningsrelease.htm",
+     "quote": "Adjusted operating margin 29.7% 37.8% (1Q26, 1Q25)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 31.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000028/fisvq226earningsrelease.htm",
+     "quote": "Adjusted operating margin | 31.8% | 39.6% | 30.8% | 38.7% (2Q26, 2Q25, YTD26, YTD25)",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "SPG": {
+   "occupancy_rate_us_malls_and_outlets": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 96.2,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2024-results-affirms-full-year-2024",
+     "quote": "Occupancy at September 30, 2024 was 96.2%, a 1.0% increase compared to 95.2% at September 30, 2023.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 96.5,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2024-results",
+     "quote": "Occupancy at December 31, 2024 was 96.5%, a 0.7% increase compared to 95.8% at December 31, 2023.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 95.9,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2025-results-and-reaffirms-full",
+     "quote": "Occupancy at March 31, 2025 was 95.9%, a 0.4% increase compared to 95.5% at March 31, 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 96.0,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2025-results-increases-full-year",
+     "quote": "Occupancy at June 30, 2025 was 96.0%, a 0.4% increase compared to 95.6% at June 30, 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 96.4,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2025-results",
+     "quote": "Occupancy at September 30, 2025 was 96.4%, a 0.2% increase compared to 96.2% at September 30, 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 96.4,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2025-results",
+     "quote": "Occupancy at December 31, 2025 was 96.4%, compared to 96.5% at December 31, 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 96.0,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2026-results-increases-full-year",
+     "quote": "Occupancy at March 31, 2026 was 96.0%, compared to 95.9% at March 31, 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 96.0,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
+     "quote": "Occupancy at June 30, 2026 was 96.0%, unchanged from June 30, 2025.",
+     "added": "2026-11-02"
+    }
+   ],
+   "base_minimum_rent_per_sq_ft_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 2.3,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2024-results-affirms-full-year-2024",
+     "quote": "Base minimum rent per square foot was $57.71 at September 30, 2024, compared to $56.41 at September 30, 2023, an increase of 2.3%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 2.5,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2024-results",
+     "quote": "Base minimum rent per square foot was $58.26 at December 31, 2024, compared to $56.82 at December 31, 2023, an increase of 2.5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2.4,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2025-results-and-reaffirms-full",
+     "quote": "Base minimum rent per square foot was $58.92 at March 31, 2025, compared to $57.53 at March 31, 2024, an increase of 2.4%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 1.3,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2025-results-increases-full-year",
+     "quote": "Base minimum rent per square foot was $58.70 at June 30, 2025, compared to $57.94 at June 30, 2024, an increase of 1.3%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 2.5,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2025-results",
+     "quote": "Base minimum rent per square foot was $59.14 at September 30, 2025, compared to $57.71 at September 30, 2024, an increase of 2.5%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 4.7,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2025-results",
+     "quote": "Base minimum rent per square foot was $60.97 at December 31, 2025, compared to $58.26 at December 31, 2024, an increase of 4.7%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5.2,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2026-results-increases-full-year",
+     "quote": "Base minimum rent per square foot was $61.99 at March 31, 2026, compared to $58.92 at March 31, 2025, an increase of 5.2%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6.3,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
+     "quote": "Base minimum rent per square foot was $62.42 at June 30, 2026, compared to $58.70 at June 30, 2025, an increase of 6.3%.",
+     "added": "2026-11-02"
+    }
+   ],
+   "real_estate_ffo_per_share": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 3.05,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2024-results-affirms-full-year-2024",
+     "quote": "... $3.05 per diluted share as compared to $2.91 per diluted share in the prior year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 3.35,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2024-results",
+     "quote": "Real Estate FFO was $1.261 billion, or $3.35 per diluted share ... as compared to $1.208 billion, or $3.23 per diluted share in the prior year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2.95,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2025-results-and-reaffirms-full",
+     "quote": "Real Estate Funds From Operations (\"FFO\") was $1.113 billion, or $2.95 per diluted share (prior year $2.91)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 3.05,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2025-results-increases-full-year",
+     "quote": "Real Estate Funds From Operations (\"FFO\") was $1.154 billion, or $3.05 per diluted share (prior year $2.93, +4.1%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 3.22,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2025-results",
+     "quote": "... or $3.22 per diluted share as compared to $1.144 billion, or $3.05 per diluted share in the prior year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.49,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2025-results",
+     "quote": "... or $3.49 per diluted share as compared to $1.261 billion, or $3.35 per diluted share in the prior year.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3.17,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2026-results-increases-full-year",
+     "quote": "... or $3.17 per diluted share as compared to $1.113 billion, or $2.95 per diluted share in the prior year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3.29,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
+     "quote": "Real Estate Funds From Operations (\"Real Estate FFO\") was $1.249 billion, or $3.29 per diluted share ... compared to $1.154 billion, or $3.05 per diluted share in the prior year, an increase of 7.9%.",
+     "added": "2026-11-02"
+    }
+   ],
+   "domestic_property_noi_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 5.4,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2024-results-affirms-full-year-2024",
+     "quote": "Domestic property Net Operating Income (\"NOI\") increased 5.4% (portfolio NOI increased 5.0%) compared to the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 4.4,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2024-results",
+     "quote": "Domestic property NOI increased 4.4% and portfolio NOI increased 4.5% compared to the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 3.4,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2025-results-and-reaffirms-full",
+     "quote": "Domestic property Net Operating Income (\"NOI\") increased 3.4% (portfolio NOI increased 3.6%) compared to the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 4.2,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2025-results-increases-full-year",
+     "quote": "Domestic property Net Operating Income (\"NOI\") increased 4.2% and portfolio NOI increased 4.7% ...",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 5.1,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-third-quarter-2025-results",
+     "quote": "Domestic property Net Operating Income (\"NOI\") increased 5.1% and portfolio NOI increased 5.2% compared to the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 4.8,
+     "source": "https://governanceprinciples.simon.com/news-releases/news-release-details/simonr-reports-fourth-quarter-and-full-year-2025-results",
+     "quote": "Domestic property Net Operating Income (\"NOI\") increased 4.8% (fourth quarter 2025 vs prior year period)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6.7,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-first-quarter-2026-results-increases-full-year",
+     "quote": "Domestic property NOI ... increased 6.7% and portfolio NOI increased 6.7% compared to the prior year period.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 8.5,
+     "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
+     "quote": "Domestic property Net Operating Income (\"NOI\") increased 8.5% and portfolio NOI increased 8.3% compared to the prior year period.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "XYZ": {
+   "gross_profit_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 19,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "Table (Q3'25 shareholder letter five-quarter table, Q3'24 column): Gross Profit ($M) 2,250; YoY Growth 19%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "Table (Q4'25 shareholder letter five-quarter table, Q4'24 column): Gross Profit ($M) 2,311; YoY Growth 14%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "Table (Q1'26 shareholder letter five-quarter table, Q1'25 column): Gross Profit ($M) 2,290; YoY Growth 9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "Table (Q2'26 shareholder letter five-quarter table, Q2'25 column): Gross Profit ($M) 2,537; YoY Growth 14%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 18,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "\"Gross Profit $2.66B +18% YoY Growth\"; table (Q3'25 shareholder letter five-quarter table, Q3'25 column): Gross Profit ($M) 2,662; YoY Growth 18%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "\"Gross Profit $2.87B +24% YoY Growth\"; table (Q4'25 shareholder letter five-quarter table, Q4'25 column): Gross Profit ($M) 2,872; YoY Growth 24%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 27,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "\"Gross Profit $2.91B +27% YoY Growth\"; table (Q1'26 shareholder letter five-quarter table, Q1'26 column): Gross Profit ($M) 2,909; YoY Growth 27%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 25,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "\"Gross Profit $3.17B +25% YoY Growth\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Gross Profit ($M) 3,166; YoY Growth 25%",
+     "added": "2026-11-02"
+    }
+   ],
+   "cash_app_gross_profit_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 21,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "Table (Q3'25 shareholder letter five-quarter table, Q3'24 column): Cash App Gross Profit ($M) 1,306; YoY Growth 21%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "Table (Q4'25 shareholder letter five-quarter table, Q4'24 column): Cash App Gross Profit ($M) 1,376; YoY Growth 16%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "Table (Q1'26 shareholder letter five-quarter table, Q1'25 column): Cash App Gross Profit ($M) 1,380; YoY Growth 10%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "Table (Q2'26 shareholder letter five-quarter table, Q2'25 column): Cash App Gross Profit ($M) 1,501; YoY Growth 16%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 24,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "\"Cash App Gross Profit $1.62B +24% YoY Growth\"; table (Q3'25 shareholder letter five-quarter table, Q3'25 column): Cash App Gross Profit ($M) 1,624; YoY Growth 24%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 33,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "\"Cash App Gross Profit $1.83B +33% YoY Growth\"; table (Q4'25 shareholder letter five-quarter table, Q4'25 column): Cash App Gross Profit ($M) 1,831; YoY Growth 33%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 38,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "\"Cash App Gross Profit $1.91B +38% YoY Growth\"; table (Q1'26 shareholder letter five-quarter table, Q1'26 column): Cash App Gross Profit ($M) 1,908; YoY Growth 38%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 31,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "\"Cash App Gross Profit $1.97B +31% YoY Growth\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Cash App Gross Profit ($M) 1,973; YoY Growth 31%",
+     "added": "2026-11-02"
+    }
+   ],
+   "square_gross_profit_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "Table (Q3'25 shareholder letter five-quarter table, Q3'24 column): Square Gross Profit ($M) 932; YoY Growth 16%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "Table (Q4'25 shareholder letter five-quarter table, Q4'24 column): Square Gross Profit ($M) 924; YoY Growth 12%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "Table (Q1'26 shareholder letter five-quarter table, Q1'25 column): Square Gross Profit ($M) 898; YoY Growth 9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "Table (Q2'26 shareholder letter five-quarter table, Q2'25 column): Square Gross Profit ($M) 1,027; YoY Growth 11%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "\"Square Gross Profit $1.02B +9% YoY Growth\"; table (Q3'25 shareholder letter five-quarter table, Q3'25 column): Square Gross Profit ($M) 1,018; YoY Growth 9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "\"Square Gross Profit $993M +7% YoY Growth\"; table (Q4'25 shareholder letter five-quarter table, Q4'25 column): Square Gross Profit ($M) 993; YoY Growth 7%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "\"Square Gross Profit $982M +9% YoY Growth\"; table (Q1'26 shareholder letter five-quarter table, Q1'26 column): Square Gross Profit ($M) 982; YoY Growth 9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "\"Square Gross Profit $1.16B +13% YoY Growth\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Square Gross Profit ($M) 1,160; YoY Growth 13%",
+     "added": "2026-11-02"
+    }
+   ],
+   "square_gross_payment_volume_growth": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 7.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "Table (Q3'25 shareholder letter five-quarter table, Q3'24 column): Total Square GPV ($M) 59,873; YoY Growth 7.5%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "Table (Q4'25 shareholder letter five-quarter table, Q4'24 column): Total Square GPV ($M) 58,898; YoY Growth 10%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 7.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "Table (Q1'26 shareholder letter five-quarter table, Q1'25 column): Total Square GPV ($M) 54,101; YoY Growth 7.2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "Table (Q2'26 shareholder letter five-quarter table, Q2'25 column): Total Square GPV ($M) 64,248; YoY Growth 10%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "\"Square GPV grew 12% year over year in the third quarter to $67.2 billion\"; table (Q3'25 shareholder letter five-quarter table, Q3'25 column): Total Square GPV ($M) 67,151; YoY Growth 12%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "\"Square GPV grew 10% year over year in the fourth quarter to $65.0 billion.\"; table (Q4'25 shareholder letter five-quarter table, Q4'25 column): Total Square GPV ($M) 64,960; YoY Growth 10%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "\"Square GPV grew 13% and 11.5% year over year in the first quarter\"; table (Q1'26 shareholder letter five-quarter table, Q1'26 column): Total Square GPV ($M) 61,209; YoY Growth 13%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "\"Square GPV grew 13% year over year in the second quarter on a reported and constant currency basis\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Total Square GPV ($M) 72,848; YoY Growth 13%",
+     "added": "2026-11-02"
+    }
+   ],
+   "cash_app_monthly_transacting_actives": [
+    {
+     "period": "2024-09-30",
+     "label": "Q3 2024",
+     "value": 57,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "Table (Q3'25 shareholder letter five-quarter table, Q3'24 column): Cash App Monthly Transacting Actives (M) 57; YoY Growth 3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 57,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "Table (Q4'25 shareholder letter five-quarter table, Q4'24 column): Cash App Monthly Transacting Actives (M) 57; YoY Growth 2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 57,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "Table (Q1'26 shareholder letter five-quarter table, Q1'25 column): Cash App Monthly Transacting Actives (M) 57; YoY Growth 0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 57,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "Table (Q2'26 shareholder letter five-quarter table, Q2'25 column): Cash App Monthly Transacting Actives (M) 57; YoY Growth 0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 58,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312525269715/d48712dex991.htm",
+     "quote": "\"Cash App hit 58 million monthly actives in September.\"; table (Q3'25 shareholder letter five-quarter table, Q3'25 column): Cash App Monthly Transacting Actives (M) 58; YoY Growth 2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 59,
+     "source": "https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm",
+     "quote": "\"Cash App monthly transacting actives grew to 59 million\"; table (Q4'25 shareholder letter five-quarter table, Q4'25 column): Cash App Monthly Transacting Actives (M) 59; YoY Growth 3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 59,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526212032/d132441dex991.htm",
+     "quote": "\"Cash App monthly transacting actives were 59 million in March\"; table (Q1'26 shareholder letter five-quarter table, Q1'26 column): Cash App Monthly Transacting Actives (M) 59; YoY Growth 4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 59,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
+     "quote": "\"Cash App monthly transacting actives were 59 million in June\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Cash App Monthly Transacting Actives (M) 59; YoY Growth 3%",
+     "added": "2026-11-02"
+    }
+   ]
   }
  }
 }
