@@ -74,6 +74,20 @@
   "RSG":  {"r": 0.08, "reason": "Essential, regulated-like waste service with pricing power; very low beta."},
   "WAB":  {"r": 0.09, "reason": "Rail equipment leader with backlog; cyclical rail capex."},
   "MRVL": {"r": 0.11, "reason": "Fast-growing but very volatile; depends on a few hyperscaler AI programmes."},
+  "LULU": {"r": 0.095, "reason": "Strong brand with net-cash-like balance sheet, but US sales shrinking under competition."},
+  "RDDT": {"r": 0.115, "reason": "Young, fast-growing ad platform; very volatile and dependent on search traffic and AI licensing."},
+  "CF":   {"r": 0.095, "reason": "Low-cost producer, but nitrogen prices are cyclical."},
+  "EME":  {"r": 0.105, "reason": "Well-run contractor near a cyclical peak in data-centre construction."},
+  "HST":  {"r": 0.09, "reason": "Low-leverage hotel REIT; lodging demand is cyclical."},
+  "LII":  {"r": 0.09, "reason": "Leading HVAC brand; housing and replacement cycles."},
+  "NEM":  {"r": 0.095, "reason": "Diversified gold miner; value moves with the gold price."},
+  "REGN": {"r": 0.09, "reason": "Profitable biotech with net cash; drug pricing, biosimilar and pipeline risk."},
+  "ZTS":  {"r": 0.085, "reason": "Defensive animal-health leader; growth has slowed."},
+  "MO":   {"r": 0.085, "reason": "Very steady cash flows, but a declining product and regulatory/litigation risk."},
+  "HAS":  {"r": 0.095, "reason": "Toy demand is cyclical; Wizards of the Coast adds a profitable digital franchise."},
+  "BMY":  {"r": 0.085, "reason": "Large, low-beta pharma facing a patent cliff around 2028."},
+  "NRG":  {"r": 0.1, "reason": "Heavy debt and thin, commodity-linked margins; data-centre power upside."},
+  "FIS":  {"r": 0.1, "reason": "Integration of a large acquisition and high debt."},
   "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
  }
 }

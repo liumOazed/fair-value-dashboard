@@ -922,5 +922,159 @@
    "price": 196.4,
    "method": "fcff_re"
   }
+ ],
+ "LULU": [
+  {
+   "date": "2026-11-02",
+   "fv": 164.45,
+   "bear": 100.89,
+   "base": 167.94,
+   "bull": 251.09,
+   "price": 107.24,
+   "method": "fcff_re"
+  }
+ ],
+ "RDDT": [
+  {
+   "date": "2026-11-02",
+   "fv": 140.89,
+   "bear": 56.1,
+   "base": 143.53,
+   "bull": 261.45,
+   "price": 91.73,
+   "method": "fcff_re"
+  }
+ ],
+ "CF": [
+  {
+   "date": "2026-11-02",
+   "fv": 96.7,
+   "bear": 48.18,
+   "base": 95.78,
+   "bull": 171.82,
+   "price": 123.3,
+   "method": "fcff_re"
+  }
+ ],
+ "EME": [
+  {
+   "date": "2026-11-02",
+   "fv": 583.93,
+   "bear": 290.63,
+   "base": 643.55,
+   "bull": 874.83,
+   "price": 679.55,
+   "method": "fcff_re"
+  }
+ ],
+ "HST": [
+  {
+   "date": "2026-11-02",
+   "fv": 19.5,
+   "bear": 11.28,
+   "base": 21.25,
+   "bull": 27.46,
+   "price": 25.3,
+   "method": "fcff_re"
+  }
+ ],
+ "LII": [
+  {
+   "date": "2026-11-02",
+   "fv": 395.29,
+   "bear": 248.27,
+   "base": 420.3,
+   "bull": 553.27,
+   "price": 344.08,
+   "method": "fcff_re"
+  }
+ ],
+ "NEM": [
+  {
+   "date": "2026-11-02",
+   "fv": 86.11,
+   "bear": 36.55,
+   "base": 92.78,
+   "bull": 143.78,
+   "price": 106.61,
+   "method": "fcff_re"
+  }
+ ],
+ "REGN": [
+  {
+   "date": "2026-11-02",
+   "fv": 686.95,
+   "bear": 358.34,
+   "base": 730.96,
+   "bull": 1069.82,
+   "price": 927.89,
+   "method": "fcff_re"
+  }
+ ],
+ "ZTS": [
+  {
+   "date": "2026-11-02",
+   "fv": 83.3,
+   "bear": 51.61,
+   "base": 87.71,
+   "bull": 119.8,
+   "price": 79.72,
+   "method": "fcff_re"
+  }
+ ],
+ "MO": [
+  {
+   "date": "2026-11-02",
+   "fv": 67.7,
+   "bear": 49.87,
+   "base": 71.03,
+   "bull": 86.08,
+   "price": 78.03,
+   "method": "fcff_re"
+  }
+ ],
+ "HAS": [
+  {
+   "date": "2026-11-02",
+   "fv": 115.5,
+   "bear": 64.0,
+   "base": 124.8,
+   "bull": 169.49,
+   "price": 119.09,
+   "method": "fcff_re"
+  }
+ ],
+ "BMY": [
+  {
+   "date": "2026-11-02",
+   "fv": 56.77,
+   "bear": 29.93,
+   "base": 57.04,
+   "bull": 96.34,
+   "price": 62.48,
+   "method": "fcff_re"
+  }
+ ],
+ "NRG": [
+  {
+   "date": "2026-11-02",
+   "fv": 90.89,
+   "bear": 4.81,
+   "base": 102.02,
+   "bull": 192.18,
+   "price": 96.06,
+   "method": "fcff_re"
+  }
+ ],
+ "FIS": [
+  {
+   "date": "2026-11-02",
+   "fv": 45.06,
+   "bear": 10.48,
+   "base": 51.55,
+   "bull": 80.71,
+   "price": 38.55,
+   "method": "fcff_re"
+  }
  ]
 }

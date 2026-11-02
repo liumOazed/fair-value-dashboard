@@ -59,7 +59,10 @@
   "Pharma & biotech": [
     "LLY",
     "INCY",
-    "MRNA"
+    "MRNA",
+    "REGN",
+    "ZTS",
+    "BMY"
   ],
   "Consumer brands": [
     "AAPL",
@@ -81,7 +84,9 @@
     "COST",
     "ROST",
     "TJX",
-    "GRMN"
+    "GRMN",
+    "MO",
+    "HAS"
   ],
   "Travel": [
     "BKNG",
@@ -136,7 +141,8 @@
     "AME",
     "MSI",
     "RSG",
-    "WAB"
+    "WAB",
+    "LII"
   ],
   "Energy": [
     "APA",
@@ -150,7 +156,8 @@
     "HAL",
     "SLB",
     "EQT",
-    "BKR"
+    "BKR",
+    "NRG"
   ],
   "Financial data & exchanges": [
     "SPGI",
@@ -179,10 +186,16 @@
     "NFLX",
     "DIS",
     "WBD",
-    "TTWO"
+    "TTWO",
+    "RDDT"
   ],
   "Real estate": [
-    "SPG"
+    "SPG",
+    "HST"
+  ],
+  "Materials & commodities": [
+    "CF",
+    "NEM"
   ],
   "Index & commodities": [
     "QQQ",

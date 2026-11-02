@@ -2122,6 +2122,424 @@
      "better": "up"
     }
    ]
+  },
+  "LULU": {
+   "name": "lululemon athletica inc.",
+   "kpis": [
+    {
+     "id": "comparable_sales_growth",
+     "label": "Comparable sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "americas_revenue_growth",
+     "label": "Americas revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "china_mainland_revenue_growth",
+     "label": "China Mainland revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "inventory_growth",
+     "label": "Inventory growth",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "RDDT": {
+   "name": "Reddit Inc.",
+   "kpis": [
+    {
+     "id": "daily_active_uniques",
+     "label": "Daily active uniques",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "weekly_active_uniques",
+     "label": "Weekly active uniques",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "average_revenue_per_unique_arpu",
+     "label": "Average revenue per unique (ARPU)",
+     "unit": "usd",
+     "better": "up"
+    },
+    {
+     "id": "advertising_revenue_growth",
+     "label": "Advertising revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "CF": {
+   "name": "CF Industries Holdings",
+   "kpis": [
+    {
+     "id": "gross_ammonia_production_thousand_tons",
+     "label": "Gross ammonia production (thousand tons)",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "average_selling_price_per_ton",
+     "label": "Average selling price per ton",
+     "unit": "usd",
+     "better": "none"
+    },
+    {
+     "id": "adjusted_ebitda",
+     "label": "Adjusted EBITDA",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "free_cash_flow",
+     "label": "Free cash flow",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "EME": {
+   "name": "EMCOR Group Inc.",
+   "kpis": [
+    {
+     "id": "remaining_performance_obligations",
+     "label": "Remaining performance obligations",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "revenue_growth",
+     "label": "Revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "organic_revenue_growth",
+     "label": "Organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "HST": {
+   "name": "Host Hotels & Resorts",
+   "kpis": [
+    {
+     "id": "comparable_hotel_revpar_growth",
+     "label": "Comparable hotel RevPAR growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "comparable_hotel_total_revpar_growth",
+     "label": "Comparable hotel Total RevPAR growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "comparable_hotel_ebitda_margin",
+     "label": "Comparable hotel EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ffo_per_share",
+     "label": "Adjusted FFO per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "LII": {
+   "name": "Lennox International",
+   "kpis": [
+    {
+     "id": "revenue_growth",
+     "label": "Revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "home_comfort_solutions_revenue_growth",
+     "label": "Home Comfort Solutions revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "building_climate_solutions_revenue_growth",
+     "label": "Building Climate Solutions revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "total_segment_profit_margin",
+     "label": "Total segment profit margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "NEM": {
+   "name": "Newmont Corp.",
+   "kpis": [
+    {
+     "id": "attributable_gold_production_thousand_oz",
+     "label": "Attributable gold production (thousand oz)",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "all_in_sustaining_cost_per_ounce",
+     "label": "All-in sustaining cost per ounce",
+     "unit": "usd",
+     "better": "down"
+    },
+    {
+     "id": "average_realized_gold_price",
+     "label": "Average realized gold price",
+     "unit": "usd",
+     "better": "none"
+    },
+    {
+     "id": "free_cash_flow",
+     "label": "Free cash flow",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "REGN": {
+   "name": "Regeneron Pharmaceuticals",
+   "kpis": [
+    {
+     "id": "dupixent_global_net_sales_growth",
+     "label": "Dupixent global net sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "eylea_hd_us_net_sales",
+     "label": "EYLEA HD US net sales",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "total_eylea_us_net_sales_growth",
+     "label": "Total EYLEA US net sales growth",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "libtayo_global_net_sales_growth",
+     "label": "Libtayo global net sales growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ZTS": {
+   "name": "Zoetis Inc.",
+   "kpis": [
+    {
+     "id": "organic_operational_revenue_growth",
+     "label": "Organic operational revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "companion_animal_revenue_growth",
+     "label": "Companion animal revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "livestock_revenue_growth",
+     "label": "Livestock revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "simparica_franchise_revenue_growth",
+     "label": "Simparica franchise revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "MO": {
+   "name": "Altria Group Inc.",
+   "kpis": [
+    {
+     "id": "smokeable_products_shipment_volume_growth",
+     "label": "Smokeable products shipment volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "smokeable_adjusted_oci_margin",
+     "label": "Smokeable adjusted OCI margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "on_nicotine_pouch_shipment_volume_growth",
+     "label": "on! nicotine pouch shipment volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_diluted_eps_growth",
+     "label": "Adjusted diluted EPS growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "HAS": {
+   "name": "Hasbro Inc.",
+   "kpis": [
+    {
+     "id": "wizards_of_the_coast_and_digital_gaming_revenue_",
+     "label": "Wizards of the Coast and Digital Gaming revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "consumer_products_revenue_growth",
+     "label": "Consumer Products revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "inventory_growth",
+     "label": "Inventory growth",
+     "unit": "pct",
+     "better": "down"
+    }
+   ]
+  },
+  "BMY": {
+   "name": "Bristol-Myers Squibb",
+   "kpis": [
+    {
+     "id": "growth_portfolio_revenue_growth",
+     "label": "Growth Portfolio revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "legacy_portfolio_revenue_growth",
+     "label": "Legacy Portfolio revenue growth",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "eliquis_revenue_growth",
+     "label": "Eliquis revenue growth",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "opdivo_revenue_growth",
+     "label": "Opdivo revenue growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "NRG": {
+   "name": "NRG Energy Inc.",
+   "kpis": [
+    {
+     "id": "adjusted_ebitda",
+     "label": "Adjusted EBITDA",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "free_cash_flow_before_growth",
+     "label": "Free cash flow before growth",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_to_adjusted_ebitda",
+     "label": "Net debt to adjusted EBITDA",
+     "unit": "x",
+     "better": "down"
+    },
+    {
+     "id": "home_retail_customers_millions",
+     "label": "Home retail customers (millions)",
+     "unit": "num",
+     "better": "up"
+    }
+   ]
+  },
+  "FIS": {
+   "name": "Fidelity National Information Services",
+   "kpis": [
+    {
+     "id": "banking_solutions_revenue_growth",
+     "label": "Banking Solutions revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "capital_market_solutions_revenue_growth",
+     "label": "Capital Market Solutions revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "recurring_revenue_growth",
+     "label": "Recurring revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
   }
  }
 }
