@@ -14084,6 +14084,1184 @@
      "added": "2026-11-02"
     }
    ]
+  },
+  "FAST": {
+   "daily_sales_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 2.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555625000048/ex_99112312024earningsrele.htm",
+     "quote": "Daily sales $ 29.6 29.0 1.9 % $ 29.0 28.4 2.1 % (twelve-month | three-month period 2024 vs 2023)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 5.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555625000079/ex_99103312025earningsrele.htm",
+     "quote": "our net daily sales increased 5.0% in the first quarter of 2025 compared to the first quarter of 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 8.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555625000104/ex_99106302025earningsrele.htm",
+     "quote": "Daily sales $ 32.5 29.9 8.6 % (three-month period 2025 vs 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 11.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555625000116/ex_99109302025earningsrele.htm",
+     "quote": "Daily sales $ 33.3 29.8 11.7 % (three-month period 2025 vs 2024)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 11.1,
+     "source": "https://s23.q4cdn.com/175719177/files/doc_news/Fastenal-Company-Reports-2025-Annual-and-Fourth-Quarter-Earnings-2026.pdf",
+     "quote": "Daily sales $ 32.2 29.0 11.1% (three-month period 2025 vs 2024; table line 'Daily sales $ 32.3 29.6 9.1% $ 32.2 29.0 11.1%')",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 12.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555626000019/ex_99103312026earningsrele.htm",
+     "quote": "Daily sales increased 12.4% year-over-year, primarily driven by share gains and broad-based demand across core end markets.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 14.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000037/ex_99106302026earningsrele.htm",
+     "quote": "Daily sales increased 14.7% year-over-year, primarily driven by share gains with larger customers",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 15.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000046/ex_99109302026earningsrele.htm",
+     "quote": "Daily sales increased 15.5% year-over-year",
+     "added": "2026-11-02"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 44.8,
+     "source": "https://s23.q4cdn.com/175719177/files/doc_news/Fastenal-Company-Reports-2025-Annual-and-Fourth-Quarter-Earnings-2026.pdf",
+     "quote": "Our gross profit, as a percentage of net sales, decreased to 44.3% in the fourth quarter of 2025 from 44.8% in the fourth quarter of 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 45.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555626000019/ex_99103312026earningsrele.htm",
+     "quote": "Gross profit, as a percentage of net sales, decreased to 44.6% in the first quarter of 2026 from 45.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 45.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000037/ex_99106302026earningsrele.htm",
+     "quote": "Gross profit, as a percentage of net sales, decreased 75 basis points to 44.6% in the second quarter of 2026 from 45.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 45.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000046/ex_99109302026earningsrele.htm",
+     "quote": "decreased approximately 40 basis points to 44.8% in the third quarter of 2026 from 45.3% in the third quarter of 2025",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 44.3,
+     "source": "https://s23.q4cdn.com/175719177/files/doc_news/Fastenal-Company-Reports-2025-Annual-and-Fourth-Quarter-Earnings-2026.pdf",
+     "quote": "Our gross profit, as a percentage of net sales, decreased to 44.3% in the fourth quarter of 2025 from 44.8% in the fourth quarter of 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 44.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555626000019/ex_99103312026earningsrele.htm",
+     "quote": "Gross profit, as a percentage of net sales, decreased to 44.6% in the first quarter of 2026 from 45.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 44.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000037/ex_99106302026earningsrele.htm",
+     "quote": "Gross profit, as a percentage of net sales, decreased 75 basis points to 44.6% in the second quarter of 2026 from 45.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 44.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000046/ex_99109302026earningsrele.htm",
+     "quote": "decreased approximately 40 basis points to 44.8% in the third quarter of 2026 from 45.3% in the third quarter of 2025",
+     "added": "2026-11-02"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 18.9,
+     "source": "https://s23.q4cdn.com/175719177/files/doc_news/Fastenal-Company-Reports-2025-Annual-and-Fourth-Quarter-Earnings-2026.pdf",
+     "quote": "Our operating income, as a percentage of net sales, increased to 19.0% in the fourth quarter of 2025 from 18.9% in the fourth quarter of 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 20.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555626000019/ex_99103312026earningsrele.htm",
+     "quote": "Operating income, as a percentage of net sales, increased to 20.3% in the first quarter of 2026 from 20.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 21.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000037/ex_99106302026earningsrele.htm",
+     "quote": "Operating income % of net sales | 21.0% | 21.0% (three-month 2026 | 2025)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 20.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000046/ex_99109302026earningsrele.htm",
+     "quote": "Operating income as a percentage of net sales increased to 21.5% in the third quarter of 2026 compared to 20.7% in the third quarter of 2025.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 19.0,
+     "source": "https://s23.q4cdn.com/175719177/files/doc_news/Fastenal-Company-Reports-2025-Annual-and-Fourth-Quarter-Earnings-2026.pdf",
+     "quote": "Our operating income, as a percentage of net sales, increased to 19.0% in the fourth quarter of 2025 from 18.9% in the fourth quarter of 2024.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 20.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555626000019/ex_99103312026earningsrele.htm",
+     "quote": "Operating income, as a percentage of net sales, increased to 20.3% in the first quarter of 2026 from 20.1%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 21.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000037/ex_99106302026earningsrele.htm",
+     "quote": "Operating income as a percentage of net sales was 21.0% in the second quarter of 2026, remaining consistent year-over-year",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 21.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000815556/000081555626000046/ex_99109302026earningsrele.htm",
+     "quote": "Operating income as a percentage of net sales increased to 21.5% in the third quarter of 2026 compared to 20.7% in the third quarter of 2025.",
+     "added": "2026-11-02"
+    }
+   ],
+   "active_onsite_locations": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 2031,
+     "source": "https://www.sec.gov/Archives/edgar/data/815556/000081555625000048/ex_99112312024earningsrele.htm",
+     "quote": "Number of active Onsite locations | 2,031 | 1,986 | 2.3 % | 1,822 | 11.5 % (Dec 31, 2024 | Sep 30, 2024 | change | Dec 31, 2023 | change)",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "SYK": {
+   "organic_net_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 11.0,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2025/q4/26-02.pdf",
+     "quote": "Fourth quarter: Organic net sales increased 11.0% (full year: Organic net sales increased 10.3%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.4,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q1/Q1-26-Earnings-Press-Release.pdf",
+     "quote": "Organic net sales increased 2.4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9.0,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q2/Q2-26-Earnings-Press-Release-07-30-2026.pdf",
+     "quote": "Organic net sales increased 9.0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7.7,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q3/SYK-Ex-99-1-Earnings-Q3-2026.pdf",
+     "quote": "Organic net sales increased 7.7% in the quarter primarily driven by increased unit volume.",
+     "added": "2026-11-02"
+    }
+   ],
+   "medsurg_neurotechnology_organic_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 12.6,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2025/q4/26-02.pdf",
+     "quote": "MedSurg and Neurotechnology: Organic net sales increased 12.6% and 10.7% in the quarter and full year. Table (Q4): MedSurg and Neurotechnology 17.5 % 0.9 % 16.6 % 4.0 % 12.6 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.9,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q1/Q1-26-Earnings-Press-Release.pdf",
+     "quote": "MedSurg and Neurotechnology: Organic net sales increased 0.9% in the quarter including 0.3% from increased unit volume and 0.6% from higher prices. Table: MedSurg and Neurotechnology 5.0 % 1.4 % 3.6 % 2.7 % 0.9 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9.2,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q2/Q2-26-Earnings-Press-Release-07-30-2026.pdf",
+     "quote": "MedSurg and Neurotechnology: Organic net sales increased 9.2% in the quarter including 9.1% from increased unit volume and 0.1% from higher prices. Table: MedSurg and Neurotechnology 9.7 % 0.5 % 9.2 % — % 9.2 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 9.1,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q3/SYK-Ex-99-1-Earnings-Q3-2026.pdf",
+     "quote": "MedSurg and Neurotechnology: Organic net sales increased 9.1% in the quarter primarily driven by increased unit volume. Table: MedSurg and Neurotechnology 9.2 % — % 9.2 % 0.1 % 9.1 %",
+     "added": "2026-11-02"
+    }
+   ],
+   "orthopaedics_organic_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8.4,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2025/q4/26-02.pdf",
+     "quote": "Orthopaedics: Organic net sales increased 8.4% and 9.5% in the quarter and full year. Table (Q4): Orthopaedics 2.2 1.3 0.9 (7.5) 8.4",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4.1,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q1/Q1-26-Earnings-Press-Release.pdf",
+     "quote": "Orthopaedics: Organic net sales increased 4.1% in the quarter from increased unit volume. Table: Orthopaedics 0.1 1.9 (1.8) (5.9) 4.1",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 8.6,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q2/Q2-26-Earnings-Press-Release-07-30-2026.pdf",
+     "quote": "Orthopaedics: Organic net sales increased 8.6% in the quarter from increased unit volume. Table: Orthopaedics 9.1 0.4 8.7 0.1 8.6",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5.9,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q3/SYK-Ex-99-1-Earnings-Q3-2026.pdf",
+     "quote": "Orthopaedics: Organic net sales increased 5.9% in the quarter from increased unit volume. Table: Orthopaedics 5.7 (0.2) 5.9 — 5.9",
+     "added": "2026-11-02"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 29.2,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2025/q4/26-02.pdf",
+     "quote": "Reconciliation (3 months 2024): Adjusted percent net sales 65.3 % 30.8 % 5.3 % 29.2 % (0.8)% nm 24.0 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 22.9,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q1/Q1-26-Earnings-Press-Release.pdf",
+     "quote": "Reconciliation (Q1 2025): Adjusted percent net sales 65.5 % 35.9 % 6.7 % 22.9 % (1.2) % nm 18.7 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 25.7,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q2/Q2-26-Earnings-Press-Release-07-30-2026.pdf",
+     "quote": "Reconciliation (3 months 2025): Adjusted percent net sales 65.4 % 33.1 % 6.6 % 25.7 % (1.8) % nm 20.1 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 25.6,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q3/SYK-Ex-99-1-Earnings-Q3-2026.pdf",
+     "quote": "Reconciliation (3 months 2025): Adjusted percent net sales 65.0 % 32.8 % 6.6 % 25.6 % (1.9) % nm 20.4 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 30.2,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2025/q4/26-02.pdf",
+     "quote": "Adjusted operating income margin(1) increased 100 bps to 30.2%. Reconciliation (3 months 2025): Adjusted percent net sales 65.2 % 29.7 % 5.3 % 30.2 % (1.5)% nm 24.1 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 21.1,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q1/Q1-26-Earnings-Press-Release.pdf",
+     "quote": "Adjusted operating income margin(1) contracted 180 bps to 21.1%. Reconciliation (Q1 2026): Adjusted percent net sales 63.6 % 35.8 % 6.7 % 21.1 % (1.6) % nm 16.7 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 27.4,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q2/Q2-26-Earnings-Press-Release-07-30-2026.pdf",
+     "quote": "Adjusted operating income margin(1) increased 170 bps to 27.4%. Reconciliation (3 months 2026): Adjusted percent net sales 66.0 % 32.2 % 6.4 % 27.4 % (1.5) % nm 21.6 %",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 26.2,
+     "source": "https://s22.q4cdn.com/857738142/files/doc_financials/2026/q3/SYK-Ex-99-1-Earnings-Q3-2026.pdf",
+     "quote": "Adjusted operating income margin(1) increased 60 bps to 26.2%. Reconciliation (3 months 2026): Adjusted percent net sales 65.4 % 32.8 % 6.4 % 26.2 % (1.4) % nm 20.8 %",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "CMG": {
+   "comparable_restaurant_sales_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 5.4,
+     "source": "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS",
+     "quote": "a 5.4% increase in comparable restaurant sales due to higher transactions of 4.0% and a 1.4% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": -0.4,
+     "source": "https://newsroom.chipotle.com/2025-04-23-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2025-RESULTS",
+     "quote": "Comparable restaurant sales decreased 0.4% due to lower transactions of 2.3%, partially offset by a 1.9% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": -4.0,
+     "source": "https://newsroom.chipotle.com/2025-07-23-CHIPOTLE-ANNOUNCES-SECOND-QUARTER-2025-RESULTS",
+     "quote": "Comparable restaurant sales decreased 4.0% due to lower transactions of 4.9%, partially offset by a 0.9% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.3,
+     "source": "https://newsroom.chipotle.com/2025-10-29-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2025-RESULTS",
+     "quote": "Comparable restaurant sales increased 0.3% due to a 1.1% increase in average check, partially offset by lower transactions of 0.8%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -2.5,
+     "source": "https://ir.chipotle.com/2026-02-03-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+     "quote": "a 2.5% decrease in comparable restaurant sales due to lower transactions of 3.2%, partially offset by a 0.7% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.5,
+     "source": "https://newsroom.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS",
+     "quote": "a 0.5% increase in comparable restaurant sales due to higher transactions of 0.6% partially offset by a 0.1% decrease in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2.2,
+     "source": "https://newsroom.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM",
+     "quote": "Comparable restaurant sales increased 2.2%, consisting of a 1.2% increase in average check and a 1.0% increase in transactions",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.1,
+     "source": "https://finviz.com/news/410575/chipotle-announces-third-quarter-2026-results",
+     "quote": "Comparable restaurant sales increased 2.1%, including a 1.3% increase in average check and a 0.8% increase in transactions.",
+     "added": "2026-11-02"
+    }
+   ],
+   "transactions_growth_comparable": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 4.0,
+     "source": "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS",
+     "quote": "a 5.4% increase in comparable restaurant sales due to higher transactions of 4.0% and a 1.4% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": -2.3,
+     "source": "https://newsroom.chipotle.com/2025-04-23-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2025-RESULTS",
+     "quote": "Comparable restaurant sales decreased 0.4% due to lower transactions of 2.3%, partially offset by a 1.9% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": -4.9,
+     "source": "https://newsroom.chipotle.com/2025-07-23-CHIPOTLE-ANNOUNCES-SECOND-QUARTER-2025-RESULTS",
+     "quote": "Comparable restaurant sales decreased 4.0% due to lower transactions of 4.9%, partially offset by a 0.9% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -0.8,
+     "source": "https://newsroom.chipotle.com/2025-10-29-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2025-RESULTS",
+     "quote": "Comparable restaurant sales increased 0.3% due to a 1.1% increase in average check, partially offset by lower transactions of 0.8%.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -3.2,
+     "source": "https://ir.chipotle.com/2026-02-03-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+     "quote": "a 2.5% decrease in comparable restaurant sales due to lower transactions of 3.2%, partially offset by a 0.7% increase in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.6,
+     "source": "https://newsroom.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS",
+     "quote": "a 0.5% increase in comparable restaurant sales due to higher transactions of 0.6% partially offset by a 0.1% decrease in average check.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.0,
+     "source": "https://newsroom.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM",
+     "quote": "Comparable restaurant sales increased 2.2%, consisting of a 1.2% increase in average check and a 1.0% increase in transactions",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.8,
+     "source": "https://finviz.com/news/410575/chipotle-announces-third-quarter-2026-results",
+     "quote": "Comparable restaurant sales increased 2.1%, including a 1.3% increase in average check and a 0.8% increase in transactions.",
+     "added": "2026-11-02"
+    }
+   ],
+   "restaurant_level_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 24.8,
+     "source": "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS",
+     "quote": "Restaurant level operating margin was 24.8%1, a decrease from 25.4%1",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 26.2,
+     "source": "https://newsroom.chipotle.com/2025-04-23-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2025-RESULTS",
+     "quote": "Restaurant level operating margin1 was 26.2%, a decrease from 27.5%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 27.4,
+     "source": "https://newsroom.chipotle.com/2025-07-23-CHIPOTLE-ANNOUNCES-SECOND-QUARTER-2025-RESULTS",
+     "quote": "Restaurant level operating margin1 was 27.4%, a decrease from 28.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 24.5,
+     "source": "https://newsroom.chipotle.com/2025-10-29-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2025-RESULTS",
+     "quote": "Restaurant level operating margin1 was 24.5%, a decrease from 25.5%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 23.4,
+     "source": "https://ir.chipotle.com/2026-02-03-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+     "quote": "Restaurant level operating margin1 was 23.4%, a decrease from 24.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 23.3,
+     "source": "https://newsroom.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS",
+     "quote": "Restaurant level operating margin | 718,961 | 23.3 | 753,622 | 26.2 (Three months ended March 31, 2026 vs 2025; adjusted restaurant level operating margin excluding Legal proceedings-Labor was 23.7%)",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 25.2,
+     "source": "https://newsroom.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM",
+     "quote": "Restaurant level operating margin1 was 25.2%, a decrease from 27.4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 23.3,
+     "source": "https://finviz.com/news/410575/chipotle-announces-third-quarter-2026-results",
+     "quote": "Restaurant level operating margin1 was 23.3%, a decrease from 24.5%",
+     "added": "2026-11-02"
+    }
+   ],
+   "new_restaurants_opened": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 119,
+     "source": "https://ir.chipotle.com/2025-02-04-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS",
+     "quote": "Opened 119 company-owned restaurants with 95 locations including a Chipotlane, and one international licensed restaurant",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 57,
+     "source": "https://newsroom.chipotle.com/2025-04-23-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2025-RESULTS",
+     "quote": "During the first quarter we opened 57 company-owned restaurants,",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 61,
+     "source": "https://newsroom.chipotle.com/2025-07-23-CHIPOTLE-ANNOUNCES-SECOND-QUARTER-2025-RESULTS",
+     "quote": "During the second quarter we opened 61 company-owned restaurants, of which 47 included a Chipotlane.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 84,
+     "source": "https://newsroom.chipotle.com/2025-10-29-CHIPOTLE-ANNOUNCES-THIRD-QUARTER-2025-RESULTS",
+     "quote": "Opened 84 company-owned restaurants, with 64 locations including a Chipotlane",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 132,
+     "source": "https://ir.chipotle.com/2026-02-03-CHIPOTLE-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS",
+     "quote": "we opened 132 company-owned restaurants, of which 97 included a Chipotlane",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 49,
+     "source": "https://newsroom.chipotle.com/2026-04-29-CHIPOTLE-ANNOUNCES-FIRST-QUARTER-2026-RESULTS",
+     "quote": "During the first quarter we opened 49 company-owned restaurants, of which 42 included a Chipotlane.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 100,
+     "source": "https://newsroom.chipotle.com/2026-07-29-CHIPOTLE-RAISES-FULL-YEAR-COMPARABLE-SALES-GUIDANCE-ON-STRONG-Q2-MOMENTUM",
+     "quote": "Opened 100 company-owned restaurants, with 80 locations including a Chipotlane.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 84,
+     "source": "https://finviz.com/news/410575/chipotle-announces-third-quarter-2026-results",
+     "quote": "Opened 84 company-owned restaurants, with 53 locations including a Chipotlane.",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "KLAC": {
+   "semiconductor_process_control_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 25.6,
+     "source": "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-25-000004/0000319201-25-000004.pdf",
+     "quote": "Segment Information (Three Months Ended December 31, 2024 | 2023, in thousands): \"Semiconductor Process Control | $2,755,743 | $2,194,079\". Computed: 2,755,743 / 2,194,079 - 1 = 25.60%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 30.67,
+     "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920125000009/exhibit991earningsrelease0.htm",
+     "quote": "Segment Information (Three Months Ended March 31, 2025 | 2024, in thousands): \"Semiconductor Process Control | $2,738,817 | $2,096,005\". Computed: 2,738,817 / 2,096,005 - 1 = 30.67%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 24.68,
+     "source": "https://finviz.com/news/123563/kla-corporation-reports-fiscal-2025-fourth-quarter-and-full-year-results",
+     "quote": "Segment Information (Three Months Ended June 30, 2025 | 2024, in thousands): \"Semiconductor Process Control | $2,877,647 | $2,307,994\". Computed: 2,877,647 / 2,307,994 - 1 = 24.68%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 12.59,
+     "source": "https://finviz.com/news/209847/kla-corporation-reports-fiscal-2026-first-quarter-results",
+     "quote": "Segment Information (Three Months Ended September 30, 2025 | 2024, in thousands): \"Semiconductor Process Control | $2,899,392 | $2,575,151\". Computed: 2,899,392 / 2,575,151 - 1 = 12.59%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 9.03,
+     "source": "https://finviz.com/news/292548/kla-corporation-reports-fiscal-2026-second-quarter-results",
+     "quote": "Segment Information (Three Months Ended December 31, 2025 | 2024, in thousands): \"Semiconductor Process Control | $3,004,648 | $2,755,743\". Computed: 3,004,648 / 2,755,743 - 1 = 9.03%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 12.6,
+     "source": "https://app.edgar.tools/filing/319201/0000319201-26-000014/exhibit991earningsrelease3.htm",
+     "quote": "Segment Information (Three Months Ended March 31, 2026 | 2025, in thousands): \"Semiconductor Process Control | $3,083,912 | $2,738,817\". Computed: 3,083,912 / 2,738,817 - 1 = 12.60%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 13.18,
+     "source": "https://finviz.com/news/373613/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results",
+     "quote": "Segment Information (Three Months Ended June 30, 2026 | 2025, in thousands): \"Semiconductor Process Control | $3,256,781 | $2,877,647\". Computed: 3,256,781 / 2,877,647 - 1 = 13.18%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 29.48,
+     "source": "https://finviz.com/news/410498/kla-corporation-reports-fiscal-2027-first-quarter-results",
+     "quote": "Segment Information (September 30, 2026 | September 30, 2025, in thousands): \"Semiconductor Process Control | $3,754,254 | $2,899,392\". Computed: 3,754,254 / 2,899,392 - 1 = 29.48%",
+     "added": "2026-11-02"
+    }
+   ],
+   "services_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 18.14,
+     "source": "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-25-000004/0000319201-25-000004.pdf",
+     "quote": "Statements of Operations (Three Months Ended December 31, 2024 | 2023, in thousands): \"Service | 667,389 | 564,917\". Computed: 667,389 / 564,917 - 1 = 18.14%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 13.34,
+     "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920125000009/exhibit991earningsrelease0.htm",
+     "quote": "Statements of Operations (Three Months Ended March 31, 2025 | 2024, in thousands): \"Service | 669,208 | 590,461\". Computed: 669,208 / 590,461 - 1 = 13.34%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 14.44,
+     "source": "https://finviz.com/news/123563/kla-corporation-reports-fiscal-2025-fourth-quarter-and-full-year-results",
+     "quote": "Statements of Operations (Three Months Ended June 30, 2025 | 2024, in thousands): \"Service | 702,559 | 613,898\". Computed: 702,559 / 613,898 - 1 = 14.44%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 15.61,
+     "source": "https://finviz.com/news/209847/kla-corporation-reports-fiscal-2026-first-quarter-results",
+     "quote": "Statements of Operations (Three Months Ended September 30, 2025 | 2024, in thousands): \"Service | 744,690 | 644,152\". Computed: 744,690 / 644,152 - 1 = 15.61%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 17.78,
+     "source": "https://finviz.com/news/292548/kla-corporation-reports-fiscal-2026-second-quarter-results",
+     "quote": "Statements of Operations (Three Months Ended December 31, 2025 | 2024, in thousands): \"Service | 786,053 | 667,389\". Computed: 786,053 / 667,389 - 1 = 17.78%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 15.78,
+     "source": "https://app.edgar.tools/filing/319201/0000319201-26-000014/exhibit991earningsrelease3.htm",
+     "quote": "Statements of Operations (Three Months Ended March 31, 2026 | 2025, in thousands): \"Service | 774,791 | 669,208\". Computed: 774,791 / 669,208 - 1 = 15.78%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 16.77,
+     "source": "https://finviz.com/news/373613/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results",
+     "quote": "Statements of Operations (Three Months Ended June 30, 2026 | 2025, in thousands): \"Service | 820,405 | 702,559\". Computed: 820,405 / 702,559 - 1 = 16.77%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 14.21,
+     "source": "https://finviz.com/news/410498/kla-corporation-reports-fiscal-2027-first-quarter-results",
+     "quote": "Statements of Operations (September 30, 2026 | September 30, 2025, in thousands): \"Service | 850,546 | 744,690\". Computed: 850,546 / 744,690 - 1 = 14.21%",
+     "added": "2026-11-02"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 60.3,
+     "source": "https://finviz.com/news/292548/kla-corporation-reports-fiscal-2026-second-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended December 31, 2024 (year-earlier column), in thousands: \"Total revenues 3,076,851\"; \"Costs of revenues 1,221,461\". Computed: (3,076,851 - 1,221,461) / 3,076,851 = 60.30%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 61.62,
+     "source": "https://app.edgar.tools/filing/319201/0000319201-26-000014/exhibit991earningsrelease3.htm",
+     "quote": "GAAP Statements of Operations, Three Months Ended March 31, 2025 (year-earlier column), in thousands: \"Total revenues 3,063,029\"; \"Costs of revenues 1,175,689\". Computed: (3,063,029 - 1,175,689) / 3,063,029 = 61.62%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 61.97,
+     "source": "https://finviz.com/news/373613/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended June 30, 2025 (year-earlier column), in thousands: \"Total revenues 3,174,741\"; \"Costs of revenues 1,207,286\". Computed: (3,174,741 - 1,207,286) / 3,174,741 = 61.97%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 61.27,
+     "source": "https://finviz.com/news/410498/kla-corporation-reports-fiscal-2027-first-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended September 30, 2025 (year-earlier column), in thousands: \"Total revenues 3,209,696\"; \"Costs of revenues 1,243,070\". Computed: (3,209,696 - 1,243,070) / 3,209,696 = 61.27%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 61.45,
+     "source": "https://finviz.com/news/292548/kla-corporation-reports-fiscal-2026-second-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended December 31, 2025, in thousands: \"Total revenues 3,297,146\"; \"Costs of revenues 1,271,210\". Computed: (3,297,146 - 1,271,210) / 3,297,146 = 61.45%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 61.12,
+     "source": "https://app.edgar.tools/filing/319201/0000319201-26-000014/exhibit991earningsrelease3.htm",
+     "quote": "GAAP Statements of Operations, Three Months Ended March 31, 2026, in thousands: \"Total revenues 3,415,078\"; \"Costs of revenues 1,327,672\". Computed: (3,415,078 - 1,327,672) / 3,415,078 = 61.12%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 61.36,
+     "source": "https://finviz.com/news/373613/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended June 30, 2026, in thousands: \"Total revenues 3,657,556\"; \"Costs of revenues 1,413,108\". Computed: (3,657,556 - 1,413,108) / 3,657,556 = 61.36%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 61.85,
+     "source": "https://finviz.com/news/410498/kla-corporation-reports-fiscal-2027-first-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended September 30, 2026, in thousands: \"Total revenues 4,136,015\"; \"Costs of revenues 1,577,791\". Computed: (4,136,015 - 1,577,791) / 4,136,015 = 61.85%",
+     "added": "2026-11-02"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 32.6,
+     "source": "https://finviz.com/news/292548/kla-corporation-reports-fiscal-2026-second-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended December 31, 2024 (year-earlier column), in thousands: \"Total revenues 3,076,851\"; \"Costs of revenues 1,221,461\"; \"Research and development 346,157\"; \"Selling, general and administrative 267,081\"; \"Impairment of goodwill and purchased intangible assets 239,100\". Computed operating income = 3,076,851 - 1,221,461 - 346,157 - 267,081 - 239,100 = 1,003,052; 1,003,052 / 3,076,851 = 32.60%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 42.45,
+     "source": "https://app.edgar.tools/filing/319201/0000319201-26-000014/exhibit991earningsrelease3.htm",
+     "quote": "GAAP Statements of Operations, Three Months Ended March 31, 2025 (year-earlier column), in thousands: \"Total revenues 3,063,029\"; \"Costs of revenues 1,175,689\"; \"Research and development 338,043\"; \"Selling, general and administrative 248,905\"; \"Impairment of goodwill and purchased intangible assets —\". Computed operating income = 3,063,029 - 1,175,689 - 338,043 - 248,905 = 1,300,392; 1,300,392 / 3,063,029 = 42.45%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 42.58,
+     "source": "https://finviz.com/news/373613/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended June 30, 2025 (year-earlier column), in thousands: \"Total revenues 3,174,741\"; \"Costs of revenues 1,207,286\"; \"Research and development 352,989\"; \"Selling, general and administrative 262,706\"; \"Impairment of goodwill and purchased intangible assets —\". Computed operating income = 3,174,741 - 1,207,286 - 352,989 - 262,706 = 1,351,760; 1,351,760 / 3,174,741 = 42.58%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 41.66,
+     "source": "https://finviz.com/news/410498/kla-corporation-reports-fiscal-2027-first-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended September 30, 2025 (year-earlier column), in thousands: \"Total revenues 3,209,696\"; \"Costs of revenues 1,243,070\"; \"Research and development 360,461\"; \"Selling, general and administrative 268,988\". Computed operating income = 3,209,696 - 1,243,070 - 360,461 - 268,988 = 1,337,177; 1,337,177 / 3,209,696 = 41.66%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 41.31,
+     "source": "https://finviz.com/news/292548/kla-corporation-reports-fiscal-2026-second-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended December 31, 2025, in thousands: \"Total revenues 3,297,146\"; \"Costs of revenues 1,271,210\"; \"Research and development 383,871\"; \"Selling, general and administrative 279,919\"; \"Impairment of goodwill and purchased intangible assets —\". Computed operating income = 3,297,146 - 1,271,210 - 383,871 - 279,919 = 1,362,146; 1,362,146 / 3,297,146 = 41.31%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 41.21,
+     "source": "https://app.edgar.tools/filing/319201/0000319201-26-000014/exhibit991earningsrelease3.htm",
+     "quote": "GAAP Statements of Operations, Three Months Ended March 31, 2026, in thousands: \"Total revenues 3,415,078\"; \"Costs of revenues 1,327,672\"; \"Research and development 388,763\"; \"Selling, general and administrative 291,134\"; \"Impairment of goodwill and purchased intangible assets —\". Computed operating income = 3,415,078 - 1,327,672 - 388,763 - 291,134 = 1,407,509; 1,407,509 / 3,415,078 = 41.21%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 42.49,
+     "source": "https://finviz.com/news/373613/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended June 30, 2026, in thousands: \"Total revenues 3,657,556\"; \"Costs of revenues 1,413,108\"; \"Research and development 399,023\"; \"Selling, general and administrative 291,477\"; \"Impairment of goodwill and purchased intangible assets —\". Computed operating income = 3,657,556 - 1,413,108 - 399,023 - 291,477 = 1,553,948; 1,553,948 / 3,657,556 = 42.49%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 45.01,
+     "source": "https://finviz.com/news/410498/kla-corporation-reports-fiscal-2027-first-quarter-results",
+     "quote": "GAAP Statements of Operations, Three Months Ended September 30, 2026, in thousands: \"Total revenues 4,136,015\"; \"Costs of revenues 1,577,791\"; \"Research and development 395,096\"; \"Selling, general and administrative 301,458\". Computed operating income = 4,136,015 - 1,577,791 - 395,096 - 301,458 = 1,861,670; 1,861,670 / 4,136,015 = 45.01%",
+     "added": "2026-11-02"
+    }
+   ]
+  },
+  "CME": {
+   "average_daily_volume_million_contracts": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 25.503,
+     "source": "https://www.cmegroup.com/media-room/press-releases/2026/2/04/cme_group_inc_reportsfourthconsecutiveyearofrecordannualrevenuea.html",
+     "quote": "Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 4Q 2024 25,503 -> 25,503/1000 = 25.503 million contracts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 29.768,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000016/exhibit9913312026.htm",
+     "quote": "Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 1Q 2025 29,768 -> 29,768/1000 = 29.768 million contracts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 30.217,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000042/exhibit9916302026.htm",
+     "quote": "Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 2Q 2025 30,217 -> 30,217/1000 = 30.217 million contracts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 25.322,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000065/exhibit9919302026.htm",
+     "quote": "Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 3Q 2025 25,322 -> 25,322/1000 = 25.322 million contracts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 27.353,
+     "source": "https://www.cmegroup.com/media-room/press-releases/2026/2/04/cme_group_inc_reportsfourthconsecutiveyearofrecordannualrevenuea.html",
+     "quote": "Fourth-quarter 2025 average daily volume (ADV) was the all-time highest fourth quarter with 27.4 million contracts; Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 4Q 2025 27,353 -> 27,353/1000 = 27.353 million contracts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 36.231,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000016/exhibit9913312026.htm",
+     "quote": "reached a quarterly all-time high of 36.2 million contracts, up 22% from first-quarter 2025.; Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 1Q 2026 36,231 -> 36,231/1000 = 36.231 million contracts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 29.843,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000042/exhibit9916302026.htm",
+     "quote": "Second-quarter 2026 average daily volume (ADV) was the third highest quarterly ADV reaching 29.8 million contracts; Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 2Q 2026 29,843 -> 29,843/1000 = 29.843 million contracts",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 29.445,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000065/exhibit9919302026.htm",
+     "quote": "Q3 2026 average daily volume (ADV) climbed to a third-quarter record of 29.4 million contracts; Quarterly Average Daily Volume (ADV) table, CME Group ADV (in thousands): Total 3Q 2026 29,445 -> 29,445/1000 = 29.445 million contracts",
+     "added": "2026-11-02"
+    }
+   ],
+   "average_rate_per_contract": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.701,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000007/exhibit991123124.htm",
+     "quote": "The total average rate per contract was $0.701.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.686,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000093/exhibit9913312025.htm",
+     "quote": "The total average rate per contract was $0.686.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.69,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000176/exhibit9916302025.htm",
+     "quote": "The total average rate per contract was $0.690.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.702,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000204/exhibit9919302025.htm",
+     "quote": "The total average rate per contract was $0.702.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.707,
+     "source": "https://www.cmegroup.com/media-room/press-releases/2026/2/04/cme_group_inc_reportsfourthconsecutiveyearofrecordannualrevenuea.html",
+     "quote": "The total average rate per contract was $0.707.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.652,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000016/exhibit9913312026.htm",
+     "quote": "The total average rate per contract was $0.652.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.678,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000042/exhibit9916302026.htm",
+     "quote": "The total average rate per contract was $0.678.",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.679,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000065/exhibit9919302026.htm",
+     "quote": "The total average rate per contract was $0.679.",
+     "added": "2026-11-02"
+    }
+   ],
+   "clearing_and_transaction_fees_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 4.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000007/exhibit991123124.htm",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q4 2024 $1,232.3 vs Q4 2023 $1,184.5; growth = 1,232.3/1,184.5 - 1 = 4.0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000093/exhibit9913312025.htm",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q1 2025 $1,337.3 vs Q1 2024 $1,208.9; growth = 1,337.3/1,208.9 - 1 = 10.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 11.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000176/exhibit9916302025.htm",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q2 2025 $1,388.0 vs Q2 2024 $1,249.9; growth = 1,388.0/1,249.9 - 1 = 11.0%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": -5.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000204/exhibit9919302025.htm",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q3 2025 $1,227.9 vs Q3 2024 $1,297.1; growth = 1,227.9/1,297.1 - 1 = -5.3%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7.8,
+     "source": "https://www.cmegroup.com/media-room/press-releases/2026/2/04/cme_group_inc_reportsfourthconsecutiveyearofrecordannualrevenuea.html",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q4 2025 $1,327.9 vs Q4 2024 $1,232.3; growth = 1,327.9/1,232.3 - 1 = 7.8%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 15.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000016/exhibit9913312026.htm",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q1 2026 $1,542.6 vs Q1 2025 $1,337.3; growth = 1,542.6/1,337.3 - 1 = 15.4%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -2.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000042/exhibit9916302026.htm",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q2 2026 $1,352.5 vs Q2 2025 $1,388.0; growth = 1,352.5/1,388.0 - 1 = -2.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000065/exhibit9919302026.htm",
+     "quote": "Consolidated Statements of Income (in millions): Clearing and transaction fees Q3 2026 $1,378.1 vs Q3 2025 $1,227.9; growth = 1,378.1/1,227.9 - 1 = 12.2%",
+     "added": "2026-11-02"
+    }
+   ],
+   "market_data_revenue_growth": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 8.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000007/exhibit991123124.htm",
+     "quote": "Consolidated Statements of Income (in millions): Market data and information services Q4 2024 $181.6 vs Q4 2023 $167.2; growth = 181.6/167.2 - 1 = 8.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 10.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000093/exhibit9913312025.htm",
+     "quote": "Consolidated Statements of Income (in millions): Market data and information services Q1 2025 $194.5 vs Q1 2024 $175.4; growth = 194.5/175.4 - 1 = 10.9%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 13.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000176/exhibit9916302025.htm",
+     "quote": "Consolidated Statements of Income (in millions): Market data and information services Q2 2025 $198.1 vs Q2 2024 $175.0; growth = 198.1/175.0 - 1 = 13.2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 13.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637525000204/exhibit9919302025.htm",
+     "quote": "Consolidated Statements of Income (in millions): Market data and information services Q3 2025 $202.5 vs Q3 2024 $178.2; growth = 202.5/178.2 - 1 = 13.6%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 14.5,
+     "source": "https://www.cmegroup.com/media-room/press-releases/2026/2/04/cme_group_inc_reportsfourthconsecutiveyearofrecordannualrevenuea.html",
+     "quote": "Consolidated Statements of Income (in millions): Market data and information services Q4 2025 $208.0 vs Q4 2024 $181.6; growth = 208.0/181.6 - 1 = 14.5%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 15.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000016/exhibit9913312026.htm",
+     "quote": "Consolidated Statements of Income (in millions): Market data and information services Q1 2026 $224.1 vs Q1 2025 $194.5; growth = 224.1/194.5 - 1 = 15.2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 20.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000042/exhibit9916302026.htm",
+     "quote": "During Q2, market data revenue increased 20% to a record $238 million. Consolidated Statements of Income (in millions): Market data and information services Q2 2026 $238.1 vs Q2 2025 $198.1; growth = 238.1/198.1 - 1 = 20.2%",
+     "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 20.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001156375/000115637526000065/exhibit9919302026.htm",
+     "quote": "Market data revenue totaled a record $243 million for third-quarter 2026, an increase of 20%. Consolidated Statements of Income (in millions): Market data and information services Q3 2026 $243.1 vs Q3 2025 $202.5; growth = 243.1/202.5 - 1 = 20.0%",
+     "added": "2026-11-02"
+    }
+   ]
   }
  }
 }

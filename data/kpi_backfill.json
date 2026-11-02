@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "FAST",
-  "SYK",
-  "CMG",
-  "KLAC",
-  "CME",
   "STE",
   "WDAY",
   "BR",
@@ -84,7 +79,12 @@
   "TT",
   "RL",
   "ROST",
-  "GDDY"
+  "GDDY",
+  "FAST",
+  "SYK",
+  "CMG",
+  "KLAC",
+  "CME"
  ],
  "notes": {
   "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
@@ -141,6 +141,11 @@
   "TT": "Q4 2024-Q3 2026 filled (all 4 KPIs). Bookings growth is reported (not organic). Q3 2026 quoted from a full reprint of the release (sec.gov exhibit failed to load). Q4 2024 backlog = year-end figure from FY2024 release.",
   "RL": "Q2 FY26-Q1 FY27 filled (Q2 FY27 not yet reported on 2 Nov 2026). Constant-currency revenue growth and AUR for year-earlier quarters (Q2 FY25-Q1 FY26) not stated in these releases. AUR is direct-to-consumer only; Q4 FY26 AUR 16% from a Nasdaq call summary (release says 'mid-teens'). Gross margin reported/GAAP.",
   "ROST": "Q3 FY25-Q2 FY26 + year-earlier filled. Q3 FY2024 comparable store sales not stated in the Q3 FY25 release (skipped). Q2 FY26 and year-earlier operating margins computed as operating income / sales from release tables; Q2 FY26 17.62% includes ~405 bp tariff refunds. Periods = month end before the fiscal end date.",
-  "GDDY": "Q4 2024-Q3 2026 filled (all 5 KPIs). Bookings growth reported (not constant currency). Customers in millions; 2026 releases give one decimal only. Q4 2025 release read via a mirror of the 8-K exhibit."
+  "GDDY": "Q4 2024-Q3 2026 filled (all 5 KPIs). Bookings growth reported (not constant currency). Customers in millions; 2026 releases give one decimal only. Q4 2025 release read via a mirror of the 8-K exhibit.",
+  "FAST": "Q4'24-Q3'26 filled for daily sales growth, gross margin, operating margin (stated %; year-ago daily sales growth from each quarter's own release). Active Onsite count no longer disclosed after FY2024: only Q4'24 = 2,031; 2025-26 releases give only a '$50k+ Sites' monthly-average proxy ('Onsite-like customers'), not stored.",
+  "SYK": "Q4'25-Q3'26 filled from Stryker release PDFs. Releases do not state year-earlier organic growth (total or segment), so Q4'24-Q3'25 organic KPIs not filled; adjusted operating margin has all 8 quarters ('Adjusted percent net sales' reconciliation line). Segment named 'Orthopaedics'.",
+  "CMG": "All 4 KPIs for Q4'24-Q3'26. New restaurants = company-owned openings only (partner-operated international excluded). Q1'26 margin is unadjusted 23.3% (release headlines adjusted 23.7% excl. $11.9M labor legal accrual). Q3'26 source is a Finviz copy of the release (sec.gov refused).",
+  "KLAC": "All 4 KPIs for Q2 FY25-Q1 FY27, all computed from GAAP release tables (no stated %). Operating income = revenue - COGS - R&D - SG&A - impairment; Q2 FY25 operating margin 32.6% includes $239.1M impairment. Sources mostly finviz/edgar.tools copies of the releases (sec.gov blocked).",
+  "CME": "All 4 KPIs for Q4'24-Q3'26. Growth rates computed from income-statement $ (current vs year-earlier quarter; market data 20% also stated Q2/Q3'26). ADV from release 5-quarter table (thousands/1000); Q4'24-Q3'25 ADV cited to later release tables."
  }
 }
