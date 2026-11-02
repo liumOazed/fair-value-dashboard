@@ -3,27 +3,6 @@
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
-   "ticker": "ROST",
-   "data_through": "2026-07-31",
-   "reported_on": null,
-   "yahoo_latest_quarter": "2026-08-01",
-   "waiting_days": null
-  },
-  {
-   "ticker": "MSI",
-   "data_through": "2026-06-30",
-   "reported_on": null,
-   "yahoo_latest_quarter": "2026-07-04",
-   "waiting_days": null
-  },
-  {
-   "ticker": "MRVL",
-   "data_through": "2026-07-31",
-   "reported_on": null,
-   "yahoo_latest_quarter": "2026-08-01",
-   "waiting_days": null
-  },
-  {
    "ticker": "GDDY",
    "data_through": "2026-06-30",
    "reported_on": "2026-10-29",
@@ -128,6 +107,11 @@
    "data_through": "2026-06-30"
   },
   {
+   "ticker": "MSI",
+   "next_report": "2026-11-04",
+   "data_through": "2026-06-30"
+  },
+  {
    "ticker": "TPR",
    "next_report": "2026-11-05",
    "data_through": "2026-06-30"
@@ -158,6 +142,11 @@
    "data_through": "2026-07-31"
   },
   {
+   "ticker": "ROST",
+   "next_report": "2026-11-19",
+   "data_through": "2026-07-31"
+  },
+  {
    "ticker": "VEEV",
    "next_report": "2026-11-25",
    "data_through": "2026-07-31"
@@ -169,6 +158,11 @@
   },
   {
    "ticker": "WDAY",
+   "next_report": "2026-12-01",
+   "data_through": "2026-07-31"
+  },
+  {
+   "ticker": "MRVL",
    "next_report": "2026-12-01",
    "data_through": "2026-07-31"
   },

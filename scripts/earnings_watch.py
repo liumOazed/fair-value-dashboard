@@ -83,7 +83,8 @@ def pending_update():
         newer = [d for d in c.get("past", []) if dt.date.fromisoformat(d) - dt.timedelta(days=LAG) > dt.date.fromisoformat(through)]
         # Yahoo's own statements already show a newer quarter: also pending (covers a missing calendar)
         yq = c.get("yahoo_latest_quarter")
-        if newer or (yq and yq > through):
+        # (10-day tolerance: 52/53-week fiscal quarters end a few days after the month end used in data_through)
+        if newer or (yq and dt.date.fromisoformat(yq) > dt.date.fromisoformat(through) + dt.timedelta(days=10)):
             pend.append(dict(ticker=t, data_through=through, reported_on=max(newer) if newer else None, yahoo_latest_quarter=yq,
                              waiting_days=(TODAY - dt.date.fromisoformat(max(newer))).days if newer else None))
         elif c.get("next_report"):
