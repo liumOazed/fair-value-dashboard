@@ -29,39 +29,51 @@
    "reported_on": "2026-11-02",
    "yahoo_latest_quarter": "2026-06-30",
    "waiting_days": 1
-  }
- ],
- "upcoming": [
+  },
   {
    "ticker": "BKNG",
-   "next_report": "2026-11-03",
-   "data_through": "2026-06-30"
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-03",
+   "yahoo_latest_quarter": "2026-06-30",
+   "waiting_days": 0
   },
   {
    "ticker": "AME",
-   "next_report": "2026-11-03",
-   "data_through": "2026-06-30"
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-03",
+   "yahoo_latest_quarter": "2026-06-30",
+   "waiting_days": 0
   },
   {
    "ticker": "SHOP",
-   "next_report": "2026-11-03",
-   "data_through": "2026-06-30"
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-03",
+   "yahoo_latest_quarter": "2026-06-30",
+   "waiting_days": 0
   },
   {
    "ticker": "XYZ",
-   "next_report": "2026-11-03",
-   "data_through": "2026-06-30"
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-03",
+   "yahoo_latest_quarter": "2026-06-30",
+   "waiting_days": 0
   },
   {
    "ticker": "FISV",
-   "next_report": "2026-11-03",
-   "data_through": "2026-06-30"
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-03",
+   "yahoo_latest_quarter": null,
+   "waiting_days": 0
   },
   {
    "ticker": "BR",
-   "next_report": "2026-11-03",
-   "data_through": "2026-06-30"
-  },
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-03",
+   "yahoo_latest_quarter": "2026-06-30",
+   "waiting_days": 0
+  }
+ ],
+ "upcoming": [
   {
    "ticker": "APP",
    "next_report": "2026-11-04",
@@ -158,18 +170,18 @@
    "data_through": "2026-07-31"
   },
   {
-   "ticker": "VEEV",
-   "next_report": "2026-11-25",
-   "data_through": "2026-07-31"
-  },
-  {
    "ticker": "ADSK",
-   "next_report": "2026-11-27",
+   "next_report": "2026-11-24",
    "data_through": "2026-07-31"
   },
   {
    "ticker": "WDAY",
-   "next_report": "2026-12-01",
+   "next_report": "2026-11-24",
+   "data_through": "2026-07-31"
+  },
+  {
+   "ticker": "VEEV",
+   "next_report": "2026-11-25",
    "data_through": "2026-07-31"
   },
   {
