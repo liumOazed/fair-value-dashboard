@@ -16,8 +16,16 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "All-stock $115B Lumentum takeover (~49% more shares, ~24% premium for a target near peak earnings), not a business problem",
+    "summary": "Marvell fell ~27% in a week (sector -6%, semis peers -7%) almost entirely on its $115B all-stock bid for Lumentum: holders fear overpaying for laser earnings lifted by temporary price hikes and shortages, and ~49% dilution; Marvell's own AI forecasts were still being raised (+8% for next year in 30 days). If Lumentum's profits prove durable this is a temporary sell-off, if not it is a lasting per-share hit from capital allocation; the deal needs approvals and closes only in H1 2028. Watch the merger proxy, Lumentum's next quarter and the vote; the fair value (~$118) excludes the deal and is already below the ~$150 price.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -144,8 +152,16 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Q3 beat but service-revenue forecast cut: customers delay activating service contracts on AI hardware",
+    "summary": "Fortinet fell ~31% in a week (sector -6%, security peers -7%) after Q3: revenue +20% and billings +29% beat, but service revenue grew only 13% and its outlook was cut, with Q4 growth slowing to ~15% as price-hike and cheap-inventory tailwinds fade. Management says service activation lags the big hardware wave and deferred revenue is growing fastest in five quarters, so the shortfall looks like timing rather than lost customers; analysts have not cut next year's EPS. Watch service revenue and deferred revenue conversion in Q4/Q1 and any sign of share loss to Palo Alto or cloud security; the fair value (~$71) is already well below the price, so no sign it is too high.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -271,8 +287,16 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Google AI search sending far less traffic: US daily users falling, Q4 users and revenue guided below hopes",
+    "summary": "Reddit fell ~34% in a week (sector flat, peers GOOGL/META -12%) after Q3: revenue still +53% and EPS beat, but US daily users fell and logged-out traffic dropped as Google's AI answers send fewer searchers (over 1M fewer referrals a week in October); Q4 revenue guidance missed and management warned users may fall by a low double-digit percent. This is a structural shift in Reddit's main traffic source rather than a one-off, although ~80% of monetisation comes from logged-in and app users, who are still growing. Watch logged-in US users, Q4 revenue >= $1.0B and AI licensing renewals; the fair value (~$141, 29% growth) looks too high if user losses persist and should be checked in the twice-weekly review.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -3667,6 +3691,6 @@
   "ZTS",
   "HWM"
  ],
- "updated": "2026-11-02T22:01:37Z",
+ "updated": "2026-11-03T02:24:49Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
