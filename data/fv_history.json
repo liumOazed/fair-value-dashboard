@@ -166,6 +166,15 @@
    "bull": 1064.2,
    "price": 815.31,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 559.85,
+   "bear": 284.97,
+   "base": 599.69,
+   "bull": 872.58,
+   "price": 724.19,
+   "method": "fcff_re"
   }
  ],
  "APA": [
@@ -690,6 +699,15 @@
    "bull": 15.4,
    "price": 9.14,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 10.44,
+   "bear": 5.98,
+   "base": 11.14,
+   "bull": 15.4,
+   "price": 9.42,
+   "method": "fcff_re"
   }
  ],
  "FISV": [
@@ -778,6 +796,15 @@
    "bull": 204.91,
    "price": 117.24,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 149.47,
+   "bear": 94.97,
+   "base": 158.66,
+   "bull": 208.23,
+   "price": 116.61,
+   "method": "fcff_re"
   }
  ],
  "FAST": [
@@ -799,6 +826,15 @@
    "base": 298.33,
    "bull": 366.73,
    "price": 291.86,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 281.5,
+   "bear": 196.88,
+   "base": 298.13,
+   "bull": 366.86,
+   "price": 306.81,
    "method": "fcff_re"
   }
  ],
@@ -899,6 +935,15 @@
    "bull": 215.47,
    "price": 244.04,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 167.5,
+   "bear": 118.91,
+   "base": 176.09,
+   "bull": 218.88,
+   "price": 245.97,
+   "method": "fcff_re"
   }
  ],
  "WAB": [
@@ -942,6 +987,15 @@
    "base": 143.53,
    "bull": 261.45,
    "price": 91.73,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 132.2,
+   "bear": 53.69,
+   "base": 134.44,
+   "bull": 244.36,
+   "price": 90.97,
    "method": "fcff_re"
   }
  ],

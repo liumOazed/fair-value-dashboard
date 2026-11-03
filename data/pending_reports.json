@@ -1,62 +1,34 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
-  {
-   "ticker": "GDDY",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 4
-  },
-  {
-   "ticker": "SYK",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 4
-  },
-  {
-   "ticker": "RSG",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 4
-  },
-  {
-   "ticker": "RDDT",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-29",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 4
-  },
   {
    "ticker": "CBOE",
    "data_through": "2026-06-30",
    "reported_on": "2026-10-30",
    "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 3
+   "waiting_days": 4
   },
   {
    "ticker": "REGN",
    "data_through": "2026-06-30",
    "reported_on": "2026-10-30",
    "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 3
+   "waiting_days": 4
   },
   {
    "ticker": "AAPL",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-02",
    "yahoo_latest_quarter": "2026-06-27",
-   "waiting_days": 0
+   "waiting_days": 1
   },
   {
    "ticker": "IDXX",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-02",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 0
+   "waiting_days": 1
   }
  ],
  "upcoming": [
@@ -301,6 +273,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "SYK",
+   "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "KLAC",
    "next_report": "2027-01-28",
    "data_through": "2026-09-30"
@@ -356,6 +333,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "RDDT",
+   "next_report": "2027-02-04",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "BMY",
    "next_report": "2027-02-04",
    "data_through": "2026-09-30"
@@ -396,6 +378,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "RSG",
+   "next_report": "2027-02-16",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "MCO",
    "next_report": "2027-02-17",
    "data_through": "2026-09-30"
@@ -418,6 +405,11 @@
   {
    "ticker": "NEM",
    "next_report": "2027-02-18",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "GDDY",
+   "next_report": "2027-02-25",
    "data_through": "2026-09-30"
   },
   {

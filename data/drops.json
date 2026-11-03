@@ -292,8 +292,8 @@
     "label": "lasting",
     "confidence": "medium",
     "cause": "Google AI search sending far less traffic: US daily users falling, Q4 users and revenue guided below hopes",
-    "summary": "Reddit fell ~34% in a week (sector flat, peers GOOGL/META -12%) after Q3: revenue still +53% and EPS beat, but US daily users fell and logged-out traffic dropped as Google's AI answers send fewer searchers (over 1M fewer referrals a week in October); Q4 revenue guidance missed and management warned users may fall by a low double-digit percent. This is a structural shift in Reddit's main traffic source rather than a one-off, although ~80% of monetisation comes from logged-in and app users, who are still growing. Watch logged-in US users, Q4 revenue >= $1.0B and AI licensing renewals; the fair value (~$141, 29% growth) looks too high if user losses persist and should be checked in the twice-weekly review.",
-    "model_changed": false,
+    "summary": "Reddit fell ~34% in a week (sector flat, peers GOOGL/META -12%) after Q3: revenue still +53% and EPS beat, but US daily users fell 2% (logged-out -4%) as Google's AI answers send fewer searchers (over 1M fewer referrals a week in October), and management warned daily users may fall by a low double-digit percent in Q4. This is a structural shift in its main traffic source, although logged-in users are still growing and Q4 revenue is guided +38-42%. The model was updated with Q3 and growth cut (base 24% from 28%, bear 6% from 10%), lowering the fair value to ~$132 from ~$141; watch logged-in US users, Q4 revenue >= $1.0B and AI licensing renewals.",
+    "model_changed": true,
     "date": "2026-11-03",
     "by": "Claude"
    },
@@ -416,8 +416,16 @@
     "day"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Q1 FY27 beat (revenue +6%, non-GAAP EPS +14%) but FY27 guide only held, margins and FCF dipped; Canaccord cut to Hold",
+    "summary": "ResMed fell ~9% in a day after Q1 FY27 (Health Care -1%, peers +3%): sleep devices +9% and masks +10% were strong, but the 5-7% growth guide was held rather than raised, GAAP operating margin fell 140bp and FCF fell 10%, partly from the Astral ventilator suspension and the MatrixCare sale. That reads as disappointed expectations and one-offs, not falling demand; analysts' next-year EPS is unchanged and there is no sign yet of GLP-1 drugs shrinking the patient pool. Watch device and mask growth, operating margin and new-patient trends next quarter; the price (~$230) is still above the fair value (~$186).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -541,8 +549,16 @@
     "day"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "high",
+    "cause": "Oil fell ~7.5% on Nov 2 (Brent ~$105, WTI ~$96) as Iran signalled openness to peace talks, unwinding October's war premium",
+    "summary": "APA fell ~7.6% on Nov 2 with the energy sector (-4%) and E&P peers (median -4.6%) as crude dropped ~7.5% on signs of Iran peace talks; no company-specific news was found. This is a commodity-price move, and the model already assumes oil and margins fall from the ~$98/bbl cycle high, so nothing in the fair value is newly at risk. Watch Q3 results on Nov 5 and the oil price; the price (~$49) remains well above the fair value (~$38).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -668,8 +684,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Q3 beat (revenue +54%, backlog $17.8B) but flat gross margin, CFO retirement and no numeric 2027 guide, amid AI capex fears",
+    "summary": "Comfort Systems is ~42% below its high (peers -21%) and fell ~12% after Q3 despite revenue +54%, EPS +69% and a record $17.8B backlog: gross margin was flat at 24.8% (down from 25.9% in Q2), the CFO is retiring, there was no numeric outlook and AI-infrastructure stocks sold off the same day. Demand is intact (2026 outlook raised again, labour is the constraint, analysts raised next-year EPS 11%), so this is sentiment plus cyclical risk rather than competitive decline. Watch gross margin, bookings after the record quarter and hyperscaler capex plans; the price (~$1,230) is well above the fair value (~$830), which already normalises FCF.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -791,8 +815,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Crypto sell-off after the ~$6B Binance hack (Oct 30) on top of long-running worries about USDC growth, falling rates and stablecoin rules",
+    "summary": "Circle fell ~10% in a week while payments peers rose, leaving it ~46% below its high; the trigger was the Oct 30 Binance hack and crypto sell-off (Circle froze $800M+ of USDC), which looks like temporary sentiment. The longer slide rests on unsettled structural questions: USDC circulation slipped in Q2, Morgan Stanley cut its circulation forecasts by a third to a half, lower rates cut reserve income and draft rules would limit stablecoin rewards. Watch USDC circulation and reserve income in the November Q3 report and the CLARITY Act; the price (~$72) is above the fair value (~$49).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -918,8 +950,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Q3 EPS and ads missed, quarterly FCF -$9B on $51B capex, 2027 capex set to top $300B, buybacks stopped and stock issued",
+    "summary": "Alphabet fell ~12% in a week (worst day since its 2004 IPO) after Q3: EPS missed (about $0.55 of it a one-off mark-down on equity stakes) and ads were slightly light, while Search grew 12% and Cloud 103% at a ~36% margin, so there is no sign of competitive decline. The open question is the spending cycle: quarterly FCF turned negative, buybacks stopped, the company is selling stock and borrowing, and whether $300B+ of capex earns a return is not settled yet. Watch the 2027 capex figure, stock issuance and Services growth; the price (~$280) is above the fair value (~$212), which already assumes FCF margins recover.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -1042,8 +1082,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "low",
+    "cause": "Long slide (-69% from high) on a Q2 miss, slower AXON model gains, Unity competition and AI fears; no specific news for the latest -12%",
+    "summary": "AppLovin fell ~12% in the week to Oct 30 (sector -6%, peers -1%) into its Nov 4 results and is ~69% below its high. The slide follows a Q2 revenue miss tied to lighter AXON model improvements, a court refusing to block Unity's competing ad-data tool, a class action and target cuts, but analysts have trimmed next-year EPS only ~2%, so lasting damage is not proven. Watch Q3 revenue vs the $2.055-2.085B guide, the Q4 outlook and any sign of a lower take rate; the price (~$229) is below the fair value (~$379), which leans heavily on very high long-run margins.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -1169,8 +1217,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "high",
+    "cause": "Regulators ended FICO's mortgage-score edge over VantageScore; FICO froze its $10 price and analysts cut next-year EPS 11%",
+    "summary": "FICO is ~61% below its high: in September the FHFA put VantageScore on the same Fannie/Freddie pricing grid (stock -26% in a day), Rocket made VantageScore its preferred score, and in October FICO held its mortgage score price at $10, ending the price rises behind its margin gains (mortgage is ~62% of scores revenue). That is a structural loss of pricing power, not market fear, and analysts cut next-year EPS ~11% with no raises. The model's scenarios were cut (base growth 7% from 10%, margin held flat instead of expanding), lowering the fair value to ~$560 from ~$708; watch FY Q4 results and FY27 guidance on Nov 4 and VantageScore's mortgage share.",
+    "model_changed": true,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -1296,8 +1352,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Q3 revenue +22% but Adyen cut its 2026 EBITDA margin to ~50% and dropped its >55% medium-term target to invest more",
+    "summary": "Adyen fell ~11% on Oct 28 while financials and peers rose: net revenue grew 23% and the 21-23% growth guide held, but the 2026 EBITDA margin is now ~50% (2025: 53%) and the medium-term >55% margin target was withdrawn to speed up hiring, products and acquisitions. That is a lasting reset of the margin path by management choice, not a loss of business, though volume grew faster than revenue (lower take rate) and Digital slowed to +16%. The model already assumed a flat ~36% FCF margin, so its numbers were not changed (notes updated); watch the 2027 targets in February and the take rate.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -1422,8 +1486,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "high",
+    "cause": "Valuation de-rating on falling US vet clinic visits; the Nov 2 Q3 beat-and-raise sent shares up ~22%",
+    "summary": "IDEXX slid ~28% from its high as US vet visits kept falling, while the business kept growing ~10% on more tests per visit and rising guidance. Q3 (Nov 2) beat again (revenue +10%, operating margin +100bp) and 2026 organic growth guidance rose to 9.3-10.0%, and the stock jumped ~22%, recovering much of the slide. Watch US visit volumes and rapid-assay volumes; the price is far above the model fair value (~$296), which reflects the model's assumptions rather than any damage to the business.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -1796,8 +1868,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "AI-chip sector sell-off on AI-spending funding fears, after a weak June guide and worries about Google TPU share moving to MediaTek",
+    "summary": "Broadcom is ~33% below its high, about the same as its chip peers, after an October sector rout on doubts about how AI spending is funded and whether it pays off, hot inflation and rate fears. Its own results are still accelerating (Q3 FY26 revenue +86%, Q4 guide +93%, ~$115B AI revenue targeted for FY27), and EPS estimates have held. The one possibly lasting element is Google shifting part of its TPU work to MediaTek, partly offset by Anthropic, OpenAI and Meta orders; watch hyperscaler capex and Q4 FY26 results in December. The price (~$326) is above the fair value (~$257).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -1922,8 +2002,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Slowing growth, falling viewing time as YouTube takes TV share, a cut ad-revenue forecast and soft guidance",
+    "summary": "Netflix is ~46% below its high after a run of soft guides (July -11%, October -5% on an ad-revenue cut to ~$2.7B and a weak Q4 EPS guide) and analyst downgrades over engagement: viewing time per member is ~8% below 2023 and YouTube's share of TV viewing keeps rising. Financials are still healthy (Q3 revenue +12%, 34.6% operating margin, 2026 growth guide held), so it is not yet settled whether lost viewing time turns into lasting revenue or pricing loss. Watch subscriber and pricing trends, ad revenue, churn and the 2027 guide; the price is about equal to the fair value (~$62).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -2169,8 +2257,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Software-wide de-rating on fears that generative AI erodes Creative Cloud, plus CEO and CFO changes; results still growing",
+    "summary": "Adobe is ~30% below its 52-week high, in line with software peers (-24%), on fears that AI tools will commoditise creative software, made worse by the CEO's retirement (new CEO from Dec 1) and CFO and creative-business departures. Reported numbers do not show the damage yet: Q3 FY26 revenue +13%, ~44% operating margin, ARR +10% and analysts' revisions mostly up, so this is a de-rating so far. Watch net new ARR, Creative Cloud pricing and seats, and the first guide under the new CEO in December; the price (~$250) is just below buy-below (~$256) and the model's bear case already assumes AI erosion.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -2543,8 +2639,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "AI-native tax rivals squeezing TurboTax: price cuts, price now the top churn reason, FY27 Consumer growth guided to 4-6%",
+    "summary": "Intuit is ~48% below its high on fears that AI agents take over tax and bookkeeping, and unlike Adobe this is showing up: TurboTax guidance was cut in May, management says price is now the top reason customers leave and accepts lower revenue per customer, and FY27 Consumer growth is guided to 4-6% (11% in FY26), total 9-10%. The damage is so far limited to consumer tax: QuickBooks and Global Business Solutions are guided +13-14% and Credit Karma +11-13%. The model's base case already uses the 9-10% guide and the bear case halves growth, so it was not changed; watch the 2027 tax season (units and revenue per customer) and QuickBooks customer growth. The price (~$341) is below the fair value (~$393).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-02",
@@ -3691,6 +3795,6 @@
   "ZTS",
   "HWM"
  ],
- "updated": "2026-11-03T02:24:49Z",
+ "updated": "2026-11-03T03:00:21Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
