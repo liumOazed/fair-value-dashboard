@@ -551,6 +551,15 @@
    "bull": 401.1,
    "price": 340.42,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 316.34,
+   "bear": 210.84,
+   "base": 333.24,
+   "bull": 432.37,
+   "price": 344.28,
+   "method": "fcff_re"
   }
  ],
  "GRMN": [
@@ -1062,6 +1071,15 @@
    "base": 730.96,
    "bull": 1069.82,
    "price": 927.89,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 747.36,
+   "bear": 392.16,
+   "base": 794.8,
+   "bull": 1161.56,
+   "price": 973.36,
    "method": "fcff_re"
   }
  ],
