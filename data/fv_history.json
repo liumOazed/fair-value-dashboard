@@ -675,6 +675,15 @@
    "bull": 98.03,
    "price": 155.38,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-03",
+   "fv": 68.02,
+   "bear": 37.81,
+   "base": 71.55,
+   "bull": 104.55,
+   "price": 153.03,
+   "method": "fcff_re"
   }
  ],
  "PYPL": [

@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "source": "Yahoo Finance via yfinance",
  "stocks": {
   "AAPL": {
    "last_report": "2026-11-02",
    "next_report": "2027-01-28",
-   "yahoo_latest_quarter": "2026-06-27",
+   "yahoo_latest_quarter": "2026-09-26",
    "past": [
     "2025-07-31",
     "2025-10-30",
@@ -137,11 +137,11 @@
    "next_report": null,
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
-    "2025-08-05",
     "2025-11-05",
     "2026-02-25",
     "2026-05-06",
     "2026-08-05",
+    "2026-11-03",
     "2026-11-04"
    ]
   },
@@ -199,7 +199,7 @@
   },
   "BKNG": {
    "last_report": "2026-11-03",
-   "next_report": null,
+   "next_report": "2027-02-24",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-07-29",
@@ -237,16 +237,16 @@
    ]
   },
   "TPR": {
-   "last_report": "2026-08-13",
-   "next_report": "2026-11-05",
+   "last_report": "2026-11-05",
+   "next_report": null,
    "yahoo_latest_quarter": "2026-06-27",
    "past": [
-    "2025-05-08",
     "2025-08-14",
     "2025-11-06",
     "2026-02-05",
     "2026-05-07",
-    "2026-08-13"
+    "2026-08-13",
+    "2026-11-05"
    ]
   },
   "VEEV": {
@@ -263,16 +263,16 @@
    ]
   },
   "MNST": {
-   "last_report": "2026-08-06",
-   "next_report": "2026-11-05",
+   "last_report": "2026-11-05",
+   "next_report": null,
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
-    "2025-05-08",
     "2025-08-07",
     "2025-11-06",
     "2026-02-26",
     "2026-05-07",
-    "2026-08-06"
+    "2026-08-06",
+    "2026-11-05"
    ]
   },
   "ALLE": {
@@ -537,8 +537,8 @@
   },
   "AME": {
    "last_report": "2026-11-03",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-30",
+   "next_report": "2027-02-02",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-07-31",
     "2025-10-30",
@@ -563,8 +563,8 @@
   },
   "SHOP": {
    "last_report": "2026-11-03",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-30",
+   "next_report": "2027-02-10",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-06",
     "2025-11-04",
@@ -589,7 +589,7 @@
   },
   "XYZ": {
    "last_report": "2026-11-03",
-   "next_report": null,
+   "next_report": "2027-03-01",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-08-07",
@@ -610,7 +610,7 @@
   },
   "FISV": {
    "last_report": "2026-11-03",
-   "next_report": null,
+   "next_report": "2027-02-10",
    "yahoo_latest_quarter": null,
    "past": [
     "2025-07-23",
@@ -635,16 +635,16 @@
    ]
   },
   "SPG": {
-   "last_report": "2026-08-10",
-   "next_report": "2026-11-05",
+   "last_report": "2026-11-05",
+   "next_report": null,
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
-    "2025-05-12",
     "2025-08-04",
     "2025-11-03",
     "2026-02-02",
     "2026-05-11",
-    "2026-08-10"
+    "2026-08-10",
+    "2026-11-05"
    ]
   },
   "META": {
@@ -674,16 +674,16 @@
    ]
   },
   "RL": {
-   "last_report": "2026-08-06",
-   "next_report": "2026-11-05",
+   "last_report": "2026-11-05",
+   "next_report": null,
    "yahoo_latest_quarter": "2026-06-27",
    "past": [
-    "2025-05-22",
     "2025-08-07",
     "2025-11-06",
     "2026-02-05",
     "2026-05-21",
-    "2026-08-06"
+    "2026-08-06",
+    "2026-11-05"
    ]
   },
   "ROST": {
@@ -805,7 +805,7 @@
   },
   "BR": {
    "last_report": "2026-11-03",
-   "next_report": null,
+   "next_report": "2027-02-02",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-08-05",
@@ -986,16 +986,16 @@
    ]
   },
   "ZTS": {
-   "last_report": "2026-08-06",
-   "next_report": "2026-11-05",
+   "last_report": "2026-11-05",
+   "next_report": null,
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
-    "2025-05-06",
     "2025-08-05",
     "2025-11-04",
     "2026-02-12",
     "2026-05-07",
-    "2026-08-06"
+    "2026-08-06",
+    "2026-11-05"
    ]
   },
   "MO": {
