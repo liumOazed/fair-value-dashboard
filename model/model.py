@@ -459,18 +459,45 @@ def tv_factor(mo, r, g_last, gt=GT):
     rt = rq if rt == "r" else (rf + rq) / 2 if rt == "mid" else rt
     return (1 - gt / rt) / (1 - min(g_last, 0.9 * rf) / rf)
 
-def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None):
+# Growth engines (stage 3): a few companies' revenue is split into reported segments (data/segments.json), each with
+# its own growth path. Year-1 growth across segments still adds up to the scenario g1; all fade to g10 by year 10.
+SEGS = json.load(open(_ROOT / "data/segments.json"))
+def segments_of(t):
+    e = SEGS["stocks"].get(t)
+    if not e: return None
+    now = {k: v[0] for k, v in e["segments"].items()}; tot = sum(now.values())
+    rt = tot / sum(v[1] for v in e["segments"].values()) - 1
+    return dict(names=list(now), share=[now[k] / tot for k in now],
+                ratio=[(v[0] / v[1] - 1) / rt for v in e["segments"].values()], cap=SEGS["cap_multiple"], reported=rt)
+
+def seg_g1s(g1, sg):
+    """Segment year-1 growth: company g1 x (segment growth / company growth), capped at cap x g1, then shifted so the
+    revenue-weighted average is exactly g1."""
+    if g1 <= 0: return [g1] * len(sg["share"])
+    x = [min(g1 * q, sg["cap"] * g1) for q in sg["ratio"]]
+    d = g1 - sum(w * v for w, v in zip(sg["share"], x))
+    return [v + d for v in x]
+
+def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None):
     n = (mo or {}).get("cap_years", 10)
     rev, pv, rows = rev0, 0.0, []
+    segrev = [rev0 * w for w in sg["share"]] if sg else None
+    gs1 = seg_g1s(g1, sg) if sg else None
+    path = lambda a, t: a + (g10 - a) * (t - 1) / 9 if t <= 10 else g10 + (gt - g10) * (t - 10) / (n - 10)
     for t in range(1, n + 1):
-        g = g1 + (g10 - g1) * (t - 1) / 9 if t <= 10 else g10 + (gt - g10) * (t - 10) / (n - 10)
-        rev *= 1 + g
+        if sg:
+            segrev = [v * (1 + path(a, t)) for v, a in zip(segrev, gs1)]
+            g = sum(segrev) / rev - 1
+            rev = sum(segrev)
+        else:
+            g = path(g1, t)
+            rev *= 1 + g
         m = m0 + (m_target - m0) * min(t, ramp) / ramp
         fcf = rev * m
         df = 1 / (1 + r) ** t
         pv += fcf * df
-        rows.append(dict(t=t, g=g, rev=rev, m=m, fcf=fcf, df=df, pv=fcf * df))
-    k = tv_factor(mo, r, rows[-1]["g"], gt)
+        rows.append(dict(t=t, g=g, rev=rev, m=m, fcf=fcf, df=df, pv=fcf * df, **({"seg": [round(v, 3) for v in segrev]} if sg else {})))
+    k = tv_factor(mo, r, path(g1, n), gt)        # last-year growth (all segments end on the same path)
     tv = rows[-1]["fcf"] * (1 + gt) * k / (r - gt)
     pv_tv = tv * rows[-1]["df"]
     ev = pv + pv_tv
@@ -549,7 +576,8 @@ out = {"as_of": AS_OF, "terminal_growth": GT, "probabilities": PROBS, "assets": 
 for tk, s in STOCKS.items():
     s["r"] = req_return(tk)                                   # cost of equity (required return)
     mo = dict(moat_of(tk), r_req=s["r"])
-    D = lambda *x, **kw: dcf(*x, mo=mo, **kw)               # this stock's DCF (its advantage period + terminal returns)
+    sg = segments_of(tk)
+    D = lambda *x, **kw: dcf(*x, mo=mo, sg=sg, **kw)        # this stock's DCF (advantage period, terminal returns, segments)
     f = FIN[tk]
     aint = 0.0 if DCF_METHOD == "equity" else f["interest"] * (1 - f["tax"])   # after-tax interest added back: FCF -> FCFF
     add = aint / s["rev"]                                     # kept as a constant share of revenue in every year
@@ -583,7 +611,8 @@ for tk, s in STOCKS.items():
     gchk = {k: growth_check(res[k]["detail"], s["rev"], nm, S2[k]["m"], w) for k in res}   # NOPAT and FCFF are both before interest
     E_ = s["price"] * s["shares"]
     out["assets"][tk] = dict(
-        implied_cap=cap, nopat_margin=nm, growth_check=gchk, moat=mo["cls"], cap_years=mo["cap_years"], moat_reason=MOAT["stocks"][tk]["reason"],
+        implied_cap=cap, nopat_margin=nm, growth_check=gchk, moat=mo["cls"], cap_years=mo["cap_years"], segments=None if not sg else dict(names=sg["names"], share=sg["share"], reported=sg["reported"],
+            g1={k: seg_g1s(S2[k]["g1"], sg) for k in S2}, period=SEGS["stocks"][tk]["period"], source=SEGS["stocks"][tk]["source"]), moat_reason=MOAT["stocks"][tk]["reason"],
         rate_table=rate_table, r_reason=RR["stocks"][tk]["reason"],
         dcf_method=DCF_METHOD, wacc=dict(wacc=wacc_of(tk, s, s["r"]), discount_rate=w, cost_equity=s["r"], equity_weight=E_ / (E_ + f["debt"]), debt_weight=f["debt"] / (E_ + f["debt"]),
                   cost_debt=min(max(f["rd"], 0.02), 0.10), cost_debt_raw=f["rd"], tax=f["tax"], debt=f["debt"], after_tax_interest=aint),

@@ -28,6 +28,9 @@ for t, a in res["assets"].items():
         e["fcf_inputs"] = dict(fcf=a["fcf"], sbc=a["sbc"])
         e["moat"] = a.get("moat"); e["cap_years"] = a.get("cap_years"); e["moat_reason"] = a.get("moat_reason")
         e["moat_note"] = MOAT_NOTE.get(a.get("moat"))
+        sgm = a.get("segments")
+        e["segments"] = None if not sgm else dict(names=sgm["names"], share=[rnd(x, 4) for x in sgm["share"]], reported=rnd(sgm["reported"], 4),
+                                                  g1={k: [rnd(x, 4) for x in v] for k, v in sgm["g1"].items()}, period=sgm["period"], source=sgm["source"])
         e["implied_cap"] = a.get("implied_cap"); e["nopat_margin"] = rnd(a["nopat_margin"], 4) if a.get("nopat_margin") is not None else None
         e["growth_check"] = {k: (None if v is None else dict(forecast=None if v["forecast"] is None else rnd(v["forecast"], 4),
                                                           terminal=None if v["terminal"] is None else rnd(v["terminal"], 4),

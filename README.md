@@ -48,6 +48,10 @@ Each stock has a **moat class** in `data/moat.json` (class + reason; the model s
 
 Years 1-10 are unchanged (g1 fading to g10); from year 11 growth fades in a straight line from g10 to 2.5% by the last year. The terminal cash flow is the last year's × (1 + 2.5%) × a factor from the value-driver formula FCF = NOPAT × (1 − g ÷ RONIC): (1 − 2.5% ÷ RONIC after) ÷ (1 − last-year growth ÷ RONIC during). Classes were proposed automatically from the statements; edit `data/moat.json` by hand to override (keep the reason). Bear/base/bull use the same class; weights stay 30/50/20. Monte Carlo (`model/montecarlo.py`) uses the same paths, and the 10-year hold sells at the end of year 10 for the value of the remaining years plus terminal value.
 
+## Growth engines (segments, from November 2026)
+
+For AAPL, MSFT, GOOGL and AMZN, revenue is split into reported segments (`data/segments.json`: latest period and the same period a year earlier, with the source). Each segment's year-1 growth = scenario g1 × (segment growth ÷ company growth), capped at 2× the company g1 (`cap_multiple`), then shifted so the revenue-weighted year-1 growth equals the scenario g1. All segments fade to the scenario g10 by year 10 and to 2.5% over the advantage period, so faster segments gain share and lift growth in years 2-9. One consolidated margin; Monte Carlo uses the same segment paths. To add a company, add its segments to the file; update the figures after each report.
+
 ## How long the edge must last (diagnostics, no effect on fair values)
 
 Two checks from the Competitive Advantage Period idea (Mauboussin): value depends on how much a company earns above its required return *and for how long*. Both are computed in `model/model.py` and shown in each stock's drawer; neither changes any fair value.
