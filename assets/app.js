@@ -25,9 +25,9 @@ let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
 $("#sub").textContent=A.model+" · valuations as of "+A.assets.map(a=>a.valued_on).sort().pop();
 // KPIs
 const n=rows.length,under=rows.filter(r=>r.diff<=0).length,att=rows.filter(r=>r.status<=1).length;
-const avg=rows.reduce((s,r)=>s+r.diff,0)/n;const best=[...rows].sort((a,b)=>a.diff-b.diff)[0];
+const bb=rows.filter(r=>r.price<=r.buy_below).length,ds=rows.map(r=>r.diff).sort((a,b)=>a-b),med=n%2?ds[(n-1)/2]:(ds[n/2-1]+ds[n/2])/2;const best=[...rows].sort((a,b)=>a.diff-b.diff)[0];
 $("#kpis").innerHTML=[["Assets tracked",n,"in data/assets.json"],["Below fair value",`${under} / ${n}`,"price ≤ estimated value"],["Interesting or better",att,"inside the margin-of-safety bands"],
- ["Average price vs FV",pct(avg),"simple average"],["Biggest discount to FV",best.ticker,pct(best.diff)+" vs fair value"]].map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
+ ["Below buy-below price",`${bb} of ${n}`,"median price vs FV "+pct(med)],["Biggest discount to FV",best.ticker,pct(best.diff)+" vs fair value"]].map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
 function range(r){const lo=Math.min(r.bear,r.price)*0.9,hi=Math.max(r.bull,r.price)*1.05,x=v=>(v-lo)/(hi-lo)*160+5;
  return `<svg class="rng" viewBox="0 0 170 30"><rect x="5" y="12" width="160" height="6" rx="3" fill="var(--line)"/><rect x="${x(r.bear)}" y="12" width="${x(r.bull)-x(r.bear)}" height="6" rx="3" fill="var(--acc)" opacity=".28"/>
  <rect x="${x(r.fair_value)-1.5}" y="7" width="3" height="16" rx="1.5" fill="var(--acc)"/><circle cx="${x(r.price)}" cy="15" r="5.5" fill="${r.diff<=0?"var(--good)":"var(--bad)"}" stroke="var(--card)" stroke-width="2"/></svg>`}
@@ -41,7 +41,7 @@ $("#themechips").innerHTML='<span class="lbl">Group</span>'+names.map(n=>`<butto
 const PF={all:["All",()=>true],below:["Below fair value",r=>r.diff<=0],int:["Interesting or better",r=>r.status<=1]};
 $("#pricechips").innerHTML='<span class="lbl">Price</span>'+Object.entries(PF).map(([k,v])=>`<button class="chip${k==="all"?" on":""}" data-pf="${k}">${v[0]} <span class="cnt">${rows.filter(v[1]).length}</span></button>`).join("");
 document.querySelectorAll("#pricechips .chip").forEach(c=>c.onclick=()=>{pf=c.dataset.pf;document.querySelectorAll("#pricechips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
-const HF={all:["All",()=>true],clean:["Clean bill of health (5/5)",r=>!!((SN.stocks||{})[r.ticker]||{}).all_checks]};
+const HF={all:["All",()=>true],clean:["Passes all 5 checks",r=>!!((SN.stocks||{})[r.ticker]||{}).all_checks]};
 $("#healthchips").innerHTML='<span class="lbl">Health</span>'+Object.entries(HF).map(([k,v])=>`<button class="chip${k==="all"?" on":""}" data-hf="${k}"${k==="clean"?' title="Answers yes to all five Growth Screen checks: revenue growing, profits healthy, cash flow strong, debt manageable, financial position improving. Updated monthly."':""}>${v[0]} <span class="cnt">${rows.filter(v[1]).length}</span></button>`).join("");
 document.querySelectorAll("#healthchips .chip").forEach(c=>c.onclick=()=>{hf=c.dataset.hf;document.querySelectorAll("#healthchips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
 document.querySelectorAll("#themechips .chip").forEach(c=>c.onclick=()=>{theme=c.dataset.th;document.querySelectorAll("#themechips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
