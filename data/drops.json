@@ -16,8 +16,16 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Q3 in line but 2026 guidance cut and 2027 framework of flat revenue and EPS down high-single to low-double digits; CFO leaving; 3.5x leverage",
+    "summary": "FIS fell ~24% in a day while financials rose 3% and IT-services peers 3%, so this is company-specific: Q3 was only in line, 2026 Banking/Capital Markets growth was cut, 2027 revenue is guided at -0.5% to +1% with adjusted EPS down high-single to low-double digits, the CFO is leaving and the 2.8x leverage target is no longer confirmed (3.5x now, ~$21B debt). Management blames client delays it says fade by 2028, but the license-to-subscription shift and bank consolidation look structural, so treat it as a guidance reset rather than a blip. Watch the strategic review, 2027 bookings and debt reduction; the fair value (~$45, base case 10% growth next year) now looks too high versus the new outlook.",
+    "model_changed": false,
+    "date": "2026-11-05",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-05",
@@ -144,14 +152,14 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
+   "needs_verdict": false,
    "verdict": {
     "label": "temporary",
     "confidence": "medium",
-    "cause": "Q3 beat (revenue +54%, backlog $17.8B) but flat gross margin, CFO retirement and no numeric 2027 guide, amid AI capex fears",
-    "summary": "Comfort Systems is ~42% below its high (peers -21%) and fell ~12% after Q3 despite revenue +54%, EPS +69% and a record $17.8B backlog: gross margin was flat at 24.8% (down from 25.9% in Q2), the CFO is retiring, there was no numeric outlook and AI-infrastructure stocks sold off the same day. Demand is intact (2026 outlook raised again, labour is the constraint, analysts raised next-year EPS 11%), so this is sentiment plus cyclical risk rather than competitive decline. Watch gross margin, bookings after the record quarter and hyperscaler capex plans; the price (~$1,230) is well above the fair value (~$830), which already normalises FCF.",
+    "cause": "Second leg down (-15% on Nov 4) from the midterm Democratic sweep and Texas data-centre moratorium fears hitting all AI-infrastructure stocks",
+    "summary": "After the post-Q3 drop, Comfort Systems fell another ~15% on Nov 4 as the Democratic sweep and the new Texas governor's call for a data-centre moratorium hit AI-infrastructure names (Vertiv -12%, GE Vernova -11%, construction peers -10%); nothing company-specific was reported, the $17.8B backlog stands and analysts raised next-year EPS 11% in 30 days. This is policy and sentiment fear rather than business damage, but it is a real cyclical risk if data-centre approvals slow in Texas (~27% of US data-centre power). Watch Texas policy after the Dec 10 ERCOT report, bookings and margins; the price (~$1,075) is still above the fair value (~$830).",
     "model_changed": false,
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "by": "Claude"
    },
    "evidence": {
@@ -275,8 +283,16 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Texas Democratic governor win (data-centre moratorium pledge) hit Texas merchant power: NRG -13.5% with Vistra -13.5%; next-year EPS forecasts already cut 5%",
+    "summary": "NRG fell ~13.5% on Nov 4 in line with Vistra (-13.5%, KeyBanc downgrade) while utilities were flat: Gina Hinojosa's Texas win brings a pledged data-centre moratorium and rules making developers pay for grid upgrades, which threatens NRG's Texas data-centre deals (~300 MW retail supply, a 1.2 GW project worth ~$500M EBITDA) already slowed by the August pause. The core retail and generation business is intact and the model treats data-centre demand only as the bull case, but whether this is a lasting policy reset depends on what Texas actually enacts. Watch Q3 results, the ERCOT data-centre report due Dec 10 and the 2027 legislative session; heavy debt ($23B) leaves little room, and the fair value (~$91) sits above the ~$83 price.",
+    "model_changed": false,
+    "date": "2026-11-05",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-05",
@@ -4042,6 +4058,6 @@
   "DECK",
   "ZTS"
  ],
- "updated": "2026-11-05T00:58:24Z",
+ "updated": "2026-11-05T02:26:18Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
