@@ -57,6 +57,88 @@ def fmt_x(x, d=1):
     return None if not ok(x) else f"{x:.{d}f}x"
 
 
+RET_PATH = ROOT / "data/returns.json"
+RET = json.load(open(RET_PATH))["stocks"] if RET_PATH.exists() else {}
+
+
+def kept_cash(t, R, cfs, bal):
+    """Cash management keeps, where it went and what it earned: free cash flow - dividends - net buybacks over the
+    last (up to) 4 fiscal years, with the balance-sheet change from the year before the window."""
+    ys = sorted(d for d in cfs if ok(cfs[d].get("fcf")))
+    if len(ys) < 2:
+        return None
+    y0 = ys[0] if ys[0] in bal else None
+    win = ys[1:][-4:] if y0 else ys[-4:]
+    y0 = sorted(d for d in bal if d < win[0])[-1:] or [None]
+    y0 = y0[0]
+    g = lambda d, k: cfs[d].get(k) if ok(cfs[d].get(k)) else 0.0
+    fcf = sum(cfs[d]["fcf"] for d in win)
+    div = -sum(g(d, "div_paid") for d in win)
+    bb = -sum(g(d, "buyback") for d in win) - sum(g(d, "issued") for d in win)
+    kept = fcf - div - bb
+    out = dict(years=f"{win[0][:4]}-{win[-1][:4]}" if len(win) > 1 else win[0][:4], n=len(win), fcf=fcf, div=div, bb=bb, kept=kept,
+               share=kept / fcf if fcf > 0 else None)
+    growth_capex = sum(max(0.0, abs(g(d, "capex")) - g(d, "dep")) for d in win)
+    out["growth_capex"] = growth_capex
+    if y0 and win[-1] in bal:
+        b0, b1 = bal[y0], bal[win[-1]]
+        if ok(b0.get("cash")) and ok(b1.get("cash")):
+            out["d_cash"] = b1["cash"] - b0["cash"]
+        if ok(b0.get("debt")) and ok(b1.get("debt")):
+            out["debt_paid"] = b0["debt"] - b1["debt"]
+        if "d_cash" in out and "debt_paid" in out:
+            out["other"] = kept - out["d_cash"] - out["debt_paid"]
+        # Buffett's $1 test on the same window: market value added per $1 kept
+        mp = R.get("monthly_prices") or {}
+        def mcap(d):
+            px = mp.get(d[:7]) or mp.get(sorted(k for k in mp if k <= d[:7])[-1]) if any(k <= d[:7] for k in mp) else None
+            sh = bal[d].get("shares")
+            return px * sh if ok(px) and ok(sh) else None
+        m0, m1 = mcap(y0), mcap(win[-1])
+        if m0 and m1 and fcf > 0 and kept > 0.10 * fcf:
+            out["per_dollar"] = (m1 - m0) / kept
+    r = RET.get(t) or {}
+    out["inc_return"] = r.get("inc_recent"); out["inc_window"] = (r.get("windows") or [None, None])[1]
+    out["hurdle"] = r.get("r")
+    return out
+
+
+def kept_metrics(k):
+    if not k:
+        return []
+    B = lambda x: f"${x / 1e9:,.1f}B" if abs(x) >= 1e8 else f"${x / 1e6:,.0f}M"
+    yrs = f"{k['n']} years to {k['years'][-4:]}"
+    if k["share"] is None:
+        m1 = M("Cash kept by management", None, graded=False, note=f"Free cash flow was negative or zero over the {yrs}, so there was no surplus to keep.")
+    elif k["kept"] <= 0:
+        m1 = M("Cash kept by management", f"none · paid out {(k['div'] + k['bb']) / k['fcf'] * 100:.0f}% of FCF", graded=False,
+               note=f"Over the {yrs}: free cash flow {B(k['fcf'])}, dividends {B(k['div'])}, buybacks net of shares issued {B(k['bb'])}. It handed back everything it generated"
+                    + (", and more, so the extra came from its cash pile or new debt." if k["kept"] < 0 else "."))
+    else:
+        m1 = M("Cash kept by management", f"{k['share'] * 100:.0f}% of FCF · {B(k['kept'])}", graded=False,
+               note=f"Over the {yrs}: free cash flow {B(k['fcf'])} minus dividends {B(k['div'])} and buybacks net of shares issued {B(k['bb'])}.")
+    parts = []
+    if k["kept"] > 0 or k.get("d_cash") is not None:
+        if ok(k.get("debt_paid")) and abs(k["debt_paid"]) >= 0.02 * abs(k["fcf"] or 1):
+            parts.append(("debt repaid " if k["debt_paid"] > 0 else "new debt ") + B(abs(k["debt_paid"])))
+        if ok(k.get("d_cash")) and abs(k["d_cash"]) >= 0.02 * abs(k["fcf"] or 1):
+            parts.append(("cash +" if k["d_cash"] > 0 else "cash −") + B(abs(k["d_cash"])))
+        if ok(k.get("other")) and abs(k["other"]) >= 0.02 * abs(k["fcf"] or 1):
+            parts.append(("acquisitions and other " if k["other"] > 0 else "investments sold and other ") + B(abs(k["other"])))
+    why = " · ".join(parts) if parts else None
+    m2 = M("Why it keeps it: where the cash went" if k["kept"] > 0 else "How it paid out more than it kept", why, graded=False,
+           note=f"Change in debt and cash on the balance sheet over the same years; the rest is mostly acquisitions and investments."
+                + (f" Before free cash flow, it also spent {B(k['growth_capex'])} on capex beyond depreciation (building new capacity)." if k["growth_capex"] > 0.02 * abs(k["fcf"] or 1) else ""))
+    ir, pd, h = k.get("inc_return"), k.get("per_dollar"), k.get("hurdle")
+    val = " · ".join(x for x in [f"{'over 100%' if ir > 1 else f'{ir * 100:.0f}%'} on new capital" if ok(ir) else None,
+                                 f"${pd:.2f} of market value per $1 kept" if ok(pd) else None] if x) or None
+    m3 = M("Return on the money it keeps", val, graded=False,
+           note=(f"Extra after-tax operating profit ÷ extra invested capital over {k['inc_window']} (10-K history; see Returns on new money)"
+                 + (f", against a {h * 100:.1f}% required return" if ok(h) else "") + ". " if ok(ir) else "Return on new capital can't be measured (invested capital barely grew or is negative). ")
+                + ("Buffett's $1 test: change in market value over the same years ÷ cash kept; above $1 means each dollar kept was worth more than a dollar to shareholders (moves with the share price too)." if ok(pd) else "") + " Graded under Business performance.")
+    return [m1, m2, m3]
+
+
 def card_grade(ms):
     sc = [m["score"] for m in ms if m.get("graded") and m.get("score") is not None]
     if len(sc) < 2:
@@ -162,6 +244,7 @@ def build():
             M("FCF / net income (3 years combined)", fmt_x(cv3, 2) if ok(cv3) else fmt_x(cv1, 2), g3(cv3 if ok(cv3) else cv1, 0.9, 0.6), pct=P("fcf_ni"),
               note="Free cash flow ÷ net income from the statements, same years. Above ~0.9x means profits arrive as cash."
                    + (f" Latest year {cv1:.2f}x: far from the 3-year norm (working-capital swing), so the 3-year figure is the one graded." if swing else "")),
+        ] + kept_metrics(kept_cash(t, R, cfs, bal)) + [
             M("FCF growth, CAGR", fmt_pct(s["fcf_cagr_pct"] / 100 if ok(s.get("fcf_cagr_pct")) else None, sign=True), g3(s.get("fcf_cagr_pct"), 8, 0), pct=P("fcf_cagr_pct")),
             M("FCF stability (variation)", None if not ok(s.get("fcf_cv")) else f"{s['fcf_cv']:.2f}", g3(s.get("fcf_cv"), 0.25, 0.5, False), pct=P("fcf_cv", False)),
             M("Negative-FCF years", None if not ok(s.get("fcf_neg_years")) else f"{int(s['fcf_neg_years'])} of {int(s.get('fcf_years') or 0)}",
@@ -174,7 +257,7 @@ def build():
             M("FCF yield", fmt_pct(fcf_ttm / mcap if ok(fcf_ttm) and mcap else None), graded=False, note="Graded under Valuation."),
         ] + ([M("Depreciation ÷ revenue", f"{dr[0][1] * 100:.1f}% → {dr[-1][1] * 100:.1f}% ({dr[0][0]}–{dr[-1][0]})", graded=False,
                 note="Capital-heavy business: a rising share means past investment is weighing on future margins.")] if heavy and len(dr) >= 2 else [])
-        ccard = dict(key="cash", title="Cash flow", question="Are its profits turning into actual cash?", metrics=cash,
+        ccard = dict(key="cash", title="Cash flow", question="Are its profits turning into actual cash, and what happens to the cash it keeps?", metrics=cash,
                      trend=dict(label="FCF margin by year", points=[[y, round(v * 100, 1)] for y, v in fm], unit="%") if len(fm) >= 2 else
                      dict(label="Free cash flow by year ($B)", points=[[y, round(v / 1e9, 2)] for y, v in fc]),
                      headline=[x for x in [f"FCF margin {fmt_pct(fmargin, 0)}" if ok(fmargin) else None,
