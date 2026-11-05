@@ -204,9 +204,15 @@ def build():
         roic_tr = roic[-1][1] - roic[0][1] if len(roic) >= 2 else None
         om_tr = om[-1][1] - om[0][1] if len(om) >= 2 else None
         gm_tr = gm[-1][1] - gm[0][1] if len(gm) >= 2 else None
+        rr_fv = (assets.get(t) or {}).get("required_return") or s.get("required_return")
         perf = [
             M("ROIC vs cost of capital (WACC)", None if not ok(s.get("roic_pct")) else f"{s['roic_pct']:.0f}% vs {wacc * 100:.1f}%" if ok(wacc) else f"{s['roic_pct']:.0f}%",
               g3(s.get("roic_spread"), 0.10, 0.0), pct=P("roic_spread"), note="Return on the money invested in the business vs what that money costs."),
+            M("ROIC vs required return", None if not ok(s.get("roic_pct")) or not ok(rr_fv) else
+              f"{s['roic_pct']:.0f}% vs {rr_fv * 100:.1f}% ({'+' if s['roic_pct'] / 100 >= rr_fv else ''}{(s['roic_pct'] / 100 - rr_fv) * 100:.0f} pts)",
+              graded=False, raw=None if not ok(s.get("roic_pct")) or not ok(rr_fv) else round(s["roic_pct"] / 100 - rr_fv, 4),
+              note="Business return vs your hurdle: the same required return this stock's fair value is discounted at. Not graded "
+                   "(ROIC vs WACC above already is). Whether today's price clears the hurdle is the implied return in the table."),
             M("ROIC trend", None if not ok(roic_tr) else f"{roic[0][1] * 100:.0f}% → {roic[-1][1] * 100:.0f}% ({roic[0][0]}–{roic[-1][0]})",
               g3(roic_tr, 0.0, -0.05)),
             M("ROIC above cost of capital", None if not roic or not ok(wacc) else f"{above} of {len(roic)} years", g3(above / len(roic) if roic and ok(wacc) else None, 0.99, 0.5),
