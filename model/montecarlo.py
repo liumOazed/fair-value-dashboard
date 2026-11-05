@@ -29,6 +29,17 @@ CORR = np.array([[1.0, 0.5, 0.5], [0.5, 1.0, 0.3], [0.5, 0.3, 1.0]])
 L = np.linalg.cholesky(CORR)
 KEYS = ["bear", "base", "bull"]
 
+def moat(tk, r):
+    """This stock's advantage period and terminal-return settings (data/moat.json), as model.dcf uses them."""
+    return dict(M["moat_of"](tk), r_req=r)
+
+def tv_k(mo, gt, g_last):
+    """Vectorised model.tv_factor (terminal cash flow vs the last explicit year)."""
+    if mo.get("ronic_forecast") is None: return np.ones_like(np.asarray(gt, float))
+    rf, rq = mo["ronic_forecast"], mo["r_req"]
+    rt = rq if mo["ronic_terminal"] == "r" else (rf + rq) / 2 if mo["ronic_terminal"] == "mid" else mo["ronic_terminal"]
+    return (1 - gt / rt) / (1 - np.minimum(g_last, 0.9 * rf) / rf)
+
 def inputs(tk):
     s = M["STOCKS"][tk]; f = M["FIN"][tk]; r = M["req_return"](tk)
     aint = 0.0 if M["DCF_METHOD"] == "equity" else f["interest"] * (1 - f["tax"])
@@ -37,33 +48,39 @@ def inputs(tk):
     sc = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}
     return s, r, m0, sc, s["net_cash"] + s["extra"]
 
-def paths(rev0, m0, g1, g10, m):
-    """Cash-flow paths (n, 10): growth fades linearly from year 1 to year 10, margin ramps to target over 5 years."""
-    t = np.arange(1, T + 1)
-    g = g1[:, None] + (g10 - g1)[:, None] * (t - 1) / 9
+def paths(rev0, m0, g1, g10, m, gt=None, n=T):
+    """Cash-flow paths (runs, n years): growth fades linearly from g1 to g10 over years 1-10, then from g10 to the
+    terminal rate by year n (the advantage period); margin ramps to target over 5 years. Also returns the last year's growth."""
+    t = np.arange(1, n + 1)
+    g = g1[:, None] + (g10 - g1)[:, None] * (np.minimum(t, 10) - 1) / 9
+    if n > 10:
+        gt_ = np.broadcast_to(np.asarray(gt, float), g10.shape)
+        g = np.where(t > 10, g10[:, None] + (gt_ - g10)[:, None] * (t - 10) / (n - 10), g)
     rev = rev0 * np.cumprod(1 + g, axis=1)
     mt = m0 + (m - m0)[:, None] * np.minimum(t, 5) / 5
-    return rev * mt
+    return rev * mt, g[:, -1]
 
-def pv_paths(fcf, gt, r, nc, shares):
-    """Value per share of cash-flow paths; r may be a scalar or one rate per run."""
-    t = np.arange(1, T + 1)
+def pv_paths(fcf, gt, r, nc, shares, k=1.0):
+    """Value per share of cash-flow paths; r may be a scalar or one rate per run; k = terminal cash-flow factor."""
+    t = np.arange(1, fcf.shape[1] + 1)
     r = np.broadcast_to(np.asarray(r, float), (len(fcf),))
     df = (1 + r[:, None]) ** -t
-    tv = fcf[:, -1] * (1 + gt) / (r - gt) * df[:, -1]
+    tv = fcf[:, -1] * (1 + gt) * k / (r - gt) * df[:, -1]
     return ((fcf * df).sum(axis=1) + tv + nc) / shares
 
-def value(rev0, m0, g1, g10, m, gt, r, nc, shares):
+def value(rev0, m0, g1, g10, m, gt, r, nc, shares, mo=None):
     """Vectorised DCF identical to model.dcf."""
-    return pv_paths(paths(rev0, m0, g1, g10, m), gt, r, nc, shares)
+    n = (mo or {}).get("cap_years", T)
+    fcf, gl = paths(rev0, m0, g1, g10, m, gt, n)
+    return pv_paths(fcf, gt, r, nc, shares, tv_k(mo, gt, gl) if mo else 1.0)
 
-def implied_returns(fcf, gt, nc, shares, price, hi=0.60, it=60):
+def implied_returns(fcf, gt, nc, shares, price, k=1.0, hi=0.60, it=60):
     """Per run: the yearly return that makes that run's cash flows (10 years + value after year 10) cost exactly
     `price` today. Bisection; the value after year 10 needs a return above terminal growth, so the floor is gt + 0.25 pt."""
     lo = gt + 0.0025; a = lo.copy(); b = np.full_like(lo, hi)
     for _ in range(it):
         mid = (a + b) / 2
-        up = pv_paths(fcf, gt, mid, nc, shares) > price      # still worth more than the price -> return is higher
+        up = pv_paths(fcf, gt, mid, nc, shares, k) > price   # still worth more than the price -> return is higher
         a = np.where(up, mid, a); b = np.where(up, b, mid)
     return (a + b) / 2
 
@@ -86,10 +103,12 @@ def simulate(tk, u, stratify=False, full=False):
     m = P["m"][reg] + z[:, 2] * sd["m"]
     gt = np.clip(M["GT"] + norm.ppf(np.clip(u[:, 4], 1e-9, 1 - 1e-9)) * 0.004, 0.01, 0.035)
     g10 = np.minimum(g10, r - 0.01); gt = np.minimum(gt, r - 0.015); m = np.maximum(m, 0.005)
-    fcf = paths(s["rev"], m0, g1, g10, m)
-    v = pv_paths(fcf, gt, r, nc, s["shares"])
+    mo = moat(tk, r)
+    fcf, gl = paths(s["rev"], m0, g1, g10, m, gt, mo["cap_years"])
+    k = tv_k(mo, gt, gl)
+    v = pv_paths(fcf, gt, r, nc, s["shares"], k)
     if full:
-        return v, reg, dict(fcf=fcf, gt=gt, nc=nc, shares=s["shares"], r=r)
+        return v, reg, dict(fcf=fcf, gt=gt, nc=nc, shares=s["shares"], r=r, k=k)
     return v, reg
 
 def tornado(tk):
@@ -97,7 +116,7 @@ def tornado(tk):
     s, r, m0, sc, nc = inputs(tk)
     b = sc["base"]
     one = lambda **k: float(value(s["rev"], m0, np.array([k.get("g1", b["g1"])]), np.array([k.get("g10", b["g10"])]),
-                                  np.array([k.get("m", b["m"])]), k.get("gt", M["GT"]), k.get("r", r), nc, s["shares"])[0])
+                                  np.array([k.get("m", b["m"])]), k.get("gt", M["GT"]), k.get("r", r), nc, s["shares"], moat(tk, r))[0])
     base = one()
     rows = [("Year-1 growth", "g1"), ("Long-run growth (year 10)", "g10"), ("Target cash margin", "m")]
     out = [dict(label=l, low=one(**{p: sc["bear"][p]}), high=one(**{p: sc["bull"][p]}),
@@ -107,15 +126,18 @@ def tornado(tk):
     for o in out: o["swing"] = abs(o["high"] - o["low"])
     return dict(base=base, rows=sorted(out, key=lambda o: -o["swing"]))
 
-def hold_returns(fcf, gt, nc, shares, price, r, lo=-0.6, hi=0.8, it=60):
+def hold_returns(fcf, gt, nc, shares, price, r, k=1.0, lo=-0.6, hi=0.8, it=60):
     """Per run: yearly return if you buy at `price`, collect 10 years of cash flow and sell at the end of year 10 at the
     price that gives the next buyer the required return r (the gap closes in year 10). At return = r this is exactly the
     model value, so 'return beats r' <=> 'value at r beats price'. Can be negative."""
     t = np.arange(1, T + 1)
-    exit_ = fcf[:, -1] * (1 + gt) / (r - gt)
+    n = fcf.shape[1]                                   # sale value at the end of year 10: years 11..n + terminal, at r
+    exit_ = fcf[:, -1] * (1 + gt) * k / (r - gt) / (1 + r) ** (n - T)
+    if n > T: exit_ = exit_ + (fcf[:, T:] * (1 + r) ** -np.arange(1, n - T + 1)).sum(axis=1)
+    f10 = fcf[:, :T]
     def val(x):
         df = (1 + x[:, None]) ** -t
-        return ((fcf * df).sum(axis=1) + exit_ * df[:, -1] + nc) / shares
+        return ((f10 * df).sum(axis=1) + exit_ * df[:, -1] + nc) / shares
     a = np.full(len(fcf), lo); b = np.full(len(fcf), hi)
     for _ in range(it):
         mid = (a + b) / 2
@@ -151,8 +173,8 @@ def main():
         grid = [round(float(x), 4) for x in np.exp(np.linspace(np.log(0.3), np.log(3.0), 17))]
         irr = {k: [] for k in KEYS}; hold = {k: [] for k in KEYS}
         for gmul in grid:
-            ir = implied_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"])
-            hr = hold_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"], X["r"])
+            ir = implied_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"], X["k"])
+            hr = hold_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"], X["r"], X["k"])
             for i, k in enumerate(KEYS):
                 irr[k].append([round(float(x), 4) for x in np.quantile(ir[reg == i], q21)])
                 hold[k].append([round(float(x), 4) for x in np.quantile(hr[reg == i], q21)])

@@ -4,7 +4,7 @@ All $ figures in billions unless noted. Inputs sourced from Q2-2026 filings / pr
 """
 import json, math
 
-AS_OF = "2026-11-03"   # valuation date of the latest update (method: FCF before interest at the required return, minus net debt)
+AS_OF = "2026-11-05"   # valuation date of the latest update (method: FCF before interest at the required return, minus net debt; advantage period per moat class from November 2026)
 GT = 0.025            # terminal growth
 PROBS = {"bear": 0.30, "base": 0.50, "bull": 0.20}
 import pathlib
@@ -441,23 +441,43 @@ def wacc_of(t, s, re):
     rd = min(max(f["rd"], 0.02), 0.10)
     return (E * re + D * rd * (1 - f["tax"])) / (E + D)
 
-def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False):
+# Competitive Advantage Period (stage 2 of the Durand/CAP review, from November 2026): each stock's moat class
+# (data/moat.json) sets how many years growth takes to fade to the 2.5% terminal rate (years 1-10 as before, g1 -> g10,
+# then g10 -> 2.5% by the last year) and the return on new investment after that (value-driver terminal value).
+MOAT = json.load(open(_ROOT / "data/moat.json"))
+def moat_of(t):
+    if t not in MOAT["stocks"]: raise SystemExit(f"Add {t} to data/moat.json (with a reason)")
+    c = MOAT["stocks"][t]["moat"]
+    return dict(MOAT["classes"][c], cls=c)
+
+def tv_factor(mo, r, g_last, gt=GT):
+    """Terminal cash flow vs the last year's, from the value-driver formula FCF = NOPAT x (1 - g / RONIC): the last
+    explicit year reinvests for g_last at ronic_forecast, the terminal value reinvests for gt at ronic_terminal
+    ('r' = the discount rate: growth adds nothing; 'mid' = halfway between ronic_forecast and r). 1 = unchanged."""
+    if not mo or mo.get("ronic_forecast") is None: return 1.0
+    rf = mo["ronic_forecast"]; rt = mo["ronic_terminal"]; rq = mo.get("r_req", r)   # 'r' = the stock's required return
+    rt = rq if rt == "r" else (rf + rq) / 2 if rt == "mid" else rt
+    return (1 - gt / rt) / (1 - min(g_last, 0.9 * rf) / rf)
+
+def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None):
+    n = (mo or {}).get("cap_years", 10)
     rev, pv, rows = rev0, 0.0, []
-    for t in range(1, 11):
-        g = g1 + (g10 - g1) * (t - 1) / 9
+    for t in range(1, n + 1):
+        g = g1 + (g10 - g1) * (t - 1) / 9 if t <= 10 else g10 + (gt - g10) * (t - 10) / (n - 10)
         rev *= 1 + g
         m = m0 + (m_target - m0) * min(t, ramp) / ramp
         fcf = rev * m
         df = 1 / (1 + r) ** t
         pv += fcf * df
         rows.append(dict(t=t, g=g, rev=rev, m=m, fcf=fcf, df=df, pv=fcf * df))
-    tv = rows[-1]["fcf"] * (1 + gt) / (r - gt)
+    k = tv_factor(mo, r, rows[-1]["g"], gt)
+    tv = rows[-1]["fcf"] * (1 + gt) * k / (r - gt)
     pv_tv = tv * rows[-1]["df"]
     ev = pv + pv_tv
     eq = ev + net_cash_plus
     ps = eq / shares
     if detail:
-        return dict(rows=rows, pv_fcf=pv, tv=tv, pv_tv=pv_tv, ev=ev, equity=eq, per_share=ps, tv_share=pv_tv / ev)
+        return dict(rows=rows, pv_fcf=pv, tv=tv, pv_tv=pv_tv, ev=ev, equity=eq, per_share=ps, tv_share=pv_tv / ev, tv_factor=k)
     return ps
 
 def solve(f, lo, hi, tol=1e-6):
@@ -528,6 +548,8 @@ out = {"as_of": AS_OF, "terminal_growth": GT, "probabilities": PROBS, "assets": 
 
 for tk, s in STOCKS.items():
     s["r"] = req_return(tk)                                   # cost of equity (required return)
+    mo = dict(moat_of(tk), r_req=s["r"])
+    D = lambda *x, **kw: dcf(*x, mo=mo, **kw)               # this stock's DCF (its advantage period + terminal returns)
     f = FIN[tk]
     aint = 0.0 if DCF_METHOD == "equity" else f["interest"] * (1 - f["tax"])   # after-tax interest added back: FCF -> FCFF
     add = aint / s["rev"]                                     # kept as a constant share of revenue in every year
@@ -538,7 +560,7 @@ for tk, s in STOCKS.items():
     S2 = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}   # scenario margins stated to equity, + interest share
     res = {}
     for sc, p in S2.items():
-        d = dcf(s["rev"], m0, p["g1"], p["g10"], p["m"], w, nc, s["shares"], detail=True)
+        d = D(s["rev"], m0, p["g1"], p["g10"], p["m"], w, nc, s["shares"], detail=True)
         res[sc] = dict(params=p, per_share=d["per_share"], detail=d)
     fv = sum(PROBS[k] * res[k]["per_share"] for k in res)
     base = res["base"]["per_share"]
@@ -546,22 +568,22 @@ for tk, s in STOCKS.items():
     B = S2["base"]
     epv = (s["rev"] * B["m"] / w + nc) / s["shares"]          # no-growth value: base FCFF / WACC - net debt
     # implied return to shareholders at the current price (solve the cost of equity, WACC follows)
-    irr = solve(lambda re: dcf(s["rev"], m0, B["g1"], B["g10"], B["m"], W(re), nc, s["shares"]) - s["price"], 0.035, 0.30)
+    irr = solve(lambda re: D(s["rev"], m0, B["g1"], B["g10"], B["m"], W(re), nc, s["shares"]) - s["price"], 0.035, 0.30)
     # reverse DCF: first-year growth (fading to base g10) needed to justify price at the required return
-    rg = solve(lambda g1: dcf(s["rev"], m0, g1, B["g10"], B["m"], w, nc, s["shares"]) - s["price"], -0.5, 1.5)
+    rg = solve(lambda g1: D(s["rev"], m0, g1, B["g10"], B["m"], w, nc, s["shares"]) - s["price"], -0.5, 1.5)
     # sensitivity base case: required return (-> WACC) vs terminal growth
     rs = [s["r"] - .02, s["r"] - .01, s["r"], s["r"] + .01, s["r"] + .02]
     gs = [.015, .02, .025, .03, .035]
-    sens = [[dcf(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"], gt=g) for g in gs] for r in rs]
+    sens = [[D(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"], gt=g) for g in gs] for r in rs]
     rates = sorted(set(RATE_GRID + [s["r"]]))
-    rate_table = [dict(r=r, wacc=W(r), fv=sum(PROBS[k] * dcf(s["rev"], m0, S2[k]["g1"], S2[k]["g10"], S2[k]["m"], W(r), nc, s["shares"]) for k in PROBS),
-                       base=dcf(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"])) for r in rates]
+    rate_table = [dict(r=r, wacc=W(r), fv=sum(PROBS[k] * D(s["rev"], m0, S2[k]["g1"], S2[k]["g10"], S2[k]["m"], W(r), nc, s["shares"]) for k in PROBS),
+                       base=D(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"])) for r in rates]
     cap = implied_cap(s["price"], s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"])
     nm = nopat_margin(tk, f["tax"])
     gchk = {k: growth_check(res[k]["detail"], s["rev"], nm, S2[k]["m"], w) for k in res}   # NOPAT and FCFF are both before interest
     E_ = s["price"] * s["shares"]
     out["assets"][tk] = dict(
-        implied_cap=cap, nopat_margin=nm, growth_check=gchk,
+        implied_cap=cap, nopat_margin=nm, growth_check=gchk, moat=mo["cls"], cap_years=mo["cap_years"], moat_reason=MOAT["stocks"][tk]["reason"],
         rate_table=rate_table, r_reason=RR["stocks"][tk]["reason"],
         dcf_method=DCF_METHOD, wacc=dict(wacc=wacc_of(tk, s, s["r"]), discount_rate=w, cost_equity=s["r"], equity_weight=E_ / (E_ + f["debt"]), debt_weight=f["debt"] / (E_ + f["debt"]),
                   cost_debt=min(max(f["rd"], 0.02), 0.10), cost_debt_raw=f["rd"], tax=f["tax"], debt=f["debt"], after_tax_interest=aint),
