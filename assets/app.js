@@ -25,10 +25,11 @@ let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  if(M.state==="open")$("#stamp").style.color="var(--good,#1a7f37)"}
 $("#sub").textContent=A.model+" · valuations as of "+A.assets.map(a=>a.valued_on).sort().pop();
 // KPIs
-const n=rows.length,under=rows.filter(r=>r.diff<=0).length,att=rows.filter(r=>r.status<=1).length;
+function kpis(){const n=rows.length,under=rows.filter(r=>r.diff<=0).length,att=rows.filter(r=>r.status<=1).length;
 const bb=rows.filter(r=>r.price<=r.buy_below).length,ds=rows.map(r=>r.diff).sort((a,b)=>a-b),med=n%2?ds[(n-1)/2]:(ds[n/2-1]+ds[n/2])/2;const best=[...rows].sort((a,b)=>a.diff-b.diff)[0];
 $("#kpis").innerHTML=[["Assets tracked",n,"in data/assets.json"],["Below fair value",`${under} / ${n}`,"price ≤ estimated value"],["Interesting or better",att,"inside the margin-of-safety bands"],
- ["Below buy-below price",`${bb} of ${n}`,"median price vs FV "+pct(med)],["Biggest discount to FV",best.ticker,pct(best.diff)+" vs fair value"]].map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
+ ["Below buy-below price",`${bb} of ${n}`,"median price vs FV "+pct(med)],["Biggest discount to FV",best.ticker,pct(best.diff)+" vs fair value"]].map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");}
+kpis();
 function range(r){const lo=Math.min(r.bear,r.price)*0.9,hi=Math.max(r.bull,r.price)*1.05,x=v=>(v-lo)/(hi-lo)*160+5;
  return `<svg class="rng" viewBox="0 0 170 30"><rect x="5" y="12" width="160" height="6" rx="3" fill="var(--line)"/><rect x="${x(r.bear)}" y="12" width="${x(r.bull)-x(r.bear)}" height="6" rx="3" fill="var(--acc)" opacity=".28"/>
  <rect x="${x(r.fair_value)-1.5}" y="7" width="3" height="16" rx="1.5" fill="var(--acc)"/><circle cx="${x(r.price)}" cy="15" r="5.5" fill="${r.diff<=0?"var(--good)":"var(--bad)"}" stroke="var(--card)" stroke-width="2"/></svg>`}
@@ -52,7 +53,7 @@ function render(){const f=rows.filter(r=>(r.ticker+r.name).toLowerCase().include
  <td class="r num">${usd(r.price)}<div class="nm ${r.day>0?"neg":"pos"}" style="color:var(--mut)">${r.day==null?"":pct(r.day,2)+" today"}</div></td>
  <td class="r num"><b>${usd(r.fair_value)}</b></td><td class="r num">${usd(r.buy_below)}</td>
  <td class="r num ${r.diff>0?"pos":"neg"}"><b>${pct(r.diff)}</b></td><td>${range(r)}<div class="nm">${usd(r.bear).slice(0,-3)} · ${usd(r.base).slice(0,-3)} · ${usd(r.bull).slice(0,-3)}</div></td>
- <td><span class="badge ${BANDS[r.status][1]}">${BANDS[r.status][0]}</span></td><td class="r num">${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</td><td>${spark(r.history)}</td></tr>`).join("")||'<tr><td colspan="9" class="err">No match</td></tr>';
+ <td><span class="badge ${BANDS[r.status][1]}">${BANDS[r.status][0]}</span></td><td class="r num">${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</td><td class="r num">${r.size==null?"–":r.size>0?`<b>${(r.size*100).toFixed(1)}%</b>`:'<span class="muted">0%</span>'}</td><td>${spark(r.history)}</td></tr>`).join("")||'<tr><td colspan="10" class="err">No match</td></tr>';
  document.querySelectorAll("tbody tr[data-t]").forEach(tr=>tr.onclick=()=>open(tr.dataset.t))}
 document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=sortK===k?-dir:1;sortK=k;render()});
 $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};render();
@@ -107,7 +108,7 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  ${snapHTML(r)}
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
  ${r.reverse_g1!=null?`<h3>What the price implies</h3><p>${r.reverse_g1<0?`At today's price and a ${(r.required_return*100).toFixed(1)}% required return, the market is pricing in year-1 sales <b>shrinking about ${Math.abs(r.reverse_g1*100).toFixed(0)}%</b>, then recovering to the base long-run rate. That is a pessimistic view.`:`To justify today's price at a ${(r.required_return*100).toFixed(1)}% required return, year-1 growth would need to be about <b>${(r.reverse_g1*100).toFixed(0)}%</b> fading to the base long-run rate.`} Terminal value is ${(r.tv_share*100).toFixed(0)}% of the base DCF.</p>`:""}
- ${capH}${segH}${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
+ ${sizeHTML(r)}${capH}${segH}${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;bindSnap();if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
 
@@ -350,6 +351,45 @@ function dropCard(e){const r=rows.find(x=>x.ticker===e.ticker);if(!r)return "";c
 function dropLog(L){if(!L.length)return `<p class="muted" style="padding:16px">Closed drops (30 days after the last trigger) land here with the stock's return vs the S&amp;P 500 and vs its sector 30 and 90 days later, so the four-step check can be judged over time.</p>`;
  const f=(o,k)=>o&&o[k]!=null?`<span class="${o[k]>=0?"up":"down"}">${pct(o[k])}</span>`:"–";
  return `<div class="scroll"><table class="s"><tr><th style="text-align:left">Stock</th><th>Dropped</th><th>Verdict</th><th>30 days vs S&amp;P · sector</th><th>90 days vs S&amp;P · sector</th></tr>${L.map(e=>`<tr><td style="text-align:left"><button class="dtk" data-open="${e.ticker}">${e.ticker}</button></td><td>${esc(e.opened)}</td><td>${e.verdict?esc(e.verdict.label):"–"}</td><td>${f(e.outcome.d30,"vs_spy")} · ${f(e.outcome.d30,"vs_sector")}</td><td>${f(e.outcome.d90,"vs_spy")} · ${f(e.outcome.d90,"vs_sector")}</td></tr>`).join("")}</table></div>`}
+// ---------- My settings: personal hurdle (question 7) and position sizing (question 6). Kept in this browser only.
+const MY0={h:null,max:0.10,eq:0.35};let MY={...MY0};try{MY={...MY0,...JSON.parse(localStorage.getItem("my")||"{}")}}catch(e){}
+rows.forEach(r=>{r.fv0=r.fair_value;r.bb0=r.buy_below});
+const pc1=x=>(x*100).toFixed(1).replace(".0","")+"%";
+function hurdleOf(r){return MY.h==null?r.required_return:MY.h}
+function applyHurdle(){rows.forEach(r=>{let fv=r.fv0;
+  if(MY.h!=null&&r.rate_table){const x=r.rate_table.find(x=>Math.abs(x.r-MY.h)<1e-9);if(x)fv=x.fv}
+  r.fair_value=fv;r.buy_below=MY.h!=null&&r.rate_table?fv*(1-r.mos):r.bb0;r.diff=r.price/fv-1;r.status=status(r)})}
+// Yearly return from buying at today's price and holding (Monte Carlo, Bear/Base/Bull 30/50/20): median, p10, p90
+function retDist(r){const M=r.mc;if(!M||!M.irr||r.price==null)return null;const I=M.irr,m=r.price/I.fair_value,ir=irrAt(I,m,"regimes"),X=mix(ir.Q,A.probabilities);
+  return {med:X.inv(.5),p10:X.inv(.1),p90:X.inv(.9),inside:ir.inside,F:X.F}}
+// Size = max position x edge x confidence. Edge = median yearly return above your hurdle, full at +5 points (FULL_EDGE).
+// Confidence = chance the return beats your hurdle, 0 at 50% rising to 1 at 90%. Zero when the price is above fair value
+// at your hurdle; if all sizes add up to more than your stock share, all scale down in proportion.
+const FULL_EDGE=0.05;
+function sizeAll(){const raw={};rows.forEach(r=>{r.sz=null;r.size=null;if(r.type!=="stock"&&r.type!=="etf")return;const d=retDist(r);if(!d)return;
+  const h=hurdleOf(r),ex=d.med-h,pb=1-d.F(h),edge=Math.min(1,Math.max(0,ex/FULL_EDGE)),conf=Math.min(1,Math.max(0,(pb-0.5)/0.4)),k=r.diff<0?MY.max*edge*conf:0;
+  r.sz={d,h,ex,pb,edge,conf,k};raw[r.ticker]=k});
+  const tot=Object.values(raw).reduce((a,b)=>a+b,0),sc=tot>MY.eq?MY.eq/tot:1;
+  rows.forEach(r=>{if(raw[r.ticker]!=null){r.size=raw[r.ticker]*sc;r.sz.scale=sc}});
+  return {tot:tot*sc,n:Object.values(raw).filter(x=>x>0).length,scaled:sc<1}}
+function sizeHTML(r){const z=r.sz;if(!z)return "";const d=z.d,h=z.h,eq=MY.eq;
+ const why=z.k<=0?(r.diff>=0?`Price is above fair value at your ${pc1(h)} hurdle, so no new money.`:`The expected return (median ${pc1(d.med)}, ${pc1(z.pb)} chance of beating ${pc1(h)}) isn't enough above your hurdle.`)
+  :`Expected return ${pc1(d.med)} a year (median; p10 ${pc1(d.p10)}, p90 ${pc1(d.p90)}) vs your ${pc1(h)} hurdle = ${pc1(z.ex)} extra → edge ${pc1(z.edge)} of full (full at +5 points). Chance of beating the hurdle ${pc1(z.pb)} → confidence ${pc1(z.conf)} (0 at 50%, full at 90%). Size = your ${pc1(MY.max)} max × ${pc1(z.edge)} × ${pc1(z.conf)} = ${pc1(z.k)}${z.scale<1?`, then ×${z.scale.toFixed(2)} so all suggested positions fit your ${pc1(eq)} in stocks`:""}.`;
+ return `<h3>How much to hold</h3><p>Suggested position: <b>${pc1(r.size||0)} of your whole portfolio</b>${r.size>0?` (${pc1((r.size||0)/eq)} of the ${pc1(eq)} you keep in stocks)`:""}. ${why}</p><p class="muted">Settings: hurdle ${MY.h==null?`our judgement for this stock (${pc1(r.required_return)})`:pc1(MY.h)}, max position ${pc1(MY.max)}, stocks ${pc1(eq)} of portfolio. Change them under "My settings" above the table. A sizing guide from the model's own range, not advice: the range does not include the risk that the model itself is wrong.</p>`}
+function myUI(){const S=sizeAll();
+ const grp=(lab,key,opts,fmt)=>`<div class="chips"><span class="lbl">${lab}</span>${opts.map(o=>`<button class="chip${(MY[key]===o||(o!=null&&MY[key]!=null&&Math.abs(MY[key]-o)<1e-9))?" on":""}" data-my="${key}" data-v="${o}">${fmt(o)}</button>`).join("")}</div>`;
+ const top=[...rows].filter(r=>r.size>0).sort((a,b)=>b.size-a.size);
+ $("#mybox").innerHTML=`<details class="mydet"${MY.open?" open":""}><summary><b>My settings</b> <span class="muted">hurdle ${MY.h==null?"our judgement":pc1(MY.h)} · max ${pc1(MY.max)} a stock · ${pc1(MY.eq)} in stocks → ${S.n} stocks suggested, ${pc1(S.tot)} invested</span></summary>
+  ${grp("My hurdle","h",[null,.08,.09,.10,.11,.12],o=>o==null?"Our judgement per stock":pc1(o))}
+  ${grp("Max position","max",[.10,.125,.15],pc1)}
+  ${grp("Stocks in portfolio","eq",[.20,.35,.60,1],o=>pc1(o)+(o===.2?" (cautious)":o===.35?" (balanced)":o===.6?" (growth)":" (all stocks)"))}
+  <p class="muted"><b>My hurdle</b> is the yearly return your alternative would earn (for example QQQ or bonds plus a premium); fair value, buy-below and status are recalculated at it. "Our judgement" uses each stock's own required return and reason. <b>Suggested size</b> is a share of your <b>whole</b> portfolio: your max position × edge (expected return above your hurdle, full at +5 points a year) × confidence (chance of beating the hurdle, full at 90%), from the Monte Carlo range at today's price; zero above fair value, and scaled down if the total would exceed your stock share. The rest stays in your alternative.</p>
+  ${top.length?`<p class="muted"><b>Suggested now:</b> ${top.slice(0,12).map(r=>`${r.ticker} ${pc1(r.size)}`).join(" · ")}${top.length>12?` · +${top.length-12} more`:""}. Not advice.</p>`:`<p class="muted">Nothing clears your hurdle at today's prices.</p>`}</details>`;
+ const det=$("#mybox details");det.ontoggle=()=>{MY.open=det.open;save()};
+ document.querySelectorAll("#mybox .chip").forEach(c=>c.onclick=()=>{const v=c.dataset.v;MY[c.dataset.my]=v==="null"?null:+v;save();refresh()})}
+function save(){try{localStorage.setItem("my",JSON.stringify(MY))}catch(e){}}
+function refresh(){applyHurdle();myUI();kpis();render()}
+refresh();
 dropUI();
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());
