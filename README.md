@@ -159,3 +159,4 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 | 5 Nov | Both | Same 5/5 filter name on both tabs: **Passes all 5 checks** | — |
 | 5 Nov | Growth Screen | Drawer keeps **ROIC vs WACC** (does the business create value?) and adds **ROIC vs required return** (does it clear your hurdle?) | — |
 | 5 Nov | Fair Value | KPI **Below buy-below price** ("x of n", median price vs FV underneath) replaces "Average price vs FV" | — |
+| 5 Nov | Fair Value | Drawer, Business performance card: **ROIC vs required return** under ROIC vs WACC (uses the stock's own model rate; shown, not graded) | — |
