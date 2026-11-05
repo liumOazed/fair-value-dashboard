@@ -470,6 +470,60 @@ def solve(f, lo, hi, tol=1e-6):
         if hi - lo < tol: break
     return (lo + hi) / 2
 
+# ----------------------------------------------------------------- diagnostics (do NOT change any fair value)
+# Competitive Advantage Period (CAP, Mauboussin): how long a company keeps earning above its required return.
+# The valuation itself keeps the fixed 10-year horizon; these numbers only show what the price assumes and
+# whether each scenario's growth is paid for by reinvestment.
+CAP_MAX = 80          # search limit for the CAP the price implies (years)
+RONIC_HIGH = 0.50     # forecast return on new investment above this: growth looks close to free -> check
+SNAP_RAW = _ROOT / "data/snapshot_raw.json"
+_SNAP = json.load(open(SNAP_RAW))["stocks"] if SNAP_RAW.exists() else {}
+
+def dcf_cap(rev0, m0, g1, m_target, r, net_cash_plus, shares, n, gt=GT, ramp=5):
+    """Same cash-flow model as dcf(), but growth fades in a straight line from g1 to the terminal rate over n years
+    (the competitive advantage period), then grows at gt forever."""
+    rev, pv, fcf, df = rev0, 0.0, 0.0, 1.0
+    for t in range(1, n + 1):
+        g = g1 + (gt - g1) * (t - 1) / max(n - 1, 1) if n > 1 else g1
+        rev *= 1 + g
+        fcf = rev * (m0 + (m_target - m0) * min(t, ramp) / ramp)
+        df = 1 / (1 + r) ** t
+        pv += fcf * df
+    return (pv + fcf * (1 + gt) / (r - gt) * df + net_cash_plus) / shares
+
+def implied_cap(price, rev0, m0, g1, m_target, r, nc, shares):
+    """Years of above-terminal growth (fading to 2.5%) that today's price needs, with the base growth and margin.
+    None when base growth is at or below the terminal rate (a longer period would not add value)."""
+    if g1 <= GT + 1e-9: return None
+    for n in range(1, CAP_MAX + 1):
+        if dcf_cap(rev0, m0, g1, m_target, r, nc, shares, n) >= price:
+            return n
+    return CAP_MAX + 1          # read as "more than CAP_MAX years"
+
+def nopat_margin(t, tax):
+    """After-tax operating margin, latest fiscal year (data/snapshot_raw.json), taxed at the model's rate."""
+    inc = (_SNAP.get(t) or {}).get("annual", {}).get("inc") or {}
+    rows = [v for _, v in sorted(inc.items()) if v.get("op") is not None and v.get("rev")]
+    if not rows: return None
+    m = rows[-1]["op"] / rows[-1]["rev"] * (1 - tax)
+    return m if m > 0 else None
+
+def growth_check(d, rev0, nm, m_target, r, gt=GT):
+    """Return on new investment implied by a scenario. NOPAT = revenue x today's after-tax operating margin (held flat);
+    reinvestment = NOPAT - FCFF. Forecast: extra NOPAT in year 10 / total reinvested over years 1-10.
+    Terminal: the return on new investment that 2.5% growth with the target margin implies (FCF = NOPAT x (1 - g/RONIC))."""
+    if nm is None: return None
+    reinv = sum(x["rev"] * nm - x["fcf"] for x in d["rows"])
+    gain = (d["rows"][-1]["rev"] - rev0) * nm
+    fc = gain / reinv if reinv > 0 else None
+    tm = gt / (1 - m_target / nm) if m_target < nm else None
+    if gain <= 0: flag, fc = "shrinking", None             # sales lower in year 10: no growth to pay for
+    elif reinv <= 0 or m_target >= nm: flag = "free"       # cash flow at or above operating profit while growing
+    elif fc is not None and fc < r: flag = "below_hurdle"  # growth earns less than the required return
+    elif fc is not None and fc > RONIC_HIGH: flag = "high"
+    else: flag = None
+    return dict(forecast=fc, terminal=tm, reinvest_share=reinv / sum(x["rev"] * nm for x in d["rows"]), flag=flag)
+
 out = {"as_of": AS_OF, "terminal_growth": GT, "probabilities": PROBS, "assets": {}}
 
 for tk, s in STOCKS.items():
@@ -502,8 +556,12 @@ for tk, s in STOCKS.items():
     rates = sorted(set(RATE_GRID + [s["r"]]))
     rate_table = [dict(r=r, wacc=W(r), fv=sum(PROBS[k] * dcf(s["rev"], m0, S2[k]["g1"], S2[k]["g10"], S2[k]["m"], W(r), nc, s["shares"]) for k in PROBS),
                        base=dcf(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"])) for r in rates]
+    cap = implied_cap(s["price"], s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"])
+    nm = nopat_margin(tk, f["tax"])
+    gchk = {k: growth_check(res[k]["detail"], s["rev"], nm, S2[k]["m"], w) for k in res}   # NOPAT and FCFF are both before interest
     E_ = s["price"] * s["shares"]
     out["assets"][tk] = dict(
+        implied_cap=cap, nopat_margin=nm, growth_check=gchk,
         rate_table=rate_table, r_reason=RR["stocks"][tk]["reason"],
         dcf_method=DCF_METHOD, wacc=dict(wacc=wacc_of(tk, s, s["r"]), discount_rate=w, cost_equity=s["r"], equity_weight=E_ / (E_ + f["debt"]), debt_weight=f["debt"] / (E_ + f["debt"]),
                   cost_debt=min(max(f["rd"], 0.02), 0.10), cost_debt_raw=f["rd"], tax=f["tax"], debt=f["debt"], after_tax_interest=aint),

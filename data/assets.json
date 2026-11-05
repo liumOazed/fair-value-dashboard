@@ -3324,6 +3324,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 68,
+   "nopat_margin": 0.2698,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3628,
+     "terminal": 0.1788,
+     "reinvest_share": 0.1156,
+     "flag": null
+    },
+    "base": {
+     "forecast": 1.0649,
+     "terminal": 0.3806,
+     "reinvest_share": 0.0549,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0076,
+     "flag": "free"
+    }
    }
   },
   {
@@ -6644,6 +6666,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 21,
+   "nopat_margin": 0.3756,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1289,
+     "terminal": 0.0499,
+     "reinvest_share": 0.5183,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.2528,
+     "terminal": 0.0795,
+     "reinvest_share": 0.3549,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.3973,
+     "terminal": 0.1201,
+     "reinvest_share": 0.2588,
+     "flag": null
+    }
    }
   },
   {
@@ -9963,6 +10007,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 17,
+   "nopat_margin": 0.2623,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1305,
+     "terminal": 0.0522,
+     "reinvest_share": 0.5634,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.2787,
+     "terminal": 0.0999,
+     "reinvest_share": 0.3527,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.6465,
+     "terminal": 0.4198,
+     "reinvest_share": 0.1751,
+     "flag": "high"
     }
    }
   },
@@ -13288,6 +13354,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 45,
+   "nopat_margin": 0.0867,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0962,
+     "terminal": 0.072,
+     "reinvest_share": 0.5826,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.3604,
+     "terminal": null,
+     "reinvest_share": 0.2142,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.155,
+     "flag": "free"
     }
    }
   },
@@ -16765,6 +16853,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 16,
+   "nopat_margin": 0.5126,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1425,
+     "terminal": 0.0668,
+     "reinvest_share": 0.35,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.5362,
+     "terminal": 0.1394,
+     "reinvest_share": 0.1851,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 3.2347,
+     "terminal": 1.0756,
+     "reinvest_share": 0.0425,
+     "flag": "high"
+    }
    }
   },
   {
@@ -20085,6 +20195,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 15,
+   "nopat_margin": 0.3037,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0974,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3253,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.477,
+     "flag": "free"
+    }
    }
   },
   {
@@ -23404,6 +23536,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 16,
+   "nopat_margin": 0.3613,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1876,
+     "terminal": 0.1011,
+     "reinvest_share": 0.2658,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.8003,
+     "terminal": 0.3075,
+     "reinvest_share": 0.1172,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0361,
+     "flag": "free"
     }
    }
   },
@@ -26730,6 +26884,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.3003,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.2343,
+     "reinvest_share": 0.0611,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0969,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2097,
+     "flag": "free"
+    }
    }
   },
   {
@@ -30049,6 +30225,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 8,
+   "nopat_margin": 0.6576,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.2405,
+     "terminal": 0.0907,
+     "reinvest_share": 0.2385,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.9766,
+     "terminal": 0.2023,
+     "reinvest_share": 0.1139,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 7.6617,
+     "terminal": 1.4617,
+     "reinvest_share": 0.0191,
+     "flag": "high"
     }
    }
   },
@@ -33375,6 +33573,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 30,
+   "nopat_margin": 0.3817,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.2246,
+     "terminal": 0.264,
+     "reinvest_share": 0.0776,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0953,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.186,
+     "flag": "free"
+    }
    }
   },
   {
@@ -36694,6 +36914,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.2004,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.0632,
+     "reinvest_share": 0.2484,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 0.1709,
+     "reinvest_share": 0.0657,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1286,
+     "flag": "free"
     }
    }
   },
@@ -40020,6 +40262,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.1782,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.083,
+     "terminal": 0.1619,
+     "reinvest_share": 0.1212,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0145,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1087,
+     "flag": "free"
+    }
    }
   },
   {
@@ -43345,6 +43609,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.2063,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.1984,
+     "reinvest_share": 0.0161,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2109,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4501,
+     "flag": "free"
+    }
    }
   },
   {
@@ -46664,6 +46950,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.1255,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.6697,
+     "terminal": 0.5772,
+     "reinvest_share": 0.0223,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1404,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2405,
+     "flag": "free"
     }
    }
   },
@@ -49990,6 +50298,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.1204,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2865,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6128,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.8193,
+     "flag": "free"
+    }
    }
   },
   {
@@ -53315,6 +53645,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.2724,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1056,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2242,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.286,
+     "flag": "free"
+    }
    }
   },
   {
@@ -56634,6 +56986,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 6,
+   "nopat_margin": 0.2189,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0282,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2183,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3752,
+     "flag": "free"
     }
    }
   },
@@ -59955,6 +60329,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 19,
+   "nopat_margin": 0.1942,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2431,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4569,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6344,
+     "flag": "free"
+    }
    }
   },
   {
@@ -63274,6 +63670,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 33,
+   "nopat_margin": 0.1961,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.0811,
+     "reinvest_share": 0.2216,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": 0.5713,
+     "terminal": 0.2393,
+     "reinvest_share": 0.0661,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0596,
+     "flag": "free"
     }
    }
   },
@@ -66600,6 +67018,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 36,
+   "nopat_margin": 0.2208,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3113,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4999,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.617,
+     "flag": "free"
+    }
    }
   },
   {
@@ -69925,6 +70365,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 61,
+   "nopat_margin": 0.2246,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1924,
+     "terminal": 0.1259,
+     "reinvest_share": 0.1742,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.9458,
+     "terminal": 0.3846,
+     "reinvest_share": 0.0643,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0117,
+     "flag": "free"
+    }
    }
   },
   {
@@ -73244,6 +73706,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 43,
+   "nopat_margin": 0.1716,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1466,
+     "terminal": 0.1828,
+     "reinvest_share": 0.1017,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0155,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0886,
+     "flag": "free"
     }
    }
   },
@@ -76565,6 +77049,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 57,
+   "nopat_margin": 0.2514,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.083,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2132,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3151,
+     "flag": "free"
+    }
    }
   },
   {
@@ -79884,6 +80390,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 56,
+   "nopat_margin": 0.2667,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1449,
+     "terminal": 0.1531,
+     "reinvest_share": 0.1353,
+     "flag": null
+    },
+    "base": {
+     "forecast": 3.3465,
+     "terminal": 1.8827,
+     "reinvest_share": 0.0133,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.05,
+     "flag": "free"
     }
    }
   },
@@ -83210,6 +83738,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 29,
+   "nopat_margin": 0.5557,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.2283,
+     "terminal": 0.1054,
+     "reinvest_share": 0.2225,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.4224,
+     "terminal": 0.1512,
+     "reinvest_share": 0.1625,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.6212,
+     "terminal": 0.1933,
+     "reinvest_share": 0.1318,
+     "flag": "high"
+    }
    }
   },
   {
@@ -86529,6 +87079,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 21,
+   "nopat_margin": 0.1119,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0346,
+     "terminal": 0.0673,
+     "reinvest_share": 0.2907,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 1.0581,
+     "terminal": 0.2423,
+     "reinvest_share": 0.0833,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0721,
+     "flag": "free"
     }
    }
   },
@@ -89855,6 +90427,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 20,
+   "nopat_margin": 0.4785,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.4749,
+     "terminal": 0.2124,
+     "reinvest_share": 0.1151,
+     "flag": null
+    },
+    "base": {
+     "forecast": 1.7355,
+     "terminal": 0.7336,
+     "reinvest_share": 0.0439,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 11.9516,
+     "terminal": null,
+     "reinvest_share": 0.0073,
+     "flag": "free"
+    }
    }
   },
   {
@@ -93180,6 +93774,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 81,
+   "nopat_margin": 0.1862,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1696,
+     "terminal": 0.1198,
+     "reinvest_share": 0.1976,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.5085,
+     "terminal": 0.2469,
+     "reinvest_share": 0.1085,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 1.0469,
+     "terminal": 0.526,
+     "reinvest_share": 0.0627,
+     "flag": "high"
+    }
    }
   },
   {
@@ -96500,6 +97116,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 26,
+   "nopat_margin": 0.1535,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1068,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3759,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6006,
+     "flag": "free"
+    }
    }
   },
   {
@@ -99819,6 +100457,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 69,
+   "nopat_margin": 0.2528,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.4356,
+     "terminal": 0.2418,
+     "reinvest_share": 0.077,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0202,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0873,
+     "flag": "free"
     }
    }
   },
@@ -103145,6 +103805,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 62,
+   "nopat_margin": 0.517,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0508,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1293,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1783,
+     "flag": "free"
+    }
    }
   },
   {
@@ -106464,6 +107146,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 36,
+   "nopat_margin": 0.2356,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.5857,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.725,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.8334,
+     "flag": "free"
     }
    }
   },
@@ -109785,6 +110489,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 75,
+   "nopat_margin": 0.3499,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3199,
+     "terminal": 0.248,
+     "reinvest_share": 0.0769,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0161,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0888,
+     "flag": "free"
+    }
    }
   },
   {
@@ -113104,6 +113830,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 54,
+   "nopat_margin": 0.3113,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0375,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1433,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2251,
+     "flag": "free"
     }
    }
   },
@@ -116425,6 +117173,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 14,
+   "nopat_margin": 0.246,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3609,
+     "terminal": 0.1945,
+     "reinvest_share": 0.1162,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0898,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2317,
+     "flag": "free"
+    }
    }
   },
   {
@@ -119745,6 +120515,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.2296,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4895,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.609,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.7104,
+     "flag": "free"
+    }
    }
   },
   {
@@ -123064,6 +123856,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 36,
+   "nopat_margin": 0.2159,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0992,
+     "terminal": 0.0819,
+     "reinvest_share": 0.2937,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.4651,
+     "terminal": 0.2081,
+     "reinvest_share": 0.1387,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 1.373,
+     "terminal": 0.9078,
+     "reinvest_share": 0.0579,
+     "flag": "high"
     }
    }
   },
@@ -126390,6 +127204,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 28,
+   "nopat_margin": 0.2321,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 1.5137,
+     "reinvest_share": -0.0169,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.157,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2656,
+     "flag": "free"
+    }
    }
   },
   {
@@ -129709,6 +130545,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 14,
+   "nopat_margin": 0.1671,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4029,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6501,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.8039,
+     "flag": "free"
     }
    }
   },
@@ -133035,6 +133893,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 30,
+   "nopat_margin": 0.2091,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1258,
+     "terminal": 0.0984,
+     "reinvest_share": 0.2117,
+     "flag": null
+    },
+    "base": {
+     "forecast": 4.9745,
+     "terminal": 1.689,
+     "reinvest_share": 0.0157,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1092,
+     "flag": "free"
+    }
    }
   },
   {
@@ -136360,6 +137240,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 26,
+   "nopat_margin": 0.2027,
+   "growth_check": {
+    "bear": {
+     "forecast": 1.9523,
+     "terminal": 0.7889,
+     "reinvest_share": 0.0113,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.11,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1934,
+     "flag": "free"
+    }
    }
   },
   {
@@ -139679,6 +140581,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 29,
+   "nopat_margin": 0.2132,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.8004,
+     "terminal": 0.4063,
+     "reinvest_share": 0.0307,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0834,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1637,
+     "flag": "free"
     }
    }
   },
@@ -143005,6 +143929,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 10,
+   "nopat_margin": null,
+   "growth_check": {
+    "bear": null,
+    "base": null,
+    "bull": null
    }
   },
   {
@@ -146324,6 +147255,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 25,
+   "nopat_margin": 0.1338,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0514,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3812,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.5874,
+     "flag": "free"
     }
    }
   },
@@ -149645,6 +150598,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.16,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.1045,
+     "reinvest_share": 0.1794,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0422,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1728,
+     "flag": "free"
+    }
    }
   },
   {
@@ -152964,6 +153939,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.0995,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.9837,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.4866,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.8398,
+     "flag": "free"
     }
    }
   },
@@ -156285,6 +157282,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 9,
+   "nopat_margin": 0.3189,
+   "growth_check": {
+    "bear": {
+     "forecast": 1.6833,
+     "terminal": 0.4216,
+     "reinvest_share": 0.0369,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1234,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2355,
+     "flag": "free"
+    }
    }
   },
   {
@@ -159604,6 +160623,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.2232,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.1778,
+     "reinvest_share": 0.1043,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 4.0395,
+     "reinvest_share": -0.0022,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0757,
+     "flag": "free"
     }
    }
   },
@@ -162925,6 +163966,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 53,
+   "nopat_margin": null,
+   "growth_check": {
+    "bear": null,
+    "base": null,
+    "bull": null
    }
   },
   {
@@ -166249,6 +167297,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 81,
+   "nopat_margin": 0.4889,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1174,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2156,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2662,
+     "flag": "free"
     }
    }
   },
@@ -169575,6 +170645,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 13,
+   "nopat_margin": 0.3522,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0983,
+     "terminal": 0.0396,
+     "reinvest_share": 0.6799,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.2075,
+     "terminal": 0.0618,
+     "reinvest_share": 0.4737,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.3667,
+     "terminal": 0.1068,
+     "reinvest_share": 0.3155,
+     "flag": null
+    }
    }
   },
   {
@@ -172894,6 +173986,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 17,
+   "nopat_margin": 0.1526,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.2532,
+     "terminal": 0.1538,
+     "reinvest_share": 0.115,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0445,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1563,
+     "flag": "free"
     }
    }
   },
@@ -176220,6 +177334,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 81,
+   "nopat_margin": 0.1263,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0355,
+     "terminal": 0.0777,
+     "reinvest_share": 0.283,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.4167,
+     "terminal": 0.297,
+     "reinvest_share": 0.0907,
+     "flag": null
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0427,
+     "flag": "free"
+    }
    }
   },
   {
@@ -179539,6 +180675,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 56,
+   "nopat_margin": 0.0904,
+   "growth_check": {
+    "bear": {
+     "forecast": 3.3478,
+     "terminal": 0.5013,
+     "reinvest_share": 0.0087,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1726,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2658,
+     "flag": "free"
     }
    }
   },
@@ -182860,6 +184018,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.1793,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.328,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.5956,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.7345,
+     "flag": "free"
+    }
    }
   },
   {
@@ -186179,6 +187359,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 81,
+   "nopat_margin": 0.1534,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1128,
+     "terminal": 0.0892,
+     "reinvest_share": 0.2583,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.4022,
+     "terminal": 0.1666,
+     "reinvest_share": 0.1512,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 1.0719,
+     "terminal": 0.4779,
+     "reinvest_share": 0.0679,
+     "flag": "high"
     }
    }
   },
@@ -189505,6 +190707,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 16,
+   "nopat_margin": 0.1611,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0566,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2124,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3188,
+     "flag": "free"
+    }
    }
   },
   {
@@ -192829,6 +194053,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 34,
+   "nopat_margin": 0.1266,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1285,
+     "terminal": 0.0865,
+     "reinvest_share": 0.2609,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.662,
+     "terminal": 0.2732,
+     "reinvest_share": 0.0974,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0046,
+     "flag": "free"
     }
    }
   },
@@ -196155,6 +197401,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 42,
+   "nopat_margin": 0.3585,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0824,
+     "terminal": 0.0801,
+     "reinvest_share": 0.2987,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.5999,
+     "terminal": 0.2139,
+     "reinvest_share": 0.1341,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 2.9985,
+     "terminal": 4.7007,
+     "reinvest_share": 0.0343,
+     "flag": "high"
+    }
    }
   },
   {
@@ -199479,6 +200747,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 47,
+   "nopat_margin": 0.4962,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1509,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2159,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2663,
+     "flag": "free"
     }
    }
   },
@@ -202805,6 +204095,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 25,
+   "nopat_margin": 0.1453,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3195,
+     "terminal": 0.2068,
+     "reinvest_share": 0.0912,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0788,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1954,
+     "flag": "free"
+    }
    }
   },
   {
@@ -206129,6 +207441,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 38,
+   "nopat_margin": 0.0858,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4947,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.9879,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.4938,
+     "flag": "free"
     }
    }
   },
@@ -209455,6 +210789,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 6,
+   "nopat_margin": 0.1357,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0732,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2542,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3781,
+     "flag": "free"
+    }
    }
   },
   {
@@ -212774,6 +214130,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 54,
+   "nopat_margin": 0.2001,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 2.9748,
+     "reinvest_share": -0.009,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1333,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2186,
+     "flag": "free"
     }
    }
   },
@@ -216095,6 +217473,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 11,
+   "nopat_margin": 0.0962,
+   "growth_check": {
+    "bear": {
+     "forecast": 1.4043,
+     "terminal": 0.3997,
+     "reinvest_share": 0.014,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2415,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4206,
+     "flag": "free"
+    }
    }
   },
   {
@@ -219414,6 +220814,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 81,
+   "nopat_margin": 0.1522,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0484,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1834,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2664,
+     "flag": "free"
     }
    }
   },
@@ -222735,6 +224157,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 45,
+   "nopat_margin": 0.1204,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1084,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.347,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4534,
+     "flag": "free"
+    }
    }
   },
   {
@@ -226054,6 +227498,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 17,
+   "nopat_margin": 0.1405,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1093,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6361,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.0567,
+     "flag": "free"
     }
    }
   },
@@ -229380,6 +230846,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.1414,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.0854,
+     "reinvest_share": 0.2712,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": 0.2232,
+     "terminal": 0.3109,
+     "reinvest_share": 0.1007,
+     "flag": null
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0775,
+     "flag": "free"
+    }
    }
   },
   {
@@ -232704,6 +234192,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 6,
+   "nopat_margin": 0.1706,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1379,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6297,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.9512,
+     "flag": "free"
     }
    }
   },
@@ -236030,6 +237540,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.2682,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.0551,
+     "reinvest_share": 0.3789,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 0.1298,
+     "reinvest_share": 0.186,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": 0.4204,
+     "terminal": 4.0089,
+     "reinvest_share": 0.036,
+     "flag": null
+    }
    }
   },
   {
@@ -239355,6 +240887,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 15,
+   "nopat_margin": 0.0683,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0767,
+     "terminal": 0.0951,
+     "reinvest_share": 0.1972,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0376,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1635,
+     "flag": "free"
+    }
    }
   },
   {
@@ -242675,6 +244229,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.1291,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2143,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4903,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6494,
+     "flag": "free"
+    }
    }
   },
   {
@@ -245994,6 +247570,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.1602,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1001,
+     "terminal": 0.1334,
+     "reinvest_share": 0.1512,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 1196.3256,
+     "reinvest_share": -0.0005,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1056,
+     "flag": "free"
     }
    }
   },
@@ -249320,6 +250918,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.3161,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.0486,
+     "reinvest_share": 0.3304,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": 0.0825,
+     "terminal": 0.1261,
+     "reinvest_share": 0.1219,
+     "flag": "below_hurdle"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0796,
+     "flag": "free"
+    }
    }
   },
   {
@@ -252639,6 +254259,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 23,
+   "nopat_margin": 0.2168,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0306,
+     "terminal": 0.073,
+     "reinvest_share": 0.3287,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.6365,
+     "terminal": 0.3801,
+     "reinvest_share": 0.0976,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1033,
+     "flag": "free"
     }
    }
   },
@@ -255965,6 +257607,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 1,
+   "nopat_margin": 0.304,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0089,
+     "terminal": 0.081,
+     "reinvest_share": 0.2803,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.1948,
+     "terminal": 0.1413,
+     "reinvest_share": 0.1751,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.5573,
+     "terminal": 0.3194,
+     "reinvest_share": 0.0927,
+     "flag": "high"
+    }
    }
   },
   {
@@ -259289,6 +260953,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.4542,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.2256,
+     "reinvest_share": 0.0737,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 1.0987,
+     "reinvest_share": 0.007,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0457,
+     "flag": "free"
     }
    }
   },
@@ -262615,6 +264301,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 10,
+   "nopat_margin": 0.1778,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.2005,
+     "terminal": 0.2033,
+     "reinvest_share": 0.0502,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.174,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3157,
+     "flag": "free"
+    }
    }
   },
   {
@@ -265940,6 +267648,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": null,
+   "nopat_margin": 0.2335,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.1034,
+     "reinvest_share": 0.2177,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 0.9037,
+     "reinvest_share": 0.0498,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1274,
+     "flag": "free"
+    }
    }
   },
   {
@@ -269260,6 +270990,28 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "implied_cap": 10,
+   "nopat_margin": 0.0481,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2749,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6133,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.88,
+     "flag": "free"
+    }
    }
   },
   {
@@ -272579,6 +274331,28 @@
       ]
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
+    }
+   },
+   "implied_cap": 6,
+   "nopat_margin": 0.1285,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.264,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.5868,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.7885,
+     "flag": "free"
     }
    }
   }
