@@ -1,0 +1,2020 @@
+{
+ "_about": "Moat scorecard (question 4: how durable is the competitive advantage?) -> data/moat_scorecard.json. See scripts/moat_scorecard.py for the scoring.",
+ "checked": "2026-11-05",
+ "stocks": {
+  "AAPL": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "iOS ecosystem lock-in (iCloud, iMessage, apps, accessories) and the strongest consumer brand in tech; App Store links developers and users.",
+   "risk": "App Store fee rulings (EU DMA, US Epic case) and slower upgrade cycles.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": 0.0333
+   },
+   "total": 8.0,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "MSFT": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Office, Windows, Azure and Entra are embedded in company IT; moving off is costly and risky. Hyperscale cloud is a scale game few can play.",
+   "risk": "AI spending needs to earn its cost; price competition in cloud.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": 0.0336
+   },
+   "total": 6.5,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "GOOGL": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Search and YouTube: more users bring more advertisers and better data; Android and Chrome distribution; lowest cost to serve at scale.",
+   "risk": "AI answers changing search habits; US antitrust remedies on default deals.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0212
+   },
+   "total": 8.5,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "AMZN": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Marketplace links sellers and Prime buyers; logistics network and AWS scale give a cost edge rivals can't match.",
+   "risk": "Heavy AI and logistics capital spending; retail margins stay thin.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 2.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": 0.0473
+   },
+   "total": 6.3,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "NVDA": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "CUDA software and developer base make switching costly; leading chip designs and networking sold as full systems.",
+   "risk": "Customers' own chips (TPU, Trainium) and AMD; spending cycles in AI data centres.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": 0.0594
+   },
+   "total": 7.5,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "AVGO": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 2,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Custom AI chips and networking designed in for years; VMware is deep in company data centres; many niche chips with few rivals.",
+   "risk": "Depends on a handful of hyperscaler customers; VMware customers unhappy with price rises.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0,
+    "gm_std": 0.0802
+   },
+   "total": 6.5,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "LLY": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Patents on tirzepatide (Mounjaro, Zepbound) and a deep obesity pipeline; manufacturing scale in a supply-constrained market.",
+   "risk": "Price pressure on GLP-1s and new rivals (oral drugs, Novo, generics of older drugs).",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.3,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": 0.0335
+   },
+   "total": 7.3,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "ADBE": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Photoshop, Acrobat and Creative Cloud are the industry standard; file formats and training lock users in.",
+   "risk": "AI image and video tools (Canva, Figma, open models) lowering the bar for casual users.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0131
+   },
+   "total": 8.2,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "APP": {
+   "sources": {
+    "n": 1,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Ad network data and the AXON model improve with more apps and advertisers; mediation tool is widely installed.",
+   "risk": "Short track record outside gaming; platform rule changes by Apple and Google; short-seller claims on data use.",
+   "src": null,
+   "source_score": 2.0,
+   "numbers_score": 2.67,
+   "parts": {
+    "persistence": 0.67,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0,
+    "gm_std": 0.0996
+   },
+   "total": 4.7,
+   "suggested": "none",
+   "current": "narrow",
+   "differs": true
+  },
+  "FICO": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 2,
+    "c": 0,
+    "e": 1
+   },
+   "why": "The FICO score is written into lender, investor and regulator processes; mortgage rules required it for decades.",
+   "risk": "FHFA allowing VantageScore for mortgages; push-back on price rises.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": 0.0461
+   },
+   "total": 8.0,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "APA": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Oil and gas producer: price taker with no lasting edge apart from some low-cost Egypt and Permian acreage.",
+   "risk": "Oil and gas prices; reserve replacement.",
+   "src": null,
+   "source_score": 0.0,
+   "numbers_score": 2.93,
+   "parts": {
+    "persistence": 1.43,
+    "fade": 0,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 2.9,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "DECK": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "HOKA and UGG brands with pricing power and growing direct sales.",
+   "risk": "Fashion cycles; running shoe competition (On, Nike); tariffs.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 4.3,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": 0.0351
+   },
+   "total": 6.8,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "INCY": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Jakafi and Opzelura patents and a specialist dermatology and blood-cancer franchise.",
+   "risk": "Jakafi patent expiry around 2028; pipeline must replace it.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0093
+   },
+   "total": 6.5,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "MKC": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Leading spice brand and shelf space; supplies flavours to food makers who rarely switch recipes.",
+   "risk": "Store brands; volume weakness; commodity and tariff costs.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 1.2,
+   "parts": {
+    "persistence": 0.2,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 1,
+    "gm_std": 0.0224
+   },
+   "total": 4.0,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "EXPE": {
+   "sources": {
+    "n": 1,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Two-sided travel marketplace with hotel supply and loyalty programme, number two to Booking.",
+   "risk": "Google and AI agents taking the booking front door; heavy marketing spend.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": 2.6,
+   "parts": {
+    "persistence": 0.6,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 4.1,
+   "suggested": "none",
+   "current": "narrow",
+   "differs": true
+  },
+  "BKNG": {
+   "sources": {
+    "n": 2,
+    "s": 0,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Largest hotel marketplace, especially independent hotels in Europe: more travellers draw more properties and the other way round.",
+   "risk": "Google and AI agents; EU DMA rules on parity clauses.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": null,
+   "parts": {},
+   "total": 5.5,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "INTU": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "TurboTax and QuickBooks hold years of user data and accountant workflows; small firms rarely switch books.",
+   "risk": "Free government tax filing; AI tax tools.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 2.4,
+   "parts": {
+    "persistence": 1.4,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 5.4,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "ADSK": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "AutoCAD and Revit are the standard file formats in design and construction; training and project files lock users in.",
+   "risk": "Slow construction cycle; cloud rivals in specific niches.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.4,
+   "parts": {
+    "persistence": 1.4,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0259
+   },
+   "total": 6.4,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "TPR": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Coach brand with pricing power among younger buyers.",
+   "risk": "Fashion cycles; reliance on one brand after the Capri deal failed.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 3.6,
+   "parts": {
+    "persistence": 1.6,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": 0.0391
+   },
+   "total": 6.1,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "VEEV": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Life-science CRM and Vault are built into drug companies' regulated processes; few vendors know the niche.",
+   "risk": "Salesforce's rival life-science cloud; slower pharma spending.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0209
+   },
+   "total": 8.2,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "MNST": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Monster brand plus Coca-Cola bottler distribution worldwide.",
+   "risk": "Celsius and new energy brands; health rules on caffeine.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 3.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": 0.0422
+   },
+   "total": 6.2,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "ALLE": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Schlage, Von Duprin and LCN specified into building plans; master key systems keep buildings with one maker.",
+   "risk": "Slower non-residential building; electronic lock rivals.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0129
+   },
+   "total": 7.0,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "FTNT": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Own security chips give a cost edge in firewalls; the Security Fabric ties products together.",
+   "risk": "Firewall refresh cycles; cloud security rivals (Palo Alto, Zscaler).",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": null,
+   "parts": {},
+   "total": 5.8,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "RMD": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Leader in sleep apnoea masks and devices with connected-care software used by doctors and suppliers.",
+   "risk": "GLP-1 drugs reducing apnoea; Philips returning to the US market.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0145
+   },
+   "total": 8.2,
+   "suggested": "wide",
+   "current": "narrow",
+   "differs": true
+  },
+  "V": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 2,
+    "c": 2,
+    "e": 1
+   },
+   "why": "Card network: more cardholders bring more merchants and the other way round; global acceptance and very low cost per transaction.",
+   "risk": "Swipe-fee rules (Credit Card Competition Act); real-time payment systems and stablecoins.",
+   "src": null,
+   "source_score": 4.0,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 8.5,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "FIX": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Scale and skilled labour in mechanical contracting; modular building for data centres.",
+   "risk": "Project business: data-centre spending cycle and labour costs.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": 4.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.017
+   },
+   "total": 6.0,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "MA": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 2,
+    "c": 2,
+    "e": 1
+   },
+   "why": "Card network: more cardholders bring more merchants and the other way round; global acceptance and very low cost per transaction.",
+   "risk": "Swipe-fee rules; real-time payment systems and stablecoins.",
+   "src": null,
+   "source_score": 4.0,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 8.5,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "CTAS": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 0,
+    "c": 2,
+    "e": 1
+   },
+   "why": "Densest uniform and facility-services route network: each extra customer on a route costs little.",
+   "risk": "Slower hiring; UniFirst or Vestis competing on price.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0202
+   },
+   "total": 7.8,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "DXCM": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Continuous glucose monitors: patents and doctor and insurer relationships in a two-player market with Abbott.",
+   "risk": "Abbott price competition; quality issues and recalls.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.86,
+   "parts": {
+    "persistence": 0.86,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.028
+   },
+   "total": 6.9,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "IDXX": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 2,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Vet clinics install IDEXX analysers and buy its test consumables for years; the largest reference lab network.",
+   "risk": "Fewer vet visits; Zoetis and Antech in diagnostics.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0221
+   },
+   "total": 8.0,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "VRSN": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 2,
+    "c": 1,
+    "e": 2
+   },
+   "why": "Sole operator of .com and .net under a government contract; price rises allowed by contract.",
+   "risk": "Contract terms set by ICANN and the US government; flat domain volumes.",
+   "src": null,
+   "source_score": 3.75,
+   "numbers_score": null,
+   "parts": {},
+   "total": 6.2,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "NDAQ": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Exchange listings and trading plus financial software (Verafin, Adenza) that banks embed.",
+   "risk": "Trading volume cycles; integration of acquisitions.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 0.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 0.5,
+    "gm_std": 0.0351
+   },
+   "total": 3.8,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "MCO": {
+   "sources": {
+    "n": 1,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 2
+   },
+   "why": "One of two dominant credit raters: issuers need a Moody's rating for investors to buy their bonds.",
+   "risk": "Bond issuance cycles; regulation of raters.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.012
+   },
+   "total": 7.5,
+   "suggested": "wide",
+   "current": "narrow",
+   "differs": true
+  },
+  "SPGI": {
+   "sources": {
+    "n": 1,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 2
+   },
+   "why": "Credit ratings (duopoly with Moody's), S&P 500 index licences and Platts price benchmarks.",
+   "risk": "Bond issuance cycles; low-fee index rivals.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 2.4,
+   "parts": {
+    "persistence": 1.4,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 1,
+    "gm_std": 0.0245
+   },
+   "total": 5.9,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "NFLX": {
+   "sources": {
+    "n": 1,
+    "s": 0,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Largest paid subscriber base spreads content cost over more users than any rival streamer.",
+   "risk": "YouTube and free video take viewing time; content costs.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.7,
+   "parts": {
+    "persistence": 1.2,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": 0.0476
+   },
+   "total": 6.7,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "CBOE": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Owns the SPX and VIX option contracts; liquidity draws traders, which draws more liquidity.",
+   "risk": "Volume cycles; rivals listing copies of index options.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0,
+    "gm_std": 0.1294
+   },
+   "total": 6.5,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "GRMN": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Leader in niche devices (fitness, outdoor, aviation, marine) with brand and engineering depth.",
+   "risk": "Apple Watch and smartphones; slower consumer spending.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0112
+   },
+   "total": 7.5,
+   "suggested": "wide",
+   "current": "narrow",
+   "differs": true
+  },
+  "FDS": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Financial data terminal built into analysts' workflows and spreadsheets.",
+   "risk": "Bloomberg and LSEG; AI tools; fewer seats as banks cut staff.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 1,
+    "gm_std": 0.0126
+   },
+   "total": 5.8,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "CRM": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Largest CRM; customer data and custom workflows make it hard to leave.",
+   "risk": "AI agents changing how software is priced (per seat); slower growth.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0155
+   },
+   "total": 5.0,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "HWM": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 2
+   },
+   "why": "Jet-engine parts certified for each engine; few qualified suppliers and long contracts.",
+   "risk": "Aircraft production problems at Boeing and engine makers.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 2.4,
+   "parts": {
+    "persistence": 0.4,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 5.9,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "ADP": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Payroll is mission-critical and painful to move; largest scale in payroll and HR outsourcing.",
+   "risk": "Cloud HR rivals (Workday, Paycom, Rippling); job market slowdown.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0181
+   },
+   "total": 7.8,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "AME": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Many niche electronic instruments that are small costs to customers but critical, with few competitors each.",
+   "risk": "Industrial cycle; acquisition prices.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.4,
+   "parts": {
+    "persistence": 0.4,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0106
+   },
+   "total": 6.4,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "AXP": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Closed-loop network with wealthy cardholders that merchants want; premium brand and rewards.",
+   "risk": "Credit losses in a downturn; rewards card competition from Chase.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 3.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 7.0,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "SHOP": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Merchants build their store, payments and apps on Shopify; app partners add to its value.",
+   "risk": "Amazon and marketplace rivals; spending on AI commerce.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 6.2,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "PYPL": {
+   "sources": {
+    "n": 1,
+    "s": 1,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Large two-sided checkout network and Venmo, though rivals (Apple Pay) are eating share.",
+   "risk": "Apple Pay and card-wallet checkout; low-margin processing growth.",
+   "src": null,
+   "source_score": 1.75,
+   "numbers_score": 4.1,
+   "parts": {
+    "persistence": 1.6,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 5.8,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "XYZ": {
+   "sources": {
+    "n": 1,
+    "s": 1,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Square seller tools and Cash App, which links users and sellers.",
+   "risk": "Fierce competition in point-of-sale and consumer finance; credit risk.",
+   "src": null,
+   "source_score": 1.75,
+   "numbers_score": 0.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 0.5,
+    "gm_std": 0.0509
+   },
+   "total": 2.2,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "ADYEY": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Single global payments platform built in-house gives a cost and reliability edge for large merchants.",
+   "risk": "Price competition from Stripe and banks; volume slowdown at large clients.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": null,
+   "parts": {},
+   "total": 5.5,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "FISV": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Bank core systems and Clover are deeply embedded, but Clover growth has disappointed.",
+   "risk": "Execution reset in 2025; competition in merchant acquiring.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 1.4,
+   "parts": {
+    "persistence": 0.4,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 4.7,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "CRCL": {
+   "sources": {
+    "n": 1,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "USDC is the second-largest stablecoin with growing use in payments.",
+   "risk": "Income depends on interest rates and on Coinbase sharing; Tether and bank stablecoins.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": null,
+   "parts": {},
+   "total": 4.0,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "SPG": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Owns top-tier malls and outlets that are hard to replicate.",
+   "risk": "Online shopping and weaker tenants; interest rates.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": 1.0,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 2.5,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "META": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "3+ billion users across Facebook, Instagram and WhatsApp: users draw advertisers and friends draw friends.",
+   "risk": "TikTok competition; very large AI and Reality Labs spending.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0243
+   },
+   "total": 7.5,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "TT": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Leading commercial HVAC brand with service contracts and data-centre cooling know-how.",
+   "risk": "Building cycle; refrigerant rule changes.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0017
+   },
+   "total": 7.8,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "RL": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Global luxury lifestyle brand with improving pricing power.",
+   "risk": "Fashion cycles; China and US consumer spending.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 3.9,
+   "parts": {
+    "persistence": 1.4,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": 0.044
+   },
+   "total": 6.4,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "ROST": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Off-price buying and low-cost stores let it sell below department stores at a profit.",
+   "risk": "TJX and Burlington; tariffs on imported goods.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 4.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.021
+   },
+   "total": 7.3,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "GDDY": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Small businesses keep their domains, sites and email with the provider they started with.",
+   "risk": "AI site builders; price competition from Squarespace and Wix.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.3,
+   "parts": {
+    "persistence": 0.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 6.3,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "FAST": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 0,
+    "c": 2,
+    "e": 0
+   },
+   "why": "On-site vending machines and branches near customers give a service and cost edge in industrial supplies.",
+   "risk": "Industrial slowdown; Grainger and Amazon Business.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0163
+   },
+   "total": 7.8,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "SYK": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Mako robot ties surgeons to Stryker implants; broad hospital relationships.",
+   "risk": "Hospital budgets; pricing pressure in implants.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 2.9,
+   "parts": {
+    "persistence": 0.4,
+    "fade": 0.5,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0112
+   },
+   "total": 5.9,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "CMG": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Strong brand and efficient kitchens in fast-casual dining.",
+   "risk": "Low switching costs for diners; food and labour inflation.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": 4.3,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 5.8,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "KLAC": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 2,
+    "c": 1,
+    "e": 2
+   },
+   "why": "Dominant share in chip inspection and measurement tools; chip makers' processes are tuned to its machines.",
+   "risk": "Chip equipment cycles; China export rules.",
+   "src": null,
+   "source_score": 3.75,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0175
+   },
+   "total": 8.8,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "CME": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 2
+   },
+   "why": "Main US futures exchange: liquidity in rates, equity and commodity futures draws traders; clearing ties them in.",
+   "risk": "New futures exchanges (FMX, crypto venues); volume cycles.",
+   "src": null,
+   "source_score": 3.75,
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 5.8,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "STE": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Sterilisation equipment and consumables installed in hospitals and outsourced sterilisation for device makers.",
+   "risk": "Ethylene oxide rules; hospital spending.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0142
+   },
+   "total": 5.2,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "WDAY": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "HR and finance system of record for large companies; switching is a multi-year project.",
+   "risk": "Seat-based pricing under AI; slower hiring at customers.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 1.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 4.2,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "BR": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 2
+   },
+   "why": "Processes most US proxy votes and shareholder communications; few alternatives.",
+   "risk": "Regulatory change to proxy rules; slower trading volumes.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 4.6,
+   "parts": {
+    "persistence": 1.6,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0189
+   },
+   "total": 8.1,
+   "suggested": "wide",
+   "current": "narrow",
+   "differs": true
+  },
+  "MSI": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Public-safety radio networks and 911 software are built in for decades.",
+   "risk": "Government budgets; FirstNet and broadband alternatives.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0163
+   },
+   "total": 7.0,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "BKR": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Gas turbines and LNG equipment with few global competitors; oilfield services are competitive.",
+   "risk": "Oil and gas spending cycle.",
+   "src": null,
+   "source_score": 1.75,
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 3.8,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "RSG": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 1,
+    "e": 2
+   },
+   "why": "Owns landfills and dense collection routes; new landfills are almost impossible to permit.",
+   "risk": "Waste volume slowdown; fuel and labour costs.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0061
+   },
+   "total": 5.5,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "WAB": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 2
+   },
+   "why": "Locomotives and rail parts in a market with very few makers; large installed base needs parts and service.",
+   "risk": "Rail spending cycle; integration of acquisitions.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 1.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0206
+   },
+   "total": 4.8,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "MRVL": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Custom AI chips and optical networking designed into hyperscaler data centres.",
+   "risk": "Competition from Broadcom; dependence on a few customers.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": 0.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 0.5,
+    "gm_std": 0.0396
+   },
+   "total": 2.0,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "LULU": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Athleisure brand with loyal customers, now under pressure.",
+   "risk": "Alo, Vuori and others; US sales decline.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0231
+   },
+   "total": 5.8,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "RDDT": {
+   "sources": {
+    "n": 2,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Community content draws users and AI data-licensing deals.",
+   "risk": "Depends on Google search traffic; early in ad monetisation.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": null,
+   "parts": {},
+   "total": 5.2,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "CF": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Low-cost US natural gas gives its nitrogen plants a cost edge over Europe and Asia.",
+   "risk": "Fertiliser price cycles; US gas price rises.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0,
+    "gm_std": 0.1166
+   },
+   "total": 5.0,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "EME": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Scale and skilled labour in electrical and mechanical contracting.",
+   "risk": "Project business: construction and data-centre cycle.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": 4.6,
+   "parts": {
+    "persistence": 1.6,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.018
+   },
+   "total": 5.8,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "HST": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Owns upper-end hotels in good locations; hotels are a competitive business.",
+   "risk": "Travel cycle; rising costs.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 3.8,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "LII": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Direct-to-dealer distribution of home HVAC with strong dealer relationships.",
+   "risk": "Housing cycle; refrigerant transition costs.",
+   "src": null,
+   "source_score": 1.75,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.02
+   },
+   "total": 6.2,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "NEM": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Largest gold miner with some low-cost mines; gold price taker.",
+   "risk": "Gold price; mine costs and execution.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": 2.9,
+   "parts": {
+    "persistence": 0.4,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 4.2,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "REGN": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Strong in-house research (Dupixent, Eylea) and antibody platform.",
+   "risk": "Eylea biosimilars; dependence on Dupixent.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 2.3,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 4.8,
+   "suggested": "none",
+   "current": "narrow",
+   "differs": true
+  },
+  "ZTS": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Largest animal-health company with broad vet relationships and patented drugs.",
+   "risk": "Safety concerns about Librela; generic competition.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0183
+   },
+   "total": 8.2,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "MO": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Marlboro brand and pricing power in a shrinking US cigarette market.",
+   "risk": "Volume decline of 8-10% a year; regulation; weak position in vapes.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": 0.0566
+   },
+   "total": 7.0,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "HAS": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Owns brands like Magic: The Gathering, Monopoly and Dungeons & Dragons; digital games licensing.",
+   "risk": "Toy demand; tariffs on imports from China.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 1.1,
+   "parts": {
+    "persistence": 0.6,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 0,
+    "gm_std": 0.1705
+   },
+   "total": 3.6,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "BMY": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Patents on Eliquis and Opdivo, but these expire around 2028.",
+   "risk": "Patent cliff on its largest drugs; pipeline must fill the gap.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 0.5,
+    "gm_std": 0.0317
+   },
+   "total": 3.2,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "NRG": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Large retail electricity customer base in Texas and power plants; regulated markets limit rivals.",
+   "risk": "Power price swings; regulation.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": 2.4,
+   "parts": {
+    "persistence": 0.4,
+    "fade": 0,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0214
+   },
+   "total": 3.9,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "FIS": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 0,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Bank core and payment systems that banks rarely replace.",
+   "risk": "Execution after selling Worldpay and buying issuer processing.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 1.5,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0192
+   },
+   "total": 4.2,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  }
+ }
+}

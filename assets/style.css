@@ -200,3 +200,4 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 .mybox{margin:8px 0}.mydet{border:1px solid var(--line);border-radius:10px;padding:8px 12px}.mydet summary{cursor:pointer;font-size:13px}.mydet summary .muted{margin-left:6px}
 
 .rq td{white-space:normal;vertical-align:top;line-height:1.45}.rtx{font-size:10px;fill:var(--mut)}
+.mdots{display:inline-flex;gap:3px;vertical-align:middle}.mdots i{width:9px;height:9px;border-radius:50%;background:var(--line);display:inline-block}.mdots i.on{background:var(--acc)}

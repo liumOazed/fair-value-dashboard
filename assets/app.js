@@ -12,8 +12,8 @@ function status(a){const p=a.price,fv=a.fair_value;
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 $("#theme").onclick=()=>{const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1020";const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
 $("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
-let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null,RH={stocks:{}};
-try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);RH=await fetch("data/returns.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))}
+let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null,RH={stocks:{}},MS={stocks:{}};
+try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);RH=await fetch("data/returns.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}));MS=await fetch("data/moat_scorecard.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))}
 catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open this page through GitHub Pages (or a local server such as <code>python -m http.server</code>), not by double-clicking the file.</div>';return}
 let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  const r={...a,price,prev:p.prev_close,history:p.history||[]};
@@ -108,7 +108,7 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  ${snapHTML(r)}
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
  ${r.reverse_g1!=null?`<h3>What the price implies</h3><p>${r.reverse_g1<0?`At today's price and a ${(r.required_return*100).toFixed(1)}% required return, the market is pricing in year-1 sales <b>shrinking about ${Math.abs(r.reverse_g1*100).toFixed(0)}%</b>, then recovering to the base long-run rate. That is a pessimistic view.`:`To justify today's price at a ${(r.required_return*100).toFixed(1)}% required return, year-1 growth would need to be about <b>${(r.reverse_g1*100).toFixed(0)}%</b> fading to the base long-run rate.`} Terminal value is ${(r.tv_share*100).toFixed(0)}% of the base DCF.</p>`:""}
- ${sizeHTML(r)}${capH}${retHTML(r)}${segH}${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
+ ${sizeHTML(r)}${capH}${moatHTML(r)}${retHTML(r)}${segH}${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;bindSnap();if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
 
@@ -372,6 +372,18 @@ function sizeAll(){const raw={};rows.forEach(r=>{r.sz=null;r.size=null;if(r.type
   const tot=Object.values(raw).reduce((a,b)=>a+b,0),sc=tot>MY.eq?MY.eq/tot:1;
   rows.forEach(r=>{if(raw[r.ticker]!=null){r.size=raw[r.ticker]*sc;r.sz.scale=sc}});
   return {tot:tot*sc,n:Object.values(raw).filter(x=>x>0).length,scaled:sc<1}}
+// Moat scorecard (scripts/moat_scorecard.py): question 4. Never changes the class in data/moat.json.
+function moatHTML(r){const x=(MS.stocks||{})[r.ticker];if(r.type!=="stock"||!x)return "";
+ const N={n:"Network effects",s:"Switching costs",i:"Brand, patents, licences",c:"Cost advantage",e:"Efficient scale"},L=["none","some","strong"];
+ const dots=v=>`<span class="mdots">${[0,1].map(i=>`<i class="${i<v?"on":""}"></i>`).join("")}</span> ${L[v]}`;
+ const P=x.parts||{},pp=(v,m)=>v==null?"–":`${(+v).toFixed(1).replace(".0","")} / ${m}`;
+ const verdict=x.differs?`The scorecard suggests <b>${MOATN[x.suggested]}</b>, but the model uses <b>${MOATN[x.current]}</b>. That's worth a look; edit data/moat.json to change it, which moves the fair value.`:`This agrees with the model's ${MOATN[x.current]||x.current}.`;
+ return `<h3>How durable is the edge?</h3><p><b>${x.total.toFixed(1)} / 10</b>: ${x.source_score.toFixed(1)} from the sources of advantage, ${x.numbers_score==null?"2.5 (neutral, the filings can't measure it)":x.numbers_score.toFixed(1)} from the filings. ${verdict}</p>
+ <div class="scroll"><table class="s rq"><tr><th style="text-align:left">Source of advantage</th><th style="text-align:left">Strength</th></tr>${Object.keys(N).map(k=>`<tr><td style="text-align:left">${N[k]}</td><td style="text-align:left">${dots(x.sources[k])}</td></tr>`).join("")}
+ <tr><td style="text-align:left">Main evidence</td><td style="text-align:left">${x.why}${x.src?` (<a href="${x.src}" target="_blank" rel="noopener">source</a>)`:""}</td></tr>
+ <tr><td style="text-align:left">Main threat</td><td style="text-align:left">${x.risk}</td></tr></table></div>
+ ${x.numbers_score!=null?`<p class="muted">From the filings: returns well above the hurdle in past years ${pp(P.persistence,2)}, no fade ${pp(P.fade,1)}, returns on new money ${pp(P.new_money,1)}, steady gross margin ${pp(P.margins,1)}${P.gm_std!=null?` (typical swing ${(P.gm_std*100).toFixed(1)} pts)`:""}.</p>`:""}
+ <p class="muted">The sources are Claude's judgement as of ${MS.checked}, re-checked after each earnings report. 7.5+ suggests a wide moat, 5+ narrow.</p>`}
 // Returns on capital over ~10 years of 10-Ks (scripts/returns_history.py): questions 1, 2 and 5. Diagnostics only.
 function retHTML(r){const x=(RH.stocks||{})[r.ticker];if(r.type!=="stock"||!x)return "";
  const p0=v=>v==null?"–":v>1?"over 100%":(v*100).toFixed(0)+"%",hr=(x.r*100).toFixed(1)+"%";

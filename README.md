@@ -64,6 +64,15 @@ Two checks from the Competitive Advantage Period idea (Mauboussin): value depend
 - **Advantage period priced in** (`implied_cap`): the years of above-average growth, fading in a straight line from the base year-1 growth to 2.5%, that today's price needs at the base margin and the required return. Compare with the stock's own advantage period (above). Not shown when base growth is at or below 2.5%.
 - **Is growth paid for?** (`growth_check`, per scenario): return on new investment = extra after-tax operating profit by year 10 ÷ cash reinvested in years 1-10, where reinvestment = after-tax operating profit (latest fiscal year's operating margin from `data/snapshot_raw.json`, held flat) − cash flow. Also the return on new investment that 2.5% growth with the target margin implies after year 10. Readings: below the required return (growth adds no value), over 50% (close to free: check), cash flow at or above operating profit (little net reinvestment; normal for asset-light businesses), or shrinking sales.
 
+## Moat scorecard (question 4, no effect on fair values)
+
+Each drawer has a "How durable is the edge?" score out of 10, from `scripts/moat_scorecard.py` → `data/moat_scorecard.json`:
+- **Sources of advantage, 5 points** (`data/moat_sources.json`, judgement): network effects, switching costs, brand/patents/licences, cost advantage and efficient scale, each scored none / some / strong, with the main evidence and the main threat. Score = strongest source × 1.25, plus 0.5 for each other strong source and 0.25 for each other "some" (max 5).
+- **Filings, 5 points** (`data/returns.json`, facts): ROIC at least 5 points above the hurdle in the last 10 years (2), no fade in the excess return (1), returns on new money holding up (1), steady gross margin (1). When ROIC can't be measured (BKNG, VRSN, FTNT…) this counts as a neutral 2.5.
+- **7.5+ suggests wide, 5+ narrow**, below that none. "Short" is kept, since it's set by growth. The suggestion is shown beside the class the model uses; it never changes `data/moat.json`. Edit that file to act on it (this moves fair values).
+
+The twice-weekly earnings review re-checks `data/moat_sources.json` for each stock that reported and adds a source link when the evidence changes. The Snapshot workflow re-runs the score.
+
 ## Returns on new money (diagnostics, no effect on fair values)
 
 `scripts/returns_history.py` writes `data/returns.json` from about 10 years of 10-K figures (`data/backtest/facts.json.gz`, topped up with `data/snapshot_raw.json`). The Snapshot workflow re-runs it. Each drawer shows a chart of return on invested capital (ROIC) by year and answers three questions:
