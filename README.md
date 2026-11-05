@@ -64,6 +64,15 @@ Two checks from the Competitive Advantage Period idea (Mauboussin): value depend
 - **Advantage period priced in** (`implied_cap`): the years of above-average growth, fading in a straight line from the base year-1 growth to 2.5%, that today's price needs at the base margin and the required return. Compare with the stock's own advantage period (above). Not shown when base growth is at or below 2.5%.
 - **Is growth paid for?** (`growth_check`, per scenario): return on new investment = extra after-tax operating profit by year 10 ÷ cash reinvested in years 1-10, where reinvestment = after-tax operating profit (latest fiscal year's operating margin from `data/snapshot_raw.json`, held flat) − cash flow. Also the return on new investment that 2.5% growth with the target margin implies after year 10. Readings: below the required return (growth adds no value), over 50% (close to free: check), cash flow at or above operating profit (little net reinvestment; normal for asset-light businesses), or shrinking sales.
 
+## Returns on new money (diagnostics, no effect on fair values)
+
+`scripts/returns_history.py` writes `data/returns.json` from about 10 years of 10-K figures (`data/backtest/facts.json.gz`, topped up with `data/snapshot_raw.json`). The Snapshot workflow re-runs it. Each drawer shows a chart of return on invested capital (ROIC) by year and answers three questions:
+- **Are returns on new investment diminishing?** Extra after-tax operating profit ÷ extra invested capital over the latest 5 years, compared with the 5 before and with ROIC on all capital. "Diminishing" means under 80% of today's ROIC or 5+ points below the earlier window.
+- **How long can the extraordinary returns last?** The robust trend of ROIC minus the required return over 8 years: how fast the excess halves, and the years until it is within 2 points of the hurdle at that pace. Shown next to the model's moat class.
+- **How much more can it reinvest at high returns?** Growth in invested capital over 5 years ÷ after-tax operating profit, the dollars a year, and the growth that funds at the latest return on new money, next to the base case's year-1 growth.
+
+Invested capital = equity + debt − cash and short-term investments, so it includes goodwill (acquirers such as SPGI look lower) and can be zero or negative for cash-rich companies or heavy buyers-back (BKNG, VRSN, FTNT). Those get a note in place of numbers.
+
 ## Refresh fair values
 Fair values are slow-moving. Re-run the model after each earnings report (roughly quarterly), paste the new numbers into `data/assets.json`, commit.
 

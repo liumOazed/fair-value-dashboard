@@ -12,8 +12,8 @@ function status(a){const p=a.price,fv=a.fair_value;
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 $("#theme").onclick=()=>{const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1020";const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
 $("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
-let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null;
-try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null)}
+let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null,RH={stocks:{}};
+try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);RH=await fetch("data/returns.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))}
 catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open this page through GitHub Pages (or a local server such as <code>python -m http.server</code>), not by double-clicking the file.</div>';return}
 let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  const r={...a,price,prev:p.prev_close,history:p.history||[]};
@@ -108,7 +108,7 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  ${snapHTML(r)}
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
  ${r.reverse_g1!=null?`<h3>What the price implies</h3><p>${r.reverse_g1<0?`At today's price and a ${(r.required_return*100).toFixed(1)}% required return, the market is pricing in year-1 sales <b>shrinking about ${Math.abs(r.reverse_g1*100).toFixed(0)}%</b>, then recovering to the base long-run rate. That is a pessimistic view.`:`To justify today's price at a ${(r.required_return*100).toFixed(1)}% required return, year-1 growth would need to be about <b>${(r.reverse_g1*100).toFixed(0)}%</b> fading to the base long-run rate.`} Terminal value is ${(r.tv_share*100).toFixed(0)}% of the base DCF.</p>`:""}
- ${sizeHTML(r)}${capH}${segH}${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
+ ${sizeHTML(r)}${capH}${retHTML(r)}${segH}${mcH}${fc}${rt}${sens}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;bindSnap();if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
 
@@ -372,6 +372,36 @@ function sizeAll(){const raw={};rows.forEach(r=>{r.sz=null;r.size=null;if(r.type
   const tot=Object.values(raw).reduce((a,b)=>a+b,0),sc=tot>MY.eq?MY.eq/tot:1;
   rows.forEach(r=>{if(raw[r.ticker]!=null){r.size=raw[r.ticker]*sc;r.sz.scale=sc}});
   return {tot:tot*sc,n:Object.values(raw).filter(x=>x>0).length,scaled:sc<1}}
+// Returns on capital over ~10 years of 10-Ks (scripts/returns_history.py): questions 1, 2 and 5. Diagnostics only.
+function retHTML(r){const x=(RH.stocks||{})[r.ticker];if(r.type!=="stock"||!x)return "";
+ const p0=v=>v==null?"–":v>1?"over 100%":(v*100).toFixed(0)+"%",hr=(x.r*100).toFixed(1)+"%";
+ const head=`<h3>Returns on new money</h3>`;
+ if(x.note)return head+`<p>${x.note}</p>`;
+ const W=520,H=120,pl=34,pr=10,pt=10,pb=20,ys=x.roic.map(p=>p[0]),vs=x.roic.map(p=>p[1]*100),mx=Math.max(...vs,x.r*100)*1.08,mn=Math.min(0,...vs),
+  X=y=>pl+(y-ys[0])/((ys[ys.length-1]-ys[0])||1)*(W-pl-pr),Y=v=>pt+(mx-v)/((mx-mn)||1)*(H-pt-pb),tk=[mn,(mn+mx)/2,mx].map(v=>Math.round(v));
+ const sp=`<svg viewBox="0 0 ${W} ${H}" class="mcsvg" role="img" aria-label="Return on invested capital by year"><title>${x.roic.map(p=>p[0]+": "+(p[1]*100).toFixed(0)+"%").join(", ")}</title>`+
+  tk.map(v=>`<text x="${pl-4}" y="${Y(v)+3}" text-anchor="end" class="rtx">${v}%</text>`).join("")+
+  `<line x1="${pl}" x2="${W-pr}" y1="${Y(x.r*100)}" y2="${Y(x.r*100)}" class="spkref"/><text x="${W-pr}" y="${Y(x.r*100)-3}" text-anchor="end" class="rtx">hurdle ${hr}</text>`+
+  `<polyline points="${x.roic.map(p=>X(p[0]).toFixed(1)+","+Y(p[1]*100).toFixed(1)).join(" ")}" class="spkl"/>`+
+  x.roic.map(p=>`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]*100).toFixed(1)}" r="2.4" class="spkd"/>`).join("")+
+  [ys[0],ys[ys.length-1]].map((y,i)=>`<text x="${X(y)}" y="${H-5}" text-anchor="${i?"end":"start"}" class="rtx">${y}</text>`).join("")+`</svg>`;
+ const q1={"holding up":`New money is still earning about as much as the old: <b>${p0(x.inc_recent)}</b> on the capital added in ${x.windows[1]}${x.inc_earlier!=null?` (${p0(x.inc_earlier)} in ${x.windows[0]})`:""}, against ${p0(x.roic_now)} on all capital.`,
+  "diminishing":`Each new dollar is earning less: <b>${p0(x.inc_recent)}</b> on the capital added in ${x.windows[1]}${x.inc_earlier!=null?(x.inc_earlier>x.inc_recent?`, down from ${p0(x.inc_earlier)} in ${x.windows[0]}`:` (${p0(x.inc_earlier)} in ${x.windows[0]})`):""}, against ${p0(x.roic_now)} on all capital. Still above the ${hr} hurdle.`,
+  "below hurdle":`New money is earning <b>${p0(x.inc_recent)}</b> (capital added in ${x.windows[1]}), below the ${hr} hurdle${x.inc_earlier!=null?`, down from ${p0(x.inc_earlier)} in ${x.windows[0]}`:""}. Growth bought this way adds no value.`,
+  "unmeasured":`Can't measure it: ${x.inc_why==="invested capital barely grew or shrank"?"invested capital barely grew over the last 5 years (buybacks and dividends took the cash), so growth came from the existing business":(x.inc_why||"not enough years")}.`}[x.q1];
+ const q2=x.q2==="at hurdle"?`Returns are already at or near the ${hr} hurdle (${p0(x.roic_now)}): there is little excess left to fade.`:
+  x.q2==="not fading"?`No fade yet: return on capital (${p0(x.roic_now)} over the last 2 years) hasn't trended down over the last 8 years${x.roic_trend!=null?` (trend ${x.roic_trend>=0?"+":""}${(x.roic_trend*100).toFixed(1)} pts a year)`:""}. History can't say how long that lasts.`:
+  `Fading: the excess over the ${hr} hurdle has halved about every <b>${x.half_life.toFixed(x.half_life<3?1:0)} years</b>. `+(x.years_left<1?`Returns (${p0(x.roic_now)}) are already within about 2 points of the hurdle.`:`At that pace returns are within 2 points of the hurdle in about <b>${x.years_left>=50?"50+":x.years_left.toFixed(0)} years</b>.`);
+ const rv=x.reinvest,g=r.scenarios&&r.scenarios.base?r.scenarios.base.g1:null;
+ const q5=!rv?"Not enough years with positive profit to measure.":rv.rate<=0.02?`It reinvests almost nothing: invested capital ${rv.rate<0?"shrank":"was flat"} over ${rv.years} while it earned $${rv.nopat_b.toFixed(1)}B after tax last year. Profits go to buybacks and dividends, so growth doesn't need new capital.`:
+  `It put <b>${(rv.rate*100).toFixed(0)}%</b> of after-tax operating profit back into the business over ${rv.years} (about $${rv.per_year_b.toFixed(1)}B a year${rv.rate>1?", more than it earned, so partly paid for with debt, new shares or acquisitions":""}).`+(rv.growth_funded!=null?` At the latest return on new money that funds about <b>${(rv.growth_funded*100).toFixed(0)}%</b> growth a year${g!=null?`, against ${(g*100).toFixed(0)}% year-1 growth in the base case`:""}.`:x.inc_recent!=null&&x.inc_recent>1?" Returns on the extra capital are over 100%, so most growth comes from the existing assets and pricing.":"");
+ const mo=r.moat?`Model setting: ${MOATN[r.moat]||r.moat}, ${r.cap_years} years of above-normal returns.`:"";
+ return head+`<div class="mydet"><div>${sp}</div><p class="muted">Return on invested capital each year (10-K figures, capped at 200% on the chart; the dashed line is the ${hr} required return). Invested capital includes goodwill, so acquirers look lower than the businesses they bought.</p></div>
+ <table class="s rq"><tr><th style="text-align:left;width:34%">Question</th><th style="text-align:left">Answer from the filings</th></tr>
+ <tr><td style="text-align:left">Are returns on new investment diminishing?</td><td style="text-align:left">${q1}</td></tr>
+ <tr><td style="text-align:left">How long can the extraordinary returns last?</td><td style="text-align:left">${q2} ${mo}</td></tr>
+ <tr><td style="text-align:left">How much more can it reinvest at high returns?</td><td style="text-align:left">${q5}</td></tr></table>
+ <p class="muted">History only, so it shows the direction, not the future. Nothing here changes the fair value.</p>`}
 function sizeHTML(r){const z=r.sz;if(!z)return "";const d=z.d,h=z.h,eq=MY.eq;
  const why=z.k<=0?(r.diff>=0?`Price is above fair value at your ${pc1(h)} hurdle, so no new money.`:`The expected return (median ${pc1(d.med)}, ${pc1(z.pb)} chance of beating ${pc1(h)}) isn't enough above your hurdle.`)
   :`Expected return ${pc1(d.med)} a year (median; p10 ${pc1(d.p10)}, p90 ${pc1(d.p90)}) vs your ${pc1(h)} hurdle = ${pc1(z.ex)} extra → edge ${pc1(z.edge)} of full (full at +5 points). Chance of beating the hurdle ${pc1(z.pb)} → confidence ${pc1(z.conf)} (0 at 50%, full at 90%). Size = your ${pc1(MY.max)} max × ${pc1(z.edge)} × ${pc1(z.conf)} = ${pc1(z.k)}${z.scale<1?`, then ×${z.scale.toFixed(2)} so all suggested positions fit your ${pc1(eq)} in stocks`:""}.`;
