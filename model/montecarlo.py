@@ -31,7 +31,7 @@ KEYS = ["bear", "base", "bull"]
 
 def moat(tk, r):
     """This stock's advantage period and terminal-return settings (data/moat.json), as model.dcf uses them."""
-    return dict(M["moat_of"](tk), r_req=r)
+    return dict(M["moat_of"](tk), r_req=r, sg=M["segments_of"](tk))
 
 def tv_k(mo, gt, g_last):
     """Vectorised model.tv_factor (terminal cash flow vs the last explicit year)."""
@@ -48,17 +48,32 @@ def inputs(tk):
     sc = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}
     return s, r, m0, sc, s["net_cash"] + s["extra"]
 
-def paths(rev0, m0, g1, g10, m, gt=None, n=T):
-    """Cash-flow paths (runs, n years): growth fades linearly from g1 to g10 over years 1-10, then from g10 to the
-    terminal rate by year n (the advantage period); margin ramps to target over 5 years. Also returns the last year's growth."""
+def _growth(g1, g10, gt, n):
     t = np.arange(1, n + 1)
     g = g1[:, None] + (g10 - g1)[:, None] * (np.minimum(t, 10) - 1) / 9
     if n > 10:
         gt_ = np.broadcast_to(np.asarray(gt, float), g10.shape)
         g = np.where(t > 10, g10[:, None] + (gt_ - g10)[:, None] * (t - 10) / (n - 10), g)
-    rev = rev0 * np.cumprod(1 + g, axis=1)
+    return g
+
+def paths(rev0, m0, g1, g10, m, gt=None, n=T, sg=None):
+    """Cash-flow paths (runs, n years): growth fades linearly from g1 to g10 over years 1-10, then from g10 to the
+    terminal rate by year n (the advantage period); margin ramps to target over 5 years. With segments (model.seg_g1s),
+    each segment has its own year-1 growth on the same fade. Also returns the last year's growth."""
+    t = np.arange(1, n + 1)
+    if sg:
+        x = np.stack([np.minimum(g1 * q, sg["cap"] * g1) for q in sg["ratio"]], axis=1)       # (runs, segments)
+        w = np.array(sg["share"])
+        x = x + (g1 - x @ w)[:, None]
+        x = np.where((g1 > 0)[:, None], x, g1[:, None])
+        rev = sum(rev0 * w[i] * np.cumprod(1 + _growth(x[:, i], g10, gt, n), axis=1) for i in range(len(w)))
+        g_last = _growth(g1, g10, gt, n)[:, -1]
+    else:
+        g = _growth(g1, g10, gt, n)
+        rev = rev0 * np.cumprod(1 + g, axis=1)
+        g_last = g[:, -1]
     mt = m0 + (m - m0)[:, None] * np.minimum(t, 5) / 5
-    return rev * mt, g[:, -1]
+    return rev * mt, g_last
 
 def pv_paths(fcf, gt, r, nc, shares, k=1.0):
     """Value per share of cash-flow paths; r may be a scalar or one rate per run; k = terminal cash-flow factor."""
@@ -71,7 +86,7 @@ def pv_paths(fcf, gt, r, nc, shares, k=1.0):
 def value(rev0, m0, g1, g10, m, gt, r, nc, shares, mo=None):
     """Vectorised DCF identical to model.dcf."""
     n = (mo or {}).get("cap_years", T)
-    fcf, gl = paths(rev0, m0, g1, g10, m, gt, n)
+    fcf, gl = paths(rev0, m0, g1, g10, m, gt, n, (mo or {}).get("sg"))
     return pv_paths(fcf, gt, r, nc, shares, tv_k(mo, gt, gl) if mo else 1.0)
 
 def implied_returns(fcf, gt, nc, shares, price, k=1.0, hi=0.60, it=60):
@@ -104,7 +119,7 @@ def simulate(tk, u, stratify=False, full=False):
     gt = np.clip(M["GT"] + norm.ppf(np.clip(u[:, 4], 1e-9, 1 - 1e-9)) * 0.004, 0.01, 0.035)
     g10 = np.minimum(g10, r - 0.01); gt = np.minimum(gt, r - 0.015); m = np.maximum(m, 0.005)
     mo = moat(tk, r)
-    fcf, gl = paths(s["rev"], m0, g1, g10, m, gt, mo["cap_years"])
+    fcf, gl = paths(s["rev"], m0, g1, g10, m, gt, mo["cap_years"], mo["sg"])
     k = tv_k(mo, gt, gl)
     v = pv_paths(fcf, gt, r, nc, s["shares"], k)
     if full:
