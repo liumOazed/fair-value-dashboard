@@ -1,0 +1,359 @@
+{
+ "_about": "Competitive Advantage Period by moat class (stage 2 of the Durand/CAP review). Proposed automatically from 4-year ROIC vs the required return (scripts note: wide = ROIC >= max(20%, r+10pt) every year; narrow = median ROIC >= r+3pt or not measurable; none = below that; short = base growth at or below 2.5%). Edit the class and reason by hand; the model reads only this file.",
+ "classes": {
+  "wide": {
+   "cap_years": 20,
+   "ronic_forecast": null,
+   "ronic_terminal": null,
+   "about": "Edge lasts about 20 years; returns on new investment stay high after that."
+  },
+  "narrow": {
+   "cap_years": 15,
+   "ronic_forecast": 0.2,
+   "ronic_terminal": "mid",
+   "about": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return."
+  },
+  "none": {
+   "cap_years": 12,
+   "ronic_forecast": 0.15,
+   "ronic_terminal": "r",
+   "about": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value."
+  },
+  "short": {
+   "cap_years": 10,
+   "ronic_forecast": null,
+   "ronic_terminal": null,
+   "about": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline."
+  }
+ },
+ "stocks": {
+  "AAPL": {
+   "moat": "wide",
+   "reason": "ROIC 74% or more in each of the last 4 years (median 91%), at least 10 points above the 9.0% required return."
+  },
+  "MSFT": {
+   "moat": "wide",
+   "reason": "ROIC 30% or more in each of the last 4 years (median 34%), at least 10 points above the 9.0% required return."
+  },
+  "GOOGL": {
+   "moat": "wide",
+   "reason": "ROIC 31% or more in each of the last 4 years (median 36%), at least 10 points above the 10.0% required return."
+  },
+  "AMZN": {
+   "moat": "none",
+   "reason": "Median ROIC 13% over 4 years, within 3 points of the 10.5% required return (goodwill from acquisitions can depress this)."
+  },
+  "NVDA": {
+   "moat": "wide",
+   "reason": "ROIC 27% or more in each of the last 4 years (median 104%), at least 10 points above the 10.0% required return."
+  },
+  "AVGO": {
+   "moat": "narrow",
+   "reason": "Median ROIC 23% over 4 years, above the 10.0% required return but not consistently by 10+ points."
+  },
+  "LLY": {
+   "moat": "wide",
+   "reason": "ROIC 25% or more in each of the last 4 years (median 31%), at least 10 points above the 9.0% required return."
+  },
+  "ADBE": {
+   "moat": "wide",
+   "reason": "ROIC 38% or more in each of the last 4 years (median 46%), at least 10 points above the 9.5% required return."
+  },
+  "APP": {
+   "moat": "narrow",
+   "reason": "Median ROIC 33% over 4 years, above the 11.0% required return but not consistently by 10+ points."
+  },
+  "FICO": {
+   "moat": "wide",
+   "reason": "ROIC 44% or more in each of the last 4 years (median 49%), at least 10 points above the 9.5% required return."
+  },
+  "APA": {
+   "moat": "short",
+   "reason": "Base growth -4.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "DECK": {
+   "moat": "wide",
+   "reason": "ROIC 49% or more in each of the last 4 years (median 92%), at least 10 points above the 9.5% required return."
+  },
+  "INCY": {
+   "moat": "narrow",
+   "reason": "Median ROIC 31% over 4 years, above the 9.5% required return but not consistently by 10+ points."
+  },
+  "MKC": {
+   "moat": "none",
+   "reason": "Median ROIC 9% over 4 years, within 3 points of the 8.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "EXPE": {
+   "moat": "narrow",
+   "reason": "Median ROIC 32% over 4 years, above the 10.5% required return but not consistently by 10+ points."
+  },
+  "BKNG": {
+   "moat": "wide",
+   "reason": "ROIC 116% or more in each of the last 1 years (median 116%), at least 10 points above the 9.5% required return."
+  },
+  "INTU": {
+   "moat": "narrow",
+   "reason": "Median ROIC 17% over 4 years, above the 10.0% required return but not consistently by 10+ points."
+  },
+  "ADSK": {
+   "moat": "wide",
+   "reason": "ROIC 33% or more in each of the last 4 years (median 40%), at least 10 points above the 10.0% required return."
+  },
+  "TPR": {
+   "moat": "narrow",
+   "reason": "Median ROIC 25% over 4 years, above the 10.0% required return but not consistently by 10+ points."
+  },
+  "VEEV": {
+   "moat": "wide",
+   "reason": "ROIC 57% or more in each of the last 4 years (median 68%), at least 10 points above the 9.5% required return."
+  },
+  "MNST": {
+   "moat": "wide",
+   "reason": "ROIC 28% or more in each of the last 4 years (median 31%), at least 10 points above the 8.5% required return."
+  },
+  "ALLE": {
+   "moat": "narrow",
+   "reason": "Median ROIC 21% over 4 years, above the 9.0% required return but not consistently by 10+ points."
+  },
+  "FTNT": {
+   "moat": "narrow",
+   "reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand."
+  },
+  "RMD": {
+   "moat": "narrow",
+   "reason": "Median ROIC 23% over 4 years, above the 9.0% required return but not consistently by 10+ points."
+  },
+  "V": {
+   "moat": "wide",
+   "reason": "ROIC 41% or more in each of the last 4 years (median 45%), at least 10 points above the 8.5% required return."
+  },
+  "FIX": {
+   "moat": "narrow",
+   "reason": "Median ROIC 33% over 4 years, above the 11.0% required return but not consistently by 10+ points."
+  },
+  "MA": {
+   "moat": "wide",
+   "reason": "ROIC 83% or more in each of the last 4 years (median 88%), at least 10 points above the 8.5% required return."
+  },
+  "CTAS": {
+   "moat": "wide",
+   "reason": "ROIC 22% or more in each of the last 4 years (median 26%), at least 10 points above the 8.5% required return."
+  },
+  "DXCM": {
+   "moat": "none",
+   "reason": "Median ROIC 12% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "IDXX": {
+   "moat": "wide",
+   "reason": "ROIC 36% or more in each of the last 4 years (median 40%), at least 10 points above the 9.0% required return."
+  },
+  "VRSN": {
+   "moat": "narrow",
+   "reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand."
+  },
+  "NDAQ": {
+   "moat": "none",
+   "reason": "Median ROIC 9% over 4 years, within 3 points of the 9.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "MCO": {
+   "moat": "narrow",
+   "reason": "Median ROIC 24% over 4 years, above the 9.0% required return but not consistently by 10+ points."
+  },
+  "SPGI": {
+   "moat": "none",
+   "reason": "Median ROIC 9% over 4 years, within 3 points of the 9.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "NFLX": {
+   "moat": "narrow",
+   "reason": "Median ROIC 26% over 4 years, above the 10.0% required return but not consistently by 10+ points."
+  },
+  "CBOE": {
+   "moat": "narrow",
+   "reason": "Median ROIC 16% over 4 years, above the 9.0% required return but not consistently by 10+ points."
+  },
+  "GRMN": {
+   "moat": "narrow",
+   "reason": "Median ROIC 23% over 4 years, above the 9.0% required return but not consistently by 10+ points."
+  },
+  "FDS": {
+   "moat": "narrow",
+   "reason": "Median ROIC 18% over 4 years, above the 9.5% required return but not consistently by 10+ points."
+  },
+  "CRM": {
+   "moat": "none",
+   "reason": "Median ROIC 10% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "HWM": {
+   "moat": "narrow",
+   "reason": "Median ROIC 16% over 4 years, above the 9.5% required return but not consistently by 10+ points."
+  },
+  "ADP": {
+   "moat": "wide",
+   "reason": "ROIC 56% or more in each of the last 4 years (median 68%), at least 10 points above the 8.5% required return."
+  },
+  "AME": {
+   "moat": "narrow",
+   "reason": "Median ROIC 13% over 4 years, above the 9.0% required return but not consistently by 10+ points."
+  },
+  "AXP": {
+   "moat": "narrow",
+   "reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand."
+  },
+  "SHOP": {
+   "moat": "none",
+   "reason": "Median ROIC 9% over 4 years, within 3 points of the 11.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "PYPL": {
+   "moat": "narrow",
+   "reason": "Median ROIC 23% over 4 years, above the 10.0% required return but not consistently by 10+ points."
+  },
+  "XYZ": {
+   "moat": "none",
+   "reason": "Median ROIC 6% over 4 years, within 3 points of the 11.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "ADYEY": {
+   "moat": "narrow",
+   "reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand."
+  },
+  "FISV": {
+   "moat": "short",
+   "reason": "Base growth 2.0% now, 2.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "CRCL": {
+   "moat": "none",
+   "reason": "Median ROIC -4% over 1 years, within 3 points of the 12.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "SPG": {
+   "moat": "short",
+   "reason": "Base growth 4.0% now, 2.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "META": {
+   "moat": "wide",
+   "reason": "ROIC 21% or more in each of the last 4 years (median 29%), at least 10 points above the 9.5% required return."
+  },
+  "TT": {
+   "moat": "wide",
+   "reason": "ROIC 21% or more in each of the last 4 years (median 24%), at least 10 points above the 9.0% required return."
+  },
+  "RL": {
+   "moat": "narrow",
+   "reason": "Median ROIC 22% over 4 years, above the 9.5% required return but not consistently by 10+ points."
+  },
+  "ROST": {
+   "moat": "wide",
+   "reason": "ROIC 28% or more in each of the last 4 years (median 30%), at least 10 points above the 9.0% required return."
+  },
+  "GDDY": {
+   "moat": "narrow",
+   "reason": "Median ROIC 22% over 4 years, above the 10.0% required return but not consistently by 10+ points."
+  },
+  "FAST": {
+   "moat": "wide",
+   "reason": "ROIC 29% or more in each of the last 4 years (median 30%), at least 10 points above the 9.0% required return."
+  },
+  "SYK": {
+   "moat": "none",
+   "reason": "Median ROIC 11% over 4 years, within 3 points of the 8.5% required return (goodwill from acquisitions can depress this)."
+  },
+  "CMG": {
+   "moat": "narrow",
+   "reason": "Median ROIC 22% over 4 years, above the 9.5% required return but not consistently by 10+ points."
+  },
+  "KLAC": {
+   "moat": "wide",
+   "reason": "ROIC 55% or more in each of the last 4 years (median 63%), at least 10 points above the 10.5% required return."
+  },
+  "CME": {
+   "moat": "none",
+   "reason": "Median ROIC 11% over 4 years, within 3 points of the 8.5% required return (goodwill from acquisitions can depress this)."
+  },
+  "STE": {
+   "moat": "none",
+   "reason": "Median ROIC 8% over 4 years, within 3 points of the 8.5% required return (goodwill from acquisitions can depress this)."
+  },
+  "WDAY": {
+   "moat": "none",
+   "reason": "Median ROIC 7% over 4 years, within 3 points of the 10.5% required return (goodwill from acquisitions can depress this)."
+  },
+  "BR": {
+   "moat": "narrow",
+   "reason": "Median ROIC 16% over 4 years, above the 8.5% required return but not consistently by 10+ points."
+  },
+  "MSI": {
+   "moat": "wide",
+   "reason": "ROIC 21% or more in each of the last 4 years (median 32%), at least 10 points above the 9.0% required return."
+  },
+  "BKR": {
+   "moat": "none",
+   "reason": "Median ROIC 13% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "RSG": {
+   "moat": "none",
+   "reason": "Median ROIC 10% over 4 years, within 3 points of the 8.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "WAB": {
+   "moat": "none",
+   "reason": "Median ROIC 8% over 4 years, within 3 points of the 9.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "MRVL": {
+   "moat": "none",
+   "reason": "Median ROIC -0% over 4 years, within 3 points of the 11.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "LULU": {
+   "moat": "short",
+   "reason": "Base growth 1.0% now, 3.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "RDDT": {
+   "moat": "none",
+   "reason": "Median ROIC -23% over 2 years, within 3 points of the 11.5% required return (goodwill from acquisitions can depress this)."
+  },
+  "CF": {
+   "moat": "short",
+   "reason": "Base growth -8.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "EME": {
+   "moat": "wide",
+   "reason": "ROIC 22% or more in each of the last 4 years (median 38%), at least 10 points above the 10.5% required return."
+  },
+  "HST": {
+   "moat": "short",
+   "reason": "Base growth 2.0% now, 2.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "LII": {
+   "moat": "wide",
+   "reason": "ROIC 29% or more in each of the last 4 years (median 37%), at least 10 points above the 9.0% required return."
+  },
+  "NEM": {
+   "moat": "short",
+   "reason": "Base growth 0.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "REGN": {
+   "moat": "narrow",
+   "reason": "Median ROIC 19% over 4 years, above the 9.0% required return but not consistently by 10+ points."
+  },
+  "ZTS": {
+   "moat": "wide",
+   "reason": "ROIC 25% or more in each of the last 4 years (median 27%), at least 10 points above the 8.5% required return."
+  },
+  "MO": {
+   "moat": "short",
+   "reason": "Base growth 0.0% now, 0.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "HAS": {
+   "moat": "none",
+   "reason": "Median ROIC 10% over 4 years, within 3 points of the 9.5% required return (goodwill from acquisitions can depress this)."
+  },
+  "BMY": {
+   "moat": "short",
+   "reason": "Base growth -3.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "NRG": {
+   "moat": "none",
+   "reason": "Median ROIC 12% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "FIS": {
+   "moat": "none",
+   "reason": "Median ROIC 4% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this)."
+  }
+ }
+}

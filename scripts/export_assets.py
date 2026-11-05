@@ -4,6 +4,8 @@ New tickers are added; run after `python model/model.py`. Per-ticker valued_on c
 import json, pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 res = json.load(open(ROOT / "model/results.json"))
+_M = json.load(open(ROOT / "data/moat.json"))["classes"]
+MOAT_NOTE = {k: v.get("about") for k, v in _M.items()}
 path = ROOT / "data/assets.json"
 doc = json.load(open(path))
 by = {a["ticker"]: a for a in doc["assets"]}
@@ -20,10 +22,12 @@ for t, a in res["assets"].items():
         rnd = lambda x, n=3: round(float(x), n)
         e["forecast"] = {k: dict(rows=[dict(t=r["t"], g=rnd(r["g"], 4), rev=rnd(r["rev"]), m=rnd(r["m"], 4), fcf=rnd(r["fcf"]), df=rnd(r["df"], 4), pv=rnd(r["pv"]))
                                        for r in v["rows"]], pv_fcf=rnd(v["pv_fcf"]), tv=rnd(v["tv"]), pv_tv=rnd(v["pv_tv"]), ev=rnd(v["ev"]),
-                                  equity=rnd(v["equity"]), per_share=rnd(v["per_share"], 2)) for k, v in a["detail"].items()}
+                                  equity=rnd(v["equity"]), per_share=rnd(v["per_share"], 2), tv_factor=rnd(v.get("tv_factor", 1.0), 4)) for k, v in a["detail"].items()}
         e["start_margin"] = rnd(a["start_margin"], 4); e["net_cash"] = rnd(a["net_cash"]); e["shares"] = a["shares"]; e["rev"] = a["rev"]
         e["dcf_method"] = a.get("dcf_method"); e["wacc"] = {k: rnd(v, 4) for k, v in a.get("wacc", {}).items()}
         e["fcf_inputs"] = dict(fcf=a["fcf"], sbc=a["sbc"])
+        e["moat"] = a.get("moat"); e["cap_years"] = a.get("cap_years"); e["moat_reason"] = a.get("moat_reason")
+        e["moat_note"] = MOAT_NOTE.get(a.get("moat"))
         e["implied_cap"] = a.get("implied_cap"); e["nopat_margin"] = rnd(a["nopat_margin"], 4) if a.get("nopat_margin") is not None else None
         e["growth_check"] = {k: (None if v is None else dict(forecast=None if v["forecast"] is None else rnd(v["forecast"], 4),
                                                           terminal=None if v["terminal"] is None else rnd(v["terminal"], 4),

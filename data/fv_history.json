@@ -9,6 +9,15 @@
    "bull": 225.09,
    "price": 347.73,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 184.53,
+   "bear": 145.85,
+   "base": 186.38,
+   "bull": 237.92,
+   "price": 349.51,
+   "method": "fcff_re"
   }
  ],
  "MSFT": [
@@ -28,6 +37,15 @@
    "base": 360.21,
    "bull": 483.61,
    "price": 530.14,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 360.04,
+   "bear": 211.63,
+   "base": 382.31,
+   "bull": 527.01,
+   "price": 555.8,
    "method": "fcff_re"
   }
  ],
@@ -49,6 +67,15 @@
    "bull": 328.25,
    "price": 283.82,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 224.43,
+   "bear": 123.44,
+   "base": 232.69,
+   "bull": 355.28,
+   "price": 288.93,
+   "method": "fcff_re"
   }
  ],
  "AMZN": [
@@ -69,6 +96,15 @@
    "bull": 180.15,
    "price": 243.79,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 93.93,
+   "bear": 35.89,
+   "base": 97.13,
+   "bull": 173.0,
+   "price": 266.03,
+   "method": "fcff_re"
   }
  ],
  "QQQ": [
@@ -79,6 +115,15 @@
    "base": 562.21,
    "bull": 756.02,
    "price": 704.4,
+   "method": null
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 536.27,
+   "bear": 346.54,
+   "base": 562.21,
+   "bull": 756.02,
+   "price": 691.95,
    "method": null
   }
  ],
@@ -91,6 +136,15 @@
    "bull": 462.5,
    "price": 366.61,
    "method": null
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 370.0,
+   "bear": 305.25,
+   "base": 379.25,
+   "bull": 462.5,
+   "price": 372.49,
+   "method": null
   }
  ],
  "NVDA": [
@@ -102,6 +156,15 @@
    "bull": 335.33,
    "price": 210.96,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 179.38,
+   "bear": 73.31,
+   "base": 169.31,
+   "bull": 363.68,
+   "price": 200.13,
+   "method": "fcff_re"
   }
  ],
  "AVGO": [
@@ -112,6 +175,15 @@
    "base": 263.73,
    "bull": 446.69,
    "price": 321.68,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 258.76,
+   "bear": 116.7,
+   "base": 265.51,
+   "bull": 454.98,
+   "price": 325.48,
    "method": "fcff_re"
   }
  ],
@@ -133,6 +205,15 @@
    "bull": 1706.87,
    "price": 1373.7,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 1030.56,
+   "bear": 477.98,
+   "base": 1046.81,
+   "bull": 1818.78,
+   "price": 1417.99,
+   "method": "fcff_re"
   }
  ],
  "ADBE": [
@@ -144,6 +225,15 @@
    "bull": 536.2,
    "price": 263.82,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 371.18,
+   "bear": 207.41,
+   "base": 394.03,
+   "bull": 559.73,
+   "price": 248.48,
+   "method": "fcff_re"
   }
  ],
  "APP": [
@@ -154,6 +244,15 @@
    "base": 367.37,
    "bull": 727.21,
    "price": 260.25,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 382.79,
+   "bear": 163.43,
+   "base": 370.69,
+   "bull": 742.1,
+   "price": 271.75,
    "method": "fcff_re"
   }
  ],
@@ -175,6 +274,15 @@
    "bull": 872.58,
    "price": 724.19,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 578.49,
+   "bear": 284.97,
+   "base": 617.24,
+   "bull": 921.9,
+   "price": 701.03,
+   "method": "fcff_re"
   }
  ],
  "APA": [
@@ -185,6 +293,15 @@
    "base": 37.26,
    "bull": 65.67,
    "price": 51.9,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 37.62,
+   "bear": 19.51,
+   "base": 37.26,
+   "bull": 65.67,
+   "price": 44.49,
    "method": "fcff_re"
   }
  ],
@@ -206,6 +323,15 @@
    "bull": 162.79,
    "price": 82.76,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 124.18,
+   "bear": 86.98,
+   "base": 129.06,
+   "bull": 167.8,
+   "price": 89.11,
+   "method": "fcff_re"
   }
  ],
  "INCY": [
@@ -226,6 +352,15 @@
    "bull": 180.15,
    "price": 116.8,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 121.59,
+   "bear": 82.63,
+   "base": 121.89,
+   "bull": 179.27,
+   "price": 122.85,
+   "method": "fcff_re"
   }
  ],
  "MKC": [
@@ -236,6 +371,15 @@
    "base": 65.8,
    "bull": 83.6,
    "price": 48.12,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 54.77,
+   "bear": 36.69,
+   "base": 57.95,
+   "bull": 73.96,
+   "price": 50.48,
    "method": "fcff_re"
   }
  ],
@@ -248,6 +392,15 @@
    "bull": 522.98,
    "price": 289.01,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 367.2,
+   "bear": 223.57,
+   "base": 391.49,
+   "bull": 521.93,
+   "price": 315.88,
+   "method": "fcff_re"
   }
  ],
  "BKNG": [
@@ -258,6 +411,15 @@
    "base": 229.05,
    "bull": 282.9,
    "price": 155.83,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 223.99,
+   "bear": 153.58,
+   "base": 236.35,
+   "bull": 298.7,
+   "price": 170.97,
    "method": "fcff_re"
   }
  ],
@@ -270,6 +432,15 @@
    "bull": 534.24,
    "price": 343.39,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 393.94,
+   "bear": 267.4,
+   "base": 411.29,
+   "bull": 540.36,
+   "price": 356.64,
+   "method": "fcff_re"
   }
  ],
  "ADSK": [
@@ -280,6 +451,15 @@
    "base": 222.38,
    "bull": 291.61,
    "price": 252.2,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 223.52,
+   "bear": 145.92,
+   "base": 233.88,
+   "bull": 314.03,
+   "price": 270.09,
    "method": "fcff_re"
   }
  ],
@@ -292,6 +472,15 @@
    "bull": 133.2,
    "price": 110.37,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 89.4,
+   "bear": 48.96,
+   "base": 96.63,
+   "bull": 132.0,
+   "price": 125.31,
+   "method": "fcff_re"
   }
  ],
  "VEEV": [
@@ -303,6 +492,15 @@
    "bull": 256.25,
    "price": 323.04,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 214.99,
+   "bear": 160.27,
+   "base": 223.3,
+   "bull": 276.28,
+   "price": 310.63,
+   "method": "fcff_re"
   }
  ],
  "MNST": [
@@ -313,6 +511,15 @@
    "base": 25.45,
    "bull": 31.97,
    "price": 46.19,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 25.48,
+   "bear": 17.82,
+   "base": 26.57,
+   "bull": 34.23,
+   "price": 48.75,
    "method": "fcff_re"
   }
  ],
@@ -334,6 +541,15 @@
    "bull": 183.03,
    "price": 187.06,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 136.03,
+   "bear": 89.59,
+   "base": 145.29,
+   "bull": 182.54,
+   "price": 192.69,
+   "method": "fcff_re"
   }
  ],
  "FTNT": [
@@ -353,6 +569,15 @@
    "base": 73.12,
    "bull": 94.61,
    "price": 139.1,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 71.25,
+   "bear": 50.91,
+   "base": 73.52,
+   "bull": 96.08,
+   "price": 129.39,
    "method": "fcff_re"
   }
  ],
@@ -374,6 +599,15 @@
    "bull": 242.26,
    "price": 252.83,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 184.07,
+   "bear": 132.79,
+   "base": 191.79,
+   "bull": 241.68,
+   "price": 240.51,
+   "method": "fcff_re"
   }
  ],
  "V": [
@@ -393,6 +627,15 @@
    "base": 290.44,
    "bull": 347.27,
    "price": 410.54,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 299.01,
+   "bear": 230.55,
+   "base": 308.31,
+   "bull": 378.44,
+   "price": 436.57,
    "method": "fcff_re"
   }
  ],
@@ -414,6 +657,15 @@
    "bull": 1384.42,
    "price": 1326.23,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 828.69,
+   "bear": 343.51,
+   "base": 892.66,
+   "bull": 1396.54,
+   "price": 1091.31,
+   "method": "fcff_re"
   }
  ],
  "MA": [
@@ -434,6 +686,15 @@
    "bull": 611.42,
    "price": 635.7,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 534.17,
+   "bear": 395.16,
+   "base": 560.64,
+   "bull": 676.52,
+   "price": 672.68,
+   "method": "fcff_re"
   }
  ],
  "CTAS": [
@@ -444,6 +705,15 @@
    "base": 103.42,
    "bull": 121.29,
    "price": 224.1,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 102.9,
+   "bear": 74.83,
+   "base": 108.61,
+   "bull": 130.72,
+   "price": 229.03,
    "method": "fcff_re"
   }
  ],
@@ -465,6 +735,15 @@
    "bull": 83.67,
    "price": 79.93,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 55.68,
+   "bear": 33.57,
+   "base": 59.09,
+   "bull": 80.32,
+   "price": 88.48,
+   "method": "fcff_re"
   }
  ],
  "IDXX": [
@@ -475,6 +754,15 @@
    "base": 309.9,
    "bull": 382.94,
    "price": 560.38,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 309.79,
+   "bear": 218.25,
+   "base": 324.31,
+   "bull": 410.82,
+   "price": 698.55,
    "method": "fcff_re"
   }
  ],
@@ -487,6 +775,15 @@
    "bull": 264.08,
    "price": 300.32,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 199.53,
+   "bear": 144.61,
+   "base": 207.79,
+   "bull": 261.27,
+   "price": 318.03,
+   "method": "fcff_re"
   }
  ],
  "NDAQ": [
@@ -498,6 +795,15 @@
    "bull": 96.19,
    "price": 102.56,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 65.21,
+   "bear": 43.85,
+   "base": 68.43,
+   "bull": 89.23,
+   "price": 109.7,
+   "method": "fcff_re"
   }
  ],
  "MCO": [
@@ -508,6 +814,15 @@
    "base": 308.38,
    "bull": 397.58,
    "price": 483.45,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 294.03,
+   "bear": 200.07,
+   "base": 307.56,
+   "bull": 401.16,
+   "price": 528.34,
    "method": "fcff_re"
   }
  ],
@@ -529,6 +844,15 @@
    "bull": 399.61,
    "price": 460.66,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 287.34,
+   "bear": 207.75,
+   "base": 301.06,
+   "bull": 372.43,
+   "price": 481.69,
+   "method": "fcff_re"
   }
  ],
  "NFLX": [
@@ -539,6 +863,15 @@
    "base": 65.76,
    "bull": 87.53,
    "price": 65.85,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 62.66,
+   "bear": 39.21,
+   "base": 66.17,
+   "bull": 89.04,
+   "price": 66.39,
    "method": "fcff_re"
   }
  ],
@@ -560,6 +893,15 @@
    "bull": 432.37,
    "price": 344.28,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 314.29,
+   "bear": 207.02,
+   "base": 330.95,
+   "bull": 433.53,
+   "price": 345.21,
+   "method": "fcff_re"
   }
  ],
  "GRMN": [
@@ -580,6 +922,15 @@
    "bull": 237.09,
    "price": 279.94,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 174.27,
+   "bear": 110.57,
+   "base": 186.59,
+   "bull": 239.01,
+   "price": 289.15,
+   "method": "fcff_re"
   }
  ],
  "FDS": [
@@ -591,6 +942,15 @@
    "bull": 367.07,
    "price": 331.32,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 273.44,
+   "bear": 188.17,
+   "base": 287.23,
+   "bull": 366.86,
+   "price": 342.19,
+   "method": "fcff_re"
   }
  ],
  "CRM": [
@@ -601,6 +961,15 @@
    "base": 248.21,
    "bull": 320.76,
    "price": 248.57,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 220.87,
+   "bear": 138.31,
+   "base": 236.3,
+   "bull": 306.13,
+   "price": 227.11,
    "method": "fcff_re"
   }
  ],
@@ -622,6 +991,15 @@
    "bull": 161.4,
    "price": 205.94,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 104.17,
+   "bear": 47.5,
+   "base": 114.58,
+   "bull": 163.16,
+   "price": 213.56,
+   "method": "fcff_re"
   }
  ],
  "ADP": [
@@ -642,6 +1020,15 @@
    "bull": 314.93,
    "price": 286.08,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 254.49,
+   "bear": 180.56,
+   "base": 266.91,
+   "bull": 334.33,
+   "price": 303.54,
+   "method": "fcff_re"
   }
  ],
  "AME": [
@@ -653,6 +1040,15 @@
    "bull": 232.25,
    "price": 240.03,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 164.66,
+   "bear": 101.42,
+   "base": 174.75,
+   "bull": 234.27,
+   "price": 237.09,
+   "method": "fcff_re"
   }
  ],
  "AXP": [
@@ -663,6 +1059,15 @@
    "base": 343.85,
    "bull": 412.34,
    "price": 319.63,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 322.35,
+   "bear": 225.52,
+   "base": 343.68,
+   "bull": 414.25,
+   "price": 332.59,
    "method": "fcff_re"
   }
  ],
@@ -684,6 +1089,15 @@
    "bull": 104.55,
    "price": 153.03,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 66.38,
+   "bear": 36.86,
+   "base": 69.8,
+   "bull": 102.11,
+   "price": 153.03,
+   "method": "fcff_re"
   }
  ],
  "PYPL": [
@@ -695,6 +1109,15 @@
    "bull": 130.47,
    "price": 57.36,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 88.6,
+   "bear": 47.83,
+   "base": 96.5,
+   "bull": 129.98,
+   "price": 60.2,
+   "method": "fcff_re"
   }
  ],
  "XYZ": [
@@ -705,6 +1128,15 @@
    "base": 121.52,
    "bull": 170.31,
    "price": 75.86,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 112.42,
+   "bear": 66.22,
+   "base": 118.6,
+   "bull": 166.28,
+   "price": 87.63,
    "method": "fcff_re"
   }
  ],
@@ -726,6 +1158,15 @@
    "bull": 15.4,
    "price": 9.42,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 10.62,
+   "bear": 5.96,
+   "base": 11.33,
+   "bull": 15.85,
+   "price": 9.58,
+   "method": "fcff_re"
   }
  ],
  "FISV": [
@@ -736,6 +1177,15 @@
    "base": 64.92,
    "bull": 89.3,
    "price": 50.39,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 60.25,
+   "bear": 33.09,
+   "base": 64.92,
+   "bull": 89.3,
+   "price": 62.05,
    "method": "fcff_re"
   }
  ],
@@ -748,6 +1198,15 @@
    "bull": 112.55,
    "price": 71.61,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 48.22,
+   "bear": 16.35,
+   "base": 42.08,
+   "bull": 111.36,
+   "price": 76.12,
+   "method": "fcff_re"
   }
  ],
  "SPG": [
@@ -758,6 +1217,15 @@
    "base": 122.42,
    "bull": 153.33,
    "price": 217.75,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 113.41,
+   "bear": 71.79,
+   "base": 122.42,
+   "bull": 153.33,
+   "price": 228.5,
    "method": "fcff_re"
   }
  ],
@@ -770,6 +1238,15 @@
    "bull": 952.3,
    "price": 614.99,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 589.66,
+   "bear": 244.13,
+   "base": 617.23,
+   "bull": 1039.04,
+   "price": 630.0,
+   "method": "fcff_re"
   }
  ],
  "TT": [
@@ -780,6 +1257,15 @@
    "base": 373.03,
    "bull": 511.17,
    "price": 410.0,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 370.41,
+   "bear": 218.02,
+   "base": 390.47,
+   "bull": 548.85,
+   "price": 410.48,
    "method": "fcff_re"
   }
  ],
@@ -792,6 +1278,15 @@
    "bull": 342.25,
    "price": 392.87,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 232.62,
+   "bear": 140.7,
+   "base": 244.72,
+   "bull": 340.26,
+   "price": 412.06,
+   "method": "fcff_re"
   }
  ],
  "ROST": [
@@ -802,6 +1297,15 @@
    "base": 160.43,
    "bull": 192.62,
    "price": 228.28,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 156.16,
+   "bear": 109.99,
+   "base": 165.75,
+   "bull": 201.43,
+   "price": 245.74,
    "method": "fcff_re"
   }
  ],
@@ -823,6 +1327,15 @@
    "bull": 208.23,
    "price": 116.61,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 147.51,
+   "bear": 92.72,
+   "base": 156.42,
+   "bull": 207.4,
+   "price": 118.32,
+   "method": "fcff_re"
   }
  ],
  "FAST": [
@@ -833,6 +1346,15 @@
    "base": 22.56,
    "bull": 28.05,
    "price": 51.91,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 22.16,
+   "bear": 14.51,
+   "base": 23.58,
+   "bull": 30.06,
+   "price": 53.21,
    "method": "fcff_re"
   }
  ],
@@ -854,6 +1376,15 @@
    "bull": 366.86,
    "price": 306.81,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 257.48,
+   "bear": 179.49,
+   "base": 272.83,
+   "bull": 336.11,
+   "price": 339.65,
+   "method": "fcff_re"
   }
  ],
  "CMG": [
@@ -864,6 +1395,15 @@
    "base": 20.74,
    "bull": 28.24,
    "price": 31.89,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 19.3,
+   "bear": 10.76,
+   "base": 20.73,
+   "bull": 28.56,
+   "price": 35.2,
    "method": "fcff_re"
   }
  ],
@@ -876,6 +1416,15 @@
    "bull": 110.23,
    "price": 157.91,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 73.79,
+   "bear": 34.86,
+   "base": 79.17,
+   "bull": 118.76,
+   "price": 149.79,
+   "method": "fcff_re"
   }
  ],
  "CME": [
@@ -886,6 +1435,15 @@
    "base": 240.63,
    "bull": 283.62,
    "price": 303.14,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 214.36,
+   "bear": 170.03,
+   "base": 221.98,
+   "bull": 261.79,
+   "price": 308.27,
    "method": "fcff_re"
   }
  ],
@@ -898,6 +1456,15 @@
    "bull": 249.95,
    "price": 227.12,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 170.38,
+   "bear": 116.36,
+   "base": 179.21,
+   "bull": 229.35,
+   "price": 247.91,
+   "method": "fcff_re"
   }
  ],
  "WDAY": [
@@ -908,6 +1475,15 @@
    "base": 130.53,
    "bull": 192.43,
    "price": 197.82,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 122.14,
+   "bear": 73.54,
+   "base": 125.86,
+   "bull": 185.72,
+   "price": 201.84,
    "method": "fcff_re"
   }
  ],
@@ -920,6 +1496,15 @@
    "bull": 249.31,
    "price": 178.82,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 183.61,
+   "bear": 127.93,
+   "base": 191.25,
+   "bull": 248.02,
+   "price": 189.29,
+   "method": "fcff_re"
   }
  ],
  "MSI": [
@@ -931,6 +1516,15 @@
    "bull": 378.45,
    "price": 491.53,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 301.5,
+   "bear": 201.72,
+   "base": 318.35,
+   "bull": 409.06,
+   "price": 496.99,
+   "method": "fcff_re"
   }
  ],
  "BKR": [
@@ -941,6 +1535,15 @@
    "base": 56.21,
    "bull": 80.17,
    "price": 55.23,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 47.66,
+   "bear": 19.87,
+   "base": 53.02,
+   "bull": 75.95,
+   "price": 49.87,
    "method": "fcff_re"
   }
  ],
@@ -962,6 +1565,15 @@
    "bull": 218.88,
    "price": 245.97,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 147.59,
+   "bear": 103.76,
+   "base": 155.35,
+   "bull": 193.94,
+   "price": 245.41,
+   "method": "fcff_re"
   }
  ],
  "WAB": [
@@ -972,6 +1584,15 @@
    "base": 200.28,
    "bull": 263.55,
    "price": 279.6,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 173.15,
+   "bear": 105.26,
+   "base": 185.3,
+   "bull": 244.6,
+   "price": 294.97,
    "method": "fcff_re"
   }
  ],
@@ -984,6 +1605,15 @@
    "bull": 283.21,
    "price": 196.4,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 114.46,
+   "bear": 22.88,
+   "base": 105.19,
+   "bull": 275.0,
+   "price": 159.8,
+   "method": "fcff_re"
   }
  ],
  "LULU": [
@@ -994,6 +1624,15 @@
    "base": 167.94,
    "bull": 251.09,
    "price": 107.24,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 164.45,
+   "bear": 100.89,
+   "base": 167.94,
+   "bull": 251.09,
+   "price": 112.06,
    "method": "fcff_re"
   }
  ],
@@ -1015,6 +1654,15 @@
    "bull": 244.36,
    "price": 90.97,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 129.79,
+   "bear": 52.88,
+   "base": 131.94,
+   "bull": 239.78,
+   "price": 101.89,
+   "method": "fcff_re"
   }
  ],
  "CF": [
@@ -1025,6 +1673,15 @@
    "base": 95.78,
    "bull": 171.82,
    "price": 123.3,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 96.7,
+   "bear": 48.18,
+   "base": 95.78,
+   "bull": 171.82,
+   "price": 111.68,
    "method": "fcff_re"
   }
  ],
@@ -1037,6 +1694,15 @@
    "bull": 874.83,
    "price": 679.55,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 608.02,
+   "bear": 292.92,
+   "base": 668.53,
+   "bull": 929.39,
+   "price": 639.25,
+   "method": "fcff_re"
   }
  ],
  "HST": [
@@ -1047,6 +1713,15 @@
    "base": 21.25,
    "bull": 27.46,
    "price": 25.3,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 19.5,
+   "bear": 11.28,
+   "base": 21.25,
+   "bull": 27.46,
+   "price": 26.11,
    "method": "fcff_re"
   }
  ],
@@ -1059,6 +1734,15 @@
    "bull": 553.27,
    "price": 344.08,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 411.06,
+   "bear": 251.31,
+   "base": 435.95,
+   "bull": 588.47,
+   "price": 358.96,
+   "method": "fcff_re"
   }
  ],
  "NEM": [
@@ -1069,6 +1753,15 @@
    "base": 92.78,
    "bull": 143.78,
    "price": 106.61,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 86.11,
+   "bear": 36.55,
+   "base": 92.78,
+   "bull": 143.78,
+   "price": 118.11,
    "method": "fcff_re"
   }
  ],
@@ -1090,6 +1783,15 @@
    "bull": 1161.56,
    "price": 973.36,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 742.68,
+   "bear": 383.85,
+   "base": 789.1,
+   "bull": 1164.86,
+   "price": 930.67,
+   "method": "fcff_re"
   }
  ],
  "ZTS": [
@@ -1100,6 +1802,15 @@
    "base": 87.71,
    "bull": 119.8,
    "price": 79.72,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 86.75,
+   "bear": 51.61,
+   "base": 91.31,
+   "bull": 128.07,
+   "price": 89.2,
    "method": "fcff_re"
   }
  ],
@@ -1112,6 +1823,15 @@
    "bull": 86.08,
    "price": 78.03,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 67.7,
+   "bear": 49.87,
+   "base": 71.03,
+   "bull": 86.08,
+   "price": 78.01,
+   "method": "fcff_re"
   }
  ],
  "HAS": [
@@ -1122,6 +1842,15 @@
    "base": 124.8,
    "bull": 169.49,
    "price": 119.09,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 108.76,
+   "bear": 60.09,
+   "base": 117.51,
+   "bull": 159.87,
+   "price": 121.58,
    "method": "fcff_re"
   }
  ],
@@ -1134,6 +1863,15 @@
    "bull": 96.34,
    "price": 62.48,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 56.77,
+   "bear": 29.93,
+   "base": 57.04,
+   "bull": 96.34,
+   "price": 64.19,
+   "method": "fcff_re"
   }
  ],
  "NRG": [
@@ -1145,6 +1883,15 @@
    "bull": 192.18,
    "price": 96.06,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 82.08,
+   "bear": 0.04,
+   "base": 92.62,
+   "bull": 178.79,
+   "price": 83.25,
+   "method": "fcff_re"
   }
  ],
  "FIS": [
@@ -1155,6 +1902,15 @@
    "base": 51.55,
    "bull": 80.71,
    "price": 38.55,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-05",
+   "fv": 41.29,
+   "bear": 8.34,
+   "base": 47.44,
+   "bull": 75.34,
+   "price": 29.76,
    "method": "fcff_re"
   }
  ]
