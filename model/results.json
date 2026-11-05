@@ -8,6 +8,28 @@
  },
  "assets": {
   "AAPL": {
+   "implied_cap": 68,
+   "nopat_margin": 0.2698335499962755,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3627866685025869,
+     "terminal": 0.17882812804695555,
+     "reinvest_share": 0.11557322153507413,
+     "flag": null
+    },
+    "base": {
+     "forecast": 1.064859028808309,
+     "terminal": 0.3806376105533946,
+     "reinvest_share": 0.05488070506927267,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.007596174185407318,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -453,6 +475,28 @@
    "sbc": 13.706
   },
   "MSFT": {
+   "implied_cap": 21,
+   "nopat_margin": 0.37564997182368554,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.12889612481899393,
+     "terminal": 0.04990577471851243,
+     "reinvest_share": 0.5182760134838782,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.2528259579222075,
+     "terminal": 0.07946590093201551,
+     "reinvest_share": 0.3548947031120263,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.3973304201563368,
+     "terminal": 0.12012402110383619,
+     "reinvest_share": 0.2587613784712473,
+     "flag": null
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -898,6 +942,28 @@
    "sbc": 12.556
   },
   "GOOGL": {
+   "implied_cap": 17,
+   "nopat_margin": 0.2623473100715924,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1304559615945607,
+     "terminal": 0.05220932430647138,
+     "reinvest_share": 0.5633932063887162,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.2787240657581322,
+     "terminal": 0.09994514659496917,
+     "reinvest_share": 0.35273071582750787,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.6465165725586027,
+     "terminal": 0.4198141645731237,
+     "reinvest_share": 0.1751265390206549,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -1343,6 +1409,28 @@
    "sbc": 30.409
   },
   "AMZN": {
+   "implied_cap": 45,
+   "nopat_margin": 0.08667665610301789,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.09621915096764849,
+     "terminal": 0.07202370649947476,
+     "reinvest_share": 0.5825543394199983,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.36043799397102494,
+     "terminal": null,
+     "reinvest_share": 0.21415452720151032,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.15504215870529336,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -1794,6 +1882,28 @@
    "sbc": 19.873
   },
   "NVDA": {
+   "implied_cap": 16,
+   "nopat_margin": 0.512640494030694,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1424612433006744,
+     "terminal": 0.0667797293784535,
+     "reinvest_share": 0.35004034019071245,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.5362396777682977,
+     "terminal": 0.13943374731243957,
+     "reinvest_share": 0.18509288976618393,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 3.2346882088282976,
+     "terminal": 1.0756462477242472,
+     "reinvest_share": 0.042454451721188856,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -2239,6 +2349,28 @@
    "sbc": 7.0
   },
   "AVGO": {
+   "implied_cap": 15,
+   "nopat_margin": 0.3036580211936701,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.09742691956345682,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3253329913537154,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4769599760344185,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -2684,6 +2816,28 @@
    "sbc": 8.9
   },
   "LLY": {
+   "implied_cap": 16,
+   "nopat_margin": 0.3612962457233158,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.18760170273120752,
+     "terminal": 0.1010640481546021,
+     "reinvest_share": 0.2658141229155513,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.8002971052097122,
+     "terminal": 0.3075061743171037,
+     "reinvest_share": 0.11724498232847663,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.03607056673001553,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -3129,6 +3283,28 @@
    "sbc": 0.698
   },
   "ADBE": {
+   "implied_cap": 1,
+   "nopat_margin": 0.3003458286002777,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.23434030588578897,
+     "reinvest_share": 0.06113424424330168,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.09693024929663602,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.20965377970494012,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -3580,6 +3756,28 @@
    "sbc": 2.1
   },
   "APP": {
+   "implied_cap": 8,
+   "nopat_margin": 0.6575528990093814,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.24054858629088752,
+     "terminal": 0.09069894441028688,
+     "reinvest_share": 0.23849558471337692,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.9766363560785192,
+     "terminal": 0.20233388614068015,
+     "reinvest_share": 0.11394581487630275,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 7.661717002127782,
+     "terminal": 1.4617461090985688,
+     "reinvest_share": 0.019125717305996413,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -4025,6 +4223,28 @@
    "sbc": 0.4
   },
   "FICO": {
+   "implied_cap": 30,
+   "nopat_margin": 0.3816659277933405,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.22458212939133956,
+     "terminal": 0.2640221987492597,
+     "reinvest_share": 0.07756387333588247,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.09529698186303329,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.18602613588949238,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -4476,6 +4696,28 @@
    "sbc": 0.2
   },
   "APA": {
+   "implied_cap": null,
+   "nopat_margin": 0.20039237668161436,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.0631696703604119,
+     "reinvest_share": 0.2483912081391066,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 0.17094127490491526,
+     "reinvest_share": 0.06566481409384335,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.12864892952315005,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -4921,6 +5163,28 @@
    "sbc": 0.15
   },
   "DECK": {
+   "implied_cap": 1,
+   "nopat_margin": 0.17816308109064274,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.08297661115346071,
+     "terminal": 0.16189296497471964,
+     "reinvest_share": 0.12124984465447443,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.014509417154421401,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10866284792745232,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -5372,6 +5636,28 @@
    "sbc": 0.046
   },
   "INCY": {
+   "implied_cap": 1,
+   "nopat_margin": 0.20633226368258875,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.19837060011166943,
+     "reinvest_share": 0.016144638473338892,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.21092245905042217,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.45008048345172147,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -5823,6 +6109,28 @@
    "sbc": 0.263
   },
   "MKC": {
+   "implied_cap": 1,
+   "nopat_margin": 0.1254672163501601,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.6697084155854566,
+     "terminal": 0.577240138920033,
+     "reinvest_share": 0.022257879678095095,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.14035425377236033,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.24046136841098073,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -6268,6 +6576,28 @@
    "sbc": 0.05
   },
   "EXPE": {
+   "implied_cap": 1,
+   "nopat_margin": 0.12038688658114438,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.286493387721043,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.612816690281959,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.8193370866333507,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -6719,6 +7049,28 @@
    "sbc": 0.412
   },
   "BKNG": {
+   "implied_cap": 1,
+   "nopat_margin": 0.2724218895122042,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10559465226716752,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.22423496364207401,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.28598433183805816,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -7170,6 +7522,28 @@
    "sbc": 0.601
   },
   "INTU": {
+   "implied_cap": 6,
+   "nopat_margin": 0.21887914957105556,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.028178147997120716,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.21833086517174732,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3752096159751461,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -7615,6 +7989,28 @@
    "sbc": 2.056
   },
   "ADSK": {
+   "implied_cap": 19,
+   "nopat_margin": 0.19418817651956705,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.24313578085653254,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.45691164128845696,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.634357050182388,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -8060,6 +8456,28 @@
    "sbc": 0.706
   },
   "TPR": {
+   "implied_cap": 33,
+   "nopat_margin": 0.19612303540641163,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.08105818165701999,
+     "reinvest_share": 0.22164992666583305,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": 0.5712616092909704,
+     "terminal": 0.23931039969530532,
+     "reinvest_share": 0.06614276741627141,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.05958699550310822,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -8505,6 +8923,28 @@
    "sbc": 0.1045
   },
   "VEEV": {
+   "implied_cap": 36,
+   "nopat_margin": 0.22082486806448576,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.31128999666448076,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.49988983748391985,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6170217422083674,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -8956,6 +9396,28 @@
    "sbc": 0.495
   },
   "MNST": {
+   "implied_cap": 61,
+   "nopat_margin": 0.2245991731955141,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1923789731559507,
+     "terminal": 0.12589873146914352,
+     "reinvest_share": 0.17423431042665838,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.9457847500897861,
+     "terminal": 0.38460940593630116,
+     "reinvest_share": 0.06431987646428532,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.011736910286755189,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -9407,6 +9869,28 @@
    "sbc": 0.136
   },
   "ALLE": {
+   "implied_cap": 43,
+   "nopat_margin": 0.17159147345905149,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.14655745165948048,
+     "terminal": 0.18278563017521737,
+     "reinvest_share": 0.10170952868464762,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.015497298869509386,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.08862048923536514,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -9852,6 +10336,28 @@
    "sbc": 0.03
   },
   "FTNT": {
+   "implied_cap": 57,
+   "nopat_margin": 0.25140508265192074,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.08303988549101159,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2132058938587917,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3150686995920455,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -10297,6 +10803,28 @@
    "sbc": 0.304
   },
   "RMD": {
+   "implied_cap": 56,
+   "nopat_margin": 0.26668410736607767,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.144927503527749,
+     "terminal": 0.15312152613836472,
+     "reinvest_share": 0.13529414817733776,
+     "flag": null
+    },
+    "base": {
+     "forecast": 3.346465875936924,
+     "terminal": 1.882697427150099,
+     "reinvest_share": 0.013255965654590992,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.04999846367867287,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -10742,6 +11270,28 @@
    "sbc": 0.112
   },
   "V": {
+   "implied_cap": 29,
+   "nopat_margin": 0.5556843,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.2283113912752866,
+     "terminal": 0.1053527013528792,
+     "reinvest_share": 0.22245908004326514,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.4223815426188956,
+     "terminal": 0.15122661049871386,
+     "reinvest_share": 0.162519847337697,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.6212431074249682,
+     "terminal": 0.19331417301860604,
+     "reinvest_share": 0.13179121062973737,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -11193,6 +11743,28 @@
    "sbc": 0.928
   },
   "FIX": {
+   "implied_cap": 21,
+   "nopat_margin": 0.1119127023357656,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.034613770613280984,
+     "terminal": 0.06733991296010217,
+     "reinvest_share": 0.29066180985354834,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 1.0580747311831398,
+     "terminal": 0.24228382728239006,
+     "reinvest_share": 0.08329264386892936,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.07205452007999011,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -11638,6 +12210,28 @@
    "sbc": 0.037
   },
   "MA": {
+   "implied_cap": 20,
+   "nopat_margin": 0.4784622609862463,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.4749423161054753,
+     "terminal": 0.21243773426413065,
+     "reinvest_share": 0.11510680061463938,
+     "flag": null
+    },
+    "base": {
+     "forecast": 1.7354683305473275,
+     "terminal": 0.7335598660570603,
+     "reinvest_share": 0.0439054245108105,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 11.951575738472739,
+     "terminal": null,
+     "reinvest_share": 0.007316108483559738,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -12089,6 +12683,28 @@
    "sbc": 0.637
   },
   "CTAS": {
+   "implied_cap": 81,
+   "nopat_margin": 0.18618401224846226,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.16959968169475506,
+     "terminal": 0.11981259523591271,
+     "reinvest_share": 0.19763608866167048,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.5085130910338237,
+     "terminal": 0.24694141174334405,
+     "reinvest_share": 0.1084745498009884,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 1.0468937456016072,
+     "terminal": 0.5260025789196472,
+     "reinvest_share": 0.06269282524778313,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -12540,6 +13156,28 @@
    "sbc": 0.128
   },
   "DXCM": {
+   "implied_cap": 26,
+   "nopat_margin": 0.15353131703131703,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10680412309892635,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.37589415452140545,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6006346579601948,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -12985,6 +13623,28 @@
    "sbc": 0.154
   },
   "IDXX": {
+   "implied_cap": 69,
+   "nopat_margin": 0.2528113703039848,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.43556739904262815,
+     "terminal": 0.24183724141354662,
+     "reinvest_share": 0.07695483592686253,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.02019733838141453,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.08728560654346906,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -13430,6 +14090,28 @@
    "sbc": 0.063
   },
   "VRSN": {
+   "implied_cap": 62,
+   "nopat_margin": 0.5169890136424,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.05083769418344895,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.12934069391459158,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.17827849522609163,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -13881,6 +14563,28 @@
    "sbc": 0.077
   },
   "NDAQ": {
+   "implied_cap": 36,
+   "nopat_margin": 0.2355846042120552,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.585689169664232,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.7249527043181234,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.8334382451764485,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -14326,6 +15030,28 @@
    "sbc": 0.177
   },
   "MCO": {
+   "implied_cap": 75,
+   "nopat_margin": 0.3498782067893237,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3198623912505042,
+     "terminal": 0.24803710832141332,
+     "reinvest_share": 0.0769124772091541,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.01614228370272201,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.08876484232729857,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -14771,6 +15497,28 @@
    "sbc": 0.233
   },
   "SPGI": {
+   "implied_cap": 54,
+   "nopat_margin": 0.3113472222222222,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.037536387785887165,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.14330609248131632,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.22505060225058388,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -15216,6 +15964,28 @@
    "sbc": 0.192
   },
   "NFLX": {
+   "implied_cap": 14,
+   "nopat_margin": 0.2459858364099305,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3608851220413479,
+     "terminal": 0.19451726455902152,
+     "reinvest_share": 0.11618219053102745,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.08978921215308272,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.23167384219785017,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -15661,6 +16431,28 @@
    "sbc": 0.54
   },
   "CBOE": {
+   "implied_cap": 1,
+   "nopat_margin": 0.2296426753213695,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4894587019794483,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6090481236078602,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.7104253295529385,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -16106,6 +16898,28 @@
    "sbc": 0.055
   },
   "GRMN": {
+   "implied_cap": 36,
+   "nopat_margin": 0.21594690235440692,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0991609822426746,
+     "terminal": 0.0818639294056153,
+     "reinvest_share": 0.29372655386725666,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.4650831983897163,
+     "terminal": 0.20806616855916296,
+     "reinvest_share": 0.13865017331969912,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 1.3729701389608733,
+     "terminal": 0.9078125446030765,
+     "reinvest_share": 0.05792534542861513,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -16551,6 +17365,28 @@
    "sbc": 0.1745
   },
   "FDS": {
+   "implied_cap": 28,
+   "nopat_margin": 0.23206998670573642,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 1.5136667680166165,
+     "reinvest_share": -0.016899382211132394,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.15701874999501897,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.265611713059617,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -17002,6 +17838,28 @@
    "sbc": 0.084
   },
   "CRM": {
+   "implied_cap": 14,
+   "nopat_margin": 0.16706624924744132,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.40292356377312954,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.650121030387991,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.8039232994444137,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -17447,6 +18305,28 @@
    "sbc": 3.665
   },
   "HWM": {
+   "implied_cap": 30,
+   "nopat_margin": 0.2090765874939409,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1258465531994842,
+     "terminal": 0.09844517898779624,
+     "reinvest_share": 0.21172917721195106,
+     "flag": null
+    },
+    "base": {
+     "forecast": 4.974508376608271,
+     "terminal": 1.689003316982338,
+     "reinvest_share": 0.01570553202516187,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10919872224655304,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -17898,6 +18778,28 @@
    "sbc": 0.094
   },
   "ADP": {
+   "implied_cap": 26,
+   "nopat_margin": 0.20274975623536273,
+   "growth_check": {
+    "bear": {
+     "forecast": 1.9523443063632238,
+     "terminal": 0.7889203230053656,
+     "reinvest_share": 0.011320399956684527,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1099776619380182,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.19337150841431008,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -18349,6 +19251,28 @@
    "sbc": 0.251
   },
   "AME": {
+   "implied_cap": 29,
+   "nopat_margin": 0.21320052840679704,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.8003888660279004,
+     "terminal": 0.40634050402023003,
+     "reinvest_share": 0.030736820464794406,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.08339599363172939,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.16369478600976226,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -18794,6 +19718,13 @@
    "sbc": 0.049
   },
   "AXP": {
+   "implied_cap": 10,
+   "nopat_margin": null,
+   "growth_check": {
+    "bear": null,
+    "base": null,
+    "bull": null
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -19245,6 +20176,28 @@
    "sbc": 0.0
   },
   "SHOP": {
+   "implied_cap": 25,
+   "nopat_margin": 0.13375735548632744,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.05141763464145403,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.38120185949009383,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.5874120097579818,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -19690,6 +20643,28 @@
    "sbc": 0.515
   },
   "PYPL": {
+   "implied_cap": 1,
+   "nopat_margin": 0.1600349692511757,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.10453542136689849,
+     "reinvest_share": 0.179375507726145,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.04223690934356788,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.17282784060737705,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -20135,6 +21110,28 @@
    "sbc": 0.977
   },
   "XYZ": {
+   "implied_cap": 1,
+   "nopat_margin": 0.09945013663277312,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.9836774330116551,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.4865751648774168,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.8398402306758495,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -20580,6 +21577,28 @@
    "sbc": 1.201
   },
   "ADYEY": {
+   "implied_cap": 9,
+   "nopat_margin": 0.31891138567159966,
+   "growth_check": {
+    "bear": {
+     "forecast": 1.683335922120574,
+     "terminal": 0.42158648658745224,
+     "reinvest_share": 0.03689538557405506,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.12341987310253022,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.23546659626349498,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -21025,6 +22044,28 @@
    "sbc": 0.046
   },
   "FISV": {
+   "implied_cap": null,
+   "nopat_margin": 0.2231557589770207,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.17777878031417332,
+     "reinvest_share": 0.10427229532357522,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 4.039452140201665,
+     "reinvest_share": -0.002160357281119027,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.07566307626788751,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -21470,6 +22511,13 @@
    "sbc": 0.377
   },
   "CRCL": {
+   "implied_cap": 53,
+   "nopat_margin": null,
+   "growth_check": {
+    "bear": null,
+    "base": null,
+    "bull": null
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -21915,6 +22963,28 @@
    "sbc": 0.224
   },
   "SPG": {
+   "implied_cap": 81,
+   "nopat_margin": 0.48894424311081536,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.11740483458947205,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.21555225333248326,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2661792546110293,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -22366,6 +23436,28 @@
    "sbc": 0.04
   },
   "META": {
+   "implied_cap": 13,
+   "nopat_margin": 0.3522217688564235,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.0982583152323567,
+     "terminal": 0.039585951738062175,
+     "reinvest_share": 0.6798790470479171,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.2075286997297115,
+     "terminal": 0.06181882733375793,
+     "reinvest_share": 0.47373948452077064,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.36666094877514394,
+     "terminal": 0.1068100738490563,
+     "reinvest_share": 0.3154723674733422,
+     "flag": null
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -22817,6 +23909,28 @@
    "sbc": 26.94
   },
   "TT": {
+   "implied_cap": 17,
+   "nopat_margin": 0.15257871015247235,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.2532230400964685,
+     "terminal": 0.15379152188366296,
+     "reinvest_share": 0.11502197264963342,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.04447929516344833,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.15628024091020296,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -23262,6 +24376,28 @@
    "sbc": 0.1
   },
   "RL": {
+   "implied_cap": 81,
+   "nopat_margin": 0.1263006962844291,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.03554851133910402,
+     "terminal": 0.07771233429342578,
+     "reinvest_share": 0.283018917904577,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.4167424264755984,
+     "terminal": 0.29701486044930914,
+     "reinvest_share": 0.09066709160553865,
+     "flag": null
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.04266397418287843,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -23713,6 +24849,28 @@
    "sbc": 0.12
   },
   "ROST": {
+   "implied_cap": 56,
+   "nopat_margin": 0.09044135223226824,
+   "growth_check": {
+    "bear": {
+     "forecast": 3.347781468719585,
+     "terminal": 0.501255628153569,
+     "reinvest_share": 0.008700153777771167,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1725578213290969,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2657607330355133,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -24158,6 +25316,28 @@
    "sbc": 0.2
   },
   "GDDY": {
+   "implied_cap": 1,
+   "nopat_margin": 0.17934438811577225,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.32804108874614263,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.5955767938087747,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.7345199787575286,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -24603,6 +25783,28 @@
    "sbc": 0.29
   },
   "FAST": {
+   "implied_cap": 81,
+   "nopat_margin": 0.15344576550210354,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1127536330835585,
+     "terminal": 0.08915612668307213,
+     "reinvest_share": 0.25831729582184243,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.4022368387053645,
+     "terminal": 0.16659140461743394,
+     "reinvest_share": 0.1512361684309566,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 1.0718559462152613,
+     "terminal": 0.47788941192578926,
+     "reinvest_share": 0.06789303874889914,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -25048,6 +26250,28 @@
    "sbc": 0.01
   },
   "SYK": {
+   "implied_cap": 16,
+   "nopat_margin": 0.16114030896639595,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.05655464135445573,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.21239509016353544,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3188257603852623,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -25499,6 +26723,28 @@
    "sbc": 0.256
   },
   "CMG": {
+   "implied_cap": 34,
+   "nopat_margin": 0.12658531842546134,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.1284605393153699,
+     "terminal": 0.08650007972690286,
+     "reinvest_share": 0.26092851475679,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.661989184083413,
+     "terminal": 0.27315891065035763,
+     "reinvest_share": 0.09740924416174293,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.004603676255674562,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -25950,6 +27196,28 @@
    "sbc": 0.11
   },
   "KLAC": {
+   "implied_cap": 42,
+   "nopat_margin": 0.358502110096148,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.08236814848393204,
+     "terminal": 0.08008953942379528,
+     "reinvest_share": 0.29867623990502895,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.5999420484390439,
+     "terminal": 0.21386941918061,
+     "reinvest_share": 0.13409439349366908,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": 2.9984910025574285,
+     "terminal": 4.700659237422634,
+     "reinvest_share": 0.03428850283043144,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -26401,6 +27669,28 @@
    "sbc": 0.32
   },
   "CME": {
+   "implied_cap": 47,
+   "nopat_margin": 0.49620702082630436,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.15092167543050744,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.21586709818043065,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2662681180762631,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -26852,6 +28142,28 @@
    "sbc": 0.1
   },
   "STE": {
+   "implied_cap": 25,
+   "nopat_margin": 0.1453194966222477,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.3194555841879751,
+     "terminal": 0.20675863276237136,
+     "reinvest_share": 0.09117453265457552,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.07880360012770338,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.19544594884208275,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -27303,6 +28615,28 @@
    "sbc": 0.06
   },
   "WDAY": {
+   "implied_cap": 38,
+   "nopat_margin": 0.08576214405360134,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.49474020830996057,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.987935651995183,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.4937973291791231,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -27754,6 +29088,28 @@
    "sbc": 1.65
   },
   "BR": {
+   "implied_cap": 6,
+   "nopat_margin": 0.13568210999358016,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.07317047844485469,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.25415839326529044,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.3781278156441572,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -28205,6 +29561,28 @@
    "sbc": 0.09
   },
   "MSI": {
+   "implied_cap": 54,
+   "nopat_margin": 0.20010357815442562,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 2.9747839015837023,
+     "reinvest_share": -0.008966206346197773,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.13330771548055434,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.218621822242572,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -28650,6 +30028,28 @@
    "sbc": 0.35
   },
   "BKR": {
+   "implied_cap": 11,
+   "nopat_margin": 0.09619406483251,
+   "growth_check": {
+    "bear": {
+     "forecast": 1.4043011764744313,
+     "terminal": 0.399701974899943,
+     "reinvest_share": 0.013962705056248253,
+     "flag": "high"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.24154022466997885,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.42061337010144934,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -29095,6 +30495,28 @@
    "sbc": 0.21
   },
   "RSG": {
+   "implied_cap": 81,
+   "nopat_margin": 0.15217407027906696,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.048354361779400834,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1833518197802121,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2663826215863243,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -29540,6 +30962,28 @@
    "sbc": 0.05
   },
   "WAB": {
+   "implied_cap": 45,
+   "nopat_margin": 0.1204217784543745,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10844610119318027,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.34704077354906915,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.4533581996853676,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -29985,6 +31429,28 @@
    "sbc": 0.1
   },
   "MRVL": {
+   "implied_cap": 17,
+   "nopat_margin": 0.14046127937910333,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10928838283978941,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6361141446638023,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -1.0566648508975713,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -30430,6 +31896,28 @@
    "sbc": 0.83
   },
   "LULU": {
+   "implied_cap": null,
+   "nopat_margin": 0.14136658530434312,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.08543525182479887,
+     "reinvest_share": 0.2712315268710902,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": 0.22317504258013918,
+     "terminal": 0.3109258003156137,
+     "reinvest_share": 0.10066472255275305,
+     "flag": null
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.07754467944647106,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -30881,6 +32369,28 @@
    "sbc": 0.09
   },
   "RDDT": {
+   "implied_cap": 6,
+   "nopat_margin": 0.17057224815732625,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1378737902216947,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6297124754489275,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.9511685819953697,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -31332,6 +32842,28 @@
    "sbc": 0.386
   },
   "CF": {
+   "implied_cap": null,
+   "nopat_margin": 0.2682100508187465,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.055108974418163745,
+     "reinvest_share": 0.3788629079219812,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 0.12976419729381733,
+     "reinvest_share": 0.18595871503784944,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": 0.4204340002860712,
+     "terminal": 4.008919614428308,
+     "reinvest_share": 0.03599774740962685,
+     "flag": null
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -31783,6 +33315,28 @@
    "sbc": 0.04
   },
   "EME": {
+   "implied_cap": 15,
+   "nopat_margin": 0.06833228798860642,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.07674851022383239,
+     "terminal": 0.09512101295936914,
+     "reinvest_share": 0.19719831564909315,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.0376395247067716,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1635459230660665,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -32234,6 +33788,28 @@
    "sbc": 0.02
   },
   "HST": {
+   "implied_cap": null,
+   "nopat_margin": 0.1291216879293425,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.21428882380331463,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.49026257672041074,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6494456345576985,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -32679,6 +34255,28 @@
    "sbc": 0.03
   },
   "LII": {
+   "implied_cap": 1,
+   "nopat_margin": 0.16015013569957462,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.10010391882539886,
+     "terminal": 0.13344355985866996,
+     "reinvest_share": 0.15118965493363798,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 1196.3256120694339,
+     "reinvest_share": -0.0004619980346688829,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10557882878775457,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -33124,6 +34722,28 @@
    "sbc": 0.02
   },
   "NEM": {
+   "implied_cap": null,
+   "nopat_margin": 0.31606819886188187,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.04858150110229389,
+     "reinvest_share": 0.3304490820337128,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": 0.08251053118063804,
+     "terminal": 0.1261277375558858,
+     "reinvest_share": 0.1219347526715804,
+     "flag": "below_hurdle"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.07959513754682988,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -33575,6 +35195,28 @@
    "sbc": 0.1
   },
   "REGN": {
+   "implied_cap": 23,
+   "nopat_margin": 0.21680971072795596,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.03061133769749581,
+     "terminal": 0.07299136909547159,
+     "reinvest_share": 0.3286658463519176,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.6364909746201262,
+     "terminal": 0.3801363463785751,
+     "reinvest_share": 0.09757770396408735,
+     "flag": "high"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.10325219253813583,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -34020,6 +35662,28 @@
    "sbc": 1.006
   },
   "ZTS": {
+   "implied_cap": 1,
+   "nopat_margin": 0.30396112812929127,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.008888076107420057,
+     "terminal": 0.08101908744762798,
+     "reinvest_share": 0.28029089382326017,
+     "flag": "below_hurdle"
+    },
+    "base": {
+     "forecast": 0.19476350276549315,
+     "terminal": 0.1412640975574822,
+     "reinvest_share": 0.17511768007584946,
+     "flag": null
+    },
+    "bull": {
+     "forecast": 0.5573435995876919,
+     "terminal": 0.3193800173253707,
+     "reinvest_share": 0.09274509137024038,
+     "flag": "high"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -34471,6 +36135,28 @@
    "sbc": 0.1
   },
   "MO": {
+   "implied_cap": null,
+   "nopat_margin": 0.4541734942152043,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.22557796931695945,
+     "reinvest_share": 0.07374889413358385,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 1.0986907802519252,
+     "reinvest_share": 0.007001279815690016,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.04570924881760023,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -34922,6 +36608,28 @@
    "sbc": 0.08
   },
   "HAS": {
+   "implied_cap": 10,
+   "nopat_margin": 0.17778486801522983,
+   "growth_check": {
+    "bear": {
+     "forecast": 0.20054590393249963,
+     "terminal": 0.20333861856074623,
+     "reinvest_share": 0.050167572685494245,
+     "flag": null
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1740260471818095,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.31572276684669265,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -35373,6 +37081,28 @@
    "sbc": 0.09
   },
   "BMY": {
+   "implied_cap": null,
+   "nopat_margin": 0.23350306048345265,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": 0.10339444311745104,
+     "reinvest_share": 0.21768897549615812,
+     "flag": "shrinking"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": 0.9037493983635705,
+     "reinvest_share": 0.04981773920851549,
+     "flag": "shrinking"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.1274011034945203,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -35824,6 +37554,28 @@
    "sbc": 0.55
   },
   "NRG": {
+   "implied_cap": 10,
+   "nopat_margin": 0.04810471136001042,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.2749235754254412,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.6132807351858155,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.8799735304580103,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,
@@ -36269,6 +38021,28 @@
    "sbc": 0.14
   },
   "FIS": {
+   "implied_cap": 6,
+   "nopat_margin": 0.1285023883113234,
+   "growth_check": {
+    "bear": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.263972924800418,
+     "flag": "free"
+    },
+    "base": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.5868094324109859,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": null,
+     "terminal": null,
+     "reinvest_share": -0.7884845258152335,
+     "flag": "free"
+    }
+   },
    "rate_table": [
     {
      "r": 0.08,

@@ -24,6 +24,11 @@ for t, a in res["assets"].items():
         e["start_margin"] = rnd(a["start_margin"], 4); e["net_cash"] = rnd(a["net_cash"]); e["shares"] = a["shares"]; e["rev"] = a["rev"]
         e["dcf_method"] = a.get("dcf_method"); e["wacc"] = {k: rnd(v, 4) for k, v in a.get("wacc", {}).items()}
         e["fcf_inputs"] = dict(fcf=a["fcf"], sbc=a["sbc"])
+        e["implied_cap"] = a.get("implied_cap"); e["nopat_margin"] = rnd(a["nopat_margin"], 4) if a.get("nopat_margin") is not None else None
+        e["growth_check"] = {k: (None if v is None else dict(forecast=None if v["forecast"] is None else rnd(v["forecast"], 4),
+                                                          terminal=None if v["terminal"] is None else rnd(v["terminal"], 4),
+                                                          reinvest_share=rnd(v["reinvest_share"], 4), flag=v["flag"]))
+                             for k, v in (a.get("growth_check") or {}).items()} if a.get("growth_check") else None
     if "rate_table" in a:
         e["rate_table"] = [dict(r=x["r"], fv=round(x["fv"], 2), base=round(x["base"], 2)) for x in a["rate_table"]]
         e["required_return_reason"] = a.get("r_reason")
