@@ -219,3 +219,56 @@ h1{font-size:20px;letter-spacing:.01em}.kpi .v{font-size:28px;letter-spacing:.01
 .dr-in .qt{font-size:15px}
 .dr-in .grid2:has(> .mini:nth-child(3):last-child){grid-template-columns:repeat(3,1fr)}
 .dr-in .mini b{font-family:var(--display);font-size:20px}
+/* ---- Soft highlight palette (Nov 2026) ----
+   Four colours only, each with one meaning:
+   sky blue = key fact / neutral highlight · sage mint = good · dusty coral = bad · butter cream = caution / borderline.
+   The status inks (--good/--bad/--warn/--ok) are remapped to the same four hues so text, dots and chips all agree. */
+:root{--good:#2f7d58;--bad:#b9505b;--warn:#9a7012;--ok:#2f78ad;
+ --hl-blue:#dcecf9;--hl-mint:#dcf0e3;--hl-coral:#f8e0e2;--hl-cream:#faf1cf;
+ --bear:#cc6670;--base:#4b8fc7;--bull:#4f9c78}
+:root[data-theme=dark]{--good:#8fd6b2;--bad:#f0a7ad;--warn:#ecce84;--ok:#93c7ef;
+ --hl-blue:rgba(125,183,235,.17);--hl-mint:rgba(126,211,168,.15);--hl-coral:rgba(240,150,160,.16);--hl-cream:rgba(236,206,132,.15);
+ --bear:#e8939b;--base:#7fb4e6;--bull:#82cfa8}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--good:#8fd6b2;--bad:#f0a7ad;--warn:#ecce84;--ok:#93c7ef;
+ --hl-blue:rgba(125,183,235,.17);--hl-mint:rgba(126,211,168,.15);--hl-coral:rgba(240,150,160,.16);--hl-cream:rgba(236,206,132,.15);
+ --bear:#e8939b;--base:#7fb4e6;--bull:#82cfa8}}
+/* badges and pills become soft filled highlights */
+.b-attr{background:var(--hl-mint);color:var(--good)}.b-int{background:var(--hl-blue);color:var(--ok)}
+.b-lit{background:var(--hl-cream);color:var(--warn)}.b-abv{background:var(--hl-coral);color:var(--bad)}
+.pill{background:color-mix(in srgb,var(--line) 45%,transparent);border-color:transparent}
+.pill.ok,.pill.chk{background:var(--hl-mint);border-color:transparent;color:var(--good)}
+.pill.warn{background:var(--hl-cream);border-color:transparent;color:var(--warn)}
+.pill.bad{background:var(--hl-coral);border-color:transparent;color:var(--bad)}
+.pill.res,.pill.sp{background:var(--hl-blue);border-color:transparent;color:var(--ok)}
+/* good / bad numbers inside tables, notes and boxes: a soft chip behind the text */
+td .up,td .down,td span.warn,td.pos b,td.neg b,p b.up,p b.down,p span.up,p span.down,.mini b.up,.mini b.down,.cmp b{border-radius:5px;padding:0 5px}
+td .up,p .up,.mini b.up,td.neg b{background:var(--hl-mint);color:var(--good)}
+td .down,p .down,.mini b.down,td.pos b{background:var(--hl-coral);color:var(--bad)}
+td span.warn{background:var(--hl-cream);color:var(--warn)}
+.mini b.up,.mini b.down{display:inline-block;padding:0 7px;margin-top:2px}
+td.pos,td.neg{color:inherit}
+/* grade labels (Strong / OK / Weak) */
+.gr{padding:1px 8px 1px 7px;border-radius:999px;align-self:flex-start}.g-s.gr{background:var(--hl-mint)}.g-o.gr{background:var(--hl-cream)}.g-w.gr{background:var(--hl-coral)}
+/* key numbers in the drawer prose get a soft sky-blue marker stroke */
+.dr-in p b:not(.up):not(.down),.dr-in .resbox b{background:linear-gradient(transparent 58%,var(--hl-blue) 58%);padding:0 2px;border-radius:2px}
+/* headline boxes: sky blue for key facts, tinted by meaning where the box carries a verdict */
+.dr-in .mini,.vstats div{background:color-mix(in srgb,var(--hl-blue) 55%,transparent);border-color:color-mix(in srgb,var(--ok) 18%,var(--line))}
+.dr-in .mini:has(b.up){background:color-mix(in srgb,var(--hl-mint) 70%,transparent);border-color:color-mix(in srgb,var(--good) 22%,var(--line))}
+.dr-in .mini:has(b.down){background:color-mix(in srgb,var(--hl-coral) 70%,transparent);border-color:color-mix(in srgb,var(--bad) 22%,var(--line))}
+.kpi{border-top:3px solid color-mix(in srgb,var(--ok) 35%,var(--hl-blue))}
+/* quick answers (Growth Screen drawer) */
+.qa-yes{background:color-mix(in srgb,var(--hl-mint) 75%,transparent);border-color:color-mix(in srgb,var(--good) 22%,var(--line))}
+.qa-partly{background:color-mix(in srgb,var(--hl-cream) 75%,transparent);border-color:color-mix(in srgb,var(--warn) 22%,var(--line))}
+.qa-no{background:color-mix(in srgb,var(--hl-coral) 75%,transparent);border-color:color-mix(in srgb,var(--bad) 22%,var(--line))}
+/* info boxes and flags */
+.resbox{background:var(--hl-blue);border-color:color-mix(in srgb,var(--ok) 25%,transparent)}
+.warnbox,.flag{background:var(--hl-cream);border-color:color-mix(in srgb,var(--warn) 30%,var(--line))}
+.mchip.bad{background:var(--hl-coral)}
+table.s td.hl{background:var(--hl-blue)}
+.dverdict.d-g{background:var(--hl-mint)}.dverdict.d-a{background:var(--hl-cream)}.dverdict.d-r{background:var(--hl-coral)}
+.dnum{color:var(--card)}
+.runbox.done{background:color-mix(in srgb,var(--hl-mint) 60%,transparent)}
+.sbar i,.cmp .sbar i{background:var(--ok)}
+.dr-in .mini:has(.pill.bad){background:color-mix(in srgb,var(--hl-coral) 70%,transparent);border-color:color-mix(in srgb,var(--bad) 22%,var(--line))}
+.dr-in .mini:has(.pill.warn){background:color-mix(in srgb,var(--hl-cream) 70%,transparent);border-color:color-mix(in srgb,var(--warn) 22%,var(--line))}
+.dr-in .mini:has(.pill.ok){background:color-mix(in srgb,var(--hl-mint) 70%,transparent);border-color:color-mix(in srgb,var(--good) 22%,var(--line))}
