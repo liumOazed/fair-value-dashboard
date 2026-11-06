@@ -40,7 +40,9 @@ jobs:
           OUT="data/screens/growth_screen_results_${M}.csv"
           if [ -f "$OUT" ]; then echo "$OUT already exists (uploaded or made earlier): using it"; exit 0; fi
           pip install yfinance lxml
-          python scripts/growth_screener.py --out /tmp/screen.csv 2>&1 | tail -40
+          python scripts/growth_screener.py --out /tmp/screen.csv > /tmp/screener.log 2>&1 || true
+          grep -E "S&P 500|Nasdaq 100|::warning::" /tmp/screener.log || true   # universe lines (were hidden by tail before)
+          tail -40 /tmp/screener.log
           python - "$OUT" <<'PY'
           import sys, shutil, pandas as pd
           out = sys.argv[1]
