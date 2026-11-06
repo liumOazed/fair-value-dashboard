@@ -819,8 +819,16 @@
     "day"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Fell 14% after Q3 results on a weak Q4 outlook (revenue +4-6%) that assumes the US-Iran war keeps hurting travel, on a day the S&P 500 fell 4.4%",
+    "summary": "Q3 itself beat (revenue +12%, gross bookings +11%, adjusted EBITDA +17%) and full-year guidance was raised; the soft Q4 guide is blamed on the war and European unrest, which Hilton, Marriott and Booking also cite, and analysts' EPS estimates are unchanged. That reads as a temporary demand hit, not a break in the business. Watch whether the Middle East drag runs into 2027 guidance, B2C growth (+7% vs B2B +19%) and how it compares with Airbnb, which raised its outlook.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -944,8 +952,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Chip-equipment sell-off: price-target cuts on sector P/E compression after 28 Oct, then the 5 Nov AI and data-centre rout (-13%); results themselves beat and raised",
+    "summary": "KLA's Sep-quarter revenue (.14B) and EPS beat, the December-quarter guide (.7B) was above expectations and analysts raised EPS estimates ~6%; the fall came with the whole semi-equipment group (peers ~-48% from highs, the 57% drawdown is real after the June 10-for-1 split). The cause is sector fear about whether AI spending pays off, not a company problem. Watch wafer-fab equipment spending, optical-component lead times and memory costs; the price (~30-150) is still far above the model's fair value (~0).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -1068,14 +1084,14 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
+   "needs_verdict": false,
    "verdict": {
     "label": "temporary",
     "confidence": "medium",
-    "cause": "AI-chip sector sell-off on AI-spending funding fears, after a weak June guide and worries about Google TPU share moving to MediaTek",
-    "summary": "Broadcom is ~33% below its high, about the same as its chip peers, after an October sector rout on doubts about how AI spending is funded and whether it pays off, hot inflation and rate fears. Its own results are still accelerating (Q3 FY26 revenue +86%, Q4 guide +93%, ~$115B AI revenue targeted for FY27), and EPS estimates have held. The one possibly lasting element is Google shifting part of its TPU work to MediaTek, partly offset by Anthropic, OpenAI and Meta orders; watch hyperscaler capex and Q4 FY26 results in December. The price (~$326) is above the fair value (~$257).",
+    "cause": "Fell another 10% in the 5 Nov AI-chip rout (SOX -8-11%) on post-midterm fears of AI rules and slower data-centre building; no new operating news",
+    "summary": "There was no guidance change or customer loss and EPS estimates are flat to slightly up; Broadcom fell about as much as its chip peers. A new contingent risk is its backing of chip residual values behind ~2B of debt in Anthropic's 3B financing (and leases in an earlier Apollo package), which ties its biggest custom-chip customer to off-balance-sheet credit exposure. Watch AI-lab financing, Anthropic's health and Q4 FY26 results in December; the price (~92) is still above the fair value (~57).",
     "model_changed": false,
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "by": "Claude"
    },
    "evidence": {
@@ -1202,8 +1218,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "AI-chip and data-centre sell-off after the midterms (-9% on 5 Nov, ~24% below the October record): data-centre permit pauses and doubts about how customers finance AI build-outs",
+    "summary": "None of the drivers is an NVIDIA operating problem: analysts are still raising estimates (7 up, 0 down in 30 days), Amazon committed to more GPUs and Rubin has orders from major clouds; the known pressure is gross margin falling to ~71-72% on memory costs, already guided. The fall tracks the whole sector. Watch the 17 Nov report and any sign that permits or financing delay deployments; the price (~82) is about at the model fair value (~79).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -1598,8 +1622,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Energy sell-off as the Iran-war oil premium unwinds after the midterms (crude down ~15% in three days to ~$90); no bad company news",
+    "summary": "Energy fell 11% in the week and BKR's April high was itself set during the war premium, so most of the 34% fall is that premium coming out. Its own Q3 was strong (orders +31%, record $46.4B backlog, raised order outlook for gas, LNG and power equipment) and the Waygate sale closed. Watch next year's EPS estimate (down 5% in 30 days), oilfield spending if crude settles near $90, and paying down the ~$14B net debt after the Chart deal.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -1726,8 +1758,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Industry-wide de-rating of data-centre builders (peers -12% too), deepened by the 5 Nov AI sell-off; results beat and raised",
+    "summary": "Q3 revenue rose 29% (25% organic), adjusted EPS beat, backlog hit a record $18.6B (+47%, data-centre backlog more than doubled) and guidance was raised a third time; no cancellations are reported. The market is pricing concentration risk (data centres ~half of backlog) and local permit pauses, which is fear rather than evidence of decline. Watch data-centre order cancellations or deferrals, hyperscaler capex and mechanical-construction margins (dipped to 12.1%).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -1848,8 +1888,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Small Q3 miss on GMV ($119B vs ~$120B expected) and subscription revenue at a premium valuation, then the 5 Nov tech sell-off",
+    "summary": "About half of the week's fall was the results reaction (GMV +29%, revenue +32%, gross profit growth trailing revenue) and the rest the broad tech rout; Q4 guidance still calls for revenue growth in the low thirties and a ~19% FCF margin, and Q3's FCF margin rose to 22%. Nothing points to competitive decline or a guidance reset. Watch whether GMV and subscription growth keep slowing and whether gross-profit growth keeps lagging revenue; the price stays far above the model fair value.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -1974,8 +2022,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Modest earnings reaction (revenue guide raised, EPS guide only held as margins slipped outside the Americas), then data-centre-cooling fear in the AI sell-off",
+    "summary": "Q3 bookings rose 21% to a $12.5B backlog, revenue +18% and adjusted EPS +25%, and analysts raised estimates (8 up, 1 down). The week's -12.5% is far worse than building-products peers, which points to fear about data-centre exposure rather than a business problem. Watch margins in Asia and EMEA, data-centre (applied) bookings and any cancellations, and 2027 guidance in February.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -2891,8 +2947,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Long de-rating of richly valued aerospace stocks (P/E ~57 in August), sector selling and price-target cuts, plus the 5 Nov market drop; not its results",
+    "summary": "Q3 revenue rose 29%, segment margin rose 3 points to 32.5%, guidance was raised a fourth time and a first 2027 view of ~$11.5B revenue (~+12%) was given, with a $5B buyback. The slide reflects valuation, defense-budget uncertainty and doubts about growth after 2027 rather than any damage to the business. Watch Boeing and Airbus build rates, 2027 profit guidance in February; even after the slide the price (~$199) is far above the model fair value (~$104).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -3273,8 +3337,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "HOKA growth keeps slowing (+7% vs 24% in FY25) in a heavily discounted US running market, FY27 sales guide cut to $5.70-5.725B",
+    "summary": "Margins and the balance sheet are healthy (no debt, $1.2B cash) and management blames rivals' discounting it won't match, which would be cyclical; but the slowdown has run for ~18 months, management concedes share loss below $120 and On keeps growing much faster, which would be competitive. The facts don't yet settle which dominates. Watch HOKA growth after the spring launches and US wholesale expansion, and US direct-to-consumer comparable sales (-6.4%).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -3533,8 +3605,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Marked down for the pending Unilever Foods deal: holders keep 35% of the combined company, which takes on ~$15.7B of new debt plus integration risk",
+    "summary": "The core spice and flavour business is intact (Q3 FY26 beat, gross margin +190bp, guidance kept; volumes slightly negative), so the brand advantage is not hit. The lasting part is the change in what shareholders own and in the balance sheet (2-3 years of deleveraging expected), which the model's standalone fair value does not include. Watch leverage and financing terms at the mid-2027 close, synergy progress (~$600M) and Consumer volumes.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -4049,8 +4129,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Slide from a rich high after a soft FY27 outlook in August, luxury-sector worries and Kate Spade's decline; fiscal Q1 then beat and raised",
+    "summary": "Fiscal Q1 FY27 (5 Nov) revenue rose 11%, Coach +16% with margins up, and FY27 guidance was raised to revenue $8.5-8.6B and EPS $8.25-8.35; the shares jumped ~11%. Kate Spade (-10%, ~12% of sales) is the weak spot but brand-specific, while Coach, the main source of advantage, is strengthening. Watch Coach North America growth and Kate Spade's recovery; the price was already above the model fair value.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -4175,8 +4263,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Year-long slide on Middle East war demand hits and fears that AI agents (e.g. Meta's) let travellers bypass booking sites; Q4 guide weak (room nights +1-3%)",
+    "summary": "Q3 was solid (room nights +7%, gross bookings +10%, adjusted EPS +17%) and the war effect looks temporary, but the AI-disintermediation fear would be lasting if true and would hit Booking's core advantage (owned traffic and the two-sided network). Evidence so far is reassuring (AI referrals under 1% of room nights, direct traffic mid-60%s) but doesn't settle it. Watch AI-agent booking share, direct-traffic share and 2027 room-night growth.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
@@ -4432,6 +4528,6 @@
   "BKNG",
   "FISV"
  ],
- "updated": "2026-11-06T01:01:46Z",
+ "updated": "2026-11-06T03:07:11Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
@@ -7,154 +7,154 @@
    "data_through": "2026-06-30",
    "reported_on": "2026-11-02",
    "yahoo_latest_quarter": "2026-09-26",
-   "waiting_days": 3
+   "waiting_days": 4
   },
   {
    "ticker": "IDXX",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-02",
    "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 3
+   "waiting_days": 4
   },
   {
    "ticker": "BKNG",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-03",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 2
+   "waiting_days": 3
   },
   {
    "ticker": "AME",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-03",
    "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 2
+   "waiting_days": 3
   },
   {
    "ticker": "XYZ",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-03",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 2
+   "waiting_days": 3
   },
   {
    "ticker": "FISV",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-03",
    "yahoo_latest_quarter": null,
-   "waiting_days": 2
+   "waiting_days": 3
   },
   {
    "ticker": "BR",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-03",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 2
+   "waiting_days": 3
   },
   {
    "ticker": "APP",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "FICO",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "APA",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "EXPE",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "CRCL",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "STE",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "MSI",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-07-04",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "CF",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "HST",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "FIS",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "TPR",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
    "yahoo_latest_quarter": "2026-06-27",
-   "waiting_days": 0
+   "waiting_days": 1
   },
   {
    "ticker": "MNST",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 0
+   "waiting_days": 1
   },
   {
    "ticker": "SPG",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 0
+   "waiting_days": 1
   },
   {
    "ticker": "RL",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
    "yahoo_latest_quarter": "2026-06-27",
-   "waiting_days": 0
+   "waiting_days": 1
   },
   {
    "ticker": "ZTS",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 0
+   "waiting_days": 1
   }
  ],
  "upcoming": [
