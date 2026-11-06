@@ -1,18 +1,25 @@
-https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies tables: 14
-  0 (101, 5) ['Ticker', 'Company', 'ISIN', 'ICB Industry[2]', 'ICB Subsector[2]']
-  1 (1, 2) ['vteList of NASDAQ-100 companies', 'vteList of NASDAQ-100 companies.1']
-  2 (4, 3) ['vteNasdaq, Inc.', 'vteNasdaq, Inc..1', 'vteNasdaq, Inc..2']
-  3 (34, 2) ['vteStock market indices', 'vteStock market indices.1']
-  4 (2, 2) [0, 1]
-  5 (4, 2) [0, 1]
-MEMBERS: 101
-Ticker,Company,ISIN,ICB Industry[2],ICB Subsector[2]
-ADBE,Adobe Inc.,US00724F1012,Technology,Software
-AMD,Advanced Micro Devices,US0079031078,Technology,Semiconductors
-ABNB,Airbnb,US0090661010,Consumer Discretionary,Diversified Commercial Services
-
-https://en.wikipedia.org/wiki/Nasdaq-100_Index FAILED <HTTPError 404: 'Not Found'>
-SRC https://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?fil bytes 1510305 | starts: <!DOCTYPE html> | <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US"> | <head> | <link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-db24cb52045c84bd615e0e7852e6eee4.css" as="style" /> | <link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-76e7e346179e654e66dfd92e5d6f0171.css" as="style" /> | <link rel="preload" href="
-SRC FAILED https://investor.vanguard.com/investment-products/etfs/profile/api/VTWO/portfolio-holding/ <HTTPError 404: 'Not Found'>
-SRC FAILED https://www.ssga.com/us/en/intermediary/library-content/products/fund-data/etfs/us/holding <HTTPError 404: 'Not Found'>
-SEC hits {'value': 10000, 'relation': 'gte'}
+Traceback (most recent call last):
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/.github/debug/snippet.py", line 7, in <module>
+    j = json.loads(get("https://efts.sec.gov/LATEST/search-index?q=%22iShares%20Russell%202000%20ETF%22&forms=NPORT-P"))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/fair-value-dashboard/fair-value-dashboard/.github/debug/snippet.py", line 5, in get
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
