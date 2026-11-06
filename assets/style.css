@@ -26,7 +26,7 @@ tbody tr{cursor:pointer}tbody tr:hover{background:color-mix(in srgb,var(--acc) 6
 .rng{width:170px;height:30px}.foot{color:var(--mut);font-size:12px;margin:10px 0 0}
 .bands{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}.bands div{border:1px solid var(--line);border-radius:10px;padding:10px 12px}
 .scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:.2s;z-index:8}.scrim.on{opacity:1;pointer-events:auto}
-.drawer{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:var(--card);border-left:1px solid var(--line);transform:translateX(100%);transition:.25s;z-index:9;overflow:auto;box-shadow:var(--shadow)}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(800px,100%);background:var(--card);border-left:1px solid var(--line);transform:translateX(100%);transition:.25s;z-index:9;overflow:auto;box-shadow:var(--shadow)}
 .drawer.on{transform:none}.dr-in{padding:24px}.dr-in h3{margin:18px 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
 .x{float:right}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{border:1px solid var(--line);border-radius:10px;padding:10px 12px}.mini b{display:block;font-size:18px}
 table.s{min-width:0;font-size:12px}table.s td,table.s th{padding:6px 8px;text-align:right}table.s td.hl{background:color-mix(in srgb,var(--warn) 22%,transparent);font-weight:700}
@@ -204,3 +204,4 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 .mdots{display:inline-flex;gap:3px;vertical-align:middle}.mdots i{width:9px;height:9px;border-radius:50%;background:var(--line);display:inline-block}.mdots i.on{background:var(--acc)}
 .bdgap{fill:color-mix(in srgb,var(--acc) 12%,transparent);stroke:none}.bdaaa{fill:none;stroke:var(--c2);stroke-width:1.6}.bdt10{fill:none;stroke:var(--mut);stroke-width:1.3;stroke-dasharray:4 3}
 .bdk{display:inline-block;width:14px;height:0;margin:0 5px 0 8px;vertical-align:3px;border-top:2px solid var(--acc)}.bdk-ey{margin-left:0}.bdk-aaa{border-top-color:var(--c2)}.bdk-t10{border-top:2px dashed var(--mut)}
+.bdleg{display:inline-block;margin-left:-10px;line-height:1.9;color:var(--tx)}
