@@ -14,7 +14,9 @@ Steps (each month, after the Russell run of scripts/growth_screener.py --univers
    premium in data/required_returns.json. Margin of safety 35% (40% cyclical): small caps are less certain.
    The same sanity filters as the Top 5 apply (loss-making, FCF distorted, one-off growth, high debt ...), and a
    value-to-price above 2.5x goes to "check first" instead of getting a fair value.
-4. History: each month's top 50 is kept, so 'months in top 50' shows which names are steady.
+4. Quick answers: the same five questions as the Growth Screen (revenue growing, profits healthy, cash flow strong,
+   debt manageable, position improving) for every stock that passed the gate; 'all_checks' = yes to all five.
+5. History: each month's top 50 is kept, so 'months in top 50' shows which names are steady.
 No full models: a stock moves to the Fair Value tab only when it is modelled by hand.
 Usage: python scripts/build_russell.py
 """
@@ -23,7 +25,7 @@ import numpy as np, pandas as pd
 
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from screen_score import ROOT, RRF, CYCLICAL, V3_COLS, score_v4, risk_assessment   # same score as the S&P 500 screen
+from screen_score import ROOT, RRF, CYCLICAL, V3_COLS, score_v4, risk_assessment, wacc_of, quick_answers   # same score and quick answers as the S&P 500 screen
 from fair_value_table import evaluate, price, TOO_CHEAP                              # same quick estimate as the Top 5
 
 GATE = dict(min_cap=1e9, min_dollar_volume=5e6, min_years=4, max_neg_fcf_years=1, bank_min_roe=8.0)
@@ -79,7 +81,7 @@ def num(x, n=2):
     return None if x is None or (isinstance(x, float) and np.isnan(x)) or pd.isna(x) else round(float(x), n)
 
 
-def main():
+def main(price=price):
     f, month = latest_csv()
     d = pd.read_csv(f).drop_duplicates("ticker").set_index("ticker", drop=False)
     for c in V3_COLS + ["avg_dollar_volume"]:
@@ -114,6 +116,15 @@ def main():
                    risk_level=r.risk_level, risks=list(r.risk_serious) + list(r.risk_warn), data_confidence=r.data_confidence,
                    flags=list(r.flag_list), required_return=required_return(r.sector),
                    months_in_top50=sum(r.ticker in hist.get(m, set()) for m in window[:-1]) + int(top))
+        wacc = wacc_of(r, row["required_return"])[0]
+        roic_spread = None if (wacc is None or pd.isna(r.roic_pct) or fin) else round(r.roic_pct / 100 - wacc, 4)
+        qa = dict(row, peer_group=None, wacc=wacc, roic_spread=roic_spread, rev_cagr_years=num(r.rev_cagr_years), rev_growth_std=num(r.rev_growth_std),
+                  eps_cagr_pct=num(r.eps_cagr_pct), roe_pct=num(r.roe_pct), fcf_neg_years=num(r.fcf_neg_years), fcf_years=num(r.fcf_years),
+                  fcf_ni_basis=("3y" if not pd.isna(r.fcf_ni_3y) else "latest FY"), fcf_cv=num(r.fcf_cv), risk_serious=list(r.risk_serious),
+                  risk_warn=list(r.risk_warn), nd_ebitda_then=num(r.nd_ebitda_then), margin_change_pts=num(r.margin_change_pts),
+                  fcf_cagr_pct=num(r.fcf_cagr_pct), share_change_pct_yr=num(r.share_change_pct_yr))
+        row["answers"] = quick_answers(qa)
+        row["all_checks"] = all(a["v"] == "yes" for a in row["answers"])
         if top:
             why = skip_reason(row)
             if why:
@@ -143,6 +154,7 @@ def main():
     valued = [x for x in rows if x.get("fair_value")]
     print(f"Russell 2000 {month}: {len(d)} screened, {len(g)} passed the gate, top {TOP_N} scored, {len(valued)} quick fair values")
     print("gate failures:", counts)
+    print("all 5 checks:", sum(x["all_checks"] for x in rows), "of", len(rows), "passed")
     print("TOP 10:", [(x["ticker"], x["score"]) for x in rows[:10]])
 
 

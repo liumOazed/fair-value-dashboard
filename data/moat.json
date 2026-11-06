@@ -374,6 +374,30 @@
   "AMGN": {
    "moat": "narrow",
    "reason": "Median ROIC 14% over 4 years (10-K figures in data/returns.json; 11-26%, Horizon goodwill depresses it), above the 8.5% required return by 3+ points but not by 10."
+  },
+  "VLTO": {
+   "moat": "wide",
+   "reason": "ROIC 26% or more in each of the last 4 years (median 27%, 10-K figures in data/returns.json), at least 10 points above the 8.5% required return and above 20%."
+  },
+  "AMP": {
+   "moat": "narrow",
+   "reason": "ROIC not measurable from the statements (financial company: client cash and insurance reserves on the balance sheet, no recent 10-K operating figures), so the middle class by default. Check by hand."
+  },
+  "PPG": {
+   "moat": "narrow",
+   "reason": "Median ROIC 14% over 4 years (13-16%, 10-K figures in data/returns.json), above the 9.5% required return by 3+ points but under 20% in every year (goodwill from acquisitions depresses it)."
+  },
+  "EOG": {
+   "moat": "short",
+   "reason": "Base growth 0.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before)."
+  },
+  "PM": {
+   "moat": "wide",
+   "reason": "ROIC 31% or more in each of the last 4 years (median 35%, 10-K figures in data/returns.json), at least 10 points above the 8.5% required return."
+  },
+  "DLTR": {
+   "moat": "narrow",
+   "reason": "Median ROIC 15% over 4 years (10-K figures in data/returns.json; one negative year from the Family Dollar write-downs), above the 9.0% required return by 3+ points but not 20%+ every year."
   }
  }
 }

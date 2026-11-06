@@ -2685,6 +2685,192 @@
      "better": "up"
     }
    ]
+  },
+  "VLTO": {
+   "name": "Veralto",
+   "kpis": [
+    {
+     "id": "core_sales_growth",
+     "label": "Core sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "water_quality_core_sales_growth",
+     "label": "Water Quality core sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "pqi_core_sales_growth",
+     "label": "Product Quality & Innovation core sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "AMP": {
+   "name": "Ameriprise Financial",
+   "kpis": [
+    {
+     "id": "total_client_assets_growth",
+     "label": "Total client assets growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "wealth_net_flows_pct_assets",
+     "label": "Wealth management net flows (% of client assets)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_roe",
+     "label": "Adjusted operating ROE (ex AOCI)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_eps_growth",
+     "label": "Adjusted operating EPS growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "PPG": {
+   "name": "PPG Industries",
+   "kpis": [
+    {
+     "id": "organic_sales_growth",
+     "label": "Organic sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "global_architectural_coatings_sales_growth",
+     "label": "Global Architectural Coatings sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "performance_coatings_sales_growth",
+     "label": "Performance Coatings sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "industrial_coatings_sales_growth",
+     "label": "Industrial Coatings sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_eps_growth",
+     "label": "Adjusted EPS growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "EOG": {
+   "name": "EOG Resources",
+   "kpis": [
+    {
+     "id": "total_production_growth",
+     "label": "Total production growth (Boe/d)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "crude_oil_production_growth",
+     "label": "Crude oil production growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "cash_operating_cost_per_boe_change",
+     "label": "Cash operating cost per Boe change",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "free_cash_flow_margin",
+     "label": "Free cash flow margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "PM": {
+   "name": "Philip Morris International",
+   "kpis": [
+    {
+     "id": "organic_net_revenue_growth",
+     "label": "Organic net revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "smoke_free_share_of_revenue",
+     "label": "Smoke-free share of net revenue",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "heated_tobacco_shipment_growth",
+     "label": "Heated tobacco unit shipment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "nicotine_pouch_shipment_growth",
+     "label": "Oral nicotine (ZYN) shipment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating income margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "DLTR": {
+   "name": "Dollar Tree",
+   "kpis": [
+    {
+     "id": "same_store_sales_growth",
+     "label": "Same-store sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "store_count_growth",
+     "label": "Store count growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
   }
  }
 }

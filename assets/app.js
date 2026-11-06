@@ -38,7 +38,8 @@ function spark(h){if(h.length<3)return '<span class="muted">n/a</span>';const mn
  return `<svg width="${w}" height="${ht}"><polyline points="${pts}" fill="none" stroke="${h[h.length-1]>=h[0]?"var(--good)":"var(--bad)"}" stroke-width="1.6"/></svg>`}
 let sortK="ticker",dir=1,filt="",theme="All",pf="all",hf="all";
 const inTheme=r=>theme==="All"||(theme==="Other"?!Object.values(TH).some(l=>l.includes(r.ticker)):(TH[theme]||[]).includes(r.ticker));
-const names=["All",...Object.keys(TH).filter(k=>rows.some(r=>TH[k].includes(r.ticker))),...(rows.some(r=>!Object.values(TH).some(l=>l.includes(r.ticker)))?["Other"]:[])];
+const PINNED=["Cybersecurity","Insurance"];   // always shown, even before a stock in the group has a full model
+const names=["All",...Object.keys(TH).filter(k=>PINNED.includes(k)||rows.some(r=>TH[k].includes(r.ticker))),...(rows.some(r=>!Object.values(TH).some(l=>l.includes(r.ticker)))?["Other"]:[])];
 $("#themechips").innerHTML='<span class="lbl">Group</span>'+names.map(n=>`<button class="chip${n==="All"?" on":""}" data-th="${n}">${n}</button>`).join("");
 const PF={all:["All",()=>true],below:["Below fair value",r=>r.diff<=0],int:["Interesting or better",r=>r.status<=1]};
 $("#pricechips").innerHTML='<span class="lbl">Price</span>'+Object.entries(PF).map(([k,v])=>`<button class="chip${k==="all"?" on":""}" data-pf="${k}">${v[0]} <span class="cnt">${rows.filter(v[1]).length}</span></button>`).join("");
@@ -53,7 +54,7 @@ function render(){const f=rows.filter(r=>(r.ticker+r.name).toLowerCase().include
  <td class="r num">${usd(r.price)}<div class="nm ${r.day>0?"neg":"pos"}" style="color:var(--mut)">${r.day==null?"":pct(r.day,2)+" today"}</div></td>
  <td class="r num"><b>${usd(r.fair_value)}</b></td><td class="r num">${usd(r.buy_below)}</td>
  <td class="r num ${r.diff>0?"pos":"neg"}"><b>${pct(r.diff)}</b></td><td>${range(r)}<div class="nm">${usd(r.bear).slice(0,-3)} · ${usd(r.base).slice(0,-3)} · ${usd(r.bull).slice(0,-3)}</div></td>
- <td><span class="badge ${BANDS[r.status][1]}">${BANDS[r.status][0]}</span></td><td class="r num">${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</td><td class="r num">${r.size==null?"–":r.size>0?`<b>${(r.size*100).toFixed(1)}%</b>`:'<span class="muted">0%</span>'}</td><td>${spark(r.history)}</td></tr>`).join("")||'<tr><td colspan="10" class="err">No match</td></tr>';
+ <td><span class="badge ${BANDS[r.status][1]}">${BANDS[r.status][0]}</span></td><td class="r num">${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</td><td class="r num">${r.size==null?"–":r.size>0?`<b>${(r.size*100).toFixed(1)}%</b>`:'<span class="muted">0%</span>'}</td><td>${spark(r.history)}</td></tr>`).join("")||(theme!=="All"&&!rows.some(inTheme)?`<tr><td colspan="10" class="muted">No ${theme.toLowerCase()} stock has a full model yet. See the <a href="screener.html">Growth Screen</a> (Theme → ${theme}) for the whole group.</td></tr>`:'<tr><td colspan="10" class="err">No match</td></tr>');
  document.querySelectorAll("tbody tr[data-t]").forEach(tr=>tr.onclick=()=>open(tr.dataset.t))}
 document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=sortK===k?-dir:1;sortK=k;render()});
 $("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};render();

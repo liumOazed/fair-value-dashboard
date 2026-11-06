@@ -367,6 +367,32 @@ STOCKS = {
               net_cash=-40.82, extra=0.0, mos=0.3,
               scen=dict(bear=dict(g1=-0.01,g10=0.02,m=0.19), base=dict(g1=0.04,g10=0.035,m=0.24), bull=dict(g1=0.08,g10=0.05,m=0.28)),
               notes="TTM to Sep-2026. Q3 revenue $10.37B, +8%: Repatha +37%, Evenity +39%, Tezspire +43% and biosimilars offset Prolia (-45%) and Xgeva (-47%) losing exclusivity. FY26 revenue guide $38.9-39.7B, non-GAAP EPS $22.90-23.70, capex ~$2.6B, buybacks up to $3.0B (Q3 release). Analysts expect ~3.5% growth next year as the Prolia/Xgeva erosion continues. FCF after stock pay 20-30% of sales in 2022-2025 (23% TTM), base 24%. MariTide (obesity, Phase 3) is the bull case and is NOT in the base. Net debt $40.8B (debt $54.0B from the Horizon deal, cash $13.2B). Diluted shares 546M (Q3). Patent and pricing risk: 8.5% required return, 30% safety margin."),
+
+ # ---- Requested Nov 2026 (VLTO, AMP, PPG, EOG) and the Growth Screen's consumer-staples sector picks not modelled before (PM, DLTR)
+ "VLTO": dict(name="Veralto Corp.", price=116.55, shares=0.2440, rev=5.801, fcf=1.093, sbc=0.074,
+              net_cash=-1.135, extra=0.0, mos=0.25,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.16), base=dict(g1=0.055,g10=0.04,m=0.18), bull=dict(g1=0.08,g10=0.05,m=0.195)),
+              notes="TTM to Sep-2026. Water quality (Hach, Trojan, ChemTreat) and product quality and innovation (Videojet, X-Rite, Esko), spun off from Danaher in 2023; ~60% recurring revenue (consumables, service, software). Analysts expect ~8% sales growth this year (incl. small acquisitions) and ~5% next year. Very light capex (~1% of sales): FCF after stock pay 17.6% of sales TTM, 13-17% in 2022-2025, so the base is 18%. Net debt $1.1B (cash $1.8B, debt $2.9B after a repayment in Q3). Diluted shares ~0.244B (ESTIMATE). Risk: industrial slowdown hitting the product-quality half (bear case 2% growth)."),
+ "AMP": dict(name="Ameriprise Financial Inc.", price=509.32, shares=0.0875, rev=19.829, fcf=4.162, sbc=0.0,
+              net_cash=0.0, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=-0.05,g10=0.02,m=0.17), base=dict(g1=0.06,g10=0.04,m=0.20), bull=dict(g1=0.09,g10=0.05,m=0.22)),
+              notes="TTM to Sep-2026. Wealth management (~10,000 advisers, the bulk of profit), asset management (Columbia Threadneedle) and retirement and protection (annuities, life insurance). Its cash flow mixes in client cash and insurance reserves, so it is valued like AXP: cash flow = NET INCOME ($4.2B, stock pay already deducted), revenue = total net revenues ($19.8B), and debt is treated as part of the business (net cash set to zero, no interest add-back). Returns nearly all earnings through buybacks ($3.5B TTM) and dividends ($0.6B). Analysts expect ~9% revenue growth this year and ~5% next. Fees move with stock and bond markets, and the TTM margin (21%) comes after strong markets, so the base margin is 20% and a bear market cuts revenue quickly (bear case -5% and a 17% margin). Diluted shares ~0.0875B (ESTIMATE)."),
+ "PPG": dict(name="PPG Industries Inc.", price=123.27, shares=0.2215, rev=16.692, fcf=1.28, sbc=0.048,
+              net_cash=-5.82, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.0,g10=0.02,m=0.07), base=dict(g1=0.03,g10=0.03,m=0.09), bull=dict(g1=0.05,g10=0.04,m=0.105)),
+              notes="TTM to Sep-2026. Paints and coatings: aerospace, automotive refinish, protective and marine, industrial and packaging coatings, plus architectural paint in Latin America (US/Canada architectural sold in Dec 2024). Analysts expect ~6% sales growth this year and ~3% next. FCF is uneven (3-12% of sales in 2022-2025) because capex is high (~$0.77B TTM for new plants) and working capital swings; FCF after stock pay 7.4% TTM, so the base is 9%, assuming capex eases. Net debt $5.8B incl. leases. Diluted shares ~0.2215B (ESTIMATE). Industrial and auto cycle: 9.5% required return and 30% safety margin."),
+ "EOG": dict(name="EOG Resources Inc.", price=144.89, shares=0.527, rev=26.637, fcf=6.614, sbc=0.231,
+              net_cash=-3.343, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=-0.10,g10=0.0,m=0.14), base=dict(g1=0.0,g10=0.02,m=0.20), bull=dict(g1=0.03,g10=0.025,m=0.24)),
+              notes="TTM to Jun-2026 (Q3 not yet in the data). Low-cost US oil and gas producer (Delaware Basin, Eagle Ford, Dorado gas, Utica after the Encino deal in Aug 2025). Oil prices jumped in 2026 (Q2 revenue $8.5B vs $5.7B a year earlier): analysts expect $30.5B revenue for 2026 and ~10% less ($27.4B) in 2027, about 3% above this TTM. Base growth is set flat (no growth from today's high prices, held at or below 2.5%, so no advantage period), the bear case falls 10%; the cash margin (24% after stock pay TTM, 15% in 2025, ~23% in 2023-2024) settles at 14-24%. Net debt $3.3B (cash $4.9B, debt $8.3B). Diluted shares ~0.527B (ESTIMATE). Oil-price dependent: 35% safety margin."),
+ "PM": dict(name="Philip Morris International Inc.", price=201.5, shares=1.56, rev=43.138, fcf=13.595, sbc=0.26,
+              net_cash=-40.88, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.02,m=0.25), base=dict(g1=0.055,g10=0.035,m=0.28), bull=dict(g1=0.075,g10=0.045,m=0.30)),
+              notes="TTM to Sep-2026. International cigarettes (Marlboro outside the US) and smoke-free products (IQOS heated tobacco, ZYN nicotine pouches), now over 40% of revenue and growing double digits; revenue net of excise taxes. Analysts expect ~7% sales growth this year and ~5% next. FCF $13.6B TTM (32% of sales) is above 2023-2025 (22-28%), so the base margin is 28% after stock pay. SBC is an ESTIMATE (~$0.26B). Net debt $40.9B. Risks: regulation and excise taxes, currency (most sales outside the US), ZYN supply and competition. Growth Screen consumer-staples top-5 pick (4 of 5 checks)."),
+ "DLTR": dict(name="Dollar Tree Inc.", price=137.94, shares=0.189, rev=20.069, fcf=1.977, sbc=0.068,
+              net_cash=-6.613, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.065), base=dict(g1=0.055,g10=0.035,m=0.085), bull=dict(g1=0.075,g10=0.04,m=0.095)),
+              notes="TTM to Jul-2026 (FY26 Q2), continuing operations only: Family Dollar was sold in July 2025. ~9,000 Dollar Tree stores moving to multi-price ($1.25 to $7) items. Analysts expect ~6.5% sales growth this year and ~6% next (new stores plus same-store sales). FCF after stock pay 9.5% of sales TTM, ~7% in the last fiscal year, so the base is 8.5%. Net debt $6.6B incl. $4.7B store leases (as for ROST). Diluted shares ~0.189B (ESTIMATE). Risks: tariffs on imported goods, low-income shoppers under pressure, execution of the multi-price rollout. Growth Screen consumer-staples top-5 pick (4 of 5 checks)."),
 }
 
 # ---------------------------------------------------------------- capital structure (for WACC)
@@ -450,7 +476,10 @@ FIN = {
  "NRG": dict(debt=23.47, interest=1.02, rd=0.0435, tax=0.24),
  "FIS": dict(debt=20.85, interest=0.709, rd=0.034, tax=0.22),
  "PG": dict(debt=38.93, interest=0.902, rd=0.0249, tax=0.208), "KO": dict(debt=41.62, interest=1.529, rd=0.0367, tax=0.179),
- "SHW": dict(debt=14.8, interest=0.538, rd=0.0374, tax=0.231), "JNJ": dict(debt=44.65, interest=0.984, rd=0.023, tax=0.177),
+ "SHW": dict(debt=14.8, interest=0.538, rd=0.0374, tax=0.231),
+ "VLTO": dict(debt=2.92, interest=0.096, rd=0.033, tax=0.20), "AMP": dict(debt=0.0, interest=0.0, rd=0.0500, tax=0.215),
+ "PPG": dict(debt=7.463, interest=0.257, rd=0.035, tax=0.233), "EOG": dict(debt=8.25, interest=0.27, rd=0.036, tax=0.218),
+ "PM": dict(debt=47.562, interest=1.518, rd=0.032, tax=0.21), "DLTR": dict(debt=7.671, interest=0.074, rd=0.026, tax=0.246), "JNJ": dict(debt=44.65, interest=0.984, rd=0.023, tax=0.177),
  "AMGN": dict(debt=54.01, interest=2.636, rd=0.048, tax=0.141),
 }
 
