@@ -98,27 +98,44 @@ def _read_html(url: str):
 # ══════════════════════════════════════════════════════════════════════════════
 # UNIVERSE
 # ══════════════════════════════════════════════════════════════════════════════
+# Wikipedia moved the Nasdaq-100 member table from the index article to its own list page in 2026, so the old
+# lookup found no table with a Ticker column and silently returned S&P 500 names only. Try the list page first,
+# keep the article as a fallback, and say loudly when either part is missing.
+NDX_URLS = ("https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies", "https://en.wikipedia.org/wiki/Nasdaq-100")
+
+
+def _member_table(tables, min_rows: int):
+    """First table with a Ticker/Symbol column and at least min_rows rows -> list of tickers (dots as dashes)."""
+    for tbl in tables:
+        for col in ("Ticker", "Symbol"):
+            if col in tbl.columns and len(tbl) >= min_rows:
+                return sorted(set(tbl[col].astype(str).str.strip().str.replace(".", "-", regex=False)))
+    return []
+
+
 def get_universe() -> list[str]:
     """S&P 500 + Nasdaq 100 tickers, deduped. Wikipedia with graceful failure."""
     tickers = set()
     try:
-        sp = _read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")[0]
-        tickers |= set(sp["Symbol"].str.replace(".", "-", regex=False))
+        sp = _member_table(_read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"), 450)
+        tickers |= set(sp)
         print(f"  ✓ S&P 500: {len(sp)} tickers")
     except Exception as e:
         print(f"  ⚠ S&P 500 fetch failed: {e}")
-    try:
-        for tbl in _read_html("https://en.wikipedia.org/wiki/Nasdaq-100"):
-            for col in ("Ticker", "Symbol"):
-                if col in tbl.columns:
-                    tickers |= set(tbl[col].astype(str).str.replace(".", "-", regex=False))
-                    print(f"  ✓ Nasdaq 100 merged")
-                    break
-            else:
-                continue
+    ndx = []
+    for url in NDX_URLS:
+        try:
+            ndx = _member_table(_read_html(url), 90)
+        except Exception as e:
+            print(f"  ⚠ Nasdaq 100 fetch failed ({url}): {e}")
+        if ndx:
             break
-    except Exception as e:
-        print(f"  ⚠ Nasdaq 100 fetch failed: {e}")
+    if ndx:
+        extra = sorted(set(ndx) - tickers)
+        tickers |= set(ndx)
+        print(f"  ✓ Nasdaq 100: {len(ndx)} tickers, {len(extra)} not in the S&P 500: {', '.join(extra)}")
+    else:
+        print("::warning::Nasdaq 100 member table not found on Wikipedia: the screen covers the S&P 500 only this month")
     if not tickers:
         raise SystemExit("Could not build universe — check internet / install lxml.")
     return sorted(t for t in tickers if t and t == t)  # drop NaN
