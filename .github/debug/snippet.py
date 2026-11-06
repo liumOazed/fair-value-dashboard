@@ -1,31 +1,16 @@
-# Probe 3: Nasdaq-100 list page title, IWM with siteEntryPassthrough, Vanguard VTWO, SEC N-PORT
-import io, json, urllib.request, pandas as pd
-H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Accept": "*/*"}
-def get(u, h=H):
-    with urllib.request.urlopen(urllib.request.Request(u, headers=h), timeout=60) as r:
-        return r.read()
-for url in ["https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies", "https://en.wikipedia.org/wiki/Nasdaq-100_Index"]:
-    try:
-        tbls = pd.read_html(io.BytesIO(get(url)))
-        print(url, "tables:", len(tbls))
-        for i, t in enumerate(tbls[:6]): print(" ", i, t.shape, list(t.columns)[:8])
-        for t in tbls:
-            cols = [str(c) for c in t.columns]
-            if any("Symbol" in c or "Ticker" in c for c in cols) and len(t) >= 90:
-                print("MEMBERS:", len(t)); print(t.head(3).to_csv(index=False)); break
-    except Exception as e:
-        print(url, "FAILED", repr(e))
-for u in ["https://www.ishares.com/us/products/239710/ishares-russell-2000-etf/1467271812596.ajax?fileType=csv&fileName=IWM_holdings&dataType=fund&siteEntryPassthrough=true",
-          "https://investor.vanguard.com/investment-products/etfs/profile/api/VTWO/portfolio-holding/stock",
-          "https://www.ssga.com/us/en/intermediary/library-content/products/fund-data/etfs/us/holdings-daily-us-en-twok.xlsx"]:
-    try:
-        b = get(u); s = b[:400].decode("utf-8-sig", "replace").replace("\n", " | ")
-        print("SRC", u[:90], "bytes", len(b), "| starts:", s)
-    except Exception as e:
-        print("SRC FAILED", u[:90], repr(e))
-try:
-    sh = {"User-Agent": "fair-value-dashboard research contact@example.com"}
-    j = json.loads(get("https://efts.sec.gov/LATEST/search-index?q=%22iShares%20Russell%202000%20ETF%22&forms=NPORT-P", sh))
-    print("SEC hits", j.get("hits", {}).get("total"))
-except Exception as e:
-    print("SEC FAILED", repr(e))
+# Probe 5: IWM holdings from the SEC's public N-PORT filings (official, quarterly)
+import json, os, re, gzip, urllib.request
+UA = {"User-Agent": f"fair-value-dashboard {os.environ.get('SEC_CONTACT', 'liumOazed@users.noreply.github.com')}", "Accept-Encoding": "gzip"}
+def get(u):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r:
+        b = r.read(); return gzip.decompress(b) if r.headers.get("Content-Encoding") == "gzip" else b
+j = json.loads(get("https://efts.sec.gov/LATEST/search-index?q=%22iShares%20Russell%202000%20ETF%22&forms=NPORT-P"))
+hits = j["hits"]["hits"][:5]
+for h in hits:
+    s = h["_source"]; print(h["_id"], s.get("display_names"), s.get("file_date"), s.get("period_ending"))
+# open the newest hit's primary doc
+hid = hits[0]["_id"]; adsh, fn = hid.split(":"); cik = hits[0]["_source"]["ciks"][0]
+url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{adsh.replace('-', '')}/{fn}"
+x = get(url).decode("utf-8", "replace"); print(url, len(x))
+print("series:", re.findall(r"<seriesName>(.*?)</seriesName>", x)[:2], "n holdings:", x.count("<invstOrSec>"))
+m = re.search(r"<invstOrSec>.*?</invstOrSec>", x, re.S); print(m.group(0)[:1500] if m else x[:1500])
