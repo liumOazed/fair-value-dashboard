@@ -88,7 +88,9 @@
     "TJX",
     "GRMN",
     "MO",
-    "HAS"
+    "HAS",
+    "PM",
+    "DLTR"
   ],
   "Travel": [
     "BKNG",
@@ -144,7 +146,8 @@
     "MSI",
     "RSG",
     "WAB",
-    "LII"
+    "LII",
+    "VLTO"
   ],
   "Energy": [
     "APA",
@@ -197,7 +200,9 @@
   ],
   "Materials & commodities": [
     "CF",
-    "NEM"
+    "NEM",
+    "SHW",
+    "PPG"
   ],
   "Index & commodities": [
     "QQQ",
@@ -239,5 +244,20 @@
     "TRV",
     "WRB",
     "WTW"
+  ],
+  "Asset & wealth management": [
+    "AMP",
+    "APO",
+    "ARES",
+    "BEN",
+    "BLK",
+    "BX",
+    "IVZ",
+    "KKR",
+    "NTRS",
+    "PFG",
+    "RJF",
+    "STT",
+    "TROW"
   ]
 }
