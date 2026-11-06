@@ -44527,7 +44527,7 @@
 "beta": null,
 "volatility_1y_pct": 82.96,
 "max_drawdown_1y_pct": -43.85,
-"nd_ebitda_then": -0.0,
+"nd_ebitda_then": 0.0,
 "margin_change_pts": -10.7,
 "fcf_cagr_pct": 11.02,
 "operating_margin_pct": 23.69,
@@ -44598,7 +44598,7 @@
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: FCF growing 11% a year. Worse: leverage up (-0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
+"t": "Better: FCF growing 11% a year. Worse: leverage up (0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
 }
 ],
 "checks_score": 0,
@@ -69128,7 +69128,7 @@
 "fcf_ni_3y": null,
 "fcf_ttm": 436704000.0,
 "ni_ttm": 518306000.0,
-"fcf_yield_yahoo_pct": -0.0,
+"fcf_yield_yahoo_pct": 0.0,
 "enterprise_value": 60398694400.0,
 "fcff_ev_pct": 0.79,
 "fcf_ni_conversion": null,
