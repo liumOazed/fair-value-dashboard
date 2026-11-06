@@ -1,6 +1,7 @@
 {
  "_about": "Single source of truth for required returns (the yearly return demanded to own a stock). Used by the full fair-value model (model/model.py), the Growth Screen and the Monthly Top 5. Order of use: stock override > theme override > sector default > default. Sector defaults = Damodaran Jan-2026 cost of equity by sector + about 1 point cushion, rounded to 0.5%, floor 7% (https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html). Base build: risk-free ~4-4.5% + equity risk premium ~4-4.5% = ~8.5-9% for an average stock, plus company-specific risk.",
  "default": 0.09,
+ "small_cap_premium": {"r": 0.02, "reason": "Added to the sector rate for the Russell 2000 screen only (scripts/build_russell.py): small companies are less diversified, less liquid and less studied, so their cash flows are less certain."},
  "sectors": {"Utilities": 0.07, "Financial Services": 0.075, "Real Estate": 0.075, "Energy": 0.085, "Healthcare": 0.09,
              "Basic Materials": 0.095, "Technology": 0.105, "Communication Services": 0.09, "Consumer Cyclical": 0.09,
              "Consumer Defensive": 0.09, "Industrials": 0.09},
