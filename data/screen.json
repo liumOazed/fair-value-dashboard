@@ -104,8 +104,13 @@
 "2026-11"
 ],
 "consistent_rule": "in the top 50 in at least 3 of the last 4 months, including the latest",
-"built": "2026-11-02",
+"built": "2026-11-06",
 "universe": 502,
+"djia": {
+"as_of": "2026-11-06",
+"n": 30,
+"missing": []
+},
 "sectors": [
 "Basic Materials",
 "Communication Services",
@@ -4150,7 +4155,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 1
 },
 {
 "ticker": "RMD",
@@ -8800,7 +8806,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 2
 },
 {
 "ticker": "ANET",
@@ -9633,7 +9640,8 @@
 "resilient_pick": true,
 "resilient_rank": 3,
 "all_checks": true,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 3
 },
 {
 "ticker": "CL",
@@ -10024,12 +10032,12 @@
 "ps": 4.26,
 "fcf_yield_pct": 4.1,
 "market_cap": 374484238336.0,
-"implied_fcf_growth": 0.0827,
+"implied_fcf_growth": 0.0595,
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Defensive sector default",
+"required_return": 0.08,
+"required_return_source": "stock",
+"required_return_reason": "Below the 9% Consumer Defensive rate: household staples with very stable demand and a beta near 0.4.",
 "fcf_ni": 0.97,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -10070,13 +10078,13 @@
 "wacc_detail": {
 "equity_weight": 0.906,
 "debt_weight": 0.094,
-"cost_equity": 0.09,
+"cost_equity": 0.08,
 "cost_debt_raw": 0.0249,
 "cost_debt_used": 0.0249,
 "tax": 0.208
 },
-"wacc": 0.0834,
-"roic_spread": 0.1049,
+"wacc": 0.0743,
+"roic_spread": 0.114,
 "v3_source": "own",
 "score_prev": 58.7,
 "components": {
@@ -10097,7 +10105,7 @@
 "pe_vs_market": 0.0433,
 "fpe_vs_market": 0.2268,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10107,7 +10115,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 18.2%, ROIC 19% vs 8.3% cost of capital (+10.5 pts), EPS +3.9% a year."
+"t": "Net margin 18.2%, ROIC 19% vs 7.4% cost of capital (+11.4 pts), EPS +3.9% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -10129,7 +10137,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 4
 },
 {
 "ticker": "PEG",
@@ -10523,12 +10532,12 @@
 "ps": 7.93,
 "fcf_yield_pct": 3.53,
 "market_cap": 404722974720.0,
-"implied_fcf_growth": 0.1025,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0786,
+"implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Defensive sector default",
+"required_return": 0.08,
+"required_return_source": "stock",
+"required_return_reason": "Below the 9% Consumer Defensive rate: global beverage brand with very stable demand and a beta near 0.3.",
 "fcf_ni": 0.57,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -10569,13 +10578,13 @@
 "wacc_detail": {
 "equity_weight": 0.905,
 "debt_weight": 0.095,
-"cost_equity": 0.09,
+"cost_equity": 0.08,
 "cost_debt_raw": 0.0367,
 "cost_debt_used": 0.0367,
 "tax": 0.179
 },
-"wacc": 0.0843,
-"roic_spread": 0.1321,
+"wacc": 0.0753,
+"roic_spread": 0.1411,
 "v3_source": "own",
 "score_prev": 57.4,
 "components": {
@@ -10596,7 +10605,7 @@
 "pe_vs_market": 0.1899,
 "fpe_vs_market": 0.4975,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10606,7 +10615,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 28.6%, ROIC 22% vs 8.4% cost of capital (+13.2 pts), EPS +11.6% a year."
+"t": "Net margin 28.6%, ROIC 22% vs 7.5% cost of capital (+14.1 pts), EPS +11.6% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -10628,7 +10637,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 5
 },
 {
 "ticker": "SYF",
@@ -12293,7 +12303,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 6
 },
 {
 "ticker": "IDXX",
@@ -13189,12 +13200,12 @@
 "ps": 3.23,
 "fcf_yield_pct": 3.83,
 "market_cap": 80354598912.0,
-"implied_fcf_growth": 0.1027,
-"implied_tag": "Demanding",
+"implied_fcf_growth": 0.0917,
+"implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.095,
-"required_return_source": "sector",
-"required_return_reason": "Basic Materials sector default",
+"required_return": 0.09,
+"required_return_source": "stock",
+"required_return_reason": "Below the 9.5% Basic Materials rate: paint is less cyclical than chemicals (repaint demand), but tied to housing and industry.",
 "fcf_ni": 0.96,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -13235,13 +13246,13 @@
 "wacc_detail": {
 "equity_weight": 0.844,
 "debt_weight": 0.156,
-"cost_equity": 0.095,
+"cost_equity": 0.09,
 "cost_debt_raw": 0.0374,
 "cost_debt_used": 0.0374,
 "tax": 0.231
 },
-"wacc": 0.0847,
-"roic_spread": 0.063,
+"wacc": 0.0805,
+"roic_spread": 0.0672,
 "v3_source": "own",
 "score_prev": 61.0,
 "components": {
@@ -13264,7 +13275,7 @@
 "pe_vs_market": 0.312,
 "fpe_vs_market": 0.4106,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13274,7 +13285,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 10.7%, ROIC 15% vs 8.5% cost of capital (+6.3 pts), EPS +9.9% a year."
+"t": "Net margin 10.7%, ROIC 15% vs 8.1% cost of capital (+6.7 pts), EPS +9.9% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -13296,7 +13307,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 7
 },
 {
 "ticker": "UHS",
@@ -17607,7 +17619,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 8
 },
 {
 "ticker": "CRM",
@@ -17773,7 +17786,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": true,
-"checks_pick": true
+"checks_pick": true,
+"djia_rank": 9
 },
 {
 "ticker": "GDDY",
@@ -17947,7 +17961,9 @@
 "ticker": "JNJ",
 "name": "Johnson & Johnson",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Pharma & biotech"
+],
 "score": 58.5,
 "rank": 106,
 "prev_score": 59.3,
@@ -18000,12 +18016,12 @@
 "ps": 6.62,
 "fcf_yield_pct": 2.98,
 "market_cap": 657677221888.0,
-"implied_fcf_growth": 0.1249,
+"implied_fcf_growth": 0.1003,
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Healthcare sector default",
+"required_return": 0.08,
+"required_return_source": "stock",
+"required_return_reason": "Below the 9% Healthcare rate: AAA balance sheet, diversified drugs and devices, beta near 0.2.",
 "fcf_ni": 0.73,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -18046,13 +18062,13 @@
 "wacc_detail": {
 "equity_weight": 0.936,
 "debt_weight": 0.064,
-"cost_equity": 0.09,
+"cost_equity": 0.08,
 "cost_debt_raw": 0.023,
 "cost_debt_used": 0.023,
 "tax": 0.177
 },
-"wacc": 0.0855,
-"roic_spread": 0.1401,
+"wacc": 0.0761,
+"roic_spread": 0.1495,
 "v3_source": "own",
 "score_prev": 58.8,
 "components": {
@@ -18073,7 +18089,7 @@
 "pe_vs_market": 0.7775,
 "fpe_vs_market": 0.3205,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18083,7 +18099,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 16.2%, ROIC 23% vs 8.6% cost of capital (+14.0 pts), EPS +17.9% a year."
+"t": "Net margin 16.2%, ROIC 23% vs 7.6% cost of capital (+14.9 pts), EPS +17.9% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -18105,7 +18121,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 10
 },
 {
 "ticker": "UNP",
@@ -18769,7 +18786,9 @@
 "ticker": "AMGN",
 "name": "Amgen Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Pharma & biotech"
+],
 "score": 58.3,
 "rank": 113,
 "prev_score": 55.4,
@@ -18822,12 +18841,12 @@
 "ps": 6.61,
 "fcf_yield_pct": 4.04,
 "market_cap": 251939930112.0,
-"implied_fcf_growth": 0.0847,
+"implied_fcf_growth": 0.0733,
 "implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Healthcare sector default",
+"required_return": 0.085,
+"required_return_source": "stock",
+"required_return_reason": "Slightly below the 9% Healthcare rate: large, low-beta biotech, but biosimilar erosion and $54B of debt.",
 "fcf_ni": 1.4,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -18868,13 +18887,13 @@
 "wacc_detail": {
 "equity_weight": 0.815,
 "debt_weight": 0.185,
-"cost_equity": 0.09,
+"cost_equity": 0.085,
 "cost_debt_raw": 0.048,
 "cost_debt_used": 0.048,
 "tax": 0.141
 },
-"wacc": 0.081,
-"roic_spread": 0.0857,
+"wacc": 0.0769,
+"roic_spread": 0.0898,
 "v3_source": "own",
 "score_prev": 60.4,
 "components": {
@@ -18897,7 +18916,7 @@
 "pe_vs_market": 0.2411,
 "fpe_vs_market": 0.0682,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18907,7 +18926,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 22.9%, ROIC 17% vs 8.1% cost of capital (+8.6 pts), EPS +5.5% a year."
+"t": "Net margin 22.9%, ROIC 17% vs 7.7% cost of capital (+9.0 pts), EPS +5.5% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -18929,7 +18948,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 11
 },
 {
 "ticker": "ITW",
@@ -20428,7 +20448,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 12
 },
 {
 "ticker": "FAST",
@@ -30739,7 +30760,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 13
 },
 {
 "ticker": "CME",
@@ -32915,7 +32937,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 14
 },
 {
 "ticker": "KIM",
@@ -34411,7 +34434,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 15
 },
 {
 "ticker": "MCD",
@@ -34577,7 +34601,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 16
 },
 {
 "ticker": "NDSN",
@@ -35244,7 +35269,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 17
 },
 {
 "ticker": "CB",
@@ -35745,7 +35771,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 18
 },
 {
 "ticker": "GEV",
@@ -41905,7 +41932,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 19
 },
 {
 "ticker": "PHM",
@@ -44499,7 +44527,7 @@
 "beta": null,
 "volatility_1y_pct": 82.96,
 "max_drawdown_1y_pct": -43.85,
-"nd_ebitda_then": 0.0,
+"nd_ebitda_then": -0.0,
 "margin_change_pts": -10.7,
 "fcf_cagr_pct": 11.02,
 "operating_margin_pct": 23.69,
@@ -44570,7 +44598,7 @@
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: FCF growing 11% a year. Worse: leverage up (0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
+"t": "Better: FCF growing 11% a year. Worse: leverage up (-0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
 }
 ],
 "checks_score": 0,
@@ -48067,7 +48095,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 20
 },
 {
 "ticker": "BNY",
@@ -49237,7 +49266,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 21
 },
 {
 "ticker": "ICE",
@@ -53081,7 +53111,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 22
 },
 {
 "ticker": "EVRG",
@@ -53749,7 +53780,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 23
 },
 {
 "ticker": "RCL",
@@ -54423,7 +54455,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 24
 },
 {
 "ticker": "TSCO",
@@ -57257,7 +57290,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 25
 },
 {
 "ticker": "SPGI",
@@ -58592,7 +58626,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 26
 },
 {
 "ticker": "IBM",
@@ -58758,7 +58793,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 27
 },
 {
 "ticker": "HAS",
@@ -62445,7 +62481,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 28
 },
 {
 "ticker": "ABT",
@@ -66311,7 +66348,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 29
 },
 {
 "ticker": "TMO",
@@ -69090,7 +69128,7 @@
 "fcf_ni_3y": null,
 "fcf_ttm": 436704000.0,
 "ni_ttm": 518306000.0,
-"fcf_yield_yahoo_pct": 0.0,
+"fcf_yield_yahoo_pct": -0.0,
 "enterprise_value": 60398694400.0,
 "fcff_ev_pct": 0.79,
 "fcf_ni_conversion": null,
@@ -82797,7 +82835,8 @@
 "resilient_pick": false,
 "resilient_rank": null,
 "all_checks": false,
-"checks_pick": false
+"checks_pick": false,
+"djia_rank": 30
 },
 {
 "ticker": "INTC",

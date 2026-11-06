@@ -315,6 +315,8 @@ WINDOW = months[-4:]                                               # consistency
 top_sets = {m: set(frames[m].nsmallest(50, "rank").index) for m in WINDOW}
 NEED = 3 if len(WINDOW) >= 4 else len(WINDOW)
 themes = {k: v for k, v in json.load(open(ROOT / "data/themes.json")).items() if not k.startswith("_")}
+_dj = ROOT / "data/universe/djia.json"
+DJIA = json.load(open(_dj))["members"] if _dj.exists() else []      # Dow members: ranked among themselves for the "Dow top 10" filter
 t_of = {}
 for th, tk in themes.items():
     for t in tk: t_of.setdefault(t, []).append(th)
@@ -517,7 +519,10 @@ for r in rows:
         r["fcff_ev_src"] = pathlib.Path(_sup[-1]).name if r["fcff_ev_pct"] is not None else None
     if r["sector"] == "Financial Services" and not r.get("peer_group"):
         r["fcff_ev_pct"] = None                                    # banks / insurers: enterprise value is not meaningful
-out = dict(resilient=RESILIENT, all_checks=ALLCHECKS, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows),
+_djr = sorted((r for r in rows if r["ticker"] in DJIA), key=lambda r: -r["score"])
+for i, r in enumerate(_djr, 1):
+    r["djia_rank"] = i                                            # rank among the 30 Dow stocks by Growth Quality Score
+out = dict(resilient=RESILIENT, all_checks=ALLCHECKS, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows), djia=dict(as_of=json.load(open(_dj))["as_of"] if _dj.exists() else None, n=len(_djr), missing=[t for t in DJIA if t not in {r["ticker"] for r in _djr}]),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
 json.dump(out, open(ROOT / "data/screen.json", "w"), indent=0)
 print("built", cur_m, "vs", prev_m, "rows", len(rows), "consistent", sum(r["consistent"] for r in rows))

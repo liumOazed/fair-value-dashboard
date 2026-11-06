@@ -21,13 +21,13 @@ function chips(el,label,list,cur,cb){el.innerHTML=`<span class="lbl">${label}</s
  el.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{cb(c.dataset.v);el.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()})}
 chips($("#secchips"),"Sector",["All",...S.sectors],sec,v=>sec=v);
 chips($("#thchips"),"Theme",["All",...S.themes],th,v=>th=v);
-chips($("#extra"),"Show",["All","Consistent only","Resilient picks","Passes all 5 checks","Has fair value"],"All",v=>only=v==="All"?"":v);
+chips($("#extra"),"Show",["All","Consistent only","Resilient picks","Passes all 5 checks","Has fair value","Dow top 10"],"All",v=>only=v==="All"?"":v);
 const flagCls=f=>["Loss-making","One-off growth?","High debt","Weak interest cover"].includes(f)?"bad":["Cyclical","Diluting","Below WACC","Cash swing"].includes(f)?"warn":"";
 {const t=$("#tscroll"),b=$("#bscroll");let lock=0;t.onscroll=()=>{if(lock){lock=0;return}lock=1;b.scrollLeft=t.scrollLeft};b.onscroll=()=>{if(lock){lock=0;return}lock=1;t.scrollLeft=b.scrollLeft}}
 function sync(){const t=$("#tscroll"),b=$("#bscroll"),w=$("#tbl").scrollWidth;$("#tspacer").style.width=w+"px";t.style.display=w>b.clientWidth+2?"":"none"}
 window.addEventListener("resize",sync);
 function render(){
- let f=rows.filter(r=>(sec==="All"||r.sector===sec)&&(th==="All"||r.themes.includes(th))&&(only!=="Consistent only"||r.consistent)&&(only!=="Has fair value"||!!fv[r.ticker])&&(only!=="Resilient picks"||r.resilient_pick)&&(only!=="Passes all 5 checks"||r.all_checks)&&(r.ticker+r.name).toLowerCase().includes(filt));
+ let f=rows.filter(r=>(sec==="All"||r.sector===sec)&&(th==="All"||r.themes.includes(th))&&(only!=="Consistent only"||r.consistent)&&(only!=="Has fair value"||!!fv[r.ticker])&&(only!=="Resilient picks"||r.resilient_pick)&&(only!=="Passes all 5 checks"||r.all_checks)&&(only!=="Dow top 10"||(r.djia_rank&&r.djia_rank<=10))&&(r.ticker+r.name).toLowerCase().includes(filt));
  const filtered=sec!=="All"||th!=="All"||only||filt;
  if(!filtered&&!showAll)f=f.filter(r=>r.top50||r.resilient_pick||r.checks_pick);
  f.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (typeof x==="string"?x.localeCompare(y):(x??-1e9)-(y??-1e9))*dir});
