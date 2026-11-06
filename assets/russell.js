@@ -25,14 +25,16 @@ const views=["Top 50","Valued only","Check first","All that passed"];
 $("#vchips").innerHTML='<span class="lbl">Show</span>'+views.map(v=>`<button class="chip${v===view?" on":""}" data-v="${v}">${v}</button>`).join("");
 $("#vchips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{view=c.dataset.v;$("#vchips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()});
 let checks="All";
-const nChk=R.rows.filter(r=>r.all_checks).length;
-$("#cchips").innerHTML='<span class="lbl">Checks</span>'+["All","Passes all 5 checks"].map(v=>`<button class="chip${v===checks?" on":""}" data-v="${v}"${v==="All"?"":' title="Yes to all five quick questions: revenue growing, profits healthy, cash flow strong, debt manageable, financial position improving"'}>${v}${v==="All"?"":` <span class="cnt">${nChk}</span>`}</button>`).join("");
+const yesN=r=>(r.answers||[]).filter(x=>x.v==="yes").length;
+const CHK={"All":null,"Passes at least 4 checks":r=>yesN(r)>=4,"Passes all 5 checks":r=>r.all_checks};
+const CTIP={"Passes at least 4 checks":"Yes to at least four of the five quick questions (all five also count). Hover the Checks badge for which one missed","Passes all 5 checks":"Yes to all five quick questions: revenue growing, profits healthy, cash flow strong, debt manageable, financial position improving"};
+$("#cchips").innerHTML='<span class="lbl">Checks</span>'+Object.keys(CHK).map(v=>`<button class="chip${v===checks?" on":""}" data-v="${v}"${CTIP[v]?` title="${CTIP[v]}"`:""}>${v}${CHK[v]?` <span class="cnt">${R.rows.filter(CHK[v]).length}</span>`:""}</button>`).join("");
 $("#cchips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{checks=c.dataset.v;$("#cchips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()});
-const chkPill=r=>{const a=r.answers||[];if(!a.length)return "";const y=a.filter(x=>x.v==="yes").length;
+const chkPill=r=>{const a=r.answers||[];if(!a.length)return "";const y=yesN(r);
  return ` <span class="pill${r.all_checks?" chk":""}" title="${esc(a.map(x=>x.q+" "+x.v+": "+x.t).join("\n"))}">${y}/5${r.all_checks?" ✓":""}</span>`};
 function render(){
  let list=view==="Top 50"?top:view==="Valued only"?valued:view==="Check first"?top.filter(r=>r.check_first):R.rows;
- if(checks!=="All")list=list.filter(r=>r.all_checks);
+ if(CHK[checks])list=list.filter(CHK[checks]);
  $("#tbl tbody").innerHTML=list.map(r=>{
   const p=r.parts||{};const diff=r.fair_value&&r.price_at_eval?r.price_at_eval/r.fair_value-1:null;
   const note=r.fv_skip?esc(r.fv_skip):(r.flags||[]).concat(r.risks||[]).map(esc).join(" · ");
