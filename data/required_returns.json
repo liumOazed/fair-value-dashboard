@@ -88,6 +88,11 @@
   "BMY":  {"r": 0.085, "reason": "Large, low-beta pharma facing a patent cliff around 2028."},
   "NRG":  {"r": 0.1, "reason": "Heavy debt and thin, commodity-linked margins; data-centre power upside."},
   "FIS":  {"r": 0.1, "reason": "Integration of a large acquisition and high debt."},
+  "PG": {"r": 0.08, "reason": "Below the 9% Consumer Defensive rate: household staples with very stable demand and a beta near 0.4."},
+  "KO": {"r": 0.08, "reason": "Below the 9% Consumer Defensive rate: global beverage brand with very stable demand and a beta near 0.3."},
+  "SHW": {"r": 0.09, "reason": "Below the 9.5% Basic Materials rate: paint is less cyclical than chemicals (repaint demand), but tied to housing and industry."},
+  "JNJ": {"r": 0.08, "reason": "Below the 9% Healthcare rate: AAA balance sheet, diversified drugs and devices, beta near 0.2."},
+  "AMGN": {"r": 0.085, "reason": "Slightly below the 9% Healthcare rate: large, low-beta biotech, but biosimilar erosion and $54B of debt."},
   "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
  }
 }

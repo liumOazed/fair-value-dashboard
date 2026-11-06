@@ -1,6 +1,12 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
- "todo": [],
+ "todo": [
+  "PG",
+  "KO",
+  "SHW",
+  "JNJ",
+  "AMGN"
+ ],
  "done": [
   "GOOGL",
   "AMZN",

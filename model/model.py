@@ -4,7 +4,7 @@ All $ figures in billions unless noted. Inputs sourced from Q2-2026 filings / pr
 """
 import json, math
 
-AS_OF = "2026-11-05"   # valuation date of the latest update (method: FCF before interest at the required return, minus net debt; advantage period per moat class from November 2026)
+AS_OF = "2026-11-06"   # valuation date of the latest update (method: FCF before interest at the required return, minus net debt; advantage period per moat class from November 2026)
 GT = 0.025            # terminal growth
 PROBS = {"bear": 0.30, "base": 0.50, "bull": 0.20}
 import pathlib
@@ -345,6 +345,28 @@ STOCKS = {
               net_cash=-20.52, extra=0.0, mos=0.35,
               scen=dict(bear=dict(g1=0.02,g10=0.02,m=0.12), base=dict(g1=0.1,g10=0.03,m=0.17), bull=dict(g1=0.13,g10=0.04,m=0.2)),
               notes="TTM to Jun-2026. Banking and capital-markets software after swapping its Worldpay stake for Global Payments' card-issuer business (early 2026): revenue run-rate ~$13.5B, so base growth of 10% next year includes the acquisition's full year. Debt rose to $21.3B. SBC-adjusted cash margin ~14% (FIS targets ~20%+ FCF conversion). Flagged 'check first' on the Monthly Top 5 (forward P/E ~6 looks too cheap to trust): LOW CONFIDENCE until integration results are clearer."),
+
+ # ---- Dow Jones top 10 by Growth Screen score (Nov 2026): the five not modelled before
+ "PG": dict(name="Procter & Gamble Co.", price=167.1, shares=2.44, rev=87.923, fcf=15.34, sbc=0.501,
+              net_cash=-23.56, extra=0.0, mos=0.25,
+              scen=dict(bear=dict(g1=0.01,g10=0.02,m=0.155), base=dict(g1=0.035,g10=0.03,m=0.17), bull=dict(g1=0.05,g10=0.035,m=0.185)),
+              notes="TTM to Sep-2026 (FY27 Q1). Household and personal-care brands (Tide, Pampers, Gillette, Pantene). Analysts expect ~3% sales growth (FY27 ~$89.8B, FY28 ~$92.6B); volumes are flat to slightly up and growth comes mostly from price and mix. FCF after stock pay ~17% of sales, steady for four years (16.8% FY26), so the base holds 17%. Net debt $23.6B (cash $15.4B, debt $38.9B). Shares 2.44B is an ESTIMATE of diluted shares (2.32B basic plus the ESOP convertible preferred). Very stable demand: 8% required return."),
+ "KO": dict(name="The Coca-Cola Company", price=95.73, shares=4.32, rev=51.054, fcf=14.282, sbc=0.269,
+              net_cash=-25.02, extra=8.0, mos=0.25,
+              scen=dict(bear=dict(g1=0.01,g10=0.025,m=0.21), base=dict(g1=0.04,g10=0.035,m=0.24), bull=dict(g1=0.06,g10=0.04,m=0.265)),
+              notes="TTM to Sep-2026. Q3 revenue +7% (organic +7%); FY26 outlook raised to organic growth of at least 5%, comparable EPS +11% and free cash flow of at least $13.0B (Q3 release). TTM FCF $14.3B (27% of sales) is clean of the fairlife milestone paid in March 2025 (2025 FCF was only $5.3B because of it), but sits above the ~21% of the years before refranchising finished, so the base margin is set at 24% and the bear at 21%. Analysts see revenue ~3% LOWER next year (more bottlers sold), hence base growth 4%. Net debt $25.0B = debt $41.6B less cash, short-term investments and marketable securities $16.6B. 'extra' $8.0B = ESTIMATE for the equity stakes in bottlers and Monster (~$19B book) at a haircut, since part of their dividends is already in FCF. Diluted shares ~4.32B (ESTIMATE). 8% required return."),
+ "SHW": dict(name="Sherwin-Williams Co.", price=349.01, shares=0.2436, rev=24.912, fcf=3.078, sbc=0.117,
+              net_cash=-14.54, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.01,g10=0.025,m=0.10), base=dict(g1=0.05,g10=0.04,m=0.12), bull=dict(g1=0.08,g10=0.05,m=0.135)),
+              notes="TTM to Sep-2026. Largest US paint and coatings company (company-owned stores for contractors, plus Valspar and industrial coatings); TTM sales +7.9% include the Suvinil (Brazil) acquisition. Analysts expect ~4% sales growth next year (~$26.2B) as housing turnover stays weak. FCF after stock pay 11.9% of sales TTM, 8-11% in 2022-2025 (heavy spending on the new Cleveland HQ and R&D centre), so the base is 12%. Net debt $14.5B; operating leases (~$2.2B) not deducted. Diluted shares ~0.2436B (ESTIMATE). Housing and industrial cycle: 9% required return and 30% safety margin."),
+ "JNJ": dict(name="Johnson & Johnson", price=272.32, shares=2.42, rev=99.335, fcf=19.595, sbc=1.424,
+              net_cash=-27.42, extra=-4.3, mos=0.25,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.165), base=dict(g1=0.055,g10=0.035,m=0.19), bull=dict(g1=0.075,g10=0.045,m=0.21)),
+              notes="TTM to Sep-2026. Q3 sales $25.4B, +6.0% operational (Innovative Medicine +7.9% despite a ~690bp Stelara biosimilar drag, MedTech +2.5%); FY26 sales guide raised to $101.0-101.4B (+7.4%), adjusted EPS $11.05-11.15 (Q3 release). Growth drugs: Tremfya, Darzalex, Carvykti, Tecvayli, Rybrevant, Spravato, Caplyta. FCF after stock pay ~18-19% of sales for four years; YTD FCF ~$15.1B vs $14.2B. GAAP EPS of $0.09 in Q3 reflects the charge for the proposed $5.5B talc settlement (July 2026): 'extra' = -$4.3B, the settlement after tax (ESTIMATE), as it is not yet in debt. Net debt $27.4B. Diluted shares ~2.42B (ESTIMATE). AAA balance sheet, very low beta: 8% required return."),
+ "AMGN": dict(name="Amgen Inc.", price=460.28, shares=0.546, rev=38.903, fcf=9.581, sbc=0.493,
+              net_cash=-40.82, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=-0.01,g10=0.02,m=0.19), base=dict(g1=0.04,g10=0.035,m=0.24), bull=dict(g1=0.08,g10=0.05,m=0.28)),
+              notes="TTM to Sep-2026. Q3 revenue $10.37B, +8%: Repatha +37%, Evenity +39%, Tezspire +43% and biosimilars offset Prolia (-45%) and Xgeva (-47%) losing exclusivity. FY26 revenue guide $38.9-39.7B, non-GAAP EPS $22.90-23.70, capex ~$2.6B, buybacks up to $3.0B (Q3 release). Analysts expect ~3.5% growth next year as the Prolia/Xgeva erosion continues. FCF after stock pay 20-30% of sales in 2022-2025 (23% TTM), base 24%. MariTide (obesity, Phase 3) is the bull case and is NOT in the base. Net debt $40.8B (debt $54.0B from the Horizon deal, cash $13.2B). Diluted shares 546M (Q3). Patent and pricing risk: 8.5% required return, 30% safety margin."),
 }
 
 # ---------------------------------------------------------------- capital structure (for WACC)
@@ -427,6 +449,9 @@ FIN = {
  "BMY": dict(debt=44.81, interest=1.65, rd=0.0368, tax=0.18),
  "NRG": dict(debt=23.47, interest=1.02, rd=0.0435, tax=0.24),
  "FIS": dict(debt=21.26, interest=0.6, rd=0.0282, tax=0.22),
+ "PG": dict(debt=38.93, interest=0.902, rd=0.0249, tax=0.208), "KO": dict(debt=41.62, interest=1.529, rd=0.0367, tax=0.179),
+ "SHW": dict(debt=14.8, interest=0.538, rd=0.0374, tax=0.231), "JNJ": dict(debt=44.65, interest=0.984, rd=0.023, tax=0.177),
+ "AMGN": dict(debt=54.01, interest=2.636, rd=0.048, tax=0.141),
 }
 
 # DCF_METHOD: "equity" = original (FCF after interest at the required return, minus net debt; double-counts debt cost)
