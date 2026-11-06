@@ -2015,6 +2015,131 @@
    "suggested": "none",
    "current": "none",
    "differs": false
+  },
+  "PG": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Category-leading brands (Tide, Pampers, Gillette) with the largest ad and R&D budgets and retailer shelf power.",
+   "risk": "Store brands and price-sensitive shoppers; volume has been flat.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0139
+   },
+   "total": 7.8,
+   "suggested": "wide",
+   "current": "narrow",
+   "differs": true
+  },
+  "KO": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 2,
+    "e": 1
+   },
+   "why": "The world's best-known drinks brand with an unmatched bottler distribution system.",
+   "risk": "Health trends against sugar, GLP-1 drugs and sugar taxes.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 3.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0142
+   },
+   "total": 7.0,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "SHW": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 2,
+    "e": 0
+   },
+   "why": "About 5,000 company-owned stores serving professional painters, who value service and stick with one supplier.",
+   "risk": "Housing and industrial downturns; price-led growth.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 5.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0269
+   },
+   "total": 8.0,
+   "suggested": "wide",
+   "current": "narrow",
+   "differs": true
+  },
+  "JNJ": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Patented drugs (Tremfya, Darzalex, Carvykti) plus surgical and cardiac devices that hospitals standardise on.",
+   "risk": "Stelara biosimilars, drug-price rules and talc litigation.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0126
+   },
+   "total": 7.5,
+   "suggested": "wide",
+   "current": "wide",
+   "differs": false
+  },
+  "AMGN": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Patents on Repatha, Evenity and Tezspire, plus biologics manufacturing scale.",
+   "risk": "Biosimilars for Prolia/Xgeva and later Enbrel; MariTide trial results.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 1.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 0,
+    "gm_std": 0.0682
+   },
+   "total": 4.5,
+   "suggested": "none",
+   "current": "narrow",
+   "differs": true
   }
  }
 }
