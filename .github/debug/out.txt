@@ -1,67 +1,53 @@
-NDX tables: 18
-  0 (11, 2) [0, 1]
-  1 (2, 3) ['Category', 'All-Time Highs[13]', 'All-Time Highs[13].1']
-  2 (41, 4) ['Year', 'Closing level', 'Change in Index in Points', 'Change in Index in\xa0%']
-  3 (31, 3) ['Milestone (closing)[13]', 'Date of Record (closing)[13]', 'Trading Days[13]']
-  4 (3, 3) ['Milestone (closing)[13]', 'Date of Record (closing)[13]', 'Trading Days[13]']
-  5 (1, 2) ['vteList of NASDAQ-100 companies', 'vteList of NASDAQ-100 companies.1']
-  6 (4, 3) ['vteNasdaq, Inc.', 'vteNasdaq, Inc..1', 'vteNasdaq, Inc..2']
-  7 (34, 2) ['vteStock market indices', 'vteStock market indices.1']
-  8 (2, 2) [0, 1]
-  9 (4, 2) [0, 1]
-  10 (5, 2) [0, 1]
-  11 (5, 2) [0, 1]
-  12 (2, 2) [0, 1]
-  13 (3, 2) [0, 1]
-  14 (5, 2) [0, 1]
-  15 (2, 2) [0, 1]
-  16 (1, 2) ['vteMajor United States stock market indices', 'vteMajor United States stock market indices.1']
-  17 (8, 2) ['vteMajor stock market indices of the Americas', 'vteMajor stock market indices of the Americas.1']
-DJIA tables: 29
-  0 (10, 2) [0, 1]
-  1 (131, 4) ['Year', 'Closing value', 'Net change', 'Percentage change']
-  2 (1, 2) ['vteComponents of the Dow Jones Industrial Average', 'vteComponents of the Dow Jones Industrial Average.1']
-  3 (8, 2) ['vteMajor stock market indices of the Americas', 'vteMajor stock market indices of the Americas.1']
-  4 (34, 2) ['vteStock market indices', 'vteStock market indices.1']
-  5 (2, 2) [0, 1]
-  6 (4, 2) [0, 1]
-  7 (5, 2) [0, 1]
-  8 (5, 2) [0, 1]
-  9 (2, 2) [0, 1]
-  10 (3, 2) [0, 1]
-  11 (5, 2) [0, 1]
-  12 (2, 2) [0, 1]
-  13 (55, 3) ['vteNews Corp', 'vteNews Corp.1', 'Unnamed: 2']
-  14 (2, 2) ['vteDow Jones & Company', 'vteDow Jones & Company.1']
-  15 (6, 2) ['vteHarperCollins', 'vteHarperCollins.1']
-  16 (27, 2) ['vteNews Corp Australia', 'vteNews Corp Australia.1']
-  17 (10, 2) [0, 1]
-  18 (2, 2) [0, 1]
-  19 (4, 2) ['vteNews Corp Australia community newspapers', 'vteNews Corp Australia community newspapers.1']
-  20 (11, 2) ['vteNews24', 'vteNews24.1']
-  21 (2, 2) [0, 1]
-  22 (6, 2) ['vteNews24 programming', 'vteNews24 programming.1']
-  23 (2, 2) [0, 1]
-  24 (2, 2) [0, 1]
-  25 (10, 3) ['vteNews UK', 'vteNews UK.1', 'vteNews UK.2']
-  26 (5, 2) [0, 1]
-  27 (1, 2) [0, 1]
-  28 (3, 2) ['Authority control databases', 'Authority control databases.1']
-IWM bytes 1538165
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US">
-<head>
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-db24cb52045c84bd615e0e7852e6eee4.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-76e7e346179e654e66dfd92e5d6f0171.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-7c6aa69a64b07c4ed764a95e0d95fa71.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-99931c49eb56ac885ba739802396f395.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-c0b4f7f31b672bcc58ff8bbb6a33764.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-e230e5b6f6cce2c782ae2fe3a51c0328.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-fe7eefd8676f1dc6b1f37c1b772a20d8.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-bcc17d66ca66b2742f8c240497925528.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-fc65eef68d26b9f38c056e6d7aee1fad.css" as="style" />
-<link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-b3c0c3efa159aa10402ba68313a8bec7.css" as="style" />
-<script nonce="lhZSkDtb7DbyyC2+qs+FpA==">
-//<![CDATA[
-var vice= { config: { viceAccountId: 'blackrock', viceSiteId: 'isharesprod', viceZoneId: 
-...lines 1653
+NDX FAILED <HTTPError 404: 'Not Found'>
+DJIA tables: 27
+  0 (30, 7) ['Company', 'Exchange', 'Symbol', 'ISIN', 'Sector', 'Date added', 'Notes']
+  1 (1, 2) ['vteComponents of the Dow Jones Industrial Average', 'vteComponents of the Dow Jones Industrial Average.1']
+  2 (8, 2) ['vteMajor stock market indices of the Americas', 'vteMajor stock market indices of the Americas.1']
+  3 (34, 2) ['vteStock market indices', 'vteStock market indices.1']
+  4 (2, 2) [0, 1]
+  5 (4, 2) [0, 1]
+DJIA MEMBERS:
+ Company,Exchange,Symbol,ISIN,Sector,Date added,Notes
+3M,NYSE,MMM,US88579Y1010,Industrials,1976-08-09,As Minnesota Mining and Manufacturing
+Alphabet (Class A),NASDAQ,GOOGL,US02079K3059,Communication Services,2026-06-29,
+American Express,NYSE,AXP,US0258161092,Financials,1982-08-30,
+Amgen,NASDAQ,AMGN,US0311621009,Health Care,2020-08-31,
+Amazon,NASDAQ,AMZN,US0231351067,Consumer Discretionary,2024-02-26,
+Apple,NASDAQ,AAPL,US0378331005,Information Technology,2015-03-19,
+Boeing,NYSE,BA,US0970231058,Industrials,1987-03-12,
+Caterpillar,NYSE,CAT,US1491231015,Industrials,1991-05-06,
+Chevron,NYSE,CVX,US1667641005,Energy,2008-02-19,Also 1930-07-18 to 1999-11-01
+Cisco,NASDAQ,CSCO,US17275R1023,Information Technology,2009-06-08,
+Coca-Cola,NYSE,KO,US1912161007,Consumer Staples,1987-03-12,Also 1932-05-26 to 1935-11-20
+Disney,NYSE,DIS,US2546871060,Communication Services,1991-05-06,
+Goldman Sachs,NYSE,GS,US38141G1040,Financials,2013-09-23,
+Home Depot,NYSE,HD,US4370761029,Consumer Discretionary,1999-11-01,
+Honeywell Technologies,NASDAQ,HON,US4385162056,Industrials,2020-08-31,"Also 1925-12-07 to 2008-02-19 under various names, including Allied Chemical and Dye, Allied Chemical, AlliedSignal and Honeywell"
+IBM,NYSE,IBM,US4592001014,Information Technology,1979-06-29,Also 1932-05-26 to 1939-03-04
+Johnson & Johnson,NYSE,JNJ,US4781601046,Health Care,1997-03-17,
+JPMorgan Chase,NYSE,JPM,US46625H1005,Financials,1991-05-06,
+McDonald's,NYSE,MCD,US5801351017,Consumer Discretionary,1985-10-30,
+Merck,NYSE,MRK,US58933Y1055,Health Care,1979-06-29,
+Microsoft,NASDAQ,MSFT,US5949181045,Information Technology,1999-11-01,
+Nike,NYSE,NKE,US6541061031,Consumer Discretionary,2013-09-23,
+Nvidia,NASDAQ,NVDA,US67066G1040,Information Technology,2024-11-08,
+Procter & Gamble,NYSE,PG,US7427181091,Consumer Staples,1932-05-26,
+Salesforce,NYSE,CRM,US79466L3024,Information Technology,2020-08-31,
+Sherwin-Williams,NYSE,SHW,US8243481061,Materials,2024-11-08,
+Travelers,NYSE,TRV,US89417E1091,Financials,2009-06-08,
+UnitedHealth Group,NYSE,UNH,US91324P1021,Health Care,2012-09-24,
+Visa,NYSE,V,US92826C8394,Financials,2013-09-23,
+Walmart,NASDAQ,WMT,US9311421039,Consumer Staples,1997-03-17,
+
+DJIA2 tables: 91
+  0 (1, 2) [0, 1]
+  1 (12, 3) [0, 1, 2]
+  2 (12, 3) [0, 1, 2]
+  3 (12, 3) [0, 1, 2]
+  4 (12, 3) [0, 1, 2]
+  5 (12, 3) [0, 1, 2]
+IWM ?fileType=csv&fileName=IWM_holdings&dataType=fund bytes 1508195 | starts: <!DOCTYPE html> | <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US"> | <head> | <link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-db24cb52045c84bd615e0e7852e6eee4.css" as="style" /> | <link rel="preload" href="/blk-one02-c-assets/inc
+IWM ?tab=all&fileType=json bytes 1508168 | starts: <!DOCTYPE html> | <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US"> | <head> | <link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-db24cb52045c84bd615e0e7852e6eee4.css" as="style" /> | <link rel="preload" href="/blk-one02-c-assets/inc
+IWM ?fileType=csv&fileName=IWM_holdings&dataType=fund&asOfDate= bytes 1508205 | starts: <!DOCTYPE html> | <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US"> | <head> | <link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-db24cb52045c84bd615e0e7852e6eee4.css" as="style" /> | <link rel="preload" href="/blk-one02-c-assets/inc
+ALT 812596.ajax?fileType=csv&fileName=IWM_holdings&dataType=fund 1508135 <!DOCTYPE html> | <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US"> | <head> | <link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-db24cb52045c84bd615e0e7852e6eee4.css" as="style" /> | <link rel="preload" href="/blk-one02-c-assets/inc
+ALT ype=xls&fileName=iShares-Russell-2000-ETF_fund&dataType=fund 1508212 <!DOCTYPE html> | <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" lang="en-US" xml:lang="en-US"> | <head> | <link rel="preload" href="/blk-one02-c-assets/include/bundles/minified-db24cb52045c84bd615e0e7852e6eee4.css" as="style" /> | <link rel="preload" href="/blk-one02-c-assets/inc
