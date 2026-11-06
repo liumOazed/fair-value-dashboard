@@ -109,7 +109,7 @@
   "APP": {
    "last_report": "2026-11-04",
    "next_report": "2027-02-10",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-06",
     "2025-11-05",
@@ -122,7 +122,7 @@
   "FICO": {
    "last_report": "2026-11-04",
    "next_report": "2027-01-27",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-07-30",
     "2025-11-05",
@@ -135,7 +135,7 @@
   "APA": {
    "last_report": "2026-11-04",
    "next_report": "2027-02-24",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-11-05",
     "2026-02-25",
@@ -187,7 +187,7 @@
   "EXPE": {
    "last_report": "2026-11-04",
    "next_report": "2027-02-11",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-07",
     "2025-11-06",
@@ -238,8 +238,8 @@
   },
   "TPR": {
    "last_report": "2026-11-05",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-27",
+   "next_report": "2027-02-04",
+   "yahoo_latest_quarter": "2026-09-26",
    "past": [
     "2025-08-14",
     "2025-11-06",
@@ -264,8 +264,8 @@
   },
   "MNST": {
    "last_report": "2026-11-05",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-30",
+   "next_report": "2027-02-25",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-07",
     "2025-11-06",
@@ -636,8 +636,8 @@
   },
   "SPG": {
    "last_report": "2026-11-05",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-30",
+   "next_report": "2027-02-01",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-04",
     "2025-11-03",
@@ -675,8 +675,8 @@
   },
   "RL": {
    "last_report": "2026-11-05",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-27",
+   "next_report": "2027-02-04",
+   "yahoo_latest_quarter": "2026-09-26",
    "past": [
     "2025-08-07",
     "2025-11-06",
@@ -780,7 +780,7 @@
   "STE": {
    "last_report": "2026-11-04",
    "next_report": "2027-02-03",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-06",
     "2025-11-05",
@@ -819,7 +819,7 @@
   "MSI": {
    "last_report": "2026-11-04",
    "next_report": "2027-02-09",
-   "yahoo_latest_quarter": "2026-07-04",
+   "yahoo_latest_quarter": "2026-10-03",
    "past": [
     "2025-08-07",
     "2025-10-30",
@@ -910,7 +910,7 @@
   "CF": {
    "last_report": "2026-11-05",
    "next_report": "2027-02-17",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-11-05",
     "2026-02-18",
@@ -936,7 +936,7 @@
   "HST": {
    "last_report": "2026-11-04",
    "next_report": "2027-02-17",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-07-30",
     "2025-11-05",
@@ -987,8 +987,8 @@
   },
   "ZTS": {
    "last_report": "2026-11-05",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-30",
+   "next_report": "2027-02-11",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-05",
     "2025-11-04",
@@ -1126,6 +1126,84 @@
     "2026-04-30",
     "2026-08-04",
     "2026-11-03"
+   ]
+  },
+  "VLTO": {
+   "last_report": "2026-10-29",
+   "next_report": "2027-02-02",
+   "yahoo_latest_quarter": "2026-10-02",
+   "past": [
+    "2025-07-28",
+    "2025-10-28",
+    "2026-02-03",
+    "2026-04-28",
+    "2026-07-28",
+    "2026-10-29"
+   ]
+  },
+  "AMP": {
+   "last_report": "2026-10-29",
+   "next_report": "2027-01-28",
+   "yahoo_latest_quarter": "2026-09-30",
+   "past": [
+    "2025-07-24",
+    "2025-10-30",
+    "2026-01-29",
+    "2026-04-23",
+    "2026-07-23",
+    "2026-10-29"
+   ]
+  },
+  "PPG": {
+   "last_report": "2026-10-27",
+   "next_report": "2027-01-26",
+   "yahoo_latest_quarter": "2026-09-30",
+   "past": [
+    "2025-07-29",
+    "2025-10-28",
+    "2026-01-27",
+    "2026-04-28",
+    "2026-07-28",
+    "2026-10-27"
+   ]
+  },
+  "EOG": {
+   "last_report": "2026-11-05",
+   "next_report": "2027-02-23",
+   "yahoo_latest_quarter": "2026-09-30",
+   "past": [
+    "2025-08-07",
+    "2025-11-06",
+    "2026-02-24",
+    "2026-05-05",
+    "2026-08-04",
+    "2026-11-05"
+   ]
+  },
+  "PM": {
+   "last_report": "2026-10-21",
+   "next_report": "2027-02-04",
+   "yahoo_latest_quarter": "2026-09-30",
+   "past": [
+    "2025-07-22",
+    "2025-10-21",
+    "2026-02-06",
+    "2026-04-22",
+    "2026-07-22",
+    "2026-10-21"
+   ]
+  },
+  "DLTR": {
+   "last_report": "2026-08-27",
+   "next_report": "2026-11-24",
+   "yahoo_latest_quarter": "2026-08-01",
+   "past": [
+    "2025-06-04",
+    "2025-09-03",
+    "2025-12-03",
+    "2026-03-16",
+    "2026-05-28",
+    "2026-08-27"
    ]
   }
  }

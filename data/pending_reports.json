@@ -13,77 +13,84 @@
    "ticker": "APP",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 2
   },
   {
    "ticker": "FICO",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 2
   },
   {
    "ticker": "APA",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 2
   },
   {
    "ticker": "EXPE",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 2
   },
   {
    "ticker": "STE",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 2
   },
   {
    "ticker": "HST",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-04",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 2
   },
   {
    "ticker": "MNST",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 1
   },
   {
    "ticker": "SPG",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 1
   },
   {
    "ticker": "RL",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
-   "yahoo_latest_quarter": "2026-06-27",
+   "yahoo_latest_quarter": "2026-09-26",
    "waiting_days": 1
   },
   {
    "ticker": "CF",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 1
   },
   {
    "ticker": "ZTS",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-05",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
+   "waiting_days": 1
+  },
+  {
+   "ticker": "EOG",
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-05",
+   "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 1
   }
  ],
@@ -115,6 +122,11 @@
   },
   {
    "ticker": "WDAY",
+   "next_report": "2026-11-24",
+   "data_through": "2026-07-31"
+  },
+  {
+   "ticker": "DLTR",
    "next_report": "2026-11-24",
    "data_through": "2026-07-31"
   },
@@ -199,6 +211,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "PPG",
+   "next_report": "2027-01-26",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "MSFT",
    "next_report": "2027-01-27",
    "data_through": "2026-09-30"
@@ -264,6 +281,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "AMP",
+   "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "AXP",
    "next_report": "2027-01-29",
    "data_through": "2026-09-30"
@@ -294,6 +316,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "VLTO",
+   "next_report": "2027-02-02",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "GOOGL",
    "next_report": "2027-02-03",
    "data_through": "2026-09-30"
@@ -319,6 +346,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "TPR",
+   "next_report": "2027-02-04",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "FTNT",
    "next_report": "2027-02-04",
    "data_through": "2026-09-30"
@@ -335,6 +367,11 @@
   },
   {
    "ticker": "BMY",
+   "next_report": "2027-02-04",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "PM",
    "next_report": "2027-02-04",
    "data_through": "2026-09-30"
   },
