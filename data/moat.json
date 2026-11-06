@@ -356,24 +356,24 @@
    "reason": "Median ROIC 4% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this)."
   },
   "PG": {
-   "moat": "narrow",
-   "reason": "ROIC 19% in the latest year (Growth Screen, Nov 2026), above the 8.0% required return by 3+ points but under the 20% wide test (goodwill from Gillette depresses it). Check against the 4-year history after the snapshot refresh."
+   "moat": "wide",
+   "reason": "ROIC 21% or more in each of the last 4 years (median 22%, 10-K figures in data/returns.json), at least 10 points above the 8.0% required return."
   },
   "KO": {
-   "moat": "wide",
-   "reason": "ROIC 22% in the latest year (Growth Screen, Nov 2026), at least 10 points above the 8.0% required return and above 20%. Check against the 4-year history after the snapshot refresh."
+   "moat": "narrow",
+   "reason": "Median ROIC 18% over 4 years (10-K figures in data/returns.json), above the 8.0% required return by 3+ points but under 20% in every year (goodwill and bottler investments depress it)."
   },
   "SHW": {
-   "moat": "narrow",
-   "reason": "ROIC 15% in the latest year (Growth Screen, Nov 2026), above the 9.0% required return by 3+ points but not by 10."
+   "moat": "wide",
+   "reason": "ROIC 22% or more in each of the last 4 years (median 23%, 10-K figures in data/returns.json), at least 10 points above the 9.0% required return."
   },
   "JNJ": {
-   "moat": "wide",
-   "reason": "ROIC 23% in the latest year (Growth Screen, Nov 2026), at least 10 points above the 8.0% required return and above 20%. Check against the 4-year history after the snapshot refresh."
+   "moat": "narrow",
+   "reason": "Median ROIC 24% over 4 years (10-K figures in data/returns.json), but 19% in 2023 and 2024, so not 20%+ every year; above the 8.0% required return by 3+ points."
   },
   "AMGN": {
    "moat": "narrow",
-   "reason": "ROIC 17% in the latest year (Growth Screen, Nov 2026), above the 8.5% required return by 3+ points but not by 10 (Horizon goodwill depresses it)."
+   "reason": "Median ROIC 14% over 4 years (10-K figures in data/returns.json; 11-26%, Horizon goodwill depresses it), above the 8.5% required return by 3+ points but not by 10."
   }
  }
 }
