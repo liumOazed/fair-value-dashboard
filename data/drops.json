@@ -1,283 +1,17 @@
 {
  "open": [
   {
-   "id": "MRVL-2026-11-02",
-   "ticker": "MRVL",
-   "name": "Marvell Technology Inc.",
+   "id": "FIS-2026-11-02",
+   "ticker": "FIS",
+   "name": "Fidelity National Information Services",
    "opened": "2026-11-02",
-   "price_at_open": 171.41,
+   "price_at_open": 40.15,
    "spy_at_open": 752.1,
-   "fair_value_at_open": 117.95,
-   "buy_below_at_open": 76.66,
+   "fair_value_at_open": 45.06,
+   "buy_below_at_open": 29.29,
    "valued_on": "2026-11-02",
    "triggers": [
     "day",
-    "week",
-    "high"
-   ],
-   "emergency": true,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "All-stock $115B Lumentum takeover (~49% more shares, ~24% premium for a target near peak earnings), not a business problem",
-    "summary": "Marvell fell ~27% in a week (sector -6%, semis peers -7%) almost entirely on its $115B all-stock bid for Lumentum: holders fear overpaying for laser earnings lifted by temporary price hikes and shortages, and ~49% dilution; Marvell's own AI forecasts were still being raised (+8% for next year in 30 days). If Lumentum's profits prove durable this is a temporary sell-off, if not it is a lasting per-share hit from capital allocation; the deal needs approvals and closes only in H1 2028. Watch the merger proxy, Lumentum's next quarter and the vote; the fair value (~$118) excludes the deal and is already below the ~$150 price.",
-    "model_changed": false,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-08-27",
-    "peers": {
-     "basis": "industry: Semiconductors",
-     "n": 8,
-     "median": {
-      "day": -0.025880300847918647,
-      "week": -0.07282329160475182,
-      "high": -0.2787070709146143
-     },
-     "tickers": [
-      "NVDA",
-      "AVGO",
-      "MU",
-      "AMD",
-      "INTC",
-      "TXN",
-      "ADI",
-      "QCOM"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 4.2224,
-      "d30": 4.2113,
-      "chg": 0.0026357656780569005
-     },
-     "+1y": {
-      "current": 7.34277,
-      "d30": 6.74936,
-      "chg": 0.0879209287991749
-     },
-     "revisions_30d": {
-      "up": 27,
-      "down": 1
-     }
-    },
-    "news": [
-     {
-      "title": "Marvell Technology, Inc. (MRV.TO) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TbUJ2el9wQzE5aWlIakpMU3dSNHEwMnNBMWczdDdoRXhiM0IwcVNlVmVCQTZZUFZYNUczdDQ4U1lRSE5JTVJkSFhyNWY2VmViU0VXdA?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Why Marvell Stock Is Falling Today",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdHBxejQ4d0s0ZW1CQlRkUnlRRzdJQllySXdIUmNIcmtTTU5CSFZST3pUREotUmNxa1QzMWJ6LU9CM2hNeUI2cTJlLXhTcnlwTlljT3V1NTFTclkydUZpYmpYbnJPTGd4c045VU9BcjJJMGpmOTRXTjI2ZlhIazk0YWJPYw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Lam Research, Monolithic Power Systems, Marvell Technology, Micron, and onsemi shares are falling, what you need to know",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQWW84SWJCY3Z4c1Q4dWpaVHhHMndVb05xbzB6MmxOcUpsRGtEMUFmRVRxdTkwM2ZQdFl2QlhLa2E4dGZEdVJqSkJYa0tNUGtSeWpCY3JkU284TXBweXgzOE94MjVjNkNfdjYzQWo1QklPWXNjU3JsOEJYd0lNSEs5NEdzNV84MkxxM29aZ1BzMl93M0RaekpKOU90NHJEbzdmcGxkekplWUN0M1cxQy14ZGU0RjRWNVNZczhIRXdsXzVHaktlTkIwUDR3RVlvZ2Z1UERhOGNhaE11dXFtRVZNMVRrNUdCVWRfY09KdWtxdExLYlVsVmRnUE5rZWlaVmlMU0tPMjdCZw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "QQQ stock today falls over 5%: Why Nvidia (NVDA), Qualcomm (QCOM), Intel (INTC) and Marvell (MRVL) are dra",
-      "publisher": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNNUZDc2RzT3FCTWFKdUQ4ZFhZVUN4MkpyYmw0eERwVkdXV0p3d2ZJcU42dmQ1bTlTaDRrX2h5bklMU01kMTNNZUlnWmJfV0JCTURsbTVtdzBpTXJpQ3RqbVZSTWp3UG9wbjIzNjhkdHFzTUtIbUQ1YlQ0S19DWmxCWkpmbGJiSk5STFE2dE4yNGFqMm5icExzQVdMc2Z1UVhoTEdjcHc3Ny0xZzNmaXFoM1hlV2MxaXJwTnlXYjNHcUN6eDFydThGSEdseE5RUXRraEZwakF2RElZRDBGbTI4NGEzb1NmaEJRSnluSjEyZV9uZVd1TnpkblJWdGpDTjgyQkI0X0JtNlpMZFlXMGt4WVRGRlVjMUp1TUZaWW9yRzdhZjZE0gGqAkFVX3lxTFBLMXVmTVB6cDhmdWYySEQ5SG56ek4xMXkwU3o2WkpnaVBsZWFsLUR3X1NFWVFkMkJkNzRHYXJ2aFAySk5CWGlibnBMZFBCd2VkMnMwcUJVNlBpZjFqNTBVOVhZSHBiRjEwcmNOcXdCbzY0NUZsdF9VZWJlbFl0Q25LSG5oQzR5NjlMNTN4eThJRmJ1anAxcnk5SWN2Q3ZwMEl1LXNvbnVyZ19IcGxQclVPOXVIOUlwQnJ6NF9kclpZYU1FZmRNU3lNbVpvRVM0RktGWmxLWlNkSE1ndExtS082cGJsTGVTc000SHM3Z0s5ZlNFVVVGTUxFSG5PN3R5VFRUb1dibkZjb2REZDhhTlpSanZyaUJ1SW9IdnBxUXdXOVFvVkdSM0stNFE?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Marvell's Lumentum Deal Meets Its First Real Test: Two Downgrades and a 2028 Horizon",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWWJEZE50eDkyTWJKNUJZeXRmdkVjMnBPUEwzUDRabE1kX1FoblBrX1JKalRDZG9iZkRmWmVuQndZUnpacmxTdDhGVGJQWFNONWE2MG1aZXc1ckNERDhIMHRFNnJ4TktLSmhHazZCajlQUEFKQy04UWFKVzk3dmlhaU5fMFFHby1EVl9qcHdwUTB3QkFtRWlhWTMwemVRckJkQmdfZVQwUnJ5aHVQR2JfYXV3b3ppaFhSOUdRTlJoX2lKcEotdGxNVHB0SU9aOHpjZ19jaVBGeWE4MnR1WmZFUUlBclBmZGJlbWpZ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Why is Marvell Technology stock tumbling today? By Investing.com",
-      "publisher": "Investing.com Nigeria",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQLWdfVExjZjU3NWpLbnIxUHJBMzV2dnJCOEhiZWZVVV9aS3loWFcxWmJDVjF2c1hDenFlUWNxRUk5U1pqWENxVUd3amJTVEs4SEFneWxXaGdCWnMwUnI4RkhpM1NvWEhYdFhsMkE2dE9kR1pXcnZtMVFFOHVkYnNtNW1odVNUeHFma0RiRU9zX0FfZm0teDVqTGxWNl9mdUZUVDdBRFlDZm94V28?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.1643,
-    "week": -0.4693,
-    "high": -0.5779
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
-   "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
-   },
-   "sector_at_open": 61.49,
-   "worst": {
-    "day": -0.1643,
-    "week": -0.4693,
-    "high": -0.5779
-   },
-   "provisional": {
-    "cause": "Company-specific, no clear cause in the data: read the headlines",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "FIX-2026-10-30",
-   "ticker": "FIX",
-   "name": "Comfort Systems USA Inc.",
-   "opened": "2026-10-30",
-   "price_at_open": 1232.66,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 827.84,
-   "buy_below_at_open": 538.09,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": true,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Second leg down (-15% on Nov 4) from the midterm Democratic sweep and Texas data-centre moratorium fears hitting all AI-infrastructure stocks",
-    "summary": "After the post-Q3 drop, Comfort Systems fell another ~15% on Nov 4 as the Democratic sweep and the new Texas governor's call for a data-centre moratorium hit AI-infrastructure names (Vertiv -12%, GE Vernova -11%, construction peers -10%); nothing company-specific was reported, the $17.8B backlog stands and analysts raised next-year EPS 11% in 30 days. This is policy and sentiment fear rather than business damage, but it is a real cyclical risk if data-centre approvals slow in Texas (~27% of US data-centre power). Watch Texas policy after the Dec 10 ERCOT report, bookings and margins; the price (~$1,075) is still above the fair value (~$830).",
-    "model_changed": false,
-    "date": "2026-11-05",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-10-22",
-    "peers": {
-     "basis": "industry: Engineering & Construction",
-     "n": 3,
-     "median": {
-      "day": -0.09637701734682957,
-      "week": -0.04358287592250687,
-      "high": -0.260811968748358
-     },
-     "tickers": [
-      "PWR",
-      "EME",
-      "J"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 50.83448,
-      "d30": 48.97338,
-      "chg": 0.0380022779722371
-     },
-     "+1y": {
-      "current": 67.08478,
-      "d30": 60.17848,
-      "chg": 0.11476361649546463
-     },
-     "revisions_30d": {
-      "up": 2,
-      "down": 0
-     }
-    },
-    "news": [
-     {
-      "title": "The Zacks Analyst Blog Highlights Comfort Systems, Quanta Services and Sterling Infrastructure",
-      "publisher": "The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPVzRsWHVaa2xwSWhaTm5EbEZObmpOaHRoVzR5YVJqTkVnaW5LZC1CdTdXN3RwSnEzbDl6TnRPU2xxWVVGc3lCeUxta2JLaUsySTJhV0czUlJDOHhNQlNyR0p0LVg5SmVzdTFHMk10TEE1MjZyZmVtV0RXNEp5THpsVThJZ0JNYVlyRFAwcHZWSmtNYjdvWkR6Zl9pTVcxNXYwUk85Q1NFLTdITGNERmxaZGFxWmtBNHBtdUI4eE13dmZnWTBkQnhrU3lyQ2xiak50b1VPM0gxUmltbTFMMFd6YVh6cXNNeGh2eF9OcnRrc0Z0eVZVaUNiV2NMeDhPYndPM0xzdWRycG9vczQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Democratic Midterm Sweep And Texas Data-Center Moratorium Threat Hammer AI Power Stocks Led By Comfort Systems USA (NYSE: FIX) And Oklo (NYSE: OKLO)",
-      "publisher": "Foreign Policy Journal",
-      "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQTnpOVFEzY3otcHprR2ZpVjNZNVhfUlhkemd3MDQ1em50RG0yd2tfanM2UnZtb2V4bjQxMk5RWW4ycDAxejFma1FVeDRJM3NGd1hFYi1wZmhwSENnZUYtZEp6Q1lEY1RkMjVOaEFrb3VZT1oxcVczN0NoTzlLUjBOc0lsbTJqc3RxeU1XbmpraWpXZDgydk5pZGRTZGhqQ3hWXy1ENEkyMk5ISGJOc2NJdnVEdmxTYUJYTHRWWG1vdEJTYW11MW50ZUptem9xcFhmNGpSZDZTbmZPbVJaUHFSX3JVa3lobHdNa0hTTlBRdkpHNnVjSU1fR2N4SWhwMFhDNUhDUTdlY1VWMExrSmtKSlE3TDFmSDBHV1NJ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Comfort Systems USA (FIX) Expands Share Buyback Program by 1 Mil",
-      "publisher": "GuruFocus",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSjRCLU5XNUo3ZGhWbjRfcXlrQ3U5RkFEYUxXWm9ZakJzcm5ROVZWbFhJODFmSFZ1M0hKcFloT1dSckx1LS1zaVlOVUsyOGdSZzBndEtYMHM3WXhTdDZJNm5xYWVEcmNZdUFuNy1JVXpaSmp1RUZaclo2QllpYWxrNzJOR2dxdURLelB5X2VVYUJHdjJvQ2ppRF9PenFzaWtOWFV1MVZGLWE2eDI5YWlRMFhn?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Comfort Systems USA stock: Backlog fuels a stronger Q3 outlook",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdEhuY3d4c3p2WUZUd0dFejJsWld6eHBjV292Sm1RT1RsS3g3MEJFQzZJSVBlNWRISEd1ZkxNanloSThRYmZINGkzTXRXaW5wMTAwb3YtODdQa0lrcmdONXV2cnotTTNhTkVaNU1JZXNlYkQ1WEtCV2NENS12QXJFOHYzVmh2MHBScmRDSTZxQmctLUtTTDlnZERrQTNpM0Jta1lJQTFybVEzdksyN0Z5WFhMSzNiWDBWS0ZPVEIyc2pBUQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Should Comfort Systems USA (FIX) Investors Worry About AI Data Center Policy Risk?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbGcyUEw2Sm9zanp2TlA4blZaeGNSV1NyamdCb2V3Y3BQZmhueGczcmFKeWxmZUlZeU1zUlhTelkxenozVC1QWnlGX0kwMUVRaEFvdGwzN2RxM2taNWQ1cXhZOVphVkM1TjJZQlNBU0psZC14YmRTckVuZTBpZmM3bGlQVHBLa0FVY0JiSy1OdkluT2N4bk1rdWNKR1BEdw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "What Is Behind The Move In Comfort Systems Stock?",
-      "publisher": "Trefis",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOU40dXBCLU1hVzZFdjFUWXN4WjFEY1hqZGIxUmpfYjRXaVJ5OTVHc25wX085YlFLajBEVnNTX3FEek9RR2hpS3RGRHhIalgyVFFJdXZaQzZ4UG9ZNXFmcWktQ0tXWGVXX2lkcGV3VU5mLVN1SUJhQVVJUk9hLURKOWZVdGdkaVFVSHRXekJWam0xU0ptM296aTU3b1JtOEw5eHNzUnNIdTc4aDc5?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.1158,
-    "week": -0.283,
-    "high": -0.5331
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Industrials",
-   "sector_etf": "RSPN",
-   "sector_moves": {
-    "day": -0.0361,
-    "week": -0.0042,
-    "high": -0.0816
-   },
-   "sector_at_open": 60.55,
-   "worst": {
-    "day": -0.1529,
-    "week": -0.283,
-    "high": -0.5331
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -10% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "RDDT-2026-11-02",
-   "ticker": "RDDT",
-   "name": "Reddit Inc.",
-   "opened": "2026-11-02",
-   "price_at_open": 90.97,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 140.89,
-   "buy_below_at_open": 91.58,
-   "valued_on": "2026-11-02",
-   "triggers": [
     "week",
     "high"
    ],
@@ -286,82 +20,87 @@
    "verdict": {
     "label": "lasting",
     "confidence": "medium",
-    "cause": "Google AI search sending far less traffic: US daily users falling, Q4 users and revenue guided below hopes",
-    "summary": "Reddit fell ~34% in a week (sector flat, peers GOOGL/META -12%) after Q3: revenue still +53% and EPS beat, but US daily users fell 2% (logged-out -4%) as Google's AI answers send fewer searchers (over 1M fewer referrals a week in October), and management warned daily users may fall by a low double-digit percent in Q4. This is a structural shift in its main traffic source, although logged-in users are still growing and Q4 revenue is guided +38-42%. The model was updated with Q3 and growth cut (base 24% from 28%, bear 6% from 10%), lowering the fair value to ~$132 from ~$141; watch logged-in US users, Q4 revenue >= $1.0B and AI licensing renewals.",
-    "model_changed": true,
-    "date": "2026-11-03",
+    "cause": "Q3 in line but 2026 guidance cut and 2027 framework of flat revenue and EPS down high-single to low-double digits; CFO leaving; 3.5x leverage",
+    "summary": "FIS fell ~24% in a day while financials rose 3% and IT-services peers 3%, so this is company-specific: Q3 was only in line, 2026 Banking/Capital Markets growth was cut, 2027 revenue is guided at -0.5% to +1% with adjusted EPS down high-single to low-double digits, the CFO is leaving and the 2.8x leverage target is no longer confirmed (3.5x now, ~$21B debt). Management blames client delays it says fade by 2028, but the license-to-subscription shift and bank consolidation look structural, so treat it as a guidance reset rather than a blip. Watch the strategic review, 2027 bookings and debt reduction; the fair value (~$45, base case 10% growth next year) now looks too high versus the new outlook.",
+    "model_changed": false,
+    "date": "2026-11-05",
     "by": "Claude"
    },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
-    "earnings_on": "2026-10-29",
-    "last_report": "2026-10-29",
+    "earnings_on": null,
+    "last_report": "2026-11-04",
     "peers": {
-     "basis": "industry: Internet Content & Information",
-     "n": 3,
+     "basis": "industry: Information Technology Services",
+     "n": 8,
      "median": {
-      "day": 0.031782287380927476,
-      "week": -0.10745914840895998,
-      "high": -0.2800220989354104
+      "day": 0.030321722042439325,
+      "week": 0.020892054199006305,
+      "high": -0.185173442377923
      },
      "tickers": [
-      "GOOGL",
-      "GOOG",
-      "META"
+      "IBM",
+      "ACN",
+      "CTSH",
+      "BR",
+      "CDW",
+      "LDOS",
+      "IT",
+      "JKHY"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 5.47956,
-      "d30": 5.37841,
-      "chg": 0.018806673347699476
+      "current": 6.19012,
+      "d30": 6.19353,
+      "chg": -0.0005505745511847904
      },
      "+1y": {
-      "current": 7.10738,
-      "d30": 7.06846,
-      "chg": 0.00550614985442377
+      "current": 6.6479,
+      "d30": 6.69938,
+      "chg": -0.007684293173398138
      },
      "revisions_30d": {
-      "up": 3,
-      "down": 0
+      "up": 1,
+      "down": 10
      }
     },
     "news": [
      {
-      "title": "Reddit director Mary Porter Gale sells $588,000 in shares By Investing.com",
-      "publisher": "Investing.com India",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQS3FjQnlWLVJXYUxzbldvMlpndWNpX01wcVg0VDl1ZjJ2QU9iUURQWUNlYWE3M2dVRnBmSHBvVUxzdTg3aEpZOThNenBPZTMwT2JyQ2tFVGR5YzVia3NLbG9DOW14bHdrQkFGcXVKRVpYSUlWN1BOdnpxaDFmajNkYlIxMHdpR3REUWhjMTN1R1h5VEFxMEZ5VjNNUkVGMWtZMmV3X0NRX29fUXd1eWR1dlVqREJETGM?oc=5",
+      "title": "Citigroup Has Lowered Expectations for Fidelity National Information Services (NYSE:FIS) Stock Price",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaGRZSi1XbkNjclhMRTUwcTloYUxvZ0xxZnN3R2JYOXNGWmFZOUJJMkZnaG1WaDQwNkJ3S25Kanl3OFhrRkxLNEdxd2cyZW9FZVB3alZuWWJXcVc4bkRmSHhkSVZsV2hCeXFKX1hHLU03ZjdVU3BXazhUZ0VVSGdZbGJmM21Fc05NLUFBZnA4VG4xNVlQeExLQ3VPeXBkd0l0UnhPbmppZTNLMlVUSXhUSFJubEZLVWNwdVNJM1lGMmhSeGcxc2MtWndXZlJXRVNLbW1fNENjcGktT210WEQ1cG1sYUpueWtnUUV0RjJEYWU2Zw?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Google, Reddit, and more tech stocks plummet: What\u2019s driving market shocks",
-      "publisher": "Mashable",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aS21lWWl6NGRsRGNaNXJtYTRTRjNjMW9CX295WHV4Uk5UQVpJRFNtNjBuV0JEd3ZtOXNnOGRqUUNxX2NwVlpVVlZtSnMzVjNKWmVIYTV4bUM0aEsxa3Zrd1o0Mm53ZVFkc2Y4RGM2MTlNMkk?oc=5",
+      "title": "Fidelity National Information Services (NYSE:FIS) Stock Price Target Cut by TD Cowen",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSlg2bVFuYzliUVBJVElkR0NjV1RjaUN4WnUteDZzT2t6SU02NFFBSE9WOG5vVnR2d0NjSFRURW1RTUhDMUNzTVVRTDA5SmJfUkpTa0xxb0RDOFpIMEZvNWxNNGh5VjVQelJLT0E1M3NQeDFTalFXOWVnb2NlZnRHVm9WUWRZRy1xSmExQmtuNWt2UGZpaVBHS05oUmM1YWd0R0x2VHlaMHNNbVBPbTJnOGVyQUVDYWZrbERSNEt5c2VLd3N5a3N3ZklLdll4dWdFRVhEQ0F4dmtNeFNJ?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Reddit Sinks 8% as Social Ad Worries Deepen in Tech Rout",
-      "publisher": "TIKR.com",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbzN0RHhPNVlRZWk1VHc0UWllUFZFelhNd3IyeXVfdnRRUy1OWXZQVzFqSUlnRHNoYmticE9PbWxOMy1LWUhWZlgxWmtrTExBMkZyVjEwTEtGczFnTl8xd2txellMNVNaeTdxOFhDbG4wYTN4V1VBMFZWeU9KQTZpMVRDenBLOUp1TG5kcExQTUM1MjB0M0V5SG9mQnlTaGpBQTNFN3o3ajRPcUpUOU5UeXdWUGFINmRBNDlyZDZVcw?oc=5",
+      "title": "Barclays Issues Pessimistic Forecast for Fidelity National Information Services (NYSE:FIS) Stock Price",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNYWRHNktFbUI4Rmt3OV9qTUoxZFFjMm0zb0hEYm1LMmI0UHYzVUtQVm1OVkdCSGNZMHEtRHdyUHprOVFPdExIYzJkanFKcGlqTjZmckozcFY0OU5lOTgwVjdQam5ycU1IdEc4dUN1bTBoZ2d2T0NPajE0WE5oU21POUNsNTF3bnl3aXlBeFRrZUJxWmdKTkVfaGFnU29Oc0ItbmREU0hfTFdlTmRmOFhIUlJQLWxjd2loN2hGUkFzZV90dHkwMFJWSUhIbmhDa01tUWJqckVGWWJwMGJldnV6R3ZxTW52WUc1SmFXLThvck5tMGNM?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Pinterest Sinks 5% as Reddit Down 5% on Sluggish Ad Sales Amid Tech Selloff",
-      "publisher": "TIKR.com",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTHhKdXc1X3psNnhGWVlVUDNiU3ppc0ExNm50aE1tclNXdlFZSUlKRU1rc09jc3AzUzk1bTJRSUxSTDRXaGtCMVB5VWNmUFg4aWFlaWk1dGdtSHh5V2psaEhzX0g4UWlIWVJzRGh2ZzRSaTJaeEdHRVdTdkhTSEpYeUljeF8wbGx0TWt1SlpCQ1lBck1vWUVjdU1RY1pBYV9naEM4RXRSZmxId3NQWXZvWUQzZ0Yyejl1NnVNekg1TFNMVnEwbzNKQjBDQWJDVTlvVTd1SXZSNA?oc=5",
+      "title": "Fidelity National Information Services (NYSE:FIS) Stock Price Target Lowered at The Goldman Sachs Group",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPWUZMMHNkR2NMUnlLZ2ZSX1FqMTVnWk41VFB4bWFtM2JNUXRUNFRpanVFR05SSTkzMWdTWWh1UnRwYjhRallJbktvNGJLZHVYTzBkcmtRNU1za2pyeGtMMG1Na1hlakJmYzNqVjlpczc5WDltclRHaWFLOEVveEJNYk1LS19sZ09lYkhQNHVSbmRaSllQOTEtNDR5M0pzdjBMRVlnckZKWGgtNjJCeTNlak5ucUZYQzh0bUFYREo5SmxNM09kN0hVd1pkakNOTlhBb29FZ0hwNmlZUmoxVXJnYmpJclluNS1MRlBaRWk3R0xJLWtkaVE?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "\u2018I Fear My Parents Are Dating\u2019: Reddit User Shares Cute Moment Of Parents Flirting After Nearly 20 Years Of",
-      "publisher": "News18",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOZ0dkSm4zaW9tTkV0YTVQa3JEZWw2WEduRTRJckpWNmpCdzE0anp6M2NXV0ZxSmp2UUdjNGplbHg2Vi1pOFRjVXkwdjluSDhHN1pLRDBXVmJ2ZmVBYy01RVBsa1FJZVJaaTAyRkp2UlhramhGODJBMlFaaFMyTHB2djl6SFc2dUF1UUVGQjFHUFpPc1VHbHRROHJLb3R0TTFrd1k3SnNRMWtxYjl1cl9uZ0d4RklMZlo5UTFteWNnWEtQZnF5SmhGZUE2M1piTzNWQjZmcXhxT1pjc3l1TmZSVnE0eWtXRGNiZDl5UFBjdmxwN1XSAfgBQVVfeXFMTWpRNDlLYVZiUkVYMjdJN0VEc0lwYWQxTmtENWN5UXJxUnlqVGNlemVqQ3JkVFJpbFc1cHVfVXlGem5qZUkxUEIxNDN2Y0pWY0c0empfa2d4SjE4VUJTTElLYnktcDNMLWdvTWhmUjBpdXZhVnJoMkEzdXBBWE4wZXZRZkZXTWYzaTJ1QklscWFUa2lwMmR1NGFyd2lQOC1RVzk4T1hyTjYtd2NmSXlFenE3UGczUkVIMERLNkpqbFZpeFN5NzBLZWg5U0hEQTdydWhfbXAxT3V4OFB6aFNHR2xkcEJ5MHlFV3RZQW14bVR5RDFNOHdDWEE?oc=5",
+      "title": "RBC Downgrades Fidelity National Information Services (FIS) to S",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZl9fRWxXUmY4aWE5VjJEeEdoQXZseEhiVWk0Zjd5QmFPZU1nemlCQ1JYd1NXamFMMU1MNnh0U19INEk1RC1LTklBV2w1VWZuS1lSZGxSd2JlMFR1REtkOEMwa0p1aU53SnNfd2t2djduS2QwQjEyNDNhMlVPeEV3dm4wNnZMeVNvQkRKbVhJMXpsWUF5N3BGZDZPU09PdlpIT3Y1M2V2WnpZLU85WS14bDRsWlJXVEs0dk9LWXFjNlVrX0U2RnJJLVJRMGlscUZB?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Reddit (RDDT) Shares Just Moved, So What Is Going On?",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNck9KNHRpU19Db2FrYkMzV2xiUWRhd2ZSUmtGUENTSEN5a1dMTW1Wbjd3SllkQ2JkUTJ3MkJFVDdkV1NjMkhELXJEWWN4ZWdMN3ZLUlg3a1RWbEFyU2E5THRFVHQxX0ZEZFN2b1ZmNmd3bWozTHYyWmhkMDRPcHRmQ250S2xzZUtVMk9WdXpFTzktTUFRRkMwYjNpSWNsWWxjUHF0QUtjSmJhTDVTdlHSAbMBQVVfeXFMTzNlUmxNRDI1dUk0ekxDaTlvNWlvYU1lQnlmZzJRc1kxT0dJRUNFMUN6dmxiX1pscjhhTE1LcUF2YjVJc0xBWXY4bV9IR3hHbGItcWtZX0tDb19LSkxnWFVfNW9qNW02TDRDc3M0REFlTzltaVpFRkpCVVo2LU5Wa0pXdjVzc19RNUo1LWlXRm81UnZIbjZjYW16SEZXbk9oUEs4TEFzU3lWczgycTZ6SjhOMEU?oc=5",
+      "title": "Fidelity National Information Services (NYSE:FIS) Stock Price Target Cut by Piper Sandler",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObGYyWkI1ZEoyTFhPQU9MOHEyR1VIaDJ5VHIxbms1N0V3YUNSZkJzcHZFbnk0Q2ZEZFJnbl8wazJ2QVhDOEpmYWExR2R4ODlFT01hRkk5WGNDSDBvZy1vcmZyZTdUUnYyWFhsbnl3WXVZdk1NLWZNQ3loYkdRS0pjSVJwMG5BWHpRQTdwTXpJanF2b1ZaN0RIYjY2ZUdTMVVkT19Xcm1ZYzR6ckwwSnFLTGdUc2pzNHVsU0ozcng5R1VQRWRia21id1VOaXh2VVlSbmtiazZpelhkbWZ2SDNfQ1F5aw?oc=5",
       "date": "2026-11-05"
      }
     ]
@@ -370,31 +109,31 @@
    "kind": "alert",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0793,
-    "week": -0.3036,
-    "high": -0.6377
+    "day": -0.0296,
+    "week": -0.2602,
+    "high": -0.5777
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
-   "sector": "Communication Services",
-   "sector_etf": "RSPC",
+   "sector": "Financials",
+   "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0067,
-    "week": 0.0397,
-    "high": -0.1171
+    "day": -0.0072,
+    "week": 0.0148,
+    "high": -0.0287
    },
-   "sector_at_open": 34.17,
+   "sector_at_open": 83.9,
    "worst": {
-    "day": -0.0793,
-    "week": -0.3429,
-    "high": -0.6487
+    "day": -0.2367,
+    "week": -0.2602,
+    "high": -0.5777
    },
    "provisional": {
-    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
-    "lean": "temporary"
+    "cause": "Company-specific, no clear cause in the data: read the headlines",
+    "lean": "unclear"
    }
   },
   {
@@ -506,30 +245,427 @@
    "kind": "alert",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0532,
-    "week": -0.2962,
-    "high": -0.3709
+    "day": -0.0194,
+    "week": -0.1172,
+    "high": -0.3832
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
    },
    "sector_at_open": 62.95,
    "worst": {
     "day": -0.0725,
     "week": -0.3119,
-    "high": -0.372
+    "high": -0.3832
    },
    "provisional": {
-    "cause": "Sector-wide: Information Technology fell -7% too (rates, recession worries or sector rotation)",
+    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "RDDT-2026-11-02",
+   "ticker": "RDDT",
+   "name": "Reddit Inc.",
+   "opened": "2026-11-02",
+   "price_at_open": 90.97,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 140.89,
+   "buy_below_at_open": 91.58,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "week",
+    "high"
+   ],
+   "emergency": true,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Google AI search sending far less traffic: US daily users falling, Q4 users and revenue guided below hopes",
+    "summary": "Reddit fell ~34% in a week (sector flat, peers GOOGL/META -12%) after Q3: revenue still +53% and EPS beat, but US daily users fell 2% (logged-out -4%) as Google's AI answers send fewer searchers (over 1M fewer referrals a week in October), and management warned daily users may fall by a low double-digit percent in Q4. This is a structural shift in its main traffic source, although logged-in users are still growing and Q4 revenue is guided +38-42%. The model was updated with Q3 and growth cut (base 24% from 28%, bear 6% from 10%), lowering the fair value to ~$132 from ~$141; watch logged-in US users, Q4 revenue >= $1.0B and AI licensing renewals.",
+    "model_changed": true,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": "2026-10-29",
+    "last_report": "2026-10-29",
+    "peers": {
+     "basis": "industry: Internet Content & Information",
+     "n": 3,
+     "median": {
+      "day": 0.031782287380927476,
+      "week": -0.10745914840895998,
+      "high": -0.2800220989354104
+     },
+     "tickers": [
+      "GOOGL",
+      "GOOG",
+      "META"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 5.47956,
+      "d30": 5.37841,
+      "chg": 0.018806673347699476
+     },
+     "+1y": {
+      "current": 7.10738,
+      "d30": 7.06846,
+      "chg": 0.00550614985442377
+     },
+     "revisions_30d": {
+      "up": 3,
+      "down": 0
+     }
+    },
+    "news": [
+     {
+      "title": "Reddit director Mary Porter Gale sells $588,000 in shares By Investing.com",
+      "publisher": "Investing.com India",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQS3FjQnlWLVJXYUxzbldvMlpndWNpX01wcVg0VDl1ZjJ2QU9iUURQWUNlYWE3M2dVRnBmSHBvVUxzdTg3aEpZOThNenBPZTMwT2JyQ2tFVGR5YzVia3NLbG9DOW14bHdrQkFGcXVKRVpYSUlWN1BOdnpxaDFmajNkYlIxMHdpR3REUWhjMTN1R1h5VEFxMEZ5VjNNUkVGMWtZMmV3X0NRX29fUXd1eWR1dlVqREJETGM?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Google, Reddit, and more tech stocks plummet: What\u2019s driving market shocks",
+      "publisher": "Mashable",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aS21lWWl6NGRsRGNaNXJtYTRTRjNjMW9CX295WHV4Uk5UQVpJRFNtNjBuV0JEd3ZtOXNnOGRqUUNxX2NwVlpVVlZtSnMzVjNKWmVIYTV4bUM0aEsxa3Zrd1o0Mm53ZVFkc2Y4RGM2MTlNMkk?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Reddit Sinks 8% as Social Ad Worries Deepen in Tech Rout",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbzN0RHhPNVlRZWk1VHc0UWllUFZFelhNd3IyeXVfdnRRUy1OWXZQVzFqSUlnRHNoYmticE9PbWxOMy1LWUhWZlgxWmtrTExBMkZyVjEwTEtGczFnTl8xd2txellMNVNaeTdxOFhDbG4wYTN4V1VBMFZWeU9KQTZpMVRDenBLOUp1TG5kcExQTUM1MjB0M0V5SG9mQnlTaGpBQTNFN3o3ajRPcUpUOU5UeXdWUGFINmRBNDlyZDZVcw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Pinterest Sinks 5% as Reddit Down 5% on Sluggish Ad Sales Amid Tech Selloff",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTHhKdXc1X3psNnhGWVlVUDNiU3ppc0ExNm50aE1tclNXdlFZSUlKRU1rc09jc3AzUzk1bTJRSUxSTDRXaGtCMVB5VWNmUFg4aWFlaWk1dGdtSHh5V2psaEhzX0g4UWlIWVJzRGh2ZzRSaTJaeEdHRVdTdkhTSEpYeUljeF8wbGx0TWt1SlpCQ1lBck1vWUVjdU1RY1pBYV9naEM4RXRSZmxId3NQWXZvWUQzZ0Yyejl1NnVNekg1TFNMVnEwbzNKQjBDQWJDVTlvVTd1SXZSNA?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "\u2018I Fear My Parents Are Dating\u2019: Reddit User Shares Cute Moment Of Parents Flirting After Nearly 20 Years Of",
+      "publisher": "News18",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOZ0dkSm4zaW9tTkV0YTVQa3JEZWw2WEduRTRJckpWNmpCdzE0anp6M2NXV0ZxSmp2UUdjNGplbHg2Vi1pOFRjVXkwdjluSDhHN1pLRDBXVmJ2ZmVBYy01RVBsa1FJZVJaaTAyRkp2UlhramhGODJBMlFaaFMyTHB2djl6SFc2dUF1UUVGQjFHUFpPc1VHbHRROHJLb3R0TTFrd1k3SnNRMWtxYjl1cl9uZ0d4RklMZlo5UTFteWNnWEtQZnF5SmhGZUE2M1piTzNWQjZmcXhxT1pjc3l1TmZSVnE0eWtXRGNiZDl5UFBjdmxwN1XSAfgBQVVfeXFMTWpRNDlLYVZiUkVYMjdJN0VEc0lwYWQxTmtENWN5UXJxUnlqVGNlemVqQ3JkVFJpbFc1cHVfVXlGem5qZUkxUEIxNDN2Y0pWY0c0empfa2d4SjE4VUJTTElLYnktcDNMLWdvTWhmUjBpdXZhVnJoMkEzdXBBWE4wZXZRZkZXTWYzaTJ1QklscWFUa2lwMmR1NGFyd2lQOC1RVzk4T1hyTjYtd2NmSXlFenE3UGczUkVIMERLNkpqbFZpeFN5NzBLZWg5U0hEQTdydWhfbXAxT3V4OFB6aFNHR2xkcEJ5MHlFV3RZQW14bVR5RDFNOHdDWEE?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Reddit (RDDT) Shares Just Moved, So What Is Going On?",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNck9KNHRpU19Db2FrYkMzV2xiUWRhd2ZSUmtGUENTSEN5a1dMTW1Wbjd3SllkQ2JkUTJ3MkJFVDdkV1NjMkhELXJEWWN4ZWdMN3ZLUlg3a1RWbEFyU2E5THRFVHQxX0ZEZFN2b1ZmNmd3bWozTHYyWmhkMDRPcHRmQ250S2xzZUtVMk9WdXpFTzktTUFRRkMwYjNpSWNsWWxjUHF0QUtjSmJhTDVTdlHSAbMBQVVfeXFMTzNlUmxNRDI1dUk0ekxDaTlvNWlvYU1lQnlmZzJRc1kxT0dJRUNFMUN6dmxiX1pscjhhTE1LcUF2YjVJc0xBWXY4bV9IR3hHbGItcWtZX0tDb19LSkxnWFVfNW9qNW02TDRDc3M0REFlTzltaVpFRkpCVVo2LU5Wa0pXdjVzc19RNUo1LWlXRm81UnZIbjZjYW16SEZXbk9oUEs4TEFzU3lWczgycTZ6SjhOMEU?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.0163,
+    "week": 0.0394,
+    "high": -0.6318
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Communication Services",
+   "sector_etf": "RSPC",
+   "sector_moves": {
+    "day": 0.0042,
+    "week": 0.0509,
+    "high": -0.1133
+   },
+   "sector_at_open": 34.17,
+   "worst": {
+    "day": -0.0793,
+    "week": -0.3429,
+    "high": -0.6487
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -11% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "MRVL-2026-11-02",
+   "ticker": "MRVL",
+   "name": "Marvell Technology Inc.",
+   "opened": "2026-11-02",
+   "price_at_open": 171.41,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 117.95,
+   "buy_below_at_open": 76.66,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": true,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "All-stock $115B Lumentum takeover (~49% more shares, ~24% premium for a target near peak earnings), not a business problem",
+    "summary": "Marvell fell ~27% in a week (sector -6%, semis peers -7%) almost entirely on its $115B all-stock bid for Lumentum: holders fear overpaying for laser earnings lifted by temporary price hikes and shortages, and ~49% dilution; Marvell's own AI forecasts were still being raised (+8% for next year in 30 days). If Lumentum's profits prove durable this is a temporary sell-off, if not it is a lasting per-share hit from capital allocation; the deal needs approvals and closes only in H1 2028. Watch the merger proxy, Lumentum's next quarter and the vote; the fair value (~$118) excludes the deal and is already below the ~$150 price.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": null,
+    "last_report": "2026-08-27",
+    "peers": {
+     "basis": "industry: Semiconductors",
+     "n": 8,
+     "median": {
+      "day": -0.025880300847918647,
+      "week": -0.07282329160475182,
+      "high": -0.2787070709146143
+     },
+     "tickers": [
+      "NVDA",
+      "AVGO",
+      "MU",
+      "AMD",
+      "INTC",
+      "TXN",
+      "ADI",
+      "QCOM"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 4.2224,
+      "d30": 4.2113,
+      "chg": 0.0026357656780569005
+     },
+     "+1y": {
+      "current": 7.34277,
+      "d30": 6.74936,
+      "chg": 0.0879209287991749
+     },
+     "revisions_30d": {
+      "up": 27,
+      "down": 1
+     }
+    },
+    "news": [
+     {
+      "title": "Marvell Technology, Inc. (MRV.TO) Stock Price, News, Quote & History",
+      "publisher": "Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TbUJ2el9wQzE5aWlIakpMU3dSNHEwMnNBMWczdDdoRXhiM0IwcVNlVmVCQTZZUFZYNUczdDQ4U1lRSE5JTVJkSFhyNWY2VmViU0VXdA?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Why Marvell Stock Is Falling Today",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdHBxejQ4d0s0ZW1CQlRkUnlRRzdJQllySXdIUmNIcmtTTU5CSFZST3pUREotUmNxa1QzMWJ6LU9CM2hNeUI2cTJlLXhTcnlwTlljT3V1NTFTclkydUZpYmpYbnJPTGd4c045VU9BcjJJMGpmOTRXTjI2ZlhIazk0YWJPYw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Lam Research, Monolithic Power Systems, Marvell Technology, Micron, and onsemi shares are falling, what you need to know",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQWW84SWJCY3Z4c1Q4dWpaVHhHMndVb05xbzB6MmxOcUpsRGtEMUFmRVRxdTkwM2ZQdFl2QlhLa2E4dGZEdVJqSkJYa0tNUGtSeWpCY3JkU284TXBweXgzOE94MjVjNkNfdjYzQWo1QklPWXNjU3JsOEJYd0lNSEs5NEdzNV84MkxxM29aZ1BzMl93M0RaekpKOU90NHJEbzdmcGxkekplWUN0M1cxQy14ZGU0RjRWNVNZczhIRXdsXzVHaktlTkIwUDR3RVlvZ2Z1UERhOGNhaE11dXFtRVZNMVRrNUdCVWRfY09KdWtxdExLYlVsVmRnUE5rZWlaVmlMU0tPMjdCZw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "QQQ stock today falls over 5%: Why Nvidia (NVDA), Qualcomm (QCOM), Intel (INTC) and Marvell (MRVL) are dra",
+      "publisher": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNNUZDc2RzT3FCTWFKdUQ4ZFhZVUN4MkpyYmw0eERwVkdXV0p3d2ZJcU42dmQ1bTlTaDRrX2h5bklMU01kMTNNZUlnWmJfV0JCTURsbTVtdzBpTXJpQ3RqbVZSTWp3UG9wbjIzNjhkdHFzTUtIbUQ1YlQ0S19DWmxCWkpmbGJiSk5STFE2dE4yNGFqMm5icExzQVdMc2Z1UVhoTEdjcHc3Ny0xZzNmaXFoM1hlV2MxaXJwTnlXYjNHcUN6eDFydThGSEdseE5RUXRraEZwakF2RElZRDBGbTI4NGEzb1NmaEJRSnluSjEyZV9uZVd1TnpkblJWdGpDTjgyQkI0X0JtNlpMZFlXMGt4WVRGRlVjMUp1TUZaWW9yRzdhZjZE0gGqAkFVX3lxTFBLMXVmTVB6cDhmdWYySEQ5SG56ek4xMXkwU3o2WkpnaVBsZWFsLUR3X1NFWVFkMkJkNzRHYXJ2aFAySk5CWGlibnBMZFBCd2VkMnMwcUJVNlBpZjFqNTBVOVhZSHBiRjEwcmNOcXdCbzY0NUZsdF9VZWJlbFl0Q25LSG5oQzR5NjlMNTN4eThJRmJ1anAxcnk5SWN2Q3ZwMEl1LXNvbnVyZ19IcGxQclVPOXVIOUlwQnJ6NF9kclpZYU1FZmRNU3lNbVpvRVM0RktGWmxLWlNkSE1ndExtS082cGJsTGVTc000SHM3Z0s5ZlNFVVVGTUxFSG5PN3R5VFRUb1dibkZjb2REZDhhTlpSanZyaUJ1SW9IdnBxUXdXOVFvVkdSM0stNFE?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Marvell's Lumentum Deal Meets Its First Real Test: Two Downgrades and a 2028 Horizon",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWWJEZE50eDkyTWJKNUJZeXRmdkVjMnBPUEwzUDRabE1kX1FoblBrX1JKalRDZG9iZkRmWmVuQndZUnpacmxTdDhGVGJQWFNONWE2MG1aZXc1ckNERDhIMHRFNnJ4TktLSmhHazZCajlQUEFKQy04UWFKVzk3dmlhaU5fMFFHby1EVl9qcHdwUTB3QkFtRWlhWTMwemVRckJkQmdfZVQwUnJ5aHVQR2JfYXV3b3ppaFhSOUdRTlJoX2lKcEotdGxNVHB0SU9aOHpjZ19jaVBGeWE4MnR1WmZFUUlBclBmZGJlbWpZ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Why is Marvell Technology stock tumbling today? By Investing.com",
+      "publisher": "Investing.com Nigeria",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQLWdfVExjZjU3NWpLbnIxUHJBMzV2dnJCOEhiZWZVVV9aS3loWFcxWmJDVjF2c1hDenFlUWNxRUk5U1pqWENxVUd3amJTVEs4SEFneWxXaGdCWnMwUnI4RkhpM1NvWEhYdFhsMkE2dE9kR1pXcnZtMVFFOHVkYnNtNW1odVNUeHFma0RiRU9zX0FfZm0teDVqTGxWNl9mdUZUVDdBRFlDZm94V28?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.038,
+    "week": -0.2942,
+    "high": -0.5619
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
+   "sector_moves": {
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
+   },
+   "sector_at_open": 61.49,
+   "worst": {
+    "day": -0.1643,
+    "week": -0.4693,
+    "high": -0.5779
+   },
+   "provisional": {
+    "cause": "Sector-wide: Information Technology fell 1% too (rates, recession worries or sector rotation)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "FIX-2026-10-30",
+   "ticker": "FIX",
+   "name": "Comfort Systems USA Inc.",
+   "opened": "2026-10-30",
+   "price_at_open": 1232.66,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 827.84,
+   "buy_below_at_open": 538.09,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": true,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Second leg down (-15% on Nov 4) from the midterm Democratic sweep and Texas data-centre moratorium fears hitting all AI-infrastructure stocks",
+    "summary": "After the post-Q3 drop, Comfort Systems fell another ~15% on Nov 4 as the Democratic sweep and the new Texas governor's call for a data-centre moratorium hit AI-infrastructure names (Vertiv -12%, GE Vernova -11%, construction peers -10%); nothing company-specific was reported, the $17.8B backlog stands and analysts raised next-year EPS 11% in 30 days. This is policy and sentiment fear rather than business damage, but it is a real cyclical risk if data-centre approvals slow in Texas (~27% of US data-centre power). Watch Texas policy after the Dec 10 ERCOT report, bookings and margins; the price (~$1,075) is still above the fair value (~$830).",
+    "model_changed": false,
+    "date": "2026-11-05",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": null,
+    "last_report": "2026-10-22",
+    "peers": {
+     "basis": "industry: Engineering & Construction",
+     "n": 3,
+     "median": {
+      "day": -0.09637701734682957,
+      "week": -0.04358287592250687,
+      "high": -0.260811968748358
+     },
+     "tickers": [
+      "PWR",
+      "EME",
+      "J"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 50.83448,
+      "d30": 48.97338,
+      "chg": 0.0380022779722371
+     },
+     "+1y": {
+      "current": 67.08478,
+      "d30": 60.17848,
+      "chg": 0.11476361649546463
+     },
+     "revisions_30d": {
+      "up": 2,
+      "down": 0
+     }
+    },
+    "news": [
+     {
+      "title": "The Zacks Analyst Blog Highlights Comfort Systems, Quanta Services and Sterling Infrastructure",
+      "publisher": "The Globe and Mail",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPVzRsWHVaa2xwSWhaTm5EbEZObmpOaHRoVzR5YVJqTkVnaW5LZC1CdTdXN3RwSnEzbDl6TnRPU2xxWVVGc3lCeUxta2JLaUsySTJhV0czUlJDOHhNQlNyR0p0LVg5SmVzdTFHMk10TEE1MjZyZmVtV0RXNEp5THpsVThJZ0JNYVlyRFAwcHZWSmtNYjdvWkR6Zl9pTVcxNXYwUk85Q1NFLTdITGNERmxaZGFxWmtBNHBtdUI4eE13dmZnWTBkQnhrU3lyQ2xiak50b1VPM0gxUmltbTFMMFd6YVh6cXNNeGh2eF9OcnRrc0Z0eVZVaUNiV2NMeDhPYndPM0xzdWRycG9vczQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Democratic Midterm Sweep And Texas Data-Center Moratorium Threat Hammer AI Power Stocks Led By Comfort Systems USA (NYSE: FIX) And Oklo (NYSE: OKLO)",
+      "publisher": "Foreign Policy Journal",
+      "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQTnpOVFEzY3otcHprR2ZpVjNZNVhfUlhkemd3MDQ1em50RG0yd2tfanM2UnZtb2V4bjQxMk5RWW4ycDAxejFma1FVeDRJM3NGd1hFYi1wZmhwSENnZUYtZEp6Q1lEY1RkMjVOaEFrb3VZT1oxcVczN0NoTzlLUjBOc0lsbTJqc3RxeU1XbmpraWpXZDgydk5pZGRTZGhqQ3hWXy1ENEkyMk5ISGJOc2NJdnVEdmxTYUJYTHRWWG1vdEJTYW11MW50ZUptem9xcFhmNGpSZDZTbmZPbVJaUHFSX3JVa3lobHdNa0hTTlBRdkpHNnVjSU1fR2N4SWhwMFhDNUhDUTdlY1VWMExrSmtKSlE3TDFmSDBHV1NJ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Comfort Systems USA (FIX) Expands Share Buyback Program by 1 Mil",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSjRCLU5XNUo3ZGhWbjRfcXlrQ3U5RkFEYUxXWm9ZakJzcm5ROVZWbFhJODFmSFZ1M0hKcFloT1dSckx1LS1zaVlOVUsyOGdSZzBndEtYMHM3WXhTdDZJNm5xYWVEcmNZdUFuNy1JVXpaSmp1RUZaclo2QllpYWxrNzJOR2dxdURLelB5X2VVYUJHdjJvQ2ppRF9PenFzaWtOWFV1MVZGLWE2eDI5YWlRMFhn?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Comfort Systems USA stock: Backlog fuels a stronger Q3 outlook",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdEhuY3d4c3p2WUZUd0dFejJsWld6eHBjV292Sm1RT1RsS3g3MEJFQzZJSVBlNWRISEd1ZkxNanloSThRYmZINGkzTXRXaW5wMTAwb3YtODdQa0lrcmdONXV2cnotTTNhTkVaNU1JZXNlYkQ1WEtCV2NENS12QXJFOHYzVmh2MHBScmRDSTZxQmctLUtTTDlnZERrQTNpM0Jta1lJQTFybVEzdksyN0Z5WFhMSzNiWDBWS0ZPVEIyc2pBUQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Should Comfort Systems USA (FIX) Investors Worry About AI Data Center Policy Risk?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbGcyUEw2Sm9zanp2TlA4blZaeGNSV1NyamdCb2V3Y3BQZmhueGczcmFKeWxmZUlZeU1zUlhTelkxenozVC1QWnlGX0kwMUVRaEFvdGwzN2RxM2taNWQ1cXhZOVphVkM1TjJZQlNBU0psZC14YmRTckVuZTBpZmM3bGlQVHBLa0FVY0JiSy1OdkluT2N4bk1rdWNKR1BEdw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "What Is Behind The Move In Comfort Systems Stock?",
+      "publisher": "Trefis",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOU40dXBCLU1hVzZFdjFUWXN4WjFEY1hqZGIxUmpfYjRXaVJ5OTVHc25wX085YlFLajBEVnNTX3FEek9RR2hpS3RGRHhIalgyVFFJdXZaQzZ4UG9ZNXFmcWktQ0tXWGVXX2lkcGV3VU5mLVN1SUJhQVVJUk9hLURKOWZVdGdkaVFVSHRXekJWam0xU0ptM296aTU3b1JtOEw5eHNzUnNIdTc4aDc5?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.0453,
+    "week": -0.1817,
+    "high": -0.5119
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Industrials",
+   "sector_etf": "RSPN",
+   "sector_moves": {
+    "day": -0.001,
+    "week": -0.0135,
+    "high": -0.0825
+   },
+   "sector_at_open": 60.55,
+   "worst": {
+    "day": -0.1529,
+    "week": -0.283,
+    "high": -0.5331
+   },
+   "provisional": {
+    "cause": "Sector-wide: Industrials fell -0% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
    }
   },
@@ -642,21 +778,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0324,
-    "week": -0.1693,
-    "high": -0.5623
+    "day": 0.1039,
+    "week": -0.0743,
+    "high": -0.5168
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Utilities",
    "sector_etf": "RSPU",
    "sector_moves": {
-    "day": -0.007,
-    "week": 0.0152,
-    "high": -0.0904
+    "day": -0.0004,
+    "week": -0.0048,
+    "high": -0.0907
    },
    "sector_at_open": 77.67,
    "worst": {
@@ -665,144 +801,8 @@
     "high": -0.5642
    },
    "provisional": {
-    "cause": "Industry-wide: peers fell -5% too (rates, sector rotation or an industry worry)",
+    "cause": "Sector-wide: Utilities fell -0% too (rates, recession worries or sector rotation)",
     "lean": "unclear"
-   }
-  },
-  {
-   "id": "FIS-2026-11-02",
-   "ticker": "FIS",
-   "name": "Fidelity National Information Services",
-   "opened": "2026-11-02",
-   "price_at_open": 40.15,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 45.06,
-   "buy_below_at_open": 29.29,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": true,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "medium",
-    "cause": "Q3 in line but 2026 guidance cut and 2027 framework of flat revenue and EPS down high-single to low-double digits; CFO leaving; 3.5x leverage",
-    "summary": "FIS fell ~24% in a day while financials rose 3% and IT-services peers 3%, so this is company-specific: Q3 was only in line, 2026 Banking/Capital Markets growth was cut, 2027 revenue is guided at -0.5% to +1% with adjusted EPS down high-single to low-double digits, the CFO is leaving and the 2.8x leverage target is no longer confirmed (3.5x now, ~$21B debt). Management blames client delays it says fade by 2028, but the license-to-subscription shift and bank consolidation look structural, so treat it as a guidance reset rather than a blip. Watch the strategic review, 2027 bookings and debt reduction; the fair value (~$45, base case 10% growth next year) now looks too high versus the new outlook.",
-    "model_changed": false,
-    "date": "2026-11-05",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Information Technology Services",
-     "n": 8,
-     "median": {
-      "day": 0.030321722042439325,
-      "week": 0.020892054199006305,
-      "high": -0.185173442377923
-     },
-     "tickers": [
-      "IBM",
-      "ACN",
-      "CTSH",
-      "BR",
-      "CDW",
-      "LDOS",
-      "IT",
-      "JKHY"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 6.19012,
-      "d30": 6.19353,
-      "chg": -0.0005505745511847904
-     },
-     "+1y": {
-      "current": 6.6479,
-      "d30": 6.69938,
-      "chg": -0.007684293173398138
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 10
-     }
-    },
-    "news": [
-     {
-      "title": "Citigroup Has Lowered Expectations for Fidelity National Information Services (NYSE:FIS) Stock Price",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaGRZSi1XbkNjclhMRTUwcTloYUxvZ0xxZnN3R2JYOXNGWmFZOUJJMkZnaG1WaDQwNkJ3S25Kanl3OFhrRkxLNEdxd2cyZW9FZVB3alZuWWJXcVc4bkRmSHhkSVZsV2hCeXFKX1hHLU03ZjdVU3BXazhUZ0VVSGdZbGJmM21Fc05NLUFBZnA4VG4xNVlQeExLQ3VPeXBkd0l0UnhPbmppZTNLMlVUSXhUSFJubEZLVWNwdVNJM1lGMmhSeGcxc2MtWndXZlJXRVNLbW1fNENjcGktT210WEQ1cG1sYUpueWtnUUV0RjJEYWU2Zw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Fidelity National Information Services (NYSE:FIS) Stock Price Target Cut by TD Cowen",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSlg2bVFuYzliUVBJVElkR0NjV1RjaUN4WnUteDZzT2t6SU02NFFBSE9WOG5vVnR2d0NjSFRURW1RTUhDMUNzTVVRTDA5SmJfUkpTa0xxb0RDOFpIMEZvNWxNNGh5VjVQelJLT0E1M3NQeDFTalFXOWVnb2NlZnRHVm9WUWRZRy1xSmExQmtuNWt2UGZpaVBHS05oUmM1YWd0R0x2VHlaMHNNbVBPbTJnOGVyQUVDYWZrbERSNEt5c2VLd3N5a3N3ZklLdll4dWdFRVhEQ0F4dmtNeFNJ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Barclays Issues Pessimistic Forecast for Fidelity National Information Services (NYSE:FIS) Stock Price",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNYWRHNktFbUI4Rmt3OV9qTUoxZFFjMm0zb0hEYm1LMmI0UHYzVUtQVm1OVkdCSGNZMHEtRHdyUHprOVFPdExIYzJkanFKcGlqTjZmckozcFY0OU5lOTgwVjdQam5ycU1IdEc4dUN1bTBoZ2d2T0NPajE0WE5oU21POUNsNTF3bnl3aXlBeFRrZUJxWmdKTkVfaGFnU29Oc0ItbmREU0hfTFdlTmRmOFhIUlJQLWxjd2loN2hGUkFzZV90dHkwMFJWSUhIbmhDa01tUWJqckVGWWJwMGJldnV6R3ZxTW52WUc1SmFXLThvck5tMGNM?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Fidelity National Information Services (NYSE:FIS) Stock Price Target Lowered at The Goldman Sachs Group",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPWUZMMHNkR2NMUnlLZ2ZSX1FqMTVnWk41VFB4bWFtM2JNUXRUNFRpanVFR05SSTkzMWdTWWh1UnRwYjhRallJbktvNGJLZHVYTzBkcmtRNU1za2pyeGtMMG1Na1hlakJmYzNqVjlpczc5WDltclRHaWFLOEVveEJNYk1LS19sZ09lYkhQNHVSbmRaSllQOTEtNDR5M0pzdjBMRVlnckZKWGgtNjJCeTNlak5ucUZYQzh0bUFYREo5SmxNM09kN0hVd1pkakNOTlhBb29FZ0hwNmlZUmoxVXJnYmpJclluNS1MRlBaRWk3R0xJLWtkaVE?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "RBC Downgrades Fidelity National Information Services (FIS) to S",
-      "publisher": "GuruFocus",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZl9fRWxXUmY4aWE5VjJEeEdoQXZseEhiVWk0Zjd5QmFPZU1nemlCQ1JYd1NXamFMMU1MNnh0U19INEk1RC1LTklBV2w1VWZuS1lSZGxSd2JlMFR1REtkOEMwa0p1aU53SnNfd2t2djduS2QwQjEyNDNhMlVPeEV3dm4wNnZMeVNvQkRKbVhJMXpsWUF5N3BGZDZPU09PdlpIT3Y1M2V2WnpZLU85WS14bDRsWlJXVEs0dk9LWXFjNlVrX0U2RnJJLVJRMGlscUZB?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Fidelity National Information Services (NYSE:FIS) Stock Price Target Cut by Piper Sandler",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObGYyWkI1ZEoyTFhPQU9MOHEyR1VIaDJ5VHIxbms1N0V3YUNSZkJzcHZFbnk0Q2ZEZFJnbl8wazJ2QVhDOEpmYWExR2R4ODlFT01hRkk5WGNDSDBvZy1vcmZyZTdUUnYyWFhsbnl3WXVZdk1NLWZNQ3loYkdRS0pjSVJwMG5BWHpRQTdwTXpJanF2b1ZaN0RIYjY2ZUdTMVVkT19Xcm1ZYzR6ckwwSnFLTGdUc2pzNHVsU0ozcng5R1VQRWRia21id1VOaXh2VVlSbmtiazZpelhkbWZ2SDNfQ1F5aw?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0124,
-    "week": -0.1944,
-    "high": -0.5649
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
-   "sector_moves": {
-    "day": -0.0205,
-    "week": 0.0362,
-    "high": -0.0216
-   },
-   "sector_at_open": 83.9,
-   "worst": {
-    "day": -0.2367,
-    "week": -0.2149,
-    "high": -0.5666
-   },
-   "provisional": {
-    "cause": "Sector-wide: Financials fell -2% too (rates, recession worries or sector rotation)",
-    "lean": "temporary"
    }
   },
   {
@@ -933,274 +933,6 @@
    },
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "KLAC-2026-11-02",
-   "ticker": "KLAC",
-   "name": "KLA Corp.",
-   "opened": "2026-11-02",
-   "price_at_open": 153.11,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 70.05,
-   "buy_below_at_open": 45.53,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Chip-equipment sell-off: price-target cuts on sector P/E compression after 28 Oct, then the 5 Nov AI and data-centre rout (-13%); results themselves beat and raised",
-    "summary": "KLA's Sep-quarter revenue (.14B) and EPS beat, the December-quarter guide (.7B) was above expectations and analysts raised EPS estimates ~6%; the fall came with the whole semi-equipment group (peers ~-48% from highs, the 57% drawdown is real after the June 10-for-1 split). The cause is sector fear about whether AI spending pays off, not a company problem. Watch wafer-fab equipment spending, optical-component lead times and memory costs; the price (~30-150) is still far above the model's fair value (~0).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": "2026-10-28",
-    "last_report": "2026-10-28",
-    "peers": {
-     "basis": "industry: Semiconductor Equipment & Materials",
-     "n": 4,
-     "median": {
-      "day": -0.036523538896323204,
-      "week": -0.11981470843838876,
-      "high": -0.4851289404767393
-     },
-     "tickers": [
-      "AMAT",
-      "LRCX",
-      "TER",
-      "Q"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 5.76775,
-      "d30": 5.4548,
-      "chg": 0.05737148933049796
-     },
-     "+1y": {
-      "current": 7.09884,
-      "d30": 6.70539,
-      "chg": 0.058676676524408
-     },
-     "revisions_30d": {
-      "up": 2,
-      "down": 0
-     }
-    },
-    "news": [
-     {
-      "title": "KLA Corp. stock outperforms competitors despite losses on the day",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZmFBUkQ5RlV6RzNxQy1abGRZTzdsVk5rS0p5OE5kZ0oycEZPN2dFYWlTWGV2UHdreTJUUWtReW1MaF80Sm5pLWhIQ201Q3djM2YyTU16NGY1a2FmaGxjNk1ZZm9PWGhXczdSUWtnMkR1RXh1UVZwSVlRVC12OW5PS3BVNzE1UzBZSXM0YXIwWTR6X1dPZEthcThPWTVRY3phWWV0NDk4U0dQQVRFVmgzMm9mRkVlV1VEU3Y0X0pZd0dkUQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "KLA shareholders on record by Nov. 16 will receive $0.23 per share on Dec. 1.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUU1XbHV1WHNyY2Z6a3JZemFKU0piX2JzRDM4X1lBRlMzTVB6aHllQkozVnlMdmFnZzlYb0pYM1c5MHV3OTlUYW1uNEVDU2dGZ3VRa0tVbm83VW9EbTZwNzYwV3dNNEdfdDBVeDNvdkxwMG1xM1RnVjZFZURvX3RwVGpwNGVQc0U?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "An automatic grant gives KLA (KLAC) director McMullen 1,669 stock units.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRG9aT3dBcExRSmZrQ3hUNDN1bFFKMW0xZHRER3NpTF82b1JDaUJvc0hNdUFRZ0lJc0xITEltZ3l5RkY1bVp3YjRKZmlXa211MUxpUktELTRadkFCUE1RWHYtbnFJc0tsa3M1ZUs3TzNFUFI5SkR1YlVlNWdwR0pQUW96S29hbTN6WGdHOFNqY0RYeUVIT1NSUG1xeGhYRDE2Y3VIQw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "KLA Stocks Drop 12.18% as Investors Reprice Semiconductor Equipment Growth",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUUdOblRkd2dweDlNbERzckdBM2NFSlpFNXphQ3ZQaHlCMzhpY19ZekJyTE1hLUJNWElRSVBhZW9qNWxHVlNubGY3WThMSm5HNWNBdWhiNWRBR2pNY004eGxlYzJtOFJEcDhSVk5URXJjTVdzZ0cxMUs4QUZVczFvb1pjWnNyR1pOTmg4NTRiSQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Lattice Semiconductor, Applied Materials, AMD, Intel, and KLA Corporation shares are falling, what you need to know",
-      "publisher": "The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNcDFvUWZYTXpIbVRzenozWTBRRkZmbVdsdjdVd3RxMFNiaE1aMDctTlEyNk9BTlVZQW56UlQwaW5Bc2oweWdWdHZabjFSWTRzNExxc0JBc1pDMnBacVozTUFOV1BOekRnY3JJWWROTjFEcFBWZlhjVTA3ZDMwV2Y1SDlJR0tpYXZCeFdvbW1YR0FEUGhYdEI1ZnpZcklSY1pGM2tzeWk5YVFrRWRKajlMSjd1QTBPYm1hR2xjdE9SWG9MSFczQzJvaTBqMFZsYXFJTDJvY1JZall4S3ZzS0tsRUdwU0RoX2Vtd05pbWE3Nk1Fc3VaTmZhZ2NPb3JVY3lsOUhKRmFkajVCR2kzSmdkaUV0a2M3clBrSXk2OUxreVk?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "KLA Corporation stock slides as supply risks temper AI outlook",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQX05kM3pHbm1Zam9lS3NvN0djNnNxY3ZYTHI1RXRuaGl1U2NaeldqamJlNG5jd05LcGpCdlE2dmp6NXJDNXhvclY4Nk0zemdBSng2a1hPb0RBNkttUUFLTWRCNUtHUUlpT3ZvX0lpZVVjQUxrUXpHem1wbmttUzR5TUZNbmpqQnduVGEzRDZaUW50cEdwV1otcUJwSWI3MHNVUm14enByMzY4cU8xdHhZOWtDbXZQOTRYREFSS0dkSFRMVW8?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.1335,
-    "week": -0.1825,
-    "high": -0.5698
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
-   "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
-   },
-   "sector_at_open": 61.49,
-   "worst": {
-    "day": -0.1335,
-    "week": -0.1997,
-    "high": -0.5698
-   },
-   "provisional": {
-    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "AVGO-2026-10-30",
-   "ticker": "AVGO",
-   "name": "Broadcom Inc.",
-   "opened": "2026-10-30",
-   "price_at_open": 326.08,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 256.7,
-   "buy_below_at_open": 179.69,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Fell another 10% in the 5 Nov AI-chip rout (SOX -8-11%) on post-midterm fears of AI rules and slower data-centre building; no new operating news",
-    "summary": "There was no guidance change or customer loss and EPS estimates are flat to slightly up; Broadcom fell about as much as its chip peers. A new contingent risk is its backing of chip residual values behind ~2B of debt in Anthropic's 3B financing (and leases in an earlier Apollo package), which ties its biggest custom-chip customer to off-balance-sheet credit exposure. Watch AI-lab financing, Anthropic's health and Q4 FY26 results in December; the price (~92) is still above the fair value (~57).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-09-02",
-    "peers": {
-     "basis": "industry: Semiconductors",
-     "n": 8,
-     "median": {
-      "day": -0.03200821333991977,
-      "week": -0.11290410228502867,
-      "high": -0.2787070709146143
-     },
-     "tickers": [
-      "NVDA",
-      "MU",
-      "AMD",
-      "INTC",
-      "TXN",
-      "ADI",
-      "MRVL",
-      "QCOM"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 11.66568,
-      "d30": 11.65601,
-      "chg": 0.0008296149368436367
-     },
-     "+1y": {
-      "current": 19.46507,
-      "d30": 19.3807,
-      "chg": 0.004353299932406962
-     },
-     "revisions_30d": {
-      "up": 2,
-      "down": 0
-     }
-    },
-    "news": [
-     {
-      "title": "Broadcom (AVGO) Stock Slides 35% from Peak, Testing Key Technical Support Around $325 Mark",
-      "publisher": "FXLeaders",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdDV4V1VVc0lsREZpeUY3NkdhdWhKX21oR0NuTmhRNHA0YjB3d211bmd6YjdsekxZTkh5S0tseXZ0Vi10U3FhNGN2OTBjLVRlSTlGS1NSdkRGZHMtUTgzdGRCbk1CdC14VXdOLXRjRE9DZDYzWDhrdEtiYVg1VkFYVWQ1dXp4a2FtYm5rLVBvVzU0Rnh3LUJXX0d5NF93UEx2dG9BQ2tacW1yclg2clF0dVJvam5ZbjJJVWtVMHlTWjVCb2lZWHhV?oc=5",
-      "date": "2026-11-06"
-     },
-     {
-      "title": "Broadcom Falls Back to Its 52-Week Low of $292.40",
-      "publisher": "24/7 Wall St.",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQUlBiNVdyLXJDMk1nMDJfRXkwQ0ZkN0k2ekpKTlo3WkVacndBMml1Mmd5bWE0cHpuLVRHd1lXbXBhZ1llb2VoUE1IQzJ2dTlSSXhNR3pWdktPTnVZbU1TOTMtZ25Ga1daMTVlRG51R1VHaUt1b1lUUjVaNXJXSzVzenhFXzEzTkhTZ1d1UHZxSV9aMHR4Wm5tWTN4M2hPVXZsbm56eDdiNkF0T3dZQXJCNlpNTGRGMGZienlSTU9VR1JtcUhfVUxCMDdjeWg?oc=5",
-      "date": "2026-11-06"
-     },
-     {
-      "title": "Broadcom (NASDAQ:AVGO) Shares Down 10.4% - Here's Why",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWDNPMmZEN2hMVHoyNFBBcmVleWVzWjlneEVsVVBvUlBUQkhTVDJGWlFTMFlaWHpCUms2VWI2QXFIdG5zN1RiZ292bkNudUtIMzE4N2ZFZzlIWFhlZ2pmY2oyal9vYmU4ZHp4YzBpY3o4Rk5RUzVhdUdybEJSOUdIb3pVcnd4bEoyTXRNbDl6RTNoUEotb2dxNFprTnpYVHMwMi0xcjRQdDNOQQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Broadcom drops 10% amid broad chip selloff (AVGO:NASDAQ)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNHh2WE9aSUNZSXJKbnA5Y1l1c09mQmdmQ25SOWJhQi15cDFYWkNSeERpNy13VEF6MXdhUEY0MXIxVUMxOFdMbFhZMG5yZlVtbzkzWERkOUdGRElQenJoR3R5eDhORlBrVjFwX1RVemZtQkJJNHZVaUg1T192RHc0Wl91Mnl5Zw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "BROADCOM INC SHARES DOWN 9.0% AT $296.21",
-      "publisher": "Moomoo",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQ3VSdVdUVWZrdkNVdElzcGpwaFo3aEVKLVd0WS12Ui1ERkxISFhIcE1jbU52OERZWk1USHFHQjliRzMzUHM3QUUzS3JNREtCcTl4TkpQRnFmSUdTWlhZQmUwcU1WWXIyMWFYaldHZ3hmbEo0QlpVdkRNTVlKWUM0SDJyWVVzbUEzZGs0?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Marvell Just Dropped 49% in a Month: Is MRVL Stock Hopeless or Ready for a Rebound?",
-      "publisher": "24/7 Wall St.",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdzhGc0pCLVN1Y2tuLWUwZ1psQ3U5Rk9UeldyY0ozUkhJcURzMEl6M2J4dm5fQWRlWDVuT2N0SlBST3F5X0JjRDM2bkhoQUo3WVZEOVhLdWVDcWpNRkduSTIxTzVhZl9JcnNUejFCakthR2NfT1gtTTViT1hDV1A3dU5XQzJVSDJseXhhSXBtUkF0ZmRJSXRWYURERnVUdHZzSktORHpPVDVPWlVRWFlIcld0dHN3SUdyNkJIX2tjUWxQQQ?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.1043,
-    "week": -0.1713,
-    "high": -0.3946
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
-   "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
-   },
-   "sector_at_open": 62.95,
-   "worst": {
-    "day": -0.1043,
-    "week": -0.1713,
-    "high": -0.3946
-   },
-   "provisional": {
-    "cause": "Sector-wide: Information Technology fell -7% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
    }
   },
@@ -1472,408 +1204,6 @@
    }
   },
   {
-   "id": "CRCL-2026-10-30",
-   "ticker": "CRCL",
-   "name": "Circle Internet Group",
-   "opened": "2026-10-30",
-   "price_at_open": 72.54,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 48.74,
-   "buy_below_at_open": 31.68,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "Crypto sell-off after the ~$6B Binance hack (Oct 30) on top of long-running worries about USDC growth, falling rates and stablecoin rules",
-    "summary": "Circle fell ~10% in a week while payments peers rose, leaving it ~46% below its high; the trigger was the Oct 30 Binance hack and crypto sell-off (Circle froze $800M+ of USDC), which looks like temporary sentiment. The longer slide rests on unsettled structural questions: USDC circulation slipped in Q2, Morgan Stanley cut its circulation forecasts by a third to a half, lower rates cut reserve income and draft rules would limit stablecoin rewards. Watch USDC circulation and reserve income in the November Q3 report and the CLARITY Act; the price (~$72) is above the fair value (~$49).",
-    "model_changed": false,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "group: Payments",
-     "n": 8,
-     "median": {
-      "day": 0.031875160886918,
-      "week": 0.060994642128619936,
-      "high": -0.07117820565587435
-     },
-     "tickers": [
-      "GPN",
-      "FIS",
-      "CPAY",
-      "V",
-      "MA",
-      "PYPL",
-      "AXP",
-      "SHOP"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 1.12155,
-      "d30": 1.07346,
-      "chg": 0.04479906098038122
-     },
-     "+1y": {
-      "current": 1.40107,
-      "d30": 1.38854,
-      "chg": 0.009023866795338842
-     },
-     "revisions_30d": {
-      "up": 10,
-      "down": 1
-     }
-    },
-    "news": [
-     {
-      "title": "Circle Internet Group (NYSE:CRCL) Stock Price Target Lowered at JPMorgan Chase & Co.",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVFdBSVdEaVBicmZvYWdJNll2Z0RVbGk1SXJtLTFGM3VwZk02Yy1mOTYzZXIzMzFPYUpMMHVBcWMtdTFaRW9DcmU0NEp2NnAxcUdKX0Vtc29tXy1IZFpfVGs5ZWVBQl9OX2dfWkloTklGc0d1Vk1UdkM0S3lRbFQwcG85LXRMZ3ZlOHhCZEtLbDVZQm9Yemc3eFh1SXFDNHhVaGp1WHRaWXI4WEVRNGNKSHlfZlhibnJNa1B3SllOUjE4SmVBcldQX3JJUG5admkxSGRYNXV2dVc?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Circle Internet Group (NYSE:CRCL) Stock Price Target Lowered at TD Cowen",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRmllVi1ZZWdCbjVzVXRnTS1za2NQaURuNW1FQm4yYnBsRjVVOFl5M3Rhd0luZ3BzSmRDWUFOX0QzTnFlQW5JdDU3d1d2UHV5OHl0VWhvY0FienRsNzM1b2IzdXB1bS1naTcyMUhvVEttcmFZMGhuV2ltQzV1dnBlMlhObzJSdGs2TTFUcGZDVG9qQzQyTklsMmNwdGRYNFRDTDJBYS1mdHdmUVRJSUh0ZnZrYjVJTEZwTVZaQUxlZEkyV2VZYlFqYnFkd1o?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Circle Sinks 10% as Crypto Stocks Slide and Mizuho Calls Q3 \u201cUneventful\u201d",
-      "publisher": "TIKR.com",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSDh5cmZCamJBczlaVmg4NF9tYWRSdE1yY3ZndFJ6RlNnN2ZlRjJDQnZlSGhNU1dxRVdWSkQzZHpuZzIyc1J1aXBaekJKb0RkdER1cFN6QnBpcGNrRnpQS0RsaEdLOE42NFVJdnlfMHp0b0tBZzZCV2tmZ2NHV2tUQ2xQNmN1MUVrVmdETXRIcFNuVGduNTRMbEtXc3g?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Circle Sees USDC Growth Slow Despite Arc Revenue Boost",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWFJnR2ZUd1d4bExyWVFtNTFfb2k4T0poc3RuQUd4MVhRVjMzRVhmbUpBVnBuS2xCRFFPZTBPYUxVRnRHUFVqQ1dpWDZnRHZsZmh5NTRxODRSUGUzVWVmampDeGlpOENNQlZCLVhubUFlaEt6YWl3Wk5wcEVCdGFHS2N2TVgwUHNwekJxNGVrVjJiaTMxOXctNzBsaC1zRjVaZjVJaTVwc2FvLVpza09ub2F3?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Circle Sinks 12%, Coinbase and Strategy Tumble 10% as Bitcoin Slide Hits Crypto Stocks",
-      "publisher": "24/7 Wall St.",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYTQwVmNTRU85VmJ2WEdKNW4zdEl0cTdaeEZXQnZpdmtOdk5uQ0tHNWplcUN3eVZkMUpPMkhrNlYzZ3Y4ejdQSTRXSTVaLUpzUGt1Z3hmbTFTZG9Pbm1Qc2w1YUI2UjlPelF6M1JQcW1WakhWX0RUcmU5MjR1dzB0QjYwM2M0UmpaREhLNWhad296Rk9zd0RfV2dNZnkxVEFuOHJMOWdxOXJUMWlNdS1kQ1VoTW9BejFnSVVTcERSbkZDRVJhMVE?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Circle Stock Heads For Steepest One-Day Drop Since June \u2013 Wall Street Cuts Price Targets",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNnVrdzJtNFByTG1ONWxCaWVzaC0tRFZlcmF0Y0NzWURSRTc5VktzQThzQ0RULTZYb2FhVFF3aUNQVU1CRG5Ob0lKR2lPdVoxS3htQnl1Ny12aVdIX0ZHTkg3Z1FpNUhOR3QtZXNMdW5xRElIb1lLSVlhRWFseHVmZThfNFNCYW9sTng2SXV4QkpDYUlJLVhYTndkYVJCNHkzeVN3SERfaUhzdXJJUWhKNk5ZVy1RdnBPY2dlcnkzWXY0YW9Xd29qNEo5dGZ6aXZKdG91MGdfQjc1aWZLVTN3eg?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0872,
-    "week": -0.1497,
-    "high": -0.477
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
-   "sector_moves": {
-    "day": -0.0205,
-    "week": 0.0362,
-    "high": -0.0216
-   },
-   "sector_at_open": 82.34,
-   "worst": {
-    "day": -0.0934,
-    "week": -0.1556,
-    "high": -0.4805
-   },
-   "provisional": {
-    "cause": "Largely market-wide: S&P 500 -4% vs this stock -9%",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "BKR-2026-11-04",
-   "ticker": "BKR",
-   "name": "Baker Hughes Co.",
-   "opened": "2026-11-04",
-   "price_at_open": 49.69,
-   "spy_at_open": 767.39,
-   "fair_value_at_open": 50.55,
-   "buy_below_at_open": 32.85,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Energy sell-off as the Iran-war oil premium unwinds after the midterms (crude down ~15% in three days to ~$90); no bad company news",
-    "summary": "Energy fell 11% in the week and BKR's April high was itself set during the war premium, so most of the 34% fall is that premium coming out. Its own Q3 was strong (orders +31%, record $46.4B backlog, raised order outlook for gas, LNG and power equipment) and the Waygate sale closed. Watch next year's EPS estimate (down 5% in 30 days), oilfield spending if crude settles near $90, and paying down the ~$14B net debt after the Chart deal.",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-10-27",
-    "peers": {
-     "basis": "group: Energy",
-     "n": 8,
-     "median": {
-      "day": -0.051480495512058466,
-      "week": -0.08705150617821211,
-      "high": -0.12307272148227272
-     },
-     "tickers": [
-      "APA",
-      "XOM",
-      "CVX",
-      "COP",
-      "EOG",
-      "OXY",
-      "DVN",
-      "FANG"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 2.60248,
-      "d30": 2.56281,
-      "chg": 0.015479103015830331
-     },
-     "+1y": {
-      "current": 2.85781,
-      "d30": 3.00982,
-      "chg": -0.05050468134307029
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 5
-     }
-    },
-    "news": [
-     {
-      "title": "Baker Hughes Co (BKR) Stock Down 7.4% but Still Overvalued -- GF Score: 76/100",
-      "publisher": "GuruFocus",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNnpDbFdBVzdhSDQxckZvVnU2a2J6a3VLNG53MXBHbXV6dGNCV3hDRjhQTWZYVG5VWThhMDdCeWxlZndWZDNYdEtpN3FsMG1iYXpjZTYwWVh4d3Y5UDBnb1RQaXRZRDdieTVKZmlsLVRSSHhacXJ3WFB2UEw2NGhOY1gzZlRyRC1zVndNbEUxRGdKOEdHa3M3aXhlalpaZWJmdzdlMFd5M3J4aTBu?oc=5",
-      "date": "2026-11-06"
-     },
-     {
-      "title": "Baker Hughes (NASDAQ:BKR) Director Purchases $531,000.00 in Stock",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM21pUnZldG51M1FpdWxPZzNSUFRjcEo2RlNkbUZPUGRaZXVZOUI2dEYwZE5lXzRabUItUldwenRrNGtaUzk0LUhsUjJxQURoaTNGZWVGWXdwRDIxbXgwd0t3c1Q1LXE5ZTg1VHJtQ1kyM1NrbG80OEpSTzhDdjNfZ3BldGNINFkzbVlzbmJpVXVweGlwa1pBc2Q4dTBKZEFWN1NJVFNCZWdnSGM2R3NHZ053eTJPdXgyTWRXYWpwVQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Baker Hughes Director Purchased Shares Worth Over $531K",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZTh3cVB3RzVwemVRaXJhNGJpbmFER3RidDNlMDVPSGhzNUxtTGFzbDBfWTlDNGk4azVVZVhPeEJUMWp5ZGNfeXVJTjg1YVhUWXZiWm1kSzlreDNVVzhlSzFVVFRhV3ROMXY5Mld3Y3hLbmNoYlpmektKRlM4V1JmYjYzTHNxZkNSOWh1cFp5bGRqM25ZcmN4VUUxX0xrWi1Yc3d2UmtOazBmbjZpSU1keUZHTzJzZEE?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Core Natural Resources, Bristow Group, CVR Energy, Baker Hughes, and Oceaneering shares plummet, what you need to know",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNWUVUMUVYLUVRTHBfVFNSX3I4MXpDMW1iWTQ4dG9DMlRreEZtNlZ2NHl4RndISFVRcXd5N2xEcDZhLWdsRXB6UEtUVWNiRGFqR241c096N3F4TFpnOFcxLXltb2NHcVN2RDhJb2xhSXo4VUFaOG5fN2kyRExoRG1vRUlnZkJYQWtCdE9IdDZMc1oyMDdzbnJUTHNoWlhocFNXc0NRTDJ0Qlp4QkFpZEVRNjZ6ODRGOUNiek9FVEhURG1lMndXX0pNVU1ia3RGUWZiODVkUG5BbnpBMzlXV0VUeG9GaGxqM01tQWxUSUQtZE9qT1hsTmo3RUw0OHdJd1NmaDdHTg?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Baker Hughes stock: Waygate sale closes for $1.45 billion",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUVI2ZUdKSUdMSkVMN1kwVkVvbDVKSExqaHBCTXlwcml4cUwxR0NaTVZWeUFUUzBHU2Nxc0lSVEx0RjYwejNsYmx5a0hWaDFwdG8xNGZkMElSckppaEkweTdvUTUtQTdTQU9ONUlUWnpfWkFHdUVhSFNDZTMwRXhXQkFDNk9jU0FnRlhPU2V5ZUVvTmdtZUpWUzVNVE5tNlIzUXB1anYwLUowaUd2Qm9xcEpSNk9XenBDZmc?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Should You Buy Baker Hughes Company (NASDAQ:BKR) For Its Upcoming Dividend?",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUmVfQzBUeERoeFVHLWNTQWs0eTkzalk2Y1JVT01YS1lkMkt0bFl6bzFaVjJfMGdBRF9OemxjbTg0cWVMTV9pZlNhc2o0NlFzbFAxZjBaU3d1X1lLZm5WdDlWNDFMYmg5SFdKaDZWU1k4a1FGMUlxMDlaZm9MVEY3WjRSdElQTDRhcWdRV1owOHdMcWxVbUN5dmZLM2M3U3h4Z0ZZYVdIZDNNemI3Y0JSR2VYdDhyeEFsbFNmSWk4dFJKOUhraDBVcmFn0gHPAUFVX3lxTE93R3hmU05kVWZhZE41ZTEyUEhHQzBIb1RhVUt0b0dFcUZmRExwVFppUXdSTTBkbHllQTgzM3NKNTRLVlF2b3o5cGg2dERpV2dSeW9lYnJmbVZ0TXp1NFc2MHo5RFdlczZnZXNaLUlkZ2RvTW1ZbWVGU2VpT1UyWm1wbm9WclowTFJxT0hZU09YTFkzZEpUTlhxcEdOVEZPc1h5SkZXdWhuQ1lLXzdtdGVtNjdYTlc2SklMVkhET0lCdlQwYkw5TnVmZzQtbnI2dw?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0736,
-    "week": -0.1548,
-    "high": -0.3369
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Energy",
-   "sector_etf": "RSPG",
-   "sector_moves": {
-    "day": -0.0321,
-    "week": -0.1115,
-    "high": -0.1251
-   },
-   "sector_at_open": 108.59,
-   "worst": {
-    "day": -0.0736,
-    "week": -0.1548,
-    "high": -0.3369
-   },
-   "provisional": {
-    "cause": "Sector-wide: Energy fell -11% too (rates, recession worries or sector rotation)",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "EME-2026-11-02",
-   "ticker": "EME",
-   "name": "EMCOR Group Inc.",
-   "opened": "2026-11-02",
-   "price_at_open": 682.76,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 583.93,
-   "buy_below_at_open": 379.55,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Industry-wide de-rating of data-centre builders (peers -12% too), deepened by the 5 Nov AI sell-off; results beat and raised",
-    "summary": "Q3 revenue rose 29% (25% organic), adjusted EPS beat, backlog hit a record $18.6B (+47%, data-centre backlog more than doubled) and guidance was raised a third time; no cancellations are reported. The market is pricing concentration risk (data centres ~half of backlog) and local permit pauses, which is fear rather than evidence of decline. Watch data-centre order cancellations or deferrals, hyperscaler capex and mechanical-construction margins (dipped to 12.1%).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": "2026-10-29",
-    "last_report": "2026-10-29",
-    "peers": {
-     "basis": "industry: Engineering & Construction",
-     "n": 3,
-     "median": {
-      "day": -0.11652967664930558,
-      "week": -0.04358287592250687,
-      "high": -0.260811968748358
-     },
-     "tickers": [
-      "PWR",
-      "FIX",
-      "J"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 34.85117,
-      "d30": 32.85062,
-      "chg": 0.06089839400291397
-     },
-     "+1y": {
-      "current": 40.39916,
-      "d30": 36.74899,
-      "chg": 0.0993270835470581
-     },
-     "revisions_30d": {
-      "up": 3,
-      "down": 0
-     }
-    },
-    "news": [
-     {
-      "title": "EMCOR Group (EME) Stock May Be Below Fair Value Despite Raised 2026 Guidance",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPc0xRUFpFVkhYMEZPX1RzS29YNDU1UWZvVmNwb0Y0Ri1XSE1LWHRNb2laRzdmZ2pnd1p5UGduTTY1eVJsTlQ5d01YbTFtSmNOSmRNbXlKVXo4UUlic243SkFlLW50dGt4QzZhYTJlTkpxZEY1UDlycFJIbVFaZVIyY3RjSmIzeFVyMHFoV3VpM1ROVE9vY0JBWEpFSHRCQ1hvT3otamxaaXQyWnVfUWZzWG5qUkVpd045UkdGQkppcFEwZnRZT2tkeUdsS1DSAdIBQVVfeXFMTl9EazUzLVhzN3duaVFyam1pNi1nZ0dwVkJYOGMtRHA1UXlJRU4xU1k2UklrSmkwVVV6TW9sX2Z5aTFDUk45OG90MDdfRktoZko4VkR3ZENtWXRvZURKNTU4ZTJERnpyTjM0WFNNUmp6RElINTJlUUhFRmZDMHF5MWlibXh0bWozejNfRFUwSzlDRFI2enhJcnNrVmxCU3BfZmRMcGpXQkhpYzhINkZzUXB0aUo0cTJjVHJnQnhHQ1J3ZWs3NnRZQzBBX3pPRXFTZlhB?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Is EMCOR Stock a Buy Now as Growth Strength Offsets Valuation Risk?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQ3A3OFhvY25iMXdfalJxWlAyNndtUEtVWGUyS0ppSDZSVmd3cGFUVE1qYnNNcmxFcnVDbTRzXzJqSlp2QzZ5N2U5Rm1pUDZQU2RNakVtZHg2VVZkYU9rNFZsdEpnVzRQaWJwZ1VfYUpvb0dBdTRjSGdoLUZaQXJmX2kzLTcxbm9fTW9uM1hwemNjSXBZRVE?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Wall Street Analysts Think Emcor Group (EME) Is a Good Investment: Is It?",
-      "publisher": "Yahoo Finance UK",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZEtaZWRZTEIxalhBOUR1RG1UY242WDNRc2x5WDBNRS1VM20zYmdjWU41MElKeWI5UVVZYTZiWkQxOU5uZ0VfRjRTaElkSDl0ekdzeXZqWXZBTWdpVEZiNkVuVHlHTHVpNVIxRFRJVjhIMWZOeUoyWjItOG5nak5fUi1LOU9CNjA4?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "EMCOR (EME): buy, sell, or hold post Q3 earnings?",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ3N3ZEFIYS1Dc05wUks1bXE0alhkUEMwYzgzTUFDU2tSaUMyTG1aMS0wYzdfeUdNMWVPX2NJYV9NWUNoNU5TVUNQUXYzUkthelc3TEFULU1Qb3A4clN4SEFrQ09RYU5lT3hqUnBKVEVFMVM5RjdLSUVmUEhRMXJRRDhqWXRBNDBLRURleWdldXlVc0JocWxRVmVRWTV6WldmYW1fVVBKTQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "EMCOR xStock Price | EMEX Price Today, Live Chart, USD converter, Market Capitalization",
-      "publisher": "CryptoRank",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5RTVZ5THB5VjlJR3Y5UzJZZXdoalNoVXJCSVVtQmZhZGJOSnpQTXVOQzdTaW9pY0E0R0JiNUlGY242bjdfQTlTQzR5dWh1TGFXYVE?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "EMCOR Group, Inc. (EME) Stock Forecasts",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSFNFNExNQjhNWW5URXZtckhYUmhqUDYwQml2LUlUREp5N3BVT1ZkRUgtU1NUcS1jUHVEMVNrMkpKRE04UW1CTzNwcmp5bVA0YkdrekNyTjNJN3dhdGRneWZpeUdVbjhxRzV2WWUtMHRJdnhPZVVDSGw2TGwxQnlQMVB0ek5RVE1vSnlRZnhpaw?oc=5",
-      "date": "2026-11-04"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0687,
-    "week": -0.1227,
-    "high": -0.3692
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Industrials",
-   "sector_etf": "RSPN",
-   "sector_moves": {
-    "day": -0.0361,
-    "week": -0.0042,
-    "high": -0.0816
-   },
-   "sector_at_open": 61.72,
-   "worst": {
-    "day": -0.0964,
-    "week": -0.1412,
-    "high": -0.3727
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -12% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
-   }
-  },
-  {
    "id": "SHOP-2026-11-03",
    "ticker": "SHOP",
    "name": "Shopify Inc.",
@@ -2139,151 +1469,17 @@
    }
   },
   {
-   "id": "APA-2026-11-02",
-   "ticker": "APA",
-   "name": "APA Corporation",
-   "opened": "2026-11-02",
-   "price_at_open": 48.82,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 37.62,
-   "buy_below_at_open": 24.45,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "day",
-    "week"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "high",
-    "cause": "Oil fell ~7.5% on Nov 2 (Brent ~$105, WTI ~$96) as Iran signalled openness to peace talks, unwinding October's war premium",
-    "summary": "APA fell ~7.6% on Nov 2 with the energy sector (-4%) and E&P peers (median -4.6%) as crude dropped ~7.5% on signs of Iran peace talks; no company-specific news was found. This is a commodity-price move, and the model already assumes oil and margins fall from the ~$98/bbl cycle high, so nothing in the fair value is newly at risk. Watch Q3 results on Nov 5 and the oil price; the price (~$49) remains well above the fair value (~$38).",
-    "model_changed": false,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": "2026-11-03",
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Oil & Gas E&P",
-     "n": 8,
-     "median": {
-      "day": -0.051480495512058466,
-      "week": -0.08705150617821211,
-      "high": -0.14907988092476998
-     },
-     "tickers": [
-      "COP",
-      "EOG",
-      "OXY",
-      "FANG",
-      "DVN",
-      "EQT",
-      "TPL",
-      "EXE"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 6.62464,
-      "d30": 6.108,
-      "chg": 0.08458415193189261
-     },
-     "+1y": {
-      "current": 5.37632,
-      "d30": 4.4702,
-      "chg": 0.20270233994004738
-     },
-     "revisions_30d": {
-      "up": 19,
-      "down": 2
-     }
-    },
-    "news": [
-     {
-      "title": "APA (NASDAQ:APA) Price Target Raised to $44.00",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWTN5Q2c0RmZhUHpWaFpOQ1hDWldDX2paTDFibFczRHd4T29Vb3pNWktNSlpSYjlQY3FPQmp1RHNFSnh6M0RzeE1ILWwxcjdyNThrQ0pVcmdKVkQ4Y293TGx2WmRlQTdqX19SVzNLRDA5NVpuOGlOVUVrZXRiMzlhUjdyQlJmY2ROd19kclV4RmNpeEwwTGp5cG1QdnlaaUFPZDRhVXBhOA?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "APA (APA) Stock May Still Trade Below Fair Value On Earnings",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY25pXzBVS1o1bWNzb2FqMFF5bi1kc1VocnBFSUplcHd0RFVzcENvZjRyWUpjMUZxTEkxMC1DS3hYcGJET0FNQXVCamZSR21saWF3Qlc5ZU9zejhzRkxPVHFJRGJOb2RVX1dUNUpFaVFDR2ttQ01EVW05RmZsVkZPUFR5RXM5NVBSNUJ3MC1mODFxSzZldHJ1dnhnMWRyNl9MUHVqcTZ3YUcxMFZ4LXh4N19nRC1xNnRM0gG-AUFVX3lxTE9XV0lIc0d4VVFHdGZ4QWV1V0lDWEU1RW80bE90dWFQbzUtVFkxZG9wQmNNX1lQREowUjBSZ0RmNktULW9CQWtMdkNCVHVybE9WdzlBUUpqNFJlV0p2SHZRRVpsQ2R4NGJpWXA4RmVxT3BZSEpUOFdnY0NhSG9wQV90UDlZUTVfeXI1Zkh3WjRScGN4QmRrRk5XS1doWVU4VG9KbjM5YWFZNS00cUgzajZhMVBPNUZieFNTcVJhSnc?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "APA (NASDAQ:APA) Stock Price Expected to Rise, Stephens Analyst Says",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQa2lEelpmTDk1OUtpMl9MZF83OUEwdXdUa3NmbFlDRFBZemYtRE9WcDVNaW8xV05BZFJiX0lZU1BETzMzQnB1WkxJb2tIQ1pvb0pielVkeHhHUGRxU3F0bWhwci1lU0Zpd2NlUF9Zd3I0NlNDZW10UVdkMkFuNGZ6ZjVuWll6OGttdU02amdMdHduRUk5MXpIY1FEdHFwVUpDeDBkVTF6bEpHNVFINExvMWJ5THI3UnhDdFozU2ZMdjZVU2p5S2c?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "APA (NASDAQ:APA) Releases Earnings Results, Beats Expectations By $0.34 EPS",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdl9fRGd2SVZRWUdrVWdCNHdRVDZQbC1NbGJ6Z3BJd29uaUVtY2g1ZUdXcTZtamowaEFSUUx4RWFNWmJOZGVoQmh5anFhdXdPVlkwSl9FNzdoVE1TYk1sZGF5dGxqY2lUWko2dEVTZEFXdXFGdS1tUWJzWTR5Wm9fRV9Rc203YU92YzRrVXViV2I3Y0tBX2VzUEJhbS1fZm83ajZsS0t6UUFXNy1aX2gwaDlYYU5jdmpfQ214YUo2bEU5VUNySWJJM2U5VHBlZw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "APACHE ($APA) Releases Q3 2026 Earnings",
-      "publisher": "Quiver Quantitative",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZVNzZXJkYVBFQ2JvX0U3ZDhQSFNQVUN4QjFHNlI5bjJuWkNNYWZ6ZVJLSGJrOWE0RlhzcTZCUElZOWhTdGhsRjJtS3g3ZVpUMjR0SFQxUEZhUkxYZ0tKRVB0dWhCNlNzeTFjRHhUMC1fV1RCQmNxc1BkcF9yNEl5bVRlMmk?oc=5",
-      "date": "2026-11-04"
-     },
-     {
-      "title": "Kinetik Reports Third Quarter 2026 Results",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWE0xc2VjXzFkY3RoUHFJY1dmOFd1elNnZ296VFE5WWpMTXVUODhMUlcwdFUzSllZZXNsQXdwaEUxX3ViYXVPYlZXS3hsSW1FXzBuc2QtUlJnYl9LRmlRY3lmMW81OWdWN0dVWjRtYmR6RHFDY0VBdVU0SjV2bjJDWFhwNHc4czBWUVlGQlZuMXZPUQ?oc=5",
-      "date": "2026-11-04"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0227,
-    "week": -0.1493,
-    "high": -0.1768
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Energy",
-   "sector_etf": "RSPG",
-   "sector_moves": {
-    "day": -0.0321,
-    "week": -0.1115,
-    "high": -0.1251
-   },
-   "sector_at_open": 116.07,
-   "worst": {
-    "day": -0.0802,
-    "week": -0.1493,
-    "high": -0.1768
-   },
-   "provisional": {
-    "cause": "Sector-wide: Energy fell -3% too (rates, recession worries or sector rotation)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "GOOGL-2026-10-30",
-   "ticker": "GOOGL",
-   "name": "Alphabet Inc. (Class A)",
+   "id": "CRCL-2026-10-30",
+   "ticker": "CRCL",
+   "name": "Circle Internet Group",
    "opened": "2026-10-30",
-   "price_at_open": 279.84,
+   "price_at_open": 72.54,
    "spy_at_open": 755.72,
-   "fair_value_at_open": 212.22,
-   "buy_below_at_open": 148.55,
+   "fair_value_at_open": 48.74,
+   "buy_below_at_open": 31.68,
    "valued_on": "2026-10-30",
    "triggers": [
+    "day",
     "week",
     "high"
    ],
@@ -2292,8 +1488,8 @@
    "verdict": {
     "label": "unclear",
     "confidence": "medium",
-    "cause": "Q3 EPS and ads missed, quarterly FCF -$9B on $51B capex, 2027 capex set to top $300B, buybacks stopped and stock issued",
-    "summary": "Alphabet fell ~12% in a week (worst day since its 2004 IPO) after Q3: EPS missed (about $0.55 of it a one-off mark-down on equity stakes) and ads were slightly light, while Search grew 12% and Cloud 103% at a ~36% margin, so there is no sign of competitive decline. The open question is the spending cycle: quarterly FCF turned negative, buybacks stopped, the company is selling stock and borrowing, and whether $300B+ of capex earns a return is not settled yet. Watch the 2027 capex figure, stock issuance and Services growth; the price (~$280) is above the fair value (~$212), which already assumes FCF margins recover.",
+    "cause": "Crypto sell-off after the ~$6B Binance hack (Oct 30) on top of long-running worries about USDC growth, falling rates and stablecoin rules",
+    "summary": "Circle fell ~10% in a week while payments peers rose, leaving it ~46% below its high; the trigger was the Oct 30 Binance hack and crypto sell-off (Circle froze $800M+ of USDC), which looks like temporary sentiment. The longer slide rests on unsettled structural questions: USDC circulation slipped in Q2, Morgan Stanley cut its circulation forecasts by a third to a half, lower rates cut reserve income and draft rules would limit stablecoin rewards. Watch USDC circulation and reserve income in the November Q3 report and the CLARITY Act; the price (~$72) is above the fair value (~$49).",
     "model_changed": false,
     "date": "2026-11-03",
     "by": "Claude"
@@ -2301,74 +1497,78 @@
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
-    "earnings_on": "2026-10-28",
-    "last_report": "2026-10-28",
+    "earnings_on": null,
+    "last_report": "2026-11-04",
     "peers": {
-     "basis": "group: Hyperscalers",
-     "n": 4,
+     "basis": "group: Payments",
+     "n": 8,
      "median": {
-      "day": 0.037817398074124764,
-      "week": 0.036741079850415526,
-      "high": -0.1265725007484796
+      "day": 0.031875160886918,
+      "week": 0.060994642128619936,
+      "high": -0.07117820565587435
      },
      "tickers": [
-      "MSFT",
-      "AMZN",
-      "META",
-      "ORCL"
+      "GPN",
+      "FIS",
+      "CPAY",
+      "V",
+      "MA",
+      "PYPL",
+      "AXP",
+      "SHOP"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 19.71035,
-      "d30": 20.63748,
-      "chg": -0.04492457412436024
+      "current": 1.12155,
+      "d30": 1.07346,
+      "chg": 0.04479906098038122
      },
      "+1y": {
-      "current": 14.95356,
-      "d30": 14.9494,
-      "chg": 0.00027827203767372133
+      "current": 1.40107,
+      "d30": 1.38854,
+      "chg": 0.009023866795338842
      },
      "revisions_30d": {
-      "up": 16,
-      "down": 23
+      "up": 10,
+      "down": 1
      }
     },
     "news": [
      {
-      "title": "Marc Chaikin Sees Alphabet (GOOGL) as a Conglomerate Hiding Three World-Class Businesses",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZGUwTUFsMVZQeEZPSnFCZ3dnMDZNTVNFeGVXelVQN1ZtcFo3SnY2dzdmSHhIM2J2OGgwRXZScGYxajZuSDNQd3ZvTGdrMDU5QWNEdWhXM0hnb1lPMmNoQ3ZST0lTcnVDRllVRnpwWG9VdWxxQ1I5R0w5Q3BsZ0NaMkJ1b0FRc05nZnRWdFRhdFBBYVg3aEkwSWd4NlktZw?oc=5",
+      "title": "Circle Internet Group (NYSE:CRCL) Stock Price Target Lowered at JPMorgan Chase & Co.",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVFdBSVdEaVBicmZvYWdJNll2Z0RVbGk1SXJtLTFGM3VwZk02Yy1mOTYzZXIzMzFPYUpMMHVBcWMtdTFaRW9DcmU0NEp2NnAxcUdKX0Vtc29tXy1IZFpfVGs5ZWVBQl9OX2dfWkloTklGc0d1Vk1UdkM0S3lRbFQwcG85LXRMZ3ZlOHhCZEtLbDVZQm9Yemc3eFh1SXFDNHhVaGp1WHRaWXI4WEVRNGNKSHlfZlhibnJNa1B3SllOUjE4SmVBcldQX3JJUG5admkxSGRYNXV2dVc?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Alphabet: The AI Reckoning Starts Here (NASDAQ:GOOG)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR2NRSjltdlRpOWhqWTUwZ1dwV3FRbUZBZWZqbVhhTWt4NnR6XzVNa2dBS3NSZzVENDFpWlRKT1dRWjVOX05ISVRDU1FpbjBhdVhKanlXSFpXbF9uMkxjUlMtanpCb0hXSWRGZ1FkbmFGQnRLMHVoaHB6TlRzbjVxNGJtOTg?oc=5",
+      "title": "Circle Internet Group (NYSE:CRCL) Stock Price Target Lowered at TD Cowen",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRmllVi1ZZWdCbjVzVXRnTS1za2NQaURuNW1FQm4yYnBsRjVVOFl5M3Rhd0luZ3BzSmRDWUFOX0QzTnFlQW5JdDU3d1d2UHV5OHl0VWhvY0FienRsNzM1b2IzdXB1bS1naTcyMUhvVEttcmFZMGhuV2ltQzV1dnBlMlhObzJSdGs2TTFUcGZDVG9qQzQyTklsMmNwdGRYNFRDTDJBYS1mdHdmUVRJSUh0ZnZrYjVJTEZwTVZaQUxlZEkyV2VZYlFqYnFkd1o?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Alphabet Stocks Decline 2% as AI Spending Outruns Cash Generation",
-      "publisher": "Yahoo Finance Singapore",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTndJbWowcTN2ZWQ5R2pUOFhubjlwbWh4SHctZTE1Q2JXNXZGYm9BMDNpR3FMRWpxZGJremdxVmJWa1poTmZwQzRyVUxmcmo0dzhxTXJuREtWeThRcks4QXR5aU1ZbTl2SDVsQnNrVThxakhvQUtORFFMRjQtbHpTeC0xUQ?oc=5",
+      "title": "Circle Sinks 10% as Crypto Stocks Slide and Mizuho Calls Q3 \u201cUneventful\u201d",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSDh5cmZCamJBczlaVmg4NF9tYWRSdE1yY3ZndFJ6RlNnN2ZlRjJDQnZlSGhNU1dxRVdWSkQzZHpuZzIyc1J1aXBaekJKb0RkdER1cFN6QnBpcGNrRnpQS0RsaEdLOE42NFVJdnlfMHp0b0tBZzZCV2tmZ2NHV2tUQ2xQNmN1MUVrVmdETXRIcFNuVGduNTRMbEtXc3g?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "What's Going on With Alphabet?",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1fd2llR0szMVczNHRNdTNQUl9EMkRPQWo5Sy00YzJ6WEQ5Q0ktYVBueXFWWWMyTC1RanoxWU5tX0gxallQQVdjRVkyT3E5UXlYZF80aWZpdmRfS2lnUnF3RXExc1pXMnluaFVTX3dfSVpwN1EyTTBQZDE1ekE?oc=5",
+      "title": "Circle Sees USDC Growth Slow Despite Arc Revenue Boost",
+      "publisher": "Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWFJnR2ZUd1d4bExyWVFtNTFfb2k4T0poc3RuQUd4MVhRVjMzRVhmbUpBVnBuS2xCRFFPZTBPYUxVRnRHUFVqQ1dpWDZnRHZsZmh5NTRxODRSUGUzVWVmampDeGlpOENNQlZCLVhubUFlaEt6YWl3Wk5wcEVCdGFHS2N2TVgwUHNwekJxNGVrVjJiaTMxOXctNzBsaC1zRjVaZjVJaTVwc2FvLVpza09ub2F3?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Buy Alphabet for The Limted Downside Floor if The Coiled Spring Asymmetry Doesn't Pique Your Interest",
+      "title": "Circle Sinks 12%, Coinbase and Strategy Tumble 10% as Bitcoin Slide Hits Crypto Stocks",
       "publisher": "24/7 Wall St.",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQaFJFT2txQU9Ed2pOMWN1UHFMQjk3ODYwOWdNNE04endvUGxMTW13RzNWam5qVnVhRS0tS2VZRXE2TU5VOVRiTnpGaXhfc0ZPcTNqQnM4RDY3MmVobTJPdGJ4ZlM0dTQ5SDUxTHFSWTF0OEZqS2FrY0NxTDE0eF81TEoxNktHaThUdDVjcGpMektWVGhrYWlDWUxoLXZKZDNJNklGS01zR2owcHVBN3hheDEyU1RMTnlrRGt5MmlEYmUyQk5YcXhlNXRwSjdQRlNtZzVxV2hKWFQwRUlK?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYTQwVmNTRU85VmJ2WEdKNW4zdEl0cTdaeEZXQnZpdmtOdk5uQ0tHNWplcUN3eVZkMUpPMkhrNlYzZ3Y4ejdQSTRXSTVaLUpzUGt1Z3hmbTFTZG9Pbm1Qc2w1YUI2UjlPelF6M1JQcW1WakhWX0RUcmU5MjR1dzB0QjYwM2M0UmpaREhLNWhad296Rk9zd0RfV2dNZnkxVEFuOHJMOWdxOXJUMWlNdS1kQ1VoTW9BejFnSVVTcERSbkZDRVJhMVE?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Get Paid to Wait on an Alphabet Rebound With This ETF",
-      "publisher": "ETF Database",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOS13U2o0cWRXQy1EdUJpYTRLQ05TVXo0Slk5MGMtQVlMeGtrazVMdTVKM203S1RKemRJamFWeXRDb2s4VVFIUW9Qb0pBd0MxbEtCSnBudWpNTEhWXzRjd0RDTFdPaVIzTnFNYzFZalVZNWZkWWxLamJDN3B4OGlyTUxPVUkxZw?oc=5",
+      "title": "Circle Stock Heads For Steepest One-Day Drop Since June \u2013 Wall Street Cuts Price Targets",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNnVrdzJtNFByTG1ONWxCaWVzaC0tRFZlcmF0Y0NzWURSRTc5VktzQThzQ0RULTZYb2FhVFF3aUNQVU1CRG5Ob0lKR2lPdVoxS3htQnl1Ny12aVdIX0ZHTkg3Z1FpNUhOR3QtZXNMdW5xRElIb1lLSVlhRWFseHVmZThfNFNCYW9sTng2SXV4QkpDYUlJLVhYTndkYVJCNHkzeVN3SERfaUhzdXJJUWhKNk5ZVy1RdnBPY2dlcnkzWXY0YW9Xd29qNEo5dGZ6aXZKdG91MGdfQjc1aWZLVTN3eg?oc=5",
       "date": "2026-11-05"
      }
     ]
@@ -2377,31 +1577,31 @@
    "kind": "alert",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.022,
-    "week": -0.1303,
-    "high": -0.2982
+    "day": -0.0389,
+    "week": -0.0794,
+    "high": -0.4973
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
-   "sector": "Communication Services",
-   "sector_etf": "RSPC",
+   "sector": "Financials",
+   "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0067,
-    "week": 0.0397,
-    "high": -0.1171
+    "day": -0.0072,
+    "week": 0.0148,
+    "high": -0.0287
    },
-   "sector_at_open": 33.8,
+   "sector_at_open": 82.34,
    "worst": {
-    "day": -0.022,
-    "week": -0.1303,
-    "high": -0.3072
+    "day": -0.0934,
+    "week": -0.1556,
+    "high": -0.4973
    },
    "provisional": {
-    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
-    "lean": "temporary"
+    "cause": "Company-specific, no clear cause in the data: read the headlines",
+    "lean": "unclear"
    }
   },
   {
@@ -2512,31 +1712,167 @@
    "kind": "alert",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": 0.0091,
-    "week": 0.0132,
-    "high": -0.6166
+    "day": -0.035,
+    "week": -0.0402,
+    "high": -0.63
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
    },
    "sector_at_open": 62.95,
    "worst": {
-    "day": -0.0322,
+    "day": -0.035,
     "week": -0.1277,
-    "high": -0.62
+    "high": -0.63
    },
    "provisional": {
-    "cause": "Sector-wide: Information Technology fell -14% too (rates, recession worries or sector rotation)",
+    "cause": "Sector-wide: Information Technology fell -9% too (rates, recession worries or sector rotation)",
     "lean": "unclear"
+   }
+  },
+  {
+   "id": "AVGO-2026-10-30",
+   "ticker": "AVGO",
+   "name": "Broadcom Inc.",
+   "opened": "2026-10-30",
+   "price_at_open": 326.08,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 256.7,
+   "buy_below_at_open": 179.69,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Fell another 10% in the 5 Nov AI-chip rout (SOX -8-11%) on post-midterm fears of AI rules and slower data-centre building; no new operating news",
+    "summary": "There was no guidance change or customer loss and EPS estimates are flat to slightly up; Broadcom fell about as much as its chip peers. A new contingent risk is its backing of chip residual values behind ~2B of debt in Anthropic's 3B financing (and leases in an earlier Apollo package), which ties its biggest custom-chip customer to off-balance-sheet credit exposure. Watch AI-lab financing, Anthropic's health and Q4 FY26 results in December; the price (~92) is still above the fair value (~57).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": null,
+    "last_report": "2026-09-02",
+    "peers": {
+     "basis": "industry: Semiconductors",
+     "n": 8,
+     "median": {
+      "day": -0.03200821333991977,
+      "week": -0.11290410228502867,
+      "high": -0.2787070709146143
+     },
+     "tickers": [
+      "NVDA",
+      "MU",
+      "AMD",
+      "INTC",
+      "TXN",
+      "ADI",
+      "MRVL",
+      "QCOM"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 11.66568,
+      "d30": 11.65601,
+      "chg": 0.0008296149368436367
+     },
+     "+1y": {
+      "current": 19.46507,
+      "d30": 19.3807,
+      "chg": 0.004353299932406962
+     },
+     "revisions_30d": {
+      "up": 2,
+      "down": 0
+     }
+    },
+    "news": [
+     {
+      "title": "Broadcom (AVGO) Stock Slides 35% from Peak, Testing Key Technical Support Around $325 Mark",
+      "publisher": "FXLeaders",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdDV4V1VVc0lsREZpeUY3NkdhdWhKX21oR0NuTmhRNHA0YjB3d211bmd6YjdsekxZTkh5S0tseXZ0Vi10U3FhNGN2OTBjLVRlSTlGS1NSdkRGZHMtUTgzdGRCbk1CdC14VXdOLXRjRE9DZDYzWDhrdEtiYVg1VkFYVWQ1dXp4a2FtYm5rLVBvVzU0Rnh3LUJXX0d5NF93UEx2dG9BQ2tacW1yclg2clF0dVJvam5ZbjJJVWtVMHlTWjVCb2lZWHhV?oc=5",
+      "date": "2026-11-06"
+     },
+     {
+      "title": "Broadcom Falls Back to Its 52-Week Low of $292.40",
+      "publisher": "24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQUlBiNVdyLXJDMk1nMDJfRXkwQ0ZkN0k2ekpKTlo3WkVacndBMml1Mmd5bWE0cHpuLVRHd1lXbXBhZ1llb2VoUE1IQzJ2dTlSSXhNR3pWdktPTnVZbU1TOTMtZ25Ga1daMTVlRG51R1VHaUt1b1lUUjVaNXJXSzVzenhFXzEzTkhTZ1d1UHZxSV9aMHR4Wm5tWTN4M2hPVXZsbm56eDdiNkF0T3dZQXJCNlpNTGRGMGZienlSTU9VR1JtcUhfVUxCMDdjeWg?oc=5",
+      "date": "2026-11-06"
+     },
+     {
+      "title": "Broadcom (NASDAQ:AVGO) Shares Down 10.4% - Here's Why",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWDNPMmZEN2hMVHoyNFBBcmVleWVzWjlneEVsVVBvUlBUQkhTVDJGWlFTMFlaWHpCUms2VWI2QXFIdG5zN1RiZ292bkNudUtIMzE4N2ZFZzlIWFhlZ2pmY2oyal9vYmU4ZHp4YzBpY3o4Rk5RUzVhdUdybEJSOUdIb3pVcnd4bEoyTXRNbDl6RTNoUEotb2dxNFprTnpYVHMwMi0xcjRQdDNOQQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Broadcom drops 10% amid broad chip selloff (AVGO:NASDAQ)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNHh2WE9aSUNZSXJKbnA5Y1l1c09mQmdmQ25SOWJhQi15cDFYWkNSeERpNy13VEF6MXdhUEY0MXIxVUMxOFdMbFhZMG5yZlVtbzkzWERkOUdGRElQenJoR3R5eDhORlBrVjFwX1RVemZtQkJJNHZVaUg1T192RHc0Wl91Mnl5Zw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "BROADCOM INC SHARES DOWN 9.0% AT $296.21",
+      "publisher": "Moomoo",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQ3VSdVdUVWZrdkNVdElzcGpwaFo3aEVKLVd0WS12Ui1ERkxISFhIcE1jbU52OERZWk1USHFHQjliRzMzUHM3QUUzS3JNREtCcTl4TkpQRnFmSUdTWlhZQmUwcU1WWXIyMWFYaldHZ3hmbEo0QlpVdkRNTVlKWUM0SDJyWVVzbUEzZGs0?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Marvell Just Dropped 49% in a Month: Is MRVL Stock Hopeless or Ready for a Rebound?",
+      "publisher": "24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdzhGc0pCLVN1Y2tuLWUwZ1psQ3U5Rk9UeldyY0ozUkhJcURzMEl6M2J4dm5fQWRlWDVuT2N0SlBST3F5X0JjRDM2bkhoQUo3WVZEOVhLdWVDcWpNRkduSTIxTzVhZl9JcnNUejFCakthR2NfT1gtTTViT1hDV1A3dU5XQzJVSDJseXhhSXBtUkF0ZmRJSXRWYURERnVUdHZzSktORHpPVDVPWlVRWFlIcld0dHN3SUdyNkJIX2tjUWxQQQ?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.0031,
+    "week": -0.1032,
+    "high": -0.3928
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
+   "sector_moves": {
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
+   },
+   "sector_at_open": 62.95,
+   "worst": {
+    "day": -0.1043,
+    "week": -0.1713,
+    "high": -0.3946
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -3% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
    }
   },
   {
@@ -2647,21 +1983,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": 0.0303,
-    "week": 0.0894,
-    "high": -0.4218
+    "day": 0.004,
+    "week": 0.083,
+    "high": -0.4189
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0205,
-    "week": 0.0362,
-    "high": -0.0216
+    "day": -0.0072,
+    "week": 0.0148,
+    "high": -0.0287
    },
    "sector_at_open": 82.34,
    "worst": {
@@ -2670,8 +2006,672 @@
     "high": -0.4665
    },
    "provisional": {
-    "cause": "Sector-wide: Financials fell 4% too (rates, recession worries or sector rotation)",
+    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
     "lean": "unclear"
+   }
+  },
+  {
+   "id": "GOOGL-2026-10-30",
+   "ticker": "GOOGL",
+   "name": "Alphabet Inc. (Class A)",
+   "opened": "2026-10-30",
+   "price_at_open": 279.84,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 212.22,
+   "buy_below_at_open": 148.55,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Q3 EPS and ads missed, quarterly FCF -$9B on $51B capex, 2027 capex set to top $300B, buybacks stopped and stock issued",
+    "summary": "Alphabet fell ~12% in a week (worst day since its 2004 IPO) after Q3: EPS missed (about $0.55 of it a one-off mark-down on equity stakes) and ads were slightly light, while Search grew 12% and Cloud 103% at a ~36% margin, so there is no sign of competitive decline. The open question is the spending cycle: quarterly FCF turned negative, buybacks stopped, the company is selling stock and borrowing, and whether $300B+ of capex earns a return is not settled yet. Watch the 2027 capex figure, stock issuance and Services growth; the price (~$280) is above the fair value (~$212), which already assumes FCF margins recover.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": "2026-10-28",
+    "last_report": "2026-10-28",
+    "peers": {
+     "basis": "group: Hyperscalers",
+     "n": 4,
+     "median": {
+      "day": 0.037817398074124764,
+      "week": 0.036741079850415526,
+      "high": -0.1265725007484796
+     },
+     "tickers": [
+      "MSFT",
+      "AMZN",
+      "META",
+      "ORCL"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 19.71035,
+      "d30": 20.63748,
+      "chg": -0.04492457412436024
+     },
+     "+1y": {
+      "current": 14.95356,
+      "d30": 14.9494,
+      "chg": 0.00027827203767372133
+     },
+     "revisions_30d": {
+      "up": 16,
+      "down": 23
+     }
+    },
+    "news": [
+     {
+      "title": "Marc Chaikin Sees Alphabet (GOOGL) as a Conglomerate Hiding Three World-Class Businesses",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZGUwTUFsMVZQeEZPSnFCZ3dnMDZNTVNFeGVXelVQN1ZtcFo3SnY2dzdmSHhIM2J2OGgwRXZScGYxajZuSDNQd3ZvTGdrMDU5QWNEdWhXM0hnb1lPMmNoQ3ZST0lTcnVDRllVRnpwWG9VdWxxQ1I5R0w5Q3BsZ0NaMkJ1b0FRc05nZnRWdFRhdFBBYVg3aEkwSWd4NlktZw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Alphabet: The AI Reckoning Starts Here (NASDAQ:GOOG)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR2NRSjltdlRpOWhqWTUwZ1dwV3FRbUZBZWZqbVhhTWt4NnR6XzVNa2dBS3NSZzVENDFpWlRKT1dRWjVOX05ISVRDU1FpbjBhdVhKanlXSFpXbF9uMkxjUlMtanpCb0hXSWRGZ1FkbmFGQnRLMHVoaHB6TlRzbjVxNGJtOTg?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Alphabet Stocks Decline 2% as AI Spending Outruns Cash Generation",
+      "publisher": "Yahoo Finance Singapore",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTndJbWowcTN2ZWQ5R2pUOFhubjlwbWh4SHctZTE1Q2JXNXZGYm9BMDNpR3FMRWpxZGJremdxVmJWa1poTmZwQzRyVUxmcmo0dzhxTXJuREtWeThRcks4QXR5aU1ZbTl2SDVsQnNrVThxakhvQUtORFFMRjQtbHpTeC0xUQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "What's Going on With Alphabet?",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1fd2llR0szMVczNHRNdTNQUl9EMkRPQWo5Sy00YzJ6WEQ5Q0ktYVBueXFWWWMyTC1RanoxWU5tX0gxallQQVdjRVkyT3E5UXlYZF80aWZpdmRfS2lnUnF3RXExc1pXMnluaFVTX3dfSVpwN1EyTTBQZDE1ekE?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Buy Alphabet for The Limted Downside Floor if The Coiled Spring Asymmetry Doesn't Pique Your Interest",
+      "publisher": "24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQaFJFT2txQU9Ed2pOMWN1UHFMQjk3ODYwOWdNNE04endvUGxMTW13RzNWam5qVnVhRS0tS2VZRXE2TU5VOVRiTnpGaXhfc0ZPcTNqQnM4RDY3MmVobTJPdGJ4ZlM0dTQ5SDUxTHFSWTF0OEZqS2FrY0NxTDE0eF81TEoxNktHaThUdDVjcGpMektWVGhrYWlDWUxoLXZKZDNJNklGS01zR2owcHVBN3hheDEyU1RMTnlrRGt5MmlEYmUyQk5YcXhlNXRwSjdQRlNtZzVxV2hKWFQwRUlK?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Get Paid to Wait on an Alphabet Rebound With This ETF",
+      "publisher": "ETF Database",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOS13U2o0cWRXQy1EdUJpYTRLQ05TVXo0Slk5MGMtQVlMeGtrazVMdTVKM203S1RKemRJamFWeXRDb2s4VVFIUW9Qb0pBd0MxbEtCSnBudWpNTEhWXzRjd0RDTFdPaVIzTnFNYzFZalVZNWZkWWxLamJDN3B4OGlyTUxPVUkxZw?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.0116,
+    "week": 0.0214,
+    "high": -0.2901
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Communication Services",
+   "sector_etf": "RSPC",
+   "sector_moves": {
+    "day": 0.0042,
+    "week": 0.0509,
+    "high": -0.1133
+   },
+   "sector_at_open": 33.8,
+   "worst": {
+    "day": -0.022,
+    "week": -0.1303,
+    "high": -0.3072
+   },
+   "provisional": {
+    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "EME-2026-11-02",
+   "ticker": "EME",
+   "name": "EMCOR Group Inc.",
+   "opened": "2026-11-02",
+   "price_at_open": 682.76,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 583.93,
+   "buy_below_at_open": 379.55,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Industry-wide de-rating of data-centre builders (peers -12% too), deepened by the 5 Nov AI sell-off; results beat and raised",
+    "summary": "Q3 revenue rose 29% (25% organic), adjusted EPS beat, backlog hit a record $18.6B (+47%, data-centre backlog more than doubled) and guidance was raised a third time; no cancellations are reported. The market is pricing concentration risk (data centres ~half of backlog) and local permit pauses, which is fear rather than evidence of decline. Watch data-centre order cancellations or deferrals, hyperscaler capex and mechanical-construction margins (dipped to 12.1%).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": "2026-10-29",
+    "last_report": "2026-10-29",
+    "peers": {
+     "basis": "industry: Engineering & Construction",
+     "n": 3,
+     "median": {
+      "day": -0.11652967664930558,
+      "week": -0.04358287592250687,
+      "high": -0.260811968748358
+     },
+     "tickers": [
+      "PWR",
+      "FIX",
+      "J"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 34.85117,
+      "d30": 32.85062,
+      "chg": 0.06089839400291397
+     },
+     "+1y": {
+      "current": 40.39916,
+      "d30": 36.74899,
+      "chg": 0.0993270835470581
+     },
+     "revisions_30d": {
+      "up": 3,
+      "down": 0
+     }
+    },
+    "news": [
+     {
+      "title": "EMCOR Group (EME) Stock May Be Below Fair Value Despite Raised 2026 Guidance",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPc0xRUFpFVkhYMEZPX1RzS29YNDU1UWZvVmNwb0Y0Ri1XSE1LWHRNb2laRzdmZ2pnd1p5UGduTTY1eVJsTlQ5d01YbTFtSmNOSmRNbXlKVXo4UUlic243SkFlLW50dGt4QzZhYTJlTkpxZEY1UDlycFJIbVFaZVIyY3RjSmIzeFVyMHFoV3VpM1ROVE9vY0JBWEpFSHRCQ1hvT3otamxaaXQyWnVfUWZzWG5qUkVpd045UkdGQkppcFEwZnRZT2tkeUdsS1DSAdIBQVVfeXFMTl9EazUzLVhzN3duaVFyam1pNi1nZ0dwVkJYOGMtRHA1UXlJRU4xU1k2UklrSmkwVVV6TW9sX2Z5aTFDUk45OG90MDdfRktoZko4VkR3ZENtWXRvZURKNTU4ZTJERnpyTjM0WFNNUmp6RElINTJlUUhFRmZDMHF5MWlibXh0bWozejNfRFUwSzlDRFI2enhJcnNrVmxCU3BfZmRMcGpXQkhpYzhINkZzUXB0aUo0cTJjVHJnQnhHQ1J3ZWs3NnRZQzBBX3pPRXFTZlhB?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Is EMCOR Stock a Buy Now as Growth Strength Offsets Valuation Risk?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQ3A3OFhvY25iMXdfalJxWlAyNndtUEtVWGUyS0ppSDZSVmd3cGFUVE1qYnNNcmxFcnVDbTRzXzJqSlp2QzZ5N2U5Rm1pUDZQU2RNakVtZHg2VVZkYU9rNFZsdEpnVzRQaWJwZ1VfYUpvb0dBdTRjSGdoLUZaQXJmX2kzLTcxbm9fTW9uM1hwemNjSXBZRVE?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Wall Street Analysts Think Emcor Group (EME) Is a Good Investment: Is It?",
+      "publisher": "Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZEtaZWRZTEIxalhBOUR1RG1UY242WDNRc2x5WDBNRS1VM20zYmdjWU41MElKeWI5UVVZYTZiWkQxOU5uZ0VfRjRTaElkSDl0ekdzeXZqWXZBTWdpVEZiNkVuVHlHTHVpNVIxRFRJVjhIMWZOeUoyWjItOG5nak5fUi1LOU9CNjA4?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "EMCOR (EME): buy, sell, or hold post Q3 earnings?",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ3N3ZEFIYS1Dc05wUks1bXE0alhkUEMwYzgzTUFDU2tSaUMyTG1aMS0wYzdfeUdNMWVPX2NJYV9NWUNoNU5TVUNQUXYzUkthelc3TEFULU1Qb3A4clN4SEFrQ09RYU5lT3hqUnBKVEVFMVM5RjdLSUVmUEhRMXJRRDhqWXRBNDBLRURleWdldXlVc0JocWxRVmVRWTV6WldmYW1fVVBKTQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "EMCOR xStock Price | EMEX Price Today, Live Chart, USD converter, Market Capitalization",
+      "publisher": "CryptoRank",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5RTVZ5THB5VjlJR3Y5UzJZZXdoalNoVXJCSVVtQmZhZGJOSnpQTXVOQzdTaW9pY0E0R0JiNUlGY242bjdfQTlTQzR5dWh1TGFXYVE?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "EMCOR Group, Inc. (EME) Stock Forecasts",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSFNFNExNQjhNWW5URXZtckhYUmhqUDYwQml2LUlUREp5N3BVT1ZkRUgtU1NUcS1jUHVEMVNrMkpKRE04UW1CTzNwcmp5bVA0YkdrekNyTjNJN3dhdGRneWZpeUdVbjhxRzV2WWUtMHRJdnhPZVVDSGw2TGwxQnlQMVB0ek5RVE1vSnlRZnhpaw?oc=5",
+      "date": "2026-11-04"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.0147,
+    "week": -0.1111,
+    "high": -0.3599
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Industrials",
+   "sector_etf": "RSPN",
+   "sector_moves": {
+    "day": -0.001,
+    "week": -0.0135,
+    "high": -0.0825
+   },
+   "sector_at_open": 61.72,
+   "worst": {
+    "day": -0.0964,
+    "week": -0.1412,
+    "high": -0.3727
+   },
+   "provisional": {
+    "cause": "Sector-wide: Industrials fell -0% too (rates, recession worries or sector rotation)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "APA-2026-11-02",
+   "ticker": "APA",
+   "name": "APA Corporation",
+   "opened": "2026-11-02",
+   "price_at_open": 48.82,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 37.62,
+   "buy_below_at_open": 24.45,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "day",
+    "week"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "high",
+    "cause": "Oil fell ~7.5% on Nov 2 (Brent ~$105, WTI ~$96) as Iran signalled openness to peace talks, unwinding October's war premium",
+    "summary": "APA fell ~7.6% on Nov 2 with the energy sector (-4%) and E&P peers (median -4.6%) as crude dropped ~7.5% on signs of Iran peace talks; no company-specific news was found. This is a commodity-price move, and the model already assumes oil and margins fall from the ~$98/bbl cycle high, so nothing in the fair value is newly at risk. Watch Q3 results on Nov 5 and the oil price; the price (~$49) remains well above the fair value (~$38).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": "2026-11-03",
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "industry: Oil & Gas E&P",
+     "n": 8,
+     "median": {
+      "day": -0.051480495512058466,
+      "week": -0.08705150617821211,
+      "high": -0.14907988092476998
+     },
+     "tickers": [
+      "COP",
+      "EOG",
+      "OXY",
+      "FANG",
+      "DVN",
+      "EQT",
+      "TPL",
+      "EXE"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 6.62464,
+      "d30": 6.108,
+      "chg": 0.08458415193189261
+     },
+     "+1y": {
+      "current": 5.37632,
+      "d30": 4.4702,
+      "chg": 0.20270233994004738
+     },
+     "revisions_30d": {
+      "up": 19,
+      "down": 2
+     }
+    },
+    "news": [
+     {
+      "title": "APA (NASDAQ:APA) Price Target Raised to $44.00",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWTN5Q2c0RmZhUHpWaFpOQ1hDWldDX2paTDFibFczRHd4T29Vb3pNWktNSlpSYjlQY3FPQmp1RHNFSnh6M0RzeE1ILWwxcjdyNThrQ0pVcmdKVkQ4Y293TGx2WmRlQTdqX19SVzNLRDA5NVpuOGlOVUVrZXRiMzlhUjdyQlJmY2ROd19kclV4RmNpeEwwTGp5cG1QdnlaaUFPZDRhVXBhOA?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "APA (APA) Stock May Still Trade Below Fair Value On Earnings",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY25pXzBVS1o1bWNzb2FqMFF5bi1kc1VocnBFSUplcHd0RFVzcENvZjRyWUpjMUZxTEkxMC1DS3hYcGJET0FNQXVCamZSR21saWF3Qlc5ZU9zejhzRkxPVHFJRGJOb2RVX1dUNUpFaVFDR2ttQ01EVW05RmZsVkZPUFR5RXM5NVBSNUJ3MC1mODFxSzZldHJ1dnhnMWRyNl9MUHVqcTZ3YUcxMFZ4LXh4N19nRC1xNnRM0gG-AUFVX3lxTE9XV0lIc0d4VVFHdGZ4QWV1V0lDWEU1RW80bE90dWFQbzUtVFkxZG9wQmNNX1lQREowUjBSZ0RmNktULW9CQWtMdkNCVHVybE9WdzlBUUpqNFJlV0p2SHZRRVpsQ2R4NGJpWXA4RmVxT3BZSEpUOFdnY0NhSG9wQV90UDlZUTVfeXI1Zkh3WjRScGN4QmRrRk5XS1doWVU4VG9KbjM5YWFZNS00cUgzajZhMVBPNUZieFNTcVJhSnc?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "APA (NASDAQ:APA) Stock Price Expected to Rise, Stephens Analyst Says",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQa2lEelpmTDk1OUtpMl9MZF83OUEwdXdUa3NmbFlDRFBZemYtRE9WcDVNaW8xV05BZFJiX0lZU1BETzMzQnB1WkxJb2tIQ1pvb0pielVkeHhHUGRxU3F0bWhwci1lU0Zpd2NlUF9Zd3I0NlNDZW10UVdkMkFuNGZ6ZjVuWll6OGttdU02amdMdHduRUk5MXpIY1FEdHFwVUpDeDBkVTF6bEpHNVFINExvMWJ5THI3UnhDdFozU2ZMdjZVU2p5S2c?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "APA (NASDAQ:APA) Releases Earnings Results, Beats Expectations By $0.34 EPS",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdl9fRGd2SVZRWUdrVWdCNHdRVDZQbC1NbGJ6Z3BJd29uaUVtY2g1ZUdXcTZtamowaEFSUUx4RWFNWmJOZGVoQmh5anFhdXdPVlkwSl9FNzdoVE1TYk1sZGF5dGxqY2lUWko2dEVTZEFXdXFGdS1tUWJzWTR5Wm9fRV9Rc203YU92YzRrVXViV2I3Y0tBX2VzUEJhbS1fZm83ajZsS0t6UUFXNy1aX2gwaDlYYU5jdmpfQ214YUo2bEU5VUNySWJJM2U5VHBlZw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "APACHE ($APA) Releases Q3 2026 Earnings",
+      "publisher": "Quiver Quantitative",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZVNzZXJkYVBFQ2JvX0U3ZDhQSFNQVUN4QjFHNlI5bjJuWkNNYWZ6ZVJLSGJrOWE0RlhzcTZCUElZOWhTdGhsRjJtS3g3ZVpUMjR0SFQxUEZhUkxYZ0tKRVB0dWhCNlNzeTFjRHhUMC1fV1RCQmNxc1BkcF9yNEl5bVRlMmk?oc=5",
+      "date": "2026-11-04"
+     },
+     {
+      "title": "Kinetik Reports Third Quarter 2026 Results",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWE0xc2VjXzFkY3RoUHFJY1dmOFd1elNnZ296VFE5WWpMTXVUODhMUlcwdFUzSllZZXNsQXdwaEUxX3ViYXVPYlZXS3hsSW1FXzBuc2QtUlJnYl9LRmlRY3lmMW81OWdWN0dVWjRtYmR6RHFDY0VBdVU0SjV2bjJDWFhwNHc4czBWUVlGQlZuMXZPUQ?oc=5",
+      "date": "2026-11-04"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.0281,
+    "week": -0.1537,
+    "high": -0.1537
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Energy",
+   "sector_etf": "RSPG",
+   "sector_moves": {
+    "day": 0.0009,
+    "week": -0.1243,
+    "high": -0.1243
+   },
+   "sector_at_open": 116.07,
+   "worst": {
+    "day": -0.0802,
+    "week": -0.1537,
+    "high": -0.1768
+   },
+   "provisional": {
+    "cause": "Sector-wide: Energy fell 0% too (rates, recession worries or sector rotation)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "BKR-2026-11-04",
+   "ticker": "BKR",
+   "name": "Baker Hughes Co.",
+   "opened": "2026-11-04",
+   "price_at_open": 49.69,
+   "spy_at_open": 767.39,
+   "fair_value_at_open": 50.55,
+   "buy_below_at_open": 32.85,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Energy sell-off as the Iran-war oil premium unwinds after the midterms (crude down ~15% in three days to ~$90); no bad company news",
+    "summary": "Energy fell 11% in the week and BKR's April high was itself set during the war premium, so most of the 34% fall is that premium coming out. Its own Q3 was strong (orders +31%, record $46.4B backlog, raised order outlook for gas, LNG and power equipment) and the Waygate sale closed. Watch next year's EPS estimate (down 5% in 30 days), oilfield spending if crude settles near $90, and paying down the ~$14B net debt after the Chart deal.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": null,
+    "last_report": "2026-10-27",
+    "peers": {
+     "basis": "group: Energy",
+     "n": 8,
+     "median": {
+      "day": -0.051480495512058466,
+      "week": -0.08705150617821211,
+      "high": -0.12307272148227272
+     },
+     "tickers": [
+      "APA",
+      "XOM",
+      "CVX",
+      "COP",
+      "EOG",
+      "OXY",
+      "DVN",
+      "FANG"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 2.60248,
+      "d30": 2.56281,
+      "chg": 0.015479103015830331
+     },
+     "+1y": {
+      "current": 2.85781,
+      "d30": 3.00982,
+      "chg": -0.05050468134307029
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 5
+     }
+    },
+    "news": [
+     {
+      "title": "Baker Hughes Co (BKR) Stock Down 7.4% but Still Overvalued -- GF Score: 76/100",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNnpDbFdBVzdhSDQxckZvVnU2a2J6a3VLNG53MXBHbXV6dGNCV3hDRjhQTWZYVG5VWThhMDdCeWxlZndWZDNYdEtpN3FsMG1iYXpjZTYwWVh4d3Y5UDBnb1RQaXRZRDdieTVKZmlsLVRSSHhacXJ3WFB2UEw2NGhOY1gzZlRyRC1zVndNbEUxRGdKOEdHa3M3aXhlalpaZWJmdzdlMFd5M3J4aTBu?oc=5",
+      "date": "2026-11-06"
+     },
+     {
+      "title": "Baker Hughes (NASDAQ:BKR) Director Purchases $531,000.00 in Stock",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM21pUnZldG51M1FpdWxPZzNSUFRjcEo2RlNkbUZPUGRaZXVZOUI2dEYwZE5lXzRabUItUldwenRrNGtaUzk0LUhsUjJxQURoaTNGZWVGWXdwRDIxbXgwd0t3c1Q1LXE5ZTg1VHJtQ1kyM1NrbG80OEpSTzhDdjNfZ3BldGNINFkzbVlzbmJpVXVweGlwa1pBc2Q4dTBKZEFWN1NJVFNCZWdnSGM2R3NHZ053eTJPdXgyTWRXYWpwVQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Baker Hughes Director Purchased Shares Worth Over $531K",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZTh3cVB3RzVwemVRaXJhNGJpbmFER3RidDNlMDVPSGhzNUxtTGFzbDBfWTlDNGk4azVVZVhPeEJUMWp5ZGNfeXVJTjg1YVhUWXZiWm1kSzlreDNVVzhlSzFVVFRhV3ROMXY5Mld3Y3hLbmNoYlpmektKRlM4V1JmYjYzTHNxZkNSOWh1cFp5bGRqM25ZcmN4VUUxX0xrWi1Yc3d2UmtOazBmbjZpSU1keUZHTzJzZEE?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Core Natural Resources, Bristow Group, CVR Energy, Baker Hughes, and Oceaneering shares plummet, what you need to know",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNWUVUMUVYLUVRTHBfVFNSX3I4MXpDMW1iWTQ4dG9DMlRreEZtNlZ2NHl4RndISFVRcXd5N2xEcDZhLWdsRXB6UEtUVWNiRGFqR241c096N3F4TFpnOFcxLXltb2NHcVN2RDhJb2xhSXo4VUFaOG5fN2kyRExoRG1vRUlnZkJYQWtCdE9IdDZMc1oyMDdzbnJUTHNoWlhocFNXc0NRTDJ0Qlp4QkFpZEVRNjZ6ODRGOUNiek9FVEhURG1lMndXX0pNVU1ia3RGUWZiODVkUG5BbnpBMzlXV0VUeG9GaGxqM01tQWxUSUQtZE9qT1hsTmo3RUw0OHdJd1NmaDdHTg?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Baker Hughes stock: Waygate sale closes for $1.45 billion",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUVI2ZUdKSUdMSkVMN1kwVkVvbDVKSExqaHBCTXlwcml4cUwxR0NaTVZWeUFUUzBHU2Nxc0lSVEx0RjYwejNsYmx5a0hWaDFwdG8xNGZkMElSckppaEkweTdvUTUtQTdTQU9ONUlUWnpfWkFHdUVhSFNDZTMwRXhXQkFDNk9jU0FnRlhPU2V5ZUVvTmdtZUpWUzVNVE5tNlIzUXB1anYwLUowaUd2Qm9xcEpSNk9XenBDZmc?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Should You Buy Baker Hughes Company (NASDAQ:BKR) For Its Upcoming Dividend?",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUmVfQzBUeERoeFVHLWNTQWs0eTkzalk2Y1JVT01YS1lkMkt0bFl6bzFaVjJfMGdBRF9OemxjbTg0cWVMTV9pZlNhc2o0NlFzbFAxZjBaU3d1X1lLZm5WdDlWNDFMYmg5SFdKaDZWU1k4a1FGMUlxMDlaZm9MVEY3WjRSdElQTDRhcWdRV1owOHdMcWxVbUN5dmZLM2M3U3h4Z0ZZYVdIZDNNemI3Y0JSR2VYdDhyeEFsbFNmSWk4dFJKOUhraDBVcmFn0gHPAUFVX3lxTE93R3hmU05kVWZhZE41ZTEyUEhHQzBIb1RhVUt0b0dFcUZmRExwVFppUXdSTTBkbHllQTgzM3NKNTRLVlF2b3o5cGg2dERpV2dSeW9lYnJmbVZ0TXp1NFc2MHo5RFdlczZnZXNaLUlkZ2RvTW1ZbWVGU2VpT1UyWm1wbm9WclowTFJxT0hZU09YTFkzZEpUTlhxcEdOVEZPc1h5SkZXdWhuQ1lLXzdtdGVtNjdYTlc2SklMVkhET0lCdlQwYkw5TnVmZzQtbnI2dw?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.037,
+    "week": -0.1325,
+    "high": -0.3123
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Energy",
+   "sector_etf": "RSPG",
+   "sector_moves": {
+    "day": 0.0009,
+    "week": -0.1243,
+    "high": -0.1243
+   },
+   "sector_at_open": 108.59,
+   "worst": {
+    "day": -0.0736,
+    "week": -0.1548,
+    "high": -0.3369
+   },
+   "provisional": {
+    "cause": "Sector-wide: Energy fell -12% too (rates, recession worries or sector rotation)",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "KLAC-2026-11-02",
+   "ticker": "KLAC",
+   "name": "KLA Corp.",
+   "opened": "2026-11-02",
+   "price_at_open": 153.11,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 70.05,
+   "buy_below_at_open": 45.53,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Chip-equipment sell-off: price-target cuts on sector P/E compression after 28 Oct, then the 5 Nov AI and data-centre rout (-13%); results themselves beat and raised",
+    "summary": "KLA's Sep-quarter revenue (.14B) and EPS beat, the December-quarter guide (.7B) was above expectations and analysts raised EPS estimates ~6%; the fall came with the whole semi-equipment group (peers ~-48% from highs, the 57% drawdown is real after the June 10-for-1 split). The cause is sector fear about whether AI spending pays off, not a company problem. Watch wafer-fab equipment spending, optical-component lead times and memory costs; the price (~30-150) is still far above the model's fair value (~0).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": "2026-10-28",
+    "last_report": "2026-10-28",
+    "peers": {
+     "basis": "industry: Semiconductor Equipment & Materials",
+     "n": 4,
+     "median": {
+      "day": -0.036523538896323204,
+      "week": -0.11981470843838876,
+      "high": -0.4851289404767393
+     },
+     "tickers": [
+      "AMAT",
+      "LRCX",
+      "TER",
+      "Q"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 5.76775,
+      "d30": 5.4548,
+      "chg": 0.05737148933049796
+     },
+     "+1y": {
+      "current": 7.09884,
+      "d30": 6.70539,
+      "chg": 0.058676676524408
+     },
+     "revisions_30d": {
+      "up": 2,
+      "down": 0
+     }
+    },
+    "news": [
+     {
+      "title": "KLA Corp. stock outperforms competitors despite losses on the day",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZmFBUkQ5RlV6RzNxQy1abGRZTzdsVk5rS0p5OE5kZ0oycEZPN2dFYWlTWGV2UHdreTJUUWtReW1MaF80Sm5pLWhIQ201Q3djM2YyTU16NGY1a2FmaGxjNk1ZZm9PWGhXczdSUWtnMkR1RXh1UVZwSVlRVC12OW5PS3BVNzE1UzBZSXM0YXIwWTR6X1dPZEthcThPWTVRY3phWWV0NDk4U0dQQVRFVmgzMm9mRkVlV1VEU3Y0X0pZd0dkUQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "KLA shareholders on record by Nov. 16 will receive $0.23 per share on Dec. 1.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUU1XbHV1WHNyY2Z6a3JZemFKU0piX2JzRDM4X1lBRlMzTVB6aHllQkozVnlMdmFnZzlYb0pYM1c5MHV3OTlUYW1uNEVDU2dGZ3VRa0tVbm83VW9EbTZwNzYwV3dNNEdfdDBVeDNvdkxwMG1xM1RnVjZFZURvX3RwVGpwNGVQc0U?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "An automatic grant gives KLA (KLAC) director McMullen 1,669 stock units.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRG9aT3dBcExRSmZrQ3hUNDN1bFFKMW0xZHRER3NpTF82b1JDaUJvc0hNdUFRZ0lJc0xITEltZ3l5RkY1bVp3YjRKZmlXa211MUxpUktELTRadkFCUE1RWHYtbnFJc0tsa3M1ZUs3TzNFUFI5SkR1YlVlNWdwR0pQUW96S29hbTN6WGdHOFNqY0RYeUVIT1NSUG1xeGhYRDE2Y3VIQw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "KLA Stocks Drop 12.18% as Investors Reprice Semiconductor Equipment Growth",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUUdOblRkd2dweDlNbERzckdBM2NFSlpFNXphQ3ZQaHlCMzhpY19ZekJyTE1hLUJNWElRSVBhZW9qNWxHVlNubGY3WThMSm5HNWNBdWhiNWRBR2pNY004eGxlYzJtOFJEcDhSVk5URXJjTVdzZ0cxMUs4QUZVczFvb1pjWnNyR1pOTmg4NTRiSQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Lattice Semiconductor, Applied Materials, AMD, Intel, and KLA Corporation shares are falling, what you need to know",
+      "publisher": "The Globe and Mail",
+      "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNcDFvUWZYTXpIbVRzenozWTBRRkZmbVdsdjdVd3RxMFNiaE1aMDctTlEyNk9BTlVZQW56UlQwaW5Bc2oweWdWdHZabjFSWTRzNExxc0JBc1pDMnBacVozTUFOV1BOekRnY3JJWWROTjFEcFBWZlhjVTA3ZDMwV2Y1SDlJR0tpYXZCeFdvbW1YR0FEUGhYdEI1ZnpZcklSY1pGM2tzeWk5YVFrRWRKajlMSjd1QTBPYm1hR2xjdE9SWG9MSFczQzJvaTBqMFZsYXFJTDJvY1JZall4S3ZzS0tsRUdwU0RoX2Vtd05pbWE3Nk1Fc3VaTmZhZ2NPb3JVY3lsOUhKRmFkajVCR2kzSmdkaUV0a2M3clBrSXk2OUxreVk?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "KLA Corporation stock slides as supply risks temper AI outlook",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQX05kM3pHbm1Zam9lS3NvN0djNnNxY3ZYTHI1RXRuaGl1U2NaeldqamJlNG5jd05LcGpCdlE2dmp6NXJDNXhvclY4Nk0zemdBSng2a1hPb0RBNkttUUFLTWRCNUtHUUlpT3ZvX0lpZVVjQUxrUXpHem1wbmttUzR5TUZNbmpqQnduVGEzRDZaUW50cEdwV1otcUJwSWI3MHNVUm14enByMzY4cU8xdHhZOWtDbXZQOTRYREFSS0dkSFRMVW8?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": 0.0533,
+    "week": -0.1342,
+    "high": -0.5468
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
+   "sector_moves": {
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
+   },
+   "sector_at_open": 61.49,
+   "worst": {
+    "day": -0.1335,
+    "week": -0.1997,
+    "high": -0.5698
+   },
+   "provisional": {
+    "cause": "Sector-wide: Information Technology fell 1% too (rates, recession worries or sector rotation)",
+    "lean": "temporary"
    }
   },
   {
@@ -2783,21 +2783,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": 0.3104,
-    "week": 0.3698,
-    "high": -0.5146
+    "day": 0.1154,
+    "week": 0.7383,
+    "high": -0.4586
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -2806,264 +2806,7 @@
     "high": -0.6885
    },
    "provisional": {
-    "cause": "Sector-wide: Information Technology fell -7% too (rates, recession worries or sector rotation)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "ZTS-2026-11-02",
-   "ticker": "ZTS",
-   "name": "Zoetis Inc.",
-   "opened": "2026-11-02",
-   "price_at_open": 83.18,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 83.3,
-   "buy_below_at_open": 62.47,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-11-05",
-    "peers": {
-     "basis": "group: Pharma & biotech",
-     "n": 5,
-     "median": {
-      "day": 0.040188031011616276,
-      "week": 0.10066749708208089,
-      "high": -0.043858390609705755
-     },
-     "tickers": [
-      "LLY",
-      "INCY",
-      "MRNA",
-      "REGN",
-      "BMY"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 6.26412,
-      "d30": 6.20935,
-      "chg": 0.0088205689806502
-     },
-     "+1y": {
-      "current": 6.40679,
-      "d30": 6.54458,
-      "chg": -0.021054063056758388
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 1
-     }
-    },
-    "news": [
-     {
-      "title": "Zoetis Lifts Annual Outlook While Braces For Cautious Pet Economy",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQkpYNHJfNEtYSGNycnp2T05RWkFxNWxpQXVFMmlsU3d5MlZHWEFtOWU0ZHNLbFB0U0VnX1hhakdsZ0xKdkNHVEZ3UnM4TnN6cldLQWVneUhLcUI5MUdRWER4UURyVnBiZGpOVDBKdjZXUzJ0X2Zla2Jhdm1zUVUtNVFWckdNOFpZV1lIWUZUdGQ1alFwWHZScUZ2Q0dBRndiZ1F2WlVDWHpZRE8ya28yV3NjcWdtb3Z4a0xDTk0wdw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "ZTS Q3 Earnings Top Estimates, 2026 Profit Outlook Improves, Stock Up",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYTJzZ1RyVlhMQ0g1cVBCeU9MZUJtSjRjLS1XWkVBSnRTNnRWUHF4aGJFenByNXVONS1hNkxrNXd2TWoyZTNZNGhHSjBzNnZfTHJDVjFqY0gweUx0dm5QT3BSNmhRdXlxeVpNZFNaWUNCVG9HaGNLeEFLUGhuSThGcWIxMzFsS0F1RFpwMFQwVTdBMlpVQUViTll3?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Revenue slips to $2.39B as Zoetis (ZTS) posts lower Q3 profit.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX0JYS0gwb2Q1NGRUcEtVVzBKNktWYnd2aWkyenFhODZqX2d4cmZ1THlIRjF6TkxVajJSWlN1cTJDblN1X21SdTZBWGZfYm5md0dwakFnMmZRM01ZSzc0cVFWSG1rSnZUQnZBZjB5WGhwSjVpbmRoMlR6RnFrSnJpcVFoTmswZHNXaEhuYmIyYW83a0tUcXBjT2VLYll5ZFhlblpoTg?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "No Greyhounds Here: Pet-Health Titan Brakes 30% Sprint",
-      "publisher": "Investor's Business Daily",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQX3Vfdnd2Q0s3cWFJUHY2YU11UGRaRDdWN3otb2x6VGlJcGlVWmdzdVlXTFZiOWJPbWNSR2RLVmpJY0doeVdIUWNGNXFuRkpDZFhqOE54X19BM2J0bFNOMjFKYkFYbjhIUkVfZW8xR1hjTWl6eUptdHVhSnIteEVCNnpQVndBdw?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Zoetis Inc reports Q3 results in line with expectations after stock ends session up 7.4%",
-      "publisher": "Traders Union",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUDdOTHFCUXVHbk5ld0ZfUy0za1dBc3J6TFVjVEZBYWJocjNqNXRJVnExVTQzNGlEYTFzeVA1cG1mMXpnWW1nazNMbFdRVEQ1UDFVYkktM3Z2aFJwWTdEZXBxQzBTcEd0amxhc0QzWkRfN3Y5OHViYVo2WWJvOXk5aEN5Xy1Ta3ZlY3J5enlSTWFDT1E?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Why is Zoetis stock climbing today?",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPckRqdnE3UVRDRHl0cExpWDRjd0tReTQ1LTk2NUVRZEt5SFU4Y0NhakczWGYxV2N3bFpDOGNCVG1NV0JqbS00NEwtMnBLWEwxVTZSWC1kZHBwakNRVVhyQWFnYlZPS3N5UlRSVVdGV0xSQkIwb2FnU1ZVTTd3cXp6SUVFX0xBakNmcU56Nm9iLXJENHFseldRVmxoREE?oc=5",
-      "date": "2026-11-05"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0795,
-    "week": 0.0554,
-    "high": -0.3737
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Health Care",
-   "sector_etf": "RSPH",
-   "sector_moves": {
-    "day": -0.0236,
-    "week": 0.025,
-    "high": -0.0236
-   },
-   "sector_at_open": 39.9,
-   "worst": {
-    "day": -0.0795,
-    "week": 0,
-    "high": -0.4238
-   },
-   "provisional": {
-    "cause": "Long slide: -37% below its 52-week high (S&P 500 -6%, Health Care -2%): read why",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "HWM-2026-10-30",
-   "ticker": "HWM",
-   "name": "Howmet Aerospace Inc.",
-   "opened": "2026-10-30",
-   "price_at_open": 199.22,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 104.18,
-   "buy_below_at_open": 72.92,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Long de-rating of richly valued aerospace stocks (P/E ~57 in August), sector selling and price-target cuts, plus the 5 Nov market drop; not its results",
-    "summary": "Q3 revenue rose 29%, segment margin rose 3 points to 32.5%, guidance was raised a fourth time and a first 2027 view of ~$11.5B revenue (~+12%) was given, with a $5B buyback. The slide reflects valuation, defense-budget uncertainty and doubts about growth after 2027 rather than any damage to the business. Watch Boeing and Airbus build rates, 2027 profit guidance in February; even after the slide the price (~$199) is far above the model fair value (~$104).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": "2026-10-29",
-    "last_report": "2026-10-29",
-    "peers": {
-     "basis": "industry: Aerospace & Defense",
-     "n": 8,
-     "median": {
-      "day": -0.026079636018261076,
-      "week": 0.02145659657696941,
-      "high": -0.14828661553743822
-     },
-     "tickers": [
-      "GE",
-      "RTX",
-      "LMT",
-      "BA",
-      "GD",
-      "NOC",
-      "TDG",
-      "LHX"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 5.50233,
-      "d30": 5.33752,
-      "chg": 0.030877636055696378
-     },
-     "+1y": {
-      "current": 6.6468,
-      "d30": 6.46127,
-      "chg": 0.028714169195839245
-     },
-     "revisions_30d": {
-      "up": 6,
-      "down": 4
-     }
-    },
-    "news": [
-     {
-      "title": "Howmet Aerospace (HWM) Shares Fell On Defense Spending Uncertainty",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaklzS0R4VzFsZU1PX3NEbjdYRnc4c0RYU2pzaWpFNzJyZE8xSEh1dTdiUk5LUk5GUTRDemtnZC1ZU3FENWRuV3lXekFZWnlwbURwaExocGotTExKdGkzaWowMkJ2WVZoZ3Fkb0ZJU0F4enBZS0JwY2c2V19uYmFFWktndHpsbU5hR3hNTXN0OWZOdmMyNGF0V2NxV0xEV2xrYXNibHBzc2pTcXBHWW93aHIxQXNVZGpYWENLbmdxSUs2Ny1CemVrTElhRXZkanlPY1o4VEhfcTHSAdgBQVVfeXFMT2pJc0tEeFcxbGVNT19zRG43WEZ3OHNEWFNqc2lqRTcycmRPMUhIdXU3YlJOS1JORlE0Q3prZ2QtWVNxRDVkbld5V3pBWVp5cG1EcGhMaHBqLUxMSnRpM2lqMDJCdllWaGdxZG9GSVNBeHpwWUtCcGNnNldfbmJhRVpLZ3R6bG1OYUd4TU1zdDlmTnZjMjRhdFdjcVdMRFdsa2FzYmxwc3NqU3FwR1lvd2hyMUFzVWRqWFhDS25ncUlLNjctQnpla0xJYUV2ZGp5T2NaOFRIX3Ex?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Howmet Aerospace stock slips 2% from Thursday's earlier quote",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQajlVaHJ2dk9VeFA3SHpZNjBuMUp3ZGt4Q1hOUEhJX0EzN1FxYVQ3V3p1V0ZTZFViYUktdTNyODJ5cktzTWR6WGlhSlY5cVNtZ21GUGNtSHROS3hWbk01bmRBcWZ3blRlU2hFZW85anQ2M2N4RnZaTUc0NFI0OG5Dc1ZuX1YtTE1qMXFOOElXcEMzWHFMdUdicmVuV3ZHSWw0STczRURjclUwZVgwaTlna3l0TUlHUXZjWnp4MnlTUDk?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Is Howmet Aerospace (HWM) Stock Outpacing Its Aerospace Peers This Year?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMU9YTUxmaVlWTGg5WngzLWpQby0tbVJiMnQ0UkNwRkdrd0t1UmZ2ck5jeDZUSmEyVlBwNk9QeWlqMFFKQXNCc3dUelcxXzJDaExJSFM3VVdqMnR2ZXRBdEJLZVl4UHVpOFlHR2FyOHc5RndVWnl4OVdLVndrUE11MEItZTZjMHBMMld4YUZTbjRkTDRrckF4ZWNmYUh3YVN3aDZJ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Howmet Aerospace stock gains as growth lifts outlook",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU3RweHRrV3FkaUxmVm0tUE84cEV1UkVGbWpjZmdSbExZUXAtZURiMTlGMXU0X2l2REl4bXRxUjFBcXZOZmtrQjlscm4zZU9oZjg1ZVBQRlBHaVRsdFJGa0N2bFVtcFVURjBVbG9iNzFrY00ySHVnUldyaFVzV1JITjByaXRFczVwSUpFTDk2dEhJMEo0TUhUbEFqaExpbGhUclVEeEFuVVdNTy1KZUN4d20zRm5yUQ?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Howmet Aerospace Inc. stock underperforms Wednesday when compared to competitors",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOZTFiTHFEUmMwWmdUd3VUc0pCVXBqNXgxb2JuZjdNcVBKMWVWSnZVRFNqRklNR3VkN2Z5M2tPQ3NIRmpXQTdNQkliMVg4V0VUT3ZnUG1MRnBJZ1NteFMtbGxKZ0tUX3JRQmd0Z2J6WW5FZFVwUFhybVI1TkRsbnZxT1V0R1FUNktrcDhLQTdpQVEtTlphNlFYRjR3ekdTRzR0R05kZEJHcGNtTjZaT2dyT3hmYXQ1V2Q4SjRWVnVIRWZnazl6TGtaenVpTVphS2ZkWW9mcUxPY2RlVTdGSmpsWUlkQjN3bnFlVmV4cGdR?oc=5",
-      "date": "2026-11-04"
-     },
-     {
-      "title": "Howmet Aerospace stock stays in focus after higher 2026 outlook",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTzRUTl9YdVQ5TEc0YnlUeDJLVU1hMVdmcU1JS29kSThWUHZveHUtU0xzRjhOZ1FuWVduOGFXcDNZNGJPbzBBTVpJUmdId2o5cnRYdmx1cjRvTXFRRUxaeUNZYTFZVTZVMkRjZlhjSE9Ub0tUN3FUN1BUbXRCSTVDUmZoT0ZTRkdDYWlvR2hYNC14aDRBRDR3R3B5SVh5S3QzLXZYajRlMGtMQVhHaWM2STBuZlFCdl9kdzhKakk5SnBqUktm?oc=5",
-      "date": "2026-11-04"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0593,
-    "week": 0.0293,
-    "high": -0.3135
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Industrials",
-   "sector_etf": "RSPN",
-   "sector_moves": {
-    "day": -0.0361,
-    "week": -0.0042,
-    "high": -0.0816
-   },
-   "sector_at_open": 60.55,
-   "worst": {
-    "day": -0.0593,
-    "week": -0.0204,
-    "high": -0.3193
-   },
-   "provisional": {
-    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
+    "cause": "Sector-wide: Information Technology fell 1% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
    }
   },
@@ -3202,6 +2945,401 @@
    }
   },
   {
+   "id": "MKC-2026-10-30",
+   "ticker": "MKC",
+   "name": "McCormick & Co.",
+   "opened": "2026-10-30",
+   "price_at_open": 47.29,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 62.27,
+   "buy_below_at_open": 43.59,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Marked down for the pending Unilever Foods deal: holders keep 35% of the combined company, which takes on ~$15.7B of new debt plus integration risk",
+    "summary": "The core spice and flavour business is intact (Q3 FY26 beat, gross margin +190bp, guidance kept; volumes slightly negative), so the brand advantage is not hit. The lasting part is the change in what shareholders own and in the balance sheet (2-3 years of deleveraging expected), which the model's standalone fair value does not include. Watch leverage and financing terms at the mid-2027 close, synergy progress (~$600M) and Consumer volumes.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": null,
+    "last_report": "2026-10-01",
+    "peers": {
+     "basis": "industry: Packaged Foods",
+     "n": 4,
+     "median": {
+      "day": 0.04472845617722243,
+      "week": 0.07546985471299561,
+      "high": -0.11019218728273644
+     },
+     "tickers": [
+      "KHC",
+      "GIS",
+      "SJM",
+      "HRL"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 3.08974,
+      "d30": 3.08717,
+      "chg": 0.0008324776413348722
+     },
+     "+1y": {
+      "current": 3.22139,
+      "d30": 3.29584,
+      "chg": -0.022589081994271565
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 9
+     }
+    },
+    "news": [
+     {
+      "title": "A retirement-plan award gives McCormick (MKC) CEO rights to 52.355 voting shares.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLW5wemtpT3Q1bWRwODh3bUoyLU5oN0haUC1seU1mRWstQjRLRnRzcmlkZ2daMkgzbDBnMUVSZ2FXWXZNRW9JbjZGVFcwNVpSazN4VmRyUExlTnVGT0RNT0lUZTJndVc5eEczcGx3RGlteVpZV3JJUmFfOERVa1BWaF9BZG0tSmd2TGtEY0pKYjBIWlljam9LWXZwelk2Vm5IMFloNFd1eU9nSlZrbGc?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
+      "publisher": "Yahoo Finance Singapore",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA2aTBPSVBPN3NwMG94U1JyVUkwek43dG4zMmNjdVEyNFY0VFI4UmdFbks3VjFnNkpyMERmWmIzRldNY3ZYUUV3c3ZGMzdsNHlG?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC) Stock Price, News, Quote & History",
+      "publisher": "Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIRm9XbWZRRFlwLTNNblNhdG1hVlJKUlhGTTN4NHF2bUNBNG1KNVU0N3N0WERPLUNsTFQ5UnFybnptR0g3ZWVVWHFac3EwbkVo?oc=5",
+      "date": "2026-11-04"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (NYSE:MKC) Stock Price Crosses Below 50 Day Moving Average - Here's Why",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQUJXY1VKSkhKQ3E0M3kzZGM2OGRVdDBySUtybWtXVmZjU3E5dk12Z1BudlNXYmxtOTZtZk9uVVNUaVBSeEQ5ZkJWWlJOMzdzRndsWGhTSnB0UUdGcm92YndxUnpZRUhDcUI1b29fS09xQWxJN1FhWjVjUEkxY1RiYzBTbTQxaHRaRFFqLUtUNTUyMVk3aXJnZlpSdEk1QnhuVGUwTWg0d3BlSkJuU0c1Y05tWHJhWWpxV01ZLXlyMXhmTC1wNmdkRnB5OWRIQ1FWQUtKaTFmS0VRaEdZMExXZFhjTzh0MjIzWGpMUG93?oc=5",
+      "date": "2026-11-04"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (NYSE:MKC) Shares Down 1.9% - Here's What Happened",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSUR0Sjl2LXc1QTFpRmFTbUxUT2paWW1ZZllmNmcyeElpWXAtcjhKUHAzTUptcnFYazNSakJSM25hX0NDZ0ZoZlhDcXJud0JLVEROSW5WNGdIN2dwWE5SMkl4dWlOZzdGeFlxd1kzYjd1dEdhTW4xM21lQk95MjBLTlk4Z0hfV2xHVkprNlp4bDNtYnJHNHNGYnNXZ2RXMkw4em5HYlNZQmhxLVh4dHFlSG9MU25pNU9yTzFVZ3FlNXpqbGVHVHptdUdVc2RXSm8?oc=5",
+      "date": "2026-11-03"
+     },
+     {
+      "title": "McCormick & Co. Inc. stock underperforms Tuesday when compared to competitors",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdk1MRE9YaTltaWl2T3RGYkVNcjdQb1lvNk9rQWFxaXQxX0FNcXZMTlozQ012MEhRQ001ZncyQmpiNi1Ecm05MkZ3cXB6ZFRjYW85MEhGN1B2TmxIVDgwQmdxOWhtVmxOejFnNEpfU3FQbXZMTGJ1a25sOHU1VXlNblRTMWNzdGg0eWphMFczLTQ0UnBkZTYya0Z4TXVuaWRBc0xfbmcwd0V3SUdVREcxNU55SFYyM0d1eVIyT0tjOVlHemlrb0RYTGVpQUFzZw?oc=5",
+      "date": "2026-11-03"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": -0.0384,
+    "week": 0.018,
+    "high": -0.3281
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Consumer Staples",
+   "sector_etf": "RSPS",
+   "sector_moves": {
+    "day": -0.0102,
+    "week": 0.0155,
+    "high": -0.037
+   },
+   "sector_at_open": 31.53,
+   "worst": {
+    "day": -0.0384,
+    "week": -0.0172,
+    "high": -0.34
+   },
+   "provisional": {
+    "cause": "Long slide: -33% below its 52-week high (S&P 500 -5%, Consumer Staples -4%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "INTU-2026-10-30",
+   "ticker": "INTU",
+   "name": "Intuit Inc.",
+   "opened": "2026-10-30",
+   "price_at_open": 341.09,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 393.48,
+   "buy_below_at_open": 275.44,
+   "valued_on": "2026-10-24",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "AI-native tax rivals squeezing TurboTax: price cuts, price now the top churn reason, FY27 Consumer growth guided to 4-6%",
+    "summary": "Intuit is ~48% below its high on fears that AI agents take over tax and bookkeeping, and unlike Adobe this is showing up: TurboTax guidance was cut in May, management says price is now the top reason customers leave and accepts lower revenue per customer, and FY27 Consumer growth is guided to 4-6% (11% in FY26), total 9-10%. The damage is so far limited to consumer tax: QuickBooks and Global Business Solutions are guided +13-14% and Credit Karma +11-13%. The model's base case already uses the 9-10% guide and the bear case halves growth, so it was not changed; watch the 2027 tax season (units and revenue per customer) and QuickBooks customer growth. The price (~$341) is below the fair value (~$393).",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": null,
+    "last_report": "2026-08-25",
+    "peers": {
+     "basis": "industry: Software - Application",
+     "n": 8,
+     "median": {
+      "day": 0.01995979319669572,
+      "week": -0.02145517900773769,
+      "high": -0.23305928538352355
+     },
+     "tickers": [
+      "CRM",
+      "UBER",
+      "ADP",
+      "NOW",
+      "ADBE",
+      "CDNS",
+      "DDOG",
+      "ADSK"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 23.81046,
+      "d30": 23.94389,
+      "chg": -0.005572611634951596
+     },
+     "+1y": {
+      "current": 26.94382,
+      "d30": 27.07542,
+      "chg": -0.004860497085548476
+     },
+     "revisions_30d": {
+      "up": 2,
+      "down": 3
+     }
+    },
+    "news": [
+     {
+      "title": "A $2.8 Billion Fund Bought These 3 Stocks",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPU1FZa0ZWLWFNdGhUUXZQUUNRN04zYU9fMnpjWlVseVl6RzBaMFNNN3RfQ2lNY0ExQ2t6aThiel90TDRRaTZlNTVDQW5DbTRTTFVkMm80WUdvOVkxYU5aZlFmMkwzVTliOE1jU29VTXM1X09oaFlaV29oeHd1STNSOEdlWFdjdE9sM3EyT09n?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Intuit (INTU) Crossed Above the 200-Day Moving Average: What That Means for Investors",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTGQ5XzJoNzYzcW5yenZHNUpiYXo0MS1FVmJyVjJTQ2Q1ZThGUTZnaWJER1BsZXdZZTNBTWVqOVE0YTE5RGtjRHlGUXVIS0xvS25MNHh2NjZ2RjloTGNhU3h0YjBYa093QWV0QlVZVG0xQzFCTTVDRUhvMS1xSXMwX0xYUE90U3hhQ203S2NhdVpnQVlEX2Rwb3NR?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Intuit stock: AI platform targets accountant efficiency",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeUFZN3I5Y3VaTkNkY2tGWDF1elZlM1VfWjg0M2Zrd0lCMk1LelBQT2hScWpacU90X1hHeDdUYVZjUDVpelhfVFc1ZlNLMm0wSUJZNmJkS1BrVVRIYmVaeG9ueEdEUUFlakk4aGZ4bUtHdDktVV9MUk1oSlRzcHMxVklwYzlHN2JQdkJVRDdlSWd4Nm9XczZzZFdBeUkyQjV4WGhwZGVMT3E0M21VdUtBQ285VHREY1My?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Intuit Inc. $INTU Stock: Rakuten Investment Management Inc. Raises Stake",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUzI5WkN5ZDJ0Qm1uVXAyWnlhaWVfZnFjNUpmQW9KWEpNbDBzMDRKQjFlcUFIN1E5R293NWNHbldOa0xXamtXczlxYUpzUTV4SkhQOEREM3h1Slp0VUozSzNaSktMYTNOZm5pWDlZRUlubW9lNzdOWEdySDd1b2p5M0tPUzVRZEtGYjYteEV6Y3dXcl9tNUlqdFc3dllPb0VmcUhLVkVTSG5MeHduS0lQNDhvUU9NbWtTck8xQTlLcXh4YjZoNVh5Wg?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "17,994 Intuit Inc. $INTU Shares Bought by AIA Group Ltd",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc19OcHExWkxsZFFTS1B0RnJnTk9uaTNMc2tjNkYzVnFSQ3JvWWlxQnptQ1luTXhObDF4YkRQanJZbnFpdlNuZkZvTnoxanotTU8zYXRHcHozQl83bXQ2aDBBczNycENFZGx0T0VLdGtXcEJ0YzJHRE1CMkJDXzhkVmtlT0R1TmhuSTBMUEcwTTdHZUM0VWJ2aE80MjRHb2l5YVBQRE92QkZBTTRmd2MyTDB6Zw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Intuit stock at EUR 318.00, down 1.06% premarket",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObVpZaWVzTGRFQnpOZWhhTEZhbDNNUUYyOWt0Q3NjaDF6dE9xaEtBQ2JJWTZOSVdjSE03OHBKY0pBRklZSUhCelUzYjZ3SUpKVXZrd292cjFWNk5YWVBQZk5PZ2E1TnlHNlBheS1xUlhhX01RRFlDaTVqYzZDY3Y4MWY4Zk9XaHhpMXYtZml3QkN4THhDSF8wUVdxZEt0TGtFVlFMWjQyVQ?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": -0.0384,
+    "week": 0.0004,
+    "high": -0.4956
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
+   "sector_moves": {
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
+   },
+   "sector_at_open": 62.95,
+   "worst": {
+    "day": -0.0384,
+    "week": -0.0067,
+    "high": -0.4958
+   },
+   "provisional": {
+    "cause": "Long slide: -50% below its 52-week high (S&P 500 -5%, Information Technology -17%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "BKNG-2026-10-30",
+   "ticker": "BKNG",
+   "name": "Booking Holdings Inc.",
+   "opened": "2026-10-30",
+   "price_at_open": 148.13,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 217.63,
+   "buy_below_at_open": 152.34,
+   "valued_on": "2026-10-24",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Year-long slide on Middle East war demand hits and fears that AI agents (e.g. Meta's) let travellers bypass booking sites; Q4 guide weak (room nights +1-3%)",
+    "summary": "Q3 was solid (room nights +7%, gross bookings +10%, adjusted EPS +17%) and the war effect looks temporary, but the AI-disintermediation fear would be lasting if true and would hit Booking's core advantage (owned traffic and the two-sided network). Evidence so far is reassuring (AI referrals under 1% of room nights, direct traffic mid-60%s) but doesn't settle it. Watch AI-agent booking share, direct-traffic share and 2027 room-night growth.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-06",
+    "earnings_on": null,
+    "last_report": "2026-11-03",
+    "peers": {
+     "basis": "industry: Travel Services",
+     "n": 5,
+     "median": {
+      "day": 0.06773824913936632,
+      "week": 0.116828721185543,
+      "high": -0.07417325397801833
+     },
+     "tickers": [
+      "ABNB",
+      "RCL",
+      "CCL",
+      "EXPE",
+      "NCLH"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 10.45573,
+      "d30": 10.44892,
+      "chg": 0.0006517419982161599
+     },
+     "+1y": {
+      "current": 12.3397,
+      "d30": 12.36452,
+      "chg": -0.0020073565330478438
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 4
+     }
+    },
+    "news": [
+     {
+      "title": "Can Booking Holdings (NASDAQ:BKNG) Shares Find Their Next Growth Catalyst?",
+      "publisher": "Kalkine Media",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQks0cVFzVGYzUkdnMTZzTm9GOFYyeHhDU1lpaHVaa3gyMUpZeWpiNnE2UzQ3eWE2Qm5TUTE4Sy1KX1VEREVydlBVSGpVMTNxclJ5RUNtLVlnci1uX1czeFRHVHJkNmlXMlFuRDQ4RjVEY0VZMmtEOTg1cUhYYlc1QVJBZVVSYmpWeG5NU0pOSkN6MWlYZEdiRTBzeG9WbWRsVHVZOUJiSUdKRi00OHdQR2o3U1BQZjFBQkhiY2pTRk9NZw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Booking Holdings: AI Proves To Be A Revenue Multiplier (Rating Upgrade) (NASDAQ:BKNG)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWEZYUEE0VWZ6Nk1lTmxWTGROVXdOQTZzTTg4bWhVWUtUS3RfTUh2ZUJPX2wwRVV4dW5LbTlmNnhiWUsybFNxaFNORWJjVmtJdV9GWXZVV1lDalM4MDlZbDg1SDZyODlQN3ZZc0tlZjFEbjV2RlpBNVRoWk1iNlhJSDJVRVgtaEF2d2ViYkU1MXJTSlVCeEhBd1V4ZllZcFd4c3pCcEpaRWZiT0hzd3c?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Booking Holdings vs. Dick's Sporting Goods: Which Consumer Stock Is a Better Buy for 2027?",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNU0FuemRaWDRoRkZ3eWFNTXh3UnFoQ2t4bExBdTFlcS1vVjhEcjFtcnlvR05MQ05pai1SYmZhWktZT0Jjbnk3MURXSENOQ0ZqMnlTd0E2Qmh4TXg3Z2lEbmpScGFfR1Z3ODgwczVpa2hpNkc5ekQzWXZ1WllDVHJZX2lUUGx5OVdtal9jWmVHaFNmQ2RJY0RYT21GbDdzWmFrUXZSdTh2aXJDaW9EVEliY3VsRzR5NVFmUTdudWZXblNpODROcldlUlliQklydnpr?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Booking Holdings Jumped 14% in a Week. Its Forward P/E Shows What the Rebound Assumes",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPOEhzc0oxbldrQTYxSDJ4TWJhUnJqeGxraFU5MW52WjNtMnRHVTJOTGFOdWdEU0dEc3Ytc3h3aEItZmdrTjgyZWUxeDhmMnIxU2F3bVhYc3RJMzByM0d0WnY0aXJNbnp5REMtMkFoMW4zeU9XZDBQWUkwM0tYQU9ka3g3Wmlzb3p5LVE?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Expedia shares slide as US-Iran war fallout prolongs pressure on travel firms",
+      "publisher": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOGxYMktvXzhBNF9BRjFXdC1PUnlFQ20tY3djOV9STUpUeVZCSl9yaHR0a1dQSGFpWTY1aTk2RnlqN3YzQTVFNV8zQVFFbEUzSjdldFczSGtUd0t6WExKLWpMcnh6RjhaZHh0RVBkVFJYb0RMYzM1WDhING5iQWZBT3JFVVlIYmdvSjVBMHpZZUEzdVEzek5Bc3B1dXMzVEdYNUw1R0xOVDNXMTF6Nkt5bWYzWGJ6MFpyUzZCb3BzdFY?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Booking Holdings stock: AI conversion gains meet softer Q4 outlook",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUVNjWDU3V3N3MnZxdDhGZm01QVRNSUZJUTlONXFBOWQyNFhfNzVVYlV0b0JfeUxVZlZySmhzV3g0cmFjdFREYlhfZ2FHdU4wTVJ6aG43ei1tX2xRT1l2WlZkM182ZjZuQ3lhcnN3a2lvREVMNDFOZGFxMEtlY3ZPUFZiSlhVUTFGZmJIZzVhWl83NU9TXzVLVU9KQURXSDFLb0MyTzQwd2xlQmFob2JrcGprbFZBbFhSZXhUMUx4cEhXQ0ZMRFc4?oc=5",
+      "date": "2026-11-05"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-06",
+   "moves": {
+    "day": -0.0356,
+    "week": 0.0985,
+    "high": -0.2593
+   },
+   "spy": {
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
+   },
+   "sector": "Consumer Discretionary",
+   "sector_etf": "RSPD",
+   "sector_moves": {
+    "day": -0.0045,
+    "week": 0.0362,
+    "high": -0.041
+   },
+   "sector_at_open": 55.55,
+   "worst": {
+    "day": -0.0356,
+    "week": -0.0494,
+    "high": -0.3257
+   },
+   "provisional": {
+    "cause": "Long slide: -26% below its 52-week high (S&P 500 -5%, Consumer Discretionary -4%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
    "id": "LII-2026-11-02",
    "ticker": "LII",
    "name": "Lennox International",
@@ -3296,165 +3434,31 @@
    "kind": "slide",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0283,
-    "week": 0.0486,
-    "high": -0.3912
+    "day": -0.0279,
+    "week": -0.0146,
+    "high": -0.4082
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": -0.0361,
-    "week": -0.0042,
-    "high": -0.0816
+    "day": -0.001,
+    "week": -0.0135,
+    "high": -0.0825
    },
    "sector_at_open": 61.72,
    "worst": {
     "day": -0.0303,
     "week": -0.07,
-    "high": -0.3961
+    "high": -0.4082
    },
    "provisional": {
     "cause": "Earnings reaction and next-year EPS forecasts cut -10%: check whether the setback lasts",
     "lean": "unclear"
-   }
-  },
-  {
-   "id": "DECK-2026-10-30",
-   "ticker": "DECK",
-   "name": "Deckers Outdoor Corp.",
-   "opened": "2026-10-30",
-   "price_at_open": 81.99,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 122.8,
-   "buy_below_at_open": 85.96,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "HOKA growth keeps slowing (+7% vs 24% in FY25) in a heavily discounted US running market, FY27 sales guide cut to $5.70-5.725B",
-    "summary": "Margins and the balance sheet are healthy (no debt, $1.2B cash) and management blames rivals' discounting it won't match, which would be cyclical; but the slowdown has run for ~18 months, management concedes share loss below $120 and On keeps growing much faster, which would be competitive. The facts don't yet settle which dominates. Watch HOKA growth after the spring launches and US wholesale expansion, and US direct-to-consumer comparable sales (-6.4%).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-10-22",
-    "peers": {
-     "basis": "group: Consumer brands",
-     "n": 8,
-     "median": {
-      "day": 0.042648299622792485,
-      "week": 0.07074421702232903,
-      "high": -0.2020873154747715
-     },
-     "tickers": [
-      "AAPL",
-      "TPR",
-      "MNST",
-      "MKC",
-      "NKE",
-      "LULU",
-      "KO",
-      "PEP"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 7.85974,
-      "d30": 7.51256,
-      "chg": 0.04621327483574178
-     },
-     "+1y": {
-      "current": 8.11496,
-      "d30": 8.35079,
-      "chg": -0.028240441922261272
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 16
-     }
-    },
-    "news": [
-     {
-      "title": "Deckers Outdoor (NYSE:DECK) Stock Price Target Cut by Argus",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWlk4ZkVJNlRnN2JHUnBLQVBhUnhCMW1lUGJZRGpOck1EQTQ2Ym5BVUZSa21PeUhwZ3prOWdqRUJTVF9yc0czS055bFF2TFV3R1NHbm55UGdMTFBnM05wUWRJdzlqWnRTMXhXektrUElwVE1BSUkxd3RhNU9JanBJcjhpSkFOSVFDamlRV0RoLVlpYmZMSURaUlZhYUo3X2wyUHhQVFJTa093X3B2Unc4d3B4VUZ2bmNUSF9B?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Deckers Outdoor Corporation (DECK) Stock Forecasts",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQjRjOHlYNzlrS0JneTE4SDVkX2VTS0gwOFhMR0RqcmFRalFGbVdZckFLTTNxR01MeFlkNk52YWJ0ZWxFLTJvenpkbGlWaDV3YnlLUVR0YkVyTTJRUFpiT1REdFpXTi1xRXZnTF9GTGJJOUFxaGFIWXJEYURGb3hBWHE3ZWplLWNK?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Deckers Outdoor stock at EUR 78.83 as FY2027 EPS view rises",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORnpuY1dSS2pxQ1ZZOFVyeXhBNU1HYmhOeWh2YTFRUFAxYlpFbm1fMDZZQzR0cEU1MHF1UEVmWXdNM1NmLTVma2JsWEVRcHBxdnlFWW9uUjMxOUh4eEs4U29hRUtVQXVJbFVPVTJJYnlqd09Xc0lTMkxxb3ZaeDkwSm5rRjdPLW9lQlpoREVQd1dINFJyaXRncjZtOThZczduTHpkTDFQd1l6NFAzSHNyVUdSX05FaDRQeGc?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Deckers Outdoor (DECK) Stock May Be 40% Undervalued On Cash Flow",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVnEyLWNmQS1kZzJLeVg0c2ZlVTFSTy12QVpfOXIzcmdDaXpKdHFYODgzTkFIbFQ4WjUzbEhSVndROEpKNzNRZFVqSTdDWDUwQmVsUWdvdzVHWGlZNzFwUmRaNnExVUxuMVlMM0IzTlRzV1BqZW45VUp0Uy1od01qb0dKY21peGRlU0hGV3lCRzRPNHJONlBfSkhXbERyQXF6bGd5Ui1KNmNGMWNEdm5DZGxQbUtKZU9FSUtEcFhhbGxSNjd3cmdITDRnQWR3V0xBQ1ZadldyRWbSAd4BQVVfeXFMT0p4bmE3b29oZzBCRkNVME40X0Y0MEZobUNIYnhraFhxdlJMWms1elpheHZ1X081b0ZHMjM4NlZ2ZVBKTDBVcXAwNHlLYnlJMU5PWFRkazc4ZnUtYU15Q0lIN3pEcVRwcjBMaEVweDU5LUMzY01KRGtwdE8zUGpDVTY5VU41dlBKejVIVkx4bUs2Rm44TWpUQV9BTlI2cVdfT0RPNHpaT0tHWXlqckpfeXRvcUpTdlhZUlNoZUNkaFFkcUltWklLNXVMd19rcVZscVBVRi1RVTNHbU9SMll3?oc=5",
-      "date": "2026-11-04"
-     },
-     {
-      "title": "Deckers Outdoor Corp. stock outperforms competitors on strong trading day",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRk51OERZWXd3SUtqUlUtNWtsR0JieDlfMXpEOGF4bFFzTEJfZ19rNlE2UE11VGpUbEsxWVR4U1NBQVRoNWlwZDhtZFhGVkVrNVdtczZNWjdDU1FYWloxSmxmWmdQNWRmVFN1emJsaWptNDlYWkdWTUp0X1A2SUViMXdYaEdqQ1F0aVZMUlBCZjdrekNKbkRVU0VZM1hselFoOUk3LXN0OGJSN3FqODhtbm5nVmtLRGpPSGF0SWRWdmdBVWttUHIzM196TFRFU1RkRWFpUUhTWFZkZFpRZkptbVZwX0U?oc=5",
-      "date": "2026-11-04"
-     },
-     {
-      "title": "Deckers Outdoor Stock Has The Bull Case Changed After Raised Guidance",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNekxOZWxJdndyMmowUkhySW12REtRd3l6TllGN3FxZU9ZWnluWnprcEtvaGwtTDNzOGxYOXdOQ0lhaThTeWduZlU0aGRzSDBtU3dtNUkxRVl1SFBjbjZOSXNlUm1LcE82ZlZBOHFINEhDeWpiTVJEX2Y1dHVwSkVfcUdQQ2xORTMzaU5PLVFwVFc3THZ1eFpSTGUwUko?oc=5",
-      "date": "2026-11-04"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-06",
-   "moves": {
-    "day": -0.0154,
-    "week": 0.0867,
-    "high": -0.2745
-   },
-   "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
-   },
-   "sector": "Consumer Discretionary",
-   "sector_etf": "RSPD",
-   "sector_moves": {
-    "day": -0.0248,
-    "week": 0.0668,
-    "high": -0.0367
-   },
-   "sector_at_open": 55.55,
-   "worst": {
-    "day": -0.0194,
-    "week": 0,
-    "high": -0.3221
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -20% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
    }
   },
   {
@@ -3564,129 +3568,122 @@
    "kind": "slide",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0125,
-    "week": 0.0576,
-    "high": -0.4336
+    "day": -0.0279,
+    "week": 0.0266,
+    "high": -0.4494
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": -0.0067,
-    "week": 0.0397,
-    "high": -0.1171
+    "day": 0.0042,
+    "week": 0.0509,
+    "high": -0.1133
    },
    "sector_at_open": 33.8,
    "worst": {
-    "day": -0.0226,
+    "day": -0.0279,
     "week": -0.0573,
     "high": -0.4637
    },
    "provisional": {
-    "cause": "Long slide: -43% below its 52-week high (S&P 500 -6%, Communication Services -12%): read why",
+    "cause": "Long slide: -45% below its 52-week high (S&P 500 -5%, Communication Services -11%): read why",
     "lean": "unclear"
    }
   },
   {
-   "id": "MKC-2026-10-30",
-   "ticker": "MKC",
-   "name": "McCormick & Co.",
-   "opened": "2026-10-30",
-   "price_at_open": 47.29,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 62.27,
-   "buy_below_at_open": 43.59,
-   "valued_on": "2026-10-23",
+   "id": "ZTS-2026-11-02",
+   "ticker": "ZTS",
+   "name": "Zoetis Inc.",
+   "opened": "2026-11-02",
+   "price_at_open": 83.18,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 83.3,
+   "buy_below_at_open": 62.47,
+   "valued_on": "2026-11-02",
    "triggers": [
     "high"
    ],
    "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "medium",
-    "cause": "Marked down for the pending Unilever Foods deal: holders keep 35% of the combined company, which takes on ~$15.7B of new debt plus integration risk",
-    "summary": "The core spice and flavour business is intact (Q3 FY26 beat, gross margin +190bp, guidance kept; volumes slightly negative), so the brand advantage is not hit. The lasting part is the change in what shareholders own and in the balance sheet (2-3 years of deleveraging expected), which the model's standalone fair value does not include. Watch leverage and financing terms at the mid-2027 close, synergy progress (~$600M) and Consumer volumes.",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
+   "needs_verdict": true,
+   "verdict": null,
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
     "earnings_on": null,
-    "last_report": "2026-10-01",
+    "last_report": "2026-11-05",
     "peers": {
-     "basis": "industry: Packaged Foods",
-     "n": 4,
+     "basis": "group: Pharma & biotech",
+     "n": 5,
      "median": {
-      "day": 0.04472845617722243,
-      "week": 0.07546985471299561,
-      "high": -0.11019218728273644
+      "day": 0.040188031011616276,
+      "week": 0.10066749708208089,
+      "high": -0.043858390609705755
      },
      "tickers": [
-      "KHC",
-      "GIS",
-      "SJM",
-      "HRL"
+      "LLY",
+      "INCY",
+      "MRNA",
+      "REGN",
+      "BMY"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 3.08974,
-      "d30": 3.08717,
-      "chg": 0.0008324776413348722
+      "current": 6.26412,
+      "d30": 6.20935,
+      "chg": 0.0088205689806502
      },
      "+1y": {
-      "current": 3.22139,
-      "d30": 3.29584,
-      "chg": -0.022589081994271565
+      "current": 6.40679,
+      "d30": 6.54458,
+      "chg": -0.021054063056758388
      },
      "revisions_30d": {
       "up": 1,
-      "down": 9
+      "down": 1
      }
     },
     "news": [
      {
-      "title": "A retirement-plan award gives McCormick (MKC) CEO rights to 52.355 voting shares.",
+      "title": "Zoetis Lifts Annual Outlook While Braces For Cautious Pet Economy",
+      "publisher": "Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQkpYNHJfNEtYSGNycnp2T05RWkFxNWxpQXVFMmlsU3d5MlZHWEFtOWU0ZHNLbFB0U0VnX1hhakdsZ0xKdkNHVEZ3UnM4TnN6cldLQWVneUhLcUI5MUdRWER4UURyVnBiZGpOVDBKdjZXUzJ0X2Zla2Jhdm1zUVUtNVFWckdNOFpZV1lIWUZUdGQ1alFwWHZScUZ2Q0dBRndiZ1F2WlVDWHpZRE8ya28yV3NjcWdtb3Z4a0xDTk0wdw?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "ZTS Q3 Earnings Top Estimates, 2026 Profit Outlook Improves, Stock Up",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYTJzZ1RyVlhMQ0g1cVBCeU9MZUJtSjRjLS1XWkVBSnRTNnRWUHF4aGJFenByNXVONS1hNkxrNXd2TWoyZTNZNGhHSjBzNnZfTHJDVjFqY0gweUx0dm5QT3BSNmhRdXlxeVpNZFNaWUNCVG9HaGNLeEFLUGhuSThGcWIxMzFsS0F1RFpwMFQwVTdBMlpVQUViTll3?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Revenue slips to $2.39B as Zoetis (ZTS) posts lower Q3 profit.",
       "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLW5wemtpT3Q1bWRwODh3bUoyLU5oN0haUC1seU1mRWstQjRLRnRzcmlkZ2daMkgzbDBnMUVSZ2FXWXZNRW9JbjZGVFcwNVpSazN4VmRyUExlTnVGT0RNT0lUZTJndVc5eEczcGx3RGlteVpZV3JJUmFfOERVa1BWaF9BZG0tSmd2TGtEY0pKYjBIWlljam9LWXZwelk2Vm5IMFloNFd1eU9nSlZrbGc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX0JYS0gwb2Q1NGRUcEtVVzBKNktWYnd2aWkyenFhODZqX2d4cmZ1THlIRjF6TkxVajJSWlN1cTJDblN1X21SdTZBWGZfYm5md0dwakFnMmZRM01ZSzc0cVFWSG1rSnZUQnZBZjB5WGhwSjVpbmRoMlR6RnFrSnJpcVFoTmswZHNXaEhuYmIyYW83a0tUcXBjT2VLYll5ZFhlblpoTg?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
-      "publisher": "Yahoo Finance Singapore",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA2aTBPSVBPN3NwMG94U1JyVUkwek43dG4zMmNjdVEyNFY0VFI4UmdFbks3VjFnNkpyMERmWmIzRldNY3ZYUUV3c3ZGMzdsNHlG?oc=5",
+      "title": "No Greyhounds Here: Pet-Health Titan Brakes 30% Sprint",
+      "publisher": "Investor's Business Daily",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQX3Vfdnd2Q0s3cWFJUHY2YU11UGRaRDdWN3otb2x6VGlJcGlVWmdzdVlXTFZiOWJPbWNSR2RLVmpJY0doeVdIUWNGNXFuRkpDZFhqOE54X19BM2J0bFNOMjFKYkFYbjhIUkVfZW8xR1hjTWl6eUptdHVhSnIteEVCNnpQVndBdw?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "McCormick & Company, Incorporated (MKC) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIRm9XbWZRRFlwLTNNblNhdG1hVlJKUlhGTTN4NHF2bUNBNG1KNVU0N3N0WERPLUNsTFQ5UnFybnptR0g3ZWVVWHFac3EwbkVo?oc=5",
-      "date": "2026-11-04"
+      "title": "Zoetis Inc reports Q3 results in line with expectations after stock ends session up 7.4%",
+      "publisher": "Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUDdOTHFCUXVHbk5ld0ZfUy0za1dBc3J6TFVjVEZBYWJocjNqNXRJVnExVTQzNGlEYTFzeVA1cG1mMXpnWW1nazNMbFdRVEQ1UDFVYkktM3Z2aFJwWTdEZXBxQzBTcEd0amxhc0QzWkRfN3Y5OHViYVo2WWJvOXk5aEN5Xy1Ta3ZlY3J5enlSTWFDT1E?oc=5",
+      "date": "2026-11-05"
      },
      {
-      "title": "McCormick & Company, Incorporated (NYSE:MKC) Stock Price Crosses Below 50 Day Moving Average - Here's Why",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQUJXY1VKSkhKQ3E0M3kzZGM2OGRVdDBySUtybWtXVmZjU3E5dk12Z1BudlNXYmxtOTZtZk9uVVNUaVBSeEQ5ZkJWWlJOMzdzRndsWGhTSnB0UUdGcm92YndxUnpZRUhDcUI1b29fS09xQWxJN1FhWjVjUEkxY1RiYzBTbTQxaHRaRFFqLUtUNTUyMVk3aXJnZlpSdEk1QnhuVGUwTWg0d3BlSkJuU0c1Y05tWHJhWWpxV01ZLXlyMXhmTC1wNmdkRnB5OWRIQ1FWQUtKaTFmS0VRaEdZMExXZFhjTzh0MjIzWGpMUG93?oc=5",
-      "date": "2026-11-04"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (NYSE:MKC) Shares Down 1.9% - Here's What Happened",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSUR0Sjl2LXc1QTFpRmFTbUxUT2paWW1ZZllmNmcyeElpWXAtcjhKUHAzTUptcnFYazNSakJSM25hX0NDZ0ZoZlhDcXJud0JLVEROSW5WNGdIN2dwWE5SMkl4dWlOZzdGeFlxd1kzYjd1dEdhTW4xM21lQk95MjBLTlk4Z0hfV2xHVkprNlp4bDNtYnJHNHNGYnNXZ2RXMkw4em5HYlNZQmhxLVh4dHFlSG9MU25pNU9yTzFVZ3FlNXpqbGVHVHptdUdVc2RXSm8?oc=5",
-      "date": "2026-11-03"
-     },
-     {
-      "title": "McCormick & Co. Inc. stock underperforms Tuesday when compared to competitors",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdk1MRE9YaTltaWl2T3RGYkVNcjdQb1lvNk9rQWFxaXQxX0FNcXZMTlozQ012MEhRQ001ZncyQmpiNi1Ecm05MkZ3cXB6ZFRjYW85MEhGN1B2TmxIVDgwQmdxOWhtVmxOejFnNEpfU3FQbXZMTGJ1a25sOHU1VXlNblRTMWNzdGg0eWphMFczLTQ0UnBkZTYya0Z4TXVuaWRBc0xfbmcwd0V3SUdVREcxNU55SFYyM0d1eVIyT0tjOVlHemlrb0RYTGVpQUFzZw?oc=5",
-      "date": "2026-11-03"
+      "title": "Why is Zoetis stock climbing today?",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPckRqdnE3UVRDRHl0cExpWDRjd0tReTQ1LTk2NUVRZEt5SFU4Y0NhakczWGYxV2N3bFpDOGNCVG1NV0JqbS00NEwtMnBLWEwxVTZSWC1kZHBwakNRVVhyQWFnYlZPS3N5UlRSVVdGV0xSQkIwb2FnU1ZVTTd3cXp6SUVFX0xBakNmcU56Nm9iLXJENHFseldRVmxoREE?oc=5",
+      "date": "2026-11-05"
      }
     ]
    },
@@ -3694,30 +3691,30 @@
    "kind": "slide",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0083,
-    "week": 0.0868,
-    "high": -0.3013
+    "day": -0.0267,
+    "week": 0.0025,
+    "high": -0.3904
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
-   "sector": "Consumer Staples",
-   "sector_etf": "RSPS",
+   "sector": "Health Care",
+   "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0071,
-    "week": 0.0517,
-    "high": -0.0274
+    "day": 0.0022,
+    "week": 0.0247,
+    "high": -0.0214
    },
-   "sector_at_open": 31.53,
+   "sector_at_open": 39.9,
    "worst": {
-    "day": -0.0193,
-    "week": -0.0172,
-    "high": -0.34
+    "day": -0.0795,
+    "week": 0,
+    "high": -0.4238
    },
    "provisional": {
-    "cause": "Long slide: -30% below its 52-week high (S&P 500 -6%, Consumer Staples -3%): read why",
+    "cause": "Long slide: -39% below its 52-week high (S&P 500 -5%, Health Care -2%): read why",
     "lean": "unclear"
    }
   },
@@ -3828,27 +3825,27 @@
    "kind": "slide",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0082,
-    "week": -0.0133,
-    "high": -0.3107
+    "day": -0.0256,
+    "week": -0.0404,
+    "high": -0.3284
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
+    "day": 0.0079,
+    "week": -0.0874,
+    "high": -0.1709
    },
    "sector_at_open": 62.95,
    "worst": {
-    "day": -0.0212,
+    "day": -0.0256,
     "week": -0.0515,
-    "high": -0.3168
+    "high": -0.3284
    },
    "provisional": {
     "cause": "Industry-wide: peers fell -23% too (rates, sector rotation or an industry worry)",
@@ -3856,105 +3853,105 @@
    }
   },
   {
-   "id": "INTU-2026-10-30",
-   "ticker": "INTU",
-   "name": "Intuit Inc.",
+   "id": "DECK-2026-10-30",
+   "ticker": "DECK",
+   "name": "Deckers Outdoor Corp.",
    "opened": "2026-10-30",
-   "price_at_open": 341.09,
+   "price_at_open": 81.99,
    "spy_at_open": 755.72,
-   "fair_value_at_open": 393.48,
-   "buy_below_at_open": 275.44,
-   "valued_on": "2026-10-24",
+   "fair_value_at_open": 122.8,
+   "buy_below_at_open": 85.96,
+   "valued_on": "2026-10-30",
    "triggers": [
     "high"
    ],
    "emergency": false,
    "needs_verdict": false,
    "verdict": {
-    "label": "lasting",
+    "label": "unclear",
     "confidence": "medium",
-    "cause": "AI-native tax rivals squeezing TurboTax: price cuts, price now the top churn reason, FY27 Consumer growth guided to 4-6%",
-    "summary": "Intuit is ~48% below its high on fears that AI agents take over tax and bookkeeping, and unlike Adobe this is showing up: TurboTax guidance was cut in May, management says price is now the top reason customers leave and accepts lower revenue per customer, and FY27 Consumer growth is guided to 4-6% (11% in FY26), total 9-10%. The damage is so far limited to consumer tax: QuickBooks and Global Business Solutions are guided +13-14% and Credit Karma +11-13%. The model's base case already uses the 9-10% guide and the bear case halves growth, so it was not changed; watch the 2027 tax season (units and revenue per customer) and QuickBooks customer growth. The price (~$341) is below the fair value (~$393).",
+    "cause": "HOKA growth keeps slowing (+7% vs 24% in FY25) in a heavily discounted US running market, FY27 sales guide cut to $5.70-5.725B",
+    "summary": "Margins and the balance sheet are healthy (no debt, $1.2B cash) and management blames rivals' discounting it won't match, which would be cyclical; but the slowdown has run for ~18 months, management concedes share loss below $120 and On keeps growing much faster, which would be competitive. The facts don't yet settle which dominates. Watch HOKA growth after the spring launches and US wholesale expansion, and US direct-to-consumer comparable sales (-6.4%).",
     "model_changed": false,
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "by": "Claude"
    },
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
     "earnings_on": null,
-    "last_report": "2026-08-25",
+    "last_report": "2026-10-22",
     "peers": {
-     "basis": "industry: Software - Application",
+     "basis": "group: Consumer brands",
      "n": 8,
      "median": {
-      "day": 0.01995979319669572,
-      "week": -0.02145517900773769,
-      "high": -0.23305928538352355
+      "day": 0.042648299622792485,
+      "week": 0.07074421702232903,
+      "high": -0.2020873154747715
      },
      "tickers": [
-      "CRM",
-      "UBER",
-      "ADP",
-      "NOW",
-      "ADBE",
-      "CDNS",
-      "DDOG",
-      "ADSK"
+      "AAPL",
+      "TPR",
+      "MNST",
+      "MKC",
+      "NKE",
+      "LULU",
+      "KO",
+      "PEP"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 23.81046,
-      "d30": 23.94389,
-      "chg": -0.005572611634951596
+      "current": 7.85974,
+      "d30": 7.51256,
+      "chg": 0.04621327483574178
      },
      "+1y": {
-      "current": 26.94382,
-      "d30": 27.07542,
-      "chg": -0.004860497085548476
+      "current": 8.11496,
+      "d30": 8.35079,
+      "chg": -0.028240441922261272
      },
      "revisions_30d": {
-      "up": 2,
-      "down": 3
+      "up": 1,
+      "down": 16
      }
     },
     "news": [
      {
-      "title": "A $2.8 Billion Fund Bought These 3 Stocks",
-      "publisher": "TIKR.com",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPU1FZa0ZWLWFNdGhUUXZQUUNRN04zYU9fMnpjWlVseVl6RzBaMFNNN3RfQ2lNY0ExQ2t6aThiel90TDRRaTZlNTVDQW5DbTRTTFVkMm80WUdvOVkxYU5aZlFmMkwzVTliOE1jU29VTXM1X09oaFlaV29oeHd1STNSOEdlWFdjdE9sM3EyT09n?oc=5",
+      "title": "Deckers Outdoor (NYSE:DECK) Stock Price Target Cut by Argus",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWlk4ZkVJNlRnN2JHUnBLQVBhUnhCMW1lUGJZRGpOck1EQTQ2Ym5BVUZSa21PeUhwZ3prOWdqRUJTVF9yc0czS055bFF2TFV3R1NHbm55UGdMTFBnM05wUWRJdzlqWnRTMXhXektrUElwVE1BSUkxd3RhNU9JanBJcjhpSkFOSVFDamlRV0RoLVlpYmZMSURaUlZhYUo3X2wyUHhQVFJTa093X3B2Unc4d3B4VUZ2bmNUSF9B?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Intuit (INTU) Crossed Above the 200-Day Moving Average: What That Means for Investors",
+      "title": "Deckers Outdoor Corporation (DECK) Stock Forecasts",
       "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTGQ5XzJoNzYzcW5yenZHNUpiYXo0MS1FVmJyVjJTQ2Q1ZThGUTZnaWJER1BsZXdZZTNBTWVqOVE0YTE5RGtjRHlGUXVIS0xvS25MNHh2NjZ2RjloTGNhU3h0YjBYa093QWV0QlVZVG0xQzFCTTVDRUhvMS1xSXMwX0xYUE90U3hhQ203S2NhdVpnQVlEX2Rwb3NR?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQjRjOHlYNzlrS0JneTE4SDVkX2VTS0gwOFhMR0RqcmFRalFGbVdZckFLTTNxR01MeFlkNk52YWJ0ZWxFLTJvenpkbGlWaDV3YnlLUVR0YkVyTTJRUFpiT1REdFpXTi1xRXZnTF9GTGJJOUFxaGFIWXJEYURGb3hBWHE3ZWplLWNK?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Intuit stock: AI platform targets accountant efficiency",
+      "title": "Deckers Outdoor stock at EUR 78.83 as FY2027 EPS view rises",
       "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeUFZN3I5Y3VaTkNkY2tGWDF1elZlM1VfWjg0M2Zrd0lCMk1LelBQT2hScWpacU90X1hHeDdUYVZjUDVpelhfVFc1ZlNLMm0wSUJZNmJkS1BrVVRIYmVaeG9ueEdEUUFlakk4aGZ4bUtHdDktVV9MUk1oSlRzcHMxVklwYzlHN2JQdkJVRDdlSWd4Nm9XczZzZFdBeUkyQjV4WGhwZGVMT3E0M21VdUtBQ285VHREY1My?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORnpuY1dSS2pxQ1ZZOFVyeXhBNU1HYmhOeWh2YTFRUFAxYlpFbm1fMDZZQzR0cEU1MHF1UEVmWXdNM1NmLTVma2JsWEVRcHBxdnlFWW9uUjMxOUh4eEs4U29hRUtVQXVJbFVPVTJJYnlqd09Xc0lTMkxxb3ZaeDkwSm5rRjdPLW9lQlpoREVQd1dINFJyaXRncjZtOThZczduTHpkTDFQd1l6NFAzSHNyVUdSX05FaDRQeGc?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Intuit Inc. $INTU Stock: Rakuten Investment Management Inc. Raises Stake",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUzI5WkN5ZDJ0Qm1uVXAyWnlhaWVfZnFjNUpmQW9KWEpNbDBzMDRKQjFlcUFIN1E5R293NWNHbldOa0xXamtXczlxYUpzUTV4SkhQOEREM3h1Slp0VUozSzNaSktMYTNOZm5pWDlZRUlubW9lNzdOWEdySDd1b2p5M0tPUzVRZEtGYjYteEV6Y3dXcl9tNUlqdFc3dllPb0VmcUhLVkVTSG5MeHduS0lQNDhvUU9NbWtTck8xQTlLcXh4YjZoNVh5Wg?oc=5",
-      "date": "2026-11-05"
+      "title": "Deckers Outdoor (DECK) Stock May Be 40% Undervalued On Cash Flow",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVnEyLWNmQS1kZzJLeVg0c2ZlVTFSTy12QVpfOXIzcmdDaXpKdHFYODgzTkFIbFQ4WjUzbEhSVndROEpKNzNRZFVqSTdDWDUwQmVsUWdvdzVHWGlZNzFwUmRaNnExVUxuMVlMM0IzTlRzV1BqZW45VUp0Uy1od01qb0dKY21peGRlU0hGV3lCRzRPNHJONlBfSkhXbERyQXF6bGd5Ui1KNmNGMWNEdm5DZGxQbUtKZU9FSUtEcFhhbGxSNjd3cmdITDRnQWR3V0xBQ1ZadldyRWbSAd4BQVVfeXFMT0p4bmE3b29oZzBCRkNVME40X0Y0MEZobUNIYnhraFhxdlJMWms1elpheHZ1X081b0ZHMjM4NlZ2ZVBKTDBVcXAwNHlLYnlJMU5PWFRkazc4ZnUtYU15Q0lIN3pEcVRwcjBMaEVweDU5LUMzY01KRGtwdE8zUGpDVTY5VU41dlBKejVIVkx4bUs2Rm44TWpUQV9BTlI2cVdfT0RPNHpaT0tHWXlqckpfeXRvcUpTdlhZUlNoZUNkaFFkcUltWklLNXVMd19rcVZscVBVRi1RVTNHbU9SMll3?oc=5",
+      "date": "2026-11-04"
      },
      {
-      "title": "17,994 Intuit Inc. $INTU Shares Bought by AIA Group Ltd",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc19OcHExWkxsZFFTS1B0RnJnTk9uaTNMc2tjNkYzVnFSQ3JvWWlxQnptQ1luTXhObDF4YkRQanJZbnFpdlNuZkZvTnoxanotTU8zYXRHcHozQl83bXQ2aDBBczNycENFZGx0T0VLdGtXcEJ0YzJHRE1CMkJDXzhkVmtlT0R1TmhuSTBMUEcwTTdHZUM0VWJ2aE80MjRHb2l5YVBQRE92QkZBTTRmd2MyTDB6Zw?oc=5",
-      "date": "2026-11-05"
+      "title": "Deckers Outdoor Corp. stock outperforms competitors on strong trading day",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRk51OERZWXd3SUtqUlUtNWtsR0JieDlfMXpEOGF4bFFzTEJfZ19rNlE2UE11VGpUbEsxWVR4U1NBQVRoNWlwZDhtZFhGVkVrNVdtczZNWjdDU1FYWloxSmxmWmdQNWRmVFN1emJsaWptNDlYWkdWTUp0X1A2SUViMXdYaEdqQ1F0aVZMUlBCZjdrekNKbkRVU0VZM1hselFoOUk3LXN0OGJSN3FqODhtbm5nVmtLRGpPSGF0SWRWdmdBVWttUHIzM196TFRFU1RkRWFpUUhTWFZkZFpRZkptbVZwX0U?oc=5",
+      "date": "2026-11-04"
      },
      {
-      "title": "Intuit stock at EUR 318.00, down 1.06% premarket",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObVpZaWVzTGRFQnpOZWhhTEZhbDNNUUYyOWt0Q3NjaDF6dE9xaEtBQ2JJWTZOSVdjSE03OHBKY0pBRklZSUhCelUzYjZ3SUpKVXZrd292cjFWNk5YWVBQZk5PZ2E1TnlHNlBheS1xUlhhX01RRFlDaTVqYzZDY3Y4MWY4Zk9XaHhpMXYtZml3QkN4THhDSF8wUVdxZEt0TGtFVlFMWjQyVQ?oc=5",
-      "date": "2026-11-05"
+      "title": "Deckers Outdoor Stock Has The Bull Case Changed After Raised Guidance",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNekxOZWxJdndyMmowUkhySW12REtRd3l6TllGN3FxZU9ZWnluWnprcEtvaGwtTDNzOGxYOXdOQ0lhaThTeWduZlU0aGRzSDBtU3dtNUkxRVl1SFBjbjZOSXNlUm1LcE82ZlZBOHFINEhDeWpiTVJEX2Y1dHVwSkVfcUdQQ2xORTMzaU5PLVFwVFc3THZ1eFpSTGUwUko?oc=5",
+      "date": "2026-11-04"
      }
     ]
    },
@@ -3962,31 +3959,31 @@
    "kind": "slide",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.005,
-    "week": 0.0812,
-    "high": -0.4755
+    "day": -0.0111,
+    "week": 0.0583,
+    "high": -0.2825
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
+   "sector": "Consumer Discretionary",
+   "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0701,
-    "week": -0.1423,
-    "high": -0.1774
+    "day": -0.0045,
+    "week": 0.0362,
+    "high": -0.041
    },
-   "sector_at_open": 62.95,
+   "sector_at_open": 55.55,
    "worst": {
-    "day": -0.021,
-    "week": -0.0067,
-    "high": -0.4958
+    "day": -0.0194,
+    "week": 0,
+    "high": -0.3221
    },
    "provisional": {
-    "cause": "Long slide: -48% below its 52-week high (S&P 500 -6%, Information Technology -18%): read why",
-    "lean": "unclear"
+    "cause": "Industry-wide: peers fell -20% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
    }
   },
   {
@@ -4088,21 +4085,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-06",
    "moves": {
-    "day": -0.0026,
-    "week": 0.0623,
-    "high": -0.4823
+    "day": -0.0066,
+    "week": 0.0353,
+    "high": -0.4857
    },
    "spy": {
-    "day": -0.0441,
-    "week": -0.0509,
-    "high": -0.0592
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0248,
-    "week": 0.0668,
-    "high": -0.0367
+    "day": -0.0045,
+    "week": 0.0362,
+    "high": -0.041
    },
    "sector_at_open": 57.04,
    "worst": {
@@ -4111,7 +4108,7 @@
     "high": -0.5046
    },
    "provisional": {
-    "cause": "Long slide: -48% below its 52-week high (S&P 500 -6%, Consumer Discretionary -4%): read why",
+    "cause": "Long slide: -49% below its 52-week high (S&P 500 -5%, Consumer Discretionary -4%): read why",
     "lean": "unclear"
    }
   },
@@ -4250,25 +4247,25 @@
    }
   },
   {
-   "id": "BKNG-2026-10-30",
-   "ticker": "BKNG",
-   "name": "Booking Holdings Inc.",
+   "id": "HWM-2026-10-30",
+   "ticker": "HWM",
+   "name": "Howmet Aerospace Inc.",
    "opened": "2026-10-30",
-   "price_at_open": 148.13,
+   "price_at_open": 199.22,
    "spy_at_open": 755.72,
-   "fair_value_at_open": 217.63,
-   "buy_below_at_open": 152.34,
-   "valued_on": "2026-10-24",
+   "fair_value_at_open": 104.18,
+   "buy_below_at_open": 72.92,
+   "valued_on": "2026-10-30",
    "triggers": [
     "high"
    ],
    "emergency": false,
    "needs_verdict": false,
    "verdict": {
-    "label": "unclear",
+    "label": "temporary",
     "confidence": "medium",
-    "cause": "Year-long slide on Middle East war demand hits and fears that AI agents (e.g. Meta's) let travellers bypass booking sites; Q4 guide weak (room nights +1-3%)",
-    "summary": "Q3 was solid (room nights +7%, gross bookings +10%, adjusted EPS +17%) and the war effect looks temporary, but the AI-disintermediation fear would be lasting if true and would hit Booking's core advantage (owned traffic and the two-sided network). Evidence so far is reassuring (AI referrals under 1% of room nights, direct traffic mid-60%s) but doesn't settle it. Watch AI-agent booking share, direct-traffic share and 2027 room-night growth.",
+    "cause": "Long de-rating of richly valued aerospace stocks (P/E ~57 in August), sector selling and price-target cuts, plus the 5 Nov market drop; not its results",
+    "summary": "Q3 revenue rose 29%, segment margin rose 3 points to 32.5%, guidance was raised a fourth time and a first 2027 view of ~$11.5B revenue (~+12%) was given, with a $5B buyback. The slide reflects valuation, defense-budget uncertainty and doubts about growth after 2027 rather than any damage to the business. Watch Boeing and Airbus build rates, 2027 profit guidance in February; even after the slide the price (~$199) is far above the model fair value (~$104).",
     "model_changed": false,
     "date": "2026-11-06",
     "by": "Claude"
@@ -4276,108 +4273,111 @@
    "evidence": {
     "v": 5,
     "updated": "2026-11-06",
-    "earnings_on": null,
-    "last_report": "2026-11-03",
+    "earnings_on": "2026-10-29",
+    "last_report": "2026-10-29",
     "peers": {
-     "basis": "industry: Travel Services",
-     "n": 5,
+     "basis": "industry: Aerospace & Defense",
+     "n": 8,
      "median": {
-      "day": 0.06773824913936632,
-      "week": 0.116828721185543,
-      "high": -0.07417325397801833
+      "day": -0.026079636018261076,
+      "week": 0.02145659657696941,
+      "high": -0.14828661553743822
      },
      "tickers": [
-      "ABNB",
-      "RCL",
-      "CCL",
-      "EXPE",
-      "NCLH"
+      "GE",
+      "RTX",
+      "LMT",
+      "BA",
+      "GD",
+      "NOC",
+      "TDG",
+      "LHX"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 10.45573,
-      "d30": 10.44892,
-      "chg": 0.0006517419982161599
+      "current": 5.50233,
+      "d30": 5.33752,
+      "chg": 0.030877636055696378
      },
      "+1y": {
-      "current": 12.3397,
-      "d30": 12.36452,
-      "chg": -0.0020073565330478438
+      "current": 6.6468,
+      "d30": 6.46127,
+      "chg": 0.028714169195839245
      },
      "revisions_30d": {
-      "up": 1,
+      "up": 6,
       "down": 4
      }
     },
     "news": [
      {
-      "title": "Can Booking Holdings (NASDAQ:BKNG) Shares Find Their Next Growth Catalyst?",
-      "publisher": "Kalkine Media",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQks0cVFzVGYzUkdnMTZzTm9GOFYyeHhDU1lpaHVaa3gyMUpZeWpiNnE2UzQ3eWE2Qm5TUTE4Sy1KX1VEREVydlBVSGpVMTNxclJ5RUNtLVlnci1uX1czeFRHVHJkNmlXMlFuRDQ4RjVEY0VZMmtEOTg1cUhYYlc1QVJBZVVSYmpWeG5NU0pOSkN6MWlYZEdiRTBzeG9WbWRsVHVZOUJiSUdKRi00OHdQR2o3U1BQZjFBQkhiY2pTRk9NZw?oc=5",
+      "title": "Howmet Aerospace (HWM) Shares Fell On Defense Spending Uncertainty",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaklzS0R4VzFsZU1PX3NEbjdYRnc4c0RYU2pzaWpFNzJyZE8xSEh1dTdiUk5LUk5GUTRDemtnZC1ZU3FENWRuV3lXekFZWnlwbURwaExocGotTExKdGkzaWowMkJ2WVZoZ3Fkb0ZJU0F4enBZS0JwY2c2V19uYmFFWktndHpsbU5hR3hNTXN0OWZOdmMyNGF0V2NxV0xEV2xrYXNibHBzc2pTcXBHWW93aHIxQXNVZGpYWENLbmdxSUs2Ny1CemVrTElhRXZkanlPY1o4VEhfcTHSAdgBQVVfeXFMT2pJc0tEeFcxbGVNT19zRG43WEZ3OHNEWFNqc2lqRTcycmRPMUhIdXU3YlJOS1JORlE0Q3prZ2QtWVNxRDVkbld5V3pBWVp5cG1EcGhMaHBqLUxMSnRpM2lqMDJCdllWaGdxZG9GSVNBeHpwWUtCcGNnNldfbmJhRVpLZ3R6bG1OYUd4TU1zdDlmTnZjMjRhdFdjcVdMRFdsa2FzYmxwc3NqU3FwR1lvd2hyMUFzVWRqWFhDS25ncUlLNjctQnpla0xJYUV2ZGp5T2NaOFRIX3Ex?oc=5",
       "date": "2026-11-05"
      },
      {
-      "title": "Booking Holdings: AI Proves To Be A Revenue Multiplier (Rating Upgrade) (NASDAQ:BKNG)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWEZYUEE0VWZ6Nk1lTmxWTGROVXdOQTZzTTg4bWhVWUtUS3RfTUh2ZUJPX2wwRVV4dW5LbTlmNnhiWUsybFNxaFNORWJjVmtJdV9GWXZVV1lDalM4MDlZbDg1SDZyODlQN3ZZc0tlZjFEbjV2RlpBNVRoWk1iNlhJSDJVRVgtaEF2d2ViYkU1MXJTSlVCeEhBd1V4ZllZcFd4c3pCcEpaRWZiT0hzd3c?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Booking Holdings vs. Dick's Sporting Goods: Which Consumer Stock Is a Better Buy for 2027?",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNU0FuemRaWDRoRkZ3eWFNTXh3UnFoQ2t4bExBdTFlcS1vVjhEcjFtcnlvR05MQ05pai1SYmZhWktZT0Jjbnk3MURXSENOQ0ZqMnlTd0E2Qmh4TXg3Z2lEbmpScGFfR1Z3ODgwczVpa2hpNkc5ekQzWXZ1WllDVHJZX2lUUGx5OVdtal9jWmVHaFNmQ2RJY0RYT21GbDdzWmFrUXZSdTh2aXJDaW9EVEliY3VsRzR5NVFmUTdudWZXblNpODROcldlUlliQklydnpr?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Booking Holdings Jumped 14% in a Week. Its Forward P/E Shows What the Rebound Assumes",
-      "publisher": "TIKR.com",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPOEhzc0oxbldrQTYxSDJ4TWJhUnJqeGxraFU5MW52WjNtMnRHVTJOTGFOdWdEU0dEc3Ytc3h3aEItZmdrTjgyZWUxeDhmMnIxU2F3bVhYc3RJMzByM0d0WnY0aXJNbnp5REMtMkFoMW4zeU9XZDBQWUkwM0tYQU9ka3g3Wmlzb3p5LVE?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Expedia shares slide as US-Iran war fallout prolongs pressure on travel firms",
-      "publisher": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOGxYMktvXzhBNF9BRjFXdC1PUnlFQ20tY3djOV9STUpUeVZCSl9yaHR0a1dQSGFpWTY1aTk2RnlqN3YzQTVFNV8zQVFFbEUzSjdldFczSGtUd0t6WExKLWpMcnh6RjhaZHh0RVBkVFJYb0RMYzM1WDhING5iQWZBT3JFVVlIYmdvSjVBMHpZZUEzdVEzek5Bc3B1dXMzVEdYNUw1R0xOVDNXMTF6Nkt5bWYzWGJ6MFpyUzZCb3BzdFY?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Booking Holdings stock: AI conversion gains meet softer Q4 outlook",
+      "title": "Howmet Aerospace stock slips 2% from Thursday's earlier quote",
       "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUVNjWDU3V3N3MnZxdDhGZm01QVRNSUZJUTlONXFBOWQyNFhfNzVVYlV0b0JfeUxVZlZySmhzV3g0cmFjdFREYlhfZ2FHdU4wTVJ6aG43ei1tX2xRT1l2WlZkM182ZjZuQ3lhcnN3a2lvREVMNDFOZGFxMEtlY3ZPUFZiSlhVUTFGZmJIZzVhWl83NU9TXzVLVU9KQURXSDFLb0MyTzQwd2xlQmFob2JrcGprbFZBbFhSZXhUMUx4cEhXQ0ZMRFc4?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQajlVaHJ2dk9VeFA3SHpZNjBuMUp3ZGt4Q1hOUEhJX0EzN1FxYVQ3V3p1V0ZTZFViYUktdTNyODJ5cktzTWR6WGlhSlY5cVNtZ21GUGNtSHROS3hWbk01bmRBcWZ3blRlU2hFZW85anQ2M2N4RnZaTUc0NFI0OG5Dc1ZuX1YtTE1qMXFOOElXcEMzWHFMdUdicmVuV3ZHSWw0STczRURjclUwZVgwaTlna3l0TUlHUXZjWnp4MnlTUDk?oc=5",
       "date": "2026-11-05"
+     },
+     {
+      "title": "Is Howmet Aerospace (HWM) Stock Outpacing Its Aerospace Peers This Year?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMU9YTUxmaVlWTGg5WngzLWpQby0tbVJiMnQ0UkNwRkdrd0t1UmZ2ck5jeDZUSmEyVlBwNk9QeWlqMFFKQXNCc3dUelcxXzJDaExJSFM3VVdqMnR2ZXRBdEJLZVl4UHVpOFlHR2FyOHc5RndVWnl4OVdLVndrUE11MEItZTZjMHBMMld4YUZTbjRkTDRrckF4ZWNmYUh3YVN3aDZJ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Howmet Aerospace stock gains as growth lifts outlook",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU3RweHRrV3FkaUxmVm0tUE84cEV1UkVGbWpjZmdSbExZUXAtZURiMTlGMXU0X2l2REl4bXRxUjFBcXZOZmtrQjlscm4zZU9oZjg1ZVBQRlBHaVRsdFJGa0N2bFVtcFVURjBVbG9iNzFrY00ySHVnUldyaFVzV1JITjByaXRFczVwSUpFTDk2dEhJMEo0TUhUbEFqaExpbGhUclVEeEFuVVdNTy1KZUN4d20zRm5yUQ?oc=5",
+      "date": "2026-11-05"
+     },
+     {
+      "title": "Howmet Aerospace Inc. stock underperforms Wednesday when compared to competitors",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOZTFiTHFEUmMwWmdUd3VUc0pCVXBqNXgxb2JuZjdNcVBKMWVWSnZVRFNqRklNR3VkN2Z5M2tPQ3NIRmpXQTdNQkliMVg4V0VUT3ZnUG1MRnBJZ1NteFMtbGxKZ0tUX3JRQmd0Z2J6WW5FZFVwUFhybVI1TkRsbnZxT1V0R1FUNktrcDhLQTdpQVEtTlphNlFYRjR3ekdTRzR0R05kZEJHcGNtTjZaT2dyT3hmYXQ1V2Q4SjRWVnVIRWZnazl6TGtaenVpTVphS2ZkWW9mcUxPY2RlVTdGSmpsWUlkQjN3bnFlVmV4cGdR?oc=5",
+      "date": "2026-11-04"
+     },
+     {
+      "title": "Howmet Aerospace stock stays in focus after higher 2026 outlook",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTzRUTl9YdVQ5TEc0YnlUeDJLVU1hMVdmcU1JS29kSThWUHZveHUtU0xzRjhOZ1FuWVduOGFXcDNZNGJPbzBBTVpJUmdId2o5cnRYdmx1cjRvTXFRRUxaeUNZYTFZVTZVMkRjZlhjSE9Ub0tUN3FUN1BUbXRCSTVDUmZoT0ZTRkdDYWlvR2hYNC14aDRBRDR3R3B5SVh5S3QzLXZYajRlMGtMQVhHaWM2STBuZlFCdl9kdzhKakk5SnBqUktm?oc=5",
+      "date": "2026-11-04"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-04",
+   "last_triggered": "2026-11-06",
    "moves": {
-    "day": 0.0125,
-    "week": 0.0368,
-    "high": -0.2914
+    "day": 0.0272,
+    "week": 0.0359,
+    "high": -0.2948
    },
    "spy": {
-    "day": 0.003,
-    "week": -0.0199,
-    "high": -0.0318
+    "day": 0.0062,
+    "week": -0.0241,
+    "high": -0.0533
    },
-   "sector": "Consumer Discretionary",
-   "sector_etf": "RSPD",
+   "sector": "Industrials",
+   "sector_etf": "RSPN",
    "sector_moves": {
-    "day": -0.0146,
-    "week": 0.035,
-    "high": -0.0635
+    "day": -0.001,
+    "week": -0.0135,
+    "high": -0.0825
    },
-   "sector_at_open": 55.55,
+   "sector_at_open": 60.55,
    "worst": {
-    "day": -0.0153,
-    "week": -0.0494,
-    "high": -0.3257
+    "day": -0.0593,
+    "week": -0.0204,
+    "high": -0.3193
    },
    "provisional": {
-    "cause": "Long slide: -29% below its 52-week high (S&P 500 -3%, Consumer Discretionary -6%): read why",
-    "lean": "unclear"
+    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
+    "lean": "temporary"
    }
   },
   {
@@ -4510,24 +4510,11 @@
  "log": [],
  "emergency_pending": [],
  "review_pending": [
-  "EXPE",
-  "KLAC",
-  "AVGO",
-  "NVDA",
-  "BKR",
-  "EME",
-  "SHOP",
-  "TT",
-  "ZTS",
-  "HWM",
   "LII",
-  "DECK",
-  "MKC",
+  "ZTS",
   "LULU",
-  "TPR",
-  "BKNG",
   "FISV"
  ],
- "updated": "2026-11-06T03:07:11Z",
+ "updated": "2026-11-06T19:46:45Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
