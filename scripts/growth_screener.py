@@ -378,6 +378,9 @@ def ttm_statements(tk):
 # ══════════════════════════════════════════════════════════════════════════════
 # FUNDAMENTALS (yfinance .info — current snapshot only)
 # ══════════════════════════════════════════════════════════════════════════════
+TEXT_COLS = {"ticker", "name", "sector", "industry", "roic_basis", "fcf_basis", "share_jump"}
+
+
 def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path | None = None) -> pd.DataFrame:
     import yfinance as yf
     rows, failed = [], []
@@ -452,6 +455,11 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
     for c in V3_COLS:
         if c not in df.columns:
             df[c] = np.nan
+    # Yahoo sometimes returns text for a number (e.g. 'Infinity' for a small cap's P/E); one such value made the whole
+    # column text and crashed the score after an hour of fetching (Russell 2000 run, 6 Nov 2026). Force numbers.
+    for c in df.columns:
+        if c not in TEXT_COLS and df[c].dtype == object:
+            df[c] = pd.to_numeric(df[c], errors="coerce")
     # rule_of_40 = revenue growth + profit margin  (verified exact vs original)
     df["rule_of_40"] = (df["rev_growth_pct"] + df["profit_margin_pct"]).round(2)
     return df
