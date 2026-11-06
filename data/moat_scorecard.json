@@ -2038,8 +2038,8 @@
    },
    "total": 7.8,
    "suggested": "wide",
-   "current": "narrow",
-   "differs": true
+   "current": "wide",
+   "differs": false
   },
   "KO": {
    "sources": {
@@ -2063,8 +2063,8 @@
    },
    "total": 7.0,
    "suggested": "narrow",
-   "current": "wide",
-   "differs": true
+   "current": "narrow",
+   "differs": false
   },
   "SHW": {
    "sources": {
@@ -2088,8 +2088,8 @@
    },
    "total": 8.0,
    "suggested": "wide",
-   "current": "narrow",
-   "differs": true
+   "current": "wide",
+   "differs": false
   },
   "JNJ": {
    "sources": {
@@ -2113,7 +2113,151 @@
    },
    "total": 7.5,
    "suggested": "wide",
+   "current": "narrow",
+   "differs": true
+  },
+  "VLTO": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Installed base of water-testing instruments (Hach) and coding printers (Videojet) that need its own consumables and service; ~60% of sales recurring.",
+   "risk": "Industrial slowdown in product-quality equipment; acquisitions dilute returns.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 4.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0128
+   },
+   "total": 7.8,
+   "suggested": "wide",
    "current": "wide",
+   "differs": false
+  },
+  "AMP": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Long-lasting adviser-client relationships and sticky client assets; scale in advice, asset management and annuities.",
+   "risk": "Market falls cut fee revenue; outflows at Columbia Threadneedle; adviser recruiting costs.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": null,
+   "parts": {},
+   "total": 5.5,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "PPG": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Specified coatings for car makers, aircraft and refinish shops (approval cycles and colour-matching systems) and global scale.",
+   "risk": "Auto and industrial cycle; raw-material costs; weaker architectural paint.",
+   "src": null,
+   "source_score": 2.0,
+   "numbers_score": 2.6,
+   "parts": {
+    "persistence": 1.6,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 1,
+    "gm_std": 0.0215
+   },
+   "total": 4.6,
+   "suggested": "none",
+   "current": "narrow",
+   "differs": true
+  },
+  "EOG": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Among the lowest-cost US oil producers, with premium drilling locations and its own marketing and gas pipelines.",
+   "risk": "Oil and gas prices; shale inventory depletion.",
+   "src": null,
+   "source_score": 2.5,
+   "numbers_score": 3.7,
+   "parts": {
+    "persistence": 1.2,
+    "fade": 1,
+    "new_money": 1,
+    "margins": 0.5,
+    "gm_std": null
+   },
+   "total": 6.2,
+   "suggested": "short",
+   "current": "short",
+   "differs": false
+  },
+  "PM": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Marlboro outside the US, and IQOS and ZYN lead heated tobacco and nicotine pouches, backed by regulatory approvals and distribution.",
+   "risk": "Regulation and excise taxes; currency; competition in pouches.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 3.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0154
+   },
+   "total": 6.8,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "DLTR": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Scale buying and a low-cost store network around a fixed-price-point format.",
+   "risk": "Tariffs, low-income shoppers under pressure, competition from Walmart and Temu; multi-price rollout.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": 3.5,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0228
+   },
+   "total": 5.0,
+   "suggested": "narrow",
+   "current": "narrow",
    "differs": false
   },
   "AMGN": {

@@ -5847,6 +5847,349 @@
     "years": "2020-2025",
     "growth_funded": -0.03
    }
+  },
+  "VLTO": {
+   "r": 0.085,
+   "roic": [
+    [
+     2022,
+     0.261
+    ],
+    [
+     2023,
+     0.2691
+    ],
+    [
+     2024,
+     0.2731
+    ],
+    [
+     2025,
+     0.281
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.2771,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0064,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
+  },
+  "AMP": {
+   "r": 0.1,
+   "roic": [
+    [
+     2016,
+     0.3304
+    ],
+    [
+     2017,
+     0.6135
+    ],
+    [
+     2018,
+     2.0
+    ]
+   ],
+   "last_year": 2025,
+   "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
+  },
+  "PPG": {
+   "r": 0.095,
+   "roic": [
+    [
+     2014,
+     0.2321
+    ],
+    [
+     2015,
+     0.2345
+    ],
+    [
+     2016,
+     0.2268
+    ],
+    [
+     2017,
+     0.2059
+    ],
+    [
+     2018,
+     0.1989
+    ],
+    [
+     2019,
+     0.1959
+    ],
+    [
+     2020,
+     0.1832
+    ],
+    [
+     2021,
+     0.1654
+    ],
+    [
+     2022,
+     0.13
+    ],
+    [
+     2023,
+     0.1634
+    ],
+    [
+     2024,
+     0.1324
+    ],
+    [
+     2025,
+     0.1463
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.1393,
+   "inc_recent": -0.0103,
+   "inc_earlier": -0.1112,
+   "inc_why": null,
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "below hurdle",
+   "roic_trend": -0.0084,
+   "half_life": 5.7178,
+   "q2": "fading",
+   "years_left": 6.5692,
+   "reinvest": {
+    "rate": 0.459,
+    "per_year_b": 0.7912,
+    "nopat_b": 1.774,
+    "years": "2020-2025",
+    "growth_funded": -0.0047
+   }
+  },
+  "EOG": {
+   "r": 0.09,
+   "roic": [
+    [
+     2014,
+     0.1923
+    ],
+    [
+     2015,
+     -0.2614
+    ],
+    [
+     2016,
+     -0.0506
+    ],
+    [
+     2017,
+     0.045
+    ],
+    [
+     2018,
+     0.1576
+    ],
+    [
+     2019,
+     0.1172
+    ],
+    [
+     2020,
+     -0.0181
+    ],
+    [
+     2021,
+     0.2138
+    ],
+    [
+     2022,
+     0.3398
+    ],
+    [
+     2023,
+     0.2981
+    ],
+    [
+     2024,
+     0.2349
+    ],
+    [
+     2025,
+     0.1628
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.1989,
+   "inc_recent": 0.6425,
+   "inc_earlier": 0.4981,
+   "inc_why": null,
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "holding up",
+   "roic_trend": 0.0158,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null,
+   "reinvest": {
+    "rate": 0.3686,
+    "per_year_b": 2.3167,
+    "nopat_b": 4.998,
+    "years": "2020-2025",
+    "growth_funded": 0.2368
+   }
+  },
+  "PM": {
+   "r": 0.085,
+   "roic": [
+    [
+     2014,
+     0.5955
+    ],
+    [
+     2015,
+     0.614
+    ],
+    [
+     2016,
+     0.6935
+    ],
+    [
+     2017,
+     0.6029
+    ],
+    [
+     2018,
+     0.6937
+    ],
+    [
+     2019,
+     0.6669
+    ],
+    [
+     2020,
+     0.7705
+    ],
+    [
+     2021,
+     0.8305
+    ],
+    [
+     2022,
+     0.5161
+    ],
+    [
+     2023,
+     0.3148
+    ],
+    [
+     2024,
+     0.3294
+    ],
+    [
+     2025,
+     0.3772
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.3533,
+   "inc_recent": 0.1215,
+   "inc_earlier": null,
+   "inc_why": null,
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "diminishing",
+   "roic_trend": -0.0555,
+   "half_life": 4.92,
+   "q2": "fading",
+   "years_left": 18.4291,
+   "reinvest": {
+    "rate": 0.438,
+    "per_year_b": 4.4712,
+    "nopat_b": 11.9554,
+    "years": "2020-2025",
+    "growth_funded": 0.0532
+   }
+  },
+  "DLTR": {
+   "r": 0.09,
+   "roic": [
+    [
+     2015,
+     0.403
+    ],
+    [
+     2016,
+     0.1065
+    ],
+    [
+     2017,
+     0.1043
+    ],
+    [
+     2018,
+     0.1759
+    ],
+    [
+     2019,
+     -0.0696
+    ],
+    [
+     2020,
+     0.1
+    ],
+    [
+     2021,
+     0.1567
+    ],
+    [
+     2022,
+     0.1531
+    ],
+    [
+     2023,
+     0.1579
+    ],
+    [
+     2024,
+     -0.0645
+    ],
+    [
+     2025,
+     0.1359
+    ],
+    [
+     2026,
+     0.2139
+    ]
+   ],
+   "last_year": 2026,
+   "roic_now": 0.1749,
+   "inc_recent": null,
+   "inc_earlier": 0.1815,
+   "inc_why": "invested capital barely grew or shrank",
+   "windows": [
+    "2016-2021",
+    "2021-2026"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0169,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
   }
  }
 }

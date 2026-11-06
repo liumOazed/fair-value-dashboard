@@ -18,6 +18,7 @@
   <section class="card">
     <div class="card-head"><h2 id="ttl">Russell 2000 · Top 50</h2><span class="muted" id="stamp"></span></div>
     <div class="chips" id="vchips"></div>
+    <div class="chips" id="cchips"></div>
     <div class="scroll topscroll" id="tscroll"><div id="tspacer"></div></div>
     <div class="scroll" id="bscroll"><table id="tbl"><thead><tr>
       <th>#</th><th>Stock</th><th>Sector</th><th class="r">Score</th><th class="r">Quality · Growth · Value · Safety</th><th class="r">Market value</th>
@@ -39,6 +40,9 @@
     <li>Required return = the sector rate <b>plus 2 points</b> for small-company risk (<code>data/required_returns.json</code>).</li>
     <li>Margin of safety 35% (40% for Energy and Basic Materials), 5 points more than the Top 5.</li>
     <li>The same sanity filters as the Top 5 (loss-making, FCF distorted or unusually high, one-off growth, high debt, weak interest cover). Anything that looks more than 2.5× undervalued is marked <b>Check first</b>.</li></ul>
+    <h3>5. Quick answers</h3>
+    <ul><li>Every stock that passed the gate gets the Growth Screen's five quick questions: revenue growing, profits healthy, cash flow strong, debt manageable, financial position improving. Required return for the cost-of-capital test = sector rate + 2 points.</li>
+    <li><b>Passes all 5 checks</b> keeps only stocks answering yes to all five, in whichever view is chosen (for example <b>All that passed</b>). Hover the Checks badge for the answers. Banks and insurers can't pass, since the cash-flow and debt questions don't apply to them.</li></ul>
     <h3>Once a month</h3><ul><li>Runs on the 2nd of each month (after the main screen), when a new IWM file is uploaded, or by hand (Actions → Russell 2000 screen). A stock gets a full model on the Fair Value tab only when it is added by hand.</li></ul>
     <p class="muted">Estimates from screen data only, not investment advice.</p>
   </section>

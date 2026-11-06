@@ -24,13 +24,20 @@ let view="Top 50";
 const views=["Top 50","Valued only","Check first","All that passed"];
 $("#vchips").innerHTML='<span class="lbl">Show</span>'+views.map(v=>`<button class="chip${v===view?" on":""}" data-v="${v}">${v}</button>`).join("");
 $("#vchips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{view=c.dataset.v;$("#vchips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()});
+let checks="All";
+const nChk=R.rows.filter(r=>r.all_checks).length;
+$("#cchips").innerHTML='<span class="lbl">Checks</span>'+["All","Passes all 5 checks"].map(v=>`<button class="chip${v===checks?" on":""}" data-v="${v}"${v==="All"?"":' title="Yes to all five quick questions: revenue growing, profits healthy, cash flow strong, debt manageable, financial position improving"'}>${v}${v==="All"?"":` <span class="cnt">${nChk}</span>`}</button>`).join("");
+$("#cchips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{checks=c.dataset.v;$("#cchips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()});
+const chkPill=r=>{const a=r.answers||[];if(!a.length)return "";const y=a.filter(x=>x.v==="yes").length;
+ return ` <span class="pill${r.all_checks?" chk":""}" title="${esc(a.map(x=>x.q+" "+x.v+": "+x.t).join("\n"))}">${y}/5${r.all_checks?" ✓":""}</span>`};
 function render(){
- const list=view==="Top 50"?top:view==="Valued only"?valued:view==="Check first"?top.filter(r=>r.check_first):R.rows;
+ let list=view==="Top 50"?top:view==="Valued only"?valued:view==="Check first"?top.filter(r=>r.check_first):R.rows;
+ if(checks!=="All")list=list.filter(r=>r.all_checks);
  $("#tbl tbody").innerHTML=list.map(r=>{
   const p=r.parts||{};const diff=r.fair_value&&r.price_at_eval?r.price_at_eval/r.fair_value-1:null;
   const note=r.fv_skip?esc(r.fv_skip):(r.flags||[]).concat(r.risks||[]).map(esc).join(" · ");
   const months=r.months_in_top50>1?` <span class="pill ok">${r.months_in_top50} months in top 50</span>`:"";
-  return `<tr><td>${r.rank}</td><td><b>${esc(r.ticker)}</b><div class="nm">${esc(r.name)}${months}</div></td><td>${esc(r.sector)}<div class="nm">${esc(r.industry)}</div></td>
+  return `<tr><td>${r.rank}</td><td><b>${esc(r.ticker)}</b><div class="nm">${esc(r.name)}${months}${chkPill(r)}</div></td><td>${esc(r.sector)}<div class="nm">${esc(r.industry)}</div></td>
    <td class="r">${r.score.toFixed(1)}</td><td class="r">${[p.quality,p.growth,p.value,p.resilience].map(x=>x==null?"–":x).join(" · ")}</td>
    <td class="r">${r.market_cap_b==null?"–":"$"+r.market_cap_b.toFixed(1)+"B"}</td><td class="r">${usd(r.price_at_eval)}</td><td class="r">${usd(r.fair_value)}</td><td class="r">${usd(r.buy_below)}</td>
    <td class="r">${diff==null?"–":(diff>0?"+":"")+(diff*100).toFixed(0)+"%"}</td><td class="nm">${note}</td></tr>`}).join("")||'<tr><td colspan="11" class="muted">Nothing in this view.</td></tr>';

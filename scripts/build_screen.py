@@ -18,7 +18,7 @@ import glob, json, re, pathlib, datetime
 import numpy as np, pandas as pd
 import sys; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from screen_score import *            # scoring functions and config (moved out unchanged so build_russell.py can share them)
-from screen_score import _V3
+from screen_score import _V3, _p
 
 def month_of(p): return re.search(r"(\d{4}-\d{2})", p).group(1)
 CACHE = ROOT / "data/cache"
@@ -87,13 +87,7 @@ rows = []
 for t, r in cur.iterrows():
     rr, rr_src, rr_why = required_return(t, r.sector, t_of.get(t, []))
     # WACC = equity share x required return + debt share x after-tax cost of debt (interest / debt, clipped 2-10%)
-    D = float(r.total_debt) if not pd.isna(r.total_debt) else 0.0
-    E = float(r.market_cap) if not pd.isna(r.market_cap) else np.nan
-    rd_raw = (float(r.cost_of_debt) if not pd.isna(r.cost_of_debt) else                 # interest / average annual debt
-              (r.interest_expense / D) if (D > 0 and not pd.isna(r.interest_expense)) else None)
-    rd = 0.05 if rd_raw is None else min(max(rd_raw, 0.02), 0.10)   # guardrail; raw rate is reported, never hidden
-    tx = r.tax_rate if not pd.isna(r.tax_rate) else 0.21
-    wacc = None if pd.isna(E) or E <= 0 else (E * rr + D * rd * (1 - tx)) / (E + D)
+    wacc, D, E, rd_raw, rd, tx = wacc_of(r, rr)
     spread = None if (wacc is None or pd.isna(r.roic_pct) or r.peer == "Financial Services") else round(r.roic_pct / 100 - wacc, 4)
     flags_out = list(r["flag_list"]) + (["Below WACC"] if spread is not None and spread < 0 else [])
     # earnings yield = TRAILING earnings / price (same period as the trailing FCF yield); forward shown separately
@@ -138,93 +132,6 @@ for t, r in cur.iterrows():
         distress_cap=bool(r.distress_cap), industry=(r.industry if isinstance(r.industry, str) and r.industry else None),
         industry_rank=ind_rank.get(t), industry_n=ind_n.get(r.industry) if isinstance(r.industry, str) else None, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), peer_group=PEER_OF.get(t), has_fair_value=t in fv))
 rows.sort(key=lambda x: x["rank"])
-# ---- Quick answers: five plain questions per stock, answered from the metrics above ----
-def _p(x, d=1): return f"{x:+.{d}f}" if x is not None else "n/a"
-def quick_answers(r):
-    bank = r["sector"] == "Financial Services" and not r.get("peer_group")
-    util = r["sector"] == "Utilities"
-    A = []
-    # 1. Is revenue growing?
-    g, c, n, sd = r["rev_growth_pct"], r["rev_cagr_pct"], r.get("rev_cagr_years"), r["rev_growth_std"]
-    if g is None and c is None: v, t = "na", "No revenue data."
-    else:
-        v = ("yes" if (g or 0) > 5 and (c is None or c > 5) else "no" if (g is None or g <= 0) and (c is None or c <= 0) else "partly")
-        t = f"Latest quarter {_p(g)}% year on year" + (f"; {_p(c)}% a year over {int(n or 3)} years" if c is not None else "")
-        if sd is not None: t += ", steady" if sd < 5 else (f", uneven (±{sd:.0f} pts a year)" if sd > 15 else "")
-        if g is not None and c is not None and g > 100: t += ". The jump looks one-off (acquisition or cycle)"
-        elif g is not None and c is not None and g > c + 30:
-            v = "partly"; t += ". Far above its own 3-year trend, so likely an acquisition or one-off"
-        elif g is not None and c is not None and g > 5 and c <= 0: t += ". Recent pick-up after a flat or shrinking period"
-        elif g is not None and c is not None and g <= 0 < c: t += ". Growth has stalled recently"
-    A.append(dict(q="Is revenue growing?", v=v, t=t + "."))
-    # 2. Are profits healthy?
-    nm, roic, sp, eps, roe = r["profit_margin_pct"], r["roic_pct"], r["roic_spread"], r["eps_cagr_pct"], r["roe_pct"]
-    if nm is None: v, t = "na", "No profit data."
-    elif bank:
-        v = "no" if nm < 0 else ("yes" if (roe or 0) >= 12 and nm >= 10 else "partly")
-        t = f"Net margin {nm:.1f}%, return on equity {roe:.1f}%" if roe is not None else f"Net margin {nm:.1f}%"
-    else:
-        v = "no" if nm < 0 or (sp is not None and sp < -0.03 and nm < 5) else ("yes" if nm >= 10 and (sp is None or sp >= 0) and (eps is None or eps >= 0) else "partly")
-        t = f"Net margin {nm:.1f}%" + (f", ROIC {roic:.0f}% vs {r['wacc']*100:.1f}% cost of capital ({_p(sp*100)} pts)" if sp is not None else "")
-        if eps is not None: t += f", EPS {_p(eps)}% a year"
-        if nm < 0: t += ". Loss-making"
-        elif sp is not None and sp < 0: t += ". Earns less than its cost of capital"
-    A.append(dict(q="Are profits healthy?", v=v, t=t + "."))
-    # 3. Is cash flow strong?
-    neg, yrs, conv, fy, cv = r["fcf_neg_years"], r["fcf_years"], r["fcf_ni"], r["fcf_yield_pct"], r["fcf_cv"]
-    if bank: v, t = "na", "Free cash flow isn't a meaningful test for banks and insurers"
-    elif yrs is None and fy is None: v, t = "na", "No cash-flow data"
-    else:
-        if util and (neg or 0) >= 1: v = "partly"
-        elif (neg or 0) >= 2 or (fy is not None and fy <= 0): v = "no"
-        elif (neg or 0) == 0 and (conv is None or conv >= 0.8) and (cv is None or cv <= 0.5) and (fy or 0) > 0: v = "yes"
-        else: v = "partly"
-        t = (f"FCF positive in {int(yrs - neg)} of {int(yrs)} years" if yrs else "FCF history n/a") + (f", {conv:.2f}x net income" + (" over 3 years" if r.get("fcf_ni_basis") == "3y" else "") if conv is not None else "") + (f", FCF yield {fy:.1f}%" if fy is not None else "")
-        if cv is not None and cv > 0.5: t += ", uneven from year to year"
-        if util and (neg or 0) >= 1: t += ". Negative FCF is normal for utilities (capex funded by borrowing)"
-    A.append(dict(q="Is cash flow strong?", v=v, t=t + "."))
-    # 4. Is debt manageable?
-    nde, cov = r["net_debt_ebitda"], r["interest_coverage"]
-    ser = [x for x in r["risk_serious"] if x.startswith(("Net debt", "Interest"))]; war = [x for x in r["risk_warn"] if x.startswith(("Net debt", "Interest"))]
-    if bank: v, t = "na", "Leverage ratios don't apply to banks and insurers"
-    elif nde is None: v, t = "partly", "EBITDA is negative or missing, so leverage can't be judged"
-    else:
-        v = "no" if ser else ("partly" if war else "yes")
-        t = ("Net cash" if nde < 0 else f"Net debt {nde:.1f}x EBITDA") + (", no meaningful interest" if cov is not None and cov >= 999 else f", interest covered {cov:.1f}x" if cov is not None else "")
-        lim = lambda x: x.split(" (")[0].split(" ")[0].lower() + (" debt" if x.startswith("Net") else " cover") + " " + x.split("(")[1].rstrip(")")
-        if ser: t += ". Over the serious limit: " + ", ".join(lim(x) for x in ser)
-        if war: t += (", " if ser else ". ") + "over the warning limit: " + ", ".join(lim(x) for x in war)
-        if util or r["sector"] == "Real Estate": t += f" ({r['sector']} limits are higher by design)"
-    A.append(dict(q="Is debt manageable?", v=v, t=t + "."))
-    # 5. Is the financial position improving?
-    up, down = [], []
-    then = r.get("nd_ebitda_then")
-    if not bank and then is not None and nde is not None:
-        if nde < then - 0.3: up.append(f"leverage down ({then:.1f}x → {nde:.1f}x)")
-        elif nde > then + 0.3: down.append(f"leverage up ({then:.1f}x → {nde:.1f}x)")
-    mc = r.get("margin_change_pts")
-    if mc is not None:
-        if mc > 1: up.append(f"net margin {_p(mc)} pts")
-        elif mc < -1: down.append(f"net margin {_p(mc)} pts")
-    fc = r.get("fcf_cagr_pct")
-    if not bank and fc is not None:
-        if fc > 5: up.append(f"FCF growing {fc:.0f}% a year")
-        elif fc < -5: down.append(f"FCF shrinking {abs(fc):.0f}% a year")
-    sc = r["share_change_pct_yr"]
-    if sc is not None:
-        if sc < -0.5: up.append(f"share count falling {abs(sc):.1f}% a year")
-        elif sc > 2: down.append(f"share count rising {sc:.1f}% a year")
-    if g is not None and c is not None and g < 100:
-        if g > c + 5: up.append("growth accelerating")
-        elif g < c - 5: down.append("growth slowing")
-    if len(up) + len(down) < 2: v, t = "na", "Not enough history to judge the trend"
-    else:
-        net = len(up) - len(down)
-        v = "yes" if net >= 2 else ("no" if net <= -2 else "partly")
-        t = ("Better: " + ", ".join(up) if up else "") + (". " if up and down else "") + ("Worse: " + ", ".join(down) if down else "")
-    A.append(dict(q="Is the financial position improving?", v=v, t=t + "."))
-    return A
-
 for r in rows:
     r["answers"] = quick_answers(r)
     r["checks_score"] = sum(a["v"] == "yes" for a in r["answers"]) - sum(a["v"] == "no" for a in r["answers"])
@@ -262,6 +169,35 @@ ALLCHECKS = dict(rule="yes to all 5 quick questions", passed=sum(r["all_checks"]
                  picks=[r["ticker"] for r in sorted((r for r in rows if r["checks_pick"]), key=lambda r: -r["score"])])
 print("all 5 checks:", ALLCHECKS["passed"], "passed;", len(ALLCHECKS["picks"]), "added:", ALLCHECKS["picks"])
 
+# ---- Sector top 5: the 5 best stocks in a few chosen groups by the five quick questions, then by score. First the
+# stocks answering yes to all 5; if fewer than 5 do, the list is filled with 4 yeses, then (where allowed) 3. For
+# insurers the cash-flow and debt questions don't apply ("na"), so "na" counts as a pass there. Like the all-checks
+# picks, they are added to the default list whatever their rank.
+SECTOR_PICKS = [
+    dict(name="Insurance", test=lambda r: "Insurance" in (r["industry"] or ""), min_checks=4, na_passes=True),
+    dict(name="Healthcare", test=lambda r: r["sector"] == "Healthcare", min_checks=3, na_passes=False),
+    dict(name="Consumer staples", test=lambda r: r["sector"] == "Consumer Defensive", min_checks=3, na_passes=False),
+    dict(name="Consumer discretionary", test=lambda r: r["sector"] == "Consumer Cyclical", min_checks=3, na_passes=False),
+]
+SECTOR_N = 5
+def n_checks(r, na_passes):
+    return sum(a["v"] == "yes" or (na_passes and a["v"] == "na") for a in r["answers"])
+SECTOR_OUT = dict(rule=f"top {SECTOR_N} per group: all 5 checks first, then 4, then 3 where allowed; ties by Growth Quality Score", groups={})
+for r in rows: r["sector_pick"] = None
+for G in SECTOR_PICKS:
+    cand = sorted((r for r in rows if G["test"](r) and n_checks(r, G["na_passes"]) >= G["min_checks"]),
+                  key=lambda r: (-n_checks(r, G["na_passes"]), -r["score"], -r["components"]["quality"]))
+    got, seen = [], set()
+    for r in cand:
+        if r["name"] in seen: continue                           # one pick per company (GOOG / GOOGL)
+        seen.add(r["name"]); got.append(r)
+        if len(got) == SECTOR_N: break
+    for i, r in enumerate(got, 1):
+        r["sector_pick"] = dict(group=G["name"], rank=i, checks=n_checks(r, G["na_passes"]), na_passes=G["na_passes"])
+    SECTOR_OUT["groups"][G["name"]] = dict(min_checks=G["min_checks"], na_passes=G["na_passes"], picks=[r["ticker"] for r in got],
+                                          checks=[n_checks(r, G["na_passes"]) for r in got])
+    print(f"sector top {SECTOR_N} {G['name']}:", [(r["ticker"], n_checks(r, G["na_passes"])) for r in got])
+
 # ---- FCF / EV (display only, not scored): from the month's CSV, else the newest supplementary scan
 _sup = sorted(glob.glob(str(ROOT / "data/screens/extra/fcfev_*.csv")))
 SUP = pd.read_csv(_sup[-1]).drop_duplicates("ticker").set_index("ticker")["fcff_ev_pct"].to_dict() if _sup else {}
@@ -274,7 +210,7 @@ for r in rows:
 _djr = sorted((r for r in rows if r["ticker"] in DJIA), key=lambda r: -r["score"])
 for i, r in enumerate(_djr, 1):
     r["djia_rank"] = i                                            # rank among the 30 Dow stocks by Growth Quality Score
-out = dict(resilient=RESILIENT, all_checks=ALLCHECKS, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows), djia=dict(as_of=json.load(open(_dj))["as_of"] if _dj.exists() else None, n=len(_djr), missing=[t for t in DJIA if t not in {r["ticker"] for r in _djr}]),
+out = dict(resilient=RESILIENT, all_checks=ALLCHECKS, sector_picks=SECTOR_OUT, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows), djia=dict(as_of=json.load(open(_dj))["as_of"] if _dj.exists() else None, n=len(_djr), missing=[t for t in DJIA if t not in {r["ticker"] for r in _djr}]),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
 json.dump(out, open(ROOT / "data/screen.json", "w"), indent=0)
 print("built", cur_m, "vs", prev_m, "rows", len(rows), "consistent", sum(r["consistent"] for r in rows))
