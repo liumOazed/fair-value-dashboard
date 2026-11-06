@@ -354,6 +354,26 @@
   "FIS": {
    "moat": "none",
    "reason": "Median ROIC 4% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this)."
+  },
+  "PG": {
+   "moat": "narrow",
+   "reason": "ROIC 19% in the latest year (Growth Screen, Nov 2026), above the 8.0% required return by 3+ points but under the 20% wide test (goodwill from Gillette depresses it). Check against the 4-year history after the snapshot refresh."
+  },
+  "KO": {
+   "moat": "wide",
+   "reason": "ROIC 22% in the latest year (Growth Screen, Nov 2026), at least 10 points above the 8.0% required return and above 20%. Check against the 4-year history after the snapshot refresh."
+  },
+  "SHW": {
+   "moat": "narrow",
+   "reason": "ROIC 15% in the latest year (Growth Screen, Nov 2026), above the 9.0% required return by 3+ points but not by 10."
+  },
+  "JNJ": {
+   "moat": "wide",
+   "reason": "ROIC 23% in the latest year (Growth Screen, Nov 2026), at least 10 points above the 8.0% required return and above 20%. Check against the 4-year history after the snapshot refresh."
+  },
+  "AMGN": {
+   "moat": "narrow",
+   "reason": "ROIC 17% in the latest year (Growth Screen, Nov 2026), above the 8.5% required return by 3+ points but not by 10 (Horizon goodwill depresses it)."
   }
  }
 }

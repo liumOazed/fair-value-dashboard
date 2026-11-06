@@ -2540,6 +2540,151 @@
      "better": "up"
     }
    ]
+  },
+  "PG": {
+   "name": "Procter & Gamble",
+   "kpis": [
+    {
+     "id": "organic_sales_growth",
+     "label": "Organic sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "volume_growth",
+     "label": "Volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "pricing_contribution",
+     "label": "Pricing contribution",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "core_gross_margin",
+     "label": "Core gross margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "KO": {
+   "name": "Coca-Cola",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth",
+     "label": "Organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "unit_case_volume_growth",
+     "label": "Unit case volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "price_mix",
+     "label": "Price/mix",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "comparable_operating_margin",
+     "label": "Comparable operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "SHW": {
+   "name": "Sherwin-Williams",
+   "kpis": [
+    {
+     "id": "paint_stores_same_store_sales",
+     "label": "Paint Stores same-store sales",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "consumer_brands_sales_growth",
+     "label": "Consumer Brands sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "performance_coatings_sales_growth",
+     "label": "Performance Coatings sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "JNJ": {
+   "name": "Johnson & Johnson",
+   "kpis": [
+    {
+     "id": "innovative_medicine_operational_growth",
+     "label": "Innovative Medicine operational growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "medtech_operational_growth",
+     "label": "MedTech operational growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "stelara_sales_growth",
+     "label": "Stelara sales growth",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "tremfya_sales_growth",
+     "label": "Tremfya sales growth",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "AMGN": {
+   "name": "Amgen",
+   "kpis": [
+    {
+     "id": "product_sales_growth",
+     "label": "Product sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "repatha_sales_growth",
+     "label": "Repatha sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "prolia_xgeva_sales_growth",
+     "label": "Prolia + Xgeva sales growth",
+     "unit": "pct",
+     "better": "none"
+    },
+    {
+     "id": "non_gaap_operating_margin",
+     "label": "Non-GAAP operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
   }
  }
 }

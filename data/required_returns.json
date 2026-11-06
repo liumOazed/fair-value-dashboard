@@ -1,6 +1,7 @@
 {
  "_about": "Single source of truth for required returns (the yearly return demanded to own a stock). Used by the full fair-value model (model/model.py), the Growth Screen and the Monthly Top 5. Order of use: stock override > theme override > sector default > default. Sector defaults = Damodaran Jan-2026 cost of equity by sector + about 1 point cushion, rounded to 0.5%, floor 7% (https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html). Base build: risk-free ~4-4.5% + equity risk premium ~4-4.5% = ~8.5-9% for an average stock, plus company-specific risk.",
  "default": 0.09,
+ "small_cap_premium": {"r": 0.02, "reason": "Added to the sector rate for the Russell 2000 screen only (scripts/build_russell.py): small companies are less diversified, less liquid and less studied, so their cash flows are less certain."},
  "sectors": {"Utilities": 0.07, "Financial Services": 0.075, "Real Estate": 0.075, "Energy": 0.085, "Healthcare": 0.09,
              "Basic Materials": 0.095, "Technology": 0.105, "Communication Services": 0.09, "Consumer Cyclical": 0.09,
              "Consumer Defensive": 0.09, "Industrials": 0.09},
@@ -88,6 +89,11 @@
   "BMY":  {"r": 0.085, "reason": "Large, low-beta pharma facing a patent cliff around 2028."},
   "NRG":  {"r": 0.1, "reason": "Heavy debt and thin, commodity-linked margins; data-centre power upside."},
   "FIS":  {"r": 0.1, "reason": "Integration of a large acquisition and high debt."},
+  "PG": {"r": 0.08, "reason": "Below the 9% Consumer Defensive rate: household staples with very stable demand and a beta near 0.4."},
+  "KO": {"r": 0.08, "reason": "Below the 9% Consumer Defensive rate: global beverage brand with very stable demand and a beta near 0.3."},
+  "SHW": {"r": 0.09, "reason": "Below the 9.5% Basic Materials rate: paint is less cyclical than chemicals (repaint demand), but tied to housing and industry."},
+  "JNJ": {"r": 0.08, "reason": "Below the 9% Healthcare rate: AAA balance sheet, diversified drugs and devices, beta near 0.2."},
+  "AMGN": {"r": 0.085, "reason": "Slightly below the 9% Healthcare rate: large, low-beta biotech, but biosimilar erosion and $54B of debt."},
   "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
  }
 }

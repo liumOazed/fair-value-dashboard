@@ -1,0 +1,59 @@
+name: Russell 2000 screen
+# Monthly small-cap screen: Russell 2000 members from data/universe/IWM_holdings.csv (uploaded by hand from
+# ishares.com, which does not serve the file to GitHub), the same screener and score as the S&P 500 screen,
+# a quality gate, and quick fair values for the top 50 (scripts/build_russell.py -> data/russell.json).
+# Runs on the 2nd of each month (after the main screen on the 1st), when a new IWM file is uploaded, or by hand.
+on:
+  schedule:
+    - cron: "0 5 2 * *"        # 05:00 UTC on the 2nd
+  push:
+    paths:
+      - "data/universe/IWM_holdings.csv"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-run the screener even if this month's CSV exists"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency: { group: russell, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pandas numpy yfinance lxml
+      - name: Screen the Russell 2000 (about 1,960 stocks, roughly an hour)
+        run: |
+          M=$(date -u +%Y-%m)
+          OUT="data/screens/russell/r2000_screen_${M}.csv"
+          mkdir -p data/screens/russell data/screens/extra
+          if [ -f "$OUT" ] && [ "${{ inputs.force }}" != "true" ]; then echo "$OUT already exists: using it"; exit 0; fi
+          python scripts/growth_screener.py --universe r2000 --out /tmp/r2000.csv > /tmp/r2000.log 2>&1 || true
+          grep -E "Russell 2000|::warning::|tickers with data" /tmp/r2000.log || true
+          tail -25 /tmp/r2000.log
+          python - "$OUT" <<'PY'
+          import sys, shutil, pandas as pd
+          out = sys.argv[1]
+          d = pd.read_csv("/tmp/r2000.csv")
+          ok = len(d) >= 1500 and d["rev_growth_pct"].notna().sum() >= 1200
+          print(f"screener rows: {len(d)}, with revenue growth: {d['rev_growth_pct'].notna().sum()}")
+          if not ok:
+              shutil.copy("/tmp/r2000.csv", out.replace("data/screens/russell/", "data/screens/extra/").replace(".csv", "_incomplete.csv"))
+              print("::warning::Russell 2000 run looks incomplete (Yahoo limits?). Saved to data/screens/extra/; run the workflow again with force.")
+              sys.exit(1)
+          shutil.copy("/tmp/r2000.csv", out); print("saved", out)
+          PY
+      - run: python scripts/build_russell.py
+      - name: Commit changes
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/screens/russell data/screens/extra data/russell.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "Russell 2000 screen: $(date -u +%Y-%m)"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

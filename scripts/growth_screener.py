@@ -98,30 +98,68 @@ def _read_html(url: str):
 # ══════════════════════════════════════════════════════════════════════════════
 # UNIVERSE
 # ══════════════════════════════════════════════════════════════════════════════
+# Wikipedia moved the Nasdaq-100 member table from the index article to its own list page in 2026, so the old
+# lookup found no table with a Ticker column and silently returned S&P 500 names only. Try the list page first,
+# keep the article as a fallback, and say loudly when either part is missing.
+NDX_URLS = ("https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies", "https://en.wikipedia.org/wiki/Nasdaq-100")
+
+
+def _member_table(tables, min_rows: int):
+    """First table with a Ticker/Symbol column and at least min_rows rows -> list of tickers (dots as dashes)."""
+    for tbl in tables:
+        for col in ("Ticker", "Symbol"):
+            if col in tbl.columns and len(tbl) >= min_rows:
+                return sorted(set(tbl[col].astype(str).str.strip().str.replace(".", "-", regex=False)))
+    return []
+
+
 def get_universe() -> list[str]:
     """S&P 500 + Nasdaq 100 tickers, deduped. Wikipedia with graceful failure."""
     tickers = set()
     try:
-        sp = _read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")[0]
-        tickers |= set(sp["Symbol"].str.replace(".", "-", regex=False))
+        sp = _member_table(_read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"), 450)
+        tickers |= set(sp)
         print(f"  ✓ S&P 500: {len(sp)} tickers")
     except Exception as e:
         print(f"  ⚠ S&P 500 fetch failed: {e}")
-    try:
-        for tbl in _read_html("https://en.wikipedia.org/wiki/Nasdaq-100"):
-            for col in ("Ticker", "Symbol"):
-                if col in tbl.columns:
-                    tickers |= set(tbl[col].astype(str).str.replace(".", "-", regex=False))
-                    print(f"  ✓ Nasdaq 100 merged")
-                    break
-            else:
-                continue
+    ndx = []
+    for url in NDX_URLS:
+        try:
+            ndx = _member_table(_read_html(url), 90)
+        except Exception as e:
+            print(f"  ⚠ Nasdaq 100 fetch failed ({url}): {e}")
+        if ndx:
             break
-    except Exception as e:
-        print(f"  ⚠ Nasdaq 100 fetch failed: {e}")
+    if ndx:
+        extra = sorted(set(ndx) - tickers)
+        tickers |= set(ndx)
+        print(f"  ✓ Nasdaq 100: {len(ndx)} tickers, {len(extra)} not in the S&P 500: {', '.join(extra)}")
+    else:
+        print("::warning::Nasdaq 100 member table not found on Wikipedia: the screen covers the S&P 500 only this month")
     if not tickers:
         raise SystemExit("Could not build universe — check internet / install lxml.")
     return sorted(t for t in tickers if t and t == t)  # drop NaN
+
+
+IWM_FILE = Path(__file__).resolve().parent.parent / "data/universe/IWM_holdings.csv"
+
+
+def get_r2000_universe(path: Path = IWM_FILE) -> list[str]:
+    """Russell 2000 members from the iShares IWM holdings CSV (downloaded by hand from ishares.com and uploaded to
+    data/universe/; iShares does not serve it to GitHub's servers). Keeps listed equities with a normal ticker:
+    'MOG A' becomes 'MOG-A' (Yahoo's spelling); cash, futures, unlisted rights and odd codes are dropped."""
+    import re as _re
+    if not path.exists():
+        raise SystemExit(f"Russell 2000 list missing: upload the IWM holdings CSV to {path}")
+    lines = path.read_text(encoding="utf-8-sig").splitlines()
+    start = next(i for i, l in enumerate(lines) if l.startswith("Ticker,"))
+    d = pd.read_csv(io.StringIO("\n".join(lines[start:])))
+    d = d[(d["Asset Class"] == "Equity") & ~d["Exchange"].astype(str).str.contains("NO MARKET", case=False)]
+    t = d["Ticker"].astype(str).str.strip().str.replace(r"[ .]", "-", regex=True)
+    keep = sorted({x for x in t if _re.fullmatch(r"[A-Z]{1,5}(-[A-Z])?", x)})
+    as_of = next((l.split(",", 1)[1].strip('"') for l in lines[:start] if l.startswith("Fund Holdings as of")), "?")
+    print(f"  ✓ Russell 2000 (IWM holdings as of {as_of}): {len(keep)} tickers ({len(d) - len(keep)} skipped)")
+    return keep
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -376,6 +414,8 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
                 "industry": info.get("industry") or "",
                 "operating_margin_pct": round(info["operatingMargins"] * 100, 2) if info.get("operatingMargins") is not None else np.nan,
                 "beta": info.get("beta"),
+                # average daily trading in $ (3-month volume x price): the Russell 2000 screen's liquidity test
+                "avg_dollar_volume": (info["averageVolume"] * (info.get("currentPrice") or info.get("regularMarketPrice") or 0)) if info.get("averageVolume") else np.nan,
             }
             if history:
                 try:
@@ -453,6 +493,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(default_out))
     ap.add_argument("--tickers", help="comma-separated tickers instead of the S&P 500 + Nasdaq 100 universe (for testing)")
+    ap.add_argument("--universe", choices=["sp500", "r2000"], default="sp500",
+                    help="sp500 = S&P 500 + Nasdaq 100 (default); r2000 = Russell 2000 from data/universe/IWM_holdings.csv")
     ap.add_argument("--no-history", action="store_true", help="skip the v3 multi-year metrics (original fast mode)")
     ap.add_argument("--cache-dir", default=str(Path(__file__).resolve().parent / ".screener_cache" / f"{date.today():%Y-%m}"))
     args = ap.parse_args()
@@ -461,7 +503,7 @@ def main():
     print("  ARIA-Growth — Screener (rebuilt)")
     print("=" * 66)
 
-    tickers = [x.strip().upper() for x in args.tickers.split(",")] if args.tickers else get_universe()
+    tickers = [x.strip().upper() for x in args.tickers.split(",")] if args.tickers else (get_r2000_universe() if args.universe == "r2000" else get_universe())
     cache_dir = None
     if not args.no_history:
         cache_dir = Path(args.cache_dir); cache_dir.mkdir(parents=True, exist_ok=True)
@@ -478,6 +520,7 @@ def main():
             "fcf_yield_pct", "roe_pct", "ev_ebitda", "growth_score"]
     if not args.no_history:
         cols += V3_COLS          # appended after growth_score: original column order unchanged
+    cols += ["avg_dollar_volume"]
     df = df[cols]
     df.to_csv(args.out, index=False)
 

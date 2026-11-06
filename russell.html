@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Russell 2000 | Fair Value Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo"></span><div><h1>Fair Value Dashboard</h1><p id="sub">Russell 2000 small caps</p></div></div>
+  <nav class="tabs"><a href="index.html">Fair Value</a><a href="screener.html">Growth Screen</a><a href="top5.html">Monthly Top 5</a><a href="russell.html" class="on">Russell 2000</a><a href="track.html">Track record</a></nav>
+  <div class="actions"><button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button></div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="card">
+    <div class="card-head"><h2 id="ttl">Russell 2000 · Top 50</h2><span class="muted" id="stamp"></span></div>
+    <div class="chips" id="vchips"></div>
+    <div class="scroll topscroll" id="tscroll"><div id="tspacer"></div></div>
+    <div class="scroll" id="bscroll"><table id="tbl"><thead><tr>
+      <th>#</th><th>Stock</th><th>Sector</th><th class="r">Score</th><th class="r">Quality · Growth · Value · Safety</th><th class="r">Market value</th>
+      <th class="r">Price at eval</th><th class="r">Quick fair value</th><th class="r">Buy below</th><th class="r">Price vs fair value</th><th>Notes</th>
+    </tr></thead><tbody></tbody></table></div>
+    <p class="foot">Quick estimates from screen data, not hand-checked models. Prices are from the monthly evaluation (small caps are not in the daily price job).</p>
+  </section>
+  <section class="card" id="gate"></section>
+  <section class="card method">
+    <h2>How the Russell 2000 screen works</h2>
+    <h3>1. Members</h3><ul><li>The iShares Russell 2000 ETF (IWM) holdings file in <code>data/universe/IWM_holdings.csv</code>, uploaded by hand (iShares does not serve it to GitHub). Russell rebuilds the index each June and, from 2026, adds quarterly updates, so a new upload each quarter is enough.</li></ul>
+    <h3>2. Quality gate (about 40% of the index loses money)</h3>
+    <ul><li>Market value at least $1B and at least $5M traded a day.</li><li>At least 4 fiscal years of statements.</li>
+    <li>An operating profit, and free cash flow positive in at least 3 of the last 4 years.</li>
+    <li>Banks and insurers: a net profit and ROE of at least 8% instead (their free cash flow means little).</li></ul>
+    <h3>3. Score</h3><ul><li>The same Growth Quality Score as the Growth Screen (quality, growth, value, financial safety), but every percentile is taken among the small caps that passed the gate, never against the S&amp;P 500.</li></ul>
+    <h3>4. Quick fair value for the top 50</h3>
+    <ul><li>The Monthly Top 5 method: the lower of FCF yield and trailing earnings yield, Bear / Base / Bull growth weighted 30% / 50% / 20%, 2.5% terminal growth.</li>
+    <li>Required return = the sector rate <b>plus 2 points</b> for small-company risk (<code>data/required_returns.json</code>).</li>
+    <li>Margin of safety 35% (40% for Energy and Basic Materials), 5 points more than the Top 5.</li>
+    <li>The same sanity filters as the Top 5 (loss-making, FCF distorted or unusually high, one-off growth, high debt, weak interest cover). Anything that looks more than 2.5× undervalued is marked <b>Check first</b>.</li></ul>
+    <h3>Once a month</h3><ul><li>Runs on the 2nd of each month (after the main screen), when a new IWM file is uploaded, or by hand (Actions → Russell 2000 screen). A stock gets a full model on the Fair Value tab only when it is added by hand.</li></ul>
+    <p class="muted">Estimates from screen data only, not investment advice.</p>
+  </section>
+</main>
+<script src="assets/russell.js"></script>
+</body>
+</html>
