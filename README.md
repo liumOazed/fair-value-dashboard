@@ -88,6 +88,11 @@ The twice-weekly earnings review re-checks `data/moat_sources.json` for each sto
 
 Invested capital = equity + debt − cash and short-term investments, so it includes goodwill (acquirers such as SPGI look lower) and can be zero or negative for cash-rich companies or heavy buyers-back (BKNG, VRSN, FTNT). Those get a note in place of numbers.
 
+## Advantage over bonds and durable profits (information only, no effect on fair values)
+`scripts/bond_yields.py` fetches the 10-year Treasury (GS10) and Moody's Aaa corporate (AAA) yields from FRED into `data/bond_yields.json`. `scripts/durability.py` then writes `data/durability.json`. The **Bonds and durability** workflow runs both on the 3rd of each month, when `.github/durability-request.json` is committed, or by hand. Each drawer shows two cards:
+- **Advantage over bonds**: the earnings yield (EPS ÷ price at each fiscal year end, EPS from the 10-Ks put on today's share basis) next to that year's average Aaa and Treasury yields, from about 2008. Today's gap over Aaa is labelled large (over 3 points), thin (0 to 3) or none (below 0), and compared with the stock's own median gap.
+- **Are the profits durable?** Two stress tests. *Normal margins*: the same model (fcff_re at the required return, 30/50/20, 2.5% terminal growth, moat advantage period) re-run with the starting and scenario margins set to the median FCF margin of the last 10 fiscal years (net margin for AXP and AMP). *Bad year*: the weakest year of the 2008-09 recession and of 2020, against the year before, applied to the latest year (revenue change and margin change), with interest cover and years to recover. A recession year where revenue still grew but profit fell over 30% is treated as a likely one-off charge. Label: cyclical (a loss or profit halved), durable (under 25% of profit lost and under 20% of fair value lost at normal margins), otherwise somewhat cyclical.
+
 ## Refresh fair values
 Fair values are slow-moving. Re-run the model after each earnings report (roughly quarterly), paste the new numbers into `data/assets.json`, commit.
 
@@ -99,6 +104,7 @@ Fair values are slow-moving. Re-run the model after each earnings report (roughl
 - `scripts/export_assets.py` copies model results into `data/assets.json`
 - `model/model.py` the valuation engine, `model/montecarlo.py` the range of outcomes; `data/moat.json` advantage period per stock, `data/segments.json` growth engines
 - `scripts/returns_history.py` → `data/returns.json` returns on new money; `data/moat_sources.json` + `scripts/moat_scorecard.py` → `data/moat_scorecard.json` moat scorecard
+- `scripts/bond_yields.py` → `data/bond_yields.json` and `scripts/durability.py` → `data/durability.json` advantage over bonds and profit stress tests (workflow **Bonds and durability**)
 - `russell.html`, `assets/russell.js`, `scripts/build_russell.py`, `data/russell.json`, `data/screens/russell/`, `data/universe/IWM_holdings.csv` Russell 2000 screen; `scripts/screen_score.py` the Growth Quality Score shared by both screens; `data/universe/djia.json` Dow members
 - `docs/fair_value_model.xlsx` step-by-step calculations (import to Google Sheets via File → Import)
 
@@ -232,3 +238,5 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 | 6 Nov | Growth Screen, Fair Value | **Cybersecurity** and **Insurance** groups in `data/themes.json` (filters on both tabs; the Fair Value tab always shows both chips) | Required returns unchanged: neither group has its own rate |
 | 6 Nov | Growth Screen | **Sector top 5** filter and badges: the 5 best Insurance, Healthcare, Consumer staples and Consumer discretionary stocks by the five quick questions (all 5 first, then 4, then 3; insurers count "doesn't apply" as passed and stop at 4), ties by score. Added to the default list | Insurance: ALL, MRSH, HIG, AIZ, AON; Healthcare: VEEV, RMD, DXCM, IDXX, SYK; Staples: MNST, MO, PM, PG, DLTR; Discretionary: EXPE, BKNG, TPR, RL, ROST (Nov 2026). Scores and ranks unchanged |
 | 6 Nov | Russell 2000 | The five quick questions for every stock that passes the gate, a **Passes all 5 checks** filter that works in every view (including *All that passed*) and an x/5 badge | 9 of 589 pass all five in November 2026. `quick_answers` moved unchanged into `scripts/screen_score.py`; screen.json rebuilt identical |
+| 6 Nov | Russell 2000 | **Passes at least 4 checks** filter next to *Passes all 5 checks*, in every view | 46 of 589 in November 2026 ("partly" counts as a miss) |
+| 6 Nov | Fair Value | **Advantage over bonds** (earnings yield vs Moody's Aaa and the 10-year Treasury by year, FRED) and **Are the profits durable?** (normal-margin fair value and a repeat of the worst recession year) in each drawer | Information only; fair values unchanged |

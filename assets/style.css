@@ -202,3 +202,5 @@ ul.rk{margin:6px 0 0 18px;padding:0;font-size:12.5px}.warnc{color:var(--warn)}
 
 .rq td{white-space:normal;vertical-align:top;line-height:1.45}.rtx{font-size:10px;fill:var(--mut)}
 .mdots{display:inline-flex;gap:3px;vertical-align:middle}.mdots i{width:9px;height:9px;border-radius:50%;background:var(--line);display:inline-block}.mdots i.on{background:var(--acc)}
+.bdgap{fill:color-mix(in srgb,var(--acc) 12%,transparent);stroke:none}.bdaaa{fill:none;stroke:var(--c2);stroke-width:1.6}.bdt10{fill:none;stroke:var(--mut);stroke-width:1.3;stroke-dasharray:4 3}
+.bdk{display:inline-block;width:14px;height:0;margin:0 5px 0 8px;vertical-align:3px;border-top:2px solid var(--acc)}.bdk-ey{margin-left:0}.bdk-aaa{border-top-color:var(--c2)}.bdk-t10{border-top:2px dashed var(--mut)}
