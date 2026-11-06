@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "source": "Yahoo Finance via yfinance",
  "stocks": {
   "AAPL": {
@@ -108,7 +108,7 @@
   },
   "APP": {
    "last_report": "2026-11-04",
-   "next_report": null,
+   "next_report": "2027-02-10",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-08-06",
@@ -121,7 +121,7 @@
   },
   "FICO": {
    "last_report": "2026-11-04",
-   "next_report": null,
+   "next_report": "2027-01-27",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-07-30",
@@ -134,7 +134,7 @@
   },
   "APA": {
    "last_report": "2026-11-04",
-   "next_report": null,
+   "next_report": "2027-02-24",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-11-05",
@@ -186,7 +186,7 @@
   },
   "EXPE": {
    "last_report": "2026-11-04",
-   "next_report": null,
+   "next_report": "2027-02-11",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-08-07",
@@ -200,7 +200,7 @@
   "BKNG": {
    "last_report": "2026-11-03",
    "next_report": "2027-02-24",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-07-29",
     "2025-10-28",
@@ -590,7 +590,7 @@
   "XYZ": {
    "last_report": "2026-11-03",
    "next_report": "2027-03-01",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-07",
     "2025-11-06",
@@ -623,8 +623,8 @@
   },
   "CRCL": {
    "last_report": "2026-11-04",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-30",
+   "next_report": "2027-02-24",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-12",
     "2025-11-12",
@@ -779,7 +779,7 @@
   },
   "STE": {
    "last_report": "2026-11-04",
-   "next_report": null,
+   "next_report": "2027-02-03",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-08-06",
@@ -806,7 +806,7 @@
   "BR": {
    "last_report": "2026-11-03",
    "next_report": "2027-02-02",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-05",
     "2025-11-04",
@@ -818,7 +818,7 @@
   },
   "MSI": {
    "last_report": "2026-11-04",
-   "next_report": null,
+   "next_report": "2027-02-09",
    "yahoo_latest_quarter": "2026-07-04",
    "past": [
     "2025-08-07",
@@ -908,16 +908,16 @@
    ]
   },
   "CF": {
-   "last_report": "2026-11-04",
-   "next_report": null,
+   "last_report": "2026-11-05",
+   "next_report": "2027-02-17",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
-    "2025-08-06",
     "2025-11-05",
     "2026-02-18",
     "2026-05-06",
     "2026-08-05",
-    "2026-11-04"
+    "2026-11-04",
+    "2026-11-05"
    ]
   },
   "EME": {
@@ -935,7 +935,7 @@
   },
   "HST": {
    "last_report": "2026-11-04",
-   "next_report": null,
+   "next_report": "2027-02-17",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-07-30",
@@ -1052,8 +1052,8 @@
   },
   "FIS": {
    "last_report": "2026-11-04",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-06-30",
+   "next_report": "2027-02-23",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-05",
     "2025-11-05",
@@ -1061,6 +1061,71 @@
     "2026-05-08",
     "2026-08-04",
     "2026-11-04"
+   ]
+  },
+  "PG": {
+   "last_report": "2026-10-22",
+   "next_report": "2027-01-21",
+   "yahoo_latest_quarter": "2026-09-30",
+   "past": [
+    "2025-07-29",
+    "2025-10-24",
+    "2026-01-22",
+    "2026-04-24",
+    "2026-07-29",
+    "2026-10-22"
+   ]
+  },
+  "KO": {
+   "last_report": "2026-10-27",
+   "next_report": "2027-02-09",
+   "yahoo_latest_quarter": "2026-10-02",
+   "past": [
+    "2025-07-22",
+    "2025-10-21",
+    "2026-02-10",
+    "2026-04-28",
+    "2026-07-28",
+    "2026-10-27"
+   ]
+  },
+  "SHW": {
+   "last_report": "2026-10-27",
+   "next_report": "2027-01-26",
+   "yahoo_latest_quarter": "2026-09-30",
+   "past": [
+    "2025-07-22",
+    "2025-10-28",
+    "2026-01-29",
+    "2026-04-28",
+    "2026-07-28",
+    "2026-10-27"
+   ]
+  },
+  "JNJ": {
+   "last_report": "2026-10-13",
+   "next_report": "2027-01-26",
+   "yahoo_latest_quarter": "2026-09-27",
+   "past": [
+    "2025-07-16",
+    "2025-10-14",
+    "2026-01-21",
+    "2026-04-14",
+    "2026-07-15",
+    "2026-10-13"
+   ]
+  },
+  "AMGN": {
+   "last_report": "2026-11-03",
+   "next_report": "2027-02-02",
+   "yahoo_latest_quarter": "2026-09-30",
+   "past": [
+    "2025-08-05",
+    "2025-11-04",
+    "2026-02-03",
+    "2026-04-30",
+    "2026-08-04",
+    "2026-11-03"
    ]
   }
  }

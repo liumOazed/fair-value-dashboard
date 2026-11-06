@@ -1,5 +1,453 @@
 {
- "items": [],
- "updated": "2026-11-05",
+ "items": [
+  {
+   "ticker": "AAPL",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 186.73,
+   "fv_new": 192.7,
+   "changes": {
+    "price": [
+     342.96,
+     344.17
+    ],
+    "shares": [
+     14.594,
+     14.43989
+    ],
+    "rev": [
+     466.8,
+     478.811
+    ],
+    "fcf": [
+     136.683,
+     136.056
+    ],
+    "sbc": [
+     13.706,
+     13.789
+    ],
+    "net_cash": [
+     64.2,
+     62.756
+    ],
+    "fin.debt": [
+     84.34,
+     80.107
+    ],
+    "fin.rd": [
+     0.0383,
+     0.0491
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "IDXX",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 309.79,
+   "fv_new": 319.28,
+   "changes": {
+    "price": [
+     560.38,
+     670.71
+    ],
+    "shares": [
+     0.07888,
+     0.0788
+    ],
+    "rev": [
+     4.553,
+     4.662
+    ],
+    "fcf": [
+     1.237,
+     1.3
+    ],
+    "sbc": [
+     0.063,
+     0.065
+    ],
+    "net_cash": [
+     -0.899,
+     -0.775
+    ],
+    "fin.debt": [
+     1.096,
+     0.973
+    ],
+    "fin.interest": [
+     0.038,
+     0.0348
+    ],
+    "fin.rd": [
+     0.0347,
+     0.0358
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "BKNG",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 223.99,
+   "fv_new": 221.05,
+   "changes": {
+    "price": [
+     155.83,
+     168.72
+    ],
+    "rev": [
+     28.241,
+     28.126
+    ],
+    "fcf": [
+     9.539,
+     9.237
+    ],
+    "sbc": [
+     0.601,
+     0.594
+    ],
+    "net_cash": [
+     -3.48,
+     -4.762
+    ],
+    "fin.debt": [
+     20.694,
+     20.576
+    ],
+    "fin.interest": [
+     1.103,
+     1.113
+    ],
+    "fin.rd": [
+     0.0533,
+     0.0541
+    ]
+   },
+   "flags": [
+    "Quarter to 2026-09-30 grew -1.3% YoY vs base-case year-1 growth 8.0%: check guidance"
+   ],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "AME",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 164.66,
+   "fv_new": 153.61,
+   "changes": {
+    "price": [
+     240.03,
+     222.99
+    ],
+    "shares": [
+     0.2292,
+     0.22926
+    ],
+    "rev": [
+     7.864,
+     8.192
+    ],
+    "fcf": [
+     1.825,
+     1.932
+    ],
+    "sbc": [
+     0.049,
+     0.05
+    ],
+    "net_cash": [
+     -1.541,
+     -6.004
+    ],
+    "fin.debt": [
+     2.036,
+     6.669
+    ],
+    "fin.interest": [
+     0.096,
+     0.1133
+    ],
+    "fin.rd": [
+     0.0472,
+     0.017
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "FISV",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 60.25,
+   "fv_new": 57.04,
+   "changes": {
+    "price": [
+     50.39,
+     62.74
+    ],
+    "rev": [
+     20.866,
+     20.799
+    ],
+    "fcf": [
+     3.926,
+     3.158
+    ],
+    "sbc": [
+     0.377,
+     0.4
+    ],
+    "net_cash": [
+     -27.789,
+     -27.081
+    ],
+    "fin.debt": [
+     28.034,
+     27.274
+    ],
+    "fin.interest": [
+     1.553,
+     1.465
+    ],
+    "fin.rd": [
+     0.0554,
+     0.0537
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "BR",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 183.61,
+   "fv_new": 186.73,
+   "changes": {
+    "price": [
+     178.82,
+     193.92
+    ],
+    "shares": [
+     0.1129,
+     0.11175
+    ],
+    "rev": [
+     7.48,
+     7.559
+    ],
+    "fcf": [
+     1.23,
+     1.294
+    ],
+    "sbc": [
+     0.09,
+     0.102
+    ],
+    "net_cash": [
+     -3.12,
+     -3.323
+    ],
+    "fin.debt": [
+     3.52,
+     3.604
+    ],
+    "fin.interest": [
+     0.11,
+     0.1122
+    ],
+    "fin.rd": [
+     0.0312,
+     0.0311
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "CRCL",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 48.22,
+   "fv_new": 49.84,
+   "changes": {
+    "price": [
+     71.61,
+     69.48
+    ],
+    "rev": [
+     2.905,
+     3.03
+    ],
+    "fcf": [
+     0.71,
+     0.699
+    ],
+    "sbc": [
+     0.224,
+     0.208
+    ]
+   },
+   "flags": [
+    "Yahoo balance sheet not available for both quarters: net cash and shares kept"
+   ],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "MSI",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 301.5,
+   "fv_new": 303.32,
+   "changes": {
+    "price": [
+     491.53,
+     517.01
+    ],
+    "shares": [
+     0.1655,
+     0.16549
+    ],
+    "rev": [
+     12.23,
+     12.597
+    ],
+    "fcf": [
+     2.67,
+     2.527
+    ],
+    "sbc": [
+     0.35,
+     0.387
+    ],
+    "net_cash": [
+     -8.91,
+     -9.892
+    ],
+    "fin.debt": [
+     9.62,
+     10.666
+    ],
+    "fin.interest": [
+     0.44,
+     0.453
+    ],
+    "fin.rd": [
+     0.0457,
+     0.0425
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "FIS",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 41.29,
+   "fv_new": 48.84,
+   "changes": {
+    "price": [
+     38.55,
+     29.39
+    ],
+    "rev": [
+     12.2,
+     12.937
+    ],
+    "fcf": [
+     1.92,
+     2.025
+    ],
+    "sbc": [
+     0.19,
+     0.191
+    ],
+    "net_cash": [
+     -20.52,
+     -20.114
+    ],
+    "fin.debt": [
+     21.26,
+     20.85
+    ],
+    "fin.interest": [
+     0.6,
+     0.709
+    ],
+    "fin.rd": [
+     0.0282,
+     0.034
+    ]
+   },
+   "flags": [
+    "Quarter to 2026-09-30 grew +27.1% YoY vs base-case year-1 growth 10.0%: check guidance",
+    "Fair value moved +18.3%: worth a look"
+   ],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "TPR",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-06",
+   "fv_old": 89.4,
+   "fv_new": 89.56,
+   "changes": {
+    "price": [
+     110.37,
+     134.17
+    ],
+    "shares": [
+     0.19844,
+     0.19649
+    ],
+    "rev": [
+     8.004,
+     8.193
+    ],
+    "fcf": [
+     1.8125,
+     1.881
+    ],
+    "sbc": [
+     0.1045,
+     0.114
+    ],
+    "net_cash": [
+     -2.8,
+     -3.446
+    ],
+    "fin.debt": [
+     3.953,
+     4.229
+    ],
+    "fin.rd": [
+     0.0139,
+     0.013
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  }
+ ],
+ "updated": "2026-11-06",
  "how": "Written by scripts/auto_update.py. status auto_updated = numbers rolled forward from Yahoo, the text review (guidance, assumptions, notes, KPIs) is still to do; manual = not auto-updated, needs a full update from the release. The twice-weekly Claude review removes items when done."
 }

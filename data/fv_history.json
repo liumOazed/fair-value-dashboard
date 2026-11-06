@@ -18,6 +18,15 @@
    "bull": 242.58,
    "price": 349.51,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 192.7,
+   "bear": 151.13,
+   "base": 194.51,
+   "bull": 250.54,
+   "price": 344.17,
+   "method": "fcff_re"
   }
  ],
  "MSFT": [
@@ -421,6 +430,15 @@
    "bull": 298.7,
    "price": 170.97,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 221.05,
+   "bear": 150.91,
+   "base": 233.37,
+   "bull": 295.48,
+   "price": 168.72,
+   "method": "fcff_re"
   }
  ],
  "INTU": [
@@ -480,6 +498,15 @@
    "base": 96.63,
    "bull": 132.0,
    "price": 125.31,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 89.56,
+   "bear": 47.76,
+   "base": 97.03,
+   "bull": 133.59,
+   "price": 134.17,
    "method": "fcff_re"
   }
  ],
@@ -763,6 +790,15 @@
    "base": 324.31,
    "bull": 410.82,
    "price": 698.55,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 319.28,
+   "bear": 225.59,
+   "base": 334.13,
+   "bull": 422.68,
+   "price": 670.71,
    "method": "fcff_re"
   }
  ],
@@ -1049,6 +1085,15 @@
    "bull": 234.27,
    "price": 237.09,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 153.61,
+   "bear": 87.42,
+   "base": 164.19,
+   "bull": 226.44,
+   "price": 222.99,
+   "method": "fcff_re"
   }
  ],
  "AXP": [
@@ -1187,6 +1232,15 @@
    "bull": 89.3,
    "price": 62.05,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 57.04,
+   "bear": 30.37,
+   "base": 61.61,
+   "bull": 85.61,
+   "price": 62.74,
+   "method": "fcff_re"
   }
  ],
  "CRCL": [
@@ -1206,6 +1260,15 @@
    "base": 42.08,
    "bull": 111.36,
    "price": 76.12,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 49.84,
+   "bear": 16.65,
+   "base": 43.44,
+   "bull": 115.65,
+   "price": 69.48,
    "method": "fcff_re"
   }
  ],
@@ -1505,6 +1568,15 @@
    "bull": 248.02,
    "price": 189.29,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 186.73,
+   "bear": 129.84,
+   "base": 194.55,
+   "bull": 252.55,
+   "price": 193.92,
+   "method": "fcff_re"
   }
  ],
  "MSI": [
@@ -1524,6 +1596,15 @@
    "base": 318.35,
    "bull": 409.06,
    "price": 496.99,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 303.32,
+   "bear": 200.7,
+   "base": 320.64,
+   "bull": 413.96,
+   "price": 517.01,
    "method": "fcff_re"
   }
  ],
@@ -1911,6 +1992,15 @@
    "base": 47.44,
    "bull": 75.34,
    "price": 29.76,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 48.84,
+   "bear": 13.42,
+   "base": 55.47,
+   "bull": 85.38,
+   "price": 29.39,
    "method": "fcff_re"
   }
  ],
