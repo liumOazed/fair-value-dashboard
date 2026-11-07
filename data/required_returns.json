@@ -100,6 +100,15 @@
   "EOG":  {"r": 0.09,  "reason": "Above the 8.5% Energy rate: oil-price dependent, but a low-cost producer with little net debt."},
   "PM":   {"r": 0.085, "reason": "Below the 9% Consumer Defensive rate: very steady cash flows (beta ~0.35), offset by regulation, excise and currency risk and high debt."},
   "DLTR": {"r": 0.09,  "reason": "Consumer Defensive rate: steady discount demand, but execution risk in the multi-price rollout and tariff exposure."},
+  "INVA": {"r": 0.11, "reason": "Healthcare rate (9%) plus the 2-point small-cap premium: steady royalty cash, but the GSK inhaler royalties end within the decade."},
+  "CTRE": {"r": 0.095, "reason": "Real Estate rate (7.5%) plus the 2-point small-cap premium: long leases, but tenants are thin-margin nursing operators paid by Medicaid and Medicare."},
+  "CVSA": {"r": 0.11, "reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium: steady demand for nurses and doctors, offset by US student-aid rule risk."},
+  "QLYS": {"r": 0.12, "reason": "Technology rate (10.5%) less half a point for recurring subscriptions, net cash and low beta (~0.5), plus the 2-point small-cap premium."},
+  "LAUR": {"r": 0.12, "reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium, plus 1 point for Mexican and Peruvian currency and politics."},
+  "IDCC": {"r": 0.125, "reason": "Technology rate (10.5%) plus the 2-point small-cap premium: licence income depends on renewals and litigation with a few large phone makers (beta ~1.5)."},
+  "LMAT": {"r": 0.11, "reason": "Healthcare rate (9%) plus the 2-point small-cap premium: niche vascular devices with steady demand, net cash."},
+  "BOX":  {"r": 0.12, "reason": "Technology rate (10.5%) less half a point for recurring subscriptions and low beta (~0.6), plus the 2-point small-cap premium."},
+  "ACIW": {"r": 0.12, "reason": "Technology rate (10.5%) less half a point for long bank contracts, plus the 2-point small-cap premium; lumpy licence sales and net debt."},
   "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
  }
 }

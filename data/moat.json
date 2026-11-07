@@ -398,6 +398,42 @@
   "DLTR": {
    "moat": "narrow",
    "reason": "Median ROIC 15% over 4 years (10-K figures in data/returns.json; one negative year from the Family Dollar write-downs), above the 9.0% required return by 3+ points but not 20%+ every year."
+  },
+  "INVA": {
+   "moat": "short",
+   "reason": "ROIC 12-19% over 4 years (median 15%, Yahoo statements in data/returns.json), which the rule would call narrow, but the GSK inhaler royalties (Relvar/Breo, Anoro) fade as patents expire around the end of the decade, so base growth fades to 0% by year 10 and no advantage period is added. Hand-set."
+  },
+  "CTRE": {
+   "moat": "none",
+   "reason": "ROIC 5-7% over 4 years (median 5%, Yahoo statements in data/returns.json), below the 9.5% required return: growth comes from buying properties with new shares and debt."
+  },
+  "CVSA": {
+   "moat": "none",
+   "reason": "Median ROIC 12% over 4 years (9-15%, rising; Yahoo statements in data/returns.json), less than 3 points above the 11% required return."
+  },
+  "QLYS": {
+   "moat": "narrow",
+   "reason": "ROIC not measurable from the statements (invested capital at or below zero: cash exceeds equity plus debt after buybacks), so the middle class by default. Check by hand."
+  },
+  "LAUR": {
+   "moat": "narrow",
+   "reason": "Median ROIC 18% over 4 years (13-21%, Yahoo statements in data/returns.json), above the 12% required return by 3+ points but not 20%+ every year."
+  },
+  "IDCC": {
+   "moat": "wide",
+   "reason": "ROIC 80% or more in each of the last 4 years (Yahoo statements in data/returns.json; small invested capital), at least 10 points above the 12.5% required return. Licence income still swings with renewals and litigation."
+  },
+  "LMAT": {
+   "moat": "narrow",
+   "reason": "Median ROIC 16% over 4 years (11-24%, rising; Yahoo statements in data/returns.json), above the 11% required return by 3+ points but not 20%+ every year."
+  },
+  "BOX": {
+   "moat": "wide",
+   "reason": "ROIC 38% or more in each of the last 4 years (Yahoo statements in data/returns.json; small invested capital after buybacks), at least 10 points above the 12% required return. The moat scorecard suggests less: check by hand."
+  },
+  "ACIW": {
+   "moat": "none",
+   "reason": "Median ROIC 10% over 4 years (6-11%, acquisition goodwill; Yahoo statements in data/returns.json), below the 12% required return."
   }
  }
 }

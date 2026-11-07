@@ -41,6 +41,7 @@ CFG = {
 MANUAL = {
     "ADYEY": "Reports in EUR, half-yearly, FCF estimated: needs a manual update from the release.",
     "CTAS": "Revenue and cash flow use different periods in the model: needs a manual update.",
+    "CTRE": "Revenue and cash flow are a run-rate (latest quarter x 4) because acquisitions grow it fast: needs a manual update.",
 }
 YROWS = {  # yahoo row names per field
     "rev": ["Total Revenue", "Operating Revenue"], "gross": ["Gross Profit"], "ni": ["Net Income Common Stockholders", "Net Income"],
