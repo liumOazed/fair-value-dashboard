@@ -272,3 +272,23 @@ table.s td.hl{background:var(--hl-blue)}
 .dr-in .mini:has(.pill.bad){background:color-mix(in srgb,var(--hl-coral) 70%,transparent);border-color:color-mix(in srgb,var(--bad) 22%,var(--line))}
 .dr-in .mini:has(.pill.warn){background:color-mix(in srgb,var(--hl-cream) 70%,transparent);border-color:color-mix(in srgb,var(--warn) 22%,var(--line))}
 .dr-in .mini:has(.pill.ok){background:color-mix(in srgb,var(--hl-mint) 70%,transparent);border-color:color-mix(in srgb,var(--good) 22%,var(--line))}
+/* ---- Research framework blocks (Nov 2026): coverage, three performances, sector questions, three spreads, what the price assumes ---- */
+.unk{display:inline-block;border-radius:5px;padding:0 6px;background:color-mix(in srgb,var(--line) 70%,transparent);color:var(--mut);font-size:.92em;font-weight:400}
+.qc .ans{font-size:11.5px;color:var(--mut);margin-top:2px}
+td span.key{background:var(--hl-blue);color:var(--tx);border-radius:5px;padding:0 5px}
+details.cov{margin:10px 0 2px;font-size:13px}details.cov summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;flex-wrap:wrap}details.cov summary::-webkit-details-marker{display:none}
+.covbar{display:inline-flex;width:120px;height:8px;border-radius:4px;overflow:hidden;background:var(--line)}.covbar i{display:block;height:100%}
+.covwhich{color:var(--acc);font-size:12px;text-decoration:underline}
+.covlist{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;font-size:12.5px}.covlist ul{margin:4px 0 0 16px;padding:0}
+.perf{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0}
+.perf>div{border:1px solid color-mix(in srgb,var(--ok) 18%,var(--line));background:color-mix(in srgb,var(--hl-blue) 55%,transparent);border-radius:10px;padding:9px 11px;font-size:13px;min-width:0}
+.perf>div.cr{background:color-mix(in srgb,var(--hl-cream) 80%,transparent);border-color:color-mix(in srgb,var(--warn) 22%,var(--line))}
+.perf h4{margin:0 0 2px;font:600 11px/1.2 var(--display,inherit);letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.perf .r{display:flex;justify-content:space-between;gap:8px;padding:2px 0}.perf .r b{font-family:var(--display,inherit);white-space:nowrap}
+.perf .r b.up,.perf .r b.down{border-radius:5px;padding:0 5px}.perf .r b.up{background:var(--hl-mint);color:var(--good)}.perf .r b.down{background:var(--hl-coral);color:var(--bad)}
+.perf .psub{color:var(--mut);font-size:11.5px;margin:0 0 4px}
+.psplit{font-size:13px;margin:6px 0 4px}
+table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:normal}table.s.sp td.n,table.s.sp th.n{text-align:right;white-space:nowrap}
+.ftag{font-size:10.5px;font-weight:700;border-radius:999px;padding:1px 7px;margin-left:6px;white-space:nowrap}
+.ftag.fact{background:var(--hl-blue);color:var(--ok)}.ftag.est{background:var(--hl-cream);color:var(--warn)}
+@media(max-width:640px){.perf{grid-template-columns:1fr}.covlist{grid-template-columns:1fr}}
