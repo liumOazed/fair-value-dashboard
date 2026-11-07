@@ -24,16 +24,29 @@ let view="Top 50";
 const views=["Top 50","Valued only","Check first","All that passed"];
 $("#vchips").innerHTML='<span class="lbl">Show</span>'+views.map(v=>`<button class="chip${v===view?" on":""}" data-v="${v}">${v}</button>`).join("");
 $("#vchips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{view=c.dataset.v;$("#vchips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()});
-let checks="All";
-const yesN=r=>(r.answers||[]).filter(x=>x.v==="yes").length;
-const CHK={"All":null,"Passes at least 4 checks":r=>yesN(r)>=4,"Passes all 5 checks":r=>r.all_checks};
+let checks="All",sec="All";
+// Sector filter. Insurers can't answer the cash-flow and debt questions (N/A); inside the Insurance filter N/A counts
+// as passed, the same rule as the Growth Screen's Insurance top 5. Everywhere else the checks stay strict.
+const SEC={"All":null,"Insurance":r=>(r.industry||"").includes("Insurance")};
+const naOk=()=>sec==="Insurance";
+const yesN=r=>(r.answers||[]).filter(x=>x.v==="yes"||(naOk()&&x.v==="na")).length;
+const allOk=r=>naOk()?(r.answers||[]).length>0&&yesN(r)===r.answers.length:r.all_checks;
+const CHK={"All":null,"Passes at least 4 checks":r=>yesN(r)>=4,"Passes all 5 checks":allOk};
 const CTIP={"Passes at least 4 checks":"Yes to at least four of the five quick questions (all five also count). Hover the Checks badge for which one missed","Passes all 5 checks":"Yes to all five quick questions: revenue growing, profits healthy, cash flow strong, debt manageable, financial position improving"};
-$("#cchips").innerHTML='<span class="lbl">Checks</span>'+Object.keys(CHK).map(v=>`<button class="chip${v===checks?" on":""}" data-v="${v}"${CTIP[v]?` title="${CTIP[v]}"`:""}>${v}${CHK[v]?` <span class="cnt">${R.rows.filter(CHK[v]).length}</span>`:""}</button>`).join("");
-$("#cchips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{checks=c.dataset.v;$("#cchips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()});
-const chkPill=r=>{const a=r.answers||[];if(!a.length)return "";const y=yesN(r);
- return ` <span class="pill${r.all_checks?" chk":""}" title="${esc(a.map(x=>x.q+" "+x.v+": "+x.t).join("\n"))}">${y}/5${r.all_checks?" ✓":""}</span>`};
+const STIP={"Insurance":"Insurers only (industry contains Insurance, brokers included). The cash-flow and debt questions don't apply to them, so N/A counts as passed in the Checks filters"};
+$("#schips").innerHTML='<span class="lbl">Sector</span>'+Object.keys(SEC).map(v=>`<button class="chip${v===sec?" on":""}" data-v="${v}"${STIP[v]?` title="${STIP[v]}"`:""}>${v}${SEC[v]?` <span class="cnt">${R.rows.filter(SEC[v]).length}</span>`:""}</button>`).join("");
+$("#schips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{sec=c.dataset.v;$("#schips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));drawChecks();render()});
+function drawChecks(){
+ const base=SEC[sec]?R.rows.filter(SEC[sec]):R.rows;
+ $("#cchips").innerHTML='<span class="lbl">Checks</span>'+Object.keys(CHK).map(v=>`<button class="chip${v===checks?" on":""}" data-v="${v}"${CTIP[v]?` title="${CTIP[v]}${naOk()?" (N/A counts as passed for insurers)":""}"`:""}>${v}${CHK[v]?` <span class="cnt">${base.filter(CHK[v]).length}</span>`:""}</button>`).join("");
+ $("#cchips").querySelectorAll(".chip").forEach(c=>c.onclick=()=>{checks=c.dataset.v;$("#cchips").querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===c));render()});
+}
+drawChecks();
+const chkPill=r=>{const a=r.answers||[];if(!a.length)return "";const y=yesN(r),ok=allOk(r);
+ return ` <span class="pill${ok?" chk":""}" title="${esc(a.map(x=>x.q+" "+x.v+": "+x.t).join("\n"))}${naOk()?"\n(N/A counts as passed for insurers)":""}">${y}/5${ok?" ✓":""}</span>`};
 function render(){
  let list=view==="Top 50"?top:view==="Valued only"?valued:view==="Check first"?top.filter(r=>r.check_first):R.rows;
+ if(SEC[sec])list=list.filter(SEC[sec]);
  if(CHK[checks])list=list.filter(CHK[checks]);
  $("#tbl tbody").innerHTML=list.map(r=>{
   const p=r.parts||{};const diff=r.fair_value&&r.price_at_eval?r.price_at_eval/r.fair_value-1:null;
