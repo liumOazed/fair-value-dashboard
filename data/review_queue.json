@@ -725,6 +725,12 @@
    },
    "flags": [],
    "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "CTRE",
+   "status": "manual",
+   "reason": "Revenue and cash flow are a run-rate (latest quarter x 4) because acquisitions grow it fast: needs a manual update.",
+   "since": "2026-11-07"
   }
  ],
  "updated": "2026-11-07",
