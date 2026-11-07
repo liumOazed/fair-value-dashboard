@@ -22,6 +22,17 @@ from screen_score import _V3, _p
 
 def month_of(p): return re.search(r"(\d{4}-\d{2})", p).group(1)
 CACHE = ROOT / "data/cache"
+def prep(d):
+    """Raw screener CSV rows -> the frame score_v4 expects (multi-year metrics borrowed for old CSVs, peer group)."""
+    d = d.drop_duplicates("ticker").set_index("ticker", drop=False)
+    has_v3 = "roic_pct" in d.columns and d.roic_pct.notna().sum() > 0.4 * len(d)
+    if not has_v3 and _V3 is not None:                       # older CSV: borrow multi-year metrics from the newest full run
+        d = d.drop(columns=[c for c in V3_COLS if c in d.columns]).join(_V3, how="left")
+    for c in V3_COLS:
+        if c not in d.columns: d[c] = np.nan
+    d["peer"] = [PEER_OF.get(t, sec) for t, sec in zip(d.index, d.sector)]
+    d["v3_source"] = "own" if has_v3 else (pathlib.Path(V3_SRC).name if V3_SRC else "none")
+    return d
 def load_month(f):
     """Score one month, reusing data/cache/scores_YYYY-MM.json when the CSV has not changed (scores are relative
     within a month, so a month's result never changes unless its own CSV changes)."""
@@ -35,15 +46,7 @@ def load_month(f):
             for col in V3_COLS:                                   # older cache files may predate a column
                 if col not in d.columns: d[col] = np.nan
             d.attrs["cached"] = True; return d
-    d = pd.read_csv(f).drop_duplicates("ticker").set_index("ticker", drop=False)
-    has_v3 = "roic_pct" in d.columns and d.roic_pct.notna().sum() > 0.4 * len(d)
-    if not has_v3 and _V3 is not None:                       # older CSV: borrow multi-year metrics from the newest full run
-        d = d.drop(columns=[c for c in V3_COLS if c in d.columns]).join(_V3, how="left")
-    for c in V3_COLS:
-        if c not in d.columns: d[c] = np.nan
-    d["peer"] = [PEER_OF.get(t, sec) for t, sec in zip(d.index, d.sector)]
-    d["v3_source"] = "own" if has_v3 else (pathlib.Path(V3_SRC).name if V3_SRC else "none")
-    d = score_v4(d); d["rank"] = d.score.rank(ascending=False, method="min").astype(int)
+    d = score_v4(prep(pd.read_csv(f))); d["rank"] = d.score.rank(ascending=False, method="min").astype(int)
     CACHE.mkdir(exist_ok=True)
     keep = d.drop(columns=[c for c in d.columns if c.endswith("_c") or c == "g"])
     json.dump(dict(csv=pathlib.Path(f).name, csv_hash=h, rows=json.loads(keep.to_json(orient="records"))), open(cf, "w"))
@@ -72,7 +75,9 @@ DJIA = json.load(open(_dj))["members"] if _dj.exists() else []      # Dow member
 t_of = {}
 for th, tk in themes.items():
     for t in tk: t_of.setdefault(t, []).append(th)
-fv = {a["ticker"] for a in json.load(open(ROOT / "data/assets.json"))["assets"]}
+_fa = json.load(open(ROOT / "data/assets.json"))["assets"]
+fv = {a["ticker"] for a in _fa}
+FV_STOCKS = {a["ticker"] for a in _fa if a.get("type") == "stock"}      # ETFs and gold (QQQ, GLD) are not screened
 top_cur = top_sets[cur_m]
 def num(x): return None if pd.isna(x) else round(float(x), 2)
 # Market P/E = index-style aggregate: total market value / total earnings of the stocks with positive earnings.
@@ -83,8 +88,35 @@ def vs_mkt(x, m): return None if (x is None or pd.isna(x) or x <= 0) else round(
 _ind = cur[cur.industry.fillna("").astype(str) != ""]
 ind_rank = _ind.groupby("industry").score.rank(ascending=False, method="min").astype(int).to_dict()
 ind_n = _ind.groupby("industry").size().to_dict()
+
+# ---- Fair Value stocks outside the screened universe (e.g. SHOP, ADYEY, FISV, CRCL): fetched separately by
+# scripts/growth_screener.py --tickers into data/screens/extra/fv_extra_YYYY-MM.csv (the Monthly run makes it). Each is
+# scored against this month's universe as if it were one more stock, but the universe's own scores, ranks and picks are
+# left exactly as they were (the scores are percentiles, so adding the rows to the universe would move everyone else).
+# Its rank is where that score would place it ("would rank #N"); it never enters the top 50 or the sector / resilient picks.
+_fx = sorted(glob.glob(str(ROOT / f"data/screens/extra/fv_extra*_{cur_m}.csv")))       # fv_extra_YYYY-MM.csv plus any top-ups
+EXTRA = pd.DataFrame()
+if _fx:
+    _raw_x = pd.concat([pd.read_csv(f) for f in _fx], ignore_index=True)
+    _raw_x = _raw_x[[t in FV_STOCKS and t not in cur.index for t in _raw_x.ticker]].drop_duplicates("ticker", keep="last")
+    # Yahoo returned no company profile for Fiserv after its FI -> FISV ticker change (Nov 2026): use what it reported
+    # under FI, the same as FIS and JKHY. Only fills a blank or "Unknown".
+    PROFILE = {"FISV": ("Technology", "Information Technology Services")}
+    for i, t in _raw_x.ticker.items():
+        if t in PROFILE and str(_raw_x.at[i, "sector"]) in ("Unknown", "nan", ""):
+            _raw_x.at[i, "sector"] = PROFILE[t][0]
+            if not isinstance(_raw_x.at[i, "industry"], str) or not _raw_x.at[i, "industry"]: _raw_x.at[i, "industry"] = PROFILE[t][1]
+    if len(_raw_x):
+        _all = score_v4(prep(pd.concat([pd.read_csv(by_month[cur_m]), _raw_x], ignore_index=True)))
+        EXTRA = _all.loc[[t for t in _raw_x.ticker.drop_duplicates()]].copy()
+        EXTRA["rank"] = [int((cur.score > s).sum()) + 1 for s in EXTRA.score]
+        for t, r in EXTRA.iterrows():
+            if isinstance(r.industry, str) and r.industry:
+                same = cur.score[cur.industry == r.industry]
+                ind_rank[t] = int((same > r.score).sum()) + 1
+print("fair-value stocks outside the universe:", [(t, int(r["rank"])) for t, r in EXTRA.iterrows()], "from", [pathlib.Path(f).name for f in _fx] or "(none)")
 rows = []
-for t, r in cur.iterrows():
+for t, r in pd.concat([cur, EXTRA]).iterrows():
     rr, rr_src, rr_why = required_return(t, r.sector, t_of.get(t, []))
     # WACC = equity share x required return + debt share x after-tax cost of debt (interest / debt, clipped 2-10%)
     wacc, D, E, rd_raw, rd, tx = wacc_of(r, rr)
@@ -130,7 +162,11 @@ for t, r in cur.iterrows():
         v3_source=r.v3_source, score_prev=float(r.score_v3), components={k: float(r[f"c_{k}"]) for k in ("quality", "growth", "value", "resilience")},
         safety=float(r.safety), risk_level=r.risk_level, risk_serious=list(r.risk_serious), risk_warn=list(r.risk_warn), data_confidence=r.data_confidence,
         distress_cap=bool(r.distress_cap), industry=(r.industry if isinstance(r.industry, str) and r.industry else None),
-        industry_rank=ind_rank.get(t), industry_n=ind_n.get(r.industry) if isinstance(r.industry, str) else None, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), peer_group=PEER_OF.get(t), has_fair_value=t in fv))
+        industry_rank=ind_rank.get(t), industry_n=ind_n.get(r.industry) if isinstance(r.industry, str) else None, pe_vs_market=vs_mkt(r.pe_ratio, MKT_PE), fpe_vs_market=vs_mkt(r.forward_pe, MKT_FPE), peer_group=PEER_OF.get(t), has_fair_value=t in fv, outside_universe=t in EXTRA.index))
+for r in rows:
+    if r["outside_universe"]:                                      # hypothetical place this month; industry count includes it
+        r["history"][-1].update(rank=r["rank"], score=r["score"])
+        if r["industry_rank"] is not None: r["industry_n"] = int((cur.industry == r["industry"]).sum()) + 1
 rows.sort(key=lambda x: x["rank"])
 for r in rows:
     r["answers"] = quick_answers(r)
@@ -140,7 +176,7 @@ for r in rows:
 RES_RULES = dict(min_cap=10e9, max_nde=1.0, min_cov=10, max_neg_fcf=0, max_fcf_cv=0.5, max_share_chg=0.5, min_quality=60, min_cagr=3.0, n=5)
 def res_ok(r):
     R = RES_RULES
-    if r["top50"] or (r["market_cap"] or 0) < R["min_cap"] or r["risk_level"] != "Normal": return False
+    if r["top50"] or r["outside_universe"] or (r["market_cap"] or 0) < R["min_cap"] or r["risk_level"] != "Normal": return False
     if r.get("peer_group") is None and r["sector"] == "Financial Services": return False      # banks/insurers: tests don't apply
     nde, cov = r["net_debt_ebitda"], r["interest_coverage"]
     return (nde is not None and nde <= R["max_nde"] and (cov is None or cov >= R["min_cov"]) and r["fcf_neg_years"] == 0
@@ -164,7 +200,7 @@ print("resilient compounders:", RESILIENT["picks"], f"({len(passed)} passed)")
 # added to the default list as well, so good businesses held back by valuation or a tough peer group are not missed.
 for r in rows:
     r["all_checks"] = bool(r["answers"]) and all(a["v"] == "yes" for a in r["answers"])
-    r["checks_pick"] = r["all_checks"] and not r["top50"] and not r["resilient_pick"]
+    r["checks_pick"] = r["all_checks"] and not r["top50"] and not r["resilient_pick"] and not r["outside_universe"]
 ALLCHECKS = dict(rule="yes to all 5 quick questions", passed=sum(r["all_checks"] for r in rows),
                  picks=[r["ticker"] for r in sorted((r for r in rows if r["checks_pick"]), key=lambda r: -r["score"])])
 print("all 5 checks:", ALLCHECKS["passed"], "passed;", len(ALLCHECKS["picks"]), "added:", ALLCHECKS["picks"])
@@ -185,7 +221,7 @@ def n_checks(r, na_passes):
 SECTOR_OUT = dict(rule=f"top {SECTOR_N} per group: all 5 checks first, then 4, then 3 where allowed; ties by Growth Quality Score", groups={})
 for r in rows: r["sector_pick"] = None
 for G in SECTOR_PICKS:
-    cand = sorted((r for r in rows if G["test"](r) and n_checks(r, G["na_passes"]) >= G["min_checks"]),
+    cand = sorted((r for r in rows if not r["outside_universe"] and G["test"](r) and n_checks(r, G["na_passes"]) >= G["min_checks"]),
                   key=lambda r: (-n_checks(r, G["na_passes"]), -r["score"], -r["components"]["quality"]))
     got, seen = [], set()
     for r in cand:
@@ -207,10 +243,17 @@ for r in rows:
         r["fcff_ev_src"] = pathlib.Path(_sup[-1]).name if r["fcff_ev_pct"] is not None else None
     if r["sector"] == "Financial Services" and not r.get("peer_group"):
         r["fcff_ev_pct"] = None                                    # banks / insurers: enterprise value is not meaningful
+# ---- Has a fair value: every stock with a full model on the Fair Value tab is on the default list too, with the same
+# five quick questions, whether it passes them or not (added after the sector picks, so it never displaces one).
+for r in rows:
+    r["fv_pick"] = r["has_fair_value"] and not (r["top50"] or r["resilient_pick"] or r["checks_pick"] or r["sector_pick"])
+FVPICKS = dict(rule="every stock with a fair value model that is not already on the list", picks=[r["ticker"] for r in rows if r["fv_pick"]],
+               outside_universe=[r["ticker"] for r in rows if r["outside_universe"]], missing=sorted(FV_STOCKS - {r["ticker"] for r in rows}))
+print("fair-value stocks added:", len(FVPICKS["picks"]), FVPICKS["picks"], "| outside the universe:", FVPICKS["outside_universe"], "| still missing:", FVPICKS["missing"])
 _djr = sorted((r for r in rows if r["ticker"] in DJIA), key=lambda r: -r["score"])
 for i, r in enumerate(_djr, 1):
     r["djia_rank"] = i                                            # rank among the 30 Dow stocks by Growth Quality Score
-out = dict(resilient=RESILIENT, all_checks=ALLCHECKS, sector_picks=SECTOR_OUT, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows), djia=dict(as_of=json.load(open(_dj))["as_of"] if _dj.exists() else None, n=len(_djr), missing=[t for t in DJIA if t not in {r["ticker"] for r in _djr}]),
+out = dict(resilient=RESILIENT, all_checks=ALLCHECKS, fair_value_picks=FVPICKS, sector_picks=SECTOR_OUT, peer_groups={k: dict(reason=v["reason"], tickers=v["tickers"]) for k, v in PEER.items()}, score_version=SCORE_VERSION, v3_source=(pathlib.Path(V3_SRC).name if V3_SRC else None), market=dict(pe=round(MKT_PE, 1), forward_pe=round(MKT_FPE, 1), n=int(len(_t)), method="total market value / total earnings of screened stocks with positive earnings"), month=cur_m, prev_month=prev_m, months=months, estimated_months=sorted(estimated), window=WINDOW, consistent_rule=f"in the top 50 in at least {NEED} of the last {len(WINDOW)} months, including the latest", built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"), universe=len(rows) - len(EXTRA), djia=dict(as_of=json.load(open(_dj))["as_of"] if _dj.exists() else None, n=len(_djr), missing=[t for t in DJIA if t not in {r["ticker"] for r in _djr}]),
            sectors=sorted(cur.sector.dropna().unique().tolist()), themes=list(themes), rows=rows)
 json.dump(out, open(ROOT / "data/screen.json", "w"), indent=0)
 print("built", cur_m, "vs", prev_m, "rows", len(rows), "consistent", sum(r["consistent"] for r in rows))

@@ -292,3 +292,4 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 .ftag{font-size:10.5px;font-weight:700;border-radius:999px;padding:1px 7px;margin-left:6px;white-space:nowrap}
 .ftag.fact{background:var(--hl-blue);color:var(--ok)}.ftag.est{background:var(--hl-cream);color:var(--warn)}
 @media(max-width:640px){.perf{grid-template-columns:1fr}.covlist{grid-template-columns:1fr}}
+.pill.fvp{background:var(--hl-blue);border-color:transparent;color:var(--ok)}

@@ -375,6 +375,25 @@ def ttm_statements(tk):
     return out
 
 
+def statement_growth_margin(tk, ni_ttm):
+    """Fallback revenue growth (latest quarter vs a year earlier, %) and net margin (TTM, %) from quarterly statements."""
+    out = {}
+    try:
+        qi = tk.quarterly_income_stmt
+        rev = pd.to_numeric(qi.loc["Total Revenue"], errors="coerce") if qi is not None and "Total Revenue" in qi.index else None
+    except Exception:
+        rev = None
+    if rev is None:
+        return out
+    rev = rev.sort_index(ascending=False)                       # newest quarter first
+    if len(rev) >= 5 and rev.iloc[4] and rev.iloc[4] > 0 and rev.iloc[0] == rev.iloc[0]:
+        out["rev_growth_pct"] = round((float(rev.iloc[0]) / float(rev.iloc[4]) - 1) * 100, 2)
+    r4 = rev.iloc[:4]
+    if len(r4) == 4 and r4.notna().all() and r4.sum() > 0 and ni_ttm == ni_ttm:
+        out["profit_margin_pct"] = round(ni_ttm / float(r4.sum()) * 100, 2)
+    return out
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # FUNDAMENTALS (yfinance .info — current snapshot only)
 # ══════════════════════════════════════════════════════════════════════════════
@@ -426,6 +445,11 @@ def fetch_fundamentals(tickers: list[str], history: bool = True, cache_dir: Path
                     row.update(market_risk(tk, t, cache_dir))
                     tt = ttm_statements(tk)
                     row.update(tt)
+                    if rev_g is None and pm is None:
+                        # Yahoo's summary sometimes has neither figure after a ticker change (Fiserv FI -> FISV, Nov 2026),
+                        # which would drop the stock. Only then: latest quarter's revenue vs the same quarter a year
+                        # earlier, and TTM net income / TTM revenue, from the quarterly statements.
+                        row.update(statement_growth_margin(tk, tt["ni_ttm"]))
                     inc_, bal_, cfs_ = fetch_statements(tk, t, cache_dir)
                     fy_fcf = _series(cfs_, "Free Cash Flow")
                     base = tt["fcf_ttm"] if tt["fcf_ttm"] == tt["fcf_ttm"] else (float(fy_fcf.iloc[-1]) if len(fy_fcf) else np.nan)

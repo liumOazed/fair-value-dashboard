@@ -1,0 +1,18 @@
+==================================================================
+  ARIA-Growth — Screener (rebuilt)
+==================================================================
+
+📥 Fetching fundamentals for 4 tickers (slow, ~1/s)...
+  ✓ 4 tickers with data (0 failed/skipped)
+
+  ✓ 3 stocks screened → data/screens/extra/fv_extra_2026-11.csv
+  Score range: 36.2 - 60.1
+
+  Top 10:
+    ADYEY   60.1  rev   18.9%  R40   62.5  [Technology]
+    SHOP    46.1  rev   31.6%  R40   46.6  [Technology]
+    CRCL    36.2  rev   16.9%  R40   32.2  [Financial Services]
+
+  v3 metric coverage (non-blank of 3): {'roic_pct': 2, 'net_debt_ebitda': 3, 'rev_cagr_pct': 3, 'fcf_cv': 3, 'share_change_pct_yr': 3}
+
+  Next: python aria_growth_archive_screen.py --screen data/screens/extra/fv_extra_2026-11.csv
