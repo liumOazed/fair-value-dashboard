@@ -2979,14 +2979,21 @@
    "risk": "Housing downturn, GSE capital rules and possible privatisation, price competition.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 3.2,
-   "out_of": 5,
-   "suggested": null,
+   "total": 5.2,
+   "out_of": 10,
+   "suggested": "narrow",
    "current": "narrow",
    "differs": false
   },
@@ -3002,14 +3009,21 @@
    "risk": "A major Florida hurricane; reinsurance costs; Florida politics and regulation.",
    "src": null,
    "source_score": 1.5,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 1.5,
-   "out_of": 5,
-   "suggested": null,
+   "total": 3.5,
+   "out_of": 10,
+   "suggested": "none",
    "current": "none",
    "differs": false
   },
@@ -3025,16 +3039,23 @@
    "risk": "A large California earthquake, reinsurance prices, new competitors in its niches.",
    "src": null,
    "source_score": 2.0,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 1.5,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 2.0,
-   "out_of": 5,
-   "suggested": null,
+   "total": 4.5,
+   "out_of": 10,
+   "suggested": "none",
    "current": "narrow",
-   "differs": false
+   "differs": true
   },
   "PLGO": {
    "sources": {
@@ -3048,14 +3069,21 @@
    "risk": "Catastrophes, reinsurance cycle, reserve charges.",
    "src": null,
    "source_score": 1.25,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 0.5,
+   "parts": {
+    "persistence": 0.5,
+    "fade": 0,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 1.2,
-   "out_of": 5,
-   "suggested": null,
+   "total": 1.8,
+   "out_of": 10,
+   "suggested": "none",
    "current": "none",
    "differs": false
   },
@@ -3071,16 +3099,23 @@
    "risk": "Employment cycles, health-plan contracts, competition from larger claims administrators.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 3.2,
-   "out_of": 5,
-   "suggested": null,
+   "total": 6.2,
+   "out_of": 10,
+   "suggested": "narrow",
    "current": "wide",
-   "differs": false
+   "differs": true
   },
   "SLDE": {
    "sources": {
@@ -3094,14 +3129,21 @@
    "risk": "A major hurricane; reinsurance costs; Citizens depopulation slowing.",
    "src": null,
    "source_score": 1.25,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 1.5,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 1.2,
-   "out_of": 5,
-   "suggested": null,
+   "total": 3.8,
+   "out_of": 10,
+   "suggested": "none",
    "current": "none",
    "differs": false
   },
@@ -3117,14 +3159,21 @@
    "risk": "Catastrophes, softening reinsurance prices, investment swings.",
    "src": null,
    "source_score": 1.25,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 1.2,
-   "out_of": 5,
-   "suggested": null,
+   "total": 3.2,
+   "out_of": 10,
+   "suggested": "none",
    "current": "none",
    "differs": false
   },
@@ -3140,14 +3189,21 @@
    "risk": "A major Florida hurricane; reinsurance costs; Florida politics.",
    "src": null,
    "source_score": 1.5,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 1.5,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 1.5,
-   "out_of": 5,
-   "suggested": null,
+   "total": 4.0,
+   "out_of": 10,
+   "suggested": "none",
    "current": "none",
    "differs": false
   },
@@ -3163,16 +3219,23 @@
    "risk": "Housing downturn, GSE capital rules and possible privatisation, price competition.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 0.5,
+   "parts": {
+    "persistence": 0.5,
+    "fade": 0,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 3.2,
-   "out_of": 5,
-   "suggested": null,
+   "total": 3.8,
+   "out_of": 10,
+   "suggested": "none",
    "current": "narrow",
-   "differs": false
+   "differs": true
   },
   "UFCS": {
    "sources": {
@@ -3186,14 +3249,21 @@
    "risk": "Reserve charges, catastrophes, larger and better-priced competitors.",
    "src": null,
    "source_score": 1.25,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 0,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
    "total": 1.2,
-   "out_of": 5,
-   "suggested": null,
+   "out_of": 10,
+   "suggested": "none",
    "current": "none",
    "differs": false
   },
@@ -3209,16 +3279,23 @@
    "risk": "Casualty reserve charges, integrating Apollo, softer E&S prices.",
    "src": null,
    "source_score": 1.75,
-   "numbers_score": null,
-   "parts": {},
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 1.5,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
    "unknown": [
-    "filings"
+    "new_money",
+    "margins"
    ],
-   "total": 1.8,
-   "out_of": 5,
-   "suggested": null,
+   "total": 4.2,
+   "out_of": 10,
+   "suggested": "none",
    "current": "narrow",
-   "differs": false
+   "differs": true
   }
  }
 }
