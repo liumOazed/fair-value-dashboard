@@ -2178,5 +2178,104 @@
    "price": 137.94,
    "method": "fcff_re"
   }
+ ],
+ "INVA": [
+  {
+   "date": "2026-11-06",
+   "fv": 33.25,
+   "bear": 21.21,
+   "base": 35.16,
+   "bull": 46.52,
+   "price": 19.1,
+   "method": "fcff_re"
+  }
+ ],
+ "CTRE": [
+  {
+   "date": "2026-11-06",
+   "fv": 28.28,
+   "bear": 19.39,
+   "base": 30.29,
+   "bull": 36.58,
+   "price": 38.21,
+   "method": "fcff_re"
+  }
+ ],
+ "CVSA": [
+  {
+   "date": "2026-11-06",
+   "fv": 124.14,
+   "bear": 75.57,
+   "base": 133.66,
+   "bull": 173.21,
+   "price": 110.32,
+   "method": "fcff_re"
+  }
+ ],
+ "QLYS": [
+  {
+   "date": "2026-11-06",
+   "fv": 102.19,
+   "bear": 76.92,
+   "base": 105.64,
+   "bull": 131.46,
+   "price": 190.41,
+   "method": "fcff_re"
+  }
+ ],
+ "LAUR": [
+  {
+   "date": "2026-11-06",
+   "fv": 20.42,
+   "bear": 10.99,
+   "base": 22.15,
+   "bull": 30.25,
+   "price": 33.59,
+   "method": "fcff_re"
+  }
+ ],
+ "IDCC": [
+  {
+   "date": "2026-11-06",
+   "fv": 113.25,
+   "bear": 70.43,
+   "base": 112.23,
+   "bull": 180.03,
+   "price": 285.28,
+   "method": "fcff_re"
+  }
+ ],
+ "LMAT": [
+  {
+   "date": "2026-11-06",
+   "fv": 50.95,
+   "bear": 36.93,
+   "base": 52.95,
+   "bull": 66.98,
+   "price": 80.89,
+   "method": "fcff_re"
+  }
+ ],
+ "BOX": [
+  {
+   "date": "2026-11-06",
+   "fv": 9.88,
+   "bear": 4.42,
+   "base": 10.39,
+   "bull": 16.78,
+   "price": 41.95,
+   "method": "fcff_re"
+  }
+ ],
+ "ACIW": [
+  {
+   "date": "2026-11-06",
+   "fv": 29.22,
+   "bear": 16.09,
+   "base": 31.66,
+   "bull": 42.84,
+   "price": 60.02,
+   "method": "fcff_re"
+  }
  ]
 }

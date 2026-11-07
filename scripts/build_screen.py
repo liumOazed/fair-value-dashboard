@@ -107,8 +107,10 @@ if _fx:
             _raw_x.at[i, "sector"] = PROFILE[t][0]
             if not isinstance(_raw_x.at[i, "industry"], str) or not _raw_x.at[i, "industry"]: _raw_x.at[i, "industry"] = PROFILE[t][1]
     if len(_raw_x):
-        _all = score_v4(prep(pd.concat([pd.read_csv(by_month[cur_m]), _raw_x], ignore_index=True)))
-        EXTRA = _all.loc[[t for t in _raw_x.ticker.drop_duplicates()]].copy()
+        # one at a time: each extra is scored as the only stock added to the universe, so extras never move each other
+        _base = pd.read_csv(by_month[cur_m])
+        EXTRA = pd.concat([score_v4(prep(pd.concat([_base, _raw_x[_raw_x.ticker == t]], ignore_index=True))).loc[[t]]
+                           for t in _raw_x.ticker.drop_duplicates()])
         EXTRA["rank"] = [int((cur.score > s).sum()) + 1 for s in EXTRA.score]
         for t, r in EXTRA.iterrows():
             if isinstance(r.industry, str) and r.industry:
@@ -201,7 +203,7 @@ print("resilient compounders:", RESILIENT["picks"], f"({len(passed)} passed)")
 for r in rows:
     r["all_checks"] = bool(r["answers"]) and all(a["v"] == "yes" for a in r["answers"])
     r["checks_pick"] = r["all_checks"] and not r["top50"] and not r["resilient_pick"] and not r["outside_universe"]
-ALLCHECKS = dict(rule="yes to all 5 quick questions", passed=sum(r["all_checks"] for r in rows),
+ALLCHECKS = dict(rule="yes to all 5 quick questions", passed=sum(r["all_checks"] and not r["outside_universe"] for r in rows),
                  picks=[r["ticker"] for r in sorted((r for r in rows if r["checks_pick"]), key=lambda r: -r["score"])])
 print("all 5 checks:", ALLCHECKS["passed"], "passed;", len(ALLCHECKS["picks"]), "added:", ALLCHECKS["picks"])
 

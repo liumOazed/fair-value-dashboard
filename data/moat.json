@@ -398,6 +398,42 @@
   "DLTR": {
    "moat": "narrow",
    "reason": "Median ROIC 15% over 4 years (10-K figures in data/returns.json; one negative year from the Family Dollar write-downs), above the 9.0% required return by 3+ points but not 20%+ every year."
+  },
+  "INVA": {
+   "moat": "short",
+   "reason": "Royalty-led: the GSK inhaler royalties (Relvar/Breo, Anoro) fade as patents expire around the end of the decade, so base growth fades to 0% by year 10 and no advantage period is added, although ROIC is high today. Hand-set (the ROIC rule would give a longer edge)."
+  },
+  "CTRE": {
+   "moat": "none",
+   "reason": "REIT: ROIC about 9% (Russell 2000 screen), close to the 9.5% required return; growth comes from buying properties with new shares and debt."
+  },
+  "CVSA": {
+   "moat": "narrow",
+   "reason": "ROIC about 14% (Russell 2000 screen), above the 11% required return by 3+ points but under 20%. 4-year check from data/returns.json pending (no 10-K history in the facts file)."
+  },
+  "QLYS": {
+   "moat": "wide",
+   "reason": "ROIC far above 20% (98% in the Russell 2000 screen; tiny invested capital), at least 10 points above the 12% required return. 4-year check from data/returns.json pending."
+  },
+  "LAUR": {
+   "moat": "narrow",
+   "reason": "ROIC about 18% (Russell 2000 screen), above the 12% required return by 3+ points but not by 10."
+  },
+  "IDCC": {
+   "moat": "narrow",
+   "reason": "ROIC high (78% in the Russell 2000 screen) but swings with one-off catch-up licence payments, and renewals depend on litigation with a few large licensees, so the middle class. Hand-set."
+  },
+  "LMAT": {
+   "moat": "narrow",
+   "reason": "ROIC 28% now (Russell 2000 screen) but lower in earlier years while the tissue plant was built, so not 20%+ every year. 4-year check from data/returns.json pending."
+  },
+  "BOX": {
+   "moat": "narrow",
+   "reason": "ROIC not reliably measurable (invested capital is small: buybacks and accumulated losses), so the middle class by default. Check by hand."
+  },
+  "ACIW": {
+   "moat": "none",
+   "reason": "ROIC about 12% (Russell 2000 screen; acquisition goodwill), at the 12% required return, so less than 3 points above it."
   }
  }
 }

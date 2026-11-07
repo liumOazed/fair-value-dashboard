@@ -2871,6 +2871,279 @@
      "better": "up"
     }
    ]
+  },
+  "INVA": {
+   "name": "Innoviva",
+   "kpis": [
+    {
+     "id": "royalty_revenue",
+     "label": "GSK royalty revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "specialty_product_sales",
+     "label": "Specialty therapeutics net sales (Giapreza, Xerava, Zevtera)",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "specialty_sales_growth",
+     "label": "Specialty therapeutics sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "CTRE": {
+   "name": "CareTrust REIT",
+   "kpis": [
+    {
+     "id": "normalized_ffo_per_share",
+     "label": "Normalized FFO per share",
+     "unit": "usd",
+     "better": "up"
+    },
+    {
+     "id": "investments_closed",
+     "label": "New investments closed",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_ebitda",
+     "label": "Net debt ÷ annualised EBITDA",
+     "unit": "x",
+     "better": "down"
+    },
+    {
+     "id": "rent_coverage",
+     "label": "Tenant rent coverage (EBITDARM)",
+     "unit": "x",
+     "better": "up"
+    }
+   ]
+  },
+  "CVSA": {
+   "name": "Covista",
+   "kpis": [
+    {
+     "id": "total_enrollment_growth",
+     "label": "Total enrolment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "chamberlain_enrollment_growth",
+     "label": "Chamberlain enrolment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "walden_enrollment_growth",
+     "label": "Walden enrolment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "QLYS": {
+   "name": "Qualys",
+   "kpis": [
+    {
+     "id": "revenue_growth",
+     "label": "Revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_dollar_expansion",
+     "label": "Net dollar expansion rate",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_retention",
+     "label": "Gross dollar retention",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "customers_500k",
+     "label": "Customers spending $500K+ a year",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "LAUR": {
+   "name": "Laureate",
+   "kpis": [
+    {
+     "id": "new_enrollment_growth",
+     "label": "New enrolment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "total_enrollment_growth",
+     "label": "Total enrolment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "organic_cc_revenue_growth",
+     "label": "Revenue growth at constant currency",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "IDCC": {
+   "name": "InterDigital",
+   "kpis": [
+    {
+     "id": "recurring_revenue",
+     "label": "Recurring revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "annual_recurring_revenue",
+     "label": "Annual recurring revenue (ARR)",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "catch_up_revenue",
+     "label": "Catch-up revenue",
+     "unit": "usd_b",
+     "better": "none"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "LMAT": {
+   "name": "LeMaitre Vascular",
+   "kpis": [
+    {
+     "id": "organic_sales_growth",
+     "label": "Organic sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "sales_reps",
+     "label": "Sales representatives",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "BOX": {
+   "name": "Box",
+   "kpis": [
+    {
+     "id": "revenue_growth",
+     "label": "Revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_retention_rate",
+     "label": "Net retention rate",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "rpo_growth",
+     "label": "Remaining performance obligations growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_retention",
+     "label": "Full-year churn rate",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "non_gaap_operating_margin",
+     "label": "Non-GAAP operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ACIW": {
+   "name": "ACI Worldwide",
+   "kpis": [
+    {
+     "id": "arr_growth",
+     "label": "Annual recurring revenue (ARR) growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "new_bookings",
+     "label": "New bookings",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "biller_revenue_growth",
+     "label": "Biller segment revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
   }
  }
 }

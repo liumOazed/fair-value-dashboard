@@ -56,7 +56,14 @@
 "fair_value_picks": {
 "rule": "every stock with a fair value model that is not already on the list",
 "picks": [
+"CVSA",
+"INVA",
+"LAUR",
+"CTRE",
+"QLYS",
+"LMAT",
 "GOOGL",
+"IDCC",
 "KO",
 "MSFT",
 "BMY",
@@ -69,6 +76,7 @@
 "LLY",
 "PYPL",
 "AVGO",
+"BOX",
 "AAPL",
 "AMZN",
 "SHOP",
@@ -77,14 +85,24 @@
 "CRCL",
 "MCO",
 "HAS",
+"ACIW",
 "NDAQ",
 "FISV",
 "XYZ"
 ],
 "outside_universe": [
+"CVSA",
+"INVA",
+"LAUR",
+"CTRE",
+"QLYS",
+"LMAT",
+"IDCC",
 "ADYEY",
+"BOX",
 "SHOP",
 "CRCL",
+"ACIW",
 "FISV"
 ],
 "missing": []
@@ -254,6 +272,7 @@
 "Media & streaming",
 "Real estate",
 "Materials & commodities",
+"Education",
 "Index & commodities",
 "Cybersecurity",
 "Insurance",
@@ -1123,6 +1142,175 @@
 "fv_pick": false
 },
 {
+"ticker": "CVSA",
+"name": "Covista Inc.",
+"sector": "Consumer Defensive",
+"themes": [
+"Education"
+],
+"score": 78.9,
+"rank": 5,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 54.9,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 5,
+"score": 78.9,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 10.7,
+"gross_margin_pct": 57.39,
+"profit_margin_pct": 12.84,
+"roe_pct": 19.3,
+"pe": 14.26,
+"forward_pe": 11.18,
+"ev_ebitda": 9.4,
+"ps": 1.88,
+"fcf_yield_pct": 9.44,
+"market_cap": 3756512000.0,
+"implied_fcf_growth": 0.0064,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium: steady demand for nurses and doctors, offset by US student-aid rule risk.",
+"fcf_ni": 1.48,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 6.85,
+"earnings_yield_fwd": 8.95,
+"fcf_basis": "TTM",
+"roic_pct": 14.42,
+"net_debt_ebitda": 1.16,
+"interest_coverage": 9.81,
+"rev_cagr_pct": 10.44,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 50.87,
+"rev_growth_std": 1.7,
+"earnings_cv": 0.37,
+"fcf_cv": 0.3,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -7.0,
+"capex_ocf_pct": 16.52,
+"capex_fcf": 0.2,
+"tax_rate": 0.23,
+"beta": 0.66,
+"volatility_1y_pct": 43.21,
+"max_drawdown_1y_pct": -23.63,
+"nd_ebitda_then": 1.94,
+"margin_change_pts": 6.44,
+"fcf_cagr_pct": 33.27,
+"operating_margin_pct": 19.2,
+"fcf_ni_3y": 1.48,
+"fcf_ttm": 354646000.0,
+"ni_ttm": 257161000.0,
+"fcf_yield_yahoo_pct": 8.78,
+"enterprise_value": 4287878144.0,
+"fcff_ev_pct": 8.98,
+"fcf_ni_conversion": 1.56,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.833,
+"debt_weight": 0.167,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0466,
+"cost_debt_used": 0.0466,
+"tax": 0.225
+},
+"wacc": 0.0977,
+"roic_spread": 0.0465,
+"v3_source": "own",
+"score_prev": 78.1,
+"components": {
+"quality": 75.0,
+"growth": 80.0,
+"value": 91.0,
+"resilience": 71.0
+},
+"safety": 71.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Education & Training Services",
+"industry_rank": 1,
+"industry_n": 1,
+"pe_vs_market": -0.3885,
+"fpe_vs_market": -0.3724,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +10.7% year on year; +10.4% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 12.8%, ROIC 14% vs 9.8% cost of capital (+4.7 pts), EPS +50.9% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.48x net income over 3 years, FCF yield 9.4%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net debt 1.2x EBITDA, interest covered 9.8x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (1.9x \u2192 1.2x), net margin +6.4 pts, FCF growing 33% a year, share count falling 7.0% a year."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
+},
+{
 "ticker": "ADBE",
 "name": "Adobe Inc.",
 "sector": "Technology",
@@ -1465,6 +1653,177 @@
 "fv_pick": false
 },
 {
+"ticker": "INVA",
+"name": "Innoviva, Inc.",
+"sector": "Healthcare",
+"themes": [
+"Pharma & biotech"
+],
+"score": 74.8,
+"rank": 7,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 79.2,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 7,
+"score": 74.8,
+"est": false
+}
+],
+"flags": [
+"Cash swing"
+],
+"rev_growth_pct": 19.3,
+"gross_margin_pct": 72.67,
+"profit_margin_pct": 81.19,
+"roe_pct": 36.68,
+"pe": 8.19,
+"forward_pe": 8.71,
+"ev_ebitda": 6.59,
+"ps": 3.16,
+"fcf_yield_pct": 13.13,
+"market_cap": 1390003200.0,
+"implied_fcf_growth": -0.0421,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Healthcare rate (9%) plus the 2-point small-cap premium: steady royalty cash, but the GSK inhaler royalties end within the decade.",
+"fcf_ni": 1.08,
+"fcf_ni_basis": "3y",
+"cash_swing": true,
+"earnings_yield": 13.92,
+"earnings_yield_fwd": 11.49,
+"fcf_basis": "TTM",
+"roic_pct": 30.57,
+"net_debt_ebitda": -1.27,
+"interest_coverage": 20.57,
+"rev_cagr_pct": 7.47,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 11.67,
+"rev_growth_std": 10.1,
+"earnings_cv": 0.53,
+"fcf_cv": 0.13,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 2.56,
+"capex_ocf_pct": 5.33,
+"capex_fcf": 0.06,
+"tax_rate": 0.17,
+"beta": 0.37,
+"volatility_1y_pct": 25.95,
+"max_drawdown_1y_pct": -20.63,
+"nd_ebitda_then": 0.82,
+"margin_change_pts": 1.36,
+"fcf_cagr_pct": -2.58,
+"operating_margin_pct": 43.28,
+"fcf_ni_3y": 1.08,
+"fcf_ttm": 182510000.0,
+"ni_ttm": 193440000.0,
+"fcf_yield_yahoo_pct": 7.94,
+"enterprise_value": 1288121984.0,
+"fcff_ev_pct": 15.24,
+"fcf_ni_conversion": 0.69,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.808,
+"debt_weight": 0.192,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0464,
+"cost_debt_used": 0.0464,
+"tax": 0.17
+},
+"wacc": 0.0962,
+"roic_spread": 0.2095,
+"v3_source": "own",
+"score_prev": 81.3,
+"components": {
+"quality": 84.0,
+"growth": 55.0,
+"value": 97.0,
+"resilience": 70.0
+},
+"safety": 70.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Biotechnology",
+"industry_rank": 1,
+"industry_n": 6,
+"pe_vs_market": -0.649,
+"fpe_vs_market": -0.5111,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +19.3% year on year; +7.5% a year over 3 years."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 81.2%, ROIC 31% vs 9.6% cost of capital (+20.9 pts), EPS +11.7% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.08x net income over 3 years, FCF yield 13.1%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, interest covered 20.6x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (0.8x \u2192 -1.3x), net margin +1.4 pts, growth accelerating. Worse: share count rising 2.6% a year."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
+},
+{
 "ticker": "RDDT",
 "name": "Reddit, Inc.",
 "sector": "Communication Services",
@@ -1637,6 +1996,175 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "LAUR",
+"name": "Laureate Education, Inc.",
+"sector": "Consumer Defensive",
+"themes": [
+"Education"
+],
+"score": 73.3,
+"rank": 8,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 64.2,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 8,
+"score": 73.3,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 21.2,
+"gross_margin_pct": 37.68,
+"profit_margin_pct": 20.28,
+"roe_pct": 34.08,
+"pe": 12.33,
+"forward_pe": 13.21,
+"ev_ebitda": 8.74,
+"ps": 2.36,
+"fcf_yield_pct": 6.36,
+"market_cap": 4518980608.0,
+"implied_fcf_growth": 0.0799,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.12,
+"required_return_source": "stock",
+"required_return_reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium, plus 1 point for Mexican and Peruvian currency and politics.",
+"fcf_ni": 0.9,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 8.59,
+"earnings_yield_fwd": 7.57,
+"fcf_basis": "TTM",
+"roic_pct": 18.25,
+"net_debt_ebitda": 1.01,
+"interest_coverage": 38.61,
+"rev_cagr_pct": 11.06,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 66.43,
+"rev_growth_std": 5.98,
+"earnings_cv": 0.54,
+"fcf_cv": 0.27,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -3.08,
+"capex_ocf_pct": 28.14,
+"capex_fcf": 0.39,
+"tax_rate": 0.29,
+"beta": 0.44,
+"volatility_1y_pct": 31.91,
+"max_drawdown_1y_pct": -17.89,
+"nd_ebitda_then": 1.6,
+"margin_change_pts": 10.95,
+"fcf_cagr_pct": 28.0,
+"operating_margin_pct": 24.56,
+"fcf_ni_3y": 0.9,
+"fcf_ttm": 287598000.0,
+"ni_ttm": 388281000.0,
+"fcf_yield_yahoo_pct": 7.4,
+"enterprise_value": 5112369664.0,
+"fcff_ev_pct": 5.77,
+"fcf_ni_conversion": 0.93,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.852,
+"debt_weight": 0.148,
+"cost_equity": 0.12,
+"cost_debt_raw": 0.0226,
+"cost_debt_used": 0.0226,
+"tax": 0.293
+},
+"wacc": 0.1046,
+"roic_spread": 0.0779,
+"v3_source": "own",
+"score_prev": 74.8,
+"components": {
+"quality": 66.0,
+"growth": 74.0,
+"value": 80.0,
+"resilience": 77.0
+},
+"safety": 77.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Education & Training Services",
+"industry_rank": 1,
+"industry_n": 1,
+"pe_vs_market": -0.4713,
+"fpe_vs_market": -0.2582,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +21.2% year on year; +11.1% a year over 3 years."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 20.3%, ROIC 18% vs 10.5% cost of capital (+7.8 pts), EPS +66.4% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 0.90x net income over 3 years, FCF yield 6.4%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net debt 1.0x EBITDA, interest covered 38.6x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (1.6x \u2192 1.0x), net margin +10.9 pts, FCF growing 28% a year, share count falling 3.1% a year, growth accelerating."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "MU",
@@ -2491,6 +3019,179 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "CTRE",
+"name": "CareTrust REIT, Inc.",
+"sector": "Real Estate",
+"themes": [
+"Real estate"
+],
+"score": 71.6,
+"rank": 12,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 72.8,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 12,
+"score": 71.6,
+"est": false
+}
+],
+"flags": [
+"Diluting"
+],
+"rev_growth_pct": 43.5,
+"gross_margin_pct": 96.36,
+"profit_margin_pct": 62.19,
+"roe_pct": 9.06,
+"pe": 23.24,
+"forward_pe": 19.8,
+"ev_ebitda": 20.55,
+"ps": 15.37,
+"fcf_yield_pct": 4.91,
+"market_cap": 8785381376.0,
+"implied_fcf_growth": 0.0695,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.095,
+"required_return_source": "stock",
+"required_return_reason": "Real Estate rate (7.5%) plus the 2-point small-cap premium: long leases, but tenants are thin-margin nursing operators paid by Medicaid and Medicare.",
+"fcf_ni": 1.52,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 4.04,
+"earnings_yield_fwd": 5.05,
+"fcf_basis": "TTM",
+"roic_pct": 9.24,
+"net_debt_ebitda": 2.39,
+"interest_coverage": 8.44,
+"rev_cagr_pct": 25.36,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": null,
+"rev_growth_std": 24.52,
+"earnings_cv": 1.0,
+"fcf_cv": 0.44,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 31.03,
+"capex_ocf_pct": 3.8,
+"capex_fcf": 0.04,
+"tax_rate": 0.02,
+"beta": 0.79,
+"volatility_1y_pct": 25.1,
+"max_drawdown_1y_pct": -17.45,
+"nd_ebitda_then": 9.69,
+"margin_change_pts": 90.77,
+"fcf_cagr_pct": 40.34,
+"operating_margin_pct": 64.86,
+"fcf_ni_3y": 1.52,
+"fcf_ttm": 431350000.0,
+"ni_ttm": 354825000.0,
+"fcf_yield_yahoo_pct": -0.91,
+"enterprise_value": 9964722176.0,
+"fcff_ev_pct": 4.76,
+"fcf_ni_conversion": 1.18,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.879,
+"debt_weight": 0.121,
+"cost_equity": 0.095,
+"cost_debt_raw": 0.0677,
+"cost_debt_used": 0.0677,
+"tax": 0.015
+},
+"wacc": 0.0916,
+"roic_spread": 0.0008,
+"v3_source": "own",
+"score_prev": 70.0,
+"components": {
+"quality": 90.0,
+"growth": 63.0,
+"value": 63.0,
+"resilience": 65.0
+},
+"safety": 65.0,
+"risk_level": "High",
+"risk_serious": [
+"Shares up 31.0% a year (> 5%)"
+],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "REIT - Healthcare Facilities",
+"industry_rank": 1,
+"industry_n": 4,
+"pe_vs_market": -0.0036,
+"fpe_vs_market": 0.112,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +43.5% year on year; +25.4% a year over 3 years, uneven (\u00b125 pts a year)."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 62.2%, ROIC 9% vs 9.2% cost of capital (+0.1 pts)."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.52x net income over 3 years, FCF yield 4.9%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net debt 2.4x EBITDA, interest covered 8.4x (Real Estate limits are higher by design)."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (9.7x \u2192 2.4x), net margin +90.8 pts, FCF growing 40% a year, growth accelerating. Worse: share count rising 31.0% a year."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "VICI",
@@ -4881,6 +5582,176 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "QLYS",
+"name": "Qualys, Inc.",
+"sector": "Technology",
+"themes": [
+"Software",
+"Cybersecurity"
+],
+"score": 67.1,
+"rank": 27,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 54.3,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 27,
+"score": 67.1,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 11.0,
+"gross_margin_pct": 83.42,
+"profit_margin_pct": 29.38,
+"roe_pct": 38.59,
+"pe": 34.6,
+"forward_pe": 23.56,
+"ev_ebitda": 25.66,
+"ps": 10.0,
+"fcf_yield_pct": 4.47,
+"market_cap": 7030371328.0,
+"implied_fcf_growth": 0.1305,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.12,
+"required_return_source": "stock",
+"required_return_reason": "Technology rate (10.5%) less half a point for recurring subscriptions, net cash and low beta (~0.5), plus the 2-point small-cap premium.",
+"fcf_ni": 1.47,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 2.94,
+"earnings_yield_fwd": 4.24,
+"fcf_basis": "TTM",
+"roic_pct": 98.32,
+"net_debt_ebitda": -1.46,
+"interest_coverage": 999.0,
+"rev_cagr_pct": 10.96,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 25.68,
+"rev_growth_std": 1.6,
+"earnings_cv": 0.21,
+"fcf_cv": 0.19,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -1.48,
+"capex_ocf_pct": 1.61,
+"capex_fcf": 0.02,
+"tax_rate": 0.2,
+"beta": 0.54,
+"volatility_1y_pct": 55.13,
+"max_drawdown_1y_pct": -50.46,
+"nd_ebitda_then": -1.69,
+"margin_change_pts": 7.59,
+"fcf_cagr_pct": 20.29,
+"operating_margin_pct": 33.98,
+"fcf_ni_3y": 1.47,
+"fcf_ttm": 313957000.0,
+"ni_ttm": 206544000.0,
+"fcf_yield_yahoo_pct": 3.48,
+"enterprise_value": 6533304832.0,
+"fcff_ev_pct": 4.81,
+"fcf_ni_conversion": 1.53,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.992,
+"debt_weight": 0.008,
+"cost_equity": 0.12,
+"cost_debt_raw": 0.0,
+"cost_debt_used": 0.02,
+"tax": 0.197
+},
+"wacc": 0.1192,
+"roic_spread": 0.864,
+"v3_source": "own",
+"score_prev": 62.4,
+"components": {
+"quality": 85.0,
+"growth": 60.0,
+"value": 41.0,
+"resilience": 77.0
+},
+"safety": 77.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Software - Infrastructure",
+"industry_rank": 1,
+"industry_n": 17,
+"pe_vs_market": 0.4834,
+"fpe_vs_market": 0.3229,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +11.0% year on year; +11.0% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 29.4%, ROIC 98% vs 11.9% cost of capital (+86.4 pts), EPS +25.7% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.47x net income over 3 years, FCF yield 4.5%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, no meaningful interest."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: net margin +7.6 pts, FCF growing 20% a year, share count falling 1.5% a year."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "MNST",
@@ -8984,6 +9855,175 @@
 "fv_pick": false
 },
 {
+"ticker": "LMAT",
+"name": "LeMaitre Vascular, Inc.",
+"sector": "Healthcare",
+"themes": [
+"Medical devices & diagnostics"
+],
+"score": 63.3,
+"rank": 51,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 46.5,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 51,
+"score": 63.3,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 9.6,
+"gross_margin_pct": 71.87,
+"profit_margin_pct": 25.02,
+"roe_pct": 16.77,
+"pe": 30.36,
+"forward_pe": 26.27,
+"ev_ebitda": 21.98,
+"ps": 7.28,
+"fcf_yield_pct": 3.51,
+"market_cap": 1909354112.0,
+"implied_fcf_growth": 0.1456,
+"implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Healthcare rate (9%) plus the 2-point small-cap premium: niche vascular devices with steady demand, net cash.",
+"fcf_ni": 1.07,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 3.32,
+"earnings_yield_fwd": 3.81,
+"fcf_basis": "TTM",
+"roic_pct": 27.59,
+"net_debt_ebitda": -2.24,
+"interest_coverage": 15.5,
+"rev_cagr_pct": 15.58,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 39.41,
+"rev_growth_std": 2.88,
+"earnings_cv": 0.37,
+"fcf_cv": 0.49,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 1.02,
+"capex_ocf_pct": 8.35,
+"capex_fcf": 0.09,
+"tax_rate": 0.23,
+"beta": 0.49,
+"volatility_1y_pct": 47.35,
+"max_drawdown_1y_pct": -32.54,
+"nd_ebitda_then": -1.79,
+"margin_change_pts": 10.36,
+"fcf_cagr_pct": 49.81,
+"operating_margin_pct": 28.98,
+"fcf_ni_3y": 1.07,
+"fcf_ttm": 66999000.0,
+"ni_ttm": 63335000.0,
+"fcf_yield_yahoo_pct": 2.58,
+"enterprise_value": 1824679040.0,
+"fcff_ev_pct": 3.89,
+"fcf_ni_conversion": 1.29,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.909,
+"debt_weight": 0.091,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0279,
+"cost_debt_used": 0.0279,
+"tax": 0.232
+},
+"wacc": 0.102,
+"roic_spread": 0.1739,
+"v3_source": "own",
+"score_prev": 58.6,
+"components": {
+"quality": 78.0,
+"growth": 71.0,
+"value": 33.0,
+"resilience": 61.0
+},
+"safety": 61.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Medical Instruments & Supplies",
+"industry_rank": 3,
+"industry_n": 9,
+"pe_vs_market": 0.3017,
+"fpe_vs_market": 0.4749,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +9.6% year on year; +15.6% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 25.0%, ROIC 28% vs 10.2% cost of capital (+17.4 pts), EPS +39.4% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.07x net income over 3 years, FCF yield 3.5%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, interest covered 15.5x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (-1.8x \u2192 -2.2x), net margin +10.4 pts, FCF growing 50% a year. Worse: growth slowing."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
+},
+{
 "ticker": "GOOGL",
 "name": "Alphabet Inc.",
 "sector": "Communication Services",
@@ -9321,6 +10361,177 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "IDCC",
+"name": "InterDigital, Inc.",
+"sector": "Technology",
+"themes": [
+"Software"
+],
+"score": 62.6,
+"rank": 53,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 61.9,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 53,
+"score": 62.6,
+"est": false
+}
+],
+"flags": [
+"Cash swing"
+],
+"rev_growth_pct": 17.5,
+"gross_margin_pct": 82.54,
+"profit_margin_pct": 38.53,
+"roe_pct": 26.82,
+"pe": 31.91,
+"forward_pe": 28.37,
+"ev_ebitda": 14.68,
+"ps": 9.03,
+"fcf_yield_pct": 3.41,
+"market_cap": 7379076608.0,
+"implied_fcf_growth": 0.1784,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.125,
+"required_return_source": "stock",
+"required_return_reason": "Technology rate (10.5%) plus the 2-point small-cap premium: licence income depends on renewals and litigation with a few large phone makers (beta ~1.5).",
+"fcf_ni": 0.87,
+"fcf_ni_basis": "3y",
+"cash_swing": true,
+"earnings_yield": 4.27,
+"earnings_yield_fwd": 3.52,
+"fcf_basis": "TTM",
+"roic_pct": 77.74,
+"net_debt_ebitda": -1.8,
+"interest_coverage": 12.75,
+"rev_cagr_pct": 22.13,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 56.64,
+"rev_growth_std": 25.53,
+"earnings_cv": 0.46,
+"fcf_cv": 0.43,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -4.69,
+"capex_ocf_pct": 12.95,
+"capex_fcf": 0.15,
+"tax_rate": 0.13,
+"beta": 1.49,
+"volatility_1y_pct": 47.25,
+"max_drawdown_1y_pct": -33.85,
+"nd_ebitda_then": -2.55,
+"margin_change_pts": 28.29,
+"fcf_cagr_pct": 24.89,
+"operating_margin_pct": 51.37,
+"fcf_ni_3y": 0.87,
+"fcf_ttm": 251955000.0,
+"ni_ttm": 314901000.0,
+"fcf_yield_yahoo_pct": 5.08,
+"enterprise_value": 6574914560.0,
+"fcff_ev_pct": 4.36,
+"fcf_ni_conversion": 1.17,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.959,
+"debt_weight": 0.041,
+"cost_equity": 0.125,
+"cost_debt_raw": 0.0819,
+"cost_debt_used": 0.0819,
+"tax": 0.134
+},
+"wacc": 0.1228,
+"roic_spread": 0.6546,
+"v3_source": "own",
+"score_prev": 62.2,
+"components": {
+"quality": 77.0,
+"growth": 57.0,
+"value": 48.0,
+"resilience": 64.0
+},
+"safety": 64.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Software - Application",
+"industry_rank": 5,
+"industry_n": 16,
+"pe_vs_market": 0.3681,
+"fpe_vs_market": 0.593,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +17.5% year on year; +22.1% a year over 3 years, uneven (\u00b126 pts a year)."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 38.5%, ROIC 78% vs 12.3% cost of capital (+65.5 pts), EPS +56.6% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 0.87x net income over 3 years, FCF yield 3.4%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, interest covered 12.8x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: net margin +28.3 pts, FCF growing 25% a year, share count falling 4.7% a year. Worse: leverage up (-2.5x \u2192 -1.8x)."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "ALLE",
@@ -16292,177 +17503,6 @@
 "fv_pick": false
 },
 {
-"ticker": "ADYEY",
-"name": "Adyen N.V.",
-"sector": "Technology",
-"themes": [
-"Payments"
-],
-"score": 59.5,
-"rank": 93,
-"prev_score": null,
-"prev_rank": null,
-"rank_change": null,
-"old_score": 60.1,
-"consistent": false,
-"months_in_top50": 0,
-"top50": false,
-"history": [
-{
-"m": "2026-07",
-"rank": null,
-"score": null,
-"est": false
-},
-{
-"m": "2026-08",
-"rank": null,
-"score": null,
-"est": true
-},
-{
-"m": "2026-09",
-"rank": null,
-"score": null,
-"est": true
-},
-{
-"m": "2026-10",
-"rank": null,
-"score": null,
-"est": false
-},
-{
-"m": "2026-11",
-"rank": 93,
-"score": 59.5,
-"est": false
-}
-],
-"flags": [
-"Cash swing"
-],
-"rev_growth_pct": 18.9,
-"gross_margin_pct": 68.54,
-"profit_margin_pct": 43.55,
-"roe_pct": 21.27,
-"pe": 23.62,
-"forward_pe": 19.58,
-"ev_ebitda": 14.97,
-"ps": 12.12,
-"fcf_yield_pct": 2.89,
-"market_cap": 31314143232.0,
-"implied_fcf_growth": 0.1516,
-"implied_tag": "In line",
-"implied_basis": "fcf",
-"required_return": 0.1,
-"required_return_source": "stock",
-"required_return_reason": "High-quality global acquirer with net cash, but growth swings with large merchants; euro-reported (FX risk for USD holders).",
-"fcf_ni": 1.6,
-"fcf_ni_basis": "3y",
-"cash_swing": true,
-"earnings_yield": 4.23,
-"earnings_yield_fwd": 5.11,
-"fcf_basis": "FY",
-"roic_pct": null,
-"net_debt_ebitda": -9.29,
-"interest_coverage": 71.76,
-"rev_cagr_pct": -33.34,
-"rev_cagr_years": 3.0,
-"eps_cagr_pct": 22.75,
-"rev_growth_std": 46.35,
-"earnings_cv": 0.24,
-"fcf_cv": 0.25,
-"fcf_neg_years": 0.0,
-"fcf_years": 4.0,
-"share_change_pct_yr": 0.59,
-"capex_ocf_pct": 12.21,
-"capex_fcf": 0.14,
-"tax_rate": 0.24,
-"beta": 1.91,
-"volatility_1y_pct": 50.22,
-"max_drawdown_1y_pct": -47.22,
-"nd_ebitda_then": -7.86,
-"margin_change_pts": 33.83,
-"fcf_cagr_pct": -22.21,
-"operating_margin_pct": 43.62,
-"fcf_ni_3y": 1.6,
-"fcf_ttm": null,
-"ni_ttm": null,
-"fcf_yield_yahoo_pct": -1.71,
-"enterprise_value": 19320313856.0,
-"fcff_ev_pct": 4.76,
-"fcf_ni_conversion": 0.85,
-"roic_basis": "operating",
-"share_jump": false,
-"wacc_detail": {
-"equity_weight": 0.987,
-"debt_weight": 0.013,
-"cost_equity": 0.1,
-"cost_debt_raw": 0.082,
-"cost_debt_used": 0.082,
-"tax": 0.238
-},
-"wacc": 0.0995,
-"roic_spread": null,
-"v3_source": "own",
-"score_prev": 52.8,
-"components": {
-"quality": 77.0,
-"growth": 35.0,
-"value": 54.0,
-"resilience": 75.0
-},
-"safety": 75.0,
-"risk_level": "Normal",
-"risk_serious": [],
-"risk_warn": [],
-"data_confidence": "Medium",
-"distress_cap": false,
-"industry": "Software - Infrastructure",
-"industry_rank": 6,
-"industry_n": 17,
-"pe_vs_market": 0.0127,
-"fpe_vs_market": 0.0997,
-"peer_group": null,
-"has_fair_value": true,
-"outside_universe": true,
-"answers": [
-{
-"q": "Is revenue growing?",
-"v": "partly",
-"t": "Latest quarter +18.9% year on year; -33.3% a year over 3 years, uneven (\u00b146 pts a year). Far above its own 3-year trend, so likely an acquisition or one-off."
-},
-{
-"q": "Are profits healthy?",
-"v": "yes",
-"t": "Net margin 43.5%, EPS +22.8% a year."
-},
-{
-"q": "Is cash flow strong?",
-"v": "yes",
-"t": "FCF positive in 4 of 4 years, 1.60x net income over 3 years, FCF yield 2.9%."
-},
-{
-"q": "Is debt manageable?",
-"v": "yes",
-"t": "Net cash, interest covered 71.8x."
-},
-{
-"q": "Is the financial position improving?",
-"v": "yes",
-"t": "Better: leverage down (-7.9x \u2192 -9.3x), net margin +33.8 pts, growth accelerating. Worse: FCF shrinking 22% a year."
-}
-],
-"checks_score": 4,
-"resilient_pick": false,
-"resilient_rank": null,
-"all_checks": false,
-"checks_pick": false,
-"sector_pick": null,
-"fv_pick": true
-},
-{
 "ticker": "DASH",
 "name": "DoorDash, Inc.",
 "sector": "Consumer Cyclical",
@@ -17139,6 +18179,177 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "ADYEY",
+"name": "Adyen N.V.",
+"sector": "Technology",
+"themes": [
+"Payments"
+],
+"score": 59.3,
+"rank": 98,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 60.1,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 98,
+"score": 59.3,
+"est": false
+}
+],
+"flags": [
+"Cash swing"
+],
+"rev_growth_pct": 18.9,
+"gross_margin_pct": 68.54,
+"profit_margin_pct": 43.55,
+"roe_pct": 21.27,
+"pe": 23.62,
+"forward_pe": 19.58,
+"ev_ebitda": 14.97,
+"ps": 12.12,
+"fcf_yield_pct": 2.89,
+"market_cap": 31314143232.0,
+"implied_fcf_growth": 0.1516,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "High-quality global acquirer with net cash, but growth swings with large merchants; euro-reported (FX risk for USD holders).",
+"fcf_ni": 1.6,
+"fcf_ni_basis": "3y",
+"cash_swing": true,
+"earnings_yield": 4.23,
+"earnings_yield_fwd": 5.11,
+"fcf_basis": "FY",
+"roic_pct": null,
+"net_debt_ebitda": -9.29,
+"interest_coverage": 71.76,
+"rev_cagr_pct": -33.34,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 22.75,
+"rev_growth_std": 46.35,
+"earnings_cv": 0.24,
+"fcf_cv": 0.25,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 0.59,
+"capex_ocf_pct": 12.21,
+"capex_fcf": 0.14,
+"tax_rate": 0.24,
+"beta": 1.91,
+"volatility_1y_pct": 50.22,
+"max_drawdown_1y_pct": -47.22,
+"nd_ebitda_then": -7.86,
+"margin_change_pts": 33.83,
+"fcf_cagr_pct": -22.21,
+"operating_margin_pct": 43.62,
+"fcf_ni_3y": 1.6,
+"fcf_ttm": null,
+"ni_ttm": null,
+"fcf_yield_yahoo_pct": -1.71,
+"enterprise_value": 19320313856.0,
+"fcff_ev_pct": 4.76,
+"fcf_ni_conversion": 0.85,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.987,
+"debt_weight": 0.013,
+"cost_equity": 0.1,
+"cost_debt_raw": 0.082,
+"cost_debt_used": 0.082,
+"tax": 0.238
+},
+"wacc": 0.0995,
+"roic_spread": null,
+"v3_source": "own",
+"score_prev": 52.5,
+"components": {
+"quality": 77.0,
+"growth": 35.0,
+"value": 54.0,
+"resilience": 75.0
+},
+"safety": 75.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "Medium",
+"distress_cap": false,
+"industry": "Software - Infrastructure",
+"industry_rank": 6,
+"industry_n": 17,
+"pe_vs_market": 0.0127,
+"fpe_vs_market": 0.0997,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter +18.9% year on year; -33.3% a year over 3 years, uneven (\u00b146 pts a year). Far above its own 3-year trend, so likely an acquisition or one-off."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 43.5%, EPS +22.8% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.60x net income over 3 years, FCF yield 2.9%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, interest covered 71.8x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (-7.9x \u2192 -9.3x), net margin +33.8 pts, growth accelerating. Worse: FCF shrinking 22% a year."
+}
+],
+"checks_score": 4,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "FOX",
@@ -31893,6 +33104,177 @@
 "fv_pick": false
 },
 {
+"ticker": "BOX",
+"name": "Box, Inc.",
+"sector": "Technology",
+"themes": [
+"Software"
+],
+"score": 54.2,
+"rank": 185,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 46.5,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 185,
+"score": 54.2,
+"est": false
+}
+],
+"flags": [
+"Cash swing"
+],
+"rev_growth_pct": 9.2,
+"gross_margin_pct": 79.55,
+"profit_margin_pct": 10.59,
+"roe_pct": 70.23,
+"pe": 63.12,
+"forward_pe": 25.05,
+"ev_ebitda": 49.94,
+"ps": 4.84,
+"fcf_yield_pct": 5.85,
+"market_cap": 5975093248.0,
+"implied_fcf_growth": 0.092,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.12,
+"required_return_source": "stock",
+"required_return_reason": "Technology rate (10.5%) less half a point for recurring subscriptions and low beta (~0.6), plus the 2-point small-cap premium.",
+"fcf_ni": 1.87,
+"fcf_ni_basis": "3y",
+"cash_swing": true,
+"earnings_yield": 1.68,
+"earnings_yield_fwd": 3.99,
+"fcf_basis": "TTM",
+"roic_pct": 28.92,
+"net_debt_ebitda": 0.84,
+"interest_coverage": 10.23,
+"rev_cagr_pct": 5.91,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 113.02,
+"rev_growth_std": 1.47,
+"earnings_cv": 0.6,
+"fcf_cv": 0.04,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -0.79,
+"capex_ocf_pct": 11.57,
+"capex_fcf": 0.13,
+"tax_rate": 0.35,
+"beta": 0.64,
+"volatility_1y_pct": 38.19,
+"max_drawdown_1y_pct": -33.59,
+"nd_ebitda_then": 0.7,
+"margin_change_pts": 7.1,
+"fcf_cagr_pct": 3.92,
+"operating_margin_pct": 10.16,
+"fcf_ni_3y": 1.87,
+"fcf_ttm": 349663000.0,
+"ni_ttm": 100485000.0,
+"fcf_yield_yahoo_pct": 6.33,
+"enterprise_value": 6583521792.0,
+"fcff_ev_pct": 5.42,
+"fcf_ni_conversion": 2.73,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.915,
+"debt_weight": 0.085,
+"cost_equity": 0.12,
+"cost_debt_raw": 0.0171,
+"cost_debt_used": 0.02,
+"tax": 0.35
+},
+"wacc": 0.1109,
+"roic_spread": 0.1783,
+"v3_source": "own",
+"score_prev": 53.9,
+"components": {
+"quality": 71.0,
+"growth": 51.0,
+"value": 36.0,
+"resilience": 53.0
+},
+"safety": 53.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Software - Infrastructure",
+"industry_rank": 10,
+"industry_n": 17,
+"pe_vs_market": 1.7062,
+"fpe_vs_market": 0.4064,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +9.2% year on year; +5.9% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 10.6%, ROIC 29% vs 11.1% cost of capital (+17.8 pts), EPS +113.0% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.87x net income over 3 years, FCF yield 5.8%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net debt 0.8x EBITDA, interest covered 10.2x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: net margin +7.1 pts, share count falling 0.8% a year."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
+},
+{
 "ticker": "BBY",
 "name": "Best Buy Co., Inc.",
 "sector": "Consumer Cyclical",
@@ -41584,6 +42966,177 @@
 "fv_pick": false
 },
 {
+"ticker": "SHOP",
+"name": "Shopify Inc.",
+"sector": "Technology",
+"themes": [
+"Payments"
+],
+"score": 51.1,
+"rank": 241,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 46.1,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 241,
+"score": 51.1,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 31.6,
+"gross_margin_pct": 47.49,
+"profit_margin_pct": 15.01,
+"roe_pct": 16.83,
+"pe": 91.36,
+"forward_pe": 60.69,
+"ev_ebitda": 72.27,
+"ps": 13.52,
+"fcf_yield_pct": 1.34,
+"market_cap": 191575998464.0,
+"implied_fcf_growth": 0.2814,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Fast-growing commerce platform priced for continued high growth; very volatile shares (beta ~2.6).",
+"fcf_ni": 1.33,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 1.11,
+"earnings_yield_fwd": 1.65,
+"fcf_basis": "TTM",
+"roic_pct": 19.87,
+"net_debt_ebitda": -1.75,
+"interest_coverage": 1639.13,
+"rev_cagr_pct": 27.31,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": null,
+"rev_growth_std": 1.99,
+"earnings_cv": null,
+"fcf_cv": 0.77,
+"fcf_neg_years": 1.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 0.75,
+"capex_ocf_pct": 1.28,
+"capex_fcf": 0.01,
+"tax_rate": 0.18,
+"beta": 2.66,
+"volatility_1y_pct": 59.93,
+"max_drawdown_1y_pct": -44.16,
+"nd_ebitda_then": null,
+"margin_change_pts": 72.44,
+"fcf_cagr_pct": null,
+"operating_margin_pct": 18.39,
+"fcf_ni_3y": 1.33,
+"fcf_ttm": 2562000000.0,
+"ni_ttm": 2126000000.0,
+"fcf_yield_yahoo_pct": 0.86,
+"enterprise_value": 187036991488.0,
+"fcff_ev_pct": 1.37,
+"fcf_ni_conversion": 1.63,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.999,
+"debt_weight": 0.001,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0018,
+"cost_debt_used": 0.02,
+"tax": 0.184
+},
+"wacc": 0.1099,
+"roic_spread": 0.0888,
+"v3_source": "own",
+"score_prev": 42.2,
+"components": {
+"quality": 46.0,
+"growth": 78.0,
+"value": 9.0,
+"resilience": 61.0
+},
+"safety": 61.0,
+"risk_level": "Elevated",
+"risk_serious": [],
+"risk_warn": [
+"Negative FCF in 1 of 4 years"
+],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Software - Application",
+"industry_rank": 12,
+"industry_n": 16,
+"pe_vs_market": 2.9171,
+"fpe_vs_market": 2.4077,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +31.6% year on year; +27.3% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 15.0%, ROIC 20% vs 11.0% cost of capital (+8.9 pts)."
+},
+{
+"q": "Is cash flow strong?",
+"v": "partly",
+"t": "FCF positive in 3 of 4 years, 1.33x net income over 3 years, FCF yield 1.3%, uneven from year to year."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, no meaningful interest."
+},
+{
+"q": "Is the financial position improving?",
+"v": "na",
+"t": "Not enough history to judge the trend."
+}
+],
+"checks_score": 3,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
+},
+{
 "ticker": "DRI",
 "name": "Darden Restaurants, Inc.",
 "sector": "Consumer Cyclical",
@@ -42087,177 +43640,6 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
-},
-{
-"ticker": "SHOP",
-"name": "Shopify Inc.",
-"sector": "Technology",
-"themes": [
-"Payments"
-],
-"score": 50.9,
-"rank": 245,
-"prev_score": null,
-"prev_rank": null,
-"rank_change": null,
-"old_score": 46.1,
-"consistent": false,
-"months_in_top50": 0,
-"top50": false,
-"history": [
-{
-"m": "2026-07",
-"rank": null,
-"score": null,
-"est": false
-},
-{
-"m": "2026-08",
-"rank": null,
-"score": null,
-"est": true
-},
-{
-"m": "2026-09",
-"rank": null,
-"score": null,
-"est": true
-},
-{
-"m": "2026-10",
-"rank": null,
-"score": null,
-"est": false
-},
-{
-"m": "2026-11",
-"rank": 245,
-"score": 50.9,
-"est": false
-}
-],
-"flags": [],
-"rev_growth_pct": 31.6,
-"gross_margin_pct": 47.49,
-"profit_margin_pct": 15.01,
-"roe_pct": 16.83,
-"pe": 91.36,
-"forward_pe": 60.69,
-"ev_ebitda": 72.27,
-"ps": 13.52,
-"fcf_yield_pct": 1.34,
-"market_cap": 191575998464.0,
-"implied_fcf_growth": 0.2814,
-"implied_tag": "In line",
-"implied_basis": "fcf",
-"required_return": 0.11,
-"required_return_source": "stock",
-"required_return_reason": "Fast-growing commerce platform priced for continued high growth; very volatile shares (beta ~2.6).",
-"fcf_ni": 1.33,
-"fcf_ni_basis": "3y",
-"cash_swing": false,
-"earnings_yield": 1.11,
-"earnings_yield_fwd": 1.65,
-"fcf_basis": "TTM",
-"roic_pct": 19.87,
-"net_debt_ebitda": -1.75,
-"interest_coverage": 1639.13,
-"rev_cagr_pct": 27.31,
-"rev_cagr_years": 3.0,
-"eps_cagr_pct": null,
-"rev_growth_std": 1.99,
-"earnings_cv": null,
-"fcf_cv": 0.77,
-"fcf_neg_years": 1.0,
-"fcf_years": 4.0,
-"share_change_pct_yr": 0.75,
-"capex_ocf_pct": 1.28,
-"capex_fcf": 0.01,
-"tax_rate": 0.18,
-"beta": 2.66,
-"volatility_1y_pct": 59.93,
-"max_drawdown_1y_pct": -44.16,
-"nd_ebitda_then": null,
-"margin_change_pts": 72.44,
-"fcf_cagr_pct": null,
-"operating_margin_pct": 18.39,
-"fcf_ni_3y": 1.33,
-"fcf_ttm": 2562000000.0,
-"ni_ttm": 2126000000.0,
-"fcf_yield_yahoo_pct": 0.86,
-"enterprise_value": 187036991488.0,
-"fcff_ev_pct": 1.37,
-"fcf_ni_conversion": 1.63,
-"roic_basis": "operating",
-"share_jump": false,
-"wacc_detail": {
-"equity_weight": 0.999,
-"debt_weight": 0.001,
-"cost_equity": 0.11,
-"cost_debt_raw": 0.0018,
-"cost_debt_used": 0.02,
-"tax": 0.184
-},
-"wacc": 0.1099,
-"roic_spread": 0.0888,
-"v3_source": "own",
-"score_prev": 42.1,
-"components": {
-"quality": 45.0,
-"growth": 79.0,
-"value": 9.0,
-"resilience": 60.0
-},
-"safety": 60.0,
-"risk_level": "Elevated",
-"risk_serious": [],
-"risk_warn": [
-"Negative FCF in 1 of 4 years"
-],
-"data_confidence": "High",
-"distress_cap": false,
-"industry": "Software - Application",
-"industry_rank": 13,
-"industry_n": 16,
-"pe_vs_market": 2.9171,
-"fpe_vs_market": 2.4077,
-"peer_group": null,
-"has_fair_value": true,
-"outside_universe": true,
-"answers": [
-{
-"q": "Is revenue growing?",
-"v": "yes",
-"t": "Latest quarter +31.6% year on year; +27.3% a year over 3 years, steady."
-},
-{
-"q": "Are profits healthy?",
-"v": "yes",
-"t": "Net margin 15.0%, ROIC 20% vs 11.0% cost of capital (+8.9 pts)."
-},
-{
-"q": "Is cash flow strong?",
-"v": "partly",
-"t": "FCF positive in 3 of 4 years, 1.33x net income over 3 years, FCF yield 1.3%, uneven from year to year."
-},
-{
-"q": "Is debt manageable?",
-"v": "yes",
-"t": "Net cash, no meaningful interest."
-},
-{
-"q": "Is the financial position improving?",
-"v": "na",
-"t": "Not enough history to judge the trend."
-}
-],
-"checks_score": 3,
-"resilient_pick": false,
-"resilient_rank": null,
-"all_checks": false,
-"checks_pick": false,
-"sector_pick": null,
-"fv_pick": true
 },
 {
 "ticker": "OXY",
@@ -45921,7 +47303,7 @@
 "beta": null,
 "volatility_1y_pct": 82.96,
 "max_drawdown_1y_pct": -43.85,
-"nd_ebitda_then": -0.0,
+"nd_ebitda_then": 0.0,
 "margin_change_pts": -10.7,
 "fcf_cagr_pct": 11.02,
 "operating_margin_pct": 23.69,
@@ -45993,7 +47375,7 @@
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: FCF growing 11% a year. Worse: leverage up (-0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
+"t": "Better: FCF growing 11% a year. Worse: leverage up (0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
 }
 ],
 "checks_score": 0,
@@ -63732,6 +65114,176 @@
 "fv_pick": false
 },
 {
+"ticker": "ACIW",
+"name": "ACI Worldwide, Inc.",
+"sector": "Technology",
+"themes": [
+"Software",
+"Payments"
+],
+"score": 44.3,
+"rank": 370,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 41.2,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 370,
+"score": 44.3,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 7.3,
+"gross_margin_pct": 49.08,
+"profit_margin_pct": 12.4,
+"roe_pct": 15.62,
+"pe": 27.18,
+"forward_pe": 15.25,
+"ev_ebitda": 17.41,
+"ps": 3.3,
+"fcf_yield_pct": 4.74,
+"market_cap": 6008856064.0,
+"implied_fcf_growth": 0.1221,
+"implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.12,
+"required_return_source": "stock",
+"required_return_reason": "Technology rate (10.5%) less half a point for long bank contracts, plus the 2-point small-cap premium; lumpy licence sales and net debt.",
+"fcf_ni": 1.33,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 3.76,
+"earnings_yield_fwd": 6.56,
+"fcf_basis": "TTM",
+"roic_pct": 11.97,
+"net_debt_ebitda": 1.82,
+"interest_coverage": 6.3,
+"rev_cagr_pct": 7.37,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 20.32,
+"rev_growth_std": 3.74,
+"earnings_cv": 0.25,
+"fcf_cv": 0.45,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -1.68,
+"capex_ocf_pct": 10.33,
+"capex_fcf": 0.12,
+"tax_rate": 0.26,
+"beta": 0.99,
+"volatility_1y_pct": 34.33,
+"max_drawdown_1y_pct": -24.02,
+"nd_ebitda_then": 2.54,
+"margin_change_pts": 2.88,
+"fcf_cagr_pct": 40.9,
+"operating_margin_pct": 10.47,
+"fcf_ni_3y": 1.33,
+"fcf_ttm": 284741000.0,
+"ni_ttm": 225690000.0,
+"fcf_yield_yahoo_pct": 4.34,
+"enterprise_value": 6671736832.0,
+"fcff_ev_pct": 4.91,
+"fcf_ni_conversion": 1.28,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.874,
+"debt_weight": 0.126,
+"cost_equity": 0.12,
+"cost_debt_raw": 0.0641,
+"cost_debt_used": 0.0641,
+"tax": 0.261
+},
+"wacc": 0.1109,
+"roic_spread": 0.0088,
+"v3_source": "own",
+"score_prev": 41.4,
+"components": {
+"quality": 39.0,
+"growth": 47.0,
+"value": 62.0,
+"resilience": 31.0
+},
+"safety": 31.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Software - Infrastructure",
+"industry_rank": 13,
+"industry_n": 17,
+"pe_vs_market": 0.1653,
+"fpe_vs_market": -0.1436,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +7.3% year on year; +7.4% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 12.4%, ROIC 12% vs 11.1% cost of capital (+0.9 pts), EPS +20.3% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.33x net income over 3 years, FCF yield 4.7%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net debt 1.8x EBITDA, interest covered 6.3x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (2.5x \u2192 1.8x), net margin +2.9 pts, FCF growing 41% a year, share count falling 1.7% a year."
+}
+],
+"checks_score": 5,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": true,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
+},
+{
 "ticker": "AMD",
 "name": "Advanced Micro Devices, Inc.",
 "sector": "Technology",
@@ -71356,7 +72908,7 @@
 "fcf_ni_3y": null,
 "fcf_ttm": 436704000.0,
 "ni_ttm": 518306000.0,
-"fcf_yield_yahoo_pct": -0.0,
+"fcf_yield_yahoo_pct": 0.0,
 "enterprise_value": 60398694400.0,
 "fcff_ev_pct": 0.79,
 "fcf_ni_conversion": null,

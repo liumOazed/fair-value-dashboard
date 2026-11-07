@@ -40,7 +40,11 @@
     "WDAY",
     "GDDY",
     "VRSN",
-    "ORCL"
+    "ORCL",
+    "QLYS",
+    "IDCC",
+    "BOX",
+    "ACIW"
   ],
   "Payments": [
     "GPN",
@@ -54,7 +58,8 @@
     "XYZ",
     "ADYEY",
     "FISV",
-    "CRCL"
+    "CRCL",
+    "ACIW"
   ],
   "Pharma & biotech": [
     "LLY",
@@ -64,7 +69,8 @@
     "ZTS",
     "BMY",
     "JNJ",
-    "AMGN"
+    "AMGN",
+    "INVA"
   ],
   "Consumer brands": [
     "AAPL",
@@ -120,7 +126,8 @@
     "STE",
     "A",
     "TMO",
-    "DHR"
+    "DHR",
+    "LMAT"
   ],
   "Industrials & services": [
     "ALLE",
@@ -196,13 +203,18 @@
   ],
   "Real estate": [
     "SPG",
-    "HST"
+    "HST",
+    "CTRE"
   ],
   "Materials & commodities": [
     "CF",
     "NEM",
     "SHW",
     "PPG"
+  ],
+  "Education": [
+    "CVSA",
+    "LAUR"
   ],
   "Index & commodities": [
     "QQQ",
@@ -218,7 +230,8 @@
     "GEN",
     "CSCO",
     "LDOS",
-    "VRSN"
+    "VRSN",
+    "QLYS"
   ],
   "Insurance": [
     "ACGL",
