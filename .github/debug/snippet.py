@@ -3,11 +3,22 @@
 import json, os, sys, time, gzip, base64
 sys.path.insert(0, "scripts")
 import bt_fetch as B
-B.UA_SEC = {"User-Agent": "fair-value-dashboard/1.0 (github.com/liumOazed/fair-value-dashboard)", "Accept-Encoding": "gzip"}
+UAS = ["fair-value-dashboard liumOazed@users.noreply.github.com", "FairValueDashboard/1.0 liumOazed@users.noreply.github.com"]
+CIKS = {"INVA": 1080014, "QLYS": 1107843, "IDCC": 1405495, "BOX": 1372612, "ACIW": 935036, "LMAT": 1158895, "LAUR": 912766, "CTRE": 1590717}
 B.CACHE.mkdir(exist_ok=True)
 T = ["INVA", "CTRE", "CVSA", "QLYS", "LAUR", "IDCC", "LMAT", "BOX", "ACIW"]
-tick = json.loads(B.get("https://www.sec.gov/files/company_tickers.json", B.UA_SEC))
-cik_of = {v["ticker"].replace(".", "-"): int(v["cik_str"]) for v in tick.values()}
+cik_of = dict(CIKS)
+for ua in UAS:
+    B.UA_SEC = {"User-Agent": ua, "Accept-Encoding": "gzip"}
+    try:
+        tick = json.loads(B.get("https://www.sec.gov/files/company_tickers.json", B.UA_SEC, tries=1))
+        cik_of = {v["ticker"].replace(".", "-"): int(v["cik_str"]) for v in tick.values()}; print("tickers ok with", ua, file=sys.stderr); break
+    except Exception as e: print("tickers failed", ua, e, file=sys.stderr)
+for ua in UAS:
+    try:
+        B.get("https://data.sec.gov/api/xbrl/companyfacts/CIK0001107843.json", {"User-Agent": ua, "Accept-Encoding": "gzip"}, tries=1)
+        B.UA_SEC = {"User-Agent": ua, "Accept-Encoding": "gzip"}; print("data.sec.gov ok with", ua, file=sys.stderr); break
+    except Exception as e: print("data.sec.gov failed", ua, e, file=sys.stderr)
 facts, px = {}, {}
 for t in T:
     cik = cik_of.get(t)
