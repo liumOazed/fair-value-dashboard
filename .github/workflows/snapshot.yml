@@ -22,11 +22,12 @@ jobs:
       - run: python scripts/fetch_snapshot.py 2>&1 | tee fetch.log
       - run: if [ -f scripts/build_snapshot.py ]; then python scripts/build_snapshot.py; fi
       - run: python scripts/returns_history.py && python scripts/moat_scorecard.py
+      - run: python scripts/debt_stress.py
       - run: python scripts/framework.py
       - name: Commit result
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/snapshot_raw.json data/returns.json data/moat_scorecard.json data/framework.json; if [ -f data/snapshot.json ]; then git add data/snapshot.json; fi
+          git add data/snapshot_raw.json data/returns.json data/moat_scorecard.json data/framework.json data/debt_stress.json; if [ -f data/snapshot.json ]; then git add data/snapshot.json; fi
           git diff --staged --quiet || git commit -m "Snapshot refresh $(date -u +%Y-%m-%d)"
           git pull --rebase && git push

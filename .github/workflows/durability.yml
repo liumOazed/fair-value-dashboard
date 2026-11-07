@@ -20,11 +20,12 @@ jobs:
         with: { python-version: "3.12" }
       - run: python scripts/bond_yields.py
       - run: python scripts/durability.py | tail -20
+      - run: python scripts/debt_stress.py
       - run: pip install -q yfinance pandas && python scripts/framework.py
       - name: Commit result
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/bond_yields.json data/durability.json data/framework.json
+          git add data/bond_yields.json data/durability.json data/framework.json data/debt_stress.json
           git diff --staged --quiet || git commit -m "Bonds and durability $(date -u +%Y-%m-%d)"
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
