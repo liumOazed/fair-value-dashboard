@@ -2817,6 +2817,408 @@
    "suggested": "none",
    "current": "none",
    "differs": false
+  },
+  "ALL": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 2,
+    "e": 0
+   },
+   "why": "Second-largest US home and auto insurer: the Allstate brand, a large agency force and scale in claims data and advertising.",
+   "risk": "Catastrophe losses, auto claim inflation, state rate approvals; direct and price-comparison competitors (Progressive, GEICO).",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 5.2,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "HIG": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Leading small-business insurer with automated underwriting and deep agent relationships, plus a top group-benefits franchise.",
+   "risk": "Softer commercial prices, reserve charges on older liability years, catastrophes.",
+   "src": null,
+   "source_score": 2.0,
+   "numbers_score": 2.0,
+   "parts": {
+    "persistence": 1.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 4.0,
+   "out_of": 10,
+   "suggested": "none",
+   "current": "narrow",
+   "differs": true
+  },
+  "AIZ": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Protection plans run inside the systems of large phone carriers, retailers and car dealers for years; lender-placed insurance is a niche with few rivals.",
+   "risk": "Losing a large carrier client, fewer phone upgrades, hurricanes in Global Housing.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 1.3,
+   "parts": {
+    "persistence": 0.8,
+    "fade": 0.5,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 4.5,
+   "out_of": 10,
+   "suggested": "none",
+   "current": "none",
+   "differs": false
+  },
+  "MRSH": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 2,
+    "c": 2,
+    "e": 0
+   },
+   "why": "The largest insurance broker: global reach, data and specialist teams that large clients and insurers rely on; clients rarely switch broker.",
+   "risk": "Softer insurance prices, private-equity-backed brokers bidding for talent and deals, consulting cycles.",
+   "src": null,
+   "source_score": 3.75,
+   "numbers_score": 3.6,
+   "parts": {
+    "persistence": 1.6,
+    "fade": 1,
+    "new_money": 1,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "margins"
+   ],
+   "total": 7.3,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "WTW": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "One of three global brokers, plus a leading pensions and benefits consultancy embedded in clients' HR and actuarial work.",
+   "risk": "Softer insurance prices; Aon and Gallagher gaining scale; pension-consulting decline.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 0,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 3.2,
+   "out_of": 10,
+   "suggested": "none",
+   "current": "narrow",
+   "differs": true
+  },
+  "NMIH": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 2
+   },
+   "why": "One of six US mortgage insurers approved by Fannie Mae and Freddie Mac; risk-based pricing engine and the lowest cost base among peers.",
+   "risk": "Housing downturn, GSE capital rules and possible privatisation, price competition.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.2,
+   "out_of": 5,
+   "suggested": null,
+   "current": "narrow",
+   "differs": false
+  },
+  "UVE": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Long-standing Florida homeowners insurer with its own claims and policy services and a large agent network.",
+   "risk": "A major Florida hurricane; reinsurance costs; Florida politics and regulation.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.5,
+   "out_of": 5,
+   "suggested": null,
+   "current": "none",
+   "differs": false
+  },
+  "PLMR": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Specialist in earthquake and niche property lines that larger insurers avoid, with tailored underwriting data and a fronting platform.",
+   "risk": "A large California earthquake, reinsurance prices, new competitors in its niches.",
+   "src": null,
+   "source_score": 2.0,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 2.0,
+   "out_of": 5,
+   "suggested": null,
+   "current": "narrow",
+   "differs": false
+  },
+  "PLGO": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Specialty (re)insurance underwriting from Bermuda; little public record to judge an edge.",
+   "risk": "Catastrophes, reinsurance cycle, reserve charges.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.2,
+   "out_of": 5,
+   "suggested": null,
+   "current": "none",
+   "differs": false
+  },
+  "CRVL": {
+   "sources": {
+    "n": 1,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Claims and bill-review software and networks embedded in employers' and insurers' workers' compensation processes; long client relationships.",
+   "risk": "Employment cycles, health-plan contracts, competition from larger claims administrators.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.2,
+   "out_of": 5,
+   "suggested": null,
+   "current": "wide",
+   "differs": false
+  },
+  "SLDE": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Low-cost, technology-led Florida homeowners insurer that grows by taking policies from Citizens and failed insurers.",
+   "risk": "A major hurricane; reinsurance costs; Citizens depopulation slowing.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.2,
+   "out_of": 5,
+   "suggested": null,
+   "current": "none",
+   "differs": false
+  },
+  "HG": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Specialty insurance at Lloyd's and in the US plus reinsurance from Bermuda; Two Sigma manages part of its investments.",
+   "risk": "Catastrophes, softening reinsurance prices, investment swings.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.2,
+   "out_of": 5,
+   "suggested": null,
+   "current": "none",
+   "differs": false
+  },
+  "HCI": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Florida homeowners insurer with its own policy and claims software (Exzeo), which keeps costs low.",
+   "risk": "A major Florida hurricane; reinsurance costs; Florida politics.",
+   "src": null,
+   "source_score": 1.5,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.5,
+   "out_of": 5,
+   "suggested": null,
+   "current": "none",
+   "differs": false
+  },
+  "ESNT": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 2
+   },
+   "why": "One of six US mortgage insurers approved by Fannie Mae and Freddie Mac, with a reinsurance arm and a strong capital position.",
+   "risk": "Housing downturn, GSE capital rules and possible privatisation, price competition.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.2,
+   "out_of": 5,
+   "suggested": null,
+   "current": "narrow",
+   "differs": false
+  },
+  "UFCS": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 0,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Regional commercial insurer with long independent-agent relationships in the Midwest.",
+   "risk": "Reserve charges, catastrophes, larger and better-priced competitors.",
+   "src": null,
+   "source_score": 1.25,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.2,
+   "out_of": 5,
+   "suggested": null,
+   "current": "none",
+   "differs": false
+  },
+  "SKWD": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Specialty and E&S niches (captives, accident and health, agriculture, surety) where underwriting expertise matters more than size.",
+   "risk": "Casualty reserve charges, integrating Apollo, softer E&S prices.",
+   "src": null,
+   "source_score": 1.75,
+   "numbers_score": null,
+   "parts": {},
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.8,
+   "out_of": 5,
+   "suggested": null,
+   "current": "narrow",
+   "differs": false
   }
  }
 }

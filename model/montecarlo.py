@@ -14,9 +14,10 @@ Outputs per stock (written into data/assets.json under "mc"): 101 quantiles of v
 into model-implied probabilities against the live price), percentiles, regime shares, a one-at-a-time sensitivity
 (tornado) on the base case, and the Sobol check.
 The probabilities are MODEL-IMPLIED: only as good as the assumption ranges above.
-Usage: python model/montecarlo.py   (after model.py / export_assets.py)
+Underwriters (INSURERS in model.py, valued on book value and ROE) use the same regimes and noise on book growth and ROE.
+Usage: python model/montecarlo.py [TICKER ...]   (after model.py / export_assets.py; tickers = only write those)
 """
-import json, pathlib
+import json, pathlib, sys
 import numpy as np
 from scipy.stats import qmc, norm
 
@@ -99,7 +100,34 @@ def implied_returns(fcf, gt, nc, shares, price, k=1.0, hi=0.60, it=60):
         a = np.where(up, mid, a); b = np.where(up, b, mid)
     return (a + b) / 2
 
+# ---- underwriters (model.py INSURERS): cash to shareholders = net income - growth in book value; same regimes and noise,
+# with g1 / g10 = book-value growth and m = long-run ROE. The value after the last year is book value x (terminal ROE - gt)
+# / (r - gt), written as last year's cash x (1 + gt) x k so that pv_paths, implied_returns and hold_returns work unchanged.
+def ins_inputs(tk):
+    s = M["INSURERS"][tk]; r = M["req_return"](tk)
+    return s, r, s["scen"], s["extra"]
+
+def ins_paths(s, r, g1, g10, m, gt, mo):
+    n = M["ri_years"](mo)
+    t = np.arange(1, n + 1)
+    g = _growth(g1, g10, gt, n)
+    bv = s["bv"] * np.cumprod(1 + g, axis=1)
+    prev = np.concatenate([np.full((len(g1), 1), s["bv"]), bv[:, :-1]], axis=1)
+    roe = s["roe0"] + (m - s["roe0"])[:, None] * np.minimum(t, 5) / 5
+    cash = roe * prev - (bv - prev)
+    rq = mo.get("r_req", r)
+    rt = np.where(m <= rq, m, rq if mo["cls"] == "none" else (m + rq) / 2 if mo["cls"] == "narrow" else m)
+    return cash, (rt - gt) / (m - gt)
+
+def ins_value(tk, g1, g10, m, gt, r):
+    s, rq, _, nc = ins_inputs(tk)
+    mo = moat(tk, rq)
+    gt = np.broadcast_to(np.asarray(gt, float), np.shape(g1))
+    cash, k = ins_paths(s, rq, g1, g10, m, gt, mo)
+    return pv_paths(cash, gt, r, nc, s["shares"], k)
+
 def simulate(tk, u, stratify=False, full=False):
+    if tk in M.get("INSURERS", {}): return simulate_ins(tk, u, stratify, full)
     """u: (n, 5) uniforms -> regime, 3 correlated shocks, terminal growth.
     stratify=True gives each regime exactly its weight in runs (30/50/20), so the page can re-weight regimes exactly."""
     s, r, m0, sc, nc = inputs(tk)
@@ -126,7 +154,46 @@ def simulate(tk, u, stratify=False, full=False):
         return v, reg, dict(fcf=fcf, gt=gt, nc=nc, shares=s["shares"], r=r, k=k)
     return v, reg
 
+def simulate_ins(tk, u, stratify=False, full=False):
+    s, r, sc, nc = ins_inputs(tk)
+    n = len(u)
+    if stratify:
+        cnt = [round(M["PROBS"][k] * n) for k in KEYS]; cnt[1] = n - cnt[0] - cnt[2]
+        reg = np.repeat(np.arange(3), cnt)
+    else:
+        cum = np.cumsum([M["PROBS"][k] for k in KEYS])
+        reg = np.minimum(np.searchsorted(cum, u[:, 0] * cum[-1]), 2)
+    z = norm.ppf(np.clip(u[:, 1:4], 1e-9, 1 - 1e-9)) @ L.T
+    P = {p: np.array([sc[k][p] for k in KEYS]) for p in ("g1", "g10", "m")}
+    sd = {p: max((P[p][2] - P[p][0]) / 8, 0.002) for p in P}
+    g1 = P["g1"][reg] + z[:, 0] * sd["g1"]
+    g10 = P["g10"][reg] + z[:, 1] * sd["g10"]
+    m = P["m"][reg] + z[:, 2] * sd["m"]
+    gt = np.clip(M["GT"] + norm.ppf(np.clip(u[:, 4], 1e-9, 1 - 1e-9)) * 0.004, 0.01, 0.035)
+    g10 = np.minimum(g10, r - 0.01); gt = np.minimum(gt, r - 0.015); m = np.maximum(m, gt + 0.01)
+    mo = moat(tk, r)
+    cash, k = ins_paths(s, r, g1, g10, m, gt, mo)
+    v = pv_paths(cash, gt, r, nc, s["shares"], k)
+    if full:
+        return v, reg, dict(fcf=cash, gt=gt, nc=nc, shares=s["shares"], r=r, k=k)
+    return v, reg
+
+def tornado_ins(tk):
+    s, r, sc, nc = ins_inputs(tk)
+    b = sc["base"]
+    one = lambda **k: float(ins_value(tk, np.array([k.get("g1", b["g1"])]), np.array([k.get("g10", b["g10"])]),
+                                      np.array([k.get("m", b["m"])]), k.get("gt", M["GT"]), k.get("r", r))[0])
+    base = one()
+    rows = [("Year-1 book-value growth", "g1"), ("Long-run book growth (year 10)", "g10"), ("Long-run return on equity", "m")]
+    out = [dict(label=l, low=one(**{p: sc["bear"][p]}), high=one(**{p: sc["bull"][p]}),
+                low_in=sc["bear"][p], high_in=sc["bull"][p]) for l, p in rows]
+    out.append(dict(label="Terminal growth (2% / 3%)", low=one(gt=0.02), high=one(gt=0.03), low_in=0.02, high_in=0.03))
+    out.append(dict(label="Required return (+1 / -1 pt)", low=one(r=r + 0.01), high=one(r=r - 0.01), low_in=r + 0.01, high_in=r - 0.01, choice=True))
+    for o in out: o["swing"] = abs(o["high"] - o["low"])
+    return dict(base=base, rows=sorted(out, key=lambda o: -o["swing"]))
+
 def tornado(tk):
+    if tk in M.get("INSURERS", {}): return tornado_ins(tk)
     """Base case; move one input to its bear and bull value (others at base). Sorted by total swing."""
     s, r, m0, sc, nc = inputs(tk)
     b = sc["base"]
@@ -164,11 +231,15 @@ def main():
     path = ROOT / "data/assets.json"
     doc = json.load(open(path))
     rng = np.random.default_rng(SEED)
+    only = set(sys.argv[1:])          # optional: only write these tickers (every modelled stock still draws its runs, so results match a full run)
     for a in doc["assets"]:
         tk = a["ticker"]
-        if tk not in M["STOCKS"]:
+        if tk not in M["STOCKS"] and tk not in M.get("INSURERS", {}):
             continue
-        v, reg, X = simulate(tk, rng.random((N, 5)), stratify=True, full=True)
+        u = rng.random((N, 5))
+        if only and tk not in only:
+            continue
+        v, reg, X = simulate(tk, u, stratify=True, full=True)
         sob = qmc.Sobol(d=5, scramble=True, seed=SEED).random_base2(m=14)        # 16,384 points
         vs, _ = simulate(tk, sob)
         q = np.quantile(v, np.linspace(0, 1, 101))

@@ -6487,6 +6487,447 @@
    "roic_trend": 0.0172,
    "q2": "at hurdle",
    "years_left": 0
+  },
+  "MRSH": {
+   "r": 0.085,
+   "roic": [
+    [
+     2014,
+     0.1926
+    ],
+    [
+     2015,
+     0.1887
+    ],
+    [
+     2016,
+     0.1963
+    ],
+    [
+     2017,
+     0.1709
+    ],
+    [
+     2018,
+     0.1708
+    ],
+    [
+     2019,
+     0.1252
+    ],
+    [
+     2020,
+     0.1207
+    ],
+    [
+     2021,
+     0.1672
+    ],
+    [
+     2022,
+     0.157
+    ],
+    [
+     2023,
+     0.1847
+    ],
+    [
+     2024,
+     0.1632
+    ],
+    [
+     2025,
+     0.1503
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.1567,
+   "inc_recent": 0.1893,
+   "inc_earlier": 0.0436,
+   "inc_why": null,
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "holding up",
+   "roic_trend": 0.0008,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null,
+   "reinvest": {
+    "rate": 0.7001,
+    "per_year_b": 2.7462,
+    "nopat_b": 4.7568,
+    "years": "2020-2025",
+    "growth_funded": 0.1325
+   }
+  },
+  "WTW": {
+   "r": 0.085,
+   "roic": [
+    [
+     2014,
+     0.1225
+    ],
+    [
+     2015,
+     0.099
+    ],
+    [
+     2016,
+     0.0577
+    ],
+    [
+     2017,
+     0.0511
+    ],
+    [
+     2018,
+     0.0454
+    ],
+    [
+     2019,
+     0.0662
+    ],
+    [
+     2020,
+     0.0531
+    ],
+    [
+     2021,
+     0.1108
+    ],
+    [
+     2022,
+     0.0649
+    ],
+    [
+     2023,
+     0.0732
+    ],
+    [
+     2024,
+     0.027
+    ],
+    [
+     2025,
+     0.1283
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.0776,
+   "inc_recent": null,
+   "inc_earlier": 0.0436,
+   "inc_why": "invested capital barely grew or shrank",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0052,
+   "q2": "at hurdle",
+   "years_left": 0,
+   "reinvest": {
+    "rate": -0.342,
+    "per_year_b": -0.4222,
+    "nopat_b": 1.8702,
+    "years": "2020-2025",
+    "growth_funded": null
+   }
+  },
+  "CRVL": {
+   "r": 0.095,
+   "roic": [],
+   "last_year": null,
+   "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
+  },
+  "ALL": {
+   "r": 0.09,
+   "roic": [
+    [
+     2014,
+     0.1278
+    ],
+    [
+     2015,
+     0.1026
+    ],
+    [
+     2016,
+     0.0925
+    ],
+    [
+     2017,
+     0.1479
+    ],
+    [
+     2018,
+     0.1027
+    ],
+    [
+     2019,
+     0.2049
+    ],
+    [
+     2020,
+     0.1984
+    ],
+    [
+     2021,
+     0.0577
+    ],
+    [
+     2022,
+     -0.0615
+    ],
+    [
+     2023,
+     -0.0107
+    ],
+    [
+     2024,
+     0.238
+    ],
+    [
+     2025,
+     0.3951
+    ]
+   ],
+   "last_year": 2025,
+   "measure": "ROE",
+   "roic_now": 0.3166,
+   "inc_recent": null,
+   "inc_earlier": 0.389,
+   "inc_why": "invested capital barely grew or shrank",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0162,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
+  },
+  "HIG": {
+   "r": 0.085,
+   "roic": [
+    [
+     2014,
+     0.0426
+    ],
+    [
+     2015,
+     0.0925
+    ],
+    [
+     2016,
+     0.0519
+    ],
+    [
+     2017,
+     -0.206
+    ],
+    [
+     2018,
+     0.1359
+    ],
+    [
+     2019,
+     0.142
+    ],
+    [
+     2020,
+     0.0998
+    ],
+    [
+     2021,
+     0.1299
+    ],
+    [
+     2022,
+     0.1153
+    ],
+    [
+     2023,
+     0.1729
+    ],
+    [
+     2024,
+     0.1958
+    ],
+    [
+     2025,
+     0.2166
+    ]
+   ],
+   "last_year": 2025,
+   "measure": "ROE",
+   "roic_now": 0.2062,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "invested capital barely grew or shrank",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.012,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null,
+   "reinvest": {
+    "rate": 0.031,
+    "per_year_b": 0.0846,
+    "nopat_b": 3.836,
+    "years": "2020-2025",
+    "growth_funded": null
+   }
+  },
+  "AIZ": {
+   "r": 0.09,
+   "roic": [
+    [
+     2014,
+     0.0909
+    ],
+    [
+     2015,
+     0.0292
+    ],
+    [
+     2016,
+     0.1311
+    ],
+    [
+     2017,
+     0.1242
+    ],
+    [
+     2018,
+     0.0535
+    ],
+    [
+     2019,
+     0.0711
+    ],
+    [
+     2020,
+     0.0761
+    ],
+    [
+     2021,
+     0.2399
+    ],
+    [
+     2022,
+     0.0569
+    ],
+    [
+     2023,
+     0.1422
+    ],
+    [
+     2024,
+     0.1533
+    ],
+    [
+     2025,
+     0.159
+    ]
+   ],
+   "last_year": 2025,
+   "measure": "ROE",
+   "roic_now": 0.1562,
+   "inc_recent": null,
+   "inc_earlier": 0.1116,
+   "inc_why": "invested capital barely grew or shrank",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0158,
+   "half_life": 12.7892,
+   "q2": "fading",
+   "years_left": 22.0724,
+   "reinvest": {
+    "rate": -0.0203,
+    "per_year_b": -0.016,
+    "nopat_b": 0.8727,
+    "years": "2020-2025",
+    "growth_funded": null
+   }
+  },
+  "NMIH": {
+   "r": 0.1,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "UVE": {
+   "r": 0.12,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "PLMR": {
+   "r": 0.105,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "PLGO": {
+   "r": 0.11,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "SLDE": {
+   "r": 0.12,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "HG": {
+   "r": 0.105,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "HCI": {
+   "r": 0.12,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "ESNT": {
+   "r": 0.1,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "UFCS": {
+   "r": 0.1,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
+  },
+  "SKWD": {
+   "r": 0.1,
+   "roic": [],
+   "last_year": null,
+   "measure": "ROE",
+   "note": "No statements for this company in the data yet."
   }
  }
 }

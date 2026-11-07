@@ -152,6 +152,57 @@ def M(label, value, score=None, graded=True, pct=None, note=None, raw=None, grp=
                 graded=graded and score is not None, pct=pct, note=note, raw=raw, grp=grp)
 
 
+def NA(m, why):
+    """A metric that doesn't apply to this kind of business: shown greyed, never graded, and not counted as answered
+    or unknown."""
+    return dict(m, value="not applicable", score=None, graded=False, pct=None, na=True, note=why)
+
+
+INS_CASH = ("An insurer collects premiums before it pays claims, so its cash flow swings with premium growth and claim "
+            "timing (the float) and says little about profit. Valued on book value and return on equity instead.")
+
+
+def insurer_cards(ccard, pcard, fcard, inc, bal, s, r):
+    """Underwriters (valued on book value and ROE): cash-flow, ROIC and liquidity metrics don't apply. ROE against the
+    required return replaces ROIC; debt is measured against book value. Unknowns stay unknown and are never graded."""
+    ccard["metrics"] = [m if m["label"].startswith("Operating cash flow · free cash flow") else NA(m, INS_CASH) for m in ccard["metrics"]]
+    ccard.update(grade="n/a", trend=None, headline=["Not applicable to an insurer"], note=INS_CASH)
+    roe = []
+    ds = sorted(d for d in inc if ok(inc[d].get("ni")) and ok((bal.get(d) or {}).get("equity")) and bal[d]["equity"] > 0)
+    for i, d in enumerate(ds):
+        e0 = bal[ds[i - 1]]["equity"] if i else bal[d]["equity"]
+        roe.append((d[:4], inc[d]["ni"] / ((e0 + bal[d]["equity"]) / 2)))
+    above = sum(1 for _, x in roe if x > r)
+    tr = roe[-1][1] - roe[0][1] if len(roe) >= 2 else None
+    na_perf = {"Incremental ROIC (3 years)": "Incremental returns for an insurer are shown under Returns on new money (on equity).",
+               "Gross margin": "Insurers report no gross profit.", "Gross margin trend": "Insurers report no gross profit."}
+    roe_m = [
+        M("ROE vs required return", None if not roe else f"{roe[-1][1] * 100:.0f}% vs {r * 100:.1f}%", g3(roe[-1][1] - r if roe else None, 0.05, 0.0),
+          note="Net income ÷ average book value (latest fiscal year) vs the required return: for an insurer, equity is the capital at work."),
+        M("ROE trend", None if tr is None else f"{roe[0][1] * 100:.0f}% → {roe[-1][1] * 100:.0f}% ({roe[0][0]}–{roe[-1][0]})", g3(tr, 0.0, -0.05)),
+        M("ROE above required return", None if not roe else f"{above} of {len(roe)} years", g3(above / len(roe) if roe else None, 0.99, 0.5),
+          note="Insurers' results swing with catastrophes and the pricing cycle: a lasting gap is the sign of an underwriting edge."),
+    ]
+    perf = [m for m in pcard["metrics"] if not m["label"].startswith("ROIC")]
+    pcard["metrics"] = roe_m + [NA(m, na_perf[m["label"]]) if m["label"] in na_perf else m for m in perf]
+    pcard["trend"] = dict(label="ROE by year", points=[[y, round(v * 100, 1)] for y, v in roe], unit="%", ref=round(r * 100, 1)) if len(roe) >= 2 else None
+    pcard["headline"] = [f"ROE {roe[-1][1] * 100:.0f}%", f"vs {r * 100:.1f}% required"] if roe else []
+    pcard["note"] = "Insurer: return on equity replaces ROIC (its investments back claims, so invested capital means little)."
+    lb = max(bal) if bal else None
+    debt, eq = (bal.get(lb) or {}).get("debt"), (bal.get(lb) or {}).get("equity")
+    lev = debt / (debt + eq) if ok(debt) and ok(eq) and debt + eq > 0 else None
+    na_fin = {"Net debt / EBITDA": "Insurers have no EBITDA in the usual sense; debt is measured against book value below.",
+              "Current ratio": "Insurers don't split their balance sheet into current and long-term items.",
+              "Cash vs debt": "An insurer's cash and investments back its claims, so they can't be set against its debt."}
+    fcard["metrics"] = [NA(m, na_fin[m["label"]]) if m["label"] in na_fin else m for m in fcard["metrics"]]
+    fcard["metrics"].insert(0, M("Debt ÷ (debt + book value)", None if lev is None else f"{lev * 100:.0f}%", g3(lev, 0.20, 0.35, False),
+                                 note="Financial leverage of an insurer (latest fiscal year); rating agencies are comfortable below about 25-30%."))
+    fcard["metrics"].insert(-1, M("Capital ratios (risk-based capital, solvency)", "not in free data", graded=False,
+                                  note="Regulatory capital, reserve adequacy and reinsurance cover decide an insurer's strength; they are in the statutory filings, not in our data."))
+    fcard["headline"] = [f"Debt {lev * 100:.0f}% of capital" if lev is not None else None]
+    fcard["headline"] = [x for x in fcard["headline"] if x]
+
+
 def build():
     raw = json.load(open(ROOT / "data/snapshot_raw.json"))
     scr = json.load(open(ROOT / "data/screen.json"))
@@ -421,7 +472,10 @@ def build():
             dcard["grade"] = "Reinvests"
             dcard["headline"] = ["No dividend or net buybacks", "cash goes back into the business"]
 
-        cards = [ecard, ccard, pcard, fcard, dcard]
+        if assets[t].get("method") == "excess_roe":
+            insurer_cards(ccard, pcard, fcard, inc, bal, s, assets[t].get("required_return") or 0.09)
+            dcard["metrics"] = [NA(m, INS_CASH) if m["label"].startswith("Dividend coverage (FCF") else m for m in dcard["metrics"]]
+        cards =[ecard, ccard, pcard, fcard, dcard]
         for c in cards:
             c.setdefault("grade", card_grade(c["metrics"]))
             for m in c["metrics"]:

@@ -109,6 +109,22 @@
   "LMAT": {"r": 0.11, "reason": "Healthcare rate (9%) plus the 2-point small-cap premium: niche vascular devices with steady demand, net cash."},
   "BOX":  {"r": 0.12, "reason": "Technology rate (10.5%) less half a point for recurring subscriptions and low beta (~0.6), plus the 2-point small-cap premium."},
   "ACIW": {"r": 0.12, "reason": "Technology rate (10.5%) less half a point for long bank contracts, plus the 2-point small-cap premium; lumpy licence sales and net debt."},
+  "ALL": {"r": 0.09, "reason": "Financial Services rate (7.5%) plus 1.5 points for an underwriter's catastrophe exposure (wildfires, hurricanes, storms) and swings in auto claim costs."},
+  "HIG": {"r": 0.085, "reason": "Financial Services rate (7.5%) plus 1 point for underwriting risk; mostly commercial lines and group benefits, so less catastrophe-exposed than a home insurer."},
+  "AIZ": {"r": 0.09, "reason": "Financial Services rate (7.5%) plus 1.5 points: protection plans are steady, but Global Housing is exposed to hurricanes."},
+  "MRSH": {"r": 0.085, "reason": "Above the 7.5% Financial Services rate: a broker takes no underwriting risk and earns steady fees (beta ~0.5), but carries $22B of debt after the McGriff deal and consulting is cyclical. In line with ADP and BR."},
+  "WTW": {"r": 0.085, "reason": "Above the 7.5% Financial Services rate: broking and consulting fees with no underwriting risk (beta ~0.4); net debt and pension-consulting cycles. In line with ADP and BR."},
+  "NMIH": {"r": 0.1, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point: mortgage-insurance losses come all at once in a housing downturn."},
+  "UVE": {"r": 0.12, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 2.5 points: almost all risk is Florida homes, so one major hurricane can wipe out years of profit."},
+  "PLMR": {"r": 0.105, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 1 point for earthquake and other catastrophe exposure and fast growth."},
+  "PLGO": {"r": 0.11, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 1.5 points for (re)insurance catastrophe risk, a short listed history and few analysts."},
+  "CRVL": {"r": 0.095, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium: fee-based claims services with no underwriting risk and net cash."},
+  "SLDE": {"r": 0.12, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 2.5 points: Florida hurricane concentration and a record of only four years, none with a major storm on its book."},
+  "HG": {"r": 0.105, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 1 point for reinsurance catastrophe risk and a cyclical market."},
+  "HCI": {"r": 0.12, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 2.5 points: almost all risk is Florida homes (Hurricane Ian cost a third of its book value in 2022)."},
+  "ESNT": {"r": 0.1, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point: mortgage-insurance losses come all at once in a housing downturn."},
+  "UFCS": {"r": 0.1, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point for a long record of reserve charges and a young turnaround."},
+  "SKWD": {"r": 0.1, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point for casualty reserve risk and integrating the Apollo business."},
   "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
  }
 }

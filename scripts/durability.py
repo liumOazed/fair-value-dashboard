@@ -12,11 +12,12 @@ nothing here changes a fair value.
    a. Normal margins: the same fcff_re model (required return, 30/50/20 weights, 2.5% terminal growth, moat
       advantage period) re-run with the starting margin and all three scenario margins set to the stock's median
       FCF margin of the last 10 fiscal years (after today's stock-pay share, plus the interest add-back, as in the
-      model). For AXP and AMP, valued on net income, the net margin is used.
+      model). For AXP and AMP, valued on net income, the net margin is used. For underwriters (INSURERS, valued on book
+      value and ROE) the starting and all scenario ROEs are set to the median ROE of the last 10 fiscal years.
    b. Bad year: for each recession in the data (fiscal years ending 2008-01 to 2010-06, and 2020-03 to 2021-06) the
       weakest year's revenue change and operating-margin change against the last fiscal year before it. The worse of
       the two is applied to the latest year: is it still profitable, and how well is interest covered? Also the
-      years after the weakest year until operating profit was back at the pre-recession level. Net income for AXP and AMP. Recessions only,
+      years after the weakest year until operating profit was back at the pre-recession level. Net income for AXP, AMP and underwriters. Recessions only,
       so one-off charges in other years don't count; a stock listed after 2008 is tested on 2020 alone. A recession
       year in which revenue still grew but profit fell over 30% is marked as a likely one-off charge (an impairment,
       a legal settlement, an acquisition) and only used when it is the only one. Operating profit = pre-tax profit
@@ -43,6 +44,7 @@ _src = (ROOT / "model/model.py").read_text()
 M = {"__file__": str(ROOT / "model/model.py"), "__name__": "model_defs"}
 exec(compile(_src.split('\nout = {"as_of"')[0], "model.py", "exec"), M)
 STOCKS, FIN, PROBS = M["STOCKS"], M["FIN"], M["PROBS"]
+INSURERS = M.get("INSURERS", {})      # underwriters, valued on book value and ROE
 
 YEARS_NORMAL = 10
 EPISODES = [("2008-09 recession", "2008-01", "2008-01", "2010-06"), ("2020 pandemic", "2020-03", "2020-03", "2021-06")]
@@ -135,15 +137,56 @@ def model_value(t, m_normal):
     norm = sum(PROBS[k] * D(m_normal + add, dict(v, m=m_normal + add)) for k, v in s["scen"].items())
     return now, norm, (s["fcf"] - s["sbc"]) / s["rev"], {k: v["m"] for k, v in s["scen"].items()}, s
 
+def roe_years(t):
+    """Fiscal year -> return on equity (net income / average book value), 10-K facts topped up by the snapshot."""
+    ni, eq = {}, {}
+    d = F.get(t) or {}
+    for k, dst in (("net_income", ni), ("equity", eq)):
+        for end in d.get(k, {}):
+            x, _ = first(d, k, end)
+            if x is not None: dst[end[:4] if end[5:7] > "03" else str(int(end[:4]) - 1)] = x
+    a = (SNAP.get(t) or {}).get("annual") or {}
+    for end, v in (a.get("inc") or {}).items():
+        fy = end[:4] if end[5:7] > "03" else str(int(end[:4]) - 1)
+        if v.get("ni") is not None: ni[fy] = v["ni"]
+    for end, v in (a.get("bal") or {}).items():
+        fy = end[:4] if end[5:7] > "03" else str(int(end[:4]) - 1)
+        if v.get("equity"): eq[fy] = v["equity"]
+    out = {}
+    for y in sorted(ni):
+        if y in eq and eq[y] > 0:
+            base = (eq[y] + eq[str(int(y) - 1)]) / 2 if eq.get(str(int(y) - 1), 0) > 0 else eq[y]
+            out[y] = ni[y] / base
+    return out
+
+def normal_ins(t):
+    """Underwriter: fair value with the starting ROE and every scenario's long-run ROE set to the median ROE of the last
+    10 fiscal years (so one great or terrible year doesn't set the value)."""
+    s = INSURERS[t]; r = M["req_return"](t); mo = dict(M["moat_of"](t), r_req=r)
+    R = roe_years(t); last = sorted(R)[-YEARS_NORMAL:]
+    if len(last) < 5: return None
+    med = st.median(R[y] for y in last)
+    V = lambda roe0, p: M["ri_value"](s["bv"], roe0, p["g1"], p["g10"], p["m"], r, s["extra"], s["shares"], mo=mo)
+    now = sum(PROBS[k] * V(s["roe0"], p) for k, p in s["scen"].items())
+    norm = sum(PROBS[k] * V(med, dict(p, m=med)) for k, p in s["scen"].items())
+    return dict(median_margin=round(med, 4), years=len(last), low=round(min(R[y] for y in last), 4), high=round(max(R[y] for y in last), 4),
+                margin_now=round(s["ni"] / s["bv"], 4), base_margin=round(s["scen"]["base"]["m"], 4), sbc_share=0.0,
+                fv_model=round(now, 2), fv_normal=round(norm, 2), change=round(norm / now - 1, 4) if now > 0 else None,
+                series=[[int(y), round(R[y] * 100, 1)] for y in last])
+
 def stress_block(t, H):
-    s0 = STOCKS[t]
-    lender = bool(re.search(r"cash flow = net income", s0["notes"], re.I))
+    ins = t in INSURERS
+    s0 = INSURERS[t] if ins else STOCKS[t]
+    lender = ins or bool(re.search(r"cash flow = net income", s0["notes"], re.I))
     yrs = list(H)
     last = yrs[-YEARS_NORMAL:]
     key = "ni" if lender else "fcf"
     ms = [H[y][key] / H[y]["rev"] for y in last if H[y].get(key) is not None and H[y]["rev"] > 0]
-    out = dict(years_from=yrs[0] if yrs else None, years_to=yrs[-1] if yrs else None, basis="net margin" if lender else "FCF margin")
-    if len(ms) >= 5:
+    out = dict(years_from=yrs[0] if yrs else None, years_to=yrs[-1] if yrs else None, basis="ROE" if ins else "net margin" if lender else "FCF margin")
+    if ins:
+        n = normal_ins(t)
+        if n: out["normal"] = n
+    elif len(ms) >= 5:
         med = st.median(ms)
         sbc_share = 0.0 if lender else s0["sbc"] / s0["rev"]
         now_fv, norm_fv, m_now, scen_m, _ = model_value(t, med - sbc_share)
@@ -193,9 +236,9 @@ def stress_block(t, H):
 doc = {"_about": __doc__.strip().split("\n\n")[0], "built_from": dict(bond_yields=(BOND or {}).get("fetched"), model_as_of=M["AS_OF"]),
        "thresholds": dict(large_gap=LARGE, cyclical_drop=CYC_DROP, durable_drop=DUR_DROP, durable_fv=DUR_FV, normal_years=YEARS_NORMAL),
        "yields": None if not BOND else dict(annual=BOND["annual"], names=BOND["names"]), "stocks": {}}
-for t in STOCKS:
+for t in list(STOCKS) + list(INSURERS):
     H = history(t)
-    price = (ASSETS.get(t) or {}).get("price") or (SNAP.get(t) or {}).get("price") or STOCKS[t]["price"]
+    price = (ASSETS.get(t) or {}).get("price") or (SNAP.get(t) or {}).get("price") or (STOCKS.get(t) or INSURERS[t])["price"]
     doc["stocks"][t] = dict(bond=bond_block(t, H, (SNAP.get(t) or {}).get("price") or price), stress=stress_block(t, H))
 json.dump(doc, open(ROOT / "data/durability.json", "w"), indent=0, separators=(",", ":"))
 for t, v in doc["stocks"].items():
