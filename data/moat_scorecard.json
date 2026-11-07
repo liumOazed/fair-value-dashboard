@@ -2642,8 +2642,8 @@
    "total": 4.2,
    "out_of": 10,
    "suggested": "none",
-   "current": "narrow",
-   "differs": true
+   "current": "none",
+   "differs": false
   },
   "QLYS": {
    "sources": {
@@ -2665,7 +2665,7 @@
    "total": 3.0,
    "out_of": 5,
    "suggested": null,
-   "current": "wide",
+   "current": "narrow",
    "differs": false
   },
   "LAUR": {
@@ -2725,8 +2725,8 @@
    "total": 6.0,
    "out_of": 10,
    "suggested": "narrow",
-   "current": "narrow",
-   "differs": false
+   "current": "wide",
+   "differs": true
   },
   "LMAT": {
    "sources": {
@@ -2785,7 +2785,7 @@
    "total": 4.8,
    "out_of": 10,
    "suggested": "none",
-   "current": "narrow",
+   "current": "wide",
    "differs": true
   },
   "ACIW": {
