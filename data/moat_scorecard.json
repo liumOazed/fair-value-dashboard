@@ -22,7 +22,9 @@
     "margins": 0.5,
     "gm_std": 0.0333
    },
+   "unknown": [],
    "total": 8.0,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -47,7 +49,9 @@
     "margins": 0.5,
     "gm_std": 0.0336
    },
+   "unknown": [],
    "total": 6.5,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -72,7 +76,9 @@
     "margins": 1,
     "gm_std": 0.0212
    },
+   "unknown": [],
    "total": 8.5,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -97,7 +103,9 @@
     "margins": 0.5,
     "gm_std": 0.0473
    },
+   "unknown": [],
    "total": 6.3,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -122,7 +130,9 @@
     "margins": 0.5,
     "gm_std": 0.0594
    },
+   "unknown": [],
    "total": 7.5,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -147,7 +157,9 @@
     "margins": 0,
     "gm_std": 0.0802
    },
+   "unknown": [],
    "total": 6.5,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -172,7 +184,9 @@
     "margins": 0.5,
     "gm_std": 0.0335
    },
+   "unknown": [],
    "total": 7.3,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -197,7 +211,9 @@
     "margins": 1,
     "gm_std": 0.0131
    },
+   "unknown": [],
    "total": 8.2,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -222,7 +238,9 @@
     "margins": 0,
     "gm_std": 0.0996
    },
+   "unknown": [],
    "total": 4.7,
+   "out_of": 10,
    "suggested": "none",
    "current": "narrow",
    "differs": true
@@ -247,7 +265,9 @@
     "margins": 0.5,
     "gm_std": 0.0461
    },
+   "unknown": [],
    "total": 8.0,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -264,15 +284,19 @@
    "risk": "Oil and gas prices; reserve replacement.",
    "src": null,
    "source_score": 0.0,
-   "numbers_score": 2.93,
+   "numbers_score": 2.43,
    "parts": {
     "persistence": 1.43,
     "fade": 0,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 2.9,
+   "unknown": [
+    "margins"
+   ],
+   "total": 2.4,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -297,7 +321,9 @@
     "margins": 0.5,
     "gm_std": 0.0351
    },
+   "unknown": [],
    "total": 6.8,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -322,7 +348,9 @@
     "margins": 1,
     "gm_std": 0.0093
    },
+   "unknown": [],
    "total": 6.5,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -347,7 +375,9 @@
     "margins": 1,
     "gm_std": 0.0224
    },
+   "unknown": [],
    "total": 4.0,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -364,15 +394,20 @@
    "risk": "Google and AI agents taking the booking front door; heavy marketing spend.",
    "src": null,
    "source_score": 1.5,
-   "numbers_score": 2.6,
+   "numbers_score": 1.6,
    "parts": {
     "persistence": 0.6,
     "fade": 1,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 4.1,
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 3.1,
+   "out_of": 10,
    "suggested": "none",
    "current": "narrow",
    "differs": true
@@ -391,10 +426,14 @@
    "source_score": 3.0,
    "numbers_score": null,
    "parts": {},
-   "total": 5.5,
-   "suggested": "narrow",
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.0,
+   "out_of": 5,
+   "suggested": null,
    "current": "wide",
-   "differs": true
+   "differs": false
   },
   "INTU": {
    "sources": {
@@ -408,18 +447,22 @@
    "risk": "Free government tax filing; AI tax tools.",
    "src": null,
    "source_score": 3.0,
-   "numbers_score": 2.4,
+   "numbers_score": 1.9,
    "parts": {
     "persistence": 1.4,
     "fade": 0,
     "new_money": 0.5,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 5.4,
-   "suggested": "narrow",
+   "unknown": [
+    "margins"
+   ],
+   "total": 4.9,
+   "out_of": 10,
+   "suggested": "none",
    "current": "narrow",
-   "differs": false
+   "differs": true
   },
   "ADSK": {
    "sources": {
@@ -441,7 +484,9 @@
     "margins": 1,
     "gm_std": 0.0259
    },
+   "unknown": [],
    "total": 6.4,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -458,15 +503,19 @@
    "risk": "Fashion cycles; reliance on one brand after the Capri deal failed.",
    "src": null,
    "source_score": 2.5,
-   "numbers_score": 3.6,
+   "numbers_score": 3.1,
    "parts": {
     "persistence": 1.6,
     "fade": 1,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 0.5,
     "gm_std": 0.0391
    },
-   "total": 6.1,
+   "unknown": [
+    "new_money"
+   ],
+   "total": 5.6,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -491,7 +540,9 @@
     "margins": 1,
     "gm_std": 0.0209
    },
+   "unknown": [],
    "total": 8.2,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -516,7 +567,9 @@
     "margins": 0.5,
     "gm_std": 0.0422
    },
+   "unknown": [],
    "total": 6.2,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -541,7 +594,9 @@
     "margins": 1,
     "gm_std": 0.0129
    },
+   "unknown": [],
    "total": 7.0,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -560,8 +615,12 @@
    "source_score": 3.25,
    "numbers_score": null,
    "parts": {},
-   "total": 5.8,
-   "suggested": "narrow",
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.2,
+   "out_of": 5,
+   "suggested": null,
    "current": "narrow",
    "differs": false
   },
@@ -585,7 +644,9 @@
     "margins": 1,
     "gm_std": 0.0145
    },
+   "unknown": [],
    "total": 8.2,
+   "out_of": 10,
    "suggested": "wide",
    "current": "narrow",
    "differs": true
@@ -602,15 +663,19 @@
    "risk": "Swipe-fee rules (Credit Card Competition Act); real-time payment systems and stablecoins.",
    "src": null,
    "source_score": 4.0,
-   "numbers_score": 4.5,
+   "numbers_score": 4.0,
    "parts": {
     "persistence": 2.0,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 8.5,
+   "unknown": [
+    "margins"
+   ],
+   "total": 8.0,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -635,7 +700,9 @@
     "margins": 1,
     "gm_std": 0.017
    },
+   "unknown": [],
    "total": 6.0,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -652,15 +719,19 @@
    "risk": "Swipe-fee rules; real-time payment systems and stablecoins.",
    "src": null,
    "source_score": 4.0,
-   "numbers_score": 4.5,
+   "numbers_score": 4.0,
    "parts": {
     "persistence": 2.0,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 8.5,
+   "unknown": [
+    "margins"
+   ],
+   "total": 8.0,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -685,7 +756,9 @@
     "margins": 1,
     "gm_std": 0.0202
    },
+   "unknown": [],
    "total": 7.8,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -710,7 +783,9 @@
     "margins": 1,
     "gm_std": 0.028
    },
+   "unknown": [],
    "total": 6.9,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -735,7 +810,9 @@
     "margins": 1,
     "gm_std": 0.0221
    },
+   "unknown": [],
    "total": 8.0,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -754,8 +831,12 @@
    "source_score": 3.75,
    "numbers_score": null,
    "parts": {},
-   "total": 6.2,
-   "suggested": "narrow",
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.8,
+   "out_of": 5,
+   "suggested": null,
    "current": "narrow",
    "differs": false
   },
@@ -779,7 +860,9 @@
     "margins": 0.5,
     "gm_std": 0.0351
    },
+   "unknown": [],
    "total": 3.8,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -804,7 +887,9 @@
     "margins": 1,
     "gm_std": 0.012
    },
+   "unknown": [],
    "total": 7.5,
+   "out_of": 10,
    "suggested": "wide",
    "current": "narrow",
    "differs": true
@@ -829,7 +914,9 @@
     "margins": 1,
     "gm_std": 0.0245
    },
+   "unknown": [],
    "total": 5.9,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -854,7 +941,9 @@
     "margins": 0.5,
     "gm_std": 0.0476
    },
+   "unknown": [],
    "total": 6.7,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -879,7 +968,9 @@
     "margins": 0,
     "gm_std": 0.1294
    },
+   "unknown": [],
    "total": 6.5,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -904,7 +995,9 @@
     "margins": 1,
     "gm_std": 0.0112
    },
+   "unknown": [],
    "total": 7.5,
+   "out_of": 10,
    "suggested": "wide",
    "current": "narrow",
    "differs": true
@@ -929,7 +1022,9 @@
     "margins": 1,
     "gm_std": 0.0126
    },
+   "unknown": [],
    "total": 5.8,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -946,7 +1041,7 @@
    "risk": "AI agents changing how software is priced (per seat); slower growth.",
    "src": null,
    "source_score": 3.0,
-   "numbers_score": 2.0,
+   "numbers_score": 2,
    "parts": {
     "persistence": 0.0,
     "fade": 0,
@@ -954,7 +1049,9 @@
     "margins": 1,
     "gm_std": 0.0155
    },
+   "unknown": [],
    "total": 5.0,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -971,18 +1068,23 @@
    "risk": "Aircraft production problems at Boeing and engine makers.",
    "src": null,
    "source_score": 3.5,
-   "numbers_score": 2.4,
+   "numbers_score": 1.4,
    "parts": {
     "persistence": 0.4,
     "fade": 1,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 5.9,
-   "suggested": "narrow",
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 4.9,
+   "out_of": 10,
+   "suggested": "none",
    "current": "narrow",
-   "differs": false
+   "differs": true
   },
   "ADP": {
    "sources": {
@@ -996,18 +1098,22 @@
    "risk": "Cloud HR rivals (Workday, Paycom, Rippling); job market slowdown.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": 4.5,
+   "numbers_score": 4.0,
    "parts": {
     "persistence": 2.0,
     "fade": 1,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 1,
     "gm_std": 0.0181
    },
-   "total": 7.8,
-   "suggested": "wide",
+   "unknown": [
+    "new_money"
+   ],
+   "total": 7.2,
+   "out_of": 10,
+   "suggested": "narrow",
    "current": "wide",
-   "differs": false
+   "differs": true
   },
   "AME": {
    "sources": {
@@ -1029,7 +1135,9 @@
     "margins": 1,
     "gm_std": 0.0106
    },
+   "unknown": [],
    "total": 6.4,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -1046,15 +1154,20 @@
    "risk": "Credit losses in a downturn; rewards card competition from Chase.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": 3.8,
+   "numbers_score": 2.8,
    "parts": {
     "persistence": 1.8,
     "fade": 1,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 7.0,
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 6.0,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -1071,15 +1184,20 @@
    "risk": "Amazon and marketplace rivals; spending on AI commerce.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": 3.0,
+   "numbers_score": 2.0,
    "parts": {
     "persistence": 1.0,
     "fade": 1,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 6.2,
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 5.2,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -1096,15 +1214,19 @@
    "risk": "Apple Pay and card-wallet checkout; low-margin processing growth.",
    "src": null,
    "source_score": 1.75,
-   "numbers_score": 4.1,
+   "numbers_score": 3.6,
    "parts": {
     "persistence": 1.6,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 5.8,
+   "unknown": [
+    "margins"
+   ],
+   "total": 5.3,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -1129,7 +1251,9 @@
     "margins": 0.5,
     "gm_std": 0.0509
    },
+   "unknown": [],
    "total": 2.2,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -1148,8 +1272,12 @@
    "source_score": 3.0,
    "numbers_score": null,
    "parts": {},
-   "total": 5.5,
-   "suggested": "narrow",
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.0,
+   "out_of": 5,
+   "suggested": null,
    "current": "narrow",
    "differs": false
   },
@@ -1165,15 +1293,20 @@
    "risk": "Execution reset in 2025; competition in merchant acquiring.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": 1.4,
+   "numbers_score": 0.4,
    "parts": {
     "persistence": 0.4,
     "fade": 0,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 4.7,
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 3.6,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1192,8 +1325,12 @@
    "source_score": 1.5,
    "numbers_score": null,
    "parts": {},
-   "total": 4.0,
-   "suggested": "none",
+   "unknown": [
+    "filings"
+   ],
+   "total": 1.5,
+   "out_of": 5,
+   "suggested": null,
    "current": "none",
    "differs": false
   },
@@ -1209,15 +1346,20 @@
    "risk": "Online shopping and weaker tenants; interest rates.",
    "src": null,
    "source_score": 1.5,
-   "numbers_score": 1.0,
+   "numbers_score": 0,
    "parts": {
     "persistence": 0.0,
     "fade": 0,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 2.5,
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 1.5,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1242,7 +1384,9 @@
     "margins": 1,
     "gm_std": 0.0243
    },
+   "unknown": [],
    "total": 7.5,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -1267,7 +1411,9 @@
     "margins": 1,
     "gm_std": 0.0017
    },
+   "unknown": [],
    "total": 7.8,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -1292,7 +1438,9 @@
     "margins": 0.5,
     "gm_std": 0.044
    },
+   "unknown": [],
    "total": 6.4,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -1317,7 +1465,9 @@
     "margins": 1,
     "gm_std": 0.021
    },
+   "unknown": [],
    "total": 7.3,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -1334,15 +1484,19 @@
    "risk": "AI site builders; price competition from Squarespace and Wix.",
    "src": null,
    "source_score": 3.0,
-   "numbers_score": 3.3,
+   "numbers_score": 2.8,
    "parts": {
     "persistence": 0.8,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 6.3,
+   "unknown": [
+    "margins"
+   ],
+   "total": 5.8,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -1367,7 +1521,9 @@
     "margins": 1,
     "gm_std": 0.0163
    },
+   "unknown": [],
    "total": 7.8,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -1392,7 +1548,9 @@
     "margins": 1,
     "gm_std": 0.0112
    },
+   "unknown": [],
    "total": 5.9,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -1409,15 +1567,19 @@
    "risk": "Low switching costs for diners; food and labour inflation.",
    "src": null,
    "source_score": 1.5,
-   "numbers_score": 4.3,
+   "numbers_score": 3.8,
    "parts": {
     "persistence": 1.8,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 5.8,
+   "unknown": [
+    "margins"
+   ],
+   "total": 5.3,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -1442,7 +1604,9 @@
     "margins": 1,
     "gm_std": 0.0175
    },
+   "unknown": [],
    "total": 8.8,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -1459,18 +1623,23 @@
    "risk": "New futures exchanges (FMX, crypto venues); volume cycles.",
    "src": null,
    "source_score": 3.75,
-   "numbers_score": 2.0,
+   "numbers_score": 1,
    "parts": {
     "persistence": 0.0,
     "fade": 1,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 5.8,
-   "suggested": "narrow",
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 4.8,
+   "out_of": 10,
+   "suggested": "none",
    "current": "none",
-   "differs": true
+   "differs": false
   },
   "STE": {
    "sources": {
@@ -1484,7 +1653,7 @@
    "risk": "Ethylene oxide rules; hospital spending.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": 2.0,
+   "numbers_score": 2,
    "parts": {
     "persistence": 0.0,
     "fade": 0,
@@ -1492,7 +1661,9 @@
     "margins": 1,
     "gm_std": 0.0142
    },
+   "unknown": [],
    "total": 5.2,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -1509,15 +1680,19 @@
    "risk": "Seat-based pricing under AI; slower hiring at customers.",
    "src": null,
    "source_score": 2.75,
-   "numbers_score": 1.5,
+   "numbers_score": 1,
    "parts": {
     "persistence": 0.0,
     "fade": 0,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 4.2,
+   "unknown": [
+    "margins"
+   ],
+   "total": 3.8,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -1542,7 +1717,9 @@
     "margins": 1,
     "gm_std": 0.0189
    },
+   "unknown": [],
    "total": 8.1,
+   "out_of": 10,
    "suggested": "wide",
    "current": "narrow",
    "differs": true
@@ -1567,7 +1744,9 @@
     "margins": 1,
     "gm_std": 0.0163
    },
+   "unknown": [],
    "total": 7.0,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -1584,15 +1763,20 @@
    "risk": "Oil and gas spending cycle.",
    "src": null,
    "source_score": 1.75,
-   "numbers_score": 2.0,
+   "numbers_score": 1,
    "parts": {
     "persistence": 0.0,
     "fade": 1,
-    "new_money": 0.5,
-    "margins": 0.5,
+    "new_money": null,
+    "margins": null,
     "gm_std": null
    },
-   "total": 3.8,
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 2.8,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -1617,7 +1801,9 @@
     "margins": 1,
     "gm_std": 0.0061
    },
+   "unknown": [],
    "total": 5.5,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "none",
    "differs": true
@@ -1634,15 +1820,19 @@
    "risk": "Rail spending cycle; integration of acquisitions.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": 1.5,
+   "numbers_score": 1,
    "parts": {
     "persistence": 0.0,
     "fade": 0,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 1,
     "gm_std": 0.0206
    },
-   "total": 4.8,
+   "unknown": [
+    "new_money"
+   ],
+   "total": 4.2,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -1667,7 +1857,9 @@
     "margins": 0.5,
     "gm_std": 0.0396
    },
+   "unknown": [],
    "total": 2.0,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -1692,7 +1884,9 @@
     "margins": 1,
     "gm_std": 0.0231
    },
+   "unknown": [],
    "total": 5.8,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1711,10 +1905,14 @@
    "source_score": 2.75,
    "numbers_score": null,
    "parts": {},
-   "total": 5.2,
-   "suggested": "narrow",
+   "unknown": [
+    "filings"
+   ],
+   "total": 2.8,
+   "out_of": 5,
+   "suggested": null,
    "current": "none",
-   "differs": true
+   "differs": false
   },
   "CF": {
    "sources": {
@@ -1728,15 +1926,19 @@
    "risk": "Fertiliser price cycles; US gas price rises.",
    "src": null,
    "source_score": 2.5,
-   "numbers_score": 2.5,
+   "numbers_score": 2.0,
    "parts": {
     "persistence": 1.0,
     "fade": 1,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 0,
     "gm_std": 0.1166
    },
-   "total": 5.0,
+   "unknown": [
+    "new_money"
+   ],
+   "total": 4.5,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1761,7 +1963,9 @@
     "margins": 1,
     "gm_std": 0.018
    },
+   "unknown": [],
    "total": 5.8,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -1778,15 +1982,19 @@
    "risk": "Travel cycle; rising costs.",
    "src": null,
    "source_score": 1.25,
-   "numbers_score": 2.5,
+   "numbers_score": 2,
    "parts": {
     "persistence": 0.0,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 3.8,
+   "unknown": [
+    "margins"
+   ],
+   "total": 3.2,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1811,7 +2019,9 @@
     "margins": 1,
     "gm_std": 0.02
    },
+   "unknown": [],
    "total": 6.2,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -1828,15 +2038,19 @@
    "risk": "Gold price; mine costs and execution.",
    "src": null,
    "source_score": 1.25,
-   "numbers_score": 2.9,
+   "numbers_score": 2.4,
    "parts": {
     "persistence": 0.4,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 4.2,
+   "unknown": [
+    "margins"
+   ],
+   "total": 3.6,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1853,15 +2067,19 @@
    "risk": "Eylea biosimilars; dependence on Dupixent.",
    "src": null,
    "source_score": 2.5,
-   "numbers_score": 2.3,
+   "numbers_score": 1.8,
    "parts": {
     "persistence": 1.8,
     "fade": 0,
     "new_money": 0,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 4.8,
+   "unknown": [
+    "margins"
+   ],
+   "total": 4.3,
+   "out_of": 10,
    "suggested": "none",
    "current": "narrow",
    "differs": true
@@ -1886,7 +2104,9 @@
     "margins": 1,
     "gm_std": 0.0183
    },
+   "unknown": [],
    "total": 8.2,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -1903,15 +2123,19 @@
    "risk": "Volume decline of 8-10% a year; regulation; weak position in vapes.",
    "src": null,
    "source_score": 3.0,
-   "numbers_score": 4.0,
+   "numbers_score": 3.5,
    "parts": {
     "persistence": 2.0,
     "fade": 1,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 0.5,
     "gm_std": 0.0566
    },
-   "total": 7.0,
+   "unknown": [
+    "new_money"
+   ],
+   "total": 6.5,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1928,15 +2152,19 @@
    "risk": "Toy demand; tariffs on imports from China.",
    "src": null,
    "source_score": 2.5,
-   "numbers_score": 1.1,
+   "numbers_score": 0.6,
    "parts": {
     "persistence": 0.6,
     "fade": 0,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 0,
     "gm_std": 0.1705
    },
-   "total": 3.6,
+   "unknown": [
+    "new_money"
+   ],
+   "total": 3.1,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -1953,15 +2181,19 @@
    "risk": "Patent cliff on its largest drugs; pipeline must fill the gap.",
    "src": null,
    "source_score": 1.25,
-   "numbers_score": 2.0,
+   "numbers_score": 1.5,
    "parts": {
     "persistence": 1.0,
     "fade": 0,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 0.5,
     "gm_std": 0.0317
    },
-   "total": 3.2,
+   "unknown": [
+    "new_money"
+   ],
+   "total": 2.8,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -1986,7 +2218,9 @@
     "margins": 1,
     "gm_std": 0.0214
    },
+   "unknown": [],
    "total": 3.9,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -2003,15 +2237,19 @@
    "risk": "Execution after selling Worldpay and buying issuer processing.",
    "src": null,
    "source_score": 2.75,
-   "numbers_score": 1.5,
+   "numbers_score": 1,
    "parts": {
     "persistence": 0.0,
     "fade": 0,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 1,
     "gm_std": 0.0192
    },
-   "total": 4.2,
+   "unknown": [
+    "new_money"
+   ],
+   "total": 3.8,
+   "out_of": 10,
    "suggested": "none",
    "current": "none",
    "differs": false
@@ -2036,7 +2274,9 @@
     "margins": 1,
     "gm_std": 0.0139
    },
+   "unknown": [],
    "total": 7.8,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -2061,7 +2301,9 @@
     "margins": 1,
     "gm_std": 0.0142
    },
+   "unknown": [],
    "total": 7.0,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "narrow",
    "differs": false
@@ -2086,7 +2328,9 @@
     "margins": 1,
     "gm_std": 0.0269
    },
+   "unknown": [],
    "total": 8.0,
+   "out_of": 10,
    "suggested": "wide",
    "current": "wide",
    "differs": false
@@ -2103,18 +2347,22 @@
    "risk": "Stelara biosimilars, drug-price rules and talc litigation.",
    "src": null,
    "source_score": 3.0,
-   "numbers_score": 4.5,
+   "numbers_score": 4.0,
    "parts": {
     "persistence": 2.0,
     "fade": 1,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 1,
     "gm_std": 0.0126
    },
-   "total": 7.5,
-   "suggested": "wide",
+   "unknown": [
+    "new_money"
+   ],
+   "total": 7.0,
+   "out_of": 10,
+   "suggested": "narrow",
    "current": "narrow",
-   "differs": true
+   "differs": false
   },
   "VLTO": {
    "sources": {
@@ -2128,18 +2376,22 @@
    "risk": "Industrial slowdown in product-quality equipment; acquisitions dilute returns.",
    "src": null,
    "source_score": 3.25,
-   "numbers_score": 4.5,
+   "numbers_score": 4.0,
    "parts": {
     "persistence": 2.0,
     "fade": 1,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 1,
     "gm_std": 0.0128
    },
-   "total": 7.8,
-   "suggested": "wide",
+   "unknown": [
+    "new_money"
+   ],
+   "total": 7.2,
+   "out_of": 10,
+   "suggested": "narrow",
    "current": "wide",
-   "differs": false
+   "differs": true
   },
   "AMP": {
    "sources": {
@@ -2155,8 +2407,12 @@
    "source_score": 3.0,
    "numbers_score": null,
    "parts": {},
-   "total": 5.5,
-   "suggested": "narrow",
+   "unknown": [
+    "filings"
+   ],
+   "total": 3.0,
+   "out_of": 5,
+   "suggested": null,
    "current": "narrow",
    "differs": false
   },
@@ -2180,7 +2436,9 @@
     "margins": 1,
     "gm_std": 0.0215
    },
+   "unknown": [],
    "total": 4.6,
+   "out_of": 10,
    "suggested": "none",
    "current": "narrow",
    "differs": true
@@ -2197,15 +2455,19 @@
    "risk": "Oil and gas prices; shale inventory depletion.",
    "src": null,
    "source_score": 2.5,
-   "numbers_score": 3.7,
+   "numbers_score": 3.2,
    "parts": {
     "persistence": 1.2,
     "fade": 1,
     "new_money": 1,
-    "margins": 0.5,
+    "margins": null,
     "gm_std": null
    },
-   "total": 6.2,
+   "unknown": [
+    "margins"
+   ],
+   "total": 5.7,
+   "out_of": 10,
    "suggested": "short",
    "current": "short",
    "differs": false
@@ -2230,7 +2492,9 @@
     "margins": 1,
     "gm_std": 0.0154
    },
+   "unknown": [],
    "total": 6.8,
+   "out_of": 10,
    "suggested": "narrow",
    "current": "wide",
    "differs": true
@@ -2247,18 +2511,22 @@
    "risk": "Tariffs, low-income shoppers under pressure, competition from Walmart and Temu; multi-price rollout.",
    "src": null,
    "source_score": 1.5,
-   "numbers_score": 3.5,
+   "numbers_score": 3.0,
    "parts": {
     "persistence": 1.0,
     "fade": 1,
-    "new_money": 0.5,
+    "new_money": null,
     "margins": 1,
     "gm_std": 0.0228
    },
-   "total": 5.0,
-   "suggested": "narrow",
+   "unknown": [
+    "new_money"
+   ],
+   "total": 4.5,
+   "out_of": 10,
+   "suggested": "none",
    "current": "narrow",
-   "differs": false
+   "differs": true
   },
   "AMGN": {
    "sources": {
@@ -2280,7 +2548,9 @@
     "margins": 0,
     "gm_std": 0.0682
    },
+   "unknown": [],
    "total": 4.5,
+   "out_of": 10,
    "suggested": "none",
    "current": "narrow",
    "differs": true

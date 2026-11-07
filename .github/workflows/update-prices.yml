@@ -22,11 +22,13 @@ jobs:
       - run: pip install -q yfinance pandas
       - name: Price-drop watch (four-step check evidence)
         run: python scripts/drop_watch.py || echo "drop watch failed (prices still committed)"
+      - name: Research framework blocks (price-dependent: market returns, what the price assumes)
+        run: python scripts/framework.py || echo "framework failed (prices still committed)"
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/prices.json; if [ -f data/drops.json ]; then git add data/drops.json; fi
+          git add data/prices.json; if [ -f data/drops.json ]; then git add data/drops.json; fi; if [ -f data/framework.json ]; then git add data/framework.json; fi
           git diff --staged --quiet && exit 0
           STATE=$(python -c "import json;print(json.load(open('data/prices.json')).get('market',{}).get('state','?'))")
           git commit -m "Prices ($STATE) $(date -u +%H:%M) UTC"

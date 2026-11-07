@@ -12,8 +12,8 @@ function status(a){const p=a.price,fv=a.fair_value;
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 $("#theme").onclick=()=>{const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1020";const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
 $("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
-let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null,RH={stocks:{}},MS={stocks:{}},DU={stocks:{}};
-try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);RH=await fetch("data/returns.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}));MS=await fetch("data/moat_scorecard.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}));DU=await fetch("data/durability.json?"+Date.now()).then(r=>r.ok?r.json():{stocks:{}}).catch(()=>({stocks:{}}))}
+let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null,RH={stocks:{}},MS={stocks:{}},DU={stocks:{}},FW={stocks:{}};
+try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);RH=await fetch("data/returns.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}));MS=await fetch("data/moat_scorecard.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}));DU=await fetch("data/durability.json?"+Date.now()).then(r=>r.ok?r.json():{stocks:{}}).catch(()=>({stocks:{}}));FW=await fetch("data/framework.json?"+Date.now()).then(r=>r.ok?r.json():{stocks:{}}).catch(()=>({stocks:{}}))}
 catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open this page through GitHub Pages (or a local server such as <code>python -m http.server</code>), not by double-clicking the file.</div>';return}
 let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  const r={...a,price,prev:p.prev_close,history:p.history||[]};
@@ -108,9 +108,9 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
   r.sensitivity.grid.map((row,i)=>`<tr><th>${(r.sensitivity.r[i]*100).toFixed(1)}%</th>${row.map((v,j)=>`<td class="${i==2&&j==2?"hl":""}">${v.toFixed(0)}</td>`).join("")}</tr>`).join("")+"</table></div>"}
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
  ${snapHTML(r)}
+ ${bondHTML(r)}${assumesHTML(r)}${capH?"":piH}${capH}${moatHTML(r)}${retHTML(r)}${durHTML(r)}${sizeHTML(r)}
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
- ${capH?"":piH}
- ${sizeHTML(r)}${capH}${moatHTML(r)}${retHTML(r)}${bondHTML(r)}${durHTML(r)}${segH}${mcH}${fc}${rt}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
+ ${segH}${mcH}${fc}${rt}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;bindSnap();if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
 
@@ -199,8 +199,8 @@ function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=
  // quality cards
  let q="";if(S){const sn=S.valuation.sector_pct.name;
   q=`<div class="snaphd"><b>Business quality</b><span class="muted">Is it a good company? (price not included)</span></div><div class="cards">`+
-  S.cards.map((c,i)=>`<button class="qc" data-i="${i}" aria-expanded="false"><span class="qt">${c.title}</span><span class="gr ${GC[c.grade]||"g-n"}"><i></i>${c.grade}</span>
-   <span class="qq">${esc(c.question)}</span><span class="qh">${c.headline.map(esc).join(" · ")||"–"}</span>${spark2(c.trend)}</button>`).join("")+`</div><div id="qdet" class="qdet" hidden></div>`;
+  S.cards.map((c,i)=>`<button class="qc" data-i="${i}" aria-expanded="false"><span class="qt">${c.title}</span>${cardAns(c).enough?`<span class="gr ${GC[c.grade]||"g-n"}"><i></i>${c.grade}</span>`:`<span class="gr g-n"><i></i>Not enough data</span>`}
+   <span class="qq">${esc(c.question)}</span><span class="qh">${c.headline.map(esc).join(" · ")||"–"}</span>${spark2(c.trend)}${ansLine(c)}</button>`).join("")+`</div><div id="qdet" class="qdet" hidden></div>`;
   window.__snapCards=S.cards.map(c=>`<div class="qdh"><b>${c.title}</b> <span class="gr ${GC[c.grade]||"g-n"}"><i></i>${c.grade}</span> <span class="muted">${esc(c.question)}${c.note?" "+esc(c.note):""}</span></div>
    <div class="scroll"><table class="s qtab"><tr><th style="text-align:left">Metric</th><th>Value</th><th>Grade</th><th style="text-align:left" title="Percentile among ${esc(sn)} companies (or the industry, where the note says so)">vs peers</th></tr>`+
    c.metrics.map(m=>`<tr class="${m.graded?"":"info"}"><td style="text-align:left;white-space:normal">${esc(m.label)}${m.note?`<div class="muted mnote">${esc(m.note)}</div>`:""}</td><td${String(m.value).length>28?' style="white-space:normal;min-width:190px"':""}>${esc(m.value)}</td>
@@ -209,7 +209,7 @@ function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=
  // valuation strip
  const lo=Math.min(r.bear,px,r.buy_below)*0.92,hi=Math.max(r.bull,px)*1.06,X=v=>((v-lo)/(hi-lo)*100).toFixed(2)+"%";
  let pA=null,h10=null;if(r.mc&&r.mc.regimes){const Q={};KS.forEach(k=>Q[k]=r.mc.regimes[k].quantiles);const w={bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull};pA=1-mix(Q,w).F(px);
-  if(r.mc.irr&&r.mc.irr.hold10){const hr=irrAt(r.mc.irr,px/r.mc.irr.fair_value,"hold10");h10=mix(hr.Q,w).inv(.5)}}
+  h10=h10Of(r,px)}
  const V=S&&S.valuation,L=V&&V.live,live={pe:L&&L.trailing_eps>0?px/L.trailing_eps:V&&V.now.pe,ev_ebitda:L&&L.ebitda>0&&L.shares?(px*L.shares+(L.net_debt||0))/L.ebitda:V&&V.now.ev_ebitda,fcf_yield:L&&L.fcf_ttm&&L.shares?L.fcf_ttm/(px*L.shares)*100:V&&V.now.fcf_yield};
  const mrow=(k,lab,low,unit)=>{const h=V.history[k]||[],now=live[k];if(now==null||!isFinite(now))return "";const vals=h.map(x=>x[1]);const mn=Math.min(...vals,now),mx=Math.max(...vals,now),pos=x=>((x-mn)/((mx-mn)||1)*100).toFixed(1)+"%";
   const hmn=Math.min(...vals),hmx=Math.max(...vals),where=!vals.length?"":now>hmx?"above its range":now<hmn?"below its range":now>hmn+(hmx-hmn)*2/3?"top of its range":now<hmn+(hmx-hmn)/3?"bottom of its range":"middle of its range";
@@ -247,7 +247,7 @@ function snapHTML(r){const S=(SN.stocks||{})[r.ticker],px=r.price,$f=x=>"$"+(x>=
    <text x="${pl}" y="${Hh-6}" class="mct">${pts[0][0]}</text><text x="${W-prr}" y="${Hh-6}" text-anchor="end" class="mct">now</text></svg>
   <p class="muted">Line: monthly price. Dashes and dots: fair value at each refresh (${H.length} recorded so far; recording started ${H[0].date}, earlier values used another method). Shaded: bear–bull range of the latest valuation. A fair value that keeps rising with the price supports the thesis; one that falls while the price holds up is a warning.</p>`}
  else if(H.length){fh=`<div class="snaphd"><b>Fair value over time</b></div><p class="muted">${H.map(h=>`${h.date}: ${$f(h.fv)}`).join(" · ")}</p>`}
- return flags+q+driversHTML(DR)+val+watch+fh}
+ return flags+covHTML(r)+perfHTML(r,px)+q+driversHTML(DR)+sectorHTML(r)+val+watch+fh}
 // ---------- Business drivers (Phase B): company-specific KPIs from quarterly releases, judged against the company's own history
 const fmtK=(d,v)=>v==null?"–":d.unit==="text"?String(v):d.unit==="pct"?(+v).toFixed(1).replace(/\.0$/,"")+"%":d.unit==="usd_b"?"$"+(+v).toFixed(v>=100?0:1)+"B":d.unit==="usd"?"$"+(+v).toFixed(2):d.unit==="x"?(+v).toFixed(2)+"×":Math.abs(v)>=1e9?(v/1e9).toFixed(2).replace(/\.?0+$/,"")+"B":Math.abs(v)>=1e6?(v/1e6).toFixed(1)+"M":Math.abs(v)>=1e3?(v/1e3).toFixed(1)+"k":String(v);
 function driversData(t){const defs=((KD.stocks||{})[t]||{}).kpis||[],data=(KP.stocks||{})[t]||{};
@@ -376,9 +376,9 @@ function sizeAll(){const raw={};rows.forEach(r=>{r.sz=null;r.size=null;if(r.type
 function moatHTML(r){const x=(MS.stocks||{})[r.ticker];if(r.type!=="stock"||!x)return "";
  const N={n:"Network effects",s:"Switching costs",i:"Brand, patents, licences",c:"Cost advantage",e:"Efficient scale"},L=["none","some","strong"];
  const dots=v=>`<span class="mdots">${[0,1].map(i=>`<i class="${i<v?"on":""}"></i>`).join("")}</span> ${L[v]}`;
- const P=x.parts||{},pp=(v,m)=>v==null?"–":`${(+v).toFixed(1).replace(".0","")} / ${m}`;
- const verdict=x.differs?`The scorecard suggests <b>${MOATN[x.suggested]}</b>, but the model uses <b>${MOATN[x.current]}</b>. That's worth a look; edit data/moat.json to change it, which moves the fair value.`:`This agrees with the model's ${MOATN[x.current]||x.current}.`;
- return `<h3>How durable is the edge?</h3><p><b>${x.total.toFixed(1)} / 10</b>: ${x.source_score.toFixed(1)} from the sources of advantage, ${x.numbers_score==null?"2.5 (neutral, the filings can't measure it)":x.numbers_score.toFixed(1)} from the filings. ${verdict}</p>
+ const P=x.parts||{},pp=(v,m)=>v==null?`<span class="unk">unknown</span>`:`${(+v).toFixed(1).replace(".0","")} / ${m}`;
+ const verdict=x.suggested==null?`No class is suggested: the filings can't measure returns on capital, and an unknown never counts as positive. The model uses <b>${MOATN[x.current]||x.current}</b>.`:x.differs?`The scorecard suggests <b>${MOATN[x.suggested]}</b>, but the model uses <b>${MOATN[x.current]}</b>. That's worth a look; edit data/moat.json to change it, which moves the fair value.`:`This agrees with the model's ${MOATN[x.current]||x.current}.`;
+ return `<h3>How durable is the edge?</h3><p><b>${x.total.toFixed(1)} / ${x.out_of||10}</b>: ${x.source_score.toFixed(1)} from the sources of advantage, ${x.numbers_score==null?`the filings half <span class="unk">unknown, not scored</span>`:x.numbers_score.toFixed(1)+" from the filings"+((x.unknown||[]).length?` (${x.unknown.map(k=>k==="new_money"?"returns on new money":"gross margin").join(" and ")} unknown, scored 0)`:"")}. ${verdict}</p>
  <div class="scroll"><table class="s rq"><tr><th style="text-align:left">Source of advantage</th><th style="text-align:left">Strength</th></tr>${Object.keys(N).map(k=>`<tr><td style="text-align:left">${N[k]}</td><td style="text-align:left">${dots(x.sources[k])}</td></tr>`).join("")}
  <tr><td style="text-align:left">Main evidence</td><td style="text-align:left">${x.why}${x.src?` (<a href="${x.src}" target="_blank" rel="noopener">source</a>)`:""}</td></tr>
  <tr><td style="text-align:left">Main threat</td><td style="text-align:left">${x.risk}</td></tr></table></div>
@@ -415,6 +415,64 @@ function retHTML(r){const x=(RH.stocks||{})[r.ticker];if(r.type!=="stock"||!x)re
  <tr><td style="text-align:left">How much more can it reinvest at high returns?</td><td style="text-align:left">${q5}</td></tr></table>
  <p class="muted">History only, so it shows the direction, not the future. Nothing here changes the fair value.</p>`}
 // Advantage over bonds and profit durability (scripts/durability.py -> data/durability.json). Information only.
+// ---------- Research framework blocks (scripts/framework.py -> data/framework.json). Information only, no fair value changes.
+// Unanswered is never positive: an unknown answer is grey, "not scored", and never counts toward a grade.
+const fwOf=t=>(FW.stocks||{})[t];
+const sp1=(x,d=1)=>x==null?"–":(x>=0?"+":"−")+Math.abs(x*100).toFixed(d)+"%";
+const UNK=(t="Unknown, not scored")=>`<span class="unk">${t}</span>`;
+const TONE={good:"up",bad:"down",caution:"warn",key:"key"};
+const mon=d=>{if(!d)return "";const m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+d.slice(5,7)-1];return m+" "+d.slice(0,4)};
+function h10Of(r,px){if(!r.mc||!r.mc.regimes||!r.mc.irr||!r.mc.irr.hold10||px==null)return null;const Q={};KS.forEach(k=>Q[k]=r.mc.regimes[k].quantiles);
+ const w={bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull},hr=irrAt(r.mc.irr,px/r.mc.irr.fair_value,"hold10");return mix(hr.Q,w).inv(.5)}
+function cardAns(c){const ms=c.metrics||[],bad=v=>v==null||v===""||v==="–"||/not in free data/i.test(String(v));const miss=ms.filter(m=>bad(m.value)).map(m=>m.label);
+ return {n:ms.length,a:ms.length-miss.length,miss,enough:!ms.length||(ms.length-miss.length)*2>=ms.length}}
+function ansLine(c){const x=cardAns(c);if(!x.n)return "";return `<span class="ans">${x.a} of ${x.n} answered${x.miss.length?` · ${x.miss.map(l=>esc(l.toLowerCase())).join(", ")} ${UNK("unknown")}`:""}</span>`}
+function covHTML(r){const x=fwOf(r.ticker);if(!x||!x.coverage)return "";const c=x.coverage,w=v=>(v/c.total*100).toFixed(1)+"%",Qs=FW.questions||{};
+ const list=st=>c.fixed.filter(f=>f[1]===st).map(f=>`<li>${esc(Qs[f[0]]||f[0])}</li>`).join("")+(st==="unknown"?((x.sector||{}).questions||[]).filter(q=>q.answer==null).map(q=>`<li>${esc(q.q)} <span class="muted">(${esc(x.sector.module)})</span></li>`).join(""):"");
+ return `<details class="cov"><summary><b>Answered ${c.answered} of ${c.total}</b> <span class="muted">· ${c.partly} partly · ${c.unknown} unknown, not scored</span>
+  <span class="covbar" aria-hidden="true"><i style="width:${w(c.answered)};background:var(--good)"></i><i style="width:${w(c.partly)};background:color-mix(in srgb,var(--warn) 45%,var(--line))"></i><i style="width:${w(c.unknown)};background:color-mix(in srgb,var(--mut) 30%,var(--line))"></i></span>
+  <span class="covwhich">which ones?</span></summary>
+  <div class="covlist"><div><b>Partly answered</b><ul>${list("partly")}</ul></div><div><b>Unknown, not scored</b><ul>${list("unknown")}</ul></div></div>
+  <p class="muted">The 60 questions every stock gets (valuation vs bonds, growth, advantage, cash flow, capital allocation, risk, market performance, what the price assumes) plus the questions for its type of business. An unknown is never counted as good.</p></details>`}
+function perfHTML(r,px){const x=fwOf(r.ticker);if(!x||(!x.business&&!x.market))return "";const b=x.business||{},m=x.market||{},a=x.assumes||{},sp=x.split;
+ const row=(l,v)=>`<div class="r"><span>${l}</span>${v}</div>`,B=v=>v==null?UNK("–"):`<b>${sp1(v)}</b>`;
+ const bm=(o,lab)=>o&&o.ytd!=null&&m.ytd!=null?row(`vs ${lab} YTD`,`<b class="${m.ytd>=o.ytd?"up":"down"}">${(m.ytd-o.ytd>=0?"+":"−")+Math.abs((m.ytd-o.ytd)*100).toFixed(1)} pts</b>`):row(`vs ${lab}`,UNK("not loaded yet"));
+ const g1=a.g1_needed!=null?a.g1_needed:r.reverse_g1,bg=a.base_g1!=null?a.base_g1:(r.scenarios&&r.scenarios.base?r.scenarios.base.g1:null),cap=a.cap_needed!=null?a.cap_needed:r.implied_cap;
+ const asks=g1!=null&&bg!=null&&g1>bg+0.02;
+ let split="";if(sp){const lp=Math.log(1+sp.price),le=Math.log(1+sp.eps);
+  const why=sp.price>0&&sp.eps<=0?"The rise came from a higher P/E while earnings fell.":sp.price>0&&le>=0.67*lp?"The rise came mostly from earnings, not a higher multiple.":sp.price>0&&sp.pe>sp.eps?"Most of the rise came from a higher P/E, not from earnings.":sp.price>0?"Earnings and a higher P/E both added to the rise.":sp.eps>0?"Earnings grew but the P/E fell by more.":"Earnings and the P/E both fell.";
+  split=`<p class="psplit">Fiscal year to ${mon(sp.fy)}: price <b>${sp1(sp.price)}</b> = EPS <b>${sp1(sp.eps)}</b> and P/E <b>${sp1(sp.pe)}</b> (${sp.pe0} → ${sp.pe1}). ${why}</p>`}
+ return `<div class="snaphd"><b>Three performances</b><span class="muted">Did the business keep up with the stock?</span></div><div class="perf">
+ <div><h4>Business</h4><div class="psub">Fiscal year to ${mon(b.fy)} vs the year before</div>${row("Sales",B(b.sales))}${row("EPS",B(b.eps))}${row("Free cash flow",B(b.fcf))}</div>
+ <div><h4>Market</h4><div class="psub">Share price</div>${row("Year to date",B(m.ytd))}${row("with dividends",B(m.ytd_total))}${row("1 · 3 · 5 yrs",`<b>${[m.y1,m.y3,m.y5].map(v=>v==null?"–":sp1(v,0)).join(" · ")}</b>`)}${bm(m.spy,"S&amp;P 500")}${bm(m.sector,"its sector")}</div>
+ <div class="${asks?"cr":""}"><h4>Priced in</h4><div class="psub">At the ${(r.required_return*100).toFixed(1)}% required return</div>${row("Year-1 sales growth",g1==null?UNK("–"):`<b>${(g1*100).toFixed(0)}%</b>`)}<div class="psub">model base case: ${bg==null?"–":(bg*100).toFixed(0)+"%"}</div>
+  ${row("Edge must last",cap==null?UNK("–"):`<b>${cap>80?"80+":cap} years</b>`)}<div class="psub">${MOATN[r.moat]||"model"}: ${r.cap_years||"–"} years</div></div></div>${split}`}
+function sectorHTML(r){const x=fwOf(r.ticker);if(!x||!x.sector)return "";const S=x.sector;
+ return `<div class="snaphd"><b>Sector questions</b><span class="muted">${esc(S.module)}</span></div><div class="scroll"><table class="s sp"><tr><th>Question</th><th class="n">Answer</th><th>Reading</th></tr>
+ ${S.questions.map(q=>`<tr><td>${esc(q.q)}</td><td class="n">${q.answer==null?UNK():`<span class="${TONE[q.tone]||"key"}">${esc(q.answer)}</span>`}</td><td class="muted">${q.answer==null?"not in our data":esc(q.reading||"")}</td></tr>`).join("")}</table></div>
+ <p class="muted">Questions for this type of business, answered from the annual statements where they can be. Unknowns need company disclosures we don't collect; they are never scored.</p>`}
+function spreadsHTML(r){const x=fwOf(r.ticker),b=x&&x.bonds;if(!b)return "";const h=h10Of(r,r.price),hr=hurdleOf(r),f=v=>v==null?"–":v.toFixed(2)+"%";
+ const g1=v=>v==null?"–":`<span class="${v<0?"down":v<3?"warn":"up"}">${(v>=0?"+":"−")+Math.abs(v).toFixed(2)}</span>`,
+  g2=v=>v==null?UNK("–"):`<span class="${v<0?"down":"warn"}">${(v>=0?"+":"−")+Math.abs(v).toFixed(1)}</span>`;
+ const ey=b.ey,er=h==null?null:h*100;
+ return `<div class="scroll"><table class="s sp"><tr><th>Spread</th><th class="n">Stock</th><th class="n">Bond or hurdle</th><th class="n">Gap, pts</th><th class="n">Usual</th></tr>
+ <tr><td><b>1. Current earnings spread</b><span class="ftag fact">fact</span><div class="muted">earnings yield − bond yield</div></td><td class="n">${f(ey)}</td>
+  <td class="n">Aaa ${f(b.aaa)}<br>10-year ${f(b.t10)}<br>10-year real (TIPS)${b.tips!=null?" "+f(b.tips):""}</td><td class="n">${g1(ey!=null&&b.aaa!=null?ey-b.aaa:null)}<br>${g1(ey!=null&&b.t10!=null?ey-b.t10:null)}<br>${b.tips!=null&&ey!=null?g1(ey-b.tips):UNK("not loaded yet")}</td><td class="n">${b.median_gap==null?"–":(b.median_gap>=0?"+":"−")+Math.abs(b.median_gap).toFixed(2)}<br><br></td></tr>
+ <tr><td><b>2. Growth-adjusted spread</b><span class="ftag est">estimate</span><div class="muted">expected 10-year return − 10-year yield</div></td><td class="n">${er==null?UNK("–"):er.toFixed(1)+"% a year"}</td><td class="n">10-year ${f(b.t10)}</td><td class="n">${g2(er!=null&&b.t10!=null?er-b.t10:null)}</td><td></td></tr>
+ <tr><td><b>3. Intrinsic-value spread</b><span class="ftag est">estimate</span><div class="muted">expected return − your hurdle</div></td><td class="n">${er==null?UNK("–"):er.toFixed(1)+"% a year"}</td><td class="n">hurdle ${(hr*100).toFixed(1)}%</td><td class="n">${g2(er!=null?er-hr*100:null)}</td><td></td></tr></table></div>
+ <p class="muted">Expected return = median 10-year return at today's price from the Monte Carlo (the tile under Valuation), so the horizon matches the 10-year bond. Rows 2 and 3 are model estimates, never marked green, and follow My settings. All in ${esc(x.currency||"USD")}; bond yields ${b.month||""} monthly averages from FRED. The earnings yield is close to a real yield, since earnings rise with inflation, so the TIPS line is the like-for-like comparison.</p>`}
+function assumesHTML(r){const x=fwOf(r.ticker),a=x&&x.assumes;if(!a)return "";const px=r.price,$f=v=>v==null?"–":"$"+(v>=1000?v.toFixed(0):v.toFixed(2)),pc=v=>v==null?"–":(v*100).toFixed(1).replace(".0","")+"%";
+ const vs=v=>v==null||!px?"":`<span class="${v>=px?"warn":"down"}">${sp1(v/px-1,0)}</span>`,rows=[];
+ const row=(l,n,b,v)=>rows.push(`<tr><td>${l}</td><td class="n">${n}</td><td class="n">${b}</td><td class="n">${v}</td></tr>`);
+ row("Sales growth needed in year 1",a.g1_needed==null?UNK("–"):`<span class="${a.g1_needed>a.base_g1+0.02?"warn":"key"}">${pc(a.g1_needed)}</span>`,pc(a.base_g1),"");
+ row("Cash margin needed at base growth",a.m_needed==null?UNK("–"):`<span class="${a.m_needed>a.base_m+0.02?"warn":"key"}">${pc(a.m_needed)}</span>`,pc(a.base_m),"");
+ if(a.half_value!=null)row(`If growth is half that (${pc(a.half_g1)})`,$f(a.half_value),"",vs(a.half_value));
+ if(a.pe_sector&&a.eps_ttm>0)row(`If P/E falls to the sector median (${a.pe_sector})`,$f(a.pe_sector*a.eps_ttm),"",vs(a.pe_sector*a.eps_ttm));
+ if(a.pe_own&&a.eps_ttm>0)row(`If P/E goes back to its own median (${a.pe_own}, ${a.pe_own_years})`,$f(a.pe_own*a.eps_ttm),"",vs(a.pe_own*a.eps_ttm));
+ row("Bear / base / bull value",`${$f(r.bear)} / ${$f(r.base)} / ${$f(r.bull)}`,"",[r.bear,r.base,r.bull].map(vs).join(" "));
+ if(a.cap_needed!=null)row("Edge the price needs vs the moat class",`${a.cap_needed>80?"80+":a.cap_needed} years`,`${r.cap_years||"–"} years`,a.cap_needed>(r.cap_years||0)?`<span class="down">not covered</span>`:"covered");
+ return `<h3>What the price assumes</h3><div class="scroll"><table class="s sp"><tr><th>At ${$f(a.price)} and a ${(a.r*100).toFixed(1)}% required return</th><th class="n">Needed or result</th><th class="n">Model base</th><th class="n">vs today's price</th></tr>${rows.join("")}</table></div>
+ <p class="muted">Same cash-flow model as the fair value, base case unless stated. Growth and margin needed solve the model for today's price; the P/E rows use trailing EPS${a.sector?` and the median P/E of ${esc(a.sector)} stocks in the latest growth screen`:""}. Estimates, not forecasts; nothing here changes the fair value.</p>`}
 function bondHTML(r){const x=((DU.stocks||{})[r.ticker]||{}).bond;if(r.type!=="stock"||!x||!x.years||!x.years.length)return "";
  const f=v=>v==null?"–":v.toFixed(2)+"%",pt=v=>v==null?"–":(v>=0?"+":"")+v.toFixed(2)+" pts",ys=x.years.filter(p=>p[1]!=null);if(!ys.length)return "";
  const L={large:["ok","Large advantage"],thin:["warn","Thin advantage"],negative:["bad","No advantage"]}[x.label]||["","–"];
@@ -429,7 +487,7 @@ function bondHTML(r){const x=((DU.stocks||{})[r.ticker]||{}).bond;if(r.type!=="s
   [ys[0][0],ys[ys.length-1][0]].map((y,i)=>`<text x="${X(y)}" y="${H-5}" text-anchor="${i?"end":"start"}" class="rtx">${y}</text>`).join("")+`</svg>`;
  const med=x.gap_median,cmp=med==null||x.gap_now==null?"":x.gap_now>med+1?` That's wider than its usual gap of ${pt(med)} (median of the years shown), so the stock is cheaper against bonds than it normally is.`:x.gap_now<med-1?` That's narrower than its usual gap of ${pt(med)} (median of the years shown), so the stock is dearer against bonds than it normally is.`:` That's close to its usual gap of ${pt(med)} (median of the years shown).`;
  const pe=x.ey_now>0?` (P/E ${(100/x.ey_now).toFixed(1)})`:"";
- return `<h3>Advantage over bonds</h3><p><span class="pill ${L[0]}">${L[1]}</span> Earnings yield today <b>${f(x.ey_now)}</b>${pe} against <b>${f(x.aaa_now)}</b> on the safest company bonds (Moody's Aaa) and ${f(x.t10_now)} on the 10-year Treasury (${x.yields_month||"latest"}). Extra return from the stock: <b>${pt(x.gap_now)}</b> over Aaa, ${pt(x.gap_t10_now)} over Treasuries.${cmp}</p>
+ return `<h3>Stocks vs bonds: three spreads</h3>${spreadsHTML(r)}<p><span class="pill ${L[0]}">${L[1]}</span> Earnings yield today <b>${f(x.ey_now)}</b>${pe} against <b>${f(x.aaa_now)}</b> on the safest company bonds (Moody's Aaa) and ${f(x.t10_now)} on the 10-year Treasury (${x.yields_month||"latest"}). Extra return from the stock: <b>${pt(x.gap_now)}</b> over Aaa, ${pt(x.gap_t10_now)} over Treasuries.${cmp}</p>
  <div class="mydet"><div>${svg}</div><p class="muted"><span class="bdleg"><svg width="18" height="8" aria-hidden="true" style="vertical-align:middle;margin:0 4px 0 10px"><line x1="0" y1="4" x2="18" y2="4" stroke="var(--acc)" stroke-width="2.4"/></svg>earnings yield <svg width="18" height="8" aria-hidden="true" style="vertical-align:middle;margin:0 4px 0 10px"><line x1="0" y1="4" x2="18" y2="4" stroke="var(--c2)" stroke-width="2.4"/></svg>Moody's Aaa <svg width="18" height="8" aria-hidden="true" style="vertical-align:middle;margin:0 4px 0 10px"><line x1="0" y1="4" x2="18" y2="4" stroke="var(--mut)" stroke-width="2.4" stroke-dasharray="4 3"/></svg>10-year Treasury <svg width="18" height="10" aria-hidden="true" style="vertical-align:middle;margin:0 4px 0 10px"><rect width="18" height="10" rx="2" fill="var(--acc)" fill-opacity=".15"/></svg>gap</span><br>Earnings yield = EPS ÷ price at each fiscal year end; bond yields are yearly averages from FRED. The shaded band is the gap to Aaa. Over 3 points is a large advantage, 0 to 3 thin, below 0 none.</p></div>
  <p class="muted">The earnings yield leaves out growth, so a growing company can be worth more than a bond that pays more today. A bond's interest is fixed, while a stock's earnings can fall. Nothing here changes the fair value.</p>`}
 function durHTML(r){const x=((DU.stocks||{})[r.ticker]||{}).stress;if(r.type!=="stock"||!x||(!x.normal&&!x.bad))return "";

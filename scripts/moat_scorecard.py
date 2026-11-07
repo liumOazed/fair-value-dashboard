@@ -8,9 +8,11 @@ Two halves, 5 points each, 10 in all:
   Numbers (filings, data/returns.json and data/backtest/facts.json.gz):
     persistence  0-2  share of the last 10 years with ROIC at least 5 points above the required return, x 2
     fade         0-1  1 = not fading, 0.5 = fading slowly (excess half-life 8+ years), 0 = fading fast or at the hurdle
-    new money    0-1  1 = returns on new investment holding up, 0.5 = diminishing or not measurable, 0 = below hurdle
+    new money    0-1  1 = returns on new investment holding up, 0.5 = diminishing, 0 = below hurdle
     margins      0-1  gross margin over 10 years: 1 = moved less than 3 points (std. dev.), 0.5 = less than 6, 0 = more
-  When the numbers can't be measured (invested capital at or below zero), they count as a neutral 2.5.
+  Unanswered is never positive (Nov 2026): a part that can't be measured scores 0 and is listed in "unknown". When the
+  whole filings half can't be measured (invested capital at or below zero), the score is out of 5 (sources only) and
+  no class is suggested.
 Suggested class: 7.5+ wide, 5+ narrow, else none; "short" (growth at or below 2.5%) is kept, since it is set by growth.
 The suggestion is shown next to the class in data/moat.json and never changes it: edit moat.json to act on it.
 """
@@ -44,17 +46,18 @@ def score(t):
         parts["persistence"] = round(2 * sum(1 for _, v_ in last10 if v_ >= r + 0.05) / len(last10), 2)
         hl = x.get("half_life")
         parts["fade"] = 1 if x.get("q2") == "not fading" else 0.5 if x.get("q2") == "fading" and hl and hl >= 8 else 0
-        parts["new_money"] = {"holding up": 1, "diminishing": 0.5, "unmeasured": 0.5, "below hurdle": 0}.get(x.get("q1"), 0.5)
+        parts["new_money"] = {"holding up": 1, "diminishing": 0.5, "below hurdle": 0}.get(x.get("q1"))
         sd, n = gm_std(t)
-        parts["margins"] = 0.5 if sd is None else 1 if sd < 0.03 else 0.5 if sd < 0.06 else 0
+        parts["margins"] = None if sd is None else 1 if sd < 0.03 else 0.5 if sd < 0.06 else 0
         parts["gm_std"] = None if sd is None else round(sd, 4)
-        num = sum(parts[k] for k in ("persistence", "fade", "new_money", "margins"))
-    total = src + (num if num is not None else 2.5)
+        num = sum(parts[k] or 0 for k in ("persistence", "fade", "new_money", "margins"))
+    unknown = ["filings"] if num is None else [k for k in ("new_money", "margins") if parts.get(k) is None]
+    total = src + (num or 0)
     cur = (MOAT.get(t) or {}).get("moat")
-    sug = "short" if cur == "short" else "wide" if total >= 7.5 else "narrow" if total >= 5 else "none"
+    sug = None if num is None else "short" if cur == "short" else "wide" if total >= 7.5 else "narrow" if total >= 5 else "none"
     return dict(sources={k: s[k] for k in KEYS}, why=s["why"], risk=s["risk"], src=s.get("src"),
-                source_score=round(src, 2), numbers_score=None if num is None else round(num, 2), parts=parts,
-                total=round(total, 1), suggested=sug, current=cur, differs=sug != cur)
+                source_score=round(src, 2), numbers_score=None if num is None else round(num, 2), parts=parts, unknown=unknown,
+                total=round(total, 1), out_of=5 if num is None else 10, suggested=sug, current=cur, differs=sug is not None and sug != cur)
 
 out = {"_about": __doc__.strip().split("\n")[0] + " See scripts/moat_scorecard.py for the scoring.", "checked": SRC.get("checked"),
        "stocks": {t: score(t) for t in SRC["stocks"]}}

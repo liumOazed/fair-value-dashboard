@@ -4,6 +4,7 @@
 From FRED (St. Louis Fed), no API key needed:
   GS10  10-year US Treasury constant-maturity yield, monthly average
   AAA   Moody's seasoned Aaa corporate bond yield, monthly average (the safest company bonds)
+  DFII10 10-year Treasury inflation-indexed (TIPS) real yield, daily -> averaged by month (from 2003)
 Keeps monthly values from 2000 and the average of each calendar year. If a download fails the old values are kept.
 Usage: python scripts/bond_yields.py
 """
@@ -11,18 +12,19 @@ import csv, datetime, io, json, pathlib, statistics as st, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/bond_yields.json"
-SERIES = {"GS10": "10-year Treasury", "AAA": "Moody's Aaa corporate"}
+SERIES = {"GS10": "10-year Treasury", "AAA": "Moody's Aaa corporate", "DFII10": "10-year real yield (TIPS)"}
 URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
 
 def fetch(sid):
     req = urllib.request.Request(URL.format(sid), headers={"User-Agent": "fair-value-dashboard (github.com/liumOazed/fair-value-dashboard)"})
     txt = urllib.request.urlopen(req, timeout=60).read().decode()
-    out = {}
+    acc = {}
     for row in csv.DictReader(io.StringIO(txt)):
         d = row.get("observation_date") or row.get("DATE")
         v = row.get(sid)
         if d and d >= "2000" and v not in (None, "", "."):
-            out[d[:7]] = round(float(v), 3)
+            acc.setdefault(d[:7], []).append(float(v))          # daily series (DFII10) -> monthly average
+    out = {m: round(st.mean(v), 3) for m, v in acc.items()}
     if len(out) < 100: raise ValueError(f"{sid}: only {len(out)} months")
     return out
 
