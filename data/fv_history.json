@@ -263,6 +263,15 @@
    "bull": 742.1,
    "price": 271.75,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 429.03,
+   "bear": 182.89,
+   "base": 415.4,
+   "bull": 832.32,
+   "price": 391.22,
+   "method": "fcff_re"
   }
  ],
  "FICO": [
@@ -311,6 +320,15 @@
    "base": 37.26,
    "bull": 65.67,
    "price": 44.49,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 41.21,
+   "bear": 21.34,
+   "base": 40.82,
+   "bull": 72.02,
+   "price": 44.63,
    "method": "fcff_re"
   }
  ],
@@ -409,6 +427,15 @@
    "base": 391.49,
    "bull": 521.93,
    "price": 315.88,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 382.46,
+   "bear": 232.61,
+   "base": 407.79,
+   "bull": 543.92,
+   "price": 259.24,
    "method": "fcff_re"
   }
  ],
@@ -1183,6 +1210,15 @@
    "bull": 166.28,
    "price": 87.63,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 116.83,
+   "bear": 68.8,
+   "base": 123.24,
+   "bull": 172.88,
+   "price": 85.48,
+   "method": "fcff_re"
   }
  ],
  "ADYEY": [
@@ -1527,6 +1563,15 @@
    "base": 179.21,
    "bull": 229.35,
    "price": 247.91,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 173.75,
+   "bear": 118.74,
+   "base": 182.74,
+   "bull": 233.82,
+   "price": 252.3,
    "method": "fcff_re"
   }
  ],
@@ -1892,6 +1937,15 @@
    "base": 91.31,
    "bull": 128.07,
    "price": 89.2,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-06",
+   "fv": 85.92,
+   "bear": 50.88,
+   "base": 90.46,
+   "bull": 127.12,
+   "price": 79.4,
    "method": "fcff_re"
   }
  ],

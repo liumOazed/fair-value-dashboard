@@ -446,8 +446,287 @@
    },
    "flags": [],
    "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "XYZ",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-07",
+   "fv_old": 112.42,
+   "fv_new": 116.83,
+   "changes": {
+    "price": [
+     75.86,
+     85.48
+    ],
+    "shares": [
+     0.541,
+     0.54438
+    ],
+    "rev": [
+     11.5,
+     12.074
+    ],
+    "fcf": [
+     3.882,
+     3.454
+    ],
+    "sbc": [
+     1.201,
+     1.165
+    ],
+    "net_cash": [
+     5.097,
+     6.066
+    ],
+    "fin.debt": [
+     7.171,
+     7.535
+    ],
+    "fin.interest": [
+     0.12,
+     0.1335
+    ],
+    "fin.rd": [
+     0.0167,
+     0.0177
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "APP",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-07",
+   "fv_old": 382.79,
+   "fv_new": 429.03,
+   "changes": {
+    "price": [
+     279.29,
+     391.22
+    ],
+    "shares": [
+     0.3347,
+     0.33074
+    ],
+    "rev": [
+     6.83,
+     7.61
+    ],
+    "fcf": [
+     4.53,
+     4.905
+    ],
+    "sbc": [
+     0.4,
+     0.451
+    ],
+    "net_cash": [
+     -0.46,
+     -0.341
+    ],
+    "fin.debt": [
+     3.52,
+     3.521
+    ],
+    "fin.interest": [
+     0.207,
+     0.2066
+    ],
+    "fin.rd": [
+     0.0583,
+     0.0587
+    ]
+   },
+   "flags": [
+    "Quarter to 2026-09-30 grew +55.5% YoY vs base-case year-1 growth 25.0%: check guidance"
+   ],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "APA",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-07",
+   "fv_old": 37.62,
+   "fv_new": 41.21,
+   "changes": {
+    "price": [
+     49.15,
+     44.63
+    ],
+    "shares": [
+     0.34015,
+     0.3298
+    ],
+    "rev": [
+     8.57,
+     9.224
+    ],
+    "fcf": [
+     2.1,
+     2.082
+    ],
+    "net_cash": [
+     -3.44,
+     -3.354
+    ],
+    "fin.debt": [
+     3.88,
+     3.425
+    ],
+    "fin.interest": [
+     0.278,
+     0.259
+    ],
+    "fin.rd": [
+     0.0517,
+     0.0756
+    ]
+   },
+   "flags": [
+    "SBC not in Yahoo's quarterly data: kept unchanged",
+    "Quarter to 2026-09-30 grew +30.9% YoY vs base-case year-1 growth -4.0%: check guidance"
+   ],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "EXPE",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-07",
+   "fv_old": 367.2,
+   "fv_new": 382.46,
+   "changes": {
+    "price": [
+     289.01,
+     259.24
+    ],
+    "shares": [
+     0.1145,
+     0.11321
+    ],
+    "rev": [
+     15.7,
+     16.226
+    ],
+    "fcf": [
+     3.6,
+     3.721
+    ],
+    "sbc": [
+     0.412,
+     0.442
+    ],
+    "fin.debt": [
+     5.685,
+     5.686
+    ],
+    "fin.interest": [
+     0.355,
+     0.356
+    ],
+    "fin.rd": [
+     0.0624,
+     0.0626
+    ]
+   },
+   "flags": [
+    "FCF NORMALISED: kept the normalised margin on the new revenue - check one-offs / working capital in the release"
+   ],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "STE",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-07",
+   "fv_old": 170.38,
+   "fv_new": 173.75,
+   "changes": {
+    "price": [
+     227.12,
+     252.3
+    ],
+    "shares": [
+     0.0975,
+     0.09754
+    ],
+    "rev": [
+     6.04,
+     6.168
+    ],
+    "fcf": [
+     0.93,
+     0.942
+    ],
+    "sbc": [
+     0.06,
+     0.063
+    ],
+    "net_cash": [
+     -1.56,
+     -1.516
+    ],
+    "fin.debt": [
+     2.04,
+     2.045
+    ],
+    "fin.interest": [
+     0.06,
+     0.0563
+    ],
+    "fin.rd": [
+     0.0294,
+     0.0275
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
+  },
+  {
+   "ticker": "ZTS",
+   "status": "auto_updated",
+   "quarter_end": "2026-09-30",
+   "auto_date": "2026-11-07",
+   "fv_old": 86.75,
+   "fv_new": 85.92,
+   "changes": {
+    "price": [
+     79.72,
+     79.4
+    ],
+    "rev": [
+     9.52,
+     9.489
+    ],
+    "fcf": [
+     2.32,
+     2.239
+    ],
+    "net_cash": [
+     -7.57,
+     -7.711
+    ],
+    "fin.debt": [
+     9.24,
+     9.239
+    ],
+    "fin.interest": [
+     0.24,
+     0.244
+    ],
+    "fin.rd": [
+     0.026,
+     0.0264
+    ]
+   },
+   "flags": [],
+   "data_through_before": "2026-06-30"
   }
  ],
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "how": "Written by scripts/auto_update.py. status auto_updated = numbers rolled forward from Yahoo, the text review (guidance, assumptions, notes, KPIs) is still to do; manual = not auto-updated, needs a full update from the release. The twice-weekly Claude review removes items when done."
 }
