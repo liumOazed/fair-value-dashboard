@@ -4,7 +4,8 @@
 "bond_yields":{
 "GS10":"2026-11-07",
 "AAA":"2026-11-07",
-"DFII10":"2026-11-07"
+"DFII10":"2026-11-07",
+"BAA":"2026-11-07"
 },
 "model_as_of":"2026-11-06"
 },
@@ -75,6 +76,35 @@
 "2025":5.353,
 "2026":5.641
 },
+"BAA":{
+"2000":8.364,
+"2001":7.947,
+"2002":7.802,
+"2003":6.766,
+"2004":6.393,
+"2005":6.064,
+"2006":6.479,
+"2007":6.482,
+"2008":7.447,
+"2009":7.296,
+"2010":6.038,
+"2011":5.664,
+"2012":4.935,
+"2013":5.102,
+"2014":4.854,
+"2015":4.999,
+"2016":4.718,
+"2017":4.44,
+"2018":4.8,
+"2019":4.375,
+"2020":3.603,
+"2021":3.392,
+"2022":5.072,
+"2023":5.861,
+"2024":5.753,
+"2025":5.998,
+"2026":6.143
+},
 "DFII10":{
 "2003":2.057,
 "2004":1.834,
@@ -105,6 +135,7 @@
 "names":{
 "GS10":"10-year Treasury",
 "AAA":"Moody's Aaa corporate",
+"BAA":"Moody's Baa corporate",
 "DFII10":"10-year real yield (TIPS)"
 }
 },
@@ -1849,12 +1880,12 @@
 "years":7,
 "low":0.1291,
 "high":0.7194,
-"margin_now":0.6633,
-"base_margin":0.6086,
-"sbc_share":0.0586,
-"fv_model":382.79,
-"fv_normal":105.34,
-"change":-0.7248,
+"margin_now":0.6445,
+"base_margin":0.6093,
+"sbc_share":0.0593,
+"fv_model":429.03,
+"fv_normal":116.77,
+"change":-0.7278,
 "series":[
 [
 2019,
@@ -1913,7 +1944,7 @@
 "op_change":-0.3145,
 "interest_b":0.207,
 "cover_now":20.1,
-"cover_stressed":13.7,
+"cover_stressed":13.8,
 "profitable":true
 },
 "label":"somewhat cyclical"
@@ -2936,11 +2967,11 @@
 "low":-0.8907,
 "high":0.3576,
 "margin_now":0.2293,
-"base_margin":0.1962,
-"sbc_share":0.0262,
-"fv_model":367.2,
-"fv_normal":253.1,
-"change":-0.3107,
+"base_margin":0.1972,
+"sbc_share":0.0272,
+"fv_model":382.46,
+"fv_normal":261.43,
+"change":-0.3165,
 "series":[
 [
 2016,
@@ -3009,9 +3040,9 @@
 "profit_now_b":2.16,
 "profit_stressed_b":-2.86,
 "op_change":-2.3235,
-"interest_b":0.355,
+"interest_b":0.356,
 "cover_now":6.1,
-"cover_stressed":-8.1,
+"cover_stressed":-8.0,
 "profitable":false
 },
 "label":"cyclical"
@@ -9039,12 +9070,12 @@
 "years":10,
 "low":-0.0023,
 "high":0.1002,
-"margin_now":0.3376,
-"base_margin":0.3444,
-"sbc_share":0.1044,
-"fv_model":112.42,
-"fv_normal":-12.76,
-"change":-1.1135,
+"margin_now":0.2861,
+"base_margin":0.3365,
+"sbc_share":0.0965,
+"fv_model":116.83,
+"fv_normal":-8.32,
+"change":-1.0712,
 "series":[
 [
 2016,
@@ -9113,9 +9144,9 @@
 "profit_now_b":3.05,
 "profit_stressed_b":2.86,
 "op_change":-0.0605,
-"interest_b":0.12,
-"cover_now":25.4,
-"cover_stressed":23.8,
+"interest_b":0.134,
+"cover_now":22.8,
+"cover_stressed":21.4,
 "profitable":true
 },
 "label":"somewhat cyclical"
@@ -11739,12 +11770,12 @@
 "years":10,
 "low":0.0866,
 "high":0.1638,
-"margin_now":0.154,
-"base_margin":0.1599,
-"sbc_share":0.0099,
-"fv_model":170.38,
-"fv_normal":128.02,
-"change":-0.2486,
+"margin_now":0.1527,
+"base_margin":0.1602,
+"sbc_share":0.0102,
+"fv_model":173.75,
+"fv_normal":130.35,
+"change":-0.2498,
 "series":[
 [
 2016,
@@ -11813,9 +11844,9 @@
 "profit_now_b":1.11,
 "profit_stressed_b":1.11,
 "op_change":0.0,
-"interest_b":0.06,
-"cover_now":18.4,
-"cover_stressed":18.4,
+"interest_b":0.056,
+"cover_now":19.6,
+"cover_stressed":19.6,
 "profitable":true
 },
 "label":"somewhat cyclical"
@@ -14723,12 +14754,12 @@
 "years":10,
 "low":0.1017,
 "high":0.2506,
-"margin_now":0.2437,
+"margin_now":0.236,
 "base_margin":0.2405,
 "sbc_share":0.0105,
-"fv_model":86.75,
-"fv_normal":77.78,
-"change":-0.1034,
+"fv_model":85.92,
+"fv_normal":77.28,
+"change":-0.1005,
 "series":[
 [
 2016,
@@ -14797,9 +14828,9 @@
 "profit_now_b":3.6,
 "profit_stressed_b":3.6,
 "op_change":0.0,
-"interest_b":0.24,
-"cover_now":15.0,
-"cover_stressed":15.0,
+"interest_b":0.244,
+"cover_now":14.7,
+"cover_stressed":14.7,
 "profitable":true
 },
 "label":"durable"
