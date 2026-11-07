@@ -6190,6 +6190,303 @@
    "half_life": null,
    "q2": "not fading",
    "years_left": null
+  },
+  "INVA": {
+   "r": 0.11,
+   "roic": [
+    [
+     2022,
+     0.1941
+    ],
+    [
+     2023,
+     0.1206
+    ],
+    [
+     2024,
+     0.1307
+    ],
+    [
+     2025,
+     0.1693
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.15,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0009,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
+  },
+  "CTRE": {
+   "r": 0.095,
+   "roic": [
+    [
+     2022,
+     0.0527
+    ],
+    [
+     2023,
+     0.0709
+    ],
+    [
+     2024,
+     0.0516
+    ],
+    [
+     2025,
+     0.054
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.0528,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": -0.0001,
+   "q2": "at hurdle",
+   "years_left": 0
+  },
+  "CVSA": {
+   "r": 0.11,
+   "roic": [
+    [
+     2023,
+     0.0944
+    ],
+    [
+     2024,
+     0.1043
+    ],
+    [
+     2025,
+     0.1342
+    ],
+    [
+     2026,
+     0.1527
+    ]
+   ],
+   "last_year": 2026,
+   "roic_now": 0.1435,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2016-2021",
+    "2021-2026"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0197,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
+  },
+  "QLYS": {
+   "r": 0.12,
+   "roic": [
+    [
+     2022,
+     2.0
+    ],
+    [
+     2024,
+     2.0
+    ],
+    [
+     2025,
+     1.149
+    ]
+   ],
+   "last_year": 2025,
+   "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
+  },
+  "LAUR": {
+   "r": 0.12,
+   "roic": [
+    [
+     2022,
+     0.1311
+    ],
+    [
+     2023,
+     0.1597
+    ],
+    [
+     2024,
+     0.1947
+    ],
+    [
+     2025,
+     0.2138
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.2043,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0281,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
+  },
+  "IDCC": {
+   "r": 0.125,
+   "roic": [
+    [
+     2022,
+     0.8023
+    ],
+    [
+     2023,
+     1.1377
+    ],
+    [
+     2024,
+     1.2508
+    ],
+    [
+     2025,
+     1.0897
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 1.1702,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.1044,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
+  },
+  "LMAT": {
+   "r": 0.11,
+   "roic": [
+    [
+     2022,
+     0.1112
+    ],
+    [
+     2023,
+     0.137
+    ],
+    [
+     2024,
+     0.186
+    ],
+    [
+     2025,
+     0.2353
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.2106,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0451,
+   "half_life": null,
+   "q2": "not fading",
+   "years_left": null
+  },
+  "BOX": {
+   "r": 0.12,
+   "roic": [
+    [
+     2023,
+     0.717
+    ],
+    [
+     2024,
+     1.1896
+    ],
+    [
+     2025,
+     0.6606
+    ],
+    [
+     2026,
+     0.3757
+    ]
+   ],
+   "last_year": 2026,
+   "roic_now": 0.5182,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2016-2021",
+    "2021-2026"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": -0.1993,
+   "half_life": 1.4365,
+   "q2": "fading",
+   "years_left": 6.199
+  },
+  "ACIW": {
+   "r": 0.12,
+   "roic": [
+    [
+     2022,
+     0.0637
+    ],
+    [
+     2023,
+     0.0817
+    ],
+    [
+     2024,
+     0.1136
+    ],
+    [
+     2025,
+     0.1125
+    ]
+   ],
+   "last_year": 2025,
+   "roic_now": 0.113,
+   "inc_recent": null,
+   "inc_earlier": null,
+   "inc_why": "missing years",
+   "windows": [
+    "2015-2020",
+    "2020-2025"
+   ],
+   "q1": "unmeasured",
+   "roic_trend": 0.0172,
+   "q2": "at hurdle",
+   "years_left": 0
   }
  }
 }
