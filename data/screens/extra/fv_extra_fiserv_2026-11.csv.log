@@ -1,0 +1,16 @@
+==================================================================
+  ARIA-Growth — Screener (rebuilt)
+==================================================================
+
+📥 Fetching fundamentals for 1 tickers (slow, ~1/s)...
+  ✓ 1 tickers with data (0 failed/skipped)
+
+  ✓ 1 stocks screened → data/screens/extra/fv_extra_fiserv_2026-11.csv
+  Score range: 32.5 - 32.5
+
+  Top 10:
+    FISV    32.5  rev   -1.3%  R40  -20.2  [Unknown]
+
+  v3 metric coverage (non-blank of 1): {'roic_pct': 1, 'net_debt_ebitda': 0, 'rev_cagr_pct': 1, 'fcf_cv': 1, 'share_change_pct_yr': 1}
+
+  Next: python aria_growth_archive_screen.py --screen data/screens/extra/fv_extra_fiserv_2026-11.csv
