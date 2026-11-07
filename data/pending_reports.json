@@ -50,11 +50,30 @@
    "reported_on": "2026-11-05",
    "yahoo_latest_quarter": "2026-09-30",
    "waiting_days": 2
+  },
+  {
+   "ticker": "CTRE",
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-05",
+   "yahoo_latest_quarter": "2026-09-30",
+   "waiting_days": 2
+  },
+  {
+   "ticker": "ACIW",
+   "data_through": "2026-06-30",
+   "reported_on": "2026-11-05",
+   "yahoo_latest_quarter": "2026-09-30",
+   "waiting_days": 2
   }
  ],
  "upcoming": [
   {
    "ticker": "NRG",
+   "next_report": "2026-11-09",
+   "data_through": "2026-06-30"
+  },
+  {
+   "ticker": "QLYS",
    "next_report": "2026-11-09",
    "data_through": "2026-06-30"
   },
@@ -95,6 +114,11 @@
   },
   {
    "ticker": "MRVL",
+   "next_report": "2026-12-01",
+   "data_through": "2026-07-31"
+  },
+  {
+   "ticker": "BOX",
    "next_report": "2026-12-01",
    "data_through": "2026-07-31"
   },
@@ -244,6 +268,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "CVSA",
+   "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "AXP",
    "next_report": "2027-01-29",
    "data_through": "2026-09-30"
@@ -335,6 +364,11 @@
   },
   {
    "ticker": "PM",
+   "next_report": "2027-02-04",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "IDCC",
    "next_report": "2027-02-04",
    "data_through": "2026-09-30"
   },
@@ -444,6 +478,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "LAUR",
+   "next_report": "2027-02-18",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "FIS",
    "next_report": "2027-02-23",
    "data_through": "2026-09-30"
@@ -460,6 +499,16 @@
   },
   {
    "ticker": "CRCL",
+   "next_report": "2027-02-24",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "INVA",
+   "next_report": "2027-02-24",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "LMAT",
    "next_report": "2027-02-24",
    "data_through": "2026-09-30"
   },
