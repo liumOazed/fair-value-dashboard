@@ -1,0 +1,15 @@
+==================================================================
+  ARIA-Growth — Screener (rebuilt)
+==================================================================
+
+📥 Fetching fundamentals for 2 tickers (slow, ~1/s)...
+  ✓ 1 tickers with data (1 failed/skipped)
+
+  ✓ 0 stocks screened → data/screens/extra/fv_extra_fiserv_2026-11.csv
+  Score range: nan - nan
+
+  Top 10:
+
+  v3 metric coverage (non-blank of 0): {'roic_pct': 0, 'net_debt_ebitda': 0, 'rev_cagr_pct': 0, 'fcf_cv': 0, 'share_change_pct_yr': 0}
+
+  Next: python aria_growth_archive_screen.py --screen data/screens/extra/fv_extra_fiserv_2026-11.csv
