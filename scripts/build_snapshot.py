@@ -158,14 +158,15 @@ def build():
     assets = {a["ticker"]: a for a in json.load(open(ROOT / "data/assets.json"))["assets"]}
     rows = {r["ticker"]: r for r in scr["rows"]}
     by_sector = {}
-    for r in scr["rows"]:
+    peers = [r for r in scr["rows"] if not r.get("outside_universe")]      # stocks added only for their fair value are not peers
+    for r in peers:
         by_sector.setdefault(r.get("peer_group") or r.get("sector"), []).append(r)
     uop = raw.get("universe_op_margin") or {}
     opm = lambda r: r.get("operating_margin_pct") if ok(r.get("operating_margin_pct")) else (uop[r["ticker"]] * 100 if ok(uop.get(r["ticker"])) else None)
     for r in scr["rows"]:
         r["_opm"] = opm(r)
     by_ind = {}
-    for r in scr["rows"]:
+    for r in peers:
         if r.get("industry"):
             by_ind.setdefault(r["industry"], []).append(r)
     out = {"_about": __doc__.strip().split("\n")[0], "built_from": raw.get("fetched"), "stocks": {}}

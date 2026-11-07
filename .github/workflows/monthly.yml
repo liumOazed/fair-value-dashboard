@@ -55,6 +55,24 @@ jobs:
           else:
               shutil.copy("/tmp/screen.csv", out); print("saved", out)
           PY
+      - name: Fetch Fair Value stocks that are not in the screened universe
+        # Stocks with a fair value model but outside the S&P 500 + Nasdaq 100 (e.g. SHOP, ADYEY, FISV, CRCL) are fetched
+        # on their own into data/screens/extra/fv_extra_YYYY-MM.csv; build_screen.py adds them to the Growth Screen.
+        if: github.event_name != 'push'
+        run: |
+          M=$(date -u +%Y-%m)
+          OUT="data/screens/extra/fv_extra_${M}.csv"; CSV="data/screens/growth_screen_results_${M}.csv"
+          if [ -f "$OUT" ] || [ ! -f "$CSV" ]; then echo "nothing to fetch"; exit 0; fi
+          T=$(python - "$CSV" <<'PY'
+          import json, sys, pandas as pd
+          have = set(pd.read_csv(sys.argv[1]).ticker)
+          print(",".join(a["ticker"] for a in json.load(open("data/assets.json"))["assets"] if a.get("type") == "stock" and a["ticker"] not in have))
+          PY
+          )
+          if [ -z "$T" ]; then echo "every Fair Value stock is in the universe"; exit 0; fi
+          echo "fetching $T"; pip install yfinance lxml
+          mkdir -p data/screens/extra
+          python scripts/growth_screener.py --tickers "$T" --out "$OUT" 2>&1 | tail -15 || true
       - run: python scripts/monthly.py --step "${{ inputs.step || 'both' }}" ${{ inputs.force && '--force' || '' }}
       - run: python scripts/update_prices.py || true
       - run: python scripts/track.py --snapshot || true     # record this month's signals for the forward test

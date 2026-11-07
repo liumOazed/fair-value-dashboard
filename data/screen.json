@@ -53,6 +53,42 @@
 "MRVL"
 ]
 },
+"fair_value_picks": {
+"rule": "every stock with a fair value model that is not already on the list",
+"picks": [
+"GOOGL",
+"KO",
+"MSFT",
+"BMY",
+"SHW",
+"ADYEY",
+"MKC",
+"AXP",
+"JNJ",
+"AMGN",
+"LLY",
+"PYPL",
+"AVGO",
+"AAPL",
+"AMZN",
+"SHOP",
+"FIS",
+"NRG",
+"CRCL",
+"MCO",
+"HAS",
+"NDAQ",
+"FISV",
+"XYZ"
+],
+"outside_universe": [
+"ADYEY",
+"SHOP",
+"CRCL",
+"FISV"
+],
+"missing": []
+},
 "sector_picks": {
 "rule": "top 5 per group: all 5 checks first, then 4, then 3 where allowed; ties by Growth Quality Score",
 "groups": {
@@ -138,6 +174,7 @@
 "MA",
 "PYPL",
 "FIS",
+"FISV",
 "GPN",
 "CPAY",
 "JKHY",
@@ -181,7 +218,7 @@
 "2026-11"
 ],
 "consistent_rule": "in the top 50 in at least 3 of the last 4 months, including the latest",
-"built": "2026-11-06",
+"built": "2026-11-07",
 "universe": 502,
 "djia": {
 "as_of": "2026-11-06",
@@ -361,6 +398,7 @@
 "fpe_vs_market": -0.4014,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -393,7 +431,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CF",
@@ -530,6 +569,7 @@
 "fpe_vs_market": -0.3907,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -562,7 +602,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EXPE",
@@ -697,6 +738,7 @@
 "fpe_vs_market": -0.3467,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -734,7 +776,8 @@
 "rank": 1,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "DECK",
@@ -869,6 +912,7 @@
 "fpe_vs_market": -0.4371,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -901,7 +945,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BKNG",
@@ -1036,6 +1081,7 @@
 "fpe_vs_market": -0.3278,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -1073,7 +1119,8 @@
 "rank": 2,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "ADBE",
@@ -1208,6 +1255,7 @@
 "fpe_vs_market": -0.4892,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -1240,7 +1288,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SNDK",
@@ -1379,6 +1428,7 @@
 "fpe_vs_market": -0.7736,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -1411,7 +1461,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "RDDT",
@@ -1551,6 +1602,7 @@
 "fpe_vs_market": -0.4486,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -1583,7 +1635,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MU",
@@ -1722,6 +1775,7 @@
 "fpe_vs_market": -0.7609,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -1754,7 +1808,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EME",
@@ -1889,6 +1944,7 @@
 "fpe_vs_market": -0.0338,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -1921,7 +1977,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EIX",
@@ -2056,6 +2113,7 @@
 "fpe_vs_market": -0.4918,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -2088,7 +2146,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EOG",
@@ -2225,6 +2284,7 @@
 "fpe_vs_market": -0.4265,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -2257,7 +2317,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SPG",
@@ -2395,6 +2456,7 @@
 "fpe_vs_market": 0.8052,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -2427,7 +2489,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VICI",
@@ -2565,6 +2628,7 @@
 "fpe_vs_market": -0.5406,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -2597,7 +2661,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FIX",
@@ -2732,6 +2797,7 @@
 "fpe_vs_market": 0.0361,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -2764,7 +2830,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MO",
@@ -2899,6 +2966,7 @@
 "fpe_vs_market": -0.2587,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -2936,7 +3004,8 @@
 "rank": 2,
 "checks": 4,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "APP",
@@ -3071,6 +3140,7 @@
 "fpe_vs_market": -0.3589,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -3103,7 +3173,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TPR",
@@ -3238,6 +3309,7 @@
 "fpe_vs_market": -0.2652,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -3275,7 +3347,8 @@
 "rank": 3,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "HST",
@@ -3410,6 +3483,7 @@
 "fpe_vs_market": 0.3537,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -3442,7 +3516,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "INTU",
@@ -3577,6 +3652,7 @@
 "fpe_vs_market": -0.2891,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -3609,7 +3685,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CPRT",
@@ -3742,6 +3819,7 @@
 "fpe_vs_market": -0.0653,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -3774,7 +3852,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LULU",
@@ -3911,6 +3990,7 @@
 "fpe_vs_market": -0.3035,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -3943,7 +4023,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VEEV",
@@ -4078,6 +4159,7 @@
 "fpe_vs_market": 0.7131,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -4115,7 +4197,8 @@
 "rank": 1,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "NVDA",
@@ -4252,6 +4335,7 @@
 "fpe_vs_market": -0.2779,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -4285,6 +4369,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 1
 },
 {
@@ -4420,6 +4505,7 @@
 "fpe_vs_market": -0.0243,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -4457,7 +4543,8 @@
 "rank": 2,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "AMP",
@@ -4592,6 +4679,7 @@
 "fpe_vs_market": -0.4648,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -4624,7 +4712,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AOS",
@@ -4757,6 +4846,7 @@
 "fpe_vs_market": -0.1218,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -4789,7 +4879,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MNST",
@@ -4924,6 +5015,7 @@
 "fpe_vs_market": 1.0342,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -4961,7 +5053,8 @@
 "rank": 1,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "TPL",
@@ -5097,6 +5190,7 @@
 "fpe_vs_market": -0.7453,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -5129,7 +5223,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ZTS",
@@ -5264,6 +5359,7 @@
 "fpe_vs_market": -0.3048,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -5296,7 +5392,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "REGN",
@@ -5431,6 +5528,7 @@
 "fpe_vs_market": -0.2289,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -5463,7 +5561,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SNA",
@@ -5596,6 +5695,7 @@
 "fpe_vs_market": -0.04,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -5628,7 +5728,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FICO",
@@ -5767,6 +5868,7 @@
 "fpe_vs_market": -0.1545,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -5799,7 +5901,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PM",
@@ -5934,6 +6037,7 @@
 "fpe_vs_market": 0.2944,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -5971,7 +6075,8 @@
 "rank": 3,
 "checks": 4,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "ADSK",
@@ -6106,6 +6211,7 @@
 "fpe_vs_market": -0.0129,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -6138,7 +6244,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ALL",
@@ -6275,6 +6382,7 @@
 "fpe_vs_market": -0.481,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -6312,7 +6420,8 @@
 "rank": 1,
 "checks": 5,
 "na_passes": true
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "PPG",
@@ -6449,6 +6558,7 @@
 "fpe_vs_market": -0.2239,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -6481,7 +6591,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FTNT",
@@ -6617,6 +6728,7 @@
 "fpe_vs_market": 0.9737,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -6649,7 +6761,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DXCM",
@@ -6784,6 +6897,7 @@
 "fpe_vs_market": 0.4743,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -6821,7 +6935,8 @@
 "rank": 3,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "APA",
@@ -6962,6 +7077,7 @@
 "fpe_vs_market": -0.4483,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -6994,7 +7110,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "META",
@@ -7129,6 +7246,7 @@
 "fpe_vs_market": -0.0296,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -7161,7 +7279,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "REG",
@@ -7297,6 +7416,7 @@
 "fpe_vs_market": 0.6766,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -7329,7 +7449,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HIG",
@@ -7464,6 +7585,7 @@
 "fpe_vs_market": -0.4553,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -7501,7 +7623,8 @@
 "rank": 3,
 "checks": 4,
 "na_passes": true
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "ABNB",
@@ -7638,6 +7761,7 @@
 "fpe_vs_market": 0.4867,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -7670,7 +7794,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LII",
@@ -7805,6 +7930,7 @@
 "fpe_vs_market": -0.1821,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -7837,7 +7963,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TT",
@@ -7972,6 +8099,7 @@
 "fpe_vs_market": 0.3019,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -8004,7 +8132,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GOOG",
@@ -8139,6 +8268,7 @@
 "fpe_vs_market": 0.032,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -8171,7 +8301,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PSA",
@@ -8304,6 +8435,7 @@
 "fpe_vs_market": 0.8359,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -8336,7 +8468,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "INCY",
@@ -8471,6 +8604,7 @@
 "fpe_vs_market": -0.2257,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -8503,7 +8637,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ALGN",
@@ -8636,6 +8771,7 @@
 "fpe_vs_market": -0.3164,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -8668,7 +8804,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "RL",
@@ -8805,6 +8942,7 @@
 "fpe_vs_market": 0.0568,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -8842,7 +8980,8 @@
 "rank": 4,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "GOOGL",
@@ -8977,6 +9116,7 @@
 "fpe_vs_market": 0.038,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -9010,6 +9150,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 2
 },
 {
@@ -9145,6 +9286,7 @@
 "fpe_vs_market": 0.8156,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -9177,7 +9319,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ALLE",
@@ -9312,6 +9455,7 @@
 "fpe_vs_market": 0.0306,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -9344,7 +9488,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VRSK",
@@ -9479,6 +9624,7 @@
 "fpe_vs_market": 0.2675,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -9511,7 +9657,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ATO",
@@ -9649,6 +9796,7 @@
 "fpe_vs_market": 0.0711,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -9681,7 +9829,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "V",
@@ -9816,6 +9965,7 @@
 "fpe_vs_market": 0.3554,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -9849,6 +9999,7 @@
 "all_checks": true,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 3
 },
 {
@@ -9984,6 +10135,7 @@
 "fpe_vs_market": 0.3076,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10016,7 +10168,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DLTR",
@@ -10151,6 +10304,7 @@
 "fpe_vs_market": -0.0477,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10188,7 +10342,8 @@
 "rank": 5,
 "checks": 4,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "PG",
@@ -10323,6 +10478,7 @@
 "fpe_vs_market": 0.2268,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10361,6 +10517,7 @@
 "checks": 4,
 "na_passes": false
 },
+"fv_pick": false,
 "djia_rank": 4
 },
 {
@@ -10497,6 +10654,7 @@
 "fpe_vs_market": -0.1022,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10529,7 +10687,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SCHW",
@@ -10664,6 +10823,7 @@
 "fpe_vs_market": -0.3664,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10696,7 +10856,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KO",
@@ -10831,6 +10992,7 @@
 "fpe_vs_market": 0.4975,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -10864,6 +11026,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 5
 },
 {
@@ -10997,6 +11160,7 @@
 "fpe_vs_market": -0.5967,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -11029,7 +11193,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WDC",
@@ -11170,6 +11335,7 @@
 "fpe_vs_market": -0.4912,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -11202,7 +11368,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VRT",
@@ -11337,6 +11504,7 @@
 "fpe_vs_market": 0.3812,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -11369,7 +11537,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VST",
@@ -11507,6 +11676,7 @@
 "fpe_vs_market": -0.1849,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -11539,7 +11709,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LIN",
@@ -11674,6 +11845,7 @@
 "fpe_vs_market": 0.4749,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -11706,7 +11878,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LRCX",
@@ -11839,6 +12012,7 @@
 "fpe_vs_market": 0.0973,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -11871,7 +12045,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NTAP",
@@ -12004,6 +12179,7 @@
 "fpe_vs_market": 0.0022,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -12036,7 +12212,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PLTR",
@@ -12175,6 +12352,7 @@
 "fpe_vs_market": 3.4243,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -12207,7 +12385,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VLTO",
@@ -12342,6 +12521,7 @@
 "fpe_vs_market": 0.3048,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -12374,7 +12554,8 @@
 "resilient_rank": 2,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MSFT",
@@ -12509,6 +12690,7 @@
 "fpe_vs_market": 0.214,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -12542,6 +12724,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 6
 },
 {
@@ -12677,6 +12860,7 @@
 "fpe_vs_market": 0.8486,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -12714,7 +12898,8 @@
 "rank": 4,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "BMY",
@@ -12851,6 +13036,7 @@
 "fpe_vs_market": -0.4722,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -12883,7 +13069,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "SBAC",
@@ -13021,6 +13208,7 @@
 "fpe_vs_market": 0.303,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13053,7 +13241,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CTAS",
@@ -13188,6 +13377,7 @@
 "fpe_vs_market": 1.0035,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13220,7 +13410,8 @@
 "resilient_rank": 4,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CRH",
@@ -13355,6 +13546,7 @@
 "fpe_vs_market": -0.1616,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13387,7 +13579,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SHW",
@@ -13526,6 +13719,7 @@
 "fpe_vs_market": 0.4106,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13559,6 +13753,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 7
 },
 {
@@ -13692,6 +13887,7 @@
 "fpe_vs_market": -0.5881,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13724,7 +13920,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "OTIS",
@@ -13859,6 +14056,7 @@
 "fpe_vs_market": -0.0537,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -13891,7 +14089,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MCK",
@@ -14024,6 +14223,7 @@
 "fpe_vs_market": 0.1031,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -14056,7 +14256,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FFIV",
@@ -14191,6 +14392,7 @@
 "fpe_vs_market": -0.049,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -14223,7 +14425,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ULTA",
@@ -14356,6 +14559,7 @@
 "fpe_vs_market": 0.1205,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -14388,7 +14592,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VLO",
@@ -14525,6 +14730,7 @@
 "fpe_vs_market": -0.5813,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -14557,7 +14763,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CMCSA",
@@ -14690,6 +14897,7 @@
 "fpe_vs_market": -0.6298,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -14722,7 +14930,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PEP",
@@ -14857,6 +15066,7 @@
 "fpe_vs_market": -0.1073,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -14889,7 +15099,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MA",
@@ -15024,6 +15235,7 @@
 "fpe_vs_market": 0.5485,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15056,7 +15268,8 @@
 "resilient_rank": 1,
 "all_checks": true,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ROL",
@@ -15191,6 +15404,7 @@
 "fpe_vs_market": 0.5762,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15223,7 +15437,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ROST",
@@ -15358,6 +15573,7 @@
 "fpe_vs_market": 0.4242,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15395,7 +15611,8 @@
 "rank": 5,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "WSM",
@@ -15528,6 +15745,7 @@
 "fpe_vs_market": 0.3503,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15560,7 +15778,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ACGL",
@@ -15695,6 +15914,7 @@
 "fpe_vs_market": -0.3979,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15727,7 +15947,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PLD",
@@ -15863,6 +16084,7 @@
 "fpe_vs_market": 1.2688,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -15895,7 +16117,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DUK",
@@ -16032,6 +16255,7 @@
 "fpe_vs_market": -0.0022,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -16064,7 +16288,179 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
+},
+{
+"ticker": "ADYEY",
+"name": "Adyen N.V.",
+"sector": "Technology",
+"themes": [
+"Payments"
+],
+"score": 59.5,
+"rank": 93,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 60.1,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 93,
+"score": 59.5,
+"est": false
+}
+],
+"flags": [
+"Cash swing"
+],
+"rev_growth_pct": 18.9,
+"gross_margin_pct": 68.54,
+"profit_margin_pct": 43.55,
+"roe_pct": 21.27,
+"pe": 23.62,
+"forward_pe": 19.58,
+"ev_ebitda": 14.97,
+"ps": 12.12,
+"fcf_yield_pct": 2.89,
+"market_cap": 31314143232.0,
+"implied_fcf_growth": 0.1516,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "High-quality global acquirer with net cash, but growth swings with large merchants; euro-reported (FX risk for USD holders).",
+"fcf_ni": 1.6,
+"fcf_ni_basis": "3y",
+"cash_swing": true,
+"earnings_yield": 4.23,
+"earnings_yield_fwd": 5.11,
+"fcf_basis": "FY",
+"roic_pct": null,
+"net_debt_ebitda": -9.29,
+"interest_coverage": 71.76,
+"rev_cagr_pct": -33.34,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 22.75,
+"rev_growth_std": 46.35,
+"earnings_cv": 0.24,
+"fcf_cv": 0.25,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 0.59,
+"capex_ocf_pct": 12.21,
+"capex_fcf": 0.14,
+"tax_rate": 0.24,
+"beta": 1.91,
+"volatility_1y_pct": 50.22,
+"max_drawdown_1y_pct": -47.22,
+"nd_ebitda_then": -7.86,
+"margin_change_pts": 33.83,
+"fcf_cagr_pct": -22.21,
+"operating_margin_pct": 43.62,
+"fcf_ni_3y": 1.6,
+"fcf_ttm": null,
+"ni_ttm": null,
+"fcf_yield_yahoo_pct": -1.71,
+"enterprise_value": 19320313856.0,
+"fcff_ev_pct": 4.76,
+"fcf_ni_conversion": 0.85,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.987,
+"debt_weight": 0.013,
+"cost_equity": 0.1,
+"cost_debt_raw": 0.082,
+"cost_debt_used": 0.082,
+"tax": 0.238
+},
+"wacc": 0.0995,
+"roic_spread": null,
+"v3_source": "own",
+"score_prev": 52.8,
+"components": {
+"quality": 77.0,
+"growth": 35.0,
+"value": 54.0,
+"resilience": 75.0
+},
+"safety": 75.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "Medium",
+"distress_cap": false,
+"industry": "Software - Infrastructure",
+"industry_rank": 6,
+"industry_n": 17,
+"pe_vs_market": 0.0127,
+"fpe_vs_market": 0.0997,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter +18.9% year on year; -33.3% a year over 3 years, uneven (\u00b146 pts a year). Far above its own 3-year trend, so likely an acquisition or one-off."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 43.5%, EPS +22.8% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.60x net income over 3 years, FCF yield 2.9%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, interest covered 71.8x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (-7.9x \u2192 -9.3x), net margin +33.8 pts, growth accelerating. Worse: FCF shrinking 22% a year."
+}
+],
+"checks_score": 4,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "DASH",
@@ -16202,6 +16598,7 @@
 "fpe_vs_market": 0.2525,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -16234,7 +16631,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GD",
@@ -16369,6 +16767,7 @@
 "fpe_vs_market": 0.113,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -16401,7 +16800,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ED",
@@ -16537,6 +16937,7 @@
 "fpe_vs_market": 0.0085,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -16569,7 +16970,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MAS",
@@ -16702,6 +17104,7 @@
 "fpe_vs_market": -0.0153,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -16734,7 +17137,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FOX",
@@ -16867,6 +17271,7 @@
 "fpe_vs_market": -0.4852,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -16899,7 +17304,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HUBB",
@@ -17034,6 +17440,7 @@
 "fpe_vs_market": 0.029,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -17066,7 +17473,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CEG",
@@ -17201,6 +17609,7 @@
 "fpe_vs_market": 0.1015,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -17233,7 +17642,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MKC",
@@ -17370,6 +17780,7 @@
 "fpe_vs_market": -0.1757,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -17402,7 +17813,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "STZ",
@@ -17537,6 +17949,7 @@
 "fpe_vs_market": -0.3721,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -17569,7 +17982,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ISRG",
@@ -17706,6 +18120,7 @@
 "fpe_vs_market": 0.9482,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -17738,7 +18153,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AXP",
@@ -17873,6 +18289,7 @@
 "fpe_vs_market": -0.113,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -17906,6 +18323,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 8
 },
 {
@@ -18041,6 +18459,7 @@
 "fpe_vs_market": -0.1969,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18074,6 +18493,7 @@
 "all_checks": true,
 "checks_pick": true,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 9
 },
 {
@@ -18211,6 +18631,7 @@
 "fpe_vs_market": -0.4191,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18243,7 +18664,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "JNJ",
@@ -18378,6 +18800,7 @@
 "fpe_vs_market": 0.3205,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18411,6 +18834,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 10
 },
 {
@@ -18544,6 +18968,7 @@
 "fpe_vs_market": 0.1861,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18576,7 +19001,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "RJF",
@@ -18713,6 +19139,7 @@
 "fpe_vs_market": -0.461,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18745,7 +19172,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ORLY",
@@ -18878,6 +19306,7 @@
 "fpe_vs_market": 0.3512,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -18910,7 +19339,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PNR",
@@ -19043,6 +19473,7 @@
 "fpe_vs_market": -0.2983,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -19075,7 +19506,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AMGN",
@@ -19212,6 +19644,7 @@
 "fpe_vs_market": 0.0682,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -19245,6 +19678,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 11
 },
 {
@@ -19380,6 +19814,7 @@
 "fpe_vs_market": 0.2666,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -19412,7 +19847,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FCX",
@@ -19547,6 +19983,7 @@
 "fpe_vs_market": -0.1768,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -19579,7 +20016,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LLY",
@@ -19718,6 +20156,7 @@
 "fpe_vs_market": 0.6092,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -19750,7 +20189,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "FE",
@@ -19887,6 +20327,7 @@
 "fpe_vs_market": -0.1062,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -19919,7 +20360,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AWK",
@@ -20055,6 +20497,7 @@
 "fpe_vs_market": 0.2308,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -20087,7 +20530,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IBKR",
@@ -20220,6 +20664,7 @@
 "fpe_vs_market": 0.2996,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -20252,7 +20697,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VRSN",
@@ -20388,6 +20834,7 @@
 "fpe_vs_market": 0.5736,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -20420,7 +20867,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MDT",
@@ -20557,6 +21005,7 @@
 "fpe_vs_market": -0.1538,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -20589,7 +21038,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TRV",
@@ -20724,6 +21174,7 @@
 "fpe_vs_market": -0.2848,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -20757,6 +21208,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 12
 },
 {
@@ -20892,6 +21344,7 @@
 "fpe_vs_market": 1.0661,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -20924,7 +21377,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SYK",
@@ -21059,6 +21513,7 @@
 "fpe_vs_market": 0.0037,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -21096,7 +21551,8 @@
 "rank": 5,
 "checks": 5,
 "na_passes": false
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "COST",
@@ -21231,6 +21687,7 @@
 "fpe_vs_market": 1.2713,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -21263,7 +21720,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LVS",
@@ -21399,6 +21857,7 @@
 "fpe_vs_market": -0.3292,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -21431,7 +21890,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TROW",
@@ -21566,6 +22026,7 @@
 "fpe_vs_market": -0.4249,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -21598,7 +22059,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "D",
@@ -21734,6 +22196,7 @@
 "fpe_vs_market": -0.0185,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -21767,7 +22230,8 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
-"fcff_ev_src": "fcfev_2026-10-26.csv"
+"fcff_ev_src": "fcfev_2026-10-26.csv",
+"fv_pick": false
 },
 {
 "ticker": "NFLX",
@@ -21902,6 +22366,7 @@
 "fpe_vs_market": -0.0757,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -21934,7 +22399,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "YUM",
@@ -22071,6 +22537,7 @@
 "fpe_vs_market": 0.2759,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -22103,7 +22570,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DVA",
@@ -22242,6 +22710,7 @@
 "fpe_vs_market": -0.3777,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -22274,7 +22743,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EBAY",
@@ -22407,6 +22877,7 @@
 "fpe_vs_market": -0.0065,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -22439,7 +22910,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ACN",
@@ -22572,6 +23044,7 @@
 "fpe_vs_market": -0.0873,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -22604,7 +23077,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AME",
@@ -22739,6 +23213,7 @@
 "fpe_vs_market": 0.4218,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -22771,7 +23246,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VRTX",
@@ -22906,6 +23382,7 @@
 "fpe_vs_market": 0.5386,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -22938,7 +23415,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GWW",
@@ -23073,6 +23551,7 @@
 "fpe_vs_market": 0.4947,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -23105,7 +23584,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CI",
@@ -23238,6 +23718,7 @@
 "fpe_vs_market": -0.4999,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -23270,7 +23751,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LMT",
@@ -23405,6 +23887,7 @@
 "fpe_vs_market": 0.0738,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -23437,7 +23920,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CMG",
@@ -23572,6 +24056,7 @@
 "fpe_vs_market": 0.3398,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -23604,7 +24089,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TJX",
@@ -23739,6 +24225,7 @@
 "fpe_vs_market": 0.3669,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -23771,7 +24258,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KLAC",
@@ -23906,6 +24394,7 @@
 "fpe_vs_market": 0.2472,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -23938,7 +24427,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IT",
@@ -24071,6 +24561,7 @@
 "fpe_vs_market": -0.2159,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -24103,7 +24594,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PYPL",
@@ -24238,6 +24730,7 @@
 "fpe_vs_market": -0.4552,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -24270,7 +24763,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "STX",
@@ -24409,6 +24903,7 @@
 "fpe_vs_market": -0.4488,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -24441,7 +24936,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CBOE",
@@ -24576,6 +25072,7 @@
 "fpe_vs_market": 0.228,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -24608,7 +25105,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AMAT",
@@ -24741,6 +25239,7 @@
 "fpe_vs_market": 0.1806,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -24773,7 +25272,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AMT",
@@ -24908,6 +25408,7 @@
 "fpe_vs_market": 0.5048,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -24940,7 +25441,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GILD",
@@ -25076,6 +25578,7 @@
 "fpe_vs_market": -0.0499,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -25108,7 +25611,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HWM",
@@ -25243,6 +25747,7 @@
 "fpe_vs_market": 0.6907,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -25275,7 +25780,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HCA",
@@ -25410,6 +25916,7 @@
 "fpe_vs_market": -0.1486,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -25442,7 +25949,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AZO",
@@ -25575,6 +26083,7 @@
 "fpe_vs_market": -0.0735,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -25607,7 +26116,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AVGO",
@@ -25746,6 +26256,7 @@
 "fpe_vs_market": -0.0593,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -25778,7 +26289,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "AEP",
@@ -25915,6 +26427,7 @@
 "fpe_vs_market": 0.0616,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -25947,7 +26460,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PTC",
@@ -26082,6 +26596,7 @@
 "fpe_vs_market": 0.2313,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -26114,7 +26629,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GL",
@@ -26249,6 +26765,7 @@
 "fpe_vs_market": -0.4546,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -26281,7 +26798,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GRMN",
@@ -26416,6 +26934,7 @@
 "fpe_vs_market": 0.3471,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -26448,7 +26967,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ADP",
@@ -26583,6 +27103,7 @@
 "fpe_vs_market": 0.2199,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -26615,7 +27136,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CBRE",
@@ -26751,6 +27273,7 @@
 "fpe_vs_market": -0.183,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -26783,7 +27306,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FOXA",
@@ -26916,6 +27440,7 @@
 "fpe_vs_market": -0.3936,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -26948,7 +27473,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NOW",
@@ -27083,6 +27609,7 @@
 "fpe_vs_market": 0.1802,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -27115,7 +27642,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CHD",
@@ -27248,6 +27776,7 @@
 "fpe_vs_market": 0.4928,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -27280,7 +27809,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ODFL",
@@ -27413,6 +27943,7 @@
 "fpe_vs_market": 0.4391,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -27445,7 +27976,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PAYX",
@@ -27580,6 +28112,7 @@
 "fpe_vs_market": -0.0145,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -27612,7 +28145,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BSX",
@@ -27747,6 +28281,7 @@
 "fpe_vs_market": -0.2543,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -27779,7 +28314,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "COR",
@@ -27912,6 +28448,7 @@
 "fpe_vs_market": -0.06,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -27944,7 +28481,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ZBH",
@@ -28084,6 +28622,7 @@
 "fpe_vs_market": -0.4137,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -28116,7 +28655,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DPZ",
@@ -28255,6 +28795,7 @@
 "fpe_vs_market": -0.1462,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -28287,7 +28828,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PGR",
@@ -28422,6 +28964,7 @@
 "fpe_vs_market": -0.203,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -28454,7 +28997,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "STLD",
@@ -28591,6 +29135,7 @@
 "fpe_vs_market": -0.3422,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -28623,7 +29168,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EXE",
@@ -28762,6 +29308,7 @@
 "fpe_vs_market": -0.4216,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -28794,7 +29341,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TGT",
@@ -28929,6 +29477,7 @@
 "fpe_vs_market": -0.0918,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -28961,7 +29510,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TDG",
@@ -29102,6 +29652,7 @@
 "fpe_vs_market": 0.3242,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -29134,7 +29685,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ECL",
@@ -29271,6 +29823,7 @@
 "fpe_vs_market": 0.809,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -29303,7 +29856,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NVR",
@@ -29436,6 +29990,7 @@
 "fpe_vs_market": -0.0563,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -29468,7 +30023,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CPAY",
@@ -29605,6 +30161,7 @@
 "fpe_vs_market": -0.2873,
 "peer_group": "Fee-based financials",
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -29637,7 +30194,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GEN",
@@ -29776,6 +30334,7 @@
 "fpe_vs_market": -0.5093,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -29808,7 +30367,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CDNS",
@@ -29941,6 +30501,7 @@
 "fpe_vs_market": 0.8701,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -29973,7 +30534,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BAC",
@@ -30106,6 +30668,7 @@
 "fpe_vs_market": -0.4585,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -30138,7 +30701,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EXC",
@@ -30275,6 +30839,7 @@
 "fpe_vs_market": -0.1447,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -30307,7 +30872,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EG",
@@ -30442,6 +31008,7 @@
 "fpe_vs_market": -0.6185,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -30474,7 +31041,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PODD",
@@ -30613,6 +31181,7 @@
 "fpe_vs_market": 0.0884,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -30645,7 +31214,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CTSH",
@@ -30778,6 +31348,7 @@
 "fpe_vs_market": -0.4179,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -30810,7 +31381,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PPL",
@@ -30947,6 +31519,7 @@
 "fpe_vs_market": -0.0543,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -30979,7 +31552,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GS",
@@ -31112,6 +31686,7 @@
 "fpe_vs_market": -0.322,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -31145,6 +31720,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 13
 },
 {
@@ -31280,6 +31856,7 @@
 "fpe_vs_market": 0.2865,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -31312,7 +31889,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BBY",
@@ -31445,6 +32023,7 @@
 "fpe_vs_market": -0.2561,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -31477,7 +32056,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EXR",
@@ -31617,6 +32197,7 @@
 "fpe_vs_market": 0.7685,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -31649,7 +32230,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SYY",
@@ -31784,6 +32366,7 @@
 "fpe_vs_market": -0.1357,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -31816,7 +32399,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PH",
@@ -31951,6 +32535,7 @@
 "fpe_vs_market": 0.2706,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -31983,7 +32568,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ESS",
@@ -32119,6 +32705,7 @@
 "fpe_vs_market": 1.3668,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -32151,7 +32738,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "T",
@@ -32287,6 +32875,7 @@
 "fpe_vs_market": -0.5363,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -32319,7 +32908,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "STE",
@@ -32454,6 +33044,7 @@
 "fpe_vs_market": 0.0342,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -32486,7 +33077,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WEC",
@@ -32623,6 +33215,7 @@
 "fpe_vs_market": 0.0829,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -32655,7 +33248,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WDAY",
@@ -32792,6 +33386,7 @@
 "fpe_vs_market": -0.1612,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -32824,7 +33419,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CCL",
@@ -32963,6 +33559,7 @@
 "fpe_vs_market": -0.3707,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -32995,7 +33592,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "O",
@@ -33137,6 +33735,7 @@
 "fpe_vs_market": 1.0584,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -33169,7 +33768,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WMT",
@@ -33302,6 +33902,7 @@
 "fpe_vs_market": 1.1496,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -33335,6 +33936,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 14
 },
 {
@@ -33474,6 +34076,7 @@
 "fpe_vs_market": 0.5341,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -33506,7 +34109,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AIZ",
@@ -33641,6 +34245,7 @@
 "fpe_vs_market": -0.2989,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -33678,7 +34283,8 @@
 "rank": 4,
 "checks": 4,
 "na_passes": true
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "COF",
@@ -33816,6 +34422,7 @@
 "fpe_vs_market": -0.5184,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -33848,7 +34455,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HOOD",
@@ -33981,6 +34589,7 @@
 "fpe_vs_market": 0.409,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -34013,7 +34622,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FRT",
@@ -34149,6 +34759,7 @@
 "fpe_vs_market": 0.8971,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -34181,7 +34792,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LOW",
@@ -34316,6 +34928,7 @@
 "fpe_vs_market": -0.096,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -34348,7 +34961,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "USB",
@@ -34481,6 +35095,7 @@
 "fpe_vs_market": -0.4298,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -34513,7 +35128,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FSLR",
@@ -34650,6 +35266,7 @@
 "fpe_vs_market": -0.5774,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -34682,7 +35299,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CAT",
@@ -34815,6 +35433,7 @@
 "fpe_vs_market": 0.0868,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -34848,6 +35467,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 15
 },
 {
@@ -34983,6 +35603,7 @@
 "fpe_vs_market": 0.0557,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -35016,6 +35637,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 16
 },
 {
@@ -35149,6 +35771,7 @@
 "fpe_vs_market": 0.3956,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -35181,7 +35804,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AEE",
@@ -35317,6 +35941,7 @@
 "fpe_vs_market": 0.0695,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -35349,7 +35974,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NUE",
@@ -35488,6 +36114,7 @@
 "fpe_vs_market": -0.2682,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -35520,7 +36147,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AAPL",
@@ -35655,6 +36283,7 @@
 "fpe_vs_market": 1.0254,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -35688,6 +36317,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 17
 },
 {
@@ -35823,6 +36453,7 @@
 "fpe_vs_market": -0.3061,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -35855,7 +36486,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VMRK",
@@ -35991,6 +36623,7 @@
 "fpe_vs_market": 1.3624,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -36023,7 +36656,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AMZN",
@@ -36162,6 +36796,7 @@
 "fpe_vs_market": 0.2573,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -36195,6 +36830,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": true,
 "djia_rank": 18
 },
 {
@@ -36332,6 +36968,7 @@
 "fpe_vs_market": 0.8607,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -36364,7 +37001,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HSY",
@@ -36501,6 +37139,7 @@
 "fpe_vs_market": -0.022,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -36533,7 +37172,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HLT",
@@ -36674,6 +37314,7 @@
 "fpe_vs_market": 0.9186,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -36706,7 +37347,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TER",
@@ -36841,6 +37483,7 @@
 "fpe_vs_market": 0.2947,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -36873,7 +37516,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GEHC",
@@ -37006,6 +37650,7 @@
 "fpe_vs_market": -0.2156,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -37038,7 +37683,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TXT",
@@ -37171,6 +37817,7 @@
 "fpe_vs_market": -0.3317,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -37203,7 +37850,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EW",
@@ -37340,6 +37988,7 @@
 "fpe_vs_market": 0.5282,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -37372,7 +38021,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SO",
@@ -37509,6 +38159,7 @@
 "fpe_vs_market": 0.0695,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -37541,7 +38192,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ETN",
@@ -37678,6 +38330,7 @@
 "fpe_vs_market": 0.2749,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -37710,7 +38363,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KMB",
@@ -37843,6 +38497,7 @@
 "fpe_vs_market": -0.184,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -37875,7 +38530,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CAH",
@@ -38008,6 +38664,7 @@
 "fpe_vs_market": 0.0004,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -38040,7 +38697,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "XYL",
@@ -38178,6 +38836,7 @@
 "fpe_vs_market": -0.1237,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -38210,7 +38869,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MPC",
@@ -38345,6 +39005,7 @@
 "fpe_vs_market": -0.5859,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -38377,7 +39038,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MAR",
@@ -38514,6 +39176,7 @@
 "fpe_vs_market": 0.7038,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -38546,7 +39209,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "COP",
@@ -38683,6 +39347,7 @@
 "fpe_vs_market": -0.1955,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -38715,7 +39380,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TMUS",
@@ -38852,6 +39518,7 @@
 "fpe_vs_market": -0.3828,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -38884,7 +39551,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BF-B",
@@ -39019,6 +39687,7 @@
 "fpe_vs_market": -0.0593,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -39051,7 +39720,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "UDR",
@@ -39187,6 +39857,7 @@
 "fpe_vs_market": 2.5617,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -39219,7 +39890,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PSX",
@@ -39354,6 +40026,7 @@
 "fpe_vs_market": -0.4846,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -39386,7 +40059,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "APH",
@@ -39521,6 +40195,7 @@
 "fpe_vs_market": 0.2391,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -39553,7 +40228,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "P",
@@ -39686,6 +40362,7 @@
 "fpe_vs_market": 0.7119,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -39718,7 +40395,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BX",
@@ -39853,6 +40531,7 @@
 "fpe_vs_market": -0.0981,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -39885,7 +40564,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WRB",
@@ -40020,6 +40700,7 @@
 "fpe_vs_market": -0.1453,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -40052,7 +40733,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "INVH",
@@ -40189,6 +40871,7 @@
 "fpe_vs_market": 1.0393,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -40221,7 +40904,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LDOS",
@@ -40356,6 +41040,7 @@
 "fpe_vs_market": -0.3598,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -40388,7 +41073,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MPWR",
@@ -40523,6 +41209,7 @@
 "fpe_vs_market": 0.5397,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -40555,7 +41242,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DDOG",
@@ -40692,6 +41380,7 @@
 "fpe_vs_market": 3.4266,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -40724,7 +41413,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MTD",
@@ -40857,6 +41547,7 @@
 "fpe_vs_market": 0.8171,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -40889,7 +41580,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DRI",
@@ -41024,6 +41716,7 @@
 "fpe_vs_market": -0.0026,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -41056,7 +41749,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MTB",
@@ -41189,6 +41883,7 @@
 "fpe_vs_market": -0.4122,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -41221,7 +41916,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PNC",
@@ -41356,6 +42052,7 @@
 "fpe_vs_market": -0.4004,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -41388,7 +42085,179 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
+},
+{
+"ticker": "SHOP",
+"name": "Shopify Inc.",
+"sector": "Technology",
+"themes": [
+"Payments"
+],
+"score": 50.9,
+"rank": 245,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 46.1,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 245,
+"score": 50.9,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 31.6,
+"gross_margin_pct": 47.49,
+"profit_margin_pct": 15.01,
+"roe_pct": 16.83,
+"pe": 91.36,
+"forward_pe": 60.69,
+"ev_ebitda": 72.27,
+"ps": 13.52,
+"fcf_yield_pct": 1.34,
+"market_cap": 191575998464.0,
+"implied_fcf_growth": 0.2814,
+"implied_tag": "In line",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Fast-growing commerce platform priced for continued high growth; very volatile shares (beta ~2.6).",
+"fcf_ni": 1.33,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 1.11,
+"earnings_yield_fwd": 1.65,
+"fcf_basis": "TTM",
+"roic_pct": 19.87,
+"net_debt_ebitda": -1.75,
+"interest_coverage": 1639.13,
+"rev_cagr_pct": 27.31,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": null,
+"rev_growth_std": 1.99,
+"earnings_cv": null,
+"fcf_cv": 0.77,
+"fcf_neg_years": 1.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 0.75,
+"capex_ocf_pct": 1.28,
+"capex_fcf": 0.01,
+"tax_rate": 0.18,
+"beta": 2.66,
+"volatility_1y_pct": 59.93,
+"max_drawdown_1y_pct": -44.16,
+"nd_ebitda_then": null,
+"margin_change_pts": 72.44,
+"fcf_cagr_pct": null,
+"operating_margin_pct": 18.39,
+"fcf_ni_3y": 1.33,
+"fcf_ttm": 2562000000.0,
+"ni_ttm": 2126000000.0,
+"fcf_yield_yahoo_pct": 0.86,
+"enterprise_value": 187036991488.0,
+"fcff_ev_pct": 1.37,
+"fcf_ni_conversion": 1.63,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.999,
+"debt_weight": 0.001,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0018,
+"cost_debt_used": 0.02,
+"tax": 0.184
+},
+"wacc": 0.1099,
+"roic_spread": 0.0888,
+"v3_source": "own",
+"score_prev": 42.1,
+"components": {
+"quality": 45.0,
+"growth": 79.0,
+"value": 9.0,
+"resilience": 60.0
+},
+"safety": 60.0,
+"risk_level": "Elevated",
+"risk_serious": [],
+"risk_warn": [
+"Negative FCF in 1 of 4 years"
+],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Software - Application",
+"industry_rank": 13,
+"industry_n": 16,
+"pe_vs_market": 2.9171,
+"fpe_vs_market": 2.4077,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +31.6% year on year; +27.3% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 15.0%, ROIC 20% vs 11.0% cost of capital (+8.9 pts)."
+},
+{
+"q": "Is cash flow strong?",
+"v": "partly",
+"t": "FCF positive in 3 of 4 years, 1.33x net income over 3 years, FCF yield 1.3%, uneven from year to year."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, no meaningful interest."
+},
+{
+"q": "Is the financial position improving?",
+"v": "na",
+"t": "Not enough history to judge the trend."
+}
+],
+"checks_score": 3,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "OXY",
@@ -41530,6 +42399,7 @@
 "fpe_vs_market": -0.2834,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -41562,7 +42432,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BR",
@@ -41697,6 +42568,7 @@
 "fpe_vs_market": -0.1316,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -41729,7 +42601,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DOV",
@@ -41864,6 +42737,7 @@
 "fpe_vs_market": -0.0099,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -41896,7 +42770,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SMCI",
@@ -42036,6 +42911,7 @@
 "fpe_vs_market": -0.6742,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -42068,7 +42944,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "JBL",
@@ -42201,6 +43078,7 @@
 "fpe_vs_market": -0.3092,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -42233,7 +43111,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HON",
@@ -42366,6 +43245,7 @@
 "fpe_vs_market": 0.2442,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -42399,6 +43279,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 19
 },
 {
@@ -42532,6 +43413,7 @@
 "fpe_vs_market": -0.2657,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -42564,7 +43446,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MSCI",
@@ -42701,6 +43584,7 @@
 "fpe_vs_market": 0.5613,
 "peer_group": "Fee-based financials",
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -42733,7 +43617,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GE",
@@ -42870,6 +43755,7 @@
 "fpe_vs_market": 0.8197,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -42902,7 +43788,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MS",
@@ -43035,6 +43922,7 @@
 "fpe_vs_market": -0.2422,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -43067,7 +43955,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NEE",
@@ -43208,6 +44097,7 @@
 "fpe_vs_market": 0.0744,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -43240,7 +44130,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ELV",
@@ -43375,6 +44266,7 @@
 "fpe_vs_market": -0.2211,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -43407,7 +44299,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "OMC",
@@ -43547,6 +44440,7 @@
 "fpe_vs_market": -0.5904,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -43579,7 +44473,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "QCOM",
@@ -43714,6 +44609,7 @@
 "fpe_vs_market": -0.0916,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -43746,7 +44642,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HBAN",
@@ -43879,6 +44776,7 @@
 "fpe_vs_market": -0.4929,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -43911,7 +44809,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MET",
@@ -44046,6 +44945,7 @@
 "fpe_vs_market": -0.4969,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -44078,7 +44978,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EXPD",
@@ -44211,6 +45112,7 @@
 "fpe_vs_market": 0.3781,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -44243,7 +45145,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IEX",
@@ -44376,6 +45279,7 @@
 "fpe_vs_market": 0.3574,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -44408,7 +45312,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EQT",
@@ -44549,6 +45454,7 @@
 "fpe_vs_market": -0.1139,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -44581,7 +45487,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CHTR",
@@ -44720,6 +45627,7 @@
 "fpe_vs_market": -0.8689,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -44752,7 +45660,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WFC",
@@ -44887,6 +45796,7 @@
 "fpe_vs_market": -0.4154,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -44919,7 +45829,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HONA",
@@ -45010,7 +45921,7 @@
 "beta": null,
 "volatility_1y_pct": 82.96,
 "max_drawdown_1y_pct": -43.85,
-"nd_ebitda_then": 0.0,
+"nd_ebitda_then": -0.0,
 "margin_change_pts": -10.7,
 "fcf_cagr_pct": 11.02,
 "operating_margin_pct": 23.69,
@@ -45057,6 +45968,7 @@
 "fpe_vs_market": -0.0215,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -45081,7 +45993,7 @@
 {
 "q": "Is the financial position improving?",
 "v": "no",
-"t": "Better: FCF growing 11% a year. Worse: leverage up (0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
+"t": "Better: FCF growing 11% a year. Worse: leverage up (-0.0x \u2192 3.4x), net margin -10.7 pts, growth slowing."
 }
 ],
 "checks_score": 0,
@@ -45089,7 +46001,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FDS",
@@ -45224,6 +46137,7 @@
 "fpe_vs_market": -0.1484,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -45256,7 +46170,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "JKHY",
@@ -45389,6 +46304,7 @@
 "fpe_vs_market": 0.1464,
 "peer_group": "Fee-based financials",
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -45421,7 +46337,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ES",
@@ -45560,6 +46477,7 @@
 "fpe_vs_market": -0.2188,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -45592,7 +46510,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "APO",
@@ -45729,6 +46648,7 @@
 "fpe_vs_market": -0.389,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -45761,7 +46681,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PFG",
@@ -45896,6 +46817,7 @@
 "fpe_vs_market": -0.3824,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -45928,7 +46850,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DAL",
@@ -46065,6 +46988,7 @@
 "fpe_vs_market": -0.3833,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -46097,7 +47021,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HPQ",
@@ -46230,6 +47155,7 @@
 "fpe_vs_market": -0.4875,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -46262,7 +47188,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FDX",
@@ -46397,6 +47324,7 @@
 "fpe_vs_market": -0.1585,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -46429,7 +47357,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "A",
@@ -46564,6 +47493,7 @@
 "fpe_vs_market": 0.4593,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -46596,7 +47526,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DVN",
@@ -46736,6 +47667,7 @@
 "fpe_vs_market": -0.4588,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -46768,7 +47700,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "URI",
@@ -46905,6 +47838,7 @@
 "fpe_vs_market": 0.1463,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -46937,7 +47871,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CMI",
@@ -47070,6 +48005,7 @@
 "fpe_vs_market": -0.1933,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -47102,7 +48038,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MAA",
@@ -47238,6 +48175,7 @@
 "fpe_vs_market": 1.0069,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -47270,7 +48208,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "XOM",
@@ -47408,6 +48347,7 @@
 "fpe_vs_market": -0.1247,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -47440,7 +48380,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MSI",
@@ -47575,6 +48516,7 @@
 "fpe_vs_market": 0.4205,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -47607,7 +48549,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EFX",
@@ -47740,6 +48683,7 @@
 "fpe_vs_market": 0.087,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -47772,7 +48716,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "L",
@@ -47907,6 +48852,7 @@
 "fpe_vs_market": 1.1555,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -47939,7 +48885,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VZ",
@@ -48075,6 +49022,7 @@
 "fpe_vs_market": -0.5267,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -48107,7 +49055,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NOC",
@@ -48242,6 +49191,7 @@
 "fpe_vs_market": 0.0435,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -48274,7 +49224,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TEL",
@@ -48409,6 +49360,7 @@
 "fpe_vs_market": -0.209,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -48441,7 +49393,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HD",
@@ -48574,6 +49527,7 @@
 "fpe_vs_market": 0.1576,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -48607,6 +49561,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 20
 },
 {
@@ -48742,6 +49697,7 @@
 "fpe_vs_market": -0.2075,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -48774,7 +49730,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AON",
@@ -48909,6 +49866,7 @@
 "fpe_vs_market": -0.1067,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -48946,7 +49904,8 @@
 "rank": 5,
 "checks": 4,
 "na_passes": true
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "LNT",
@@ -49086,6 +50045,7 @@
 "fpe_vs_market": 0.0947,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -49118,7 +50078,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KVUE",
@@ -49251,6 +50212,7 @@
 "fpe_vs_market": -0.1242,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -49283,7 +50245,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MRSH",
@@ -49418,6 +50381,7 @@
 "fpe_vs_market": -0.0174,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -49455,7 +50419,8 @@
 "rank": 2,
 "checks": 5,
 "na_passes": true
-}
+},
+"fv_pick": false
 },
 {
 "ticker": "KDP",
@@ -49595,6 +50560,7 @@
 "fpe_vs_market": -0.2039,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -49627,7 +50593,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CVX",
@@ -49766,6 +50733,7 @@
 "fpe_vs_market": -0.1585,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -49799,6 +50767,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 21
 },
 {
@@ -49936,6 +50905,7 @@
 "fpe_vs_market": 0.0612,
 "peer_group": "Fee-based financials",
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -49968,7 +50938,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AMCR",
@@ -50110,6 +51081,7 @@
 "fpe_vs_market": -0.3851,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -50142,7 +51114,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BRO",
@@ -50281,6 +51254,7 @@
 "fpe_vs_market": -0.1811,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -50313,7 +51287,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WTW",
@@ -50450,6 +51425,7 @@
 "fpe_vs_market": -0.2061,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -50482,7 +51458,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FIS",
@@ -50624,6 +51601,7 @@
 "fpe_vs_market": -0.6744,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -50656,7 +51634,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "AVY",
@@ -50789,6 +51768,7 @@
 "fpe_vs_market": -0.0771,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -50821,7 +51801,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IVZ",
@@ -50958,6 +51939,7 @@
 "fpe_vs_market": -0.5251,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -50990,7 +51972,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NRG",
@@ -51130,6 +52113,7 @@
 "fpe_vs_market": -0.4886,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -51162,7 +52146,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "UBER",
@@ -51295,6 +52280,7 @@
 "fpe_vs_market": -0.1696,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -51327,7 +52313,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NWSA",
@@ -51463,6 +52450,7 @@
 "fpe_vs_market": 0.0817,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -51495,7 +52483,177 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
+},
+{
+"ticker": "CRCL",
+"name": "Circle Internet Group, Inc.",
+"sector": "Financial Services",
+"themes": [
+"Payments"
+],
+"score": 48.3,
+"rank": 304,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 36.2,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 304,
+"score": 48.3,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 16.9,
+"gross_margin_pct": 26.58,
+"profit_margin_pct": 15.28,
+"roe_pct": 13.44,
+"pe": 40.89,
+"forward_pe": 47.08,
+"ev_ebitda": 43.73,
+"ps": 5.75,
+"fcf_yield_pct": 4.01,
+"market_cap": 17414823936.0,
+"implied_fcf_growth": 0.2046,
+"implied_tag": "FCF distorted",
+"implied_basis": "earnings",
+"required_return": 0.12,
+"required_return_source": "stock",
+"required_return_reason": "Young public company; income depends on interest rates, USDC adoption and crypto regulation.",
+"fcf_ni": 2.54,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 2.66,
+"earnings_yield_fwd": 2.12,
+"fcf_basis": "TTM",
+"roic_pct": -4.69,
+"net_debt_ebitda": -4.68,
+"interest_coverage": -82.93,
+"rev_cagr_pct": 52.66,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": null,
+"rev_growth_std": 30.07,
+"earnings_cv": null,
+"fcf_cv": 1.07,
+"fcf_neg_years": 1.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 2.87,
+"capex_ocf_pct": 10.37,
+"capex_fcf": 0.12,
+"tax_rate": 0.32,
+"beta": null,
+"volatility_1y_pct": 94.36,
+"max_drawdown_1y_pct": -54.57,
+"nd_ebitda_then": null,
+"margin_change_pts": 97.05,
+"fcf_cagr_pct": null,
+"operating_margin_pct": 24.09,
+"fcf_ni_3y": 2.54,
+"fcf_ttm": 698842000.0,
+"ni_ttm": 462914000.0,
+"fcf_yield_yahoo_pct": 1.43,
+"enterprise_value": 15733519360.0,
+"fcff_ev_pct": null,
+"fcf_ni_conversion": null,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.999,
+"debt_weight": 0.001,
+"cost_equity": 0.12,
+"cost_debt_raw": 0.0316,
+"cost_debt_used": 0.0316,
+"tax": 0.324
+},
+"wacc": 0.1199,
+"roic_spread": null,
+"v3_source": "own",
+"score_prev": 39.4,
+"components": {
+"quality": 50.0,
+"growth": 74.0,
+"value": 10.0,
+"resilience": 46.0
+},
+"safety": 46.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Capital Markets",
+"industry_rank": 6,
+"industry_n": 6,
+"pe_vs_market": 0.7533,
+"fpe_vs_market": 1.6438,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "yes",
+"t": "Latest quarter +16.9% year on year; +52.7% a year over 3 years, uneven (\u00b130 pts a year)."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 15.3%, return on equity 13.4%."
+},
+{
+"q": "Is cash flow strong?",
+"v": "na",
+"t": "Free cash flow isn't a meaningful test for banks and insurers."
+},
+{
+"q": "Is debt manageable?",
+"v": "na",
+"t": "Leverage ratios don't apply to banks and insurers."
+},
+{
+"q": "Is the financial position improving?",
+"v": "partly",
+"t": "Better: net margin +97.0 pts. Worse: share count rising 2.9% a year, growth slowing."
+}
+],
+"checks_score": 2,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "VMC",
@@ -51631,6 +52789,7 @@
 "fpe_vs_market": 0.5446,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -51663,7 +52822,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NXPI",
@@ -51796,6 +52956,7 @@
 "fpe_vs_market": -0.2041,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -51828,7 +52989,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CSX",
@@ -51961,6 +53123,7 @@
 "fpe_vs_market": 0.2495,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -51993,7 +53156,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PRU",
@@ -52128,6 +53292,7 @@
 "fpe_vs_market": -0.5296,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -52160,7 +53325,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BKR",
@@ -52297,6 +53463,7 @@
 "fpe_vs_market": 0.0684,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -52329,7 +53496,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IQV",
@@ -52468,6 +53636,7 @@
 "fpe_vs_market": 0.0554,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -52500,7 +53669,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FERG",
@@ -52633,6 +53803,7 @@
 "fpe_vs_market": 0.0561,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -52665,7 +53836,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WYNN",
@@ -52807,6 +53979,7 @@
 "fpe_vs_market": -0.1028,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -52839,7 +54012,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BLK",
@@ -52974,6 +54148,7 @@
 "fpe_vs_market": -0.0059,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -53006,7 +54181,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MLM",
@@ -53143,6 +54319,7 @@
 "fpe_vs_market": 0.4318,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -53175,7 +54352,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MCO",
@@ -53310,6 +54488,7 @@
 "fpe_vs_market": 0.4844,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -53342,7 +54521,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "IR",
@@ -53479,6 +54659,7 @@
 "fpe_vs_market": 0.1466,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -53511,7 +54692,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "JPM",
@@ -53644,6 +54826,7 @@
 "fpe_vs_market": -0.2587,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -53677,6 +54860,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 22
 },
 {
@@ -53816,6 +55000,7 @@
 "fpe_vs_market": 0.0576,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -53848,7 +55033,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "RF",
@@ -53981,6 +55167,7 @@
 "fpe_vs_market": -0.4365,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -54013,7 +55200,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DG",
@@ -54150,6 +55338,7 @@
 "fpe_vs_market": -0.1066,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -54182,7 +55371,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MRK",
@@ -54317,6 +55507,7 @@
 "fpe_vs_market": -0.0766,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -54350,6 +55541,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 23
 },
 {
@@ -54490,6 +55682,7 @@
 "fpe_vs_market": -0.1558,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -54522,7 +55715,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "UAL",
@@ -54660,6 +55854,7 @@
 "fpe_vs_market": -0.5083,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -54692,7 +55887,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LHX",
@@ -54831,6 +56027,7 @@
 "fpe_vs_market": 0.1423,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -54863,7 +56060,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CSCO",
@@ -54998,6 +56196,7 @@
 "fpe_vs_market": 0.0439,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -55031,6 +56230,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 24
 },
 {
@@ -55166,6 +56366,7 @@
 "fpe_vs_market": -0.0785,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -55198,7 +56399,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DELL",
@@ -55333,6 +56535,7 @@
 "fpe_vs_market": -0.2127,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -55365,7 +56568,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "RSG",
@@ -55500,6 +56704,7 @@
 "fpe_vs_market": 0.698,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -55532,7 +56737,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CPT",
@@ -55668,6 +56874,7 @@
 "fpe_vs_market": 6.5387,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -55700,7 +56907,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NTRS",
@@ -55837,6 +57045,7 @@
 "fpe_vs_market": -0.2717,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -55869,7 +57078,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FITB",
@@ -56002,6 +57212,7 @@
 "fpe_vs_market": -0.3892,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -56034,7 +57245,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TWLO",
@@ -56171,6 +57383,7 @@
 "fpe_vs_market": 0.6929,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -56203,7 +57416,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NWS",
@@ -56339,6 +57553,7 @@
 "fpe_vs_market": 0.179,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -56371,7 +57586,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WAB",
@@ -56506,6 +57722,7 @@
 "fpe_vs_market": 0.248,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -56538,7 +57755,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HAL",
@@ -56676,6 +57894,7 @@
 "fpe_vs_market": -0.3088,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -56708,7 +57927,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CFG",
@@ -56841,6 +58061,7 @@
 "fpe_vs_market": -0.4476,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -56873,7 +58094,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WST",
@@ -57008,6 +58230,7 @@
 "fpe_vs_market": 1.3207,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -57040,7 +58263,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NI",
@@ -57180,6 +58404,7 @@
 "fpe_vs_market": 0.1132,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -57212,7 +58437,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DOC",
@@ -57355,6 +58581,7 @@
 "fpe_vs_market": 6.6328,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -57387,7 +58614,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ILMN",
@@ -57520,6 +58748,7 @@
 "fpe_vs_market": 1.1625,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -57552,7 +58781,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DHI",
@@ -57685,6 +58915,7 @@
 "fpe_vs_market": -0.2684,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -57717,7 +58948,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MMM",
@@ -57852,6 +59084,7 @@
 "fpe_vs_market": -0.0117,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -57885,6 +59118,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 25
 },
 {
@@ -58020,6 +59254,7 @@
 "fpe_vs_market": 0.2968,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -58052,7 +59287,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CHRW",
@@ -58185,6 +59421,7 @@
 "fpe_vs_market": -0.0624,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -58217,7 +59454,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AJG",
@@ -58356,6 +59594,7 @@
 "fpe_vs_market": 0.0489,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -58388,7 +59627,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KEYS",
@@ -58521,6 +59761,7 @@
 "fpe_vs_market": 0.238,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -58553,7 +59794,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BXP",
@@ -58694,6 +59936,7 @@
 "fpe_vs_market": 0.6907,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -58726,7 +59969,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HUM",
@@ -58864,6 +60108,7 @@
 "fpe_vs_market": 0.3621,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -58896,7 +60141,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PWR",
@@ -59031,6 +60277,7 @@
 "fpe_vs_market": 0.6528,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -59063,7 +60310,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "UNH",
@@ -59198,6 +60446,7 @@
 "fpe_vs_market": -0.0186,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -59231,6 +60480,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 26
 },
 {
@@ -59366,6 +60616,7 @@
 "fpe_vs_market": 0.0938,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -59399,6 +60650,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 27
 },
 {
@@ -59539,6 +60791,7 @@
 "fpe_vs_market": -0.0415,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -59571,7 +60824,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "DGX",
@@ -59704,6 +60958,7 @@
 "fpe_vs_market": 0.1806,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -59736,7 +60991,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BIIB",
@@ -59871,6 +61127,7 @@
 "fpe_vs_market": -0.1248,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -59903,7 +61160,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CSGP",
@@ -60041,6 +61299,7 @@
 "fpe_vs_market": -0.0425,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -60073,7 +61332,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "COO",
@@ -60209,6 +61469,7 @@
 "fpe_vs_market": -0.2874,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -60241,7 +61502,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AKAM",
@@ -60381,6 +61643,7 @@
 "fpe_vs_market": -0.2385,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -60413,7 +61676,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ORCL",
@@ -60553,6 +61817,7 @@
 "fpe_vs_market": -0.3354,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -60585,7 +61850,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CASY",
@@ -60718,6 +61984,7 @@
 "fpe_vs_market": 0.6295,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -60750,7 +62017,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CINF",
@@ -60885,6 +62153,7 @@
 "fpe_vs_market": 0.1065,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -60917,7 +62186,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WM",
@@ -61052,6 +62322,7 @@
 "fpe_vs_market": 0.4664,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -61084,7 +62355,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ALB",
@@ -61224,6 +62496,7 @@
 "fpe_vs_market": -0.5108,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -61256,7 +62529,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ROP",
@@ -61391,6 +62665,7 @@
 "fpe_vs_market": 0.0662,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -61423,7 +62698,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PCAR",
@@ -61558,6 +62834,7 @@
 "fpe_vs_market": -0.1687,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -61590,7 +62867,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AIG",
@@ -61727,6 +63005,7 @@
 "fpe_vs_market": -0.478,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -61759,7 +63038,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KEY",
@@ -61897,6 +63177,7 @@
 "fpe_vs_market": -0.4543,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -61929,7 +63210,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LYB",
@@ -62068,6 +63350,7 @@
 "fpe_vs_market": -0.392,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -62100,7 +63383,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SLB",
@@ -62237,6 +63521,7 @@
 "fpe_vs_market": -0.0223,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -62269,7 +63554,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ARES",
@@ -62409,6 +63695,7 @@
 "fpe_vs_market": 0.0281,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -62441,7 +63728,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AMD",
@@ -62578,6 +63866,7 @@
 "fpe_vs_market": 0.7779,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -62610,7 +63899,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CDW",
@@ -62745,6 +64035,7 @@
 "fpe_vs_market": -0.2842,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -62777,7 +64068,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MRVL",
@@ -62914,6 +64206,7 @@
 "fpe_vs_market": 0.5049,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -62946,7 +64239,8 @@
 "resilient_rank": null,
 "all_checks": true,
 "checks_pick": true,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DIS",
@@ -63084,6 +64378,7 @@
 "fpe_vs_market": -0.1692,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -63117,6 +64412,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 28
 },
 {
@@ -63254,6 +64550,7 @@
 "fpe_vs_market": 0.0045,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -63286,7 +64583,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AFL",
@@ -63421,6 +64719,7 @@
 "fpe_vs_market": -0.0865,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -63453,7 +64752,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "STT",
@@ -63588,6 +64888,7 @@
 "fpe_vs_market": -0.3862,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -63620,7 +64921,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DLR",
@@ -63759,6 +65061,7 @@
 "fpe_vs_market": 2.2768,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -63791,7 +65094,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KMI",
@@ -63930,6 +65234,7 @@
 "fpe_vs_market": 0.2308,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -63962,7 +65267,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TYL",
@@ -64097,6 +65403,7 @@
 "fpe_vs_market": 0.4239,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -64129,7 +65436,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BDX",
@@ -64268,6 +65576,7 @@
 "fpe_vs_market": -0.1647,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -64300,7 +65609,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NDAQ",
@@ -64439,6 +65749,7 @@
 "fpe_vs_market": 0.257,
 "peer_group": "Fee-based financials",
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -64471,7 +65782,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "FLEX",
@@ -64604,6 +65916,7 @@
 "fpe_vs_market": -0.3119,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -64636,7 +65949,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LUV",
@@ -64773,6 +66087,7 @@
 "fpe_vs_market": -0.4227,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -64805,7 +66120,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "C",
@@ -64938,6 +66254,7 @@
 "fpe_vs_market": -0.4739,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -64970,7 +66287,182 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
+},
+{
+"ticker": "FISV",
+"name": "Fiserv, Inc.",
+"sector": "Technology",
+"themes": [
+"Payments"
+],
+"score": 43.2,
+"rank": 382,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 32.5,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 382,
+"score": 43.2,
+"est": false
+}
+],
+"flags": [
+"Loss-making"
+],
+"rev_growth_pct": -1.27,
+"gross_margin_pct": null,
+"profit_margin_pct": -18.9,
+"roe_pct": null,
+"pe": null,
+"forward_pe": 7.87,
+"ev_ebitda": null,
+"ps": null,
+"fcf_yield_pct": 9.44,
+"market_cap": 33455161344.0,
+"implied_fcf_growth": -0.0104,
+"implied_tag": "Sales shrinking",
+"implied_basis": "fcf",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Sticky bank-technology franchise, but heavy debt and a recent guidance reset.",
+"fcf_ni": 1.36,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": -11.75,
+"earnings_yield_fwd": 12.71,
+"fcf_basis": "TTM",
+"roic_pct": 8.4,
+"net_debt_ebitda": null,
+"interest_coverage": 3.79,
+"rev_cagr_pct": 6.11,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 17.48,
+"rev_growth_std": 1.8,
+"earnings_cv": 0.11,
+"fcf_cv": 0.17,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -5.36,
+"capex_ocf_pct": 29.08,
+"capex_fcf": 0.41,
+"tax_rate": 0.19,
+"beta": null,
+"volatility_1y_pct": 40.02,
+"max_drawdown_1y_pct": -36.49,
+"nd_ebitda_then": 3.02,
+"margin_change_pts": 2.16,
+"fcf_cagr_pct": 11.05,
+"operating_margin_pct": null,
+"fcf_ni_3y": 1.36,
+"fcf_ttm": 3158000000.0,
+"ni_ttm": -3932000000.0,
+"fcf_yield_yahoo_pct": null,
+"enterprise_value": null,
+"fcff_ev_pct": null,
+"fcf_ni_conversion": 1.24,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.535,
+"debt_weight": 0.465,
+"cost_equity": 0.1,
+"cost_debt_raw": 0.0566,
+"cost_debt_used": 0.0566,
+"tax": 0.19
+},
+"wacc": 0.0748,
+"roic_spread": 0.0092,
+"v3_source": "own",
+"score_prev": 38.1,
+"components": {
+"quality": 30.0,
+"growth": 41.0,
+"value": 69.0,
+"resilience": 40.0
+},
+"safety": 40.0,
+"risk_level": "Elevated",
+"risk_serious": [],
+"risk_warn": [
+"Interest cover 3.8x (< 5x)"
+],
+"data_confidence": "Medium",
+"distress_cap": false,
+"industry": "Information Technology Services",
+"industry_rank": 10,
+"industry_n": 10,
+"pe_vs_market": null,
+"fpe_vs_market": -0.5582,
+"peer_group": "Fee-based financials",
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter -1.3% year on year; +6.1% a year over 3 years, steady. Growth has stalled recently."
+},
+{
+"q": "Are profits healthy?",
+"v": "no",
+"t": "Net margin -18.9%, ROIC 8% vs 7.5% cost of capital (+0.9 pts), EPS +17.5% a year. Loss-making."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.36x net income over 3 years, FCF yield 9.4%."
+},
+{
+"q": "Is debt manageable?",
+"v": "partly",
+"t": "EBITDA is negative or missing, so leverage can't be judged."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: net margin +2.2 pts, FCF growing 11% a year, share count falling 5.4% a year. Worse: growth slowing."
+}
+],
+"checks_score": 1,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fcff_ev_src": null,
+"fv_pick": true
 },
 {
 "ticker": "SOLV",
@@ -65110,6 +66602,7 @@
 "fpe_vs_market": -0.3715,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -65142,7 +66635,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PNW",
@@ -65281,6 +66775,7 @@
 "fpe_vs_market": 0.0713,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -65313,7 +66808,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "UPS",
@@ -65446,6 +66942,7 @@
 "fpe_vs_market": -0.2483,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -65478,7 +66975,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "JCI",
@@ -65616,6 +67114,7 @@
 "fpe_vs_market": 0.1302,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -65648,7 +67147,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LH",
@@ -65783,6 +67283,7 @@
 "fpe_vs_market": 0.0375,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -65815,7 +67316,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ABBV",
@@ -65952,6 +67454,7 @@
 "fpe_vs_market": 0.0245,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -65984,7 +67487,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "RTX",
@@ -66121,6 +67625,7 @@
 "fpe_vs_market": 0.3923,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -66153,7 +67658,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KR",
@@ -66292,6 +67798,7 @@
 "fpe_vs_market": -0.3151,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -66324,7 +67831,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FANG",
@@ -66466,6 +67974,7 @@
 "fpe_vs_market": -0.4334,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -66498,7 +68007,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TKO",
@@ -66636,6 +68146,7 @@
 "fpe_vs_market": 1.1673,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -66668,7 +68179,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SNPS",
@@ -66809,6 +68321,7 @@
 "fpe_vs_market": 0.4133,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -66841,7 +68354,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NKE",
@@ -66978,6 +68492,7 @@
 "fpe_vs_market": 0.3946,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -67011,6 +68526,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 29
 },
 {
@@ -67146,6 +68662,7 @@
 "fpe_vs_market": 0.4092,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -67178,7 +68695,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ADI",
@@ -67313,6 +68831,7 @@
 "fpe_vs_market": 0.4194,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -67345,7 +68864,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HRL",
@@ -67480,6 +69000,7 @@
 "fpe_vs_market": -0.2373,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -67512,7 +69033,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CLX",
@@ -67649,6 +69171,7 @@
 "fpe_vs_market": -0.1941,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -67681,7 +69204,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EQIX",
@@ -67820,6 +69344,7 @@
 "fpe_vs_market": 1.8284,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -67852,7 +69377,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HII",
@@ -67988,6 +69514,7 @@
 "fpe_vs_market": -0.1393,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -68020,7 +69547,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PCG",
@@ -68162,6 +69690,7 @@
 "fpe_vs_market": -0.5892,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -68194,7 +69723,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MDLZ",
@@ -68330,6 +69860,7 @@
 "fpe_vs_market": 0.0843,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -68362,7 +69893,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ERIE",
@@ -68497,6 +70029,7 @@
 "fpe_vs_market": 0.0477,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -68529,7 +70062,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TXN",
@@ -68664,6 +70198,7 @@
 "fpe_vs_market": 0.4661,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -68696,7 +70231,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HPE",
@@ -68832,6 +70368,7 @@
 "fpe_vs_market": -0.3465,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -68864,7 +70401,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NSC",
@@ -68997,6 +70535,7 @@
 "fpe_vs_market": 0.3269,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -69029,7 +70568,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TRGP",
@@ -69168,6 +70708,7 @@
 "fpe_vs_market": 0.4598,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -69200,7 +70741,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CVS",
@@ -69341,6 +70883,7 @@
 "fpe_vs_market": -0.4062,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -69373,7 +70916,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TECH",
@@ -69508,6 +71052,7 @@
 "fpe_vs_market": 0.7653,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -69540,7 +71085,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TDY",
@@ -69675,6 +71221,7 @@
 "fpe_vs_market": 0.3367,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -69707,7 +71254,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BE",
@@ -69808,7 +71356,7 @@
 "fcf_ni_3y": null,
 "fcf_ttm": 436704000.0,
 "ni_ttm": 518306000.0,
-"fcf_yield_yahoo_pct": 0.0,
+"fcf_yield_yahoo_pct": -0.0,
 "enterprise_value": 60398694400.0,
 "fcff_ev_pct": 0.79,
 "fcf_ni_conversion": null,
@@ -69849,6 +71397,7 @@
 "fpe_vs_market": 1.1485,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -69881,7 +71430,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PKG",
@@ -70014,6 +71564,7 @@
 "fpe_vs_market": 0.0132,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -70046,7 +71597,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BEN",
@@ -70181,6 +71733,7 @@
 "fpe_vs_market": -0.4377,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -70213,7 +71766,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KKR",
@@ -70350,6 +71904,7 @@
 "fpe_vs_market": -0.2626,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -70382,7 +71937,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TFC",
@@ -70517,6 +72073,7 @@
 "fpe_vs_market": -0.4426,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -70549,7 +72106,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "OKE",
@@ -70690,6 +72248,7 @@
 "fpe_vs_market": -0.1032,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -70722,7 +72281,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ROK",
@@ -70859,6 +72419,7 @@
 "fpe_vs_market": 0.6424,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -70891,7 +72452,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LYV",
@@ -71028,6 +72590,7 @@
 "fpe_vs_market": 4.2526,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -71060,7 +72623,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SJM",
@@ -71200,6 +72764,7 @@
 "fpe_vs_market": -0.3365,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -71232,7 +72797,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PANW",
@@ -71373,6 +72939,7 @@
 "fpe_vs_market": 3.2108,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -71405,7 +72972,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WAT",
@@ -71542,6 +73110,7 @@
 "fpe_vs_market": 0.5698,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -71574,7 +73143,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CCI",
@@ -71714,6 +73284,7 @@
 "fpe_vs_market": 0.7003,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -71746,7 +73317,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "HSIC",
@@ -71884,6 +73456,7 @@
 "fpe_vs_market": -0.2043,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -71916,7 +73489,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BAX",
@@ -72057,6 +73631,7 @@
 "fpe_vs_market": -0.3668,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -72089,7 +73664,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BRK-B",
@@ -72226,6 +73802,7 @@
 "fpe_vs_market": 0.358,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -72258,7 +73835,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DHR",
@@ -72395,6 +73973,7 @@
 "fpe_vs_market": 0.3992,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -72427,7 +74006,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CNP",
@@ -72566,6 +74146,7 @@
 "fpe_vs_market": 0.1392,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -72598,7 +74179,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "JBHT",
@@ -72735,6 +74317,7 @@
 "fpe_vs_market": 0.261,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -72767,7 +74350,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AES",
@@ -72907,6 +74491,7 @@
 "fpe_vs_market": -0.6506,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -72939,7 +74524,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CRWD",
@@ -73082,6 +74668,7 @@
 "fpe_vs_market": 7.7278,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -73114,7 +74701,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BALL",
@@ -73254,6 +74842,7 @@
 "fpe_vs_market": -0.1738,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -73286,7 +74875,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GPN",
@@ -73429,6 +75019,7 @@
 "fpe_vs_market": -0.6623,
 "peer_group": "Fee-based financials",
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -73461,7 +75052,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "XYZ",
@@ -73600,6 +75192,7 @@
 "fpe_vs_market": -0.178,
 "peer_group": null,
 "has_fair_value": true,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -73632,7 +75225,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "Q",
@@ -73767,6 +75361,7 @@
 "fpe_vs_market": 0.1916,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -73799,7 +75394,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FTV",
@@ -73934,6 +75530,7 @@
 "fpe_vs_market": 0.1044,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -73966,7 +75563,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MGM",
@@ -74107,6 +75705,7 @@
 "fpe_vs_market": 0.0822,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -74139,7 +75738,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ETR",
@@ -74276,6 +75876,7 @@
 "fpe_vs_market": 0.2112,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -74308,7 +75909,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VTRS",
@@ -74447,6 +76049,7 @@
 "fpe_vs_market": -0.6043,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -74479,7 +76082,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "APTV",
@@ -74617,6 +76221,7 @@
 "fpe_vs_market": -0.6189,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -74649,7 +76254,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CMS",
@@ -74788,6 +76394,7 @@
 "fpe_vs_market": -0.0502,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -74820,7 +76427,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WELL",
@@ -74961,6 +76569,7 @@
 "fpe_vs_market": 3.1167,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -74993,7 +76602,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CNC",
@@ -75133,6 +76743,7 @@
 "fpe_vs_market": -0.306,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -75165,7 +76776,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EMR",
@@ -75303,6 +76915,7 @@
 "fpe_vs_market": 0.2755,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -75335,7 +76948,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "XEL",
@@ -75477,6 +77091,7 @@
 "fpe_vs_market": -0.0125,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -75509,7 +77124,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ADM",
@@ -75647,6 +77263,7 @@
 "fpe_vs_market": -0.2393,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -75679,7 +77296,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "NCLH",
@@ -75821,6 +77439,7 @@
 "fpe_vs_market": -0.3326,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -75853,7 +77472,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "COIN",
@@ -75991,6 +77611,7 @@
 "fpe_vs_market": 1.8172,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -76023,7 +77644,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SW",
@@ -76164,6 +77786,7 @@
 "fpe_vs_market": -0.3219,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -76196,7 +77819,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SWKS",
@@ -76331,6 +77955,7 @@
 "fpe_vs_market": -0.1536,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -76363,7 +77988,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ZBRA",
@@ -76501,6 +78127,7 @@
 "fpe_vs_market": -0.09,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -76533,7 +78160,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "J",
@@ -76671,6 +78299,7 @@
 "fpe_vs_market": 0.0541,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -76703,7 +78332,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VTR",
@@ -76845,6 +78475,7 @@
 "fpe_vs_market": 5.8515,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -76877,7 +78508,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "PFE",
@@ -77014,6 +78646,7 @@
 "fpe_vs_market": -0.4058,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -77046,7 +78679,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "VYLR",
@@ -77181,6 +78815,7 @@
 "fpe_vs_market": 0.5579,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -77213,7 +78848,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WMB",
@@ -77355,6 +78991,7 @@
 "fpe_vs_market": 0.5956,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -77387,7 +79024,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GNRC",
@@ -77525,6 +79163,7 @@
 "fpe_vs_market": -0.1773,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -77557,7 +79196,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DTE",
@@ -77698,6 +79338,7 @@
 "fpe_vs_market": -0.085,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -77730,7 +79371,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GIS",
@@ -77871,6 +79513,7 @@
 "fpe_vs_market": -0.3892,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -77903,7 +79546,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CVNA",
@@ -78046,6 +79690,7 @@
 "fpe_vs_market": 0.6976,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -78078,7 +79723,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TRMB",
@@ -78215,6 +79861,7 @@
 "fpe_vs_market": -0.1183,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -78247,7 +79894,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GPC",
@@ -78386,6 +80034,7 @@
 "fpe_vs_market": -0.1658,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -78418,7 +80067,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DD",
@@ -78559,6 +80209,7 @@
 "fpe_vs_market": -0.0146,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -78591,7 +80242,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LEN",
@@ -78727,6 +80379,7 @@
 "fpe_vs_market": -0.065,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -78759,7 +80412,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TSN",
@@ -78900,6 +80554,7 @@
 "fpe_vs_market": -0.1699,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -78932,7 +80587,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CIEN",
@@ -79073,6 +80729,7 @@
 "fpe_vs_market": 0.5181,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -79105,7 +80762,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ARE",
@@ -79247,6 +80905,7 @@
 "fpe_vs_market": null,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -79279,7 +80938,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "AXON",
@@ -79424,6 +81084,7 @@
 "fpe_vs_market": 1.2848,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -79456,7 +81117,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SWK",
@@ -79597,6 +81259,7 @@
 "fpe_vs_market": -0.0791,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -79629,7 +81292,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "LITE",
@@ -79772,6 +81436,7 @@
 "fpe_vs_market": 0.3217,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -79804,7 +81469,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "KHC",
@@ -79943,6 +81609,7 @@
 "fpe_vs_market": -0.3418,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -79975,7 +81642,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ON",
@@ -80114,6 +81782,7 @@
 "fpe_vs_market": -0.118,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -80146,7 +81815,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BG",
@@ -80290,6 +81960,7 @@
 "fpe_vs_market": -0.5069,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -80322,7 +81993,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GLW",
@@ -80457,6 +82129,7 @@
 "fpe_vs_market": 0.5302,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -80489,7 +82162,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IFF",
@@ -80630,6 +82304,7 @@
 "fpe_vs_market": 0.3305,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -80662,7 +82337,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "GM",
@@ -80801,6 +82477,7 @@
 "fpe_vs_market": -0.6685,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -80833,7 +82510,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "EL",
@@ -80975,6 +82653,7 @@
 "fpe_vs_market": 0.5557,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -81007,7 +82686,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SBUX",
@@ -81146,6 +82826,7 @@
 "fpe_vs_market": 0.5569,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -81178,7 +82859,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CARR",
@@ -81320,6 +83002,7 @@
 "fpe_vs_market": -0.0609,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -81352,7 +83035,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IRM",
@@ -81494,6 +83178,7 @@
 "fpe_vs_market": 1.3976,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -81526,7 +83211,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "COHR",
@@ -81666,6 +83352,7 @@
 "fpe_vs_market": -0.1509,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -81698,7 +83385,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "FDXF",
@@ -81838,6 +83526,7 @@
 "fpe_vs_market": 0.3743,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -81870,7 +83559,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "F",
@@ -82013,6 +83703,7 @@
 "fpe_vs_market": -0.6415,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -82045,7 +83736,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MCHP",
@@ -82186,6 +83878,7 @@
 "fpe_vs_market": -0.0557,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -82218,7 +83911,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TSLA",
@@ -82357,6 +84051,7 @@
 "fpe_vs_market": 9.4164,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -82389,7 +84084,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MOS",
@@ -82530,6 +84226,7 @@
 "fpe_vs_market": -0.301,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -82562,7 +84259,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "TTWO",
@@ -82707,6 +84405,7 @@
 "fpe_vs_market": 0.0389,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -82739,7 +84438,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SRE",
@@ -82880,6 +84580,7 @@
 "fpe_vs_market": -0.1276,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -82912,7 +84613,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "IP",
@@ -83055,6 +84757,7 @@
 "fpe_vs_market": -0.2264,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -83087,7 +84790,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DOW",
@@ -83230,6 +84934,7 @@
 "fpe_vs_market": 0.0602,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -83262,7 +84967,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "RVTY",
@@ -83400,6 +85106,7 @@
 "fpe_vs_market": 0.4957,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -83432,7 +85139,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "BA",
@@ -83574,6 +85282,7 @@
 "fpe_vs_market": 2.8401,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -83607,6 +85316,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
+"fv_pick": false,
 "djia_rank": 30
 },
 {
@@ -83749,6 +85459,7 @@
 "fpe_vs_market": 0.8915,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -83781,7 +85492,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "APD",
@@ -83924,6 +85636,7 @@
 "fpe_vs_market": 0.2302,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -83956,7 +85669,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "SKYD",
@@ -84101,6 +85815,7 @@
 "fpe_vs_market": 7.1448,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -84133,7 +85848,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "DE",
@@ -84272,6 +85988,7 @@
 "fpe_vs_market": 0.6652,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -84304,7 +86021,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "CRL",
@@ -84445,6 +86163,7 @@
 "fpe_vs_market": 0.5834,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -84477,7 +86196,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "WY",
@@ -84619,6 +86339,7 @@
 "fpe_vs_market": 1.0756,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -84651,7 +86372,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "ECHO",
@@ -84795,6 +86517,7 @@
 "fpe_vs_market": -0.6458,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -84827,7 +86550,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 },
 {
 "ticker": "MRNA",
@@ -84969,6 +86693,7 @@
 "fpe_vs_market": null,
 "peer_group": null,
 "has_fair_value": false,
+"outside_universe": false,
 "answers": [
 {
 "q": "Is revenue growing?",
@@ -85001,7 +86726,8 @@
 "resilient_rank": null,
 "all_checks": false,
 "checks_pick": false,
-"sector_pick": null
+"sector_pick": null,
+"fv_pick": false
 }
 ]
 }
