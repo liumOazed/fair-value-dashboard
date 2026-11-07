@@ -4,6 +4,7 @@
 From FRED (St. Louis Fed), no API key needed:
   GS10  10-year US Treasury constant-maturity yield, monthly average
   AAA   Moody's seasoned Aaa corporate bond yield, monthly average (the safest company bonds)
+  BAA   Moody's seasoned Baa corporate bond yield, monthly average (the lowest investment grade; used to reprice debt in a bad year)
   DFII10 10-year Treasury inflation-indexed (TIPS) real yield, daily -> averaged by month (from 2003)
 Keeps monthly values from 2000 and the average of each calendar year. If a download fails the old values are kept.
 Usage: python scripts/bond_yields.py
@@ -12,7 +13,7 @@ import csv, datetime, io, json, pathlib, statistics as st, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/bond_yields.json"
-SERIES = {"GS10": "10-year Treasury", "AAA": "Moody's Aaa corporate", "DFII10": "10-year real yield (TIPS)"}
+SERIES = {"GS10": "10-year Treasury", "AAA": "Moody's Aaa corporate", "BAA": "Moody's Baa corporate", "DFII10": "10-year real yield (TIPS)"}
 URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
 
 def fetch(sid):
