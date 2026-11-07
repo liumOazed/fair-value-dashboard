@@ -434,6 +434,70 @@
   "ACIW": {
    "moat": "none",
    "reason": "Median ROIC 10% over 4 years (6-11%, acquisition goodwill; Yahoo statements in data/returns.json), below the 12% required return."
+  },
+  "ALL": {
+   "moat": "narrow",
+   "reason": "Median ROE 12% over 12 years (-6% to 40%; 10-K figures in data/returns.json), about 3 points above the 9% required return. For an underwriter the class sets how long ROE stays above the required return: narrow = 15 years, then halfway to it. Brand and scale in US personal auto; hand-set by the ROE rule because ROIC doesn't fit an insurer."
+  },
+  "HIG": {
+   "moat": "narrow",
+   "reason": "Median ROE 12% over 12 years (2017 loss on selling the life business; 18-25% since 2023), more than 3 points above the 8.5% required return. Underwriter: ROE stays above the required return for 15 years, then fades halfway to it."
+  },
+  "AIZ": {
+   "moat": "none",
+   "reason": "Median ROE 11% over 12 years (3-24%), less than 3 points above the 9% required return, although 14-18% since 2023. Underwriter: ROE fades to the required return after 12 years."
+  },
+  "MRSH": {
+   "moat": "narrow",
+   "reason": "ROIC ~13% (goodwill from acquisitions such as McGriff), above the 8.5% required return by 3+ points but not 20%+. ROE 28-33% for a decade. Fee business valued on free cash flow."
+  },
+  "WTW": {
+   "moat": "narrow",
+   "reason": "ROIC ~15% (large goodwill from the Willis-Towers Watson merger), above the 8.5% required return by 3+ points but not 20%+. Fee business valued on free cash flow."
+  },
+  "NMIH": {
+   "moat": "narrow",
+   "reason": "ROE 16-18% over 4 years (Yahoo statements; median 18%), more than 3 points above the 10% required return. Mortgage insurance is an oligopoly of six with capital rules that keep new entrants out. Underwriter: 15 years, then halfway to the required return."
+  },
+  "UVE": {
+   "moat": "none",
+   "reason": "ROE -8% to 40% over 4 years: high now after Florida's legal reforms, but a single-state homeowners insurer has no lasting edge and one hurricane resets it. Hand-set below the ROE rule (median 19%). Underwriter: ROE fades to the required return after 12 years."
+  },
+  "PLMR": {
+   "moat": "narrow",
+   "reason": "ROE 14-24% over 4 years (median 19%), more than 3 points above the 10.5% required return; specialist earthquake and niche property underwriting. Underwriter: 15 years, then halfway to the required return."
+  },
+  "PLGO": {
+   "moat": "none",
+   "reason": "ROE erratic over 4 years (3%, 96% with a one-off gain, 5%, 9%; ~17% TTM): no record of excess returns yet. Underwriter: ROE fades to the required return after 12 years."
+  },
+  "CRVL": {
+   "moat": "wide",
+   "reason": "ROIC over 50% in each of the last 4 years (Yahoo statements; small invested capital, net cash), at least 10 points above the 9.5% required return; ROE 31-34%. Fee business valued on free cash flow."
+  },
+  "SLDE": {
+   "moat": "none",
+   "reason": "ROE 17-60% over 4 years, all in years without a major Florida hurricane on its book; a single-state homeowners insurer has no lasting edge. Hand-set below the ROE rule. Underwriter: ROE fades to the required return after 12 years."
+  },
+  "HG": {
+   "moat": "none",
+   "reason": "ROE -6% to 22% over 4 years (median 16%), but reinsurance is a cyclical, price-taking market. Hand-set below the ROE rule. Underwriter: ROE fades to the required return after 12 years."
+  },
+  "HCI": {
+   "moat": "none",
+   "reason": "ROE -36% to 40% over 4 years (Hurricane Ian in 2022); a Florida homeowners insurer has no lasting edge, although Exzeo's software helps its costs. Hand-set below the ROE rule. Underwriter: ROE fades to the required return after 12 years."
+  },
+  "ESNT": {
+   "moat": "narrow",
+   "reason": "ROE 12-19% over 4 years (median 14%), 3+ points above the 10% required return, but falling. Mortgage insurance is an oligopoly with capital rules. Underwriter: 15 years, then halfway to the required return."
+  },
+  "UFCS": {
+   "moat": "none",
+   "reason": "ROE -4% to 14% over 4 years (median 5%), below the 10% required return. Underwriter: ROE fades to the required return after 12 years."
+  },
+  "SKWD": {
+   "moat": "narrow",
+   "reason": "ROE 9-19% over 4 years (median 16%), more than 3 points above the 10% required return; specialty niches (captives, accident and health, agriculture). Underwriter: 15 years, then halfway to the required return."
   }
  }
 }

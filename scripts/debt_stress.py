@@ -23,7 +23,8 @@ data/snapshot_raw.json, history from the 10-K facts in data/backtest/facts.json.
 Verdict: "pays its debts" when Q1 >= 1 (or cash covers 24+ months of the gap), Q2 <= 3.5x and Q3 >= 3x;
 "at risk" when Q2 > 5x, or Q3 < 1.5x, or Q1 < 1 with under 12 months of cash; otherwise "tight". A check that can't
 be measured is unknown and never helps the verdict; without Q1 and Q2 there is no verdict.
-Lenders and insurers (AXP, AMP, valued on net income) need capital-ratio tests instead and are not scored.
+Lenders and insurers (AXP, AMP, valued on net income, and the underwriters in INSURERS) need capital-ratio tests instead
+and are not scored. Insurance brokers (MRSH, WTW, CRVL) are fee businesses and get the normal tests.
 Usage: python scripts/debt_stress.py   (after the snapshot refresh and scripts/bond_yields.py)
 """
 import csv, glob, gzip, json, pathlib, re, statistics as st
@@ -36,7 +37,7 @@ ASSETS = {a["ticker"]: a for a in json.load(open(ROOT / "data/assets.json"))["as
 _src = (ROOT / "model/model.py").read_text()
 M = {"__file__": str(ROOT / "model/model.py"), "__name__": "model_defs"}
 exec(compile(_src.split('\nout = {"as_of"')[0], "model.py", "exec"), M)
-STOCKS, FIN = M["STOCKS"], M["FIN"]
+STOCKS, FIN, INSURERS = M["STOCKS"], M["FIN"], M.get("INSURERS", {})
 EPISODES = [("2008-09 recession", "2008-10", "2008-10", "2010-06"), ("2020 pandemic", "2020-03", "2020-03", "2021-06")]
 ONE_OFF = -0.30
 
@@ -108,6 +109,8 @@ def tone(x, good, bad, higher_better=True):
     return "good" if x <= good else "bad" if x > bad else "caution"
 
 def stock(t):
+    if t in INSURERS:                # underwriters: claims, reserves and regulatory capital, not a debt test
+        return dict(lender=True, insurer=True)
     s0 = STOCKS[t]
     if re.search(r"cash flow = net income", s0["notes"], re.I):
         return dict(lender=True)
@@ -201,7 +204,7 @@ def stock(t):
 
 doc = {"_about": __doc__.strip().split("\n\n")[0], "ref_yield": REF and dict(name=REF[0], month=REF[1], y=REF[2]),
        "sector_hits": {k: {kk: (round(vv, 4) if isinstance(vv, float) else vv) for kk, vv in x.items()} for k, x in SECTOR_HIT.items()},
-       "stocks": {t: stock(t) for t in ASSETS if t in STOCKS}}
+       "stocks": {t: stock(t) for t in ASSETS if t in STOCKS or t in INSURERS}}
 json.dump(doc, open(ROOT / "data/debt_stress.json", "w"), separators=(",", ":"))
 from collections import Counter
 print("debt_stress.json:", Counter((x or {}).get("verdict") if not (x or {}).get("lender") else "lender" for x in doc["stocks"].values()))

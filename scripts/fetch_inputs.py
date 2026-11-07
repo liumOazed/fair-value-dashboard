@@ -28,6 +28,11 @@ BAL = {
     "debt": ["Total Debt"],
     "lease": ["Capital Lease Obligations"],
     "shares_bs": ["Ordinary Shares Number", "Share Issued"],
+    "equity": ["Common Stock Equity", "Stockholders Equity"],          # book value (insurers: valued on equity and ROE)
+    "goodwill": ["Goodwill And Other Intangible Assets", "Goodwill"],
+    "pref": ["Preferred Stock"],
+    "investments": ["Investments And Advances", "Investmentin Financial Assets"],
+    "total_assets": ["Total Assets"],
 }
 
 def num(x):
@@ -71,7 +76,7 @@ def fetch(t):
     tk = yf.Ticker(t)
     info = get(tk, "info") or {}
     qi, qc, qb = get(tk, "quarterly_income_stmt"), get(tk, "quarterly_cashflow"), get(tk, "quarterly_balance_sheet")
-    ai, ac = get(tk, "income_stmt"), get(tk, "cashflow")
+    ai, ac, ab = get(tk, "income_stmt"), get(tk, "cashflow"), get(tk, "balance_sheet")
     out = dict(
         ticker=t, name=info.get("longName") or info.get("shortName"), sector=info.get("sector"), industry=info.get("industry"),
         currency=info.get("financialCurrency"), price=num(info.get("currentPrice") or info.get("regularMarketPrice")),
@@ -85,10 +90,14 @@ def fetch(t):
                   trailingPE=num(info.get("trailingPE")), forwardPE=num(info.get("forwardPE")),
                   trailingEps=num(info.get("trailingEps")), forwardEps=num(info.get("forwardEps")),
                   dividendYield=num(info.get("dividendYield")), targetMeanPrice=num(info.get("targetMeanPrice")),
-                  numberOfAnalystOpinions=num(info.get("numberOfAnalystOpinions")), mostRecentQuarter=info.get("mostRecentQuarter")),
+                  numberOfAnalystOpinions=num(info.get("numberOfAnalystOpinions")), mostRecentQuarter=info.get("mostRecentQuarter"),
+                  bookValue=num(info.get("bookValue")), priceToBook=num(info.get("priceToBook")), returnOnEquity=num(info.get("returnOnEquity")),
+                  payoutRatio=num(info.get("payoutRatio"))),
         ttm={k: ttm(qi if k in ("rev", "interest", "tax", "pretax", "ni", "op_inc", "ebitda") else qc, v) for k, v in ROWS.items()},
         quarters={k: series(qi if k in ("rev", "interest", "tax", "pretax", "ni", "op_inc", "ebitda") else qc, v, 5) for k, v in ROWS.items()},
         balance={k: series(qb, v, 2) for k, v in BAL.items()},
+        balance_q={k: series(qb, v, 5) for k, v in BAL.items() if k in ("equity", "goodwill", "pref", "shares_bs")},
+        balance_annual={k: series(ab, v, 5) for k, v in BAL.items()},
         annual={k: series(ai if k in ("rev", "interest", "tax", "pretax", "ni", "op_inc", "ebitda") else ac, v, 5) for k, v in ROWS.items()},
     )
     for attr in ("revenue_estimate", "earnings_estimate", "growth_estimates"):

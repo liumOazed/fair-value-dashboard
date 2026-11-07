@@ -430,7 +430,21 @@ STOCKS = {
  "ACIW": dict(name="ACI Worldwide Inc.", price=60.02, shares=0.103, rev=1.8201, fcf=0.2847, sbc=0.0782,
               net_cash=-0.6821, extra=0.0, mos=0.35,
               scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.1), base=dict(g1=0.07,g10=0.035,m=0.15), bull=dict(g1=0.09,g10=0.045,m=0.18)),
-              notes="TTM to Jun-2026 (Q3 not yet in the data). Payments software for banks, merchants and billers: real-time payments, card processing (BASE24) and fraud tools, plus bill-payment processing (Speedpay). Licence sales are recognised up front, so quarters are lumpy. Analysts expect ~8% revenue growth this year and ~7.5% next. FCF after stock pay 11.3% of sales TTM and 7-16% in 2022-2025 (2022-2023 were weak), base 15%. Net debt $0.68B (debt $0.85B, cash $0.17B). Diluted shares ~103M (ESTIMATE). Risks: bank IT budgets, lumpy licence deals, competition from FIS, Fiserv and newer cloud vendors. Russell 2000 small cap (passes all 5 checks): 12% required return, 35% safety margin.")
+              notes="TTM to Jun-2026 (Q3 not yet in the data). Payments software for banks, merchants and billers: real-time payments, card processing (BASE24) and fraud tools, plus bill-payment processing (Speedpay). Licence sales are recognised up front, so quarters are lumpy. Analysts expect ~8% revenue growth this year and ~7.5% next. FCF after stock pay 11.3% of sales TTM and 7-16% in 2022-2025 (2022-2023 were weak), base 15%. Net debt $0.68B (debt $0.85B, cash $0.17B). Diluted shares ~103M (ESTIMATE). Risks: bank IT budgets, lumpy licence deals, competition from FIS, Fiserv and newer cloud vendors. Russell 2000 small cap (passes all 5 checks): 12% required return, 35% safety margin."),
+
+ # ---- Insurance brokers and claims services (Nov 2026): fee businesses, so the normal free-cash-flow model. Underwriters are in INSURERS below.
+ "MRSH": dict(name="Marsh & McLennan Companies Inc. (Marsh)", price=204.82, shares=0.48, rev=28.459, fcf=4.154, sbc=0.418,
+              net_cash=-20.49, extra=0.0, mos=0.25,
+              scen=dict(bear=dict(g1=0.03,g10=0.03,m=0.14), base=dict(g1=0.055,g10=0.04,m=0.165), bull=dict(g1=0.07,g10=0.045,m=0.185)),
+              notes="TTM to Sep-2026 (ticker MRSH since the 2026 rename). The largest insurance broker (Marsh, Guy Carpenter) plus consulting (Mercer, Oliver Wyman). A broker earns commissions and fees and carries no underwriting risk, so it is valued like any fee business on free cash flow, not with the insurer (book value and ROE) model. Fiduciary cash held for clients and insurers is not counted. Analysts expect ~6.5% revenue growth this year (~4% organic plus the McGriff acquisition) and ~5% next. FCF after stock pay 13% of sales TTM (the March 2026 quarter was negative: bonuses and integration costs) and 15-17% in 2023-2025, so the base is 16.5%. Net debt $20.5B after the McGriff purchase (debt $22.3B, cash $1.8B). Diluted shares ~480M (ESTIMATE). Risks: softer insurance prices slow commission growth, lower interest on fiduciary funds, consulting demand. Growth Screen insurance top-5 pick: 8.5% required return, 25% safety margin."),
+ "WTW": dict(name="Willis Towers Watson plc (WTW)", price=328.86, shares=0.0935, rev=10.274, fcf=1.743, sbc=0.228,
+              net_cash=-5.12, extra=0.0, mos=0.25,
+              scen=dict(bear=dict(g1=0.025,g10=0.03,m=0.13), base=dict(g1=0.055,g10=0.04,m=0.165), bull=dict(g1=0.07,g10=0.045,m=0.19)),
+              notes="TTM to Sep-2026. Insurance broker (Risk & Broking) and benefits, pension and HR consulting (Health, Wealth & Career). A fee business with no underwriting risk, so it is valued on free cash flow; fiduciary cash is not counted. Analysts expect ~8% revenue growth this year and ~5.5% next. FCF after stock pay 14.7% of sales TTM, up from 6-13% in 2022-2024 as the transformation programme ended; management targets about 1 point of FCF margin a year, so the base is 16.5%. 2024 net income was negative from the sale of the TRANZACT business (a write-down; cash flow was not hit). Net debt $5.1B. Diluted shares ~93.5M (ESTIMATE). Risks: softer insurance prices, pension-consulting demand, the Gallagher and Aon combinations taking share. Growth Screen insurance top-5 pick: 8.5% required return, 25% safety margin."),
+ "CRVL": dict(name="CorVel Corp.", price=83.16, shares=0.0515, rev=0.9836, fcf=0.1139, sbc=0.0054,
+              net_cash=0.228, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=0.04,g10=0.03,m=0.095), base=dict(g1=0.08,g10=0.045,m=0.115), bull=dict(g1=0.1,g10=0.05,m=0.13)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). Claims administration and managed care for workers' compensation, auto and health plans (bill review, case management, pharmacy networks), paid by employers and insurers as fees: it takes no insurance risk (Yahoo files it under insurance brokers), so it is valued on free cash flow. Revenue grew 7-13% a year in fiscal 2023-2026 and the fiscal year to March 2026 grew 7%; no analyst estimates on Yahoo, so the base is 8% fading to 4.5%. FCF after stock pay 11.0% of sales TTM, 7-11% in recent years (capex on its software and the pharmacy build-out), base 11.5%. Net cash $0.23B, no borrowings; buys back ~1% of shares a year. Diluted shares ~51.5M (ESTIMATE). Risks: workers' compensation claim volumes fall with employment, health-plan contracts, a P/E of ~35 that leaves little room. Russell 2000 small cap (passes all 5 checks under the Insurance filter): 9.5% required return, 35% safety margin."),
 }
 
 # ---------------------------------------------------------------- capital structure (for WACC)
@@ -528,6 +542,9 @@ FIN = {
  "LMAT": dict(debt=0.1889, interest=0.0052, rd=0.025, tax=0.23),
  "BOX": dict(debt=0.5254, interest=0.0101, rd=0.02, tax=0.21),
  "ACIW": dict(debt=0.8495, interest=0.0528, rd=0.062, tax=0.26),
+ "MRSH": dict(debt=22.332, interest=0.973, rd=0.044, tax=0.233),
+ "WTW": dict(debt=7.098, interest=0.301, rd=0.043, tax=0.2),
+ "CRVL": dict(debt=0.028, interest=0.0, rd=0.05, tax=0.23),
 }
 
 # DCF_METHOD: "equity" = original (FCF after interest at the required return, minus net debt; double-counts debt cost)
@@ -672,6 +689,119 @@ def growth_check(d, rev0, nm, m_target, r, gt=GT):
     else: flag = None
     return dict(forecast=fc, terminal=tm, reinvest_share=reinv / sum(x["rev"] * nm for x in d["rows"]), flag=flag)
 
+# ---------------------------------------------------------------- insurers (underwriters): excess return on equity
+# An underwriter's free cash flow mixes in premiums it holds for future claims, so the free-cash-flow DCF above doesn't
+# fit. Underwriters are valued on book value and return on equity instead (residual income / excess return):
+#   each year   net income = ROE x book value at the start of the year; book value grows with the business (g);
+#               cash to shareholders = net income - the increase in book value (what is paid out as dividends and
+#               buybacks, or could be);
+#   value       = those cash flows at the required return + a value after the last year of
+#               book value x (terminal ROE - 2.5%) / (required return - 2.5%),
+#   which is the same as book value today + the present value of (ROE - required return) x book value each year.
+# Scenarios use the same keys as the stocks above: g1 / g10 = book-value growth in year 1 / year 10 (fading to 2.5% over
+# the advantage period, at least 11 years), m = long-run ROE (reached from roe0, the starting ROE, over 5 years).
+# The moat class sets how long the excess return lasts: wide and short keep the long-run ROE after the last year,
+# narrow fades it halfway to the required return, none to the required return (a ROE at or below the required return
+# stays where it is). Book value = common equity (preferred stock excluded); 'extra' = other adjustments ($B).
+INSURERS = {
+ "ALL": dict(name="The Allstate Corp.", price=254.81, shares=0.2474, bv=30.31, roe0=0.21, ni=11.639, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.11), base=dict(g1=0.045,g10=0.035,m=0.15), bull=dict(g1=0.06,g10=0.04,m=0.18)),
+              notes="TTM to Sep-2026. Personal auto and home insurance (Allstate, National General, Esurance) plus protection plans. Valued as an insurer on book value and return on equity, not free cash flow. ROE was about 40% TTM after large rate increases, a light catastrophe year and gains from selling the group and voluntary benefits businesses; it was negative in 2022-2023 when claim costs outran prices. 10-year median ROE ~12%. Analysts expect EPS to fall from $44 TTM to ~$28 next year (ROE ~23%), so the starting ROE is 21%, fading to 15% in the base case (11% bear, 18% bull). Book value grows with premiums: 4.5% fading to 3.5%. Common book value $30.3B ($2.0B preferred stock excluded). Risks: catastrophes (wildfires, hurricanes, convective storms), auto claim inflation, state rate regulators. Growth Screen insurance top-5 pick: 9% required return, 30% safety margin."),
+ "HIG": dict(name="The Hartford Insurance Group Inc.", price=133.99, shares=0.2735, bv=18.539, roe0=0.18, ni=4.608, extra=0.0, mos=0.25,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.115), base=dict(g1=0.05,g10=0.035,m=0.15), bull=dict(g1=0.065,g10=0.04,m=0.175)),
+              notes="TTM to Sep-2026. Commercial insurance (small business, middle market, specialty), personal lines and group benefits, plus Hartford Funds (asset management). Valued as an insurer on book value and return on equity. ROE rose from ~11% in 2021-2022 to ~22% in 2025 and ~25% TTM on firm commercial prices and a better personal-auto result; the 10-year median is ~12% (2017 included the loss on selling the life business). Analysts expect EPS of ~$13.60 next year (ROE ~20%), so the starting ROE is 18%, fading to 15% in the base case (11.5% bear, 17.5% bull). Book value grows 5% fading to 3.5%. Common book value $18.5B ($0.33B preferred excluded); diluted shares ~273.5M (ESTIMATE). Risks: softer commercial prices, reserve charges on older liability years, catastrophes. Growth Screen insurance top-5 pick: 8.5% required return, 25% safety margin."),
+ "AIZ": dict(name="Assurant Inc.", price=307.0, shares=0.0503, bv=6.098, roe0=0.18, ni=1.063, extra=0.0, mos=0.3,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.12), base=dict(g1=0.05,g10=0.035,m=0.155), bull=dict(g1=0.065,g10=0.04,m=0.18)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). Two businesses: Global Lifestyle (phone and car protection plans and extended warranties sold through carriers, retailers and car dealers; mostly fee-like) and Global Housing (lender-placed and renters insurance, exposed to hurricanes). Valued as an insurer on book value and return on equity. ROE 14-16% in 2023-2025 and ~18% TTM; 10-year median ~11%. Analysts expect EPS of ~$22.50 this year and ~$24 next (ROE ~19%); the starting ROE is 18%, fading to 15.5% in the base case (12% bear, 18% bull): Global Lifestyle's fee-like protection plans earn more on their capital than the housing book. Book value grows 5% fading to 3.5%. Book value $6.1B includes ~$3.1B of goodwill and intangibles from acquisitions. Diluted shares ~50.3M (ESTIMATE). Risks: hurricanes in Global Housing, losing a large carrier or retail partner, lower phone upgrades. Growth Screen insurance top-5 pick: 9% required return, 30% safety margin."),
+ "NMIH": dict(name="NMI Holdings Inc.", price=39.03, shares=0.0775, bv=2.705, roe0=0.15, ni=0.3953, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=0.0,g10=0.02,m=0.09), base=dict(g1=0.06,g10=0.03,m=0.135), bull=dict(g1=0.08,g10=0.035,m=0.155)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). US private mortgage insurance (National MI): it pays the lender part of the loss when a borrower with less than 20% down defaults. Valued as an insurer on book value and return on equity. ROE 16-18% in 2022-2025 and ~15% TTM as excess capital builds; analysts expect ~4-7% EPS growth. Starting ROE 15%, base 13.5% (9% bear: a housing downturn with falling prices raises claims; 15.5% bull). Book value grows 6% fading to 3% (insurance in force grows with mortgage lending). Book value $2.7B; no dividend, buys back ~3% of shares a year. Diluted shares ~77.5M (ESTIMATE). Risks: house prices and unemployment, Fannie Mae and Freddie Mac capital rules (PMIERs) and their possible privatisation, price competition among the six US mortgage insurers. Russell 2000 small cap (passes all 5 checks under the Insurance filter): 10% required return, 35% safety margin."),
+ "UVE": dict(name="Universal Insurance Holdings Inc.", price=46.75, shares=0.0285, bv=0.646, roe0=0.22, ni=0.2326, extra=0.0, mos=0.4,
+              scen=dict(bear=dict(g1=0.0,g10=0.02,m=0.06), base=dict(g1=0.04,g10=0.03,m=0.14), bull=dict(g1=0.06,g10=0.035,m=0.18)),
+              notes="TTM to Sep-2026. Homeowners insurance, mostly in Florida (Universal Property & Casualty, American Platinum), plus its own claims and policy services. Valued as an insurer on book value and return on equity. ROE swings with hurricanes: -8% in 2022 (Hurricane Ian), 16-21% in 2023-2024 and ~40% in 2025 and TTM after Florida's 2022-2023 legal reforms cut litigation and two quiet storm seasons. Analysts expect EPS to fall from $8.0 TTM to ~$5.60 next year (ROE ~24%). Starting ROE 22%, base 14% over a full storm cycle (6% bear: a major Florida hurricane every few years; 18% bull). Book value grows 4% fading to 3%. Book value $0.65B. Diluted shares ~28.5M (ESTIMATE). Risks: a major Florida hurricane, reinsurance costs (it buys reinsurance for most of a 1-in-100-year storm), Florida politics. Russell 2000 small cap (passes all 5 checks under the Insurance filter): 12% required return (9.5% plus 2.5 points for a single-state hurricane exposure), 40% safety margin."),
+ "PLMR": dict(name="Palomar Holdings Inc.", price=155.71, shares=0.0268, bv=0.981, roe0=0.23, ni=0.2032, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=0.1,g10=0.03,m=0.14), base=dict(g1=0.2,g10=0.04,m=0.19), bull=dict(g1=0.25,g10=0.045,m=0.23)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). Specialty property insurance (earthquake, commercial and residential property, inland marine, builders' risk, crop, surety) and fronting, mostly in the US. Valued as an insurer on book value and return on equity. ROE rose from 14% in 2022 to 24% in 2025 (22% TTM) while premiums grew ~25-30% a year; analysts expect EPS of ~$10.05 this year and ~$11.30 next (ROE ~25-30%). Starting ROE 23%, base 19% (14% bear, 23% bull). Book value grows 20% next year fading to 4% (bear 10%, bull 25%): fast growth needs capital, so little cash is paid out in the early years. Book value $0.98B incl. $0.24B goodwill (Gray Surety, First Indemnity). Diluted shares ~26.8M (ESTIMATE). Risks: a large California earthquake (reinsured up to a 1-in-250-year event), reinsurance prices, competition in commercial earthquake. P/B is ~4.2, so the price needs high ROE for a long time. Russell 2000 small cap (passes all 5 checks under the Insurance filter): 10.5% required return, 35% safety margin."),
+ "PLGO": dict(name="Pelagos Insurance Capital Ltd.", price=27.73, shares=0.0827, bv=2.22, roe0=0.13, ni=0.4007, extra=0.0, mos=0.4,
+              scen=dict(bear=dict(g1=0.0,g10=0.02,m=0.07), base=dict(g1=0.04,g10=0.03,m=0.12), bull=dict(g1=0.06,g10=0.035,m=0.15)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). Bermuda-based specialty insurance and reinsurance group (Yahoo: Insurance - Diversified), listed recently: only Yahoo's 4-5 years of statements and a short price history are available, and 2023 includes a large one-off gain (net income $2.1B, ROE ~96%), so its history says little. Valued as an insurer on book value and return on equity. ROE 5-9% in 2024-2025 and ~17% TTM; analysts expect EPS of ~$3.05 this year and ~$3.90 next (ROE ~15%). Starting ROE 13%, base 12% (7% bear, 15% bull). Book value grows 4% fading to 3%. Book value $2.2B (shrinking as it buys back shares: ~20% fewer shares than a year ago). LOW CONFIDENCE (little history, few analysts). Risks: catastrophes, reinsurance pricing cycle, reserve charges. Russell 2000 small cap (passes all 5 checks under the Insurance filter): 11% required return, 40% safety margin."),
+ "SLDE": dict(name="Slide Insurance Holdings Inc.", price=25.94, shares=0.1172, bv=1.303, roe0=0.26, ni=0.583, extra=0.0, mos=0.4,
+              scen=dict(bear=dict(g1=0.02,g10=0.02,m=0.07), base=dict(g1=0.08,g10=0.03,m=0.16), bull=dict(g1=0.12,g10=0.035,m=0.21)),
+              notes="TTM to Sep-2026. Florida homeowners and condominium insurer founded in 2021 that grew by taking over policies from Citizens (the state insurer of last resort) and from failed insurers (St. Johns, United P&C); listed in June 2025. Valued as an insurer on book value and return on equity. ROE 47-60% in 2023-2025 and ~51% TTM, earned in years without a major Florida hurricane landfall on its book; analysts expect EPS to fall from $4.42 TTM to ~$3.77 next year (ROE ~34%). Starting ROE 26%, base 16% over a full storm cycle (7% bear: a major hurricane every few years; 21% bull). Book value grows 8% fading to 3%. Book value $1.3B. Only 4-5 years of history, none through a major storm. Risks: a major Florida hurricane, reinsurance costs, Florida politics and Citizens depopulation slowing. Russell 2000 small cap (passes 4 of 5 checks under the Insurance filter): 12% required return (9.5% plus 2.5 points for single-state hurricane exposure and a short record), 40% safety margin."),
+ "HG": dict(name="Hamilton Insurance Group Ltd.", price=36.94, shares=0.1, bv=2.936, roe0=0.15, ni=0.531, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=0.02,g10=0.025,m=0.08), base=dict(g1=0.07,g10=0.035,m=0.13), bull=dict(g1=0.1,g10=0.04,m=0.16)),
+              notes="TTM to Sep-2026. Bermuda specialty insurer and reinsurer (Hamilton Global Specialty at Lloyd's, Hamilton Select in the US, Hamilton Re); part of its investments are run by Two Sigma. Valued as an insurer on book value and return on equity. ROE -6% in 2022, then 14-22% in 2023-2025 and ~19% TTM in good reinsurance markets; analysts expect EPS of ~$4.90 next year (ROE ~16%). Starting ROE 15%, base 13% (8% bear, 16% bull). Book value grows 7% fading to 3.5%. Book value $2.9B. Shares ~100M across Class A and B (market value / price; Yahoo's share count shows one class only). Risks: catastrophes, softening reinsurance prices, the Two Sigma fund's returns. Russell 2000 small cap (passes 4 of 5 checks under the Insurance filter): 10.5% required return, 35% safety margin."),
+ "HCI": dict(name="HCI Group Inc.", price=186.03, shares=0.0125, bv=1.08, roe0=0.21, ni=0.3104, extra=0.0, mos=0.4,
+              scen=dict(bear=dict(g1=0.0,g10=0.02,m=0.06), base=dict(g1=0.05,g10=0.03,m=0.15), bull=dict(g1=0.08,g10=0.035,m=0.19)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). Florida homeowners insurance (Homeowners Choice, TypTap, and policies taken from Citizens) plus Exzeo, its own insurance software business. Valued as an insurer on book value and return on equity (Exzeo's value is not counted separately). ROE -36% in 2022 (Hurricane Ian), then 28-40% in 2023-2025 and ~32% TTM; analysts expect EPS of ~$20 next year (ROE ~23%). Starting ROE 21%, base 15% over a full storm cycle (6% bear, 19% bull). Book value grows 5% fading to 3%. Book value $1.08B. Diluted shares ~12.5M (ESTIMATE). Risks: a major Florida hurricane, reinsurance costs, Florida politics. Russell 2000 small cap (passes 4 of 5 checks under the Insurance filter): 12% required return (9.5% plus 2.5 points for single-state hurricane exposure), 40% safety margin."),
+ "ESNT": dict(name="Essent Group Ltd.", price=63.41, shares=0.0912, bv=5.663, roe0=0.125, ni=0.6807, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=0.0,g10=0.02,m=0.08), base=dict(g1=0.04,g10=0.03,m=0.115), bull=dict(g1=0.06,g10=0.035,m=0.135)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). US private mortgage insurance plus Essent Re (reinsurance for Fannie Mae and Freddie Mac) and a small title-insurance business. Valued as an insurer on book value and return on equity. ROE 19% in 2022, falling to 12% in 2025 and TTM as capital built up faster than insurance in force; analysts expect EPS of ~$7.60 this year and ~$7.90 next (ROE ~12.5%). Starting ROE 12.5%, base 11.5% (8% bear: a housing downturn; 13.5% bull). Book value grows 4% fading to 3%. Book value $5.7B; buys back ~8% of shares a year. Diluted shares ~91M (ESTIMATE). Risks: house prices and unemployment, Fannie Mae and Freddie Mac capital rules and their possible privatisation, price competition. Russell 2000 small cap (passes 4 of 5 checks under the Insurance filter): 10% required return, 35% safety margin."),
+ "UFCS": dict(name="United Fire Group Inc.", price=47.73, shares=0.026, bv=0.939, roe0=0.12, ni=0.1369, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=0.0,g10=0.02,m=0.06), base=dict(g1=0.04,g10=0.03,m=0.1), bull=dict(g1=0.06,g10=0.035,m=0.13)),
+              notes="TTM to Sep-2026. Commercial property and casualty insurance for small and mid-sized businesses through independent agents (Iowa). Valued as an insurer on book value and return on equity. ROE was weak for years (2% in 2022, -4% in 2023 after reserve charges) and recovered to 8% in 2024 and ~14% in 2025 and TTM under a turnaround plan (re-pricing, exiting weak lines, specialty growth); analysts expect EPS of ~$4.85 next year (ROE ~13%). Starting ROE 12%, base 10%: the turnaround is young (6% bear, 13% bull). Book value grows 4% fading to 3%. Book value $0.94B. Diluted shares ~26M (ESTIMATE). Risks: further reserve charges on older casualty years, catastrophes and convective storms, competition from larger carriers. Russell 2000 small cap (passes 4 of 5 checks under the Insurance filter): 10% required return, 35% safety margin."),
+ "SKWD": dict(name="Skyward Specialty Insurance Group Inc.", price=60.35, shares=0.0444, bv=1.268, roe0=0.17, ni=0.1879, extra=0.0, mos=0.35,
+              scen=dict(bear=dict(g1=0.04,g10=0.025,m=0.11), base=dict(g1=0.12,g10=0.035,m=0.15), bull=dict(g1=0.16,g10=0.04,m=0.18)),
+              notes="TTM to Jun-2026 (the September quarter is not yet in the data). US excess and surplus and specialty insurance (accident and health, captives, programs, agriculture, surety, transactional E&S); bought Apollo's Lloyd's specialty business in early 2026, paid partly in shares (book value up 25% in the March quarter). Valued as an insurer on book value and return on equity. ROE 9% in 2022 rising to 16-19% in 2023-2025 (~18% TTM); analysts expect EPS of ~$5.05 this year and ~$5.55 next (ROE ~19%). Starting ROE 17%, base 15% (11% bear, 18% bull). Book value grows 12% fading to 3.5%. Book value $1.27B incl. ~$0.47B goodwill and intangibles. Diluted shares ~44.4M (ESTIMATE). Risks: reserve charges on casualty lines, integrating the Apollo business, softer E&S prices. Russell 2000 small cap (passes 4 of 5 checks under the Insurance filter): 10% required return, 35% safety margin."),
+}
+
+def roe_terminal(mo, m, r):
+    """ROE earned on book value after the last forecast year, by moat class: wide/short keep m, narrow fades halfway to
+    the required return, none to the required return. A ROE at or below the required return is left as it is."""
+    if m <= r: return m
+    c = mo.get("cls")
+    return r if c == "none" else (m + r) / 2 if c == "narrow" else m
+
+def ri_years(mo):
+    return max((mo or {}).get("cap_years", 10), 11)       # at least 11, so book growth has reached 2.5% in the last year
+
+def ri_value(bv0, roe0, g1, g10, m, r, extra, shares, gt=GT, ramp=5, detail=False, mo=None, rt=None):
+    """Insurer value per share: cash to shareholders (net income - growth in book value) for n years + a value after
+    the last year of book value x (terminal ROE - gt) / (r - gt), plus 'extra'. rt overrides the terminal ROE."""
+    n = ri_years(mo)
+    path = lambda a, t: a + (g10 - a) * (t - 1) / 9 if t <= 10 else g10 + (gt - g10) * (t - 10) / (n - 10)
+    bv, pv, rows = bv0, 0.0, []
+    for t in range(1, n + 1):
+        g = path(g1, t)
+        roe = roe0 + (m - roe0) * min(t, ramp) / ramp
+        ni = roe * bv
+        nb = bv * (1 + g)
+        cash = ni - (nb - bv)
+        df = 1 / (1 + r) ** t
+        pv += cash * df
+        rows.append(dict(t=t, g=g, rev=nb, m=roe, fcf=cash, df=df, pv=cash * df, ni=ni))
+        bv = nb
+    rt = roe_terminal(mo or {}, m, (mo or {}).get("r_req", r)) if rt is None else rt     # fades towards the stock's required return
+    tv = bv * (rt - gt) / (r - gt)
+    pv_tv = tv * rows[-1]["df"]
+    ev = pv + pv_tv
+    eq = ev + extra
+    ps = eq / shares
+    if detail:
+        k = (rt - gt) / (rows[-1]["m"] - gt) if abs(rows[-1]["m"] - gt) > 1e-9 else 1.0   # terminal cash flow vs last year's x (1 + gt)
+        return dict(rows=rows, pv_fcf=pv, tv=tv, pv_tv=pv_tv, ev=ev, equity=eq, per_share=ps, tv_share=pv_tv / ev if ev else None,
+                    tv_factor=k, bv0=bv0, roe_terminal=rt, excess=eq - extra - bv0)
+    return ps
+
+def ri_short(s, B, r, n, mo):
+    """Base case, but the ROE drops to the required return after year n: later years add nothing, so the business is
+    then worth its book value. Value per share."""
+    N = ri_years(mo)
+    path = lambda a, t: a + (B["g10"] - a) * (t - 1) / 9 if t <= 10 else B["g10"] + (GT - B["g10"]) * min(t - 10, N - 10) / (N - 10)
+    bv, pv = s["bv"], 0.0
+    for t in range(1, n + 1):
+        g = path(B["g1"], t); roe = s["roe0"] + (B["m"] - s["roe0"]) * min(t, 5) / 5
+        nb = bv * (1 + g); pv += (roe * bv - (nb - bv)) / (1 + r) ** t; bv = nb
+    return (pv + bv / (1 + r) ** n + s["extra"]) / s["shares"]
+
+def ri_cap(price, s, B, r, mo):
+    """Years the base-case excess ROE must last for today's price (CAP_MAX + 1 = more than CAP_MAX). None when the base
+    ROE is at or below the required return (a longer period would not add value)."""
+    if B["m"] <= r: return None
+    for n in range(1, CAP_MAX + 1):
+        if ri_short(s, B, r, n, mo) >= price: return n
+    return CAP_MAX + 1
+
 out = {"as_of": AS_OF, "terminal_growth": GT, "probabilities": PROBS, "assets": {}}
 
 for tk, s in STOCKS.items():
@@ -723,6 +853,36 @@ for tk, s in STOCKS.items():
         fair_value=fv, anchor=fv, buy_below=fv * (1 - s["mos"]), epv=epv,
         implied_irr=irr, reverse_g1=rg, tv_share=res["base"]["detail"]["tv_share"],
         sens=dict(r=rs, g=gs, grid=sens), detail={k: res[k]["detail"] for k in res}, scen=s["scen"], fcf=s["fcf"], sbc=s["sbc"],
+    )
+
+# ----------------------------------------------------------------- insurers (underwriters): excess return on equity
+for tk, s in INSURERS.items():
+    s["r"] = req_return(tk)
+    mo = dict(moat_of(tk), r_req=s["r"])
+    V = lambda p, r=s["r"], **kw: ri_value(s["bv"], s["roe0"], p["g1"], p["g10"], p["m"], r, s["extra"], s["shares"], mo=mo, **kw)
+    res = {k: V(p, detail=True) for k, p in s["scen"].items()}
+    fv = sum(PROBS[k] * res[k]["per_share"] for k in res)
+    B = s["scen"]["base"]
+    irr = solve(lambda re: V(B, re) - s["price"], 0.035, 0.30) if (V(B, 0.035) - s["price"]) * (V(B, 0.30) - s["price"]) < 0 else None
+    roe_need = solve(lambda m: V(dict(B, m=m)) - s["price"], -0.2, 0.9) if (V(dict(B, m=-0.2)) - s["price"]) * (V(dict(B, m=0.9)) - s["price"]) < 0 else None
+    rs = [s["r"] - .02, s["r"] - .01, s["r"], s["r"] + .01, s["r"] + .02]
+    gs = [.015, .02, .025, .03, .035]
+    rates = sorted(set(RATE_GRID + [s["r"]]))
+    bvps = s["bv"] / s["shares"]
+    out["assets"][tk] = dict(
+        method="excess_roe", kind="insurer", implied_cap=ri_cap(s["price"], s, B, s["r"], mo), nopat_margin=None, growth_check=None,
+        moat=mo["cls"], cap_years=ri_years(mo), segments=None, moat_reason=MOAT["stocks"][tk]["reason"],
+        rate_table=[dict(r=r, fv=sum(PROBS[k] * V(s["scen"][k], r) for k in PROBS), base=V(B, r)) for r in rates], r_reason=RR["stocks"][tk]["reason"],
+        dcf_method="excess_roe", wacc=dict(discount_rate=s["r"], cost_equity=s["r"], after_tax_interest=0.0),
+        name=s["name"], type="stock", price=s["price"], shares=s["shares"], r=s["r"], mos=s["mos"],
+        start_margin=s["roe0"], net_cash=s["extra"], rev=s["bv"], notes=s["notes"],
+        bear=res["bear"]["per_share"], base=res["base"]["per_share"], bull=res["bull"]["per_share"],
+        fair_value=fv, anchor=fv, buy_below=fv * (1 - s["mos"]),
+        epv=(s["bv"] * B["m"] / s["r"] + s["extra"]) / s["shares"],                 # no growth: base ROE on today's book, all paid out
+        implied_irr=irr, reverse_g1=None, tv_share=res["base"]["tv_share"],
+        sens=dict(r=rs, g=gs, grid=[[V(B, r, gt=g) for g in gs] for r in rs]), detail=res, scen=s["scen"], fcf=s["ni"], sbc=0.0,
+        insurer=dict(bv=s["bv"], bv_ps=bvps, pb=s["price"] / bvps, roe0=s["roe0"], ni=s["ni"], roe_ttm=s["ni"] / s["bv"], roe_needed=roe_need,
+                     fv_pb=fv / bvps, roe_terminal={k: res[k]["roe_terminal"] for k in res}, excess_ps={k: res[k]["excess"] / s["shares"] for k in res}),
     )
 
 # ----------------------------------------------------------------- QQQ (look-through earnings model)

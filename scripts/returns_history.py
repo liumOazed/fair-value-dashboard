@@ -16,6 +16,9 @@ topped up with the latest years in data/snapshot_raw.json:
   Q5 Reinvest  = growth in invested capital over the latest 5 years / after-tax operating profit in those years, the
                  dollars a year that represents, and the growth it funds (reinvestment rate x latest incremental return, left out above 100%, where growth
                  comes mostly from existing assets and pricing rather than new capital).
+Underwriters (INSURERS in model/model.py) hold investments against claims, so invested capital means nothing for them:
+they get the same tests on return on equity (net income / book value, average of the start and end of the year),
+marked measure = "ROE".
 Diagnostics only: nothing here changes a fair value. Run after the snapshot is refreshed.
 """
 import gzip, json, math, pathlib, re, statistics as st
@@ -26,6 +29,9 @@ F = json.load(gzip.open(FACTS)) if FACTS.exists() else {}
 SNAP = json.load(open(ROOT / "data/snapshot_raw.json"))["stocks"]
 RR = json.load(open(ROOT / "data/required_returns.json"))["stocks"]
 TICKERS = list(dict.fromkeys(re.findall(r'^ "([A-Z.]+)": dict\(name', (ROOT / "model/model.py").read_text(), re.M)))
+_MT = (ROOT / "model/model.py").read_text()
+_IB = _MT[_MT.index("\nINSURERS = {"):] if "\nINSURERS = {" in _MT else ""
+INSURERS = set(re.findall(r'^ "([A-Z.]+)": dict\(name', _IB[:_IB.index("\n}\n")] if _IB else "", re.M))   # underwriters: ROE, not ROIC
 SPAN, TREND_YEARS, CAP = 5, 8, 2.0     # 5-year windows, 8-year trends, ROIC shown up to 200%
 
 def v(d, k, y):
@@ -44,13 +50,13 @@ def years_from_facts(t):
         if debt is None:
             debt = (v(d, "ltd_noncur", y) or 0) + (v(d, "ltd_cur", y) or 0)
             if v(d, "ltd_cur", y) is None: debt += v(d, "st_debt", y) or 0
-        out[y[:4]] = dict(op=op, tax=v(d, "tax", y), pretax=v(d, "pretax", y), equity=v(d, "equity", y), debt=debt,
+        out[y[:4]] = dict(op=op, tax=v(d, "tax", y), pretax=v(d, "pretax", y), equity=v(d, "equity", y), debt=debt, ni=v(d, "net_income", y),
                           cash=(v(d, "cash", y) or 0) + (v(d, "st_inv", y) or 0), rev=v(d, "revenue", y))
     return out
 
 def years_from_snapshot(t):
     s = SNAP.get(t) or {}; inc = s.get("annual", {}).get("inc", {}); bal = s.get("annual", {}).get("bal", {})
-    return {y[:4]: dict(op=inc[y].get("op"), tax=inc[y].get("tax"), pretax=inc[y].get("pretax"), equity=(bal.get(y) or {}).get("equity"),
+    return {y[:4]: dict(op=inc[y].get("op"), tax=inc[y].get("tax"), pretax=inc[y].get("pretax"), equity=(bal.get(y) or {}).get("equity"), ni=inc[y].get("ni"),
                         debt=(bal.get(y) or {}).get("debt"), cash=(bal.get(y) or {}).get("cash"), rev=inc[y].get("rev")) for y in inc}
 
 def theil_sen(pts):
@@ -70,11 +76,17 @@ def incremental(nopat, ic, y_end, span):
 
 def analyse(t):
     Y = years_from_facts(t)
+    ins = t in INSURERS
+    key = "ni" if ins else "op"
     for y, row in years_from_snapshot(t).items():                       # newer years, or fill gaps
-        if y not in Y or Y[y].get("op") is None: Y[y] = row
+        if y not in Y or Y[y].get(key) is None: Y[y] = row
     nopat, ic = {}, {}
     for y in sorted(Y)[-12:]:
         r = Y[y]
+        if ins:                      # underwriter: return on equity = net income / book value (capital is the equity)
+            if r.get("ni") is None or not r.get("equity"): continue
+            nopat[y], ic[y] = r["ni"], r["equity"]
+            continue
         if r.get("op") is None or r.get("equity") is None: continue
         tr = r["tax"] / r["pretax"] if r.get("tax") is not None and r.get("pretax") and r["pretax"] > 0 else 0.21
         nopat[y] = r["op"] * (1 - min(max(tr, 0.0), 0.35))
@@ -87,6 +99,11 @@ def analyse(t):
         if base > 0: roic.append([int(y), min(nopat[y] / base, CAP)])
     last = max(map(int, nopat)) if nopat else None
     out = dict(r=r, roic=roic, last_year=last)
+    if ins: out["measure"] = "ROE"     # the drawer labels the chart "return on equity"; same tests on net income and book value
+    if ins and (len(roic) < 4 or roic[-1][0] != last):
+        out["note"] = ("No statements for this company in the data yet." if not roic else
+                       f"Only {len(roic)} year{'s' if len(roic) != 1 else ''} of net income and book value in the data, so the return-on-equity tests can't be run.")
+        return out
     if len(roic) < 4 or roic[-1][0] != last:
         out["note"] = "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
         return out

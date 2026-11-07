@@ -38,10 +38,24 @@ CFG = {
     "CRCL": dict(keep=["net_cash"]),                                   # USDC reserves excluded
     "NDAQ": dict(scale=True), "SPGI": dict(scale=True), "RMD": dict(scale=True),   # net revenue / pro forma
 }
+INSURER = "Insurer valued on book value and return on equity (INSURERS in model.py): update book value, starting ROE and net income by hand."
 MANUAL = {
     "ADYEY": "Reports in EUR, half-yearly, FCF estimated: needs a manual update from the release.",
     "CTAS": "Revenue and cash flow use different periods in the model: needs a manual update.",
     "CTRE": "Revenue and cash flow are a run-rate (latest quarter x 4) because acquisitions grow it fast: needs a manual update.",
+    "ALL": INSURER,
+    "HIG": INSURER,
+    "AIZ": INSURER,
+    "NMIH": INSURER,
+    "UVE": INSURER,
+    "PLMR": INSURER,
+    "PLGO": INSURER,
+    "SLDE": INSURER,
+    "HG": INSURER,
+    "HCI": INSURER,
+    "ESNT": INSURER,
+    "UFCS": INSURER,
+    "SKWD": INSURER,
 }
 YROWS = {  # yahoo row names per field
     "rev": ["Total Revenue", "Operating Revenue"], "gross": ["Gross Profit"], "ni": ["Net Income Common Stockholders", "Net Income"],

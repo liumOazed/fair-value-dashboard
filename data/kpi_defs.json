@@ -3144,6 +3144,500 @@
      "better": "up"
     }
    ]
+  },
+  "MRSH": {
+   "name": "Marsh McLennan",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth",
+     "label": "Underlying (organic) revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "risk_insurance_organic_growth",
+     "label": "Risk & Insurance Services underlying growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "consulting_organic_growth",
+     "label": "Consulting underlying growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "WTW": {
+   "name": "WTW",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth",
+     "label": "Organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "risk_broking_organic_growth",
+     "label": "Risk & Broking organic growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "hwc_organic_growth",
+     "label": "Health, Wealth & Career organic growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "CRVL": {
+   "name": "CorVel",
+   "kpis": [
+    {
+     "id": "revenue_growth",
+     "label": "Revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "patient_management_revenue",
+     "label": "Patient management revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "network_solutions_revenue",
+     "label": "Network solutions revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ALL": {
+   "name": "Allstate",
+   "kpis": [
+    {
+     "id": "property_liability_combined_ratio",
+     "label": "Property-Liability combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "auto_combined_ratio",
+     "label": "Allstate brand auto combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "policies_in_force_growth",
+     "label": "Property-Liability policies in force growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_roe",
+     "label": "Adjusted net income ROE (trailing 12 months)",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "HIG": {
+   "name": "The Hartford",
+   "kpis": [
+    {
+     "id": "business_insurance_combined_ratio",
+     "label": "Business Insurance combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "business_insurance_underlying_cr",
+     "label": "Business Insurance underlying combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "written_premium_growth",
+     "label": "Business Insurance written premium growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "core_earnings_roe",
+     "label": "Core earnings ROE (trailing 12 months)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "book_value_per_share_ex_aoci",
+     "label": "Book value per share ex AOCI",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "AIZ": {
+   "name": "Assurant",
+   "kpis": [
+    {
+     "id": "lifestyle_adjusted_ebitda",
+     "label": "Global Lifestyle adjusted EBITDA",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "housing_adjusted_ebitda_ex_cat",
+     "label": "Global Housing adjusted EBITDA ex catastrophes",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "reportable_catastrophes",
+     "label": "Reportable catastrophes (pre-tax)",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "devices_serviced",
+     "label": "Mobile devices serviced (millions)",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "book_value_per_share_ex_aoci",
+     "label": "Book value per share ex AOCI",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "NMIH": {
+   "name": "NMI Holdings",
+   "kpis": [
+    {
+     "id": "primary_insurance_in_force",
+     "label": "Primary insurance-in-force",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "new_insurance_written",
+     "label": "New insurance written",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "default_rate",
+     "label": "Default rate",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "pmiers_excess_capital",
+     "label": "PMIERs excess available assets",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "UVE": {
+   "name": "Universal Insurance Holdings",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "PLMR": {
+   "name": "Palomar",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "PLGO": {
+   "name": "Pelagos Insurance Capital",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "SLDE": {
+   "name": "Slide Insurance",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "HG": {
+   "name": "Hamilton Insurance Group",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "HCI": {
+   "name": "HCI Group",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "ESNT": {
+   "name": "Essent",
+   "kpis": [
+    {
+     "id": "insurance_in_force",
+     "label": "Insurance in force",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "new_insurance_written",
+     "label": "New insurance written",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "default_rate",
+     "label": "Default rate",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "pmiers_sufficiency_ratio",
+     "label": "PMIERs sufficiency ratio",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "UFCS": {
+   "name": "United Fire Group",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
+  },
+  "SKWD": {
+   "name": "Skyward Specialty",
+   "kpis": [
+    {
+     "id": "combined_ratio",
+     "label": "Combined ratio",
+     "unit": "pct",
+     "better": "down"
+    },
+    {
+     "id": "net_premiums_written_growth",
+     "label": "Net premiums written growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "catastrophe_losses",
+     "label": "Catastrophe losses",
+     "unit": "usd_b",
+     "better": "down"
+    },
+    {
+     "id": "book_value_per_share",
+     "label": "Book value per share",
+     "unit": "usd",
+     "better": "up"
+    }
+   ]
   }
  }
 }

@@ -19,7 +19,8 @@ Per stock:
               the advantage period the price needs, and the median P/E of the sector (latest growth screen) and of the
               stock's own last 4 years, for "what if the multiple goes back"
   sector      the stock's module and each question's answer from the statements, or unknown
-  coverage    counts of answered / partly / unknown questions
+  coverage    counts of answered / partly / unknown questions (underwriters: the free-cash-flow and capex questions are
+              "na", not applicable, and left out of the total)
 
 Usage: python scripts/framework.py            (after model/model.py, the snapshot refresh and scripts/durability.py)
        python scripts/framework.py --offline  (skip the benchmark download and keep the previous benchmark prices)
@@ -109,6 +110,10 @@ Q = [
  ("M10", "Is the valuation premium covered by the advantage?", "answered", None),
 ]
 
+# Questions that don't apply to an underwriter (valued on book value and ROE): its cash flow mixes in premiums held for
+# future claims, and its capex and working capital say little. Marked "na": not answered, not unknown, not counted.
+NA_INSURER = {"D24", "D25", "D26", "D27", "D28", "D29", "D30", "F40"}
+
 # ------------------------------------------------------------------ sector modules (by business model)
 M_ = lambda name, tickers, qs: dict(name=name, tickers=tickers.split(), questions=qs)
 SECTOR_MODULES = [
@@ -157,6 +162,15 @@ SECTOR_MODULES = [
  M_("Real estate (REITs)", "SPG HST",
     [("Occupancy", None), ("Same-property income growth", None), ("Net asset value per share", None), ("Debt maturities", None),
      ("Dividends covered by free cash flow", "div_cover"), ("Debt vs earnings", "debt_ebitda"), ("Interest cover", "int_cover")]),
+ M_("Insurance underwriters", "ALL HIG AIZ NMIH ESNT UVE HCI SLDE PLMR PLGO HG UFCS SKWD",
+    [("Underwriting profit: combined ratio below 100%?", None), ("Return on equity vs the required return", "roe"),
+     ("Book value growth", "bv_growth"), ("Catastrophe exposure and reinsurance cover", None),
+     ("Reserve development (past claims re-estimated)", None), ("Premium growth from price or from more policies?", None),
+     ("Capital strength (risk-based capital, solvency ratios)", None), ("Investment portfolio: yield and credit risk", None)]),
+ M_("Insurance brokers and claims services", "MRSH WTW CRVL",
+    [("Organic revenue growth", None), ("Operating margin trend", "op_margin"), ("Operating leverage (profit vs sales growth)", "op_leverage"),
+     ("Free cash flow margin", "fcf_margin"), ("Debt vs earnings", "debt_ebitda"), ("Sensitivity to insurance prices (revenue swings)", "rev_stability"),
+     ("Interest earned on client money (fiduciary income)", None)]),
  M_("Power and utilities", "NRG",
     [("Revenue regulated or contracted?", None), ("Can it pass inflation through?", None), ("Debt vs earnings", "debt_ebitda"),
      ("Interest cover", "int_cover"), ("Demand stability (revenue swings)", "rev_stability"), ("Dividends covered by free cash flow", "div_cover")]),
@@ -306,6 +320,21 @@ def metric(key, t, raw):
         r = x.get("r") or 0.09
         tone = "good" if v >= r + 0.05 else "caution" if v >= r else "bad"
         return dict(answer=("over 100%" if v > 1 else pc(v)), reading=f"vs {pc(r)} required return", tone=tone)
+    if key == "roe":
+        x = RET.get(t) or {}
+        if x.get("measure") != "ROE" or not x.get("roic"): return None
+        r, pts_ = x.get("r") or 0.09, x["roic"][-5:]
+        now = pts_[-1][1]
+        above = sum(1 for _, v in pts_ if v > r)
+        tone = "good" if now >= r + 0.05 and above == len(pts_) else "bad" if now < r else "caution"
+        return dict(answer=pc(now), reading=f"{pts_[-1][0]}; above the {pc(r)} required return in {above} of the last {len(pts_)} years", tone=tone)
+    if key == "bv_growth":
+        eq = [(d[:4], (bal[d] or {}).get("equity")) for d in sorted(bal) if (bal[d] or {}).get("equity")]
+        if len(eq) < 3 or eq[0][1] <= 0: return None
+        n = int(eq[-1][0]) - int(eq[0][0])
+        if n <= 0: return None
+        g = (eq[-1][1] / eq[0][1]) ** (1 / n) - 1
+        return dict(answer=f"{g * 100:+.1f}% a year", reading=f"book value {eq[0][0]}–{eq[-1][0]} (incl. buybacks and dividends paid out)", tone="good" if g > 0.05 else "caution" if g >= 0 else "bad")
     if key == "services_share":
         sg = (SEG.get(t) or {}).get("segments") or {}
         sv = sg.get("Services")
@@ -326,7 +355,28 @@ def load_model():
     exec(compile(src[:cut], "model/model.py", "exec"), ns)
     return ns
 
+def assumes_ins(ns, t, price):
+    """Underwriter (book value and ROE model): the long-run ROE and the year-1 book growth today's price needs, the value
+    if that growth is halved, and how long the base-case excess ROE must last."""
+    s = dict(ns["INSURERS"][t]); r = ns["req_return"](t)
+    mo = dict(ns["moat_of"](t), r_req=r)
+    B = dict(s["scen"]["base"])
+    V = lambda g1, m: ns["ri_value"](s["bv"], s["roe0"], g1, B["g10"], m, r, s["extra"], s["shares"], mo=mo)
+    solve = ns["solve"]
+    out = dict(method="excess_roe", price=price, r=r, base_g1=B["g1"], base_m=B["m"], bv_ps=r1(s["bv"] / s["shares"], 2), pb=r1(price / (s["bv"] / s["shares"]), 3))
+    lo, hi = -0.5, 1.5
+    out["g1_needed"] = r1(solve(lambda g: V(g, B["m"]) - price, lo, hi)) if (V(lo, B["m"]) - price) * (V(hi, B["m"]) - price) < 0 else None
+    out["m_needed"] = r1(solve(lambda m: V(B["g1"], m) - price, -0.2, 0.9)) if (V(B["g1"], -0.2) - price) * (V(B["g1"], 0.9) - price) < 0 else None
+    g = out["g1_needed"]
+    if g is not None and g > B["g10"]:
+        out["half_g1"] = r1(g / 2)
+        out["half_value"] = r1(V(g / 2, B["m"]), 2)
+    out["cap_needed"] = ns["ri_cap"](price, s, B, r, mo)
+    return out
+
 def assumes(ns, t, price):
+    if t in ns.get("INSURERS", {}):
+        return assumes_ins(ns, t, price) if price else None
     s = ns["STOCKS"].get(t)
     if not s or not price: return None
     s = dict(s); s["r"] = ns["req_return"](t)
@@ -433,7 +483,7 @@ def main():
             if eps_ttm and eps_ttm > 0 and own:
                 asm["pe_own"] = round(st.median(own), 1); asm["pe_own_years"] = f"{(V['history']['pe'][0][0])}–{V['history']['pe'][-1][0]}"
             x["assumes"] = asm
-        have["assumes"] = bool(asm and asm.get("g1_needed") is not None)
+        have["assumes"] = bool(asm and (asm.get("g1_needed") is not None or (asm.get("method") == "excess_roe" and asm.get("m_needed") is not None)))
         have["pe_sector"] = bool(asm and asm.get("pe_sector"))
         have["pe_own"] = bool(asm and asm.get("pe_own"))
         # sector module
@@ -446,14 +496,18 @@ def main():
             x["sector"] = dict(module=mod["name"], questions=sq)
         # coverage
         fixed = []
+        ins = t in ns.get("INSURERS", {})
         for qid, text, status, need in Q:
+            if ins and qid in NA_INSURER:
+                fixed.append([qid, "na"]); continue
             if need and not have.get(need): status = "unknown" if status == "answered" or need in ("bonds", "market", "split", "assumes") else status
             if qid == "G46" and not have["bench"] and have["market"]: status = "partly"
             fixed.append([qid, status])
         n_ans = sum(1 for _, s in fixed if s == "answered") + sum(1 for q in sq if q.get("answer") is not None)
         n_part = sum(1 for _, s in fixed if s == "partly")
         n_unk = sum(1 for _, s in fixed if s == "unknown") + sum(1 for q in sq if q.get("answer") is None)
-        x["coverage"] = dict(total=len(fixed) + len(sq), answered=n_ans, partly=n_part, unknown=n_unk, fixed=fixed)
+        n_na = sum(1 for _, s in fixed if s == "na")
+        x["coverage"] = dict(total=len(fixed) + len(sq) - n_na, answered=n_ans, partly=n_part, unknown=n_unk, fixed=fixed, **({"na": n_na} if n_na else {}))
         stocks[t] = x
     doc = {"_about": __doc__.strip().split("\n\n")[0], "built": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
            "questions": {q[0]: q[1] for q in Q}, "sector_pe_source": spe_src, "benchmarks": BM, "stocks": stocks}

@@ -2277,5 +2277,181 @@
    "price": 60.02,
    "method": "fcff_re"
   }
+ ],
+ "MRSH": [
+  {
+   "date": "2026-11-06",
+   "fv": 175.04,
+   "bear": 127.86,
+   "base": 182.67,
+   "bull": 226.77,
+   "price": 204.82,
+   "method": "fcff_re"
+  }
+ ],
+ "WTW": [
+  {
+   "date": "2026-11-06",
+   "fv": 341.28,
+   "bear": 235.92,
+   "base": 360.07,
+   "bull": 452.36,
+   "price": 328.86,
+   "method": "fcff_re"
+  }
+ ],
+ "CRVL": [
+  {
+   "date": "2026-11-06",
+   "fv": 46.8,
+   "bear": 33.97,
+   "base": 49.12,
+   "bull": 60.25,
+   "price": 83.16,
+   "method": "fcff_re"
+  }
+ ],
+ "ALL": [
+  {
+   "date": "2026-11-06",
+   "fv": 228.62,
+   "bear": 173.25,
+   "base": 236.45,
+   "bull": 292.11,
+   "price": 254.81,
+   "method": "excess_roe"
+  }
+ ],
+ "HIG": [
+  {
+   "date": "2026-11-06",
+   "fv": 132.41,
+   "bear": 101.61,
+   "base": 137.22,
+   "bull": 166.61,
+   "price": 133.99,
+   "method": "excess_roe"
+  }
+ ],
+ "AIZ": [
+  {
+   "date": "2026-11-06",
+   "fv": 191.31,
+   "bear": 162.51,
+   "base": 196.01,
+   "bull": 222.75,
+   "price": 307.0,
+   "method": "excess_roe"
+  }
+ ],
+ "NMIH": [
+  {
+   "date": "2026-11-06",
+   "fv": 48.18,
+   "bear": 34.23,
+   "base": 51.34,
+   "bull": 61.23,
+   "price": 39.03,
+   "method": "excess_roe"
+  }
+ ],
+ "UVE": [
+  {
+   "date": "2026-11-06",
+   "fv": 26.11,
+   "bear": 15.58,
+   "base": 28.97,
+   "bull": 34.74,
+   "price": 46.75,
+   "method": "excess_roe"
+  }
+ ],
+ "PLMR": [
+  {
+   "date": "2026-11-06",
+   "fv": 99.7,
+   "bear": 60.3,
+   "base": 103.13,
+   "bull": 150.21,
+   "price": 155.71,
+   "method": "excess_roe"
+  }
+ ],
+ "PLGO": [
+  {
+   "date": "2026-11-06",
+   "fv": 27.05,
+   "bear": 18.12,
+   "base": 29.35,
+   "bull": 34.68,
+   "price": 27.73,
+   "method": "excess_roe"
+  }
+ ],
+ "SLDE": [
+  {
+   "date": "2026-11-06",
+   "fv": 15.27,
+   "bear": 8.9,
+   "base": 16.66,
+   "bull": 21.37,
+   "price": 25.94,
+   "method": "excess_roe"
+  }
+ ],
+ "HG": [
+  {
+   "date": "2026-11-06",
+   "fv": 34.35,
+   "bear": 23.8,
+   "base": 36.73,
+   "bull": 44.23,
+   "price": 36.94,
+   "method": "excess_roe"
+  }
+ ],
+ "HCI": [
+  {
+   "date": "2026-11-06",
+   "fv": 102.44,
+   "bear": 58.0,
+   "base": 114.45,
+   "bull": 139.09,
+   "price": 186.03,
+   "method": "excess_roe"
+  }
+ ],
+ "ESNT": [
+  {
+   "date": "2026-11-06",
+   "fv": 70.49,
+   "bear": 51.96,
+   "base": 74.17,
+   "bull": 89.07,
+   "price": 63.41,
+   "method": "excess_roe"
+  }
+ ],
+ "UFCS": [
+  {
+   "date": "2026-11-06",
+   "fv": 34.38,
+   "bear": 22.48,
+   "base": 37.36,
+   "bull": 44.81,
+   "price": 47.73,
+   "method": "excess_roe"
+  }
+ ],
+ "SKWD": [
+  {
+   "date": "2026-11-06",
+   "fv": 50.91,
+   "bear": 34.83,
+   "base": 52.5,
+   "bull": 71.04,
+   "price": 60.35,
+   "method": "excess_roe"
+  }
  ]
 }

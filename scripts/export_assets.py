@@ -31,6 +31,13 @@ for t, a in res["assets"].items():
         sgm = a.get("segments")
         e["segments"] = None if not sgm else dict(names=sgm["names"], share=[rnd(x, 4) for x in sgm["share"]], reported=rnd(sgm["reported"], 4),
                                                   g1={k: [rnd(x, 4) for x in v] for k, v in sgm["g1"].items()}, period=sgm["period"], source=sgm["source"])
+        if a.get("method") == "excess_roe":      # underwriters (model.py INSURERS): book value and return on equity
+            e["method"] = "excess_roe"; e["kind"] = a.get("kind")
+            e["insurer"] = {k: (rnd(v, 4) if isinstance(v, float) else {kk: rnd(vv, 4) for kk, vv in v.items()} if isinstance(v, dict) else v)
+                            for k, v in a["insurer"].items()}
+            for k, v in a["detail"].items():
+                e["forecast"][k].update(ni=[rnd(r["ni"]) for r in v["rows"]], bv0=rnd(v["bv0"]), roe_terminal=rnd(v["roe_terminal"], 4),
+                                        excess=rnd(v["excess"]))
         e["implied_cap"] = a.get("implied_cap"); e["nopat_margin"] = rnd(a["nopat_margin"], 4) if a.get("nopat_margin") is not None else None
         e["growth_check"] = {k: (None if v is None else dict(forecast=None if v["forecast"] is None else rnd(v["forecast"], 4),
                                                           terminal=None if v["terminal"] is None else rnd(v["terminal"], 4),
