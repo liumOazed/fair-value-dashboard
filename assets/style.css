@@ -293,3 +293,6 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 .ftag.fact{background:var(--hl-blue);color:var(--ok)}.ftag.est{background:var(--hl-cream);color:var(--warn)}
 @media(max-width:640px){.perf{grid-template-columns:1fr}.covlist{grid-template-columns:1fr}}
 .pill.fvp{background:var(--hl-blue);border-color:transparent;color:var(--ok)}
+
+/* Capital and returns card */
+.dr-in h4{margin:16px 0 6px;font:600 14px/1.3 var(--display,inherit)}

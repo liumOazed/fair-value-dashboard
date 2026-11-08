@@ -44,7 +44,9 @@ for t, a in res["assets"].items():
                                                           reinvest_share=rnd(v["reinvest_share"], 4), flag=v["flag"]))
                              for k, v in (a.get("growth_check") or {}).items()} if a.get("growth_check") else None
     if "rate_table" in a:
-        e["rate_table"] = [dict(r=x["r"], fv=round(x["fv"], 2), base=round(x["base"], 2)) for x in a["rate_table"]]
+        e["rate_table"] = [dict(r=x["r"], fv=round(x["fv"], 2), **{k: round(x[k], 2) for k in ("bear", "base", "bull") if k in x}) for x in a["rate_table"]]
+        if a.get("wacc_row"):   # value at the blended WACC (Capital and returns card)
+            w = a["wacc_row"]; e["wacc_row"] = dict(r=round(w["r"], 4), fv=round(w["fv"], 2), **{k: round(w[k], 2) for k in ("bear", "base", "bull")})
         e["required_return_reason"] = a.get("r_reason")
     if "sens" in a:
         e["sensitivity"] = dict(r=[round(x, 4) for x in a["sens"]["r"]], g=a["sens"]["g"], grid=[[round(x, 1) for x in row] for row in a["sens"]["grid"]])

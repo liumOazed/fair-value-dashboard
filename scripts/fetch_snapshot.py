@@ -20,7 +20,8 @@ BAL = {"equity": ["Stockholders Equity", "Total Equity Gross Minority Interest"]
 CFS = {"ocf": ["Operating Cash Flow"], "capex": ["Capital Expenditure"], "fcf": ["Free Cash Flow"], "sbc": ["Stock Based Compensation"],
        "div_paid": ["Cash Dividends Paid", "Common Stock Dividend Paid"], "buyback": ["Repurchase Of Capital Stock", "Common Stock Payments"],
        "issued": ["Issuance Of Capital Stock", "Common Stock Issuance"],
-       "dep": ["Depreciation And Amortization", "Depreciation Amortization Depletion", "Depreciation"]}
+       "dep": ["Depreciation And Amortization", "Depreciation Amortization Depletion", "Depreciation"],
+       "acq": ["Purchase Of Business", "Net Business Purchase And Sale"]}
 
 
 def num(x):

@@ -54,6 +54,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 131.2005,
+   "ic_last_b": 122.598,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 10.708,
+     "dep": 11.104,
+     "rd": null,
+     "acq": null,
+     "ocf": 122.151,
+     "rev": 394.328
+    },
+    {
+     "y": 2023,
+     "capex": 10.959,
+     "dep": 11.519,
+     "rd": 29.915,
+     "acq": null,
+     "ocf": 110.543,
+     "rev": 383.285
+    },
+    {
+     "y": 2024,
+     "capex": 9.447,
+     "dep": 11.445,
+     "rd": 31.37,
+     "acq": null,
+     "ocf": 118.254,
+     "rev": 391.035
+    },
+    {
+     "y": 2025,
+     "capex": 12.715,
+     "dep": 11.698,
+     "rd": 34.55,
+     "acq": null,
+     "ocf": 111.482,
+     "rev": 416.161
+    },
+    {
+     "y": 2026,
+     "capex": 9.041,
+     "dep": 13.423,
+     "rd": 45.765,
+     "acq": null,
+     "ocf": 145.097,
+     "rev": 478.834
+    }
+   ],
    "roic_now": 1.1017,
    "inc_recent": 2.0887,
    "inc_earlier": null,
@@ -128,6 +177,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 125.1268,
+   "ic_last_b": 348.9515,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 23.886,
+     "dep": 12.6,
+     "rd": null,
+     "acq": null,
+     "ocf": 89.035,
+     "rev": 198.27
+    },
+    {
+     "y": 2023,
+     "capex": 28.107,
+     "dep": 13.861,
+     "rd": 27.195,
+     "acq": null,
+     "ocf": 87.582,
+     "rev": 211.915
+    },
+    {
+     "y": 2024,
+     "capex": 44.477,
+     "dep": 20.958,
+     "rd": 29.51,
+     "acq": null,
+     "ocf": 118.548,
+     "rev": 245.122
+    },
+    {
+     "y": 2025,
+     "capex": 64.551,
+     "dep": 29.433,
+     "rd": 32.488,
+     "acq": null,
+     "ocf": 136.162,
+     "rev": 281.724
+    },
+    {
+     "y": 2026,
+     "capex": 115.948,
+     "dep": 38.534,
+     "rd": 35.562,
+     "acq": null,
+     "ocf": 182.935,
+     "rev": 331.839
+    }
+   ],
    "roic_now": 0.3791,
    "inc_recent": 0.217,
    "inc_earlier": null,
@@ -202,6 +300,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 107.3822,
+   "ic_last_b": 289.467,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 24.64,
+     "dep": 10.273,
+     "rd": null,
+     "acq": null,
+     "ocf": 91.652,
+     "rev": 257.637
+    },
+    {
+     "y": 2022,
+     "capex": 31.485,
+     "dep": 13.475,
+     "rd": 39.5,
+     "acq": null,
+     "ocf": 91.495,
+     "rev": 282.836
+    },
+    {
+     "y": 2023,
+     "capex": 32.251,
+     "dep": 11.946,
+     "rd": 45.427,
+     "acq": null,
+     "ocf": 101.746,
+     "rev": 307.394
+    },
+    {
+     "y": 2024,
+     "capex": 52.535,
+     "dep": 15.311,
+     "rd": 49.326,
+     "acq": null,
+     "ocf": 125.299,
+     "rev": 350.018
+    },
+    {
+     "y": 2025,
+     "capex": 91.447,
+     "dep": 21.136,
+     "rd": 61.087,
+     "acq": null,
+     "ocf": 164.713,
+     "rev": 402.836
+    }
+   ],
    "roic_now": 0.4045,
    "inc_recent": 0.3504,
    "inc_earlier": null,
@@ -276,6 +423,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 64.2884,
+   "ic_last_b": 299.82,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 61.053,
+     "dep": 34.296,
+     "rd": null,
+     "acq": null,
+     "ocf": 46.327,
+     "rev": 469.822
+    },
+    {
+     "y": 2022,
+     "capex": 63.645,
+     "dep": 41.921,
+     "rd": null,
+     "acq": null,
+     "ocf": 46.752,
+     "rev": 513.983
+    },
+    {
+     "y": 2023,
+     "capex": 52.729,
+     "dep": 48.663,
+     "rd": null,
+     "acq": null,
+     "ocf": 84.946,
+     "rev": 574.785
+    },
+    {
+     "y": 2024,
+     "capex": 82.999,
+     "dep": 52.795,
+     "rd": null,
+     "acq": null,
+     "ocf": 115.877,
+     "rev": 637.959
+    },
+    {
+     "y": 2025,
+     "capex": 131.819,
+     "dep": 65.756,
+     "rd": null,
+     "acq": null,
+     "ocf": 139.514,
+     "rev": 716.924
+    }
+   ],
    "roic_now": 0.2468,
    "inc_recent": 0.1738,
    "inc_earlier": 0.4464,
@@ -350,6 +546,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 110.6764,
+   "ic_last_b": 99.868,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.976,
+     "dep": 0.611,
+     "rd": null,
+     "acq": null,
+     "ocf": 9.108,
+     "rev": 26.914
+    },
+    {
+     "y": 2023,
+     "capex": 1.833,
+     "dep": 1.543,
+     "rd": 7.339,
+     "acq": null,
+     "ocf": 5.641,
+     "rev": 26.974
+    },
+    {
+     "y": 2024,
+     "capex": 1.069,
+     "dep": 1.508,
+     "rd": 8.675,
+     "acq": null,
+     "ocf": 28.09,
+     "rev": 60.922
+    },
+    {
+     "y": 2025,
+     "capex": 3.236,
+     "dep": 1.864,
+     "rd": 12.914,
+     "acq": null,
+     "ocf": 64.089,
+     "rev": 130.497
+    },
+    {
+     "y": 2026,
+     "capex": 6.042,
+     "dep": 2.843,
+     "rd": 18.497,
+     "acq": null,
+     "ocf": 102.718,
+     "rev": 215.938
+    }
+   ],
    "roic_now": 1.5452,
    "inc_recent": 0.946,
    "inc_earlier": 0.4334,
@@ -416,6 +661,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 25.484,
+   "ic_last_b": 128.06,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.443,
+     "dep": 0.539,
+     "rd": null,
+     "acq": null,
+     "ocf": 13.764,
+     "rev": 27.45
+    },
+    {
+     "y": 2022,
+     "capex": 0.424,
+     "dep": 4.984,
+     "rd": 4.919,
+     "acq": null,
+     "ocf": 16.736,
+     "rev": 33.203
+    },
+    {
+     "y": 2023,
+     "capex": 0.452,
+     "dep": 3.835,
+     "rd": 5.253,
+     "acq": null,
+     "ocf": 18.085,
+     "rev": 35.819
+    },
+    {
+     "y": 2024,
+     "capex": 0.548,
+     "dep": 10.01,
+     "rd": 9.31,
+     "acq": null,
+     "ocf": 19.962,
+     "rev": 51.574
+    },
+    {
+     "y": 2025,
+     "capex": 0.623,
+     "dep": 8.775,
+     "rd": 10.977,
+     "acq": null,
+     "ocf": 27.537,
+     "rev": 63.887
+    }
+   ],
    "roic_now": 0.1495,
    "inc_recent": 0.1832,
    "inc_earlier": null,
@@ -490,6 +784,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 21.3579,
+   "ic_last_b": 51.0065,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 2.985,
+     "dep": 1.522,
+     "rd": 7.191,
+     "acq": null,
+     "ocf": 7.586,
+     "rev": 28.541
+    },
+    {
+     "y": 2023,
+     "capex": 7.392,
+     "dep": 1.527,
+     "rd": 9.313,
+     "acq": null,
+     "ocf": 4.24,
+     "rev": 34.124
+    },
+    {
+     "y": 2024,
+     "capex": 8.404,
+     "dep": 1.767,
+     "rd": 10.991,
+     "acq": null,
+     "ocf": 8.818,
+     "rev": 45.043
+    },
+    {
+     "y": 2025,
+     "capex": 10.849,
+     "dep": 1.997,
+     "rd": 13.337,
+     "acq": null,
+     "ocf": 16.813,
+     "rev": 65.179
+    }
+   ],
    "roic_now": 0.3767,
    "inc_recent": 0.302,
    "inc_earlier": null,
@@ -564,6 +898,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 7.1071,
+   "ic_last_b": 10.793,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.348,
+     "dep": 0.788,
+     "rd": null,
+     "acq": null,
+     "ocf": 7.23,
+     "rev": 15.785
+    },
+    {
+     "y": 2022,
+     "capex": 0.442,
+     "dep": 0.856,
+     "rd": 2.987,
+     "acq": null,
+     "ocf": 7.838,
+     "rev": 17.606
+    },
+    {
+     "y": 2023,
+     "capex": 0.36,
+     "dep": 0.872,
+     "rd": 3.473,
+     "acq": null,
+     "ocf": 7.302,
+     "rev": 19.409
+    },
+    {
+     "y": 2024,
+     "capex": 0.183,
+     "dep": 0.857,
+     "rd": 3.944,
+     "acq": null,
+     "ocf": 8.056,
+     "rev": 21.505
+    },
+    {
+     "y": 2025,
+     "capex": 0.179,
+     "dep": 0.818,
+     "rd": 4.294,
+     "acq": null,
+     "ocf": 10.031,
+     "rev": 23.769
+    }
+   ],
    "roic_now": 0.5679,
    "inc_recent": 1.8453,
    "inc_earlier": 0.6792,
@@ -614,6 +997,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 3.606,
+   "ic_last_b": 3.509,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.001,
+     "dep": 0.431,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.362,
+     "rev": 2.793
+    },
+    {
+     "y": 2022,
+     "capex": 0.001,
+     "dep": 0.547,
+     "rd": 0.508,
+     "acq": null,
+     "ocf": 0.413,
+     "rev": 2.817
+    },
+    {
+     "y": 2023,
+     "capex": 0.064,
+     "dep": 0.489,
+     "rd": 0.334,
+     "acq": null,
+     "ocf": 1.062,
+     "rev": 1.842
+    },
+    {
+     "y": 2024,
+     "capex": 0.026,
+     "dep": 0.449,
+     "rd": 0.375,
+     "acq": null,
+     "ocf": 2.099,
+     "rev": 3.224
+    },
+    {
+     "y": 2025,
+     "capex": 0.028,
+     "dep": 0.195,
+     "rd": 0.227,
+     "acq": null,
+     "ocf": 3.971,
+     "rev": 5.481
+    }
+   ],
    "roic_now": 0.7561,
    "inc_recent": 0.8164,
    "inc_earlier": null,
@@ -681,6 +1113,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.7513,
+   "ic_last_b": 1.1357,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.008,
+     "dep": 0.026,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.424,
+     "rev": 1.317
+    },
+    {
+     "y": 2022,
+     "capex": 0.006,
+     "dep": 0.02,
+     "rd": 0.147,
+     "acq": null,
+     "ocf": 0.509,
+     "rev": 1.377
+    },
+    {
+     "y": 2023,
+     "capex": 0.004,
+     "dep": 0.015,
+     "rd": 0.16,
+     "acq": null,
+     "ocf": 0.469,
+     "rev": 1.514
+    },
+    {
+     "y": 2024,
+     "capex": 0.026,
+     "dep": 0.014,
+     "rd": 0.172,
+     "acq": null,
+     "ocf": 0.633,
+     "rev": 1.718
+    },
+    {
+     "y": 2025,
+     "capex": 0.039,
+     "dep": 0.015,
+     "rd": 0.188,
+     "acq": null,
+     "ocf": 0.779,
+     "rev": 1.991
+    }
+   ],
    "roic_now": 0.6055,
    "inc_recent": 1.2357,
    "inc_earlier": null,
@@ -735,6 +1216,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.0065,
+   "ic_last_b": 10.3845,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 2.398,
+     "dep": 1.233,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.943,
+     "rev": 11.075
+    },
+    {
+     "y": 2023,
+     "capex": 2.357,
+     "dep": 1.54,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.129,
+     "rev": 8.279
+    },
+    {
+     "y": 2024,
+     "capex": 2.911,
+     "dep": 2.266,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.62,
+     "rev": 9.737
+    },
+    {
+     "y": 2025,
+     "capex": 2.766,
+     "dep": 2.304,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.545,
+     "rev": 8.92
+    }
+   ],
    "roic_now": 0.193,
    "inc_recent": 0.9014,
    "inc_earlier": null,
@@ -809,6 +1330,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.9977,
+   "ic_last_b": 0.6081,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.051,
+     "dep": 0.043,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.172,
+     "rev": 3.15
+    },
+    {
+     "y": 2023,
+     "capex": 0.081,
+     "dep": 0.047,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.537,
+     "rev": 3.627
+    },
+    {
+     "y": 2024,
+     "capex": 0.089,
+     "dep": 0.058,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.033,
+     "rev": 4.288
+    },
+    {
+     "y": 2025,
+     "capex": 0.086,
+     "dep": 0.069,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.045,
+     "rev": 4.986
+    },
+    {
+     "y": 2026,
+     "capex": 0.085,
+     "dep": 0.076,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.182,
+     "rev": 5.472
+    }
+   ],
    "roic_now": 1.5781,
    "inc_recent": 3.4152,
    "inc_earlier": null,
@@ -883,6 +1453,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.171,
+   "ic_last_b": 1.9147,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.181,
+     "dep": 0.058,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.749,
+     "rev": 2.986
+    },
+    {
+     "y": 2022,
+     "capex": 0.078,
+     "dep": 0.068,
+     "rd": 1.586,
+     "acq": null,
+     "ocf": 0.97,
+     "rev": 3.395
+    },
+    {
+     "y": 2023,
+     "capex": 0.047,
+     "dep": 0.083,
+     "rd": 1.628,
+     "acq": null,
+     "ocf": 0.496,
+     "rev": 3.696
+    },
+    {
+     "y": 2024,
+     "capex": 0.1,
+     "dep": 0.089,
+     "rd": 2.607,
+     "acq": null,
+     "ocf": 0.335,
+     "rev": 4.241
+    },
+    {
+     "y": 2025,
+     "capex": 0.084,
+     "dep": 0.093,
+     "rd": 2.05,
+     "acq": null,
+     "ocf": 1.413,
+     "rev": 5.141
+    }
+   ],
    "roic_now": 0.3179,
    "inc_recent": 0.4136,
    "inc_earlier": 0.1315,
@@ -957,6 +1576,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.8412,
+   "ic_last_b": 9.1096,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.278,
+     "dep": 0.186,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.828,
+     "rev": 6.318
+    },
+    {
+     "y": 2022,
+     "capex": 0.262,
+     "dep": 0.201,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.651,
+     "rev": 6.351
+    },
+    {
+     "y": 2023,
+     "capex": 0.264,
+     "dep": 0.199,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.237,
+     "rev": 6.662
+    },
+    {
+     "y": 2024,
+     "capex": 0.275,
+     "dep": 0.209,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.922,
+     "rev": 6.724
+    },
+    {
+     "y": 2025,
+     "capex": 0.222,
+     "dep": 0.231,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.962,
+     "rev": 6.84
+    }
+   ],
    "roic_now": 0.093,
    "inc_recent": 0.0297,
    "inc_earlier": 0.0812,
@@ -1031,6 +1699,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.53,
+   "ic_last_b": 2.526,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.673,
+     "dep": 0.814,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.748,
+     "rev": 8.598
+    },
+    {
+     "y": 2022,
+     "capex": 0.662,
+     "dep": 0.792,
+     "rd": 1.181,
+     "acq": null,
+     "ocf": 3.44,
+     "rev": 11.667
+    },
+    {
+     "y": 2023,
+     "capex": 0.846,
+     "dep": 0.807,
+     "rd": 1.358,
+     "acq": null,
+     "ocf": 2.69,
+     "rev": 12.839
+    },
+    {
+     "y": 2024,
+     "capex": 0.756,
+     "dep": 0.838,
+     "rd": 1.314,
+     "acq": null,
+     "ocf": 3.085,
+     "rev": 13.691
+    },
+    {
+     "y": 2025,
+     "capex": 0.77,
+     "dep": 0.887,
+     "rd": 1.277,
+     "acq": null,
+     "ocf": 3.88,
+     "rev": 14.733
+    }
+   ],
    "roic_now": 0.4552,
    "inc_recent": null,
    "inc_earlier": -0.6779,
@@ -1097,6 +1814,53 @@
     ]
    ],
    "last_year": 2025,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.304,
+     "dep": 0.421,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.82,
+     "rev": 10.958
+    },
+    {
+     "y": 2022,
+     "capex": 0.368,
+     "dep": 0.607,
+     "rd": null,
+     "acq": null,
+     "ocf": 6.554,
+     "rev": 17.09
+    },
+    {
+     "y": 2023,
+     "capex": 0.345,
+     "dep": 0.665,
+     "rd": null,
+     "acq": null,
+     "ocf": 7.344,
+     "rev": 21.365
+    },
+    {
+     "y": 2024,
+     "capex": 0.429,
+     "dep": 0.751,
+     "rd": null,
+     "acq": null,
+     "ocf": 8.323,
+     "rev": 23.739
+    },
+    {
+     "y": 2025,
+     "capex": 0.322,
+     "dep": 0.768,
+     "rd": null,
+     "acq": null,
+     "ocf": 9.409,
+     "rev": 26.917
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "INTU": {
@@ -1152,6 +1916,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 4.4651,
+   "ic_last_b": 22.3775,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.157,
+     "dep": 0.187,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.889,
+     "rev": 12.726
+    },
+    {
+     "y": 2023,
+     "capex": 0.26,
+     "dep": 0.806,
+     "rd": 2.539,
+     "acq": null,
+     "ocf": 5.046,
+     "rev": 14.368
+    },
+    {
+     "y": 2024,
+     "capex": 0.25,
+     "dep": 0.789,
+     "rd": 2.754,
+     "acq": null,
+     "ocf": 4.884,
+     "rev": 16.285
+    },
+    {
+     "y": 2025,
+     "capex": 0.124,
+     "dep": 0.809,
+     "rd": 2.928,
+     "acq": null,
+     "ocf": 6.207,
+     "rev": 18.831
+    },
+    {
+     "y": 2026,
+     "capex": 0.221,
+     "dep": 0.846,
+     "rd": 3.376,
+     "acq": null,
+     "ocf": 8.838,
+     "rev": 21.448
+    }
+   ],
    "roic_now": 0.19,
    "inc_recent": 0.1251,
    "inc_earlier": 0.3897,
@@ -1222,6 +2035,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 1.1065,
+   "ic_last_b": 2.9915,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.056,
+     "dep": 0.148,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.531,
+     "rev": 4.386
+    },
+    {
+     "y": 2023,
+     "capex": 0.046,
+     "dep": 0.15,
+     "rd": 1.219,
+     "acq": null,
+     "ocf": 2.071,
+     "rev": 5.005
+    },
+    {
+     "y": 2024,
+     "capex": 0.061,
+     "dep": 0.139,
+     "rd": 1.373,
+     "acq": null,
+     "ocf": 1.313,
+     "rev": 5.497
+    },
+    {
+     "y": 2025,
+     "capex": 0.102,
+     "dep": 0.18,
+     "rd": 1.485,
+     "acq": null,
+     "ocf": 1.607,
+     "rev": 6.131
+    },
+    {
+     "y": 2026,
+     "capex": 0.076,
+     "dep": 0.195,
+     "rd": 1.643,
+     "acq": null,
+     "ocf": 2.452,
+     "rev": 7.206
+    }
+   ],
    "roic_now": 0.405,
    "inc_recent": 0.2576,
    "inc_earlier": null,
@@ -1296,6 +2158,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 1.5719,
+   "ic_last_b": 2.0176,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.094,
+     "dep": 0.195,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.853,
+     "rev": 6.684
+    },
+    {
+     "y": 2023,
+     "capex": 0.184,
+     "dep": 0.224,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.975,
+     "rev": 6.661
+    },
+    {
+     "y": 2024,
+     "capex": 0.109,
+     "dep": 0.229,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.256,
+     "rev": 6.671
+    },
+    {
+     "y": 2025,
+     "capex": 0.123,
+     "dep": 0.225,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.217,
+     "rev": 7.011
+    },
+    {
+     "y": 2026,
+     "capex": 0.166,
+     "dep": 0.217,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.978,
+     "rev": 8.004
+    }
+   ],
    "roic_now": 0.4637,
    "inc_recent": null,
    "inc_earlier": -0.3529,
@@ -1370,6 +2281,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.6973,
+   "ic_last_b": 0.668,
+   "invest": [
+    {
+     "y": 2020,
+     "capex": 0.003,
+     "dep": 0.02,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.437,
+     "rev": 1.104
+    },
+    {
+     "y": 2023,
+     "capex": null,
+     "dep": 0.029,
+     "rd": 0.52,
+     "acq": null,
+     "ocf": 0.78,
+     "rev": 2.155
+    },
+    {
+     "y": 2024,
+     "capex": null,
+     "dep": 0.033,
+     "rd": 0.629,
+     "acq": null,
+     "ocf": 0.911,
+     "rev": 2.364
+    },
+    {
+     "y": 2025,
+     "capex": null,
+     "dep": 0.039,
+     "rd": 0.693,
+     "acq": null,
+     "ocf": 1.09,
+     "rev": 2.747
+    },
+    {
+     "y": 2026,
+     "capex": null,
+     "dep": 0.038,
+     "rd": 0.767,
+     "acq": null,
+     "ocf": 1.415,
+     "rev": 3.195
+    }
+   ],
    "roic_now": 0.9353,
    "inc_recent": 3.8515,
    "inc_earlier": 1.0156,
@@ -1444,6 +2404,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.8569,
+   "ic_last_b": 4.9567,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.044,
+     "dep": 0.05,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.156,
+     "rev": 5.541
+    },
+    {
+     "y": 2022,
+     "capex": 0.212,
+     "dep": 0.061,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.888,
+     "rev": 6.311
+    },
+    {
+     "y": 2023,
+     "capex": 0.235,
+     "dep": 0.069,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.718,
+     "rev": 7.14
+    },
+    {
+     "y": 2024,
+     "capex": 0.306,
+     "dep": 0.08,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.929,
+     "rev": 7.493
+    },
+    {
+     "y": 2025,
+     "capex": 0.158,
+     "dep": 0.114,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.098,
+     "rev": 8.294
+    }
+   ],
    "roic_now": 0.3431,
    "inc_recent": 0.2033,
    "inc_earlier": 0.3924,
@@ -1518,6 +2527,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.7201,
+   "ic_last_b": 3.3439,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.045,
+     "dep": 0.079,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.489,
+     "rev": 2.867
+    },
+    {
+     "y": 2022,
+     "capex": 0.064,
+     "dep": 0.098,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.46,
+     "rev": 3.272
+    },
+    {
+     "y": 2023,
+     "capex": 0.084,
+     "dep": 0.112,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.601,
+     "rev": 3.651
+    },
+    {
+     "y": 2024,
+     "capex": 0.092,
+     "dep": 0.119,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.675,
+     "rev": 3.772
+    },
+    {
+     "y": 2025,
+     "capex": 0.098,
+     "dep": 0.133,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.784,
+     "rev": 4.067
+    }
+   ],
    "roic_now": 0.2216,
    "inc_recent": 0.1826,
    "inc_earlier": 0.2656,
@@ -1543,6 +2601,53 @@
    "r": 0.1,
    "roic": [],
    "last_year": 2025,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.296,
+     "dep": 0.084,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.5,
+     "rev": 3.342
+    },
+    {
+     "y": 2022,
+     "capex": 0.281,
+     "dep": 0.104,
+     "rd": 0.512,
+     "acq": null,
+     "ocf": 1.731,
+     "rev": 4.417
+    },
+    {
+     "y": 2023,
+     "capex": 0.204,
+     "dep": 0.113,
+     "rd": 0.614,
+     "acq": null,
+     "ocf": 1.935,
+     "rev": 5.305
+    },
+    {
+     "y": 2024,
+     "capex": 0.379,
+     "dep": 0.123,
+     "rd": 0.717,
+     "acq": null,
+     "ocf": 2.258,
+     "rev": 5.956
+    },
+    {
+     "y": 2025,
+     "capex": 0.365,
+     "dep": 0.152,
+     "rd": 0.816,
+     "acq": null,
+     "ocf": 2.591,
+     "rev": 6.8
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "RMD": {
@@ -1598,6 +2703,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 1.4973,
+   "ic_last_b": 5.4662,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.135,
+     "dep": 0.16,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.351,
+     "rev": 3.578
+    },
+    {
+     "y": 2023,
+     "capex": 0.134,
+     "dep": 0.198,
+     "rd": 0.288,
+     "acq": null,
+     "ocf": 0.693,
+     "rev": 4.223
+    },
+    {
+     "y": 2024,
+     "capex": 0.115,
+     "dep": 0.216,
+     "rd": 0.308,
+     "acq": null,
+     "ocf": 1.401,
+     "rev": 4.685
+    },
+    {
+     "y": 2025,
+     "capex": 0.101,
+     "dep": 0.236,
+     "rd": 0.331,
+     "acq": null,
+     "ocf": 1.752,
+     "rev": 5.146
+    },
+    {
+     "y": 2026,
+     "capex": 0.177,
+     "dep": 0.244,
+     "rd": 0.378,
+     "acq": null,
+     "ocf": 1.806,
+     "rev": 5.653
+    }
+   ],
    "roic_now": 0.268,
    "inc_recent": 0.3623,
    "inc_earlier": 0.1918,
@@ -1672,6 +2826,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 19.8922,
+   "ic_last_b": 46.957,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.705,
+     "dep": 0.804,
+     "rd": null,
+     "acq": null,
+     "ocf": 15.227,
+     "rev": 24.105
+    },
+    {
+     "y": 2022,
+     "capex": 0.97,
+     "dep": 0.861,
+     "rd": null,
+     "acq": null,
+     "ocf": 18.849,
+     "rev": 29.31
+    },
+    {
+     "y": 2023,
+     "capex": 1.059,
+     "dep": 0.943,
+     "rd": null,
+     "acq": null,
+     "ocf": 20.755,
+     "rev": 32.653
+    },
+    {
+     "y": 2024,
+     "capex": 1.257,
+     "dep": 1.034,
+     "rd": null,
+     "acq": null,
+     "ocf": 19.95,
+     "rev": 35.926
+    },
+    {
+     "y": 2025,
+     "capex": 1.482,
+     "dep": 1.22,
+     "rd": null,
+     "acq": null,
+     "ocf": 23.059,
+     "rev": 40.0
+    }
+   ],
    "roic_now": 0.4261,
    "inc_recent": 1.1449,
    "inc_earlier": 0.385,
@@ -1746,6 +2949,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.0393,
+   "ic_last_b": 1.4176,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.022,
+     "dep": 0.028,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.18,
+     "rev": 3.074
+    },
+    {
+     "y": 2022,
+     "capex": 0.048,
+     "dep": 0.081,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.302,
+     "rev": 4.14
+    },
+    {
+     "y": 2023,
+     "capex": 0.095,
+     "dep": 0.082,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.64,
+     "rev": 5.207
+    },
+    {
+     "y": 2024,
+     "capex": 0.111,
+     "dep": 0.145,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.849,
+     "rev": 7.027
+    },
+    {
+     "y": 2025,
+     "capex": 0.155,
+     "dep": 0.142,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.186,
+     "rev": 9.102
+    }
+   ],
    "roic_now": 0.6176,
    "inc_recent": 1.1308,
    "inc_earlier": 0.1802,
@@ -1820,6 +3072,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 15.225,
+   "ic_last_b": 16.22,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.407,
+     "dep": 0.726,
+     "rd": null,
+     "acq": null,
+     "ocf": 9.463,
+     "rev": 18.884
+    },
+    {
+     "y": 2022,
+     "capex": 1.097,
+     "dep": 0.75,
+     "rd": null,
+     "acq": null,
+     "ocf": 11.195,
+     "rev": 22.237
+    },
+    {
+     "y": 2023,
+     "capex": 1.088,
+     "dep": 0.799,
+     "rd": null,
+     "acq": null,
+     "ocf": 11.98,
+     "rev": 25.098
+    },
+    {
+     "y": 2024,
+     "capex": 1.194,
+     "dep": 0.897,
+     "rd": null,
+     "acq": null,
+     "ocf": 14.78,
+     "rev": 28.167
+    },
+    {
+     "y": 2025,
+     "capex": 1.215,
+     "dep": 1.143,
+     "rd": null,
+     "acq": null,
+     "ocf": 17.648,
+     "rev": 32.791
+    }
+   ],
    "roic_now": 0.9035,
    "inc_recent": 0.8493,
    "inc_earlier": 0.745,
@@ -1894,6 +3195,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 2.0807,
+   "ic_last_b": 6.5627,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.241,
+     "dep": 0.4,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.538,
+     "rev": 7.854
+    },
+    {
+     "y": 2023,
+     "capex": 0.331,
+     "dep": 0.419,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.586,
+     "rev": 8.816
+    },
+    {
+     "y": 2024,
+     "capex": 0.409,
+     "dep": 0.457,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.068,
+     "rev": 9.597
+    },
+    {
+     "y": 2025,
+     "capex": 0.409,
+     "dep": 0.494,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.166,
+     "rev": 10.34
+    },
+    {
+     "y": 2026,
+     "capex": 0.395,
+     "dep": 0.513,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.276,
+     "rev": 11.265
+    }
+   ],
    "roic_now": 0.3056,
    "inc_recent": 0.6812,
    "inc_earlier": 0.2442,
@@ -1948,6 +3298,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.7006,
+   "ic_last_b": 0.7974,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.389,
+     "dep": 0.102,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.443,
+     "rev": 2.449
+    },
+    {
+     "y": 2022,
+     "capex": 0.365,
+     "dep": 0.156,
+     "rd": 0.484,
+     "acq": null,
+     "ocf": 0.669,
+     "rev": 2.91
+    },
+    {
+     "y": 2023,
+     "capex": 0.237,
+     "dep": 0.186,
+     "rd": 0.506,
+     "acq": null,
+     "ocf": 0.749,
+     "rev": 3.622
+    },
+    {
+     "y": 2024,
+     "capex": 0.359,
+     "dep": 0.218,
+     "rd": 0.552,
+     "acq": null,
+     "ocf": 0.99,
+     "rev": 4.033
+    },
+    {
+     "y": 2025,
+     "capex": 0.363,
+     "dep": 0.252,
+     "rd": 0.599,
+     "acq": null,
+     "ocf": 1.441,
+     "rev": 4.662
+    }
+   ],
    "roic_now": 0.7182,
    "inc_recent": 5.0211,
    "inc_earlier": 0.3909,
@@ -2022,6 +3421,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.0881,
+   "ic_last_b": 1.9001,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.12,
+     "dep": 0.105,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.756,
+     "rev": 3.215
+    },
+    {
+     "y": 2022,
+     "capex": 0.159,
+     "dep": 0.112,
+     "rd": 0.255,
+     "acq": null,
+     "ocf": 0.543,
+     "rev": 3.367
+    },
+    {
+     "y": 2023,
+     "capex": 0.134,
+     "dep": 0.115,
+     "rd": 0.191,
+     "acq": null,
+     "ocf": 0.907,
+     "rev": 3.661
+    },
+    {
+     "y": 2024,
+     "capex": 0.131,
+     "dep": 0.13,
+     "rd": 0.22,
+     "acq": null,
+     "ocf": 0.929,
+     "rev": 3.898
+    },
+    {
+     "y": 2025,
+     "capex": 0.138,
+     "dep": 0.145,
+     "rd": 0.251,
+     "acq": null,
+     "ocf": 1.182,
+     "rev": 4.304
+    }
+   ],
    "roic_now": 0.5334,
    "inc_recent": 0.4995,
    "inc_earlier": 0.4056,
@@ -2047,6 +3495,53 @@
    "r": 0.085,
    "roic": [],
    "last_year": 2025,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.053,
+     "dep": 0.048,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.807,
+     "rev": 1.328
+    },
+    {
+     "y": 2022,
+     "capex": 0.027,
+     "dep": 0.047,
+     "rd": 0.086,
+     "acq": null,
+     "ocf": 0.831,
+     "rev": 1.425
+    },
+    {
+     "y": 2023,
+     "capex": 0.046,
+     "dep": 0.044,
+     "rd": 0.091,
+     "acq": null,
+     "ocf": 0.854,
+     "rev": 1.493
+    },
+    {
+     "y": 2024,
+     "capex": 0.028,
+     "dep": 0.037,
+     "rd": 0.097,
+     "acq": null,
+     "ocf": 0.903,
+     "rev": 1.557
+    },
+    {
+     "y": 2025,
+     "capex": 0.023,
+     "dep": 0.031,
+     "rd": 0.104,
+     "acq": null,
+     "ocf": 1.091,
+     "rev": 1.657
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "NDAQ": {
@@ -2102,6 +3597,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.942,
+   "ic_last_b": 19.938,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.163,
+     "dep": 0.108,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.083,
+     "rev": 5.886
+    },
+    {
+     "y": 2022,
+     "capex": 0.152,
+     "dep": 0.258,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.706,
+     "rev": 6.226
+    },
+    {
+     "y": 2023,
+     "capex": 0.158,
+     "dep": 0.323,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.696,
+     "rev": 6.064
+    },
+    {
+     "y": 2024,
+     "capex": 0.207,
+     "dep": 0.613,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.939,
+     "rev": 7.4
+    },
+    {
+     "y": 2025,
+     "capex": 0.266,
+     "dep": 0.632,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.255,
+     "rev": 8.262
+    }
+   ],
    "roic_now": 0.0831,
    "inc_recent": 0.0708,
    "inc_earlier": 0.3135,
@@ -2175,6 +3719,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.6358,
+   "ic_last_b": 8.3095,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.139,
+     "dep": 0.257,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.005,
+     "rev": 6.218
+    },
+    {
+     "y": 2022,
+     "capex": 0.283,
+     "dep": 0.331,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.474,
+     "rev": 5.468
+    },
+    {
+     "y": 2023,
+     "capex": 0.271,
+     "dep": 0.373,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.151,
+     "rev": 5.916
+    },
+    {
+     "y": 2024,
+     "capex": 0.317,
+     "dep": 0.431,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.838,
+     "rev": 7.088
+    },
+    {
+     "y": 2025,
+     "capex": 0.326,
+     "dep": 0.48,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.901,
+     "rev": 7.718
+    }
+   ],
    "roic_now": 0.2945,
    "inc_recent": 0.1909,
    "inc_earlier": 0.1783,
@@ -2245,6 +3838,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 5.0143,
+   "ic_last_b": 42.6425,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.035,
+     "dep": 0.178,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.598,
+     "rev": 8.297
+    },
+    {
+     "y": 2022,
+     "capex": 0.089,
+     "dep": 1.013,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.603,
+     "rev": 11.181
+    },
+    {
+     "y": 2023,
+     "capex": 0.143,
+     "dep": 1.143,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.71,
+     "rev": 12.497
+    },
+    {
+     "y": 2024,
+     "capex": 0.124,
+     "dep": 1.173,
+     "rd": null,
+     "acq": null,
+     "ocf": 5.689,
+     "rev": 14.208
+    },
+    {
+     "y": 2025,
+     "capex": 0.195,
+     "dep": 1.179,
+     "rd": null,
+     "acq": null,
+     "ocf": 5.651,
+     "rev": 15.336
+    }
+   ],
    "roic_now": 0.109,
    "inc_recent": 0.0483,
    "inc_earlier": 4.2606,
@@ -2319,6 +3961,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 11.5026,
+   "ic_last_b": 31.3793,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.525,
+     "dep": 0.208,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.393,
+     "rev": 29.698
+    },
+    {
+     "y": 2022,
+     "capex": 0.408,
+     "dep": 14.363,
+     "rd": 2.711,
+     "acq": null,
+     "ocf": 2.026,
+     "rev": 31.616
+    },
+    {
+     "y": 2023,
+     "capex": 0.349,
+     "dep": 14.554,
+     "rd": 2.676,
+     "acq": null,
+     "ocf": 7.274,
+     "rev": 33.723
+    },
+    {
+     "y": 2024,
+     "capex": 0.44,
+     "dep": 15.63,
+     "rd": 2.925,
+     "acq": null,
+     "ocf": 7.361,
+     "rev": 39.001
+    },
+    {
+     "y": 2025,
+     "capex": 0.688,
+     "dep": 16.756,
+     "rd": 3.391,
+     "acq": null,
+     "ocf": 10.149,
+     "rev": 45.183
+    }
+   ],
    "roic_now": 0.3383,
    "inc_recent": 0.9688,
    "inc_earlier": 0.1318,
@@ -2393,6 +4084,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.0301,
+   "ic_last_b": 4.5093,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.051,
+     "dep": 0.034,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.597,
+     "rev": 3.495
+    },
+    {
+     "y": 2022,
+     "capex": 0.06,
+     "dep": 0.167,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.651,
+     "rev": 3.958
+    },
+    {
+     "y": 2023,
+     "capex": 0.045,
+     "dep": 0.158,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.076,
+     "rev": 3.773
+    },
+    {
+     "y": 2024,
+     "capex": 0.061,
+     "dep": 0.133,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.101,
+     "rev": 4.095
+    },
+    {
+     "y": 2025,
+     "capex": 0.071,
+     "dep": 0.122,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.753,
+     "rev": 4.714
+    }
+   ],
    "roic_now": 0.1957,
    "inc_recent": 1.0657,
    "inc_earlier": 0.0577,
@@ -2467,6 +4207,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.5495,
+   "ic_last_b": 5.7912,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.308,
+     "dep": 0.103,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.012,
+     "rev": 4.983
+    },
+    {
+     "y": 2022,
+     "capex": 0.244,
+     "dep": 0.164,
+     "rd": 0.835,
+     "acq": null,
+     "ocf": 0.788,
+     "rev": 4.86
+    },
+    {
+     "y": 2023,
+     "capex": 0.194,
+     "dep": 0.178,
+     "rd": 0.905,
+     "acq": null,
+     "ocf": 1.376,
+     "rev": 5.228
+    },
+    {
+     "y": 2024,
+     "capex": 0.194,
+     "dep": 0.18,
+     "rd": 0.994,
+     "acq": null,
+     "ocf": 1.432,
+     "rev": 6.297
+    },
+    {
+     "y": 2025,
+     "capex": 0.27,
+     "dep": 0.189,
+     "rd": 1.126,
+     "acq": null,
+     "ocf": 1.633,
+     "rev": 7.246
+    }
+   ],
    "roic_now": 0.2615,
    "inc_recent": 0.2247,
    "inc_earlier": 0.3865,
@@ -2541,6 +4330,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.5747,
+   "ic_last_b": 3.1531,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.051,
+     "dep": 0.087,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.538,
+     "rev": 1.844
+    },
+    {
+     "y": 2023,
+     "capex": 0.061,
+     "dep": 0.138,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.646,
+     "rev": 2.086
+    },
+    {
+     "y": 2024,
+     "capex": 0.086,
+     "dep": 0.156,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.7,
+     "rev": 2.203
+    },
+    {
+     "y": 2025,
+     "capex": 0.109,
+     "dep": 0.189,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.726,
+     "rev": 2.322
+    },
+    {
+     "y": 2026,
+     "capex": 0.115,
+     "dep": 0.213,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.822,
+     "rev": 2.476
+    }
+   ],
    "roic_now": 0.1947,
    "inc_recent": 0.0888,
    "inc_earlier": 0.3701,
@@ -2615,6 +4453,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 6.5257,
+   "ic_last_b": 59.795,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.717,
+     "dep": 0.678,
+     "rd": null,
+     "acq": null,
+     "ocf": 6.0,
+     "rev": 26.492
+    },
+    {
+     "y": 2023,
+     "capex": 0.798,
+     "dep": 3.786,
+     "rd": 5.055,
+     "acq": null,
+     "ocf": 7.111,
+     "rev": 31.352
+    },
+    {
+     "y": 2024,
+     "capex": 0.736,
+     "dep": 3.959,
+     "rd": 4.906,
+     "acq": null,
+     "ocf": 10.234,
+     "rev": 34.857
+    },
+    {
+     "y": 2025,
+     "capex": 0.658,
+     "dep": 3.477,
+     "rd": 5.493,
+     "acq": null,
+     "ocf": 13.092,
+     "rev": 37.895
+    },
+    {
+     "y": 2026,
+     "capex": 0.594,
+     "dep": 3.631,
+     "rd": 5.993,
+     "acq": null,
+     "ocf": 14.996,
+     "rev": 41.525
+    }
+   ],
    "roic_now": 0.1089,
    "inc_recent": 0.2023,
    "inc_earlier": 0.0127,
@@ -2688,6 +4575,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.6768,
+   "ic_last_b": 7.483,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.199,
+     "dep": 0.27,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.449,
+     "rev": 4.972
+    },
+    {
+     "y": 2022,
+     "capex": 0.193,
+     "dep": 0.265,
+     "rd": 0.032,
+     "acq": null,
+     "ocf": 0.733,
+     "rev": 5.663
+    },
+    {
+     "y": 2023,
+     "capex": 0.219,
+     "dep": 0.272,
+     "rd": 0.036,
+     "acq": null,
+     "ocf": 0.901,
+     "rev": 6.64
+    },
+    {
+     "y": 2024,
+     "capex": 0.321,
+     "dep": 0.277,
+     "rd": 0.033,
+     "acq": null,
+     "ocf": 1.298,
+     "rev": 7.43
+    },
+    {
+     "y": 2025,
+     "capex": 0.453,
+     "dep": 0.283,
+     "rd": 0.037,
+     "acq": null,
+     "ocf": 1.884,
+     "rev": 8.252
+    }
+   ],
    "roic_now": 0.2065,
    "inc_recent": null,
    "inc_earlier": null,
@@ -2762,6 +4698,46 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 4.7673,
+   "ic_last_b": 4.5416,
+   "invest": [
+    {
+     "y": 2023,
+     "capex": 0.572,
+     "dep": 0.549,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.208,
+     "rev": 18.012
+    },
+    {
+     "y": 2024,
+     "capex": 0.563,
+     "dep": 0.562,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.158,
+     "rev": 19.203
+    },
+    {
+     "y": 2025,
+     "capex": 0.547,
+     "dep": 0.582,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.94,
+     "rev": 20.561
+    },
+    {
+     "y": 2026,
+     "capex": 0.665,
+     "dep": 0.586,
+     "rd": null,
+     "acq": null,
+     "ocf": 5.441,
+     "rev": 21.947
+    }
+   ],
    "roic_now": 1.2002,
    "inc_recent": null,
    "inc_earlier": 0.415,
@@ -2836,6 +4812,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.5723,
+   "ic_last_b": 11.9076,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.111,
+     "dep": 0.292,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.16,
+     "rev": 5.547
+    },
+    {
+     "y": 2022,
+     "capex": 0.139,
+     "dep": 0.319,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.149,
+     "rev": 6.151
+    },
+    {
+     "y": 2023,
+     "capex": 0.136,
+     "dep": 0.338,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.735,
+     "rev": 6.597
+    },
+    {
+     "y": 2024,
+     "capex": 0.127,
+     "dep": 0.383,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.829,
+     "rev": 6.941
+    },
+    {
+     "y": 2025,
+     "capex": 0.13,
+     "dep": 0.423,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.802,
+     "rev": 7.401
+    }
+   ],
    "roic_now": 0.1301,
    "inc_recent": 0.1384,
    "inc_earlier": 0.0874,
@@ -2910,6 +4935,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 17.1153,
+   "ic_last_b": 40.2225,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 1.55,
+     "dep": 1.695,
+     "rd": null,
+     "acq": null,
+     "ocf": 14.645,
+     "rev": 27.716
+    },
+    {
+     "y": 2022,
+     "capex": 1.855,
+     "dep": 1.626,
+     "rd": null,
+     "acq": null,
+     "ocf": 21.079,
+     "rev": 52.862
+    },
+    {
+     "y": 2023,
+     "capex": 1.563,
+     "dep": 1.651,
+     "rd": null,
+     "acq": null,
+     "ocf": 18.559,
+     "rev": 60.515
+    },
+    {
+     "y": 2024,
+     "capex": 1.911,
+     "dep": 1.676,
+     "rd": null,
+     "acq": null,
+     "ocf": 14.05,
+     "rev": 65.949
+    },
+    {
+     "y": 2025,
+     "capex": 2.425,
+     "dep": 1.777,
+     "rd": null,
+     "acq": null,
+     "ocf": 18.428,
+     "rev": 72.23
+    }
+   ],
    "roic_now": 0.4554,
    "inc_recent": null,
    "inc_earlier": null,
@@ -2952,6 +5026,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.5377,
+   "ic_last_b": 7.554,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.05,
+     "dep": 0.093,
+     "rd": 1.503,
+     "acq": null,
+     "ocf": -0.136,
+     "rev": 5.6
+    },
+    {
+     "y": 2023,
+     "capex": 0.039,
+     "dep": 0.07,
+     "rd": 1.73,
+     "acq": null,
+     "ocf": 0.944,
+     "rev": 7.06
+    },
+    {
+     "y": 2024,
+     "capex": 0.019,
+     "dep": 0.036,
+     "rd": 1.367,
+     "acq": null,
+     "ocf": 1.616,
+     "rev": 8.88
+    },
+    {
+     "y": 2025,
+     "capex": 0.026,
+     "dep": 0.031,
+     "rd": 1.536,
+     "acq": null,
+     "ocf": 2.033,
+     "rev": 11.556
+    }
+   ],
    "roic_now": 0.1967,
    "inc_recent": null,
    "inc_earlier": null,
@@ -3019,6 +5133,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 4.7914,
+   "ic_last_b": 19.647,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.908,
+     "dep": 1.265,
+     "rd": null,
+     "acq": null,
+     "ocf": 6.34,
+     "rev": 25.371
+    },
+    {
+     "y": 2022,
+     "capex": 0.706,
+     "dep": 1.317,
+     "rd": 3.253,
+     "acq": null,
+     "ocf": 5.813,
+     "rev": 27.518
+    },
+    {
+     "y": 2023,
+     "capex": 0.623,
+     "dep": 1.072,
+     "rd": 2.973,
+     "acq": null,
+     "ocf": 4.843,
+     "rev": 29.771
+    },
+    {
+     "y": 2024,
+     "capex": 0.683,
+     "dep": 1.032,
+     "rd": 2.979,
+     "acq": null,
+     "ocf": 7.45,
+     "rev": 31.797
+    },
+    {
+     "y": 2025,
+     "capex": 0.852,
+     "dep": 0.963,
+     "rd": 3.103,
+     "acq": null,
+     "ocf": 6.416,
+     "rev": 33.172
+    }
+   ],
    "roic_now": 0.2383,
    "inc_recent": 0.3276,
    "inc_earlier": 0.2764,
@@ -3093,6 +5256,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.3185,
+   "ic_last_b": 14.4164,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.134,
+     "dep": 0.135,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.848,
+     "rev": 17.661
+    },
+    {
+     "y": 2022,
+     "capex": 0.171,
+     "dep": 0.341,
+     "rd": 2.136,
+     "acq": null,
+     "ocf": 0.176,
+     "rev": 17.532
+    },
+    {
+     "y": 2023,
+     "capex": 0.151,
+     "dep": 0.409,
+     "rd": 2.721,
+     "acq": null,
+     "ocf": 0.101,
+     "rev": 21.916
+    },
+    {
+     "y": 2024,
+     "capex": 0.154,
+     "dep": 0.376,
+     "rd": 2.914,
+     "acq": null,
+     "ocf": 1.707,
+     "rev": 24.121
+    },
+    {
+     "y": 2025,
+     "capex": 0.155,
+     "dep": 0.37,
+     "rd": 2.908,
+     "acq": null,
+     "ocf": 2.58,
+     "rev": 24.194
+    }
+   ],
    "roic_now": 0.0789,
    "inc_recent": 0.0838,
    "inc_earlier": 0.1088,
@@ -3110,6 +5322,44 @@
    "r": 0.1,
    "roic": [],
    "last_year": 2025,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.099,
+     "dep": 0.064,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.021,
+     "rev": 8.936
+    },
+    {
+     "y": 2023,
+     "capex": 0.07,
+     "dep": 0.085,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.87,
+     "rev": 1.863
+    },
+    {
+     "y": 2024,
+     "capex": 0.101,
+     "dep": 0.104,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.705,
+     "rev": 2.226
+    },
+    {
+     "y": 2025,
+     "capex": 0.126,
+     "dep": 0.136,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.03,
+     "rev": 2.647
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "FISV": {
@@ -3165,6 +5415,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 4.7114,
+   "ic_last_b": 52.3315,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 1.16,
+     "dep": 3.248,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.034,
+     "rev": 16.226
+    },
+    {
+     "y": 2022,
+     "capex": 1.479,
+     "dep": 3.169,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.618,
+     "rev": 17.737
+    },
+    {
+     "y": 2023,
+     "capex": 1.388,
+     "dep": 3.121,
+     "rd": null,
+     "acq": null,
+     "ocf": 5.162,
+     "rev": 19.093
+    },
+    {
+     "y": 2024,
+     "capex": 1.569,
+     "dep": 3.095,
+     "rd": null,
+     "acq": null,
+     "ocf": 6.631,
+     "rev": 20.456
+    },
+    {
+     "y": 2025,
+     "capex": 1.763,
+     "dep": 3.161,
+     "rd": null,
+     "acq": null,
+     "ocf": 6.062,
+     "rev": 21.193
+    }
+   ],
    "roic_now": 0.0942,
    "inc_recent": null,
    "inc_earlier": 0.0132,
@@ -3194,6 +5493,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": -0.072,
+   "ic_last_b": 0.8427,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.018,
+     "dep": 0.013,
+     "rd": null,
+     "acq": null,
+     "ocf": -0.073,
+     "rev": 0.772
+    },
+    {
+     "y": 2023,
+     "capex": 0.033,
+     "dep": 0.035,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.14,
+     "rev": 1.45
+    },
+    {
+     "y": 2024,
+     "capex": 0.039,
+     "dep": 0.051,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.345,
+     "rev": 1.676
+    },
+    {
+     "y": 2025,
+     "capex": 0.056,
+     "dep": 0.077,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.542,
+     "rev": 2.747
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "SPG": {
@@ -3249,6 +5588,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.5086,
+   "ic_last_b": 29.3107,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.528,
+     "dep": 1.263,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.637,
+     "rev": 5.117
+    },
+    {
+     "y": 2022,
+     "capex": 0.65,
+     "dep": 1.292,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.767,
+     "rev": 5.291
+    },
+    {
+     "y": 2023,
+     "capex": 0.793,
+     "dep": 1.334,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.931,
+     "rev": 5.659
+    },
+    {
+     "y": 2024,
+     "capex": 0.756,
+     "dep": 1.36,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.815,
+     "rev": 5.964
+    },
+    {
+     "y": 2025,
+     "capex": 0.934,
+     "dep": 1.554,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.137,
+     "rev": 6.365
+    }
+   ],
    "roic_now": 0.0883,
    "inc_recent": null,
    "inc_earlier": -0.0057,
@@ -3322,6 +5710,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 58.5894,
+   "ic_last_b": 164.0215,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 18.567,
+     "dep": 7.967,
+     "rd": null,
+     "acq": null,
+     "ocf": 57.683,
+     "rev": 117.929
+    },
+    {
+     "y": 2022,
+     "capex": 31.186,
+     "dep": 8.686,
+     "rd": 35.338,
+     "acq": null,
+     "ocf": 50.475,
+     "rev": 116.609
+    },
+    {
+     "y": 2023,
+     "capex": 27.045,
+     "dep": 11.178,
+     "rd": 38.483,
+     "acq": null,
+     "ocf": 71.113,
+     "rev": 134.902
+    },
+    {
+     "y": 2024,
+     "capex": 37.256,
+     "dep": 15.498,
+     "rd": 43.873,
+     "acq": null,
+     "ocf": 91.328,
+     "rev": 164.501
+    },
+    {
+     "y": 2025,
+     "capex": 69.691,
+     "dep": 18.616,
+     "rd": 57.372,
+     "acq": null,
+     "ocf": 115.8,
+     "rev": 200.966
+    }
+   ],
    "roic_now": 0.4339,
    "inc_recent": 0.3399,
    "inc_earlier": 0.635,
@@ -3396,6 +5833,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 3.2061,
+   "ic_last_b": 11.0343,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.223,
+     "dep": 0.299,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.588,
+     "rev": 14.136
+    },
+    {
+     "y": 2022,
+     "capex": 0.292,
+     "dep": 0.324,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.504,
+     "rev": 15.992
+    },
+    {
+     "y": 2023,
+     "capex": 0.301,
+     "dep": 0.348,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.39,
+     "rev": 17.678
+    },
+    {
+     "y": 2024,
+     "capex": 0.371,
+     "dep": 0.379,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.146,
+     "rev": 19.838
+    },
+    {
+     "y": 2025,
+     "capex": 0.383,
+     "dep": 0.376,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.195,
+     "rev": 21.322
+    }
+   ],
    "roic_now": 0.2777,
    "inc_recent": 1.5136,
    "inc_earlier": 0.3273,
@@ -3470,6 +5956,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.9423,
+   "ic_last_b": 1.8317,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.167,
+     "dep": 0.23,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.716,
+     "rev": 6.218
+    },
+    {
+     "y": 2023,
+     "capex": 0.217,
+     "dep": 0.221,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.411,
+     "rev": 6.444
+    },
+    {
+     "y": 2024,
+     "capex": 0.165,
+     "dep": 0.229,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.07,
+     "rev": 6.631
+    },
+    {
+     "y": 2025,
+     "capex": 0.216,
+     "dep": 0.22,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.235,
+     "rev": 7.079
+    },
+    {
+     "y": 2026,
+     "capex": 0.449,
+     "dep": 0.233,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.154,
+     "rev": 8.114
+    }
+   ],
    "roic_now": 0.468,
    "inc_recent": 1.4929,
    "inc_earlier": null,
@@ -3544,6 +6079,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 2.0433,
+   "ic_last_b": 3.052,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.558,
+     "dep": 0.361,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.739,
+     "rev": 18.916
+    },
+    {
+     "y": 2023,
+     "capex": 0.654,
+     "dep": 0.395,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.689,
+     "rev": 18.696
+    },
+    {
+     "y": 2024,
+     "capex": 0.763,
+     "dep": 0.419,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.514,
+     "rev": 20.377
+    },
+    {
+     "y": 2025,
+     "capex": 0.72,
+     "dep": 0.447,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.357,
+     "rev": 21.129
+    },
+    {
+     "y": 2026,
+     "capex": 0.819,
+     "dep": 0.509,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.027,
+     "rev": 22.751
+    }
+   ],
    "roic_now": 0.6943,
    "inc_recent": 0.7823,
    "inc_earlier": null,
@@ -3618,6 +6202,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.967,
+   "ic_last_b": 3.1563,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.051,
+     "dep": 0.2,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.829,
+     "rev": 3.816
+    },
+    {
+     "y": 2022,
+     "capex": 0.06,
+     "dep": 0.195,
+     "rd": 0.794,
+     "acq": null,
+     "ocf": 0.98,
+     "rev": 4.091
+    },
+    {
+     "y": 2023,
+     "capex": 0.077,
+     "dep": 0.171,
+     "rd": 0.84,
+     "acq": null,
+     "ocf": 1.048,
+     "rev": 4.254
+    },
+    {
+     "y": 2024,
+     "capex": 0.027,
+     "dep": 0.135,
+     "rd": 0.814,
+     "acq": null,
+     "ocf": 1.288,
+     "rev": 4.573
+    },
+    {
+     "y": 2025,
+     "capex": 0.024,
+     "dep": 0.117,
+     "rd": 0.842,
+     "acq": null,
+     "ocf": 1.599,
+     "rev": 4.951
+    }
+   ],
    "roic_now": 0.285,
    "inc_recent": 0.7612,
    "inc_earlier": 0.3037,
@@ -3692,6 +6325,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.2589,
+   "ic_last_b": 3.6761,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.157,
+     "dep": 0.16,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.77,
+     "rev": 6.011
+    },
+    {
+     "y": 2022,
+     "capex": 0.174,
+     "dep": 0.177,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.941,
+     "rev": 6.981
+    },
+    {
+     "y": 2023,
+     "capex": 0.173,
+     "dep": 0.177,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.433,
+     "rev": 7.347
+    },
+    {
+     "y": 2024,
+     "capex": 0.227,
+     "dep": 0.175,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.173,
+     "rev": 7.546
+    },
+    {
+     "y": 2025,
+     "capex": 0.245,
+     "dep": 0.179,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.296,
+     "rev": 8.2
+    }
+   ],
    "roic_now": 0.337,
    "inc_recent": 0.458,
    "inc_earlier": 0.3425,
@@ -3766,6 +6448,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 3.5157,
+   "ic_last_b": 32.3335,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.525,
+     "dep": 1.272,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.263,
+     "rev": 17.108
+    },
+    {
+     "y": 2022,
+     "capex": 0.588,
+     "dep": 0.998,
+     "rd": 1.454,
+     "acq": null,
+     "ocf": 2.624,
+     "rev": 18.449
+    },
+    {
+     "y": 2023,
+     "capex": 0.575,
+     "dep": 1.028,
+     "rd": 1.388,
+     "acq": null,
+     "ocf": 3.711,
+     "rev": 20.498
+    },
+    {
+     "y": 2024,
+     "capex": 0.755,
+     "dep": 1.05,
+     "rd": 1.466,
+     "acq": null,
+     "ocf": 4.242,
+     "rev": 22.595
+    },
+    {
+     "y": 2025,
+     "capex": 0.761,
+     "dep": 1.193,
+     "rd": 1.623,
+     "acq": null,
+     "ocf": 5.044,
+     "rev": 25.116
+    }
+   ],
    "roic_now": 0.1079,
    "inc_recent": 0.1255,
    "inc_earlier": 0.0708,
@@ -3840,6 +6571,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.4794,
+   "ic_last_b": 2.0071,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.442,
+     "dep": 0.255,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.282,
+     "rev": 7.547
+    },
+    {
+     "y": 2022,
+     "capex": 0.479,
+     "dep": 0.287,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.323,
+     "rev": 8.635
+    },
+    {
+     "y": 2023,
+     "capex": 0.561,
+     "dep": 0.319,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.783,
+     "rev": 9.872
+    },
+    {
+     "y": 2024,
+     "capex": 0.594,
+     "dep": 0.335,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.105,
+     "rev": 11.314
+    },
+    {
+     "y": 2025,
+     "capex": 0.666,
+     "dep": 0.361,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.114,
+     "rev": 11.926
+    }
+   ],
    "roic_now": 0.7342,
    "inc_recent": 1.1075,
    "inc_earlier": null,
@@ -3914,6 +6694,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 5.0759,
+   "ic_last_b": 9.5426,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.307,
+     "dep": 0.363,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.313,
+     "rev": 9.212
+    },
+    {
+     "y": 2023,
+     "capex": 0.342,
+     "dep": 0.415,
+     "rd": 1.297,
+     "acq": null,
+     "ocf": 3.67,
+     "rev": 10.496
+    },
+    {
+     "y": 2024,
+     "capex": 0.277,
+     "dep": 0.402,
+     "rd": 1.279,
+     "acq": null,
+     "ocf": 3.309,
+     "rev": 9.812
+    },
+    {
+     "y": 2025,
+     "capex": 0.335,
+     "dep": 0.394,
+     "rd": 1.36,
+     "acq": null,
+     "ocf": 4.082,
+     "rev": 12.156
+    },
+    {
+     "y": 2026,
+     "capex": 0.376,
+     "dep": 0.394,
+     "rd": 1.532,
+     "acq": null,
+     "ocf": 4.143,
+     "rev": 13.579
+    }
+   ],
    "roic_now": 0.5403,
    "inc_recent": 0.6088,
    "inc_earlier": 0.3293,
@@ -3988,6 +6817,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 3.2311,
+   "ic_last_b": 24.2087,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.127,
+     "dep": 0.148,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.402,
+     "rev": 4.69
+    },
+    {
+     "y": 2022,
+     "capex": 0.09,
+     "dep": 0.363,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.056,
+     "rev": 5.019
+    },
+    {
+     "y": 2023,
+     "capex": 0.076,
+     "dep": 0.353,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.454,
+     "rev": 5.579
+    },
+    {
+     "y": 2024,
+     "capex": 0.094,
+     "dep": 0.337,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.691,
+     "rev": 6.13
+    },
+    {
+     "y": 2025,
+     "capex": 0.084,
+     "dep": 0.331,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.277,
+     "rev": 6.521
+    }
+   ],
    "roic_now": 0.1304,
    "inc_recent": null,
    "inc_earlier": 0.1512,
@@ -4054,6 +6932,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.826,
+   "ic_last_b": 8.4536,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.288,
+     "dep": 0.553,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.685,
+     "rev": 4.585
+    },
+    {
+     "y": 2023,
+     "capex": 0.362,
+     "dep": 0.553,
+     "rd": 0.098,
+     "acq": null,
+     "ocf": 0.757,
+     "rev": 4.536
+    },
+    {
+     "y": 2024,
+     "capex": 0.36,
+     "dep": 0.565,
+     "rd": 0.104,
+     "acq": null,
+     "ocf": 0.973,
+     "rev": 5.139
+    },
+    {
+     "y": 2025,
+     "capex": 0.37,
+     "dep": 0.476,
+     "rd": 0.108,
+     "acq": null,
+     "ocf": 1.148,
+     "rev": 5.46
+    },
+    {
+     "y": 2026,
+     "capex": 0.369,
+     "dep": 0.486,
+     "rd": 0.113,
+     "acq": null,
+     "ocf": 1.341,
+     "rev": 5.936
+    }
+   ],
    "roic_now": 0.0867,
    "inc_recent": 0.0857,
    "inc_earlier": null,
@@ -4127,6 +7054,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.4952,
+   "ic_last_b": 4.675,
+   "invest": [
+    {
+     "y": 2019,
+     "capex": 0.203,
+     "dep": 0.198,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.607,
+     "rev": 2.822
+    },
+    {
+     "y": 2023,
+     "capex": 0.365,
+     "dep": 0.364,
+     "rd": 2.247,
+     "acq": null,
+     "ocf": 1.657,
+     "rev": 6.216
+    },
+    {
+     "y": 2024,
+     "capex": 0.242,
+     "dep": 0.282,
+     "rd": 2.464,
+     "acq": null,
+     "ocf": 2.149,
+     "rev": 7.259
+    },
+    {
+     "y": 2025,
+     "capex": 0.272,
+     "dep": 0.326,
+     "rd": 2.626,
+     "acq": null,
+     "ocf": 2.461,
+     "rev": 8.446
+    },
+    {
+     "y": 2026,
+     "capex": 0.162,
+     "dep": 0.347,
+     "rd": 2.679,
+     "acq": null,
+     "ocf": 2.939,
+     "rev": 9.552
+    }
+   ],
    "roic_now": 0.1002,
    "inc_recent": 0.2381,
    "inc_earlier": -0.1274,
@@ -4193,6 +7169,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 1.0275,
+   "ic_last_b": 5.5183,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.029,
+     "dep": 0.082,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.444,
+     "rev": 5.709
+    },
+    {
+     "y": 2023,
+     "capex": 0.075,
+     "dep": 0.299,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.823,
+     "rev": 6.061
+    },
+    {
+     "y": 2024,
+     "capex": 0.113,
+     "dep": 0.32,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.056,
+     "rev": 6.507
+    },
+    {
+     "y": 2025,
+     "capex": 0.115,
+     "dep": 0.327,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.171,
+     "rev": 6.889
+    },
+    {
+     "y": 2026,
+     "capex": 0.113,
+     "dep": 0.341,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.346,
+     "rev": 7.477
+    }
+   ],
    "roic_now": 0.182,
    "inc_recent": 0.3166,
    "inc_earlier": 0.0799,
@@ -4267,6 +7292,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.2952,
+   "ic_last_b": 7.628,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.243,
+     "dep": 0.438,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.837,
+     "rev": 8.171
+    },
+    {
+     "y": 2022,
+     "capex": 0.256,
+     "dep": 0.44,
+     "rd": 0.779,
+     "acq": null,
+     "ocf": 1.823,
+     "rev": 9.112
+    },
+    {
+     "y": 2023,
+     "capex": 0.253,
+     "dep": 0.356,
+     "rd": 0.858,
+     "acq": null,
+     "ocf": 2.044,
+     "rev": 9.978
+    },
+    {
+     "y": 2024,
+     "capex": 0.257,
+     "dep": 0.336,
+     "rd": 0.917,
+     "acq": null,
+     "ocf": 2.391,
+     "rev": 10.817
+    },
+    {
+     "y": 2025,
+     "capex": 0.265,
+     "dep": 0.425,
+     "rd": 0.97,
+     "acq": null,
+     "ocf": 2.837,
+     "rev": 11.682
+    }
+   ],
    "roic_now": 0.3532,
    "inc_recent": 0.2307,
    "inc_earlier": 1.0173,
@@ -4337,6 +7411,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.8921,
+   "ic_last_b": 20.38,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.856,
+     "dep": 1.105,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.374,
+     "rev": 20.502
+    },
+    {
+     "y": 2022,
+     "capex": 0.989,
+     "dep": 1.061,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.888,
+     "rev": 21.156
+    },
+    {
+     "y": 2023,
+     "capex": 1.224,
+     "dep": 1.087,
+     "rd": 0.651,
+     "acq": null,
+     "ocf": 3.062,
+     "rev": 25.506
+    },
+    {
+     "y": 2024,
+     "capex": 1.278,
+     "dep": 1.136,
+     "rd": 0.643,
+     "acq": null,
+     "ocf": 3.332,
+     "rev": 27.829
+    },
+    {
+     "y": 2025,
+     "capex": 1.273,
+     "dep": 1.188,
+     "rd": 0.6,
+     "acq": null,
+     "ocf": 3.81,
+     "rev": 27.733
+    }
+   ],
    "roic_now": 0.1451,
    "inc_recent": null,
    "inc_earlier": null,
@@ -4411,6 +7534,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.7228,
+   "ic_last_b": 24.8865,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 1.316,
+     "dep": 1.185,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.787,
+     "rev": 13.322
+    },
+    {
+     "y": 2022,
+     "capex": 1.454,
+     "dep": 1.441,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.19,
+     "rev": 13.511
+    },
+    {
+     "y": 2023,
+     "capex": 1.631,
+     "dep": 1.599,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.618,
+     "rev": 14.965
+    },
+    {
+     "y": 2024,
+     "capex": 1.855,
+     "dep": 1.784,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.936,
+     "rev": 16.032
+    },
+    {
+     "y": 2025,
+     "capex": 1.887,
+     "dep": 1.928,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.296,
+     "rev": 16.591
+    }
+   ],
    "roic_now": 0.1114,
    "inc_recent": 0.1608,
    "inc_earlier": 0.2589,
@@ -4485,6 +7657,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.3324,
+   "ic_last_b": 14.625,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.13,
+     "dep": 0.491,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.073,
+     "rev": 7.822
+    },
+    {
+     "y": 2022,
+     "capex": 0.149,
+     "dep": 0.426,
+     "rd": 0.209,
+     "acq": null,
+     "ocf": 1.038,
+     "rev": 8.362
+    },
+    {
+     "y": 2023,
+     "capex": 0.186,
+     "dep": 0.477,
+     "rd": 0.218,
+     "acq": null,
+     "ocf": 1.201,
+     "rev": 9.677
+    },
+    {
+     "y": 2024,
+     "capex": 0.207,
+     "dep": 0.459,
+     "rd": 0.206,
+     "acq": null,
+     "ocf": 1.834,
+     "rev": 10.387
+    },
+    {
+     "y": 2025,
+     "capex": 0.26,
+     "dep": 0.457,
+     "rd": 0.223,
+     "acq": null,
+     "ocf": 1.759,
+     "rev": 11.167
+    }
+   ],
    "roic_now": 0.0902,
    "inc_recent": null,
    "inc_earlier": 0.0109,
@@ -4538,6 +7759,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 1.1594,
+   "ic_last_b": 16.3413,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.169,
+     "dep": 0.266,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.819,
+     "rev": 4.462
+    },
+    {
+     "y": 2023,
+     "capex": 0.217,
+     "dep": 1.392,
+     "rd": 1.784,
+     "acq": null,
+     "ocf": 1.289,
+     "rev": 5.92
+    },
+    {
+     "y": 2024,
+     "capex": 0.35,
+     "dep": 1.398,
+     "rd": 1.896,
+     "acq": null,
+     "ocf": 1.371,
+     "rev": 5.508
+    },
+    {
+     "y": 2025,
+     "capex": 0.292,
+     "dep": 1.357,
+     "rd": 1.95,
+     "acq": null,
+     "ocf": 1.681,
+     "rev": 5.767
+    },
+    {
+     "y": 2026,
+     "capex": 0.359,
+     "dep": 1.291,
+     "rd": 2.075,
+     "acq": null,
+     "ocf": 1.75,
+     "rev": 8.195
+    }
+   ],
    "roic_now": 0.019,
    "inc_recent": 0.0658,
    "inc_earlier": null,
@@ -4604,6 +7874,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 1.5592,
+   "ic_last_b": 2.7472,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.395,
+     "dep": 0.224,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.389,
+     "rev": 6.257
+    },
+    {
+     "y": 2023,
+     "capex": 0.639,
+     "dep": 0.292,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.966,
+     "rev": 8.111
+    },
+    {
+     "y": 2024,
+     "capex": 0.652,
+     "dep": 0.379,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.296,
+     "rev": 9.619
+    },
+    {
+     "y": 2025,
+     "capex": 0.689,
+     "dep": 0.447,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.273,
+     "rev": 10.588
+    },
+    {
+     "y": 2026,
+     "capex": 0.681,
+     "dep": 0.496,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.602,
+     "rev": 11.103
+    }
+   ],
    "roic_now": 0.6916,
    "inc_recent": 0.6492,
    "inc_earlier": 0.5458,
@@ -4634,6 +7953,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.442,
+   "ic_last_b": 0.3711,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.006,
+     "dep": 0.008,
+     "rd": 0.365,
+     "acq": null,
+     "ocf": -0.094,
+     "rev": 0.667
+    },
+    {
+     "y": 2023,
+     "capex": 0.01,
+     "dep": 0.014,
+     "rd": 0.438,
+     "acq": null,
+     "ocf": -0.075,
+     "rev": 0.804
+    },
+    {
+     "y": 2024,
+     "capex": 0.006,
+     "dep": 0.016,
+     "rd": 0.935,
+     "acq": null,
+     "ocf": 0.222,
+     "rev": 1.3
+    },
+    {
+     "y": 2025,
+     "capex": 0.007,
+     "dep": 0.016,
+     "rd": 0.783,
+     "acq": null,
+     "ocf": 0.691,
+     "rev": 2.203
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "CF": {
@@ -4689,6 +8048,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.847,
+   "ic_last_b": 6.2065,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.514,
+     "dep": 0.888,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.873,
+     "rev": 6.538
+    },
+    {
+     "y": 2022,
+     "capex": 0.462,
+     "dep": 0.85,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.855,
+     "rev": 11.186
+    },
+    {
+     "y": 2023,
+     "capex": 1.724,
+     "dep": 0.869,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.757,
+     "rev": 6.631
+    },
+    {
+     "y": 2024,
+     "capex": 0.521,
+     "dep": 0.925,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.271,
+     "rev": 5.936
+    },
+    {
+     "y": 2025,
+     "capex": 0.951,
+     "dep": 0.898,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.752,
+     "rev": 7.084
+    }
+   ],
    "roic_now": 0.2614,
    "inc_recent": null,
    "inc_earlier": null,
@@ -4763,6 +8171,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.2668,
+   "ic_last_b": 2.08,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.036,
+     "dep": 0.048,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.319,
+     "rev": 9.904
+    },
+    {
+     "y": 2022,
+     "capex": 0.049,
+     "dep": 0.109,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.498,
+     "rev": 11.076
+    },
+    {
+     "y": 2023,
+     "capex": 0.078,
+     "dep": 0.119,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.9,
+     "rev": 12.583
+    },
+    {
+     "y": 2024,
+     "capex": 0.075,
+     "dep": 0.134,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.408,
+     "rev": 14.566
+    },
+    {
+     "y": 2025,
+     "capex": 0.113,
+     "dep": 0.186,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.302,
+     "rev": 16.986
+    }
+   ],
    "roic_now": 0.604,
    "inc_recent": 2.3618,
    "inc_earlier": 0.15,
@@ -4837,6 +8294,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.8111,
+   "ic_last_b": 7.0075,
+   "invest": [
+    {
+     "y": 2018,
+     "capex": 0.274,
+     "dep": 0.944,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.3,
+     "rev": 5.524
+    },
+    {
+     "y": 2022,
+     "capex": 0.504,
+     "dep": 0.664,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.416,
+     "rev": 4.907
+    },
+    {
+     "y": 2023,
+     "capex": 0.646,
+     "dep": 0.697,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.441,
+     "rev": 5.311
+    },
+    {
+     "y": 2024,
+     "capex": 0.548,
+     "dep": 0.762,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.498,
+     "rev": 5.684
+    },
+    {
+     "y": 2025,
+     "capex": 0.644,
+     "dep": 0.795,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.51,
+     "rev": 6.114
+    }
+   ],
    "roic_now": 0.1229,
    "inc_recent": 0.4852,
    "inc_earlier": null,
@@ -4904,6 +8410,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.8419,
+   "ic_last_b": 1.9331,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.107,
+     "dep": 0.072,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.515,
+     "rev": 4.194
+    },
+    {
+     "y": 2022,
+     "capex": 0.101,
+     "dep": 0.078,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.302,
+     "rev": 4.718
+    },
+    {
+     "y": 2023,
+     "capex": 0.25,
+     "dep": 0.086,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.736,
+     "rev": 4.982
+    },
+    {
+     "y": 2024,
+     "capex": 0.164,
+     "dep": 0.095,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.946,
+     "rev": 5.341
+    },
+    {
+     "y": 2025,
+     "capex": 0.119,
+     "dep": 0.113,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.758,
+     "rev": 5.195
+    }
+   ],
    "roic_now": 0.5029,
    "inc_recent": 0.3716,
    "inc_earlier": 0.9396,
@@ -4978,6 +8533,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 7.5237,
+   "ic_last_b": 32.7525,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 1.653,
+     "dep": 2.323,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.279,
+     "rev": 12.222
+    },
+    {
+     "y": 2022,
+     "capex": 2.131,
+     "dep": 2.185,
+     "rd": 0.229,
+     "acq": null,
+     "ocf": 3.22,
+     "rev": 11.915
+    },
+    {
+     "y": 2023,
+     "capex": 2.666,
+     "dep": 2.108,
+     "rd": 0.2,
+     "acq": null,
+     "ocf": 2.763,
+     "rev": 11.812
+    },
+    {
+     "y": 2024,
+     "capex": 3.402,
+     "dep": 2.576,
+     "rd": 0.197,
+     "acq": null,
+     "ocf": 6.363,
+     "rev": 18.682
+    },
+    {
+     "y": 2025,
+     "capex": 3.035,
+     "dep": 2.521,
+     "rd": 0.166,
+     "acq": null,
+     "ocf": 10.334,
+     "rev": 22.669
+    }
+   ],
    "roic_now": 0.1637,
    "inc_recent": 0.3039,
    "inc_earlier": 0.224,
@@ -5045,6 +8649,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 3.0814,
+   "ic_last_b": 23.4815,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.552,
+     "dep": 0.286,
+     "rd": null,
+     "acq": null,
+     "ocf": 7.081,
+     "rev": 16.072
+    },
+    {
+     "y": 2022,
+     "capex": 1.617,
+     "dep": 0.341,
+     "rd": 3.848,
+     "acq": null,
+     "ocf": 5.015,
+     "rev": 12.173
+    },
+    {
+     "y": 2023,
+     "capex": 0.926,
+     "dep": 0.421,
+     "rd": 4.625,
+     "acq": null,
+     "ocf": 4.594,
+     "rev": 13.117
+    },
+    {
+     "y": 2024,
+     "capex": 0.882,
+     "dep": 0.483,
+     "rd": 5.233,
+     "acq": null,
+     "ocf": 4.42,
+     "rev": 14.202
+    },
+    {
+     "y": 2025,
+     "capex": 1.214,
+     "dep": 0.544,
+     "rd": 5.85,
+     "acq": null,
+     "ocf": 4.979,
+     "rev": 14.343
+    }
+   ],
    "roic_now": 0.159,
    "inc_recent": 0.052,
    "inc_earlier": 0.2963,
@@ -5119,6 +8772,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.8496,
+   "ic_last_b": 9.707,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.477,
+     "dep": 0.448,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.213,
+     "rev": 7.776
+    },
+    {
+     "y": 2022,
+     "capex": 0.586,
+     "dep": 0.465,
+     "rd": 0.539,
+     "acq": null,
+     "ocf": 1.912,
+     "rev": 8.08
+    },
+    {
+     "y": 2023,
+     "capex": 0.732,
+     "dep": 0.491,
+     "rd": 0.614,
+     "acq": null,
+     "ocf": 2.353,
+     "rev": 8.544
+    },
+    {
+     "y": 2024,
+     "capex": 0.655,
+     "dep": 0.497,
+     "rd": 0.686,
+     "acq": null,
+     "ocf": 2.953,
+     "rev": 9.256
+    },
+    {
+     "y": 2025,
+     "capex": 0.621,
+     "dep": 0.487,
+     "rd": 0.698,
+     "acq": null,
+     "ocf": 2.904,
+     "rev": 9.467
+    }
+   ],
    "roic_now": 0.2885,
    "inc_recent": 0.4167,
    "inc_earlier": 0.4197,
@@ -5193,6 +8895,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 7.3244,
+   "ic_last_b": 18.647,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.169,
+     "dep": 0.244,
+     "rd": null,
+     "acq": null,
+     "ocf": 8.405,
+     "rev": 26.013
+    },
+    {
+     "y": 2022,
+     "capex": 0.205,
+     "dep": 0.226,
+     "rd": null,
+     "acq": null,
+     "ocf": 8.256,
+     "rev": 20.688
+    },
+    {
+     "y": 2023,
+     "capex": 0.196,
+     "dep": 0.272,
+     "rd": null,
+     "acq": null,
+     "ocf": 9.287,
+     "rev": 20.502
+    },
+    {
+     "y": 2024,
+     "capex": 0.142,
+     "dep": 0.286,
+     "rd": null,
+     "acq": null,
+     "ocf": 8.753,
+     "rev": 20.444
+    },
+    {
+     "y": 2025,
+     "capex": 0.216,
+     "dep": 0.266,
+     "rd": null,
+     "acq": null,
+     "ocf": 9.29,
+     "rev": 20.139
+    }
+   ],
    "roic_now": 0.4368,
    "inc_recent": null,
    "inc_earlier": 0.1065,
@@ -5267,6 +9018,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.0088,
+   "ic_last_b": 3.4623,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.133,
+     "dep": 0.28,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.818,
+     "rev": 6.42
+    },
+    {
+     "y": 2022,
+     "capex": 0.174,
+     "dep": 0.788,
+     "rd": 0.308,
+     "acq": null,
+     "ocf": 0.373,
+     "rev": 5.857
+    },
+    {
+     "y": 2023,
+     "capex": 0.209,
+     "dep": 0.66,
+     "rd": 0.307,
+     "acq": null,
+     "ocf": 0.726,
+     "rev": 5.003
+    },
+    {
+     "y": 2024,
+     "capex": 0.198,
+     "dep": 0.212,
+     "rd": 0.294,
+     "acq": null,
+     "ocf": 0.847,
+     "rev": 4.136
+    },
+    {
+     "y": 2025,
+     "capex": 0.198,
+     "dep": 0.171,
+     "rd": 0.386,
+     "acq": null,
+     "ocf": 0.893,
+     "rev": 4.701
+    }
+   ],
    "roic_now": 0.0708,
    "inc_recent": null,
    "inc_earlier": -0.019,
@@ -5333,6 +9133,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 8.4864,
+   "ic_last_b": 53.767,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.973,
+     "dep": 10.686,
+     "rd": null,
+     "acq": null,
+     "ocf": 16.207,
+     "rev": 46.385
+    },
+    {
+     "y": 2022,
+     "capex": 1.118,
+     "dep": 10.276,
+     "rd": 9.509,
+     "acq": null,
+     "ocf": 13.066,
+     "rev": 46.159
+    },
+    {
+     "y": 2023,
+     "capex": 1.209,
+     "dep": 9.76,
+     "rd": 9.299,
+     "acq": null,
+     "ocf": 13.86,
+     "rev": 45.006
+    },
+    {
+     "y": 2024,
+     "capex": 1.248,
+     "dep": 9.6,
+     "rd": 11.159,
+     "acq": null,
+     "ocf": 15.19,
+     "rev": 48.3
+    },
+    {
+     "y": 2025,
+     "capex": 1.311,
+     "dep": 4.011,
+     "rd": 9.951,
+     "acq": null,
+     "ocf": 14.156,
+     "rev": 48.195
+    }
+   ],
    "roic_now": 0.0334,
    "inc_recent": null,
    "inc_earlier": -0.0356,
@@ -5399,6 +9248,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.4057,
+   "ic_last_b": 12.91,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.269,
+     "dep": 0.785,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.493,
+     "rev": 26.989
+    },
+    {
+     "y": 2022,
+     "capex": 0.373,
+     "dep": 0.688,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.36,
+     "rev": 31.543
+    },
+    {
+     "y": 2023,
+     "capex": 0.622,
+     "dep": 1.174,
+     "rd": null,
+     "acq": null,
+     "ocf": -0.221,
+     "rev": 28.823
+    },
+    {
+     "y": 2024,
+     "capex": 0.49,
+     "dep": 1.071,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.306,
+     "rev": 28.13
+    },
+    {
+     "y": 2025,
+     "capex": 1.148,
+     "dep": 0.896,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.913,
+     "rev": 30.713
+    }
+   ],
    "roic_now": 0.1277,
    "inc_recent": 0.1063,
    "inc_earlier": null,
@@ -5472,6 +9370,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.3487,
+   "ic_last_b": 24.5855,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.32,
+     "dep": 4.015,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.81,
+     "rev": 13.877
+    },
+    {
+     "y": 2022,
+     "capex": 0.996,
+     "dep": 1.878,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.622,
+     "rev": 9.72
+    },
+    {
+     "y": 2023,
+     "capex": 0.78,
+     "dep": 1.744,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.335,
+     "rev": 9.831
+    },
+    {
+     "y": 2024,
+     "capex": 0.817,
+     "dep": 1.737,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.071,
+     "rev": 10.127
+    },
+    {
+     "y": 2025,
+     "capex": 0.989,
+     "dep": 1.883,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.816,
+     "rev": 10.677
+    }
+   ],
    "roic_now": 0.0485,
    "inc_recent": null,
    "inc_earlier": -0.0049,
@@ -5538,6 +9485,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 15.6457,
+   "ic_last_b": 73.384,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 3.156,
+     "dep": 2.807,
+     "rd": null,
+     "acq": null,
+     "ocf": 16.723,
+     "rev": 80.187
+    },
+    {
+     "y": 2023,
+     "capex": 3.062,
+     "dep": 2.714,
+     "rd": null,
+     "acq": null,
+     "ocf": 16.848,
+     "rev": 82.006
+    },
+    {
+     "y": 2024,
+     "capex": 3.322,
+     "dep": 2.896,
+     "rd": null,
+     "acq": null,
+     "ocf": 19.846,
+     "rev": 84.039
+    },
+    {
+     "y": 2025,
+     "capex": 3.773,
+     "dep": 2.847,
+     "rd": null,
+     "acq": null,
+     "ocf": 17.817,
+     "rev": 84.284
+    },
+    {
+     "y": 2026,
+     "capex": 4.409,
+     "dep": 3.16,
+     "rd": null,
+     "acq": null,
+     "ocf": 19.556,
+     "rev": 87.032
+    }
+   ],
    "roic_now": 0.2203,
    "inc_recent": 0.1975,
    "inc_earlier": null,
@@ -5612,6 +9608,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 11.3009,
+   "ic_last_b": 61.4455,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 1.367,
+     "dep": 1.452,
+     "rd": null,
+     "acq": null,
+     "ocf": 12.625,
+     "rev": 38.655
+    },
+    {
+     "y": 2022,
+     "capex": 1.484,
+     "dep": 1.26,
+     "rd": null,
+     "acq": null,
+     "ocf": 11.018,
+     "rev": 43.004
+    },
+    {
+     "y": 2023,
+     "capex": 1.852,
+     "dep": 1.128,
+     "rd": null,
+     "acq": null,
+     "ocf": 11.599,
+     "rev": 45.754
+    },
+    {
+     "y": 2024,
+     "capex": 2.064,
+     "dep": 1.075,
+     "rd": null,
+     "acq": null,
+     "ocf": 6.805,
+     "rev": 47.061
+    },
+    {
+     "y": 2025,
+     "capex": 2.112,
+     "dep": 1.05,
+     "rd": null,
+     "acq": null,
+     "ocf": 7.408,
+     "rev": 47.941
+    }
+   ],
    "roic_now": 0.1651,
    "inc_recent": 0.1242,
    "inc_earlier": null,
@@ -5686,6 +9731,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 2.9263,
+   "ic_last_b": 13.5643,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.372,
+     "dep": 0.263,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.245,
+     "rev": 19.945
+    },
+    {
+     "y": 2022,
+     "capex": 0.644,
+     "dep": 0.581,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.92,
+     "rev": 22.149
+    },
+    {
+     "y": 2023,
+     "capex": 0.888,
+     "dep": 0.623,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.522,
+     "rev": 23.052
+    },
+    {
+     "y": 2024,
+     "capex": 1.07,
+     "dep": 0.624,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.153,
+     "rev": 23.099
+    },
+    {
+     "y": 2025,
+     "capex": 0.798,
+     "dep": 0.677,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.452,
+     "rev": 23.574
+    }
+   ],
    "roic_now": 0.2235,
    "inc_recent": 0.3411,
    "inc_earlier": 0.1235,
@@ -5760,6 +9854,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 27.6028,
+   "ic_last_b": 91.124,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 3.347,
+     "dep": 7.231,
+     "rd": null,
+     "acq": null,
+     "ocf": 23.536,
+     "rev": 82.584
+    },
+    {
+     "y": 2022,
+     "capex": 4.009,
+     "dep": 6.97,
+     "rd": 14.135,
+     "acq": null,
+     "ocf": 21.194,
+     "rev": 79.99
+    },
+    {
+     "y": 2023,
+     "capex": 5.013,
+     "dep": 7.486,
+     "rd": 15.085,
+     "acq": null,
+     "ocf": 22.791,
+     "rev": 85.159
+    },
+    {
+     "y": 2024,
+     "capex": 6.207,
+     "dep": 7.339,
+     "rd": 17.232,
+     "acq": null,
+     "ocf": 24.266,
+     "rev": 88.821
+    },
+    {
+     "y": 2025,
+     "capex": 5.217,
+     "dep": 7.503,
+     "rd": 14.665,
+     "acq": null,
+     "ocf": 24.53,
+     "rev": 94.193
+    }
+   ],
    "roic_now": 0.2478,
    "inc_recent": null,
    "inc_earlier": null,
@@ -5827,6 +9970,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 7.8003,
+   "ic_last_b": 54.068,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.88,
+     "dep": 3.398,
+     "rd": null,
+     "acq": null,
+     "ocf": 9.261,
+     "rev": 25.979
+    },
+    {
+     "y": 2022,
+     "capex": 0.936,
+     "dep": 3.417,
+     "rd": 4.434,
+     "acq": null,
+     "ocf": 9.721,
+     "rev": 26.323
+    },
+    {
+     "y": 2023,
+     "capex": 1.112,
+     "dep": 4.071,
+     "rd": 4.784,
+     "acq": null,
+     "ocf": 8.471,
+     "rev": 28.19
+    },
+    {
+     "y": 2024,
+     "capex": 1.096,
+     "dep": 5.592,
+     "rd": 5.964,
+     "acq": null,
+     "ocf": 11.49,
+     "rev": 33.424
+    },
+    {
+     "y": 2025,
+     "capex": 1.858,
+     "dep": 5.167,
+     "rd": 7.272,
+     "acq": null,
+     "ocf": 9.958,
+     "rev": 36.751
+    }
+   ],
    "roic_now": 0.1287,
    "inc_recent": -0.0486,
    "inc_earlier": null,
@@ -5869,6 +10061,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.0233,
+   "ic_last_b": 3.6415,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.054,
+     "dep": 0.106,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.896,
+     "rev": 4.7
+    },
+    {
+     "y": 2022,
+     "capex": 0.034,
+     "dep": 0.09,
+     "rd": 0.217,
+     "acq": null,
+     "ocf": 0.87,
+     "rev": 4.87
+    },
+    {
+     "y": 2023,
+     "capex": 0.054,
+     "dep": 0.087,
+     "rd": 0.225,
+     "acq": null,
+     "ocf": 0.963,
+     "rev": 5.021
+    },
+    {
+     "y": 2024,
+     "capex": 0.055,
+     "dep": 0.078,
+     "rd": 0.253,
+     "acq": null,
+     "ocf": 0.875,
+     "rev": 5.193
+    },
+    {
+     "y": 2025,
+     "capex": 0.063,
+     "dep": 0.078,
+     "rd": 0.266,
+     "acq": null,
+     "ocf": 1.077,
+     "rev": 5.503
+    }
+   ],
    "roic_now": 0.2771,
    "inc_recent": null,
    "inc_earlier": null,
@@ -5900,6 +10141,53 @@
     ]
    ],
    "last_year": 2025,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.12,
+     "dep": 0.144,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.325,
+     "rev": 13.443
+    },
+    {
+     "y": 2022,
+     "capex": 0.182,
+     "dep": -0.04,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.407,
+     "rev": 14.258
+    },
+    {
+     "y": 2023,
+     "capex": 0.184,
+     "dep": -0.154,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.685,
+     "rev": 15.535
+    },
+    {
+     "y": 2024,
+     "capex": 0.176,
+     "dep": -0.159,
+     "rd": null,
+     "acq": null,
+     "ocf": 6.595,
+     "rev": 17.264
+    },
+    {
+     "y": 2025,
+     "capex": 0.162,
+     "dep": -0.093,
+     "rd": null,
+     "acq": null,
+     "ocf": 8.323,
+     "rev": 18.48
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "PPG": {
@@ -5955,6 +10243,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.774,
+   "ic_last_b": 12.1235,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.371,
+     "dep": 0.561,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.562,
+     "rev": 16.802
+    },
+    {
+     "y": 2022,
+     "capex": 0.486,
+     "dep": 0.502,
+     "rd": 0.434,
+     "acq": null,
+     "ocf": 0.963,
+     "rev": 15.614
+    },
+    {
+     "y": 2023,
+     "capex": 0.516,
+     "dep": 0.514,
+     "rd": 0.424,
+     "acq": null,
+     "ocf": 2.411,
+     "rev": 16.242
+    },
+    {
+     "y": 2024,
+     "capex": 0.721,
+     "dep": 0.492,
+     "rd": 0.423,
+     "acq": null,
+     "ocf": 1.42,
+     "rev": 15.845
+    },
+    {
+     "y": 2025,
+     "capex": 0.778,
+     "dep": 0.528,
+     "rd": 0.423,
+     "acq": null,
+     "ocf": 1.941,
+     "rev": 15.875
+    }
+   ],
    "roic_now": 0.1393,
    "inc_recent": -0.0103,
    "inc_earlier": -0.1112,
@@ -6029,6 +10366,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 4.998,
+   "ic_last_b": 30.692,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 5.0,
+     "dep": 3.542,
+     "rd": null,
+     "acq": null,
+     "ocf": 11.093,
+     "rev": 29.492
+    },
+    {
+     "y": 2023,
+     "capex": 6.185,
+     "dep": 3.492,
+     "rd": null,
+     "acq": null,
+     "ocf": 11.34,
+     "rev": 23.182
+    },
+    {
+     "y": 2024,
+     "capex": 6.372,
+     "dep": 4.108,
+     "rd": null,
+     "acq": null,
+     "ocf": 12.143,
+     "rev": 23.378
+    },
+    {
+     "y": 2025,
+     "capex": 6.594,
+     "dep": 4.461,
+     "rd": null,
+     "acq": null,
+     "ocf": 10.044,
+     "rev": 22.582
+    }
+   ],
    "roic_now": 0.1989,
    "inc_recent": 0.6425,
    "inc_earlier": 0.4981,
@@ -6103,6 +10480,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 11.9554,
+   "ic_last_b": 31.6965,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.748,
+     "dep": 0.998,
+     "rd": null,
+     "acq": null,
+     "ocf": 11.967,
+     "rev": 31.405
+    },
+    {
+     "y": 2022,
+     "capex": 1.077,
+     "dep": 1.077,
+     "rd": null,
+     "acq": null,
+     "ocf": 10.803,
+     "rev": 31.762
+    },
+    {
+     "y": 2023,
+     "capex": 1.321,
+     "dep": 1.398,
+     "rd": null,
+     "acq": null,
+     "ocf": 9.204,
+     "rev": 35.174
+    },
+    {
+     "y": 2024,
+     "capex": 1.444,
+     "dep": 1.787,
+     "rd": null,
+     "acq": null,
+     "ocf": 12.217,
+     "rev": 37.878
+    },
+    {
+     "y": 2025,
+     "capex": 1.569,
+     "dep": 1.996,
+     "rd": null,
+     "acq": null,
+     "ocf": 12.233,
+     "rev": 40.648
+    }
+   ],
    "roic_now": 0.3533,
    "inc_recent": 0.1215,
    "inc_earlier": null,
@@ -6177,6 +10603,55 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 1.243,
+   "ic_last_b": 5.8105,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 1.021,
+     "dep": 0.716,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.431,
+     "rev": 26.321
+    },
+    {
+     "y": 2023,
+     "capex": 0.644,
+     "dep": 0.365,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.615,
+     "rev": 15.412
+    },
+    {
+     "y": 2024,
+     "capex": 1.195,
+     "dep": 0.401,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.684,
+     "rev": 16.781
+    },
+    {
+     "y": 2025,
+     "capex": 1.3,
+     "dep": 0.527,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.862,
+     "rev": 17.578
+    },
+    {
+     "y": 2026,
+     "capex": 1.134,
+     "dep": 0.648,
+     "rd": null,
+     "acq": null,
+     "ocf": 2.534,
+     "rev": 19.412
+    }
+   ],
    "roic_now": 0.1749,
    "inc_recent": null,
    "inc_earlier": 0.1815,
@@ -6212,6 +10687,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.1358,
+   "ic_last_b": 0.8025,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.0,
+     "dep": 0.006,
+     "rd": 0.041,
+     "acq": null,
+     "ocf": 0.202,
+     "rev": 0.331
+    },
+    {
+     "y": 2023,
+     "capex": 0.0,
+     "dep": 0.022,
+     "rd": 0.034,
+     "acq": null,
+     "ocf": 0.141,
+     "rev": 0.31
+    },
+    {
+     "y": 2024,
+     "capex": 0.004,
+     "dep": 0.026,
+     "rd": 0.014,
+     "acq": null,
+     "ocf": 0.189,
+     "rev": 0.359
+    },
+    {
+     "y": 2025,
+     "capex": 0.01,
+     "dep": 0.026,
+     "rd": 0.031,
+     "acq": null,
+     "ocf": 0.197,
+     "rev": 0.411
+    }
+   ],
    "roic_now": 0.15,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6247,6 +10762,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.2112,
+   "ic_last_b": 3.9115,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.007,
+     "dep": 0.05,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.144,
+     "rev": 0.188
+    },
+    {
+     "y": 2023,
+     "capex": 0.011,
+     "dep": 0.051,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.155,
+     "rev": 0.199
+    },
+    {
+     "y": 2024,
+     "capex": 0.008,
+     "dep": 0.054,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.244,
+     "rev": 0.228
+    },
+    {
+     "y": 2025,
+     "capex": 0.015,
+     "dep": 0.086,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.394,
+     "rev": 0.369
+    }
+   ],
    "roic_now": 0.0528,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6281,6 +10836,46 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.3019,
+   "ic_last_b": 1.9767,
+   "invest": [
+    {
+     "y": 2023,
+     "capex": 0.026,
+     "dep": 0.151,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.192,
+     "rev": 1.451
+    },
+    {
+     "y": 2024,
+     "capex": 0.049,
+     "dep": 0.108,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.296,
+     "rev": 1.585
+    },
+    {
+     "y": 2025,
+     "capex": 0.05,
+     "dep": 0.084,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.338,
+     "rev": 1.788
+    },
+    {
+     "y": 2026,
+     "capex": 0.078,
+     "dep": 0.083,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.47,
+     "rev": 1.954
+    }
+   ],
    "roic_now": 0.1435,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6312,6 +10907,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.1783,
+   "ic_last_b": 0.1552,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.024,
+     "dep": 0.035,
+     "rd": 0.101,
+     "acq": null,
+     "ocf": 0.199,
+     "rev": 0.49
+    },
+    {
+     "y": 2023,
+     "capex": 0.009,
+     "dep": 0.027,
+     "rd": 0.11,
+     "acq": null,
+     "ocf": 0.245,
+     "rev": 0.554
+    },
+    {
+     "y": 2024,
+     "capex": 0.012,
+     "dep": 0.019,
+     "rd": 0.112,
+     "acq": null,
+     "ocf": 0.244,
+     "rev": 0.608
+    },
+    {
+     "y": 2025,
+     "capex": 0.005,
+     "dep": 0.014,
+     "rd": 0.117,
+     "acq": null,
+     "ocf": 0.309,
+     "rev": 0.669
+    }
+   ],
    "note": "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
   },
   "LAUR": {
@@ -6335,6 +10970,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.305,
+   "ic_last_b": 1.4262,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.053,
+     "dep": 0.089,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.178,
+     "rev": 1.242
+    },
+    {
+     "y": 2023,
+     "capex": 0.056,
+     "dep": 0.103,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.251,
+     "rev": 1.484
+    },
+    {
+     "y": 2024,
+     "capex": 0.072,
+     "dep": 0.105,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.233,
+     "rev": 1.567
+    },
+    {
+     "y": 2025,
+     "capex": 0.103,
+     "dep": 0.111,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.366,
+     "rev": 1.702
+    }
+   ],
    "roic_now": 0.2043,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6370,6 +11045,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.3992,
+   "ic_last_b": 0.3664,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.043,
+     "dep": 0.079,
+     "rd": 0.185,
+     "acq": null,
+     "ocf": 0.286,
+     "rev": 0.458
+    },
+    {
+     "y": 2023,
+     "capex": 0.045,
+     "dep": 0.078,
+     "rd": 0.195,
+     "acq": null,
+     "ocf": 0.214,
+     "rev": 0.55
+    },
+    {
+     "y": 2024,
+     "capex": 0.059,
+     "dep": 0.07,
+     "rd": 0.197,
+     "acq": null,
+     "ocf": 0.272,
+     "rev": 0.869
+    },
+    {
+     "y": 2025,
+     "capex": 0.071,
+     "dep": 0.078,
+     "rd": 0.211,
+     "acq": null,
+     "ocf": 0.544,
+     "rev": 0.834
+    }
+   ],
    "roic_now": 1.1702,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6405,6 +11120,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.0521,
+   "ic_last_b": 0.2216,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.003,
+     "dep": 0.009,
+     "rd": 0.013,
+     "acq": null,
+     "ocf": 0.025,
+     "rev": 0.162
+    },
+    {
+     "y": 2023,
+     "capex": 0.007,
+     "dep": 0.01,
+     "rd": 0.017,
+     "acq": null,
+     "ocf": 0.037,
+     "rev": 0.193
+    },
+    {
+     "y": 2024,
+     "capex": 0.007,
+     "dep": 0.01,
+     "rd": 0.016,
+     "acq": null,
+     "ocf": 0.044,
+     "rev": 0.22
+    },
+    {
+     "y": 2025,
+     "capex": 0.007,
+     "dep": 0.01,
+     "rd": 0.014,
+     "acq": null,
+     "ocf": 0.081,
+     "rev": 0.25
+    }
+   ],
    "roic_now": 0.2106,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6440,6 +11195,46 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.0832,
+   "ic_last_b": 0.2214,
+   "invest": [
+    {
+     "y": 2023,
+     "capex": 0.017,
+     "dep": 0.066,
+     "rd": 0.244,
+     "acq": null,
+     "ocf": 0.298,
+     "rev": 0.991
+    },
+    {
+     "y": 2024,
+     "capex": 0.021,
+     "dep": 0.051,
+     "rd": 0.249,
+     "acq": null,
+     "ocf": 0.319,
+     "rev": 1.038
+    },
+    {
+     "y": 2025,
+     "capex": 0.03,
+     "dep": 0.022,
+     "rd": 0.265,
+     "acq": null,
+     "ocf": 0.332,
+     "rev": 1.09
+    },
+    {
+     "y": 2026,
+     "capex": 0.041,
+     "dep": 0.033,
+     "rd": 0.295,
+     "acq": null,
+     "ocf": 0.356,
+     "rev": 1.177
+    }
+   ],
    "roic_now": 0.5182,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6475,6 +11270,46 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 0.2438,
+   "ic_last_b": 2.168,
+   "invest": [
+    {
+     "y": 2022,
+     "capex": 0.04,
+     "dep": 0.138,
+     "rd": 0.146,
+     "acq": null,
+     "ocf": 0.143,
+     "rev": 1.422
+    },
+    {
+     "y": 2023,
+     "capex": 0.038,
+     "dep": 0.134,
+     "rd": 0.141,
+     "acq": null,
+     "ocf": 0.169,
+     "rev": 1.453
+    },
+    {
+     "y": 2024,
+     "capex": 0.045,
+     "dep": 0.121,
+     "rd": 0.147,
+     "acq": null,
+     "ocf": 0.359,
+     "rev": 1.594
+    },
+    {
+     "y": 2025,
+     "capex": 0.033,
+     "dep": 0.107,
+     "rd": 0.168,
+     "acq": null,
+     "ocf": 0.323,
+     "rev": 1.76
+    }
+   ],
    "roic_now": 0.113,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6541,6 +11376,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 4.7568,
+   "ic_last_b": 31.6495,
+   "invest": [
+    {
+     "y": 2021,
+     "capex": 0.406,
+     "dep": 0.747,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.516,
+     "rev": 19.82
+    },
+    {
+     "y": 2022,
+     "capex": 0.47,
+     "dep": 0.719,
+     "rd": null,
+     "acq": null,
+     "ocf": 3.465,
+     "rev": 20.72
+    },
+    {
+     "y": 2023,
+     "capex": 0.416,
+     "dep": 0.713,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.258,
+     "rev": 22.736
+    },
+    {
+     "y": 2024,
+     "capex": 0.316,
+     "dep": 0.746,
+     "rd": null,
+     "acq": null,
+     "ocf": 4.302,
+     "rev": 24.458
+    },
+    {
+     "y": 2025,
+     "capex": 0.291,
+     "dep": 0.91,
+     "rd": null,
+     "acq": null,
+     "ocf": 5.292,
+     "rev": 26.981
+    }
+   ],
    "roic_now": 0.1567,
    "inc_recent": 0.1893,
    "inc_earlier": 0.0436,
@@ -6615,6 +11499,55 @@
     ]
    ],
    "last_year": 2025,
+   "nopat_last_b": 1.8702,
+   "ic_last_b": 14.5825,
+   "invest": [
+    {
+     "y": 2018,
+     "capex": 0.268,
+     "dep": 0.213,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.288,
+     "rev": 8.513
+    },
+    {
+     "y": 2022,
+     "capex": 0.204,
+     "dep": 0.567,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.812,
+     "rev": 8.866
+    },
+    {
+     "y": 2023,
+     "capex": 0.242,
+     "dep": 0.505,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.345,
+     "rev": 9.483
+    },
+    {
+     "y": 2024,
+     "capex": 0.245,
+     "dep": 0.456,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.512,
+     "rev": 9.93
+    },
+    {
+     "y": 2025,
+     "capex": 0.229,
+     "dep": 0.418,
+     "rd": null,
+     "acq": null,
+     "ocf": 1.775,
+     "rev": 9.708
+    }
+   ],
    "roic_now": 0.0776,
    "inc_recent": null,
    "inc_earlier": 0.0436,
@@ -6656,6 +11589,46 @@
     ]
    ],
    "last_year": 2026,
+   "nopat_last_b": 0.1103,
+   "ic_last_b": 0.1844,
+   "invest": [
+    {
+     "y": 2023,
+     "capex": 0.026,
+     "dep": 0.025,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.082,
+     "rev": 0.719
+    },
+    {
+     "y": 2024,
+     "capex": 0.029,
+     "dep": 0.026,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.099,
+     "rev": 0.795
+    },
+    {
+     "y": 2025,
+     "capex": 0.036,
+     "dep": 0.03,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.127,
+     "rev": 0.896
+    },
+    {
+     "y": 2026,
+     "capex": 0.045,
+     "dep": 0.032,
+     "rd": null,
+     "acq": null,
+     "ocf": 0.156,
+     "rev": 0.959
+    }
+   ],
    "roic_now": 0.5689,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6724,6 +11697,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 10.282,
+   "ic_last_b": 26.026,
    "roic_now": 0.3166,
    "inc_recent": null,
    "inc_earlier": 0.389,
@@ -6792,6 +11767,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 3.836,
+   "ic_last_b": 17.713,
    "roic_now": 0.2062,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6867,6 +11844,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.8727,
+   "ic_last_b": 5.4892,
    "roic_now": 0.1562,
    "inc_recent": null,
    "inc_earlier": 0.1116,
@@ -6910,6 +11889,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.3889,
+   "ic_last_b": 2.4047,
    "roic_now": 0.1678,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6946,6 +11927,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.1829,
+   "ic_last_b": 0.4621,
    "roic_now": 0.2804,
    "inc_recent": null,
    "inc_earlier": null,
@@ -6982,6 +11965,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.1971,
+   "ic_last_b": 0.8358,
    "roic_now": 0.2158,
    "inc_recent": null,
    "inc_earlier": null,
@@ -7018,6 +12003,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.2255,
+   "ic_last_b": 2.424,
    "roic_now": 0.0696,
    "inc_recent": null,
    "inc_earlier": null,
@@ -7053,6 +12040,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.444,
+   "ic_last_b": 0.7732,
    "roic_now": 0.5869,
    "inc_recent": null,
    "inc_earlier": null,
@@ -7089,6 +12078,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.5767,
+   "ic_last_b": 2.5754,
    "roic_now": 0.2035,
    "inc_recent": null,
    "inc_earlier": null,
@@ -7125,6 +12116,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.287,
+   "ic_last_b": 0.7472,
    "roic_now": 0.328,
    "inc_recent": null,
    "inc_earlier": null,
@@ -7161,6 +12154,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.69,
+   "ic_last_b": 5.6802,
    "roic_now": 0.1289,
    "inc_recent": null,
    "inc_earlier": null,
@@ -7197,6 +12192,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.1182,
+   "ic_last_b": 0.8614,
    "roic_now": 0.1095,
    "inc_recent": null,
    "inc_earlier": null,
@@ -7232,6 +12229,8 @@
    ],
    "last_year": 2025,
    "measure": "ROE",
+   "nopat_last_b": 0.17,
+   "ic_last_b": 0.9018,
    "roic_now": 0.1759,
    "inc_recent": null,
    "inc_earlier": null,
