@@ -730,45 +730,45 @@
    "ticker": "AIZ",
    "status": "manual",
    "reason": "Insurer valued on book value and return on equity (INSURERS in model.py): update book value, starting ROE and net income by hand.",
-   "since": "2026-11-07"
+   "since": "2026-11-08"
   },
   {
    "ticker": "PLMR",
    "status": "manual",
    "reason": "Insurer valued on book value and return on equity (INSURERS in model.py): update book value, starting ROE and net income by hand.",
-   "since": "2026-11-07"
+   "since": "2026-11-08"
   },
   {
    "ticker": "HCI",
    "status": "manual",
    "reason": "Insurer valued on book value and return on equity (INSURERS in model.py): update book value, starting ROE and net income by hand.",
-   "since": "2026-11-07"
+   "since": "2026-11-08"
   },
   {
    "ticker": "CTRE",
    "status": "manual",
    "reason": "Revenue and cash flow are a run-rate (latest quarter x 4) because acquisitions grow it fast: needs a manual update.",
-   "since": "2026-11-07"
+   "since": "2026-11-08"
   },
   {
    "ticker": "NMIH",
    "status": "manual",
    "reason": "Insurer valued on book value and return on equity (INSURERS in model.py): update book value, starting ROE and net income by hand.",
-   "since": "2026-11-07"
+   "since": "2026-11-08"
   },
   {
    "ticker": "SKWD",
    "status": "manual",
    "reason": "Insurer valued on book value and return on equity (INSURERS in model.py): update book value, starting ROE and net income by hand.",
-   "since": "2026-11-07"
+   "since": "2026-11-08"
   },
   {
    "ticker": "ESNT",
    "status": "manual",
    "reason": "Insurer valued on book value and return on equity (INSURERS in model.py): update book value, starting ROE and net income by hand.",
-   "since": "2026-11-07"
+   "since": "2026-11-08"
   }
  ],
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "how": "Written by scripts/auto_update.py. status auto_updated = numbers rolled forward from Yahoo, the text review (guidance, assumptions, notes, KPIs) is still to do; manual = not auto-updated, needs a full update from the release. The twice-weekly Claude review removes items when done."
 }

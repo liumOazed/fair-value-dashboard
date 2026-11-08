@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "source": "Yahoo Finance via yfinance",
  "stocks": {
   "AAPL": {
@@ -1494,7 +1494,7 @@
   },
   "ESNT": {
    "last_report": "2026-11-06",
-   "next_report": null,
+   "next_report": "2027-02-12",
    "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-08",
