@@ -326,7 +326,11 @@ def build():
                 roic.append((d[:4], i["op"] * (1 - tr) / ic)); nic.append((d[:4], i["op"] * (1 - tr), ic))
         gm = [(d[:4], r["gross"] / r["rev"]) for d, r in sorted(inc.items()) if ok(r.get("gross")) and ok(r.get("rev")) and r["rev"]]
         om = [(d[:4], r["op"] / r["rev"]) for d, r in sorted(inc.items()) if ok(r.get("op")) and ok(r.get("rev")) and r["rev"]]
-        wacc = s.get("wacc")
+        wacc, roic_sp = s.get("wacc"), s.get("roic_spread")
+        mw = (assets[t].get("wacc") or {}).get("wacc")     # one cost of capital: the model's own WACC wherever the stock has a model
+        if ok(mw) and assets[t].get("method") != "excess_roe":
+            wacc = mw
+            roic_sp = s["roic_pct"] / 100 - mw if ok(s.get("roic_pct")) else roic_sp
         inc_roic, inc_note = None, None
         if len(nic) >= 3:
             (y0, n0, c0), (y1, n1, c1) = nic[max(0, len(nic) - 4)], nic[-1]
@@ -341,7 +345,7 @@ def build():
         gm_tr = gm[-1][1] - gm[0][1] if len(gm) >= 2 else None
         perf = [
             M("ROIC vs cost of capital (WACC)", None if not ok(s.get("roic_pct")) else f"{s['roic_pct']:.0f}% vs {wacc * 100:.1f}%" if ok(wacc) else f"{s['roic_pct']:.0f}%",
-              g3(s.get("roic_spread"), 0.10, 0.0), pct=P("roic_spread"), note="Return on the money invested in the business vs what that money costs."),
+              g3(roic_sp, 0.10, 0.0), pct=P("roic_spread"), note="Return on the money invested in the business vs what that money costs (the model's WACC, the same rate as the WACC button in Capital and returns)."),
             M("ROIC trend", None if not ok(roic_tr) else f"{roic[0][1] * 100:.0f}% → {roic[-1][1] * 100:.0f}% ({roic[0][0]}–{roic[-1][0]})",
               g3(roic_tr, 0.0, -0.05)),
             M("ROIC above cost of capital", None if not roic or not ok(wacc) else f"{above} of {len(roic)} years", g3(above / len(roic) if roic and ok(wacc) else None, 0.99, 0.5),

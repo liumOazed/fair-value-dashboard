@@ -16,6 +16,8 @@ topped up with the latest years in data/snapshot_raw.json:
   Q5 Reinvest  = growth in invested capital over the latest 5 years / after-tax operating profit in those years, the
                  dollars a year that represents, and the growth it funds (reinvestment rate x latest incremental return, left out above 100%, where growth
                  comes mostly from existing assets and pricing rather than new capital).
+  Latest      = nopat_last_b and ic_last_b ($B): economic profit at any rate = NOPAT - rate x capital (Capital and returns card).
+  Invest      = capex, depreciation, R&D, acquisitions, operating cash flow and revenue for the latest 5 fiscal years ($B).
 Underwriters (INSURERS in model/model.py) hold investments against claims, so invested capital means nothing for them:
 they get the same tests on return on equity (net income / book value, average of the start and end of the year),
 marked measure = "ROE".
@@ -74,6 +76,26 @@ def incremental(nopat, ic, y_end, span):
     if c1 - c0 <= 0.10 * c0: return None, "invested capital barely grew or shrank"
     return (n1 - n0) / (c1 - c0), None
 
+def investment(t, n=5):
+    """What the company spends to grow, per fiscal year ($B, latest n years): capex, depreciation (roughly the capex
+    that keeps today's business running; the rest is growth capex), R&D (an expense in the accounts, but money spent
+    on future products), acquisitions (cash paid for businesses, net of cash acquired) and operating cash flow.
+    Yahoo annual statements (data/snapshot_raw.json), older years filled from the 10-K facts."""
+    s = SNAP.get(t) or {}; A = s.get("annual", {}); inc, cfs = A.get("inc", {}), A.get("cfs", {})
+    d = F.get(t) or {}
+    rows = {}
+    for y in sorted(set(inc) | set(cfs)):
+        i, c = inc.get(y) or {}, cfs.get(y) or {}
+        rows[y[:4]] = dict(capex=-c["capex"] if c.get("capex") is not None else None, dep=c.get("dep") if c.get("dep") is not None else i.get("dep_inc"),
+                           rd=i.get("rd"), acq=-c["acq"] if c.get("acq") is not None else None, ocf=c.get("ocf"), rev=i.get("rev"))
+    for y in sorted(set(d.get("capex", {})) | set(d.get("ocf", {}))):
+        r = rows.setdefault(y[:4], {})
+        for k, fk, sgn in (("capex", "capex", 1), ("dep", "dna", 1), ("ocf", "ocf", 1), ("rev", "revenue", 1)):
+            if r.get(k) is None and v(d, fk, y) is not None: r[k] = abs(v(d, fk, y)) if k == "capex" else v(d, fk, y)
+    ys = [y for y in sorted(rows) if rows[y].get("capex") is not None or rows[y].get("rd") is not None][-n:]
+    b = lambda x: None if x is None else round(x / 1e9, 3)
+    return [dict(y=int(y), **{k: b(rows[y].get(k)) for k in ("capex", "dep", "rd", "acq", "ocf", "rev")}) for y in ys] or None
+
 def analyse(t):
     Y = years_from_facts(t)
     ins = t in INSURERS
@@ -104,6 +126,11 @@ def analyse(t):
         out["note"] = ("No statements for this company in the data yet." if not roic else
                        f"Only {len(roic)} year{'s' if len(roic) != 1 else ''} of net income and book value in the data, so the return-on-equity tests can't be run.")
         return out
+    if roic and roic[-1][0] == last:          # value created at any rate = after-tax profit - rate x capital (Capital and returns card)
+        ly, py = str(last), str(last - 1)
+        out["nopat_last_b"] = nopat[ly] / 1e9
+        out["ic_last_b"] = ((ic[ly] + ic[py]) / 2 if py in ic else ic[ly]) / 1e9
+    if not ins: out["invest"] = investment(t)
     if len(roic) < 4 or roic[-1][0] != last:
         out["note"] = "Invested capital is at or below zero in recent years (cash exceeds equity plus debt, or big buybacks), so returns on capital can't be measured. The business needs very little capital."
         return out

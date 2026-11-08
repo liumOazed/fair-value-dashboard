@@ -97,27 +97,37 @@
     {
      "r": 0.08,
      "fv": 229.59,
-     "base": 231.74
+     "bear": 178.45,
+     "base": 231.74,
+     "bull": 300.92
     },
     {
      "r": 0.09,
      "fv": 192.7,
-     "base": 194.51
+     "bear": 151.13,
+     "base": 194.51,
+     "bull": 250.54
     },
     {
      "r": 0.1,
      "fv": 165.8,
-     "base": 167.36
+     "bear": 131.14,
+     "base": 167.36,
+     "bull": 213.91
     },
     {
      "r": 0.11,
      "fv": 145.35,
-     "base": 146.71
+     "bear": 115.88,
+     "base": 146.71,
+     "bull": 186.15
     },
     {
      "r": 0.12,
      "fv": 129.3,
-     "base": 130.51
+     "bear": 103.86,
+     "base": 130.51,
+     "bull": 164.45
     }
    ],
    "required_return_reason": "Mega-cap, very stable cash flows, huge buybacks: close to an average-risk stock.",
@@ -3665,6 +3675,13 @@
     },
     "period": "Nine months to 27 Jun 2026 vs 28 Jun 2025",
     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm"
+   },
+   "wacc_row": {
+    "r": 0.0892,
+    "fv": 195.13,
+    "bear": 152.93,
+    "base": 196.96,
+    "bull": 253.85
    }
   },
   {
@@ -3758,27 +3775,37 @@
     {
      "r": 0.08,
      "fv": 460.53,
-     "base": 488.82
+     "bear": 261.09,
+     "base": 488.82,
+     "bull": 688.98
     },
     {
      "r": 0.09,
      "fv": 379.36,
-     "base": 402.57
+     "bear": 217.61,
+     "base": 402.57,
+     "bull": 563.96
     },
     {
      "r": 0.1,
      "fv": 320.47,
-     "base": 340.0
+     "bear": 185.91,
+     "base": 340.0,
+     "bull": 473.5
     },
     {
      "r": 0.11,
      "fv": 275.95,
-     "base": 292.69
+     "bear": 161.81,
+     "base": 292.69,
+     "bull": 405.3
     },
     {
      "r": 0.12,
      "fv": 241.22,
-     "base": 255.78
+     "bear": 142.91,
+     "base": 255.78,
+     "bull": 352.26
     }
    ],
    "required_return_reason": "Diversified software and cloud with recurring revenue and a net cash balance sheet.",
@@ -7311,6 +7338,13 @@
     },
     "period": "Quarter to 30 Sep 2026 (FY27 Q1), year-ago recast from the stated growth (25%, -3%)",
     "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/"
+   },
+   "wacc_row": {
+    "r": 0.0877,
+    "fv": 395.68,
+    "bear": 226.37,
+    "base": 419.91,
+    "bull": 589.06
    }
   },
   {
@@ -7404,27 +7438,37 @@
     {
      "r": 0.08,
      "fv": 371.86,
-     "base": 382.52
+     "bear": 182.78,
+     "base": 382.52,
+     "bull": 628.84
     },
     {
      "r": 0.09,
      "fv": 306.06,
-     "base": 314.93
+     "bear": 153.15,
+     "base": 314.93,
+     "bull": 513.29
     },
     {
      "r": 0.1,
      "fv": 258.45,
-     "base": 265.99
+     "bear": 131.6,
+     "base": 265.99,
+     "bull": 429.85
     },
     {
      "r": 0.11,
      "fv": 222.55,
-     "base": 229.08
+     "bear": 115.28,
+     "base": 229.08,
+     "bull": 367.1
     },
     {
      "r": 0.12,
      "fv": 194.62,
-     "base": 200.37
+     "bear": 102.52,
+     "base": 200.37,
+     "bull": 318.4
     }
    ],
    "required_return_reason": "Strong balance sheet, but search faces AI disruption and regulatory risk.",
@@ -10962,6 +11006,13 @@
     },
     "period": "Quarter to 30 Sep 2026 vs 30 Sep 2025 (hedging gains excluded)",
     "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf"
+   },
+   "wacc_row": {
+    "r": 0.097,
+    "fv": 271.35,
+    "bear": 137.45,
+    "base": 279.26,
+    "bull": 452.45
    }
   },
   {
@@ -11055,32 +11106,44 @@
     {
      "r": 0.08,
      "fv": 169.25,
-     "base": 173.38
+     "bear": 69.48,
+     "base": 173.38,
+     "bull": 308.59
     },
     {
      "r": 0.09,
      "fv": 135.66,
-     "base": 139.13
+     "bear": 53.68,
+     "base": 139.13,
+     "bull": 249.98
     },
     {
      "r": 0.1,
      "fv": 111.19,
-     "base": 114.16
+     "bear": 42.18,
+     "base": 114.16,
+     "bull": 207.29
     },
     {
      "r": 0.105,
      "fv": 101.31,
-     "base": 104.08
+     "bear": 37.53,
+     "base": 104.08,
+     "bull": 190.06
     },
     {
      "r": 0.11,
      "fv": 92.62,
-     "base": 95.21
+     "bear": 33.44,
+     "base": 95.21,
+     "bull": 174.91
     },
     {
      "r": 0.12,
      "fv": 78.08,
-     "base": 80.38
+     "bear": 26.6,
+     "base": 80.38,
+     "bull": 149.57
     }
    ],
    "required_return_reason": "Thin retail margins and very heavy AI capex make free cash flow volatile.",
@@ -14402,6 +14465,13 @@
     },
     "period": "Quarter to 30 Sep 2026 vs 30 Sep 2025",
     "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/"
+   },
+   "wacc_row": {
+    "r": 0.0961,
+    "fv": 119.82,
+    "bear": 46.23,
+    "base": 122.96,
+    "bull": 222.34
    }
   },
   {
@@ -14651,27 +14721,37 @@
     {
      "r": 0.08,
      "fv": 256.61,
-     "base": 240.32
+     "bear": 100.32,
+     "base": 240.32,
+     "bull": 531.75
     },
     {
      "r": 0.09,
      "fv": 211.86,
-     "base": 199.21
+     "bear": 84.73,
+     "base": 199.21,
+     "bull": 434.19
     },
     {
      "r": 0.1,
      "fv": 179.38,
-     "base": 169.31
+     "bear": 73.31,
+     "base": 169.31,
+     "bull": 363.68
     },
     {
      "r": 0.11,
      "fv": 154.81,
-     "base": 146.64
+     "bear": 64.6,
+     "base": 146.64,
+     "bull": 310.57
     },
     {
      "r": 0.12,
      "fv": 135.63,
-     "base": 128.91
+     "bear": 57.74,
+     "base": 128.91,
+     "bull": 269.3
     }
    ],
    "required_return_reason": "Below the 11.5% chip-group rate: mega-cap, net cash and a dominant position. Still above average for cyclical AI spending, customer concentration and competition. 11-12% is also defensible.",
@@ -18178,7 +18258,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 27% or more in each of the last 4 years (median 104%), at least 10 points above the 10.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0994,
+    "fv": 181.02,
+    "bear": 73.89,
+    "base": 170.82,
+    "bull": 367.23
+   }
   },
   {
    "ticker": "AVGO",
@@ -18271,27 +18358,37 @@
     {
      "r": 0.08,
      "fv": 371.25,
-     "base": 380.45
+     "bear": 163.52,
+     "base": 380.45,
+     "bull": 659.84
     },
     {
      "r": 0.09,
      "fv": 306.18,
-     "base": 313.97
+     "bear": 136.51,
+     "base": 313.97,
+     "bull": 541.21
     },
     {
      "r": 0.1,
      "fv": 258.76,
-     "base": 265.51
+     "bear": 116.7,
+     "base": 265.51,
+     "bull": 454.98
     },
     {
      "r": 0.11,
      "fv": 222.75,
-     "base": 228.69
+     "bear": 101.57,
+     "base": 228.69,
+     "bull": 389.66
     },
     {
      "r": 0.12,
      "fv": 194.53,
-     "base": 199.84
+     "bear": 89.63,
+     "base": 199.84,
+     "bull": 338.62
     }
    ],
    "required_return_reason": "Chips plus a large recurring software business (VMware) lower the risk vs the chip group, offset by $35B net debt.",
@@ -21663,7 +21760,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 23% over 4 years, above the 10.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0978,
+    "fv": 268.19,
+    "bear": 120.65,
+    "base": 275.15,
+    "bull": 472.11
+   }
   },
   {
    "ticker": "LLY",
@@ -21756,27 +21860,37 @@
     {
      "r": 0.08,
      "fv": 1257.78,
-     "base": 1276.17
+     "bear": 579.63,
+     "base": 1276.17,
+     "bull": 2229.03
     },
     {
      "r": 0.09,
      "fv": 1030.56,
-     "base": 1046.81
+     "bear": 477.98,
+     "base": 1046.81,
+     "bull": 1818.78
     },
     {
      "r": 0.1,
      "fv": 865.41,
-     "base": 880.02
+     "bear": 403.68,
+     "base": 880.02,
+     "bull": 1521.49
     },
     {
      "r": 0.11,
      "fv": 740.32,
-     "base": 753.6
+     "bear": 347.05,
+     "base": 753.6,
+     "bull": 1297.0
     },
     {
      "r": 0.12,
      "fv": 642.53,
-     "base": 654.73
+     "bear": 302.51,
+     "base": 654.73,
+     "bull": 1122.09
     }
    ],
    "required_return_reason": "Large diversified pharma; obesity-drug growth is strong but competition and pricing pressure are rising.",
@@ -25283,7 +25397,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 25% or more in each of the last 4 years (median 31%), at least 10 points above the 9.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0873,
+    "fv": 1084.14,
+    "bear": 502.0,
+    "base": 1100.91,
+    "bull": 1915.41
+   }
   },
   {
    "ticker": "ADBE",
@@ -25376,32 +25497,44 @@
     {
      "r": 0.08,
      "fv": 477.56,
-     "base": 506.68
+     "bear": 260.11,
+     "base": 506.68,
+     "bull": 730.96
     },
     {
      "r": 0.09,
      "fv": 401.14,
-     "base": 425.76
+     "bear": 222.3,
+     "base": 425.76,
+     "bull": 607.83
     },
     {
      "r": 0.095,
      "fv": 371.18,
-     "base": 394.03
+     "bear": 207.41,
+     "base": 394.03,
+     "bull": 559.73
     },
     {
      "r": 0.1,
      "fv": 345.27,
-     "base": 366.57
+     "bear": 194.47,
+     "base": 366.57,
+     "bull": 518.21
     },
     {
      "r": 0.11,
      "fv": 302.68,
-     "base": 321.42
+     "bear": 173.08,
+     "base": 321.42,
+     "bull": 450.2
     },
     {
      "r": 0.12,
      "fv": 269.16,
-     "base": 285.88
+     "bear": 156.12,
+     "base": 285.88,
+     "bull": 396.94
     }
    ],
    "required_return_reason": "Recurring subscription revenue, but generative AI threatens its creative-software moat.",
@@ -28908,7 +29041,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 38% or more in each of the last 4 years (median 46%), at least 10 points above the 9.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.091,
+    "fv": 394.52,
+    "bear": 219.02,
+    "base": 418.75,
+    "bull": 597.19
+   }
   },
   {
    "ticker": "APP",
@@ -29001,27 +29141,37 @@
     {
      "r": 0.08,
      "fv": 706.78,
-     "base": 680.77
+     "bear": 284.7,
+     "base": 680.77,
+     "bull": 1404.94
     },
     {
      "r": 0.09,
      "fv": 585.03,
-     "base": 564.51
+     "bear": 240.33,
+     "base": 564.51,
+     "bull": 1153.38
     },
     {
      "r": 0.1,
      "fv": 496.35,
-     "base": 479.77
+     "bear": 207.79,
+     "base": 479.77,
+     "bull": 970.64
     },
     {
      "r": 0.11,
      "fv": 429.03,
-     "base": 415.4
+     "bear": 182.89,
+     "base": 415.4,
+     "bull": 832.32
     },
     {
      "r": 0.12,
      "fv": 376.3,
-     "base": 364.94
+     "bear": 163.24,
+     "base": 364.94,
+     "bull": 724.31
     }
    ],
    "required_return_reason": "Very high margins that depend on one ad platform, short track record, regulatory and accounting scrutiny.",
@@ -32393,7 +32543,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 33% over 4 years, above the 11.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.1084,
+    "fv": 438.46,
+    "bear": 186.39,
+    "base": 424.42,
+    "bull": 851.67
+   }
   },
   {
    "ticker": "FICO",
@@ -32486,32 +32643,44 @@
     {
      "r": 0.08,
      "fv": 818.8,
-     "base": 869.07
+     "bear": 427.22,
+     "base": 869.07,
+     "bull": 1280.5
     },
     {
      "r": 0.09,
      "fv": 646.11,
-     "base": 688.11
+     "bear": 325.11,
+     "base": 688.11,
+     "bull": 1022.62
     },
     {
      "r": 0.095,
      "fv": 578.49,
-     "base": 617.24
+     "bear": 284.97,
+     "base": 617.24,
+     "bull": 921.9
     },
     {
      "r": 0.1,
      "fv": 520.02,
-     "base": 555.95
+     "bear": 250.17,
+     "base": 555.95,
+     "bull": 834.95
     },
     {
      "r": 0.11,
      "fv": 424.03,
-     "base": 455.33
+     "bear": 192.82,
+     "base": 455.33,
+     "bull": 692.58
     },
     {
      "r": 0.12,
      "fv": 348.6,
-     "base": 376.25
+     "bear": 147.49,
+     "base": 376.25,
+     "bull": 581.11
     }
    ],
    "required_return_reason": "Near-monopoly in credit scores, but pricing power is under regulatory pressure and it carries net debt.",
@@ -36018,7 +36187,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 44% or more in each of the last 4 years (median 49%), at least 10 points above the 9.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0814,
+    "fv": 791.32,
+    "bear": 411.0,
+    "base": 840.27,
+    "bull": 1239.41
+   }
   },
   {
    "ticker": "APA",
@@ -36111,27 +36287,37 @@
     {
      "r": 0.08,
      "fv": 58.17,
-     "base": 57.55
+     "bear": 30.19,
+     "base": 57.55,
+     "bull": 101.66
     },
     {
      "r": 0.09,
      "fv": 48.4,
-     "base": 47.91
+     "bear": 25.11,
+     "base": 47.91,
+     "bull": 84.56
     },
     {
      "r": 0.1,
      "fv": 41.21,
-     "base": 40.82
+     "bear": 21.34,
+     "base": 40.82,
+     "bull": 72.02
     },
     {
      "r": 0.11,
      "fv": 35.69,
-     "base": 35.37
+     "bear": 18.42,
+     "base": 35.37,
+     "bull": 62.43
     },
     {
      "r": 0.12,
      "fv": 31.32,
-     "base": 31.04
+     "bear": 16.09,
+     "base": 31.04,
+     "bull": 54.85
     }
    ],
    "required_return_reason": "Above the 8.5% Energy rate: an oil producer with Egypt and exploration risk, net debt and oil-price dependence.",
@@ -39368,7 +39554,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth -4.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0904,
+    "fv": 48.07,
+    "bear": 24.93,
+    "base": 47.59,
+    "bull": 83.99
+   }
   },
   {
    "ticker": "DECK",
@@ -39461,32 +39654,44 @@
     {
      "r": 0.08,
      "fv": 157.62,
-     "base": 163.93
+     "bear": 108.14,
+     "base": 163.93,
+     "bull": 216.05
     },
     {
      "r": 0.09,
      "fv": 133.6,
-     "base": 138.88
+     "bear": 92.96,
+     "base": 138.88,
+     "bull": 181.37
     },
     {
      "r": 0.095,
      "fv": 124.18,
-     "base": 129.06
+     "bear": 86.98,
+     "base": 129.06,
+     "bull": 167.8
     },
     {
      "r": 0.1,
      "fv": 116.03,
-     "base": 120.55
+     "bear": 81.79,
+     "base": 120.55,
+     "bull": 156.07
     },
     {
      "r": 0.11,
      "fv": 102.62,
-     "base": 106.57
+     "bear": 73.22,
+     "base": 106.57,
+     "bull": 136.84
     },
     {
      "r": 0.12,
      "fv": 92.06,
-     "base": 95.55
+     "bear": 66.44,
+     "base": 95.55,
+     "bull": 121.75
     }
    ],
    "required_return_reason": "Fashion and brand risk (HOKA, UGG) and tariffs, partly offset by $1.1B net cash.",
@@ -42993,7 +43198,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 49% or more in each of the last 4 years (median 92%), at least 10 points above the 9.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0913,
+    "fv": 130.94,
+    "bear": 91.27,
+    "base": 136.1,
+    "bull": 177.53
+   }
   },
   {
    "ticker": "INCY",
@@ -43086,32 +43298,44 @@
     {
      "r": 0.08,
      "fv": 148.98,
-     "base": 149.23
+     "bear": 97.86,
+     "base": 149.23,
+     "bull": 225.04
     },
     {
      "r": 0.09,
      "fv": 129.33,
-     "base": 129.61
+     "bear": 86.94,
+     "base": 129.61,
+     "bull": 192.18
     },
     {
      "r": 0.095,
      "fv": 121.59,
-     "base": 121.89
+     "bear": 82.63,
+     "base": 121.89,
+     "bull": 179.27
     },
     {
      "r": 0.1,
      "fv": 114.88,
-     "base": 115.19
+     "bear": 78.88,
+     "base": 115.19,
+     "bull": 168.1
     },
     {
      "r": 0.11,
      "fv": 103.81,
-     "base": 104.14
+     "bear": 72.66,
+     "base": 104.14,
+     "bull": 149.71
     },
     {
      "r": 0.12,
      "fv": 95.05,
-     "base": 95.39
+     "bear": 67.71,
+     "base": 95.39,
+     "bull": 135.22
     }
    ],
    "required_return_reason": "Jakafi is ~60% of sales and loses patent protection later this decade.",
@@ -46483,7 +46707,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 31% over 4 years, above the 9.5% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.095,
+    "fv": 121.66,
+    "bear": 82.67,
+    "base": 121.96,
+    "bull": 179.39
+   }
   },
   {
    "ticker": "MKC",
@@ -46576,27 +46807,37 @@
     {
      "r": 0.08,
      "fv": 54.77,
-     "base": 57.95
+     "bear": 36.69,
+     "base": 57.95,
+     "bull": 73.96
     },
     {
      "r": 0.09,
      "fv": 44.15,
-     "base": 46.8
+     "bear": 29.06,
+     "base": 46.8,
+     "bull": 60.13
     },
     {
      "r": 0.1,
      "fv": 36.3,
-     "base": 38.57
+     "bear": 23.42,
+     "base": 38.57,
+     "bull": 49.94
     },
     {
      "r": 0.11,
      "fv": 30.25,
-     "base": 32.24
+     "bear": 19.05,
+     "base": 32.24,
+     "bull": 42.1
     },
     {
      "r": 0.12,
      "fv": 25.45,
-     "base": 27.2
+     "bear": 15.57,
+     "base": 27.2,
+     "bull": 35.87
     }
    ],
    "required_return_reason": "Below the 9% Consumer Defensive rate: spices are very stable demand. Note the pending Unilever Foods deal adds leverage risk.",
@@ -49887,7 +50128,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 9% over 4 years, within 3 points of the 8.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0672,
+    "fv": 75.47,
+    "bear": 51.51,
+    "base": 79.66,
+    "bull": 100.95
+   }
   },
   {
    "ticker": "EXPE",
@@ -50388,32 +50636,44 @@
     {
      "r": 0.08,
      "fv": 554.34,
-     "base": 592.61
+     "bear": 323.51,
+     "base": 592.61,
+     "bull": 804.91
     },
     {
      "r": 0.09,
      "fv": 469.8,
-     "base": 501.69
+     "bear": 278.99,
+     "base": 501.69,
+     "bull": 676.3
     },
     {
      "r": 0.1,
      "fv": 407.72,
-     "base": 434.94
+     "bear": 246.07,
+     "base": 434.94,
+     "bull": 582.12
     },
     {
      "r": 0.105,
      "fv": 382.46,
-     "base": 407.79
+     "bear": 232.61,
+     "base": 407.79,
+     "bull": 543.92
     },
     {
      "r": 0.11,
      "fv": 360.17,
-     "base": 383.83
+     "bear": 220.68,
+     "base": 383.83,
+     "bull": 510.24
     },
     {
      "r": 0.12,
      "fv": 322.58,
-     "base": 343.45
+     "bear": 200.46,
+     "base": 343.45,
+     "bull": 453.61
     }
    ],
    "required_return_reason": "Online travel agent: cyclical, and the most exposed to AI agents booking directly with hotels and airlines.",
@@ -53377,7 +53637,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 32% over 4 years, above the 10.5% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0963,
+    "fv": 428.73,
+    "bear": 257.24,
+    "base": 457.53,
+    "bull": 613.96
+   }
   },
   {
    "ticker": "BKNG",
@@ -54013,32 +54280,44 @@
     {
      "r": 0.08,
      "fv": 287.15,
-     "base": 303.59
+     "bear": 192.5,
+     "base": 303.59,
+     "bull": 388.02
     },
     {
      "r": 0.09,
      "fv": 239.65,
-     "base": 253.12
+     "bear": 162.65,
+     "base": 253.12,
+     "bull": 321.46
     },
     {
      "r": 0.095,
      "fv": 221.05,
-     "base": 233.37
+     "bear": 150.91,
+     "base": 233.37,
+     "bull": 295.48
     },
     {
      "r": 0.1,
      "fv": 204.98,
-     "base": 216.29
+     "bear": 140.72,
+     "base": 216.29,
+     "bull": 273.06
     },
     {
      "r": 0.11,
      "fv": 178.6,
-     "base": 188.29
+     "bear": 123.92,
+     "base": 188.29,
+     "bull": 236.38
     },
     {
      "r": 0.12,
      "fv": 157.88,
-     "base": 166.3
+     "bear": 110.63,
+     "base": 166.3,
+     "bull": 207.68
     }
    ],
    "required_return_reason": "Dominant online travel platform with strong direct traffic; travel is cyclical and AI agents are a new disintermediation risk.",
@@ -57002,7 +57281,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 116% or more in each of the last 1 years (median 116%), at least 10 points above the 9.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0879,
+    "fv": 248.38,
+    "bear": 168.16,
+    "base": 262.4,
+    "bull": 333.68
+   }
   },
   {
    "ticker": "INTU",
@@ -57503,27 +57789,37 @@
     {
      "r": 0.08,
      "fv": 548.45,
-     "base": 573.18
+     "bear": 365.34,
+     "base": 573.18,
+     "bull": 761.29
     },
     {
      "r": 0.09,
      "fv": 459.22,
-     "base": 479.69
+     "bear": 308.87,
+     "base": 479.69,
+     "bull": 633.58
     },
     {
      "r": 0.1,
      "fv": 393.94,
-     "base": 411.29
+     "bear": 267.4,
+     "base": 411.29,
+     "bull": 540.36
     },
     {
      "r": 0.11,
      "fv": 344.14,
-     "base": 359.13
+     "bear": 235.64,
+     "base": 359.13,
+     "bull": 469.43
     },
     {
      "r": 0.12,
      "fv": 304.94,
-     "base": 318.07
+     "bear": 210.52,
+     "base": 318.07,
+     "bull": 413.73
     }
    ],
    "required_return_reason": "Sticky TurboTax / QuickBooks franchises, but AI tax and bookkeeping agents are a real threat to pricing power.",
@@ -60487,7 +60783,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 17% over 4 years, above the 10.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0935,
+    "fv": 433.94,
+    "bear": 292.83,
+    "base": 453.19,
+    "bull": 597.45
+   }
   },
   {
    "ticker": "ADSK",
@@ -61123,27 +61426,37 @@
     {
      "r": 0.08,
      "fv": 313.91,
-     "base": 329.02
+     "bear": 199.06,
+     "base": 329.02,
+     "bull": 448.43
     },
     {
      "r": 0.09,
      "fv": 261.59,
-     "base": 273.94
+     "bear": 168.38,
+     "base": 273.94,
+     "bull": 370.52
     },
     {
      "r": 0.1,
      "fv": 223.52,
-     "base": 233.88
+     "bear": 145.92,
+     "base": 233.88,
+     "bull": 314.03
     },
     {
      "r": 0.11,
      "fv": 194.66,
-     "base": 203.52
+     "bear": 128.77,
+     "base": 203.52,
+     "bull": 271.35
     },
     {
      "r": 0.12,
      "fv": 172.07,
-     "base": 179.76
+     "bear": 115.26,
+     "base": 179.76,
+     "bull": 238.07
     }
    ],
    "required_return_reason": "Design software with high switching costs; exposed to construction and manufacturing cycles and AI-native design tools.",
@@ -64107,7 +64420,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 33% or more in each of the last 4 years (median 40%), at least 10 points above the 10.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0952,
+    "fv": 240.29,
+    "bear": 155.83,
+    "base": 251.52,
+    "bull": 338.88
+   }
   },
   {
    "ticker": "TPR",
@@ -64608,27 +64928,37 @@
     {
      "r": 0.08,
      "fv": 127.28,
-     "base": 137.84
+     "bear": 67.8,
+     "base": 137.84,
+     "bull": 190.1
     },
     {
      "r": 0.09,
      "fv": 105.54,
-     "base": 114.31
+     "bear": 56.28,
+     "base": 114.31,
+     "bull": 157.5
     },
     {
      "r": 0.1,
      "fv": 89.56,
-     "base": 97.03
+     "bear": 47.76,
+     "base": 97.03,
+     "bull": 133.59
     },
     {
      "r": 0.11,
      "fv": 77.31,
-     "base": 83.78
+     "bear": 41.18,
+     "base": 83.78,
+     "bull": 115.32
     },
     {
      "r": 0.12,
      "fv": 67.61,
-     "base": 73.31
+     "bear": 35.93,
+     "base": 73.31,
+     "bull": 100.9
     }
    ],
    "required_return_reason": "Fashion brand (Coach) risk and tariffs; store leases add leverage.",
@@ -67592,7 +67922,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 25% over 4 years, above the 10.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0884,
+    "fv": 108.48,
+    "bear": 57.84,
+    "base": 117.49,
+    "bull": 161.9
+   }
   },
   {
    "ticker": "VEEV",
@@ -68228,32 +68565,44 @@
     {
      "r": 0.08,
      "fv": 267.93,
-     "base": 279.04
+     "bear": 193.68,
+     "base": 279.04,
+     "bull": 351.53
     },
     {
      "r": 0.09,
      "fv": 229.84,
-     "base": 238.94
+     "bear": 169.67,
+     "base": 238.94,
+     "bull": 297.36
     },
     {
      "r": 0.095,
      "fv": 214.99,
-     "base": 223.3
+     "bear": 160.27,
+     "base": 223.3,
+     "bull": 276.28
     },
     {
      "r": 0.1,
      "fv": 202.17,
-     "base": 209.81
+     "bear": 152.14,
+     "base": 209.81,
+     "bull": 258.13
     },
     {
      "r": 0.11,
      "fv": 181.22,
-     "base": 187.76
+     "bear": 138.8,
+     "base": 187.76,
+     "bull": 228.52
     },
     {
      "r": 0.12,
      "fv": 164.85,
-     "base": 170.53
+     "bear": 128.31,
+     "base": 170.53,
+     "bull": 205.45
     }
    ],
    "required_return_reason": "Mission-critical life-sciences software with large net cash; risk from Salesforce competition in CRM.",
@@ -71217,7 +71566,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 57% or more in each of the last 4 years (median 68%), at least 10 points above the 9.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0948,
+    "fv": 215.44,
+    "bear": 160.56,
+    "base": 223.78,
+    "bull": 276.92
+   }
   },
   {
    "ticker": "MNST",
@@ -71853,32 +72209,44 @@
     {
      "r": 0.08,
      "fv": 27.82,
-     "base": 29.03
+     "bear": 19.3,
+     "base": 29.03,
+     "bull": 37.57
     },
     {
      "r": 0.085,
      "fv": 25.48,
-     "base": 26.57
+     "bear": 17.82,
+     "base": 26.57,
+     "bull": 34.23
     },
     {
      "r": 0.09,
      "fv": 23.51,
-     "base": 24.5
+     "bear": 16.57,
+     "base": 24.5,
+     "bull": 31.42
     },
     {
      "r": 0.1,
      "fv": 20.37,
-     "base": 21.21
+     "bear": 14.58,
+     "base": 21.21,
+     "bull": 26.95
     },
     {
      "r": 0.11,
      "fv": 17.98,
-     "base": 18.71
+     "bear": 13.06,
+     "base": 18.71,
+     "bull": 23.57
     },
     {
      "r": 0.12,
      "fv": 16.12,
-     "base": 16.75
+     "bear": 11.86,
+     "base": 16.75,
+     "bull": 20.93
     }
    ],
    "required_return_reason": "Below the 9% Consumer Defensive rate: very stable demand, no debt, long growth record.",
@@ -74842,7 +75210,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 28% or more in each of the last 4 years (median 31%), at least 10 points above the 8.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.085,
+    "fv": 25.5,
+    "bear": 17.83,
+    "base": 26.6,
+    "bull": 34.26
+   }
   },
   {
    "ticker": "ALLE",
@@ -75343,27 +75718,37 @@
     {
      "r": 0.08,
      "fv": 164.9,
-     "base": 176.06
+     "bear": 108.54,
+     "base": 176.06,
+     "bull": 221.52
     },
     {
      "r": 0.09,
      "fv": 136.03,
-     "base": 145.29
+     "bear": 89.59,
+     "base": 145.29,
+     "bull": 182.54
     },
     {
      "r": 0.1,
      "fv": 114.84,
-     "base": 122.72
+     "bear": 75.62,
+     "base": 122.72,
+     "bull": 154.0
     },
     {
      "r": 0.11,
      "fv": 98.63,
-     "base": 105.45
+     "bear": 64.88,
+     "base": 105.45,
+     "bull": 132.22
     },
     {
      "r": 0.12,
      "fv": 85.82,
-     "base": 91.81
+     "bear": 56.36,
+     "base": 91.81,
+     "bull": 115.06
     }
    ],
    "required_return_reason": "Steady locks and access-control business; tied to the non-residential construction cycle, moderate debt.",
@@ -78327,7 +78712,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 21% over 4 years, above the 9.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0834,
+    "fv": 154.08,
+    "bear": 101.45,
+    "base": 164.53,
+    "bull": 206.91
+   }
   },
   {
    "ticker": "FTNT",
@@ -78828,27 +79220,37 @@
     {
      "r": 0.08,
      "fv": 96.76,
-     "base": 100.03
+     "bear": 67.13,
+     "base": 100.03,
+     "bull": 133.02
     },
     {
      "r": 0.09,
      "fv": 82.03,
-     "base": 84.72
+     "bear": 57.78,
+     "base": 84.72,
+     "bull": 111.66
     },
     {
      "r": 0.1,
      "fv": 71.25,
-     "base": 73.52
+     "bear": 50.91,
+     "base": 73.52,
+     "bull": 96.08
     },
     {
      "r": 0.11,
      "fv": 63.04,
-     "base": 64.99
+     "bear": 45.65,
+     "base": 64.99,
+     "bull": 84.24
     },
     {
      "r": 0.12,
      "fv": 56.58,
-     "base": 58.29
+     "bear": 41.49,
+     "base": 58.29,
+     "bull": 74.95
     }
    ],
    "required_return_reason": "Cybersecurity is durable demand, but firewall hardware refresh cycles make growth lumpy.",
@@ -81812,7 +82214,14 @@
    "cap_years": 15,
    "moat_reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0996,
+    "fv": 71.59,
+    "bear": 51.13,
+    "base": 73.88,
+    "bull": 96.57
+   }
   },
   {
    "ticker": "RMD",
@@ -82313,27 +82722,37 @@
     {
      "r": 0.08,
      "fv": 217.47,
-     "base": 226.77
+     "bear": 155.2,
+     "base": 226.77,
+     "bull": 287.63
     },
     {
      "r": 0.09,
      "fv": 184.07,
-     "base": 191.79
+     "bear": 132.79,
+     "base": 191.79,
+     "bull": 241.68
     },
     {
      "r": 0.1,
      "fv": 159.56,
-     "base": 166.13
+     "bear": 116.28,
+     "base": 166.13,
+     "bull": 208.05
     },
     {
      "r": 0.11,
      "fv": 140.81,
-     "base": 146.5
+     "bear": 103.6,
+     "base": 146.5,
+     "bull": 182.39
     },
     {
      "r": 0.12,
      "fv": 126.0,
-     "base": 131.01
+     "bear": 93.54,
+     "base": 131.01,
+     "bull": 162.19
     }
    ],
    "required_return_reason": "Healthcare device leader with recurring masks revenue; GLP-1 drugs are a long-term demand risk.",
@@ -85297,7 +85716,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 23% over 4 years, above the 9.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.089,
+    "fv": 187.0,
+    "bear": 134.76,
+    "base": 194.86,
+    "bull": 245.7
+   }
   },
   {
    "ticker": "V",
@@ -85933,32 +86359,44 @@
     {
      "r": 0.08,
      "fv": 329.36,
-     "base": 339.65
+     "bear": 253.03,
+     "base": 339.65,
+     "bull": 418.13
     },
     {
      "r": 0.085,
      "fv": 299.01,
-     "base": 308.31
+     "bear": 230.55,
+     "base": 308.31,
+     "bull": 378.44
     },
     {
      "r": 0.09,
      "fv": 273.42,
-     "base": 281.89
+     "bear": 211.56,
+     "base": 281.89,
+     "bull": 345.03
     },
     {
      "r": 0.1,
      "fv": 232.73,
-     "base": 239.88
+     "bear": 181.29,
+     "base": 239.88,
+     "bull": 292.02
     },
     {
      "r": 0.11,
      "fv": 201.88,
-     "base": 208.03
+     "bear": 158.26,
+     "base": 208.03,
+     "bull": 251.94
     },
     {
      "r": 0.12,
      "fv": 177.73,
-     "base": 183.1
+     "bear": 140.17,
+     "base": 183.1,
+     "bull": 220.67
     }
    ],
    "required_return_reason": "Above the 7.5% financials rate: payment networks are very durable but face regulation and new payment rails.",
@@ -88922,7 +89360,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 41% or more in each of the last 4 years (median 45%), at least 10 points above the 8.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0834,
+    "fv": 307.93,
+    "bear": 237.16,
+    "base": 317.52,
+    "bull": 390.1
+   }
   },
   {
    "ticker": "FIX",
@@ -89423,27 +89868,37 @@
     {
      "r": 0.08,
      "fv": 1295.73,
-     "base": 1397.98
+     "bear": 482.7,
+     "base": 1397.98,
+     "bull": 2259.66
     },
     {
      "r": 0.09,
      "fv": 1091.56,
-     "base": 1177.11
+     "bear": 422.35,
+     "base": 1177.11,
+     "bull": 1881.48
     },
     {
      "r": 0.1,
      "fv": 942.35,
-     "base": 1015.66
+     "bear": 377.81,
+     "base": 1015.66,
+     "bull": 1605.87
     },
     {
      "r": 0.11,
      "fv": 828.69,
-     "base": 892.66
+     "bear": 343.51,
+     "base": 892.66,
+     "bull": 1396.54
     },
     {
      "r": 0.12,
      "fv": 739.34,
-     "base": 795.94
+     "bear": 316.25,
+     "base": 795.94,
+     "bull": 1232.48
     }
    ],
    "required_return_reason": "Construction contractor at a cyclical peak driven by AI data-centre spending; earnings can fall fast if that slows.",
@@ -92407,7 +92862,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 33% over 4 years, above the 11.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.1092,
+    "fv": 836.28,
+    "bear": 345.81,
+    "base": 900.88,
+    "bull": 1410.5
+   }
   },
   {
    "ticker": "MA",
@@ -93043,32 +93505,44 @@
     {
      "r": 0.08,
      "fv": 590.29,
-     "base": 619.73
+     "bear": 434.97,
+     "base": 619.73,
+     "bull": 749.63
     },
     {
      "r": 0.085,
      "fv": 534.17,
-     "base": 560.64
+     "bear": 395.16,
+     "base": 560.64,
+     "bull": 676.52
     },
     {
      "r": 0.09,
      "fv": 486.91,
-     "base": 510.88
+     "bear": 361.56,
+     "base": 510.88,
+     "bull": 615.02
     },
     {
      "r": 0.1,
      "fv": 411.82,
-     "base": 431.83
+     "bear": 308.01,
+     "base": 431.83,
+     "bull": 517.53
     },
     {
      "r": 0.11,
      "fv": 354.97,
-     "base": 372.0
+     "bear": 267.28,
+     "base": 372.0,
+     "bull": 443.94
     },
     {
      "r": 0.12,
      "fv": 310.55,
-     "base": 325.27
+     "bear": 235.31,
+     "base": 325.27,
+     "bull": 386.62
     }
    ],
    "required_return_reason": "Above the 7.5% financials rate: payment networks are very durable but face regulation and new payment rails.",
@@ -96032,7 +96506,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 83% or more in each of the last 4 years (median 88%), at least 10 points above the 8.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0829,
+    "fv": 556.73,
+    "bear": 411.17,
+    "base": 584.39,
+    "bull": 705.9
+   }
   },
   {
    "ticker": "CTAS",
@@ -96668,32 +97149,44 @@
     {
      "r": 0.08,
      "fv": 113.56,
-     "base": 119.89
+     "bear": 82.29,
+     "base": 119.89,
+     "bull": 144.63
     },
     {
      "r": 0.085,
      "fv": 102.9,
-     "base": 108.61
+     "bear": 74.83,
+     "base": 108.61,
+     "bull": 130.72
     },
     {
      "r": 0.09,
      "fv": 93.9,
-     "base": 99.09
+     "bear": 68.52,
+     "base": 99.09,
+     "bull": 119.01
     },
     {
      "r": 0.1,
      "fv": 79.57,
-     "base": 83.93
+     "bear": 58.43,
+     "base": 83.93,
+     "bull": 100.39
     },
     {
      "r": 0.11,
      "fv": 68.69,
-     "base": 72.42
+     "bear": 50.73,
+     "base": 72.42,
+     "bull": 86.29
     },
     {
      "r": 0.12,
      "fv": 60.15,
-     "base": 63.39
+     "bear": 44.66,
+     "base": 63.39,
+     "bull": 75.28
     }
    ],
    "required_return_reason": "Very steady recurring uniform and facility services with a long record; slightly below the 9% industrials rate.",
@@ -99657,7 +100150,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 22% or more in each of the last 4 years (median 26%), at least 10 points above the 8.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0834,
+    "fv": 106.07,
+    "bear": 77.05,
+    "base": 111.97,
+    "bull": 134.86
+   }
   },
   {
    "ticker": "DXCM",
@@ -100077,27 +100577,37 @@
     {
      "r": 0.08,
      "fv": 76.4,
-     "base": 81.23
+     "bear": 44.74,
+     "base": 81.23,
+     "bull": 111.82
     },
     {
      "r": 0.09,
      "fv": 64.45,
-     "base": 68.45
+     "bear": 38.31,
+     "base": 68.45,
+     "bull": 93.63
     },
     {
      "r": 0.1,
      "fv": 55.68,
-     "base": 59.09
+     "bear": 33.57,
+     "base": 59.09,
+     "bull": 80.32
     },
     {
      "r": 0.11,
      "fv": 48.98,
-     "base": 51.94
+     "bear": 29.93,
+     "base": 51.94,
+     "bull": 70.17
     },
     {
      "r": 0.12,
      "fv": 43.7,
-     "base": 46.29
+     "bear": 27.05,
+     "base": 46.29,
+     "bull": 62.18
     }
    ],
    "required_return_reason": "Growing device market but strong Abbott competition, pricing pressure and recent product-quality issues.",
@@ -103061,7 +103571,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 12% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0962,
+    "fv": 58.69,
+    "bear": 35.2,
+    "base": 62.31,
+    "bull": 84.88
+   }
   },
   {
    "ticker": "IDXX",
@@ -103697,27 +104214,37 @@
     {
      "r": 0.08,
      "fv": 383.82,
-     "base": 401.92
+     "bear": 268.57,
+     "base": 401.92,
+     "bull": 511.47
     },
     {
      "r": 0.09,
      "fv": 319.28,
-     "base": 334.13
+     "bear": 225.59,
+     "base": 334.13,
+     "bull": 422.68
     },
     {
      "r": 0.1,
      "fv": 272.24,
-     "base": 284.75
+     "bear": 194.11,
+     "base": 284.75,
+     "bull": 358.19
     },
     {
      "r": 0.11,
      "fv": 236.51,
-     "base": 247.24
+     "bear": 170.06,
+     "base": 247.24,
+     "bull": 309.36
     },
     {
      "r": 0.12,
      "fv": 208.48,
-     "base": 217.83
+     "bear": 151.09,
+     "base": 217.83,
+     "bull": 271.21
     }
    ],
    "required_return_reason": "Recurring veterinary test revenue and a strong installed base; sensitive to vet-visit volumes.",
@@ -106681,7 +107208,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 36% or more in each of the last 4 years (median 40%), at least 10 points above the 9.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0889,
+    "fv": 325.43,
+    "bear": 229.69,
+    "base": 340.59,
+    "bull": 431.12
+   }
   },
   {
    "ticker": "VRSN",
@@ -107182,32 +107716,44 @@
     {
      "r": 0.08,
      "fv": 219.03,
-     "base": 228.15
+     "bear": 158.21,
+     "base": 228.15,
+     "bull": 287.43
     },
     {
      "r": 0.085,
      "fv": 199.53,
-     "base": 207.79
+     "bear": 144.61,
+     "base": 207.79,
+     "bull": 261.27
     },
     {
      "r": 0.09,
      "fv": 183.03,
-     "base": 190.55
+     "bear": 133.07,
+     "base": 190.55,
+     "bull": 239.15
     },
     {
      "r": 0.1,
      "fv": 156.58,
-     "base": 162.94
+     "bear": 114.51,
+     "base": 162.94,
+     "bull": 203.78
     },
     {
      "r": 0.11,
      "fv": 136.32,
-     "base": 141.8
+     "bear": 100.23,
+     "base": 141.8,
+     "bull": 176.77
     },
     {
      "r": 0.12,
      "fv": 120.31,
-     "base": 125.09
+     "bear": 88.89,
+     "base": 125.09,
+     "bull": 155.48
     }
    ],
    "required_return_reason": "Regulated near-monopoly (.com/.net registry) with very stable cash flows; risk is contract and price-cap changes.",
@@ -110171,7 +110717,14 @@
    "cap_years": 15,
    "moat_reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0818,
+    "fv": 211.73,
+    "bear": 153.12,
+    "base": 220.53,
+    "bull": 277.64
+   }
   },
   {
    "ticker": "NDAQ",
@@ -110591,27 +111144,37 @@
     {
      "r": 0.08,
      "fv": 79.83,
-     "base": 83.69
+     "bear": 53.98,
+     "base": 83.69,
+     "bull": 108.94
     },
     {
      "r": 0.09,
      "fv": 65.21,
-     "base": 68.43
+     "bear": 43.85,
+     "base": 68.43,
+     "bull": 89.23
     },
     {
      "r": 0.1,
      "fv": 54.47,
-     "base": 57.2
+     "bear": 36.37,
+     "base": 57.2,
+     "bull": 74.77
     },
     {
      "r": 0.11,
      "fv": 46.23,
-     "base": 48.6
+     "bear": 30.62,
+     "base": 48.6,
+     "bull": 63.7
     },
     {
      "r": 0.12,
      "fv": 39.71,
-     "base": 41.8
+     "bear": 26.05,
+     "base": 41.8,
+     "bull": 54.97
     }
    ],
    "required_return_reason": "Durable exchange and fintech franchise, but high debt from the Adenza deal.",
@@ -113575,7 +114138,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 9% over 4 years, within 3 points of the 9.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0816,
+    "fv": 77.21,
+    "bear": 52.17,
+    "base": 80.96,
+    "bull": 105.41
+   }
   },
   {
    "ticker": "MCO",
@@ -114076,27 +114646,37 @@
     {
      "r": 0.08,
      "fv": 355.81,
-     "base": 372.16
+     "bear": 241.4,
+     "base": 372.16,
+     "bull": 486.58
     },
     {
      "r": 0.09,
      "fv": 294.03,
-     "base": 307.56
+     "bear": 200.07,
+     "base": 307.56,
+     "bull": 401.16
     },
     {
      "r": 0.1,
      "fv": 248.78,
-     "base": 260.25
+     "bear": 169.68,
+     "base": 260.25,
+     "bull": 338.75
     },
     {
      "r": 0.11,
      "fv": 214.22,
-     "base": 224.13
+     "bear": 146.37,
+     "base": 224.13,
+     "bull": 291.21
     },
     {
      "r": 0.12,
      "fv": 186.97,
-     "base": 195.66
+     "bear": 127.92,
+     "base": 195.66,
+     "bull": 253.84
     }
    ],
    "required_return_reason": "Ratings duopoly with high margins; revenue swings with bond issuance.",
@@ -117060,7 +117640,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 24% over 4 years, above the 9.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0848,
+    "fv": 323.63,
+    "bear": 219.89,
+    "base": 338.5,
+    "bull": 442.06
+   }
   },
   {
    "ticker": "SPGI",
@@ -117480,27 +118067,37 @@
     {
      "r": 0.08,
      "fv": 346.34,
-     "base": 362.86
+     "bear": 250.07,
+     "base": 362.86,
+     "bull": 449.46
     },
     {
      "r": 0.09,
      "fv": 287.34,
-     "base": 301.06
+     "bear": 207.75,
+     "base": 301.06,
+     "bull": 372.43
     },
     {
      "r": 0.1,
      "fv": 243.95,
-     "base": 255.62
+     "bear": 176.53,
+     "base": 255.62,
+     "bull": 315.89
     },
     {
      "r": 0.11,
      "fv": 210.67,
-     "base": 220.79
+     "bear": 152.52,
+     "base": 220.79,
+     "bull": 272.62
     },
     {
      "r": 0.12,
      "fv": 184.34,
-     "base": 193.23
+     "bear": 133.45,
+     "base": 193.23,
+     "bull": 238.44
     }
    ],
    "required_return_reason": "Ratings, indices and data with wide moats; pro-forma figures after the Mobility spin-off add some uncertainty.",
@@ -120464,7 +121061,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 9% over 4 years, within 3 points of the 9.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0835,
+    "fv": 323.52,
+    "bear": 233.71,
+    "base": 338.95,
+    "bull": 419.64
+   }
   },
   {
    "ticker": "NFLX",
@@ -120965,27 +121569,37 @@
     {
      "r": 0.08,
      "fv": 88.21,
-     "base": 93.25
+     "bear": 54.14,
+     "base": 93.25,
+     "bull": 126.69
     },
     {
      "r": 0.09,
      "fv": 73.45,
-     "base": 77.61
+     "bear": 45.53,
+     "base": 77.61,
+     "bull": 104.92
     },
     {
      "r": 0.1,
      "fv": 62.66,
-     "base": 66.17
+     "bear": 39.21,
+     "base": 66.17,
+     "bull": 89.04
     },
     {
      "r": 0.11,
      "fv": 54.44,
-     "base": 57.47
+     "bear": 34.37,
+     "base": 57.47,
+     "bull": 76.98
     },
     {
      "r": 0.12,
      "fv": 47.98,
-     "base": 50.62
+     "bear": 30.55,
+     "base": 50.62,
+     "bull": 67.52
     }
    ],
    "required_return_reason": "Global streaming leader, but competition for viewing time, content costs and ad growth add risk.",
@@ -123949,7 +124563,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 26% over 4 years, above the 10.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0972,
+    "fv": 65.34,
+    "bear": 40.78,
+    "base": 69.01,
+    "bull": 92.98
+   }
   },
   {
    "ticker": "CBOE",
@@ -124450,27 +125071,37 @@
     {
      "r": 0.08,
      "fv": 315.17,
-     "base": 330.03
+     "bear": 197.07,
+     "base": 330.03,
+     "bull": 455.2
     },
     {
      "r": 0.09,
      "fv": 267.56,
-     "base": 279.95
+     "bear": 170.13,
+     "base": 279.95,
+     "bull": 382.73
     },
     {
      "r": 0.1,
      "fv": 232.64,
-     "base": 243.23
+     "bear": 150.27,
+     "base": 243.23,
+     "bull": 329.73
     },
     {
      "r": 0.11,
      "fv": 205.95,
-     "base": 215.16
+     "bear": 135.0,
+     "base": 215.16,
+     "bull": 289.33
     },
     {
      "r": 0.12,
      "fv": 184.88,
-     "base": 193.01
+     "bear": 122.88,
+     "base": 193.01,
+     "bull": 257.55
     }
    ],
    "required_return_reason": "Options-exchange franchise with net cash; volumes and revenue swing with market volatility.",
@@ -127434,7 +128065,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 16% over 4 years, above the 9.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0873,
+    "fv": 278.96,
+    "bear": 176.59,
+    "base": 291.94,
+    "bull": 400.06
+   }
   },
   {
    "ticker": "GRMN",
@@ -127935,27 +128573,37 @@
     {
      "r": 0.08,
      "fv": 205.78,
-     "base": 220.66
+     "bear": 128.31,
+     "base": 220.66,
+     "bull": 284.81
     },
     {
      "r": 0.09,
      "fv": 174.27,
-     "base": 186.59
+     "bear": 110.57,
+     "base": 186.59,
+     "bull": 239.01
     },
     {
      "r": 0.1,
      "fv": 151.2,
-     "base": 161.66
+     "bear": 97.52,
+     "base": 161.66,
+     "bull": 205.58
     },
     {
      "r": 0.11,
      "fv": 133.61,
-     "base": 142.65
+     "bear": 87.52,
+     "base": 142.65,
+     "bull": 180.15
     },
     {
      "r": 0.12,
      "fv": 119.76,
-     "base": 127.69
+     "bear": 79.61,
+     "base": 127.69,
+     "bull": 160.18
     }
    ],
    "required_return_reason": "Diversified device maker with no debt and a long record; consumer spending is cyclical.",
@@ -130919,7 +131567,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 23% over 4 years, above the 9.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0898,
+    "fv": 174.68,
+    "bear": 110.8,
+    "base": 187.03,
+    "bull": 239.61
+   }
   },
   {
    "ticker": "FDS",
@@ -131420,32 +132075,44 @@
     {
      "r": 0.08,
      "fv": 359.04,
-     "base": 377.13
+     "bear": 246.01,
+     "base": 377.13,
+     "bull": 483.34
     },
     {
      "r": 0.09,
      "fv": 297.59,
-     "base": 312.59
+     "bear": 204.53,
+     "base": 312.59,
+     "bull": 399.68
     },
     {
      "r": 0.095,
      "fv": 273.44,
-     "base": 287.23
+     "bear": 188.17,
+     "base": 287.23,
+     "bull": 366.86
     },
     {
      "r": 0.1,
      "fv": 252.5,
-     "base": 265.25
+     "bear": 173.97,
+     "base": 265.25,
+     "bull": 338.45
     },
     {
      "r": 0.11,
      "fv": 218.02,
-     "base": 229.04
+     "bear": 150.49,
+     "base": 229.04,
+     "bull": 291.74
     },
     {
      "r": 0.12,
      "fv": 190.78,
-     "base": 200.46
+     "bear": 131.88,
+     "base": 200.46,
+     "bull": 254.95
     }
    ],
    "required_return_reason": "Sticky subscription data business, but AI could commoditise financial data and research tools.",
@@ -134409,7 +135076,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 18% over 4 years, above the 9.5% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0874,
+    "fv": 311.68,
+    "bear": 214.05,
+    "base": 327.39,
+    "bull": 418.84
+   }
   },
   {
    "ticker": "CRM",
@@ -134829,27 +135503,37 @@
     {
      "r": 0.08,
      "fv": 317.24,
-     "base": 339.07
+     "bear": 199.16,
+     "base": 339.07,
+     "bull": 439.78
     },
     {
      "r": 0.09,
      "fv": 261.66,
-     "base": 279.79
+     "bear": 164.11,
+     "base": 279.79,
+     "bull": 362.63
     },
     {
      "r": 0.1,
      "fv": 220.87,
-     "base": 236.3
+     "bear": 138.31,
+     "base": 236.3,
+     "bull": 306.13
     },
     {
      "r": 0.11,
      "fv": 189.66,
-     "base": 203.04
+     "bear": 118.49,
+     "base": 203.04,
+     "bull": 262.99
     },
     {
      "r": 0.12,
      "fv": 165.02,
-     "base": 176.77
+     "bear": 102.78,
+     "base": 176.77,
+     "bull": 229.0
     }
    ],
    "required_return_reason": "Leading CRM platform, but heavy new debt for buybacks and AI agents threaten seat-based pricing.",
@@ -137813,7 +138497,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 10% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0878,
+    "fv": 272.44,
+    "bear": 170.92,
+    "base": 291.29,
+    "bull": 377.58
+   }
   },
   {
    "ticker": "HWM",
@@ -138314,32 +139005,44 @@
     {
      "r": 0.08,
      "fv": 137.79,
-     "base": 151.47
+     "bear": 62.47,
+     "base": 151.47,
+     "bull": 216.58
     },
     {
      "r": 0.09,
      "fv": 113.64,
-     "base": 124.97
+     "bear": 51.73,
+     "base": 124.97,
+     "bull": 178.19
     },
     {
      "r": 0.095,
      "fv": 104.17,
-     "base": 114.58
+     "bear": 47.5,
+     "base": 114.58,
+     "bull": 163.16
     },
     {
      "r": 0.1,
      "fv": 95.98,
-     "base": 105.6
+     "bear": 43.83,
+     "base": 105.6,
+     "bull": 150.18
     },
     {
      "r": 0.11,
      "fv": 82.52,
-     "base": 90.83
+     "bear": 37.76,
+     "base": 90.83,
+     "bull": 128.89
     },
     {
      "r": 0.12,
      "fv": 71.93,
-     "base": 79.22
+     "bear": 32.95,
+     "base": 79.22,
+     "bull": 112.19
     }
    ],
    "required_return_reason": "Strong position in engine parts, but aerospace is cyclical and it carries net debt.",
@@ -141303,7 +142006,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 16% over 4 years, above the 9.5% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0918,
+    "fv": 110.15,
+    "bear": 50.17,
+    "base": 121.14,
+    "bull": 172.64
+   }
   },
   {
    "ticker": "ADP",
@@ -141939,32 +142649,44 @@
     {
      "r": 0.08,
      "fv": 279.45,
-     "base": 293.19
+     "bear": 197.25,
+     "base": 293.19,
+     "bull": 368.39
     },
     {
      "r": 0.085,
      "fv": 254.49,
-     "base": 266.91
+     "bear": 180.56,
+     "base": 266.91,
+     "bull": 334.33
     },
     {
      "r": 0.09,
      "fv": 233.42,
-     "base": 244.72
+     "bear": 166.44,
+     "base": 244.72,
+     "bull": 305.63
     },
     {
      "r": 0.1,
      "fv": 199.82,
-     "base": 209.36
+     "bear": 143.83,
+     "base": 209.36,
+     "bull": 259.97
     },
     {
      "r": 0.11,
      "fv": 174.26,
-     "base": 182.45
+     "bear": 126.53,
+     "base": 182.45,
+     "bull": 225.35
     },
     {
      "r": 0.12,
      "fv": 154.17,
-     "base": 161.32
+     "bear": 112.87,
+     "base": 161.32,
+     "bull": 198.25
     }
    ],
    "required_return_reason": "Very steady payroll franchise with a long record; sensitive to employment and interest rates.",
@@ -144928,7 +145650,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 56% or more in each of the last 4 years (median 68%), at least 10 points above the 8.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0841,
+    "fv": 258.44,
+    "bear": 183.21,
+    "base": 271.06,
+    "bull": 339.72
+   }
   },
   {
    "ticker": "AME",
@@ -145429,27 +146158,37 @@
     {
      "r": 0.08,
      "fv": 187.89,
-     "base": 200.64
+     "bear": 107.37,
+     "base": 200.64,
+     "bull": 276.78
     },
     {
      "r": 0.09,
      "fv": 153.61,
-     "base": 164.19
+     "bear": 87.42,
+     "base": 164.19,
+     "bull": 226.44
     },
     {
      "r": 0.1,
      "fv": 128.51,
-     "base": 137.5
+     "bear": 72.75,
+     "base": 137.5,
+     "bull": 189.68
     },
     {
      "r": 0.11,
      "fv": 109.36,
-     "base": 117.14
+     "bear": 61.49,
+     "base": 117.14,
+     "bull": 161.71
     },
     {
      "r": 0.12,
      "fv": 94.27,
-     "base": 101.1
+     "bear": 52.58,
+     "base": 101.1,
+     "bull": 139.74
     }
    ],
    "required_return_reason": "Steady diversified industrial with a long record of acquisitions; moderate debt.",
@@ -148413,7 +149152,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 13% over 4 years, above the 9.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0815,
+    "fv": 181.89,
+    "bear": 103.89,
+    "base": 194.26,
+    "bull": 267.96
+   }
   },
   {
    "ticker": "AXP",
@@ -148914,32 +149660,44 @@
     {
      "r": 0.08,
      "fv": 414.34,
-     "base": 442.63
+     "bear": 285.65,
+     "base": 442.63,
+     "bull": 536.66
     },
     {
      "r": 0.09,
      "fv": 348.27,
-     "base": 371.56
+     "bear": 242.5,
+     "base": 371.56,
+     "bull": 448.72
     },
     {
      "r": 0.095,
      "fv": 322.35,
-     "base": 343.68
+     "bear": 225.52,
+     "base": 343.68,
+     "bull": 414.25
     },
     {
      "r": 0.1,
      "fv": 299.89,
-     "base": 319.54
+     "bear": 210.78,
+     "base": 319.54,
+     "bull": 384.44
     },
     {
      "r": 0.11,
      "fv": 262.96,
-     "base": 279.86
+     "bear": 186.48,
+     "base": 279.86,
+     "bull": 335.46
     },
     {
      "r": 0.12,
      "fv": 233.86,
-     "base": 248.6
+     "bear": 167.24,
+     "base": 248.6,
+     "bull": 296.95
     }
    ],
    "required_return_reason": "Premium card issuer and network: durable brand, but it lends, so credit losses rise in recessions.",
@@ -151888,7 +152646,14 @@
    "cap_years": 15,
    "moat_reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.095,
+    "fv": 322.35,
+    "bear": 225.52,
+    "base": 343.68,
+    "bull": 414.25
+   }
   },
   {
    "ticker": "SHOP",
@@ -152308,27 +153073,37 @@
     {
      "r": 0.08,
      "fv": 100.11,
-     "base": 105.41
+     "bear": 53.14,
+     "base": 105.41,
+     "bull": 157.33
     },
     {
      "r": 0.09,
      "fv": 83.7,
-     "base": 88.09
+     "bear": 45.23,
+     "base": 88.09,
+     "bull": 130.46
     },
     {
      "r": 0.1,
      "fv": 71.73,
-     "base": 75.45
+     "bear": 39.44,
+     "base": 75.45,
+     "bull": 110.9
     },
     {
      "r": 0.11,
      "fv": 62.63,
-     "base": 65.84
+     "bear": 35.02,
+     "base": 65.84,
+     "bull": 96.05
     },
     {
      "r": 0.12,
      "fv": 55.49,
-     "base": 58.3
+     "bear": 31.54,
+     "base": 58.3,
+     "bull": 84.43
     }
    ],
    "required_return_reason": "Fast-growing commerce platform priced for continued high growth; very volatile shares (beta ~2.6).",
@@ -155292,7 +156067,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 9% over 4 years, within 3 points of the 11.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.1099,
+    "fv": 62.69,
+    "bear": 35.04,
+    "base": 65.89,
+    "bull": 96.14
+   }
   },
   {
    "ticker": "PYPL",
@@ -155793,27 +156575,37 @@
     {
      "r": 0.08,
      "fv": 121.93,
-     "base": 133.01
+     "bear": 63.91,
+     "base": 133.01,
+     "bull": 181.26
     },
     {
      "r": 0.09,
      "fv": 102.71,
-     "base": 111.96
+     "bear": 54.67,
+     "base": 111.96,
+     "bull": 151.66
     },
     {
      "r": 0.1,
      "fv": 88.6,
-     "base": 96.5
+     "bear": 47.83,
+     "base": 96.5,
+     "bull": 129.98
     },
     {
      "r": 0.11,
      "fv": 77.79,
-     "base": 84.67
+     "bear": 42.56,
+     "base": 84.67,
+     "bull": 113.44
     },
     {
      "r": 0.12,
      "fv": 69.24,
-     "base": 75.32
+     "bear": 38.35,
+     "base": 75.32,
+     "bull": 100.39
     }
    ],
    "required_return_reason": "Large digital wallet with slowing growth and competition at checkout from Apple Pay and others.",
@@ -158777,7 +159569,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 23% over 4 years, above the 10.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0846,
+    "fv": 112.36,
+    "bear": 59.32,
+    "base": 122.52,
+    "bull": 166.5
+   }
   },
   {
    "ticker": "XYZ",
@@ -159197,27 +159996,37 @@
     {
      "r": 0.08,
      "fv": 180.76,
-     "base": 191.25
+     "bear": 100.12,
+     "base": 191.25,
+     "bull": 275.5
     },
     {
      "r": 0.09,
      "fv": 152.83,
-     "base": 161.53
+     "bear": 86.49,
+     "base": 161.53,
+     "bull": 230.59
     },
     {
      "r": 0.1,
      "fv": 132.4,
-     "base": 139.8
+     "bear": 76.47,
+     "base": 139.8,
+     "bull": 197.81
     },
     {
      "r": 0.11,
      "fv": 116.83,
-     "base": 123.24
+     "bear": 68.8,
+     "base": 123.24,
+     "bull": 172.88
     },
     {
      "r": 0.12,
      "fv": 104.58,
-     "base": 110.21
+     "bear": 62.73,
+     "base": 110.21,
+     "bull": 153.31
     }
    ],
    "required_return_reason": "Two growing ecosystems (Cash App, Square) but high volatility, heavy stock pay and consumer-credit exposure.",
@@ -162181,7 +162990,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 6% over 4 years, within 3 points of the 11.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0969,
+    "fv": 138.18,
+    "bear": 79.3,
+    "base": 145.94,
+    "bull": 207.06
+   }
   },
   {
    "ticker": "ADYEY",
@@ -162682,27 +163498,37 @@
     {
      "r": 0.08,
      "fv": 15.05,
-     "base": 16.07
+     "bear": 8.22,
+     "base": 16.07,
+     "bull": 22.73
     },
     {
      "r": 0.09,
      "fv": 12.49,
-     "base": 13.33
+     "bear": 6.91,
+     "base": 13.33,
+     "bull": 18.75
     },
     {
      "r": 0.1,
      "fv": 10.62,
-     "base": 11.33
+     "bear": 5.96,
+     "base": 11.33,
+     "bull": 15.85
     },
     {
      "r": 0.11,
      "fv": 9.2,
-     "base": 9.81
+     "bear": 5.23,
+     "base": 9.81,
+     "bull": 13.65
     },
     {
      "r": 0.12,
      "fv": 8.09,
-     "base": 8.63
+     "bear": 4.65,
+     "base": 8.63,
+     "bull": 11.93
     }
    ],
    "required_return_reason": "High-quality global acquirer with net cash, but growth swings with large merchants; euro-reported (FX risk for USD holders).",
@@ -165666,7 +166492,14 @@
    "cap_years": 15,
    "moat_reason": "ROIC not measurable from the statements (negative or tiny invested capital), so the middle class by default. Check by hand.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0991,
+    "fv": 10.76,
+    "bear": 6.03,
+    "base": 11.48,
+    "bull": 16.06
+   }
   },
   {
    "ticker": "FISV",
@@ -166032,27 +166865,37 @@
     {
      "r": 0.08,
      "fv": 96.55,
-     "base": 102.99
+     "bear": 58.5,
+     "base": 102.99,
+     "bull": 137.55
     },
     {
      "r": 0.09,
      "fv": 73.75,
-     "base": 79.11
+     "bear": 42.29,
+     "base": 79.11,
+     "bull": 107.56
     },
     {
      "r": 0.1,
      "fv": 57.04,
-     "base": 61.61
+     "bear": 30.37,
+     "base": 61.61,
+     "bull": 85.61
     },
     {
      "r": 0.11,
      "fv": 44.26,
-     "base": 48.23
+     "bear": 21.23,
+     "base": 48.23,
+     "bull": 68.87
     },
     {
      "r": 0.12,
      "fv": 34.17,
-     "base": 37.67
+     "bear": 14.0,
+     "base": 37.67,
+     "bull": 55.67
     }
    ],
    "required_return_reason": "Sticky bank-technology franchise, but heavy debt and a recent guidance reset.",
@@ -169016,7 +169859,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth 2.0% now, 2.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0751,
+    "fv": 111.13,
+    "bear": 68.85,
+    "base": 118.25,
+    "bull": 156.74
+   }
   },
   {
    "ticker": "CRCL",
@@ -169436,27 +170286,37 @@
     {
      "r": 0.08,
      "fv": 85.65,
-     "base": 72.25
+     "bear": 21.83,
+     "base": 72.25,
+     "bull": 214.89
     },
     {
      "r": 0.09,
      "fv": 72.49,
-     "base": 61.68
+     "bear": 19.96,
+     "base": 61.68,
+     "bull": 178.28
     },
     {
      "r": 0.1,
      "fv": 62.88,
-     "base": 53.96
+     "bear": 18.57,
+     "base": 53.96,
+     "bull": 151.64
     },
     {
      "r": 0.11,
      "fv": 55.58,
-     "base": 48.07
+     "bear": 17.5,
+     "base": 48.07,
+     "bull": 131.45
     },
     {
      "r": 0.12,
      "fv": 49.84,
-     "base": 43.44
+     "bear": 16.65,
+     "base": 43.44,
+     "bull": 115.65
     }
    ],
    "required_return_reason": "Young public company; income depends on interest rates, USDC adoption and crypto regulation.",
@@ -172405,7 +173265,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC -4% over 1 years, within 3 points of the 12.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.12,
+    "fv": 49.84,
+    "bear": 16.65,
+    "base": 43.44,
+    "bull": 115.65
+   }
   },
   {
    "ticker": "SPG",
@@ -172771,32 +173638,44 @@
     {
      "r": 0.08,
      "fv": 130.52,
-     "base": 140.45
+     "bear": 84.57,
+     "base": 140.45,
+     "bull": 174.62
     },
     {
      "r": 0.085,
      "fv": 113.41,
-     "base": 122.42
+     "bear": 71.79,
+     "base": 122.42,
+     "bull": 153.33
     },
     {
      "r": 0.09,
      "fv": 98.94,
-     "base": 107.16
+     "bear": 60.97,
+     "base": 107.16,
+     "bull": 135.33
     },
     {
      "r": 0.1,
      "fv": 75.78,
-     "base": 82.76
+     "bear": 43.62,
+     "base": 82.76,
+     "bull": 106.55
     },
     {
      "r": 0.11,
      "fv": 58.06,
-     "base": 64.1
+     "bear": 30.32,
+     "base": 64.1,
+     "bull": 84.58
     },
     {
      "r": 0.12,
      "fv": 44.08,
-     "base": 49.38
+     "bear": 19.79,
+     "base": 49.38,
+     "bull": 67.27
     }
    ],
    "required_return_reason": "Leveraged mall REIT: steady rents, but $28B of debt makes the equity sensitive to rates and retail health.",
@@ -175760,7 +176639,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth 4.0% now, 2.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.072,
+    "fv": 165.22,
+    "bear": 110.46,
+    "base": 177.03,
+    "bull": 217.84
+   }
   },
   {
    "ticker": "META",
@@ -176396,32 +177282,44 @@
     {
      "r": 0.08,
      "fv": 793.56,
-     "base": 829.66
+     "bear": 326.0,
+     "base": 829.66,
+     "bull": 1404.67
     },
     {
      "r": 0.09,
      "fv": 646.79,
-     "base": 676.76
+     "bear": 267.13,
+     "base": 676.76,
+     "bull": 1141.35
     },
     {
      "r": 0.095,
      "fv": 589.66,
-     "base": 617.23
+     "bear": 244.13,
+     "base": 617.23,
+     "bull": 1039.04
     },
     {
      "r": 0.1,
      "fv": 540.46,
-     "base": 565.96
+     "bear": 224.27,
+     "base": 565.96,
+     "bull": 951.02
     },
     {
      "r": 0.11,
      "fv": 460.2,
-     "base": 482.28
+     "bear": 191.75,
+     "base": 482.28,
+     "bull": 807.68
     },
     {
      "r": 0.12,
      "fv": 397.69,
-     "base": 417.08
+     "bear": 166.29,
+     "base": 417.08,
+     "bull": 696.31
     }
    ],
    "required_return_reason": "Dominant ad platforms and net cash, but record AI capex and regulatory risk.",
@@ -179385,7 +180283,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 21% or more in each of the last 4 years (median 29%), at least 10 points above the 9.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0899,
+    "fv": 647.61,
+    "bear": 267.46,
+    "base": 677.61,
+    "bull": 1142.81
+   }
   },
   {
    "ticker": "TT",
@@ -180021,27 +180926,37 @@
     {
      "r": 0.08,
      "fv": 446.39,
-     "base": 470.63
+     "bear": 259.59,
+     "base": 470.63,
+     "bull": 665.99
     },
     {
      "r": 0.09,
      "fv": 370.41,
-     "base": 390.47
+     "bear": 218.02,
+     "base": 390.47,
+     "bull": 548.85
     },
     {
      "r": 0.1,
      "fv": 315.07,
-     "base": 332.08
+     "bear": 187.55,
+     "base": 332.08,
+     "bull": 463.82
     },
     {
      "r": 0.11,
      "fv": 273.05,
-     "base": 287.75
+     "bear": 164.25,
+     "base": 287.75,
+     "bull": 399.49
     },
     {
      "r": 0.12,
      "fv": 240.11,
-     "base": 253.0
+     "bear": 145.87,
+     "base": 253.0,
+     "bull": 349.25
     }
    ],
    "required_return_reason": "Leading HVAC franchise; cyclical end-markets offset by services and data-centre demand.",
@@ -183005,7 +183920,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 21% or more in each of the last 4 years (median 24%), at least 10 points above the 9.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0879,
+    "fv": 384.48,
+    "bear": 225.74,
+    "base": 405.31,
+    "bull": 570.51
+   }
   },
   {
    "ticker": "RL",
@@ -183506,32 +184428,44 @@
     {
      "r": 0.08,
      "fv": 301.38,
-     "base": 316.97
+     "bear": 180.49,
+     "base": 316.97,
+     "bull": 443.72
     },
     {
      "r": 0.09,
      "fv": 252.03,
-     "base": 265.12
+     "bear": 151.96,
+     "base": 265.12,
+     "bull": 369.41
     },
     {
      "r": 0.095,
      "fv": 232.62,
-     "base": 244.72
+     "bear": 140.7,
+     "base": 244.72,
+     "bull": 340.26
     },
     {
      "r": 0.1,
      "fv": 215.8,
-     "base": 227.04
+     "bear": 130.92,
+     "base": 227.04,
+     "bull": 315.01
     },
     {
      "r": 0.11,
      "fv": 188.07,
-     "base": 197.9
+     "bear": 114.73,
+     "base": 197.9,
+     "bull": 273.48
     },
     {
      "r": 0.12,
      "fv": 166.16,
-     "base": 174.87
+     "bear": 101.89,
+     "base": 174.87,
+     "bull": 240.77
     }
    ],
    "required_return_reason": "Strong brand, but fashion cycles, tariffs and discretionary spending.",
@@ -186495,7 +187429,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 22% over 4 years, above the 9.5% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.086,
+    "fv": 269.81,
+    "bear": 162.25,
+    "base": 283.8,
+    "bull": 396.16
+   }
   },
   {
    "ticker": "ROST",
@@ -187131,27 +188072,37 @@
     {
      "r": 0.08,
      "fv": 186.51,
-     "base": 198.18
+     "bear": 130.12,
+     "base": 198.18,
+     "bull": 241.94
     },
     {
      "r": 0.09,
      "fv": 156.16,
-     "base": 165.75
+     "bear": 109.99,
+     "base": 165.75,
+     "bull": 201.43
     },
     {
      "r": 0.1,
      "fv": 134.01,
-     "base": 142.1
+     "bear": 95.24,
+     "base": 142.1,
+     "bull": 171.94
     },
     {
      "r": 0.11,
      "fv": 117.15,
-     "base": 124.1
+     "bear": 83.97,
+     "base": 124.1,
+     "bull": 149.55
     },
     {
      "r": 0.12,
      "fv": 103.91,
-     "base": 109.97
+     "bear": 75.07,
+     "base": 109.97,
+     "bull": 132.0
     }
    ],
    "required_return_reason": "Consistent off-price retailer with net-cash-like balance sheet; thin margins.",
@@ -190115,7 +191066,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 28% or more in each of the last 4 years (median 30%), at least 10 points above the 9.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0855,
+    "fv": 168.7,
+    "bear": 118.32,
+    "base": 179.15,
+    "bull": 218.16
+   }
   },
   {
    "ticker": "GDDY",
@@ -190616,27 +191574,37 @@
     {
      "r": 0.08,
      "fv": 208.81,
-     "base": 221.23
+     "bear": 130.7,
+     "base": 221.23,
+     "bull": 294.9
     },
     {
      "r": 0.09,
      "fv": 173.46,
-     "base": 183.86
+     "bear": 108.84,
+     "base": 183.86,
+     "bull": 244.39
     },
     {
      "r": 0.1,
      "fv": 147.51,
-     "base": 156.42
+     "bear": 92.72,
+     "base": 156.42,
+     "bull": 207.4
     },
     {
      "r": 0.11,
      "fv": 127.63,
-     "base": 135.41
+     "bear": 80.32,
+     "base": 135.41,
+     "bull": 179.15
     },
     {
      "r": 0.12,
      "fv": 111.92,
-     "base": 118.8
+     "bear": 70.47,
+     "base": 118.8,
+     "bull": 156.89
     }
    ],
    "required_return_reason": "Very cash-generative, but low growth and AI disruption risk to website building.",
@@ -193600,7 +194568,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 22% over 4 years, above the 10.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0854,
+    "fv": 188.31,
+    "bear": 118.04,
+    "base": 199.57,
+    "bull": 265.6
+   }
   },
   {
    "ticker": "FAST",
@@ -194236,27 +195211,37 @@
     {
      "r": 0.08,
      "fv": 26.57,
-     "base": 28.31
+     "bear": 17.19,
+     "base": 28.31,
+     "bull": 36.31
     },
     {
      "r": 0.09,
      "fv": 22.16,
-     "base": 23.58
+     "bear": 14.51,
+     "base": 23.58,
+     "bull": 30.06
     },
     {
      "r": 0.1,
      "fv": 18.94,
-     "base": 20.14
+     "bear": 12.55,
+     "base": 20.14,
+     "bull": 25.52
     },
     {
      "r": 0.11,
      "fv": 16.5,
-     "base": 17.53
+     "bear": 11.05,
+     "base": 17.53,
+     "bull": 22.08
     },
     {
      "r": 0.12,
      "fv": 14.58,
-     "base": 15.48
+     "bear": 9.87,
+     "base": 15.48,
+     "bull": 19.39
     }
    ],
    "required_return_reason": "High-quality distributor, little debt; exposed to the industrial cycle.",
@@ -197220,7 +198205,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 29% or more in each of the last 4 years (median 30%), at least 10 points above the 9.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0894,
+    "fv": 22.37,
+    "bear": 14.64,
+    "base": 23.81,
+    "bull": 30.36
+   }
   },
   {
    "ticker": "SYK",
@@ -197640,32 +198632,44 @@
     {
      "r": 0.08,
      "fv": 283.88,
-     "base": 300.8
+     "bear": 197.84,
+     "base": 300.8,
+     "bull": 370.63
     },
     {
      "r": 0.085,
      "fv": 257.48,
-     "base": 272.83
+     "bear": 179.49,
+     "base": 272.83,
+     "bull": 336.11
     },
     {
      "r": 0.09,
      "fv": 235.12,
-     "base": 249.13
+     "bear": 163.92,
+     "base": 249.13,
+     "bull": 306.88
     },
     {
      "r": 0.1,
      "fv": 199.26,
-     "base": 211.15
+     "bear": 138.91,
+     "base": 211.15,
+     "bull": 260.06
     },
     {
      "r": 0.11,
      "fv": 171.76,
-     "base": 182.04
+     "bear": 119.67,
+     "base": 182.04,
+     "bull": 224.22
     },
     {
      "r": 0.12,
      "fv": 150.01,
-     "base": 159.01
+     "bear": 104.4,
+     "base": 159.01,
+     "bull": 195.92
     }
    ],
    "required_return_reason": "Diversified med-tech leader with steady growth; some acquisition debt.",
@@ -200629,7 +201633,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 11% over 4 years, within 3 points of the 8.5% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.079,
+    "fv": 289.82,
+    "bear": 201.97,
+    "base": 307.1,
+    "bull": 378.41
+   }
   },
   {
    "ticker": "CMG",
@@ -201130,32 +202141,44 @@
     {
      "r": 0.08,
      "fv": 25.96,
-     "base": 27.83
+     "bear": 14.61,
+     "base": 27.83,
+     "bull": 38.32
     },
     {
      "r": 0.09,
      "fv": 21.18,
-     "base": 22.73
+     "bear": 11.85,
+     "base": 22.73,
+     "bull": 31.31
     },
     {
      "r": 0.095,
      "fv": 19.3,
-     "base": 20.73
+     "bear": 10.76,
+     "base": 20.73,
+     "bull": 28.56
     },
     {
      "r": 0.1,
      "fv": 17.68,
-     "base": 18.99
+     "bear": 9.81,
+     "base": 18.99,
+     "bull": 26.19
     },
     {
      "r": 0.11,
      "fv": 15.01,
-     "base": 16.14
+     "bear": 8.26,
+     "base": 16.14,
+     "bull": 22.29
     },
     {
      "r": 0.12,
      "fv": 12.9,
-     "base": 13.9
+     "bear": 7.02,
+     "base": 13.9,
+     "bull": 19.23
     }
    ],
    "required_return_reason": "Strong unit growth, but restaurant traffic and food costs swing.",
@@ -204119,7 +205142,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 22% over 4 years, above the 9.5% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.088,
+    "fv": 22.02,
+    "bear": 12.33,
+    "base": 23.62,
+    "bull": 32.54
+   }
   },
   {
    "ticker": "KLAC",
@@ -204755,32 +205785,44 @@
     {
      "r": 0.08,
      "fv": 113.36,
-     "base": 121.65
+     "bear": 51.14,
+     "base": 121.65,
+     "bull": 185.96
     },
     {
      "r": 0.09,
      "fv": 93.77,
-     "base": 100.61
+     "bear": 43.12,
+     "base": 100.61,
+     "bull": 152.62
     },
     {
      "r": 0.1,
      "fv": 79.53,
-     "base": 85.33
+     "bear": 37.25,
+     "base": 85.33,
+     "bull": 128.47
     },
     {
      "r": 0.105,
      "fv": 73.79,
-     "base": 79.17
+     "bear": 34.86,
+     "base": 79.17,
+     "bull": 118.76
     },
     {
      "r": 0.11,
      "fv": 68.76,
-     "base": 73.76
+     "bear": 32.76,
+     "base": 73.76,
+     "bull": 110.25
     },
     {
      "r": 0.12,
      "fv": 60.33,
-     "base": 64.71
+     "bear": 29.22,
+     "base": 64.71,
+     "bull": 96.06
     }
    ],
    "required_return_reason": "Process-control leader with high margins, but semiconductor equipment is cyclical.",
@@ -207744,7 +208786,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 55% or more in each of the last 4 years (median 63%), at least 10 points above the 10.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.1032,
+    "fv": 75.81,
+    "bear": 35.7,
+    "base": 81.33,
+    "bull": 122.17
+   }
   },
   {
    "ticker": "CME",
@@ -208164,32 +209213,44 @@
     {
      "r": 0.08,
      "fv": 233.6,
-     "base": 241.97
+     "bear": 184.75,
+     "base": 241.97,
+     "bull": 285.96
     },
     {
      "r": 0.085,
      "fv": 214.36,
-     "base": 221.98
+     "bear": 170.03,
+     "base": 221.98,
+     "bull": 261.79
     },
     {
      "r": 0.09,
      "fv": 198.04,
-     "base": 205.02
+     "bear": 157.54,
+     "base": 205.02,
+     "bull": 241.31
     },
     {
      "r": 0.1,
      "fv": 171.83,
-     "base": 177.8
+     "bear": 137.45,
+     "base": 177.8,
+     "bull": 208.47
     },
     {
      "r": 0.11,
      "fv": 151.69,
-     "base": 156.89
+     "bear": 121.96,
+     "base": 156.89,
+     "bull": 183.28
     },
     {
      "r": 0.12,
      "fv": 135.72,
-     "base": 140.31
+     "bear": 109.65,
+     "base": 140.31,
+     "bull": 163.35
     }
    ],
    "required_return_reason": "Near-monopoly futures exchange with very high margins and low beta; volumes vary with volatility.",
@@ -211153,7 +212214,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 11% over 4 years, within 3 points of the 8.5% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0836,
+    "fv": 219.55,
+    "bear": 174.01,
+    "base": 227.37,
+    "bull": 268.31
+   }
   },
   {
    "ticker": "STE",
@@ -211573,32 +212641,44 @@
     {
      "r": 0.08,
      "fv": 190.74,
-     "base": 200.59
+     "bear": 130.17,
+     "base": 200.59,
+     "bull": 256.96
     },
     {
      "r": 0.085,
      "fv": 173.75,
-     "base": 182.74
+     "bear": 118.74,
+     "base": 182.74,
+     "bull": 233.82
     },
     {
      "r": 0.09,
      "fv": 159.35,
-     "base": 167.6
+     "bear": 109.04,
+     "base": 167.6,
+     "bull": 214.21
     },
     {
      "r": 0.1,
      "fv": 136.24,
-     "base": 143.31
+     "bear": 93.44,
+     "base": 143.31,
+     "bull": 182.78
     },
     {
      "r": 0.11,
      "fv": 118.5,
-     "base": 124.66
+     "bear": 81.42,
+     "base": 124.66,
+     "bull": 158.7
     },
     {
      "r": 0.12,
      "fv": 104.43,
-     "base": 109.88
+     "bear": 71.86,
+     "base": 109.88,
+     "bull": 139.66
     }
    ],
    "required_return_reason": "Recurring sterilisation consumables and services; defensive.",
@@ -214562,7 +215642,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 8% over 4 years, within 3 points of the 8.5% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0801,
+    "fv": 190.28,
+    "bear": 129.86,
+    "base": 200.11,
+    "bull": 256.34
+   }
   },
   {
    "ticker": "WDAY",
@@ -214982,32 +216069,44 @@
     {
      "r": 0.08,
      "fv": 182.23,
-     "base": 187.75
+     "bear": 107.38,
+     "base": 187.75,
+     "bull": 280.69
     },
     {
      "r": 0.09,
      "fv": 152.63,
-     "base": 157.27
+     "bear": 90.74,
+     "base": 157.27,
+     "bull": 233.86
     },
     {
      "r": 0.1,
      "fv": 130.94,
-     "base": 134.93
+     "bear": 78.52,
+     "base": 134.93,
+     "bull": 199.61
     },
     {
      "r": 0.105,
      "fv": 122.14,
-     "base": 125.86
+     "bear": 73.54,
+     "base": 125.86,
+     "bull": 185.72
     },
     {
      "r": 0.11,
      "fv": 114.37,
-     "base": 117.86
+     "bear": 69.15,
+     "base": 117.86,
+     "bull": 173.49
     },
     {
      "r": 0.12,
      "fv": 101.31,
-     "base": 104.4
+     "bear": 61.73,
+     "base": 104.4,
+     "bull": 152.95
     }
    ],
    "required_return_reason": "Sticky enterprise software, but heavy stock pay and AI seat-count risk.",
@@ -217971,7 +219070,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 7% over 4 years, within 3 points of the 10.5% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.099,
+    "fv": 132.81,
+    "bear": 79.57,
+    "base": 136.85,
+    "bull": 202.56
+   }
   },
   {
    "ticker": "BR",
@@ -218472,32 +219578,44 @@
     {
      "r": 0.08,
      "fv": 206.58,
-     "base": 215.16
+     "bear": 143.73,
+     "base": 215.16,
+     "bull": 279.41
     },
     {
      "r": 0.085,
      "fv": 186.73,
-     "base": 194.55
+     "bear": 129.84,
+     "base": 194.55,
+     "bull": 252.55
     },
     {
      "r": 0.09,
      "fv": 169.94,
-     "base": 177.1
+     "bear": 118.07,
+     "base": 177.1,
+     "bull": 229.83
     },
     {
      "r": 0.1,
      "fv": 143.04,
-     "base": 149.16
+     "bear": 99.17,
+     "base": 149.16,
+     "bull": 193.53
     },
     {
      "r": 0.11,
      "fv": 122.46,
-     "base": 127.79
+     "bear": 84.67,
+     "base": 127.79,
+     "bull": 165.82
     },
     {
      "r": 0.12,
      "fv": 106.2,
-     "base": 110.9
+     "bear": 73.17,
+     "base": 110.9,
+     "bull": 143.98
     }
    ],
    "required_return_reason": "Mostly recurring, contract-based revenue in a near-monopoly (proxy processing).",
@@ -221461,7 +222579,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 16% over 4 years, above the 8.5% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0763,
+    "fv": 223.56,
+    "bear": 155.59,
+    "base": 232.79,
+    "bull": 302.41
+   }
   },
   {
    "ticker": "MSI",
@@ -222097,27 +223222,37 @@
     {
      "r": 0.08,
      "fv": 375.45,
-     "base": 396.57
+     "bear": 249.16,
+     "base": 396.57,
+     "bull": 512.11
     },
     {
      "r": 0.09,
      "fv": 303.32,
-     "base": 320.64
+     "bear": 200.7,
+     "base": 320.64,
+     "bull": 413.96
     },
     {
      "r": 0.1,
      "fv": 250.78,
-     "base": 265.33
+     "bear": 165.23,
+     "base": 265.33,
+     "bull": 342.7
     },
     {
      "r": 0.11,
      "fv": 210.87,
-     "base": 223.35
+     "bear": 138.16,
+     "base": 223.35,
+     "bull": 288.75
     },
     {
      "r": 0.12,
      "fv": 179.59,
-     "base": 190.45
+     "bear": 116.83,
+     "base": 190.45,
+     "bull": 246.61
     }
    ],
    "required_return_reason": "Sticky public-safety customers and large backlog; acquisition debt.",
@@ -225081,7 +226216,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 21% or more in each of the last 4 years (median 32%), at least 10 points above the 9.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0837,
+    "fv": 345.5,
+    "bear": 229.07,
+    "base": 365.04,
+    "bull": 471.32
+   }
   },
   {
    "ticker": "BKR",
@@ -225501,27 +226643,37 @@
     {
      "r": 0.08,
      "fv": 70.71,
-     "base": 78.22
+     "bear": 31.25,
+     "base": 78.22,
+     "bull": 111.14
     },
     {
      "r": 0.09,
      "fv": 57.42,
-     "base": 63.69
+     "bear": 24.7,
+     "base": 63.69,
+     "bull": 90.83
     },
     {
      "r": 0.1,
      "fv": 47.66,
-     "base": 53.02
+     "bear": 19.87,
+     "base": 53.02,
+     "bull": 75.95
     },
     {
      "r": 0.11,
      "fv": 40.19,
-     "base": 44.86
+     "bear": 16.15,
+     "base": 44.86,
+     "bull": 64.58
     },
     {
      "r": 0.12,
      "fv": 34.28,
-     "base": 38.4
+     "bear": 13.19,
+     "base": 38.4,
+     "bull": 55.62
     }
    ],
    "required_return_reason": "Energy-cycle exposure and new acquisition debt, partly offset by gas/LNG technology.",
@@ -228485,7 +229637,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 13% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.079,
+    "fv": 72.26,
+    "bear": 32.01,
+    "base": 79.91,
+    "bull": 113.51
+   }
   },
   {
    "ticker": "RSG",
@@ -228905,27 +230064,37 @@
     {
      "r": 0.08,
      "fv": 147.59,
-     "base": 155.35
+     "bear": 103.76,
+     "base": 155.35,
+     "bull": 193.94
     },
     {
      "r": 0.09,
      "fv": 118.63,
-     "base": 125.1
+     "bear": 82.17,
+     "base": 125.1,
+     "bull": 157.14
     },
     {
      "r": 0.1,
      "fv": 97.27,
-     "base": 102.79
+     "bear": 66.21,
+     "base": 102.79,
+     "bull": 130.04
     },
     {
      "r": 0.11,
      "fv": 80.83,
-     "base": 85.63
+     "bear": 53.9,
+     "base": 85.63,
+     "bull": 109.22
     },
     {
      "r": 0.12,
      "fv": 67.78,
-     "base": 72.02
+     "bear": 44.09,
+     "base": 72.02,
+     "bull": 92.72
     }
    ],
    "required_return_reason": "Essential, regulated-like waste service with pricing power; very low beta.",
@@ -231889,7 +233058,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 10% over 4 years, within 3 points of the 8.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0724,
+    "fv": 177.63,
+    "bear": 126.12,
+    "base": 186.74,
+    "bull": 232.16
+   }
   },
   {
    "ticker": "WAB",
@@ -232309,27 +233485,37 @@
     {
      "r": 0.08,
      "fv": 210.76,
-     "base": 225.29
+     "bear": 128.97,
+     "base": 225.29,
+     "bull": 297.14
     },
     {
      "r": 0.09,
      "fv": 173.15,
-     "base": 185.3
+     "bear": 105.26,
+     "base": 185.3,
+     "bull": 244.6
     },
     {
      "r": 0.1,
      "fv": 145.48,
-     "base": 155.89
+     "bear": 87.75,
+     "base": 155.89,
+     "bull": 206.03
     },
     {
      "r": 0.11,
      "fv": 124.25,
-     "base": 133.33
+     "bear": 74.27,
+     "base": 133.33,
+     "bull": 176.51
     },
     {
      "r": 0.12,
      "fv": 107.44,
-     "base": 115.48
+     "bear": 63.56,
+     "base": 115.48,
+     "bull": 153.19
     }
    ],
    "required_return_reason": "Rail equipment leader with backlog; cyclical rail capex.",
@@ -235293,7 +236479,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 8% over 4 years, within 3 points of the 9.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0835,
+    "fv": 196.21,
+    "bear": 119.81,
+    "base": 209.82,
+    "bull": 276.81
+   }
   },
   {
    "ticker": "MRVL",
@@ -235713,27 +236906,37 @@
     {
      "r": 0.08,
      "fv": 193.45,
-     "base": 176.39
+     "bear": 36.65,
+     "base": 176.39,
+     "bull": 471.29
     },
     {
      "r": 0.09,
      "fv": 158.8,
-     "base": 145.19
+     "bear": 30.65,
+     "base": 145.19,
+     "bull": 385.06
     },
     {
      "r": 0.1,
      "fv": 133.58,
-     "base": 122.45
+     "bear": 26.25,
+     "base": 122.45,
+     "bull": 322.42
     },
     {
      "r": 0.11,
      "fv": 114.46,
-     "base": 105.19
+     "bear": 22.88,
+     "base": 105.19,
+     "bull": 275.0
     },
     {
      "r": 0.12,
      "fv": 99.5,
-     "base": 91.67
+     "bear": 20.22,
+     "base": 91.67,
+     "bull": 237.98
     }
    ],
    "required_return_reason": "Fast-growing but very volatile; depends on a few hyperscaler AI programmes.",
@@ -238697,7 +239900,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC -0% over 4 years, within 3 points of the 11.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.1089,
+    "fv": 116.37,
+    "bear": 23.22,
+    "base": 106.91,
+    "bull": 279.72
+   }
   },
   {
    "ticker": "LULU",
@@ -239063,32 +240273,44 @@
     {
      "r": 0.08,
      "fv": 211.85,
-     "base": 216.29
+     "bear": 128.15,
+     "base": 216.29,
+     "bull": 326.27
     },
     {
      "r": 0.09,
      "fv": 177.81,
-     "base": 181.57
+     "bear": 108.59,
+     "base": 181.57,
+     "bull": 272.26
     },
     {
      "r": 0.095,
      "fv": 164.45,
-     "base": 167.94
+     "bear": 100.89,
+     "base": 167.94,
+     "bull": 251.09
     },
     {
      "r": 0.1,
      "fv": 152.88,
-     "base": 156.13
+     "bear": 94.2,
+     "base": 156.13,
+     "bull": 232.78
     },
     {
      "r": 0.11,
      "fv": 133.83,
-     "base": 136.69
+     "bear": 83.16,
+     "base": 136.69,
+     "bull": 202.69
     },
     {
      "r": 0.12,
      "fv": 118.81,
-     "base": 121.36
+     "bear": 74.41,
+     "base": 121.36,
+     "bull": 179.02
     }
    ],
    "required_return_reason": "Strong brand with net-cash-like balance sheet, but US sales shrinking under competition.",
@@ -242052,7 +243274,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth 1.0% now, 3.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0863,
+    "fv": 189.26,
+    "bear": 115.18,
+    "base": 193.25,
+    "bull": 290.41
+   }
   },
   {
    "ticker": "RDDT",
@@ -242472,32 +243701,44 @@
     {
      "r": 0.08,
      "fv": 215.48,
-     "base": 218.34
+     "bear": 75.95,
+     "base": 218.34,
+     "bull": 417.62
     },
     {
      "r": 0.09,
      "fv": 181.4,
-     "base": 184.0
+     "bear": 66.85,
+     "base": 184.0,
+     "bull": 346.73
     },
     {
      "r": 0.1,
      "fv": 156.53,
-     "base": 158.93
+     "bear": 60.16,
+     "base": 158.93,
+     "bull": 295.12
     },
     {
      "r": 0.11,
      "fv": 137.63,
-     "base": 139.85
+     "bear": 55.02,
+     "base": 139.85,
+     "bull": 255.98
     },
     {
      "r": 0.115,
      "fv": 129.79,
-     "base": 131.94
+     "bear": 52.88,
+     "base": 131.94,
+     "bull": 239.78
     },
     {
      "r": 0.12,
      "fv": 122.8,
-     "base": 124.88
+     "bear": 50.96,
+     "base": 124.88,
+     "bull": 225.34
     }
    ],
    "required_return_reason": "Young, fast-growing ad platform; very volatile and dependent on search traffic and AI licensing.",
@@ -245461,7 +246702,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC -23% over 2 years, within 3 points of the 11.5% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.1149,
+    "fv": 129.96,
+    "bear": 52.93,
+    "base": 132.12,
+    "bull": 240.14
+   }
   },
   {
    "ticker": "CF",
@@ -245827,32 +247075,44 @@
     {
      "r": 0.08,
      "fv": 122.98,
-     "base": 121.49
+     "bear": 60.05,
+     "base": 121.49,
+     "bull": 221.11
     },
     {
      "r": 0.09,
      "fv": 104.13,
-     "base": 103.04
+     "bear": 51.54,
+     "base": 103.04,
+     "bull": 185.72
     },
     {
      "r": 0.095,
      "fv": 96.7,
-     "base": 95.78
+     "bear": 48.18,
+     "base": 95.78,
+     "bull": 171.82
     },
     {
      "r": 0.1,
      "fv": 90.26,
-     "base": 89.46
+     "bear": 45.24,
+     "base": 89.46,
+     "bull": 159.77
     },
     {
      "r": 0.11,
      "fv": 79.61,
-     "base": 79.03
+     "bear": 40.36,
+     "base": 79.03,
+     "bull": 139.94
     },
     {
      "r": 0.12,
      "fv": 71.17,
-     "base": 70.76
+     "bear": 36.47,
+     "base": 70.76,
+     "bull": 124.28
     }
    ],
    "required_return_reason": "Low-cost producer, but nitrogen prices are cyclical.",
@@ -248816,7 +250076,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth -8.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0853,
+    "fv": 112.14,
+    "bear": 55.16,
+    "base": 110.88,
+    "bull": 200.74
+   }
   },
   {
    "ticker": "EME",
@@ -249452,32 +250719,44 @@
     {
      "r": 0.08,
      "fv": 913.89,
-     "base": 1006.71
+     "bear": 416.4,
+     "base": 1006.71,
+     "bull": 1428.09
     },
     {
      "r": 0.09,
      "fv": 762.62,
-     "base": 839.46
+     "bear": 355.65,
+     "base": 839.46,
+     "bull": 1180.96
     },
     {
      "r": 0.1,
      "fv": 652.5,
-     "base": 717.7
+     "bear": 311.06,
+     "base": 717.7,
+     "bull": 1001.63
     },
     {
      "r": 0.105,
      "fv": 608.02,
-     "base": 668.53
+     "bear": 292.92,
+     "base": 668.53,
+     "bull": 929.39
     },
     {
      "r": 0.11,
      "fv": 568.93,
-     "base": 625.3
+     "bear": 276.91,
+     "base": 625.3,
+     "bull": 866.01
     },
     {
      "r": 0.12,
      "fv": 503.46,
-     "base": 552.92
+     "bear": 249.91,
+     "base": 552.92,
+     "bull": 760.16
     }
    ],
    "required_return_reason": "Well-run contractor near a cyclical peak in data-centre construction.",
@@ -252441,7 +253720,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 22% or more in each of the last 4 years (median 38%), at least 10 points above the 10.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.1033,
+    "fv": 622.19,
+    "bear": 298.71,
+    "base": 684.19,
+    "bull": 952.39
+   }
   },
   {
    "ticker": "HST",
@@ -252807,27 +254093,37 @@
     {
      "r": 0.08,
      "fv": 23.96,
-     "base": 26.06
+     "bear": 14.05,
+     "base": 26.06,
+     "bull": 33.57
     },
     {
      "r": 0.09,
      "fv": 19.5,
-     "base": 21.25
+     "bear": 11.28,
+     "base": 21.25,
+     "bull": 27.46
     },
     {
      "r": 0.1,
      "fv": 16.24,
-     "base": 17.73
+     "bear": 9.25,
+     "base": 17.73,
+     "bull": 22.99
     },
     {
      "r": 0.11,
      "fv": 13.74,
-     "base": 15.03
+     "bear": 7.69,
+     "base": 15.03,
+     "bull": 19.57
     },
     {
      "r": 0.12,
      "fv": 11.76,
-     "base": 12.91
+     "bear": 6.45,
+     "base": 12.91,
+     "bull": 16.88
     }
    ],
    "required_return_reason": "Low-leverage hotel REIT; lodging demand is cyclical.",
@@ -255791,7 +257087,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth 2.0% now, 2.5% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.078,
+    "fv": 25.07,
+    "bear": 14.73,
+    "base": 27.26,
+    "bull": 35.09
+   }
   },
   {
    "ticker": "LII",
@@ -256427,27 +257730,37 @@
     {
      "r": 0.08,
      "fv": 501.4,
-     "base": 531.32
+     "bear": 306.38,
+     "base": 531.32,
+     "bull": 719.11
     },
     {
      "r": 0.09,
      "fv": 411.06,
-     "base": 435.95
+     "bear": 251.31,
+     "base": 435.95,
+     "bull": 588.47
     },
     {
      "r": 0.1,
      "fv": 345.13,
-     "base": 366.34
+     "bear": 210.92,
+     "base": 366.34,
+     "bull": 493.44
     },
     {
      "r": 0.11,
      "fv": 294.96,
-     "base": 313.36
+     "bear": 180.02,
+     "base": 313.36,
+     "bull": 421.38
     },
     {
      "r": 0.12,
      "fv": 255.55,
-     "base": 271.75
+     "bear": 155.62,
+     "base": 271.75,
+     "bull": 364.97
     }
    ],
    "required_return_reason": "Leading HVAC brand; housing and replacement cycles.",
@@ -259411,7 +260724,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 29% or more in each of the last 4 years (median 37%), at least 10 points above the 9.0% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0805,
+    "fv": 496.3,
+    "bear": 303.28,
+    "base": 525.95,
+    "bull": 711.73
+   }
   },
   {
    "ticker": "NEM",
@@ -259777,32 +261097,44 @@
     {
      "r": 0.08,
      "fv": 106.96,
-     "base": 115.37
+     "bear": 42.75,
+     "base": 115.37,
+     "bull": 182.22
     },
     {
      "r": 0.09,
      "fv": 92.0,
-     "base": 99.16
+     "bear": 38.32,
+     "base": 99.16,
+     "bull": 154.62
     },
     {
      "r": 0.095,
      "fv": 86.11,
-     "base": 92.78
+     "bear": 36.55,
+     "base": 92.78,
+     "bull": 143.78
     },
     {
      "r": 0.1,
      "fv": 81.0,
-     "base": 87.24
+     "bear": 35.01,
+     "base": 87.24,
+     "bull": 134.39
     },
     {
      "r": 0.11,
      "fv": 72.56,
-     "base": 78.09
+     "bear": 32.44,
+     "base": 78.09,
+     "bull": 118.92
     },
     {
      "r": 0.12,
      "fv": 65.87,
-     "base": 70.83
+     "bear": 30.37,
+     "base": 70.83,
+     "bull": 106.71
     }
    ],
    "required_return_reason": "Diversified gold miner; value moves with the gold price.",
@@ -262766,7 +264098,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth 0.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0912,
+    "fv": 90.47,
+    "bear": 37.86,
+    "base": 97.51,
+    "bull": 151.81
+   }
   },
   {
    "ticker": "REGN",
@@ -263267,27 +264606,37 @@
     {
      "r": 0.08,
      "fv": 1004.79,
-     "base": 1069.56
+     "bear": 501.49,
+     "base": 1069.56,
+     "bull": 1597.81
     },
     {
      "r": 0.09,
      "fv": 850.36,
-     "base": 904.2
+     "bear": 436.26,
+     "base": 904.2,
+     "bull": 1336.93
     },
     {
      "r": 0.1,
      "fv": 737.4,
-     "base": 783.24
+     "bear": 388.22,
+     "base": 783.24,
+     "bull": 1146.58
     },
     {
      "r": 0.11,
      "fv": 651.28,
-     "base": 691.03
+     "bear": 351.34,
+     "base": 691.03,
+     "bull": 1001.83
     },
     {
      "r": 0.12,
      "fv": 583.52,
-     "base": 618.47
+     "bear": 322.11,
+     "base": 618.47,
+     "bull": 888.25
     }
    ],
    "required_return_reason": "Profitable biotech with net cash; drug pricing, biosimilar and pipeline risk.",
@@ -266251,7 +267600,14 @@
    "cap_years": 15,
    "moat_reason": "Median ROIC 19% over 4 years, above the 9.0% required return but not consistently by 10+ points.",
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0881,
+    "fv": 875.61,
+    "bear": 446.95,
+    "base": 931.23,
+    "bull": 1379.54
+   }
   },
   {
    "ticker": "ZTS",
@@ -266887,32 +268243,44 @@
     {
      "r": 0.08,
      "fv": 95.81,
-     "base": 100.82
+     "bear": 56.92,
+     "base": 100.82,
+     "bull": 141.62
     },
     {
      "r": 0.085,
      "fv": 85.92,
-     "base": 90.46
+     "bear": 50.88,
+     "base": 90.46,
+     "bull": 127.12
     },
     {
      "r": 0.09,
      "fv": 77.56,
-     "base": 81.71
+     "bear": 45.76,
+     "base": 81.71,
+     "bull": 114.9
     },
     {
      "r": 0.1,
      "fv": 64.23,
-     "base": 67.76
+     "bear": 37.55,
+     "base": 67.76,
+     "bull": 95.45
     },
     {
      "r": 0.11,
      "fv": 54.09,
-     "base": 57.13
+     "bear": 31.26,
+     "base": 57.13,
+     "bull": 80.7
     },
     {
      "r": 0.12,
      "fv": 46.11,
-     "base": 48.78
+     "bear": 26.28,
+     "base": 48.78,
+     "bull": 69.15
     }
    ],
    "required_return_reason": "Defensive animal-health leader; growth has slowed.",
@@ -269876,7 +271244,14 @@
    "cap_years": 20,
    "moat_reason": "ROIC 25% or more in each of the last 4 years (median 27%), at least 10 points above the 8.5% required return.",
    "moat_note": "Edge lasts about 20 years; returns on new investment stay high after that.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.071,
+    "fv": 119.21,
+    "bear": 71.17,
+    "base": 125.33,
+    "bull": 176.0
+   }
   },
   {
    "ticker": "MO",
@@ -270242,32 +271617,44 @@
     {
      "r": 0.08,
      "fv": 74.11,
-     "base": 77.79
+     "bear": 54.46,
+     "base": 77.79,
+     "bull": 94.4
     },
     {
      "r": 0.085,
      "fv": 67.7,
-     "base": 71.03
+     "bear": 49.87,
+     "base": 71.03,
+     "bull": 86.08
     },
     {
      "r": 0.09,
      "fv": 62.26,
-     "base": 65.31
+     "bear": 45.97,
+     "base": 65.31,
+     "bull": 79.04
     },
     {
      "r": 0.1,
      "fv": 53.53,
-     "base": 56.13
+     "bear": 39.7,
+     "base": 56.13,
+     "bull": 67.76
     },
     {
      "r": 0.11,
      "fv": 46.83,
-     "base": 49.09
+     "bear": 34.87,
+     "base": 49.09,
+     "bull": 59.13
     },
     {
      "r": 0.12,
      "fv": 41.52,
-     "base": 43.51
+     "bear": 31.02,
+     "base": 43.51,
+     "bull": 52.29
     }
    ],
    "required_return_reason": "Very steady cash flows, but a declining product and regulatory/litigation risk.",
@@ -273231,7 +274618,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth 0.0% now, 0.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0776,
+    "fv": 77.63,
+    "bear": 56.98,
+    "base": 81.49,
+    "bull": 98.97
+   }
   },
   {
    "ticker": "HAS",
@@ -273651,32 +275045,44 @@
     {
      "r": 0.08,
      "fv": 141.91,
-     "base": 153.24
+     "bear": 78.23,
+     "base": 153.24,
+     "bull": 209.1
     },
     {
      "r": 0.09,
      "fv": 118.13,
-     "base": 127.61
+     "bear": 65.23,
+     "base": 127.61,
+     "bull": 173.76
     },
     {
      "r": 0.095,
      "fv": 108.76,
-     "base": 117.51
+     "bear": 60.09,
+     "base": 117.51,
+     "bull": 159.87
     },
     {
      "r": 0.1,
      "fv": 100.63,
-     "base": 108.75
+     "bear": 55.62,
+     "base": 108.75,
+     "bull": 147.82
     },
     {
      "r": 0.11,
      "fv": 87.2,
-     "base": 94.28
+     "bear": 48.21,
+     "base": 94.28,
+     "bull": 127.97
     },
     {
      "r": 0.12,
      "fv": 76.56,
-     "base": 82.83
+     "bear": 42.31,
+     "base": 82.83,
+     "bull": 112.29
     }
    ],
    "required_return_reason": "Toy demand is cyclical; Wizards of the Coast adds a profitable digital franchise.",
@@ -276640,7 +278046,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 10% over 4 years, within 3 points of the 9.5% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.085,
+    "fv": 129.13,
+    "bear": 71.25,
+    "base": 139.47,
+    "bull": 190.11
+   }
   },
   {
    "ticker": "BMY",
@@ -277006,32 +278419,44 @@
     {
      "r": 0.08,
      "fv": 63.2,
-     "base": 63.48
+     "bear": 33.66,
+     "base": 63.48,
+     "bull": 106.83
     },
     {
      "r": 0.085,
      "fv": 56.77,
-     "base": 57.04
+     "bear": 29.93,
+     "base": 57.04,
+     "bull": 96.34
     },
     {
      "r": 0.09,
      "fv": 51.32,
-     "base": 51.59
+     "bear": 26.77,
+     "base": 51.59,
+     "bull": 87.47
     },
     {
      "r": 0.1,
      "fv": 42.59,
-     "base": 42.85
+     "bear": 21.68,
+     "base": 42.85,
+     "bull": 73.29
     },
     {
      "r": 0.11,
      "fv": 35.9,
-     "base": 36.16
+     "bear": 17.77,
+     "base": 36.16,
+     "bull": 62.46
     },
     {
      "r": 0.12,
      "fv": 30.62,
-     "base": 30.87
+     "bear": 14.66,
+     "base": 30.87,
+     "bull": 53.92
     }
    ],
    "required_return_reason": "Large, low-beta pharma facing a patent cliff around 2028.",
@@ -279995,7 +281420,14 @@
    "cap_years": 10,
    "moat_reason": "Base growth -3.0% now, 2.0% in year 10: at or below 2.5%, so no advantage period is added (margins carry the decline, as before).",
    "moat_note": "Growth at or below 2.5%: unchanged 10-year model; scenario margins carry any decline.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0708,
+    "fv": 78.78,
+    "bear": 42.67,
+    "base": 79.06,
+    "bull": 132.27
+   }
   },
   {
    "ticker": "NRG",
@@ -280415,27 +281847,37 @@
     {
      "r": 0.08,
      "fv": 152.67,
-     "base": 167.24
+     "bear": 36.49,
+     "base": 167.24,
+     "bull": 290.5
     },
     {
      "r": 0.09,
      "fv": 111.98,
-     "base": 124.23
+     "bear": 15.53,
+     "base": 124.23,
+     "bull": 226.05
     },
     {
      "r": 0.1,
      "fv": 82.08,
-     "base": 92.62
+     "bear": 0.04,
+     "base": 92.62,
+     "bull": 178.79
     },
     {
      "r": 0.11,
      "fv": 59.17,
-     "base": 68.4
+     "bear": -11.88,
+     "base": 68.4,
+     "bull": 142.68
     },
     {
      "r": 0.12,
      "fv": 41.05,
-     "base": 49.24
+     "bear": -21.36,
+     "base": 49.24,
+     "bull": 114.18
     }
    ],
    "required_return_reason": "Heavy debt and thin, commodity-linked margins; data-centre power upside.",
@@ -283399,7 +284841,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 12% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.064,
+    "fv": 260.68,
+    "bear": 91.84,
+    "base": 281.42,
+    "bull": 462.1
+   }
   },
   {
    "ticker": "FIS",
@@ -283819,27 +285268,37 @@
     {
      "r": 0.08,
      "fv": 81.48,
-     "base": 90.76
+     "bear": 31.19,
+     "base": 90.76,
+     "bull": 133.7
     },
     {
      "r": 0.09,
      "fv": 62.66,
-     "base": 70.41
+     "bear": 20.96,
+     "base": 70.41,
+     "bull": 105.82
     },
     {
      "r": 0.1,
      "fv": 48.84,
-     "base": 55.47
+     "bear": 13.42,
+     "base": 55.47,
+     "bull": 85.38
     },
     {
      "r": 0.11,
      "fv": 38.25,
-     "base": 44.03
+     "bear": 7.62,
+     "base": 44.03,
+     "bull": 69.77
     },
     {
      "r": 0.12,
      "fv": 29.89,
-     "base": 34.98
+     "bear": 3.01,
+     "base": 34.98,
+     "bull": 57.45
     }
    ],
    "required_return_reason": "Integration of a large acquisition and high debt.",
@@ -286803,7 +288262,14 @@
    "cap_years": 12,
    "moat_reason": "Median ROIC 4% over 4 years, within 3 points of the 10.0% required return (goodwill from acquisitions can depress this).",
    "moat_note": "Edge lasts about 12 years; after that new investment earns only the required return, so growth adds no value.",
-   "segments": null
+   "segments": null,
+   "wacc_row": {
+    "r": 0.0575,
+    "fv": 166.23,
+    "bear": 76.95,
+    "base": 182.42,
+    "bull": 259.67
+   }
   },
   {
    "ticker": "PG",
@@ -287466,27 +288932,37 @@
     {
      "r": 0.08,
      "fv": 115.16,
-     "base": 118.8
+     "bear": 91.03,
+     "base": 118.8,
+     "bull": 142.24
     },
     {
      "r": 0.09,
      "fv": 95.71,
-     "base": 98.69
+     "bear": 75.97,
+     "base": 98.69,
+     "bull": 117.88
     },
     {
      "r": 0.1,
      "fv": 81.47,
-     "base": 83.97
+     "bear": 64.9,
+     "base": 83.97,
+     "bull": 100.08
     },
     {
      "r": 0.11,
      "fv": 70.59,
-     "base": 72.73
+     "bear": 56.41,
+     "base": 72.73,
+     "bull": 86.51
     },
     {
      "r": 0.12,
      "fv": 62.01,
-     "base": 63.87
+     "bear": 49.7,
+     "base": 63.87,
+     "bull": 75.85
     }
    ],
    "required_return_reason": "Below the 9% Consumer Defensive rate: household staples with very stable demand and a beta near 0.4.",
@@ -290423,6 +291899,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0747,
+    "fv": 128.52,
+    "bear": 101.36,
+    "base": 132.62,
+    "bull": 159.01
    }
   },
   {
@@ -290951,27 +292434,37 @@
     {
      "r": 0.08,
      "fv": 58.03,
-     "base": 60.03
+     "bear": 44.51,
+     "base": 60.03,
+     "bull": 73.33
     },
     {
      "r": 0.09,
      "fv": 48.61,
-     "base": 50.26
+     "bear": 37.44,
+     "base": 50.26,
+     "bull": 61.23
     },
     {
      "r": 0.1,
      "fv": 41.68,
-     "base": 43.08
+     "bear": 32.23,
+     "base": 43.08,
+     "bull": 52.36
     },
     {
      "r": 0.11,
      "fv": 36.38,
-     "base": 37.58
+     "bear": 28.23,
+     "base": 37.58,
+     "bull": 45.57
     },
     {
      "r": 0.12,
      "fv": 32.18,
-     "base": 33.24
+     "bear": 25.06,
+     "base": 33.24,
+     "bull": 40.22
     }
    ],
    "required_return_reason": "Below the 9% Consumer Defensive rate: global beverage brand with very stable demand and a beta near 0.3.",
@@ -293908,6 +295401,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0754,
+    "fv": 63.56,
+    "bear": 48.65,
+    "base": 65.76,
+    "bull": 80.44
    }
   },
   {
@@ -294571,27 +296071,37 @@
     {
      "r": 0.08,
      "fv": 246.07,
-     "base": 256.56
+     "bear": 152.11,
+     "base": 256.56,
+     "bull": 360.8
     },
     {
      "r": 0.09,
      "fv": 196.91,
-     "base": 205.57
+     "bear": 120.23,
+     "base": 205.57,
+     "bull": 290.25
     },
     {
      "r": 0.1,
      "fv": 161.01,
-     "base": 168.35
+     "bear": 96.84,
+     "base": 168.35,
+     "bull": 238.92
     },
     {
      "r": 0.11,
      "fv": 133.69,
-     "base": 140.02
+     "bear": 78.93,
+     "base": 140.02,
+     "bull": 200.0
     },
     {
      "r": 0.12,
      "fv": 112.22,
-     "base": 117.76
+     "bear": 64.77,
+     "base": 117.76,
+     "bull": 169.54
     }
    ],
    "required_return_reason": "Below the 9.5% Basic Materials rate: paint is less cyclical than chemicals (repaint demand), but tied to housing and industry.",
@@ -297528,6 +299038,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0809,
+    "fv": 240.81,
+    "bear": 148.7,
+    "base": 251.1,
+    "bull": 353.23
    }
   },
   {
@@ -298056,27 +299573,37 @@
     {
      "r": 0.08,
      "fv": 155.95,
-     "base": 161.53
+     "bear": 114.25,
+     "base": 161.53,
+     "bull": 204.54
     },
     {
      "r": 0.09,
      "fv": 129.66,
-     "base": 134.31
+     "bear": 95.28,
+     "base": 134.31,
+     "bull": 169.59
     },
     {
      "r": 0.1,
      "fv": 110.36,
-     "base": 114.33
+     "bear": 81.32,
+     "base": 114.33,
+     "bull": 143.99
     },
     {
      "r": 0.11,
      "fv": 95.59,
-     "base": 99.05
+     "bear": 70.6,
+     "base": 99.05,
+     "bull": 124.45
     },
     {
      "r": 0.12,
      "fv": 83.93,
-     "base": 86.97
+     "bear": 62.1,
+     "base": 86.97,
+     "bull": 109.06
     }
    ],
    "required_return_reason": "Below the 9% Healthcare rate: AAA balance sheet, diversified drugs and devices, beta near 0.2.",
@@ -301013,6 +302540,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0761,
+    "fv": 168.89,
+    "bear": 123.57,
+    "base": 174.93,
+    "bull": 221.77
    }
   },
   {
@@ -301526,32 +303060,44 @@
     {
      "r": 0.08,
      "fv": 345.17,
-     "base": 354.66
+     "bear": 200.57,
+     "base": 354.66,
+     "bull": 538.34
     },
     {
      "r": 0.085,
      "fv": 309.94,
-     "base": 318.67
+     "bear": 179.09,
+     "base": 318.67,
+     "bull": 484.39
     },
     {
      "r": 0.09,
      "fv": 280.11,
-     "base": 288.19
+     "bear": 160.86,
+     "base": 288.19,
+     "bull": 438.79
     },
     {
      "r": 0.1,
      "fv": 232.36,
-     "base": 239.4
+     "bear": 131.56,
+     "base": 239.4,
+     "bull": 365.97
     },
     {
      "r": 0.11,
      "fv": 195.82,
-     "base": 202.05
+     "bear": 109.03,
+     "base": 202.05,
+     "bull": 310.44
     },
     {
      "r": 0.12,
      "fv": 166.96,
-     "base": 172.54
+     "bear": 91.13,
+     "base": 172.54,
+     "bull": 266.74
     }
    ],
    "required_return_reason": "Slightly below the 9% Healthcare rate: large, low-beta biotech, but biosimilar erosion and $54B of debt.",
@@ -304488,6 +306034,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0773,
+    "fv": 367.35,
+    "bear": 214.07,
+    "base": 377.32,
+    "bull": 572.34
    }
   },
   {
@@ -305136,32 +306689,44 @@
     {
      "r": 0.08,
      "fv": 98.03,
-     "base": 101.46
+     "bear": 71.15,
+     "base": 101.46,
+     "bull": 129.75
     },
     {
      "r": 0.085,
      "fv": 89.05,
-     "base": 92.15
+     "bear": 64.9,
+     "base": 92.15,
+     "bull": 117.53
     },
     {
      "r": 0.09,
      "fv": 81.47,
-     "base": 84.3
+     "bear": 59.61,
+     "base": 84.3,
+     "bull": 107.22
     },
     {
      "r": 0.1,
      "fv": 69.39,
-     "base": 71.77
+     "bear": 51.14,
+     "base": 71.77,
+     "bull": 90.83
     },
     {
      "r": 0.11,
      "fv": 60.2,
-     "base": 62.24
+     "bear": 44.66,
+     "base": 62.24,
+     "bull": 78.4
     },
     {
      "r": 0.12,
      "fv": 52.97,
-     "base": 54.75
+     "bear": 39.54,
+     "base": 54.75,
+     "bull": 68.67
     }
    ],
    "required_return_reason": "Below the 9% Industrials rate: water-quality consumables and service make most revenue recurring; beta near 0.7 and modest debt.",
@@ -308098,6 +309663,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0795,
+    "fv": 98.93,
+    "bear": 71.78,
+    "base": 102.4,
+    "bull": 130.98
    }
   },
   {
@@ -308611,27 +310183,37 @@
     {
      "r": 0.08,
      "fv": 936.94,
-     "base": 1031.7
+     "bear": 510.98,
+     "base": 1031.7,
+     "bull": 1338.99
     },
     {
      "r": 0.09,
      "fv": 790.91,
-     "base": 869.62
+     "bear": 439.39,
+     "base": 869.62,
+     "bull": 1121.41
     },
     {
      "r": 0.1,
      "fv": 683.83,
-     "base": 750.82
+     "bear": 386.52,
+     "base": 750.82,
+     "bull": 962.33
     },
     {
      "r": 0.11,
      "fv": 601.97,
-     "base": 660.04
+     "bear": 345.8,
+     "base": 660.04,
+     "bull": 841.07
     },
     {
      "r": 0.12,
      "fv": 537.38,
-     "base": 588.44
+     "bear": 313.41,
+     "base": 588.44,
+     "bull": 745.69
     }
    ],
    "required_return_reason": "Above the 7.5% Financial Services rate: fees move with stock and bond markets (beta ~1.1) and it carries an annuity and life-insurance book.",
@@ -311568,6 +313150,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.1,
+    "fv": 683.83,
+    "bear": 386.52,
+    "base": 750.82,
+    "bull": 962.33
    }
   },
   {
@@ -312081,32 +313670,44 @@
     {
      "r": 0.08,
      "fv": 112.64,
-     "base": 117.48
+     "bear": 72.81,
+     "base": 117.48,
+     "bull": 160.27
     },
     {
      "r": 0.09,
      "fv": 91.15,
-     "base": 95.2
+     "bear": 58.21,
+     "base": 95.2,
+     "bull": 130.4
     },
     {
      "r": 0.095,
      "fv": 82.69,
-     "base": 86.44
+     "bear": 52.46,
+     "base": 86.44,
+     "bull": 118.68
     },
     {
      "r": 0.1,
      "fv": 75.37,
-     "base": 78.84
+     "bear": 47.46,
+     "base": 78.84,
+     "bull": 108.52
     },
     {
      "r": 0.11,
      "fv": 63.29,
-     "base": 66.32
+     "bear": 39.21,
+     "base": 66.32,
+     "bull": 91.82
     },
     {
      "r": 0.12,
      "fv": 53.74,
-     "base": 56.42
+     "bear": 32.66,
+     "base": 56.42,
+     "bull": 78.65
     }
    ],
    "required_return_reason": "Basic Materials rate: coatings demand follows the industrial and auto cycle, with net debt of about 2x EBITDA.",
@@ -315043,6 +316644,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0804,
+    "fv": 111.7,
+    "bear": 72.17,
+    "base": 116.51,
+    "bull": 158.97
    }
   },
   {
@@ -315421,27 +317029,37 @@
     {
      "r": 0.08,
      "fv": 153.92,
-     "base": 169.98
+     "bear": 74.95,
+     "base": 169.98,
+     "bull": 232.2
     },
     {
      "r": 0.09,
      "fv": 130.38,
-     "base": 143.82
+     "bear": 64.62,
+     "base": 143.82,
+     "bull": 195.4
     },
     {
      "r": 0.1,
      "fv": 113.08,
-     "base": 124.6
+     "bear": 56.97,
+     "base": 124.6,
+     "bull": 168.42
     },
     {
      "r": 0.11,
      "fv": 99.81,
-     "base": 109.87
+     "bear": 51.05,
+     "base": 109.87,
+     "bull": 147.79
     },
     {
      "r": 0.12,
      "fv": 89.31,
-     "base": 98.22
+     "bear": 46.32,
+     "base": 98.22,
+     "bull": 131.51
     }
    ],
    "required_return_reason": "Above the 8.5% Energy rate: oil-price dependent, but a low-cost producer with little net debt.",
@@ -318378,6 +319996,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.084,
+    "fv": 143.63,
+    "bear": 70.45,
+    "base": 158.54,
+    "bull": 216.1
    }
   },
   {
@@ -319026,32 +320651,44 @@
     {
      "r": 0.08,
      "fv": 159.01,
-     "base": 166.47
+     "bear": 112.87,
+     "base": 166.47,
+     "bull": 209.58
     },
     {
      "r": 0.085,
      "fv": 143.17,
-     "base": 149.91
+     "bear": 101.66,
+     "base": 149.91,
+     "bull": 188.57
     },
     {
      "r": 0.09,
      "fv": 129.78,
-     "base": 135.91
+     "bear": 92.18,
+     "base": 135.91,
+     "bull": 170.84
     },
     {
      "r": 0.1,
      "fv": 108.4,
-     "base": 113.57
+     "bear": 76.97,
+     "base": 113.57,
+     "bull": 142.62
     },
     {
      "r": 0.11,
      "fv": 92.1,
-     "base": 96.55
+     "bear": 65.31,
+     "base": 96.55,
+     "bull": 121.17
     },
     {
      "r": 0.12,
      "fv": 79.27,
-     "base": 83.15
+     "bear": 56.08,
+     "base": 83.15,
+     "bull": 104.36
     }
    ],
    "required_return_reason": "Below the 9% Consumer Defensive rate: very steady cash flows (beta ~0.35), offset by regulation, excise and currency risk and high debt.",
@@ -321988,6 +323625,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0772,
+    "fv": 169.41,
+    "bear": 120.2,
+    "base": 177.34,
+    "bull": 223.39
    }
   },
   {
@@ -322501,27 +324145,37 @@
     {
      "r": 0.08,
      "fv": 156.87,
-     "base": 168.51
+     "bear": 98.79,
+     "base": 168.51,
+     "bull": 214.89
     },
     {
      "r": 0.09,
      "fv": 127.42,
-     "base": 137.09
+     "bear": 79.39,
+     "base": 137.09,
+     "bull": 175.32
     },
     {
      "r": 0.1,
      "fv": 105.8,
-     "base": 114.02
+     "bear": 65.1,
+     "base": 114.02,
+     "bull": 146.32
     },
     {
      "r": 0.11,
      "fv": 89.25,
-     "base": 96.37
+     "bear": 54.11,
+     "base": 96.37,
+     "bull": 124.16
     },
     {
      "r": 0.12,
      "fv": 76.17,
-     "base": 82.43
+     "bear": 45.4,
+     "base": 82.43,
+     "bull": 106.69
     }
    ],
    "required_return_reason": "Consumer Defensive rate: steady discount demand, but execution risk in the multi-price rollout and tariff exposure.",
@@ -325458,6 +327112,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.074,
+    "fv": 180.3,
+    "bear": 114.18,
+    "base": 193.52,
+    "bull": 246.42
    }
   },
   {
@@ -325851,27 +327512,37 @@
     {
      "r": 0.08,
      "fv": 48.43,
-     "base": 51.43
+     "bear": 28.64,
+     "base": 51.43,
+     "bull": 70.6
     },
     {
      "r": 0.09,
      "fv": 41.82,
-     "base": 44.35
+     "bear": 25.43,
+     "base": 44.35,
+     "bull": 60.09
     },
     {
      "r": 0.1,
      "fv": 36.97,
-     "base": 39.15
+     "bear": 23.05,
+     "base": 39.15,
+     "bull": 52.39
     },
     {
      "r": 0.11,
      "fv": 33.25,
-     "base": 35.16
+     "bear": 21.21,
+     "base": 35.16,
+     "bull": 46.52
     },
     {
      "r": 0.12,
      "fv": 30.31,
-     "base": 32.01
+     "bear": 19.75,
+     "base": 32.01,
+     "bull": 41.9
     }
    ],
    "required_return_reason": "Healthcare rate (9%) plus the 2-point small-cap premium: steady royalty cash, but the GSK inhaler royalties end within the decade.",
@@ -328808,6 +330479,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.101,
+    "fv": 36.54,
+    "bear": 22.84,
+    "base": 38.69,
+    "bull": 51.72
    }
   },
   {
@@ -329255,32 +330933,44 @@
     {
      "r": 0.08,
      "fv": 37.13,
-     "base": 39.76
+     "bear": 25.49,
+     "base": 39.76,
+     "bull": 48.05
     },
     {
      "r": 0.09,
      "fv": 30.78,
-     "base": 32.97
+     "bear": 21.11,
+     "base": 32.97,
+     "bull": 39.82
     },
     {
      "r": 0.095,
      "fv": 28.28,
-     "base": 30.29
+     "bear": 19.39,
+     "base": 30.29,
+     "bull": 36.58
     },
     {
      "r": 0.1,
      "fv": 26.1,
-     "base": 27.97
+     "bear": 17.89,
+     "base": 27.97,
+     "bull": 33.77
     },
     {
      "r": 0.11,
      "fv": 22.52,
-     "base": 24.13
+     "bear": 15.4,
+     "base": 24.13,
+     "bull": 29.14
     },
     {
      "r": 0.12,
      "fv": 19.67,
-     "base": 21.1
+     "bear": 13.43,
+     "base": 21.1,
+     "bull": 25.48
     }
    ],
    "required_return_reason": "Real Estate rate (7.5%) plus the 2-point small-cap premium: long leases, but tenants are thin-margin nursing operators paid by Medicaid and Medicare.",
@@ -332217,6 +333907,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.089,
+    "fv": 31.32,
+    "bear": 21.49,
+    "base": 33.55,
+    "bull": 40.52
    }
   },
   {
@@ -332664,27 +334361,37 @@
     {
      "r": 0.08,
      "fv": 196.11,
-     "base": 211.17
+     "bear": 119.44,
+     "base": 211.17,
+     "bull": 273.48
     },
     {
      "r": 0.09,
      "fv": 163.4,
-     "base": 175.94
+     "bear": 99.93,
+     "base": 175.94,
+     "bull": 227.26
     },
     {
      "r": 0.1,
      "fv": 139.38,
-     "base": 150.08
+     "bear": 85.54,
+     "base": 150.08,
+     "bull": 193.4
     },
     {
      "r": 0.11,
      "fv": 121.0,
-     "base": 130.29
+     "bear": 74.48,
+     "base": 130.29,
+     "bull": 167.53
     },
     {
      "r": 0.12,
      "fv": 106.47,
-     "base": 114.66
+     "bear": 65.7,
+     "base": 114.66,
+     "bull": 147.15
     }
    ],
    "required_return_reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium: steady demand for nurses and doctors, offset by US student-aid rule risk.",
@@ -335621,6 +337328,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.1001,
+    "fv": 139.22,
+    "bear": 85.45,
+    "base": 149.9,
+    "bull": 193.17
    }
   },
   {
@@ -336149,27 +337863,37 @@
     {
      "r": 0.08,
      "fv": 168.93,
-     "base": 175.24
+     "bear": 122.6,
+     "base": 175.24,
+     "bull": 222.66
     },
     {
      "r": 0.09,
      "fv": 143.77,
-     "base": 148.99
+     "bear": 105.72,
+     "base": 148.99,
+     "bull": 187.77
     },
     {
      "r": 0.1,
      "fv": 125.34,
-     "base": 129.77
+     "bear": 93.32,
+     "base": 129.77,
+     "bull": 162.29
     },
     {
      "r": 0.11,
      "fv": 111.28,
-     "base": 115.11
+     "bear": 83.82,
+     "base": 115.11,
+     "bull": 142.89
     },
     {
      "r": 0.12,
      "fv": 100.2,
-     "base": 103.55
+     "bear": 76.3,
+     "base": 103.55,
+     "bull": 127.64
     }
    ],
    "required_return_reason": "Technology rate (10.5%) less half a point for recurring subscriptions, net cash and low beta (~0.5), plus the 2-point small-cap premium.",
@@ -339106,6 +340830,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.1194,
+    "fv": 100.83,
+    "bear": 76.74,
+    "base": 104.22,
+    "bull": 128.52
    }
   },
   {
@@ -339634,27 +341365,37 @@
     {
      "r": 0.08,
      "fv": 39.09,
-     "base": 42.27
+     "bear": 21.11,
+     "base": 42.27,
+     "bull": 58.09
     },
     {
      "r": 0.09,
      "fv": 32.26,
-     "base": 34.91
+     "bear": 17.43,
+     "base": 34.91,
+     "bull": 47.87
     },
     {
      "r": 0.1,
      "fv": 27.25,
-     "base": 29.51
+     "bear": 14.72,
+     "base": 29.51,
+     "bull": 40.41
     },
     {
      "r": 0.11,
      "fv": 23.43,
-     "base": 25.39
+     "bear": 12.64,
+     "base": 25.39,
+     "bull": 34.72
     },
     {
      "r": 0.12,
      "fv": 20.42,
-     "base": 22.15
+     "bear": 10.99,
+     "base": 22.15,
+     "bull": 30.25
     }
    ],
    "required_return_reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium, plus 1 point for Mexican and Peruvian currency and politics.",
@@ -342591,6 +344332,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.106,
+    "fv": 24.86,
+    "bear": 13.42,
+    "base": 26.93,
+    "bull": 36.84
    }
   },
   {
@@ -343254,32 +345002,44 @@
     {
      "r": 0.08,
      "fv": 188.7,
-     "base": 185.18
+     "bear": 98.19,
+     "base": 185.18,
+     "bull": 333.27
     },
     {
      "r": 0.09,
      "fv": 163.37,
-     "base": 160.68
+     "bear": 88.86,
+     "base": 160.68,
+     "bull": 281.85
     },
     {
      "r": 0.1,
      "fv": 144.86,
-     "base": 142.77
+     "bear": 81.96,
+     "base": 142.77,
+     "bull": 244.45
     },
     {
      "r": 0.11,
      "fv": 130.77,
-     "base": 129.11
+     "bear": 76.64,
+     "base": 129.11,
+     "bull": 216.1
     },
     {
      "r": 0.12,
      "fv": 119.68,
-     "base": 118.36
+     "bear": 72.4,
+     "base": 118.36,
+     "bull": 193.91
     },
     {
      "r": 0.125,
      "fv": 114.99,
-     "base": 113.8
+     "bear": 70.59,
+     "base": 113.8,
+     "bull": 184.54
     }
    ],
    "required_return_reason": "Technology rate (10.5%) plus the 2-point small-cap premium: licence income depends on renewals and litigation with a few large phone makers (beta ~1.5).",
@@ -346216,6 +347976,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.1218,
+    "fv": 117.97,
+    "bear": 71.74,
+    "base": 116.7,
+    "bull": 190.49
    }
   },
   {
@@ -346744,27 +348511,37 @@
     {
      "r": 0.08,
      "fv": 75.74,
-     "base": 79.07
+     "bear": 51.95,
+     "base": 79.07,
+     "bull": 103.09
     },
     {
      "r": 0.09,
      "fv": 64.9,
-     "base": 67.65
+     "bear": 45.41,
+     "base": 67.65,
+     "bull": 87.28
     },
     {
      "r": 0.1,
      "fv": 56.98,
-     "base": 59.31
+     "bear": 40.61,
+     "base": 59.31,
+     "bull": 75.75
     },
     {
      "r": 0.11,
      "fv": 50.95,
-     "base": 52.95
+     "bear": 36.93,
+     "base": 52.95,
+     "bull": 66.98
     },
     {
      "r": 0.12,
      "fv": 46.2,
-     "base": 47.94
+     "bear": 34.02,
+     "base": 47.94,
+     "bull": 60.1
     }
    ],
    "required_return_reason": "Healthcare rate (9%) plus the 2-point small-cap premium: niche vascular devices with steady demand, net cash.",
@@ -349701,6 +351478,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.1017,
+    "fv": 55.82,
+    "bear": 39.9,
+    "base": 58.08,
+    "bull": 74.06
    }
   },
   {
@@ -350364,27 +352148,37 @@
     {
      "r": 0.08,
      "fv": 21.78,
-     "base": 22.73
+     "bear": 10.59,
+     "base": 22.73,
+     "bull": 36.17
     },
     {
      "r": 0.09,
      "fv": 17.52,
-     "base": 18.32
+     "bear": 8.36,
+     "base": 18.32,
+     "bull": 29.27
     },
     {
      "r": 0.1,
      "fv": 14.42,
-     "base": 15.09
+     "bear": 6.73,
+     "base": 15.09,
+     "bull": 24.25
     },
     {
      "r": 0.11,
      "fv": 12.06,
-     "base": 12.65
+     "bear": 5.48,
+     "base": 12.65,
+     "bull": 20.45
     },
     {
      "r": 0.12,
      "fv": 10.21,
-     "base": 10.73
+     "bear": 4.5,
+     "base": 10.73,
+     "bull": 17.48
     }
    ],
    "required_return_reason": "Technology rate (10.5%) less half a point for recurring subscriptions and low beta (~0.6), plus the 2-point small-cap premium.",
@@ -353321,6 +355115,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.1119,
+    "fv": 11.68,
+    "bear": 5.28,
+    "base": 12.25,
+    "bull": 19.84
    }
   },
   {
@@ -353768,27 +355569,37 @@
     {
      "r": 0.08,
      "fv": 56.67,
-     "base": 61.15
+     "bear": 31.92,
+     "base": 61.15,
+     "bull": 82.62
     },
     {
      "r": 0.09,
      "fv": 46.63,
-     "base": 50.36
+     "bear": 26.15,
+     "base": 50.36,
+     "bull": 68.04
     },
     {
      "r": 0.1,
      "fv": 39.28,
-     "base": 42.46
+     "bear": 21.92,
+     "base": 42.46,
+     "bull": 57.37
     },
     {
      "r": 0.11,
      "fv": 33.66,
-     "base": 36.42
+     "bear": 18.67,
+     "base": 36.42,
+     "bull": 49.24
     },
     {
      "r": 0.12,
      "fv": 29.22,
-     "base": 31.66
+     "bear": 16.09,
+     "base": 31.66,
+     "bull": 42.84
     }
    ],
    "required_return_reason": "Technology rate (10.5%) less half a point for long bank contracts, plus the 2-point small-cap premium; lumpy licence sales and net debt.",
@@ -356725,6 +358536,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.111,
+    "fv": 33.15,
+    "bear": 18.37,
+    "base": 35.87,
+    "bull": 48.5
    }
   },
   {
@@ -357238,32 +359056,44 @@
     {
      "r": 0.08,
      "fv": 195.47,
-     "base": 203.9
+     "bear": 143.28,
+     "base": 203.9,
+     "bull": 252.7
     },
     {
      "r": 0.085,
      "fv": 175.04,
-     "base": 182.67
+     "bear": 127.86,
+     "base": 182.67,
+     "bull": 226.77
     },
     {
      "r": 0.09,
      "fv": 157.76,
-     "base": 164.71
+     "bear": 114.79,
+     "base": 164.71,
+     "bull": 204.85
     },
     {
      "r": 0.1,
      "fv": 130.11,
-     "base": 135.98
+     "bear": 93.85,
+     "base": 135.98,
+     "bull": 169.82
     },
     {
      "r": 0.11,
      "fv": 108.98,
-     "base": 114.03
+     "bear": 77.81,
+     "base": 114.03,
+     "bull": 143.1
     },
     {
      "r": 0.12,
      "fv": 92.31,
-     "base": 96.72
+     "bear": 65.12,
+     "base": 96.72,
+     "bull": 122.05
     }
    ],
    "required_return_reason": "Above the 7.5% Financial Services rate: a broker takes no underwriting risk and earns steady fees (beta ~0.5), but carries $22B of debt after the McGriff deal and consulting is cyclical. In line with ADP and BR.",
@@ -360200,6 +362030,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0755,
+    "fv": 217.25,
+    "bear": 159.71,
+    "base": 226.54,
+    "bull": 280.35
    }
   },
   {
@@ -360713,32 +362550,44 @@
     {
      "r": 0.08,
      "fv": 378.14,
-     "base": 398.87
+     "bear": 261.73,
+     "base": 398.87,
+     "bull": 500.94
     },
     {
      "r": 0.085,
      "fv": 341.28,
-     "base": 360.07
+     "bear": 235.92,
+     "base": 360.07,
+     "bull": 452.36
     },
     {
      "r": 0.09,
      "fv": 310.09,
-     "base": 327.23
+     "bear": 214.04,
+     "base": 327.23,
+     "bull": 411.28
     },
     {
      "r": 0.1,
      "fv": 260.18,
-     "base": 274.71
+     "bear": 178.98,
+     "base": 274.71,
+     "bull": 345.65
     },
     {
      "r": 0.11,
      "fv": 222.02,
-     "base": 234.57
+     "bear": 152.09,
+     "base": 234.57,
+     "bull": 295.56
     },
     {
      "r": 0.12,
      "fv": 191.91,
-     "base": 202.9
+     "bear": 130.81,
+     "base": 202.9,
+     "bull": 256.11
     }
    ],
    "required_return_reason": "Above the 7.5% Financial Services rate: broking and consulting fees with no underwriting risk (beta ~0.4); net debt and pension-consulting cycles. In line with ADP and BR.",
@@ -363675,6 +365524,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0755,
+    "fv": 417.47,
+    "bear": 289.23,
+    "base": 440.27,
+    "bull": 552.8
    }
   },
   {
@@ -364323,32 +366179,44 @@
     {
      "r": 0.08,
      "fv": 59.35,
-     "base": 62.47
+     "bear": 42.09,
+     "base": 62.47,
+     "bull": 77.46
     },
     {
      "r": 0.09,
      "fv": 50.33,
-     "base": 52.87
+     "bear": 36.25,
+     "base": 52.87,
+     "bull": 65.08
     },
     {
      "r": 0.095,
      "fv": 46.8,
-     "base": 49.12
+     "bear": 33.97,
+     "base": 49.12,
+     "bull": 60.25
     },
     {
      "r": 0.1,
      "fv": 43.75,
-     "base": 45.88
+     "bear": 31.98,
+     "base": 45.88,
+     "bull": 56.08
     },
     {
      "r": 0.11,
      "fv": 38.75,
-     "base": 40.57
+     "bear": 28.72,
+     "base": 40.57,
+     "bull": 49.26
     },
     {
      "r": 0.12,
      "fv": 34.83,
-     "base": 36.41
+     "bear": 26.15,
+     "base": 36.41,
+     "bull": 43.93
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium: fee-based claims services with no underwriting risk and net cash.",
@@ -367285,6 +369153,13 @@
      },
      "note": "Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. Floor = terminal growth + 0.25 pt, cap 60%."
     }
+   },
+   "wacc_row": {
+    "r": 0.0946,
+    "fv": 47.04,
+    "bear": 34.12,
+    "base": 49.38,
+    "bull": 60.58
    }
   },
   {
@@ -367869,27 +369744,37 @@
     {
      "r": 0.08,
      "fv": 266.86,
-     "base": 276.49
+     "bear": 199.54,
+     "base": 276.49,
+     "bull": 343.75
     },
     {
      "r": 0.09,
      "fv": 228.62,
-     "base": 236.45
+     "bear": 173.25,
+     "base": 236.45,
+     "bull": 292.11
     },
     {
      "r": 0.1,
      "fv": 200.3,
-     "base": 206.8
+     "bear": 153.73,
+     "base": 206.8,
+     "bull": 253.9
     },
     {
      "r": 0.11,
      "fv": 178.43,
-     "base": 183.92
+     "bear": 138.62,
+     "base": 183.92,
+     "bull": 224.43
     },
     {
      "r": 0.12,
      "fv": 161.01,
-     "base": 165.71
+     "bear": 126.53,
+     "base": 165.71,
+     "bull": 200.98
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus 1.5 points for an underwriter's catastrophe exposure (wildfires, hurricanes, storms) and swings in auto claim costs.",
@@ -371410,32 +373295,44 @@
     {
      "r": 0.08,
      "fv": 143.78,
-     "base": 149.17
+     "bear": 109.54,
+     "base": 149.17,
+     "bull": 181.68
     },
     {
      "r": 0.085,
      "fv": 132.41,
-     "base": 137.22
+     "bear": 101.61,
+     "base": 137.22,
+     "bull": 166.61
     },
     {
      "r": 0.09,
      "fv": 122.75,
-     "base": 127.05
+     "bear": 94.86,
+     "base": 127.05,
+     "bull": 153.8
     },
     {
      "r": 0.1,
      "fv": 107.16,
-     "base": 110.68
+     "bear": 83.95,
+     "base": 110.68,
+     "bull": 133.18
     },
     {
      "r": 0.11,
      "fv": 95.13,
-     "base": 98.05
+     "bear": 75.49,
+     "base": 98.05,
+     "bull": 117.29
     },
     {
      "r": 0.12,
      "fv": 85.55,
-     "base": 88.0
+     "bear": 68.71,
+     "base": 88.0,
+     "bull": 104.67
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus 1 point for underwriting risk; mostly commercial lines and group benefits, so less catastrophe-exposed than a home insurer.",
@@ -374866,27 +376763,37 @@
     {
      "r": 0.08,
      "fv": 219.66,
-     "base": 225.37
+     "bear": 185.91,
+     "base": 225.37,
+     "bull": 256.03
     },
     {
      "r": 0.09,
      "fv": 191.31,
-     "base": 196.01
+     "bear": 162.51,
+     "base": 196.01,
+     "bull": 222.75
     },
     {
      "r": 0.1,
      "fv": 169.96,
-     "base": 173.9
+     "bear": 144.97,
+     "base": 173.9,
+     "bull": 197.56
     },
     {
      "r": 0.11,
      "fv": 153.2,
-     "base": 156.56
+     "bear": 131.27,
+     "base": 156.56,
+     "bull": 177.69
     },
     {
      "r": 0.12,
      "fv": 139.63,
-     "base": 142.51
+     "bear": 120.22,
+     "base": 142.51,
+     "bull": 161.53
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus 1.5 points: protection plans are steady, but Global Housing is exposed to hurricanes.",
@@ -378407,27 +380314,37 @@
     {
      "r": 0.08,
      "fv": 65.74,
-     "base": 70.76
+     "bear": 44.12,
+     "base": 70.76,
+     "bull": 85.65
     },
     {
      "r": 0.09,
      "fv": 55.63,
-     "base": 59.56
+     "bear": 38.44,
+     "base": 59.56,
+     "bull": 71.57
     },
     {
      "r": 0.1,
      "fv": 48.18,
-     "base": 51.34
+     "bear": 34.23,
+     "base": 51.34,
+     "bull": 61.23
     },
     {
      "r": 0.11,
      "fv": 42.47,
-     "base": 45.04
+     "bear": 30.96,
+     "base": 45.04,
+     "bull": 53.33
     },
     {
      "r": 0.12,
      "fv": 37.96,
-     "base": 40.06
+     "bear": 28.35,
+     "base": 40.06,
+     "bull": 47.1
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point: mortgage-insurance losses come all at once in a housing downturn.",
@@ -381858,27 +383775,37 @@
     {
      "r": 0.08,
      "fv": 41.79,
-     "base": 47.8
+     "bear": 21.59,
+     "base": 47.8,
+     "bull": 57.08
     },
     {
      "r": 0.09,
      "fv": 36.14,
-     "base": 40.97
+     "bear": 19.47,
+     "base": 40.97,
+     "bull": 49.06
     },
     {
      "r": 0.1,
      "fv": 31.95,
-     "base": 35.93
+     "bear": 17.87,
+     "base": 35.93,
+     "bull": 43.09
     },
     {
      "r": 0.11,
      "fv": 28.7,
-     "base": 32.05
+     "bear": 16.61,
+     "base": 32.05,
+     "bull": 38.45
     },
     {
      "r": 0.12,
      "fv": 26.11,
-     "base": 28.97
+     "bear": 15.58,
+     "base": 28.97,
+     "bull": 34.74
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 2.5 points: almost all risk is Florida homes, so one major hurricane can wipe out years of profit.",
@@ -385399,32 +387326,44 @@
     {
      "r": 0.08,
      "fv": 158.1,
-     "base": 164.97
+     "bear": 90.17,
+     "base": 164.97,
+     "bull": 242.84
     },
     {
      "r": 0.09,
      "fv": 129.24,
-     "base": 134.39
+     "bear": 75.44,
+     "base": 134.39,
+     "bull": 197.05
     },
     {
      "r": 0.1,
      "fv": 108.2,
-     "base": 112.12
+     "bear": 64.67,
+     "base": 112.12,
+     "bull": 163.68
     },
     {
      "r": 0.105,
      "fv": 99.7,
-     "base": 103.13
+     "bear": 60.3,
+     "base": 103.13,
+     "bull": 150.21
     },
     {
      "r": 0.11,
      "fv": 92.23,
-     "base": 95.23
+     "bear": 56.46,
+     "base": 95.23,
+     "bull": 138.37
     },
     {
      "r": 0.12,
      "fv": 79.74,
-     "base": 82.04
+     "bear": 49.99,
+     "base": 82.04,
+     "bull": 118.58
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 1 point for earthquake and other catastrophe exposure and fast growth.",
@@ -388855,27 +390794,37 @@
     {
      "r": 0.08,
      "fv": 41.11,
-     "base": 45.57
+     "bear": 25.29,
+     "base": 45.57,
+     "bull": 53.69
     },
     {
      "r": 0.09,
      "fv": 35.0,
-     "base": 38.5
+     "bear": 22.21,
+     "base": 38.5,
+     "bull": 45.45
     },
     {
      "r": 0.1,
      "fv": 30.5,
-     "base": 33.31
+     "bear": 19.91,
+     "base": 33.31,
+     "bull": 39.37
     },
     {
      "r": 0.11,
      "fv": 27.05,
-     "base": 29.35
+     "bear": 18.12,
+     "base": 29.35,
+     "bull": 34.68
     },
     {
      "r": 0.12,
      "fv": 24.3,
-     "base": 26.21
+     "bear": 16.69,
+     "base": 26.21,
+     "bull": 30.96
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 1.5 points for (re)insurance catastrophe risk, a short listed history and few analysts.",
@@ -392306,27 +394255,37 @@
     {
      "r": 0.08,
      "fv": 25.06,
-     "base": 27.96
+     "bear": 12.87,
+     "base": 27.96,
+     "bull": 36.08
     },
     {
      "r": 0.09,
      "fv": 21.53,
-     "base": 23.87
+     "bear": 11.45,
+     "base": 23.87,
+     "bull": 30.81
     },
     {
      "r": 0.1,
      "fv": 18.92,
-     "base": 20.85
+     "bear": 10.39,
+     "base": 20.85,
+     "bull": 26.88
     },
     {
      "r": 0.11,
      "fv": 16.89,
-     "base": 18.51
+     "bear": 9.57,
+     "base": 18.51,
+     "bull": 23.82
     },
     {
      "r": 0.12,
      "fv": 15.27,
-     "base": 16.66
+     "bear": 8.9,
+     "base": 16.66,
+     "bull": 21.37
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 2.5 points: Florida hurricane concentration and a record of only four years, none with a major storm on its book.",
@@ -395757,32 +397716,44 @@
     {
      "r": 0.08,
      "fv": 50.18,
-     "base": 54.32
+     "bear": 32.96,
+     "base": 54.32,
+     "bull": 65.64
     },
     {
      "r": 0.09,
      "fv": 42.4,
-     "base": 45.66
+     "bear": 28.47,
+     "base": 45.66,
+     "bull": 55.14
     },
     {
      "r": 0.1,
      "fv": 36.68,
-     "base": 39.31
+     "bear": 25.15,
+     "base": 39.31,
+     "bull": 47.39
     },
     {
      "r": 0.105,
      "fv": 34.35,
-     "base": 36.73
+     "bear": 23.8,
+     "base": 36.73,
+     "bull": 44.23
     },
     {
      "r": 0.11,
      "fv": 32.29,
-     "base": 34.45
+     "bear": 22.6,
+     "base": 34.45,
+     "bull": 41.43
     },
     {
      "r": 0.12,
      "fv": 28.82,
-     "base": 30.61
+     "bear": 20.58,
+     "base": 30.61,
+     "bull": 36.7
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 1 point for reinsurance catastrophe risk and a cyclical market.",
@@ -399213,27 +401184,37 @@
     {
      "r": 0.08,
      "fv": 166.06,
-     "base": 190.47
+     "bear": 80.83,
+     "base": 190.47,
+     "bull": 232.87
     },
     {
      "r": 0.09,
      "fv": 143.15,
-     "base": 162.96
+     "bear": 72.77,
+     "base": 162.96,
+     "bull": 199.2
     },
     {
      "r": 0.1,
      "fv": 126.14,
-     "base": 142.61
+     "bear": 66.69,
+     "base": 142.61,
+     "bull": 174.13
     },
     {
      "r": 0.11,
      "fv": 112.97,
-     "base": 126.93
+     "bear": 61.9,
+     "base": 126.93,
+     "bull": 154.67
     },
     {
      "r": 0.12,
      "fv": 102.44,
-     "base": 114.45
+     "bear": 58.0,
+     "base": 114.45,
+     "bull": 139.09
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus 2.5 points: almost all risk is Florida homes (Hurricane Ian cost a third of its book value in 2022).",
@@ -402754,27 +404735,37 @@
     {
      "r": 0.08,
      "fv": 95.86,
-     "base": 101.83
+     "bear": 66.9,
+     "base": 101.83,
+     "bull": 124.35
     },
     {
      "r": 0.09,
      "fv": 81.23,
-     "base": 85.87
+     "bear": 58.33,
+     "base": 85.87,
+     "bull": 103.98
     },
     {
      "r": 0.1,
      "fv": 70.49,
-     "base": 74.17
+     "bear": 51.96,
+     "base": 74.17,
+     "bull": 89.07
     },
     {
      "r": 0.11,
      "fv": 62.26,
-     "base": 65.23
+     "bear": 47.02,
+     "base": 65.23,
+     "bull": 77.68
     },
     {
      "r": 0.12,
      "fv": 55.75,
-     "base": 58.18
+     "bear": 43.06,
+     "base": 58.18,
+     "bull": 68.71
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point: mortgage-insurance losses come all at once in a housing downturn.",
@@ -406205,27 +408196,37 @@
     {
      "r": 0.08,
      "fv": 46.58,
-     "base": 51.62
+     "bear": 28.19,
+     "base": 51.62,
+     "bull": 61.57
     },
     {
      "r": 0.09,
      "fv": 39.55,
-     "base": 43.38
+     "bear": 24.92,
+     "base": 43.38,
+     "bull": 51.91
     },
     {
      "r": 0.1,
      "fv": 34.38,
-     "base": 37.36
+     "bear": 22.48,
+     "base": 37.36,
+     "bull": 44.81
     },
     {
      "r": 0.11,
      "fv": 30.43,
-     "base": 32.78
+     "bear": 20.56,
+     "base": 32.78,
+     "bull": 39.35
     },
     {
      "r": 0.12,
      "fv": 27.3,
-     "base": 29.18
+     "bear": 19.02,
+     "base": 29.18,
+     "bull": 35.03
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point for a long record of reserve charges and a young turnaround.",
@@ -409746,27 +411747,37 @@
     {
      "r": 0.08,
      "fv": 72.53,
-     "base": 75.43
+     "bear": 46.89,
+     "base": 75.43,
+     "bull": 103.75
     },
     {
      "r": 0.09,
      "fv": 60.04,
-     "base": 62.17
+     "bear": 39.94,
+     "base": 62.17,
+     "bull": 84.83
     },
     {
      "r": 0.1,
      "fv": 50.91,
-     "base": 52.5
+     "bear": 34.83,
+     "base": 52.5,
+     "bull": 71.04
     },
     {
      "r": 0.11,
      "fv": 43.96,
-     "base": 45.15
+     "bear": 30.91,
+     "base": 45.15,
+     "bull": 60.56
     },
     {
      "r": 0.12,
      "fv": 38.51,
-     "base": 39.39
+     "bear": 27.81,
+     "base": 39.39,
+     "bull": 52.35
     }
    ],
    "required_return_reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point for casualty reserve risk and integrating the Apollo business.",

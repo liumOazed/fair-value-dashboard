@@ -835,8 +835,12 @@ for tk, s in STOCKS.items():
     gs = [.015, .02, .025, .03, .035]
     sens = [[D(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"], gt=g) for g in gs] for r in rs]
     rates = sorted(set(RATE_GRID + [s["r"]]))
-    rate_table = [dict(r=r, wacc=W(r), fv=sum(PROBS[k] * D(s["rev"], m0, S2[k]["g1"], S2[k]["g10"], S2[k]["m"], W(r), nc, s["shares"]) for k in PROBS),
-                       base=D(s["rev"], m0, B["g1"], B["g10"], B["m"], W(r), nc, s["shares"])) for r in rates]
+    VS = lambda d: {k: D(s["rev"], m0, S2[k]["g1"], S2[k]["g10"], S2[k]["m"], d, nc, s["shares"]) for k in PROBS}   # bear/base/bull at discount rate d
+    def RT(r, d):
+        v = VS(d)
+        return dict(r=r, wacc=d, fv=sum(PROBS[k] * v[k] for k in PROBS), **v)
+    rate_table = [RT(r, W(r)) for r in rates]
+    wacc_row = RT(wacc_of(tk, s, s["r"]), wacc_of(tk, s, s["r"]))   # the same cash flows discounted at the blended WACC (Capital and returns card)
     cap = implied_cap(s["price"], s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"])
     nm = nopat_margin(tk, f["tax"])
     gchk = {k: growth_check(res[k]["detail"], s["rev"], nm, S2[k]["m"], w) for k in res}   # NOPAT and FCFF are both before interest
@@ -844,7 +848,7 @@ for tk, s in STOCKS.items():
     out["assets"][tk] = dict(
         implied_cap=cap, nopat_margin=nm, growth_check=gchk, moat=mo["cls"], cap_years=mo["cap_years"], segments=None if not sg else dict(names=sg["names"], share=sg["share"], reported=sg["reported"],
             g1={k: seg_g1s(S2[k]["g1"], sg) for k in S2}, period=SEGS["stocks"][tk]["period"], source=SEGS["stocks"][tk]["source"]), moat_reason=MOAT["stocks"][tk]["reason"],
-        rate_table=rate_table, r_reason=RR["stocks"][tk]["reason"],
+        rate_table=rate_table, wacc_row=wacc_row, r_reason=RR["stocks"][tk]["reason"],
         dcf_method=DCF_METHOD, wacc=dict(wacc=wacc_of(tk, s, s["r"]), discount_rate=w, cost_equity=s["r"], equity_weight=E_ / (E_ + f["debt"]), debt_weight=f["debt"] / (E_ + f["debt"]),
                   cost_debt=min(max(f["rd"], 0.02), 0.10), cost_debt_raw=f["rd"], tax=f["tax"], debt=f["debt"], after_tax_interest=aint),
         name=s["name"], type="stock", price=s["price"], shares=s["shares"], r=s["r"], mos=s["mos"],
@@ -872,7 +876,7 @@ for tk, s in INSURERS.items():
     out["assets"][tk] = dict(
         method="excess_roe", kind="insurer", implied_cap=ri_cap(s["price"], s, B, s["r"], mo), nopat_margin=None, growth_check=None,
         moat=mo["cls"], cap_years=ri_years(mo), segments=None, moat_reason=MOAT["stocks"][tk]["reason"],
-        rate_table=[dict(r=r, fv=sum(PROBS[k] * V(s["scen"][k], r) for k in PROBS), base=V(B, r)) for r in rates], r_reason=RR["stocks"][tk]["reason"],
+        rate_table=[dict(r=r, fv=sum(PROBS[k] * V(s["scen"][k], r) for k in PROBS), **{k: V(s["scen"][k], r) for k in PROBS}) for r in rates], r_reason=RR["stocks"][tk]["reason"],
         dcf_method="excess_roe", wacc=dict(discount_rate=s["r"], cost_equity=s["r"], after_tax_interest=0.0),
         name=s["name"], type="stock", price=s["price"], shares=s["shares"], r=s["r"], mos=s["mos"],
         start_margin=s["roe0"], net_cash=s["extra"], rev=s["bv"], notes=s["notes"],

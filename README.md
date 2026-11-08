@@ -89,6 +89,14 @@ The twice-weekly earnings review re-checks `data/moat_sources.json` for each sto
 
 Invested capital = equity + debt − cash and short-term investments, so it includes goodwill (acquirers such as SPGI look lower) and can be zero or negative for cash-rich companies or heavy buyers-back (BKNG, VRSN, FTNT). Those get a note in place of numbers.
 
+## Capital and returns (top of each drawer, from November 2026)
+
+Four questions in one card, all at the rate picked with the **Return** buttons: the stock's required return (or My hurdle), the model's WACC, and 8-12%. Information only: nothing changes a fair value.
+1. **If you invest $100,000 today, what is it worth?** NPV = $100,000 ÷ price × value a share at that rate − $100,000, for bear, base, bull and the 30/50/20 weighted value (`rate_table` in `data/assets.json` now holds all three cases at every rate; `wacc_row` the same at the blended WACC). Positive, about zero (within ±$5,000) or negative, with the Monte Carlo chance it is positive (the same as the chance the return beats that rate) and the median expected return.
+2. **Does the return beat the cost of capital?** Latest ROIC (ROE for insurers), years above the rate, economic profit in $ (after-tax operating profit − rate × invested capital) and the return on new money (`data/returns.json`: `nopat_last_b`, `ic_last_b`). The quality card's "ROIC vs cost of capital (WACC)" now uses the model's WACC, so the two agree.
+3. **How much is it investing?** Five years of capex (and the part beyond depreciation), R&D, acquisitions (cash paid for businesses, net; fetched by `scripts/fetch_snapshot.py` from the snapshot refresh after November 2026), total as % of sales, and operating cash flow (`invest` in `data/returns.json`).
+4. **What will that investment bring in?** Per scenario over the forecast years: cash reinvested (after-tax operating profit − free cash flow), extra yearly profit and cash flow by the last year, and the return on that investment against the rate.
+
 ## Advantage over bonds and durable profits (information only, no effect on fair values)
 `scripts/bond_yields.py` fetches the 10-year Treasury (GS10) and Moody's Aaa corporate (AAA) yields from FRED into `data/bond_yields.json`. `scripts/durability.py` then writes `data/durability.json`. The **Bonds and durability** workflow runs both on the 3rd of each month, when `.github/durability-request.json` is committed, or by hand. Each drawer shows two cards:
 - **Advantage over bonds**: the earnings yield (EPS ÷ price at each fiscal year end, EPS from the 10-Ks put on today's share basis) next to that year's average Aaa and Treasury yields, from about 2008. Today's gap over Aaa is labelled large (over 3 points), thin (0 to 3) or none (below 0), and compared with the stock's own median gap.

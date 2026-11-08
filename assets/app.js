@@ -109,11 +109,63 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
   r.sensitivity.grid.map((row,i)=>`<tr><th>${(r.sensitivity.r[i]*100).toFixed(1)}%</th>${row.map((v,j)=>`<td class="${i==2&&j==2?"hl":""}">${v.toFixed(0)}</td>`).join("")}</tr>`).join("")+"</table></div>"}
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
  ${snapHTML(r)}
- ${bondHTML(r)}${assumesHTML(r)}${capH?"":piH}${capH}${moatHTML(r)}${retHTML(r)}${debtHTML(r)}${durHTML(r)}${sizeHTML(r)}
+ ${capRetHTML(r)}${bondHTML(r)}${assumesHTML(r)}${capH?"":piH}${capH}${moatHTML(r)}${retHTML(r)}${debtHTML(r)}${durHTML(r)}${sizeHTML(r)}
  <h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>
  ${segH}${mcH}${fc}${rt}<h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
- $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;bindSnap();if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
+ $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;bindSnap();bindCapRet(r);if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
+
+// ---------- Capital and returns: what $100k at today's price is worth (NPV), whether returns beat the cost of capital,
+// how much the company invests and what that investment is expected to bring in. Every number follows the rate buttons.
+function capRates(r){const h=hurdleOf(r),W=r.wacc_row,L=[{r:h,l:(MY.h==null?"Required ":"My hurdle ")+pc1(h)}];
+ if(W&&!INS(r))L.push({r:W.r,l:"WACC "+pc1(W.r),w:1});
+ r.rate_table.forEach(x=>{if(!L.some(o=>Math.abs(o.r-x.r)<5e-4))L.push({r:x.r,l:pc1(x.r)})});
+ return L.filter(o=>o.w||r.rate_table.some(x=>Math.abs(x.r-o.r)<1e-9))}
+function capRetHTML(r){if(r.type!=="stock"||!r.rate_table||r.rate_table[0].bear==null||r.price==null)return "";
+ const L=capRates(r);r._capL=L;
+ return `<h3>Capital and returns</h3><p class="muted">Four questions at one rate: is $100,000 at today's price worth it, does the business earn more than its capital costs, how much does it invest, and what will that bring in. Pick the return you want (your cost of capital):</p>
+ <div class="chips caprate"><span class="lbl">Return</span>${L.map((o,i)=>`<button class="chip${i?"":" on"}" data-i="${i}"${o.w?` title="Blended cost of capital: ${pc1(r.wacc.equity_weight)} equity at ${pc1(r.wacc.cost_equity)}, ${pc1(r.wacc.debt_weight)} debt at ${pc1(r.wacc.cost_debt)} before tax"`:""}>${o.l}</button>`).join("")}</div><div id="capbody">${capBody(r,L[0])}</div>`}
+function bindCapRet(r){document.querySelectorAll(".caprate .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".caprate .chip").forEach(x=>x.classList.toggle("on",x===b));$("#capbody").innerHTML=capBody(r,r._capL[+b.dataset.i])})}
+function capBody(r,o){const k=o.r,V=o.w?r.wacc_row:r.rate_table.find(x=>Math.abs(x.r-k)<1e-9),px=r.price,ins=INS(r),p=pc1(k);
+ const $k=x=>(x<0?"−$":"$")+Math.abs(Math.round(x)).toLocaleString("en-US"),B=x=>x==null?"–":(x<0?"−$":"$")+Math.abs(x).toFixed(Math.abs(x)<10?2:1)+"B",p0=x=>(x*100).toFixed(0)+"%";
+ // 1. NPV of $100,000
+ const sh=100000/px,npv=v=>sh*v-100000,ev=npv(V.fv),band=ev>5000?["positive","up"]:ev<-5000?["negative","down"]:["about zero",""];
+ const d=retDist(r),pPos=d?1-d.F(k):null;
+ const row=(n,v,w)=>`<tr><td style="text-align:left">${n}${w?` <span class="muted">${w}</span>`:""}</td><td>$${v.toFixed(2)}</td><td>${$k(sh*v)}</td><td><span class="${npv(v)>0?"up":"down"}">${npv(v)>0?"+":""}${$k(npv(v))}</span></td></tr>`;
+ const s1=`<h4>1. If you invest $100,000 today, what is it worth?</h4>
+ <div class="grid3"><div class="mini">NPV at ${p}<b class="${band[1]}">${ev>0?"+":""}${$k(ev)}</b><span class="muted">${band[0]} · ${sh.toFixed(sh<10?2:0)} shares at $${px.toFixed(2)}</span></div>
+ <div class="mini">Chance NPV &gt; 0<b class="${pPos!=null&&pPos>=.5?"up":"down"}">${pPos==null?"–":p0(pPos)}</b><span class="muted">Monte Carlo, bear/base/bull ${A.probabilities.bear*100}/${A.probabilities.base*100}/${A.probabilities.bull*100}</span></div>
+ <div class="mini">Expected return<b class="${d&&d.med>=k?"up":"down"}">${d?pc1(d.med):"–"}</b><span class="muted">a year at this price (median) vs ${p}</span></div></div>
+ <div class="scroll"><table class="s"><tr><th style="text-align:left">Case</th><th>Value a share at ${p}</th><th>Your shares are worth</th><th>NPV</th></tr>${row("Bear",V.bear,"30%")}${row("Base",V.base,"50%")}${row("Bull",V.bull,"20%")}${row("<b>Weighted</b>",V.fv)}</table></div>
+ <p class="muted">NPV = what your shares are worth when the company's future ${ins?"payouts (net income less growth in book value)":"free cash flow"} is discounted at ${p}, minus the $100,000 you pay. Positive means the price is low enough to earn more than ${p} a year if that case plays out; zero means you earn exactly ${p}; negative means less (you can still make money, just under ${p}). "About zero" is within ±$5,000.${o.w?" At WACC, cash flow before interest is discounted at the blended cost of equity and debt, so cheap debt raises the value a little; the fair value itself uses the required return.":""}</p>`;
+ // 2. Return on capital vs the rate
+ const x=(RH.stocks||{})[r.ticker]||{},m=ins?"ROE":"ROIC",R=x.roic||[];let s2;
+ if(!R.length||x.nopat_last_b==null){s2=`<h4>2. Does the return beat the cost of capital?</h4><p>${x.note||"Not enough statements to measure the return on capital."}</p>`}
+ else{const last=R[R.length-1],ab=R.filter(q=>q[1]>k).length,eva=x.nopat_last_b-k*x.ic_last_b,inc=x.inc_recent;
+  s2=`<h4>2. Does the return beat the cost of capital?</h4>
+  <div class="grid3"><div class="mini">${m} ${last[0]}<b class="${last[1]>k?"up":"down"}">${p0(last[1])}${last[1]>=2?"+":""}</b><span class="muted">vs ${p} · ${last[1]>k?"+":""}${((last[1]-k)*100).toFixed(1)} pts</span></div>
+  <div class="mini">Years above ${p}<b class="${ab/R.length>=.8?"up":ab/R.length<.5?"down":""}">${ab} of ${R.length}</b><span class="muted">${R[0][0]}–${last[0]}</span></div>
+  <div class="mini">Value ${eva>=0?"created":"destroyed"} in ${last[0]}<b class="${eva>=0?"up":"down"}">${B(eva)}</b><span class="muted">${ins?"net income":"after-tax operating profit"} ${B(x.nopat_last_b)} − ${p} × ${B(x.ic_last_b)} ${ins?"book value":"capital"}</span></div></div>
+  <p>${inc==null?`Return on new money: ${x.inc_why||"not measurable"}.`:`New money is earning <b class="${inc>k?"up":"down"}">${inc>2?"over 200%":p0(inc)}</b> (extra profit ÷ extra capital, ${x.windows?x.windows[1]:"latest 5 years"}), ${inc>k?"above":"below"} ${p}${inc>k?": growth adds value.":": growth bought this way adds no value."}`}</p>
+  <p class="muted">${m} = ${ins?"net income ÷ book value":"after-tax operating profit ÷ invested capital (equity + debt − cash, average of the year)"}, from the 10-Ks. Value created = the profit above what the capital costs at ${p} (economic profit).</p>`}
+ // 3. How much is it investing?
+ let s3="";const I=x.invest;if(!ins&&I&&I.length){const anyA=I.some(q=>q.acq!=null),tot=q=>(q.capex||0)+(q.rd||0)+(q.acq||0);
+  s3=`<h4>3. How much is it investing?</h4><div class="scroll"><table class="s"><tr><th style="text-align:left">Year</th><th>Capex</th><th>Beyond depreciation</th><th>R&amp;D</th><th>Acquisitions</th><th>Total</th><th>% of sales</th><th>Op. cash flow</th></tr>`+
+  I.map(q=>`<tr><td style="text-align:left">${q.y}</td><td>${B(q.capex)}</td><td>${q.capex!=null&&q.dep!=null?B(Math.max(0,q.capex-q.dep)):"–"}</td><td>${B(q.rd)}</td><td>${q.acq==null?"–":B(q.acq)}</td><td><b>${B(tot(q))}</b></td><td>${q.rev?pc1(tot(q)/q.rev):"–"}</td><td>${B(q.ocf)}</td></tr>`).join("")+`</table></div>
+  <p class="muted">Capex beyond depreciation roughly splits keeping today's business running from building new capacity (depreciation includes amortisation of acquired intangibles, so it overstates upkeep for acquirers). R&amp;D is an expense in the accounts but is money spent on future products. ${anyA?"Acquisitions = cash paid for businesses, net of cash acquired.":"Acquisitions arrive with the next stock snapshot refresh (the 2nd of each month)."} Operating cash flow is after R&amp;D, before capex and acquisitions. A dash means the figure isn't in the free data for that year.</p>`}
+ // 4. What will the model's investment bring in?
+ let s4="";const F=r.forecast,nm=r.nopat_margin;
+ if(F&&(ins||nm!=null)){const K=["bear","base","bull"];
+  const one=c=>{const f=F[c];if(!f)return null;const rw=f.rows,n=rw.length;let re,gain,cf;
+   if(ins){if(!f.ni)return null;re=rw.reduce((s,q,i)=>s+f.ni[i]-q.fcf,0);gain=f.ni[n-1]-f.ni[0];cf=rw[n-1].fcf-rw[0].fcf}
+   else{re=rw.reduce((s,q)=>s+q.rev*nm-q.fcf,0);gain=(rw[n-1].rev-r.rev)*nm;cf=rw[n-1].fcf-r.rev*r.start_margin}
+   return {n,re,gain,cf,ron:re>0&&gain>0?gain/re:null}};
+  const rs=K.map(one);if(rs.some(Boolean)){const N=rs.find(Boolean).n;
+  s4=`<h4>4. What will that investment bring in? (model, ${N} years)</h4><div class="scroll"><table class="s"><tr><th style="text-align:left">Case</th><th>Reinvested</th><th>Extra ${ins?"net income":"profit"} a year</th><th>Extra ${ins?"payout":"cash"} a year</th><th>Return</th><th style="text-align:left">vs ${p}</th></tr>`+
+  K.map((c,i)=>{const z=rs[i];if(!z)return "";const ok=z.ron!=null&&z.ron>k;
+   return `<tr><td style="text-align:left">${c[0].toUpperCase()+c.slice(1)}</td><td>${B(z.re)}</td><td>${B(z.gain)}</td><td>${B(z.cf)}</td><td>${z.ron==null?"–":z.ron>2?"over 200%":p0(z.ron)}</td><td style="text-align:left;white-space:normal">${z.gain<=0?'<span class="down">shrinking</span>':z.re<=0?"grows with little reinvestment":ok?'<span class="up">adds value</span>':'<span class="down">adds no value</span>'}</td></tr>`}).join("")+`</table></div>
+  <p class="muted">${ins?"Reinvested = net income kept to grow the book (net income − payouts), summed over the forecast; extra net income and payout = the last forecast year's − year 1's (year 1, not the last 12 months, so a one-off profit today doesn't read as shrinkage) = the last forecast year's − the first's.":`Reinvested = after-tax operating profit (today's ${pc1(nm)} margin, held flat) − free cash flow before interest, summed over the forecast; extra profit = the growth in sales × that margin; extra cash flow = the last forecast year's − today's.`} All in year-${N} terms. Return = extra yearly profit ÷ total reinvested: above ${p} the growth is worth paying for. Not discounted; the NPV above is the discounted answer.</p>`}}
+ return s1+s2+s3+s4}
 
 // ---------- Underwriters (book value and ROE model): how the value is built, what the price implies, how long the edge must last
 function insForecast(r){const F=r.forecast,I=r.insurer||{},pc=x=>(x*100).toFixed(1)+"%",B=x=>(x<0?"−$":"$")+Math.abs(x).toFixed(Math.abs(x)<10?2:1)+"B",rr=r.required_return;
