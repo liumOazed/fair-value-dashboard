@@ -25,7 +25,7 @@ jobs:
       - run: pip install -q yfinance pandas
       - name: Price-drop watch (four-step check evidence)
         run: python scripts/drop_watch.py || echo "drop watch failed (prices still committed)"
-      - name: Research framework blocks (price-dependent: market returns, what the price assumes)
+      - name: "Research framework blocks (price-dependent: market returns, what the price assumes)"
         run: python scripts/framework.py || echo "framework failed (prices still committed)"
       - name: Commit changes
         run: |
