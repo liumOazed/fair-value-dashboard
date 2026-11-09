@@ -327,3 +327,6 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 @media(max-width:640px){.rtg{grid-template-columns:1fr}}
 .rtq{display:flex;flex-direction:column;gap:3px;margin-bottom:4px}.rtq>span{display:flex;justify-content:space-between;align-items:center;gap:6px}
 .rsel{font:inherit;font-size:13px;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}
+/* Keep each pillar's title and its grade pill on one line, however narrow the drawer */
+.rtt{flex-wrap:nowrap}.rtt b{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtc .gr{white-space:nowrap;flex-shrink:0}.rtq>span{flex-wrap:nowrap}
