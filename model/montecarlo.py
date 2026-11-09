@@ -208,18 +208,27 @@ def tornado(tk):
     for o in out: o["swing"] = abs(o["high"] - o["low"])
     return dict(base=base, rows=sorted(out, key=lambda o: -o["swing"]))
 
-def hold_returns(fcf, gt, nc, shares, price, r, k=1.0, lo=-0.6, hi=0.8, it=60):
-    """Per run: yearly return if you buy at `price`, collect 10 years of cash flow and sell at the end of year 10 at the
-    price that gives the next buyer the required return r (the gap closes in year 10). At return = r this is exactly the
-    model value, so 'return beats r' <=> 'value at r beats price'. Can be negative."""
-    t = np.arange(1, T + 1)
-    n = fcf.shape[1]                                   # sale value at the end of year 10: years 11..n + terminal, at r
-    exit_ = fcf[:, -1] * (1 + gt) * k / (r - gt) / (1 + r) ** (n - T)
-    if n > T: exit_ = exit_ + (fcf[:, T:] * (1 + r) ** -np.arange(1, n - T + 1)).sum(axis=1)
-    f10 = fcf[:, :T]
+def hold_returns(fcf, gt, nc, shares, price, r, k=1.0, H=T, lo=-0.6, hi=0.8, it=60):
+    """Per run: yearly return if you buy at `price`, collect H years of cash flow and sell at the end of year H at the
+    price that gives the next buyer the required return r (the gap closes in year H). At return = r this is exactly the
+    model value, so 'return beats r' <=> 'value at r beats price'. Can be negative. When H is beyond the advantage period,
+    the years in between are the terminal cash flows (last year x k, growing at gt)."""
+    n = fcf.shape[1]
+    gt_ = np.broadcast_to(np.asarray(gt, float), (len(fcf),))
+    k_ = np.broadcast_to(np.asarray(k, float), (len(fcf),))
+    if H > n:                                          # extend with the terminal cash flows up to year H
+        F = np.concatenate([fcf, fcf[:, -1:] * k_[:, None] * (1 + gt_[:, None]) ** np.arange(1, H - n + 1)], axis=1)
+        k_after = 1.0
+    else:
+        F, k_after = fcf, k_
+    L_ = F.shape[1]                                    # sale value at the end of year H: years H+1..L + terminal, at r
+    exit_ = F[:, -1] * (1 + gt_) * k_after / (r - gt_) / (1 + r) ** (L_ - H)
+    if L_ > H: exit_ = exit_ + (F[:, H:] * (1 + r) ** -np.arange(1, L_ - H + 1)).sum(axis=1)
+    t = np.arange(1, H + 1)
+    fH = F[:, :H]
     def val(x):
         df = (1 + x[:, None]) ** -t
-        return ((f10 * df).sum(axis=1) + exit_ * df[:, -1] + nc) / shares
+        return ((fH * df).sum(axis=1) + exit_ * df[:, -1] + nc) / shares
     a = np.full(len(fcf), lo); b = np.full(len(fcf), hi)
     for _ in range(it):
         mid = (a + b) / 2
@@ -227,10 +236,18 @@ def hold_returns(fcf, gt, nc, shares, price, r, k=1.0, lo=-0.6, hi=0.8, it=60):
         a = np.where(up, mid, a); b = np.where(up, b, mid)
     return (a + b) / 2
 
+HORIZONS = (5, 20)                                     # extra holding periods for "My horizon" -> data/mc_horizon.json
+HZ_PATH = ROOT / "data/mc_horizon.json"
+
 def main():
     path = ROOT / "data/assets.json"
     doc = json.load(open(path))
     rng = np.random.default_rng(SEED)
+    hz = json.load(open(HZ_PATH)) if HZ_PATH.exists() else {}
+    hz.update(_about="Yearly return at 17 prices (multiples of fair value) for a 5- and a 20-year hold, per case: 21 quantiles "
+                     "(step 5%) of the runs, the same runs as hold10 in data/assets.json. Read by the page for My horizon. "
+                     "Built by model/montecarlo.py.", quantiles_step=0.05)
+    hz.setdefault("stocks", {})
     only = set(sys.argv[1:])          # optional: only write these tickers (every modelled stock still draws its runs, so results match a full run)
     for a in doc["assets"]:
         tk = a["ticker"]
@@ -257,13 +274,17 @@ def main():
                               for i, k in enumerate(KEYS)}
         # implied yearly return at a grid of prices (multiples of fair value); the page interpolates at the live price
         grid = [round(float(x), 4) for x in np.exp(np.linspace(np.log(0.3), np.log(3.0), 17))]
-        irr = {k: [] for k in KEYS}; hold = {k: [] for k in KEYS}
+        irr = {k: [] for k in KEYS}; hold = {k: [] for k in KEYS}; hx = {h: {k: [] for k in KEYS} for h in HORIZONS}
         for gmul in grid:
             ir = implied_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"], X["k"])
             hr = hold_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"], X["r"], X["k"])
+            hh = {h: hold_returns(X["fcf"], X["gt"], X["nc"], X["shares"], gmul * a["fair_value"], X["r"], X["k"], H=h) for h in HORIZONS}
             for i, k in enumerate(KEYS):
                 irr[k].append([round(float(x), 4) for x in np.quantile(ir[reg == i], q21)])
                 hold[k].append([round(float(x), 4) for x in np.quantile(hr[reg == i], q21)])
+                for h in HORIZONS:
+                    hx[h][k].append([round(float(x), 4) for x in np.quantile(hh[h][reg == i], q21)])
+        hz["stocks"][tk] = dict(price_multiples=grid, fair_value=a["fair_value"], **{f"hold{h}": hx[h] for h in HORIZONS})
         a["mc"]["irr"] = dict(price_multiples=grid, fair_value=a["fair_value"], quantiles_step=0.05, regimes=irr, hold10=hold,
                               note="Per run: the yearly return that makes that run's cash flows plus the value after year 10 equal the price. "
                                    "Floor = terminal growth + 0.25 pt, cap 60%.")
@@ -271,6 +292,7 @@ def main():
         print(f"{tk:5} FV {a['fair_value']:9.2f}  MC mean {a['mc']['mean']:9.2f}  p10 {a['mc']['p10']:9.2f}  p50 {a['mc']['p50']:9.2f}  p90 {a['mc']['p90']:9.2f}"
               f"  | Sobol p50 {a['mc']['sobol']['p50']:9.2f} ({a['mc']['sobol']['p50'] / a['mc']['p50'] - 1:+.2%})")
     json.dump(doc, open(path, "w"), indent=1)
+    json.dump(hz, open(HZ_PATH, "w"), separators=(",", ":"))
 
 if __name__ == "__main__":
     main()
