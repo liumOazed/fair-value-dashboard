@@ -326,3 +326,4 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 .rtc .gr{padding:1px 7px}.rtrule{margin-top:8px;font-size:12.5px}.rtrule summary{cursor:pointer;color:var(--mut)}
 @media(max-width:640px){.rtg{grid-template-columns:1fr}}
 .rtq{display:flex;flex-direction:column;gap:3px;margin-bottom:4px}.rtq>span{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.rsel{font:inherit;font-size:13px;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer}

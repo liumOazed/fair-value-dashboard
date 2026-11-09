@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Fair Value Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261109a">
+<link rel="stylesheet" href="assets/style.css?v=20261109b">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 </head>
 <body>
@@ -24,6 +24,7 @@
     <div class="chips" id="themechips"></div>
     <div class="chips" id="pricechips"></div>
     <div class="chips" id="healthchips"></div>
+    <div class="chips" id="ratingchips"><label class="lbl" for="ratingsel">Rating</label><select id="ratingsel" class="rsel" title="Excellent, Good, Average or Bad: intrinsic value, margin of safety and business quality (see the top of each drawer)"><option value="all">All ratings</option></select></div>
     <div class="mybox" id="mybox"></div>
     <div class="scroll"><table id="tbl"><thead><tr>
       <th data-k="ticker">Asset</th><th data-k="price" class="r">Price</th><th data-k="fair_value" class="r">Fair value</th>
@@ -40,6 +41,6 @@
 </main>
 <aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
 <div id="scrim" class="scrim"></div>
-<script src="assets/app.js?v=20261109a"></script>
+<script src="assets/app.js?v=20261109b"></script>
 </body>
 </html>

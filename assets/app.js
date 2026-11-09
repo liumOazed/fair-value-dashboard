@@ -37,7 +37,7 @@ function range(r){const lo=Math.min(r.bear,r.price)*0.9,hi=Math.max(r.bull,r.pri
 function spark(h){if(h.length<3)return '<span class="muted">n/a</span>';const mn=Math.min(...h),mx=Math.max(...h),w=90,ht=28;
  const pts=h.map((v,i)=>`${(i/(h.length-1)*w).toFixed(1)},${(ht-2-(v-mn)/(mx-mn||1)*(ht-4)).toFixed(1)}`).join(" ");
  return `<svg width="${w}" height="${ht}"><polyline points="${pts}" fill="none" stroke="${h[h.length-1]>=h[0]?"var(--good)":"var(--bad)"}" stroke-width="1.6"/></svg>`}
-let sortK="ticker",dir=1,filt="",theme="All",pf="all",hf="all";
+let sortK="ticker",dir=1,filt="",theme="All",pf="all",hf="all",rf="all";
 const inTheme=r=>theme==="All"||(theme==="Other"?!Object.values(TH).some(l=>l.includes(r.ticker)):(TH[theme]||[]).includes(r.ticker));
 const PINNED=["Cybersecurity","Insurance"];   // always shown, even before a stock in the group has a full model
 const names=["All",...Object.keys(TH).filter(k=>PINNED.includes(k)||rows.some(r=>TH[k].includes(r.ticker))),...(rows.some(r=>!Object.values(TH).some(l=>l.includes(r.ticker)))?["Other"]:[])];
@@ -49,7 +49,7 @@ const HF={all:["All",()=>true],clean:["Passes all 5 checks",r=>!!((SN.stocks||{}
 $("#healthchips").innerHTML='<span class="lbl">Health</span>'+Object.entries(HF).map(([k,v])=>`<button class="chip${k==="all"?" on":""}" data-hf="${k}"${k==="clean"?' title="Answers yes to all five Growth Screen checks: revenue growing, profits healthy, cash flow strong, debt manageable, financial position improving. Updated monthly."':""}>${v[0]} <span class="cnt">${rows.filter(v[1]).length}</span></button>`).join("");
 document.querySelectorAll("#healthchips .chip").forEach(c=>c.onclick=()=>{hf=c.dataset.hf;document.querySelectorAll("#healthchips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
 document.querySelectorAll("#themechips .chip").forEach(c=>c.onclick=()=>{theme=c.dataset.th;document.querySelectorAll("#themechips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
-function render(){const f=rows.filter(r=>(r.ticker+r.name).toLowerCase().includes(filt)&&inTheme(r)&&PF[pf][1](r)&&HF[hf][1](r));
+function render(){const f=rows.filter(r=>(r.ticker+r.name).toLowerCase().includes(filt)&&inTheme(r)&&PF[pf][1](r)&&HF[hf][1](r)&&(rf==="all"||r.rating===+rf));
  f.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (typeof x==="string"?x.localeCompare(y):(x??1e9)-(y??1e9))*dir});
  $("#tbl tbody").innerHTML=f.map(r=>`<tr data-t="${r.ticker}"><td><div class="tk">${r.ticker}</div><div class="nm">${r.name}</div></td>
  <td class="r num">${usd(r.price)}<div class="nm ${r.day>0?"neg":"pos"}" style="color:var(--mut)">${r.day==null?"":pct(r.day,2)+" today"}</div></td>
@@ -688,7 +688,12 @@ function myUI(){const S=sizeAll();
  const det=$("#mybox details");det.ontoggle=()=>{MY.open=det.open;save()};
  document.querySelectorAll("#mybox .chip").forEach(c=>c.onclick=()=>{const v=c.dataset.v;MY[c.dataset.my]=v==="null"?null:+v;save();refresh()})}
 function save(){try{localStorage.setItem("my",JSON.stringify(MY))}catch(e){}}
-function refresh(){applyHurdle();myUI();kpis();render()}
+// Rating filter: ratings depend on live price and My hurdle, so they are worked out again on every refresh
+function ratingUI(){rows.forEach(r=>{const x=ratingOf(r);r.rating=x?x.lab:null});
+ $("#ratingsel").innerHTML=`<option value="all">All ratings (${rows.length})</option>`+RATE.map((t,i)=>`<option value="${i}">${t[0]} (${rows.filter(r=>r.rating===i).length})</option>`).join("");
+ $("#ratingsel").value=rf}
+$("#ratingsel").onchange=e=>{rf=e.target.value;render()};
+function refresh(){applyHurdle();ratingUI();myUI();kpis();render()}
 refresh();
 dropUI();
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());

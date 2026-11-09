@@ -121,6 +121,8 @@ One rating per stock from three pillars, each scored 0 (Weak), 1 (OK) or 2 (Stro
 
 On 9 Nov 2026 prices: 9 Excellent, 22 Good, 55 Average, 32 Bad of 118 stocks.
 
+The **Rating** dropdown above the Fair Value table filters the table to one rating (counts in brackets). It is worked out again whenever My hurdle changes.
+
 ## Refresh fair values
 Fair values are slow-moving. Re-run the model after each earnings report (roughly quarterly), paste the new numbers into `data/assets.json`, commit.
 
@@ -275,6 +277,7 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 | 7 Nov | Fair Value | **16 insurers**: the Growth Screen's Insurance top 5 (ALL, MRSH, HIG, AIZ, WTW) and the 11 Russell 2000 insurers that pass at least 4 checks (NMIH, UVE, PLMR, PLGO, CRVL pass all 5; SLDE, HG, HCI, ESNT, UFCS, SKWD pass 4). Underwriters valued on book value and excess return on equity, brokers (MRSH, WTW, CRVL) on free cash flow; Russell names get the 2-point small-cap premium; all under the Insurance filter. Drawer cards mark cash-flow, ROIC and liquidity tests not applicable for underwriters | Insurers' cash flow and debt don't mean what they mean for other companies. Existing fair values unchanged |
 | 8 Nov | Fair Value | Drawer split into **Ex-post · looking back** (reported results, history, trailing figures) and **Ex-ante · looking forward** (fair value, scenarios, forecasts, expected returns), with a bar showing each half's share of sections. Mixed cards are split: *Three performances* → business and market look back, *Priced in* looks forward; *Stocks vs bonds* → today's earnings yield and its history look back, the two expected-return spreads look forward; *Capital and returns* → ROIC and investment look back, NPV of $100k and the model's investment payoff look forward (one set of rate buttons drives both); the multiples table moves out of *Valuation* into *Multiples vs history*. |
 | 9 Nov | Fair Value | **Rating** (Excellent, Good, Average, Bad) at the top of each drawer from intrinsic value, margin of safety and business quality, with the reason for each pillar | One summary of price and quality; information only, fair values unchanged |
+| 9 Nov | Fair Value | **Rating** dropdown filter on the table (All, Excellent, Good, Average, Bad, with counts) | Find stocks by rating without opening each drawer |
 
 ## Research framework in the drawer (from November 2026)
 
