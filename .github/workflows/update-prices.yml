@@ -3,9 +3,12 @@ name: Update prices
 # while the market is open the Fair Value page shows the latest (delayed) price, after the close the official close.
 # Then scripts/drop_watch.py opens / updates price-drop events (data/drops.json) with step-2 evidence.
 # Commits only when a price changed, so runs before the open / after the close are no-ops.
+# Minutes 7 and 37, not :00 and :30: GitHub drops or delays many scheduled runs at the top and half of the hour.
+# GitHub's schedule is best effort, so a scheduled task outside GitHub also starts this workflow
+# (workflow_dispatch) shortly after the open and the close on weekdays.
 on:
   schedule:
-    - cron: "*/30 13-21 * * 1-5"
+    - cron: "7,37 13-21 * * 1-5"
   workflow_dispatch: {}
 permissions:
   contents: write
