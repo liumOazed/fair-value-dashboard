@@ -112,7 +112,7 @@ Q = [
  # Duration (from November 2026, scripts/duration.py): how far into the future the value depends on receiving cash
  ("T1", "Share of value from cash 5, 10, 20 and 30+ years away", "answered", "duration"),
  ("T2", "How much the value moves if interest rates change", "answered", "duration"),
- ("T3", "Does a typical holding period cover where the value comes from?", "partly", "duration"),
+ ("T3", "Does your holding period cover where the value comes from?", "answered", "duration"),
  ("T4", "How reliable are the assumptions behind distant cash flows?", "answered", "duration"),
 ]
 
