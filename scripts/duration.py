@@ -21,6 +21,8 @@ Four questions from Durand's "Growth stocks and the Petersburg paradox" (1957), 
               'short' stocks are already valued over 10 years with growth at or below 2.5%: not tested.
   reliability concerns about the distant cash flows (see CONCERNS); 0 = well supported, 1 = some reliance on distant
               cash, 2+ = leans on distant cash.
+  mos         suggested margin of safety = the stock's own + 2.5 points per concern other than 'price', at most +10
+              points. Shown in the drawer, not applied: the official buy-below keeps data/assets.json's margin.
 
 Usage: python scripts/duration.py   (after model/model.py; reads data/moat_scorecard.json, data/returns.json,
        data/bond_yields.json and data/assets.json for the advantage period the price needs)
@@ -43,6 +45,10 @@ ASSETS = {a["ticker"]: a for a in J("data/assets.json")["assets"]}
 
 # Reliability: each true line is one concern about the distant cash flows.
 LIMITS = dict(beyond10=0.60, end10_loss=0.15, half_life=5)
+# Suggested margin of safety (shown, NOT applied; review after the Q4 2026 earnings round): the stock's own margin plus
+# MOS_STEP for each distant-cash concern, at most MOS_CAP. The 'price' concern is left out: the margin of safety
+# already deals with price, so it would be counted twice.
+MOS_STEP, MOS_CAP = 0.025, 0.10
 CONCERNS = [
     ("beyond10", "More than 60% of the base value arrives after year 10"),
     ("end10", "Fair value falls more than 15% if the edge ends at year 10"),
@@ -155,19 +161,23 @@ def main():
             price=cap is not None and cap > years,
         )
         n = sum(flags.values())
+        counted = [k for k, v in flags.items() if v and k != "price"]
+        mos0 = a.get("mos")
+        mos = None if mos0 is None else dict(current=mos0, extra=min(MOS_CAP, MOS_STEP * len(counted)), counted=counted)
+        if mos: mos["suggested"] = round(mos0 + mos["extra"], 4)
         stocks[tk] = dict(
             kind="insurer" if ins else "stock", moat=cls, cap_years=years, r=r, fv=round(fv, 2),
             horizon={k: v for k, v in hz.items() if v},
             duration=dict(years=round(dur, 1), up=round(up, 4), down=round(dn, 4),
                           vs=("shorter than a 10-year Treasury" if dur < tsy["d10"] else "longer than a 30-year Treasury" if dur > tsy["d30"]
                               else "between a 10- and a 30-year Treasury")),
-            stress=stress,
+            stress=stress, mos=mos,
             reliability=dict(concerns=[k for k, v in flags.items() if v], n=n,
                              label="well supported" if n == 0 else "some reliance on distant cash" if n == 1 else "leans on distant cash",
                              half_life=rt.get("half_life"), score=ms.get("total"), suggested=ms.get("suggested"), implied_cap=cap),
         )
     doc = {"_about": __doc__.strip().split("\n\n")[0], "built": datetime.date.today().isoformat(),
-           "buckets": ["1-5", "6-10", "11-20", "21-30", "30+"], "treasury": tsy, "limits": LIMITS,
+           "buckets": ["1-5", "6-10", "11-20", "21-30", "30+"], "treasury": tsy, "limits": LIMITS, "mos_rule": dict(step=MOS_STEP, cap=MOS_CAP, applied=False, review="after the Q4 2026 earnings round (about February 2027)"),
            "concerns": {k: t for k, t in CONCERNS}, "stocks": stocks}
     json.dump(doc, open(OUT, "w"), indent=None, separators=(",", ":"))
     ds = sorted(v["duration"]["years"] for v in stocks.values())
