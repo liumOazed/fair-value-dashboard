@@ -2,7 +2,7 @@
 """Research framework blocks for each stock's Fair Value drawer -> data/framework.json. Information only: nothing here
 changes a fair value.
 
-The drawer answers a fixed set of 60 questions (50 universal + 10 on what the market prices in) plus up to 8 sector
+The drawer answers a fixed set of 64 questions (50 universal + 10 on what the market prices in + 4 on duration) plus up to 8 sector
 questions per stock, chosen by business model (SECTOR_MODULES below), not by official sector. Every question is
 "answered", "partly" or "unknown"; an unknown question is shown in grey as "not scored" and never counts as positive.
 
@@ -38,6 +38,7 @@ PRICES = J("data/prices.json")["prices"]
 RAW = J("data/snapshot_raw.json", {"stocks": {}})["stocks"]
 SNAP = J("data/snapshot.json", {"stocks": {}})["stocks"]
 DUR = J("data/durability.json", {"stocks": {}})["stocks"]
+DURN = J("data/duration.json", {"stocks": {}})["stocks"]       # scripts/duration.py: value by horizon, duration, edge ending early
 RET = J("data/returns.json", {"stocks": {}})["stocks"]
 MS = J("data/moat_scorecard.json", {"stocks": {}})["stocks"]
 SEG = J("data/segments.json", {"stocks": {}})["stocks"]
@@ -45,7 +46,7 @@ BOND = J("data/bond_yields.json", {})
 SMAP = J("data/sector_map.json")
 OLD = J("data/framework.json", {})
 
-# ------------------------------------------------------------------ the 60 fixed questions
+# ------------------------------------------------------------------ the 64 fixed questions
 # status after this build; "needs" = a block that must exist for this stock, otherwise the question is unknown.
 Q = [
  ("A1", "Earnings yield vs high-quality company bonds", "answered", "bonds"),
@@ -108,6 +109,11 @@ Q = [
  ("M8", "Each scenario vs the bond yield", "partly", "mc"),
  ("M9", "Return from business growth vs a re-rating", "unknown", None),
  ("M10", "Is the valuation premium covered by the advantage?", "answered", None),
+ # Duration (from November 2026, scripts/duration.py): how far into the future the value depends on receiving cash
+ ("T1", "Share of value from cash 5, 10, 20 and 30+ years away", "answered", "duration"),
+ ("T2", "How much the value moves if interest rates change", "answered", "duration"),
+ ("T3", "Does a typical holding period cover where the value comes from?", "partly", "duration"),
+ ("T4", "How reliable are the assumptions behind distant cash flows?", "answered", "duration"),
 ]
 
 # Questions that don't apply to an underwriter (valued on book value and ROE): its cash flow mixes in premiums held for
@@ -428,7 +434,8 @@ def main():
         px = (PRICES.get(t) or {}).get("price") or a.get("price")
         now_ym = (PRICES.get(t) or {}).get("time", today.isoformat())[:7]
         have = {"snapshot": t in SNAP, "moat": t in MS, "returns": t in RET, "mc": bool(a.get("mc")),
-                "bonds": bool((DUR.get(t) or {}).get("bond")), "stress": bool(((DUR.get(t) or {}).get("stress") or {}).get("label"))}
+                "bonds": bool((DUR.get(t) or {}).get("bond")), "stress": bool(((DUR.get(t) or {}).get("stress") or {}).get("label")),
+                "duration": t in DURN}
         x = dict(currency=raw.get("currency") or "USD")
         # business: latest fiscal year vs the one before
         inc, cfs = years(raw, "inc"), dict(years(raw, "cfs"))

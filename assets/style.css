@@ -330,3 +330,9 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 /* Keep each pillar's title and its grade pill on one line, however narrow the drawer */
 .rtt{flex-wrap:nowrap}.rtt b{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .rtc .gr{white-space:nowrap;flex-shrink:0}.rtq>span{flex-wrap:nowrap}
+
+/* How far away is the value? share of value by year */
+.hzbar{display:flex;height:14px;border-radius:999px;overflow:hidden;background:var(--line);margin:8px 0 6px}
+.hzbar i{background:var(--ante);display:block}
+.hzlg{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--mut);margin-bottom:8px}
+.hzlg i{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--ante);margin-right:5px;vertical-align:-1px}
