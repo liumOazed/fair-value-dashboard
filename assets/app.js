@@ -701,11 +701,8 @@ refresh();
 dropUI();
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());
-<<<<<<< HEAD
 // 5- and 20-year holds for My horizon (model/montecarlo.py -> data/mc_horizon.json), loaded after the page is up
 fetch("data/mc_horizon.json?"+Date.now()).then(x=>x.ok?x.json():null).then(H=>{if(!H||!H.stocks)return;rows.forEach(r=>{const x=H.stocks[r.ticker],I=r.mc&&r.mc.irr;if(x&&I&&Math.abs(x.fair_value-I.fair_value)<1e-6){I.hold5=x.hold5;I.hold20=x.hold20}});if(MY.hz===5||MY.hz===20)refresh();const t=location.hash.slice(1).toUpperCase();if($("#drawer").classList.contains("on")&&rows.some(r=>r.ticker===t))open(t)}).catch(()=>{});
-=======
->>>>>>> origin/claude/project-thread-1wm1xf
 
 // ---------- How far away is the value? (scripts/duration.py -> data/duration.json). Durand's Petersburg-paradox questions:
 // how much of the value is distant cash, how hard a rate rise hits it, and how much is lost if the edge ends early.
@@ -713,12 +710,9 @@ fetch("data/mc_horizon.json?"+Date.now()).then(x=>x.ok?x.json():null).then(H=>{i
 function farHTML(r){const x=(DN.stocks||{})[r.ticker];if(r.type!=="stock"||!x||!x.horizon||!x.horizon.base)return "";
  const T=DN.treasury||{},Bk=DN.buckets||["1-5","6-10","11-20","21-30","30+"],pc=v=>(v*100).toFixed(0)+"%",ch=v=>(v>=0?"+":"−")+Math.abs(v*100).toFixed(0)+"%",rr=(x.r*100).toFixed(1).replace(".0","")+"%";
  const OP=[1,.78,.58,.4,.24],H=x.horizon,b=H.base,R=x.reliability||{},D=x.duration,S=x.stress,ins=x.kind==="insurer";
-<<<<<<< HEAD
  const hz=MY.hz,cum=hz==null?1:b.shares.slice(0,hz===5?1:hz===10?2:3).reduce((a,v)=>a+v,0),cash=ins?"cash it can pay out":"free cash flow";
  const hzP=hz==null?`<p><b>Your horizon: hold for good</b> (My settings). You collect all of the cash yourself, so the price along the way matters less than whether the distant ${cash} arrives.</p>`
   :`<p><b>Your horizon: ${hz} years</b> (My settings). Within it you would collect about <b>${pc(cum)}</b> of the base value as ${cash}; the other <b>${pc(1-cum)}</b> depends on the price the next buyer pays at the end of year ${hz}, which is only as good as their belief in the cash still to come. ${b.half_year!=null&&b.half_year<=hz?"Your horizon covers where half of the value comes from.":`Half of the value arrives after your horizon (year ${b.half_year??"–"}): a long-duration asset for a shorter holding period, so the sale price carries most of your return.`}</p>`;
-=======
->>>>>>> origin/claude/project-thread-1wm1xf
  const tone={"well supported":"ok","some reliance on distant cash":"warn","leans on distant cash":"bad"}[R.label]||"warn";
  const bar=`<div class="hzbar" role="img" aria-label="Share of base value by years: ${Bk.map((k,i)=>`years ${k} ${pc(b.shares[i])}`).join(", ")}">${b.shares.map((v,i)=>`<i style="width:${Math.max(v,0)*100}%;opacity:${OP[i]}" title="Years ${Bk[i]}: ${pc(v)}"></i>`).join("")}</div>
   <div class="hzlg">${Bk.map((k,i)=>`<span><i style="opacity:${OP[i]}"></i>Years ${k} · ${pc(b.shares[i])}</span>`).join("")}</div>`;
@@ -732,10 +726,7 @@ function farHTML(r){const x=(DN.stocks||{})[r.ticker];if(r.type!=="stock"||!x||!
  const CN=DN.concerns||{},cl=(R.concerns||[]).map(k=>`<li>${esc(CN[k]||k)}${k==="price"&&R.implied_cap!=null?` (${R.implied_cap>80?"more than 80":R.implied_cap} years against ${x.cap_years})`:k==="fade"&&R.half_life!=null?` (about ${R.half_life.toFixed(1)} years)`:k==="score"&&R.suggested?` (${MOATN[R.suggested]||R.suggested}, score ${R.score}/10)`:""}</li>`).join("");
  return `<h3>How far away is the value?</h3><p><span class="pill ${tone}">${R.label?R.label[0].toUpperCase()+R.label.slice(1):"–"}</span> Half of the base value arrives by <b>year ${b.half_year??"–"}</b>. <b>${pc(b.beyond10)}</b> of it comes after year 10 and <b>${pc(b.beyond20)}</b> after year 20.</p>
  ${bar}
-<<<<<<< HEAD
  ${hzP}
-=======
->>>>>>> origin/claude/project-thread-1wm1xf
  <details class="fcdet"><summary>By case: share of ${ins?"value (cash paid out and the value after the last year)":"operating value (before net debt)"} received in each period</summary><div class="scroll"><table class="s"><tr><th style="text-align:left">Case</th>${Bk.map(k=>`<th>Yrs ${k}</th>`).join("")}<th>Half by year</th></tr>${rows}</table></div>
  <p class="muted">The value after the last forecast year (year ${x.cap_years}) is cash growing at 2.5% forever, so it is split by year as well: every stock is cut at the same years whatever its advantage period. Discounted at the ${rr} required return.</p></details>
  <p><b>Duration.</b> If the required return rises 1 point to ${((x.r+.01)*100).toFixed(1).replace(".0","")}%, fair value falls <b>${pc(-D.down)}</b>; if it falls 1 point, fair value rises <b>${pc(D.up)}</b>. That is an equity duration of about <b>${D.years.toFixed(0)} years</b>, ${esc(D.vs)} (${T.d10} and ${T.d30} years at today's ${T.yield_pct}% 10-year yield).</p>
