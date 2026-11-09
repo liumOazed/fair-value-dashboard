@@ -111,6 +111,16 @@ Underwriters don't fit the free-cash-flow model: their cash flow mixes in premiu
 - Drawer cards: cash-flow metrics, ROIC, gross margin, net debt/EBITDA, current ratio and cash vs debt are marked **not applicable** (never graded and never counted as passes); ROE against the required return replaces ROIC; debt is measured against book value; capital ratios, reserves and reinsurance are "not in free data" and the debt stress test says it isn't tested. Returns on new money and the durability test use ROE and net income. Framework questions that rest on free cash flow or EBITDA are listed as not applicable and left out of the coverage total.
 - To refresh: update `bv`, `roe0`, `ni` and `price` in `INSURERS` by hand after each report (the inputs workflow now also fetches book value, ROE and quarterly equity).
 
+## Rating: Excellent, Good, Average or Bad (top of each Fair Value drawer, from November 2026)
+
+One rating per stock from three pillars, each scored 0 (Weak), 1 (OK) or 2 (Strong), shown with the reason for each score. Uses only figures the drawer already has; prices are live and fair values follow My hurdle. Thresholds sit in `RT` at the top of the rating code in `assets/app.js`.
+- **Intrinsic value** (price vs base fair value): Strong 10%+ below, OK within 10% either side, Weak more than 10% above.
+- **Margin of safety**: Strong at or below the buy-below price or the bear case (at the same rate); OK below fair value less half the stock's margin of safety; Weak otherwise.
+- **Business quality**: Earnings, Cash flow, Business performance and Financial strength cards (Strong 2, OK 1, Weak 0; cards with "Not enough data" left out, at least 3 needed). Strong = average 1.5+, no Weak card and a wide or narrow moat; Weak = average below 1 or two Weak cards; OK otherwise.
+- **Excellent** = 5-6 points with Strong quality. **Good** = 3+ points with quality and intrinsic value at least OK. **Bad** = 0-1 points. **Average** = the rest (so a cheap but Weak business stays Average). ETFs and commodities are not rated.
+
+On 9 Nov 2026 prices: 9 Excellent, 22 Good, 55 Average, 32 Bad of 118 stocks.
+
 ## Refresh fair values
 Fair values are slow-moving. Re-run the model after each earnings report (roughly quarterly), paste the new numbers into `data/assets.json`, commit.
 
@@ -264,6 +274,7 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 | 7 Nov | Fair Value, Growth Screen | **9 Russell 2000 models**: every small cap that passes all 5 checks (INVA, CTRE, CVSA, QLYS, LAUR, IDCC, LMAT, BOX, ACIW) gets a full model with all drawer cards; required return = sector rate + 2-point small-cap premium (QLYS, BOX, ACIW half a point lower, LAUR 1 point higher), 35% safety margin (40% INVA, IDCC); new group Education (CVSA, LAUR); added to the Growth Screen with the Fair value badge. Extras outside the universe are now scored one at a time (ADYEY 59.5 → 59.3, SHOP 50.9 → 51.1) | Small caps judged like the large ones; data older than Yahoo's 4-5 years shows as unknown (no SEC history from GitHub). Existing fair values unchanged |
 | 7 Nov | Fair Value | **16 insurers**: the Growth Screen's Insurance top 5 (ALL, MRSH, HIG, AIZ, WTW) and the 11 Russell 2000 insurers that pass at least 4 checks (NMIH, UVE, PLMR, PLGO, CRVL pass all 5; SLDE, HG, HCI, ESNT, UFCS, SKWD pass 4). Underwriters valued on book value and excess return on equity, brokers (MRSH, WTW, CRVL) on free cash flow; Russell names get the 2-point small-cap premium; all under the Insurance filter. Drawer cards mark cash-flow, ROIC and liquidity tests not applicable for underwriters | Insurers' cash flow and debt don't mean what they mean for other companies. Existing fair values unchanged |
 | 8 Nov | Fair Value | Drawer split into **Ex-post · looking back** (reported results, history, trailing figures) and **Ex-ante · looking forward** (fair value, scenarios, forecasts, expected returns), with a bar showing each half's share of sections. Mixed cards are split: *Three performances* → business and market look back, *Priced in* looks forward; *Stocks vs bonds* → today's earnings yield and its history look back, the two expected-return spreads look forward; *Capital and returns* → ROIC and investment look back, NPV of $100k and the model's investment payoff look forward (one set of rate buttons drives both); the multiples table moves out of *Valuation* into *Multiples vs history*. |
+| 9 Nov | Fair Value | **Rating** (Excellent, Good, Average, Bad) at the top of each drawer from intrinsic value, margin of safety and business quality, with the reason for each pillar | One summary of price and quality; information only, fair values unchanged |
 
 ## Research framework in the drawer (from November 2026)
 
