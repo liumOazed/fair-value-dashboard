@@ -114,7 +114,7 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  const nP=POST.length,nA=ANTE.length,sh=nP+nA?Math.round(nP/(nP+nA)*100):0;
  const grp=(id,k,t,sub,A)=>A.length?`<section class="tgrp ${k}" id="${id}"><div class="tgh"><span class="tgk">${t}</span><span class="tgs">${sub}</span><span class="tgn">${A.length} section${A.length>1?"s":""}</span></div>${A.join("")}</section>`:"";
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
- ${SN0.top}
+ ${ratingHTML(r)}${SN0.top}
  <div class="tsplit" role="navigation" aria-label="Jump to a half of the drawer"><div class="tsbar" aria-hidden="true"><i class="post" style="width:${sh}%"></i><i class="ante" style="width:${100-sh}%"></i></div>
   <button class="tsk post" data-go="g-post"><b>Ex-post · looking back</b><span>${nP} section${nP==1?"":"s"} (${sh}%) · reported results, history, trailing figures</span></button>
   <button class="tsk ante" data-go="g-ante"><b>Ex-ante · looking forward</b><span>${nA} section${nA==1?"":"s"} (${100-sh}%) · fair value, scenarios, forecasts, expected returns</span></button></div>
@@ -469,6 +469,49 @@ function moatHTML(r){const x=(MS.stocks||{})[r.ticker];if(r.type!=="stock"||!x)r
  <tr><td style="text-align:left">Main threat</td><td style="text-align:left">${x.risk}</td></tr></table></div>
  ${x.numbers_score!=null?`<p class="muted">From the filings: returns well above the hurdle in past years ${pp(P.persistence,2)}, no fade ${pp(P.fade,1)}, returns on new money ${pp(P.new_money,1)}, steady gross margin ${pp(P.margins,1)}${P.gm_std!=null?` (typical swing ${(P.gm_std*100).toFixed(1)} pts)`:""}.</p>`:""}
  <p class="muted">The sources are Claude's judgement as of ${MS.checked}, re-checked after each earnings report. 7.5+ suggests a wide moat, 5+ narrow.</p>`}
+// ---------- Rating: Excellent / Good / Average / Bad from three pillars, each scored 0-2 (Weak / OK / Strong).
+// Uses only what the drawer already shows; follows My hurdle (fair value, buy-below and bear case move with it). Not advice.
+const RT={iv_cheap:0.10,iv_dear:0.10,qcards:["Earnings","Cash flow","Business performance","Financial strength"]};
+const RTL=["Weak","OK","Strong"],RTC=["g-w","g-o","g-s"];
+function ratingOf(r){if(r.type!=="stock"||r.price==null||!r.fair_value)return null;
+ const S=(SN.stocks||{})[r.ticker];if(!S)return null;
+ const px=r.price,fv=r.fair_value,$f=x=>"$"+x.toFixed(2),p0=x=>(Math.abs(x)*100).toFixed(0)+"%";
+ // 1. Intrinsic value: price against the base fair value
+ const d=px/fv-1,iv=px<=fv*(1-RT.iv_cheap)?2:px<=fv*(1+RT.iv_dear)?1:0;
+ const ivW=`Price ${$f(px)} is ${p0(d)} ${d<=0?"below":"above"} the ${$f(fv)} fair value`+(iv===2?` (${p0(RT.iv_cheap)} or more below)`:iv===1?` (within ${p0(RT.iv_dear)})`:` (more than ${p0(RT.iv_dear)} above)`)+".";
+ // 2. Margin of safety: cushion if the estimate is wrong (buy-below = fair value less the margin; bear case at the same rate)
+ const h=hurdleOf(r),rw=r.rate_table&&r.rate_table.find(x=>Math.abs(x.r-h)<1e-9),bear=rw&&rw.bear!=null?rw.bear:r.bear,half=fv*(1-r.mos/2);
+ const ms=px<=r.buy_below||px<=bear?2:px<=half?1:0;
+ const msW=ms===2?(px<=r.buy_below?`At or below the ${$f(r.buy_below)} buy-below price: the full ${p0(r.mos)} margin of safety.`:`Below the ${$f(bear)} bear case: even the pessimistic scenario covers the price.`)
+  :ms===1?`Below ${$f(half)} (fair value less half the ${p0(r.mos)} margin), but above the ${$f(r.buy_below)} buy-below price.`
+  :`Above ${$f(half)}, so less than half the ${p0(r.mos)} margin of safety is left${px>fv?" (no cushion at all)":""}.`;
+ // 3. Business quality: four quality cards (price not included) plus the moat class the model uses
+ const C=S.cards.filter(c=>RT.qcards.includes(c.title)&&c.grade in {Strong:1,OK:1,Weak:1}&&cardAns(c).enough),g=C.map(c=>({Strong:2,OK:1,Weak:0})[c.grade]);
+ if(g.length<3)return null;
+ const av=g.reduce((a,b)=>a+b,0)/g.length,nw=g.filter(x=>x===0).length,moat=r.moat==="wide"||r.moat==="narrow";
+ const q=av>=1.5&&nw===0&&moat?2:av<1||nw>=2?0:1;
+ const qW=`<span class="rtq">${C.map(c=>`<span>${c.title}<span class="gr ${GC[c.grade]}"><i></i>${c.grade}</span></span>`).join("")}<span>Moat<span class="gr ${moat?"g-s":"g-n"}"><i></i>${r.moat||"not set"}</span></span></span>`+
+  (q===2?"Mostly Strong, nothing Weak, and a lasting edge.":q===0?(nw>=2?`${nw} cards are Weak.`:"More Weak than Strong across the cards."):
+   [av<1.5?"not mostly Strong":"",nw?"one card is Weak":"",!moat?"no wide or narrow moat":""].filter(Boolean).join(", ").replace(/^./,c=>c.toUpperCase())+": not enough for Strong.");
+ const tot=iv+ms+q,lab=q===2&&tot>=5?0:tot>=3&&q>=1&&iv>=1?1:tot<=1?3:2;
+ const why=lab===0?"Strong business, priced well below fair value, with a cushion."
+  :lab===1?"At least OK on quality and price, and 3+ points in all."
+  :lab===3?"1 point or less: paying too much for what the business is."
+  :q===0&&tot>=3?"Cheap enough for Good, but a Weak business is held to Average (value-trap risk)."
+  :iv===0?"Good business, but the price is more than "+p0(RT.iv_dear)+" above fair value."
+  :q===0?"Weak business: the discount alone is not enough."
+  :"OK business at about fair value, with little cushion.";
+ return {lab,tot,why,P:[["Intrinsic value","Is the price below what the business is worth?",iv,ivW],["Margin of safety","Is there a cushion if the estimate is wrong?",ms,msW],["Business quality","Is it a good company?",q,qW]]}}
+const RATE=[["Excellent","rt-ex"],["Good","rt-gd"],["Average","rt-av"],["Bad","rt-bd"]];
+function ratingHTML(r){const x=ratingOf(r);if(!x)return "";
+ return `<div class="rating"><div class="rth"><span class="rtb ${RATE[x.lab][1]}">${RATE[x.lab][0]}</span><span class="rtp">${x.tot} of 6 points</span><span class="muted">${x.why}</span></div>
+ <div class="rtg">${x.P.map(p=>`<div class="rtc"><div class="rtt"><b>${p[0]}</b><span class="gr ${RTC[p[2]]}"><i></i>${RTL[p[2]]} · ${p[2]}</span></div><div class="muted">${p[1]}</div><div>${p[3]}</div></div>`).join("")}</div>
+ <details class="rtrule"><summary>How the rating works</summary><p>Each pillar scores 0 (Weak), 1 (OK) or 2 (Strong); the rating adds them up, out of 6.</p>
+ <ul class="rk"><li><b>Intrinsic value</b>: Strong at ${p0r(RT.iv_cheap)} or more below fair value, OK within ${p0r(RT.iv_dear)} either side, Weak above that.</li>
+ <li><b>Margin of safety</b>: Strong at or below the buy-below price (fair value less the stock's margin of safety) or below the bear case; OK below fair value less half the margin; Weak otherwise.</li>
+ <li><b>Business quality</b>: the Earnings, Cash flow, Business performance and Financial strength cards (Strong 2, OK 1, Weak 0). Strong = average 1.5+, no Weak card, and a wide or narrow moat. Weak = average below 1 or two Weak cards. OK otherwise.</li></ul>
+ <p>Excellent: 5-6 points with Strong quality. Good: 3+ points, quality and intrinsic value at least OK. Bad: 0-1 points. Average: everything else. Prices are live and fair values follow My hurdle, so the rating can change during the day. Not investment advice.</p></details></div>`}
+const p0r=x=>(x*100).toFixed(0)+"%";
 // Returns on capital over ~10 years of 10-Ks (scripts/returns_history.py): questions 1, 2 and 5. Diagnostics only.
 function retHTML(r){const x=(RH.stocks||{})[r.ticker],h=retHTML0(r);if(!x||x.measure!=="ROE"||!h)return h;
  return h.replace("Return on invested capital by year","Return on equity by year").replace(/Return on invested capital each year \(10-K figures, capped at 200% on the chart; the dashed line is the ([^)]*) required return\)\. Invested capital includes goodwill, so acquirers look lower than the businesses they bought\./,"Return on equity each year (net income ÷ book value at the start of the year, 10-K figures; the dashed line is the $1 required return). For an insurer, equity is the capital that backs its policies, so return on equity is the measure of its edge.")

@@ -313,3 +313,16 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 .tgk{font:600 15px/1.2 var(--display,inherit);letter-spacing:.04em;text-transform:uppercase}.tgrp.post .tgk{color:var(--post)}.tgrp.ante .tgk{color:var(--ante)}
 .tgs{color:var(--mut);font-size:12.5px;flex:1 1 220px}.tgn{color:var(--mut);font-size:12px;white-space:nowrap}
 @media(max-width:640px){.tsplit{grid-template-columns:1fr}.perf.perf2{grid-template-columns:1fr}.tgrp{padding-left:10px}}
+/* Rating (Excellent / Good / Average / Bad) at the top of the Fair Value drawer */
+.rating{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:12px 0 4px;background:var(--card)}
+.rth{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.rth .muted{font-size:13px}
+.rtb{font-family:var(--display);font-weight:700;font-size:18px;padding:3px 14px;border-radius:999px}
+.rt-ex{background:var(--hl-mint,color-mix(in srgb,var(--good) 16%,transparent));color:var(--good)}.rt-gd{background:var(--hl-blue,color-mix(in srgb,var(--ok) 16%,transparent));color:var(--ok)}
+.rt-av{background:var(--hl-cream,color-mix(in srgb,var(--warn) 18%,transparent));color:var(--warn)}.rt-bd{background:var(--hl-coral,color-mix(in srgb,var(--bad) 16%,transparent));color:var(--bad)}
+.rtp{font-size:12px;font-weight:600;color:var(--mut)}
+.rtg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.rtc{border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12.5px;display:flex;flex-direction:column;gap:4px}
+.rtt{display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap}.rtt b{font-family:var(--display);font-size:13px}
+.rtc .gr{padding:1px 7px}.rtrule{margin-top:8px;font-size:12.5px}.rtrule summary{cursor:pointer;color:var(--mut)}
+@media(max-width:640px){.rtg{grid-template-columns:1fr}}
+.rtq{display:flex;flex-direction:column;gap:3px;margin-bottom:4px}.rtq>span{display:flex;justify-content:space-between;align-items:center;gap:6px}
