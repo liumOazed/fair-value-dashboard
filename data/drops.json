@@ -28,16 +28,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-04",
     "peers": {
      "basis": "industry: Information Technology Services",
      "n": 8,
      "median": {
-      "day": 0.008296765145773488,
-      "week": -0.015769814717737307,
-      "high": -0.21122230807369674
+      "day": 0.007508827754352243,
+      "week": -0.024034789675665136,
+      "high": -0.210357666069028
      },
      "tickers": [
       "IBM",
@@ -107,23 +107,23 @@
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": -0.0143,
-    "week": -0.2946,
-    "high": -0.5807
+    "day": -0.0136,
+    "week": -0.2941,
+    "high": -0.5804
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0191,
-    "week": 0.012,
-    "high": -0.013
+    "day": 0.0155,
+    "week": 0.0085,
+    "high": -0.0165
    },
    "sector_at_open": 83.9,
    "worst": {
@@ -164,16 +164,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-28",
     "last_report": "2026-10-28",
     "peers": {
      "basis": "industry: Software - Infrastructure",
      "n": 8,
      "median": {
-      "day": 0.044766035665049,
-      "week": -0.021222531896033403,
-      "high": -0.18301424715515802
+      "day": 0.03865790775082001,
+      "week": -0.023848158283692023,
+      "high": -0.18546487950836998
      },
      "tickers": [
       "MSFT",
@@ -204,9 +204,27 @@
     },
     "news": [
      {
+      "title": "A Look at Fortinet Inc (FTNT) After 3.0% Gain -- GF Value $113.4",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM25xbkJZWmRFd29SNFNmY0YxN1N2RXZlRTZkNk9ZcjRZQnpmblBBZWNXdFZOVHVFTnZ4X3UyQmNaM3hFdDlvYjZORXd4eGFHZ1dreGg5WHJJUXllQnlXWGswZ2tSWml5OXRWRUFhRmVGNllwY19fSVZ2QW1uSXcyLXp3eUY3cXNKYS1VZ2xqYW1aX21wNTZ4akxTUlpnNmxPV1ZmYTFrT3J0UEV6em9B?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Fortinet Inc. stock underperforms Monday when compared to competitors despite daily gains",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTWxETDRXODlOT2NPR0RNTGtzWi1mVFRFVnd2VjI5anB2OUg4TUlhazhCb0YwM1NoSEhCVHlFaEdMQk1lYl81dllwSTk1QUNEazdYZXE2bG1uSWczbTlBaFdldEFJZWdqeWZNV19oeGFfUGE5ek4wa0pSRjZKQnByMG4tZHRuRE1uNXRqczRSWURPZy1MVUxPLTF6LVFva21PbXAwVjBQRGFnc25JNXdMOF9fNWN6SWlzREd5LU9sZnpJaXcxdm9tSF8waWg5cjl0RGh6V2hhazRoNjJNcUwxM0wzSFJkYm42T2hVVUgwdnM2blktMlpaeXdn?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Fortinet Inc (TSX:FTNT) Stock Price, Trades & News",
       "publisher": "GuruFocus",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9mUUxBRVhQLXpjNXFGdkJEblppMnBWcDdnY2FEM3dyTndUd2luWlQybXU4RjhrbWQzWEU4YlhOMzdLd3d4MnYwM1BSUkZDZ2lnTWpxZVk0REw5a0ZZ?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Fortinet executive highlights security risks of AI adoption",
+      "publisher": "MSSP Alert",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOM0x5SXhfLUN6QXpKMDMyWmZSX0VXOEtzbVJJYUk4cFV3bmZ0bFRqck5yUXloaUR0R0c5dGI1cXdmbmdRbjNjOGRlb0ZwX1hBTFpQb29fMFBPRmNFUWJvZTgyc3Bva3RNWFBCb1l4VVVwbEc1QjRhZDNNd2E3UmJRcDNaOVlIZndkVDNhYnh5SVZYUmVSOVE?oc=5",
       "date": "2026-11-09"
      },
      {
@@ -220,46 +238,28 @@
       "publisher": "ad-hoc-news.de",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaEFYbTRqQnl5NmEtVWp5TmRPbFVFaDAwVERmRHByeENNMUQtdWMzZEE1MmVxcDNiUERHRUhrb2pMMWhHWFhtQ2o0cU83RU9tSThuVWFJX2xmNVRzaXdZazlYQW9RVHJlU0ZZTnh2QXRaTEZxb3M2RnlqWU1vdjBBY3MwQklaVjlVX3kyZ1l1aFFTek9LTzdCWEtlODN0SG9hQU5yYS1DaUVqcjVhLWdYNXIxUnBwSkx0eXFfTU1oQy0xUQ?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "Fortinet stock lifts 2026 outlook after Q3 revenue jump",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUzBvb1ZCMWlBc2ZCM0VPMVNTZjR2Z2tKalItNlFpQnh0QWhwclFtLTBwVDRKWVlGY3VDa0tRMDVMWjRJeG5OTkt3aGdaaDZobVN3Q084Q2hrdzhtbzdiNl9VM2J2dFdhNDlndklGUWlCdmtxNjRsRlRhRFRHTWY3MU1aRWstWDlUbkJYM01HQjFwOWlSVUZoSnZjbjdhLWE4MnlTYXN6Ykw5U05pUkFGbk53Q0RKUGQzcFE?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Fortinet, Inc. $FTNT Stock Holdings Increased by Fulcrum Asset Management LLP",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb0pfRDQ2WGVQaHRlUU9Oc0Z1bkItdFUxVmEwYW5ZZm5UMGF2N2JFY3dhNnVWRUxTU0tRaFAxX3hSVXZwWXFabGc0c1JpSWFSYkFOWXVGak1LdVlucUY0M0plc2pRV3EzNVpKMGdfZ1VDbmVFcnY4WFRMcjU2V0txNlNyZ3pENUo3dEZwS2txeUYtWjZxZ19DSWVZbjFzT1J5bHVYc0hOSnJGRFRNZnZqVzYtRTQ4dG5RQmlsX3hDTmRHUVhvNTkyd3pFXzhrUnIy?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "17,187 Shares of Fortinet, Inc. $FTNT Purchased by Hohimer Wealth Management LLC",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQS3RteWxHZVNlM05tb0ZIRGVpWnZkYVZyMWZ6Y3VtajJ0QXdrUzV3eWw4dHd5MXNCX005c2ppazRwLWJob0pRSHoxWlNJZ2o1STN0akc2a0RURF9jMDdMUmhDZ2dfeGdHY3VsdHdhV2Y4X1RDRnVuc1kyamVfVmpXMHJTM3NMTHNKblRnQzNyLUhuY3ROeFFRY3VHOGhlUFYtVkMtOXBaci1Mc3BjTUx5M3BaamszblIxS1ZKUm1SLXM1SkNNWkJmRzVSdGtTVm9URFMw?oc=5",
-      "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0305,
     "week": -0.0296,
     "high": -0.3711
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -299,16 +299,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-29",
     "last_report": "2026-10-29",
     "peers": {
      "basis": "industry: Internet Content & Information",
      "n": 3,
      "median": {
-      "day": 0.01576652241597465,
-      "week": 0.036847195738674454,
-      "high": -0.2799869957676593
+      "day": 0.011833679091343807,
+      "week": 0.03283273229413797,
+      "high": -0.2832548024230822
      },
      "tickers": [
       "GOOGL",
@@ -334,62 +334,62 @@
     },
     "news": [
      {
-      "title": "Reddit COO Says \u201cOver 80% of Our Monetization\u201d Is Logged In. Google Is Squeezing the Rest",
+      "title": "Reddit (RDDT), What Is Behind The Fresh Attention?",
       "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOd1R4bHhndUNIbHo5WU44eTZVdExDT09iTzd1V1pPUE5aSjFYSGZ6Z09DRWRLcmhneHhiRkNZbXdyZllpY2t2a1FtbU9ZamVTQXNqdTBETUpqR1ZZNGt0RDBDMm1Mak9jQXRoQmJuaUgyOVZxb0J0eW9wV0ZPTzhqNDI0MGZ1YWJHOWpvenFoc21fQQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSXY1ek9TMFZCZFh1Q2w4TFBtdVU3d2EzTWF1UGZWekFVX2JBU1IydzlMNWtxLTRRRUZkcWVkRE5nXzVhY2hUUkl6bkx5ZlFBeWlsaWRNeTROOHN5Q0hzTm5fREF5cFZMZFhmZjdIZTdrZ3ctelhjOWRYeWZ4LWRsTkhhWlF2MlI5Q1dieHc4UDFsampBZ1pJck55VDFldlFx?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Amazon Stock Fell After a Strong Quarter. Is AWS Growth of 39% Being Ignored?",
-      "publisher": "The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNa0xHNXU1TlRFeDcwc00xV1JSUUQ5NG5mQ083TkUxeHFQNTBka25TX0ZSZFAzVE5ZMTUzc1lxdDZYUVlDcVB2RUFWYkhSYlZOYjdLaEQtdlJrUVlXNmJOR2Q4RTEwMGV2bHkxY29lZTZBaUhpQks0VEpXVUdhN2RiRTVsYWRjWDlFemhoMGxmTmVqUVBrLW1QWGZfNlNyRmtKRk5IZWJGR1J4RnpEUkJwSWQwZXF4VlJUN0ZtZ01XYXhTZ09wTTJPdk5CemNxcE16RS16eUNZTkFOemZUTTNLRVJiN3lVM3daYXFfblFsZWM?oc=5",
+      "title": "Reddit Shares Jump More Than 5% Again, Repeating Wednesday\u2019s Move",
+      "publisher": "AskTraders.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRkV5UGdYOW1hak0ta2M1S0tpRkZEY1lpMkZzNUctOW8za0xxelBxYldLMHZWaUJlWUpzZ25Gd3JpZGthUnB4dXMxOUlCRlVOVEJSYjhXMDBzWnkwSkhnSzY4NTNIOWFQYTZ5eFhzTUJoNFRvREtVTUNETXlyOTE5cERSNGJhWWRKdzY3Z2NSNUhEMzY5RmNmMHk5Y1FORFJw?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Reddit Inc. $RDDT Shares Newly Purchased by CenterBook Partners LP",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWVFtcmt4SW9TdklhcWZlQ3M5VU9BbkJtTUhjdWNRMF9iQ3QtRUlIVHFVaUhETG1qajhvVWk2MUVRMmdwUElHd3RfWW5MMGF4NHNVOG5fWU5xRTlRNmVSZ3JZMFdzWkdoci1ERjdOTmc0U3Bpcmc4UXpkNHdBMTU0SjJ3R3BFLWVRN21TVkhIMWlkVXVEMVlYUUFxYUppUzktdXdvcWp2dzN5MndwZnI0OUpiOThuYk5Yb0FlV190Z3J5TU0?oc=5",
+      "title": "Reddit (RDDT) Stock Still Looks Reasonable After A 61% Fall",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbGtEOUZaaDRDSU5XTTUzck9VNHFsTmJtd1F0aFB6MmQ1WUkyZ0VwWUhTclBRNjc1MnJrTHhCc212d3gteVBER3ZULVFEQzZBdDQ4UF82RGxWUWxVeFJlS1BMYW1RdGNzcUhXVGJzT1ZsNFpDY1BfOTgxUUMtYTQ3d09pOFRUNXo2cVB3TDJrc0xLUk5pWDdkdlZXM1ZjekRwNERIeUx3UVpLS051VUl1VDVDemZZRnfSAbwBQVVfeXFMTWdmVlBwb3ZRTWo2ajFOdDdObVNaZ0JVbk5GRk5ObFlTNzBOY0hndUZtNTJxVHNCSzdpR1B4eXUxbWRqdV9DYVBGYmdMOW1MMVk3M3RiU1RzX1RpSEl1QmJuVThsNHNHeHNpV2VwNmlOMG5kVGVLUE5yV0NKNjFkZ2VmWW1IOWhiUHg1cmRVdmxoT292WGcxVkw3eDE4cTFkUkw1akhfZGtZR3FqYUpuQnUyZ0ZvY0VneWZ6UVQ?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Wrapped Reddit Tokenized Stock (xStock) USD (WRDDTX-USD) Latest Stock News & Headlines - Yahoo Finance",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBaaGE1SDNiM1RSSEZkaXp3WlVtM0lwQnhCbElFMXk3UFRZTmwwWWZCVHdNY1pmSlBJaHFlYnNfcDFUTzh2aFI5WlY4bXZncEZQSGd3RHZGQ1VGUTVGd212Qw?oc=5",
-      "date": "2026-11-08"
+      "title": "Reddit trades at 11x forward cash flow with str...",
+      "publisher": "Pluang",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVFFqUXFpcEo0NU9TR2JMcWQ2dmhaUENLV1JiNWF0NGUybVJFYWJWNWI0TGhEaWFUcjFCREJpZlRNNi1XZ0ZzbE9QOG0tREc5YXJIOWlyb2RMWU10X19raXkxZEFFUHU1NlNvX3RnbFh2ZGlrNEM1TFZWc1ZoU1NySHYwWWxndFI1cTlYUlZQMUZHMEE?oc=5",
+      "date": "2026-11-09"
      },
      {
-      "title": "\u2018175 Applications, 55 Interviews, Zero Offers\u2019: Reddit User Shares Brutal Seven-Month Job Hunt Struggle",
-      "publisher": "News18",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdnpKc1k1U2UxS3lJNTlEa1dpa0dKZjloVXRiNWRIMllKZERObzdOcHJMRWNMUUhEcXJrODU3WUpKS2JYTmtvSTh5eERpamJoajFzb004d1RkZVpMaDFibzl2WnN1Qko0OWZCUVNZTnFtSnZNQkJlSVFfQjBsVm5aRF9uLUtsYTRkTER6a2gzSFl6cWw3YVpfNElTT0UwVEFlNUVzR2JOQTVCZFVoQ0UyNHlNeVpzTE9IUWROV2xjNTJkNVYxdmR6dlg1Rll0ZXlKVjBrcjVlQXRnR0E5RFp30gHkAUFVX3lxTE1aZU1GU2VxZ1ZXWXkyYlFPWmpHZHhFUjBLSzhTcjVGVzRYSTB5eUZTVkJRUVJ3S2ZfUWdSNUJxc0I5akhaS1pCLTFOMUJVZGttRUlGeDFyNEd4ZUFQemduZGZOYXEtZ3piamFobUN5cW44eWNCZFlPRzdNWkJCZndXbVcwSDlFeHFwZzRkOWM2SHBubTBweFRMVlVYOXZWRzdRNmg0T2d6Uy1zM1lyLXQ3NGxvNkNrQzdHYzBheERObXE5MHd0YTUwcE9aUEZpRUx0SG5KVlROcTVCd2Jld21KeWxhZA?oc=5",
-      "date": "2026-11-08"
+      "title": "Reddit: 35% Growth And 11x FCF. I See The Risks, But I'm Still Bullish (NYSE:RDDT)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZUhTUGdQZnBYcjNvb05rSjEzeFFWQkVrZFJDeXRYOUlId2JOLUFvdGxJbld4ajRKV3M2N2VzQ1lEYkgxVzNiX1Q1WnlZbFpMeVdfQkFCV19hOWlEd2JnZENxUUtyM1lUT2pkazR5a3phNGNhNmhNU3d5NENHb0FGMXZ1QktzUVAtS3BPckJ6SHRKV2w5TFNnZ3RDMGN4em1Ud3FZ?oc=5",
+      "date": "2026-11-09"
      },
      {
-      "title": "Magnite vs. Reddit: Which Media Stock Is a Better Buy Going Into 2027?",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUkJaRkRkVUxiallWM3QzVEJGd1BkVWRvNncyWHhtallHcnlMaHM0UHF6Rm11ODAxdjRzclRUOGVNLVFkcnYxS3hGOS1PdmM4Q1NLQ1NnUHF3VDBta3F3ZTJrTVFiSGRhMFVlamwxV0IzVmcwNmQ2S1ROVWVTVDAyWEIxX1JXWlNtUWpCb29mZFNrTXNTTllqR1NkcTVUcXBLZmw2ajNZN2hFYnJkaWNyTldsRGY5X1VDVjZJOA?oc=5",
-      "date": "2026-11-07"
+      "title": "Reddit COO Says \u201cOver 80% of Our Monetization\u201d Is Logged In. Google Is Squeezing the Rest",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZWdMU1paUlpUVTlZaFMtYkgwRzlkSFJfbnJqREFxUGJPQWxyZnZjamc1eUF0NXJVdEZOMThQTVdPQUtfb1FPdWs0ZEYxR25pd3JQMUJfcE1tVW1RSjlYTHc4a3JpbDlHcFh5V1JNd0FvUVgtSTVwUG14Uk4zMmhUQ0tyN3FrLVE5czZubjVKU09SN0llOXlCN3dnRzJvVUZ0T1BSWUlPcWdxYmh5NURTMQ?oc=5",
+      "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0597,
-    "week": 0.1078,
-    "high": -0.6108
+    "day": 0.0598,
+    "week": 0.1079,
+    "high": -0.6107
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0291,
-    "week": 0.0676,
-    "high": -0.0894
+    "day": 0.0288,
+    "week": 0.0673,
+    "high": -0.0896
    },
    "sector_at_open": 34.17,
    "worst": {
@@ -398,7 +398,7 @@
     "high": -0.6487
    },
    "provisional": {
-    "cause": "Industry-wide: peers fell 4% too (rates, sector rotation or an industry worry)",
+    "cause": "Industry-wide: peers fell 3% too (rates, sector rotation or an industry worry)",
     "lean": "temporary"
    }
   },
@@ -430,16 +430,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-10-22",
     "peers": {
      "basis": "industry: Engineering & Construction",
      "n": 3,
      "median": {
-      "day": 0.06609411621908046,
-      "week": -0.04897934278583371,
-      "high": -0.2476758542232591
+      "day": 0.07303805004491504,
+      "week": -0.04374889374004365,
+      "high": -0.2467526007021017
      },
      "tickers": [
       "PWR",
@@ -464,6 +464,12 @@
      }
     },
     "news": [
+     {
+      "title": "A Look at Comfort Systems USA Inc (FIX) After 9.4% Gain -- GF Va",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQamtFa3dqemNkV0xYZklvYmZPeTdVRDVBcXQ0RjFralduWVR5eDBYQ3hPbEdUTk5JLU1FNHFia2QyV1JjaHM5M1U0WFdOVkgydUN0anNqRkVXUERJZkZjcEJyb2lMbGw3WmRSaVRMLWw4aHh2ZmFQVVdrZDd6ZW5paDF4OG5NQ3ZBVlZDazdqTFV3OF9VUnVmZ05JU0ppSzJ1UnJ4a2xFb1NnYVEzSGdnQWpQYUppUVRGV2tmUVF3?oc=5",
+      "date": "2026-11-10"
+     },
      {
       "title": "3 Reasons Growth Investors Will Love Comfort Systems (FIX)",
       "publisher": "Yahoo Finance",
@@ -493,26 +499,20 @@
       "publisher": "TradingView",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQY2ZMN2VjejB3MFRHZFI2OUR1SUJ6RXpwREh1R1BtZ0hnMExndkt3YThLSTVKWGRFbkpQUkZlY3FscFF3ejZ3enJEbXprUi1JbTFpcXd6bkhoWDFRRG5YUzI3TDE4d01GWlhWYWtfWXVucGpFcldKVFNKWlpVUlhuMmNtemprcVpjRHRZbkRjZktES3ZzUzBzVjhaRy1YMUM4MlYzVV9NS1ZFS1JrcTdHZVJSMA?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "3,019 Comfort Systems USA, Inc. $FIX Shares Purchased by Candriam S.C.A.",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNX2ZIUmliOGwxdUR4X3hOZ3NlamFfZlJkRUs2d2NrMEtkZlFGMUFBbjhmdmI2ZnkyYW9uNW1aZjlQMXRKUUlEa0c0Y2hueXpCcjEyVGxwRkNKQ2JFWF9sNHc2bkVlN3g1anQyeVJNellLOFNsVkZnM0xmaXNPWjJMcGVFek5HdW5RMEp1NTgyLWVmNFhwbmZjS0FTU0hPMl92bWZYNmV4bjcybjhfT2NjdlRSM0tPR2lENnZhREI4clV3NTF2?oc=5",
-      "date": "2026-11-08"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0943,
-    "week": -0.0723,
-    "high": -0.4612
+    "day": 0.0941,
+    "week": -0.0724,
+    "high": -0.4613
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Industrials",
@@ -561,16 +561,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-08-27",
     "peers": {
      "basis": "industry: Semiconductors",
      "n": 8,
      "median": {
-      "day": 0.05804489790411216,
-      "week": -0.02344570384001421,
-      "high": -0.283138856255772
+      "day": 0.06438398776691745,
+      "week": -0.015415701902160461,
+      "high": -0.2850418886129306
      },
      "tickers": [
       "NVDA",
@@ -601,62 +601,62 @@
     },
     "news": [
      {
+      "title": "Marvell Technology Inc (MRVL) Stock Up 9.5% but GF Value Says Overvalued -- GF Score: 86/100",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVkxCWGxobVl3MXJiTE85V2V2R250VmRQeHhkZmRkZmJocWpLUW5qb2N0NFRYeklwemhrd2tlWEZ6cjVqTXBEc3M0M1BEUzdDZ2RpVHdCYnh1MzA5ODBNdXJEUk1UcTZHUlNyRkRRYnlMX0pZYUFsNTc0T3VFV2FkN0JUbjZ2TEJDN2QyQjYwM2RKMFpkVEV3cFUwclZrOFpzUWZLaFFDaFdxV2dHSHZSMTl6MHNnS3N3dFRrV0RMaw?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Why Marvell Technology Stock Fell Hard in October",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWTJST0h4V1dHdjBxeUtVUDVIZFIzMFdxZFVDMDZoaXRjWXZwNEt6RVlEQ3M0Nk1hZU5pd25IVGlLQ2phR2FuSHptQ1FuX3FaRlNwU0V0bnYtVW9ET3lVanliOTB6alB6ZjVLUzZ2bzRaZ29hVkNmNXdfc0huSzNSWjhRYXoxbnFORmJySVMtZEZ6Mjd2WUxrY2I1MWZIZlk?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Why Marvell Technology Stock Fell Hard in October",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNTF1ck5RcXk2ZmxlUVhObDBUYk1vWEJlRTU5WDhtMTBrc05FVl95all5dnhLQW9Fd3B3SlRQdEFMSGtzSWx3Qkh3TElBQVpDNDVZVlA3aHZFckd1NHlDR3ZrWmlEaDViTDdxbXNnbTlQMlprcUFJaEpPWUZobzRDRTVHZkNFTDh3SE5CUUxtOGxkWXRzY2pJ?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Marvell Sinks 36%, Lumentum Drops 31% on $115 Billion Deal: Is the Selloff Overdone?",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTk5sMlprSWdhNW9LV1NOY2pmc2dmRUp3VGV3YWZrOEQtTHVTbDFhQlVxd3p5R3BJRmxlU0FSNWZpaWFKMXZLdjlXVFBGU3F2dDI4ekpxa3BKRXYzRTlxLURWZThSdUtCbWpyNmoyeTNJRTdLVnhENWh0a3NmMTJpS3JCakhwcjBvdHg0Ujl3Y0xPbEZ6TjN0Mno0eFZSWTdoSFpOZEZfb1Q?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Marvell (MRVL) Stock Looks Undervalued After Its 166% Three Year Run",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNM0R6Q2VrWDQ0RTZSbE5VZjd1YkZIZ2lvZlhkSk5LWjhQdDQzQTFsck1BX1BzSE9ZWGJldWdzVjVsZF9RNEdIYmlHeHFpb0VXWVhidVJqZ2l0T2xkX3VsaUQ1TlZCV3Z5RWlPSnMwcHR6XzcwM2hNQ21GSlltZERhOS1KbVpNbE16X3lvMTBQQXBQdHJnYVNSNWtmU3dObHNleHM4?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Marvell Gets a Lower Bar From B. Riley While Two Rival Brokers Head for the Exit",
       "publisher": "ad-hoc-news.de",
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNaE9tMzRmbnhpRjN6dWRHS2ZXUEJXX1QtcVdBcHhRN3RrbnA0VllwUUZvTndoOTRlQXZfTjg4b1ByaG5UMW14aWZPSWxVMFd5SlppYzlwSlR0c2FfLVFsTDkxYVVzZ3h2NkVhOW1CTnRSdkFDS3c2cjBGUmo3R0JyUkhtX2tGYWhkQ3lMQ3Y5MzZkeXRSd0Npei1OcW43M2dyTHdXM29XZHhPSmFSRlNZX2l2akx2b1hieVpFbjFBVEhLZDk1UV9SOGJScGhFT1FRQTV1bnNRdmwwNUI0RzlKY3IwZXJMUQ?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Lam Research, Marvell Technology, onsemi, Seagate, and Western Digital shares skyrocket, what you need to know",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZ1VQcUZTRkNuV1B2cDNRR1ROb1k2RWVKZEwzT3ZPbG1yMWI5NFBuWVhnSjNzVkhwMnpPaWwtdzI3SDl2OTh6ZFgyYVJaVERSNlFRSmVZb1NCSzBPZjhjSkJ1X2hOQm1meHdZdUd1SW5vVkIzNGYzbHowQ1lwMzR4ZXl2SnV0VTUtUW1UQzJvQVNSaVk5R1l5Y2paOFcxQVNzWU9IaG1oZFlaLTU4bzZSRmdLSWV3ZlFwS2xpcUZoNEFpVGtGY1FfeXExT1c4QlZZOC1qMWJwSl9uMmtXM2w4YXM1ZUZ3ZF9KQVJPdGpCSXMwNlM0Rm1ra3R3?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Why Is Marvell Stock Surging on Monday?",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd1VQT3pxcXhrUE81Qnp1QUpIaC02am5DWTN4SGI4bnVhWFZGbk9zQ3NIajBLUTN2MWo1djBHZ1QtMUpnUE9YcHRfb0tmZmc2dTFGcUlRWG5kV2dQam5HQ0JOQ1BfeFVhVXhPSHlQb252a21JcW13MjlSbjhBU1ZJSXRFTVNzVE5rU1Y5THpNWWNLZ1NoNDFFWnEtTll5X0da?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Marvell Technology stock gets December 1 earnings date",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcDc1S2dIMmRsOTVBb2FnT0RUeFcxQ3FJcWRpNE13WEN5SkpXNE5pUEtaY2dNWHVMaVdCZFlXS00zV3hrRnlMWFFzUHlnWTlJVU4zX1dXdTg4em5aVEdyeEd1dlF3SEZYN1N3STZFdVdjYUQyQ0ZTQWJ5RkdkYWkxLTJIdGdCWkVSYV94Q3lkZC1BUjVzcFdXUDV4ZFlkOFlwSXc0am9HMnRsai05UFI0ZkV6a0xmc0do?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Marvell's Friday Surge Buys Time, Not Conviction, as Brokers Flag Lumentum Terms",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOd2xRY3FsYlh4VGFzRG1kaXRLNzNXSk5obnB4ZjRYSFVCSlhERlZ5UkRlZFdEdEJGSUtKN2pScEV0N0kwVHpjYjN4T1FuLVZyel81TXlESEFzNndlVWlYYVMwSnBBeG0yUC1ieWYtU3JBQjlXQk1WY3d1U0VKV0pKRm5PSmJzdmphdDk0WXZHZC1vV0NwSmpMcG1pVmFvVFpRejF2NENrbXQ0anB1b1ljU2FhbmN3N2M5VS1hckNHeEgxZGF5aWNiZkJkTHNKUlg5eW5vbDJqbHVqdDQwRER0WlNWTUc?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Marvell's Growth Story Meets Two Tests: Citi's Caution and a Shrinking Lumentum Price Tag",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTTJtUjBBQnBFb18ycW1tUWdHRVZzajJnS3ZLVnhrNXV4bTZaZHJDZHBNc3JneXdZbzc3UF92bjRUWTNxUDJOQmZlUVUxT3YyMDlUelpGeUM4TEduOXBkdGpRNFRjY0lwa3JIQlVzNEpfVEtvOC1WbW1QX3JoQjI5S0F4MlBmM0xTcE45MUc2d2tIbjNwY015d2ozU0prejQta1B0UWY1RXJabnFrZ1JvRDVIZF84X3J3dTc0MEliMmVIUGJybEhnU1VTakwwbWRLQjY1a3JyQi0xN3h5ODR4TE5aT21QR2pXV3g2UFdsZ2psUQ?oc=5",
       "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0949,
     "week": -0.0981,
     "high": -0.5114
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -697,16 +697,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-09",
     "peers": {
      "basis": "group: Energy",
      "n": 8,
      "median": {
-      "day": -0.01627283052833922,
-      "week": -0.09054875293543141,
-      "high": -0.14782818125004982
+      "day": -0.00564364530820044,
+      "week": -0.08369689028289562,
+      "high": -0.14177886251338856
      },
      "tickers": [
       "APA",
@@ -737,6 +737,30 @@
     },
     "news": [
      {
+      "title": "NRG Energy, Inc. (NRG) Stock Forecasts",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZUdCOW9FMkJtN3BicXJ5YkRrT1MtS0VzbUdKMnU1WURDYkpwYkRpWVRaMVZCWE5vcHpQU3BEN0NmS0RaTTdEaklkdjNRLUJIMURuelpPeWM4bzZhQ0xmX0Judl90SGY0WjNUNDlRTEtZZTZNNE93UmIyQVlCeXMtUEswcVdfcG1yeW4tNg?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "NRG Energy Inc (NRG) Stock Up 10.3% and Still Undervalued -- GF Score: 80/100",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZnIxa0luZkJFa0FqZmdUVzZ1MG1weFRuQndoUUUxZkdldnVJbi1vcWExQUM1OTJEVzlIRUxaaTZQa2ZNM1FrOGpYSS1UbVR4aW5XWGFxUDliamJNRXh4UmhjMG9ZdlZxeU40LXJnU0tBOVM0YlNjc1lkd0RGUW0yN1ExVldHVndRWUZMYVdfOWNYbGJQc1hxbTlEcHZXWUMxZ3Q3NDZPemFiVWc?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "NRG Energy Inc. stock outperforms competitors on strong trading day",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTmZBc1kyc3JtbTRMTG9CYVRNRTVkcnZJZy1IZjVObXFfM3hCU1hvODZlaExVajl2ZzRJMXo0R1hwcEQtVHgtaFZXT2tMOVBrS18tdlROV05POHJzR3lQZ1FEYlJoMURyeDJDTFZ0UFBwTjRxUGVvd1ZJSFUyYUFubjVkTmU0b21QTDBEdV9LQWdISHJsUjNwUFpKYnFDZnZaR21NS3pzWVVoaGpDZ1k5WlAzT3NvQzFUMDc0X21vXzk0YjF6?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Energy Stocks Rose Even As Oil Prices Slid",
+      "publisher": "Finimize",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0tYXJtTUY2SzZOb0lGWDZiMlY1WnFPWHBmOW45b2JSaTBaOFhsaWczaUtxVG9kQXBpUFlMbjRMNHQ3NTZUakpwSXB1ZnU1RXJvMVAzbkdQWkxrZ0Z5dDZELU1qWFdWOGZ2a2owVlJwa0VuVGdONmJWRHpFcFdiUQ?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "What NRG Energy (NRG) Said on Its Q3 Earnings Call",
       "publisher": "Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPYlFtU3h4Z1dQcWNJT2tGWGJ0OXJZNnktRkplVE1kdU1sOWRFcmlRcllUSURJdVVOckZUODhkNVB0WUZZQVFPQ2JYSVkxQlN2OFptUTIwWTJBUExMMS11clRSQVF2SFU2Q0h2NnJHWmlNZEZZV25fMkVqb3p3V3ZBR1VZV2dPdw?oc=5",
@@ -747,52 +771,28 @@
       "publisher": "Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ19ScGY2aGdlTEppWUkxNkpGdkpUUmJvQmFnTWxaZFBHYVl1N2gydDVIRGVGbjFLYjBPankzUnBpSC1WSjNqMXVfNlU0dl96elpWdzBCZUxEbjVscEh6TEdiRXRfSWZjWlh4ZkRFY1lOMkZpRkV4eFdfdmZBZjhzMkhPN2ZjY3hzcDVmc1ZPOGt4UHNI?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "Crude Oil Falls Over 3%; NRG Energy Shares Jump After Strong Q3 Results",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQY3l4dWxJN29KQjVzMTlwY0dPZXhfWmx0dnkzSnRGdTdhcXJIR0d1YUt4aUFDbEpfbjFGZTFPa2hxdUdnaXVPanpRVWZtSDM5N3M5YTBzZ3FRTU0wSnNYR0xMRDRXc3czM3B6S01Mc2s4eHRmTHhZMUdPNG9ZNE55RGt0XzVGTTNRYUJrdXRlSDBkZzdOcFpZZl9rOFZZTUlFVXVQV3czOUtYVFFZdC16ZlQ1enBSQndKbXRiN04yRTJEQlFSVzdjdmhxR1o?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Nuke Stock Constellation Fueled By Earnings; NRG Hits Gas On Buybacks",
-      "publisher": "Investor's Business Daily",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZVJnN3A5MG9xU29VekNOTV9YUlUwRkZzZDJGdEJoNjUwTmFFdmRNcjVIQjN1LVRQX0w3STgwdnRmLVZYOERBaEtLbGdOSkE1NHd0MDlOZlhsT0FYSENUZHNfeVp3MnZpeExBRE84b29TN2c4S3RXcGRiX1pxdXRZcUdjZWc4ZTA5Uml6c0N2bXN2UExKVjBhX0lnZE95d21FQlFsNTJDa2I2UQ?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "NRG Energy Q3 Earnings Beat Estimates on LS Power Asset Gains",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc0xRUG5kazEtZzFmcThTX01mX1NDX3RSRkt6M1Y3RVA0d01zWTdMQWxKZUNTWFl4WEVQVmR1blBSN29ueS02Wmg2OU96aF9qU0tlazdsTDJyX24ySUZOVkpKQ1AwazdMYUxVZi1BdE5wX2xudWJXRWpFU1JZM05Hc0Ewdkl1U2JsNjBEdVlPd1hEeGlQallB?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Why is NRG Energy stock surging today?",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObUFvdHYwUW5lcXpBTURQSTdrVmJYNGtWUlA5WUlreVdOYllYTkl1RmxqeElkekhlNDcySEZZeVF6dGtsQ1RNbWNJckZuOHNJNnBnRkRlRXdDZ25HNFdydFVKQXp0SVlQZGhsOGhHb0pzWkpuNHVJdEtMOEF0dHg4SU50U0RuWFJDU2lnOEktc1lhaXcxYkpfNFc1cmdidDVG?oc=5",
-      "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.105,
-    "week": 0.0311,
-    "high": -0.4699
+    "day": 0.1032,
+    "week": 0.0294,
+    "high": -0.4707
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Utilities",
    "sector_etf": "RSPU",
    "sector_moves": {
-    "day": 0.0137,
-    "week": 0.0001,
-    "high": -0.0799
+    "day": 0.0129,
+    "week": -0.0006,
+    "high": -0.0807
    },
    "sector_at_open": 77.67,
    "worst": {
@@ -831,16 +831,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-29",
     "last_report": "2026-10-29",
     "peers": {
      "basis": "industry: Medical Instruments & Supplies",
      "n": 8,
      "median": {
-      "day": 0.024119812972914212,
-      "week": 0.06304365708764947,
-      "high": -0.08579099797186551
+      "day": 0.020589057327423888,
+      "week": 0.06062365828937877,
+      "high": -0.0930729574970181
      },
      "tickers": [
       "ISRG",
@@ -871,6 +871,12 @@
     },
     "news": [
      {
+      "title": "ResMed Inc. (RMD) stock price, news, quote and history",
+      "publisher": "Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9OZm9jUVhBSFB4LWNDdEJ0R2RWWE9wLUpWMjVaVEZIblBKVkR2b184VkJlRXFxb3ByVE1OMXM5cUpXd3lUSVNOSzJxYjBfcWNt?oc=5",
+      "date": "2026-11-08"
+     },
+     {
       "title": "ResMed Inc. (RMD) Stock Price, News, Quote & History",
       "publisher": "Yahoo! Finance Canada",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JSy1jNFRxRFlCZUNVek5HWmxBTUNHamY4VWxybUdTODY4bVV4TnV0a2YySDJ4emkwcUNQUkdpd096aktTNmR6aEg2RGI0bHc0?oc=5",
@@ -892,12 +898,6 @@
       "title": "Resmed Stock Price Forecast. Should You Buy RMD?",
       "publisher": "StockInvest.us",
       "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9fTlJZYXVOUWRDVWMtcmhKbEdNcnhOdEhGNkZ1NFQ5X05peXZDbmhEclJPSnBhbWJtSmVrb0pJSDZ0bGM5SHZJ?oc=5",
-      "date": "2026-11-06"
-     },
-     {
-      "title": "ResMed Inc. (RMD) stock price, news, quote and history",
-      "publisher": "Yahoo Finance UK",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9OZm9jUVhBSFB4LWNDdEJ0R2RWWE9wLUpWMjVaVEZIblBKVkR2b184VkJlRXFxb3ByVE1OMXM5cUpXd3lUSVNOSzJxYjBfcWNt?oc=5",
       "date": "2026-11-06"
      },
      {
@@ -966,16 +966,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-11-03",
     "last_report": "2026-11-03",
     "peers": {
      "basis": "industry: Software - Application",
      "n": 8,
      "median": {
-      "day": 0.00708118759890719,
-      "week": -0.03073885604890536,
-      "high": -0.2914128955052856
+      "day": 0.0046387312714195605,
+      "week": -0.03502484404722128,
+      "high": -0.2899502287790757
      },
      "tickers": [
       "CRM",
@@ -1006,40 +1006,40 @@
     },
     "news": [
      {
-      "title": "Third Quarter Results Might Change The Case For Investing In Shopify (SHOP)",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVWxFbTNHOGtkSW40UXJnR1ROeTE2cFB0M1dlb29FSEltYms1UTc3S2RhNXZHOW9VR3FJaW9TQW9HcUxKOUxRWnNiM0o0aDcxNHIwOHFydE9Oakw5cDhSY2RDb01POFFJa25RSnhKSWRQQ3VQdlBfQjhBeHZ6cG03el9IRF80bHEtS1FQaGlCVmxLaHZONndnckhPd2t1SjlHWGdWNW1pOWhyTk1LcHg0MTF2YmVKWkxnb2k5bnFQODRPY1Jn0gHKAUFVX3lxTFBBRllaR3pqdmNBcEFZUEFGbWtSdlJKZjR0UEZQVkhWZW8wUHRhTC1ncFRDRDBBMTJUbEJSenZMaEdXUGpuRTdqUm43cW5oWEw0V2k4TjRvWTh2YWpISFZ2S0pUdWlLellXX2hXWVVfczlRWk45UWF5RVJGaVNsMEU0bXZ3cGRCYU56dm96elJFc3dTU0R2ZTlNVy1fbjVwMHVKRzNwOGE3RG9KR29VTWNVTFJMQUxUUEZHNmVlUFk1N3VJellFQll4NlE?oc=5",
-      "date": "2026-11-09"
+      "title": "Shopify's Results Disappointed Wall Street: Buy, Sell, or Hold Before the Holiday Shopping Season?",
+      "publisher": "The Motley Fool Canada",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWmRqNmQ0NTJLWXRwLTRxR0lWVkFjc2hWVFRCN1cxNnNkZDA0cU9wMzJJamlkdUhmcG1DdlhHWUNHbklQWnRQMnlPWkE3X21MMGxTYVlYQXAxZi15VnBxY1ZCTDJfaFVxTjlzQktkbWYwRmJRbE1LSHZUTlJJZ2NVR2pRQ1FvMF9XeUhUR0QxejBDSHdLcXYzaUNoSENMZEZSVnJvb1VNckQ1T2R2OTk4U0hiUU1Fd203U1N6YUpMQmhpWlE?oc=5",
+      "date": "2026-11-10"
      },
      {
-      "title": "Shopify stock enters holiday quarter with growth and cost test",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWmpuNVhscTZGV19xOHB5STkxcDU3SXFvd0N4TFgxaEJmNU1LQUVBeV93ejZyR1RjVnBvem9tMGh4N2dKT3JHU3l4QTZieS0xVlBTMFVOWEM5ajVrLXNZcXJPUTcxaEF0bzg3clFzOHM2V3pWSEFXSlBDZ3R6RWF2MjlqS0FZcHd4WUxKNkVVVnNvS0wzazhjemhsS1NWUTlPZVM1UUJrOTBES1RPcWdMOFpXVkxqV1RySHJ2RGJGM3YwUlE?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "These 3 Stocks Just Fell After Strong Earnings. Here\u2019s the One I\u2019d Buy Right Now",
+      "title": "Shopify Is Down 10% in 1 Month. Here's Why I'd Still Buy and Hold It for the Next Decade.",
       "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdG1rUXVNYnVYcmVnNlhBOHBxb3BjcG04WTUzUWQ4c0Z1cU9mNFBLR09OTDZ2b3BCZzdhSy16S0UwRnJRaXg0UkFVTDR5dkthSzNvVWl1WXJtaTdWSXZOZmx3eWFHUjMtTG5FRXAwOTVteWl4RldXQWR1LXAxazhZTUJrXzBWckg5dmg5RDQ5bU9VbzZV?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUkxUVFlNSjBLYWtfNE5FZEFtWENIUXY1VUxpa3J1UFhxenJnX1BOaXJJd1FycVhPeUlrMXExTlNpTU50UEE1MmRjcmFKTmxVZG1LbDlmTF9vZlhPMHo4aVNVUWY3V2RWT0RVWEdEdEhjcU5XN3RGcU9kYmdnOTVWZkUtOXJvVHd4UGZOWFlZdzcwZw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Shopify Is Down 10% in 1 Month. Here's Why I'd Still Buy and Hold It for the Next Decade.",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYV9XU3kzUHNpNjg3a0lNVUdVU21FWXpFVDVDM3hVWmVTbUdDbjhfLUNNekxkWVl3aWZNTkQ5bGJGMkl5Y2lGblhCZGtrMzZ5VmZDelRQTEcyR0pVdWpvSWZfbVRkV1RJQ0FvUmVPQS02a3FoLTJhMlU0aXg3Vzl1SEtnVGg4Q2ZockxUTGZseHE3aTRaX0Y5eg?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Shopify Shares Gained 2.12% in Latest Nov. 9 Quote Snapshot",
+      "publisher": "TOKENPOST",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE90QUl2NzhrdnJOakM2MGs0TC1FNFUzQ2xiVUhmblJJTmZ3ZDRqUUo0cEc5UU9qa3Z3LXdTYWhEenlJbHFCUW9IZEpleURpRWhQV1hKWkRPQXJqdw?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Shopify stock carries Q3 growth into the holiday quarter",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeW5PY1h2dW5FY0VoVXBTOHhJMk0xOVc0SjlVWF9xaHI4dF9fR3RJWWZDbUczMTNlTUlzclNpZ2VHQ2l5dEZac1haQk5wNDFtQjMxS2VVanVpUWNzTTVIZ1IyQ0c0X1N3LW02Z044YTQySFNKYy1MY0hfMDVFMDlPa0MzVkQwZGYydjFaVVdDenhrOXFSeFVTbDBQNVgzZVoxZ0FQNHp2R2Q0amJHT1UtdzdvSnc2bjlpTVZ3?oc=5",
+      "title": "Shopify (SHOP) Stock Price Prediction: Mixed momentum, firmer buy-side flow, and Wall Street still sits above spot",
+      "publisher": "Blockchain News",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRkw0RjNFZ2ZVaXpnV0IzWTNKTnphWExvN1loMDdIUzBpNlFSWmt2TkZRb1BGUjkzNmZoNFI1NTlpQjZFOE5aNVM2aTBWY1FHRkFkYU9Bdl85TEFYaHBaM3pNTHd3d25YSEtHYjVvMFZfcnkyR1Q4Yy01UUp1eTcxdXl0eFRWOEM2dE5DVTdXT2o3T3hSaG92OWN5UQ?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Shopify (SHOP:CA) Strong Fundamentals Support Bullish Outlook Despite Technical Weakness",
-      "publisher": "The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPRF84RFpYdHNJOEtleC1pWGxCb1pyaktkVGh5V3liaXpUTDdRckdUdmlDNEx4T2hfX0sxZl9RcV94VUpaaWxPRVMwdnlmZnVLM2o0X1djaktqRjRab08ydnRhNzZDUU1vUHZpTDd1WnREM0NGZkRKN3p2cWNrMnNOejFEc2FfZ2lKbENYSk1JS3BQWDFJaThacThfUkV3X2tlWnMxTUF1Y0M5eFJRai0ydVB0cDJHZl9md1BLXzZpcWhXRmEzTFRxNS11emVoeDkydEY3eDZaR0FzLXNKTTEwUjZ1enpqQU1RYjFMTndDS3YtNWpVcTc2YWRWczhqelU?oc=5",
+      "title": "Shopify Captured \u201cNearly Half of All Incremental E-Comm\u201d in the U.S. With Just 14% Share",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUHJPaERsNlhNY3R6Q0NIWGpFbGtBRlp2dHAtbmc0Mm5QbmdtOWdWU04wbkNsVWtxckNSbmQzNlJmTG85RzN2YVRlY3lWUkNiRkR5eEI4Nnd0WUJYZmppWkM2bDdhejlhNmJEdy1meDY0YXViMFZIbU9UWGpxMGpHQk1yS1A4Q0VqOTVrTElwcElKT0daRVptU0xmVTVSc3JfQV9vSjBrSmdUbjl4Uldocw?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "Shopify just hit its numbers, and that was the problem",
-      "publisher": "TheStreet",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUjduNzlqbWVhOUpnMk9SbDBoRzVQa3BudUQ5U0V1S1FORTdDb19zTktWY1hZb1UwSS15UlRMai1qbnh2cmNzMXI0TjhCS2dxWnV1WkpnanlkcG5CQmxzel9PZkhxLWtkSGMtSlUyNEw2YnBFV2E3QS1EUzZHdFNGMl9PSFJWWXNOTDJLWV8tdzFaNWc?oc=5",
-      "date": "2026-11-08"
      }
     ]
    },
@@ -1100,16 +1100,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-29",
     "last_report": "2026-10-29",
     "peers": {
      "basis": "industry: Building Products & Equipment",
      "n": 4,
      "median": {
-      "day": 0.03948895326364943,
-      "week": -0.014539507214331504,
-      "high": -0.19955546938025087
+      "day": 0.03346646339234127,
+      "week": -0.02257154193211869,
+      "high": -0.2035349667055597
      },
      "tickers": [
       "JCI",
@@ -1136,6 +1136,18 @@
     },
     "news": [
      {
+      "title": "Trane Technologies PLC (TT) Stock Up 4.7% and Still Undervalued -- GF Score: 95/100",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM0YyTDliOEZMYTUyeTNSZmNLMjhBaFp0Sk95LWZ6TTZ4V0hqdW9ITnZWYVVyQmFuV21Hd0tMUVJNSWZUNDNTTFdZcW1QY2IyT1c3WXlsY2ZuaVQxTm9wTE1JRmgxV0lqclFST3NPTE05eklJWnNiVG9IYVpFZmwtUDA4ZE93SEp0ZmJhUVoxN2kzS3BBWU1HdWwzRUNxZlZXUmxOTzFMbFo1cS1CRy1JeHZYTQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Trane Technologies Tokenized Stock (Ondo) USD (TTON-USD) latest stock news and headlines",
+      "publisher": "Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4zcnlFdF9qZnVzQS10QkFkMDhtR2c3ZE95VmR2WEUzX2tWeDROUFN4bXNSVXo3YUxQb1l6TzF6VWw1ekRIZkZaX29qWlpoRzBUQ1V5OGltNU1pbTJLTEE?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Trane Technologies stock at 375.95 euros after Q3 outlook lift",
       "publisher": "ad-hoc-news.de",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMGhMaFNDMy1kUWYxelNadDFydko2N0pTdVdTRzZVSV9JRDZ6MGRDRTZzRWVHVTFUVzM2U3d0cVg2d1FKWGJZc1RwQjFoWjd6elhKVC1IS3FnM1NBNGhvLVctMTl0blhQaHJJN2JJTVNzSnBCVVJ5S1c1RkNCVjZrRGowaUROX29hdmF3Y3NXQXZIRGItWC0wbnB2M0JjWjNyeS1TVUNlaG9RSzFvZmZITFhiM3pETk9TRTFITWQ1MXhRU28?oc=5",
@@ -1151,18 +1163,6 @@
       "title": "DUOL Q3 Earnings Miss Estimates, Revenues Beat, Shares Rise 25.3%",
       "publisher": "TradingView",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUHcxR2JVRWJvNWk2N3I0bERwSlR2MDRob25XblVmYmp1MHQ4OEVZQ1M5LTk3Rk5wb1FkVmVmWDhKRkJsTVNKb3VTVXl0bkxYd2IyZy1TS2RSSWRrcWJQd3MyR2ZRalJwanJ4dE01dElnaG5wc3VpcHdkZzRGbm1KeWhWeGxxX0lZc2JyTXBIOFZFZWdnMUp4NHFDa0JsaTBuZjBxNklCbVJmS05ZeEM0dk5ySXlZUWZLZkE?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Should You Continue to Hold TMO Stock in Your Portfolio?",
-      "publisher": "Yahoo Finance Singapore",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNkZaRDBVQXlNazZ3TVRYd0U2MFptMk1QWUF0R2F1SDMweTY3WG1fZFhwU2xVVzhZTm9hM0RTeVBHYkkzUnhWc3BZQVN2eHJmc0RlT2tQTWc1eUNNTlpBU3lFLVYyQTZsWEx5MmhWYzFaOWo3cTFHWVQ0OTRYQTNCNmVRNEZVdVdHdlE?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Emerson Electric Co. (NYSE: EMR) Stock Analysis: Neutral Ratings Across All Three Technical Measures",
-      "publisher": "Kalkine India",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa3lpbFFhTFRBS1pCUUZsMWc3enczM3NIWGlhY2VFUS1pTDFrc3VaVjZiZy0wYjhKQXYxUkk5WFFXc0FaMGZiQnkxZEJBQkk4SW1BVUZSZUNXNmpudVR3VGJBZ2RqZWRibnRfTjZfM2hYVTdka3VMT1FrWTdRTVVXc1JoMGs0bEZFLUxlQlNyX1hqNFJJc0p0Q3FBN0pfZDlZM1dKSnduTHFUZjV2RVJRNzlZajQwcGw5bjBPMmhBcjA3dENzMnZwdjNRaWhxb2ZSQnFXbHBLZGVaRUE?oc=5",
       "date": "2026-11-09"
      },
      {
@@ -1231,16 +1231,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-08-26",
     "peers": {
      "basis": "industry: Semiconductors",
      "n": 8,
      "median": {
-      "day": 0.06786275058850988,
-      "week": -0.0233215701863147,
-      "high": -0.3199753402762546
+      "day": 0.07588734482608028,
+      "week": -0.015415701902160461,
+      "high": -0.3267467973954537
      },
      "tickers": [
       "AVGO",
@@ -1271,62 +1271,62 @@
     },
     "news": [
      {
-      "title": "Jensen Huang Might Be the Biggest Wild Card for Nvidia Stock. Here's What to Watch During Earnings on Nov. 17",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRHBmcnVJdEJEU3R2YUdWd3ZibWo2QjFPMlRJc2pmdzM5WFFCWmpzeHlnM3pKbXdTQWt1aXdFNVRFRnlZZ2lCSWI1enlHdFNWTjdJbTdkV2RKelhKZzhkZlc2TjRDNXFhMllLaVhNS0hzQXpCcV82UGRmNl9Yak93OFNVZFpYN3B1a1B3SnN1dTNnbmlLYWVBRTRxMFk?oc=5",
+      "title": "Cathie Wood\u2019s ARK sells Palantir, buys Nvidia stock amid strategic shifts",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORUlrR0RDX01hdUR2MWotTlJTc3dKZmdZRlVUdzNRY3pvSXlUZE5EakxvMExNM1pkdllOREtEUHIwNUQxMHZQV2w2NjRLU2ZGcXhjd2VVenhjbzhyTktfZExZZUR1YnhXSUt2b1FKRjNpTU42QkdNektuZHZCNWhQTnlCc3VGbTRrWGNPWkZ5Q09WQWhwbnhoSVhGRF9EZ2NZVnpZWG1HeE9aREtEWEVYakhuSjVxZFpaZDFqRjBnQmhHYTRpcmdV?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "The short seller who saw signs of Nvidia\u2019s China scandal months ago claims Megaspeed isn\u2019t the only company helping China access chips",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOWGxBUEduTU5VYXprTkk1cm5sSDBleExnY2RVWWp5ZHlGdGE5bUZNbUxwOGF1UHYtYkhQSUVVMjJVMEJMdGpwUEpFOVNPb0NXQ3dmVFJSZEhYRG5kSm41b2tfT1RXc3ZpUEhLUTRNYlZScVQyTEluX1ZFSzJFNFMtQldNMjFYVWdRRlVSNmlDb3BJZW1KejVGOEI1Q0M4ekVJYmVaNUdMVkd0emtMMjVaZE0yVHFlSGhSVm82VENRWWtPcVhqZVpMZHNBcTJrdms0d0dhUHZZcTlEVmRpZFJ0dF9GMGdOSWVzRDUySkplVjhaNmhYODhUUGRWdFFFUnpwZmVaYw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Nvidia stock falls after probe into CEO\u2019s affair with alleged Chinese spy",
+      "publisher": "CNN",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWkpVcTVtRkg3Ti00UGdaWlAzWDEwQXlodnkzOXRtSmJoRTEzUXM4eXdjQnlTM1E0dU00cnRRcTh1Qk82akdvNkxmcEZzS3ZCTHhaZk90cE53M2lRVVBlWjVTbmZDcVJiX1FYdWNLUU9fX0RoZ2JrOWdaRjFyZ3UxQzlnS0RwTkhlNGdzTFFwMHVhUmZndzJWeno5MXVzaTIxanlKSnpnR1JSc19LUy1FMlQ3Qi1mdWV5dUtKSDF5N2JBU0JRWmZQSGdleENkVE5YS2ZtYnNR?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Nvidia stock closes lower after company opens probe into CEO Jensen Huang",
+      "publisher": "ABC News - Breaking News, Latest News and Videos",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSGdCVXFUbVFHRGZpeE1wVjZ1ekhMRHh0aVZmSG5sZTl6Q1dSeUVwTFBsQ09iTlVHNURTT3M4b2ttTGRqU0xWQTlUcld5dG55Zlh6ay11NFY2VGQ0djc2NWliS1RSYnVqYWRyajRUZ0YtWWtVaDRxcHNJcjlCUGw3bGFFWDgyT2J5M2d3aGNtYldaZXpDTWdJdm9aTDPSAaIBQVVfeXFMT0Z3cEdFWWhNemxyYVlQWFJEQm8tYllLbm1MTzFZektNR0RKczg3b2U1NXNfVkYxWklzQUR6bHVqQ1IyaU9KWnZER3VLUlRITnFaU3VhRTR6alp4dUhOeXFKM3BUZG1XeTQ5WFBRUGtBYlBRY3F6dzhYSkZNX3RuUFZKS2RHN1Z5MlNsTjdKelk5Q2RmT1hwT2hqU1h5LS1kQzh3?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "A short-seller highlighted Jensen Huang's relationship with Chinese national in May. Here's what to know.",
-      "publisher": "Business Insider",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSEwwenRpRjE5dXJhR0Fja3lvVUU1cDJyMWZOeU5iVVV4SHJwdmI1VFc1ZkJ2am91a2dic2JETE5GNG1DdTFhR3lXQmtNWG0ycmNhZVlBSlZjLWl4WHFDSlVsU05BV24yR2MwSEw0Z0ZONm5wNTVVMThyS3ItMnNtQ3hwYUlHdG13NW05Y2t6Wk0td0xlb01DQmZrbnk0MHlLS3ZpV0VLOA?oc=5",
+      "title": "Internal probe into CEO Jensen Huang and 'foreign intelligence' weighs on high-flying Nvidia shares",
+      "publisher": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeXdpaDhrWVBiWm9zYjdnNTlEczJPX1g2YzExNUhpVml5WGZldkgtdXhnRWZ5QTVPWkFBLTAydEJ1MVhvNXBQZ0otcmlYNFZMRVY2bC1xb0VfVEFiZG5kUjN0VG1tU2duOWpZUHlfSTJpZEp2cDFqYnFCUGVaWTF5cDVvLVNNVFlqQ3ZSWmNPSXNMZlE?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Unless Nvidia Removes Jensen Huang, the Stock Is Worth Holding",
-      "publisher": "Barron's",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaU81WE5tUkk1dXpGTVRCRk0yMnVleVVkYXFwaEhockRXNnF6R1l6WHo4Ym9HajVJVHZRS25ydHNEUkZMbXNfMGtkVVY5TnplRnJMWEZhYnQyTlk0dWstYkk5V3hvTzdHWWFWV0haa00teER6TW92MnFQYlJEcHpWOERnaWNLSXVR?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "A massive trade in Nvidia just went off \u2013 here are the details",
-      "publisher": "CNBC",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcTZiNlRvdFdDOEZEcWtaQV9NZU94U1A0RU9qZXVXV3MtbDZtcmxlQ01oS1ZhVEpZQmVvcGx5N212aFIxM215UEZiRjBzeGpQUkc2aThiSVY4M0J1NE5ra0NIcDBxY3JieTlfdUVhZlJnSC03Z1huWmF0ZUdlUjhGQmVDYk1lTjduMkJNVjZzd0EzdzRzbWdzYmpocThuZw?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-      "publisher": "BBC",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3SnFrMWdwdjhjUHBLanpUNnZ3LVJMVXp2SjdGNzZWaldUTW5pY1hNUExxUzhYR0pTSXlFLXI1LTZNTnhIOHJGXzVpYkNBdDQ2b19GeW5GSjZTLTQ?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Nvidia Stock Shock Has Investors Looking At AI Chip Alternatives",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQclhVbzBYc1psb25EUG1ZOUVaSGFhb2FoZkpXRUlQQ19hWDNCRlUzQTA3QUREQ1g2N1BJc1RWXy1MRDF6NW80T0JrankxNjdLLXBIVm40T3hDX0JkbFJzdG41VG9lMHZoWFBiazR6Z1Z0SEZmaVphVkxyb3BVZ2ZzUjQ3T1prdnFGRExhOVIxbS1xdHJpZFdqTGpuQ0J1QnJ5VWc?oc=5",
+      "title": "Nvidia sued over Jensen Huang\u2019s alleged spy affair",
+      "publisher": "Politico",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdEM2NkhHNTRENzdrYmdlVWFubmhkazB4aEdpVXNpSWtlcjNENlcwOE1tMWwyUXhndDc0WktEQ1NEU1d5VDBnelFtTFNEM1YxLXZ2Unk2NXVfd1RjdDU0ODFwZk0yS1Z3T1hvNXVQV0htanhic2pvQklQcDRrTnJ4d3dHZ0dRLXFrU05nNTV2dDJyLU1mOGptWg?oc=5",
       "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": -0.0427,
     "week": -0.1158,
     "high": -0.2532
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 57.58,
    "worst": {
@@ -1366,16 +1366,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2025-08-14",
     "peers": {
      "basis": "industry: Software - Infrastructure",
      "n": 8,
      "median": {
-      "day": 0.041361497407582104,
-      "week": -0.013870478231662875,
-      "high": -0.18189167212572438
+      "day": 0.03634159821271343,
+      "week": -0.013861779738140179,
+      "high": -0.18546487950836998
      },
      "tickers": [
       "MSFT",
@@ -1412,6 +1412,12 @@
       "date": "2026-11-09"
      },
      {
+      "title": "Adyen N.V. : Jefferies reaffirms its Buy rating",
+      "publisher": "marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTGVVbS1NNEFKS1RMbUlHMldDbGZlam0wWmZxaGRtOFlmU19mSmlHYkd1YjRCN21pa1VMV3pWR19VWDRoMUNEVVZ6V3RGOHQyenl5S2hlQVpPTnJBNVc0WTZYX2NTRVZtQ0NNNzFQZTJBNERGZHJxem1zQW5sRzRUNG8wZWZXbnlLems5NE9nbUxvUGZrcnI1VHRORk1xdw?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Adyen stock joins HKMA group for agentic finance",
       "publisher": "ad-hoc-news.de",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZ1FmU2lYTzV5WDdkcEZ2RU4zUDdORXJreGlUZXlPQVY4LVZiNzlISFVjTzVWc3RmVkJ1UE1TTHpsOE5saXE2N3J5cHZmMFAzN2RKcGdvdTRhR3JqNlFKMDNaTmJKV1J6aG1GaTVVcUVFVnd1alFIdXhYZ0xJYTZWVkNldDg1UElBcm9qanFHSG9ueFJxbVJDdGg5eUtyaWxobU5iQjlkYVdTT2VhYnlTbg?oc=5",
@@ -1430,12 +1436,6 @@
       "date": "2026-11-05"
      },
      {
-      "title": "OSPN vs. ADYEY: Which Stock Should Value Investors Buy Now?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUWN4ZFVLOEZSOWNXVmtOSlFsNVVDejdIazNtbF9VeHdRVVd0NUNqTF9vTjVVNzBaOGpaaVBLN08tLTFQb0pwVmlVOFZZMVAzY3JlX1R2dzB2YkxOcFU4OGo1bl9mbUxfMWlVcjY0d0t1RFpCb0ZlYV81UXFuTEdGWHIzYzUtYkFZR1ZhY3FiUGQwVmd6?oc=5",
-      "date": "2026-11-05"
-     },
-     {
       "title": "Analysts Offer Insights on Technology Companies: Adyen (OtherADYYF), Dynatrace (DT) and Zebra Tech (ZBRA)",
       "publisher": "The Globe and Mail",
       "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNY0ItYlBuTFl1eHB4VEZsZE9mRVMzSUhLYnc2NnRMZmhXelBOMjJLUWJDZXlWazN1MWZVaHNOQ1JLU1hJcTd1SHpCOENTTGw0bEUzQ0F6OVBTa2pWdy1rNWNUcmFDU2x1ZEplV29RYmtyaGVtS2x3VDZLdndjMmRYMnIwRktFX3NGU0dLa1U3TFpEeUF0TmtHWFZEaUJSLVR5eWtsZ25qNERRNGhsUVF2VVE4Q2Vjczl2eUhpTnhjSWtQMC0wemwzM25YZU85NFgzNWdycF84cnFDbkgteFVyaE5NNURWWDBvUG4wZktnVXVNcXI4U1kzUTJqbVBtWXZXLWhrUzRUV3lmbFFmLTZTSF9B?oc=5",
@@ -1445,23 +1445,23 @@
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": -0.0091,
-    "week": 0.0435,
-    "high": -0.4241
+    "day": -0.0101,
+    "week": 0.0425,
+    "high": -0.4247
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0191,
-    "week": 0.012,
-    "high": -0.013
+    "day": 0.0155,
+    "week": 0.0085,
+    "high": -0.0165
    },
    "sector_at_open": 82.34,
    "worst": {
@@ -1502,16 +1502,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-04",
     "peers": {
      "basis": "industry: Capital Markets",
      "n": 5,
      "median": {
-      "day": 0.04161156828795787,
-      "week": 0.0175524139375276,
-      "high": -0.20511252560225512
+      "day": 0.029786131796252224,
+      "week": 0.00834520233719993,
+      "high": -0.2100010411842772
      },
      "tickers": [
       "MS",
@@ -1539,15 +1539,27 @@
     },
     "news": [
      {
-      "title": "26,668 Circle (CRCL) shares are slated for sale by officer Nikhil Chandhok around November 9.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOa2RpYTJKUE5OSHRVQS1STTZFM0dwLWQzbTU4UktwTmN3MVZhamJicFRWanQ4WFgycFZ1LVdsRmo2V1lZazJ5dk83R3l1ZmxVTFphRDFIeEpoVFQybWZpRnpCdlNqaVlsUElpS1otS2laSS1CM0VzV0hfQURoNUpXaERfTzVYNmxhUE45SzBSRVE2cy1MRy1kQUVRaThhRUxPYlREWQ?oc=5",
+      "title": "Circle Internet Group (NYSE:CRCL) CEO Sells 56,205 Shares of Company Stock",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRHZJTFROcDlCRF9SMFJsNERqdkxWU19IXzduWUVaY0RsQzVlSGQ3SUVrLUJEX0dyZ2RNeTllV3BSNlhtRkdjWkNDZ1NoTVlibDRsOE5mdTZiZnNkYnNoMW82U0dIRHl0ZlhxRmhvYkFpbDJmWFdXaXlmTURRRWstME5Qam1FRE1sR3FYYXEwSjBrRV9zaG4xTzJ3cF9Ba0VPRFk1RDVtX0E5UlNsRzh0NlpoTVlJN0RDejdDMElNT05TbWloanF1R3J5dTJ3UQ?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Coinbase Joins Ripple, Circle in Winning Full Trust-Bank Charter; COIN Stock Falls",
-      "publisher": "TipRanks",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSzFZM0YyUEprX3VWdXhSWkJVcUFWNWhDclRpVGNTSS1fVXZyWDNRaUhyNzJwZTNzeU83N1hzQWt6T1FlQWkzOTNPckczaS1PYVVIdXdMV2hYLW5OTjBILU0wbXRhZ0ZZZHh4aUtNcXVEdnI4RU8zYTZoMTN5V0ZEbkpLZVB5Y1Boc0dhQThERzkzVmpzYW5FMF84NW0zZjhiYndsSXlPSTdpVkk0VGtPOVdyalF1YkNyOW9ISUNfajU?oc=5",
+      "title": "Trusts sell 3,032 Circle (CRCL) shares under a preset trading plan.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSndsX3ZSeW5aN0pWcmVkUUl6Tm9QYzRoeHNHN1JpZ1dIMUx0VHBDZTZXLVB1eFBMcnVqSXR6VEY1bTFoQjNkcG9nZTB1TmR3VWtDcGQ0WFNhUTkwTE9hczRZLXV2Wl90a1d5NGNzbGpXeHBVX1Myc1ZsY056ZG9sbUhXcFpnc0xSYlFVM1ctRmNTUkREZDluOEVVRzc1RHdMR3M4LVhtOHdyWkFVRUZtTWFBUmxCU0RmUURj?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Planned sales of 59,237 shares by Circle Internet Group (CRCL) CEO span direct and trust holdings.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYy1YT2EzSEt1eWVVdm5TZU1JY2Z1MXdZTkt2QWl2b3NaWXkyZFcxOWt2UXc1YVRlQTc0c2tYcHcweU1RUkZUbWZmbk10Q3RwN2tMVE5NelVRZmJwQ0NxakZEYUZEWDBOc1RrZTcwWVJyUUswQzVyUHh4a2VKVTU1SlVHZFdkdDN0SFRlMDNRUXd6bXN6UW50XzREa05oVFFINTFhNGtNNlZxZjdJM1p2SEh6eHI1VmpTTjZB?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "26,668 Circle (CRCL) shares are slated for sale by officer Nikhil Chandhok around November 9.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOa2RpYTJKUE5OSHRVQS1STTZFM0dwLWQzbTU4UktwTmN3MVZhamJicFRWanQ4WFgycFZ1LVdsRmo2V1lZazJ5dk83R3l1ZmxVTFphRDFIeEpoVFQybWZpRnpCdlNqaVlsUElpS1otS2laSS1CM0VzV0hfQURoNUpXaERfTzVYNmxhUE45SzBSRVE2cy1MRy1kQUVRaThhRUxPYlREWQ?oc=5",
       "date": "2026-11-09"
      },
      {
@@ -1561,40 +1573,28 @@
       "publisher": "TipRanks",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZkN5S3ZrcnVqTVp2RmhYeEpaRTlGcExQaHpCZThnR25hR1AtMC0xa3JBTGViWmtyREhTSXVLakktT2ZqbUlOdVRFVS1tX0M4aF9ELVhrREJlcW9raWUzRjVuelRFenhhdEoybG1PYzk4R2h4aTVfSnJaOXBoNFZMWmJJUkphOVFlVUlDd0htWU1NdzdqdnVHSGg4YzJZek5kTjYwZ2lJSWRpZmpZWFlkUzJrN2djQQ?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "Anthropic IPO Reality Check: What Recent Listings Suggest for ANT Stock",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcXRTNG8xSmJqWFMxaG02OE4zZVlhZGIwdTBHeS1PQjE3UE1LaXZDb1VNazV6aVFqLXBzNW11SDNZbEtmaFBSNkQxbUtQSEZNZXM3YjBBOF84VWp4Y2RUck9RYlFLU0V0TnJNMGZ6Q1lsX1BJdjhyLWRYcjhVMUJXU2RsdWxQRzZtSGc5c0dyWE1xNkh1aG16TnVKbXBPclkyZWp6UVJmZmRDZzBqY3gyRFpVRjIxSFBzYUgzaVlBd0gxaXZPd1E?oc=5",
-      "date": "2026-11-08"
-     },
-     {
-      "title": "Circle Internet Group (NYSE:CRCL) Stock Bumped Down to Strong Sell by Wall Street Zen",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPOW1relBobFVBNF9lYmx5cjVSbEVuQVQtRXVrRU1jdkRGa1VLTTdJUEw3UkNJNkt0dHMwYTRBeGJPWEwzcHFLMk83aTVSWGF4cEowUmI2WFd6ZGIxYmwtcEcyU05tdk9EaUMyaTlJR2xZb2pqYkdXNVlGUXh1OEQxS1Rfa0hsOXNBREFFcWVZa0syMF9pdHdPdS12MVhyY0NoYjhJZktHQ3lLVklsN0pYU2pwYVFrd1ZvamdaRDhxZjF4RjFqb3hYOXVkRGNtTFk5MEw1YkNsU3pFMWN0LUE?oc=5",
-      "date": "2026-11-08"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": -0.0043,
-    "week": -0.0623,
-    "high": -0.4912
+    "day": -0.0047,
+    "week": -0.0627,
+    "high": -0.4914
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0191,
-    "week": 0.012,
-    "high": -0.013
+    "day": 0.0155,
+    "week": 0.0085,
+    "high": -0.0165
    },
    "sector_at_open": 82.34,
    "worst": {
@@ -1634,16 +1634,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-11-04",
     "last_report": "2026-11-04",
     "peers": {
      "basis": "industry: Travel Services",
      "n": 5,
      "median": {
-      "day": 0.03989956191650634,
-      "week": 0.05964226451346555,
-      "high": -0.08679025058149159
+      "day": 0.028459834079828328,
+      "week": 0.04955306724132402,
+      "high": -0.09355698898182152
      },
      "tickers": [
       "BKNG",
@@ -1671,6 +1671,18 @@
     },
     "news": [
      {
+      "title": "Jefferies Financial Group Has Lowered Expectations for Expedia Group (NASDAQ:EXPE) Stock Price",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWVpwVVA3bHZ1MUNacUlnSkc1T2ZPX2ZvRFVnMHhTZnlSYVJpakVkeGlBS3NxNEVOZmJyaGZMYllVcjctdHFlTXZYdWJFRlgzSVlia3hpaF9VRmdCN2VIR1hfMG1tZ1VRT1AybTN2Qnl2OTI2WU1OMHNWRFNPRGQzTXYzOUp6cEVmaVA4U0NFZkwtb2pGNEd4NHU2UlVhTWFWQXRCWWU3OE9nWjJGdjdUWEVLRVBJLVM3NXdtNG84SXV3S2hMV2NfZU8zWFBoSS0zaFdVaWJMdWtCemNBM1lWZ0hXZlRaSmh0bkE?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Expedia Uses Just 11% of Its Profits for Dividends. Could a Bigger Payout Be Coming?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcER0d0lLOXFCekMtNW9tVlpPcEt2Ml9ORjBub3FkSlZVeHFEWkY0VVVUSUhXOHh6T0VaMEFjZmF2UGFGQUtzVTZHNnAzb3ZpdjIwUEtqSm91OU4zMzhCWVIwS3gtRFEzamJiZzRXbHRiSVZFc3RMUXJTaDJTRkhXeEVlblBQdl9jRlNUV0V4TnJ0UndDVWJXRg?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Expedia Group, Inc. $EXPE Shares Acquired by Hohimer Wealth Management LLC",
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNlFCUmhhSXF3Z3NSbUxuM0RHandHVVMyaFFnS2o5ckdoUlRuZjU2eWxqWVJlY0Z5RU9EZHBVa2xLcjg5b1EtblRmODhBWkZ4RFJwWHVfMVZtRWRTdlo1c3p0R3FjU0VUWlpQd2VqeW91ZS1aOFo4WmxUd1hvY1gtdU5hTEdBNm9sMUV3QzdNNTNLNGxpYi1ZRjlLNnU1M3lfU3RyQXZTMzNSd28yLXRHS3haRVJvejkwSno4eWdRTUhnS0dVRl9UM0hYY2s?oc=5",
@@ -1693,40 +1705,28 @@
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTDVva3FEN0o4WWlDcGpNRnJUOWtGLXVtamtUUGVlQ19GbFU4NDhJMFlpQUJocTBITUJXM21NbTE2SEE1cDUzMlZ4TnJyU3BkVE1WSjU0V01aR2V1bjFKYlc5WGloUUlMXzVUcFpNcW1CXzgxWlp5V2plNm9PbGJJMVBnckZhYV9iTFVLREJQQWVESElXRWFTak1ndXJ5OHUwel8ySG93M1Zac2FIRllEX05WVVozcHNTeDYtUEdYM0c5Vnh0bXhpZ2Y3Ulk?oc=5",
       "date": "2026-11-07"
-     },
-     {
-      "title": "Expedia Group (NASDAQ:EXPE) Stock Price Breaks Below Two Hundred Day Moving Average on Analyst Downgrade",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNb0s4Y195SjQzSkVkZjRjcjNJMUxoVmlSTDYzallpSENTY0pEY1I2R3dGQXhEVTJFemtvVXRLd2tLdG9HQWdYc3ZoSU5qSXNXYlRPcVpWYl9YZWFsMUdnQzkzNUEyQkJHOFlCejIzc3dxVlRMV3BfWmdUMlJCZ3NnYlFxQlhWdWtwMEZvVHJ3djRCZFh0ODVSb3BNT3RBQ0pXSVFjV0p1bHBNR043NDlfbm9TU0g2OFVoVTN0SnQxYVNSRDNsT2JTZ2FlWWlmdWtla0huSkFSOUI0LU1ELU84ZHhhd2Z2QTJRcnZyaElLd2R5ci1p?oc=5",
-      "date": "2026-11-07"
-     },
-     {
-      "title": "Expedia Group (EXPE) Stock Price, Chart & Analysis",
-      "publisher": "www.debelegger.nl",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6RzJib1g2TlprSE5DT1BoVUFPSlFxWDExN3lLeXV6TzRWMU9JWjQ2ZW9rSndIaUYzRktlYXFEODgwcThyejdJdUVpcGRET0Y0dzZHNw?oc=5",
-      "date": "2026-11-07"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": -0.0003,
     "week": -0.1332,
     "high": -0.2358
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0236,
-    "week": 0.0286,
-    "high": -0.0225
+    "day": 0.0229,
+    "week": 0.0279,
+    "high": -0.0232
    },
    "sector_at_open": 57.62,
    "worst": {
@@ -1766,16 +1766,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-28",
     "last_report": "2026-10-28",
     "peers": {
      "basis": "group: Hyperscalers",
      "n": 4,
      "median": {
-      "day": 0.034039683355323036,
-      "week": 0.07161116993897698,
-      "high": -0.11215590702196537
+      "day": 0.030604181705485733,
+      "week": 0.06607211632636789,
+      "high": -0.11767706854832499
      },
      "tickers": [
       "MSFT",
@@ -1802,62 +1802,62 @@
     },
     "news": [
      {
-      "title": "Alphabet stock rises as Google expands AI chip lineup to challenge Nvidia",
-      "publisher": "Invezz",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQenBOSVNFa2tOR3F0LWptU0hQbjU2M2VVTWNqODlRS0VmTGdkOHRBYVBEZHFHRHVGNzF3NzE2OThGQmRTblhmbkhJQkowaTBXelJhZnliMnpmMHpfcndlX1JIOTNTbDNLZHE2MHMtenViajZIcFg4VHJiU0ZCbV9NLXR3QThUM190TEFVelVCMU9xOTJSZ29IWU1Wdms4UEJ1cG1JVFkxeE1Na1FtQmc?oc=5",
+      "title": "If I Could Buy Just 1 Stock in November and Hold for 5 Years, It Would Be Alphabet",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVm5PRDJuVlBqSFU1UUhVTnhCTnlVZ2lLQi1scXYzd1ZDbVA3T0pEQU56X0o5MzgtbjhpMV9jVHBvS2RHY2RRZ0dkTHR4clFCVXFSdEtoUDRqb2xma1VydURDZjEySVB3dFloSE5Zc25hMkVvZ3ZnTzNsQzJYTGFYSlMzMDNRbUpnbV9wdTYycW1zY19SNnhHUg?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Alphabet Almost Sets a Record No One Wants",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWkkySTZMZjduZEhhT2FRT3lhb2dybW5qbFAtT0JsWUJBQXFFYjRDNDgxcWhIc0tmSUhkbzVOM2UyT0RZN01pT2locWpLeWtlTVpWWjhfczZCUGZXODNuNGgybThHVVhpOXo3bHgzX2xydGx4WUg0TVI1VlJHYkY3dmN4RlMxQlZGN1VSOEZR?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Alphabet and Berkshire Have No Price Gap Between Preferred and Common Shares [Preferred Share Discount] 2",
+      "publisher": "\uc544\uc2dc\uc544\uacbd\uc81c",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11Rkx0MFFVSXg2dF9OV2FiMS1PaVFJNm1SUUtlZUp3UkhFUVA0b0pDWi14OVpYWGJ1MWpmSXhtV3hqZjFPX09mMHhHUE91VnFNQ0g0Umx2X3hHTFJwZjdDLS1mZVA?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Qualcomm Stocks Jump 5.82% After Alphabet Discloses $548 Million Stake",
+      "title": "Berkshire Hathaway May Have Sold More Bank of America Stock in the Third Quarter",
+      "publisher": "Barron's",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNV2FpLURCYkVHLVVNQUNCSmI4bHFoR3dzdDNkSmhvVnMtb2dWaFZPbjFNbVFhYnVOc0dINllFZGF3UV9vREtmOFFFY20wNXlPNTFtbWluSEtLOXdHVHp1TUZoOElFM1RnV1Z3RjhJTGt2WWQ0YVhUMFZwRDhlT1NYXzhKbEQyTkNlSG9CTS01V1FjSDNDLTV0czV4bk11UQ?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Why Alphabet Stock Was Moving Higher Today",
       "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOY2RpbVl3YWI0Mk5CVDhBVlZ4M281RFFVYnlZZWdaTzFvNUlqS2Q3ejA3RTFHVE5uMDgzQzNmZTFBZmZWU3h2bUhNZFNSazFJRVFpZlBBTlc3bGJMZDUyTUY2RGcwdm5nS3R1eTYyaEV6em8yV05rM0hocE54WmJGMXVweWVRZDBsN0M1MmdzbFRXa0ZJ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONkRETjZZLUZwSFJpZ0ttYm5VMUxUTGx6S3lpbENBaEl0cEFnQ01sbjZncGhfTFhOR3V3NFRWTG9UblpsTzAtSVNDbUFLVnRmbVJEU2ExM0VlVnlwbzhlWHc1aV94LWlTUE1FZG04ZWxZbGRUM3ZnamJpZ0QzZXBoNlQzdkc2Tkw4X3FZNWctZllnZGEyeHhMNW9iREdjdw?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "What's Next for Alphabet Inc. Shareholders After 7.13% Stock Drop? Glancy Prongay Wolke & Rotter LLP Explains Securities Fraud Class Action Lead Plaintiff Deadline",
-      "publisher": "PR Newswire",
-      "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOYmVwaGFMRTcwSDllMkZkRlZvdllVbHg3eTNhbm5JazlyOHJQYzBrRmFTejZqSl9CR2pKSGpoc1dZWGJPcTlkSWR0TEN0dGRxUmwyRnQ3WWQ5WmZCT1RYSlVkRHM5dE0yN1JZRHpVT09HR0ZweFg4YmxicDVoNE1xRThlUEZqeTE5NFp5Uk9tSXAzcWJUTDczOXZKdEtfdnVqbTdRXzdnejEtRnZtOU5uODRsVlZ3emhjRFpXQUZmWUNYbXpIVlh1eUQ1eHFvT0FobnlPV3lDWFNNZE1kdHBwRGhNS0VUTzFrcGp5SlRuUHNMRGdVdDc5MzZDbEZCa0puWXpmdGlQX0RqMkEzZjBQRkdqeHRWUFd0TUZsOXJPMnF2YThsd3E3TDQzOTUxZXdYU25yTGhkc3BQZw?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Alphabet stock drops 19% but remains a buy amid institutional shift to quality and strong cloud growth.",
-      "publisher": "Pluang",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQODlJaEtpQ1B6Wlc3b0xSTGs2Tk1ObURicWhLU3h0eG5QMXY1YVhkZlVLZ0xLdjdjR0tCbXo0SS0wSTFhZW9SM2Raem11d2MzVFgtNDVfbDBzWGptZE80TUdUckE2ZVl4UDFCSWZzdXh6N0hDVmg5R01FRmM5UjB6UndlMmxjbVhqcVllcG53WVVGZw?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Google Widens Buyout Offers to Five More Countries as Alphabet's Spending Plans Balloon",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNanlxRVo1MUJGTnFHVElwemp0TjQtUWtmZTZnRkxLVS15aHhKWklGTDJGR1FNODFDdVdMNU1Wckh1U2ZqSG9WcElWUWZ3WFlsZ2JCc3dtSVpGWnBkaWJHOHJQWkdWUVJJOU9JRi1EZ04weUQtb1ktcnhMMGZDQ0NYb0VyQUlSQkdCV1plcHBWR3J4OFZDVTBzWHVfSENaUFJIelBhZUI5MHJ5WGxsQjZfV3AzZlFLN2lXdmU5eklpM2dwUnpxNWlCR2hqMWRNbjFOcW5wRUljUm5JdkRySk9iTmpQc1hRMVN1RXRfNDg3d3Q?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Alphabet Stocks Rise 3.16% as Google Unveils Two New TPU Systems",
-      "publisher": "Yahoo Finance UK",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBEcERuUkZ0b2kyZkJNQ0IzR2lOZlM1REVRRkxGblFYQkM4Uk9HRUpIV0xYUHFXQnVqbVhfcjlZTkdWMUdZdDE5MmlnRXF6Tnd5eEwxTXVLT0tsNC1QaTlRTTM0ZGUwRzQtR0NLM3NhMnpHNjJOVW1jRl9taWExOW8?oc=5",
+      "title": "Why Alphabet Stock Was Moving Higher Today",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPend0VEtuUDlNbEtDVGNSU2ZwS2lsRXV3SjY0bHB0WmI1Q0k4ZG9XLVJidWNzaFc1U1hPSERwQmdkdlR4eFBNSmpQYjYzY3lWR1l1bkctM1kwM2lqNXRhUHZVSi1SSTJ1RWhpOVBKTTh1SzRSREJQQl9qdGR0eUV6WXZtNXItMjU3VFJqTkhB?oc=5",
       "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0118,
     "week": 0.0328,
     "high": -0.2843
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0291,
-    "week": 0.0676,
-    "high": -0.0894
+    "day": 0.0288,
+    "week": 0.0673,
+    "high": -0.0896
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -1897,16 +1897,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-10-27",
     "peers": {
      "basis": "group: Energy",
      "n": 8,
      "median": {
-      "day": -0.016319659745378412,
-      "week": -0.09078708059538526,
-      "high": -0.14902578155810825
+      "day": -0.00564364530820044,
+      "week": -0.08369689028289562,
+      "high": -0.14177886251338856
      },
      "tickers": [
       "APA",
@@ -1976,23 +1976,23 @@
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0121,
     "week": -0.0867,
     "high": -0.3046
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
    "sector_moves": {
-    "day": 0.0105,
-    "week": -0.0793,
-    "high": -0.1165
+    "day": 0.0101,
+    "week": -0.0797,
+    "high": -0.1168
    },
    "sector_at_open": 108.59,
    "worst": {
@@ -2023,16 +2023,16 @@
    "verdict": null,
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-11-03",
     "last_report": "2026-11-03",
     "peers": {
      "basis": "industry: Insurance - Property & Casualty",
      "n": 8,
      "median": {
-      "day": 0.0003487334999804914,
-      "week": -0.013277705544774365,
-      "high": -0.031918013132835266
+      "day": 0.0010482333372207053,
+      "week": -0.01080053162776573,
+      "high": -0.03239754280761886
      },
      "tickers": [
       "CB",
@@ -2063,6 +2063,18 @@
     },
     "news": [
      {
+      "title": "United Fire Group (NASDAQ:UFCS) Director Buys $237,050.00 in Stock",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNnpJZjBZRHo2clJjbGd3akUySW5pWE5zVjdQWXp2MXZrRGhHMWl3YjVRUUlhWjhFRkpERGpVbkhBdXFTOWJjWkpDWF9oOFV0XzhudmhudnVPVHJmYk81VDVNUGR5ZE5JNlR1QjNmOWNQMmItQ3JTcHFfbDhaZjVmMUQyU1NYdmFobnRBT25iS1pQV19GSzBJSjVrQllBLU0za3ZVRkpGRGtWc0VOdGF1bFF5WC05QUxneGlMNnZZd0I?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "United Fire Group director George Milligan buys $237,049 of UFCS stock",
+      "publisher": "Investing.com Australia",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbGhRWnNMY1lDRHJQR1ZZenI5d1JsMDAzTTlESWZIUlVLbzNMSFhjNWQwR3o1SWlfSDQ3bHVYVGxEMmVmNVFZWURMZFRkSTBVYlBaTkRrZWdHRnlUSTJSODRDTTRhS05paS0wSDZZcXBRcDRqVFVKczlFY2ZMVUhySFJJMTZ6bk5nTy1TamVfOG1aWjI5cDRvdnpNalNUaHBrSVpTMk1TZ2REQXFvX2xBRzFVTmFqOVI1Y0k2eTM5OEUwRjJfNjN2Tw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
       "title": "United Fire Group, Inc (UFCS) Stock Forecasts",
       "publisher": "Yahoo! Finance Canada",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWGgtYjJVSjBDR0RvVlFiR1hiVTM4dEdGcy16c2p0bm5XWlBzaUtSOXY2bnhicG9fekRJY1hMT0tqNGVmWmFkUUt3UEV2LWE3TjRxRC1iMUNrb1RBQ2d3U1JmbFRBS0J5cTJCUVB1anZOb2pvQXE2OHItakxvQ21WS2F6Sm1tczRPUjVpZ3YyOUV2WVk?oc=5",
@@ -2085,40 +2097,28 @@
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRW5WOW1TSVFLbGtVbldnV1NZZFJIb3JZV3NzYmJadTk0YVJpQ1diT1VDOG8tRnp0WloybHpPVzFPblFaYUZlMEY1bnNVbkZ4b0JUbkdlRThvM2FvSGdXell4NjU3ejhhY3RoM0U2ZHFUck9fN1dKdVJ4WmhBYWw0emh2RlpBZkZBVVVWeVotSnRaX0tHb2thZ3FxaTZSb0JXb2NiVURwZmFldWdWWGtNbHZNRzdCaWVMT3FxYk15ZTVyMldDWDRLYTZpejE5eVdq?oc=5",
       "date": "2026-11-07"
-     },
-     {
-      "title": "United Fire Group stock posts record nine-month earnings despite Q3 dip",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMW5pMnpaOEZxZkE0RnBaeVk1YWgzOEkyalhSVWh5czNVLUk2anBRbkdBempTalNyZG52Y3JXYTlzVG1CSzNtQkVCWlpCS0h2V0NQYkdKcXRKYUdrYUdKNUtPZEpPTnNhM19yUHd3UloxMl9TV1A3OUJtbWdTTDZzd0wxbHNZa0FicnhGWFg3VEpha0lsQVkzcUw0b0dENlRGeDdwaXRrVzlWdVlwQWl4QVB1WnNySkdNOF9JUzFfMVBxX3hVT2p5YUZB?oc=5",
-      "date": "2026-11-05"
-     },
-     {
-      "title": "Piper Sandler Has Lowered Expectations for United Fire Group (NASDAQ:UFCS) Stock Price",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQME5vN2czVHpRYkxaMVAxRXo2T3JRc1cwOHBtMzljSWJMODFydjVack9wSG9ESWdORS1LWUcwTTQ5TVp5T3BpS0NHUlJSYThwbDZuMXJDclNYNGEyUU5HMTlhZG5aMnN5WHl5UGF1YzU1Zk9PQ1FVaEtjMElwZjh4TWkxd3hmUzFpY1VSd3NfdFZQZk9OT2RXbUNpcWRPb1FXOGp1Y3VWS29VUzY2RlJVSk9XcmFTMjV4ZjFQZGNaT05keGNDSHRETUF6REc1QmRZTE5EWW9tU21vSi1iWGdV?oc=5",
-      "date": "2026-11-05"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0239,
     "week": -0.1438,
     "high": -0.1573
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0191,
-    "week": 0.012,
-    "high": -0.013
+    "day": 0.0155,
+    "week": 0.0085,
+    "high": -0.0165
    },
    "sector_at_open": 84.89,
    "worst": {
@@ -2158,16 +2158,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-11-03",
     "last_report": "2026-11-04",
     "peers": {
      "basis": "industry: Oil & Gas E&P",
      "n": 8,
      "median": {
-      "day": -0.0051523953916224885,
-      "week": -0.09394150646879834,
-      "high": -0.1868396671250082
+      "day": 0.006668500597429183,
+      "week": -0.08706960502458405,
+      "high": -0.17659140018576924
      },
      "tickers": [
       "COP",
@@ -2293,16 +2293,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-04",
     "peers": {
      "basis": "industry: Software - Application",
      "n": 8,
      "median": {
-      "day": 0.008643421456871914,
-      "week": -0.027060750929005617,
-      "high": -0.2195289914693646
+      "day": 0.006892669103092941,
+      "week": -0.028643310274350908,
+      "high": -0.21816497000182533
      },
      "tickers": [
       "SHOP",
@@ -2372,23 +2372,23 @@
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0276,
-    "week": -0.0003,
-    "high": -0.6076
+    "day": 0.0273,
+    "week": -0.0006,
+    "high": -0.6077
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -2429,16 +2429,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-04",
     "peers": {
      "basis": "group: Software",
      "n": 8,
      "median": {
-      "day": 0.008593853824372943,
-      "week": -0.022302659923022217,
-      "high": -0.1915017176331381
+      "day": 0.00613300061218669,
+      "week": -0.016834265086679234,
+      "high": -0.19163863618394122
      },
      "tickers": [
       "ADBE",
@@ -2469,6 +2469,18 @@
     },
     "news": [
      {
+      "title": "INVESTOR DEADLINE ALERT: AppLovin Corporation (APP) Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit - Kessler Topaz Meltzer & Check, LLP",
+      "publisher": "PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNY2VaVjlBQ0tWYVNkZ29wZHg4aVgzbFdyRzlyWXB2Q1lMRmNCZXdyQkdCdE9kdFJ3RWlyaGdmWWxRTXE2b0F4UTlrSDk0bWxaZ1BEYmlwZm1YR3llWUFQcEtld01ySm9sM3o1T0JmZHc2M01XcGFRc0NIRmFOZmlxUVNhdnFfRzA5S3RQWDRQX2s1OHNVVFRMLVJRdC1qdF9pZkZBeGNZT2pwM1N5TDZOYkxGYTZ2WVFPSjZ5Q2hXdy1zTjQyTURkZ1l3QVpXaHlaczdjek0za2pneV92ZkFyUlBPZVQtN3EwR0dNRlRRQzhWVmgxSUR5SHB1N3F5N21XMW1XUVZacU1YalVfREVKVGROdTNsTm8xMlVmYTU3SnFSVC1TcUU2OXZZamNyYTdNamNSbkJqWW16aS05Y0FfQw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "AppLovin Corp (APP) Stock Up 4.8% and Still Undervalued -- GF Score: 88/100",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTWpBSUtqRTdHZnNYaEhybEV4WUs0SW8yT3Jyd3JWTHU1ZUsxcWhpc1hyRThuTFpwU1NLajlrVEYzdGtSTDFrTHRmQ1B6cl9xX0Y5ZzJvc25Vd3hjTzBuNkZpV1VmM3oxOUpGV2dDNk94S2hQTndaYjJWX0d1QmFXdGljTDdiRC1ORzl1RUtoUE1sODNNMHZTOE1xTTg3aGJqSTdlVVJ6Q2s?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "AppLovin Is Up 71% in a Week: Take Profits, or Buy More?",
       "publisher": "TIKR.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUHhaU1l3ekEwNFVLZkRwTVlrM3BFdExzTG5wNzNGVGRiOFpXQlowamVGLW51QnFWOVAtdlF5a3Z5cEtOSlctc3FyV0d4WFMyX0pTWmRRRy1iekhhR3lrUHZkeU8wT1U0czJiN1NzVWdRMEQ1ZlpQdmRoZ3RVa254MDhzbXhHdw?oc=5",
@@ -2491,40 +2503,28 @@
       "publisher": "TIKR.com",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa3c2bDNZQXkzRU1jdFhiYkJ2UkR0VGFkZ0ZJMW84d3BCd3c1VFZMTk5zMUNIWGU4bVVqbWhRUEZGck9fQ1NKRTZySXhhRWEzWXhONG1MOVFNSTlGV3lDZFd4aXplRWxVQ1BVYnFLQkc2anV5eGNpQ05wb2NmXzRETmVzM0R2SlF4TWJfV21sNXpkc2FuYUptYm9lbVhzcXdVWkVyc2tVWU0?oc=5",
       "date": "2026-11-08"
-     },
-     {
-      "title": "AppLovin stock seen as fairly valued after stro...",
-      "publisher": "Pluang",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVUwwcmk2LTNzYWg0T0RBWXkzNUMybzVJcTJzSlpxMm9zdURKMV9fS0otWk5TcDEyY29VamlVblJyY3pHcktHRWlLVVpjTmR3bk5XaGNvWVpYa045cWlldDNEZVhiYWZXMExXUWIxdzlkX2d5TTNUZzlXNGtWa2VOWGhNZXNTWldYdEtfTm93QkJQT3BzTEJNQlN6TGQ?oc=5",
-      "date": "2026-11-07"
-     },
-     {
-      "title": "AppLovin: I Missed A Once In A Lifetime Opportunity (Rating Downgrade)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaV9yTHRFa1NfbjdlZ1hpZ3RBdEFtZDhjTzFLYy1VcmhUejVlbENLNF83RjMwWlF5U0lsclViNF9yblJldGhZejdhRm05MDBINGFxUng2TmNBNGNBTnVYU2prZVRZVDJBTU54ZGhnZmZmb05ha3kzbG8yZ3FYSGJkMGtmX281V0k0OUVXVFFhVnlBWEdEdFpFMHZHeFV3R05Sb0RoMUx3bFBhb2Mt?oc=5",
-      "date": "2026-11-07"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.048,
     "week": 0.7916,
     "high": -0.4411
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -2565,16 +2565,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-29",
     "last_report": "2026-10-29",
     "peers": {
      "basis": "industry: Engineering & Construction",
      "n": 3,
      "median": {
-      "day": 0.08781576320638829,
-      "week": -0.04893601153849214,
-      "high": -0.2476415761627413
+      "day": 0.09351072984231967,
+      "week": -0.04781224855471622,
+      "high": -0.2467526007021017
      },
      "tickers": [
       "PWR",
@@ -2600,6 +2600,12 @@
     },
     "news": [
      {
+      "title": "EMCOR Group Inc (EME) Stock Up 7.3% and Still Undervalued -- GF Score: 96/100",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQc0VpeFBtbnRHOUx2WWNIX3lKTWR2Q01qb2ttNERFTUVneTUyckZvNDVSM013eGlyb0dxY18xSHN1RXRveF9MZzlORkR1cmNJUkRFZnpFSlphNVpGUzJuYV9uVm9pbnNNek1xS1pJcFM5cndnTER5RUs3X1lnMXJtOGszVmRxVm5CVnV5b3l0bmJGMXRQTlQzNWNsNm1FOTNrMG8xVnlreVY0VWc?oc=5",
+      "date": "2026-11-10"
+     },
+     {
       "title": "Can EMCOR Keep Its 10.5% Adjusted Margin as Project Volumes Scale?",
       "publisher": "TradingView",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMXd0Mm1QUFZRZ2tGcUlDVlh3OXRhS285Z3MtRlhWVGwwdjI0YXJNM1dscjJKZzhGNWdhajA4WHJWUnRIcV91TExhdkYxQ2hvSFpuY2c2TDkwR0ZWeG92aTR4ckJORlFkbklJZU13Wk1EVnUtXzhhUDZaeGxyNV9NOEozSHZIbktMOC1oS002YVJBcnlqc2hpSklqdUtqcVFzajM5cm9kaUItMWRubGJBMmFndjJEVVhIOHl0Rw?oc=5",
@@ -2610,12 +2616,6 @@
       "publisher": "Simply Wall St",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaE5iNFdhMW53VUlkTmFnZjhiVXVOdFRhVG15WG40Y19qcjY5alZzZTlxSGNQNkhFS2JKb0RSWE1Id29kQ05wbHZtRFVYc0dLaEtjOHFqT2MzeVJhSDk3M0lCWll3YTVqSjlDUElWSV9GaFlyc3E0QWVYMHlJakZETktWSG13VDN1YlY2aEZURVQ5SDV4NHphVWRTVnBmVnk0TmF3MmFjejNNeWJyLTZGMEVobzZCcmlFODY4X3h1bHU2VVZVdzRZWVlEZlMyVklzY2fSAdIBQVVfeXFMTmhOYjRXYTFud1VJZE5hZ2Y4YlV1TnRUYVRteVhuNGNfanI2OWpWc2U5cUhjUDZIRUtiSm9EUlhNSHdvZENOcGx2bURVWHNHS2hLYzhxak9jM3lSYUg5NzNJQlpZd2E1ako5Q1BJVklfRmhZcnNxNEFlWDB5SWpGRE5LVkhtd1QzdWJWNmhGVEVUOUg1eDR6YVVkU1ZwZlZ5NE5hdzJhY3ozTXlici02RjBFaG82QnJpRTg2OF94dWx1NlVWVXc0WVlZRGZTMlZJc2Nn?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "EMCOR Group, Inc. (EME) Interactive Stock Chart - Yahoo Finance",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE44UW9mUlpTRU5qam40N2F5RlBod2J3eVY3TkNzLXpSSE1rd1BsWHJIME15MUZ2QVc5akd3MzJBYXFtRmJyZkZBTzRDOUhtRXVjMUZSZzdPWEM?oc=5",
-      "date": "2026-11-07"
      },
      {
       "title": "Emcor Group Stock Price Forecast. Should You Buy EME?",
@@ -2639,15 +2639,15 @@
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0728,
-    "week": -0.0439,
-    "high": -0.3083
+    "day": 0.073,
+    "week": -0.0437,
+    "high": -0.3082
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Industrials",
@@ -2696,16 +2696,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-09-02",
     "peers": {
      "basis": "industry: Semiconductors",
      "n": 8,
      "median": {
-      "day": 0.05701609905132954,
-      "week": -0.04011325092623963,
-      "high": -0.2828196902810592
+      "day": 0.06438398776691745,
+      "week": -0.03244297720441236,
+      "high": -0.2850418886129306
      },
      "tickers": [
       "NVDA",
@@ -2736,9 +2736,21 @@
     },
     "news": [
      {
-      "title": "Broadcom Shares Jump 9.5% as Kubernetes, VMware Moves Spark AI Rebound",
-      "publisher": "BigGo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5mWmpJQmZOWThuZjBWQktfX0JiTHNjOUZQZ0tfVnVFNEhOWEdWMkw3aExJQmFRa0pKODFCTFhUaDdETDZpZWJtX1h3Sm9aa0dQZEpKbDY4V29Zc19NVThOZHh4cVUwMGR6N2Q1ZXY2U1p1RnVGRFE?oc=5",
+      "title": "The Real Winner of Google\u2019s $135 Billion Chip Forecast: Broadcom",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcTRqbERrbUhpcDhYRVpXUWxpOUhwOFZZV1pTcjExdGt3LVNpY0Y1TC1fZ0htc3hNOHpoRTE2cXJneXVCT0dqRjhibXo0MjNLX1dFMEtwOWRXNUFvQkZwUlVpVTJDMzZXbWdHWjRIZktVMUQwdERielFiRENnS2w4WlFEb3VWYy10Q08xMGl3Smo?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Broadcom (NASDAQ:AVGO) Shares Climb 8.8% - Should You Buy?",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSjlROHY2VHNYOUx2S1Bmam5xMmxvNTFSTTdPY2pVbU5FeFhrSGFJczFHRGNON2E2MkVZV24xS3pKTHhqVjFGLXNzd280UWxhUzIyRklyQkdRTlN4c1kwc2tuNWFhd2tEc3BZUUg3WHBCQjQyRGQ3RDlDMWpfeUxqQ2dxNGh5SnlPUVpNUDROT0VMVWUzMzE1aFlCLW9UbXRsSkpUdXR1Y3BrSjczWTJudg?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Broadcom Shares Climb Nearly 9% to Close at $319.48 Monday",
+      "publisher": "TOKENPOST",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE41N0JGdW1qRzlMLUttX0FOT3hLZXJWck4zeTZwVlJIUHUwdk1HQnRqQWp1X1Y4OEc0RXdCa0RLVEhuUFhrT2pwcDhjbmYzem5uV0JhZWpCT0YxUQ?oc=5",
       "date": "2026-11-09"
      },
      {
@@ -2748,50 +2760,38 @@
       "date": "2026-11-09"
      },
      {
-      "title": "Broadcom Stocks Jump 8.21% as Investors Eye $21.7 Billion AI Revenue Guide",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPM1NyNGZfV3oyZ2Y5b0hDdXhCYVpnbnhscW8zcnFFNnJmaDlfU3JUcU0zeVlGMmQwb2laZkZnQkJ1QzdQVXhmcUVaalp4R3drTjJQblczMEFydUwwTXA1WFlvZzNSLXJZWFRya01ZZzIxbHl1ZkxBX09TMmRDSnZET3pyb0c2WTdrYkZHeFlvVGZxT0twZno5ZEtTT3FnaUhPdkh5anJWTXN4enY0M0RFVEtPOUlfSlJRSFdSVVVneTBsbUtfMEZsbE1sa2I?oc=5",
+      "title": "Broadcom climbs 9% amid AI and chip stock rebound (AVGO:NASDAQ)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd2gzZTlaR3hLRkkzdUl6bV90LWtqWnFVUy1BOHRyRHRlZHJKZ0RwdVNNTFRZdFhsek81NzVkOVZ6aUw2a2lHY2plRFFRZW1oU05XbC1sNjVocUVpYTB2WVhwVUF3aDlpVGRNLXdOWjNxeDVyc1M3Q2VERVB4SmttZkJTVlM0b0xZT0pWdGhfanRldFR5clVKRXVR?oc=5",
       "date": "2026-11-09"
      },
      {
-      "title": "Semtech, Entegris, Monolithic Power Systems, Broadcom, and Applied Materials shares are soaring, what you need to know",
-      "publisher": "The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPT2VpZUNIX3FYSmE5NW4yOHBOLUpoSl8ybWNpUHBzUkJ4R05Wci1ya0NVbllUNFFPdlc4RXFYa2gyVWFZU0tfU3NCSkVZc3hDQ0NESVhjSXp1TmxKQnY3OUVuWTFkbU0tVEVpMHBXcGFhTFhaWHk5eUo0X1hDa2FLWVVSbFFfWElBZUQtbUR5X0I5NE9uaGFKWk9tMmRkSm56cFJXd3dOMmxidTZTOWpxQ09LTTltVC1RVndpNEFwVmYwVFJPajQ2VVZ6MkVMLWoteVhLRHJtb1dlcWVyZGF6eElqdWZ0cnpjRU5zeG5fZ3BIbU9SRlFDV09mam9iR2VPZVlqUTBRb1ZUUlo3NFdXTWJHOVI0bHZsSU9DRjlTMkNxOG5H?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Semtech, Entegris, Monolithic Power Systems, Broadcom, and Applied Materials shares are soaring, what you need to know",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOMjlVek1xekNCNUhoR0hrRHd1cFBic3RyOWpNNmpoZnFXMnJvOTMyME9waUVJaTVjajBVR2RuNGJSWkxPNkpKU0l3bERiRW1Rb1c0VmFDZnVOMEFwc0pjTFcyTDlYNHlzeGp6ZzN0aHZtUGhIaFo1dC1LakwySDNNR0xodTcwWmtaNWt6bXEwdHhyU1F2R2RfZjlXLVFlTk5TdmZ4X3ZheEhhRkRoRGFYSVUwUzZpZHJWUVdTNUt1cmlCM3BZWmJSektSRkJvZ0RyN3p3VnhYa2QzZ3MwSHhROS11bVlqOVRUbzVseUw4bGRKX1lVMWxoeWtPQ3lqTVh5NGdiSQ?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Nvidia Gets the Spotlight, but This AI Stock Could Steal the Show in 2027",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMWM2dmdfQzNyLWtkeENEckh1QTVTX2dwTHVhX3d2emxXSXZSRndVU2Ezd3ZZbmFXbmhKeVJZM1NTNFlYdDlzbEw4Ui0za1VOTmkzS3l0MkwtLWp4SG1kRVcyWVJGNlIwQl9MWEo0eXlGUVozNFhONDc4S2t0TWs2czQ0SHdaNVJ1VWVDeVVOTUNsbHF5eWJ4YnVn?oc=5",
+      "title": "Broadcom Stock Now Trades 32% Cheaper than a Toothpaste Company: HSBC, Cantor Say the Gap Won't Last",
+      "publisher": "Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdFZ1SDVfUm90STZHZjIyZnQxVHVhbllTZkdFWmJZWkVKbllNUjluUTJ4MTVjNGZxRThuYXRmR3doV1g4Q3FZZTlMWlNaakdQb0x0MEY2TW9mTUE1LXc2Y0hnXzBYaG4xcmJ2bHlrMEVDTXE0d0QyMEJ0RUpIdndtS1VJYWN6R1ExVzZZLWRQVnc3NnE0TVZGZ1dsRmlfWkk0djQ1SzFRdHd1ZUlJODhvOFFCdw?oc=5",
       "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0878,
     "week": -0.0085,
     "high": -0.3366
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -2832,16 +2832,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-28",
     "last_report": "2026-10-28",
     "peers": {
      "basis": "industry: Semiconductor Equipment & Materials",
      "n": 4,
      "median": {
-      "day": 0.09848077664646326,
-      "week": -0.02395997866938765,
-      "high": -0.4909766992648147
+      "day": 0.10891003704103008,
+      "week": -0.0190459828073547,
+      "high": -0.4883817021966523
      },
      "tickers": [
       "AMAT",
@@ -2868,6 +2868,24 @@
     },
     "news": [
      {
+      "title": "KLA Corp. stock underperforms Monday when compared to competitors despite daily gains",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZGxqOGtsY0s4dl95T1lNTjFxRWpiVXEtWmxxQTJvR0hrWnkwN1NiOC1hTnozQ3R5LTFORndlRHcyUEhBelItVHY5WnRjcWxYbXBGTDI2WVBHck1hdHVwNHZ3X0llTC1jYnVha3U3S3ZhM1NsZk53V1FVSmVKY2dFMlRKWEZ2Uzd6bHJfWlI5TzN0WFUtalJDcnlVMmNocGFtaUtuYjB5b21MT2JfQ0E4bVNubzJjVDN6RUM4VHNLeEROeHdnZDhmMW13aTJfYVJrSzk3WnF4QnhBWUxP?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "KLA Corp Stock (KLAC) Closed Up by 9.31% on Nov 9: A Full Analysis",
+      "publisher": "TradingKey",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUXFPUmN4eHRwdVUtWGYyWGZHajRjSHJEQUR5bzNkR3hwd0htcU44NkFDY3VUaXhKRVduTWUydzZ5cDdjYWdOUFJzS3VSa2hKNmdQcDRzb0dtakdmZ2dNSGZBVzhVTU9uSTU2YmZhYUNvWGVuWFRnNzdzakhuVWlubTNKSmdzODg2NzIw?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "KLA Corp (KLAC) Stock Price Prediction: Bears have the short-term edge, but $135 is the first line that matters",
+      "publisher": "Blockchain News",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQnZSN0pxSmhJakE4UXhzVkJsek4yT2VoeEQtaTQ4NTlMb0lHRFFVTHpGNkRDWkJrbFlBVE51dTJyekl0Z0lzODRxVnowUFptZy1mQTEzcUNlYmpDaFVJcFBhb2EwbTZleDNrdnlUczZLWEZTLWlTbDRtTUpHeTAxZ1FrYjNSckNDT2V1U0JqZWxsMnZI?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "KLA (KLAC) Could Be 38% Undervalued As Strong Results And Guidance Land",
       "publisher": "Simply Wall St",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWGNLQkx6QXIxUjk0YUN3LUdhVjJ6OXl5ekRuX2xRekVMbDdmZzRNWThvYWp1ckY4TElqMXlLNzVPanpqU1J3UFR5aUw0eHV3UGgySU4tUktwVVNSdzNnV29YckhjMUFLdExUckJnb2c5TFFBN09oNXJTQWszMXJxakhJREZjV3JEUmYwRjVwcDdmdktQMzlLSE15eDJEckxRU2w3MjVPS0pTY0hBQVFVS2NUWTFaU2JaSW9lNVhzWGFhYlRwX0RJ0gHMAUFVX3lxTFA2UkZvYW9VNG1TUEdRX2xUcC01VFdVZzlFa08yeHZjVm80T0R0eE1Lei1FRmU4VnMwYm1qcTNQMkZQbEhHZDJqS3hQd3pmS011M0tsaHBhTkU1VjRNQl83dGRXM1FUUVZac0N1eDFKSWhudTZGRnBCUVpsOFhRbVlESk9LM3RsX01hVl91eUdMZHFoMGRlbDlQOVZ4dl92eFdoTVBGaFFBQTNFUGdDNkNOYUtSYkx6Ylk1c1VXa2NrUGR4WU9ONmxOcEo1bA?oc=5",
@@ -2884,46 +2902,28 @@
       "publisher": "Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQkFxOGpsMUxpOG5KbUVuRWd1aGZyci1rTGhuTHJDcHY4Sms0Qkp1VlNOWVlNS00wdERCN2dZa183cHZVd2h6SnNSUmdPQXJ1QVkzaUxDUEpyamNfcHNHdFVZSzA1TGlLVVNtX3N2c2lFZHEyWXd1MTZ0d2QxWkptT0xOcmI0UQ?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "KLA Corporation stock faces fund selling as shares trade higher",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbmhhX3B3ZVpabHd1WG93U3BNVDRORXZ0QVQ3ZnlNYktzUjJiUmQxWTFNTVZodXJTcHQ3NXdGR3RDT2NYdUt4a0JRUW5zbmVraHRPUzNWdm5XODNRTUk1M1RfM0lsX2FDTGNDYmZCRThtaWJpR1JXbGV2dW1iY3JmdkhwNUJrLS14eHFLNDNuaDVmT19yWG1lcjNTMkFzeDN1clk3X1YzVkhYNUlXckhnRlZ5VkJNZE9lRmhPMXVETUg3cGJN?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "StoneRidge PMG Advisors LLC Makes New Investment in KLA Corporation $KLAC",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOX1U2WDl4d1ljaDBBbVVyLUlzSXh2UWp1TWRvNnEtTWE4dUVNcDZYQVhPRHJXM3EtTjdocFpZcjNRUjJhc0oyMWJjaFlwS3VQUkdNWFI2dzNXMlBsMVUwWUNBTDNtYXZGbFd6THZ5TmZqaUUtc2dBLWVKcDI3TXRBWmlDNTdlbTBvbEsyanhoblV1eW1vaHdZZm9NYVI3WlRnRkVpeTVsODdBSFJodXZ0UDM0c1dqNTBmSWt0N25YWEJOeDAyQVRnd0pkUDBNdw?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "12,651 KLA Corporation $KLAC Shares Purchased by Elite Wealth Management Inc.",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRk9tQkMyX2F5eXVvOHYzaldfeXFnbTh5QjVBcE1rZkU1dU1nVEQyMTAyWWMwRW0teHZlazVwTmpBQVIxdU44U0ZZclJxZDhDYk5yeDh5aEM4N2ozUG5SZm5IY3hnZ1FCZk5EU3NXRTUyUVE1MG9uYV84UGoxWEtYZWs4Y0ZWWHlIaWtXSlJtRXVMb3FzTno1dTI4TDU5cEMwbk0xQzdtWm1SWTB2RUhfQlFncDMwZFlrNEJzTFVmejl1VUJ3WkQzUUNldXpWZ21P?oc=5",
-      "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "alert",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0931,
     "week": -0.0113,
     "high": -0.4983
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -2962,16 +2962,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-02",
     "peers": {
      "basis": "industry: Diagnostics & Research",
      "n": 8,
      "median": {
-      "day": 0.028777524984941905,
-      "week": 0.0494331212163418,
-      "high": -0.004308861860124913
+      "day": 0.02837248811710702,
+      "week": 0.04883423553835553,
+      "high": -0.00444057879186871
      },
      "tickers": [
       "TMO",
@@ -3002,6 +3002,12 @@
     },
     "news": [
      {
+      "title": "A Look at IDEXX Laboratories Inc (IDXX) After 4.5% Gain -- GF Va",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNWdqbVpNVUpWMFQwUmRaaWhZWjk0ZmxBb3ZpYXY4UjluSmVFLWdsUDF0TTJqeFkyUzVkUzdDS05fWDVzTFZ3MUdvNHBUOW91S0J5OXVfU2t1ekhXVFVaVFBFMEJNQk1peDROQkJNS19tcHRKS1JpcDJHSl9sb3RUWkVTSHdmdE8taDQ2SFh4THZsRUZBeTVTc3Q3Z25mNTVHQXZHM2paVm9SMGdHODBXdXV2UlZVRFNaZjNRVA?oc=5",
+      "date": "2026-11-10"
+     },
+     {
       "title": "How Investors May Respond To IDEXX Laboratories (IDXX) Raised Full Year Guidance",
       "publisher": "Simply Wall St",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQYVpiRWxMWDF5RVNaV1VqckpfLVdzMTNKQTFuRU84VXBVMVgtMjh4UjloLU9wSDlHMDVqZ0JiSkZlYVhVUl9qN0Z5ZEpVS3hLRi1kUnlLMkVzbTQwMDZPa3NEektKckVlcmhrR1FCakxlQ3JDNUcyM21NU1lwQmE5bmVOSndqUzBibDBXQjZxT0ZyZjlFeFFhUWllOHQ1ek9VQy1sOVZDYzhYd28wbUxkek1UY285dG5IaVUxcElqUmtRTF9HSHFob2lVSG9pNDl2b2R2ctIB2gFBVV95cUxOQnNRajVLRVBxMk9DV2RSemwtWkY1S0hNUW9OdGFVTzhDYV9PM2ZGYmx6QmljOUdwdW1GNFhteEhwOHBpRTE5SmE1VDFRT2w4aGR1bTZxTWU3UHRlTmRYTk9aTnlKeFlwdk9FaFJPWHdfSFJnbjk5Y1QzYnhzR3B0RHQ4UmZqR0ExZkQ2aUpPWlBkRUN4U28xN2NnQjJNMzNNWUh1ZnRtR290X05ZNXdxeGpfWHRYWjJrSjN3OEdEMTZBMzdRSnFockZtRkFpVlBNVHg0X3c3LTQzUQ?oc=5",
@@ -3029,12 +3035,6 @@
       "title": "IDEXX Laboratories, Inc. (IDXX) latest stock news and headlines",
       "publisher": "Yahoo Finance UK",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uV0hIM0tTSkFub0xKbDJPUkVvM2I3VWwyby1mTUFFZ3FxTDRqUEZTVHRQcmNPdkJnV0tMZE1tRHZFb2kyU255eEVnRHZ0dUVwZG9QTloyLW8?oc=5",
-      "date": "2026-11-07"
-     },
-     {
-      "title": "IDEXX Laboratories, Inc. (IDXX) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zZU1Pc1dxUGlYV2dCSUM4Mk40YjByeTd1UTMydTJHVTdEeXFCaXAyNmxEcC1aUGt2OWNfN3h0RnR2akZMajJ5cF9FbFlqSldXN0E?oc=5",
       "date": "2026-11-07"
      }
     ]
@@ -3096,16 +3096,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-10-01",
     "peers": {
      "basis": "industry: Packaged Foods",
      "n": 4,
      "median": {
-      "day": 0.009062326454086556,
-      "week": 0.015783894683003452,
-      "high": -0.13296565197061994
+      "day": 0.0032012608284109345,
+      "week": 0.009141125416268436,
+      "high": -0.13808747906971236
      },
      "tickers": [
       "KHC",
@@ -3132,6 +3132,12 @@
     },
     "news": [
      {
+      "title": "McCormick & Co. Inc. stock underperforms Monday when compared to competitors",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTnQ3OFFGVWZ1eHh0MDBWU2FXalpyUkp5QUVESklXdi1ETkxFaS1NMmFLWU5sNEU0Q3drOW56clZBcUJUdjJXOEEwaWhQazU0TFJ5Yk5OOGx4dHNHV2xuWlJWZ1NqbUl5dmNtVjdvM3VOczg4TE1pNEtYaUdiaVlVSWtmRlVvcE1OUDJyTlhPWDFVYllXLXRKcEt2ZTY4Qy04TUt4R3hHV2gzcHg4YzdXMVNpdVpVZEZTOHRJYXhTTlprWEs1NHhQdWkxOXZUSDczQzdxM1RCQVd6RlJnZk1zWFJuNFE?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "McCormick & Company, Incorporated $MKC Shares Newly Bought by Hohimer Wealth Management LLC",
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZURHZ2dlazhqQVQxTHBhNG1nMUtCbkVVcUJQVEs4dnY1MlBKNC1yQmFXTTFfN2tXdlRodklPUEdWSXVCUkg0TGVpanRfelpxeDlfU2Y0a2FEemJ5eG9Ra3dZMzFOWlV2R1V0WDlkNG1vRWI1cXZPaE56c2V5ZEI3MGNqaEg4TkswbU1RQ25sWWRka29KZlZJaUh1RmUxZkVoUWkybVVYVTFOQzBPNTdiTEI5Q21laDRrLTdQVWwySUdaT3ZuUllxaWk5YU9rbThTSVowTzNrTGtMVnNfbkxBRGdB?oc=5",
@@ -3156,38 +3162,32 @@
       "date": "2026-11-06"
      },
      {
-      "title": "Sumitomo Mitsui Trust Group Inc. Sells 52,243 Shares of McCormick & Company, Incorporated $MKC",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQTE5bXVOSDE1VjFzVGpqdWJnRmtjMzZLOU1NaTRtSU5VaGpVQWczdDJkNTZ6VGN4OHU3Zi0yYlo1c3VxdDVrQjRJUzI3NG9hYmRoSWFxaVhQYlctSlRSTGtqLWdleS1UbS1waUZXQ3IwWnJMQ0ozSGcwdmdwdWhRTVZ3UnNJM2cxTzNkVEYyclFNeUM1cGxLbGp4VTB0MDJEcmkwR0JZc3hPbUR1cFB2NTJzY1JxV3F5UGw5UGo0bUhXczNwY2FYZDMwMUdLRjB3VFNHMjJRNm4xV2VGd3dSR1lIRQ?oc=5",
-      "date": "2026-11-06"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (MKC) Stock Price, News & Analysis $MKC",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3bThaNlh4SWFYZjh4WEM2U0hSLWIzVGFCYVFwZzlNN0szTFkyRUcwZUF0Wkk2QzhHZnJXdzdmeGRJczQ1LUJDLVRKMG5aaFgybWgxZHVn?oc=5",
+      "title": "Mccormick & Company Stock Price Forecast. Should You Buy MKC?",
+      "publisher": "StockInvest.us",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9Kb0xseGlFWkt1R1hka0pyZGFyQlpVRTZnRXhjTVVXWHVsMGVCRGs4akN5T3BhdEZpd1RsSTBlQWFtUnE5WHFV?oc=5",
       "date": "2026-11-06"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": -0.0107,
     "week": -0.0193,
     "high": -0.3318
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Consumer Staples",
    "sector_etf": "RSPS",
    "sector_moves": {
-    "day": 0.0116,
-    "week": 0.0097,
-    "high": -0.0292
+    "day": 0.0113,
+    "week": 0.0094,
+    "high": -0.0295
    },
    "sector_at_open": 31.53,
    "worst": {
@@ -3226,16 +3226,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-08-25",
     "peers": {
      "basis": "industry: Software - Application",
      "n": 8,
      "median": {
-      "day": 0.009535683938525219,
-      "week": -0.02727049832432127,
-      "high": -0.21969397822635034
+      "day": 0.006892669103092941,
+      "week": -0.028643310274350908,
+      "high": -0.21816497000182533
      },
      "tickers": [
       "SHOP",
@@ -3305,23 +3305,23 @@
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": -0.0096,
     "week": -0.0394,
     "high": -0.5001
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -3360,16 +3360,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-09-10",
     "peers": {
      "basis": "industry: Software - Application",
      "n": 8,
      "median": {
-      "day": 0.009463117171855218,
-      "week": -0.027381650887595754,
-      "high": -0.22001005393250755
+      "day": 0.006892669103092941,
+      "week": -0.028643310274350908,
+      "high": -0.21816497000182533
      },
      "tickers": [
       "SHOP",
@@ -3400,62 +3400,62 @@
     },
     "news": [
      {
+      "title": "Congress faces year-end deadline for cybersecurity and artificial intelligence legislation",
+      "publisher": "SC Media",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbkhLaW9jMEFtSFBPMk8zZ1h3M3NFZmJ2X3VRUXBXUnE2SFU0dDgxelJjaUQzak5UZEdXN0hDYjh1VjZIQUM0NG1odlNGdzMyaEhaZWRmczdwMVloNVQtdnBRb3UtcTFSa3VXdU43d3QxYkNoaWpNY1hzWHQ3VmZDb0JlVWZRdV9ObWdMQ0QwaUtmaVh3TWNVV0FhQm9UMWNhVjRwTWlJTFFpQjR2Q1dTY1ZGcmN3ZS0yYm5qVg?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Longtime kids clothing retailer The Children's Place files for bankruptcy",
+      "publisher": "ABC News - Breaking News, Latest News and Videos",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSHppZ1lLWlljTS1nemhVbGRZcnZSQVVHYjJHb0doTkdEamVWVDlZMGVTX19WR2t2RXhPZXY4QUxYVGJObG5NSWJNSzd5T29WWmtzSkxUazFCSHlBNkotRTZQQ2Fzclg4X2JTSTNYdG1nLXNqRGNUazg0aEtCMHZqVkxkQ3dtUDdqMjFwR1daY1ZmMm4xODVsMGhCakFYZnpsUC1LeVFUdFdsZEtMRW9sY3N30gG3AUFVX3lxTFA0LUJ1Qml1emVmVHppVm1CRmJMMHVyQ0dXaG1KTU5ObzVUcFNtWXgyRjBQQ1YxLV9aVVpiODBfOXVCeUdyTnlYYTRpejVJMXdabkY0QXlPbHdyRk0wczZ0a3pfTmZKUHhORzNVeFNiVmxtOVMwZ2RDMXRpY0ZYMklvWU0xbzBvc0dyNGFzTkd1N2ZqQ0ZONlFwY3FEN0FVemRLYW5vY19RUDRfN2xzZkxiRWxEQUUwdw?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "How Investors May Respond To Adobe (ADBE) Disney AI Partnership",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWll5R1F4Q3FFZXRqdXl3UDB2WjVpOHJRcWhUZmlEbF8zWWp4eHFZaFZCa1NmbWc4WlllX2I4ZWR3b3pucEVoNHdiQ2NlbkJRVFVnaEtrQlJtNzhEclJTZUw4SktHcllBbDRWT3ZUR2tTMkRjWkVqUlBoZE1MSHhUVUY5YjhXQllCVC1pQnh6QURQX2VXM1ZzUzMzSG0?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Hits to center of head are more predictive of concussions for athletes: Study",
+      "publisher": "ABC News - Breaking News, Latest News and Videos",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORGxzV1RPejdsNGZQblhiWjQyZGVJUVJpZVcydkkzMHBENVdqc09LMFVMRDAwQ2RzcE5PXzQ3ZHJQZmROTjVIVUNCeFFRY1VmLXQ0QmxhMWxSVzVMdjh3bnpEaDFyTzVRSHdHYjd6bVlFcjl4RHpSaGNyU0VLLUJva2RXS2lDNXpoTVBOYVZSczRwZ2lYYS1aaU52OVp3SV9pLWfSAacBQVVfeXFMUFItbW9TRkEyb1Q1X08xSG9VTGhHTHVOOFhJWmEzOXRUclFKNHdXbHh6cHlKcTZ5bDY2SWN5LXRaVHdoYTZqa2RuOFNmemhmVFpWaHRNQm9ja2xaazFza3RiYXY0aFY5akJUa250cDd4UkdNQ1RxSDFFeFdGZU1CdnA3WjZXeUtVRVNPNFcwMHI4ZkFNNXNFcW9aS3lxUW9BekNYaWFnWDA?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Is Adobe (ADBE) Trading At A Discount As AI Partnerships Grow?",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWXBLMUFxSXUtelhvQ190TVhUblpCYzd3LURIZkdxNVFOUFB0MFl5MG51RFNBTjVhb1BqY0tDb3pnSXlFbnFtN0FtNmFRUGE1bXJ5RmxSRVBGT21nOHZOX25acE9mcmtqbVdTaWlUZmJSTnZWd3dwak56czV6NkNMXzhlV05fWU8zNlF3R1l0cWh5TUR1QlFLOEI5bmpMV1NJcUtLRHJtenhqRGNncEEycjFPZzZ6LXRTUFNJZ1A0M1LSAcYBQVVfeXFMTnZ6c1pJS3hpRmxQQ0c1cDJwU1pMSkd4WnVKWTVLcENBMFNWeGhDSmJKSTVySTRIZ0VLZDBHRDBqdVFWWVFpZGFOX3YyWTF3NnphNjMzVmNqQzNUNUVVZ2ZMMmlvckFEWktLX0hTNEdBOW5TOHk0bEIwQXJsTl9hd1ltazlMRWxQR09PRE9Db2JzeVFwVnZ6bzRYX0lfamdYNmRhMkR4blgyYnowNS11Skw5SVdNRkYwOVdmRmJRM05XeHAzOWRB?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "31 Retro Christmas Ideas to Bring Back in 2026",
       "publisher": "www.bobvila.com",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBGT1EwVXE2RThZS2hCT2ZOa3FHNzJPLXNwR2gxSDJHY21CT2dEXzBvSnBPMDlnRG5oVjBaNkdpUzZ2RUZrZHcySU1XQkVOVDEwdW1SMGd3Z3FPM2k0U0c2b053?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Proposed fixed trust rules could be broader than existing ATO framework",
-      "publisher": "SMSF Adviser",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ2EteXZQdGxIREQycnNkam5aTk9yMWxIVUhoVmdJZDBmdzFZU3liaDlQNUt6VkFiMVRPV0d4MDhNNDE1UUd4RTgyenNNOHRkd1VFYVZnWkQzcWhIb3dCZjNGeGdlcEp3NWtkd21uUnFwTVU5dGd4OTdtTWNGcDBTU193bVg4NW1sS1otb1MtNWR0b0QyU09oMHFkeTBiNzhBMGc?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Disney Taps Adobe AI to Bring Its Iconic Characters and Worlds to Life Faster",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNV83ZUR5blA2dzMtdzl0WjlTbVkwNFpWQkp6Y1BNUXUtbkdjM1BJLWsyckVEc25GX0cxckJyUDdpb0pMd29aTk5wbVRUaWdGTU1sa2hxdURzOGgycUpudXM4OTlfWTZMYllmWFN2cFpNSmNLMGFQa3RDdkU2d1FzTUV3ZkJfZ1RBZ3RJR2EwVjlFVktpX3FaNlJSTjJXcDk0eG9WbER1UXoxZ2VUeExQaTRPTkU2UGE1MjE3UzJ2ZFR1TmZJaE80cUw5bkx6TmdJcnZTQQ?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Fortinet executive highlights security risks of AI adoption",
-      "publisher": "MSSP Alert",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOM0x5SXhfLUN6QXpKMDMyWmZSX0VXOEtzbVJJYUk4cFV3bmZ0bFRqck5yUXloaUR0R0c5dGI1cXdmbmdRbjNjOGRlb0ZwX1hBTFpQb29fMFBPRmNFUWJvZTgyc3Bva3RNWFBCb1l4VVVwbEc1QjRhZDNNd2E3UmJRcDNaOVlIZndkVDNhYnh5SVZYUmVSOVE?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Adobe stock faces deeper AI growth debate after Citi downgrade",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNWxac2NfcE9aMHBYUWxJWkZnV2NHT3RRSmxaZzhMRVkyZjhLckw5cUdTWGdrR3pkRkhJTjhPWmRBZ0JZVndZRWhjX05BYllQOG9CZUF0bjJCNzVBajJMQ1J0dUVNWTgxcEI0eVpvZUVJUDhZUGE2a09WQ3FYWG1aWkU3YUk0R0hGLUtkdDd6cjZoMWFCX2E2MkxpcWtOSk9qUWRyTnN2NEdUa210NWFNb3h0RXRyQ2gwamg4SXViV1JSSG8?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "EasyJet axing head office roles ahead of \u00a35.7bn takeover",
-      "publisher": "Insider Media Ltd",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMkx1Y0I1SmZLUGNzYzRmUlQ5eTMyZnNoeWx2ZTRvUE9pUHlncFVBMzdBMHN4SHN3UXhabHB0eDlBcWhYN0FLemZNSDZIVWJtbnVDZkgxU2gwZWdCN3ROQ2lPemxHbWNzQmxhUGVSZTdaamNncnVfT3dhS0RzbUI5ZkxVZFUySU1HZjhEQnNzakpoY3lpUTliT1pCTTBxSG8?oc=5",
       "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": -0.0083,
     "week": -0.0563,
     "high": -0.3362
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.039,
-    "week": -0.0293,
-    "high": -0.1385
+    "day": 0.0386,
+    "week": -0.0296,
+    "high": -0.1388
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -3494,16 +3494,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-05",
     "peers": {
      "basis": "group: Consumer brands",
      "n": 8,
      "median": {
-      "day": 0.018963788099885415,
-      "week": 0.021492296121563115,
-      "high": -0.2039582393799514
+      "day": 0.009763002109045127,
+      "week": 0.014912442619789412,
+      "high": -0.21004214715613234
      },
      "tickers": [
       "AAPL",
@@ -3534,6 +3534,12 @@
     },
     "news": [
      {
+      "title": "30,000 Tapestry (TPR) shares are slated for sale by officer Leonard Todd Kahn, valued at $4.08M.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRkhNNUpsTHNjU3JCRlN6cmk5YkJuNjF6Q1JmWFlrVlFIeHVmdGNZejlfU25XUU9CMm8zeF9HZmh2UUJSaW5FRDJ1Y1Y3a1FJQUVRazBicEJFNEpRY3pkdjJlVU1RaFU1ci1ReXlBM3lhU0tXdEJfdGxvSE9JcUF4cmxDWUVWNW9PcXptekZ3QTZXdw?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "An officer proposes selling 55,323 Tapestry (NYSE: TPR) shares.",
       "publisher": "Stock Titan",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWjhlM29sYlR2eVJUak1TZEt0dHdMWHVwcWpYRUJIWEFicjdhLXBtUjlPQmtWcDBTOEg4SVpDSURKMmNsUkg3MFhTTWU4MkNBM21QNFV5NURINU81dmJJcG9ISUpiLWt0SWZPdGY5aC0wcEhWRU1fTVBxNTNHOWdubjhUaUlxNVdWYjNqcWZJVTJ0Zw?oc=5",
@@ -3550,12 +3556,6 @@
       "publisher": "Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUUlyNWFjY21WcXVxRFZ3aHZFNEMyMVl2eThOSXA0cVJwS0NGcVdsNXA0SVBXMTVySFpGbDYyVDBtSl9XYnNfeHpCMEV2aXVobWhlUFZ5QmNPNWZoQjUwT25oRFRVc3FWcThoN0ZHeWpwdTRBVURvM2tIdkZQSVFsb2VraTJ4cGxWLVo1UVRkLVRNdVZpUE5PdUVaQy00eWhO?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "Tapestry, Inc. (TPR) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zRE1uR2hiOXFOeF9pXzRUZ2ZJZ3dXVnJjOWJVcUIycFc2dEdoc0taOUkyampHZUJJbE1teVR0SDJYcDhtWFU2UDQ1MU1zWXlu?oc=5",
-      "date": "2026-11-07"
      },
      {
       "title": "What Tapestry Holders Saw Early",
@@ -3598,7 +3598,7 @@
     "high": -0.2943
    },
    "provisional": {
-    "cause": "Industry-wide: peers fell -20% too (rates, sector rotation or an industry worry)",
+    "cause": "Industry-wide: peers fell -21% too (rates, sector rotation or an industry worry)",
     "lean": "temporary"
    }
   },
@@ -3620,16 +3620,16 @@
    "verdict": null,
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-11-04",
     "last_report": "2026-11-04",
     "peers": {
      "basis": "industry: Medical Instruments & Supplies",
      "n": 8,
      "median": {
-      "day": 0.023293601618813775,
-      "week": 0.06241630875120063,
-      "high": -0.0862445782938901
+      "day": 0.020589057327423888,
+      "week": 0.06062365828937877,
+      "high": -0.0930729574970181
      },
      "tickers": [
       "ISRG",
@@ -3660,6 +3660,12 @@
     },
     "news": [
      {
+      "title": "LeMaitre Vascular Earnings Call Shows Strong Growth Ahead",
+      "publisher": "TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQekNzTzRCYXNORjFPbUlqN2lXQnpZTGV5ZktoWks1WGFBQUFhNThXai1fV1oxQmpvM1llRnJkcDBJcEwzZEkzM0s0M240Zkdpd3ZuOWt5VkV1cUQ3bTNhbnJ3ekhYZTRnMFhpTERYdWtLbFd6ZGF6UEZVZ0ZxWUJya215ME1lZnRSRWZSemdDc2pRNDVDT0NVa2RzWlJ0VDNuV2JhTVh1NDlqQ2R1Vnc?oc=5",
+      "date": "2026-11-10"
+     },
+     {
       "title": "LeMaitre Vascular, Inc. (NASDAQ:LMAT) Stock Has Consensus Target Price of $105.60",
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVFBYUkhLVUNBd21oc0NPRkN0LXU4M1Y1TlNRM2NVOFBWQ05GU3dkOF9jNjk3bldpVDZtdWV5a05aM2dPUFZZdnpuZTJsUVljbHNXR0ZkZk1WRnVyTXdRUlVkeGtCSUQ4R1c0aFFPcDJ0dW1rZm5kaGQzWVBZLVpOVnBRM1VvSXZoaUIzV3M0aXN6NDAydk5qaVBwdTV5Tkh1TFlLT3dIZUZDWmtTajdhQ3VZYmNRMVIyZnRGVndESFBEZm5VYnE3QndmQXF1Z3dyMjBtSUFB?oc=5",
@@ -3688,26 +3694,20 @@
       "publisher": "Yahoo Finance",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQldrUHBuaVE0aGxTQUJMbGR2aXdCcUJiTjRRUXM3ckdBWmtVOUNKRFUxbDFCRHhQMFUxT0lLSmI1a2o2aEhvb2FxRVVQSms0LUpVLW1WU3lURGwzclRQX1NMcllRdUZjY1lvSVJndWUycExTY2RxbGsxaENXdmEyZFJraGlqVVFzb2YwQ0NvQzl1UkdIbzFkbHVjanI3ZlJoUzFv?oc=5",
       "date": "2026-11-07"
-     },
-     {
-      "title": "LeMaitre Vascular (LMAT) Stock Could Be 16% Overvalued After Q3 Earnings",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOemZmVFNzNVFPNS1aVmF2dVlFbHhianNpVW1zR3pPR01yN1VyQWNpU1Fxa1hvbTJ4OWtvb2VMUG1zeEpETURyREhORG90MnJzM0tMNTV1aUNnVzcyeFpZMzkzaXl5UDlRQWpyT3FoWk9hQkJZeXlwSHFxSHlYUTR6TDh2Rk91SnA3V2dQR2dkRjNQeTdheWc5cFJCR0NLTUJBVkYxS3MxRDM0YzViMUlVYW50ZUNzQXREbk0tSVlmS2d2YXA0UHRDYWdINDkyX0l5UmJxYdIB2gFBVV95cUxQa1BFaTUzMnpZdWFILS1NTlFxMDZYZFFlblZnNkJMYlhGUWEtT2Rzd0JxRUh5bWIyUS1hYng5Z3Z1bTNObnhGdzZoRHNJbFZzamZaNlAtS0plZl83VXhyZjBvYWNTTENHajR1SHF4cGxXTVFPUjI1MElkRDVkVlBxSllITEw4Z1JBc1dFWmd5QW1sY1RKOV9QMmhsTlFVdmk5RjlyZXZGZ1JNR2t2OVFaNW9KUVZqMzR0ZlVDRWd2cXFQYUg5TXQzSmNqN2pVWVpfTUpvdGs3RHhwZw?oc=5",
-      "date": "2026-11-07"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0033,
     "week": -0.0012,
     "high": -0.3086
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Health Care",
@@ -3754,16 +3754,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-10-20",
     "peers": {
      "basis": "industry: Entertainment",
      "n": 8,
      "median": {
-      "day": 0.01567378743816794,
-      "week": 0.06074729386728561,
-      "high": -0.11628972000367643
+      "day": 0.016365555083222683,
+      "week": 0.06560053373098229,
+      "high": -0.11156913569801713
      },
      "tickers": [
       "DIS",
@@ -3794,6 +3794,12 @@
     },
     "news": [
      {
+      "title": "Netflix (NFLX) Stock Quotes, Company News And Chart Analysis",
+      "publisher": "Investor's Business Daily",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMFBNcXNENVJ6WDJ6YktMdUpER05WX0lhVjh4dWxlMjh5OUp5VHhxQ2E0X1hyRWp6RW8yZ3JjcENGZmtSVkR0VkU3SDVWUzFOYmwzVU1OMm5aRV82a2dyTjhEQjY1ZktrTGJkU0hVYkxoei1HS1hGQ255RGY5UkhvSi15WFpRcUFZUFhOR1I3S0MwdlRCUENaSS1Pck9JX3lRbXc?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Parag Parikh Flexi Cap adds Netflix, exits Meta: What changed in its October portfolio? Check latest stock picks",
       "publisher": "Livemint",
       "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOVVZlNmh6RWdKUF9OZDVCRWpBaUtma3FtRTdrdDMtWHNmV0s2NF8zb0JnLURidHV1ME5wVGRacTM1ZEFzei10LTAyOXF2NXllSUVqQnNPRjRuT2lncXREVUk0cGdPWXkxSURpQWFsNklvc2ZGNnE5ZmROa3FPUW1wM3pfNmdkZV9UTmRXWmY1a3lYckxpZEk0VHVTenNKVXl2a1dqemtjSUw0MmV6ZHV6ZFY0WFh3VmR6Q3JFOU1INUpza1NDLXZrd2tkUTZtNEhDTGR0VWdqMnFfZEZnS2VIbW0xbmRDbUpJcUFIb3FKT1Z4bnRPSldNVjBHT3BlaVI1Z1dJbjhyNkLSAY4CQVVfeXFMUExrc0xfX3ItNkR6NTROVHBjTlh6S29qRDdXTlNzLTkzYV9JcEltalNTSl9zT0ZBMWxEeG11N2FON1ZXYXhndzBPQTJVb0RaTW5WeXM1dWZCMHZ1d3VtTlpPSHppNkl2bjFrdzk5WmRMX2pUdFJKTGdseTlkQUR0M0k3N05uaUlIWjlEMnp0aXFKYjJMcmdZX0t2Mk1hWjVkR192T3dBWnIxN3NlcGtGdmFScmQtTG5LR0hqSHhHbnZjTld0Q0JHTUl5SHl1dmdnbjFnaWR1MVVyQi0yR21HOEdDNTVzQWFIU0dsYy0xX1VabURFMlpNVlFTeURNdHJPUnZ4dklYNWYwTHl3NC1B?oc=5",
@@ -3818,38 +3824,32 @@
       "date": "2026-11-09"
      },
      {
-      "title": "Netflix, Inc. (NFLX.MX) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NUU00Snd4WHI5cy1RYmdoeXpLa0FWN0RiQ2FDQ0hIM21hTkJyaHMtVlNld3M3VkFZUUh0ZFlndThxendxcU13eXlvWnhhT1dsR09QZUJB?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "17,422 Netflix, Inc. $NFLX Shares Sold by StoneX Group Inc.",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNGF1Wk14ZktEZkkxTVdObGlnd3pIT2dTNGE0cVRHbG1YRE5lTWxuYXo2SFk5VG5md0ppeFNISmkxbWZtLTdCSlQxNl9iZGZ1a2pIcDh3c25EWDN4TDhxcXFYcDRrTHlLZC1IeEtHZ0EybloyYWE2ZFR5dmtONkRtT29BUVFGemVjcnR0eEdjR3oxSUk1Q0NlWmxfRXB1dWdrc3BMQzdEYmNSa0NIMmhKRjN5aWNjdw?oc=5",
+      "title": "Netflix (NFLX) Price Prediction: Momentum is weak, but support is still holding",
+      "publisher": "Blockchain News",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQnpUa2RISXZjLWhJUkNuNXAtSkxkenhia2lMNlFtU0JTbDRYcFJMTE03anZ4eG5EQVJMeU4yNzIxSjNIY0N5R2RCM2tRUXJ3a0s0a1kyWXI0VzVJSXB5NFhSSVZLb2dWcllEVFhiUVFZNjVzX2hEOXZGR0JWdEFqX3M1ZG9pTzdKaHpqaVFfdTJWTVdEYnc?oc=5",
       "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0085,
     "week": 0.0258,
     "high": -0.4475
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0291,
-    "week": 0.0676,
-    "high": -0.0894
+    "day": 0.0288,
+    "week": 0.0673,
+    "high": -0.0896
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -3880,16 +3880,16 @@
    "verdict": null,
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-09-03",
     "peers": {
      "basis": "group: Consumer brands",
      "n": 8,
      "median": {
-      "day": 0.01780533775262072,
-      "week": 0.021492296121563115,
-      "high": -0.16804117646182803
+      "day": 0.014060925704994842,
+      "week": 0.014912442619789412,
+      "high": -0.17102134305890676
      },
      "tickers": [
       "AAPL",
@@ -3946,7 +3946,7 @@
      {
       "title": "Why Is Lululemon Stock Falling, and Is It a Buying Opportunity? Here's the Answer.",
       "publisher": "The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOa1lLTUwtOUhWZkUwakE0N1BkejYtTXlsM1NDQ1dzZjVwZHNUOHk1YWVQRlBvd2ZiNTEwYV9JbndfN3ZLVzNKdDllQ18wMVJVbjZDeHEzNnVMbmJMUkZEOGpzWUxPZWoyV3pQUEtNUnNHU3haTDJCQUhQYUtBRWdEdmNxcHhGUXlhVnF3ZWlJMk9pSU9ZczZoS3ZfX0NyZ3NxRElReVdMcnlsQVFYY2s0X1RCRTNtYlpWUTZ0cWlvWmZ3dHJSVFJtR0R4dW5zTE9GTWNRcGVPMFpyNk52bTNwUUJTbHdEMXhWOTVOeFZCQU5LN3Zx?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQSnpVa3VKTXRpaDdfaTlVUjBGTG1yazZaN0F5clNJb2xqSTV6aUdBbjdzMUQ1VnRuTG9DWEJQTVh4SndEa21keVhqY2xOcWlieVRjS0VPemVzZmFNNFB6d3JNWnV1NzZRM3pJSmQxZmJ6cG1ISDJFUTgxT2dvbUI2RXFsTHY1ZEh4cWZSRks5S2JMNnkycnVkUkI0VDcydzFtemxhSEY3YjIyaEpsZGNfLXAwMzJONGdCcUpmRkRENU9WNDZuY1BLeHNhcDM5RjRTeDEtXzJJTDc3S2ZFa2JQdlBLc1UyVC0tMXFUNld2ald4REloa3c?oc=5",
       "date": "2026-11-07"
      },
      {
@@ -3959,23 +3959,23 @@
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0157,
     "week": 0.0436,
     "high": -0.4787
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0236,
-    "week": 0.0286,
-    "high": -0.0225
+    "day": 0.0229,
+    "week": 0.0279,
+    "high": -0.0232
    },
    "sector_at_open": 57.04,
    "worst": {
@@ -4014,16 +4014,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-03",
     "peers": {
      "basis": "industry: Travel Services",
      "n": 5,
      "median": {
-      "day": 0.04101565888517378,
-      "week": 0.039855079782774805,
-      "high": -0.08531925221163206
+      "day": 0.028459834079828328,
+      "week": 0.027313252872425586,
+      "high": -0.09355698898182152
      },
      "tickers": [
       "ABNB",
@@ -4051,6 +4051,18 @@
     },
     "news": [
      {
+      "title": "$1000 Invested In Booking Holdings 15 Years Ago Would Be Worth This Much Today",
+      "publisher": "Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTF90TVp2N3hGclZTZGRzT1lBVktfS1dueGJlTjNTZ21rTkR2NUNEQlMzTnZzeDlSVmJIV2J6Wi1LYjNNbXBBMldvOUx1dDVPNmJuZkhwZEMyS0NtdjMwS01FRktNMkVxcUNaU21SRWZfZ2phQkFfYVQ5WV9hSjZVU3k4QzRSbXJ1di1aTFFfOTRBSlNIS0Z5RGIzMW1zYUFmd2hsVnVHd1dRS2w5RHg4MG11OXI?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Booking Holdings Inc. stock rises Monday, still underperforms market",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUEZWWks4YmNUSW1PaVU0bUg0eDZqcV9uVjM5RHpuLUlaU2NueFFxNTNOdzVzUF9uRnFGSFd3M21UNkY0SEFiVE1OWG5qV2RoMk1Ba1BKUDFtcUg2NmV1R0paYS03TjFFSWYyT2dPR3lnQzFHQkNvcm5PdmJwQzJXNktMYjZGc2ZzaXdTSUF3dlFVd0IzU20tRlFCZEJrdmRKRXJJNFJoQkxwdUMyeWhBLW1xNlAtd0F1R2Y2amV0Y3hzU1ZKeDd3aC15ZnhKNEprN0hJLUlMVFVPV1Fn?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Booking Holdings stock weighs strong quarter against softer outlook",
       "publisher": "ad-hoc-news.de",
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPXzZwODJidkV3VHpBcXhwNm8zdVpxSDI0aEx0VDQtNE9RTlROeTEySXJLMURsS2lJcHZiZzVyeVA0bVpESjllYXg5Y05NQWZGTllTOHA5ZzhUazl6ZEpnTUJyb2VNQ1BmT3VWMW1McWxaMDJjaGpxQ2Y5Q3NicmUtR2JyblIyNmJoQ3dyZHQ4NUFJT1BrRTFwUmxBdkRNSEtSX0hVa3ZWU0VVNlhoY296MWtZTTFuUWZmSS1wWXptS0FVXzRwLW55ampn?oc=5",
@@ -4073,40 +4085,28 @@
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaV9pYzZ5WHRwajBRU0Y5V0dPLXFtT3FLMWRmbjlCTWhvT0UzYWxsZ19Yem9EcFMtVThLYlVyTWNuRExaNWVXWXJPWmJGc3pzYUVUdGRVa0steE1HZy1iRENReUpHVnMzREVkaXF1VFBlWUE5QTlSY0ZQb05IaHNXTGRVTHVUbWdqb2lvbERBb0dWQmRITy1MVTlLSGZnSDVRbzVERTMyMjBEcFFxcGxhSkJGdnNpQTF4MFZKYjY1cm94TDVSaDA1NWRBREE1UmdKSmc?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "Booking Holdings Inc. $BKNG Stock: Kestra Advisory Services LLC Grows Holdings",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTjN2ZGNDY3VIOEZhWTY1ckVFTjB2TEhxYlo5WVIzWUZFZnp6M1pWZ0M3MXp6MDdOUHVBR0VjRGZrd3hsX0c4TmVmeFl0VU1LYXBfVUdWYmhsRlBsR3JaNFd2NEdWODdPRFp6R0JEUWFaWVZ1Vl90UG1zbWJ6X2ZFaVNJTFJBTWFseHJXcVZGNEY5UFJkcG83TF9qNHl3cG11UVJwTzVic3djcnNlTFVQSTllNWdiZWFSRDJzd3VfREl1ZXRPN1pTdDJVZkdPazRzZEE?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Booking Holdings Inc. $BKNG Stock Sold by Candriam S.C.A.",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONFpuaFZJOGs0Z25Ib1BweGxqZS1tSmlQcXR0bVB4eWhCWS1wbTgyTnVsWmNZQmQ1Vmd1bVN5Q2pLLTMxYkdGS2FMMURaTElwVUNpZ1loOTlmZThrWTJyYXB4dElxdF9mSF9zRy0wNkhsUk5pazc3WHYxRURNOWdzU0Q3RXRPVFlZSTF3SmNNVndZR2tFUGVXRjZJYk1TQkhvRnNTOVBERHY0V250a25GWGcySQ?oc=5",
-      "date": "2026-11-09"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
     "day": 0.0176,
     "week": 0.0633,
     "high": -0.2558
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0236,
-    "week": 0.0286,
-    "high": -0.0225
+    "day": 0.0229,
+    "week": 0.0279,
+    "high": -0.0232
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -4137,16 +4137,16 @@
    "verdict": null,
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-28",
     "last_report": "2026-10-28",
     "peers": {
      "basis": "industry: Building Products & Equipment",
      "n": 4,
      "median": {
-      "day": 0.05089331436714639,
-      "week": -0.0013835969216460797,
-      "high": -0.13381269260742645
+      "day": 0.04589762643828055,
+      "week": -0.007929645078652181,
+      "high": -0.13672051174609595
      },
      "tickers": [
       "JCI",
@@ -4172,6 +4172,12 @@
      }
     },
     "news": [
+     {
+      "title": "245 Lennox (LII) shares are proposed for sale by officer Joseph Nassab.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOVo2NXZGZjIxRVUxdk1ic2ZKNnVfZFZZdC1ienhta1BLWFhQb3JaenVlcFBGZ1J4RmViU1NNWDJBUm9nSVE3Z2ZZR3I4Y1VjRzB2V1d0T3I1TVQ5UFVJUG9MWWhwZTZEYVJPVnF0YjRTXzZLVGhFZTVJV0xpRVJtT3FSbWJzRkZUWTlBMWFSUllzZFgwaE1jU19YcVNUUEJJZWc?oc=5",
+      "date": "2026-11-09"
+     },
      {
       "title": "Why Is Lennox International (NYSE:LII) Facing Growing Competition?",
       "publisher": "Kalkine Media",
@@ -4201,26 +4207,20 @@
       "publisher": "scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdVZSN29oSU9yRHoxYmlBSllEVnI0RlczTDdZcEQ0TU5CSTJrc0xrR3F2dkdpR282cHk0WWtUd28xa2JoMlVTZ3hnU3BfajctQUtIdE5wdWJBY2djLVdQU2FOaTFqWmtGV2U5QmV3djJxTE1sQUhFZy1lQWpJSHZkVjN5YlE3ejlfOG1NSEYzNTcwU2tubDM1dXFhTHBBWmR2Q3c3ZVk1LXRPOG1lak5CNUdVQURBeXBxdHE4?oc=5",
       "date": "2026-11-06"
-     },
-     {
-      "title": "What Does Lennox International Offer That Masco Does Not?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPV0hQWERKTVg0aGtNVlhrd2NmSl9HYmwwdkRHUjB3b0hsdzlHMnZTOFFXRnFuT3hoQkdKVTYwYzktcWhCSi1EZmphYmN0Wld5VUNOOWkxVDNKOTQycEJZVHdMQzJYMEZlTE03R2VUbGlJNjFwZzYxcEpPdmg1Qktnd19sblJZT2NZa2Uwek41Q2FaRXprZ2cwNmNNay16LVJobE1zbg?oc=5",
-      "date": "2026-11-05"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0221,
-    "week": -0.0117,
-    "high": -0.39
+    "day": 0.0219,
+    "week": -0.0118,
+    "high": -0.3901
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Industrials",
@@ -4259,16 +4259,16 @@
    "verdict": null,
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-05",
     "peers": {
      "basis": "group: Pharma & biotech",
      "n": 8,
      "median": {
-      "day": 0.019804212473937044,
-      "week": 0.001344754081360755,
-      "high": -0.037449176484386226
+      "day": 0.017991160118760785,
+      "week": 0.00010384109953098797,
+      "high": -0.041276665379434085
      },
      "tickers": [
       "LLY",
@@ -4299,6 +4299,12 @@
     },
     "news": [
      {
+      "title": "Zoetis Inc (ZTS) Shares Surge 3.7% -- What GF Score of 71 Tells Investors",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOHJmVm1kbTl1YlF0OXZQN01BZDRkc1lTSjJrQ2dLbkhRamE3azRZTkxIUHgtSVZUa2V3SVlfUnY4V3FvOFF3enlNZUZ5WkhrSnd4MkRiT2h0b0cxQzhWMzU4TEJybFZhSTJRSzdyXzAxb1hHVnhPTnF3THEwWXBnUUdQMWtJanlRSmRNbk1UVExBQk9TLU96bDkyQkxpdmtXaDRnaGVrd3E?oc=5",
+      "date": "2026-11-10"
+     },
+     {
       "title": "ZTS Q3 Earnings Call Highlights Competitive Pressures and Outlook",
       "publisher": "TradingView",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdDNTbFM5cDNCelczTm9LRmNSZnNSZHVRQjFZaVNyV0hZa01NbVJEREt5NTVkU1Y2M2trc2F2Qkp0SFdjaWd1UlU4V3BPMDFQdEJYQjhrZ3ZMcWhaaHhLWk43RGhSNHRXaGhUTGVKT3dnOGxGRWhzYURfclRDTGNhaW5hT0pUSW5tR2RWSTdJbHZwT3lPOWtsc01qZnZNTWt6czRmOWFnbmhoT2FTaEhUZW5EelJ5Qm1oZkdyTDRB?oc=5",
@@ -4327,26 +4333,20 @@
       "publisher": "Simply Wall St",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUWdYOEIzalVqcWJfcE13NGIwWmp5dzVBWEhiRmhyWWdKb0kzZWtnSURCdUpMZlJKbkJIRlc1UUxSNWVacEdlbXZlTm9kaVpPYU5pbXdYNl9BYlUzcXFDTzR1RFA4VUtrSXc2dkhNaGp0a01iaHVheDdxR3lyV09ZYU1DUFM2ME8wR1BEZzVWaGZZeUNRSHlRLXhxM1FzWnhpQ1dFaWNid1gxSXM5aGVhSDNocTBUT0dUZmdZei1kbTFEN3ltRENuTHN0N0hMV19EdFJZ0gHYAUFVX3lxTE1oSXpTLU84MTF0c2xVYlQxRFhCcnBLRGNSYVFLbkhCZWVRVFViLVFnUnRKenN5TXkzVGFyYVVZbFE5MUViRWxKTzExQTRMX0VSVW1jWEREVE0zY1E0a2VIM0pmODM3bHY5UnREeEhmZVBpSjR2NllKQkJ3amhwX21LTjJOR082S3RtLTJSSF9tVlBlSk82SF9aWVFYMHY5cWJ0SWw3eHpmTGh6UzZIcTRQREN0WHhUYjV5Zy1zSnFGYlFUeWRHb3I1dkdYNVVQNG1oc1ljV0RqMg?oc=5",
       "date": "2026-11-06"
-     },
-     {
-      "title": "Zoetis (ZTS) Stock Price Drops After Q3 Earnings Margin Pressure",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUWY3bTU5M1MyZXltTDQwcjBVSFFqbGRzWlVOTlZUN3h3eTBnZjAzbVhnZWJVWlRNcEpxczBBdlp5U0gwUHdOb2VyS3NheFFOSV9NTWVBS0dqejRsZERvQk5neU9ueF9HR1BvUEtnVnVBNGR6RWhQNmZJa1U3clVpbThuS0NRdjlhVmtxd1pCR0ZSd1k?oc=5",
-      "date": "2026-11-06"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0366,
-    "week": -0.0105,
-    "high": -0.3722
+    "day": 0.0368,
+    "week": -0.0103,
+    "high": -0.3721
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Health Care",
@@ -4385,16 +4385,16 @@
    "verdict": null,
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-11-03",
     "peers": {
      "basis": "industry: Information Technology Services",
      "n": 8,
      "median": {
-      "day": 0.0005741704348343202,
-      "week": -0.018472301924572943,
-      "high": -0.2521324464906408
+      "day": 0.0046850815379935185,
+      "week": -0.025261868484283412,
+      "high": -0.25108173205039597
      },
      "tickers": [
       "IBM",
@@ -4425,6 +4425,12 @@
     },
     "news": [
      {
+      "title": "Fiserv Soars 26% in a Week on a $1 Billion Savings Plan: Buybacks Return \u201cEarlier Than Anticipated\u201d",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPT0VtbUIzU1loRnBzdXlwZEhGdHZLaExRc0JHUTJKRWxqazAtSW1vY3VSblpSckJDZ1h5OXpTMTRnX0RESDZ4ZjlvQXZHM2locUtXbVU2UTZENU5YaGlnQzdQZ01hNzRPaTJtaFpkbllNazJ6M1YtWXhQSHJfcXVTMFJKeHBsUGVfQUFVNzJXQld2d3Q4RXZlY1VscXBYelVKREpzT2tzdmphS2JjdHotdFVjUWRveHhQbnNiMXF3?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "Fiserv (FISV) Stock May Offer A 49% Discount Despite Cost Cuts",
       "publisher": "Simply Wall St",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNURYYzFpaXBqMTlhNzM5WDlLejdkTS1vZVdwczBGNTR4NWY5SnItSktaSTQ5eUZoWncwNHFkcEEtS0tmV3RoLWVYOXdtMkx2UFltZjNyU1FOSFlzU01LLTZCNFpvdkVuQl9EeWZiUTFmNHFTLVN4dkw3UGRfbkw1TnhxcEpxdXFRX041SzNrdk1MQ0NKVkVEVkVYY1I2TlRKdDhMNno5c0tUaVkySUx5VXZRZ3hEM0RYeTA1ZVFTNlJwdmpybkhiemRYTWU4NnNDM2FWa9IB2gFBVV95cUxQU0NOdUhwd0stVU9waGJHeWxiN0xhUFBnNkFOTi1RX3RGZTlWb18wSkNuanZpUkstWW1MRXdYZTlrQVRmSWthUFIyTGFZYmRhQnc4M0Rvdk9yYVU1am1icnBRbm5RSFRQNkxIcVFSMXZkOHQ0aF9yU0sxdTR5MVcwM1FZRnc0YXJRR3k3RXBYRkxDbmc5MnljVFFTVHFDblNVMXRyT2NNT3RwVzM2bmdRSEhJRVRuQmVKQW5yUVRoM21KeUFGUDkzWG5ZSHFJMHpSMU9MR3JzcVp1QQ?oc=5",
@@ -4437,27 +4443,21 @@
       "date": "2026-11-08"
      },
      {
+      "title": "About Fiserv (Stove Tokenized Stock)",
+      "publisher": "Coinbase",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5EV3FVMERnWE1VZi1YQmpZOElQamJZMmF1Q1E4QnZPb1A2Y3V2VTVWMGdXUXpCMGJtWW1BRmRUU2hyeExXcERZdjdnM2dLMDNEUnNYWHFTU2ZSelpmdG5SV1RFQUNHY19yMEx0WWhBY0ZERnM?oc=5",
+      "date": "2026-11-08"
+     },
+     {
       "title": "Michael Burry Is Betting a Buyer Will Pay Up to $120 a Share for Fiserv",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQakpoelp4dGNWN1dpSzVMSmFqMUV1VGEwb2JPcW1GN2M1dVdjbmxacEh2UjRWenhtVkRWYXFWNHpORE53RnZXekVJb1pmdjZqME9jSmVpT3gxZUVCSjdtc0hzWDRQemtlZ3NhS1ZXajFhVnFzSEd2dGt3dVRYLVo2NVN3VVM3a0ctYk1aV0FkdklCck5wRTVnUGRRRTI?oc=5",
+      "publisher": "24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQN0J0aXZ1QW4yNFFJQU5vdHpqd3ZYY2pDemdBRnFTV1BvcDVpdlgyaUl2M19uSmlvNzZJRERNblJpS0NfaEtJZVF2ZU9ybWJtTDVwVlVwVWNEbzVTYnJ4SHppNnpzaTdIMWs4ZEpFc1hHRVFOLWNXOUdzX18xbUh3cWV1TkdLMWVTYTlpNFA5UEZMeE5qSkI3TGh6Yldzd2xFTGp4MDh2eDctUE9nTG9ibEg5VnY?oc=5",
       "date": "2026-11-08"
      },
      {
       "title": "Why Michael Burry Says Fiserv Stock Could Surge as Much as 94% From Here",
       "publisher": "Barchart.com",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVTNGVmFCdlNXOWp6MWc0bGtKdXBYaFJQUXNUM21JUDNjWDFMRGI2YldHaVFkc2xHU1JRd3RuYV9SazkxMXBwQ2hUU1hXQ3BEYzRsT21lLWtfMndwNElkUk9rWWtubVBZNkN0WTQtSS15c1B5eDhOak5NX0loWlg1azFQMERteld5bjBTVHd0VnVNNG5TZnlEVVhDRl9iVU55WXlOSFM2V0x0WTRWVEhycGk5RV84QQ?oc=5",
-      "date": "2026-11-07"
-     },
-     {
-      "title": "Fiserv Stock Rides An 8-Day Winning Streak To A 33% Gain",
-      "publisher": "Trefis",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRVlaT3M1d19oazVBZERtbEhuR1FoVkNYV2ROX0FsdXVaV2ZtOFlkSmhucGIwWnE0ZDZkRnlSSHZ2b2JEUzlGSEtrUTJOdzdKbFl5U2xudnlIUFEwYTk3U0lNXzQxci1GQnJpc3JzejJjXy1FYURlR3c3YVFhS003ekJhaGkyeXVucjAzY3FVcWwyUTl6N1FsTWJobTJpVkM1SmRpOVpvVlZuQjluSWg0dmx0Z3lrWUE?oc=5",
-      "date": "2026-11-07"
-     },
-     {
-      "title": "Fiserv, Inc. (FISV) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KUGsyVXJXMmdZaFFySW1CQ01JcWl6X2tMRmE5Um1Kb3U0ejNIM09rRURUanlLZ09XeXVaQnUtVmJoemNkLXJaVU8zeTMtRU8wd2c?oc=5",
       "date": "2026-11-07"
      }
     ]
@@ -4519,16 +4519,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": null,
     "last_report": "2026-10-22",
     "peers": {
      "basis": "group: Consumer brands",
      "n": 8,
      "median": {
-      "day": 0.01780533775262072,
-      "week": 0.021492296121563115,
-      "high": -0.16804117646182803
+      "day": 0.009763002109045127,
+      "week": 0.014912442619789412,
+      "high": -0.17102134305890676
      },
      "tickers": [
       "AAPL",
@@ -4577,12 +4577,6 @@
       "date": "2026-11-08"
      },
      {
-      "title": "Deckers Outdoor Corporation (DECK) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QazU2bWxBTS00WE53dFhEaHBLTWdnT3FnZ09PVTIzTU5mYlRFVVdmdTNkS3h2TDIzbXhDZEtSeUlFVjRDWGRDTDNxQXVQNlZ3R0E?oc=5",
-      "date": "2026-11-07"
-     },
-     {
       "title": "Deckers Outdoor Corporation $DECK Shares Newly Bought by Mirae Asset Global Investments Co. Ltd.",
       "publisher": "MarketBeat",
       "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOcGN4MmY4OE02X3o3Vkx4Nm5oQUZkQ0FKV3BGZlp1TldzX3htaGdzOFA0RXpGUnFjRVVjSUxWMWhISjh1NVQ3ek4yaFBRb2FNU3FWQ2F5d09DTFVjODRzNHNwYkpBUXM0ZU5iSEk0SlpVOXl0YXRKMG55aVEweW5wQWVhMEJiUW53OUpyU3BvTG1nNm5oMkJ6dVRmdmFHcnRBYlF3QmZNUTNIZmxCOGZndnpWdzRoQngyLVNCYk5jZ1U2Vk1UU0RyUkpiMFlTR3BIb2k5T29YdmdwVER0Qk5LWDZEUTNwZmtGWkE?oc=5",
@@ -4593,28 +4587,34 @@
       "publisher": "Yahoo Finance UK",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9RWE1TSTlhQnhvc1JZWHR5aE9QNEtJUW5mLUMyNzhjVWVMVzRtZXFjNWQ5cHRXQm5JemRETWxER1AzUjZsZm5ZN3JVbHg3U2RVcjB5eEpUNWNaUExQV2xEZUxR?oc=5",
       "date": "2026-11-07"
+     },
+     {
+      "title": "Deckers Outdoor Corp. stock outperforms competitors despite losses on the day",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbWFWY1Fqb25nVy1hQnh3WlpCNTloYUxoNXoxR0VTSWZTb3llYklqYXhvYWZsR3BOS2FtMXpPanh2U3RDUlZxaVg5bXY0eXgyQkJJak1pbzd2RGtXVWtoaEpBR3VmZFBxUDNfMzlPdFp5akFrQ3NuQzhiZWJyVk1RS01UMGE5UlNmdV9LQ1h3X29IX051SUV5UDNqQkVZd3VKOTZleVoxLU5Ncml2RU1nYzNpUWhuWkV3VnVlSlZjZXRpaWd5WE1WZHVqOHJrX00wOHBXWnl2enpqcVFlMVduX2h6Tnk3RUlMakE?oc=5",
+      "date": "2026-11-06"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0431,
-    "week": 0.0641,
-    "high": -0.2521
+    "day": 0.0429,
+    "week": 0.0639,
+    "high": -0.2523
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0236,
-    "week": 0.0286,
-    "high": -0.0225
+    "day": 0.0229,
+    "week": 0.0279,
+    "high": -0.0232
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -4653,16 +4653,16 @@
    },
    "evidence": {
     "v": 5,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "earnings_on": "2026-10-29",
     "last_report": "2026-10-29",
     "peers": {
      "basis": "industry: Aerospace & Defense",
      "n": 8,
      "median": {
-      "day": 0.03180281189399026,
-      "week": -0.026378466739407358,
-      "high": -0.1418277684369076
+      "day": 0.031276565905168474,
+      "week": -0.02814564683122761,
+      "high": -0.14510516724980166
      },
      "tickers": [
       "GE",
@@ -4693,9 +4693,33 @@
     },
     "news": [
      {
+      "title": "Howmet Aerospace Inc (HWM) Stock Up 5.1% but GF Value Says Overv",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPXzBNUFJTTjdvNHExYlpsMjhwTFNBekJpYUJRSmZVWW5wRzRFQ1hhSnBPNnNJVldsVnJmcEV4ZTg2R0huM05KVFJtMU9UQmNWOFJhZU5zMGxqMTVtLWcxRjRaZzZob1Q4QzBCWkxvSFhBS1d5MW41dElrajc3MXhmWmhSeFhqLURzd1dHZktjWEpvOUw0SHVwRHVuM21BcU00QnpyNHFKRGdhMzIzNFpHSXNZeXNNb0YyZm1n?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Howmet Aerospace Inc. stock outperforms competitors on strong trading day",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbGppNUo0U1VOYl9jaFlWN1RSQ2oxd01tMlFwUTlRaUEtM1RpYTZRbW5TN0hja2h6d3NmakNaV2tLd3Ewa1lROEZfWjlERmRNV0FtbmoyN0dBYzYzNVJ5QzB6UzNER2pkcW1Cd1FfUTJkYW15WVprT28tc2c2QXJuMmJTU3g4aWdyTS1JRGEyVFVSY00zNnNlT216b29meGJET1F3VWJuc1Jjb3RPcjNQS1FtR0toSzNseXJkazh5eUlnVEpLNkZrc2Z0RFVNSEozR2hqVGVldDNSLV9hajdfWldyclg?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Howmet Aerospace stock gains 3.18% as guidance meets valuation test",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbXBMYlFaR09Lb29ocTl3OFRBT3o5TFZzZGdiVE1hdG83VW4zaEp1S3FycE8yTWxISGtqbkd2UEpoWjlwb1JUQThGWlV4R1NnQ25TME9wdVdfY09GVHNHT2ZQb0E0TmJDMmxvWGhkLVZ4d2Nxb1pTUHljX240MjkyTDVRMUlxOFhSdGNSaVA0Q0xQVTAtVmNQejAyamxQRTVhMzBGcm9jT2ItSmk4dHp0LVVTSjhvTVBXeUN5Ymx2V2ZpanZBTUhYLQ?oc=5",
+      "date": "2026-11-09"
+     },
+     {
       "title": "ATI's Shares Rally 53% YTD: Should You Buy the Stock Now?",
       "publisher": "TradingView",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTGtWeURhUjdDUVRnVTdwdmhHOHVwbTE1SEtfMkk0eE1GcmcwVW5SSURxeEFiZ3BjSkpDQ1NqRVJRa2U4OHpWeklWVHh5MDZGV0tqTVZ1T2ozQ3FjTW9PSHRvWHR2aGR0UC04NnEzVU90bGl0X1RmTTVkUTE4RVd4SUpKelJDRnhYMW1aRnVNa1Z2QlpXOXkwdUtYd01GamNfR0w0QzJZVlV3TFJWb21Z?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Howmet Aerospace Inc. (HWM) Stock Price, News, Quote & History",
+      "publisher": "Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1rSHN1eVVRckRMdzBFV1ExeTRpV085ZkdPbmFIaEVXZ1ZKZm5fQlFhZkdJS0ItT0Q1WjlBUWs3WnMzMzZweTdHSnZzMXM1TmZx?oc=5",
       "date": "2026-11-09"
      },
      {
@@ -4703,44 +4727,20 @@
       "publisher": "ad-hoc-news.de",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNXFJdVVJZnUwRkJ4cVhRZ0dIQ09iaGxDVkxLUW9tYnVzcUw5dlE2WFJsR0h4U1lWeW1sLVB6VnVOc3pFYVZRQ25ZMXljcjdCTTR2WFlvWkctQUdUdWwwNDNLQmR3ekxqMjBISERJSTRDSzhoRWFUY0F3c2w1WTBzZVExZ2JEckxEQmZXeDd2TkZDakZBWjZmNjRZWUhIOGlzR0pWbk5FTU93U1ZlTHNZdjNzTzlSeHlKYjZnNnNJUmw4MFJHMFZGS1JBSQ?oc=5",
       "date": "2026-11-09"
-     },
-     {
-      "title": "Howmet Aerospace (HWM) Lifts Guidance After Q3 Beat But Is The Valuation Still Compelling",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOelVrRldxR0c1XzNxbkVFYjBqS3N0OEo2V2dPYzhZMlV6Q1pGazFNdDRvYll3VVVrM1dEdXNEb3pCVGZXN0ZwVDVCUGd0UnZpODI5dGs4M1M5azhNWGV0ZG1oZ2Q0RmhtR0tqNFg0bGhvRkJOY3lCQW9WYk9qRml3eExPLVBOOG9TSU10d3hmQnY0MHRreDcxRWRrYXQxLVpqYzJTbWR4Ni1nTWJNQ1M0RzFVcXVfTlhzU2VTWE1haVhJd3BGODdvM1ZfdUsybHN2WXdr0gHYAUFVX3lxTFAwcFR5MXdFUXpKWU5GZDVFS1ktWHdSVm1jdmJ4a2VYaHZWYnNfSjFtMXF1aVpkR3Z1Z3gyaWItRTRNd204bVF4X01Pb2s0NFZIWXZiOTY2T2F6UjhIRE41dFNSY2RFVHF6YTdsWkRQUWxodTFTZGlPYTVaNFN6V2ZTcnM4bUhxVFRUMWV2VmFJXzVKSGJsblRld01kNlEybnhuWmdXZVFlTUEtM1k2bWo3Tk5Qc2cwcGJrOV93dUQ2SW9uTGVFamwtOEVSVWpEaW4wcTBtUFFDbw?oc=5",
-      "date": "2026-11-07"
-     },
-     {
-      "title": "Howmet Aerospace Stock Price Forecast. Should You Buy HWM?",
-      "publisher": "StockInvest.us",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE83eTlRQ0lyNEdwakRic291WDhxa3VHbmJYSEtqZ2FrVzZfaFowZDMxNXgxMHd2TXZLeDBYc0s2aHVUbEo4dmZ3?oc=5",
-      "date": "2026-11-06"
-     },
-     {
-      "title": "Howmet Aerospace Inc. stock outperforms competitors on strong trading day",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbmVNRHd6WURLWnhUYUxhVzZvdnBueFQ5NmhvR1I1elJGcWhsWXJ1U1UxbmJLUGtiM1BObUZpbUczd1JZSzl3cUdTRE9VeV9XU3M1U3V4TEU5T2poa1VLT3Q1eUZaR0w1Tm14SWtvT2ljV1h5Z1VzUlhkbjRCVTdXV3h6TmlUY2puU0c1RHZsM3VHaTVhTEdOc0JNNXJHd3lTeGJQbzZqQ2premVXM0gtVTFBSkg4TFdNdVhmZTdqQmV5NjM3VkFvVWRpamFEblNUSGJnNGxPM05QSUxDa2ZzSnltRWM?oc=5",
-      "date": "2026-11-06"
-     },
-     {
-      "title": "Did Raised Revenue Guidance Just Shift Howmet Aerospace (HWM) Stock's Investment Narrative?",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNkg3S0lRb2wyU3RQRkxXdzVwNWJZTV9SeE9qdlV1d0t6SWdLUElkT3hvUVZ2RFdZUUdhYV9mY3U5aG05YnpkMHE5dkk1S0RuWlZqTUpaa25jQnpnTWk0emMwSmNvNWdYOG1EaE5ZUWJsQWVKTm0xQUN0ZGZySFJJNm9maXRmZXZJR3VYamFXMVM2YUh6RHYtRnRqVy1ncXBSalotVDZGNF8xNmlBakZDRjN0eVVMd251dFEyNjRvTUJ5MGtlc1B1aHB4NmczNG5iR3fSAdcBQVVfeXFMTlk4dFk3aFdTdk9JRXNQTHdIZWlsRVU2dkNlYkw2T2VDSXVjOUZqUWx1OEM1dlN4WGxmaWhudlFPMzNuaHV4bmZmUWR2eTVVNllJWV9jLTdicXl1RFlxb29vSU5sS29GbXhVR0ZzcjZSVVdEMFNPQnNhMUtmWmMyTkxPSDBzbjNNR3BYbmdWQTR5VEhtTV9ac1VCU05BU2RTNVJNRU9Db2ZhX2hzcGdCaW5xbkwxbHZ4RndmU1M2Q3k5NFVQd21HUHI1MEdtNlREZkVVWXlkVmc?oc=5",
-      "date": "2026-11-06"
      }
     ]
    },
    "outcome": {},
    "kind": "slide",
-   "last_triggered": "2026-11-09",
+   "last_triggered": "2026-11-10",
    "moves": {
-    "day": 0.0509,
-    "week": 0.0155,
-    "high": -0.2609
+    "day": 0.0507,
+    "week": 0.0153,
+    "high": -0.2611
    },
    "spy": {
-    "day": 0.0236,
-    "week": 0.0007,
+    "day": 0.0237,
+    "week": 0.0008,
     "high": -0.0339
    },
    "sector": "Industrials",
@@ -4772,6 +4772,6 @@
   "ZTS",
   "FISV"
  ],
- "updated": "2026-11-09T21:13:39Z",
+ "updated": "2026-11-10T02:42:28Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
