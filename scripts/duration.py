@@ -23,6 +23,11 @@ Four questions from Durand's "Growth stocks and the Petersburg paradox" (1957), 
               One engine: growth follows the model to year 5, then 2.5%, and from then on new investment earns only the
               required return. Several engines (data/segments.json): the fastest-growing reported segment does that from
               year 3, the others carry on as modelled. Underwriters: not tested.
+  reach       'Reverse market check' (every stock with a cash-flow model): the revenue the BASE case implies in years 10
+              and 20 as a multiple of today (after the last forecast year revenue grows at 2.5%), per engine where
+              data/segments.json splits the company. Flags a year-20 multiple over 6x (medium) or 10x (high): few
+              companies grow that far. Optional market sizes in data/markets.json (size, year, source; for the company
+              or one engine) add the market share the base case implies in that year, flagged over 30%.
   reliability concerns about the distant cash flows (see CONCERNS); 0 = well supported, 1 = some reliance on distant
               cash, 2+ = leans on distant cash.
   mos         suggested margin of safety = the stock's own + 2.5 points per concern other than 'price', at most +10
@@ -60,6 +65,33 @@ CONCERNS = [
     ("fade", "Returns above the hurdle are halving in under 5 years"),
     ("price", "Today's price needs a longer advantage period than ours"),
 ]
+REACH = dict(medium=6, high=10, share=0.30)
+MKT = {k: v for k, v in J("data/markets.json", {}).items() if not k.startswith("_")}
+
+
+def reach(tk, d, sg):
+    """Base-case revenue in years 10 and 20 as a multiple of today, per engine, and the implied share of any market
+    size entered in data/markets.json. d = base-case dcf() detail."""
+    rows, rev0 = d["rows"], M["STOCKS"][tk]["rev"]
+    def at(t, i=None):
+        n = min(t, len(rows)); r_ = rows[n - 1]
+        v = r_["rev"] if i is None else r_["seg"][i]
+        return v * (1 + GT) ** (t - n)
+    out = dict(rev0=rev0, x10=round(at(10) / rev0, 2), x20=round(at(20) / rev0, 2))
+    if sg:
+        out["engines"] = [dict(name=nm, x10=round(at(10, i) / (rev0 * w), 2), x20=round(at(20, i) / (rev0 * w), 2))
+                          for i, (nm, w) in enumerate(zip(sg["names"], sg["share"]))]
+    shares = []
+    for m in (MKT.get(tk) or {}).get("markets", []):
+        i = sg["names"].index(m["engine"]) if m.get("engine") and sg and m["engine"] in sg["names"] else None
+        t = max(1, int(m["year"]) - datetime.date.today().year)
+        shares.append(dict(m, ours=round(at(t, i), 1), share=round(at(t, i) / m["size"], 3)))
+    if shares: out["markets"] = shares
+    top = max([out["x20"]] + [e["x20"] for e in out.get("engines", [])])
+    out["level"] = "high" if top > REACH["high"] or any(m["share"] > REACH["share"] for m in shares) else "medium" if top > REACH["medium"] else "low"
+    return out
+
+
 RANK = {"none": 0, "short": 0, "narrow": 1, "wide": 2}
 
 
@@ -119,6 +151,7 @@ def stock_values(tk):
 
     def value(c, rate=r): return sum(PROBS[k] * case(k, mo_for(c), rate) for k in PROBS)
     det = {k: case(k, mo_for(cls), r, True) for k in PROBS}
+    value.sg = sg
     value.fail = dict(engine=sg["names"][fast], year=3) if sg else dict(engine=None, year=5)
     return value, det, r, cls
 
@@ -166,6 +199,7 @@ def main():
         if not ins:
             v_f = value("fails")
             fails = dict(value.fail, fv=round(v_f, 2), chg=round(v_f / fv - 1, 4))
+        rch = None if ins else reach(tk, det["base"], value.sg)
         ms, rt, a = MS.get(tk) or {}, RET.get(tk) or {}, ASSETS.get(tk) or {}
         cap, years = a.get("implied_cap"), a.get("cap_years") or (M["ri_years"](M["moat_of"](tk)) if ins else M["moat_of"](tk).get("cap_years", 10))
         hb = hz["base"] or {}
@@ -187,12 +221,12 @@ def main():
             duration=dict(years=round(dur, 1), up=round(up, 4), down=round(dn, 4),
                           vs=("shorter than a 10-year Treasury" if dur < tsy["d10"] else "longer than a 30-year Treasury" if dur > tsy["d30"]
                               else "between a 10- and a 30-year Treasury")),
-            stress=stress, mos=mos, fails=fails,
+            stress=stress, mos=mos, fails=fails, reach=rch,
             reliability=dict(concerns=[k for k, v in flags.items() if v], n=n,
                              label="well supported" if n == 0 else "some reliance on distant cash" if n == 1 else "leans on distant cash",
                              half_life=rt.get("half_life"), score=ms.get("total"), suggested=ms.get("suggested"), implied_cap=cap),
         )
-    doc = {"_about": __doc__.strip().split("\n\n")[0], "built": datetime.date.today().isoformat(),
+    doc = {"_about": __doc__.strip().split("\n\n")[0], "reach_limits": REACH, "built": datetime.date.today().isoformat(),
            "buckets": ["1-5", "6-10", "11-20", "21-30", "30+"], "treasury": tsy, "limits": LIMITS, "mos_rule": dict(step=MOS_STEP, cap=MOS_CAP, applied=False, review="after the Q4 2026 earnings round (about February 2027)"),
            "concerns": {k: t for k, t in CONCERNS}, "stocks": stocks}
     json.dump(doc, open(OUT, "w"), indent=None, separators=(",", ":"))
