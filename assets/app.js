@@ -2,6 +2,8 @@ const MOATN={wide:"wide moat",narrow:"narrow moat",none:"no moat",short:"short a
 const INS=r=>!!r&&r.method==="excess_roe";   // underwriters: valued on book value and return on equity (model.py INSURERS)
 (async function(){
 const $=s=>document.querySelector(s);
+const PAGE=document.body.dataset.page==="risk"?"risk":"fv";   // risk.html shares this script: same data, filters and My settings
+let SZ=null;
 const usd=n=>n==null?"–":"$"+n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 const pct=(n,d=1)=>n==null?"–":(n>0?"+":"")+(n*100).toFixed(d)+"%";
 const BANDS=[["Attractive","b-attr","Price at or below the buy-below level (fair value less margin of safety)"],
@@ -12,7 +14,7 @@ function status(a){const p=a.price,fv=a.fair_value;
 // theme
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
 $("#theme").onclick=()=>{const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1020";const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
-$("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
+if($("#bands"))$("#bands").innerHTML=BANDS.map(b=>`<div><span class="badge ${b[1]}">${b[0]}</span><p class="muted">${b[2]}</p></div>`).join("");
 let A,P,TH={},SN={stocks:{}},FH={},KP={stocks:{}},KD={stocks:{}},DR0=null,RH={stocks:{}},MS={stocks:{}},DU={stocks:{}},FW={stocks:{}},DS={stocks:{}},DN={stocks:{}};
 try{[A,P,TH]=await Promise.all([fetch("data/assets.json?"+Date.now()).then(r=>r.json()),fetch("data/prices.json?"+Date.now()).then(r=>r.json()),fetch("data/themes.json?"+Date.now()).then(r=>r.json()).catch(()=>({}))]);delete TH._help;[SN,FH,KP,KD]=await Promise.all([fetch("data/snapshot.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/fv_history.json?"+Date.now()).then(r=>r.json()).catch(()=>({})),fetch("data/kpis.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}})),fetch("data/kpi_defs.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}))]);DR0=await fetch("data/drops.json?"+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);RH=await fetch("data/returns.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}));MS=await fetch("data/moat_scorecard.json?"+Date.now()).then(r=>r.json()).catch(()=>({stocks:{}}));DU=await fetch("data/durability.json?"+Date.now()).then(r=>r.ok?r.json():{stocks:{}}).catch(()=>({stocks:{}}));FW=await fetch("data/framework.json?"+Date.now()).then(r=>r.ok?r.json():{stocks:{}}).catch(()=>({stocks:{}}));DN=await fetch("data/duration.json?"+Date.now()).then(r=>r.ok?r.json():{stocks:{}}).catch(()=>({stocks:{}}));DS=await fetch("data/debt_stress.json?"+Date.now()).then(r=>r.ok?r.json():{stocks:{}}).catch(()=>({stocks:{}}))}
 catch(e){$("main").innerHTML='<div class="err">Could not load data files. Open this page through GitHub Pages (or a local server such as <code>python -m http.server</code>), not by double-clicking the file.</div>';return}
@@ -26,7 +28,7 @@ let rows=A.assets.map(a=>{const p=P.prices[a.ticker]||{};const price=p.price;
  if(M.state==="open")$("#stamp").style.color="var(--good,#1a7f37)"}
 $("#sub").textContent=A.model+" · valuations as of "+A.assets.map(a=>a.valued_on).sort().pop();
 // KPIs
-function kpis(){const n=rows.length,under=rows.filter(r=>r.diff<=0).length,att=rows.filter(r=>r.status<=1).length;
+function kpis(){if(PAGE==="risk")return riskKpis();const n=rows.length,under=rows.filter(r=>r.diff<=0).length,att=rows.filter(r=>r.status<=1).length;
 const bb=rows.filter(r=>r.price<=r.buy_below).length,ds=rows.map(r=>r.diff).sort((a,b)=>a-b),med=n%2?ds[(n-1)/2]:(ds[n/2-1]+ds[n/2])/2;const best=[...rows].sort((a,b)=>a.diff-b.diff)[0];
 $("#kpis").innerHTML=[["Assets tracked",n,"in data/assets.json"],["Below fair value",`${under} / ${n}`,"price ≤ estimated value"],["Interesting or better",att,"inside the margin-of-safety bands"],
  ["Below buy-below price",`${bb} of ${n}`,"median price vs FV "+pct(med)],["Biggest discount to FV",best.ticker,pct(best.diff)+" vs fair value"]].map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");}
@@ -37,7 +39,7 @@ function range(r){const lo=Math.min(r.bear,r.price)*0.9,hi=Math.max(r.bull,r.pri
 function spark(h){if(h.length<3)return '<span class="muted">n/a</span>';const mn=Math.min(...h),mx=Math.max(...h),w=90,ht=28;
  const pts=h.map((v,i)=>`${(i/(h.length-1)*w).toFixed(1)},${(ht-2-(v-mn)/(mx-mn||1)*(ht-4)).toFixed(1)}`).join(" ");
  return `<svg width="${w}" height="${ht}"><polyline points="${pts}" fill="none" stroke="${h[h.length-1]>=h[0]?"var(--good)":"var(--bad)"}" stroke-width="1.6"/></svg>`}
-let sortK="ticker",dir=1,filt="",theme="All",pf="all",hf="all",rf="all";
+let sortK=PAGE==="risk"?"size":"ticker",dir=PAGE==="risk"?-1:1,filt="",theme="All",pf="all",hf="all",rf="all";
 const inTheme=r=>theme==="All"||(theme==="Other"?!Object.values(TH).some(l=>l.includes(r.ticker)):(TH[theme]||[]).includes(r.ticker));
 const PINNED=["Cybersecurity","Insurance"];   // always shown, even before a stock in the group has a full model
 const names=["All",...Object.keys(TH).filter(k=>PINNED.includes(k)||rows.some(r=>TH[k].includes(r.ticker))),...(rows.some(r=>!Object.values(TH).some(l=>l.includes(r.ticker)))?["Other"]:[])];
@@ -50,28 +52,21 @@ $("#healthchips").innerHTML='<span class="lbl">Health</span>'+Object.entries(HF)
 document.querySelectorAll("#healthchips .chip").forEach(c=>c.onclick=()=>{hf=c.dataset.hf;document.querySelectorAll("#healthchips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
 document.querySelectorAll("#themechips .chip").forEach(c=>c.onclick=()=>{theme=c.dataset.th;document.querySelectorAll("#themechips .chip").forEach(x=>x.classList.toggle("on",x===c));render()});
 function render(){const f=rows.filter(r=>(r.ticker+r.name).toLowerCase().includes(filt)&&inTheme(r)&&PF[pf][1](r)&&HF[hf][1](r)&&(rf==="all"||r.rating===+rf));
- f.sort((a,b)=>{const x=a[sortK],y=b[sortK];return (typeof x==="string"?x.localeCompare(y):(x??1e9)-(y??1e9))*dir});
+ f.sort((a,b)=>{const x=a[sortK],y=b[sortK];if(x==null||y==null)return (x==null)-(y==null);return (typeof x==="string"?x.localeCompare(y):x-y)*dir});   // empty values always last
+ if(PAGE==="risk")return renderRisk(f);
  $("#tbl tbody").innerHTML=f.map(r=>`<tr data-t="${r.ticker}"><td><div class="tk">${r.ticker}</div><div class="nm">${r.name}</div></td>
  <td class="r num">${usd(r.price)}<div class="nm ${r.day>0?"neg":"pos"}" style="color:var(--mut)">${r.day==null?"":pct(r.day,2)+" today"}</div></td>
  <td class="r num"><b>${usd(r.fair_value)}</b></td><td class="r num">${usd(r.buy_below)}</td>
  <td class="r num ${r.diff>0?"pos":"neg"}"><b>${pct(r.diff)}</b></td><td>${range(r)}<div class="nm">${usd(r.bear).slice(0,-3)} · ${usd(r.base).slice(0,-3)} · ${usd(r.bull).slice(0,-3)}</div></td>
- <td><span class="badge ${BANDS[r.status][1]}">${BANDS[r.status][0]}</span></td><td class="r num">${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</td><td class="r num">${r.size==null?"–":r.size>0?`<b>${(r.size*100).toFixed(1)}%</b>`:'<span class="muted">0%</span>'}</td><td>${spark(r.history)}</td></tr>`).join("")||(theme!=="All"&&!rows.some(inTheme)?`<tr><td colspan="10" class="muted">No ${theme.toLowerCase()} stock has a full model yet. See the <a href="screener.html">Growth Screen</a> (Theme → ${theme}) for the whole group.</td></tr>`:'<tr><td colspan="10" class="err">No match</td></tr>');
+ <td><span class="badge ${BANDS[r.status][1]}">${BANDS[r.status][0]}</span></td><td class="r num">${r.implied_return==null?"–":(r.implied_return*100).toFixed(1)+"%"}</td><td>${rkMini(r)}</td><td>${spark(r.history)}</td></tr>`).join("")||(theme!=="All"&&!rows.some(inTheme)?`<tr><td colspan="10" class="muted">No ${theme.toLowerCase()} stock has a full model yet. See the <a href="screener.html">Growth Screen</a> (Theme → ${theme}) for the whole group.</td></tr>`:'<tr><td colspan="10" class="err">No match</td></tr>');
  document.querySelectorAll("tbody tr[data-t]").forEach(tr=>tr.onclick=()=>open(tr.dataset.t))}
 document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=sortK===k?-dir:1;sortK=k;render()});
-$("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};render();
-function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
+$("#q").oninput=e=>{filt=e.target.value.toLowerCase();render()};if(PAGE==="fv")render();
+function open(t){if(PAGE==="risk")return openRisk(t);const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  const sc=["bear","base","bull"].map(k=>{const v=s[k]||{};const pr=A.probabilities[k];
   const addb=r.wacc&&r.rev?(r.wacc.after_tax_interest||0)/r.rev:0;
   const desc=INS(r)?`book value growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, long-run ROE ${(v.m*100).toFixed(1)}% (from ${(r.start_margin*100).toFixed(1)}% now)${r.insurer&&r.insurer.roe_terminal?`, then ${(r.insurer.roe_terminal[k]*100).toFixed(1)}% after year ${r.cap_years}`:""}`:r.type==="stock"?`growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, FCF margin ${(v.m*100).toFixed(1)}%${addb>=0.0005?` (+${(addb*100).toFixed(1)}% interest add-back = ${((v.m+addb)*100).toFixed(1)}% before interest)`:""}`:r.type==="etf"?`EPS ${v.eps.toFixed(1)}, growth ${(v.g1*100).toFixed(0)}% → ${(v.g10*100).toFixed(1)}%, cash conversion ${(v.conv*100).toFixed(0)}%`:`${v.why}`;
   return `<tr><td style="text-align:left"><b>${k[0].toUpperCase()+k.slice(1)}</b></td><td>${usd(r[k])}</td><td>${r.type==="commodity"?"":(pr*100)+"%"}</td><td style="text-align:left;white-space:normal">${desc}</td></tr>`}).join("");
- let mcH="";if(r.mc){const M=r.mc,$f=x=>"$"+(x>=1000?x.toFixed(0):x.toFixed(2)),W=500;
-  const T=M.tornado,tl=Math.min(...T.rows.map(o=>Math.min(o.low,o.high)),T.base),th=Math.max(...T.rows.map(o=>Math.max(o.low,o.high)),T.base),TX=x=>235+(x-tl)/(th-tl)*190;
-  const torn=`<svg viewBox="0 0 ${W} ${T.rows.length*30+24}" class="mcsvg" role="img" aria-label="Sensitivity of base-case value"><line x1="${TX(T.base)}" x2="${TX(T.base)}" y1="4" y2="${T.rows.length*30+6}" class="mcfv"/>`+
-   T.rows.map((o,i)=>{const a=Math.min(o.low,o.high),b=Math.max(o.low,o.high),y=10+i*30,pin=v=>Math.abs(v)<1?(v*100).toFixed(1)+"%":v;
-    return `<text x="0" y="${y+13}" class="mct mcl">${o.label.replace(" (+1 / -1 pt)","").replace(" (2% / 3%)","")}${o.choice?" *":""}</text><rect class="mctb" x="${TX(a)}" y="${y+2}" width="${Math.max(2,TX(b)-TX(a))}" height="16" rx="3"><title>${o.label}: ${pin(o.low_in)} → ${$f(o.low)}, ${pin(o.high_in)} → ${$f(o.high)}</title></rect><text x="${TX(a)-4}" y="${y+14}" text-anchor="end" class="mct">${$f(a)}</text><text x="${TX(b)+4}" y="${y+14}" class="mct">${$f(b)}</text>`}).join("")+
-   `<text x="${TX(T.base)}" y="${T.rows.length*30+20}" text-anchor="middle" class="mct">base case ${$f(T.base)}</text></svg>`;
-  mcH=`<h3>Range of outcomes (Monte Carlo)</h3><div id="mcbox"></div>
-  <h3>What moves the value most</h3><p class="muted">Base case with one input moved to its bear and bull value, the others unchanged. * The required return is a choice, shown for comparison.</p>${torn}`}
  let fc="";if(r.forecast&&INS(r))fc=insForecast(r);else if(r.forecast){const B=x=>"$"+x.toFixed(1)+"B",pc=x=>(x*100).toFixed(1)+"%",F=r.forecast,w=r.wacc||{},fi=r.fcf_inputs||{};
   const tab=k=>{const d=F[k];return `<div class="fct" data-k="${k}" style="${k==="base"?"":"display:none"}"><div class="scroll"><table class="s"><tr><th style="text-align:left">Year</th><th>Growth</th><th>Revenue</th><th>Cash margin</th><th>Cash flow</th><th>Worth today</th></tr>`+
    d.rows.map(x=>`<tr><td style="text-align:left">${x.t}</td><td>${pc(x.g)}</td><td>${B(x.rev)}</td><td>${pc(x.m)}</td><td>${B(x.fcf)}</td><td title="× ${x.df.toFixed(3)} discount">${B(x.pv)}</td></tr>`).join("")+
@@ -109,12 +104,12 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
   r.sensitivity.grid.map((row,i)=>`<tr><th>${(r.sensitivity.r[i]*100).toFixed(1)}%</th>${row.map((v,j)=>`<td class="${i==2&&j==2?"hl":""}">${v.toFixed(0)}</td>`).join("")}</tr>`).join("")+"</table></div>"}
  const SN0=snapHTML(r),scH=`<h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>`;
  // Ex-post = looking back at reported results and history; ex-ante = looking forward with the model's forecasts
- const POST=[...SN0.post,capRetHTML(r,"post"),retHTML(r),bondHTML(r,"post"),durHTML(r),debtHTML(r)].filter(Boolean);
- const ANTE=[...SN0.ante,capRetHTML(r,"ante"),bondHTML(r,"ante"),assumesHTML(r),capH?"":piH,capH,farHTML(r),moatHTML(r),sizeHTML(r),scH,segH,mcH,fc,rt].filter(Boolean);
+ const POST=[...SN0.post,capRetHTML(r,"post"),retHTML(r),bondHTML(r,"post")].filter(Boolean);   // risk sections live on the Risk page
+ const ANTE=[...SN0.ante,capRetHTML(r,"ante"),bondHTML(r,"ante"),assumesHTML(r),capH?"":piH,capH,scH,segH,fc,rt].filter(Boolean);
  const nP=POST.length,nA=ANTE.length,sh=nP+nA?Math.round(nP/(nP+nA)*100):0;
  const grp=(id,k,t,sub,A)=>A.length?`<section class="tgrp ${k}" id="${id}"><div class="tgh"><span class="tgk">${t}</span><span class="tgs">${sub}</span><span class="tgn">${A.length} section${A.length>1?"s":""}</span></div>${A.join("")}</section>`:"";
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
- ${ratingHTML(r)}${SN0.top}
+ ${ratingHTML(r)}${riskLinkHTML(r)}${SN0.top}
  <div class="tsplit" role="navigation" aria-label="Jump to a half of the drawer"><div class="tsbar" aria-hidden="true"><i class="post" style="width:${sh}%"></i><i class="ante" style="width:${100-sh}%"></i></div>
   <button class="tsk post" data-go="g-post"><b>Ex-post · looking back</b><span>${nP} section${nP==1?"":"s"} (${sh}%) · reported results, history, trailing figures</span></button>
   <button class="tsk ante" data-go="g-ante"><b>Ex-ante · looking forward</b><span>${nA} section${nA==1?"":"s"} (${100-sh}%) · fair value, scenarios, forecasts, expected returns</span></button></div>
@@ -123,6 +118,80 @@ function open(t){const r=rows.find(x=>x.ticker===t);const s=r.scenarios||{};
  <h3>Notes</h3><p>${r.notes}</p><p class="muted">Valued ${r.valued_on}. Estimates only, not investment advice. Full step-by-step workbook is in the repo (docs/).</p>`;
  $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;document.querySelectorAll(".tsk").forEach(b=>b.onclick=()=>{const g=$("#"+b.dataset.go);if(g)g.scrollIntoView({behavior:"smooth",block:"start"})});bindSnap();bindCapRet(r);if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull});
  document.querySelectorAll(".fctabs .chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fctabs .chip").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".fct").forEach(t=>t.style.display=t.dataset.k===b.dataset.k?"":"none")})}
+
+// ---------- Risk page (risk.html shares this script). Six checks on the stock, each scored 1 (low) to 5 (high) from data
+// the dashboard already has, plus the "Risk to you" sizing above. Scores are a reading aid: nothing changes a fair value.
+function rkDefs(){return [
+ ["Edge lasts","Moat class and its advantage period; one step worse when the moat scorecard suggests a lower class (How durable is the edge?)","g-rs-edge"],
+ ["Profits in a bad year","Durable, somewhat cyclical or cyclical, from past recessions in the filings (Are the profits durable?)","g-rs-prof"],
+ ["Debts in a bad year","Pays its debts, tight or at risk in a repeat of its worst recession (Can it pay its debts in a bad year?)","g-rs-debt"],
+ ["Distant cash","How much of the value is far away and how reliable it is (How far away is the value?)","g-rs-far"],
+ ["Model range","90th ÷ 10th percentile value in the Monte Carlo: how wide the outcomes are (Range of outcomes)","g-rs-mc"],
+ ["Price vs value","Price against fair value at your hurdle: the risk of overpaying","g-rs-px"]]}
+function riskOf(r){if(r.type!=="stock")return null;const t=r.ticker,o=[],up=s=>s[0].toUpperCase()+s.slice(1),R5={1:1,3:3,5:5};
+ const MR={wide:0,narrow:1,none:2},ms=(MS.stocks||{})[t],b={wide:1,narrow:2,none:4,short:3}[r.moat];
+ const low=!!(ms&&ms.suggested&&MR[ms.suggested]!=null&&MR[r.moat]!=null&&MR[ms.suggested]>MR[r.moat]);
+ o.push(b==null?null:{l:Math.min(5,b+(low?1:0)),s:(r.moat==="none"?"No moat":up(r.moat))+(low?" ↓":""),t:`${up(MOATN[r.moat]||r.moat)}, ${r.cap_years||10} years${low?`; scorecard suggests ${MOATN[ms.suggested]}`:""}`});
+ const du=((DU.stocks||{})[t]||{}).stress,dl=du&&{durable:1,"somewhat cyclical":3,cyclical:5}[du.label];
+ o.push(dl?{l:dl,s:{1:"Durable",3:"Somewhat",5:"Cyclical"}[dl],t:up(du.label)}:null);
+ const ds=(DS.stocks||{})[t],vl=ds&&{"pays its debts":1,tight:3,"at risk":5}[ds.verdict];
+ o.push(vl?{l:vl,s:{1:"Pays",3:"Tight",5:"At risk"}[vl],t:{1:"Pays its debts",3:"Tight",5:"At risk"}[vl]}:null);
+ const dn=(DN.stocks||{})[t],RL=dn&&dn.reliability,rl=RL&&{"well supported":1,"some reliance on distant cash":3,"leans on distant cash":5}[RL.label],b10=dn&&dn.horizon&&dn.horizon.base?dn.horizon.base.beyond10:null;
+ o.push(rl?{l:rl,s:b10==null?"–":Math.round(b10*100)+"%",t:`${up(RL.label)}${b10==null?"":`; ${Math.round(b10*100)}% of the value after year 10`}`}:null);
+ const M=r.mc,f=r.fv0?r.fair_value/r.fv0:1,$k=v=>"$"+(v>=1000?v.toFixed(0):v.toFixed(v>=100?0:2));
+ if(M&&M.p10>0&&M.p90){const x=M.p90/M.p10;o.push({l:x<1.6?1:x<2.2?2:x<3?3:x<4?4:5,s:x.toFixed(1)+"×",t:`${$k(M.p10*f)} to ${$k(M.p90*f)} (10th to 90th percentile)`})}else o.push(null);
+ const d=r.diff;o.push(d==null?null:{l:d<=-.2?1:d<=-.05?2:d<=.05?3:d<=.25?4:5,s:(d>0?"+":"−")+Math.abs(d*100).toFixed(0)+"%",t:`${Math.abs(d*100).toFixed(0)}% ${d<0?"below":"above"} fair value`});
+ return o}
+function riskAll(){rows.forEach(r=>{const o=riskOf(r);r.rk=o;(o||[]).forEach((x,i)=>r["rk"+i]=x?x.l:null);
+ r.rk_sum=o?o.reduce((a,x)=>a+(x?x.l:3),0):null;r.rk_drop=r.sz?r.sz.bd.drop:null;r.rk_loss=r.sz&&r.size>0?r.sz.loss:null})}
+const rkCell=x=>x?`l${x.l}`:"l0";
+function rkMini(r){const o=r.rk;if(!o)return '<span class="muted">–</span>';const D=rkDefs();
+ return `<span class="rkmini" title="${o.map((x,i)=>`${D[i][0]}: ${x?x.t:"not scored"}`).join("\n")}">${o.map(x=>`<i class="${rkCell(x)}"></i>`).join("")}</span>`}
+function riskLinkHTML(r){const o=r.rk,z=r.sz;if(!o&&!z)return "";const hi=o?o.filter(x=>x&&x.l>=4).length:0,md=o?o.filter(x=>x&&x.l===3).length:0;
+ return `<a class="rklink" href="risk.html#${r.ticker}">${o?`<span class="rkmini big">${o.map(x=>`<i class="${rkCell(x)}"></i>`).join("")}</span>`:""}<span><b>Risk</b> · ${o?`${hi} high, ${md} medium of 6 checks`:"no stock checks for this asset"}${z?` · suggested size ${pc1(r.size||0)}`:""}</span><span class="go">Open risk →</span></a>`}
+function fpHTML(r){const o=r.rk,z=r.sz,D=rkDefs(),seg=l=>`<span class="seg">${[1,2,3,4,5].map(k=>`<i class="${l&&k<=l?"l"+l:""}"></i>`).join("")}</span>`;
+ const st=o?o.map((x,i)=>`<button class="fpm" data-go="${D[i][2]}" title="${D[i][1]}"><span class="fl">${D[i][0]}</span><span class="fv">${x?esc(x.t):"Not scored"}</span>${seg(x&&x.l)}</button>`).join(""):`<p class="muted">No stock checks: not an operating company.</p>`;
+ const b=z&&z.bd,dl=b?(b.drop>=.5?5:b.drop>=.42?4:3):null;
+ const you=z?`<button class="fpm" data-go="g-ry"><span class="fl">Bad-case drop</span><span class="fv">−${pc1(b.drop)}${b.floor?" (floor)":""}</span>${seg(dl)}</button>
+  <div class="fpm"><span class="fl">Suggested size</span><span class="fv"><b>${pc1(r.size||0)}</b>${r.size>0&&z.lim?` · ${LIM[z.lim]}`:""}</span></div>
+  <div class="fpm"><span class="fl">You lose in the bad case</span><span class="fv">${r.size>0?"−"+pc1(z.loss)+" of portfolio":"–"}</span></div>
+  <div class="fpm"><span class="fl">Your loss budget</span><span class="fv">${pc1(MY.lb)} a stock</span></div>`:`<p class="muted">No size: no model range for this asset.</p>`;
+ return `<div class="fp"><section class="rs"><h4>Risk in the stock</h4>${st}</section><section class="ry"><h4>Risk to you</h4>${you}</section></div>`}
+function grpHTML(id,k,t,sub,A){return A.length?`<section class="tgrp ${k}" id="${id}"><div class="tgh"><span class="tgk">${t}</span><span class="tgs">${sub}</span><span class="tgn">${A.length} section${A.length>1?"s":""}</span></div>${A.join("")}</section>`:""}
+function openRisk(t){const r=rows.find(x=>x.ticker===t);if(!r)return;
+ const sec=(id,h)=>h?`<div id="${id}" class="rksec">${h}</div>`:"";
+ const S=[sec("g-rs-edge",moatHTML(r)),sec("g-rs-prof",durHTML(r)),sec("g-rs-debt",debtHTML(r)),sec("g-rs-far",farHTML(r)),sec("g-rs-mc",mcHTML(r))].filter(Boolean),Y=[sizeHTML(r)].filter(Boolean);
+ $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
+ <p class="muted">Price ${usd(r.price)} · fair value ${usd(r.fair_value)} · <a href="index.html#${r.ticker}">Fair value and the full model →</a></p>
+ ${fpHTML(r)}
+ ${grpHTML("g-rs","rs","Risk in the stock","Could the business, its debts or the model let you down? The same for every owner",S)}
+ ${grpHTML("g-ry","ry","Risk to you","How much a loss would hurt you: sizing from your settings",Y)}
+ <p class="muted">Estimates only, not investment advice.</p>`;
+ $("#drawer").classList.add("on");$("#scrim").classList.add("on");$("#cl").onclick=close;
+ document.querySelectorAll("#dr .fpm[data-go]").forEach(b=>b.onclick=()=>{const g=$("#"+b.dataset.go);if(g)g.scrollIntoView({behavior:"smooth",block:"start"})});
+ if(r.mc)drawMC(r,{bear:A.probabilities.bear,base:A.probabilities.base,bull:A.probabilities.bull})}
+function renderRisk(f){const D=rkDefs(),pr=v=>v==null?"–":pc1(v);
+ $("#tbl tbody").innerHTML=f.map(r=>{const o=r.rk,z=r.sz;
+  return `<tr data-t="${r.ticker}"><td><div class="tk">${r.ticker}</div><div class="nm">${r.name}</div></td>
+  ${D.map((d,i)=>{const x=o&&o[i];return `<td class="rk ${rkCell(x)}" title="${d[0]}: ${x?esc(x.t):"not scored"}">${x?x.s:"–"}</td>`}).join("")}
+  <td class="r num yu">${z?"−"+pr(z.bd.drop)+(z.bd.floor?"*":""):"–"}</td><td class="r num yu">${r.size==null?"–":r.size>0?`<b>${pc1(r.size)}</b>`:'<span class="muted">0%</span>'}</td>
+  <td class="yu">${z&&r.size>0&&z.lim?LIM[z.lim]:'<span class="muted">–</span>'}</td><td class="r num yu">${z&&r.size>0?"−"+pc1(z.loss):"–"}</td></tr>`}).join("")||'<tr><td colspan="11" class="err">No match</td></tr>';
+ document.querySelectorAll("tbody tr[data-t]").forEach(tr=>tr.onclick=()=>open(tr.dataset.t))}
+function riskKpis(){if(!SZ)return;const st=rows.filter(r=>r.rk),hi=st.filter(r=>r.rk.slice(0,5).some(x=>x&&x.l===5)).length,T=SZ.theme;
+ $("#kpis").innerHTML=[["Suggested positions",SZ.n,`${pc1(SZ.tot)} of your portfolio${SZ.scaled?`, all scaled down to fit your ${pc1(MY.eq)} stock share`:""}`],["Your bad case","−"+pc1(SZ.loss),`portfolio loss if every suggested stock hits its bad case`],
+  ["Loss budget",pc1(MY.lb)+" a stock",`max ${pc1(MY.max)} a stock · ${pc1(MY.eq)} in stocks`],["Biggest theme",T?esc(T[0]):"–",T?`${pc1(T[1])} of your portfolio (cap ${pc1(THEME_CAP)})`:"nothing suggested"],
+  ["Business red flags",`${hi} of ${st.length}`,"stocks with a check at the highest level (price left out)"]].map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("")}
+
+// Monte Carlo range + what moves the value most (risk page drawer)
+function mcHTML(r){let mcH="";if(r.mc){const M=r.mc,$f=x=>"$"+(x>=1000?x.toFixed(0):x.toFixed(2)),W=500;
+  const T=M.tornado,tl=Math.min(...T.rows.map(o=>Math.min(o.low,o.high)),T.base),th=Math.max(...T.rows.map(o=>Math.max(o.low,o.high)),T.base),TX=x=>235+(x-tl)/(th-tl)*190;
+  const torn=`<svg viewBox="0 0 ${W} ${T.rows.length*30+24}" class="mcsvg" role="img" aria-label="Sensitivity of base-case value"><line x1="${TX(T.base)}" x2="${TX(T.base)}" y1="4" y2="${T.rows.length*30+6}" class="mcfv"/>`+
+   T.rows.map((o,i)=>{const a=Math.min(o.low,o.high),b=Math.max(o.low,o.high),y=10+i*30,pin=v=>Math.abs(v)<1?(v*100).toFixed(1)+"%":v;
+    return `<text x="0" y="${y+13}" class="mct mcl">${o.label.replace(" (+1 / -1 pt)","").replace(" (2% / 3%)","")}${o.choice?" *":""}</text><rect class="mctb" x="${TX(a)}" y="${y+2}" width="${Math.max(2,TX(b)-TX(a))}" height="16" rx="3"><title>${o.label}: ${pin(o.low_in)} → ${$f(o.low)}, ${pin(o.high_in)} → ${$f(o.high)}</title></rect><text x="${TX(a)-4}" y="${y+14}" text-anchor="end" class="mct">${$f(a)}</text><text x="${TX(b)+4}" y="${y+14}" class="mct">${$f(b)}</text>`}).join("")+
+   `<text x="${TX(T.base)}" y="${T.rows.length*30+20}" text-anchor="middle" class="mct">base case ${$f(T.base)}</text></svg>`;
+  mcH=`<h3>Range of outcomes (Monte Carlo)</h3><div id="mcbox"></div>
+  <h3>What moves the value most</h3><p class="muted">Base case with one input moved to its bear and bull value, the others unchanged. * The required return is a choice, shown for comparison.</p>${torn}`}
+ return mcH}
 
 // ---------- Capital and returns: what $100k at today's price is worth (NPV), whether returns beat the cost of capital,
 // how much the company invests and what that investment is expected to bring in. Every number follows the rate buttons.
@@ -439,7 +508,7 @@ function dropLog(L){if(!L.length)return `<p class="muted" style="padding:16px">C
  const f=(o,k)=>o&&o[k]!=null?`<span class="${o[k]>=0?"up":"down"}">${pct(o[k])}</span>`:"–";
  return `<div class="scroll"><table class="s"><tr><th style="text-align:left">Stock</th><th>Dropped</th><th>Verdict</th><th>30 days vs S&amp;P · sector</th><th>90 days vs S&amp;P · sector</th></tr>${L.map(e=>`<tr><td style="text-align:left"><button class="dtk" data-open="${e.ticker}">${e.ticker}</button></td><td>${esc(e.opened)}</td><td>${e.verdict?esc(e.verdict.label):"–"}</td><td>${f(e.outcome.d30,"vs_spy")} · ${f(e.outcome.d30,"vs_sector")}</td><td>${f(e.outcome.d90,"vs_spy")} · ${f(e.outcome.d90,"vs_sector")}</td></tr>`).join("")}</table></div>`}
 // ---------- My settings: personal hurdle (question 7) and position sizing (question 6). Kept in this browser only.
-const MY0={h:null,max:0.10,eq:0.35,hz:null};let MY={...MY0};try{MY={...MY0,...JSON.parse(localStorage.getItem("my")||"{}")}}catch(e){}
+const MY0={h:null,max:0.10,eq:0.35,hz:null,lb:0.02};let MY={...MY0};try{MY={...MY0,...JSON.parse(localStorage.getItem("my")||"{}")}}catch(e){}
 rows.forEach(r=>{r.fv0=r.fair_value;r.bb0=r.buy_below});
 const pc1=x=>(x*100).toFixed(1).replace(".0","")+"%";
 function hurdleOf(r){return MY.h==null?r.required_return:MY.h}
@@ -449,16 +518,31 @@ function applyHurdle(){rows.forEach(r=>{let fv=r.fv0;
 // Yearly return from buying at today's price and holding (Monte Carlo, Bear/Base/Bull 30/50/20): median, p10, p90
 function retDist(r){const M=r.mc;if(!M||!M.irr||r.price==null)return null;const I=M.irr,m=r.price/I.fair_value,hk=MY.hz==null?"regimes":"hold"+MY.hz,ir=irrAt(I,m,I[hk]?hk:"regimes"),X=mix(ir.Q,A.probabilities);
   return {med:X.inv(.5),p10:X.inv(.1),p90:X.inv(.9),inside:ir.inside,F:X.F}}
-// Size = max position x edge x confidence. Edge = median yearly return above your hurdle, full at +5 points (FULL_EDGE).
-// Confidence = chance the return beats your hurdle, 0 at 50% rising to 1 at 90%. Zero when the price is above fair value
-// at your hurdle; if all sizes add up to more than your stock share, all scale down in proportion.
-const FULL_EDGE=0.05;
+// Size ("Risk to you": Durand's Whitworth, Bernoulli and Cramer adjustments; none of them changes a fair value).
+//  1 Return:   max position x edge x confidence. Edge = median yearly return above your hurdle, full at +5 points (FULL_EDGE);
+//              confidence = chance the return beats your hurdle, 0 at 50% rising to 1 at 90%. Zero above fair value.
+//  2 Whitworth (affordable risk) + Bernoulli (your situation): at most your loss budget / the bad-case drop, so one bad
+//              idea costs at most the budget. Bad-case drop = price to the Monte Carlo 10th-percentile value, at least
+//              DROP_FLOOR because prices can fall far below value in a crash even when the model is right.
+//  3 Cramer (diminishing utility): bigger upside never buys more than the max position, no theme above THEME_CAP of the
+//              portfolio, and all sizes scale down together if they add up to more than your stock share.
+const FULL_EDGE=0.05,DROP_FLOOR=0.35,THEME_CAP=0.25;
+function badDrop(r){const M=r.mc,v=M&&M.p10>0&&r.price?M.p10*(r.fair_value/r.fv0):null,model=v==null?null:1-v/r.price;
+  return {v,model,drop:Math.max(DROP_FLOOR,model??0),floor:model==null||model<DROP_FLOOR}}
 function sizeAll(){const raw={};rows.forEach(r=>{r.sz=null;r.size=null;if(r.type!=="stock"&&r.type!=="etf")return;const d=retDist(r);if(!d)return;
-  const h=hurdleOf(r),ex=d.med-h,pb=1-d.F(h),edge=Math.min(1,Math.max(0,ex/FULL_EDGE)),conf=Math.min(1,Math.max(0,(pb-0.5)/0.4)),k=r.diff<0?MY.max*edge*conf:0;
-  r.sz={d,h,ex,pb,edge,conf,k};raw[r.ticker]=k});
-  const tot=Object.values(raw).reduce((a,b)=>a+b,0),sc=tot>MY.eq?MY.eq/tot:1;
-  rows.forEach(r=>{if(raw[r.ticker]!=null){r.size=raw[r.ticker]*sc;r.sz.scale=sc}});
-  return {tot:tot*sc,n:Object.values(raw).filter(x=>x>0).length,scaled:sc<1}}
+  const h=hurdleOf(r),ex=d.med-h,pb=1-d.F(h),edge=Math.min(1,Math.max(0,ex/FULL_EDGE)),conf=Math.min(1,Math.max(0,(pb-0.5)/0.4)),k0=r.diff<0?MY.max*edge*conf:0;
+  const bd=badDrop(r),kL=MY.lb/bd.drop,k=Math.min(k0,kL),lim=k0<=0?null:kL<k0?"loss":edge*conf>=1?"max":"return";
+  r.sz={d,h,ex,pb,edge,conf,k0,kL,k,bd,lim,ts:1,theme:null};raw[r.ticker]=k});
+  const ts={},tn={};for(const [th,L] of Object.entries(TH)){if(!Array.isArray(L))continue;const tot=L.reduce((a,t)=>a+(raw[t]||0),0);
+    if(tot>THEME_CAP)L.forEach(t=>{if(raw[t]>0&&THEME_CAP/tot<(ts[t]??1)){ts[t]=THEME_CAP/tot;tn[t]=th}})}
+  for(const t in ts)raw[t]*=ts[t];
+  const tot=Object.values(raw).reduce((a,b)=>a+b,0),sc=tot>MY.eq?MY.eq/tot:1;let loss=0;
+  rows.forEach(r=>{if(raw[r.ticker]==null)return;const z=r.sz;r.size=raw[r.ticker]*sc;z.scale=sc;
+    if(ts[r.ticker]){z.ts=ts[r.ticker];z.theme=tn[r.ticker];if(r.size>0)z.lim="theme"}   // the stock-share scaling hits every position alike, so it is shown once (summary, KPI) rather than as the limit
+    z.loss=r.size*z.bd.drop;loss+=z.loss});
+  const byTh=Object.entries(TH).filter(([,L])=>Array.isArray(L)).map(([th,L])=>[th,L.reduce((a,t)=>a+((rows.find(x=>x.ticker===t)||{}).size||0),0)]).sort((a,b)=>b[1]-a[1]);
+  SZ={tot:tot*sc,n:Object.values(raw).filter(x=>x>0).length,scaled:sc<1,loss,theme:byTh[0]&&byTh[0][1]>0?byTh[0]:null};return SZ}
+const LIM={return:"Expected return",max:"Max position",loss:"Loss budget",theme:"Theme cap"};
 // Moat scorecard (scripts/moat_scorecard.py): question 4. Never changes the class in data/moat.json.
 function moatHTML(r){const x=(MS.stocks||{})[r.ticker];if(r.type!=="stock"||!x)return "";
  const N={n:"Network effects",s:"Switching costs",i:"Brand, patents, licences",c:"Cost advantage",e:"Efficient scale"},L=["none","some","strong"];
@@ -674,19 +758,24 @@ function durHTML(r){const x=((DU.stocks||{})[r.ticker]||{}).stress;if(r.type!=="
  <div class="scroll"><table class="s rq"><tr><th style="text-align:left;width:30%">Stress test</th><th style="text-align:left">Answer from the filings</th></tr>${rows.join("")}</table></div>
  ${ep?`<p class="muted">${b?b.measure[0].toUpperCase()+b.measure.slice(1):"Operating profit"} in each recession: ${ep}.</p>`:""}
  <p class="muted">Durable = a repeat costs under 25% of profit and normal margins cost under 20% of fair value. Cyclical = a loss or profits halved. 10-K figures as first reported. History only, and nothing here changes the fair value.</p>`}
-function sizeHTML(r){const z=r.sz;if(!z)return "";const d=z.d,h=z.h,eq=MY.eq;
- const why=z.k<=0?(r.diff>=0?`Price is above fair value at your ${pc1(h)} hurdle, so no new money.`:`The expected return (median ${pc1(d.med)}, ${pc1(z.pb)} chance of beating ${pc1(h)}) isn't enough above your hurdle.`)
-  :`Expected return ${pc1(d.med)} a year (median; p10 ${pc1(d.p10)}, p90 ${pc1(d.p90)}) vs your ${pc1(h)} hurdle = ${pc1(z.ex)} extra → edge ${pc1(z.edge)} of full (full at +5 points). Chance of beating the hurdle ${pc1(z.pb)} → confidence ${pc1(z.conf)} (0 at 50%, full at 90%). Size = your ${pc1(MY.max)} max × ${pc1(z.edge)} × ${pc1(z.conf)} = ${pc1(z.k)}${z.scale<1?`, then ×${z.scale.toFixed(2)} so all suggested positions fit your ${pc1(eq)} in stocks`:""}.`;
- return `<h3>How much to hold</h3><p>Suggested position: <b>${pc1(r.size||0)} of your whole portfolio</b>${r.size>0?` (${pc1((r.size||0)/eq)} of the ${pc1(eq)} you keep in stocks)`:""}. ${why}</p><p class="muted">Settings: hurdle ${MY.h==null?`our judgement for this stock (${pc1(r.required_return)})`:pc1(MY.h)}, max position ${pc1(MY.max)}, stocks ${pc1(eq)} of portfolio. Change them under "My settings" above the table. A sizing guide from the model's own range, not advice: the range does not include the risk that the model itself is wrong.</p>`}
+function sizeHTML(r){const z=r.sz;if(!z)return "";const d=z.d,h=z.h,eq=MY.eq,b=z.bd;
+ const s1=z.k0<=0?(r.diff>=0?`Price is above fair value at your ${pc1(h)} hurdle, so no new money.`:`The expected return (median ${pc1(d.med)}, ${pc1(z.pb)} chance of beating ${pc1(h)}) isn't enough above your hurdle.`)
+  :`Expected return ${pc1(d.med)} a year (median; p10 ${pc1(d.p10)}, p90 ${pc1(d.p90)}) vs your ${pc1(h)} hurdle → edge ${pc1(z.edge)} of full (full at +5 points). Chance of beating the hurdle ${pc1(z.pb)} → confidence ${pc1(z.conf)}. Your ${pc1(MY.max)} max × ${pc1(z.edge)} × ${pc1(z.conf)} = <b>${pc1(z.k0)}</b>.`;
+ const s2=`Bad case: ${b.v==null?"no model range for this asset":`the 10th-percentile value is ${usd(b.v)}, ${b.model>0?`${pc1(b.model)} below`:"above"} today's price`}${b.floor?`; we use a ${pc1(DROP_FLOOR)} drop instead, because prices can fall far below value in a crash even when the model is right`:""}. Your ${pc1(MY.lb)} loss budget ÷ ${pc1(b.drop)} = at most <b>${pc1(z.kL)}</b>.`;
+ const s3=[z.theme?`${esc(z.theme)} would be over ${pc1(THEME_CAP)} of your portfolio, so its stocks scale ×${z.ts.toFixed(2)}`:`No theme over ${pc1(THEME_CAP)} of your portfolio`,z.scale<1?`all suggested positions scale ×${z.scale.toFixed(2)} to fit your ${pc1(eq)} in stocks`:`the total fits your ${pc1(eq)} in stocks`].join("; ")+".";
+ return `<h3>How much to hold</h3><p>Suggested position: <b>${pc1(r.size||0)} of your whole portfolio</b>${r.size>0?` (${pc1((r.size||0)/eq)} of the ${pc1(eq)} you keep in stocks). In the bad case this position costs you about <b>${pc1(z.loss)}</b> of your portfolio`:""}.${r.size>0&&z.lim?` Limited by: <b>${LIM[z.lim]}</b>${z.scale<1?`, then scaled with all positions to fit your ${pc1(eq)} in stocks`:""}.`:""}</p>
+ <ol class="szsteps"><li><b>What the return justifies.</b> ${s1}</li><li><b>What you can afford to lose</b> (Whitworth; the budget reflects your situation, Bernoulli). ${s2}</li><li><b>Caps</b> (Cramer: more upside never buys a bigger bet). The smaller of steps 1 and 2. ${s3}</li></ol>
+ <p class="muted">Settings: hurdle ${MY.h==null?`our judgement for this stock (${pc1(r.required_return)})`:pc1(MY.h)}, loss budget ${pc1(MY.lb)} a stock, max position ${pc1(MY.max)}, stocks ${pc1(eq)} of portfolio. Change them under "My settings". A sizing guide from the model's own range, not advice: the range does not include the risk that the model itself is wrong.</p>`}
 function myUI(){const S=sizeAll();
  const grp=(lab,key,opts,fmt)=>`<div class="chips"><span class="lbl">${lab}</span>${opts.map(o=>`<button class="chip${(MY[key]===o||(o!=null&&MY[key]!=null&&Math.abs(MY[key]-o)<1e-9))?" on":""}" data-my="${key}" data-v="${o}">${fmt(o)}</button>`).join("")}</div>`;
  const top=[...rows].filter(r=>r.size>0).sort((a,b)=>b.size-a.size);
- $("#mybox").innerHTML=`<details class="mydet"${MY.open?" open":""}><summary><b>My settings</b> <span class="muted">hurdle ${MY.h==null?"our judgement":pc1(MY.h)} · ${MY.hz==null?"hold for good":MY.hz+"-year horizon"} · max ${pc1(MY.max)} a stock · ${pc1(MY.eq)} in stocks → ${S.n} stocks suggested, ${pc1(S.tot)} invested</span></summary>
+ $("#mybox").innerHTML=`<details class="mydet"${MY.open?" open":""}><summary><b>My settings</b> <span class="muted">hurdle ${MY.h==null?"our judgement":pc1(MY.h)} · ${MY.hz==null?"hold for good":MY.hz+"-year horizon"} · max ${pc1(MY.max)} a stock · ${pc1(MY.eq)} in stocks · loss budget ${pc1(MY.lb)} → ${S.n} stocks suggested, ${pc1(S.tot)} invested, about −${pc1(S.loss)} in the bad case</span></summary>
   ${grp("My hurdle","h",[null,.08,.09,.10,.11,.12],o=>o==null?"Our judgement per stock":pc1(o))}
   ${grp("My horizon","hz",[5,10,20,null],o=>o==null?"Hold for good":o+" years")}
+  ${grp("Loss budget a stock","lb",[.01,.02,.03],o=>pc1(o)+(o===.01?" (most of my savings)":o===.02?" (steady income)":" (small part of my wealth)"))}
   ${grp("Max position","max",[.10,.125,.15],pc1)}
   ${grp("Stocks in portfolio","eq",[.20,.35,.60,1],o=>pc1(o)+(o===.2?" (cautious)":o===.35?" (balanced)":o===.6?" (growth)":" (all stocks)"))}
-  <p class="muted"><b>My hurdle</b> is the yearly return your alternative would earn (for example QQQ or bonds plus a premium); fair value, buy-below and status are recalculated at it. "Our judgement" uses each stock's own required return and reason. <b>My horizon</b> is how long you expect to hold: the expected return behind suggested size is for that holding period (you sell at the end at the price that gives the next buyer the required return), and each drawer's "How far away is the value?" shows how much of the value you would collect as cash within it. <b>Suggested size</b> is a share of your <b>whole</b> portfolio: your max position × edge (expected return above your hurdle, full at +5 points a year) × confidence (chance of beating the hurdle, full at 90%), from the Monte Carlo range at today's price; zero above fair value, and scaled down if the total would exceed your stock share. The rest stays in your alternative.</p>
+  <p class="muted"><b>My hurdle</b> is the yearly return your alternative would earn (for example QQQ or bonds plus a premium); fair value, buy-below and status are recalculated at it. "Our judgement" uses each stock's own required return and reason. <b>My horizon</b> is how long you expect to hold: the expected return behind suggested size is for that holding period (you sell at the end at the price that gives the next buyer the required return), and each drawer's "How far away is the value?" shows how much of the value you would collect as cash within it. <b>Loss budget</b> is the most of your whole portfolio you accept losing on one stock if its bad case happens: lower it if this money is most of what you have, raise it if it is a small part (Bernoulli: the same loss hurts more when you have less). <b>Suggested size</b> is a share of your <b>whole</b> portfolio and the smallest of: what the return justifies (max position × edge × confidence, from the Monte Carlo range at today's price; zero above fair value), your loss budget ÷ the bad-case drop (at least ${pc1(DROP_FLOOR)}), and the caps: no theme above ${pc1(THEME_CAP)} and the total within your stock share. The rest stays in your alternative. Details on the <a href="risk.html">Risk</a> page.</p>
   ${top.length?`<p class="muted"><b>Suggested now:</b> ${top.slice(0,12).map(r=>`${r.ticker} ${pc1(r.size)}`).join(" · ")}${top.length>12?` · +${top.length-12} more`:""}. Not advice.</p>`:`<p class="muted">Nothing clears your hurdle at today's prices.</p>`}</details>`;
  const det=$("#mybox details");det.ontoggle=()=>{MY.open=det.open;save()};
  document.querySelectorAll("#mybox .chip").forEach(c=>c.onclick=()=>{const v=c.dataset.v;MY[c.dataset.my]=v==="null"?null:+v;save();refresh()})}
@@ -696,9 +785,9 @@ function ratingUI(){rows.forEach(r=>{const x=ratingOf(r);r.rating=x?x.lab:null})
  $("#ratingsel").innerHTML=`<option value="all">All ratings (${rows.length})</option>`+RATE.map((t,i)=>`<option value="${i}">${t[0]} (${rows.filter(r=>r.rating===i).length})</option>`).join("");
  $("#ratingsel").value=rf}
 $("#ratingsel").onchange=e=>{rf=e.target.value;render()};
-function refresh(){applyHurdle();ratingUI();myUI();kpis();render()}
+function refresh(){applyHurdle();ratingUI();myUI();riskAll();kpis();render()}
 refresh();
-dropUI();
+if(PAGE==="fv")dropUI();
 if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());
 // 5- and 20-year holds for My horizon (model/montecarlo.py -> data/mc_horizon.json), loaded after the page is up

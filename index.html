@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Fair Value Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261109c">
+<link rel="stylesheet" href="assets/style.css?v=20261110r">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 </head>
 <body>
 <header class="top">
   <div class="brand"><span class="logo"></span><div><h1>Fair Value Dashboard</h1><p id="sub">Modern Graham framework</p></div></div>
-  <nav class="tabs"><a href="index.html" class="on">Fair Value</a><a href="screener.html">Growth Screen</a><a href="top5.html">Monthly Top 5</a><a href="russell.html">Russell 2000</a><a href="track.html">Track record</a></nav>
+  <nav class="tabs"><a href="index.html" class="on">Fair Value</a><a href="risk.html">Risk</a><a href="screener.html">Growth Screen</a><a href="top5.html">Monthly Top 5</a><a href="russell.html">Russell 2000</a><a href="track.html">Track record</a></nav>
   <div class="actions">
     <input id="q" type="search" placeholder="Filter ticker or name">
     <button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
@@ -29,7 +29,7 @@
     <div class="scroll"><table id="tbl"><thead><tr>
       <th data-k="ticker">Asset</th><th data-k="price" class="r">Price</th><th data-k="fair_value" class="r">Fair value</th>
       <th data-k="buy_below" class="r">Buy below</th><th data-k="diff" class="r">Price vs FV</th>
-      <th>Bear · Base · Bull</th><th data-k="status">Status</th><th data-k="implied_return" class="r">Implied return</th><th data-k="size" class="r" title="Suggested position, % of your whole portfolio (see My settings)">Suggested size</th><th>3 mo</th>
+      <th>Bear · Base · Bull</th><th data-k="status">Status</th><th data-k="implied_return" class="r">Implied return</th><th data-k="rk_sum" title="Six risk checks on the stock, low (green) to high (red). Details and position sizes on the Risk page">Risk</th><th>3 mo</th>
     </tr></thead><tbody></tbody></table></div>
     <p class="foot">Price vs FV = price ÷ fair value − 1. Negative means trading below estimated value. Click a row for the calculation behind it.</p>
   </section>
@@ -41,6 +41,6 @@
 </main>
 <aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
 <div id="scrim" class="scrim"></div>
-<script src="assets/app.js?v=20261109c"></script>
+<script src="assets/app.js?v=20261110r"></script>
 </body>
 </html>
