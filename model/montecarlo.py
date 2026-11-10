@@ -76,6 +76,34 @@ def paths(rev0, m0, g1, g10, m, gt=None, n=T, sg=None):
     mt = m0 + (m - m0)[:, None] * np.minimum(t, 5) / 5
     return rev * mt, g_last
 
+def paths_k(rev0, m0, g1, g10, m, gt, mo):
+    """Cash-flow paths and the terminal factor k per run, as model.dcf. Per-engine stocks (segments with "engines"): each
+    engine fades to 2.5% over its own advantage period with its own margin multiple, and carries its class's value-driver
+    factor once its period ends (model.dcf_eng); k is then the engines' combined terminal factor."""
+    sg = (mo or {}).get("sg")
+    if not (sg and sg.get("engines")):
+        n = (mo or {}).get("cap_years", T)
+        fcf, gl = paths(rev0, m0, g1, g10, m, gt, n, sg)
+        return fcf, (tv_k(mo, gt, gl) if mo else 1.0)
+    E = sg["engines"]; MO = [M["eng_mo"](c, mo) for c in E["moat"]]; caps = [x.get("cap_years", T) for x in MO]
+    n = max(caps + [mo.get("cap_years", T)]); t = np.arange(1, n + 1)
+    gt_ = np.broadcast_to(np.asarray(gt, float), g10.shape)
+    x = np.stack([np.minimum(g1 * q, sg["cap"] * g1) for q in sg["ratio"]], axis=1)
+    w = np.array(sg["share"]); x = x + (g1 - x @ w)[:, None]; x = np.where((g1 > 0)[:, None], x, g1[:, None])
+    mt = m0 + (m - m0)[:, None] * np.minimum(t, 5) / 5
+    fcf = np.zeros((len(g1), n)); term = np.zeros(len(g1))
+    for i in range(len(w)):
+        c = caps[i]
+        g = x[:, i][:, None] + (g10 - x[:, i])[:, None] * (np.minimum(t, 10) - 1) / 9
+        if c > 10: g = np.where(t > 10, g10[:, None] + (gt_ - g10)[:, None] * (np.minimum(t, c) - 10) / (c - 10), g)
+        g = np.where(t > c, gt_[:, None], g)
+        f = rev0 * w[i] * np.cumprod(1 + g, axis=1) * mt * E["x"][i]
+        ki = tv_k(dict(MO[i], r_req=mo["r_req"]), gt_, g[:, c - 1])
+        f = np.where(t > c, f * np.asarray(ki)[..., None] if np.ndim(ki) else f * ki, f)
+        fcf += f
+        term += f[:, -1] * (ki if c == n else 1.0)
+    return fcf, term / fcf[:, -1]
+
 def pv_paths(fcf, gt, r, nc, shares, k=1.0):
     """Value per share of cash-flow paths; r may be a scalar or one rate per run; k = terminal cash-flow factor."""
     t = np.arange(1, fcf.shape[1] + 1)
@@ -86,9 +114,8 @@ def pv_paths(fcf, gt, r, nc, shares, k=1.0):
 
 def value(rev0, m0, g1, g10, m, gt, r, nc, shares, mo=None):
     """Vectorised DCF identical to model.dcf."""
-    n = (mo or {}).get("cap_years", T)
-    fcf, gl = paths(rev0, m0, g1, g10, m, gt, n, (mo or {}).get("sg"))
-    return pv_paths(fcf, gt, r, nc, shares, tv_k(mo, gt, gl) if mo else 1.0)
+    fcf, k = paths_k(rev0, m0, g1, g10, m, gt, mo)
+    return pv_paths(fcf, gt, r, nc, shares, k)
 
 def implied_returns(fcf, gt, nc, shares, price, k=1.0, hi=0.60, it=60):
     """Per run: the yearly return that makes that run's cash flows (10 years + value after year 10) cost exactly
@@ -147,8 +174,7 @@ def simulate(tk, u, stratify=False, full=False):
     gt = np.clip(M["GT"] + norm.ppf(np.clip(u[:, 4], 1e-9, 1 - 1e-9)) * 0.004, 0.01, 0.035)
     g10 = np.minimum(g10, r - 0.01); gt = np.minimum(gt, r - 0.015); m = np.maximum(m, 0.005)
     mo = moat(tk, r)
-    fcf, gl = paths(s["rev"], m0, g1, g10, m, gt, mo["cap_years"], mo["sg"])
-    k = tv_k(mo, gt, gl)
+    fcf, k = paths_k(s["rev"], m0, g1, g10, m, gt, mo)
     v = pv_paths(fcf, gt, r, nc, s["shares"], k)
     if full:
         return v, reg, dict(fcf=fcf, gt=gt, nc=nc, shares=s["shares"], r=r, k=k)
