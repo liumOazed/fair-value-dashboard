@@ -367,3 +367,5 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 .fpm .seg i.l1,.fpm .seg i.l2{background:var(--good)}.fpm .seg i.l3{background:var(--warn)}.fpm .seg i.l4,.fpm .seg i.l5{background:var(--bad)}
 .tabs{max-width:100%;overflow-x:auto;scrollbar-width:none}.tabs a{white-space:nowrap}
 #dr a{color:var(--acc)}
+.rbok{display:inline-block;margin-top:3px;padding:1px 8px;border-radius:999px;font-size:11px;font-weight:600;background:var(--hl-mint);color:var(--good)}
+.rbline{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:color-mix(in srgb,var(--line) 35%,transparent);font-size:13px}.rbline.ok{background:var(--hl-mint)}
