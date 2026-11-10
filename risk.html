@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Risk · Fair Value Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=20261110r">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body data-page="risk">
+<header class="top">
+  <div class="brand"><span class="logo"></span><div><h1>Fair Value Dashboard</h1><p id="sub">Modern Graham framework</p></div></div>
+  <nav class="tabs"><a href="index.html">Fair Value</a><a href="risk.html" class="on">Risk</a><a href="screener.html">Growth Screen</a><a href="top5.html">Monthly Top 5</a><a href="russell.html">Russell 2000</a><a href="track.html">Track record</a></nav>
+  <div class="actions">
+    <input id="q" type="search" placeholder="Filter ticker or name">
+    <button id="theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="card">
+    <div class="card-head"><h2>Risk by stock</h2><span class="muted" id="stamp"></span></div>
+    <div class="chips" id="themechips"></div>
+    <div class="chips" id="pricechips"></div>
+    <div class="chips" id="healthchips"></div>
+    <div class="chips" id="ratingchips"><label class="lbl" for="ratingsel">Rating</label><select id="ratingsel" class="rsel" title="Excellent, Good, Average or Bad: intrinsic value, margin of safety and business quality (see the top of each drawer)"><option value="all">All ratings</option></select></div>
+    <div class="mybox" id="mybox"></div>
+    <div class="scroll"><table id="tbl" class="rktbl"><thead>
+      <tr class="gh"><th></th><th colspan="6" class="ghs">Risk in the stock</th><th colspan="4" class="ghy">Risk to you</th></tr>
+      <tr><th data-k="ticker">Asset</th>
+      <th data-k="rk0" title="Moat class and advantage period; one step worse when the moat scorecard suggests a lower class">Edge lasts</th>
+      <th data-k="rk1" title="Past recessions in the filings: durable, somewhat cyclical or cyclical">Profits in a bad year</th>
+      <th data-k="rk2" title="A repeat of its worst recession: pays its debts, tight or at risk">Debts in a bad year</th>
+      <th data-k="rk3" title="Share of the base value that arrives after year 10; colour = how reliable that distant cash is">Distant cash</th>
+      <th data-k="rk4" title="Monte Carlo 90th ÷ 10th percentile value: how wide the outcomes are">Model range</th>
+      <th data-k="rk5" title="Price against fair value at your hurdle">Price vs value</th>
+      <th data-k="rk_drop" class="r" title="Price to the Monte Carlo 10th-percentile value, at least 35% (* = the 35% floor applies)">Bad-case drop</th>
+      <th data-k="size" class="r" title="Suggested position, % of your whole portfolio (see My settings)">Size</th>
+      <th title="Which rule set the size">Limited by</th>
+      <th data-k="rk_loss" class="r" title="Size × bad-case drop: what this position costs your whole portfolio in its bad case">Loss if bad</th>
+    </tr></thead><tbody></tbody></table></div>
+    <p class="foot">Click a row for the sections behind each check. Colours run from low risk (green) through medium (cream) to high (red); grey means not scored. * = the 35% floor applies because the model's own bad case is a smaller drop.</p>
+  </section>
+  <section class="card legend">
+    <h2>Two kinds of risk</h2>
+    <p><b>Risk in the stock</b> is the same for every owner: will the edge last, can the business get through a bad year, how far away is the value, how wide is the model's range, and is the price above the value. It decides <b>whether</b> to buy, and the fair value and margin of safety already allow for it (growth fades over the advantage period; distant cash gets a finite edge and the duration checks).</p>
+    <p><b>Risk to you</b> depends on you, so it changes the position size and never the fair value. It decides <b>how much</b> to buy. Each size is the smallest of three answers:</p>
+    <ul class="muted">
+      <li><b>What the return justifies</b>: max position × edge × confidence, from the Monte Carlo range at today's price.</li>
+      <li><b>What you can afford to lose</b> (Whitworth: reduce the bet to an affordable risk). Your loss budget ÷ the bad-case drop, so one stock's bad case costs you at most the budget. The budget is where your own situation comes in (Bernoulli: the same loss matters more when you have less).</li>
+      <li><b>Caps</b> (Cramer: each extra dollar is worth less to you than the last, so a bigger upside should not buy a bigger bet): max position, no theme above 25% of the portfolio, and all sizes together within your stock share.</li>
+    </ul>
+    <p class="muted">Model estimates, not advice. The range does not include the risk that the model itself is wrong, which is why the bad-case drop is never taken as less than 35%.</p>
+  </section>
+</main>
+<aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
+<div id="scrim" class="scrim"></div>
+<script src="assets/app.js?v=20261110r"></script>
+</body>
+</html>
