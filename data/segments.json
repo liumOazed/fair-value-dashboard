@@ -2,13 +2,147 @@
  "_about": "Growth engines (stage 3 of the Durand/CAP review). Segment revenue from each company's latest report: 'now' = latest period, 'year_ago' = same period a year earlier ($M). The model splits TTM revenue by the 'now' shares; each segment's year-1 growth = company scenario g1 x (segment growth / company growth), capped at cap_multiple x company g1, then shifted so the revenue-weighted year-1 growth equals the scenario g1 exactly. Every segment fades to the scenario g10 by year 10, then to 2.5% over the advantage period. The company margin is unchanged (one consolidated margin).",
  "cap_multiple": 2.0,
  "stocks": {
-  "AAPL": {"period": "Fiscal year to 26 Sep 2026 vs 27 Sep 2025", "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
-           "segments": {"iPhone": [254098, 209586], "Mac": [37929, 33708], "iPad": [27929, 28023], "Wearables, Home and Accessories": [35577, 35686], "Services": [123301, 109158]}},
-  "MSFT": {"period": "Quarter to 30 Sep 2026 (FY27 Q1), year-ago recast from the stated growth (25%, -3%)", "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
-           "segments": {"Agents and Infra": [76795, 61436], "Devices and Consumer": [15484, 15963]}},
-  "GOOGL": {"period": "Quarter to 30 Sep 2026 vs 30 Sep 2025 (hedging gains excluded)", "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
-           "segments": {"Google Services": [96302, 87052], "Google Cloud": [30709, 15157], "Other Bets": [372, 344]}},
-  "AMZN": {"period": "Quarter to 30 Sep 2026 vs 30 Sep 2025", "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
-           "segments": {"North America": [112852, 106267], "International": [43108, 40896], "AWS": [45984, 33006]}}
- }
+  "AAPL": {
+   "period": "Fiscal year to 26 Sep 2026 vs 27 Sep 2025",
+   "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+   "segments": {
+    "iPhone": [
+     254098,
+     209586
+    ],
+    "Mac": [
+     37929,
+     33708
+    ],
+    "iPad": [
+     27929,
+     28023
+    ],
+    "Wearables, Home and Accessories": [
+     35577,
+     35686
+    ],
+    "Services": [
+     123301,
+     109158
+    ]
+   },
+   "engines": {
+    "iPhone": {
+     "margin_x": 0.235
+    },
+    "Mac": {
+     "margin_x": 0.235,
+     "moat": "narrow",
+     "why": "Hardware in a mature PC market: part of the ecosystem but not its lock-in."
+    },
+    "iPad": {
+     "margin_x": 0.235,
+     "moat": "narrow",
+     "why": "Flat sales in a mature tablet market."
+    },
+    "Wearables, Home and Accessories": {
+     "margin_x": 0.235,
+     "moat": "narrow",
+     "why": "Flat sales; more competition than iPhone."
+    },
+    "Services": {
+     "margin_x": 0.604
+    }
+   },
+   "engines_source": "Fiscal 2026 (10-K figures in the Q4 release): gross margin Products 39.3%, Services 76.2%; operating expenses 15.8% of revenue allocated by revenue, so operating margin ~23.5% Products, ~60.4% Services. Apple doesn't report profit by product, so all four product lines share the Products margin."
+  },
+  "MSFT": {
+   "period": "Quarter to 30 Sep 2026 (FY27 Q1), year-ago recast from the stated growth (25%, -3%)",
+   "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+   "segments": {
+    "Agents and Infra": [
+     76795,
+     61436
+    ],
+    "Devices and Consumer": [
+     15484,
+     15963
+    ]
+   },
+   "engines": {
+    "Agents and Infra": {
+     "margin_x": 1.0
+    },
+    "Devices and Consumer": {
+     "margin_x": 1.0,
+     "moat": "none",
+     "why": "Windows OEM, Xbox and Surface: mature, cyclical PC and console markets, sales shrinking 3%."
+    }
+   },
+   "engines_source": "Microsoft doesn't report operating income by its new segments, so both engines keep the company margin (margin_x 1)."
+  },
+  "GOOGL": {
+   "period": "Quarter to 30 Sep 2026 vs 30 Sep 2025 (hedging gains excluded)",
+   "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+   "segments": {
+    "Google Services": [
+     96302,
+     87052
+    ],
+    "Google Cloud": [
+     30709,
+     15157
+    ],
+    "Other Bets": [
+     372,
+     344
+    ]
+   },
+   "engines": {
+    "Google Services": {
+     "margin_x": 1.0
+    },
+    "Google Cloud": {
+     "margin_x": 1.0,
+     "moat": "narrow",
+     "why": "Third in cloud behind AWS and Azure; returns only recently above the hurdle."
+    },
+    "Other Bets": {
+     "margin_x": 1.0,
+     "moat": "none",
+     "why": "Early-stage bets that lose money; no lasting edge yet."
+    }
+   },
+   "engines_source": "Measured Q3 2026 operating margins are Google Services 40.7%, Google Cloud 36.2%, Other Bets -550%, but Cloud carries most of the AI capex, so operating margin overstates its share of cash. Until segment capex is known, all engines keep the company cash margin (margin_x 1)."
+  },
+  "AMZN": {
+   "period": "Quarter to 30 Sep 2026 vs 30 Sep 2025",
+   "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+   "segments": {
+    "North America": [
+     112852,
+     106267
+    ],
+    "International": [
+     43108,
+     40896
+    ],
+    "AWS": [
+     45984,
+     33006
+    ]
+   },
+   "engines": {
+    "North America": {
+     "margin_x": 1.0
+    },
+    "International": {
+     "margin_x": 1.0
+    },
+    "AWS": {
+     "margin_x": 1.0,
+     "moat": "narrow",
+     "why": "Top-two cloud platform with a 38% operating margin: a longer edge than retail."
+    }
+   },
+   "engines_source": "Measured trailing 12-month operating margins are North America 8.2%, International 3.3%, AWS 37.8%, but AWS also carries most of the capex, so operating margin overstates its share of cash (using it would lift fair value about 47%). Until segment capex is known, all engines keep the company cash margin (margin_x 1)."
+  }
+ },
+ "_engines_about": "Per-engine valuation (stage 4, from November 2026): 'engines' gives each segment a margin_x (its operating margin, scaled so today's company margin is unchanged; only the mix moves it) and optionally its own moat class (advantage period and return on new investment; default the company's) with a reason. Rule for adding engines at an earnings review: a reported segment of at least 10% of revenue growing 10+ points faster or slower than the rest."
 }

@@ -30,7 +30,8 @@ for t, a in res["assets"].items():
         e["moat_note"] = MOAT_NOTE.get(a.get("moat"))
         sgm = a.get("segments")
         e["segments"] = None if not sgm else dict(names=sgm["names"], share=[rnd(x, 4) for x in sgm["share"]], reported=rnd(sgm["reported"], 4),
-                                                  g1={k: [rnd(x, 4) for x in v] for k, v in sgm["g1"].items()}, period=sgm["period"], source=sgm["source"])
+                                                  g1={k: [rnd(x, 4) for x in v] for k, v in sgm["g1"].items()}, period=sgm["period"], source=sgm["source"],
+                                                  engines=None if not sgm.get("engines") else dict(sgm["engines"], x=[rnd(x, 4) for x in sgm["engines"]["x"]]))
         if a.get("method") == "excess_roe":      # underwriters (model.py INSURERS): book value and return on equity
             e["method"] = "excess_roe"; e["kind"] = a.get("kind")
             e["insurer"] = {k: (rnd(v, 4) if isinstance(v, float) else {kk: rnd(vv, 4) for kk, vv in v.items()} if isinstance(v, dict) else v)

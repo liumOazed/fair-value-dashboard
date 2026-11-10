@@ -19,6 +19,10 @@ Four questions from Durand's "Growth stocks and the Petersburg paradox" (1957), 
                                   return (terminal cash flow x (1 - 2.5% / r) / (1 - 2.5% / RONIC), RONIC = the class's
                                   return on new investment, 20% for wide)
               'short' stocks are already valued over 10 years with growth at or below 2.5%: not tested.
+  fails       'Growth fails' (every stock with a cash-flow model): the 30/50/20 fair value if the main growth engine breaks.
+              One engine: growth follows the model to year 5, then 2.5%, and from then on new investment earns only the
+              required return. Several engines (data/segments.json): the fastest-growing reported segment does that from
+              year 3, the others carry on as modelled. Underwriters: not tested.
   reliability concerns about the distant cash flows (see CONCERNS); 0 = well supported, 1 = some reliance on distant
               cash, 2+ = leans on distant cash.
   mos         suggested margin of safety = the stock's own + 2.5 points per concern other than 'price', at most +10
@@ -91,11 +95,18 @@ def stock_values(tk):
     cls = M["moat_of"](tk)["cls"]
 
     def mo_for(c):
-        if c == "end10": return dict(cap_years=10, ronic_forecast=None, cls="end10")
-        return dict(CLASSES[c], cls=c, r_req=r)
+        if c == "end10": return dict(cap_years=10, ronic_forecast=None, cls="end10", stress=True)
+        if c == "fails": return dict(cls="fails")
+        return dict(CLASSES[c], cls=c, r_req=r, stress=c != cls)
+
+    fast = None if not sg else max(range(len(sg["ratio"])), key=lambda i: sg["ratio"][i])
+    fail = (0, 5) if not sg else (fast, 3)
 
     def case(k, mo, rate, detail=False):
         p = S2[k]
+        if mo["cls"] == "fails":
+            mo_ = dict(CLASSES[cls], cls=cls, r_req=r) if cls != "short" else dict(cap_years=10, ronic_forecast=None, cls="short")
+            return M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], mo=mo_, sg=sg, fail=fail)
         if mo["cls"] != "end10":
             return M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], detail=detail, mo=mo, sg=sg)
         # Edge ends at year 10: years 1-10 as in the model, then new investment earns only the required return. The
@@ -106,8 +117,9 @@ def stock_values(tk):
         k_ = (1 - GT / r) / (1 - GT / rf)
         return d["per_share"] + (k_ - 1) * d["pv_tv"] / s["shares"]
 
-    value = lambda c, rate=r: sum(PROBS[k] * case(k, mo_for(c), rate) for k in PROBS)
+    def value(c, rate=r): return sum(PROBS[k] * case(k, mo_for(c), rate) for k in PROBS)
     det = {k: case(k, mo_for(cls), r, True) for k in PROBS}
+    value.fail = dict(engine=sg["names"][fast], year=3) if sg else dict(engine=None, year=5)
     return value, det, r, cls
 
 
@@ -150,6 +162,10 @@ def main():
             v_low, v_10 = value(low), value("end10")
             stress = dict(lower=low, lower_fv=round(v_low, 2), lower_chg=round(v_low / fv - 1, 4),
                           end10_fv=round(v_10, 2), end10_chg=round(v_10 / fv - 1, 4))
+        fails = None
+        if not ins:
+            v_f = value("fails")
+            fails = dict(value.fail, fv=round(v_f, 2), chg=round(v_f / fv - 1, 4))
         ms, rt, a = MS.get(tk) or {}, RET.get(tk) or {}, ASSETS.get(tk) or {}
         cap, years = a.get("implied_cap"), a.get("cap_years") or (M["ri_years"](M["moat_of"](tk)) if ins else M["moat_of"](tk).get("cap_years", 10))
         hb = hz["base"] or {}
@@ -171,7 +187,7 @@ def main():
             duration=dict(years=round(dur, 1), up=round(up, 4), down=round(dn, 4),
                           vs=("shorter than a 10-year Treasury" if dur < tsy["d10"] else "longer than a 30-year Treasury" if dur > tsy["d30"]
                               else "between a 10- and a 30-year Treasury")),
-            stress=stress, mos=mos,
+            stress=stress, mos=mos, fails=fails,
             reliability=dict(concerns=[k for k, v in flags.items() if v], n=n,
                              label="well supported" if n == 0 else "some reliance on distant cash" if n == 1 else "leans on distant cash",
                              half_life=rt.get("half_life"), score=ms.get("total"), suggested=ms.get("suggested"), implied_cap=cap),

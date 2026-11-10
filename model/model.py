@@ -585,8 +585,15 @@ def segments_of(t):
     if not e: return None
     now = {k: v[0] for k, v in e["segments"].items()}; tot = sum(now.values())
     rt = tot / sum(v[1] for v in e["segments"].values()) - 1
-    return dict(names=list(now), share=[now[k] / tot for k in now],
-                ratio=[(v[0] / v[1] - 1) / rt for v in e["segments"].values()], cap=SEGS["cap_multiple"], reported=rt)
+    out = dict(names=list(now), share=[now[k] / tot for k in now],
+               ratio=[(v[0] / v[1] - 1) / rt for v in e["segments"].values()], cap=SEGS["cap_multiple"], reported=rt)
+    en = e.get("engines")
+    if en:                       # per-engine valuation (stage 4): own cash margin and own advantage period per engine
+        x = [float((en.get(k) or {}).get("margin_x", 1.0)) for k in out["names"]]
+        nx = sum(w * v for w, v in zip(out["share"], x))
+        out["engines"] = dict(x=[v / nx for v in x], moat=[(en.get(k) or {}).get("moat") for k in out["names"]],
+                              why={k: (en.get(k) or {}).get("why", "") for k in out["names"]})
+    return out
 
 def seg_g1s(g1, sg):
     """Segment year-1 growth: company g1 x (segment growth / company growth), capped at cap x g1, then shifted so the
@@ -596,7 +603,69 @@ def seg_g1s(g1, sg):
     d = g1 - sum(w * v for w, v in zip(sg["share"], x))
     return [v + d for v in x]
 
-def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None):
+# Per-engine valuation (stage 4, from November 2026; data/segments.json "engines"). Each engine keeps its year-1 growth
+# from seg_g1s and fades to the scenario g10 by year 10 as before, but then fades to 2.5% over ITS OWN advantage period
+# (the engine's moat class, default the company's) and earns its own share of the cash margin: engine margin = company
+# margin path x margin_x, with margin_x scaled so today's revenue-weighted margin is unchanged (so the company margin
+# moves only as the mix shifts). After an engine's advantage period ends its growth is 2.5% and its cash flow carries
+# its class's value-driver factor (tv_factor), exactly what the single-engine model applies to the terminal value.
+# fail=(engine index, year): that engine's growth drops to 2.5% after `year` and from then on new investment earns only
+# the required return (the 'Growth fails' stress test, scripts/duration.py). With one engine and no fail this equals dcf().
+ENG_RANK = {"wide": 3, "narrow": 2, "none": 1}
+def eng_mo(c, mo):
+    """An engine's class settings. In the duration.py stress tests (mo["stress"]: one class lower, edge ends at year 10)
+    no engine outlasts the stressed company class."""
+    mc = (mo or {}).get("cls")
+    if c is None or c == mc or ((mo or {}).get("stress") and ENG_RANK.get(c, 0) > ENG_RANK.get(mc, 0)): return mo or {}
+    return dict(MOAT["classes"][c], cls=c, r_req=(mo or {}).get("r_req"))
+
+def dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None, fail=None):
+    E = (sg or {}).get("engines")
+    if sg:
+        W, G1 = sg["share"], seg_g1s(g1, sg)
+        X = E["x"] if E else [1.0] * len(W)
+        MO = [eng_mo(c, mo) for c in E["moat"]] if E else [mo or {}] * len(W)
+    else:
+        W, G1, X, MO = [1.0], [g1], [1.0], [mo or {}]
+    caps = [m_.get("cap_years", 10) for m_ in MO]
+    n = max(caps + [(mo or {}).get("cap_years", 10)])
+    def path(i, t):
+        if fail and fail[0] == i and t > fail[1]: return gt
+        c, a = caps[i], G1[i]
+        if t <= 10: return a + (g10 - a) * (t - 1) / 9
+        return g10 + (gt - g10) * (t - 10) / (c - 10) if t <= c else gt
+    def kfail(i):              # same cash margin, but the 2.5% growth now earns only the required return (as 'end10')
+        rf = MO[i].get("ronic_forecast") or 0.20
+        return (1 - gt / r) / (1 - gt / rf)
+    revs, pv, rows, k_on = [rev0 * w for w in W], 0.0, [], [None] * len(W)
+    f_last = [0.0] * len(W)
+    for t in range(1, n + 1):
+        mt = m0 + (m_target - m0) * min(t, ramp) / ramp
+        g_all, fcf = 0.0, 0.0
+        rev_prev = sum(revs)
+        for i in range(len(W)):
+            revs[i] *= 1 + path(i, t)
+            if fail and fail[0] == i and t > fail[1] and k_on[i] is None: k_on[i] = kfail(i)
+            elif t > caps[i] and k_on[i] is None: k_on[i] = tv_factor(MO[i], r, path(i, caps[i]), gt)
+            f_last[i] = revs[i] * mt * X[i] * (k_on[i] if k_on[i] is not None else 1.0)
+            fcf += f_last[i]
+        rev = sum(revs); g = rev / rev_prev - 1
+        df = 1 / (1 + r) ** t
+        pv += fcf * df
+        rows.append(dict(t=t, g=g, rev=rev, m=fcf / rev, fcf=fcf, df=df, pv=fcf * df, **({"seg": [round(v, 3) for v in revs]} if sg else {})))
+    # terminal: engines still inside their advantage period at year n get their class's factor now
+    term = sum(f_last[i] * (tv_factor(MO[i], r, path(i, n), gt) if k_on[i] is None else 1.0) for i in range(len(W)))
+    k = term / rows[-1]["fcf"] if rows[-1]["fcf"] else 1.0
+    tv = term * (1 + gt) / (r - gt)
+    pv_tv = tv * rows[-1]["df"]
+    ev = pv + pv_tv; eq = ev + net_cash_plus; ps = eq / shares
+    if detail:
+        return dict(rows=rows, pv_fcf=pv, tv=tv, pv_tv=pv_tv, ev=ev, equity=eq, per_share=ps, tv_share=pv_tv / ev, tv_factor=k)
+    return ps
+
+def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None, fail=None):
+    if fail is not None or (sg and sg.get("engines")):
+        return dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt, ramp, detail, mo, sg, fail)
     n = (mo or {}).get("cap_years", 10)
     rev, pv, rows = rev0, 0.0, []
     segrev = [rev0 * w for w in sg["share"]] if sg else None
@@ -847,7 +916,9 @@ for tk, s in STOCKS.items():
     E_ = s["price"] * s["shares"]
     out["assets"][tk] = dict(
         implied_cap=cap, nopat_margin=nm, growth_check=gchk, moat=mo["cls"], cap_years=mo["cap_years"], segments=None if not sg else dict(names=sg["names"], share=sg["share"], reported=sg["reported"],
-            g1={k: seg_g1s(S2[k]["g1"], sg) for k in S2}, period=SEGS["stocks"][tk]["period"], source=SEGS["stocks"][tk]["source"]), moat_reason=MOAT["stocks"][tk]["reason"],
+            g1={k: seg_g1s(S2[k]["g1"], sg) for k in S2}, period=SEGS["stocks"][tk]["period"], source=SEGS["stocks"][tk]["source"],
+            engines=None if not sg.get("engines") else dict(x=sg["engines"]["x"], moat=[c or mo["cls"] for c in sg["engines"]["moat"]],
+                cap_years=[eng_mo(c, mo).get("cap_years", 10) for c in sg["engines"]["moat"]], why=sg["engines"]["why"], source=SEGS["stocks"][tk].get("engines_source", ""))), moat_reason=MOAT["stocks"][tk]["reason"],
         rate_table=rate_table, wacc_row=wacc_row, r_reason=RR["stocks"][tk]["reason"],
         dcf_method=DCF_METHOD, wacc=dict(wacc=wacc_of(tk, s, s["r"]), discount_rate=w, cost_equity=s["r"], equity_weight=E_ / (E_ + f["debt"]), debt_weight=f["debt"] / (E_ + f["debt"]),
                   cost_debt=min(max(f["rd"], 0.02), 0.10), cost_debt_raw=f["rd"], tax=f["tax"], debt=f["debt"], after_tax_interest=aint),
