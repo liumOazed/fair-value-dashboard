@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Risk · Fair Value Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261110t">
+<link rel="stylesheet" href="assets/style.css?v=20261110u">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 </head>
 <body data-page="risk">
@@ -27,16 +27,17 @@
     <div class="chips" id="ratingchips"><label class="lbl" for="ratingsel">Rating</label><select id="ratingsel" class="rsel" title="Excellent, Good, Average or Bad: intrinsic value, margin of safety and business quality (see the top of each drawer)"><option value="all">All ratings</option></select></div>
     <div class="mybox" id="mybox"></div>
     <div class="scroll"><table id="tbl" class="rktbl"><thead>
-      <tr class="gh"><th></th><th colspan="8" class="ghs">Risk in the stock</th><th colspan="4" class="ghy">Risk to you</th></tr>
+      <tr class="gh"><th></th><th colspan="9" class="ghs">Risk in the stock</th><th colspan="4" class="ghy">Risk to you</th></tr>
       <tr><th data-k="ticker">Asset</th>
       <th data-k="rk0" title="Moat class and advantage period; one step worse when the moat scorecard suggests a lower class (↓), and one step worse when today's price needs more years of edge than ours (years shown)">Edge lasts</th>
       <th data-k="rk1" title="Base case: does new investment earn more than the required return?">Growth paid for</th>
       <th data-k="rk2" title="Base fair value if the main growth engine breaks (growth drops to 2.5% and new investment earns only the required return): under 15% lost low, 15-30% medium, over 30% high">Growth fails</th>
-      <th data-k="rk3" title="Past recessions in the filings: durable, somewhat cyclical or cyclical">Profits in a bad year</th>
-      <th data-k="rk4" title="A repeat of its worst recession: pays its debts, tight or at risk">Debts in a bad year</th>
-      <th data-k="rk5" title="Share of the base value that arrives after year 10; colour = how reliable that distant cash is">Distant cash</th>
-      <th data-k="rk6" title="Monte Carlo 90th ÷ 10th percentile value: how wide the outcomes are">Model range</th>
-      <th data-k="rk7" title="Price against fair value at your hurdle">Price vs value</th>
+      <th data-k="rk3" title="Base-case revenue in year 20 as a multiple of today (largest of the company and its segments): up to 3× low, over 10× high">Sales reach</th>
+      <th data-k="rk4" title="Past recessions in the filings: durable, somewhat cyclical or cyclical">Profits in a bad year</th>
+      <th data-k="rk5" title="A repeat of its worst recession: pays its debts, tight or at risk">Debts in a bad year</th>
+      <th data-k="rk6" title="Share of the base value that arrives after year 10; colour = how reliable that distant cash is">Distant cash</th>
+      <th data-k="rk7" title="Monte Carlo 90th ÷ 10th percentile value: how wide the outcomes are">Model range</th>
+      <th data-k="rk8" title="Price against fair value at your hurdle">Price vs value</th>
       <th data-k="rk_drop" class="r" title="Price to the Monte Carlo 10th-percentile value, at least 35% (* = the 35% floor applies)">Bad-case drop</th>
       <th data-k="size" class="r" title="Suggested position, % of your whole portfolio (see My settings)">Size</th>
       <th title="Which rule set the size">Limited by</th>
@@ -46,7 +47,7 @@
   </section>
   <section class="card legend">
     <h2>Two kinds of risk</h2>
-    <p><b>Risk in the stock</b> is the same for every owner: will the edge last as long as the price needs, does growth earn more than it costs, what if the main growth engine fails, can the business get through a bad year, how far away is the value, how wide is the model's range, and is the price above the value. It decides <b>whether</b> to buy, and the fair value and margin of safety already allow for it (growth fades over the advantage period; distant cash gets a finite edge and the duration checks).</p>
+    <p><b>Risk in the stock</b> is the same for every owner: will the edge last as long as the price needs, does growth earn more than it costs, what if the main growth engine fails, does the forecast need more sales than the market can give, can the business get through a bad year, how far away is the value, how wide is the model's range, and is the price above the value. It decides <b>whether</b> to buy, and the fair value and margin of safety already allow for it (growth fades over the advantage period; distant cash gets a finite edge and the duration checks).</p>
     <p><b>Risk to you</b> depends on you, so it changes the position size and never the fair value. It decides <b>how much</b> to buy. Each size is the smallest of three answers:</p>
     <ul class="muted">
       <li><b>What the return justifies</b>: max position × edge × confidence, from the Monte Carlo range at today's price.</li>
@@ -60,6 +61,6 @@
 </main>
 <aside id="drawer" class="drawer" aria-hidden="true"><div class="dr-in" id="dr"></div></aside>
 <div id="scrim" class="scrim"></div>
-<script src="assets/app.js?v=20261110t"></script>
+<script src="assets/app.js?v=20261110u"></script>
 </body>
 </html>

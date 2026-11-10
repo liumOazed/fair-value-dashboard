@@ -1,0 +1,4 @@
+{
+"_about": "Optional market sizes for the Reverse market check on the Risk page (scripts/duration.py -> data/duration.json reach.markets). Per ticker: markets = list of {size: market revenue in the model's units (same as STOCKS rev in model/model.py, $ billions), year: the year that size is for, engine: segment name from data/segments.json or omit for the whole company, source: where the number comes from}. The check shows the share of that market the base case implies in that year and flags anything over 30%.",
+"_example": {"TICKER": {"markets": [{"size": 500, "year": 2035, "engine": "Cloud", "source": "Research firm, report name, date"}]}}
+}
