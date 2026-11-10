@@ -2,8 +2,8 @@
  "_about": "Growth engines (stage 3 of the Durand/CAP review). Segment revenue from each company's latest report: 'now' = latest period, 'year_ago' = same period a year earlier ($M). The model splits TTM revenue by the 'now' shares; each segment's year-1 growth = company scenario g1 x (segment growth / company growth), capped at cap_multiple x company g1, then shifted so the revenue-weighted year-1 growth equals the scenario g1 exactly. Every segment fades to the scenario g10 by year 10, then to 2.5% over the advantage period. The company margin is unchanged (one consolidated margin).",
  "cap_multiple": 2.0,
  "stocks": {
-  "AAPL": {"period": "Nine months to 27 Jun 2026 vs 28 Jun 2025", "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
-           "segments": {"iPhone": [196515, 160561], "Mac": [27137, 24982], "iPad": [21700, 21071], "Wearables, Home and Accessories": [27277, 26673], "Services": [91728, 80408]}},
+  "AAPL": {"period": "Fiscal year to 26 Sep 2026 vs 27 Sep 2025", "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+           "segments": {"iPhone": [254098, 209586], "Mac": [37929, 33708], "iPad": [27929, 28023], "Wearables, Home and Accessories": [35577, 35686], "Services": [123301, 109158]}},
   "MSFT": {"period": "Quarter to 30 Sep 2026 (FY27 Q1), year-ago recast from the stated growth (25%, -3%)", "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
            "segments": {"Agents and Infra": [76795, 61436], "Devices and Consumer": [15484, 15963]}},
   "GOOGL": {"period": "Quarter to 30 Sep 2026 vs 30 Sep 2025 (hedging gains excluded)", "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",

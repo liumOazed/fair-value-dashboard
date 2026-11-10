@@ -2088,14 +2088,14 @@
    "sources": {
     "n": 0,
     "s": 1,
-    "i": 2,
+    "i": 1,
     "c": 1,
     "e": 1
    },
-   "why": "Largest animal-health company with broad vet relationships and patented drugs.",
-   "risk": "Safety concerns about Librela; generic competition.",
-   "src": null,
-   "source_score": 3.25,
+   "why": "Largest animal-health company with broad vet relationships; its patented dermatology drugs (Apoquel, Cytopoint) are losing share to new rivals and first generics.",
+   "risk": "US companion-animal sales -8% and dermatology -16% in Q3 2026 with 2026 organic growth reset to -2% to -1%; Librela safety concerns.",
+   "src": "https://www.sec.gov/Archives/edgar/data/0001555280/000155528026000048/exhibit99q32026.htm",
+   "source_score": 2.0,
    "numbers_score": 5.0,
    "parts": {
     "persistence": 2.0,
@@ -2105,11 +2105,11 @@
     "gm_std": 0.0183
    },
    "unknown": [],
-   "total": 8.2,
+   "total": 7.0,
    "out_of": 10,
-   "suggested": "wide",
+   "suggested": "narrow",
    "current": "wide",
-   "differs": false
+   "differs": true
   },
   "MO": {
    "sources": {

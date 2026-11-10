@@ -1494,6 +1494,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
      "quote": "Net sales by category, three months ended: iPhone $54,252M vs $44,582M year-ago ((54252/44582-1) = 21.7%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 17.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+     "quote": "Net sales by category, three months ended: iPhone $57,583M vs $49,025M year-ago ((57583/49025-1) = 17.5%)",
+     "added": "2026-11-10"
     }
    ],
    "services_revenue_growth": [
@@ -1560,6 +1568,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
      "quote": "Net sales by category, three months ended: Services $30,739M vs $27,423M year-ago ((30739/27423-1) = 12.1%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 9.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+     "quote": "Net sales by category, three months ended: Services $31,573M vs $28,750M year-ago ((31573/28750-1) = 9.8%)",
+     "added": "2026-11-10"
     }
    ],
    "greater_china_revenue_growth": [
@@ -1626,6 +1642,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
      "quote": "Net sales by reportable segment, three months ended: Greater China $18,816M vs $15,369M year-ago ((18816/15369-1) = 22.4%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 21.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+     "quote": "Net sales by reportable segment, three months ended: Greater China $17,539M vs $14,493M year-ago ((17539/14493-1) = 21.0%)",
+     "added": "2026-11-10"
     }
    ],
    "services_gross_margin": [
@@ -1692,6 +1716,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm",
      "quote": "Condensed statement of operations, three months ended: Net sales Services $30,739M; Cost of sales Services $7,494M; Services gross margin = 30739-7494 = $23,245M; 23245/30739 = 75.6%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 76.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm",
+     "quote": "Condensed statement of operations, three months ended: Net sales Services $31,573M; Cost of sales Services $7,593M; Services gross margin = 31573-7593 = $23,980M; 23980/31573 = 76.0%",
+     "added": "2026-11-10"
     }
    ],
    "active_installed_base_annual": [
@@ -2934,6 +2966,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
      "quote": "\"Room nights grew 5% compared to the second quarter of 2025.\" Table: Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q26 column: room nights \"Year/Year Growth 7.1 % 8.1 % 13.2 % 7.2 % 7.7 % 8.2 % 9.0 % 5.9 % 5.3 %\" -> 2Q26 = 5.3%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000044/q3-26bkngearningsrelease.htm",
+     "quote": "Q3 2026 earnings release statistical data (columns 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26 3Q26): room nights 299 261 319 309 323 285 338 325 345; Year/Year Growth 8.1% 13.2% 7.2% 7.7% 8.2% 9.0% 5.9% 5.3% 6.7% -> 3Q26 = 6.7% (headline: room nights up 7%)",
+     "added": "2026-11-10"
     }
    ],
    "gross_bookings_growth": [
@@ -3000,6 +3040,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
      "quote": "\"Gross bookings grew 9% compared to the second quarter of 2025, or approximately 8% on a constant currency basis.\" Table: Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q26 column: gross bookings \"Year/Year Growth 4.4 % 9.1 % 17.3 % 7.2 % 12.8 % 14.3 % 15.8 % 15.2 % 9.0 %\" -> 2Q26 = 9.0% as reported (constant currency basis: 8%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 9.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000044/q3-26bkngearningsrelease.htm",
+     "quote": "Q3 2026 earnings release statistical data (columns 3Q24 ... 3Q26): Total Gross Bookings $43.4 $37.2 $46.7 $46.7 $49.7 $43.0 $53.8 $51.0 $54.5; Year/Year Growth 9.1% 17.3% 7.2% 12.8% 14.3% 15.8% 15.2% 9.0% 9.6% -> 3Q26 = 9.6% as reported (headline: up 10%, about 11% constant currency)",
+     "added": "2026-11-10"
     }
    ],
    "take_rate": [
@@ -3066,6 +3114,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
      "quote": "Income statement (Three Months Ended June 30, 2026 | 2025): \"Total revenues 7,352 6,798\" -> total revenues $7,352M; Q2 2026 earnings release statistical data (headers: '2Q24 3Q24 4Q24 1Q25 2Q25 3Q25 4Q25 1Q26 2Q26'), 2Q26 column: \"Total Gross Bookings $ 41.4 $ 43.4 $ 37.2 $ 46.7 $ 46.7 $ 49.7 $ 43.0 $ 53.8 $ 51.0\" -> gross bookings $51.0B. (7.352/51.0 = 14.4%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 18.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000044/q3-26bkngearningsrelease.htm",
+     "quote": "Adjusted Revenue Q3 2026 $9,793M (= total revenues $8,893M + $900M FTC revenue reduction, which the release excludes from Adjusted Revenue; Q3 2025 adjusted = reported $9,008M); 3Q26 Total Gross Bookings $54.5B. (9.793/54.5 = 18.0%; on GAAP revenue 8.893/54.5 = 16.3%)",
+     "added": "2026-11-10"
     }
    ],
    "marketing_revenue_direct_mix": [
@@ -3132,6 +3188,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000036/q2-26bkngearningsrelease.htm",
      "quote": "Income statement (Three Months Ended June 30, 2026 | 2025): \"Marketing expenses 2,371 2,139\"; \"Total revenues 7,352 6,798\". Booking no longer reports performance and brand marketing as separate lines (single 'Marketing expenses' line since 2025), so combined marketing expenses used as performance+brand: 2,371/7,352 = 32.2%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 26.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001075531/000107553126000044/q3-26bkngearningsrelease.htm",
+     "quote": "Income statement (Three Months Ended Sep 30, 2026 | 2025): Marketing expenses 2,588 | 2,340; Total revenues 8,893 | 9,008; Adjusted Revenue $9,793M (excludes $900M FTC revenue reduction). Combined marketing used as performance+brand: 2,588/9,793 = 26.4% (on GAAP revenue 2,588/8,893 = 29.1%)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -3200,6 +3264,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
      "quote": "B2B gross bookings (Segment P&L) Q2 2026 $10,742M vs Q2 2025 $8,844M, Y/Y 21%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 19,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000059/earningsrelease-q32026.htm",
+     "quote": "Total Gross Bookings grew 11%, while B2B Gross Bookings grew 19% and B2C Gross Bookings grew 7%.",
+     "added": "2026-11-10"
     }
    ],
    "gross_bookings_growth": [
@@ -3266,6 +3338,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
      "quote": "Gross bookings | $33,928 | $30,409 | 12%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000059/earningsrelease-q32026.htm",
+     "quote": "Gross Bookings | $34,008 | $30,727 | 11%",
+     "added": "2026-11-10"
     }
    ],
    "marketing_revenue": [
@@ -3332,6 +3412,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
      "quote": "Statement of operations, three months ended 2026-06-30: Revenue $4,315M; Selling and marketing - direct 2,119; Selling and marketing - indirect 217 ((2119+217)/4315 = 2336/4315 = 54.1%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 48.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000059/earningsrelease-q32026.htm",
+     "quote": "Statement of operations, three months ended 2026-09-30: Revenue $4,938M; Selling and marketing - direct 2,184; Selling and marketing - indirect 209 ((2184+209)/4938 = 2393/4938 = 48.5%)",
+     "added": "2026-11-10"
     }
    ],
    "revenue_gross_bookings_take_rate": [
@@ -3398,6 +3486,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
      "quote": "Trended metrics: Q2 2026 Revenue $4,315M; Gross bookings $33,928M (4315/33928 = 12.7%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 14.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000059/earningsrelease-q32026.htm",
+     "quote": "Trended metrics: Q3 2026 Revenue $4,938M; Gross bookings $34,008M (4938/34008 = 14.5%)",
+     "added": "2026-11-10"
     }
    ],
    "room_nights_growth": [
@@ -3464,6 +3560,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000051/earningsrelease-q22026.htm",
      "quote": "Booked room nights | 111.5 | 105.5 | 6%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000059/earningsrelease-q32026.htm",
+     "quote": "Booked Room Nights | 115.7 | 108.2 | 7%",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -5154,6 +5258,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
      "quote": "Revenue | $1,924 | $1,259 | 53% (continuing operations)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 55,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000068/exhibit991-3q26earningspre.htm",
+     "quote": "Revenue | $2,185 | $1,405 | 55% (Q3 2026 vs Q3 2025; all advertising, Apps sold)",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_ebitda_margin": [
@@ -5220,6 +5332,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
      "quote": "Adjusted EBITDA margin | 84% | 81% (Q2 2026, continuing operations)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 84,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000068/exhibit991-3q26earningspre.htm",
+     "quote": "Adjusted EBITDA Margin | 84% | 82% (Q3 2026 vs Q3 2025)",
+     "added": "2026-11-10"
     }
    ],
    "fcf_margin": [
@@ -5286,6 +5406,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
      "quote": "Free Cash Flow $863,317K ('Free Cash Flow was $863.3 million'); revenue $1,923,686K (863317/1923686 = 44.9%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 64.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000068/exhibit991-3q26earningspre.htm",
+     "quote": "Free Cash Flow $1,418,443K; revenue $2,184,815K (1418443/2184815 = 64.9%)",
+     "added": "2026-11-10"
     }
    ],
    "share_count_change": [
@@ -5352,6 +5480,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000057/exhibit991-2q26earningspre.htm",
      "quote": "Diluted weighted-average shares, three months: Diluted | 337,031 | 342,194 (thousands) (337031/342194 - 1 = -1.5%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -1.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000068/exhibit991-3q26earningspre.htm",
+     "quote": "Diluted weighted-average shares, three months: Diluted | 334,769 | 340,974 (thousands) (334769/340974 - 1 = -1.8%)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -5420,6 +5556,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000031/exhibit991erq32026.htm",
      "quote": "Scores revenues ... were $458.9 million in the third quarter, compared to $324.3 million in the prior year period, an increase of 41%.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 33.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000037/exhibit991erq42026.htm",
+     "quote": "Scores revenues ... were $413.8 million in the fourth quarter, compared to $311.6 million in the prior year period, an increase of 33%.",
+     "added": "2026-11-10"
     }
    ],
    "mortgage_originations_scores_revenue": [
@@ -5544,6 +5688,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000031/exhibit991erq32026.htm",
      "quote": "On June 30, 2026, Software Annual Recurring Revenue (ARR) was up 10% year-over-year, consisting of a 62% increase in platform ARR and a 17% decline in non-platform ARR.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 14.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000037/exhibit991erq42026.htm",
+     "quote": "On September 30, 2026, Software Annual Recurring Revenue (ARR) was up 14% year-over-year, consisting of a 72% increase in platform ARR and an 18% decline in non-platform ARR.",
+     "added": "2026-11-10"
     }
    ],
    "software_dollar_based_net_retention": [
@@ -5610,6 +5762,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000031/exhibit991erq32026.htm",
      "quote": "The total Software Dollar-Based Net Retention Rate was 109% on June 30, 2026, with platform software at 148% and non-platform software at 82%.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q4 FY26",
+     "value": 112.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000814547/000081454726000037/exhibit991erq42026.htm",
+     "quote": "The total Software Dollar-Based Net Retention Rate was 112% on September 30, 2026, with platform software at 156% and non-platform software at 82%.",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -7292,6 +7452,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126032624/ef20079840_ex99-1.htm",
      "quote": "led by a 15% (+14% Constant Currency) Growth at Coach Brand",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 16,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126042034/ef20084882_ex99-1.htm",
+     "quote": "Led by 16% Growth at Coach Brand (Coach | $1,661 | 16% | 16%, reported | constant currency; vs $1,430M)",
+     "added": "2026-11-10"
     }
    ],
    "kate_spade_revenue_growth": [
@@ -7358,6 +7526,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126032624/ef20079840_ex99-1.htm",
      "quote": "Kate Spade | 235.1 | 252.6 | (7)% | (7)% (reported | constant currency)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": -10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126042034/ef20084882_ex99-1.htm",
+     "quote": "Kate Spade | 233 | (10)% | (10)% (reported | constant currency; vs $260M)",
+     "added": "2026-11-10"
     }
    ],
    "gross_margin": [
@@ -7424,6 +7600,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126032624/ef20079840_ex99-1.htm",
      "quote": "Gross margin | 83.3% | 76.3% | 700 bps (GAAP; gross profit $1,563.6M on net sales $1,876.6M; non-GAAP gross margin 78.1%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 78.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126042034/ef20084882_ex99-1.htm",
+     "quote": "Expanded Gross Margin by 230 Basis Points on a GAAP Basis and 220 Basis Points on a Non-GAAP Basis (GAAP gross margin 78.6% vs 76.3%; non-GAAP 78.7%)",
+     "added": "2026-11-10"
     }
    ],
    "inventory_growth_vs_sales": [
@@ -7490,6 +7674,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126032624/ef20079840_ex99-1.htm",
      "quote": "Inventory was $826 million versus prior year ending inventory of $861 million (balance sheet $826.2M vs $860.7M); net sales $1,876.6M vs $1,723.2M. Inventories $826.2M vs $860.7M (-4.0%); net sales (+8.9%) (-4.0 - 8.9 = -12.9)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": -7.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001116132/000114036126042034/ef20084882_ex99-1.htm",
+     "quote": "Inventory was $1.06 billion versus prior year ending inventory of $1.02 billion (balance sheet $1,055M vs $1,018.6M); net sales $1,894M vs $1,705M. Inventories +3.6%; net sales +11.1% (3.6 - 11.1 = -7.5)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -7526,6 +7718,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926092046/tm2622396d1_ex99-1.htm",
      "quote": "Net sales on a foreign currency adjusted basis (non-GAAP) increased 17.9 percent in the 2026 second quarter.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 16.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926123387/tm2629095d1_ex99-1.htm",
+     "quote": "Net sales on a foreign currency adjusted basis (non-GAAP) increased 16.3 percent in the 2026 third quarter.",
+     "added": "2026-11-10"
     }
    ],
    "international_share_of_sales": [
@@ -7592,6 +7792,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926092046/tm2622396d1_ex99-1.htm",
      "quote": "Net sales to customers outside the United States increased 34.6 percent to $1.16 billion in the 2026 second quarter, from $864.2 million in the 2025 second quarter, representing approximately 46 percent and 41 percent of total reported net sales for the 2026 and 2025 second quarters, respectively.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 47,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926123387/tm2629095d1_ex99-1.htm",
+     "quote": "Net sales to customers outside the United States increased 28.1 percent to $1.20 billion in the 2026 third quarter, from $937.1 million in the 2025 third quarter, representing approximately 47 percent and 43 percent of total reported net sales for the 2026 and 2025 third quarters, respectively.",
+     "added": "2026-11-10"
     }
    ],
    "gross_margin": [
@@ -7658,6 +7866,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926092046/tm2622396d1_ex99-1.htm",
      "quote": "Gross profit as a percentage of net sales for the 2026 second quarter was 55.9 percent, compared with 55.7 percent in the 2025 second quarter.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 54.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926123387/tm2629095d1_ex99-1.htm",
+     "quote": "Gross profit as a percentage of net sales for the 2026 third quarter was 54.7 percent, compared with 55.7 percent in the 2025 third quarter.",
+     "added": "2026-11-10"
     }
    ],
    "price_vs_volume_cases": [
@@ -7692,6 +7908,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926092046/tm2622396d1_ex99-1.htm",
      "quote": "Energy drink case sales (in thousands) (in 192-ounce case equivalents) | 304,944 | 249,336; Average net sales per case $8.20 | $8.29; \"The increase in gross profit as a percentage of net sales for the 2026 second quarter was primarily the result of pricing actions and product sales mix, partially offset by increased aluminum can costs, geographical sales mix and increased freight-in costs.\"",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": "Energy drink cases 304.9M vs 258.4M (+18.0%); avg net sales/case $8.30 vs $8.35; GM down on aluminium can costs, mix and freight-in, partly offset by pricing actions (not quantified)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000865752/000110465926123387/tm2629095d1_ex99-1.htm",
+     "quote": "Energy drink case sales (in thousands) (in 192-ounce case equivalents) | 304,902 | 258,387; Average net sales per case $8.30 | $8.35; \"The decrease in gross profit as a percentage of net sales for the 2026 third quarter was primarily the result of increased aluminum can costs, geographical sales mix and increased freight-in costs, partially offset by pricing actions.\" (304,902 / 258,387 - 1 = +18.0%)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -8950,6 +9174,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926090033/tm2622041d1_ex99-1.htm",
      "quote": "Organic growth table, CAG Diagnostics recurring revenue (3 mo. ended 6/30/26): reported 11.0%, currency 0.7%, organic 10.3%; text: \"CAG Diagnostics recurring revenue growth of 11% as reported and 10% organic\"",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 11.0,
+     "source": "https://www.webull.com/news/15854680212202496",
+     "quote": "\"Revenue increased 10% organically, supported by 11% organic growth in CAG Diagnostics recurring revenues.\" (Q3 2026 call; release headline: CAG Diagnostics recurring revenue up 11% reported and organic)",
+     "added": "2026-11-10"
     }
    ],
    "premium_instrument_placements": [
@@ -9016,6 +9248,14 @@
      "source": "https://www.webull.com/news/15344824561263616",
      "quote": "\"CAG premium instrument placements reached 5,265 units during the second quarter.\" (Q2 2026 call)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5780,
+     "source": "https://www.webull.com/news/15854680212202496",
+     "quote": "\"Premium instrument placements reached 5,780 units in the quarter, and placement quality remained strong globally.\" (Q3 2026 call)",
+     "added": "2026-11-10"
     }
    ],
    "us_clinical_visit_trends": [
@@ -9074,6 +9314,14 @@
      "source": "https://www.webull.com/news/15344824561263616",
      "quote": "\"U.S. same-store clinical visits declined an estimated 1.3% in the quarter.\"",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -1.8,
+     "source": "https://www.webull.com/news/15854680212202496",
+     "quote": "\"U.S. same-store clinical visits declined an estimated 1.8% in the quarter.\"",
+     "added": "2026-11-10"
     }
    ],
    "operating_margin": [
@@ -9140,6 +9388,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000110465926090033/tm2622041d1_ex99-1.htm",
      "quote": "\"Operating margin was 35.0% for the quarter, higher than the prior year period by 140 basis points as reported\" (income from operations $425,566 / revenue $1,216,585 = 35.0%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 33.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874716/000087471626000135/idxx-20260930.htm",
+     "quote": "Income from operations $402,348 / total revenue $1,214,237 (thousands, three months ended Sep 30 2026) = 33.1%; release: operating margin 33.1%, up 100 bps reported",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -9544,6 +9800,14 @@
      "source": "https://earningswhispers.com/transcript/AME/Q22026",
      "quote": "Organic sales were up 10%.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10,
+     "source": "https://www.earningswhispers.com/transcript/AME/Q32026",
+     "quote": "Organic sales were up 10% and acquisitions added seven points to growth.",
+     "added": "2026-11-10"
     }
    ],
    "orders_and_book_to_bill": [
@@ -9578,6 +9842,14 @@
      "source": "https://earningswhispers.com/transcript/AME/Q22026",
      "quote": "And we had a positive book to bill of 1.12 in the quarter, both groups positive. [Also: \"Overall orders were a record $2.3 billion, up 28% versus the prior year.\"]",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.19,
+     "source": "https://www.earningswhispers.com/transcript/AME/Q32026",
+     "quote": "Overall orders were $2.65 billion, up 35% versus the prior year. ... 10-Q: orders $2,650.6M; release: Net sales $2,220,306K (2650.6/2220.3 = 1.19x)",
+     "added": "2026-11-10"
     }
    ],
    "backlog": [
@@ -9612,6 +9884,14 @@
      "source": "https://earningswhispers.com/transcript/AME/Q22026",
      "quote": "...leading to a record backlog of $4.11 billion.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4.54,
+     "source": "https://www.earningswhispers.com/transcript/AME/Q32026",
+     "quote": "We ended the quarter with a record backlog of $4.54 billion, up 27% from the beginning of the year. (10-Q: $4,540.5 million)",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_operating_margin": [
@@ -9678,6 +9958,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000173/ametek8kexhibit99108042026.htm",
      "quote": "Adjusted operating income margin (Non-GAAP) | 26.6% | 26.0%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 26.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037868/000103786826000194/ametek8kexhibit99111032026.htm",
+     "quote": "Adjusted operating income margin (Non-GAAP) | 26.8% | 26.2% | 0.6%",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -10432,6 +10720,14 @@
      "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
      "quote": "Reported Production Information, Total BOE/d (2Q26 | 1Q26 | 2Q25 | 2Q26 to 1Q26 | 2Q26 to 2Q25 | 6M26 | 6M25): \"Total 409,959 442,352 465,078 (7)% (12)% 426,066 467,017\" — reported (not adjusted) production; (409,959/465,078 - 1 = -11.85%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -2.92,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001841666/000184166626000063/exhibit9913q26earningsrele.htm",
+     "quote": "Reported Production Information, Total BOE/d (3Q26 | 2Q26 | 3Q25 | 3Q26 to 2Q26 | 3Q26 to 3Q25 | 9M26 | 9M25): \"Total (1) 450,276 409,959 463,815 10% (3)% 434,224 465,938\" — reported (not adjusted) production; (450,276/463,815 - 1 = -2.92%)",
+     "added": "2026-11-10"
     }
    ],
    "realised_oil_price": [
@@ -10498,6 +10794,14 @@
      "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
      "quote": "Average Oil Price Per Barrel (2Q26 | 1Q26 | 2Q25 | 6M26 | 6M25): \"Total 98.24 78.69 65.58 87.89 69.72\"",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 92.02,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001841666/000184166626000063/exhibit9913q26earningsrele.htm",
+     "quote": "Average Oil Price Per Barrel (3Q26 | 2Q26 | 3Q25 | 9M26 | 9M25): \"Total 92.02 98.24 67.43 89.33 68.94\"",
+     "added": "2026-11-10"
     }
    ],
    "egypt_production_and_receivables": [
@@ -10564,6 +10868,14 @@
      "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
      "quote": "Egypt Gross Production (2Q26 | 1Q26 | 2Q25 | 6M26 | 6M25): \"Oil (b/d) 117,056 121,472 123,852 119,252 125,927\"; \"Nearly half of Egypt's gas production is now benefiting from the revised pricing agreement.\"",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": "Egypt gross oil production 116,093 b/d; receivables not disclosed in release or 10-Q",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001841666/000184166626000063/exhibit9913q26earningsrele.htm",
+     "quote": "Egypt Gross Production (3Q26 | 2Q26 | 3Q25 | 9M26 | 9M25): \"Oil (b/d) 116,093 117,056 124,944 118,187 125,595\"",
+     "added": "2026-11-10"
     }
    ],
    "capex_operating_cash_flow": [
@@ -10630,6 +10942,14 @@
      "source": "https://investor.apacorp.com/static-files/f44fe5a7-cbc7-4998-b3bc-8b263e08cab6",
      "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment $ 546 $ 648 $ 1,110 $ 1,358\" ... \"Net cash provided by operating activities $ 1,706 $ 1,181 $ 2,260 $ 2,277\" (Q2 2026: 546/1706 = 32.0%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 33.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001841666/000184166626000063/exhibit9913q26earningsrele.htm",
+     "quote": "($M; cols: current-yr qtr, prior-yr qtr, YTD, prior YTD) \"Total Upstream capital investment $466 $542 $1,576 $1,900\" ... \"Net cash provided by operating activities $1,376 $1,460 $3,636 $3,737\" (Q3 2026: 466/1376 = 33.9%)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -11776,6 +12096,14 @@
      "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
      "quote": "USDC in Circulation, end of period $73.3 19%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 73.9,
+     "source": "https://investingnews.com/circle-reports-third-quarter-2026-results/",
+     "quote": "USDC in Circulation, end of period $73.9 0%",
+     "added": "2026-11-10"
     }
    ],
    "reserve_return_rate": [
@@ -11818,6 +12146,14 @@
      "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
      "quote": "Reserve Return Rate 3.5% (66bps)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3.5,
+     "source": "https://investingnews.com/circle-reports-third-quarter-2026-results/",
+     "quote": "Reserve Return Rate 3.5% (61bps)",
+     "added": "2026-11-10"
     }
    ],
    "revenue_less_distribution_costs_margin": [
@@ -11884,6 +12220,14 @@
      "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
      "quote": "Quarterly table (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): RLDC Margin (1) 41% 41% 40% 39% 38%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 52,
+     "source": "https://investingnews.com/circle-reports-third-quarter-2026-results/",
+     "quote": "Quarterly table (Sep 30 2026, Jun 30 2026, Mar 31 2026, Dec 31 2025, Sep 30 2025): RLDC Margin 52% 41% 41% 40% 39% (Q3-26 includes the ARC token presale)",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_ebitda": [
@@ -11934,6 +12278,14 @@
      "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
      "quote": "Adjusted EBITDA (New Definition), $ thousands (Q2'26, Q1'26, Q4'25, Q3'25, Q2'25): Adjusted EBITDA (New Definition) $ 143,478 $ 151,401 $ 175,910 $ 171,476 $ 132,997",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.316662,
+     "source": "https://investingnews.com/circle-reports-third-quarter-2026-results/",
+     "quote": "Adjusted EBITDA (New Definition), $ thousands (Q3'26, Q2'26, Q1'26, Q4'25, Q3'25): $ 316,662 143,478 151,401 175,910 171,476 | Adjusted EBITDA in Q3'26 of $317 million grew 85% year-over-year.",
+     "added": "2026-11-10"
     }
    ],
    "other_revenue": [
@@ -12000,6 +12352,14 @@
      "source": "https://s206.q4cdn.com/265218871/files/doc_news/2026/Aug/05/CIRCLE_Q2-2026.pdf",
      "quote": "Statement of operations, $ thousands (3M Jun 30 2026, 3M Jun 30 2025, 6M 2026, 6M 2025): Other revenue 33,582 23,804 75,207 44,466",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.207264,
+     "source": "https://investingnews.com/circle-reports-third-quarter-2026-results/",
+     "quote": "Statement of operations, $ thousands (3M Sep 30 2026, 3M Sep 30 2025): Other revenue 207,264 28,518 | Other Revenue of $207 million increased 627% year-over-year from the ARC token presale ($182 million)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -12068,6 +12428,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000028/fisvq226earningsrelease.htm",
      "quote": "Organic revenue decreased 5% in the second quarter of 2026, with a 1% decline in the Merchant Solutions segment and an 8% decline in the Financial Solutions segment.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000039/fisvq326earningsrelease.htm",
+     "quote": "Organic revenue was flat in the third quarter of 2026 | table: Organic revenue $4,852 $4,873 —%",
+     "added": "2026-11-10"
     }
    ],
    "clover_revenue_growth": [
@@ -12134,6 +12502,14 @@
      "source": "https://investors.fiserv.com/static-files/87b5e411-60f5-4aa5-a5ff-f8d8beed29ef",
      "quote": "2Q Clover revenue up 13%, excluding impact of data, hardware, and Argentina anticipation; Total revenue up 2% (reported Clover growth 2%; call: \"Clover revenue increased 2% on a reported basis.\")",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1,
+     "source": "https://singjupost.com/fiserv-fisv-q3-2026-earnings-call-transcript/",
+     "quote": "Clover revenue grew 1%.",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_operating_margin": [
@@ -12200,6 +12576,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000028/fisvq226earningsrelease.htm",
      "quote": "Adjusted operating margin | 31.8% | 39.6% | 30.8% | 38.7% (2Q26, 2Q25, YTD26, YTD25)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 31.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000039/fisvq326earningsrelease.htm",
+     "quote": "Adjusted operating margin 31.2% 37.0% (3Q26, 3Q25); 30.9% 38.2% (YTD26, YTD25)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -12268,6 +12652,14 @@
      "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
      "quote": "Occupancy at June 30, 2026 was 96.0%, unchanged from June 30, 2025.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 96.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001063761/000110465926123325/tm2627777d2_ex99-1.htm",
+     "quote": "Occupancy at September 30, 2026 was 96.5%, a 0.1% increase compared to 96.4% at September 30, 2025.",
+     "added": "2026-11-10"
     }
    ],
    "base_minimum_rent_per_sq_ft_growth": [
@@ -12334,6 +12726,14 @@
      "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
      "quote": "Base minimum rent per square foot was $62.42 at June 30, 2026, compared to $58.70 at June 30, 2025, an increase of 6.3%.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001063761/000110465926123325/tm2627777d2_ex99-1.htm",
+     "quote": "Base minimum rent per square foot was $62.75 at September 30, 2026, compared to $59.14 at September 30, 2025, an increase of 6.1%.",
+     "added": "2026-11-10"
     }
    ],
    "real_estate_ffo_per_share": [
@@ -12400,6 +12800,14 @@
      "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
      "quote": "Real Estate Funds From Operations (\"Real Estate FFO\") was $1.249 billion, or $3.29 per diluted share ... compared to $1.154 billion, or $3.05 per diluted share in the prior year, an increase of 7.9%.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3.37,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001063761/000110465926123325/tm2627777d2_ex99-1.htm",
+     "quote": "Real Estate Funds From Operations (“Real Estate FFO”) was $1.277 billion, or $3.37 per diluted share as compared to $1.215 billion, or $3.22 per diluted share in the prior year, an increase of 4.7%.",
+     "added": "2026-11-10"
     }
    ],
    "domestic_property_noi_growth": [
@@ -12466,6 +12874,14 @@
      "source": "https://investors.simon.com/news-releases/news-release-details/simonr-reports-second-quarter-2026-results-and-increases",
      "quote": "Domestic property Net Operating Income (\"NOI\") increased 8.5% and portfolio NOI increased 8.3% compared to the prior year period.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001063761/000110465926123325/tm2627777d2_ex99-1.htm",
+     "quote": "Domestic property Net Operating Income (“NOI”) increased 6.6% and portfolio NOI increased 6.7% compared to the prior year period.",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -12534,6 +12950,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
      "quote": "\"Gross Profit $3.17B +25% YoY Growth\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Gross Profit ($M) 3,166; YoY Growth 25%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 22,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000162828026069513/q32026shareholderletter.htm",
+     "quote": "Table (Q3'26 shareholder letter five-quarter table, Q3'26 column): Gross Profit ($M) 3,235 vs 2,662 in Q3'25; YoY Growth 22%",
+     "added": "2026-11-10"
     }
    ],
    "cash_app_gross_profit_growth": [
@@ -12600,6 +13024,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
      "quote": "\"Cash App Gross Profit $1.97B +31% YoY Growth\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Cash App Gross Profit ($M) 1,973; YoY Growth 31%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 27,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000162828026069513/q32026shareholderletter.htm",
+     "quote": "Table (Q3'26 shareholder letter, Q3'26 column): Cash App Gross Profit ($M) 2,070 vs 1,624; YoY Growth 27%",
+     "added": "2026-11-10"
     }
    ],
    "square_gross_profit_growth": [
@@ -12666,6 +13098,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
      "quote": "\"Square Gross Profit $1.16B +13% YoY Growth\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Square Gross Profit ($M) 1,160; YoY Growth 13%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000162828026069513/q32026shareholderletter.htm",
+     "quote": "Table (Q3'26 shareholder letter, Q3'26 column): Square Gross Profit ($M) 1,157 vs 1,018; YoY Growth 14%",
+     "added": "2026-11-10"
     }
    ],
    "square_gross_payment_volume_growth": [
@@ -12732,6 +13172,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
      "quote": "\"Square GPV grew 13% year over year in the second quarter on a reported and constant currency basis\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Total Square GPV ($M) 72,848; YoY Growth 13%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000162828026069513/q32026shareholderletter.htm",
+     "quote": "\"Square GPV grew 14% year over year in the third quarter on a reported and constant currency basis\"; Total Square GPV ($M) 76,359 vs 67,151",
+     "added": "2026-11-10"
     }
    ],
    "cash_app_monthly_transacting_actives": [
@@ -12798,6 +13246,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000119312526335117/d91486dex991.htm",
      "quote": "\"Cash App monthly transacting actives were 59 million in June\"; table (Q2'26 shareholder letter five-quarter table, Q2'26 column): Cash App Monthly Transacting Actives (M) 59; YoY Growth 3%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 60,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001512673/000162828026069513/q32026shareholderletter.htm",
+     "quote": "\"Cash App monthly transacting actives grew to 60 million in September\"; table Q3'26 60M vs Q3'25 58M",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -13432,6 +13888,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
      "quote": "revenue increased 14% to $2.0 billion on a reported basis and was up 13% in constant currency.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-26",
+     "label": "Q2 FY27",
+     "value": 9.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026070619/rl-20260926ex991xpressrele.htm",
+     "quote": "Second Quarter Revenue Increased 9% on a Reported Basis and 10% in Constant Currency (reconciliation table: Net revenues $2,193.3 vs $2,010.7, +9.1% reported, +9.6% constant currency)",
+     "added": "2026-11-10"
     }
    ],
    "gross_margin": [
@@ -13498,6 +13962,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
      "quote": "gross margin was 73.7%, 140 basis points above the prior year.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-26",
+     "label": "Q2 FY27",
+     "value": 74.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026070619/rl-20260926ex991xpressrele.htm",
+     "quote": "gross margin was 74.2%, 620 basis points above the prior year. (Includes $82.3M of IEEPA tariff refund recoveries; adjusted gross margin 70.5% vs 68.0%)",
+     "added": "2026-11-10"
     }
    ],
    "average_unit_retail_growth": [
@@ -13532,6 +14004,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
      "quote": "Increased Average Unit Retail (\"AUR\") by 15% across our direct-to-consumer network in the first quarter",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-26",
+     "label": "Q2 FY27",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026070619/rl-20260926ex991xpressrele.htm",
+     "quote": "Increased AUR by 9% across our direct-to-consumer network in the second quarter",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_operating_margin": [
@@ -13598,6 +14078,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026053896/rl-20260627ex991xpressrele.htm",
      "quote": "On an adjusted basis, operating income was $366 million and operating margin was 18.7%, 170 basis points above the prior year",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-26",
+     "label": "Q2 FY27",
+     "value": 15.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001037038/000162828026070619/rl-20260926ex991xpressrele.htm",
+     "quote": "On an adjusted basis, operating income was $345 million and operating margin was 15.7% (prior year adjusted 14.1%)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -15336,6 +15824,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
      "quote": "Constant currency organic revenue growth was 6% in the first quarter.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026070220/ste9302026ex991.htm",
+     "quote": "Constant currency organic revenue growth was 8% in the second quarter.",
+     "added": "2026-11-10"
     }
    ],
    "healthcare_segment_revenue_growth": [
@@ -15370,6 +15866,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
      "quote": "Healthcare revenue as reported grew 8% in the first quarter to $1.05 billion (segment table: Healthcare $1,048.3 vs $974.7; 1,048.3/974.7 - 1 = 7.6%)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026070220/ste9302026ex991.htm",
+     "quote": "Healthcare revenue as reported grew 9% in the second quarter to $1.1 billion (segment table: Healthcare $1,122.4 vs $1,033.8; 1,122.4/1,033.8 - 1 = 8.6%)",
+     "added": "2026-11-10"
     }
    ],
    "applied_sterilization_technologies_revenue_growt": [
@@ -15404,6 +15908,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
      "quote": "Fiscal 2027 first quarter revenue for Applied Sterilization Technologies (AST) increased 6% as reported to $297.6 million (vs $281.2 million; 297.6/281.2 - 1 = 5.8%)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026070220/ste9302026ex991.htm",
+     "quote": "Fiscal 2027 second quarter revenue for Applied Sterilization Technologies (AST) increased 5% as reported to $295.6 million (vs $281.5 million; 295.6/281.5 - 1 = 5.0%)",
+     "added": "2026-11-10"
     }
    ],
    "backlog": [
@@ -15470,6 +15982,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm",
      "quote": "Backlog ($ millions): Healthcare $444.0 / Life Sciences 109.9 / Total $553.9 (Q1 FY2027)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 0.5489,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026070220/ste9302026ex991.htm",
+     "quote": "Backlog ($ millions), September 30, 2026: Healthcare $455.5 / Life Sciences 93.4 / Total $548.9 (September 30, 2025: $427.5 / 113.7 / $541.3)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -15772,6 +16292,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
      "quote": "Recurring revenue growth constant currency (Non-GAAP) was 8%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 11,
+     "source": "https://s203.q4cdn.com/209299927/files/content_files/EX99-1-Earnings-Release-1Q-2027.pdf",
+     "quote": "Recurring revenue growth constant currency (Non-GAAP) was 11%, driven by 9pts from Organic growth",
+     "added": "2026-11-10"
     }
    ],
    "closed_sales": [
@@ -15838,6 +16366,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
      "quote": "Closed sales (a) | $158.3 | $113.5 | 39% | $305.1 | $287.9 | 6% ($ millions, three months ended)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 0.0356,
+     "source": "https://s203.q4cdn.com/209299927/files/content_files/EX99-1-Earnings-Release-1Q-2027.pdf",
+     "quote": "Closed sales (a) $ 35.6 $ 32.5 10% ($ millions, three months ended)",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_operating_margin": [
@@ -15904,6 +16440,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
      "quote": "Adjusted Operating income margin was 26.9% compared to 27.0% for the prior year period.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 13.8,
+     "source": "https://s203.q4cdn.com/209299927/files/content_files/EX99-1-Earnings-Release-1Q-2027.pdf",
+     "quote": "Adjusted Operating income margin was 13.8% compared to 15.8% for the prior year period.",
+     "added": "2026-11-10"
     }
    ],
    "event_driven_revenue": [
@@ -15970,6 +16514,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001383312/000138331226000022/ex991earningsrelease4q2026.htm",
      "quote": "Event-driven revenues | 71.1 | 78.9 | (10%) | 348.1 | 319.3 | 9% ($ millions, three months ended)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 0.0674,
+     "source": "https://s203.q4cdn.com/209299927/files/content_files/EX99-1-Earnings-Release-1Q-2027.pdf",
+     "quote": "Event-driven revenues 67.4 113.8 (41%) ($ millions, three months ended)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -16006,6 +16558,14 @@
      "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
      "quote": "The company ended the quarter with record Q2 backlog of $15.6 billion, up 11% or $1.5 billion from the year-ago quarter",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 16.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000041/msiq32026pressrelease.htm",
+     "quote": "The company ended the quarter with record backlog of $16.6 billion, up 14% or $2.1 billion from the year-ago quarter",
+     "added": "2026-11-10"
     }
    ],
    "software_services_revenue_growth": [
@@ -16040,6 +16600,14 @@
      "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
      "quote": "The Software and Services segment grew 10% driven by growth in MCN, Command Center and Video.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000041/msiq32026pressrelease.htm",
+     "quote": "The Software and Services segment grew 13% driven by growth in MCN, Command Center and Video. | Sales $1,258 vs $1,112",
+     "added": "2026-11-10"
     }
    ],
    "products_systems_integration_revenue_growth": [
@@ -16074,6 +16642,14 @@
      "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
      "quote": "The Products and Systems Integration segment grew 15% driven by growth in Mission Critical Networks",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000041/msiq32026pressrelease.htm",
+     "quote": "The Products and Systems Integration segment grew 12% driven by growth in Mission Critical Networks | Sales $2,118 vs $1,897",
+     "added": "2026-11-10"
     }
    ],
    "non_gaap_operating_margin": [
@@ -16140,6 +16716,14 @@
      "source": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q2-2026-financial-results.html",
      "quote": "Non-GAAP operating margin was 32.9% of sales, up 330 basis points from 29.6% a year ago.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 32.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000068505/000006850526000041/msiq32026pressrelease.htm",
+     "quote": "Non-GAAP operating margin was 32.5% of sales, up 200 basis points from 30.5% in the year-ago quarter",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -17912,6 +18496,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
      "quote": "Gross ammonia production (000s) [cols: Q2 2026, Q2 2025, H1 2026, H1 2025]: Ammonia(5) | 2,397 | 2,557 | 4,854 | 5,174",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2367,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000023/cf-11042026_ex991xearnings.htm",
+     "quote": "Gross ammonia production (000s) [cols: Q3 2026, Q3 2025, 9M 2026, 9M 2025]: Ammonia(5) | 2,367 | 2,440 | 7,221 | 7,614",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_ebitda": [
@@ -17978,6 +18570,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
      "quote": "Adjusted EBITDA(1) | 1,192 | 761 | 2,175 | 1,405 [dollars in millions; cols: Q2 2026, Q2 2025, H1 2026, H1 2025]",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.833,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000023/cf-11042026_ex991xearnings.htm",
+     "quote": "Adjusted EBITDA(1) | 833 | 667 | 3,008 | 2,072 [dollars in millions; cols: Q3 2026, Q3 2025, 9M 2026, 9M 2025]",
+     "added": "2026-11-10"
     }
    ],
    "average_selling_price_per_ton": [
@@ -18044,6 +18644,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000017/cf-08052026_ex991xearnings.htm",
      "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $677 | $452 | $616 | $453 [cols: Q2 2026, Q2 2025, H1 2026, H1 2025]",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 532,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000023/cf-11042026_ex991xearnings.htm",
+     "quote": "Ammonia segment (no company-wide ASP disclosed): Average selling price per product ton | $532 | $418 | $588 | $442 [cols: Q3 2026, Q3 2025, 9M 2026, 9M 2025]",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -18282,6 +18890,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
      "quote": "Comparable hotel RevPAR was $251.53, an increase of 7.0%, compared to the same period in 2025",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000152/hst-ex991.htm",
+     "quote": "Comparable hotel RevPAR was $219.50, an increase of 8.8% compared to the same period in 2025, reflecting rate increases of 5.7% and an increase in occupancy of 2.1 points.",
+     "added": "2026-11-10"
     }
    ],
    "comparable_hotel_total_revpar_growth": [
@@ -18316,6 +18932,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
      "quote": "Comparable hotel Total RevPAR ... an increase of 5.9% compared to the same period in 2025",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000152/hst-ex991.htm",
+     "quote": "Comparable hotel Total RevPAR was $348.19 for the third quarter of 2026, an increase of 7.3% compared to the same period in 2025",
+     "added": "2026-11-10"
     }
    ],
    "comparable_hotel_ebitda_margin": [
@@ -18382,6 +19006,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
      "quote": "Comparable hotel EBITDA margin | 31.9% | 31.3% (Q2 2026 | Q2 2025); a comparable hotel EBITDA margin increase of 60 basis points to 31.9%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 25.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000152/hst-ex991.htm",
+     "quote": "Comparable hotel EBITDA margin | 25.2% | 24.3% (Q3 2026 | Q3 2025); reflecting a comparable hotel EBITDA margin increase of 90 basis points to 25.2%",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_ffo_per_share": [
@@ -18448,6 +19080,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000122/hst-ex991.htm",
      "quote": "Adjusted FFO per diluted share | 0.63 | 0.58 | 8.6% (Q2 2026 | Q2 2025)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.39,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000152/hst-ex991.htm",
+     "quote": "Adjusted FFO per diluted share | 0.39 | 0.35 | 11.4% (Q3 2026 | Q3 2025)",
+     "added": "2026-11-10"
     }
    ]
   },
@@ -20104,6 +20744,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001555280/000155528026000038/exhibit99q22026.htm",
      "quote": "The company reported revenue of $2.5 billion for the second quarter of 2026, flat compared with the second quarter of 2025, decreasing 1% on an organic operational basis.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -1.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001555280/000155528026000048/exhibit99q32026.htm",
+     "quote": "The company reported revenue of $2.4 billion for the third quarter of 2026, [which] decreased 1% on a reported and an organic operational basis. (Total Revenue | 2,391 | 2,422 | (1)% | 1% | (2)% | (1)% | (1)%)",
+     "added": "2026-11-10"
     }
    ],
    "companion_animal_revenue_growth": [
@@ -20170,6 +20818,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001555280/000155528026000038/exhibit99q22026.htm",
      "quote": "Companion Animal | $1,708 | $1,790 | (5)% | 1% | (6)% | —% | (6)% [columns: 2026 | 2025 | Reported Change | FX | Operational | Divestitures | Organic Operational; value = REPORTED]",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -5.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001555280/000155528026000048/exhibit99q32026.htm",
+     "quote": "Companion Animal | 1,565 | 1,650 | (5)% | —% | (5)% | —% | (5)% [columns: 2026 | 2025 | Reported Change | FX | Operational | Divestitures | Organic Operational; value = REPORTED]",
+     "added": "2026-11-10"
     }
    ],
    "livestock_revenue_growth": [
@@ -20236,6 +20892,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001555280/000155528026000038/exhibit99q22026.htm",
      "quote": "Livestock | 731 | 651 | 12% | 2% | 10% | (1)% | 11% [columns: 2026 | 2025 | Reported Change | FX | Operational | Divestitures | Organic Operational; value = REPORTED]",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001555280/000155528026000048/exhibit99q32026.htm",
+     "quote": "Livestock | 797 | 746 | 7% | 1% | 6% | (1)% | 7% [columns: 2026 | 2025 | Reported Change | FX | Operational | Divestitures | Organic Operational; value = REPORTED]",
+     "added": "2026-11-10"
     }
    ],
    "simparica_franchise_revenue_growth": [
@@ -20488,6 +21152,14 @@
      "source": "https://www.businesswire.com/news/home/20260804945638/en/",
      "quote": "Second quarter revenue increased 44% on a GAAP basis and adjusted basis as compared to the prior-year period to $2.5 billion. ... On a Pro Forma basis, revenue increased 6.1% as compared to the prior-year period",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 41,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000061/q32026ex991.htm",
+     "quote": "Third quarter revenue increased 41% on both a GAAP and adjusted basis as compared to the prior-year period to $2.5 billion. ... On a Pro forma basis, revenue increased 3.9% | Banking Solutions Revenue 2,548 1,811",
+     "added": "2026-11-10"
     }
    ],
    "capital_market_solutions_revenue_growth": [
@@ -20554,6 +21226,14 @@
      "source": "https://www.businesswire.com/news/home/20260804945638/en/",
      "quote": "Second quarter revenue increased by 3.5% on a GAAP basis and 3.2% on an adjusted basis ... Capital Market Solutions Revenue 810 783 3.5% 3.2% 3.2%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000061/q32026ex991.htm",
+     "quote": "Third quarter revenue increased by 3% on a GAAP basis and adjusted basis as compared to the prior-year period to $823 million, reflecting recurring revenue growth of 3.0%.",
+     "added": "2026-11-10"
     }
    ],
    "recurring_revenue_growth": [
@@ -20620,6 +21300,14 @@
      "source": "https://www.businesswire.com/news/home/20260804945638/en/",
      "quote": "Revenue increased 29% on a GAAP basis to $3.4 billion, increasing 31% on an adjusted basis and 5.3% on a Pro Forma basis ... including recurring revenue growth of 5.1%.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000061/q32026ex991.htm",
+     "quote": "On a Pro Forma basis, revenue increased 3.7% as compared to the prior-year period, including recurring revenue growth of 2.5%. (Pro Forma basis, includes Issuer Solutions in both periods)",
+     "added": "2026-11-10"
     }
    ],
    "adjusted_ebitda_margin": [
@@ -20686,6 +21374,1436 @@
      "source": "https://www.businesswire.com/news/home/20260804945638/en/",
      "quote": "Adjusted EBITDA margin expanded by 193 basis points (bps) compared to the prior-year period to 41.7% | Adjusted EBITDA Margin 41.7 % 39.8 % 193 bps",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 42.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001136893/000113689326000061/q32026ex991.htm",
+     "quote": "Adjusted EBITDA margin expanded by 111 basis points (bps) compared to the prior-year period to 42.9%",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "ACIW": {
+   "biller_revenue_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000033/aciw-20261105_exx991.htm",
+     "quote": "Biller revenue in Q3 2026 was $210 million, up 6% from Q3 2025 on a reported and constant currency basis. (Table: 210.4 vs 198.3 -> 210.4 / 198.3 - 1 = +6.1%)",
+     "added": "2026-11-10"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 49,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000033/aciw-20261105_exx991.htm",
+     "quote": "Net adjusted EBITDA margin in Q3 2026 was 35%, down from 49% in Q3 2025.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 35,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000033/aciw-20261105_exx991.htm",
+     "quote": "Net adjusted EBITDA margin in Q3 2026 was 35%, down from 49% in Q3 2025. (Adjusted EBITDA divided by revenue net of pass-through interchange revenue)",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "AIZ": {
+   "lifestyle_adjusted_ebitda": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.2068,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/AIZ-2026-09-30-Ex-99-1-Press-Release-FINAL.pdf",
+     "quote": "Global Lifestyle: Adjusted EBITDA 236.9 206.8 15% 718.0 606.0 18% ($ millions, Q3 2026 vs Q3 2025)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.2369,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/AIZ-2026-09-30-Ex-99-1-Press-Release-FINAL.pdf",
+     "quote": "Global Lifestyle: Adjusted EBITDA 236.9 206.8 15% 718.0 606.0 18% ($ millions, Q3 2026 vs Q3 2025)",
+     "added": "2026-11-10"
+    }
+   ],
+   "housing_adjusted_ebitda_ex_cat": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.2592,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/AIZ-2026-09-30-Ex-99-1-Press-Release-FINAL.pdf",
+     "quote": "Adjusted EBITDA, excluding reportable catastrophes: Global Housing 288.0 259.2 11% 836.1 772.5 8% ($ millions)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.288,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/AIZ-2026-09-30-Ex-99-1-Press-Release-FINAL.pdf",
+     "quote": "Adjusted EBITDA, excluding reportable catastrophes: Global Housing 288.0 259.2 11% 836.1 772.5 8% ($ millions)",
+     "added": "2026-11-10"
+    }
+   ],
+   "reportable_catastrophes": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.002,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/AIZ-2026-09-30-Ex-99-1-Press-Release-FINAL.pdf",
+     "quote": "Reportable catastrophes 19.7 2.0 56.3 188.8 ($ millions, pre-tax, consolidated: Q3 2026, Q3 2025, 9M 2026, 9M 2025)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.0197,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/AIZ-2026-09-30-Ex-99-1-Press-Release-FINAL.pdf",
+     "quote": "Reportable catastrophes 19.7 2.0 56.3 188.8 ($ millions, pre-tax, consolidated: Q3 2026, Q3 2025, 9M 2026, 9M 2025)",
+     "added": "2026-11-10"
+    }
+   ],
+   "devices_serviced": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 4.8,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/3Q26-Financial-Supplement_FINAL.pdf",
+     "quote": "Global mobile devices serviced (in millions) 7.6 7.4 7.4 6.7 4.8 5.6 5.6 (3Q26, 2Q26, 1Q26, 4Q25, 3Q25, 2Q25, 1Q25)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7.6,
+     "source": "https://s21.q4cdn.com/997934001/files/content_files/3Q26-Financial-Supplement_FINAL.pdf",
+     "quote": "Global mobile devices serviced (in millions) 7.6 7.4 7.4 6.7 4.8 5.6 5.6 (3Q26, 2Q26, 1Q26, 4Q25, 3Q25, 2Q25, 1Q25)",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "CRVL": {
+   "revenue_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 11.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526444065/crvl-ex99_1.htm",
+     "quote": "Revenues for the quarter were $267 million, an increase from $240 million in the September quarter of 2025. Exact: 267,129 / 239,643 - 1 = 11.5%",
+     "added": "2026-11-10"
+    }
+   ],
+   "patient_management_revenue": [
+    {
+     "period": "2025-09-30",
+     "label": "Q2 FY26",
+     "value": 0.1508,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526449982/crvl-20260930.htm",
+     "quote": "Patient management services revenue, three months ended September 30, 2025: $150,795 (thousands) -> 0.1508",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 0.1676,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526449982/crvl-20260930.htm",
+     "quote": "Patient management services revenue, three months ended September 30, 2026: $167,586 (thousands) -> 0.1676",
+     "added": "2026-11-10"
+    }
+   ],
+   "network_solutions_revenue": [
+    {
+     "period": "2025-09-30",
+     "label": "Q2 FY26",
+     "value": 0.0888,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526449982/crvl-20260930.htm",
+     "quote": "Network solutions services revenue, three months ended September 30, 2025: $88,848 (thousands) -> 0.0888",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 0.0995,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526449982/crvl-20260930.htm",
+     "quote": "Network solutions services revenue, three months ended September 30, 2026: $99,543 (thousands) -> 0.0995",
+     "added": "2026-11-10"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2025-09-30",
+     "label": "Q2 FY26",
+     "value": 24.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526444065/crvl-ex99_1.htm",
+     "quote": "Three months ended September 30, 2025: Revenues $239,643; Gross profit $58,177 (thousands). 58,177 / 239,643 = 24.3%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q2 FY27",
+     "value": 27.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526444065/crvl-ex99_1.htm",
+     "quote": "Three months ended September 30, 2026: Revenues $267,129; Gross profit $72,299 (thousands). 72,299 / 267,129 = 27.1%",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "CTRE": {
+   "normalized_ffo_per_share": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.45,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/exhibit992-ctreq32026fin.htm",
+     "quote": "Normalized FFO per share attributable to CareTrust REIT, Inc. $ 0.54 $ 0.45 (three months ended September 30, 2026 and 2025)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.54,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/ex991-ctreq32026er.htm",
+     "quote": "Normalized FFO per diluted weighted average share of $0.54, an increase of $0.09, or 20%, over the prior year quarter",
+     "added": "2026-11-10"
+    }
+   ],
+   "investments_closed": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.7395,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/ex991-ctreq32026er.htm",
+     "quote": "$739.5 million of investment activity closed at a blended stabilized yield of 8.3%; -> 0.7395",
+     "added": "2026-11-10"
+    }
+   ],
+   "net_debt_ebitda": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.42,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/exhibit992-ctreq32026fin.htm",
+     "quote": "Net debt to Annualized Normalized Run Rate EBITDA attributable to CareTrust REIT, Inc. 1.37x 0.42x (Q3'26, Q3'25); net debt $187,520 / $446,788",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.37,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/exhibit992-ctreq32026fin.htm",
+     "quote": "Net debt to Annualized Normalized Run Rate EBITDA attributable to CareTrust REIT, Inc. 1.37x 0.42x (Q3'26, Q3'25); net debt $874,173 / $640,196",
+     "added": "2026-11-10"
+    }
+   ],
+   "rent_coverage": [
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2.89,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/exhibit992-ctreq32026fin.htm",
+     "quote": "EBITDARM Coverage, As of Q2 '26 (trailing twelve months, stabilized portfolio): Rent Coverage 3.26x 2.20x 2.89x (Skilled Nursing Triple-net, Senior Housing Triple-net, Total)",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "EOG": {
+   "total_production_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10.1,
+     "source": "https://finviz.com/news/417814/eog-resources-reports-third-quarter-2026-results-and-raises-regular-dividend-8",
+     "quote": "Total crude oil equivalent volumes (MBoed): 3Q 2026 1,433.1 vs 3Q 2025 1,301.2 -> 1,433.1 / 1,301.2 - 1 = +10.1%",
+     "added": "2026-11-10"
+    }
+   ],
+   "crude_oil_production_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3.0,
+     "source": "https://finviz.com/news/417814/eog-resources-reports-third-quarter-2026-results-and-raises-regular-dividend-8",
+     "quote": "Crude oil and condensate volumes (MBod): 3Q 2026 550.4 vs 3Q 2025 534.5 -> 550.4 / 534.5 - 1 = +3.0%",
+     "added": "2026-11-10"
+    }
+   ],
+   "cash_operating_cost_per_boe_change": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5.6,
+     "source": "https://finviz.com/news/417814/eog-resources-reports-third-quarter-2026-results-and-raises-regular-dividend-8",
+     "quote": "Cash operating costs $10.49/Boe in 3Q 2026. 3Q 2025 from the same release: Lease and Well $431M + GP&T $587M + G&A (Non-GAAP) $171M = $1,189M / (1,301.2 MBoed x 92 days = 119.7 MMBoe) = $9.93/Boe -> 10.49 / 9.93 - 1 = +5.6%",
+     "added": "2026-11-10"
+    }
+   ],
+   "free_cash_flow_margin": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.7,
+     "source": "https://finviz.com/news/417814/eog-resources-reports-third-quarter-2026-results-and-raises-regular-dividend-8",
+     "quote": "Free Cash Flow (Non-GAAP) 1,383 (3Q 2025); Total operating revenues and other 5,847 (3Q 2025) -> 1,383 / 5,847 = 23.7%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 25.5,
+     "source": "https://finviz.com/news/417814/eog-resources-reports-third-quarter-2026-results-and-raises-regular-dividend-8",
+     "quote": "Free Cash Flow (Non-GAAP) 2,176 (3Q 2026); Total operating revenues and other 8,549 -> 2,176 / 8,549 = 25.5%",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "ESNT": {
+   "insurance_in_force": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 248.808,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "Insurance in force, end of period ($000s): Sep 30, 2026 250,062,714 | Sep 30, 2025 248,808,341",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 250.063,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "Insurance in force, end of period ($000s): Sep 30, 2026 250,062,714 | Sep 30, 2025 248,808,341",
+     "added": "2026-11-10"
+    }
+   ],
+   "new_insurance_written": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 12.233,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "New insurance written ($000s): Q3 2026 12,129,030 | Q3 2025 12,233,252",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12.129,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "New insurance written ($000s): Q3 2026 12,129,030 | Q3 2025 12,233,252",
+     "added": "2026-11-10"
+    }
+   ],
+   "default_rate": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 2.29,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "Percentage of loans in default: Sep 30, 2026 2.75% | Jun 30, 2026 2.53% | Mar 31, 2026 2.54% | Dec 31, 2025 2.50% | Sep 30, 2025 2.29%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.75,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "Percentage of loans in default: Sep 30, 2026 2.75% | Jun 30, 2026 2.53% | Mar 31, 2026 2.54% | Dec 31, 2025 2.50% | Sep 30, 2025 2.29%",
+     "added": "2026-11-10"
+    }
+   ],
+   "pmiers_sufficiency_ratio": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 177,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "PMIERs sufficiency ratio (Essent Guaranty, Inc.): Sep 30, 2026 177% | Jun 30, 2026 172% | Mar 31, 2026 174% | Dec 31, 2025 169% | Sep 30, 2025 177%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 177,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "PMIERs sufficiency ratio (Essent Guaranty, Inc.): Sep 30, 2026 177% | Jun 30, 2026 172% | Mar 31, 2026 174% | Dec 31, 2025 169% | Sep 30, 2025 177%",
+     "added": "2026-11-10"
+    }
+   ],
+   "book_value_per_share": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 58.86,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "Book value per share: Q3 2026 $62.58 | Q2 2026 $63.01 | Q1 2026 $61.20 | Q4 2025 $60.31 | Q3 2025 $58.86",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 62.58,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001448893/000144889326000029/a93026financialsupplement.htm",
+     "quote": "Book value per share: Q3 2026 $62.58 | Q2 2026 $63.01 | Q1 2026 $61.20 | Q4 2025 $60.31 | Q3 2025 $58.86",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "HCI": {
+   "book_value_per_share": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 63.41,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001400810/000119312526447353/hci-ex99_1.htm",
+     "quote": "Book value per share at the end of period $90.15 $63.41 (September 30, 2026 vs September 30, 2025)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 90.15,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001400810/000119312526447353/hci-ex99_1.htm",
+     "quote": "Book value per share at the end of period $90.15 $63.41 (September 30, 2026 vs September 30, 2025)",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "NMIH": {
+   "primary_insurance_in_force": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 218.376,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Primary Insurance-in-Force | $229.7 | $227.1 | $218.4 | 1% | 5% (Q3 2025 $218,376 million)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 229.652,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Primary Insurance-in-Force | $229.7 | $227.1 | $218.4 | 1% | 5% (Q3 2026 $229,652 million)",
+     "added": "2026-11-10"
+    }
+   ],
+   "new_insurance_written": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 13.012,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "New Insurance Written - NIW | 13.6 | 16.1 | 13.0 | (15)% | 4% (Q3 2025 $13,012 million)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 13.575,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "New Insurance Written - NIW | 13.6 | 16.1 | 13.0 | (15)% | 4% (Q3 2026 $13,575 million)",
+     "added": "2026-11-10"
+    }
+   ],
+   "default_rate": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.05,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Default rate (1) | 1.23% | 1.16% | 1.17% | 1.12% | 1.05%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.23,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Default rate (1) | 1.23% | 1.16% | 1.17% | 1.12% | 1.05%",
+     "added": "2026-11-10"
+    }
+   ],
+   "pmiers_excess_capital": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 1.367,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Available assets | $3,773,543 | $3,656,115 | $3,369,950 |; Net risk-based required assets | 2,181,639 | 2,105,409 | 2,003,410 (in thousands; Sept 30, 2025: 3,369,950 - 2,003,410 = 1,366,540 = $1.367B)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.592,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Available assets | $3,773,543 | $3,656,115 | $3,369,950 |; Net risk-based required assets | 2,181,639 | 2,105,409 | 2,003,410 (in thousands; Sept 30, 2026: 3,773,543 - 2,181,639 = 1,591,904 = $1.592B)",
+     "added": "2026-11-10"
+    }
+   ],
+   "book_value_per_share": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 32.62,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Book value per share (6) | $36.13 | $35.89 | $32.62",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 36.13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001547903/000154790326000042/q32026exhibit991.htm",
+     "quote": "Book value per share (6) | $36.13 | $35.89 | $32.62",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "PLMR": {
+   "combined_ratio": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 78.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001761312/000119312526447298/plmr-ex99_1.htm",
+     "quote": "Combined ratio of 80.8% compared to 78.1% in the third quarter of 2025",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 80.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001761312/000119312526447298/plmr-ex99_1.htm",
+     "quote": "Combined ratio of 80.8% compared to 78.1% in the third quarter of 2025",
+     "added": "2026-11-10"
+    }
+   ],
+   "net_premiums_written_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 41.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001761312/000119312526447298/plmr-ex99_1.htm",
+     "quote": "Net written premiums | 388,569 | 275,244 | 113,325 | 41.2%",
+     "added": "2026-11-10"
+    }
+   ],
+   "catastrophe_losses": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.0045,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001761312/000119312526447298/plmr-ex99_1.htm",
+     "quote": "and $4.5 million of catastrophe losses from hurricane and flood events in Hawaii",
+     "added": "2026-11-10"
+    }
+   ],
+   "book_value_per_share": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 37.47,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001761312/000119312526447298/plmr-ex99_1.htm",
+     "quote": "Computed: total stockholders' equity $984,972 thousand / \"26,290,067 ... shares issued and outstanding\" at September 30, 2026 = 984,972 / 26,290.067 = $37.47",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "SKWD": {
+   "combined_ratio": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 89.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001519449/000151944926000059/earningsrelease-ex9913q2026.htm",
+     "quote": "Combined ratio | 88.1% | —% | 89.2% (Skyward Specialty / Corporate / Total, three months ended September 30, 2025)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 89.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001519449/000151944926000059/earningsrelease-ex9913q2026.htm",
+     "quote": "Combined ratio of 89.9%; (table: Combined ratio | 88.3% | 90.5% | —% | 89.9% ... Skyward Specialty / Apollo / Corporate / Total, three months ended September 30, 2026)",
+     "added": "2026-11-10"
+    }
+   ],
+   "net_premiums_written_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 13.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001519449/000151944926000059/earningsrelease-ex9913q2026.htm",
+     "quote": "Net written premiums | $501,778 | $441,167 | $1,420,277 | $1,123,651 (three months 2026 vs 2025: 501,778 / 441,167 - 1 = 13.7%; includes the Apollo business acquired in 2026)",
+     "added": "2026-11-10"
+    }
+   ],
+   "book_value_per_share": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 28.74,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001519449/000151944926000059/earningsrelease-ex9913q2026.htm",
+     "quote": "Book value per share of $28.74, an increase of 15.3% compared to December 31, 2025.",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "PG": {
+   "organic_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 0,
+     "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000006/fy2526q2ond8-kexhibit991.htm",
+     "quote": "Net sales change drivers, October - December 2025 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G (1)% | 1% | 1% | —% | —% | 1% | (1)% | —% (Organic Sales column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 3,
+     "source": "https://www.businesswire.com/news/home/20260424407741/en/",
+     "quote": "Net sales change drivers, January - March 2026 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G 2% | 4% | 1% | —% | —% | 7% | 2% | 3% (Organic Sales column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000093/fy2526q4amj8-kexhibit991.htm",
+     "quote": "Net sales change drivers, April - June 2026 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G —% | 1% | —% | —% | 1% | 2% | —% | —% (Organic Sales column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 4.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm",
+     "quote": "Net sales change drivers, July - September 2026 (Volume | Foreign Exchange | Price | Mix | A&D | Net Sales | Organic Volume | Organic Sales): Total P&G 2.4% | —% | 0.4% | 1.1% | —% | 4.0% | 2.4% | 4.0% (Organic Sales column)",
+     "added": "2026-11-10"
+    }
+   ],
+   "volume_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": -1,
+     "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000006/fy2526q2ond8-kexhibit991.htm",
+     "quote": "Net sales change drivers, October - December 2025 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G (1)% | 1% | 1% | —% | —% | 1% | (1)% | —% (Organic Volume column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 2,
+     "source": "https://www.businesswire.com/news/home/20260424407741/en/",
+     "quote": "Net sales change drivers, January - March 2026 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G 2% | 4% | 1% | —% | —% | 7% | 2% | 3% (Organic Volume column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000093/fy2526q4amj8-kexhibit991.htm",
+     "quote": "Net sales change drivers, April - June 2026 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G —% | 1% | —% | —% | 1% | 2% | —% | —% (Organic Volume column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 2.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm",
+     "quote": "Net sales change drivers, July - September 2026 (Volume | Foreign Exchange | Price | Mix | A&D | Net Sales | Organic Volume | Organic Sales): Total P&G 2.4% | —% | 0.4% | 1.1% | —% | 4.0% | 2.4% | 4.0% (Organic Volume column)",
+     "added": "2026-11-10"
+    }
+   ],
+   "pricing_contribution": [
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000006/fy2526q2ond8-kexhibit991.htm",
+     "quote": "Net sales change drivers, October - December 2025 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G (1)% | 1% | 1% | —% | —% | 1% | (1)% | —% (Price column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 1,
+     "source": "https://www.businesswire.com/news/home/20260424407741/en/",
+     "quote": "Net sales change drivers, January - March 2026 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G 2% | 4% | 1% | —% | —% | 7% | 2% | 3% (Price column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000093/fy2526q4amj8-kexhibit991.htm",
+     "quote": "Net sales change drivers, April - June 2026 (Volume | Foreign Exchange | Price | Mix | Other | Net Sales | Organic Volume | Organic Sales): Total P&G —% | 1% | —% | —% | 1% | 2% | —% | —% (Price column)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 0.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm",
+     "quote": "Net sales change drivers, July - September 2026 (Volume | Foreign Exchange | Price | Mix | A&D | Net Sales | Organic Volume | Organic Sales): Total P&G 2.4% | —% | 0.4% | 1.1% | —% | 4.0% | 2.4% | 4.0% (Price column)",
+     "added": "2026-11-10"
+    }
+   ],
+   "core_gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 52.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000006/fy2526q2ond8-kexhibit991.htm",
+     "quote": "Gross margin reconciliation, three months ended December 31, 2024: Gross margin As Reported (GAAP) 52.4% (no Core adjustments in the prior-year column); \"Core gross margin for the quarter decreased 50 basis points versus the prior year\" (51.9% + 0.5 = 52.4%)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 51.0,
+     "source": "https://www.businesswire.com/news/home/20260424407741/en/",
+     "quote": "Gross margin reconciliation, three months ended March 31, 2025: Gross margin As Reported (GAAP) 51.0% (no Core adjustments in the prior-year column); \"Core gross margin and currency-neutral core gross margin for the quarter decreased 100 basis points versus the prior year\" (50.0% + 1.0 = 51.0%)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 49.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000093/fy2526q4amj8-kexhibit991.htm",
+     "quote": "Gross margin reconciliation, three months ended June 30, 2025: Gross margin As Reported (GAAP) 49.1%; footnote: \"For the three months ended June 30, 2025, there were no adjustments to or reconciling items for Core EPS\"; \"Core gross margin for the quarter and currency-neutral Core gross margin were unchanged versus year ago.\"",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 51.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm",
+     "quote": "Gross margin reconciliation, three months ended September 30, 2025: Gross margin As Reported (GAAP) 51.4% | Incremental Restructuring 0.1% | Core (Non-GAAP) 51.5%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 51.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000006/fy2526q2ond8-kexhibit991.htm",
+     "quote": "Gross margin reconciliation, three months ended December 31, 2025: Gross margin As Reported (GAAP) 51.2% | Incremental Restructuring 0.7% | Core (Non-GAAP) 51.9%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 50.0,
+     "source": "https://www.businesswire.com/news/home/20260424407741/en/",
+     "quote": "Gross margin reconciliation, three months ended March 31, 2026: Gross margin As Reported (GAAP) 49.5% | Incremental Restructuring 0.5% | Glad Joint Venture Agreement —% | Core (Non-GAAP) 50.0%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 49.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000093/fy2526q4amj8-kexhibit991.htm",
+     "quote": "Gross margin reconciliation, three months ended June 30, 2026: Gross margin As Reported (GAAP) 48.5% | Incremental Restructuring 0.6% | Core (Non-GAAP) 49.1%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 50.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000250/fy2627q1jas8-kexhibit991.htm",
+     "quote": "Gross margin reconciliation, three months ended September 30, 2026: Gross margin As Reported (GAAP) 49.8% | Incremental Restructuring 0.2% | Core (Non-GAAP) 50.0%",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "KO": {
+   "organic_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026006642/a2025q4earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 5%, driven by a 4% increase in concentrate sales and 1% growth in price/mix",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026027723/a2026q1earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 10%, driven by an 8% increase in concentrate sales and 2% growth in price/mix",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026049922/a2026q2earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 6%, driven by a 4% increase in concentrate sales and 2% growth in price/mix",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 7,
+     "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-067403/a2026q3earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 7%, driven by a 7% increase in concentrate sales and 1% growth in price/mix.",
+     "added": "2026-11-10"
+    }
+   ],
+   "unit_case_volume_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026006642/a2025q4earningsreleaseex-9.htm",
+     "quote": "Unit case volume grew 1% for the quarter, led by growth in Brazil, the United States and Japan.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026027723/a2026q1earningsreleaseex-9.htm",
+     "quote": "Unit case volume grew 3%, led by China, the United States and India.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026049922/a2026q2earningsreleaseex-9.htm",
+     "quote": "Unit case volume grew 5%, led by India, China, the United States and Brazil.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 5,
+     "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-067403/a2026q3earningsreleaseex-9.htm",
+     "quote": "Unit case volume grew 5%, led by India, China, Mexico and Brazil.",
+     "added": "2026-11-10"
+    }
+   ],
+   "price_mix": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026006642/a2025q4earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 5%, driven by a 4% increase in concentrate sales and 1% growth in price/mix",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026027723/a2026q1earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 10%, driven by an 8% increase in concentrate sales and 2% growth in price/mix",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026049922/a2026q2earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 6%, driven by a 4% increase in concentrate sales and 2% growth in price/mix",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 1,
+     "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-067403/a2026q3earningsreleaseex-9.htm",
+     "quote": "organic revenues (non-GAAP) grew 7%, driven by a 7% increase in concentrate sales and 1% growth in price/mix.",
+     "added": "2026-11-10"
+    }
+   ],
+   "comparable_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 24.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026006642/a2025q4earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 24.4% versus 24.0% in the prior year",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-03-28",
+     "label": "Q1 2025",
+     "value": 33.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026027723/a2026q1earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 34.5% versus 33.8% in the prior year",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-06-27",
+     "label": "Q2 2025",
+     "value": 34.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026049922/a2026q2earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 35.6% versus 34.7% in the prior year.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-09-26",
+     "label": "Q3 2025",
+     "value": 31.9,
+     "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-067403/a2026q3earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 32.9% versus 31.9% in the prior year.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026006642/a2025q4earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 24.4% versus 24.0% in the prior year",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": 34.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026027723/a2026q1earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 34.5% versus 33.8% in the prior year",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 35.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000021344/000162828026049922/a2026q2earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 35.6% versus 34.7% in the prior year.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 32.9,
+     "source": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-067403/a2026q3earningsreleaseex-9.htm",
+     "quote": "comparable operating margin (non-GAAP) was 32.9% versus 31.9% in the prior year.",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "SHW": {
+   "paint_stores_same_store_sales": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 2.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000003/shw-20260129.htm",
+     "quote": "Paint Stores Group, three months ended December 31 (2025 | 2024): Same-store sales change (1) 1.0 % | 2.0 % (1) Same-store sales represents Net sales from stores open more than twelve calendar months.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 1.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000036/shwearningsrelease1q2026.htm",
+     "quote": "Paint Stores Group, three months ended March 31 (2026 | 2025): Same-store sales (1) 2.4% | 1.2%; \"Net sales from stores in the Paint Stores Group open more than twelve calendar months increased 2.4% in the quarter\"",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000046/shwearningsrelease2q2026.htm",
+     "quote": "Paint Stores Group, three months ended June 30 (2026 | 2025): Same-store sales (1) 4.2% | 0.8%; \"Net sales from stores in the Paint Stores Group open more than twelve calendar months increased 4.2% in the quarter\"",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 3.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000054/shwearningsrelease3q2026.htm",
+     "quote": "Paint Stores Group, three months ended September 30 (2026 | 2025): Same-store sales (1) 3.9% | 3.6%; \"Net sales from stores in the Paint Stores Group open more than twelve calendar months increased 3.9% in the quarter\"",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000003/shw-20260129.htm",
+     "quote": "Paint Stores Group, three months ended December 31 (2025 | 2024): Same-store sales change (1) 1.0 % | 2.0 % (1) Same-store sales represents Net sales from stores open more than twelve calendar months.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000036/shwearningsrelease1q2026.htm",
+     "quote": "Paint Stores Group, three months ended March 31 (2026 | 2025): Same-store sales (1) 2.4% | 1.2%; \"Net sales from stores in the Paint Stores Group open more than twelve calendar months increased 2.4% in the quarter\"",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 4.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000046/shwearningsrelease2q2026.htm",
+     "quote": "Paint Stores Group, three months ended June 30 (2026 | 2025): Same-store sales (1) 4.2% | 0.8%; \"Net sales from stores in the Paint Stores Group open more than twelve calendar months increased 4.2% in the quarter\"",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000054/shwearningsrelease3q2026.htm",
+     "quote": "Paint Stores Group, three months ended September 30 (2026 | 2025): Same-store sales (1) 3.9% | 3.6%; \"Net sales from stores in the Paint Stores Group open more than twelve calendar months increased 3.9% in the quarter\"",
+     "added": "2026-11-10"
+    }
+   ],
+   "consumer_brands_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000003/shw-20260129.htm",
+     "quote": "Consumer Brands Group, three months ended December 31: Net sales $ 824.7 $ 662.2 $ 162.5 24.5 %",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 19.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000036/shwearningsrelease1q2026.htm",
+     "quote": "Consumer Brands Group, three months ended March 31 (2026 | 2025 | $ Change | % Change): Net sales $908.3 | $762.2 | $146.1 | 19.2%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 21.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000046/shwearningsrelease2q2026.htm",
+     "quote": "Consumer Brands Group, three months ended June 30 (2026 | 2025 | $ Change | % Change): Net sales $983.5 | $809.4 | $174.1 | 21.5%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 21.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000054/shwearningsrelease3q2026.htm",
+     "quote": "Consumer Brands Group, three months ended September 30 (2026 | 2025 | $ Change | % Change): Net sales $937.4 | $770.1 | $167.3 | 21.7%",
+     "added": "2026-11-10"
+    }
+   ],
+   "performance_coatings_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000003/shw-20260129.htm",
+     "quote": "Performance Coatings Group, three months ended December 31: Net sales $ 1,642.1 $ 1,589.0 $ 53.1 3.3 %",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000036/shwearningsrelease1q2026.htm",
+     "quote": "Performance Coatings Group, three months ended March 31 (2026 | 2025 | $ Change | % Change): Net sales $1,705.8 | $1,602.0 | $103.8 | 6.5%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000046/shwearningsrelease2q2026.htm",
+     "quote": "Performance Coatings Group, three months ended June 30 (2026 | 2025 | $ Change | % Change): Net sales $1,913.8 | $1,801.1 | $112.7 | 6.3%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000054/shwearningsrelease3q2026.htm",
+     "quote": "Performance Coatings Group, three months ended September 30 (2026 | 2025 | $ Change | % Change): Net sales $1,903.3 | $1,750.0 | $153.3 | 8.8%",
+     "added": "2026-11-10"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 48.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000003/shw-20260129.htm",
+     "quote": "Statement of consolidated income, three months ended December 31 (2025 | 2024): Gross profit 2,712.6 2,573.2; Percent to Net sales 48.5 % 48.6 %",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 48.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000036/shwearningsrelease1q2026.htm",
+     "quote": "Statement of consolidated income, three months ended March 31 (2026 | 2025): Gross profit 2,780.5 | 2,559.1; Percent to Net sales 49.1% | 48.2%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 49.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000046/shwearningsrelease2q2026.htm",
+     "quote": "Statement of consolidated income, three months ended June 30 (2026 | 2025): Gross profit 3,338.0 | 3,118.3; Percent to Net sales 49.2% | 49.4%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 49.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000054/shwearningsrelease3q2026.htm",
+     "quote": "Statement of consolidated income, three months ended September 30 (2026 | 2025): Gross profit 3,277.2 | 3,125.5; Percent to Net sales 47.8% | 49.2%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 48.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000003/shw-20260129.htm",
+     "quote": "Statement of consolidated income, three months ended December 31 (2025 | 2024): Gross profit 2,712.6 2,573.2; Percent to Net sales 48.5 % 48.6 %",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 49.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000036/shwearningsrelease1q2026.htm",
+     "quote": "Statement of consolidated income, three months ended March 31 (2026 | 2025): Gross profit 2,780.5 | 2,559.1; Percent to Net sales 49.1% | 48.2%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 49.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000046/shwearningsrelease2q2026.htm",
+     "quote": "Statement of consolidated income, three months ended June 30 (2026 | 2025): Gross profit 3,338.0 | 3,118.3; Percent to Net sales 49.2% | 49.4%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 47.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000089800/000008980026000054/shwearningsrelease3q2026.htm",
+     "quote": "Statement of consolidated income, three months ended September 30 (2026 | 2025): Gross profit 3,277.2 | 3,125.5; Percent to Net sales 47.8% | 49.2%",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "JNJ": {
+   "innovative_medicine_operational_growth": [
+    {
+     "period": "2025-12-28",
+     "label": "Q4 2025",
+     "value": 7.9,
+     "source": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-reports-Q4-and-Full-Year-2025-results-2026.pdf",
+     "quote": "Sales by segment, fourth quarter (2025 | 2024 | Reported | Operational | Currency | Adj. Operational): Innovative Medicine $15,763 $14,332 10.0% 7.9 2.1 6.2",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-29",
+     "label": "Q1 2026",
+     "value": 7.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000076/a2026q1exhibit991.htm",
+     "quote": "Sales by segment, first quarter (2026 | 2025 | Reported | Operational | Currency | Adj. Operational): Innovative Medicine $15,426 | $13,873 | 11.2% | 7.4 | 3.8 | 5.6",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-28",
+     "label": "Q2 2026",
+     "value": 6.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000146/a2026q2exhibit991.htm",
+     "quote": "Sales by segment, second quarter (2026 | 2025 | Reported | Operational | Currency | Adj. Operational): Innovative Medicine $16,384 | $15,202 | 7.8% | 6.8 | 1.0 | 6.9",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-27",
+     "label": "Q3 2026",
+     "value": 7.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000189/a2026q3exhibit991.htm",
+     "quote": "Sales by segment, third quarter (2026 | 2025 | Reported | Operational | Currency | Adj. Operational): Innovative Medicine $16,757 | $15,563 | 7.7% | 7.9 | (0.2) | 8.0",
+     "added": "2026-11-10"
+    }
+   ],
+   "medtech_operational_growth": [
+    {
+     "period": "2025-12-28",
+     "label": "Q4 2025",
+     "value": 5.8,
+     "source": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-reports-Q4-and-Full-Year-2025-results-2026.pdf",
+     "quote": "Sales by segment, fourth quarter (2025 | 2024 | Reported | Operational | Currency | Adj. Operational): MedTech 8,801 8,188 7.5 5.8 1.7 5.9",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-29",
+     "label": "Q1 2026",
+     "value": 4.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000076/a2026q1exhibit991.htm",
+     "quote": "Sales by segment, first quarter (2026 | 2025 | Reported | Operational | Currency | Adj. Operational): MedTech 8,636 | 8,020 | 7.7 | 4.6 | 3.1 | 4.7",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-28",
+     "label": "Q2 2026",
+     "value": 3.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000146/a2026q2exhibit991.htm",
+     "quote": "Sales by segment, second quarter (2026 | 2025 | Reported | Operational | Currency | Adj. Operational): MedTech 8,926 | 8,541 | 4.5 | 3.6 | 0.9 | 3.7",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-27",
+     "label": "Q3 2026",
+     "value": 2.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000189/a2026q3exhibit991.htm",
+     "quote": "Sales by segment, third quarter (2026 | 2025 | Reported | Operational | Currency | Adj. Operational): MedTech 8,642 | 8,430 | 2.5 | 2.5 | 0.0 | 2.5",
+     "added": "2026-11-10"
+    }
+   ],
+   "stelara_sales_growth": [
+    {
+     "period": "2025-12-28",
+     "label": "Q4 2025",
+     "value": -47.7,
+     "source": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-reports-Q4-and-Full-Year-2025-results-2026.pdf",
+     "quote": "STELARA, fourth quarter (2025 | 2024 | Reported | Operational | Currency): WW 1,230 2,349 (47.7)% (48.6)% 0.9%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-29",
+     "label": "Q1 2026",
+     "value": -59.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000087/jnj-20260329.htm",
+     "quote": "10-Q Note 9 sales by segment, three months ended March 29, 2026 vs March 30, 2025: STELARA Worldwide $656M vs $1,625M, % change -59.7 ((656/1625-1) = -59.6% on rounded figures)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-28",
+     "label": "Q2 2026",
+     "value": -55.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000153/jnj-20260628.htm",
+     "quote": "10-Q Note 9 sales by segment, three months ended June 28, 2026 vs June 29, 2025: STELARA Worldwide $740M vs $1,653M, % change -55.2 ((740/1653-1) = -55.2%)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-27",
+     "label": "Q3 2026",
+     "value": -54.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000197/jnj-20260927.htm",
+     "quote": "10-Q Note 9 sales by segment, three months ended September 27, 2026 vs September 28, 2025: STELARA Worldwide $716M vs $1,570M, % change -54.4 ((716/1570-1) = -54.4%)",
+     "added": "2026-11-10"
+    }
+   ],
+   "tremfya_sales_growth": [
+    {
+     "period": "2025-12-28",
+     "label": "Q4 2025",
+     "value": 67.6,
+     "source": "https://s203.q4cdn.com/636242992/files/doc_news/Johnson--Johnson-reports-Q4-and-Full-Year-2025-results-2026.pdf",
+     "quote": "TREMFYA, fourth quarter (2025 | 2024 | Reported | Operational | Currency): WW 1,589 949 67.6% 65.4% 2.2%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-29",
+     "label": "Q1 2026",
+     "value": 68.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000087/jnj-20260329.htm",
+     "quote": "10-Q Note 9 sales by segment, three months ended March 29, 2026 vs March 30, 2025: TREMFYA Worldwide $1,608M vs $956M, % change 68.3 ((1608/956-1) = 68.2% on rounded figures)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-28",
+     "label": "Q2 2026",
+     "value": 72.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000153/jnj-20260628.htm",
+     "quote": "10-Q Note 9 sales by segment, three months ended June 28, 2026 vs June 29, 2025: TREMFYA Worldwide $2,046M vs $1,186M, % change 72.5 ((2046/1186-1) = 72.5%)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-27",
+     "label": "Q3 2026",
+     "value": 68.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000197/jnj-20260927.htm",
+     "quote": "10-Q Note 9 sales by segment, three months ended September 27, 2026 vs September 28, 2025: TREMFYA Worldwide $2,396M vs $1,424M, % change 68.3 ((2396/1424-1) = 68.3%)",
+     "added": "2026-11-10"
+    }
+   ]
+  },
+  "AMGN": {
+   "product_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000003/amgn-20251231earningsrelea.htm",
+     "quote": "Product sales grew 7%, driven by 10% volume growth, partially offset by 4% lower net selling price.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000054/amgn-20260331earningsrelea.htm",
+     "quote": "Product sales grew 4%, driven by 9% volume growth, partially offset by 2% lower net selling price and 2% from lower inventory levels.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000124/amgn-20260630earningsrelea.htm",
+     "quote": "Product sales grew 9%, driven by volume growth.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000153/amgn-20260930earningsrelea.htm",
+     "quote": "Product sales grew 8%, driven by volume growth.",
+     "added": "2026-11-10"
+    }
+   ],
+   "repatha_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 44,
+     "source": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000003/amgn-20251231earningsrelea.htm",
+     "quote": "Repatha® (evolocumab) sales increased 44% year-over-year to $870 million in the fourth quarter",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 34,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000054/amgn-20260331earningsrelea.htm",
+     "quote": "Repatha® (evolocumab) sales increased 34% year-over-year to $876 million in the first quarter, driven by 35% volume growth",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 37,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000124/amgn-20260630earningsrelea.htm",
+     "quote": "Repatha® (evolocumab) sales increased 37% year-over-year to $953 million in the second quarter, driven by volume growth.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 37,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000153/amgn-20260930earningsrelea.htm",
+     "quote": "Repatha® (evolocumab) sales increased 37% year-over-year to $1,085 million in the third quarter, primarily driven by volume growth.",
+     "added": "2026-11-10"
+    }
+   ],
+   "prolia_xgeva_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -13.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000003/amgn-20251231earningsrelea.htm",
+     "quote": "Product sales table, Q4 2025 vs year-ago: Prolia® $1,054M vs $1,165M; XGEVA® $447M vs $561M ((1054+447)/(1165+561)-1 = 1501/1726-1 = -13.0%)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -31.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000054/amgn-20260331earningsrelea.htm",
+     "quote": "Product sales table, Q1 2026 vs year-ago: Prolia® $727M vs $1,099M; XGEVA® $411M vs $566M ((727+411)/(1099+566)-1 = 1138/1665-1 = -31.7%)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": -32.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000124/amgn-20260630earningsrelea.htm",
+     "quote": "Product sales table, Q2 2026 vs year-ago: Prolia® $759M vs $1,122M; XGEVA® $352M vs $532M ((759+352)/(1122+532)-1 = 1111/1654-1 = -32.8%)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -45.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000153/amgn-20260930earningsrelea.htm",
+     "quote": "Product sales table, Q3 2026 vs year-ago: Prolia® $632M vs $1,139M; XGEVA® $288M vs $539M ((632+288)/(1139+539)-1 = 920/1678-1 = -45.2%)",
+     "added": "2026-11-10"
+    }
+   ],
+   "non_gaap_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 46.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000003/amgn-20251231earningsrelea.htm",
+     "quote": "Non-GAAP operating income as a percentage of product sales: Q4 2025 42.8% | Q4 2024 46.3%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 45.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000054/amgn-20260331earningsrelea.htm",
+     "quote": "Operating Margin as a percentage of product sales decreased 0.4 percentage points for the first quarter to 45.3%. (45.3 + 0.4 = 45.7% year-ago)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 48.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000124/amgn-20260630earningsrelea.htm",
+     "quote": "Operating Margin as a percentage of product sales decreased 0.5 percentage points for the second quarter to 48.4%. (48.4 + 0.5 = 48.9% year-ago)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 47.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000153/amgn-20260930earningsrelea.htm",
+     "quote": "Operating Margin as a percentage of product sales increased 0.2 percentage points for the third quarter to 47.3%. (47.3 - 0.2 = 47.1% year-ago, matching the non-GAAP reconciliation table)",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 42.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000003/amgn-20251231earningsrelea.htm",
+     "quote": "Operating Margin as a percentage of product sales decreased 3.5 percentage points for the fourth quarter to 42.8%",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 45.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000054/amgn-20260331earningsrelea.htm",
+     "quote": "Operating Margin as a percentage of product sales decreased 0.4 percentage points for the first quarter to 45.3%.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 48.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000124/amgn-20260630earningsrelea.htm",
+     "quote": "Operating Margin as a percentage of product sales decreased 0.5 percentage points for the second quarter to 48.4%.",
+     "added": "2026-11-10"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 47.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000153/amgn-20260930earningsrelea.htm",
+     "quote": "Operating Margin as a percentage of product sales increased 0.2 percentage points for the third quarter to 47.3%.",
+     "added": "2026-11-10"
     }
    ]
   }

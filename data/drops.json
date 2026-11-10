@@ -2019,8 +2019,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Fell ~13% on Nov 4 after Q3: EPS $1.34 vs $1.49, combined ratio 94.6% (+2.7 pts), renewal rate gains slowing to 2%",
+    "summary": "The drop followed a softer Q3 against an exceptional Q3 2025: higher catastrophe losses, a 1.3-point rise in the underlying loss ratio (workers comp worse) and commercial renewal rate increases slowing to 2.0% from 5.8% a year ago, after a strong run-up in the stock. There was no reserve charge (prior-year development neutral), premiums grew 13%, nine-month ROE was 14%, and analysts barely moved next-year EPS, so this reads as a cyclical pricing and comparison issue, not a broken turnaround. Watch the Q4 underlying loss ratio (55.4% a year ago), renewal pricing and any reserve development on older casualty years.",
+    "model_changed": false,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-10",
@@ -3616,8 +3624,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Slide mainly from a 25% one-day drop on Aug 6 after a small Q2 sales miss and a trim to 11% organic growth guidance",
+    "summary": "Most of the fall came on Aug 6 when Q2 sales missed by about $1.1M and organic growth guidance was trimmed from 12% to 11%, citing currency, Middle East export issues and cardiac allograft supply limits; a stock priced at a high multiple was re-rated. Q3 then showed 12% organic growth (7% price, 5% units), adjusted gross margin up, FY26 guidance of +11% sales and +18% adjusted EPS, and a small B. Braun asset purchase, so the business looks intact; the recent EPS downgrades are small (about -2.5%). Watch allograft supply, rep productivity after the 13% rep increase, and that the stock still trades well above the model fair value.",
+    "model_changed": false,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-10",
@@ -3876,8 +3892,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Two 2026 guidance cuts: FY26 sales now -5% to -7%, Americas comps -12% in Q2, underlying margins falling; brand losing US share",
+    "summary": "Lululemon's slide comes from a shrinking core US business: Q2 Americas comparable sales fell 12%, total comps fell 9%, full-year revenue is guided down 5-7% and Q3 down 10-11%, and gross and operating margins excluding a one-off $134.5M tariff refund were roughly 360 and 750 basis points lower than a year ago. Management itself calls it a brand trust problem, on top of competition (Alo, Vuori) and tariffs, after three years of decline, so this looks like a competitive erosion of the brand rather than a passing dip, although a new CEO (Heidi O'Neill, since September) could still turn it. Watch Q3 results in December, US comparable sales and whether ex-refund margins stabilise.",
+    "model_changed": true,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-10",
@@ -4133,8 +4157,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Second straight 2026 guidance cut (EPS $23-24 to $21.00-21.50): price increase failed, share lost to Carrier/Trane, tariffs",
+    "summary": "Lennox missed Q3 (adjusted EPS $6.84 vs $7.18) and cut guidance for the second quarter running; residential (Home Comfort) margin fell 490 basis points as a mid-year price increase did not stick and Lennox cut prices to win back share lost to Carrier, Trane and new low-cost overseas entrants, while tariffs and weak housing affordability added cost and volume pressure. Some of this is cyclical (housing, mortgage rates, tariff timing that management calls a short-term mismatch), but losing pricing power and share in its core dealer channel is a possible lasting competitive change, and the 2027 recovery plan depends on competitors following a price increase. Watch 2027 pricing realisation, HCS margins and share data from distributors such as Watsco.",
+    "model_changed": false,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-10",
@@ -4255,8 +4287,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "2026 growth reset from +2-5% to -1-2% organic: US pet sales -8% on dermatology share loss, generics, Librela; Q3 margins squeezed",
+    "summary": "Zoetis fell 21% after Q1 and drifted lower after Q3 as US Companion Animal sales fell 8%: it lost 4 points of US dermatology share in Q3 (7 in Q2) to new competitors, faces its first real generics (Convenia, Cerenia), Librela has not recovered from safety concerns, and pet owners are more price-sensitive. Raised EPS guidance comes from costs and buybacks while 2026 organic revenue is now guided -2% to -1%, and management assumes no macro help in 2027, so the loss of exclusivity and share in key pet franchises looks structural even if livestock (+7%) and slower vet visits may partly recover. Watch dermatology share, Simparica Trio against NexGard, and the 2027 guide in February.",
+    "model_changed": true,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-10",
@@ -4381,8 +4421,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Slide on a second guidance cut in 2026 (EPS $8.00-8.30 to $7.20-7.40), CEO exit in June, falling margins; IT-services peers also -25%",
+    "summary": "Fiserv cut 2026 adjusted EPS guidance to $7.20-7.40 from $8.00-8.30 with organic revenue now -1% to 0%, lost its second short-tenure CEO in June (Mike Lyons to Truist), and Q3 showed adjusted operating margin down to 31.2% from 37.0% plus a $6.45B goodwill impairment; the peer group fell about as much, so part of the slide is sector-wide. Against that, Q3 beat estimates, guidance was held, Financial Solutions returned to 2% organic growth, Clover processing revenue grew 12%, savings target doubled to $1B and buybacks resumed, and the stock has since rebounded about 25-30% from the trigger price. Whether the margin compression and impairment mark a permanently smaller business or a reset before recovery is not settled; watch Q4 return to revenue growth, merchant margins and 2027 guidance. Note: the model notes still quote the old $8.00-8.30 2026 guidance.",
+    "model_changed": false,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-10",
@@ -4772,6 +4820,6 @@
   "ZTS",
   "FISV"
  ],
- "updated": "2026-11-10T02:42:28Z",
+ "updated": "2026-11-10T03:28:53Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
