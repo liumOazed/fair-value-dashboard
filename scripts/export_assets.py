@@ -26,6 +26,8 @@ for t, a in res["assets"].items():
         e["start_margin"] = rnd(a["start_margin"], 4); e["net_cash"] = rnd(a["net_cash"]); e["shares"] = a["shares"]; e["rev"] = a["rev"]
         e["dcf_method"] = a.get("dcf_method"); e["wacc"] = {k: rnd(v, 4) for k, v in a.get("wacc", {}).items()}
         e["fcf_inputs"] = dict(fcf=a["fcf"], sbc=a["sbc"])
+        sp = a.get("separation")      # cash-flow separation (model.stock_setup): interest on cash, acquisitions, lenders, tax saving
+        e["separation"] = None if not sp else {k: (None if v is None else rnd(v, 4)) for k, v in sp.items()}
         e["moat"] = a.get("moat"); e["cap_years"] = a.get("cap_years"); e["moat_reason"] = a.get("moat_reason")
         e["moat_note"] = MOAT_NOTE.get(a.get("moat"))
         sgm = a.get("segments")

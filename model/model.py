@@ -559,6 +559,52 @@ def wacc_of(t, s, re):
     rd = min(max(f["rd"], 0.02), 0.10)
     return (E * re + D * rd * (1 - f["tax"])) / (E + D)
 
+# Cash-flow separation (from November 2026, data/cash_separation.json): value only the cash the business itself produces
+# and pays for, and handle financing once, outside the cash flows (the 'isolate the project's cash flows' rule).
+#   interest income  cash and securities are added to equity value at the end, so the after-tax interest they earn is
+#                    taken out of free cash flow (it was counted twice); kept as a constant share of revenue, like the
+#                    interest added back
+#   acquisitions     free cash flow (operating cash flow - capex) leaves out money spent buying businesses, while the
+#                    growth forecast includes what those purchases add. Recurring acquisition spend (median of 4 years,
+#                    so one-off mega deals drop out) is charged as reinvestment in proportion to growth above 2.5%:
+#                    full at the base year-1 growth rate, less as growth fades, none at the terminal rate (whose
+#                    reinvestment the value-driver factor already charges) or when growth is at or below 2.5%
+#   lenders          (AXP, AMP: valued on net income) a growing lender must keep part of its profit as equity to back
+#                    new loans, so cash to shareholders = net income x (1 - growth / ROE); after the advantage period
+#                    new equity earns the moat class's terminal return (ROE, halfway to the required return, or it)
+#   debt tax saving  interest is deductible, so debt saves tax that the business's own (before-interest) cash flow does
+#                    not contain: added as tax rate x debt (permanent debt), the debt implied by interest / cost of debt
+SEP = json.load(open(_ROOT / "data/cash_separation.json"))
+LENDERS = {"AXP", "AMP"}
+def stock_setup(tk, s):
+    """Starting margin, scenario margins, net cash and extra dcf() arguments for one stock, with the cash-flow
+    separation applied. Shared by the main loop and scripts/durability.py, duration.py and framework.py."""
+    f = FIN[tk]; e = SEP["stocks"].get(tk, {})
+    aint = 0.0 if DCF_METHOD == "equity" else f["interest"] * (1 - f["tax"])     # after-tax interest added back: FCF -> FCFF
+    iinc = e.get("interest_income_used", 0.0) * (1 - f["tax"])                  # after-tax interest earned on cash
+    add = (aint - iinc) / s["rev"]                                               # constant share of revenue in every year
+    m0 = (s["fcf"] - s["sbc"] + aint - iinc) / s["rev"]                          # starting FCFF margin (after SBC)
+    rd = min(max(f["rd"], 0.02), 0.10)
+    shield = 0.0 if DCF_METHOD == "equity" else f["tax"] * min(f["interest"] / rd, f["debt"])
+    nc = s["net_cash"] + s["extra"] + shield
+    S2 = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}              # scenario margins stated to equity, + interest share
+    a = e.get("acq", 0.0) / s["rev"]
+    kw = dict(acq=(a, max(s["scen"]["base"]["g1"], GT)) if a > 0 else None, roe=e.get("roe") if tk in LENDERS else None)
+    return dict(aint=aint, iinc=iinc, add=add, m0=m0, nc=nc, shield=shield, S2=S2, acq_share=a, kw=kw)
+
+def acq_charge(acq, g, gt=GT):
+    """Acquisition spend as a share of revenue at growth g (acq = (share at the reference growth, reference growth)):
+    in proportion to growth above the terminal rate, so none once growth has faded to 2.5% (the terminal value already
+    charges the reinvestment that growth needs through the value-driver factor)."""
+    if not acq or acq[1] <= gt: return 0.0
+    return acq[0] * min(1.0, max(g - gt, 0.0) / (acq[1] - gt))
+
+def lender_k(mo, r, roe, g_last, gt=GT):
+    """Terminal factor for a lender: last year keeps 1 - g_last/ROE of net income, the terminal value 1 - gt/ROE_new."""
+    rt = (mo or {}).get("ronic_terminal"); rq = (mo or {}).get("r_req", r)
+    rn = rq if rt == "r" else (roe + rq) / 2 if rt == "mid" else roe
+    return (1 - gt / rn) / (1 - g_last / roe)
+
 # Competitive Advantage Period (stage 2 of the Durand/CAP review, from November 2026): each stock's moat class
 # (data/moat.json) sets how many years growth takes to fade to the 2.5% terminal rate (years 1-10 as before, g1 -> g10,
 # then g10 -> 2.5% by the last year) and the return on new investment after that (value-driver terminal value).
@@ -619,7 +665,7 @@ def eng_mo(c, mo):
     if c is None or c == mc or ((mo or {}).get("stress") and ENG_RANK.get(c, 0) > ENG_RANK.get(mc, 0)): return mo or {}
     return dict(MOAT["classes"][c], cls=c, r_req=(mo or {}).get("r_req"))
 
-def dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None, fail=None):
+def dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None, fail=None, acq=None, roe=None):
     E = (sg or {}).get("engines")
     if sg:
         W, G1 = sg["share"], seg_g1s(g1, sg)
@@ -637,6 +683,11 @@ def dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5
     def kfail(i):              # same cash margin, but the 2.5% growth now earns only the required return (as 'end10')
         rf = MO[i].get("ronic_forecast") or 0.20
         return (1 - gt / r) / (1 - gt / rf)
+    rn = None
+    if roe:                    # lender: retained equity instead of the value-driver factors (see stock_setup)
+        rt_ = (mo or {}).get("ronic_terminal"); rq_ = (mo or {}).get("r_req", r)
+        rn = rq_ if rt_ == "r" else (roe + rq_) / 2 if rt_ == "mid" else roe
+        def R(i, t): return r if (fail and fail[0] == i and t > fail[1]) else rn if t > caps[i] else roe
     revs, pv, rows, k_on = [rev0 * w for w in W], 0.0, [], [None] * len(W)
     f_last = [0.0] * len(W)
     for t in range(1, n + 1):
@@ -645,16 +696,20 @@ def dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5
         rev_prev = sum(revs)
         for i in range(len(W)):
             revs[i] *= 1 + path(i, t)
-            if fail and fail[0] == i and t > fail[1] and k_on[i] is None: k_on[i] = kfail(i)
+            if roe: k_on[i] = 1 - path(i, t) / R(i, t)
+            elif fail and fail[0] == i and t > fail[1] and k_on[i] is None: k_on[i] = kfail(i)
             elif t > caps[i] and k_on[i] is None: k_on[i] = tv_factor(MO[i], r, path(i, caps[i]), gt)
             f_last[i] = revs[i] * mt * X[i] * (k_on[i] if k_on[i] is not None else 1.0)
             fcf += f_last[i]
         rev = sum(revs); g = rev / rev_prev - 1
+        ac = acq_charge(acq, g, gt) * rev; fcf -= ac          # acquisition spend (company level)
         df = 1 / (1 + r) ** t
         pv += fcf * df
         rows.append(dict(t=t, g=g, rev=rev, m=fcf / rev, fcf=fcf, df=df, pv=fcf * df, **({"seg": [round(v, 3) for v in revs]} if sg else {})))
     # terminal: engines still inside their advantage period at year n get their class's factor now
-    term = sum(f_last[i] * (tv_factor(MO[i], r, path(i, n), gt) if k_on[i] is None else 1.0) for i in range(len(W)))
+    if roe: term = sum(revs[i] * mt * X[i] * (1 - gt / R(i, n + 1)) for i in range(len(W)))
+    else: term = sum(f_last[i] * (tv_factor(MO[i], r, path(i, n), gt) if k_on[i] is None else 1.0) for i in range(len(W)))
+    term -= acq_charge(acq, gt, gt) * rows[-1]["rev"]
     k = term / rows[-1]["fcf"] if rows[-1]["fcf"] else 1.0
     tv = term * (1 + gt) / (r - gt)
     pv_tv = tv * rows[-1]["df"]
@@ -663,9 +718,9 @@ def dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5
         return dict(rows=rows, pv_fcf=pv, tv=tv, pv_tv=pv_tv, ev=ev, equity=eq, per_share=ps, tv_share=pv_tv / ev, tv_factor=k)
     return ps
 
-def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None, fail=None):
+def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, detail=False, mo=None, sg=None, fail=None, acq=None, roe=None):
     if fail is not None or (sg and sg.get("engines")):
-        return dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt, ramp, detail, mo, sg, fail)
+        return dcf_eng(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt, ramp, detail, mo, sg, fail, acq, roe)
     n = (mo or {}).get("cap_years", 10)
     rev, pv, rows = rev0, 0.0, []
     segrev = [rev0 * w for w in sg["share"]] if sg else None
@@ -680,11 +735,20 @@ def dcf(rev0, m0, g1, g10, m_target, r, net_cash_plus, shares, gt=GT, ramp=5, de
             g = path(g1, t)
             rev *= 1 + g
         m = m0 + (m_target - m0) * min(t, ramp) / ramp
-        fcf = rev * m
+        fcf = rev * m * (1 - g / roe if roe else 1.0) - rev * acq_charge(acq, g, gt)   # lenders retain equity; acquisitions
+        m = fcf / rev
         df = 1 / (1 + r) ** t
         pv += fcf * df
         rows.append(dict(t=t, g=g, rev=rev, m=m, fcf=fcf, df=df, pv=fcf * df, **({"seg": [round(v, 3) for v in segrev]} if sg else {})))
-    k = tv_factor(mo, r, path(g1, n), gt)        # last-year growth (all segments end on the same path)
+    gn = rows[-1]["g"]
+    if roe or acq:          # terminal cash flow built from the last year's sales and margin before these charges
+        ml = m0 + (m_target - m0) * min(n, ramp) / ramp
+        base = rows[-1]["rev"] * ml
+        kk = lender_k(mo, r, roe, gn, gt) * (1 - gn / roe) if roe else tv_factor(mo, r, path(g1, n), gt)
+        term = base * kk - rows[-1]["rev"] * acq_charge(acq, gt, gt)
+        k = term / rows[-1]["fcf"] if rows[-1]["fcf"] else 1.0
+    else:
+        k = tv_factor(mo, r, path(g1, n), gt)    # last-year growth (all segments end on the same path)
     tv = rows[-1]["fcf"] * (1 + gt) * k / (r - gt)
     pv_tv = tv * rows[-1]["df"]
     ev = pv + pv_tv
@@ -713,24 +777,24 @@ RONIC_HIGH = 0.50     # forecast return on new investment above this: growth loo
 SNAP_RAW = _ROOT / "data/snapshot_raw.json"
 _SNAP = json.load(open(SNAP_RAW))["stocks"] if SNAP_RAW.exists() else {}
 
-def dcf_cap(rev0, m0, g1, m_target, r, net_cash_plus, shares, n, gt=GT, ramp=5):
+def dcf_cap(rev0, m0, g1, m_target, r, net_cash_plus, shares, n, gt=GT, ramp=5, acq=None, roe=None):
     """Same cash-flow model as dcf(), but growth fades in a straight line from g1 to the terminal rate over n years
     (the competitive advantage period), then grows at gt forever."""
     rev, pv, fcf, df = rev0, 0.0, 0.0, 1.0
     for t in range(1, n + 1):
         g = g1 + (gt - g1) * (t - 1) / max(n - 1, 1) if n > 1 else g1
         rev *= 1 + g
-        fcf = rev * (m0 + (m_target - m0) * min(t, ramp) / ramp)
+        fcf = rev * (m0 + (m_target - m0) * min(t, ramp) / ramp) * (1 - g / roe if roe else 1.0) - rev * acq_charge(acq, g, gt)
         df = 1 / (1 + r) ** t
         pv += fcf * df
     return (pv + fcf * (1 + gt) / (r - gt) * df + net_cash_plus) / shares
 
-def implied_cap(price, rev0, m0, g1, m_target, r, nc, shares):
+def implied_cap(price, rev0, m0, g1, m_target, r, nc, shares, **kw):
     """Years of above-terminal growth (fading to 2.5%) that today's price needs, with the base growth and margin.
     None when base growth is at or below the terminal rate (a longer period would not add value)."""
     if g1 <= GT + 1e-9: return None
     for n in range(1, CAP_MAX + 1):
-        if dcf_cap(rev0, m0, g1, m_target, r, nc, shares, n) >= price:
+        if dcf_cap(rev0, m0, g1, m_target, r, nc, shares, n, **kw) >= price:
             return n
     return CAP_MAX + 1          # read as "more than CAP_MAX years"
 
@@ -877,15 +941,13 @@ for tk, s in STOCKS.items():
     s["r"] = req_return(tk)                                   # cost of equity (required return)
     mo = dict(moat_of(tk), r_req=s["r"])
     sg = segments_of(tk)
-    D = lambda *x, **kw: dcf(*x, mo=mo, sg=sg, **kw)        # this stock's DCF (advantage period, terminal returns, segments)
     f = FIN[tk]
-    aint = 0.0 if DCF_METHOD == "equity" else f["interest"] * (1 - f["tax"])   # after-tax interest added back: FCF -> FCFF
-    add = aint / s["rev"]                                     # kept as a constant share of revenue in every year
-    m0 = (s["fcf"] - s["sbc"] + aint) / s["rev"]              # starting FCFF margin (after SBC)
+    su = stock_setup(tk, s)                                   # cash-flow separation: interest, acquisitions, lenders, tax saving
+    D = lambda *x, **kw: dcf(*x, mo=mo, sg=sg, **su["kw"], **kw)   # this stock's DCF (advantage period, terminal returns, segments)
+    aint, add, m0 = su["aint"], su["add"], su["m0"]
     W = (lambda re: wacc_of(tk, s, re)) if DCF_METHOD == "fcff_wacc" else (lambda re: re)
     w = W(s["r"])
-    nc = s["net_cash"] + s["extra"]
-    S2 = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}   # scenario margins stated to equity, + interest share
+    nc, S2 = su["nc"], su["S2"]
     res = {}
     for sc, p in S2.items():
         d = D(s["rev"], m0, p["g1"], p["g10"], p["m"], w, nc, s["shares"], detail=True)
@@ -910,7 +972,7 @@ for tk, s in STOCKS.items():
         return dict(r=r, wacc=d, fv=sum(PROBS[k] * v[k] for k in PROBS), **v)
     rate_table = [RT(r, W(r)) for r in rates]
     wacc_row = RT(wacc_of(tk, s, s["r"]), wacc_of(tk, s, s["r"]))   # the same cash flows discounted at the blended WACC (Capital and returns card)
-    cap = implied_cap(s["price"], s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"])
+    cap = implied_cap(s["price"], s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"], **su["kw"])
     nm = nopat_margin(tk, f["tax"])
     gchk = {k: growth_check(res[k]["detail"], s["rev"], nm, S2[k]["m"], w) for k in res}   # NOPAT and FCFF are both before interest
     E_ = s["price"] * s["shares"]
@@ -922,6 +984,7 @@ for tk, s in STOCKS.items():
         rate_table=rate_table, wacc_row=wacc_row, r_reason=RR["stocks"][tk]["reason"],
         dcf_method=DCF_METHOD, wacc=dict(wacc=wacc_of(tk, s, s["r"]), discount_rate=w, cost_equity=s["r"], equity_weight=E_ / (E_ + f["debt"]), debt_weight=f["debt"] / (E_ + f["debt"]),
                   cost_debt=min(max(f["rd"], 0.02), 0.10), cost_debt_raw=f["rd"], tax=f["tax"], debt=f["debt"], after_tax_interest=aint),
+        separation=dict(interest_income_after_tax=su["iinc"], acquisitions_share=su["acq_share"], tax_saving=su["shield"], lender_roe=su["kw"]["roe"]),
         name=s["name"], type="stock", price=s["price"], shares=s["shares"], r=s["r"], mos=s["mos"],
         start_margin=m0, net_cash=nc, rev=s["rev"], notes=s["notes"],
         bear=res["bear"]["per_share"], base=base, bull=res["bull"]["per_share"],

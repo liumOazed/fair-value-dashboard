@@ -387,12 +387,11 @@ def assumes(ns, t, price):
     if not s or not price: return None
     s = dict(s); s["r"] = ns["req_return"](t)
     mo = dict(ns["moat_of"](t), r_req=s["r"]); sg = ns["segments_of"](t)
-    D = lambda *x, **kw: ns["dcf"](*x, mo=mo, sg=sg, **kw)
-    f = ns["FIN"][t]
-    aint = 0.0 if ns["DCF_METHOD"] == "equity" else f["interest"] * (1 - f["tax"])
-    add = aint / s["rev"]; m0 = (s["fcf"] - s["sbc"] + aint) / s["rev"]
+    su = ns["stock_setup"](t, s)                    # same cash-flow separation as the model
+    D = lambda *x, **kw: ns["dcf"](*x, mo=mo, sg=sg, **su["kw"], **kw)
+    add, m0 = su["add"], su["m0"]
     W = (lambda re: ns["wacc_of"](t, s, re)) if ns["DCF_METHOD"] == "fcff_wacc" else (lambda re: re)
-    w = W(s["r"]); nc = s["net_cash"] + s["extra"]
+    w = W(s["r"]); nc = su["nc"]
     B = dict(s["scen"]["base"]); B["m"] += add
     V = lambda g1, m: D(s["rev"], m0, g1, B["g10"], m, w, nc, s["shares"])
     solve = ns["solve"]
@@ -404,7 +403,7 @@ def assumes(ns, t, price):
     if g is not None and g > B["g10"]:
         out["half_g1"] = r1(g / 2)
         out["half_value"] = r1(V(g / 2, B["m"]), 2)
-    out["cap_needed"] = ns["implied_cap"](price, s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"])
+    out["cap_needed"] = ns["implied_cap"](price, s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"], **su["kw"])
     return out
 
 # ------------------------------------------------------------------ build
