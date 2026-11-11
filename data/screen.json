@@ -59,21 +59,30 @@
 "CVSA",
 "SLDE",
 "INVA",
+"LRN",
 "LAUR",
+"USLM",
 "CTRE",
 "NMIH",
 "HCI",
+"MCRI",
 "HG",
+"EPAC",
 "QLYS",
+"CARG",
 "ESNT",
 "LMAT",
 "GOOGL",
+"ANET",
 "IDCC",
+"CL",
 "KO",
+"LIN",
 "MSFT",
 "BMY",
 "SHW",
 "UVE",
+"WSM",
 "UFCS",
 "ADYEY",
 "MKC",
@@ -106,12 +115,17 @@
 "CVSA",
 "SLDE",
 "INVA",
+"LRN",
 "LAUR",
+"USLM",
 "CTRE",
 "NMIH",
 "HCI",
+"MCRI",
 "HG",
+"EPAC",
 "QLYS",
+"CARG",
 "ESNT",
 "LMAT",
 "IDCC",
@@ -259,7 +273,7 @@
 "2026-11"
 ],
 "consistent_rule": "in the top 50 in at least 3 of the last 4 months, including the latest",
-"built": "2026-11-07",
+"built": "2026-11-11",
 "universe": 502,
 "djia": {
 "as_of": "2026-11-06",
@@ -2190,6 +2204,175 @@
 "fv_pick": false
 },
 {
+"ticker": "LRN",
+"name": "Stride, Inc.",
+"sector": "Consumer Defensive",
+"themes": [
+"Education"
+],
+"score": 73.3,
+"rank": 8,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 47.0,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 8,
+"score": 73.3,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 3.0,
+"gross_margin_pct": 37.46,
+"profit_margin_pct": 13.18,
+"roe_pct": 20.9,
+"pe": 10.33,
+"forward_pe": 7.79,
+"ev_ebitda": 5.53,
+"ps": 1.24,
+"fcf_yield_pct": 13.44,
+"market_cap": 3148197632.0,
+"implied_fcf_growth": -0.0311,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.12,
+"required_return_source": "stock",
+"required_return_reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium, plus 1 point: revenue is public school funding paid through state and charter contracts, which politics can change.",
+"fcf_ni": 1.14,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 10.62,
+"earnings_yield_fwd": 12.84,
+"fcf_basis": "TTM",
+"roic_pct": 30.06,
+"net_debt_ebitda": -0.32,
+"interest_coverage": 38.46,
+"rev_cagr_pct": 11.08,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 33.96,
+"rev_growth_std": 5.4,
+"earnings_cv": 0.34,
+"fcf_cv": 0.36,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -1.2,
+"capex_ocf_pct": 18.18,
+"capex_fcf": 0.22,
+"tax_rate": 0.23,
+"beta": 0.15,
+"volatility_1y_pct": 42.39,
+"max_drawdown_1y_pct": -26.62,
+"nd_ebitda_then": 0.07,
+"margin_change_pts": 6.53,
+"fcf_cagr_pct": 37.48,
+"operating_margin_pct": 13.62,
+"fcf_ni_3y": 1.14,
+"fcf_ttm": 423175000.0,
+"ni_ttm": 334311000.0,
+"fcf_yield_yahoo_pct": 10.32,
+"enterprise_value": 2933387776.0,
+"fcff_ev_pct": 14.73,
+"fcf_ni_conversion": 1.05,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.836,
+"debt_weight": 0.164,
+"cost_equity": 0.12,
+"cost_debt_raw": 0.0215,
+"cost_debt_used": 0.0215,
+"tax": 0.233
+},
+"wacc": 0.103,
+"roic_spread": 0.1976,
+"v3_source": "own",
+"score_prev": 70.5,
+"components": {
+"quality": 71.0,
+"growth": 60.0,
+"value": 98.0,
+"resilience": 72.0
+},
+"safety": 72.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Education & Training Services",
+"industry_rank": 1,
+"industry_n": 1,
+"pe_vs_market": -0.5572,
+"fpe_vs_market": -0.5625,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter +3.0% year on year; +11.1% a year over 3 years."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 13.2%, ROIC 30% vs 10.3% cost of capital (+19.8 pts), EPS +34.0% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.14x net income over 3 years, FCF yield 13.4%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, interest covered 38.5x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (0.1x \u2192 -0.3x), net margin +6.5 pts, FCF growing 37% a year, share count falling 1.2% a year. Worse: growth slowing."
+}
+],
+"checks_score": 4,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
+},
+{
 "ticker": "LAUR",
 "name": "Laureate Education, Inc.",
 "sector": "Consumer Defensive",
@@ -2530,6 +2713,177 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "USLM",
+"name": "United States Lime & Minerals, ",
+"sector": "Basic Materials",
+"themes": [
+"Materials & commodities"
+],
+"score": 72.2,
+"rank": 9,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 42.6,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 9,
+"score": 72.2,
+"est": false
+}
+],
+"flags": [
+"Cyclical"
+],
+"rev_growth_pct": 4.1,
+"gross_margin_pct": 54.38,
+"profit_margin_pct": 35.08,
+"roe_pct": 20.01,
+"pe": 25.73,
+"forward_pe": 19.84,
+"ev_ebitda": 16.27,
+"ps": 8.99,
+"fcf_yield_pct": 2.68,
+"market_cap": 3425673472.0,
+"implied_fcf_growth": 0.1833,
+"implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Basic Materials rate (9.5%) plus the 2-point small-cap premium, less half a point: no debt, $0.4B cash and local lime markets with few rivals; demand follows construction, steel and oil and gas.",
+"fcf_ni": 0.81,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 3.89,
+"earnings_yield_fwd": 5.04,
+"fcf_basis": "TTM",
+"roic_pct": 46.09,
+"net_debt_ebitda": -2.37,
+"interest_coverage": 621.49,
+"rev_cagr_pct": 16.43,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 42.91,
+"rev_growth_std": 2.6,
+"earnings_cv": 0.37,
+"fcf_cv": 0.37,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": 0.3,
+"capex_ocf_pct": 38.01,
+"capex_fcf": 0.61,
+"tax_rate": 0.21,
+"beta": 0.67,
+"volatility_1y_pct": 39.21,
+"max_drawdown_1y_pct": -30.06,
+"nd_ebitda_then": -1.66,
+"margin_change_pts": 16.79,
+"fcf_cagr_pct": 39.66,
+"operating_margin_pct": 42.1,
+"fcf_ni_3y": 0.81,
+"fcf_ttm": 91813000.0,
+"ni_ttm": null,
+"fcf_yield_yahoo_pct": 1.44,
+"enterprise_value": 2982814208.0,
+"fcff_ev_pct": 3.08,
+"fcf_ni_conversion": 0.76,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.999,
+"debt_weight": 0.001,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0561,
+"cost_debt_used": 0.0561,
+"tax": 0.215
+},
+"wacc": 0.1099,
+"roic_spread": 0.351,
+"v3_source": "own",
+"score_prev": 65.1,
+"components": {
+"quality": 88.0,
+"growth": 70.0,
+"value": 45.0,
+"resilience": 78.0
+},
+"safety": 78.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Building Materials",
+"industry_rank": 1,
+"industry_n": 4,
+"pe_vs_market": 0.1034,
+"fpe_vs_market": 0.1138,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter +4.1% year on year; +16.4% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 35.1%, ROIC 46% vs 11.0% cost of capital (+35.1 pts), EPS +42.9% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 0.81x net income over 3 years, FCF yield 2.7%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, interest covered 621.5x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (-1.7x \u2192 -2.4x), net margin +16.8 pts, FCF growing 40% a year. Worse: growth slowing."
+}
+],
+"checks_score": 4,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "EME",
@@ -3389,7 +3743,9 @@
 "ticker": "VICI",
 "name": "VICI Properties Inc.",
 "sector": "Real Estate",
-"themes": [],
+"themes": [
+"Real estate"
+],
 "score": 71.4,
 "rank": 14,
 "prev_score": 68.7,
@@ -3445,12 +3801,12 @@
 "ps": 6.48,
 "fcf_yield_pct": 10.04,
 "market_cap": 26932551680.0,
-"implied_fcf_growth": -0.0668,
+"implied_fcf_growth": -0.0464,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.075,
-"required_return_source": "sector",
-"required_return_reason": "Real Estate sector default",
+"required_return": 0.085,
+"required_return_source": "stock",
+"required_return_reason": "Real Estate rate (7.5%) plus 1 point: 40-year inflation-linked leases, but two tenants (Caesars and MGM) pay about three quarters of the rent and $17.8B of debt makes the equity sensitive to rates.",
 "fcf_ni": 0.89,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -3491,13 +3847,13 @@
 "wacc_detail": {
 "equity_weight": 0.602,
 "debt_weight": 0.398,
-"cost_equity": 0.075,
+"cost_equity": 0.085,
 "cost_debt_raw": 0.0477,
 "cost_debt_used": 0.0477,
 "tax": 0.001
 },
-"wacc": 0.0641,
-"roic_spread": 0.0177,
+"wacc": 0.0701,
+"roic_spread": 0.0117,
 "v3_source": "own",
 "score_prev": 73.9,
 "components": {
@@ -3520,7 +3876,7 @@
 "pe_vs_market": -0.5145,
 "fpe_vs_market": -0.5406,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -3531,7 +3887,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 56.5%, ROIC 8% vs 6.4% cost of capital (+1.8 pts), EPS +27.1% a year."
+"t": "Net margin 56.5%, ROIC 8% vs 7.0% cost of capital (+1.2 pts), EPS +27.1% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -4927,7 +5283,9 @@
 "ticker": "CPRT",
 "name": "Copart, Inc.",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 68.2,
 "rank": 21,
 "prev_score": 71.0,
@@ -4984,8 +5342,8 @@
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
 "required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Industrials sector default",
+"required_return_source": "stock",
+"required_return_reason": "Industrials rate: salvage-auction volumes are steady (cars get wrecked in any economy) and it holds $4.4B net cash, but fees follow used-car prices and insurers' total-loss rates.",
 "fcf_ni": 0.79,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -5053,7 +5411,7 @@
 "pe_vs_market": -0.1665,
 "fpe_vs_market": -0.0653,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -5089,6 +5447,175 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "MCRI",
+"name": "Monarch Casino & Resort, Inc.",
+"sector": "Consumer Cyclical",
+"themes": [
+"Travel"
+],
+"score": 68.4,
+"rank": 21,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 50.7,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 21,
+"score": 68.4,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 2.4,
+"gross_margin_pct": 67.98,
+"profit_margin_pct": 20.35,
+"roe_pct": 20.4,
+"pe": 17.92,
+"forward_pe": 15.58,
+"ev_ebitda": 9.15,
+"ps": 3.41,
+"fcf_yield_pct": 7.4,
+"market_cap": 1928318464.0,
+"implied_fcf_growth": 0.0412,
+"implied_tag": "Demanding",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Consumer Cyclical rate (9%) plus the 2-point small-cap premium: two casinos only (Reno and Black Hawk), so local competition or regulation matters, but no borrowings.",
+"fcf_ni": 1.35,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 5.97,
+"earnings_yield_fwd": 6.42,
+"fcf_basis": "TTM",
+"roic_pct": 20.93,
+"net_debt_ebitda": -0.63,
+"interest_coverage": 1225.91,
+"rev_cagr_pct": 4.49,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 6.7,
+"rev_growth_std": 0.34,
+"earnings_cv": 0.12,
+"fcf_cv": 0.14,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -2.28,
+"capex_ocf_pct": 22.05,
+"capex_fcf": 0.28,
+"tax_rate": 0.22,
+"beta": 1.41,
+"volatility_1y_pct": 25.49,
+"max_drawdown_1y_pct": -18.12,
+"nd_ebitda_then": -0.12,
+"margin_change_pts": 0.29,
+"fcf_cagr_pct": 8.59,
+"operating_margin_pct": 28.36,
+"fcf_ni_3y": 1.35,
+"fcf_ttm": 142614000.0,
+"ni_ttm": 115064000.0,
+"fcf_yield_yahoo_pct": 6.4,
+"enterprise_value": 1803510656.0,
+"fcff_ev_pct": 7.91,
+"fcf_ni_conversion": 1.27,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.994,
+"debt_weight": 0.006,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0076,
+"cost_debt_used": 0.02,
+"tax": 0.217
+},
+"wacc": 0.1094,
+"roic_spread": 0.0999,
+"v3_source": "own",
+"score_prev": 64.3,
+"components": {
+"quality": 74.0,
+"growth": 52.0,
+"value": 73.0,
+"resilience": 80.0
+},
+"safety": 80.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Resorts & Casinos",
+"industry_rank": 1,
+"industry_n": 4,
+"pe_vs_market": -0.2314,
+"fpe_vs_market": -0.1254,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter +2.4% year on year; +4.5% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 20.4%, ROIC 21% vs 10.9% cost of capital (+10.0 pts), EPS +6.7% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.35x net income over 3 years, FCF yield 7.4%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net cash, no meaningful interest."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: leverage down (-0.1x \u2192 -0.6x), FCF growing 9% a year, share count falling 2.3% a year."
+}
+],
+"checks_score": 4,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "LULU",
@@ -6123,7 +6650,9 @@
 "ticker": "AOS",
 "name": "A.O. Smith Corporation",
 "sector": "Industrials",
-"themes": [],
+"themes": [
+"Industrials & services"
+],
 "score": 66.7,
 "rank": 27,
 "prev_score": 66.3,
@@ -6180,8 +6709,8 @@
 "implied_tag": "Sales shrinking",
 "implied_basis": "fcf",
 "required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Industrials sector default",
+"required_return_source": "stock",
+"required_return_reason": "Industrials rate: about 80% of North American water-heater sales are replacements, which steadies demand; China (a fifth of sales) is weak and housing-linked.",
 "fcf_ni": 0.99,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -6249,7 +6778,7 @@
 "pe_vs_market": -0.2467,
 "fpe_vs_market": -0.1218,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -6285,6 +6814,175 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "EPAC",
+"name": "Enerpac Tool Group Corp.",
+"sector": "Industrials",
+"themes": [
+"Industrials & services"
+],
+"score": 67.0,
+"rank": 27,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 48.8,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 27,
+"score": 67.0,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 10.9,
+"gross_margin_pct": 49.24,
+"profit_margin_pct": 13.75,
+"roe_pct": 20.23,
+"pe": 22.77,
+"forward_pe": 17.4,
+"ev_ebitda": 13.75,
+"ps": 3.08,
+"fcf_yield_pct": 5.95,
+"market_cap": 2009130624.0,
+"implied_fcf_growth": 0.072,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.11,
+"required_return_source": "stock",
+"required_return_reason": "Industrials rate (9%) plus the 2-point small-cap premium: leading brand in a niche, low debt, but orders follow industrial, energy and infrastructure spending.",
+"fcf_ni": 1.05,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 4.46,
+"earnings_yield_fwd": 5.75,
+"fcf_basis": "TTM",
+"roic_pct": 17.68,
+"net_debt_ebitda": 0.31,
+"interest_coverage": 14.06,
+"rev_cagr_pct": 2.93,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 82.43,
+"rev_growth_std": 3.17,
+"earnings_cv": 0.24,
+"fcf_cv": 0.24,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -2.36,
+"capex_ocf_pct": 8.14,
+"capex_fcf": 0.09,
+"tax_rate": 0.24,
+"beta": 0.81,
+"volatility_1y_pct": 34.04,
+"max_drawdown_1y_pct": -23.45,
+"nd_ebitda_then": 0.61,
+"margin_change_pts": 5.97,
+"fcf_cagr_pct": 20.59,
+"operating_margin_pct": 18.22,
+"fcf_ni_3y": 1.05,
+"fcf_ttm": 119600000.0,
+"ni_ttm": 89699000.0,
+"fcf_yield_yahoo_pct": 4.79,
+"enterprise_value": 2055430656.0,
+"fcff_ev_pct": 6.15,
+"fcf_ni_conversion": 1.33,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.901,
+"debt_weight": 0.099,
+"cost_equity": 0.11,
+"cost_debt_raw": 0.0484,
+"cost_debt_used": 0.0484,
+"tax": 0.237
+},
+"wacc": 0.1028,
+"roic_spread": 0.074,
+"v3_source": "own",
+"score_prev": 65.7,
+"components": {
+"quality": 69.0,
+"growth": 55.0,
+"value": 76.0,
+"resilience": 72.0
+},
+"safety": 72.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Specialty Industrial Machinery",
+"industry_rank": 1,
+"industry_n": 18,
+"pe_vs_market": -0.0238,
+"fpe_vs_market": -0.0227,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter +10.9% year on year; +2.9% a year over 3 years, steady."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 13.8%, ROIC 18% vs 10.3% cost of capital (+7.4 pts), EPS +82.4% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 1.05x net income over 3 years, FCF yield 6.0%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net debt 0.3x EBITDA, interest covered 14.1x."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: net margin +6.0 pts, FCF growing 21% a year, share count falling 2.4% a year, growth accelerating."
+}
+],
+"checks_score": 4,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "QLYS",
@@ -6634,7 +7332,9 @@
 "ticker": "TPL",
 "name": "Texas Pacific Land Corporation",
 "sector": "Energy",
-"themes": [],
+"themes": [
+"Energy"
+],
 "score": 66.1,
 "rank": 29,
 "prev_score": 70.0,
@@ -6690,12 +7390,12 @@
 "ps": 25.49,
 "fcf_yield_pct": 0.33,
 "market_cap": 22877521920.0,
-"implied_fcf_growth": 0.4166,
+"implied_fcf_growth": 0.4328,
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
-"required_return": 0.085,
-"required_return_source": "sector",
-"required_return_reason": "Energy sector default",
+"required_return": 0.09,
+"required_return_source": "stock",
+"required_return_reason": "Above the 8.5% Energy rate: royalties carry no drilling cost and there is no debt, but income depends on oil and gas prices and on drilling in one basin (the Permian).",
 "fcf_ni": 0.35,
 "fcf_ni_basis": "3y",
 "cash_swing": true,
@@ -6736,13 +7436,13 @@
 "wacc_detail": {
 "equity_weight": 0.999,
 "debt_weight": 0.001,
-"cost_equity": 0.085,
+"cost_equity": 0.09,
 "cost_debt_raw": 0.083,
 "cost_debt_used": 0.083,
 "tax": 0.211
 },
-"wacc": 0.085,
-"roic_spread": 0.3488,
+"wacc": 0.09,
+"roic_spread": 0.3438,
 "v3_source": "own",
 "score_prev": 54.8,
 "components": {
@@ -6763,7 +7463,7 @@
 "pe_vs_market": 0.814,
 "fpe_vs_market": -0.7453,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -6774,7 +7474,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 60.3%, ROIC 43% vs 8.5% cost of capital (+34.9 pts), EPS +2.8% a year."
+"t": "Net margin 60.3%, ROIC 43% vs 9.0% cost of capital (+34.4 pts), EPS +2.8% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -7820,6 +8520,175 @@
 "checks_pick": false,
 "sector_pick": null,
 "fv_pick": false
+},
+{
+"ticker": "CARG",
+"name": "CarGurus, Inc.",
+"sector": "Communication Services",
+"themes": [
+"Media & streaming"
+],
+"score": 65.4,
+"rank": 35,
+"prev_score": null,
+"prev_rank": null,
+"rank_change": null,
+"old_score": 66.1,
+"consistent": false,
+"months_in_top50": 0,
+"top50": false,
+"history": [
+{
+"m": "2026-07",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-08",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-09",
+"rank": null,
+"score": null,
+"est": true
+},
+{
+"m": "2026-10",
+"rank": null,
+"score": null,
+"est": false
+},
+{
+"m": "2026-11",
+"rank": 35,
+"score": 65.4,
+"est": false
+}
+],
+"flags": [],
+"rev_growth_pct": 13.1,
+"gross_margin_pct": 92.38,
+"profit_margin_pct": 18.19,
+"roe_pct": 53.47,
+"pe": 19.23,
+"forward_pe": 11.96,
+"ev_ebitda": 12.03,
+"ps": 3.33,
+"fcf_yield_pct": 9.05,
+"market_cap": 3220006400.0,
+"implied_fcf_growth": 0.0206,
+"implied_tag": "Undemanding",
+"implied_basis": "fcf",
+"required_return": 0.115,
+"required_return_source": "stock",
+"required_return_reason": "Communication Services rate (9%) plus the 2-point small-cap premium, plus half a point: dealer advertising follows the car market (beta ~1.2).",
+"fcf_ni": 2.39,
+"fcf_ni_basis": "3y",
+"cash_swing": false,
+"earnings_yield": 5.46,
+"earnings_yield_fwd": 8.36,
+"fcf_basis": "TTM",
+"roic_pct": 46.67,
+"net_debt_ebitda": 0.23,
+"interest_coverage": 999.0,
+"rev_cagr_pct": -18.17,
+"rev_cagr_years": 3.0,
+"eps_cagr_pct": 78.23,
+"rev_growth_std": 33.83,
+"earnings_cv": 0.7,
+"fcf_cv": 0.38,
+"fcf_neg_years": 0.0,
+"fcf_years": 4.0,
+"share_change_pct_yr": -6.91,
+"capex_ocf_pct": 9.93,
+"capex_fcf": 0.11,
+"tax_rate": 0.22,
+"beta": 1.24,
+"volatility_1y_pct": 40.69,
+"max_drawdown_1y_pct": -30.92,
+"nd_ebitda_then": -2.62,
+"margin_change_pts": 12.09,
+"fcf_cagr_pct": 3.65,
+"operating_margin_pct": 25.27,
+"fcf_ni_3y": 2.39,
+"fcf_ttm": 291280000.0,
+"ni_ttm": 175936000.0,
+"fcf_yield_yahoo_pct": 7.49,
+"enterprise_value": 3283012352.0,
+"fcff_ev_pct": 8.87,
+"fcf_ni_conversion": 1.71,
+"roic_basis": "operating",
+"share_jump": false,
+"wacc_detail": {
+"equity_weight": 0.946,
+"debt_weight": 0.054,
+"cost_equity": 0.115,
+"cost_debt_raw": null,
+"cost_debt_used": 0.05,
+"tax": 0.222
+},
+"wacc": 0.1109,
+"roic_spread": 0.3558,
+"v3_source": "own",
+"score_prev": 64.0,
+"components": {
+"quality": 91.0,
+"growth": 39.0,
+"value": 56.0,
+"resilience": 75.0
+},
+"safety": 75.0,
+"risk_level": "Normal",
+"risk_serious": [],
+"risk_warn": [],
+"data_confidence": "High",
+"distress_cap": false,
+"industry": "Internet Content & Information",
+"industry_rank": 2,
+"industry_n": 5,
+"pe_vs_market": -0.1755,
+"fpe_vs_market": -0.3285,
+"peer_group": null,
+"has_fair_value": true,
+"outside_universe": true,
+"answers": [
+{
+"q": "Is revenue growing?",
+"v": "partly",
+"t": "Latest quarter +13.1% year on year; -18.2% a year over 3 years, uneven (\u00b134 pts a year). Far above its own 3-year trend, so likely an acquisition or one-off."
+},
+{
+"q": "Are profits healthy?",
+"v": "yes",
+"t": "Net margin 18.2%, ROIC 47% vs 11.1% cost of capital (+35.6 pts), EPS +78.2% a year."
+},
+{
+"q": "Is cash flow strong?",
+"v": "yes",
+"t": "FCF positive in 4 of 4 years, 2.39x net income over 3 years, FCF yield 9.1%."
+},
+{
+"q": "Is debt manageable?",
+"v": "yes",
+"t": "Net debt 0.2x EBITDA, no meaningful interest."
+},
+{
+"q": "Is the financial position improving?",
+"v": "yes",
+"t": "Better: net margin +12.1 pts, share count falling 6.9% a year, growth accelerating. Worse: leverage up (-2.6x \u2192 0.2x)."
+}
+],
+"checks_score": 4,
+"resilient_pick": false,
+"resilient_rank": null,
+"all_checks": false,
+"checks_pick": false,
+"sector_pick": null,
+"fv_pick": true
 },
 {
 "ticker": "ESNT",
@@ -10387,7 +11256,9 @@
 "ticker": "ALGN",
 "name": "Align Technology, Inc.",
 "sector": "Healthcare",
-"themes": [],
+"themes": [
+"Medical devices & diagnostics"
+],
 "score": 63.4,
 "rank": 50,
 "prev_score": 63.1,
@@ -10440,12 +11311,12 @@
 "ps": 2.56,
 "fcf_yield_pct": 5.95,
 "market_cap": 10648164352.0,
-"implied_fcf_growth": 0.0335,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0534,
+"implied_tag": "Demanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Healthcare sector default",
+"required_return": 0.1,
+"required_return_source": "stock",
+"required_return_reason": "Healthcare rate (9%) plus 1 point: clear aligners are an elective purchase that follows consumer confidence (beta ~1.7), with rising low-price competition; net cash.",
 "fcf_ni": 1.35,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -10486,13 +11357,13 @@
 "wacc_detail": {
 "equity_weight": 0.99,
 "debt_weight": 0.01,
-"cost_equity": 0.09,
+"cost_equity": 0.1,
 "cost_debt_raw": null,
 "cost_debt_used": 0.05,
 "tax": 0.299
 },
-"wacc": 0.0894,
-"roic_spread": 0.0386,
+"wacc": 0.0993,
+"roic_spread": 0.0287,
 "v3_source": "own",
 "score_prev": 57.8,
 "components": {
@@ -10513,7 +11384,7 @@
 "pe_vs_market": -0.0631,
 "fpe_vs_market": -0.3164,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -10524,7 +11395,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 11.8%, ROIC 13% vs 8.9% cost of capital (+3.9 pts), EPS +7.0% a year."
+"t": "Net margin 11.8%, ROIC 13% vs 9.9% cost of capital (+2.9 pts), EPS +7.0% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -11124,12 +11995,12 @@
 "ps": 20.2,
 "fcf_yield_pct": 2.42,
 "market_cap": 212970405888.0,
-"implied_fcf_growth": 0.208,
+"implied_fcf_growth": 0.1869,
 "implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.115,
-"required_return_source": "theme",
-"required_return_reason": "AI chips & hardware: Semiconductors and AI hardware are cyclical; group default for chip stocks without their own entry below.",
+"required_return": 0.105,
+"required_return_source": "stock",
+"required_return_reason": "Below the 11.5% chip-and-hardware group rate: $14B net cash, no debt and the leading position in data-centre switching; still depends on a few hyperscalers' AI spending (Microsoft and Meta are about 40% of sales).",
 "fcf_ni": 1.17,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -11170,13 +12041,13 @@
 "wacc_detail": {
 "equity_weight": 1.0,
 "debt_weight": 0.0,
-"cost_equity": 0.115,
+"cost_equity": 0.105,
 "cost_debt_raw": null,
 "cost_debt_used": 0.05,
 "tax": 0.174
 },
-"wacc": 0.115,
-"roic_spread": 0.8902,
+"wacc": 0.105,
+"roic_spread": 0.9002,
 "v3_source": "own",
 "score_prev": 57.0,
 "components": {
@@ -11197,7 +12068,7 @@
 "pe_vs_market": 1.284,
 "fpe_vs_market": 0.8156,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -11208,7 +12079,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 38.4%, ROIC 101% vs 11.5% cost of capital (+89.0 pts), EPS +37.1% a year."
+"t": "Net margin 38.4%, ROIC 101% vs 10.5% cost of capital (+90.0 pts), EPS +37.1% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -11232,7 +12103,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
-"fv_pick": false
+"fv_pick": true
 },
 {
 "ticker": "IDCC",
@@ -12144,12 +13015,12 @@
 "ps": 3.56,
 "fcf_yield_pct": 5.09,
 "market_cap": 75747975168.0,
-"implied_fcf_growth": 0.0542,
-"implied_tag": "In line",
+"implied_fcf_growth": 0.0318,
+"implied_tag": "Undemanding",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Defensive sector default",
+"required_return": 0.08,
+"required_return_source": "stock",
+"required_return_reason": "Below the 9% Consumer Defensive rate: toothpaste, soap and pet food with very stable demand and a beta near 0.3 (as for PG and KO).",
 "fcf_ni": 1.4,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -12190,13 +13061,13 @@
 "wacc_detail": {
 "equity_weight": 0.908,
 "debt_weight": 0.092,
-"cost_equity": 0.09,
+"cost_equity": 0.08,
 "cost_debt_raw": 0.0313,
 "cost_debt_used": 0.0313,
 "tax": 0.261
 },
-"wacc": 0.0838,
-"roic_spread": 0.1699,
+"wacc": 0.0747,
+"roic_spread": 0.179,
 "v3_source": "own",
 "score_prev": 59.5,
 "components": {
@@ -12217,7 +13088,7 @@
 "pe_vs_market": 0.5898,
 "fpe_vs_market": 0.3076,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -12228,7 +13099,7 @@
 {
 "q": "Are profits healthy?",
 "v": "partly",
-"t": "Net margin 9.6%, ROIC 25% vs 8.4% cost of capital (+17.0 pts), EPS +7.3% a year."
+"t": "Net margin 9.6%, ROIC 25% vs 7.5% cost of capital (+17.9 pts), EPS +7.3% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -12252,7 +13123,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
-"fv_pick": false
+"fv_pick": true
 },
 {
 "ticker": "DLTR",
@@ -13799,7 +14670,9 @@
 "ticker": "LIN",
 "name": "Linde plc",
 "sector": "Basic Materials",
-"themes": [],
+"themes": [
+"Materials & commodities"
+],
 "score": 61.5,
 "rank": 65,
 "prev_score": 59.2,
@@ -13854,12 +14727,12 @@
 "ps": 6.51,
 "fcf_yield_pct": 2.15,
 "market_cap": 236079235072.0,
-"implied_fcf_growth": 0.1804,
+"implied_fcf_growth": 0.1557,
 "implied_tag": "Demanding",
 "implied_basis": "fcf",
-"required_return": 0.095,
-"required_return_source": "sector",
-"required_return_reason": "Basic Materials sector default",
+"required_return": 0.085,
+"required_return_source": "stock",
+"required_return_reason": "Below the 9.5% Basic Materials rate: industrial gases are sold on 10-20 year take-or-pay contracts with price escalators, beta ~0.7; offset by $23B net debt.",
 "fcf_ni": 0.79,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -13900,13 +14773,13 @@
 "wacc_detail": {
 "equity_weight": 0.898,
 "debt_weight": 0.102,
-"cost_equity": 0.095,
+"cost_equity": 0.085,
 "cost_debt_raw": 0.0183,
 "cost_debt_used": 0.02,
 "tax": 0.224
 },
-"wacc": 0.0869,
-"roic_spread": 0.0166,
+"wacc": 0.0779,
+"roic_spread": 0.0256,
 "v3_source": "own",
 "score_prev": 58.4,
 "components": {
@@ -13927,7 +14800,7 @@
 "pe_vs_market": 0.4641,
 "fpe_vs_market": 0.4749,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -13938,7 +14811,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 19.3%, ROIC 10% vs 8.7% cost of capital (+1.7 pts), EPS +21.1% a year."
+"t": "Net margin 19.3%, ROIC 10% vs 7.8% cost of capital (+2.6 pts), EPS +21.1% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -13962,7 +14835,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
-"fv_pick": false
+"fv_pick": true
 },
 {
 "ticker": "LRCX",
@@ -17870,7 +18743,9 @@
 "ticker": "WSM",
 "name": "Williams-Sonoma, Inc.",
 "sector": "Consumer Cyclical",
-"themes": [],
+"themes": [
+"Consumer brands"
+],
 "score": 59.6,
 "rank": 90,
 "prev_score": 57.9,
@@ -17923,12 +18798,12 @@
 "ps": 3.72,
 "fcf_yield_pct": 4.51,
 "market_cap": 29762328576.0,
-"implied_fcf_growth": 0.0702,
+"implied_fcf_growth": 0.0808,
 "implied_tag": "In line",
 "implied_basis": "fcf",
-"required_return": 0.09,
-"required_return_source": "sector",
-"required_return_reason": "Consumer Cyclical sector default",
+"required_return": 0.095,
+"required_return_source": "stock",
+"required_return_reason": "Consumer Cyclical rate (9%) plus half a point: home furnishings follow housing turnover and are exposed to tariffs (beta ~1.5); no borrowings.",
 "fcf_ni": 1.17,
 "fcf_ni_basis": "3y",
 "cash_swing": false,
@@ -17969,13 +18844,13 @@
 "wacc_detail": {
 "equity_weight": 0.951,
 "debt_weight": 0.049,
-"cost_equity": 0.09,
+"cost_equity": 0.095,
 "cost_debt_raw": 0.0013,
 "cost_debt_used": 0.02,
 "tax": 0.251
 },
-"wacc": 0.0863,
-"roic_spread": 0.3322,
+"wacc": 0.0911,
+"roic_spread": 0.3274,
 "v3_source": "own",
 "score_prev": 57.4,
 "components": {
@@ -17996,7 +18871,7 @@
 "pe_vs_market": 0.1114,
 "fpe_vs_market": 0.3503,
 "peer_group": null,
-"has_fair_value": false,
+"has_fair_value": true,
 "outside_universe": false,
 "answers": [
 {
@@ -18007,7 +18882,7 @@
 {
 "q": "Are profits healthy?",
 "v": "yes",
-"t": "Net margin 14.7%, ROIC 42% vs 8.6% cost of capital (+33.2 pts), EPS +2.7% a year."
+"t": "Net margin 14.7%, ROIC 42% vs 9.1% cost of capital (+32.7 pts), EPS +2.7% a year."
 },
 {
 "q": "Is cash flow strong?",
@@ -18031,7 +18906,7 @@
 "all_checks": false,
 "checks_pick": false,
 "sector_pick": null,
-"fv_pick": false
+"fv_pick": true
 },
 {
 "ticker": "ACGL",
