@@ -447,6 +447,21 @@ STOCKS = {
               notes="TTM to Sep-2026 (fiscal Q2 FY27). Claims administration and managed care for workers' compensation, auto and health plans (bill review, case management, pharmacy networks), paid by employers and insurers as fees: it takes no insurance risk (Yahoo files it under insurance brokers), so it is valued on free cash flow. Revenue $1.01B TTM; the September quarter grew 11.5% (patient management +11%, network solutions +12%) and the first half 11%, after 7% in the fiscal year to March 2026; gross margin 27.1% vs 24.3% a year earlier. New wins in workers' compensation and liability, and CERIS (health-plan payment integrity) added another top-10 national health plan. No guidance and no analyst estimates on Yahoo, so the base stays at 8% fading to 4.5% (recent growth 7-13% a year). FCF = operating cash flow $0.165B minus capex $0.037B (mostly its software) = $0.128B; after stock pay 12.1% of sales TTM, 7-12% in recent years, base 11.5%. Net cash $0.24B = cash $0.27B less $0.03B of leases, no borrowings; bought back $41M of shares in six months (~1% a year). Diluted shares 50.7M (September quarter). Tax rate ~25%. Risks: workers' compensation claim volumes fall with employment, health-plan contracts, a P/E of ~34 that leaves little room. Russell 2000 small cap (passes all 5 checks under the Insurance filter): 9.5% required return, 35% safety margin."),
 }
 
+# ---------------------------------------------------------------- scenarios: rules by default, hand overrides with a reason
+# From November 2026 each stock's bear / base / bull growth and margin come from fixed rules (scripts/scenario_rules.py ->
+# data/scenarios_rule.json: analysts' growth inside S&P 500 base rates, margins from the company's own history). The
+# hand-written scenarios above are used only for stocks listed in data/scenario_overrides.json, each with a written
+# reason. s["scen"] is what the model uses, s["scen_hand"] the hand-written set, s["scen_source"] = "rule" or "override".
+_RULE = _ROOT / "data/scenarios_rule.json"
+RULE_SCEN = json.load(open(_RULE))["stocks"] if _RULE.exists() else {}
+OVERRIDES = json.load(open(_ROOT / "data/scenario_overrides.json"))["stocks"]
+for _t, _s in STOCKS.items():
+    _s["scen_hand"] = _s["scen"]
+    if _t in OVERRIDES: _s["scen_source"] = "override"
+    elif _t in RULE_SCEN: _s["scen"] = RULE_SCEN[_t]["scen"]; _s["scen_source"] = "rule"
+    elif __name__ == "scenario_rules": _s["scen_source"] = "hand"          # the rules script itself: builds the file
+    else: raise SystemExit(f"{_t}: no rule-based scenarios (run scripts/scenario_rules.py) and no entry in data/scenario_overrides.json")
+
 # ---------------------------------------------------------------- capital structure (for WACC)
 # Gross debt and after-tax cost of debt make the DCF consistent: free cash flow BEFORE interest (FCFF) is discounted at
 # WACC, then net debt is subtracted. Source: yfinance annual statements via the screener run of 2026-10-23.
@@ -991,6 +1006,7 @@ for tk, s in STOCKS.items():
         fair_value=fv, anchor=fv, buy_below=fv * (1 - s["mos"]), epv=epv,
         implied_irr=irr, reverse_g1=rg, tv_share=res["base"]["detail"]["tv_share"],
         sens=dict(r=rs, g=gs, grid=sens), detail={k: res[k]["detail"] for k in res}, scen=s["scen"], fcf=s["fcf"], sbc=s["sbc"],
+        scen_source=s["scen_source"], scen_hand=s["scen_hand"], scen_override_reason=(OVERRIDES.get(tk) or {}).get("reason"),
     )
 
 # ----------------------------------------------------------------- insurers (underwriters): excess return on equity

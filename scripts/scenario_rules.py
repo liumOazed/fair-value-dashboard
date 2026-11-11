@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Rule-based bear / base / bull scenarios (SHADOW: nothing here changes a live fair value) -> data/scenarios_rule.json.
+"""Rule-based bear / base / bull scenarios -> data/scenarios_rule.json. From November 2026 these are the model's default
+scenarios (model/model.py reads this file); a stock listed in data/scenario_overrides.json keeps its hand-written ones.
 
 The hand-written scenarios in model/model.py (year-1 growth g1, year-10 growth g10, target cash margin m) move fair
 value more than anything else. This script sets the same three inputs from data with fixed rules, values every stock
 with the model's own engine (model.dcf via stock_setup: same required return, advantage period, segments, cash-flow
-separation and 30/50/20 weights) and records both values side by side.
+separation and 30/50/20 weights) and records the rule-based and hand-written values side by side.
 
 Rules
   base rates      S&P 500 companies 2007-2025 (data/backtest/facts.json.gz) grouped by 3-year revenue growth and
@@ -13,25 +14,29 @@ Rules
                   year if next is missing; with fewer than 2 analysts, the 3-year revenue growth rate), kept inside
                   the 20th-80th percentile of the group's next-3-year growth
                   bear / bull = base + the group's 20th / 80th percentile spread (vs its median)
-  year-10 growth  the group's 20th / 50th / 80th percentile growth in years 6-10; capped at 10% and at the
+  year-10 growth  the group's 20th / 50th / 80th percentile growth in years 6-10, capped by size because the base
+                  rates only hold companies still in the S&P 500 (survivors): base 6.5% / 5.5% / 4.5% for revenue
+                  under $5B / $5-25B / over $25B, bull 1.5 points above, bear 1.5 points below; also capped at the
                   scenario's own year-1 growth (2.5% minimum)
   cash margin     (free cash flow - stock pay) / revenue over the last 4 fiscal years and the last 12 months:
-                  bear = 20th percentile, base = median, bull = 80th percentile. If the after-tax operating margin
+                  bear = 20th percentile, bull = 80th percentile, base = halfway between the median and the recent
+                  level (average of the latest fiscal year and the last 12 months). If the after-tax operating margin
                   is higher (heavy investment now), base = halfway to it and bull = at least it.
                   Lenders (AXP, AMP): net income
 Base rates come from companies that are in the S&P 500 today, so they flatter growth (survivorship).
-Usage: python scripts/scenario_rules.py   (after model/model.py)
+Usage: python scripts/scenario_rules.py   (BEFORE model/model.py, which reads the result)
 """
 import json, gzip, glob, pathlib, datetime as dt
 import numpy as np
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 _src = (ROOT / "model/model.py").read_text()
-M = {"__file__": str(ROOT / "model/model.py"), "__name__": "model_defs"}
+M = {"__file__": str(ROOT / "model/model.py"), "__name__": "scenario_rules"}
 exec(compile(_src.split('\nout = {"as_of"')[0], "model.py", "exec"), M)
 STOCKS, PROBS, GT = M["STOCKS"], M["PROBS"], M["GT"]
 SNAP = json.load(open(ROOT / "data/snapshot_raw.json"))["stocks"]
-G10_CAP = 0.10
+G10_CAP = [0.065, 0.055, 0.045]               # base-case year-10 growth cap by size (SIZES); bear -1.5 pt, bull +1.5 pt
+G10_STEP = 0.015
 BUCKETS = [(-9, 0), (0, .05), (.05, .10), (.10, .15), (.15, .25), (.25, .40), (.40, 99)]   # 3-year revenue growth
 SIZES = [(0, 5), (5, 25), (25, 1e6)]                                                        # revenue, $B
 MIN_N = 30                                    # fewer observations than this: pool all sizes for that growth bucket
@@ -108,13 +113,15 @@ def rule_scen(t, s, br, inp):
     bl = cell["late"]
     ms = [p[2] for p in pts] + [ttm]
     mq = [float(x) for x in np.percentile(ms, [20, 50, 80])]
+    recent = sum(ms[-2:]) / len(ms[-2:])            # latest fiscal year and TTM: where the margin is now
+    mq[1] = (mq[1] + recent) / 2; mq[0] = min(mq[0], mq[1]); mq[2] = max(mq[2], mq[1])
     nm = None if t in M["LENDERS"] else M["nopat_margin"](t, M["FIN"][t]["tax"])
     if nm is not None and nm > mq[1]:              # investing heavily: cash margin below after-tax operating profit
         mq[1] = (mq[1] + nm) / 2; mq[2] = max(mq[2], nm)
     sc = {}
     for i, k in enumerate(("bear", "base", "bull")):
         g1 = g1b + (d_lo, 0.0, d_hi)[i]
-        g10 = min(bl[i], G10_CAP, max(g1, GT))
+        g10 = min(bl[i], G10_CAP[size(s["rev"])] + (-G10_STEP, 0.0, G10_STEP)[i], max(g1, GT))
         sc[k] = dict(g1=round(g1, 4), g10=round(g10, 4), m=round(mq[i], 4))
     why = dict(g1_source=src, g1_analysts=round(g1a, 4), g1_base=round(g1b, 4), nopat_margin=None if nm is None else round(nm, 4),
                cell=dict(growth=cell["growth"], size_b=cell["size_b"], n=cell["n_next3"], pooled=cell["pooled_next3"]), g3=None if g3 is None else round(g3, 4), margins=[round(x, 4) for x in ms],
@@ -122,7 +129,7 @@ def rule_scen(t, s, br, inp):
     return sc, why
 
 def value(t, scen):
-    s = dict(STOCKS[t], scen=scen); r = M["req_return"](t)
+    s = dict(STOCKS[t], scen=scen); r = M["req_return"](t)    # stock_setup reads the scenarios from s["scen"]
     mo = dict(M["moat_of"](t), r_req=r); sg = M["segments_of"](t); su = M["stock_setup"](t, s)
     v = {k: M["dcf"](s["rev"], su["m0"], p["g1"], p["g10"], p["m"], r, su["nc"], s["shares"], mo=mo, sg=sg, **su["kw"])
          for k, p in su["S2"].items()}
@@ -130,18 +137,18 @@ def value(t, scen):
 
 def main():
     br = base_rates(); inp = latest_inputs()
-    res = json.load(open(ROOT / "model/results.json"))["assets"]
-    out = dict(as_of=dt.date.today().isoformat(), shadow=True, rules=__doc__.split("Rules\n")[1].split("Usage:")[0].strip(),
+    out = dict(as_of=dt.date.today().isoformat(), rules=__doc__.split("Rules\n")[1].split("Usage:")[0].strip(),
                base_rates=br, stocks={})
     for t, s in STOCKS.items():
         r = rule_scen(t, s, br, inp.get(t))
         if not r: continue
         sc, why = r
         fv, v = value(t, sc)
-        hand = res[t]
+        hs = s.get("scen_hand", s["scen"])            # the hand-written scenarios (model.py keeps them as scen_hand)
+        hf, hv = value(t, hs)
         out["stocks"][t] = dict(scen=sc, why=why, fair_value=round(fv, 2), **{k: round(v[k], 2) for k in v},
-                                hand=dict(scen=s["scen"], fair_value=round(hand["fair_value"], 2)),
-                                diff=round(fv / hand["fair_value"] - 1, 4) if hand["fair_value"] > 0 else None)
+                                hand=dict(scen=hs, fair_value=round(hf, 2), **{k: round(hv[k], 2) for k in hv}),
+                                diff=round(fv / hf - 1, 4) if hf > 0 else None)
     json.dump(out, open(ROOT / "data/scenarios_rule.json", "w"), indent=1)
     d = [x["diff"] for x in out["stocks"].values() if x["diff"] is not None]
     print(f"scenarios_rule.json: {len(out['stocks'])} stocks; rule vs hand fair value median {np.median(d):+.1%}, "
