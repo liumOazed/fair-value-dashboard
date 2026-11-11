@@ -3324,8 +3324,8 @@
    "total": 6.2,
    "out_of": 10,
    "suggested": "narrow",
-   "current": "wide",
-   "differs": true
+   "current": "narrow",
+   "differs": false
   },
   "AOS": {
    "sources": {
@@ -3437,8 +3437,8 @@
    "total": 5.2,
    "out_of": 10,
    "suggested": "narrow",
-   "current": "none",
-   "differs": true
+   "current": "narrow",
+   "differs": false
   },
   "CL": {
    "sources": {
@@ -3669,8 +3669,8 @@
    "total": 6.0,
    "out_of": 10,
    "suggested": "narrow",
-   "current": "narrow",
-   "differs": false
+   "current": "wide",
+   "differs": true
   },
   "EPAC": {
    "sources": {
