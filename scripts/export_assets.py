@@ -54,6 +54,12 @@ for t, a in res["assets"].items():
     if "sens" in a:
         e["sensitivity"] = dict(r=[round(x, 4) for x in a["sens"]["r"]], g=a["sens"]["g"], grid=[[round(x, 1) for x in row] for row in a["sens"]["grid"]])
     by[t] = e
+_RS = ROOT / "data/scenarios_rule.json"        # rule-based scenarios (shadow; scripts/scenario_rules.py)
+RS = json.load(open(_RS))["stocks"] if _RS.exists() else {}
+for t, e in by.items():
+    x = RS.get(t)
+    if x: e["rule_shadow"] = {k: x[k] for k in ("scen", "why", "fair_value", "bear", "base", "bull", "diff")}
+    else: e.pop("rule_shadow", None)
 doc["assets"] = list(by.values())
 json.dump(doc, open(path, "w"), indent=1)
 # fair value history: one point per ticker per valuation (date, fair value, bear/base/bull, price on the day), appended
