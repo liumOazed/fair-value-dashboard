@@ -109,21 +109,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0147,
-    "week": 0.1837,
-    "high": -0.4645
+    "day": 0.0043,
+    "week": 0.1715,
+    "high": -0.47
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Utilities",
    "sector_etf": "RSPU",
    "sector_moves": {
-    "day": 0.0003,
-    "week": 0.0049,
-    "high": -0.0795
+    "day": 0.0015,
+    "week": 0.0062,
+    "high": -0.0783
    },
    "sector_at_open": 77.67,
    "worst": {
@@ -245,21 +245,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0356,
-    "week": -0.011,
-    "high": -0.3429
+    "day": 0.0367,
+    "week": -0.01,
+    "high": -0.3422
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -380,21 +380,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0431,
-    "week": -0.1339,
-    "high": -0.2068
+    "day": 0.0433,
+    "week": -0.1337,
+    "high": -0.2067
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
    },
    "sector_at_open": 59.07,
    "worst": {
@@ -511,21 +511,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0451,
-    "week": 0.0591,
-    "high": -0.4407
+    "day": 0.0508,
+    "week": 0.0649,
+    "high": -0.4376
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": 0.0097,
-    "week": 0.0027,
-    "high": -0.0445
+    "day": 0.0099,
+    "week": 0.0029,
+    "high": -0.0444
    },
    "sector_at_open": 60.55,
    "worst": {
@@ -535,136 +535,6 @@
    },
    "provisional": {
     "cause": "Sector-wide: Industrials fell 1% too (rates, recession worries or sector rotation)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "RDDT-2026-11-02",
-   "ticker": "RDDT",
-   "name": "Reddit Inc.",
-   "opened": "2026-11-02",
-   "price_at_open": 90.97,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 140.89,
-   "buy_below_at_open": 91.58,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "week",
-    "high"
-   ],
-   "emergency": true,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "medium",
-    "cause": "Google AI search sending far less traffic: US daily users falling, Q4 users and revenue guided below hopes",
-    "summary": "Reddit fell ~34% in a week (sector flat, peers GOOGL/META -12%) after Q3: revenue still +53% and EPS beat, but US daily users fell 2% (logged-out -4%) as Google's AI answers send fewer searchers (over 1M fewer referrals a week in October), and management warned daily users may fall by a low double-digit percent in Q4. This is a structural shift in its main traffic source, although logged-in users are still growing and Q4 revenue is guided +38-42%. The model was updated with Q3 and growth cut (base 24% from 28%, bear 6% from 10%), lowering the fair value to ~$132 from ~$141; watch logged-in US users, Q4 revenue >= $1.0B and AI licensing renewals.",
-    "model_changed": true,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": "2026-10-29",
-    "last_report": "2026-10-29",
-    "peers": {
-     "basis": "industry: Internet Content & Information",
-     "n": 3,
-     "median": {
-      "day": -0.0026721812596965933,
-      "week": 0.026247209711658392,
-      "high": -0.2859863489210518
-     },
-     "tickers": [
-      "GOOGL",
-      "GOOG",
-      "META"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 5.48476,
-      "d30": 5.38083,
-      "chg": 0.019314864063722625
-     },
-     "+1y": {
-      "current": 6.85718,
-      "d30": 7.08639,
-      "chg": -0.032345100961138185
-     },
-     "revisions_30d": {
-      "up": 4,
-      "down": 11
-     }
-    },
-    "news": [
-     {
-      "title": "Reddit (NYSE:RDDT) Director Mary Porter Gale Sells 4,000 Shares of Company Stock",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV3YtdmVTWjA2VC1YY2ZSMnNENURKY0NlbzNwTXFkX0xuRWtPeF8zWWRGSERPekVnaXh3Mjh4aC1iOXVNNV9Nek9KOU9rRW5qSmlxM0wtejZGRmtOXzNoSy1uTGxaS29FbjJNWVpHSmRwdno3d3piTklxSUppWHh0Z21NdnlpNzFYNUtVYVN4Z0tvVzRVb0MydldDQndHb1BKc1BqLUoxMXB3c2cyT2gtYmd6U1pzcTV4UGtYMkkzQlFkZ0VQV2tTaHN5U1VDT1NxbkVtUFhR?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "REDDIT, INC. RDDT INVESTORS: Contact Kirby McInerney LLP About the...",
-      "publisher": "Quantisnow",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNM2U5cEN3WGQxc2RrclpySUZMaW1CU2VLZHJoS3M3eHk2Ql9rUTRTQXhaM0d4bE15WUdmSDdsNVkxVFZhM2NEYUJOdXppYldtNXJDeGQ1eEpvd2ZFcXV5N1dWYXFOdGQ2T2xrWTg4ZmFnMnpHNldUT21DTktPSFJCWk5iNTJWNThYRnF4LVVoeENLZ2JkOUtpb2JGT0puajQ5ZXJtUzREd0VJUQ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Reddit (RDDT) CTO's holdings include rights to 18,606 shares that vest under award terms.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWTI0eWxsUmlwYWE4N1Zpc09DalJ3ZFktMTF1dGFvcTRsWG0wNVBlVVZMWXEwTHM2QUNnRkM3Mk1NU3Ria21HeXQzZUZHRm1oWnBZT01pX0p3RFFXZzh5anN4Q1BNU0hwMVVWZUlsS2QyWGF6WGxuOTJPdnNOLTN0em5RT2Q5MWtfRDM2Z3NhV0pUQW44bmlJbnVWajdQSnVtQzhQdlREbEpqT1dpU01acmJEVHdqWWlRMXRoUTVB?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Reddit stock drops 29% post-Q3 earnings despite strong revenue and profit growth.",
-      "publisher": "Pluang",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdldrT0pGNnBlVGQwWlFYR1pWbC1QY0t2MWJBU2tVeE5pMjZudzcyOUdmQ0NRZ3REUGswQ2Eydi1EY3phcVc4bng2RVNUNWxpTktQcm82WkRDNU95NzZEZ25MUTh4djVhLTJWazJPQWZqekktbWJCaVhTaUpvSThwMEZjTkVfTjFzay1POEhPUE9wYXg0OEZRdTBvM3BoSy1PWTlSVmsxelE?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Reddit's 29% Earnings Selloff May Be Overlooking Conversion Traffic Potential (NYSE:RDDT)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU0d2VXo2TFVxaEoxS19uSm1hNmxVNjBpOU1FS3hVVms1LWZmNThhNXkzel9OQ2xmQUdTSC1UWTFReDJXRzdsdnVTRXpJZFBnWEFSaGNqc3kyY2ZKejNMMlhMZ05LVXVlc2h6RjY1cWplOE9oNjBoaWdDN2V2ZjZyQVFKVlpadURNZHd2QWtWdk8tTkhtdUtNYm1MY25LT2VhMTAyWmpYM1lFRjBMQ2haVUdrai1YdThkUWNXMUx6eE1SQQ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Over 9 million Reddit (RDDT) shares make up State Street's reported passive stake.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTUN4MVprVUZvZW1mXzFJNEhlNDJ3c1NsYl9NdXpzNDI3a1dicWo5VHpoX0lzcmhXckx2c3lnbjBOWlEzZVhFSG9mbVVINjBsLV9maXBzSVlxYUJKTWI5QkZCQjE1VHhkMHMtbjgtV1I4MTh4UEZHR0Z6X1hmVl80RXI5QS0tZ3h1UDNUT2E0ZDdkMnFjUjZhcFYyUnQtbFdLdFlHYVVubTFEdHFmcUQ4YjFSVTYyZF9Y?oc=5",
-      "date": "2026-11-10"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": 0.0724,
-    "week": 0.0385,
-    "high": -0.5914
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Communication Services",
-   "sector_etf": "RSPC",
-   "sector_moves": {
-    "day": 0.0074,
-    "week": 0.0357,
-    "high": -0.0794
-   },
-   "sector_at_open": 34.17,
-   "worst": {
-    "day": -0.0793,
-    "week": -0.3429,
-    "high": -0.6487
-   },
-   "provisional": {
-    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
     "lean": "temporary"
    }
   },
@@ -777,21 +647,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0767,
-    "week": 0.0242,
-    "high": -0.5487
+    "day": 0.0668,
+    "week": 0.0148,
+    "high": -0.5529
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0055,
-    "week": -0.0045,
-    "high": -0.0057
+    "day": 0.0041,
+    "week": -0.0059,
+    "high": -0.0071
    },
    "sector_at_open": 83.9,
    "worst": {
@@ -800,8 +670,138 @@
     "high": -0.5826
    },
    "provisional": {
-    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
+    "cause": "Sector-wide: Financials fell 0% too (rates, recession worries or sector rotation)",
     "lean": "unclear"
+   }
+  },
+  {
+   "id": "RDDT-2026-11-02",
+   "ticker": "RDDT",
+   "name": "Reddit Inc.",
+   "opened": "2026-11-02",
+   "price_at_open": 90.97,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 140.89,
+   "buy_below_at_open": 91.58,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "week",
+    "high"
+   ],
+   "emergency": true,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Google AI search sending far less traffic: US daily users falling, Q4 users and revenue guided below hopes",
+    "summary": "Reddit fell ~34% in a week (sector flat, peers GOOGL/META -12%) after Q3: revenue still +53% and EPS beat, but US daily users fell 2% (logged-out -4%) as Google's AI answers send fewer searchers (over 1M fewer referrals a week in October), and management warned daily users may fall by a low double-digit percent in Q4. This is a structural shift in its main traffic source, although logged-in users are still growing and Q4 revenue is guided +38-42%. The model was updated with Q3 and growth cut (base 24% from 28%, bear 6% from 10%), lowering the fair value to ~$132 from ~$141; watch logged-in US users, Q4 revenue >= $1.0B and AI licensing renewals.",
+    "model_changed": true,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": "2026-10-29",
+    "last_report": "2026-10-29",
+    "peers": {
+     "basis": "industry: Internet Content & Information",
+     "n": 3,
+     "median": {
+      "day": -0.0026721812596965933,
+      "week": 0.026247209711658392,
+      "high": -0.2859863489210518
+     },
+     "tickers": [
+      "GOOGL",
+      "GOOG",
+      "META"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 5.48476,
+      "d30": 5.38083,
+      "chg": 0.019314864063722625
+     },
+     "+1y": {
+      "current": 6.85718,
+      "d30": 7.08639,
+      "chg": -0.032345100961138185
+     },
+     "revisions_30d": {
+      "up": 4,
+      "down": 11
+     }
+    },
+    "news": [
+     {
+      "title": "Reddit (NYSE:RDDT) Director Mary Porter Gale Sells 4,000 Shares of Company Stock",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV3YtdmVTWjA2VC1YY2ZSMnNENURKY0NlbzNwTXFkX0xuRWtPeF8zWWRGSERPekVnaXh3Mjh4aC1iOXVNNV9Nek9KOU9rRW5qSmlxM0wtejZGRmtOXzNoSy1uTGxaS29FbjJNWVpHSmRwdno3d3piTklxSUppWHh0Z21NdnlpNzFYNUtVYVN4Z0tvVzRVb0MydldDQndHb1BKc1BqLUoxMXB3c2cyT2gtYmd6U1pzcTV4UGtYMkkzQlFkZ0VQV2tTaHN5U1VDT1NxbkVtUFhR?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "REDDIT, INC. RDDT INVESTORS: Contact Kirby McInerney LLP About the...",
+      "publisher": "Quantisnow",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNM2U5cEN3WGQxc2RrclpySUZMaW1CU2VLZHJoS3M3eHk2Ql9rUTRTQXhaM0d4bE15WUdmSDdsNVkxVFZhM2NEYUJOdXppYldtNXJDeGQ1eEpvd2ZFcXV5N1dWYXFOdGQ2T2xrWTg4ZmFnMnpHNldUT21DTktPSFJCWk5iNTJWNThYRnF4LVVoeENLZ2JkOUtpb2JGT0puajQ5ZXJtUzREd0VJUQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Reddit (RDDT) CTO's holdings include rights to 18,606 shares that vest under award terms.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWTI0eWxsUmlwYWE4N1Zpc09DalJ3ZFktMTF1dGFvcTRsWG0wNVBlVVZMWXEwTHM2QUNnRkM3Mk1NU3Ria21HeXQzZUZHRm1oWnBZT01pX0p3RFFXZzh5anN4Q1BNU0hwMVVWZUlsS2QyWGF6WGxuOTJPdnNOLTN0em5RT2Q5MWtfRDM2Z3NhV0pUQW44bmlJbnVWajdQSnVtQzhQdlREbEpqT1dpU01acmJEVHdqWWlRMXRoUTVB?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Reddit stock drops 29% post-Q3 earnings despite strong revenue and profit growth.",
+      "publisher": "Pluang",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdldrT0pGNnBlVGQwWlFYR1pWbC1QY0t2MWJBU2tVeE5pMjZudzcyOUdmQ0NRZ3REUGswQ2Eydi1EY3phcVc4bng2RVNUNWxpTktQcm82WkRDNU95NzZEZ25MUTh4djVhLTJWazJPQWZqekktbWJCaVhTaUpvSThwMEZjTkVfTjFzay1POEhPUE9wYXg0OEZRdTBvM3BoSy1PWTlSVmsxelE?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Reddit's 29% Earnings Selloff May Be Overlooking Conversion Traffic Potential (NYSE:RDDT)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU0d2VXo2TFVxaEoxS19uSm1hNmxVNjBpOU1FS3hVVms1LWZmNThhNXkzel9OQ2xmQUdTSC1UWTFReDJXRzdsdnVTRXpJZFBnWEFSaGNqc3kyY2ZKejNMMlhMZ05LVXVlc2h6RjY1cWplOE9oNjBoaWdDN2V2ZjZyQVFKVlpadURNZHd2QWtWdk8tTkhtdUtNYm1MY25LT2VhMTAyWmpYM1lFRjBMQ2haVUdrai1YdThkUWNXMUx6eE1SQQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Over 9 million Reddit (RDDT) shares make up State Street's reported passive stake.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTUN4MVprVUZvZW1mXzFJNEhlNDJ3c1NsYl9NdXpzNDI3a1dicWo5VHpoX0lzcmhXckx2c3lnbjBOWlEzZVhFSG9mbVVINjBsLV9maXBzSVlxYUJKTWI5QkZCQjE1VHhkMHMtbjgtV1I4MTh4UEZHR0Z6X1hmVl80RXI5QS0tZ3h1UDNUT2E0ZDdkMnFjUjZhcFYyUnQtbFdLdFlHYVVubTFEdHFmcUQ4YjFSVTYyZF9Y?oc=5",
+      "date": "2026-11-10"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": 0.0702,
+    "week": 0.0364,
+    "high": -0.5922
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Communication Services",
+   "sector_etf": "RSPC",
+   "sector_moves": {
+    "day": 0.0063,
+    "week": 0.0345,
+    "high": -0.0804
+   },
+   "sector_at_open": 34.17,
+   "worst": {
+    "day": -0.0793,
+    "week": -0.3429,
+    "high": -0.6487
+   },
+   "provisional": {
+    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
+    "lean": "temporary"
    }
   },
   {
@@ -913,21 +913,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0972,
-    "week": 0.0601,
-    "high": -0.4647
+    "day": 0.0933,
+    "week": 0.0563,
+    "high": -0.4665
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -1340,141 +1340,6 @@
    }
   },
   {
-   "id": "FICO-2026-10-30",
-   "ticker": "FICO",
-   "name": "Fair Isaac Corp.",
-   "opened": "2026-10-30",
-   "price_at_open": 711.23,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 707.55,
-   "buy_below_at_open": 495.29,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "high",
-    "cause": "Regulators ended FICO's mortgage-score edge over VantageScore; FICO froze its $10 price and analysts cut next-year EPS 11%",
-    "summary": "FICO is ~61% below its high: in September the FHFA put VantageScore on the same Fannie/Freddie pricing grid (stock -26% in a day), Rocket made VantageScore its preferred score, and in October FICO held its mortgage score price at $10, ending the price rises behind its margin gains (mortgage is ~62% of scores revenue). That is a structural loss of pricing power, not market fear, and analysts cut next-year EPS ~11% with no raises. The model's scenarios were cut (base growth 7% from 10%, margin held flat instead of expanding), lowering the fair value to ~$560 from ~$708; watch FY Q4 results and FY27 guidance on Nov 4 and VantageScore's mortgage share.",
-    "model_changed": true,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": null,
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Software - Application",
-     "n": 8,
-     "median": {
-      "day": -0.010661614197285618,
-      "week": 0.005977415724647384,
-      "high": -0.2275688297376951
-     },
-     "tickers": [
-      "SHOP",
-      "CRM",
-      "UBER",
-      "ADP",
-      "NOW",
-      "ADBE",
-      "INTU",
-      "CDNS"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 44.75162,
-      "d30": 50.19882,
-      "chg": -0.10851251085184865
-     },
-     "+1y": {
-      "current": 51.4017,
-      "d30": 58.81734,
-      "chg": -0.12607914604774717
-     },
-     "revisions_30d": {
-      "up": 0,
-      "down": 13
-     }
-    },
-    "news": [
-     {
-      "title": "Should You Buy Fair Isaac Stock Now Or Wait?",
-      "publisher": "Trefis",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbWFUNV84QnFyZ1RDWFZ1ZmY2blBwUVhwNFBqemlBazFWRmpMbVFSSDdaTmNoQkhVOGNhVVlnZnpwR0owRlBOZ0x0THJzT2FvNkxSWUVWT0U1M3kxSGVWSnUyMHN4bWh3Y3FXQUg3Q19SbGY2amNqbEFZZ05JNnlKdHdtUzNqSzVvRWpsbHBrQ05OcFhncG1KZE1nUlItVFg3VW9hVXhSbw?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Fair Isaac: Mortgage Price Lever Is Off, Not Cheap Enough Yet (NYSE:FICO)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNEFoZDBGVllWcE9jZTVRVHMxSVV5aFYzbTl0R2ZxNHJ6ZER5NDBkRHRuT09SRER1dU50U1VQX3REY2J5OWIyUU1XME9LdTFWQ2ZBVURlSllZOGYyOWE5aTE0N0FqLW11STgtemVzX2dlRnBPdU5wX2cybE83T29OLUxieVNrT2l1SmpDcjYzeEtSMnl0cFk2UUFOLTU4NGd3UWc?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "What Fair Isaac Bears Saw Before A 59% Drop",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUMwSkRwV3pKMVNTT1FYQVpMWGJ3YlA5ZWVBMTB5VGswQ1VSNUpCM0d2LWNSNmRfSS1MZGNLcHBmT2NnQkxVb01ZdlQzdVNJUTZYaDh2cEJrZDNIMVo0RGQwWWJGNU9jMlNqdXdJTVJna2gzU1ZYdERCMHJYeFAyRTREYmRCTHVTMm9yeVU5RWlIRTd5TDU3Wml1ZW16eE9SMDlndGE4SFV2NDBTakHSAbMBQVVfeXFMUEdkbEZLbFl3YVZ4eTQ1VWVhQXZBdHJCZVBMQkZhVFlGTVY5WGhETTZ5SGdYZkpYdFkwcUh2bWVtZkdNdGlKVkd1ZVhYcmdEdWNDOGUwUGRuZlNod184ZjJXY0FNaWwzT1hfdXRYMGQtYlBNcGo5c2JmdmExUzBiOVM4dnRxckladmtqTUZFSGE2UnVTVXBSVXFCU1VCa0VZTDllUWVicmxKR21RSjNJeDZVQ2c?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Mizuho cuts Fair Isaac stock price target to $901 on mortgage uncertainty",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnp3dlQwUTQySWR5eXdtb2ZRSHR6c2g5T3ZvaW5VR1ZNcTRIRThzYU5DRVd4LWhGd0RCX0dMbXQ5WVNOTUVYcDl4WGNGODVPSFdQT2xXTklnUDA3b2N3OW5JQ0UxcTUxMTNDZWNlOWV3QzBtRmpJS3hkaW5MYzR4WDA5Y19wWmk5dkJSOG1mZTNVaDAwU0NyYUF3SVplYXk5aFBQcVAyODd2ZmpvZVlJc2lDNzVuemcxR1JsNTJrZ0JCNk1aelRUYm5OVG8?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Can Fair Isaac (NYSE:FICO) Build On Its Latest Update?",
-      "publisher": "Kalkine Media",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMXFJMUNteUQ4SmFHRk5GQUl1RmV3dkI2WG5vaG1iSm9VSjROcUFpRlVMREl3bE1mN1E5MlNZRllNMU15d2EzRE5DLXdjRXFFempmZGUzLWlqWGRvd084aEh1aFB3YlhDMUR6Ty1CNElWdVVLZG5xbzh6ZE8yajVialB0M01DanpuTl9jeWt4N2ZBcVJuSGRSUHc3MG9tOGdEOUFrMjZWVQ?oc=5",
-      "date": "2026-11-08"
-     },
-     {
-      "title": "Fair Isaac Is Down 55%, And The Worst May Not Be Priced In (NYSE:FICO)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZ1VjOVNQbFdfcGhTRnF5QVhxWEhXTjlXbXpTN2JUaU9xRFkwTzFxZm1NaDdGT3JSR3RjdVFUaktZTTRqZDlQSHQ4ZzQ1UUt6TVRZbFBGM09vcGFWT0FpX28tZ2Zwb2xKOGdwNVRZODFMQzBPVG1nTEktMVhoMWw2ZXZuOC02WnRYbXdBeF93TzFkcENxY2NFMWtuc2M3YWdwTm1vZEtnSHY?oc=5",
-      "date": "2026-11-07"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": -0.0078,
-    "week": 0.0342,
-    "high": -0.607
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
-   "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
-   },
-   "sector_at_open": 62.95,
-   "worst": {
-    "day": -0.035,
-    "week": -0.1277,
-    "high": -0.63
-   },
-   "provisional": {
-    "cause": "Sector-wide: Information Technology fell 0% too (rates, recession worries or sector rotation)",
-    "lean": "unclear"
-   }
-  },
-  {
    "id": "NMIH-2026-11-11",
    "ticker": "NMIH",
    "name": "NMI Holdings Inc.",
@@ -1601,6 +1466,141 @@
    }
   },
   {
+   "id": "FICO-2026-10-30",
+   "ticker": "FICO",
+   "name": "Fair Isaac Corp.",
+   "opened": "2026-10-30",
+   "price_at_open": 711.23,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 707.55,
+   "buy_below_at_open": 495.29,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "high",
+    "cause": "Regulators ended FICO's mortgage-score edge over VantageScore; FICO froze its $10 price and analysts cut next-year EPS 11%",
+    "summary": "FICO is ~61% below its high: in September the FHFA put VantageScore on the same Fannie/Freddie pricing grid (stock -26% in a day), Rocket made VantageScore its preferred score, and in October FICO held its mortgage score price at $10, ending the price rises behind its margin gains (mortgage is ~62% of scores revenue). That is a structural loss of pricing power, not market fear, and analysts cut next-year EPS ~11% with no raises. The model's scenarios were cut (base growth 7% from 10%, margin held flat instead of expanding), lowering the fair value to ~$560 from ~$708; watch FY Q4 results and FY27 guidance on Nov 4 and VantageScore's mortgage share.",
+    "model_changed": true,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": null,
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "industry: Software - Application",
+     "n": 8,
+     "median": {
+      "day": -0.010661614197285618,
+      "week": 0.005977415724647384,
+      "high": -0.2275688297376951
+     },
+     "tickers": [
+      "SHOP",
+      "CRM",
+      "UBER",
+      "ADP",
+      "NOW",
+      "ADBE",
+      "INTU",
+      "CDNS"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 44.75162,
+      "d30": 50.19882,
+      "chg": -0.10851251085184865
+     },
+     "+1y": {
+      "current": 51.4017,
+      "d30": 58.81734,
+      "chg": -0.12607914604774717
+     },
+     "revisions_30d": {
+      "up": 0,
+      "down": 13
+     }
+    },
+    "news": [
+     {
+      "title": "Should You Buy Fair Isaac Stock Now Or Wait?",
+      "publisher": "Trefis",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbWFUNV84QnFyZ1RDWFZ1ZmY2blBwUVhwNFBqemlBazFWRmpMbVFSSDdaTmNoQkhVOGNhVVlnZnpwR0owRlBOZ0x0THJzT2FvNkxSWUVWT0U1M3kxSGVWSnUyMHN4bWh3Y3FXQUg3Q19SbGY2amNqbEFZZ05JNnlKdHdtUzNqSzVvRWpsbHBrQ05OcFhncG1KZE1nUlItVFg3VW9hVXhSbw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Fair Isaac: Mortgage Price Lever Is Off, Not Cheap Enough Yet (NYSE:FICO)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNEFoZDBGVllWcE9jZTVRVHMxSVV5aFYzbTl0R2ZxNHJ6ZER5NDBkRHRuT09SRER1dU50U1VQX3REY2J5OWIyUU1XME9LdTFWQ2ZBVURlSllZOGYyOWE5aTE0N0FqLW11STgtemVzX2dlRnBPdU5wX2cybE83T29OLUxieVNrT2l1SmpDcjYzeEtSMnl0cFk2UUFOLTU4NGd3UWc?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "What Fair Isaac Bears Saw Before A 59% Drop",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUMwSkRwV3pKMVNTT1FYQVpMWGJ3YlA5ZWVBMTB5VGswQ1VSNUpCM0d2LWNSNmRfSS1MZGNLcHBmT2NnQkxVb01ZdlQzdVNJUTZYaDh2cEJrZDNIMVo0RGQwWWJGNU9jMlNqdXdJTVJna2gzU1ZYdERCMHJYeFAyRTREYmRCTHVTMm9yeVU5RWlIRTd5TDU3Wml1ZW16eE9SMDlndGE4SFV2NDBTakHSAbMBQVVfeXFMUEdkbEZLbFl3YVZ4eTQ1VWVhQXZBdHJCZVBMQkZhVFlGTVY5WGhETTZ5SGdYZkpYdFkwcUh2bWVtZkdNdGlKVkd1ZVhYcmdEdWNDOGUwUGRuZlNod184ZjJXY0FNaWwzT1hfdXRYMGQtYlBNcGo5c2JmdmExUzBiOVM4dnRxckladmtqTUZFSGE2UnVTVXBSVXFCU1VCa0VZTDllUWVicmxKR21RSjNJeDZVQ2c?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Mizuho cuts Fair Isaac stock price target to $901 on mortgage uncertainty",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnp3dlQwUTQySWR5eXdtb2ZRSHR6c2g5T3ZvaW5VR1ZNcTRIRThzYU5DRVd4LWhGd0RCX0dMbXQ5WVNOTUVYcDl4WGNGODVPSFdQT2xXTklnUDA3b2N3OW5JQ0UxcTUxMTNDZWNlOWV3QzBtRmpJS3hkaW5MYzR4WDA5Y19wWmk5dkJSOG1mZTNVaDAwU0NyYUF3SVplYXk5aFBQcVAyODd2ZmpvZVlJc2lDNzVuemcxR1JsNTJrZ0JCNk1aelRUYm5OVG8?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Can Fair Isaac (NYSE:FICO) Build On Its Latest Update?",
+      "publisher": "Kalkine Media",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMXFJMUNteUQ4SmFHRk5GQUl1RmV3dkI2WG5vaG1iSm9VSjROcUFpRlVMREl3bE1mN1E5MlNZRllNMU15d2EzRE5DLXdjRXFFempmZGUzLWlqWGRvd084aEh1aFB3YlhDMUR6Ty1CNElWdVVLZG5xbzh6ZE8yajVialB0M01DanpuTl9jeWt4N2ZBcVJuSGRSUHc3MG9tOGdEOUFrMjZWVQ?oc=5",
+      "date": "2026-11-08"
+     },
+     {
+      "title": "Fair Isaac Is Down 55%, And The Worst May Not Be Priced In (NYSE:FICO)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZ1VjOVNQbFdfcGhTRnF5QVhxWEhXTjlXbXpTN2JUaU9xRFkwTzFxZm1NaDdGT3JSR3RjdVFUaktZTTRqZDlQSHQ4ZzQ1UUt6TVRZbFBGM09vcGFWT0FpX28tZ2Zwb2xKOGdwNVRZODFMQzBPVG1nTEktMVhoMWw2ZXZuOC02WnRYbXdBeF93TzFkcENxY2NFMWtuc2M3YWdwTm1vZEtnSHY?oc=5",
+      "date": "2026-11-07"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": -0.0029,
+    "week": 0.0392,
+    "high": -0.6051
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
+   "sector_moves": {
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
+   },
+   "sector_at_open": 62.95,
+   "worst": {
+    "day": -0.035,
+    "week": -0.1277,
+    "high": -0.63
+   },
+   "provisional": {
+    "cause": "Sector-wide: Information Technology fell 0% too (rates, recession worries or sector rotation)",
+    "lean": "unclear"
+   }
+  },
+  {
    "id": "ADYEY-2026-10-30",
    "ticker": "ADYEY",
    "name": "Adyen N.V. (ADR)",
@@ -1708,21 +1708,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": -0.0031,
-    "week": 0.0104,
-    "high": -0.4329
+    "day": 0.0,
+    "week": 0.0136,
+    "high": -0.4312
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0055,
-    "week": -0.0045,
-    "high": -0.0057
+    "day": 0.0041,
+    "week": -0.0059,
+    "high": -0.0071
    },
    "sector_at_open": 82.34,
    "worst": {
@@ -1731,7 +1731,7 @@
     "high": -0.4665
    },
    "provisional": {
-    "cause": "Sector-wide: Financials fell -0% too (rates, recession worries or sector rotation)",
+    "cause": "Sector-wide: Financials fell -1% too (rates, recession worries or sector rotation)",
     "lean": "unclear"
    }
   },
@@ -1839,21 +1839,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0229,
-    "week": 0.0174,
-    "high": -0.2699
+    "day": 0.0211,
+    "week": 0.0156,
+    "high": -0.2711
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0074,
-    "week": 0.0357,
-    "high": -0.0794
+    "day": 0.0063,
+    "week": 0.0345,
+    "high": -0.0804
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -1863,6 +1863,275 @@
    },
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "APP-2026-10-30",
+   "ticker": "APP",
+   "name": "AppLovin Corp.",
+   "opened": "2026-10-30",
+   "price_at_open": 228.5,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 378.6,
+   "buy_below_at_open": 246.09,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "low",
+    "cause": "Long slide (-69% from high) on a Q2 miss, slower AXON model gains, Unity competition and AI fears; no specific news for the latest -12%",
+    "summary": "AppLovin fell ~12% in the week to Oct 30 (sector -6%, peers -1%) into its Nov 4 results and is ~69% below its high. The slide follows a Q2 revenue miss tied to lighter AXON model improvements, a court refusing to block Unity's competing ad-data tool, a class action and target cuts, but analysts have trimmed next-year EPS only ~2%, so lasting damage is not proven. Watch Q3 revenue vs the $2.055-2.085B guide, the Q4 outlook and any sign of a lower take rate; the price (~$229) is below the fair value (~$379), which leans heavily on very high long-run margins.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": null,
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "group: Software",
+     "n": 8,
+     "median": {
+      "day": -0.0024291757811688575,
+      "week": -0.014422369445453609,
+      "high": -0.19528948733358076
+     },
+     "tickers": [
+      "ADBE",
+      "PLTR",
+      "ADSK",
+      "FICO",
+      "PTC",
+      "GEN",
+      "CRM",
+      "NOW"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 16.25163,
+      "d30": 15.66192,
+      "chg": 0.03765247172760411
+     },
+     "+1y": {
+      "current": 20.49822,
+      "d30": 19.95094,
+      "chg": 0.027431288951798694
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 9
+     }
+    },
+    "news": [
+     {
+      "title": "What's behind AppLovin's latest 6.4% stock pullback?",
+      "publisher": "Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQS1HSHk1b0VtbmszZVd2MmRxXzJXZ2owV1FRNUEzcGtHQm1RM1Q5a1hQNWZRWnZBWF8yMndfNjVrYzBjSzNOTndfUFZHMWxoTU9YWUpORVdPTF8tbllmdUp5WG1NQzBkYXItQzgxTkVkWUdaSC1TNDV1c0x6OTRXTzVBek5vSHBaNFlsdQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "AppLovin (APP) Stock Could Be Undervalued On Future Cash Flow",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUGcxdmRTaDRTS2hxNjZzTmdTekpYMGJBVmZxcC0zcnl1aHNIOFNBcVFOd0x1ZF92VmowbTBsRHZDU3htNkJaMkJDZzVNZnlDRGVCOGp1d1dDVXBNd0hoR24xM1BLOGpGUTJpUVRYdEs4RDFycmYzZ2t4NHlscjNZMDh1bmNqbDZEZ3pXZ0l4SHJJTkxpVlFCUWlrbE5scTMzelJGSnZlVExuZFl6bXJ3eUxZSGhYbEY0UU44T0VBMNIBxAFBVV95cUxQU1pxLXltLXRRV2FrSk5PT2E5LWprS0VIWlBxZE9qWFFMaXpGWWtBRUpRczBzR0daMVlmRE5XcnctQkxGdmw4NnVUb0Nsa3VBb2NLNGF1a2V1UDR0SnYxZXZLZ1h2YVhmNldNTXpkWjZVdGFnWWpKMmxaSHBxRFhDV1p6ZHAwQmtmV0FTQTh0ZFRhVjRHMndvblN6dU5XaFFBLUJqc3g4UUZLem80TU5GTXlraGFWMm10NFpmcUZFRjFsZkhX?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "AppLovin shares fall as investors lock in profits",
+      "publisher": "StreetInsider",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNlhUYWpURXNMbFNOa25vdVBGX1dfVmM0SXN0R2xTSDYyNE15VkdWcy04TVVpcjBWZDRIUzg0WTR6dkE2MVBXdXNwai1yOTNybktJeTAtcXJfYkZSa3Jwb254THZWMV90bmlyZW96Y2xzWm1WVGRHS0tGZGMxZUNjQVBnY3RtYzJCQWQwamZLcm5CNDJJdDFJRXVUcVVOa3JIMnhrSnhR?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Why is AppLovin stock sliding today?",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQnVsRXRHLWgtcF9GOEVKa1FKQ2V2bEhaLWRxVWdKZDJrSjVrbG4wbWdGNG1DOFZiVDRiNFlVckJBbktoUEFVTnFpbThMY0NrREdlRERjXy1nVTd6WDR2WU42VkozZnQ1V2NSVDBKSE5PYjZVWlBHSVhYNE15UjRJNmt3blhMb2VlQkdlN2tNc21wLU9WZWNBODdtUWdMdw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "AppLovin Vs. Unity: Room For Two, But I Prefer Unity (NASDAQ:APP)",
+      "publisher": "Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaVJUMGowWWpLSzJsT0x6WjViTVpCdXNoSXByVzkzNjFPWWJlTEZJVWpGcDR3UmNwc01xaGhiUUUzcU81NFkwU2MtbHFCeXJBRHZMVGV4WjNpd0toNVVEelFac3J6ZXVhOURYSy0tRDFRMURDc0dDWWp1Y01BRTM3eWxVS0tLR2ROYnRhRlQzU0ZVU3Rw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Why AppLovin (APP) Stock Is Down Today",
+      "publisher": "Quiver Quantitative",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTjlCQ0lpSXotbjVVSE81T1RicVNzdzIyRU1VaTVPc2tFSHRwSElNUHZVUFkxRkhRaVJLQlFOWC1vV1d1bWV4M0phXzAzd0F1QnZCandVN0ZNMWZwUGlka254YjJnVmxKSVBnQl9mLWJ6NV9iMkxNQTMtMGRWSk9LaQ?oc=5",
+      "date": "2026-11-10"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": 0.0234,
+    "week": 0.4895,
+    "high": -0.4482
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
+   "sector_moves": {
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
+   },
+   "sector_at_open": 62.95,
+   "worst": {
+    "day": -0.1036,
+    "week": -0.1223,
+    "high": -0.6885
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -0% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "EXPE-2026-11-05",
+   "ticker": "EXPE",
+   "name": "Expedia Group Inc.",
+   "opened": "2026-11-05",
+   "price_at_open": 272.18,
+   "spy_at_open": 736.33,
+   "fair_value_at_open": 367.2,
+   "buy_below_at_open": 238.68,
+   "valued_on": "2026-11-05",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Fell 14% after Q3 results on a weak Q4 outlook (revenue +4-6%) that assumes the US-Iran war keeps hurting travel, on a day the S&P 500 fell 4.4%",
+    "summary": "Q3 itself beat (revenue +12%, gross bookings +11%, adjusted EBITDA +17%) and full-year guidance was raised; the soft Q4 guide is blamed on the war and European unrest, which Hilton, Marriott and Booking also cite, and analysts' EPS estimates are unchanged. That reads as a temporary demand hit, not a break in the business. Watch whether the Middle East drag runs into 2027 guidance, B2C growth (+7% vs B2B +19%) and how it compares with Airbnb, which raised its outlook.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": "2026-11-04",
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "industry: Travel Services",
+     "n": 5,
+     "median": {
+      "day": -0.002271979748055375,
+      "week": 0.0625717650869142,
+      "high": -0.0956164091456212
+     },
+     "tickers": [
+      "BKNG",
+      "ABNB",
+      "RCL",
+      "CCL",
+      "NCLH"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 21.21147,
+      "d30": 20.8671,
+      "chg": 0.01650301191828274
+     },
+     "+1y": {
+      "current": 24.77823,
+      "d30": 24.55131,
+      "chg": 0.009242683995273504
+     },
+     "revisions_30d": {
+      "up": 6,
+      "down": 4
+     }
+    },
+    "news": [
+     {
+      "title": "Expedia Group Inc. stock outperforms competitors despite losses on the day",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNcmg5WWlXekQxblJPMHR5TU55YTVoMzgtUUFjWmZSXzFkemN3eG05ZzVzdkxfYlMzWGFuVW9kTmxVM1Jpd0l5NXFkZkk1bEZPZ2toRWpBNXFNR01ZbURlZFh1cTBjUml4cS1CaEpNdmtWN2RmTTFBTGxJVmhWbnU4aUE0QmwzN0NuY3ZfaWhVQ18wVG5VWXZYUW5Dc3BDczVueEZCTXdXZVV0bXFyYnVBVWJtUjRNNUlJUGJDNEljWHk1eFhvaGlRZ0NuU19ia2lqNlU2RkI3TkZHRHUxSFBjMllNTVlYZw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "OpenAI's Odessia Acquisition Pressures Expedia (EXPE) Shares Ami",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMjVQWXphTC1mMmlOMUFxSkdEemRaVE9lZDBURU1tVnhnb2tEMm5HYWE1Nk02cDJRWENxNEQwV2RtWWZrTlJMcU9BRThqZWtkZzFCZklqQkg4SnhYbXVKd3p2YjNJVkdjQWlwOTB1cVo3NTM5Z2I1RHJTOEdJclBpWjM1VWRodFJkSkxXNXpyRDdRc3dmazAycFk2blJlejZyZGJoMVFzMTdmb2xwU1RfYUpDdWljOUU?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Why is Expedia stock sliding today?",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ1otb3J6X1BMZy0tMEZKNXN5T0lYbGFucVlNRkVmRmVLOS1hREQxdV8yMUVEY1hFM0tMS3hKTmQ1N3R4eEYxYWFtWXMwa1gtZUFHTE9qQUFoZEpoVlVtVVlGYzhDdmRCREFFNlVoYmJvc0lGVXpMRmN4dEhrRm0zU294M3lCUjFsYk5UN2lpWmZBT1pWVVJtRDVydFg?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Expedia Group (NASDAQ:EXPE) Now Covered by Barclays",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUm9tUnpWLWFsNkYwOHhqaC1OVlRQVS1CV19ZWGs3WkNpc1VQMlJkWVdoa3Eyb0ppckZtcHZQUUdHWVhQWUxXVVkwVFk2QnhfQzBrVUp2SWhZVEpleS1EV0JlN3pNTG53Y21MQ21MakxsXzVWS2dDTmFtc1AtdzB4d28zMGpmQmhicGRaS3d0akI5UkR1WWVTaEJ1YndpYTlwcFBkOVlxaUZxSEgzSEcxcUR0c1lvck9wN2F4R1FUd3JIYkRR?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Expedia Group, Inc. $EXPE Stock: AEGON ASSET MANAGEMENT UK Plc Lowers Position",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNc2p6ZUk1T0otUjlYaURWRFgxcVlkQjRUa3NCb1hkMkxsekJ6Q0tCRDMzVEFvNGxhUW9GSFgxY2w5NjlXUkhvajk1d29wTlB5UFRLcklmWVdNTmR3VjZTa1ZKNGFFRlg4QkJYckwza1lPbGItNzdxQWhMU3poVkROVk1rdllqbWJiLV9QN1VHdDU5OFJaSDl4b1hkOG1JZ3BfbDdmZ24yUmNQc3FxMEJrMm1uWXhTWmdGNHFzYmtsZEM0TF96TFRVSTQ5aE5yTDNF?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Jefferies Financial Group Has Lowered Expectations for Expedia Group (NASDAQ:EXPE) Stock Price",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWVpwVVA3bHZ1MUNacUlnSkc1T2ZPX2ZvRFVnMHhTZnlSYVJpakVkeGlBS3NxNEVOZmJyaGZMYllVcjctdHFlTXZYdWJFRlgzSVlia3hpaF9VRmdCN2VIR1hfMG1tZ1VRT1AybTN2Qnl2OTI2WU1OMHNWRFNPRGQzTXYzOUp6cEVmaVA4U0NFZkwtb2pGNEd4NHU2UlVhTWFWQXRCWWU3OE9nWjJGdjdUWEVLRVBJLVM3NXdtNG84SXV3S2hMV2NfZU8zWFBoSS0zaFdVaWJMdWtCemNBM1lWZ0hXZlRaSmh0bkE?oc=5",
+      "date": "2026-11-09"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": 0.0237,
+    "week": -0.1776,
+    "high": -0.234
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Consumer Discretionary",
+   "sector_etf": "RSPD",
+   "sector_moves": {
+    "day": -0.0027,
+    "week": -0.0204,
+    "high": -0.0323
+   },
+   "sector_at_open": 57.62,
+   "worst": {
+    "day": -0.1383,
+    "week": -0.1993,
+    "high": -0.2542
+   },
+   "provisional": {
+    "cause": "Sector-wide: Consumer Discretionary fell -0% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
    }
   },
@@ -2136,17 +2405,16 @@
    }
   },
   {
-   "id": "EXPE-2026-11-05",
-   "ticker": "EXPE",
-   "name": "Expedia Group Inc.",
+   "id": "NVDA-2026-11-05",
+   "ticker": "NVDA",
+   "name": "NVIDIA Corp.",
    "opened": "2026-11-05",
-   "price_at_open": 272.18,
+   "price_at_open": 182.96,
    "spy_at_open": 736.33,
-   "fair_value_at_open": 367.2,
-   "buy_below_at_open": 238.68,
+   "fair_value_at_open": 179.38,
+   "buy_below_at_open": 125.57,
    "valued_on": "2026-11-05",
    "triggers": [
-    "day",
     "week",
     "high"
    ],
@@ -2155,8 +2423,8 @@
    "verdict": {
     "label": "temporary",
     "confidence": "medium",
-    "cause": "Fell 14% after Q3 results on a weak Q4 outlook (revenue +4-6%) that assumes the US-Iran war keeps hurting travel, on a day the S&P 500 fell 4.4%",
-    "summary": "Q3 itself beat (revenue +12%, gross bookings +11%, adjusted EBITDA +17%) and full-year guidance was raised; the soft Q4 guide is blamed on the war and European unrest, which Hilton, Marriott and Booking also cite, and analysts' EPS estimates are unchanged. That reads as a temporary demand hit, not a break in the business. Watch whether the Middle East drag runs into 2027 guidance, B2C growth (+7% vs B2B +19%) and how it compares with Airbnb, which raised its outlook.",
+    "cause": "AI-chip and data-centre sell-off after the midterms (-9% on 5 Nov, ~24% below the October record): data-centre permit pauses and doubts about how customers finance AI build-outs",
+    "summary": "None of the drivers is an NVIDIA operating problem: analysts are still raising estimates (7 up, 0 down in 30 days), Amazon committed to more GPUs and Rubin has orders from major clouds; the known pressure is gross margin falling to ~71-72% on memory costs, already guided. The fall tracks the whole sector. Watch the 17 Nov report and any sign that permits or financing delay deployments; the price (~82) is about at the model fair value (~79).",
     "model_changed": false,
     "date": "2026-11-06",
     "by": "Claude"
@@ -2164,76 +2432,79 @@
    "evidence": {
     "v": 5,
     "updated": "2026-11-11",
-    "earnings_on": "2026-11-04",
-    "last_report": "2026-11-04",
+    "earnings_on": null,
+    "last_report": "2026-08-26",
     "peers": {
-     "basis": "industry: Travel Services",
-     "n": 5,
+     "basis": "industry: Semiconductors",
+     "n": 8,
      "median": {
-      "day": -0.002271979748055375,
-      "week": 0.0625717650869142,
-      "high": -0.0956164091456212
+      "day": 0.00532768076467377,
+      "week": -0.03913608529031476,
+      "high": -0.30966516061623345
      },
      "tickers": [
-      "BKNG",
-      "ABNB",
-      "RCL",
-      "CCL",
-      "NCLH"
+      "AVGO",
+      "MU",
+      "AMD",
+      "INTC",
+      "TXN",
+      "ADI",
+      "MRVL",
+      "QCOM"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 21.21147,
-      "d30": 20.8671,
-      "chg": 0.01650301191828274
+      "current": 9.31674,
+      "d30": 9.31242,
+      "chg": 0.00046389660260159893
      },
      "+1y": {
-      "current": 24.77823,
-      "d30": 24.55131,
-      "chg": 0.009242683995273504
+      "current": 15.92806,
+      "d30": 15.9146,
+      "chg": 0.0008457642667738519
      },
      "revisions_30d": {
-      "up": 6,
-      "down": 4
+      "up": 7,
+      "down": 0
      }
     },
     "news": [
      {
-      "title": "Expedia Group Inc. stock outperforms competitors despite losses on the day",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNcmg5WWlXekQxblJPMHR5TU55YTVoMzgtUUFjWmZSXzFkemN3eG05ZzVzdkxfYlMzWGFuVW9kTmxVM1Jpd0l5NXFkZkk1bEZPZ2toRWpBNXFNR01ZbURlZFh1cTBjUml4cS1CaEpNdmtWN2RmTTFBTGxJVmhWbnU4aUE0QmwzN0NuY3ZfaWhVQ18wVG5VWXZYUW5Dc3BDczVueEZCTXdXZVV0bXFyYnVBVWJtUjRNNUlJUGJDNEljWHk1eFhvaGlRZ0NuU19ia2lqNlU2RkI3TkZHRHUxSFBjMllNTVlYZw?oc=5",
+      "title": "Jim Cramer: Wall Street is focusing too much on what could go wrong instead of right",
+      "publisher": "CNBC",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZXEtNjBGQmkySUh6d3RIZlo0M3lpY2txS25RcW00YURRZnlpWWJ5UWJlRU8wbE1vNERBUUFZMDhad253YUw4NTl6Smt2ODVDZFVOOEtzLVlKTHIxa2hZbEJiYXZMOEFmN3hwcUFqWm40UkRfdk9Vd29qS1FEdE85UElxTQ?oc=5",
       "date": "2026-11-10"
      },
      {
-      "title": "OpenAI's Odessia Acquisition Pressures Expedia (EXPE) Shares Ami",
-      "publisher": "GuruFocus",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMjVQWXphTC1mMmlOMUFxSkdEemRaVE9lZDBURU1tVnhnb2tEMm5HYWE1Nk02cDJRWENxNEQwV2RtWWZrTlJMcU9BRThqZWtkZzFCZklqQkg4SnhYbXVKd3p2YjNJVkdjQWlwOTB1cVo3NTM5Z2I1RHJTOEdJclBpWjM1VWRodFJkSkxXNXpyRDdRc3dmazAycFk2blJlejZyZGJoMVFzMTdmb2xwU1RfYUpDdWljOUU?oc=5",
+      "title": "What to Watch in Nvidia Earnings: Spy Scandal, Data Center Concerns Take Center Stage",
+      "publisher": "Morningstar",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM1EwT3BDVXVxdlpLd182dV80azR6M2lrMHJFZlg4TElPMlpLeDVLSVFQaGk5WkVGLXZNVkNNMzJXSWtBTzRRVVFDZG84T1lRQ1pvX3d1ZkRERGZibkdaWXc3bHVjNWkxbE1SNDBnWUlEMWNRVFB3VENwQWlIWmV3d0FxSWNsanNwVE5aV0hxQ2xTbnIyblRMc0t1T3lZTzdIWE0zN01EV3BSNThSRkhobnp3?oc=5",
       "date": "2026-11-10"
      },
      {
-      "title": "Why is Expedia stock sliding today?",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ1otb3J6X1BMZy0tMEZKNXN5T0lYbGFucVlNRkVmRmVLOS1hREQxdV8yMUVEY1hFM0tMS3hKTmQ1N3R4eEYxYWFtWXMwa1gtZUFHTE9qQUFoZEpoVlVtVVlGYzhDdmRCREFFNlVoYmJvc0lGVXpMRmN4dEhrRm0zU294M3lCUjFsYk5UN2lpWmZBT1pWVVJtRDVydFg?oc=5",
+      "title": "Nvidia's Huang tries to project 'business as usual' in return to office after affair revelation",
+      "publisher": "CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8wRWhMQVVPSndyZG1Hb1FDM0M4UEpxREhfZGlYb3BTcWh6UDZXc0tXUTVhU2xzeWR4b2VYT29vTXJGa0RxRzdrOV9KMmUzN1dMb0FtWXJYcUNVdjRJaVlRT0M2NXpnWkVaNWlNR0pUYUxsWURHaDBLTldn?oc=5",
       "date": "2026-11-10"
      },
      {
-      "title": "Expedia Group (NASDAQ:EXPE) Now Covered by Barclays",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUm9tUnpWLWFsNkYwOHhqaC1OVlRQVS1CV19ZWGs3WkNpc1VQMlJkWVdoa3Eyb0ppckZtcHZQUUdHWVhQWUxXVVkwVFk2QnhfQzBrVUp2SWhZVEpleS1EV0JlN3pNTG53Y21MQ21MakxsXzVWS2dDTmFtc1AtdzB4d28zMGpmQmhicGRaS3d0akI5UkR1WWVTaEJ1YndpYTlwcFBkOVlxaUZxSEgzSEcxcUR0c1lvck9wN2F4R1FUd3JIYkRR?oc=5",
+      "title": "Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLUVvTFBYdncwRE5SVUxHSmtBdkMySDRMQ1M0NUUwRnBQcURnQ2xsZ3Y0TU1wMTVKRElJSWJvMHBoNGUxSFdOSi1QY3hhQ3QtWXJkRENRWUMzNVpxMkJPQ1VGUWNxWFRneTI4TmxZSzdtUlpnenpkTWt3S2hIZ2dwWW9ySTZxRmVRck1neUFkWEtPc1NZ?oc=5",
       "date": "2026-11-10"
      },
      {
-      "title": "Expedia Group, Inc. $EXPE Stock: AEGON ASSET MANAGEMENT UK Plc Lowers Position",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNc2p6ZUk1T0otUjlYaURWRFgxcVlkQjRUa3NCb1hkMkxsekJ6Q0tCRDMzVEFvNGxhUW9GSFgxY2w5NjlXUkhvajk1d29wTlB5UFRLcklmWVdNTmR3VjZTa1ZKNGFFRlg4QkJYckwza1lPbGItNzdxQWhMU3poVkROVk1rdllqbWJiLV9QN1VHdDU5OFJaSDl4b1hkOG1JZ3BfbDdmZ24yUmNQc3FxMEJrMm1uWXhTWmdGNHFzYmtsZEM0TF96TFRVSTQ5aE5yTDNF?oc=5",
+      "title": "Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17?",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSTRQaWR3ZDZPMjdaS3lndTFmUGRuVGttQms2Z2Fob2JYRUQ5ZGV2eUxZcnpBV1dOTVNrVXFHUEJ2ZVFsSV9wdVVpOHJmRUhEWHZPalczekppVW9UTEp4Sm5aeVFwOXgxdFV5cy1BYVpRaTBDNWRjaEFrM1FNakc4Sk1ubFo0QWF0OUdEOTFZa2x6MjVlZzZ3VjNJYkMzSmgxRVpVU05rb3pNLVdCYUZnRzdCWGhsSGpvM2J1THI3ei1VWXhZS3ZiVVBXNTU?oc=5",
       "date": "2026-11-10"
      },
      {
-      "title": "Jefferies Financial Group Has Lowered Expectations for Expedia Group (NASDAQ:EXPE) Stock Price",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWVpwVVA3bHZ1MUNacUlnSkc1T2ZPX2ZvRFVnMHhTZnlSYVJpakVkeGlBS3NxNEVOZmJyaGZMYllVcjctdHFlTXZYdWJFRlgzSVlia3hpaF9VRmdCN2VIR1hfMG1tZ1VRT1AybTN2Qnl2OTI2WU1OMHNWRFNPRGQzTXYzOUp6cEVmaVA4U0NFZkwtb2pGNEd4NHU2UlVhTWFWQXRCWWU3OE9nWjJGdjdUWEVLRVBJLVM3NXdtNG84SXV3S2hMV2NfZU8zWFBoSS0zaFdVaWJMdWtCemNBM1lWZ0hXZlRaSmh0bkE?oc=5",
-      "date": "2026-11-09"
+      "title": "Why Nvidia Stock Just Fell Again",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSmtybzdycmQ0VmZnWUU4OXBtbUs3ZUNsM1BzZG9FNi1Temw4enFfN09LQXhHS3VvSF9oSkNkLWZwaWxDeHRnU0lQTVNPbWJUSGtYTmlqaHBlVUN2bW9zTzl5VWVfNUd0Z3AxQ1pIbGxtRHJ5M2h4MFk0WldqbXVvM2dWQ2NaYVNiRFJQb0Njd2RpZ2RlLWc?oc=5",
+      "date": "2026-11-10"
      }
     ]
    },
@@ -2241,43 +2512,43 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0266,
-    "week": -0.1753,
-    "high": -0.2318
+    "day": 0.0287,
+    "week": -0.1319,
+    "high": -0.2738
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
-   "sector": "Consumer Discretionary",
-   "sector_etf": "RSPD",
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0021,
-    "week": -0.0197,
-    "high": -0.0317
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
    },
-   "sector_at_open": 57.62,
+   "sector_at_open": 57.58,
    "worst": {
-    "day": -0.1383,
-    "week": -0.1993,
-    "high": -0.2542
+    "day": -0.0926,
+    "week": -0.1862,
+    "high": -0.2969
    },
    "provisional": {
-    "cause": "Sector-wide: Consumer Discretionary fell -0% too (rates, recession worries or sector rotation)",
-    "lean": "temporary"
+    "cause": "Company-specific, no clear cause in the data: read the headlines",
+    "lean": "unclear"
    }
   },
   {
-   "id": "APP-2026-10-30",
-   "ticker": "APP",
-   "name": "AppLovin Corp.",
+   "id": "CRCL-2026-10-30",
+   "ticker": "CRCL",
+   "name": "Circle Internet Group",
    "opened": "2026-10-30",
-   "price_at_open": 228.5,
+   "price_at_open": 72.54,
    "spy_at_open": 755.72,
-   "fair_value_at_open": 378.6,
-   "buy_below_at_open": 246.09,
-   "valued_on": "2026-10-23",
+   "fair_value_at_open": 48.74,
+   "buy_below_at_open": 31.68,
+   "valued_on": "2026-10-30",
    "triggers": [
     "day",
     "week",
@@ -2287,9 +2558,9 @@
    "needs_verdict": false,
    "verdict": {
     "label": "unclear",
-    "confidence": "low",
-    "cause": "Long slide (-69% from high) on a Q2 miss, slower AXON model gains, Unity competition and AI fears; no specific news for the latest -12%",
-    "summary": "AppLovin fell ~12% in the week to Oct 30 (sector -6%, peers -1%) into its Nov 4 results and is ~69% below its high. The slide follows a Q2 revenue miss tied to lighter AXON model improvements, a court refusing to block Unity's competing ad-data tool, a class action and target cuts, but analysts have trimmed next-year EPS only ~2%, so lasting damage is not proven. Watch Q3 revenue vs the $2.055-2.085B guide, the Q4 outlook and any sign of a lower take rate; the price (~$229) is below the fair value (~$379), which leans heavily on very high long-run margins.",
+    "confidence": "medium",
+    "cause": "Crypto sell-off after the ~$6B Binance hack (Oct 30) on top of long-running worries about USDC growth, falling rates and stablecoin rules",
+    "summary": "Circle fell ~10% in a week while payments peers rose, leaving it ~46% below its high; the trigger was the Oct 30 Binance hack and crypto sell-off (Circle froze $800M+ of USDC), which looks like temporary sentiment. The longer slide rests on unsettled structural questions: USDC circulation slipped in Q2, Morgan Stanley cut its circulation forecasts by a third to a half, lower rates cut reserve income and draft rules would limit stablecoin rewards. Watch USDC circulation and reserve income in the November Q3 report and the CLARITY Act; the price (~$72) is above the fair value (~$49).",
     "model_changed": false,
     "date": "2026-11-03",
     "by": "Claude"
@@ -2300,75 +2571,72 @@
     "earnings_on": null,
     "last_report": "2026-11-04",
     "peers": {
-     "basis": "group: Software",
-     "n": 8,
+     "basis": "industry: Capital Markets",
+     "n": 5,
      "median": {
-      "day": -0.0024291757811688575,
-      "week": -0.014422369445453609,
-      "high": -0.19528948733358076
+      "day": 0.0024585325498258648,
+      "week": 0.007899410229628812,
+      "high": -0.2097973886476726
      },
      "tickers": [
-      "ADBE",
-      "PLTR",
-      "ADSK",
-      "FICO",
-      "PTC",
-      "GEN",
-      "CRM",
-      "NOW"
+      "MS",
+      "GS",
+      "SCHW",
+      "IBKR",
+      "HOOD"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 16.25163,
-      "d30": 15.66192,
-      "chg": 0.03765247172760411
+      "current": 1.26283,
+      "d30": 1.07665,
+      "chg": 0.17292527748107545
      },
      "+1y": {
-      "current": 20.49822,
-      "d30": 19.95094,
-      "chg": 0.027431288951798694
+      "current": 1.30338,
+      "d30": 1.40654,
+      "chg": -0.07334309724572352
      },
      "revisions_30d": {
-      "up": 1,
-      "down": 9
+      "up": 8,
+      "down": 1
      }
     },
     "news": [
      {
-      "title": "What's behind AppLovin's latest 6.4% stock pullback?",
-      "publisher": "Traders Union",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQS1HSHk1b0VtbmszZVd2MmRxXzJXZ2owV1FRNUEzcGtHQm1RM1Q5a1hQNWZRWnZBWF8yMndfNjVrYzBjSzNOTndfUFZHMWxoTU9YWUpORVdPTF8tbllmdUp5WG1NQzBkYXItQzgxTkVkWUdaSC1TNDV1c0x6OTRXTzVBek5vSHBaNFlsdQ?oc=5",
+      "title": "Circle Internet Group (NYSE:CRCL) Stock: Insider Nikhil Chandhok Sells 26,668 Shares",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQU3dfSVI5QU9VX3pWRlU4X0txN3NrSkZqSW1yaElfYnlLZXJtNFE5UEVQYmlZcGpQanlKZGd1LWYyd0NiZnN0RDBpTlBjSTA5UUVYQVZNbVF2bWVKRU5aU3RpRkhGSUk4ZjVzeFozWWQzdURMODVLNXJTOHVwMzVRT3F6N2M0MVV5UW9DLXRBN1d3Uk5ZMHVjZVoyQW92cnR6R0pHQVFqRTF5UVcwZ3R4THJCRnA1X1Y3VUUtNkN4bEg1MlpvV1ZYY1REcDlENlk1aWlFYTNxT0FoUQ?oc=5",
       "date": "2026-11-10"
      },
      {
-      "title": "AppLovin (APP) Stock Could Be Undervalued On Future Cash Flow",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUGcxdmRTaDRTS2hxNjZzTmdTekpYMGJBVmZxcC0zcnl1aHNIOFNBcVFOd0x1ZF92VmowbTBsRHZDU3htNkJaMkJDZzVNZnlDRGVCOGp1d1dDVXBNd0hoR24xM1BLOGpGUTJpUVRYdEs4RDFycmYzZ2t4NHlscjNZMDh1bmNqbDZEZ3pXZ0l4SHJJTkxpVlFCUWlrbE5scTMzelJGSnZlVExuZFl6bXJ3eUxZSGhYbEY0UU44T0VBMNIBxAFBVV95cUxQU1pxLXltLXRRV2FrSk5PT2E5LWprS0VIWlBxZE9qWFFMaXpGWWtBRUpRczBzR0daMVlmRE5XcnctQkxGdmw4NnVUb0Nsa3VBb2NLNGF1a2V1UDR0SnYxZXZLZ1h2YVhmNldNTXpkWjZVdGFnWWpKMmxaSHBxRFhDV1p6ZHAwQmtmV0FTQTh0ZFRhVjRHMndvblN6dU5XaFFBLUJqc3g4UUZLem80TU5GTXlraGFWMm10NFpmcUZFRjFsZkhX?oc=5",
+      "title": "An officer sells 26,668 Circle Internet Group (CRCL) shares at $66.09 each under a trading plan.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSVNBbDlSeVFYMVN3bFdGbmV6SXUwSG9WOVFBdzdEVURoOXVMaFJtejBPc2IxRWdoM0s1dnJyWXVtTS13TzBDb3ZXckQzTF8wM083Y0RnUEFjRGZ4WEJVSG1SYURweUF6U1lkMEZtYlVUeWVPdUw0T3MwdWl2RTZhOTNWbWEwMXdybTZRWjNyX0RSMFQ2ZVNpdXlFdU9JV0xLN0tvVE80ekxJallqTE9ONDBZZXA2X0pORC1v?oc=5",
       "date": "2026-11-10"
      },
      {
-      "title": "AppLovin shares fall as investors lock in profits",
-      "publisher": "StreetInsider",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNlhUYWpURXNMbFNOa25vdVBGX1dfVmM0SXN0R2xTSDYyNE15VkdWcy04TVVpcjBWZDRIUzg0WTR6dkE2MVBXdXNwai1yOTNybktJeTAtcXJfYkZSa3Jwb254THZWMV90bmlyZW96Y2xzWm1WVGRHS0tGZGMxZUNjQVBnY3RtYzJCQWQwamZLcm5CNDJJdDFJRXVUcVVOa3JIMnhrSnhR?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Why is AppLovin stock sliding today?",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQnVsRXRHLWgtcF9GOEVKa1FKQ2V2bEhaLWRxVWdKZDJrSjVrbG4wbWdGNG1DOFZiVDRiNFlVckJBbktoUEFVTnFpbThMY0NrREdlRERjXy1nVTd6WDR2WU42VkozZnQ1V2NSVDBKSE5PYjZVWlBHSVhYNE15UjRJNmt3blhMb2VlQkdlN2tNc21wLU9WZWNBODdtUWdMdw?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "AppLovin Vs. Unity: Room For Two, But I Prefer Unity (NASDAQ:APP)",
-      "publisher": "Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaVJUMGowWWpLSzJsT0x6WjViTVpCdXNoSXByVzkzNjFPWWJlTEZJVWpGcDR3UmNwc01xaGhiUUUzcU81NFkwU2MtbHFCeXJBRHZMVGV4WjNpd0toNVVEelFac3J6ZXVhOURYSy0tRDFRMURDc0dDWWp1Y01BRTM3eWxVS0tLR2ROYnRhRlQzU0ZVU3Rw?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Why AppLovin (APP) Stock Is Down Today",
+      "title": "Why Circle Internet Group (CRCL) Stock Fell Today",
       "publisher": "Quiver Quantitative",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTjlCQ0lpSXotbjVVSE81T1RicVNzdzIyRU1VaTVPc2tFSHRwSElNUHZVUFkxRkhRaVJLQlFOWC1vV1d1bWV4M0phXzAzd0F1QnZCandVN0ZNMWZwUGlka254YjJnVmxKSVBnQl9mLWJ6NV9iMkxNQTMtMGRWSk9LaQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaTgxLWRCQnRoSW9JR0JKdG5Zd0FiVFBlaFg2TjlZRHV3S0VNWFNtMW9fejZtNFN6OTBxV3hNY1JaLXF6NTdPRTRsWXJwMGcyS0JmYWxxd3g4VzFpNTk2Qjh1WnZwSkJFVzM1SmVUTk9zbkxPcnl0cmk4ckpmRXloakd5UWVIX0pMN2FISzg5SQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Fulcrum Asset Management LLP Purchases 50,959 Shares of Circle Internet Group, Inc. $CRCL",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb1QyczlxWEdZeVZfSzlOMGRzZlllMHFYd1V3MzdORWFOYU4yVnFNVmxnNGdDcEJ3V2h1aWNTVlYxbVVKTU1DT0VOYjlYWEZ0VkNGY244eHlsemlIME5DMlMtYmNwQUpPU0hKdHVmNWZPSjhTQlhqR3RqdktPYmR2aDZMLW5kOHNvUUNmamhzcDdtTDlNTmVMbzRZSW9Nbk16YkNJOWlyRTAwTzVfUXZGdFNvNlh1VWZ4TUwwdTZiVVZKcHVxMWxQLUl6ZzllSGZ4dFA0eDBFRC1jTk82ZWQw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Circle Internet Group CEO Jeremy Allaire sells $4.05M in stock",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNallTQm83bWRlV2pRU0dLVXk1SE15NENhdVhYVzVEQTlCUk1PQnNKeXJSemdBeFMyTUVuZkc2dVdDR21Xa0xXLWMxczFqSkJkWm9CRFc1Q2lvSDdZeXdiaDJPemRjT21zWDB5cnpUM0dBbTMzRWtZRUJTZ3VqNk50b1hfUmhoSEY3S1JUVDhzcUQyQTBsQkYwN0NfNF8zRjc5aVFfaE16MHlKZ25kZ0RBNDFQM3pBVHdJb05fZF90Wk5ENzQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Circle Internet Group chairman and CEO Allaire sells $207,627 in shares",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQU3VxNnRjTkNnOGxubUp6TlFCWVBFelhwTWNSc3FMRmtfbFlKQks3NWJWazlndGFaUWdyeWtzVzNnTEVfdWhtbkpwZmZFNVBfWnlzZjJyXzN0TGVDOUtORUx3WW43WTExOFpRNkxUc1F0c2FieGZjRUhOYkI1dkRQNHVTR005X21ia2Z6c1NIM3AxMW9LeS1Vb09lTTdZcm41dzhCTmhTQTZZVmZ2OHBNUDZ4ZnFWYjFXc1E4MTdEcWY2aXdmYUpuaTVUanFqdTg?oc=5",
       "date": "2026-11-10"
      }
     ]
@@ -2377,31 +2645,31 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.028,
-    "week": 0.4962,
-    "high": -0.4457
+    "day": 0.0329,
+    "week": -0.1182,
+    "high": -0.4947
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
+   "sector": "Financials",
+   "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
+    "day": 0.0041,
+    "week": -0.0059,
+    "high": -0.0071
    },
-   "sector_at_open": 62.95,
+   "sector_at_open": 82.34,
    "worst": {
-    "day": -0.1036,
-    "week": -0.1223,
-    "high": -0.6885
+    "day": -0.0934,
+    "week": -0.1556,
+    "high": -0.5123
    },
    "provisional": {
-    "cause": "Industry-wide: peers fell -0% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
+    "cause": "Sector-wide: Financials fell 0% too (rates, recession worries or sector rotation)",
+    "lean": "unclear"
    }
   },
   {
@@ -2508,21 +2776,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0324,
-    "week": 0.0424,
-    "high": -0.294
+    "day": 0.0334,
+    "week": 0.0433,
+    "high": -0.2933
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": 0.0097,
-    "week": 0.0027,
-    "high": -0.0445
+    "day": 0.0099,
+    "week": 0.0029,
+    "high": -0.0444
    },
    "sector_at_open": 61.72,
    "worst": {
@@ -2648,16 +2916,16 @@
     "high": -0.2908
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
    "sector_moves": {
-    "day": 0.0167,
-    "week": 0.0027,
-    "high": -0.0937
+    "day": 0.0213,
+    "week": 0.0072,
+    "high": -0.0895
    },
    "sector_at_open": 108.59,
    "worst": {
@@ -2668,274 +2936,6 @@
    "provisional": {
     "cause": "Industry-wide: peers fell -6% too (rates, sector rotation or an industry worry)",
     "lean": "temporary"
-   }
-  },
-  {
-   "id": "NVDA-2026-11-05",
-   "ticker": "NVDA",
-   "name": "NVIDIA Corp.",
-   "opened": "2026-11-05",
-   "price_at_open": 182.96,
-   "spy_at_open": 736.33,
-   "fair_value_at_open": 179.38,
-   "buy_below_at_open": 125.57,
-   "valued_on": "2026-11-05",
-   "triggers": [
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "AI-chip and data-centre sell-off after the midterms (-9% on 5 Nov, ~24% below the October record): data-centre permit pauses and doubts about how customers finance AI build-outs",
-    "summary": "None of the drivers is an NVIDIA operating problem: analysts are still raising estimates (7 up, 0 down in 30 days), Amazon committed to more GPUs and Rubin has orders from major clouds; the known pressure is gross margin falling to ~71-72% on memory costs, already guided. The fall tracks the whole sector. Watch the 17 Nov report and any sign that permits or financing delay deployments; the price (~82) is about at the model fair value (~79).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": null,
-    "last_report": "2026-08-26",
-    "peers": {
-     "basis": "industry: Semiconductors",
-     "n": 8,
-     "median": {
-      "day": 0.00532768076467377,
-      "week": -0.03913608529031476,
-      "high": -0.30966516061623345
-     },
-     "tickers": [
-      "AVGO",
-      "MU",
-      "AMD",
-      "INTC",
-      "TXN",
-      "ADI",
-      "MRVL",
-      "QCOM"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 9.31674,
-      "d30": 9.31242,
-      "chg": 0.00046389660260159893
-     },
-     "+1y": {
-      "current": 15.92806,
-      "d30": 15.9146,
-      "chg": 0.0008457642667738519
-     },
-     "revisions_30d": {
-      "up": 7,
-      "down": 0
-     }
-    },
-    "news": [
-     {
-      "title": "Jim Cramer: Wall Street is focusing too much on what could go wrong instead of right",
-      "publisher": "CNBC",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZXEtNjBGQmkySUh6d3RIZlo0M3lpY2txS25RcW00YURRZnlpWWJ5UWJlRU8wbE1vNERBUUFZMDhad253YUw4NTl6Smt2ODVDZFVOOEtzLVlKTHIxa2hZbEJiYXZMOEFmN3hwcUFqWm40UkRfdk9Vd29qS1FEdE85UElxTQ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "What to Watch in Nvidia Earnings: Spy Scandal, Data Center Concerns Take Center Stage",
-      "publisher": "Morningstar",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM1EwT3BDVXVxdlpLd182dV80azR6M2lrMHJFZlg4TElPMlpLeDVLSVFQaGk5WkVGLXZNVkNNMzJXSWtBTzRRVVFDZG84T1lRQ1pvX3d1ZkRERGZibkdaWXc3bHVjNWkxbE1SNDBnWUlEMWNRVFB3VENwQWlIWmV3d0FxSWNsanNwVE5aV0hxQ2xTbnIyblRMc0t1T3lZTzdIWE0zN01EV3BSNThSRkhobnp3?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Nvidia's Huang tries to project 'business as usual' in return to office after affair revelation",
-      "publisher": "CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8wRWhMQVVPSndyZG1Hb1FDM0M4UEpxREhfZGlYb3BTcWh6UDZXc0tXUTVhU2xzeWR4b2VYT29vTXJGa0RxRzdrOV9KMmUzN1dMb0FtWXJYcUNVdjRJaVlRT0M2NXpnWkVaNWlNR0pUYUxsWURHaDBLTldn?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLUVvTFBYdncwRE5SVUxHSmtBdkMySDRMQ1M0NUUwRnBQcURnQ2xsZ3Y0TU1wMTVKRElJSWJvMHBoNGUxSFdOSi1QY3hhQ3QtWXJkRENRWUMzNVpxMkJPQ1VGUWNxWFRneTI4TmxZSzdtUlpnenpkTWt3S2hIZ2dwWW9ySTZxRmVRck1neUFkWEtPc1NZ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17?",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSTRQaWR3ZDZPMjdaS3lndTFmUGRuVGttQms2Z2Fob2JYRUQ5ZGV2eUxZcnpBV1dOTVNrVXFHUEJ2ZVFsSV9wdVVpOHJmRUhEWHZPalczekppVW9UTEp4Sm5aeVFwOXgxdFV5cy1BYVpRaTBDNWRjaEFrM1FNakc4Sk1ubFo0QWF0OUdEOTFZa2x6MjVlZzZ3VjNJYkMzSmgxRVpVU05rb3pNLVdCYUZnRzdCWGhsSGpvM2J1THI3ei1VWXhZS3ZiVVBXNTU?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Why Nvidia Stock Just Fell Again",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSmtybzdycmQ0VmZnWUU4OXBtbUs3ZUNsM1BzZG9FNi1Temw4enFfN09LQXhHS3VvSF9oSkNkLWZwaWxDeHRnU0lQTVNPbWJUSGtYTmlqaHBlVUN2bW9zTzl5VWVfNUd0Z3AxQ1pIbGxtRHJ5M2h4MFk0WldqbXVvM2dWQ2NaYVNiRFJQb0Njd2RpZ2RlLWc?oc=5",
-      "date": "2026-11-10"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": 0.0352,
-    "week": -0.1264,
-    "high": -0.2692
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
-   "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
-   },
-   "sector_at_open": 57.58,
-   "worst": {
-    "day": -0.0926,
-    "week": -0.1862,
-    "high": -0.2969
-   },
-   "provisional": {
-    "cause": "Company-specific, no clear cause in the data: read the headlines",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "CRCL-2026-10-30",
-   "ticker": "CRCL",
-   "name": "Circle Internet Group",
-   "opened": "2026-10-30",
-   "price_at_open": 72.54,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 48.74,
-   "buy_below_at_open": 31.68,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "Crypto sell-off after the ~$6B Binance hack (Oct 30) on top of long-running worries about USDC growth, falling rates and stablecoin rules",
-    "summary": "Circle fell ~10% in a week while payments peers rose, leaving it ~46% below its high; the trigger was the Oct 30 Binance hack and crypto sell-off (Circle froze $800M+ of USDC), which looks like temporary sentiment. The longer slide rests on unsettled structural questions: USDC circulation slipped in Q2, Morgan Stanley cut its circulation forecasts by a third to a half, lower rates cut reserve income and draft rules would limit stablecoin rewards. Watch USDC circulation and reserve income in the November Q3 report and the CLARITY Act; the price (~$72) is above the fair value (~$49).",
-    "model_changed": false,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": null,
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Capital Markets",
-     "n": 5,
-     "median": {
-      "day": 0.0024585325498258648,
-      "week": 0.007899410229628812,
-      "high": -0.2097973886476726
-     },
-     "tickers": [
-      "MS",
-      "GS",
-      "SCHW",
-      "IBKR",
-      "HOOD"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 1.26283,
-      "d30": 1.07665,
-      "chg": 0.17292527748107545
-     },
-     "+1y": {
-      "current": 1.30338,
-      "d30": 1.40654,
-      "chg": -0.07334309724572352
-     },
-     "revisions_30d": {
-      "up": 8,
-      "down": 1
-     }
-    },
-    "news": [
-     {
-      "title": "Circle Internet Group (NYSE:CRCL) Stock: Insider Nikhil Chandhok Sells 26,668 Shares",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQU3dfSVI5QU9VX3pWRlU4X0txN3NrSkZqSW1yaElfYnlLZXJtNFE5UEVQYmlZcGpQanlKZGd1LWYyd0NiZnN0RDBpTlBjSTA5UUVYQVZNbVF2bWVKRU5aU3RpRkhGSUk4ZjVzeFozWWQzdURMODVLNXJTOHVwMzVRT3F6N2M0MVV5UW9DLXRBN1d3Uk5ZMHVjZVoyQW92cnR6R0pHQVFqRTF5UVcwZ3R4THJCRnA1X1Y3VUUtNkN4bEg1MlpvV1ZYY1REcDlENlk1aWlFYTNxT0FoUQ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "An officer sells 26,668 Circle Internet Group (CRCL) shares at $66.09 each under a trading plan.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSVNBbDlSeVFYMVN3bFdGbmV6SXUwSG9WOVFBdzdEVURoOXVMaFJtejBPc2IxRWdoM0s1dnJyWXVtTS13TzBDb3ZXckQzTF8wM083Y0RnUEFjRGZ4WEJVSG1SYURweUF6U1lkMEZtYlVUeWVPdUw0T3MwdWl2RTZhOTNWbWEwMXdybTZRWjNyX0RSMFQ2ZVNpdXlFdU9JV0xLN0tvVE80ekxJallqTE9ONDBZZXA2X0pORC1v?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Why Circle Internet Group (CRCL) Stock Fell Today",
-      "publisher": "Quiver Quantitative",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaTgxLWRCQnRoSW9JR0JKdG5Zd0FiVFBlaFg2TjlZRHV3S0VNWFNtMW9fejZtNFN6OTBxV3hNY1JaLXF6NTdPRTRsWXJwMGcyS0JmYWxxd3g4VzFpNTk2Qjh1WnZwSkJFVzM1SmVUTk9zbkxPcnl0cmk4ckpmRXloakd5UWVIX0pMN2FISzg5SQ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Fulcrum Asset Management LLP Purchases 50,959 Shares of Circle Internet Group, Inc. $CRCL",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb1QyczlxWEdZeVZfSzlOMGRzZlllMHFYd1V3MzdORWFOYU4yVnFNVmxnNGdDcEJ3V2h1aWNTVlYxbVVKTU1DT0VOYjlYWEZ0VkNGY244eHlsemlIME5DMlMtYmNwQUpPU0hKdHVmNWZPSjhTQlhqR3RqdktPYmR2aDZMLW5kOHNvUUNmamhzcDdtTDlNTmVMbzRZSW9Nbk16YkNJOWlyRTAwTzVfUXZGdFNvNlh1VWZ4TUwwdTZiVVZKcHVxMWxQLUl6ZzllSGZ4dFA0eDBFRC1jTk82ZWQw?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Circle Internet Group CEO Jeremy Allaire sells $4.05M in stock",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNallTQm83bWRlV2pRU0dLVXk1SE15NENhdVhYVzVEQTlCUk1PQnNKeXJSemdBeFMyTUVuZkc2dVdDR21Xa0xXLWMxczFqSkJkWm9CRFc1Q2lvSDdZeXdiaDJPemRjT21zWDB5cnpUM0dBbTMzRWtZRUJTZ3VqNk50b1hfUmhoSEY3S1JUVDhzcUQyQTBsQkYwN0NfNF8zRjc5aVFfaE16MHlKZ25kZ0RBNDFQM3pBVHdJb05fZF90Wk5ENzQ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Circle Internet Group chairman and CEO Allaire sells $207,627 in shares",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQU3VxNnRjTkNnOGxubUp6TlFCWVBFelhwTWNSc3FMRmtfbFlKQks3NWJWazlndGFaUWdyeWtzVzNnTEVfdWhtbkpwZmZFNVBfWnlzZjJyXzN0TGVDOUtORUx3WW43WTExOFpRNkxUc1F0c2FieGZjRUhOYkI1dkRQNHVTR005X21ia2Z6c1NIM3AxMW9LeS1Vb09lTTdZcm41dzhCTmhTQTZZVmZ2OHBNUDZ4ZnFWYjFXc1E4MTdEcWY2aXdmYUpuaTVUanFqdTg?oc=5",
-      "date": "2026-11-10"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": 0.0392,
-    "week": -0.1128,
-    "high": -0.4916
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
-   "sector_moves": {
-    "day": 0.0055,
-    "week": -0.0045,
-    "high": -0.0057
-   },
-   "sector_at_open": 82.34,
-   "worst": {
-    "day": -0.0934,
-    "week": -0.1556,
-    "high": -0.5123
-   },
-   "provisional": {
-    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
-    "lean": "unclear"
    }
   },
   {
@@ -3047,21 +3047,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0475,
-    "week": 0.0685,
-    "high": -0.2779
+    "day": 0.0399,
+    "week": 0.0606,
+    "high": -0.2831
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -3179,21 +3179,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0561,
-    "week": 0.0786,
-    "high": -0.4645
+    "day": 0.0524,
+    "week": 0.0749,
+    "high": -0.4663
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -3202,7 +3202,7 @@
     "high": -0.5698
    },
    "provisional": {
-    "cause": "Industry-wide: peers fell 0% too (rates, sector rotation or an industry worry)",
+    "cause": "Sector-wide: Information Technology fell 3% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
    }
   },
@@ -3447,21 +3447,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": -0.0161,
-    "week": -0.031,
-    "high": -0.497
+    "day": -0.0265,
+    "week": -0.0411,
+    "high": -0.5023
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0021,
-    "week": -0.0197,
-    "high": -0.0317
+    "day": -0.0027,
+    "week": -0.0204,
+    "high": -0.0323
    },
    "sector_at_open": 57.04,
    "worst": {
@@ -3581,21 +3581,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": -0.0138,
-    "week": -0.0063,
-    "high": -0.2678
+    "day": -0.016,
+    "week": -0.0085,
+    "high": -0.2695
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0021,
-    "week": -0.0197,
-    "high": -0.0317
+    "day": -0.0027,
+    "week": -0.0204,
+    "high": -0.0323
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -3715,21 +3715,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": -0.004,
-    "week": -0.0793,
-    "high": -0.3735
+    "day": 0.0013,
+    "week": -0.0743,
+    "high": -0.3702
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": 0.0007,
-    "week": -0.0063,
-    "high": -0.0063
+    "day": 0.0012,
+    "week": -0.0058,
+    "high": -0.0058
    },
    "sector_at_open": 39.9,
    "worst": {
@@ -3739,270 +3739,6 @@
    },
    "provisional": {
     "cause": "Long slide: -37% below its 52-week high (S&P 500 -2%, Health Care -1%): read why",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "LMAT-2026-11-09",
-   "ticker": "LMAT",
-   "name": "LeMaitre Vascular Inc.",
-   "opened": "2026-11-09",
-   "price_at_open": 81.63,
-   "spy_at_open": 753.66,
-   "fair_value_at_open": 50.95,
-   "buy_below_at_open": 33.12,
-   "valued_on": "2026-11-06",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Slide mainly from a 25% one-day drop on Aug 6 after a small Q2 sales miss and a trim to 11% organic growth guidance",
-    "summary": "Most of the fall came on Aug 6 when Q2 sales missed by about $1.1M and organic growth guidance was trimmed from 12% to 11%, citing currency, Middle East export issues and cardiac allograft supply limits; a stock priced at a high multiple was re-rated. Q3 then showed 12% organic growth (7% price, 5% units), adjusted gross margin up, FY26 guidance of +11% sales and +18% adjusted EPS, and a small B. Braun asset purchase, so the business looks intact; the recent EPS downgrades are small (about -2.5%). Watch allograft supply, rep productivity after the 13% rep increase, and that the stock still trades well above the model fair value.",
-    "model_changed": false,
-    "date": "2026-11-10",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": "2026-11-04",
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Medical Instruments & Supplies",
-     "n": 8,
-     "median": {
-      "day": -0.004750774353021903,
-      "week": 0.04076421794732188,
-      "high": -0.09289658661964106
-     },
-     "tickers": [
-      "ISRG",
-      "BDX",
-      "RMD",
-      "WST",
-      "SOLV",
-      "BAX",
-      "COO",
-      "ALGN"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 2.80625,
-      "d30": 2.87714,
-      "chg": -0.024639051280090585
-     },
-     "+1y": {
-      "current": 3.15,
-      "d30": 3.17875,
-      "chg": -0.009044435705859222
-     },
-     "revisions_30d": {
-      "up": 0,
-      "down": 7
-     }
-    },
-    "news": [
-     {
-      "title": "LeMaitre Vascular Earnings Call Shows Strong Growth Ahead",
-      "publisher": "TipRanks",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQekNzTzRCYXNORjFPbUlqN2lXQnpZTGV5ZktoWks1WGFBQUFhNThXai1fV1oxQmpvM1llRnJkcDBJcEwzZEkzM0s0M240Zkdpd3ZuOWt5VkV1cUQ3bTNhbnJ3ekhYZTRnMFhpTERYdWtLbFd6ZGF6UEZVZ0ZxWUJya215ME1lZnRSRWZSemdDc2pRNDVDT0NVa2RzWlJ0VDNuV2JhTVh1NDlqQ2R1Vnc?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "LeMaitre Vascular, Inc. (NASDAQ:LMAT) Stock Has Consensus Target Price of $105.60",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVFBYUkhLVUNBd21oc0NPRkN0LXU4M1Y1TlNRM2NVOFBWQ05GU3dkOF9jNjk3bldpVDZtdWV5a05aM2dPUFZZdnpuZTJsUVljbHNXR0ZkZk1WRnVyTXdRUlVkeGtCSUQ4R1c0aFFPcDJ0dW1rZm5kaGQzWVBZLVpOVnBRM1VvSXZoaUIzV3M0aXN6NDAydk5qaVBwdTV5Tkh1TFlLT3dIZUZDWmtTajdhQ3VZYmNRMVIyZnRGVndESFBEZm5VYnE3QndmQXF1Z3dyMjBtSUFB?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Does LeMaitre Vascular (LMAT) Trade At A Premium To Cash Flow?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPelM3OGMwWTRpYnAzYUs5SE9WWS04NUIzTEFWQ0JMcFB0UnR1MEpIeWNXQ2V4X19TRWxEZnlBZGpqRXc0dlI0ZUQ5RVR1OGV5ZDZxTDZZMFhHNHBHVnp1MHVnX01xVkdBaW0yZ2JVUTEyZm5yVVREZkRwd1p4ZUNZS1Vya25uVE9hU0h1LXRHN0wwSFJVYXVDY2RScG9wUEE?oc=5",
-      "date": "2026-11-08"
-     },
-     {
-      "title": "LeMaitre Vascular (LMAT) Shares Dropped, So What Is Driving Attention Now?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcEI4TjhGc1R3dFVYMjZ3MDZmSmZpTXl6UFRodHR6MTRyWGI4OTBSQWJtRUFGVjRfclZfdG9ZZXBPNDFsZzRUYVVHUms1ZTBEQlhzS2pPUXBNbWl3SmVlWEtIalVDZUdqdUE3OXhrR1k5WmFrTzF6WlIwTE1ZR2hSWEdKbHU0UW1ERTF3VU9oa3JkNmdldndITVMyVE03aFRNSE1pRw?oc=5",
-      "date": "2026-11-08"
-     },
-     {
-      "title": "Earnings Guidance Lift Might Change The Case For Investing In LeMaitre Vascular (LMAT)",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN3VXWmRCcXlUc0NVcU15ME1tODRnWFQwUU1UejlFbXhQMGVRTUpNcmstbFRyUl95ZHFrR2pYaU03TUZ3eDh1UnNxUkY4dXlmOExINktfQURyeFFWcFdjUmh3ZmY1V3BTaFZyOVJTaGQweE5aS2s1ZzhWR3ZtMkZ3Y0xfd3ZVNzBqcnV6dHJsSlhXNzNfSHh5dUJhY1pjNFlQX1E?oc=5",
-      "date": "2026-11-08"
-     },
-     {
-      "title": "LeMaitre Vascular (LMAT) Stock Could Be 16% Overvalued After Q3 Earnings",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOemZmVFNzNVFPNS1aVmF2dVlFbHhianNpVW1zR3pPR01yN1VyQWNpU1Fxa1hvbTJ4OWtvb2VMUG1zeEpETURyREhORG90MnJzM0tMNTV1aUNnVzcyeFpZMzkzaXl5UDlRQWpyT3FoWk9hQkJZeXlwSHFxSHlYUTR6TDh2Rk91SnA3V2dQR2dkRjNQeTdheWc5cFJCR0NLTUJBVkYxS3MxRDM0YzViMUlVYW50ZUNzQXREbk0tSVlmS2d2YXA0UHRDYWdINDkyX0l5UmJxYdIB2gFBVV95cUxQa1BFaTUzMnpZdWFILS1NTlFxMDZYZFFlblZnNkJMYlhGUWEtT2Rzd0JxRUh5bWIyUS1hYng5Z3Z1bTNObnhGdzZoRHNJbFZzamZaNlAtS0plZl83VXhyZjBvYWNTTENHajR1SHF4cGxXTVFPUjI1MElkRDVkVlBxSllITEw4Z1JBc1dFWmd5QW1sY1RKOV9QMmhsTlFVdmk5RjlyZXZGZ1JNR2t2OVFaNW9KUVZqMzR0ZlVDRWd2cXFQYUg5TXQzSmNqN2pVWVpfTUpvdGs3RHhwZw?oc=5",
-      "date": "2026-11-07"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": -0.0014,
-    "week": -0.1025,
-    "high": -0.3278
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Health Care",
-   "sector_etf": "RSPH",
-   "sector_moves": {
-    "day": 0.0007,
-    "week": -0.0063,
-    "high": -0.0063
-   },
-   "sector_at_open": 41.5,
-   "worst": {
-    "day": -0.0288,
-    "week": -0.1035,
-    "high": -0.3286
-   },
-   "provisional": {
-    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
-    "lean": "temporary"
-   }
-  },
-  {
-   "id": "MKC-2026-10-30",
-   "ticker": "MKC",
-   "name": "McCormick & Co.",
-   "opened": "2026-10-30",
-   "price_at_open": 47.29,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 62.27,
-   "buy_below_at_open": 43.59,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "medium",
-    "cause": "Marked down for the pending Unilever Foods deal: holders keep 35% of the combined company, which takes on ~$15.7B of new debt plus integration risk",
-    "summary": "The core spice and flavour business is intact (Q3 FY26 beat, gross margin +190bp, guidance kept; volumes slightly negative), so the brand advantage is not hit. The lasting part is the change in what shareholders own and in the balance sheet (2-3 years of deleveraging expected), which the model's standalone fair value does not include. Watch leverage and financing terms at the mid-2027 close, synergy progress (~$600M) and Consumer volumes.",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": null,
-    "last_report": "2026-10-01",
-    "peers": {
-     "basis": "industry: Packaged Foods",
-     "n": 4,
-     "median": {
-      "day": -0.00480862636216095,
-      "week": 0.029585624186958093,
-      "high": -0.14228905476101128
-     },
-     "tickers": [
-      "KHC",
-      "GIS",
-      "SJM",
-      "HRL"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 3.08974,
-      "d30": 3.08717,
-      "chg": 0.0008324776413348722
-     },
-     "+1y": {
-      "current": 3.22139,
-      "d30": 3.29584,
-      "chg": -0.022589081994271565
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 9
-     }
-    },
-    "news": [
-     {
-      "title": "McCormick & Co. Inc. stock underperforms Tuesday when compared to competitors",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOdVZGNUNUZDBQZGJrRk1lUndoNmt3QzBtMTNqQlFUV29ldlJ2NHZpbGNHY1h5aUtXRmFhOEh5T3VGMVhET2xWNmJUMnNyMVhyY01JNk5KSmJaczI5OG9zSmdLNVhNS01GWHg2TVh4Rnl0a1ZMancyRVhMOHJsYm52aEhtcVFDYUxIYVpNQVRFMm5qYVNVb0RmVUtfWkh1ekdZMFE1SVQ3MGJhTmpBS3RZSDRzT3hvTC0xNlpZa3l5amFfb2V4QzJBc2k4NkxjenBCdHlkXzZtVWdoajU3emxRRGY5bFpodw?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
-      "publisher": "Yahoo Finance UK",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9pZlUzZF9wNkFMQVJnZGk4OElhY2tjUXFRZTFoZDR1RmcxdnRQQVFhWVVVNGV5TWZKeG1tZ3M5VENYNkJTSkdQM3Jzb09BVk9F?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (MKC) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIRm9XbWZRRFlwLTNNblNhdG1hVlJKUlhGTTN4NHF2bUNBNG1KNVU0N3N0WERPLUNsTFQ5UnFybnptR0g3ZWVVWHFac3EwbkVo?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
-      "publisher": "Yahoo Finance Australia",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBaY0lVbmktaXE3bzYxcG5VMmRjVzFuZjFTSG4wWXpjM3ZJUVZBTjY5eGc3QTl5aGU1SFNGNFlKZ3FkZU4zMmItXzVDSEhqcjhH?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "McCormick & Co. Inc. stock underperforms Monday when compared to competitors",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTnQ3OFFGVWZ1eHh0MDBWU2FXalpyUkp5QUVESklXdi1ETkxFaS1NMmFLWU5sNEU0Q3drOW56clZBcUJUdjJXOEEwaWhQazU0TFJ5Yk5OOGx4dHNHV2xuWlJWZ1NqbUl5dmNtVjdvM3VOczg4TE1pNEtYaUdiaVlVSWtmRlVvcE1OUDJyTlhPWDFVYllXLXRKcEt2ZTY4Qy04TUt4R3hHV2gzcHg4YzdXMVNpdVpVZEZTOHRJYXhTTlprWEs1NHhQdWkxOXZUSDczQzdxM1RCQVd6RlJnZk1zWFJuNFE?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "McCormick & Company, Incorporated $MKC Shares Newly Bought by Hohimer Wealth Management LLC",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZURHZ2dlazhqQVQxTHBhNG1nMUtCbkVVcUJQVEs4dnY1MlBKNC1yQmFXTTFfN2tXdlRodklPUEdWSXVCUkg0TGVpanRfelpxeDlfU2Y0a2FEemJ5eG9Ra3dZMzFOWlV2R1V0WDlkNG1vRWI1cXZPaE56c2V5ZEI3MGNqaEg4TkswbU1RQ25sWWRka29KZlZJaUh1RmUxZkVoUWkybVVYVTFOQzBPNTdiTEI5Q21laDRrLTdQVWwySUdaT3ZuUllxaWk5YU9rbThTSVowTzNrTGtMVnNfbkxBRGdB?oc=5",
-      "date": "2026-11-09"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": -0.0013,
-    "week": -0.0757,
-    "high": -0.3488
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Consumer Staples",
-   "sector_etf": "RSPS",
-   "sector_moves": {
-    "day": -0.0006,
-    "week": -0.008,
-    "high": -0.0283
-   },
-   "sector_at_open": 31.53,
-   "worst": {
-    "day": -0.0384,
-    "week": -0.0955,
-    "high": -0.3627
-   },
-   "provisional": {
-    "cause": "Long slide: -35% below its 52-week high (S&P 500 -2%, Consumer Staples -3%): read why",
     "lean": "unclear"
    }
   },
@@ -4141,6 +3877,404 @@
    }
   },
   {
+   "id": "LMAT-2026-11-09",
+   "ticker": "LMAT",
+   "name": "LeMaitre Vascular Inc.",
+   "opened": "2026-11-09",
+   "price_at_open": 81.63,
+   "spy_at_open": 753.66,
+   "fair_value_at_open": 50.95,
+   "buy_below_at_open": 33.12,
+   "valued_on": "2026-11-06",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Slide mainly from a 25% one-day drop on Aug 6 after a small Q2 sales miss and a trim to 11% organic growth guidance",
+    "summary": "Most of the fall came on Aug 6 when Q2 sales missed by about $1.1M and organic growth guidance was trimmed from 12% to 11%, citing currency, Middle East export issues and cardiac allograft supply limits; a stock priced at a high multiple was re-rated. Q3 then showed 12% organic growth (7% price, 5% units), adjusted gross margin up, FY26 guidance of +11% sales and +18% adjusted EPS, and a small B. Braun asset purchase, so the business looks intact; the recent EPS downgrades are small (about -2.5%). Watch allograft supply, rep productivity after the 13% rep increase, and that the stock still trades well above the model fair value.",
+    "model_changed": false,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": "2026-11-04",
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "industry: Medical Instruments & Supplies",
+     "n": 8,
+     "median": {
+      "day": -0.004750774353021903,
+      "week": 0.04076421794732188,
+      "high": -0.09289658661964106
+     },
+     "tickers": [
+      "ISRG",
+      "BDX",
+      "RMD",
+      "WST",
+      "SOLV",
+      "BAX",
+      "COO",
+      "ALGN"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 2.80625,
+      "d30": 2.87714,
+      "chg": -0.024639051280090585
+     },
+     "+1y": {
+      "current": 3.15,
+      "d30": 3.17875,
+      "chg": -0.009044435705859222
+     },
+     "revisions_30d": {
+      "up": 0,
+      "down": 7
+     }
+    },
+    "news": [
+     {
+      "title": "LeMaitre Vascular Earnings Call Shows Strong Growth Ahead",
+      "publisher": "TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQekNzTzRCYXNORjFPbUlqN2lXQnpZTGV5ZktoWks1WGFBQUFhNThXai1fV1oxQmpvM1llRnJkcDBJcEwzZEkzM0s0M240Zkdpd3ZuOWt5VkV1cUQ3bTNhbnJ3ekhYZTRnMFhpTERYdWtLbFd6ZGF6UEZVZ0ZxWUJya215ME1lZnRSRWZSemdDc2pRNDVDT0NVa2RzWlJ0VDNuV2JhTVh1NDlqQ2R1Vnc?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "LeMaitre Vascular, Inc. (NASDAQ:LMAT) Stock Has Consensus Target Price of $105.60",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVFBYUkhLVUNBd21oc0NPRkN0LXU4M1Y1TlNRM2NVOFBWQ05GU3dkOF9jNjk3bldpVDZtdWV5a05aM2dPUFZZdnpuZTJsUVljbHNXR0ZkZk1WRnVyTXdRUlVkeGtCSUQ4R1c0aFFPcDJ0dW1rZm5kaGQzWVBZLVpOVnBRM1VvSXZoaUIzV3M0aXN6NDAydk5qaVBwdTV5Tkh1TFlLT3dIZUZDWmtTajdhQ3VZYmNRMVIyZnRGVndESFBEZm5VYnE3QndmQXF1Z3dyMjBtSUFB?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Does LeMaitre Vascular (LMAT) Trade At A Premium To Cash Flow?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPelM3OGMwWTRpYnAzYUs5SE9WWS04NUIzTEFWQ0JMcFB0UnR1MEpIeWNXQ2V4X19TRWxEZnlBZGpqRXc0dlI0ZUQ5RVR1OGV5ZDZxTDZZMFhHNHBHVnp1MHVnX01xVkdBaW0yZ2JVUTEyZm5yVVREZkRwd1p4ZUNZS1Vya25uVE9hU0h1LXRHN0wwSFJVYXVDY2RScG9wUEE?oc=5",
+      "date": "2026-11-08"
+     },
+     {
+      "title": "LeMaitre Vascular (LMAT) Shares Dropped, So What Is Driving Attention Now?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcEI4TjhGc1R3dFVYMjZ3MDZmSmZpTXl6UFRodHR6MTRyWGI4OTBSQWJtRUFGVjRfclZfdG9ZZXBPNDFsZzRUYVVHUms1ZTBEQlhzS2pPUXBNbWl3SmVlWEtIalVDZUdqdUE3OXhrR1k5WmFrTzF6WlIwTE1ZR2hSWEdKbHU0UW1ERTF3VU9oa3JkNmdldndITVMyVE03aFRNSE1pRw?oc=5",
+      "date": "2026-11-08"
+     },
+     {
+      "title": "Earnings Guidance Lift Might Change The Case For Investing In LeMaitre Vascular (LMAT)",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN3VXWmRCcXlUc0NVcU15ME1tODRnWFQwUU1UejlFbXhQMGVRTUpNcmstbFRyUl95ZHFrR2pYaU03TUZ3eDh1UnNxUkY4dXlmOExINktfQURyeFFWcFdjUmh3ZmY1V3BTaFZyOVJTaGQweE5aS2s1ZzhWR3ZtMkZ3Y0xfd3ZVNzBqcnV6dHJsSlhXNzNfSHh5dUJhY1pjNFlQX1E?oc=5",
+      "date": "2026-11-08"
+     },
+     {
+      "title": "LeMaitre Vascular (LMAT) Stock Could Be 16% Overvalued After Q3 Earnings",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOemZmVFNzNVFPNS1aVmF2dVlFbHhianNpVW1zR3pPR01yN1VyQWNpU1Fxa1hvbTJ4OWtvb2VMUG1zeEpETURyREhORG90MnJzM0tMNTV1aUNnVzcyeFpZMzkzaXl5UDlRQWpyT3FoWk9hQkJZeXlwSHFxSHlYUTR6TDh2Rk91SnA3V2dQR2dkRjNQeTdheWc5cFJCR0NLTUJBVkYxS3MxRDM0YzViMUlVYW50ZUNzQXREbk0tSVlmS2d2YXA0UHRDYWdINDkyX0l5UmJxYdIB2gFBVV95cUxQa1BFaTUzMnpZdWFILS1NTlFxMDZYZFFlblZnNkJMYlhGUWEtT2Rzd0JxRUh5bWIyUS1hYng5Z3Z1bTNObnhGdzZoRHNJbFZzamZaNlAtS0plZl83VXhyZjBvYWNTTENHajR1SHF4cGxXTVFPUjI1MElkRDVkVlBxSllITEw4Z1JBc1dFWmd5QW1sY1RKOV9QMmhsTlFVdmk5RjlyZXZGZ1JNR2t2OVFaNW9KUVZqMzR0ZlVDRWd2cXFQYUg5TXQzSmNqN2pVWVpfTUpvdGs3RHhwZw?oc=5",
+      "date": "2026-11-07"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": 0.0034,
+    "week": -0.0982,
+    "high": -0.3246
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Health Care",
+   "sector_etf": "RSPH",
+   "sector_moves": {
+    "day": 0.0012,
+    "week": -0.0058,
+    "high": -0.0058
+   },
+   "sector_at_open": 41.5,
+   "worst": {
+    "day": -0.0288,
+    "week": -0.1035,
+    "high": -0.3286
+   },
+   "provisional": {
+    "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "ADBE-2026-10-30",
+   "ticker": "ADBE",
+   "name": "Adobe Inc.",
+   "opened": "2026-10-30",
+   "price_at_open": 250.23,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 365.06,
+   "buy_below_at_open": 255.54,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Software-wide de-rating on fears that generative AI erodes Creative Cloud, plus CEO and CFO changes; results still growing",
+    "summary": "Adobe is ~30% below its 52-week high, in line with software peers (-24%), on fears that AI tools will commoditise creative software, made worse by the CEO's retirement (new CEO from Dec 1) and CFO and creative-business departures. Reported numbers do not show the damage yet: Q3 FY26 revenue +13%, ~44% operating margin, ARR +10% and analysts' revisions mostly up, so this is a de-rating so far. Watch net new ARR, Creative Cloud pricing and seats, and the first guide under the new CEO in December; the price (~$250) is just below buy-below (~$256) and the model's bear case already assumes AI erosion.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": null,
+    "last_report": "2026-09-10",
+    "peers": {
+     "basis": "industry: Software - Application",
+     "n": 8,
+     "median": {
+      "day": -0.010661614197285618,
+      "week": 0.005977415724647384,
+      "high": -0.2275688297376951
+     },
+     "tickers": [
+      "SHOP",
+      "CRM",
+      "UBER",
+      "ADP",
+      "NOW",
+      "INTU",
+      "CDNS",
+      "DDOG"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 24.47864,
+      "d30": 24.39502,
+      "chg": 0.003427748778234152
+     },
+     "+1y": {
+      "current": 27.40586,
+      "d30": 27.53806,
+      "chg": -0.004800628657211203
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 3
+     }
+    },
+    "news": [
+     {
+      "title": "Victorian public school employees to receive pay increase from 12 November",
+      "publisher": "Education Matters Magazine",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOEpTSXlvWmNYUk5vRlk0cVB5c204dFdGYlMxdGF0OWpUaXpaMGRsZE5seUltaVJ5OElleUJ2d3hsRGNDYy1CUU1NV2lEYlpNNE5zRWhHS2FPa3Q4WkFDTnc0WnJDWTBDenptRHd5THdMVUpBZkZoQ21ITUFhM1RGUFE0cUJnSGRDOEZQVnNJZjRhd29xeHQ3U2lJaWs4VVlEaVRRbF9KY0pCVUhaYk9Z?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Accenture vs. Adobe: What Does Fluctuating vs. Steady Revenue Tell Investors?",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSkljcUc5S2gxemo3cW9sb3NQalctR1dXVEJYX2ZSVGkteDU3d0xaY0QyX2hKRGZKNVpNV2VXSG5jcm5nNi1KX3N2dzdxVFVXMjF4SHFqWU4xTVhwYUpHQzZ2OVNlLW9qN19MREw0VlNwenNTX3lRQW51SndTWk1CaEZNaUhXZi00eGpjNmZYT3RFdXRuUkZlTU1NajFaM0FzZFhxb1l0WmF1T2lNREI0NGYzeEtZOVlYSU1mNFdaTQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Loan Demand Rises Even as Lenders Tighten Credit, Dallas Fed Finds",
+      "publisher": "Fort Worth Inc.",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM01aTmtCLXN4YXVGblRkbE13cDZ2eTNpZUZtUVlnQWl6TEFuSU51Z2lOQnN6RE9kYWlaSmFtSmVMYkE2WVlfUG9obVpWWVd5dlpETjJYbWpuQ2FtekRXYkNYMlZ2cnIwcG13aW1FVnpTa1hSUjJjWm1GT0pGWGNzQXV1cDN4UDZkVmR0eXNWYk83QVZvaEE?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Vanderbilt reacts to 'cybersecurity hacking incident': What to know",
+      "publisher": "ABC News - Breaking News, Latest News and Videos",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVlQzcmpaNVhIaFB3Zk1sMzNHTGZhZ3YwLXJ1bjRSMHRTTDBYdnI2ODFfNWd2dVR2c2ZBem9JVmRBWGVrNjE0eDdESWJGX0gzVTFObUpPNGs4VUhIcGtSbEIxVjRtTnBHOFhSTV81VUJtNmhrZ0dGNk5aNzFqV3JRSzU1ODl3akF6YU9SM3hPbC1fN3Nq0gGaAUFVX3lxTE0xU3hGeTNFWER4RGRhWXJUTERWU3Npd1ZLaTNzX2RlaDlmN0RNUGxBeDdMSXN0cXBYb0JDN2dEbDJXMGo2Q1h0bnV0ZEVzb3ViN0NVekROQTlZbGNMeTJqdUk4eUNnb2psd2lTVy1RV2RwMnRIdExzU0ZJdE9IUmhrSy11LUp6UVJxYW54cXp2a3JrcTBYblJyQkE?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Updates on CTx-1301, NDA Resubmission After FDA Complete Response Letter",
+      "publisher": "Psychiatric Times",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFdFUEFLRV9UTHdWR3luSUhYQWIxbC1wZnpCd3cySHcxMmIxZWlNZ1pxckRpRkRnaVY0SHU0dmRwYUtZNzJfblVuWjNFNkw5V0dKS0Ixa3dwVVlXT2kyWVNLNURGOTdGVkkzQ2FGZGNGcXZHSDFMV2h4VldwOWh2ZWJQUzhSMVB3ZG1LZ0dEdUVYTFZZRW82TGN3WXhuVHhCRXRsUjlkWms5NnNQelE?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Can Digital Memory Tests Detect Tau-Related Cognitive Change Before Alzheimer Disease?",
+      "publisher": "Psychiatric Times",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX2VTaG44T3F0QVB3dVRrYlRfRnhNOXpFUHlueDFrUXZEeVBoa0NtUldRcjBFX2F2NzhTdjdrNzN0YkdIbWtYUWZXNU9Jbk5lREpLQTNXN1JtSV9zcE42dGRYRUk5VFhtWEl4cEl6QUxCQVNpNjJ3cjF6UW9PT3hFV0VXZk1ISHBaRl9OUTBjU0h2MWttNVBvbzVrWE1Od01vZE1PN1c4WWxwdEdPeEtXSUN0SzVuMU5kaEN4MGR4Wlo?oc=5",
+      "date": "2026-11-10"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": 0.0038,
+    "week": -0.0438,
+    "high": -0.3354
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
+   "sector_moves": {
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
+   },
+   "sector_at_open": 62.95,
+   "worst": {
+    "day": -0.029,
+    "week": -0.0579,
+    "high": -0.3423
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -23% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "MKC-2026-10-30",
+   "ticker": "MKC",
+   "name": "McCormick & Co.",
+   "opened": "2026-10-30",
+   "price_at_open": 47.29,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 62.27,
+   "buy_below_at_open": 43.59,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Marked down for the pending Unilever Foods deal: holders keep 35% of the combined company, which takes on ~$15.7B of new debt plus integration risk",
+    "summary": "The core spice and flavour business is intact (Q3 FY26 beat, gross margin +190bp, guidance kept; volumes slightly negative), so the brand advantage is not hit. The lasting part is the change in what shareholders own and in the balance sheet (2-3 years of deleveraging expected), which the model's standalone fair value does not include. Watch leverage and financing terms at the mid-2027 close, synergy progress (~$600M) and Consumer volumes.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": null,
+    "last_report": "2026-10-01",
+    "peers": {
+     "basis": "industry: Packaged Foods",
+     "n": 4,
+     "median": {
+      "day": -0.00480862636216095,
+      "week": 0.029585624186958093,
+      "high": -0.14228905476101128
+     },
+     "tickers": [
+      "KHC",
+      "GIS",
+      "SJM",
+      "HRL"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 3.08974,
+      "d30": 3.08717,
+      "chg": 0.0008324776413348722
+     },
+     "+1y": {
+      "current": 3.22139,
+      "d30": 3.29584,
+      "chg": -0.022589081994271565
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 9
+     }
+    },
+    "news": [
+     {
+      "title": "McCormick & Co. Inc. stock underperforms Tuesday when compared to competitors",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOdVZGNUNUZDBQZGJrRk1lUndoNmt3QzBtMTNqQlFUV29ldlJ2NHZpbGNHY1h5aUtXRmFhOEh5T3VGMVhET2xWNmJUMnNyMVhyY01JNk5KSmJaczI5OG9zSmdLNVhNS01GWHg2TVh4Rnl0a1ZMancyRVhMOHJsYm52aEhtcVFDYUxIYVpNQVRFMm5qYVNVb0RmVUtfWkh1ekdZMFE1SVQ3MGJhTmpBS3RZSDRzT3hvTC0xNlpZa3l5amFfb2V4QzJBc2k4NkxjenBCdHlkXzZtVWdoajU3emxRRGY5bFpodw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
+      "publisher": "Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9pZlUzZF9wNkFMQVJnZGk4OElhY2tjUXFRZTFoZDR1RmcxdnRQQVFhWVVVNGV5TWZKeG1tZ3M5VENYNkJTSkdQM3Jzb09BVk9F?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC) Stock Price, News, Quote & History",
+      "publisher": "Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIRm9XbWZRRFlwLTNNblNhdG1hVlJKUlhGTTN4NHF2bUNBNG1KNVU0N3N0WERPLUNsTFQ5UnFybnptR0g3ZWVVWHFac3EwbkVo?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
+      "publisher": "Yahoo Finance Australia",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBaY0lVbmktaXE3bzYxcG5VMmRjVzFuZjFTSG4wWXpjM3ZJUVZBTjY5eGc3QTl5aGU1SFNGNFlKZ3FkZU4zMmItXzVDSEhqcjhH?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "McCormick & Co. Inc. stock underperforms Monday when compared to competitors",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTnQ3OFFGVWZ1eHh0MDBWU2FXalpyUkp5QUVESklXdi1ETkxFaS1NMmFLWU5sNEU0Q3drOW56clZBcUJUdjJXOEEwaWhQazU0TFJ5Yk5OOGx4dHNHV2xuWlJWZ1NqbUl5dmNtVjdvM3VOczg4TE1pNEtYaUdiaVlVSWtmRlVvcE1OUDJyTlhPWDFVYllXLXRKcEt2ZTY4Qy04TUt4R3hHV2gzcHg4YzdXMVNpdVpVZEZTOHRJYXhTTlprWEs1NHhQdWkxOXZUSDczQzdxM1RCQVd6RlJnZk1zWFJuNFE?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "McCormick & Company, Incorporated $MKC Shares Newly Bought by Hohimer Wealth Management LLC",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZURHZ2dlazhqQVQxTHBhNG1nMUtCbkVVcUJQVEs4dnY1MlBKNC1yQmFXTTFfN2tXdlRodklPUEdWSXVCUkg0TGVpanRfelpxeDlfU2Y0a2FEemJ5eG9Ra3dZMzFOWlV2R1V0WDlkNG1vRWI1cXZPaE56c2V5ZEI3MGNqaEg4TkswbU1RQ25sWWRka29KZlZJaUh1RmUxZkVoUWkybVVYVTFOQzBPNTdiTEI5Q21laDRrLTdQVWwySUdaT3ZuUllxaWk5YU9rbThTSVowTzNrTGtMVnNfbkxBRGdB?oc=5",
+      "date": "2026-11-09"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": 0.0045,
+    "week": -0.0703,
+    "high": -0.345
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Consumer Staples",
+   "sector_etf": "RSPS",
+   "sector_moves": {
+    "day": 0.0025,
+    "week": -0.0049,
+    "high": -0.0253
+   },
+   "sector_at_open": 31.53,
+   "worst": {
+    "day": -0.0384,
+    "week": -0.0955,
+    "high": -0.3627
+   },
+   "provisional": {
+    "cause": "Long slide: -34% below its 52-week high (S&P 500 -2%, Consumer Staples -3%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
    "id": "BKNG-2026-10-30",
    "ticker": "BKNG",
    "name": "Booking Holdings Inc.",
@@ -4244,21 +4378,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.01,
-    "week": -0.0592,
-    "high": -0.2678
+    "day": 0.006,
+    "week": -0.0629,
+    "high": -0.2707
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0021,
-    "week": -0.0197,
-    "high": -0.0317
+    "day": -0.0027,
+    "week": -0.0204,
+    "high": -0.0323
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -4268,136 +4402,6 @@
    },
    "provisional": {
     "cause": "Long slide: -27% below its 52-week high (S&P 500 -2%, Consumer Discretionary -3%): read why",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "LII-2026-11-02",
-   "ticker": "LII",
-   "name": "Lennox International",
-   "opened": "2026-11-02",
-   "price_at_open": 353.64,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 395.29,
-   "buy_below_at_open": 276.7,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "Second straight 2026 guidance cut (EPS $23-24 to $21.00-21.50): price increase failed, share lost to Carrier/Trane, tariffs",
-    "summary": "Lennox missed Q3 (adjusted EPS $6.84 vs $7.18) and cut guidance for the second quarter running; residential (Home Comfort) margin fell 490 basis points as a mid-year price increase did not stick and Lennox cut prices to win back share lost to Carrier, Trane and new low-cost overseas entrants, while tariffs and weak housing affordability added cost and volume pressure. Some of this is cyclical (housing, mortgage rates, tariff timing that management calls a short-term mismatch), but losing pricing power and share in its core dealer channel is a possible lasting competitive change, and the 2027 recovery plan depends on competitors following a price increase. Watch 2027 pricing realisation, HCS margins and share data from distributors such as Watsco.",
-    "model_changed": false,
-    "date": "2026-11-10",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": "2026-10-28",
-    "last_report": "2026-10-28",
-    "peers": {
-     "basis": "industry: Building Products & Equipment",
-     "n": 4,
-     "median": {
-      "day": -0.004307769827022634,
-      "week": -0.017262693426860543,
-      "high": -0.1376276025239918
-     },
-     "tickers": [
-      "JCI",
-      "TT",
-      "CARR",
-      "MAS"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 21.46697,
-      "d30": 23.59699,
-      "chg": -0.09026659756180777
-     },
-     "+1y": {
-      "current": 23.46673,
-      "d30": 26.07682,
-      "chg": -0.10009234254790278
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 15
-     }
-    },
-    "news": [
-     {
-      "title": "Lennox International EVP Nassab sells $85,814 in stock",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRDZKSVRGYmx0QjZvSjZGVXhiem82UnBaYmp5ZEhSc1NZaVQtRlpVRUhOb0l2LURUaWFoSHhVVHRBV3BQQ3Y0d1kzZEZLUG5DRzktUGF0ZmtjWUdqSEljNU0taDB3OUtERDB5elh2S29RbGE4Rms1LS0yc3BpWkloNmFkWUd0dnBWY2xOVkZ2TVhyVllmc3BIcXR4VlVUYm9EaEpKVjh0cmRwaWx5bU02QTEyc1EwYW1a?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Lennox International evp Sessa sells $292,773 of stock",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVJycWV1TzdUUlotWlcxU2VnRnlnaGQyV3NES0xmTHVFbHEtbzBBRXBuZGlPTGhVYmJtenJHSjU0UnpDZW1FNTdUZ2p1VERtRnNiVHNqeV9ZeFpmRTExdUlpV21LckwtVzJaNTlQVmphdExhUmYzZ3d4bnM4YTg1OUVPX1I4WEZtemVfaUZheU9DeXRWajJoN01maE02aUtIa3RVRnRXeDNCZE1iMTgydzVvaHBya0ZD?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Lennox International (LII) Could Be 20% Undervalued After Q3 Results And New Guidance",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVG1tb0prQ2tubmxrdFU2Tm5MbzdrUkl5bjZOUE9pRmluUHk0eFNpVjQzcXlKRnV6NmhaTzMtUkttbFhIb1NCVHhJbFRNTnlCLWU3NWtuT1VtbXhuUERSRkhrbUxBbG9sTXZGV2k4M3padGJSbTBtSXZ3dVVxM24wbkNEbXlLTTcyS2tZT2Z6c2pNQ2ZUZGhjQmJ6M2RQVnNlY2pJdnFJd0tVWjJHWmVCWm11QVRRQ3RzWkV3czBpWjlDNll5YWMzRk1KdDFLR0p4OVAzVXR2REVrV21MLXfSAd4BQVVfeXFMTlRtbW9Ka0Nrbm5sa3RVNk5uTG83a1JJeW42TlBPaUZpblB5NHhTaVY0M3F5SkZ1ejZoWk8zLVJLbWxYSG9TQlR4SWxUTU55Qi1lNzVrbk9VbW14blBEUkZIa21MQWxvbE12RldpODN6WnRiUm0wbUl2d3VVcTNuMG5DRG15S003MktrWU9menNqTUNmVGRoY0JiejNkUFZzZWNqSXZxSXdLVVoyR1plQlptdUFUUUN0c1pFd3MwaVo5QzZZeWFjM0ZNSnQxS0dKeDlQM1V0dkRFa1dtTC13?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "An EVP sells 245 shares and returns 1,272 to Lennox International (LII).",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOWNaVGtjMXBRdHVZdGRHM0hmT2R4SE5aYlp0T1FyZk1vYjBmS0EwOVV4RkRMRVBtbUNTd0ZrclJDSTF2SjJoOTRlb19QaGV2dTVlNEZNR0Zad2hmelFydTdyTDJXTkg2MWQzVERwVGhjaWxmd3Z4aGdDVHI5anR2Vjc2RFl4YW5lTGV6X1JZVTViQUtrYThWU0Q2Y01JREhmbkt0OEVzaUNMVjN1RFVJVG0ySUFXMmhK?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "An officer at Lennox International (LII) sold 829 shares and returned 4,229 to the issuer.",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ2MtRkg1N2hLTFJ6U1NtQlBRell1eERHcFJ6aWtISERsSGdSaGpDUTZqTUpEbXA5S2wzVnRFc1pZNHl1Q1Ffbl9DS1FTVkJZaEFWQXBJQWhMVkViYnhWVl9hcFRQajJCWjJBejNTR2Z1a0RLMU5fQzNybmlibjlIa2tkbW5IZWFTVWl2UXUzcENlQVhnc293Sm1QSmpjb0dSZm51QnNSdlJRN1VzYlhLaDI4YmZBUGpw?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Lennox International xStock Price | LIIX Price Today, Live Chart, USD converter, Market Capitalization",
-      "publisher": "CryptoRank",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5va1ZtWVIzVFM3VmszanZEWTlQZVhPOUVLVDExUllEeHZFWUprS3c2Y0NLYXItdXQzRjlEenZjQTB5c3dBTXpnREtOWVhjNkZRT2N4MG9HdXVPOFFreFozMTFLak5wQQ?oc=5",
-      "date": "2026-11-10"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": 0.0105,
-    "week": -0.0206,
-    "high": -0.3864
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Industrials",
-   "sector_etf": "RSPN",
-   "sector_moves": {
-    "day": 0.0097,
-    "week": 0.0027,
-    "high": -0.0445
-   },
-   "sector_at_open": 61.72,
-   "worst": {
-    "day": -0.0303,
-    "week": -0.07,
-    "high": -0.4082
-   },
-   "provisional": {
-    "cause": "Earnings reaction and next-year EPS forecasts cut -10%: check whether the setback lasts",
     "lean": "unclear"
    }
   },
@@ -4508,21 +4512,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0125,
-    "week": -0.0335,
-    "high": -0.4905
+    "day": 0.0065,
+    "week": -0.0393,
+    "high": -0.4935
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
+    "day": 0.0312,
+    "week": 0.0015,
+    "high": -0.114
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -4532,6 +4536,136 @@
    },
    "provisional": {
     "cause": "Long slide: -49% below its 52-week high (S&P 500 -2%, Information Technology -11%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "LII-2026-11-02",
+   "ticker": "LII",
+   "name": "Lennox International",
+   "opened": "2026-11-02",
+   "price_at_open": 353.64,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 395.29,
+   "buy_below_at_open": 276.7,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Second straight 2026 guidance cut (EPS $23-24 to $21.00-21.50): price increase failed, share lost to Carrier/Trane, tariffs",
+    "summary": "Lennox missed Q3 (adjusted EPS $6.84 vs $7.18) and cut guidance for the second quarter running; residential (Home Comfort) margin fell 490 basis points as a mid-year price increase did not stick and Lennox cut prices to win back share lost to Carrier, Trane and new low-cost overseas entrants, while tariffs and weak housing affordability added cost and volume pressure. Some of this is cyclical (housing, mortgage rates, tariff timing that management calls a short-term mismatch), but losing pricing power and share in its core dealer channel is a possible lasting competitive change, and the 2027 recovery plan depends on competitors following a price increase. Watch 2027 pricing realisation, HCS margins and share data from distributors such as Watsco.",
+    "model_changed": false,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-11",
+    "earnings_on": "2026-10-28",
+    "last_report": "2026-10-28",
+    "peers": {
+     "basis": "industry: Building Products & Equipment",
+     "n": 4,
+     "median": {
+      "day": -0.004307769827022634,
+      "week": -0.017262693426860543,
+      "high": -0.1376276025239918
+     },
+     "tickers": [
+      "JCI",
+      "TT",
+      "CARR",
+      "MAS"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 21.46697,
+      "d30": 23.59699,
+      "chg": -0.09026659756180777
+     },
+     "+1y": {
+      "current": 23.46673,
+      "d30": 26.07682,
+      "chg": -0.10009234254790278
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 15
+     }
+    },
+    "news": [
+     {
+      "title": "Lennox International EVP Nassab sells $85,814 in stock",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRDZKSVRGYmx0QjZvSjZGVXhiem82UnBaYmp5ZEhSc1NZaVQtRlpVRUhOb0l2LURUaWFoSHhVVHRBV3BQQ3Y0d1kzZEZLUG5DRzktUGF0ZmtjWUdqSEljNU0taDB3OUtERDB5elh2S29RbGE4Rms1LS0yc3BpWkloNmFkWUd0dnBWY2xOVkZ2TVhyVllmc3BIcXR4VlVUYm9EaEpKVjh0cmRwaWx5bU02QTEyc1EwYW1a?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Lennox International evp Sessa sells $292,773 of stock",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVJycWV1TzdUUlotWlcxU2VnRnlnaGQyV3NES0xmTHVFbHEtbzBBRXBuZGlPTGhVYmJtenJHSjU0UnpDZW1FNTdUZ2p1VERtRnNiVHNqeV9ZeFpmRTExdUlpV21LckwtVzJaNTlQVmphdExhUmYzZ3d4bnM4YTg1OUVPX1I4WEZtemVfaUZheU9DeXRWajJoN01maE02aUtIa3RVRnRXeDNCZE1iMTgydzVvaHBya0ZD?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Lennox International (LII) Could Be 20% Undervalued After Q3 Results And New Guidance",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVG1tb0prQ2tubmxrdFU2Tm5MbzdrUkl5bjZOUE9pRmluUHk0eFNpVjQzcXlKRnV6NmhaTzMtUkttbFhIb1NCVHhJbFRNTnlCLWU3NWtuT1VtbXhuUERSRkhrbUxBbG9sTXZGV2k4M3padGJSbTBtSXZ3dVVxM24wbkNEbXlLTTcyS2tZT2Z6c2pNQ2ZUZGhjQmJ6M2RQVnNlY2pJdnFJd0tVWjJHWmVCWm11QVRRQ3RzWkV3czBpWjlDNll5YWMzRk1KdDFLR0p4OVAzVXR2REVrV21MLXfSAd4BQVVfeXFMTlRtbW9Ka0Nrbm5sa3RVNk5uTG83a1JJeW42TlBPaUZpblB5NHhTaVY0M3F5SkZ1ejZoWk8zLVJLbWxYSG9TQlR4SWxUTU55Qi1lNzVrbk9VbW14blBEUkZIa21MQWxvbE12RldpODN6WnRiUm0wbUl2d3VVcTNuMG5DRG15S003MktrWU9menNqTUNmVGRoY0JiejNkUFZzZWNqSXZxSXdLVVoyR1plQlptdUFUUUN0c1pFd3MwaVo5QzZZeWFjM0ZNSnQxS0dKeDlQM1V0dkRFa1dtTC13?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "An EVP sells 245 shares and returns 1,272 to Lennox International (LII).",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOWNaVGtjMXBRdHVZdGRHM0hmT2R4SE5aYlp0T1FyZk1vYjBmS0EwOVV4RkRMRVBtbUNTd0ZrclJDSTF2SjJoOTRlb19QaGV2dTVlNEZNR0Zad2hmelFydTdyTDJXTkg2MWQzVERwVGhjaWxmd3Z4aGdDVHI5anR2Vjc2RFl4YW5lTGV6X1JZVTViQUtrYThWU0Q2Y01JREhmbkt0OEVzaUNMVjN1RFVJVG0ySUFXMmhK?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "An officer at Lennox International (LII) sold 829 shares and returned 4,229 to the issuer.",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ2MtRkg1N2hLTFJ6U1NtQlBRell1eERHcFJ6aWtISERsSGdSaGpDUTZqTUpEbXA5S2wzVnRFc1pZNHl1Q1Ffbl9DS1FTVkJZaEFWQXBJQWhMVkViYnhWVl9hcFRQajJCWjJBejNTR2Z1a0RLMU5fQzNybmlibjlIa2tkbW5IZWFTVWl2UXUzcENlQVhnc293Sm1QSmpjb0dSZm51QnNSdlJRN1VzYlhLaDI4YmZBUGpw?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Lennox International xStock Price | LIIX Price Today, Live Chart, USD converter, Market Capitalization",
+      "publisher": "CryptoRank",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5va1ZtWVIzVFM3VmszanZEWTlQZVhPOUVLVDExUllEeHZFWUprS3c2Y0NLYXItdXQzRjlEenZjQTB5c3dBTXpnREtOWVhjNkZRT2N4MG9HdXVPOFFreFozMTFLak5wQQ?oc=5",
+      "date": "2026-11-10"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-11",
+   "moves": {
+    "day": 0.0075,
+    "week": -0.0235,
+    "high": -0.3882
+   },
+   "spy": {
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
+   },
+   "sector": "Industrials",
+   "sector_etf": "RSPN",
+   "sector_moves": {
+    "day": 0.0099,
+    "week": 0.0029,
+    "high": -0.0444
+   },
+   "sector_at_open": 61.72,
+   "worst": {
+    "day": -0.0303,
+    "week": -0.07,
+    "high": -0.4082
+   },
+   "provisional": {
+    "cause": "Earnings reaction and next-year EPS forecasts cut -10%: check whether the setback lasts",
     "lean": "unclear"
    }
   },
@@ -4670,140 +4804,6 @@
    }
   },
   {
-   "id": "ADBE-2026-10-30",
-   "ticker": "ADBE",
-   "name": "Adobe Inc.",
-   "opened": "2026-10-30",
-   "price_at_open": 250.23,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 365.06,
-   "buy_below_at_open": 255.54,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Software-wide de-rating on fears that generative AI erodes Creative Cloud, plus CEO and CFO changes; results still growing",
-    "summary": "Adobe is ~30% below its 52-week high, in line with software peers (-24%), on fears that AI tools will commoditise creative software, made worse by the CEO's retirement (new CEO from Dec 1) and CFO and creative-business departures. Reported numbers do not show the damage yet: Q3 FY26 revenue +13%, ~44% operating margin, ARR +10% and analysts' revisions mostly up, so this is a de-rating so far. Watch net new ARR, Creative Cloud pricing and seats, and the first guide under the new CEO in December; the price (~$250) is just below buy-below (~$256) and the model's bear case already assumes AI erosion.",
-    "model_changed": false,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-11",
-    "earnings_on": null,
-    "last_report": "2026-09-10",
-    "peers": {
-     "basis": "industry: Software - Application",
-     "n": 8,
-     "median": {
-      "day": -0.010661614197285618,
-      "week": 0.005977415724647384,
-      "high": -0.2275688297376951
-     },
-     "tickers": [
-      "SHOP",
-      "CRM",
-      "UBER",
-      "ADP",
-      "NOW",
-      "INTU",
-      "CDNS",
-      "DDOG"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 24.47864,
-      "d30": 24.39502,
-      "chg": 0.003427748778234152
-     },
-     "+1y": {
-      "current": 27.40586,
-      "d30": 27.53806,
-      "chg": -0.004800628657211203
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 3
-     }
-    },
-    "news": [
-     {
-      "title": "Victorian public school employees to receive pay increase from 12 November",
-      "publisher": "Education Matters Magazine",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOEpTSXlvWmNYUk5vRlk0cVB5c204dFdGYlMxdGF0OWpUaXpaMGRsZE5seUltaVJ5OElleUJ2d3hsRGNDYy1CUU1NV2lEYlpNNE5zRWhHS2FPa3Q4WkFDTnc0WnJDWTBDenptRHd5THdMVUpBZkZoQ21ITUFhM1RGUFE0cUJnSGRDOEZQVnNJZjRhd29xeHQ3U2lJaWs4VVlEaVRRbF9KY0pCVUhaYk9Z?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Accenture vs. Adobe: What Does Fluctuating vs. Steady Revenue Tell Investors?",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSkljcUc5S2gxemo3cW9sb3NQalctR1dXVEJYX2ZSVGkteDU3d0xaY0QyX2hKRGZKNVpNV2VXSG5jcm5nNi1KX3N2dzdxVFVXMjF4SHFqWU4xTVhwYUpHQzZ2OVNlLW9qN19MREw0VlNwenNTX3lRQW51SndTWk1CaEZNaUhXZi00eGpjNmZYT3RFdXRuUkZlTU1NajFaM0FzZFhxb1l0WmF1T2lNREI0NGYzeEtZOVlYSU1mNFdaTQ?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Loan Demand Rises Even as Lenders Tighten Credit, Dallas Fed Finds",
-      "publisher": "Fort Worth Inc.",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM01aTmtCLXN4YXVGblRkbE13cDZ2eTNpZUZtUVlnQWl6TEFuSU51Z2lOQnN6RE9kYWlaSmFtSmVMYkE2WVlfUG9obVpWWVd5dlpETjJYbWpuQ2FtekRXYkNYMlZ2cnIwcG13aW1FVnpTa1hSUjJjWm1GT0pGWGNzQXV1cDN4UDZkVmR0eXNWYk83QVZvaEE?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Vanderbilt reacts to 'cybersecurity hacking incident': What to know",
-      "publisher": "ABC News - Breaking News, Latest News and Videos",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVlQzcmpaNVhIaFB3Zk1sMzNHTGZhZ3YwLXJ1bjRSMHRTTDBYdnI2ODFfNWd2dVR2c2ZBem9JVmRBWGVrNjE0eDdESWJGX0gzVTFObUpPNGs4VUhIcGtSbEIxVjRtTnBHOFhSTV81VUJtNmhrZ0dGNk5aNzFqV3JRSzU1ODl3akF6YU9SM3hPbC1fN3Nq0gGaAUFVX3lxTE0xU3hGeTNFWER4RGRhWXJUTERWU3Npd1ZLaTNzX2RlaDlmN0RNUGxBeDdMSXN0cXBYb0JDN2dEbDJXMGo2Q1h0bnV0ZEVzb3ViN0NVekROQTlZbGNMeTJqdUk4eUNnb2psd2lTVy1RV2RwMnRIdExzU0ZJdE9IUmhrSy11LUp6UVJxYW54cXp2a3JrcTBYblJyQkE?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Updates on CTx-1301, NDA Resubmission After FDA Complete Response Letter",
-      "publisher": "Psychiatric Times",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFdFUEFLRV9UTHdWR3luSUhYQWIxbC1wZnpCd3cySHcxMmIxZWlNZ1pxckRpRkRnaVY0SHU0dmRwYUtZNzJfblVuWjNFNkw5V0dKS0Ixa3dwVVlXT2kyWVNLNURGOTdGVkkzQ2FGZGNGcXZHSDFMV2h4VldwOWh2ZWJQUzhSMVB3ZG1LZ0dEdUVYTFZZRW82TGN3WXhuVHhCRXRsUjlkWms5NnNQelE?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Can Digital Memory Tests Detect Tau-Related Cognitive Change Before Alzheimer Disease?",
-      "publisher": "Psychiatric Times",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX2VTaG44T3F0QVB3dVRrYlRfRnhNOXpFUHlueDFrUXZEeVBoa0NtUldRcjBFX2F2NzhTdjdrNzN0YkdIbWtYUWZXNU9Jbk5lREpLQTNXN1JtSV9zcE42dGRYRUk5VFhtWEl4cEl6QUxCQVNpNjJ3cjF6UW9PT3hFV0VXZk1ISHBaRl9OUTBjU0h2MWttNVBvbzVrWE1Od01vZE1PN1c4WWxwdEdPeEtXSUN0SzVuMU5kaEN4MGR4Wlo?oc=5",
-      "date": "2026-11-10"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-11",
-   "moves": {
-    "day": 0.0136,
-    "week": -0.0344,
-    "high": -0.3289
-   },
-   "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
-   },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
-   "sector_moves": {
-    "day": 0.0343,
-    "week": 0.0044,
-    "high": -0.1114
-   },
-   "sector_at_open": 62.95,
-   "worst": {
-    "day": -0.029,
-    "week": -0.0579,
-    "high": -0.3423
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -23% too (rates, sector rotation or an industry worry)",
-    "lean": "temporary"
-   }
-  },
-  {
    "id": "NFLX-2026-10-30",
    "ticker": "NFLX",
    "name": "Netflix Inc.",
@@ -4910,21 +4910,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0149,
-    "week": -0.033,
-    "high": -0.4454
+    "day": 0.0202,
+    "week": -0.0279,
+    "high": -0.4424
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0074,
-    "week": 0.0357,
-    "high": -0.0794
+    "day": 0.0063,
+    "week": 0.0345,
+    "high": -0.0804
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -4933,7 +4933,7 @@
     "high": -0.4637
    },
    "provisional": {
-    "cause": "Long slide: -45% below its 52-week high (S&P 500 -2%, Communication Services -8%): read why",
+    "cause": "Long slide: -44% below its 52-week high (S&P 500 -2%, Communication Services -8%): read why",
     "lean": "unclear"
    }
   },
@@ -5036,21 +5036,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-11",
    "moves": {
-    "day": 0.0241,
-    "week": -0.0222,
-    "high": -0.479
+    "day": 0.025,
+    "week": -0.0214,
+    "high": -0.4785
    },
    "spy": {
-    "day": 0.0138,
-    "week": -0.0085,
-    "high": -0.0241
+    "day": 0.0132,
+    "week": -0.0091,
+    "high": -0.0247
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
    "sector_moves": {
-    "day": 0.0167,
-    "week": 0.0027,
-    "high": -0.0937
+    "day": 0.0213,
+    "week": 0.0072,
+    "high": -0.0895
    },
    "sector_at_open": 109.68,
    "worst": {
@@ -5204,6 +5204,6 @@
   "NMIH",
   "TPL"
  ],
- "updated": "2026-11-11T20:11:49Z",
+ "updated": "2026-11-11T21:13:52Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
