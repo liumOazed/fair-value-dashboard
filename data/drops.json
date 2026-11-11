@@ -15,8 +15,16 @@
     "week"
    ],
    "emergency": true,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Q4 billings guide of ~8% (federal deals pulled into Q3) after a beat-and-raise quarter",
+    "summary": "Qualys beat Q3 (revenue +11%, billings +14%, non-GAAP EPS $2.12 vs $1.96) and raised 2026 guidance, but guided Q4 billings to only ~8% growth because Q3's beat came mostly from federal deals closing earlier than planned; the -13.5% day was company-specific (sector -0.2%, peers -1.4%). This looks like timing and a reset of high expectations rather than lasting damage: margins (46% op.), net retention (105%), net cash and buybacks are intact and next-year EPS forecasts rose 2% over 30 days. Watch Q4 billings and 2027 growth guidance in February for signs that competition is slowing growth below ~8%; our fair value ($100) is already well below the price, so it does not look too high.",
+    "model_changed": false,
+    "date": "2026-11-11",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-11",
@@ -4945,6 +4953,6 @@
  "review_pending": [
   "QLYS"
  ],
- "updated": "2026-11-11T00:54:30Z",
+ "updated": "2026-11-11T02:25:26Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
