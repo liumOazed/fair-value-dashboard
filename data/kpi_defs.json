@@ -3638,6 +3638,412 @@
      "better": "up"
     }
    ]
+  },
+  "CPRT": {
+   "name": "Copart",
+   "kpis": [
+    {
+     "id": "units_sold_growth",
+     "label": "Vehicles sold growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "service_revenue_growth",
+     "label": "Service revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "revenue_per_unit_growth",
+     "label": "Revenue per vehicle growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "AOS": {
+   "name": "A. O. Smith",
+   "kpis": [
+    {
+     "id": "north_america_sales_growth",
+     "label": "North America sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "rest_of_world_sales_growth",
+     "label": "Rest of World sales growth (China, India)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "north_america_segment_margin",
+     "label": "North America segment margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "rest_of_world_segment_margin",
+     "label": "Rest of World segment margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "TPL": {
+   "name": "Texas Pacific Land",
+   "kpis": [
+    {
+     "id": "royalty_production_boe_per_day",
+     "label": "Royalty production (thousand barrels of oil equivalent a day)",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "oil_and_gas_royalty_revenue",
+     "label": "Oil and gas royalty revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "water_revenue",
+     "label": "Water sales and produced-water royalties",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "realized_price_per_boe",
+     "label": "Average realized price per barrel of oil equivalent",
+     "unit": "usd",
+     "better": "none"
+    }
+   ]
+  },
+  "VICI": {
+   "name": "VICI Properties",
+   "kpis": [
+    {
+     "id": "affo_per_share",
+     "label": "AFFO per share",
+     "unit": "usd",
+     "better": "up"
+    },
+    {
+     "id": "affo_per_share_growth",
+     "label": "AFFO per share growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "net_debt_ebitda",
+     "label": "Net debt ÷ annualised adjusted EBITDA",
+     "unit": "x",
+     "better": "down"
+    },
+    {
+     "id": "investments_announced",
+     "label": "New investments announced",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "LIN": {
+   "name": "Linde",
+   "kpis": [
+    {
+     "id": "price_mix_growth",
+     "label": "Price and mix contribution to sales",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "volume_growth",
+     "label": "Volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_margin",
+     "label": "Adjusted operating margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "project_backlog",
+     "label": "Sale-of-gas project backlog",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "CL": {
+   "name": "Colgate-Palmolive",
+   "kpis": [
+    {
+     "id": "organic_sales_growth",
+     "label": "Organic sales growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "volume_growth",
+     "label": "Volume growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "toothpaste_global_share",
+     "label": "Global toothpaste market share",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ALGN": {
+   "name": "Align Technology",
+   "kpis": [
+    {
+     "id": "clear_aligner_shipments_growth",
+     "label": "Clear aligner case shipments growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "clear_aligner_asp",
+     "label": "Clear aligner average selling price",
+     "unit": "usd",
+     "better": "up"
+    },
+    {
+     "id": "systems_and_services_revenue_growth",
+     "label": "Scanner and services revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "ANET": {
+   "name": "Arista Networks",
+   "kpis": [
+    {
+     "id": "revenue_growth",
+     "label": "Revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin_non_gaap",
+     "label": "Gross margin (non-GAAP)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "deferred_revenue",
+     "label": "Total deferred revenue",
+     "unit": "usd_b",
+     "better": "up"
+    },
+    {
+     "id": "purchase_commitments",
+     "label": "Purchase commitments",
+     "unit": "usd_b",
+     "better": "none"
+    }
+   ]
+  },
+  "WSM": {
+   "name": "Williams-Sonoma",
+   "kpis": [
+    {
+     "id": "comparable_brand_revenue_growth",
+     "label": "Comparable brand revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "pottery_barn_comp",
+     "label": "Pottery Barn comparable growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "west_elm_comp",
+     "label": "West Elm comparable growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "operating_margin",
+     "label": "Operating margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "LRN": {
+   "name": "Stride",
+   "kpis": [
+    {
+     "id": "total_enrollments_growth",
+     "label": "Total enrolments growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "career_learning_enrollments_growth",
+     "label": "Career Learning enrolments growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "revenue_per_enrollment_growth",
+     "label": "Revenue per enrolment growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_operating_income",
+     "label": "Adjusted operating income",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "MCRI": {
+   "name": "Monarch Casino & Resort",
+   "kpis": [
+    {
+     "id": "casino_revenue_growth",
+     "label": "Casino revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "hotel_revenue_growth",
+     "label": "Hotel revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "share_repurchases",
+     "label": "Share repurchases",
+     "unit": "usd_b",
+     "better": "none"
+    }
+   ]
+  },
+  "CARG": {
+   "name": "CarGurus",
+   "kpis": [
+    {
+     "id": "marketplace_revenue_growth",
+     "label": "Marketplace revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "us_paying_dealers",
+     "label": "US paying dealers",
+     "unit": "num",
+     "better": "up"
+    },
+    {
+     "id": "us_qarsd",
+     "label": "US quarterly average revenue per subscribing dealer",
+     "unit": "usd",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
+  },
+  "USLM": {
+   "name": "United States Lime & Minerals",
+   "kpis": [
+    {
+     "id": "revenue_growth",
+     "label": "Revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "gross_margin",
+     "label": "Gross margin",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "capital_spending",
+     "label": "Capital spending",
+     "unit": "usd_b",
+     "better": "none"
+    },
+    {
+     "id": "cash_and_equivalents",
+     "label": "Cash",
+     "unit": "usd_b",
+     "better": "up"
+    }
+   ]
+  },
+  "EPAC": {
+   "name": "Enerpac Tool Group",
+   "kpis": [
+    {
+     "id": "organic_revenue_growth",
+     "label": "Organic revenue growth",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "product_revenue_growth",
+     "label": "Product revenue growth (organic)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "service_revenue_growth",
+     "label": "Service revenue growth (organic)",
+     "unit": "pct",
+     "better": "up"
+    },
+    {
+     "id": "adjusted_ebitda_margin",
+     "label": "Adjusted EBITDA margin",
+     "unit": "pct",
+     "better": "up"
+    }
+   ]
   }
  }
 }
