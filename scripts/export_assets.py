@@ -6,6 +6,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 res = json.load(open(ROOT / "model/results.json"))
 _M = json.load(open(ROOT / "data/moat.json"))["classes"]
 MOAT_NOTE = {k: v.get("about") for k, v in _M.items()}
+_OV = json.load(open(ROOT / "data/scenario_overrides.json"))["stocks"]
 path = ROOT / "data/assets.json"
 doc = json.load(open(path))
 by = {a["ticker"]: a for a in doc["assets"]}
@@ -26,6 +27,8 @@ for t, a in res["assets"].items():
         e["start_margin"] = rnd(a["start_margin"], 4); e["net_cash"] = rnd(a["net_cash"]); e["shares"] = a["shares"]; e["rev"] = a["rev"]
         e["dcf_method"] = a.get("dcf_method"); e["wacc"] = {k: rnd(v, 4) for k, v in a.get("wacc", {}).items()}
         e["fcf_inputs"] = dict(fcf=a["fcf"], sbc=a["sbc"])
+        e["scen_source"] = a.get("scen_source")       # "rule" (scripts/scenario_rules.py) or "override" (hand-written, with a reason)
+        e["scen_override"] = _OV.get(t) if a.get("scen_source") == "override" else None
         sp = a.get("separation")      # cash-flow separation (model.stock_setup): interest on cash, acquisitions, lenders, tax saving
         e["separation"] = None if not sp else {k: (None if v is None else rnd(v, 4)) for k, v in sp.items()}
         e["moat"] = a.get("moat"); e["cap_years"] = a.get("cap_years"); e["moat_reason"] = a.get("moat_reason")
@@ -58,7 +61,7 @@ _RS = ROOT / "data/scenarios_rule.json"        # rule-based scenarios (shadow; s
 RS = json.load(open(_RS))["stocks"] if _RS.exists() else {}
 for t, e in by.items():
     x = RS.get(t)
-    if x: e["rule_shadow"] = {k: x[k] for k in ("scen", "why", "fair_value", "bear", "base", "bull", "diff")}
+    if x: e["rule_shadow"] = {k: x[k] for k in ("scen", "why", "fair_value", "bear", "base", "bull", "diff", "hand")}
     else: e.pop("rule_shadow", None)
 doc["assets"] = list(by.values())
 json.dump(doc, open(path, "w"), indent=1)

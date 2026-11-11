@@ -33,6 +33,9 @@ jobs:
         run: |
           UP=$(cat data/.auto_updated.txt 2>/dev/null || true)
           if [ -z "$UP" ]; then echo "nothing auto-updated"; exit 0; fi
+          # rule-based scenarios: fresh analyst estimates for the updated stocks, then rebuild the rules before the model
+          python scripts/fetch_inputs.py --tickers "$(echo $UP | tr ' ' ',')" --out "data/inputs/inputs_$(date +%F)_earnings.json" || true
+          python scripts/scenario_rules.py
           python model/model.py
           python scripts/auto_update.py --finalize
           python model/model.py
@@ -51,7 +54,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           UP=$(cat data/.auto_updated.txt 2>/dev/null || true)
           git add data/earnings_calendar.json data/pending_reports.json data/review_queue.json data/data_through.json \
-                  model/model.py model/results.json data/assets.json data/fv_history.json data/snapshot.json data/duration.json data/mc_horizon.json 2>/dev/null || true
+                  model/model.py model/results.json data/assets.json data/fv_history.json data/snapshot.json data/duration.json data/mc_horizon.json data/scenarios_rule.json data/inputs 2>/dev/null || true
           MSG="Earnings watch $(date -u +%Y-%m-%d)"
           if [ -n "$UP" ]; then MSG="Earnings auto-update $(date -u +%Y-%m-%d): $UP (numbers from Yahoo; text review pending)"; fi
           git diff --staged --quiet || git commit -m "$MSG"

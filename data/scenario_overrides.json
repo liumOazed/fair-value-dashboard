@@ -1,0 +1,121 @@
+{
+ "_about": "Stocks that keep their hand-written bear/base/bull scenarios (model/model.py STOCKS) instead of the rule-based ones (data/scenarios_rule.json). Every entry needs a written reason. Remove an entry to put the stock back on the rules.",
+ "stocks": {
+  "AMZN": {
+   "category": "Heavy investment now",
+   "reason": "Free cash flow is negative while it spends on AI data centres, so five years of cash margins say nothing about what the business earns once the build-out slows (rule bear case is below zero)."
+  },
+  "GOOGL": {
+   "category": "Heavy investment now",
+   "reason": "AI capex has pushed the last-12-month cash margin below zero; the rule reads that as the new normal. Analysts' 28% growth is also outside what companies this size have done, so the rule cuts it to 10%."
+  },
+  "LLY": {
+   "category": "Heavy investment now",
+   "reason": "Cash margins of the last four years are depressed by plant building and bought-in research (two years below zero) during the GLP-1 ramp."
+  },
+  "RDDT": {
+   "category": "Young company",
+   "reason": "Only two profitable years: the five-year margin history is mostly start-up losses (rule base margin 0.3% vs 26% now)."
+  },
+  "XYZ": {
+   "category": "Young company",
+   "reason": "Cash margin has climbed from -6% to 19% in four years; the history is mostly the loss-making years."
+  },
+  "CRCL": {
+   "category": "Young company",
+   "reason": "Listed in 2025; margins swing with interest rates and the history includes pre-listing losses. Analysts' 24% growth depends on stablecoin supply."
+  },
+  "SHOP": {
+   "category": "Young company",
+   "reason": "Margin history includes the 2022 logistics losses (-13%); margins since are 13-15% and rising."
+  },
+  "WDAY": {
+   "category": "Margins still rising",
+   "reason": "Cash margin after stock pay has risen every year (0% to 12%) as stock pay shrinks relative to sales; the history understates where it is heading."
+  },
+  "NVDA": {
+   "category": "Growth outside base rates",
+   "reason": "Analysts expect 68% growth and the last three years averaged 100%; no group of large companies in the base rates has done this, so the rule's number is not grounded. Hand scenarios stay deliberately lower."
+  },
+  "AVGO": {
+   "category": "Growth outside base rates",
+   "reason": "Analysts expect 66% growth on AI chips; the base rates cut it to 12%, half the hand-written 25%. VMware also distorts the three-year history."
+  },
+  "MRVL": {
+   "category": "Growth outside base rates",
+   "reason": "Analysts expect 64% growth on AI chips; the base rates cut it to 13%."
+  },
+  "APP": {
+   "category": "Growth outside base rates",
+   "reason": "Sales growth of 25%+ with a 60% cash margin is outside the base rates for its size; the rule halves growth."
+  },
+  "NRG": {
+   "category": "One-off in the numbers",
+   "reason": "Analysts' -2.5% is a change in how revenue is reported after the 2026 acquisitions, and cash flow swings with working capital; the rule reads both as a shrinking, low-margin business."
+  },
+  "KO": {
+   "category": "One-off in the numbers",
+   "reason": "Analysts' -3% reflects selling bottling operations (refranchising), not weaker demand; two years of cash flow include a tax deposit and a deal payment."
+  },
+  "IDCC": {
+   "category": "One-off in the numbers",
+   "reason": "Licensing revenue is lumpy: catch-up payments made 2022 and 2025 unusually high, and analysts' -13% is the fall back to normal."
+  },
+  "FIS": {
+   "category": "One-off in the numbers",
+   "reason": "The Worldpay stake sale and the Issuer Solutions purchase change both revenue and cash flow in 2026; history and analysts' figures mix the old and new company."
+  },
+  "NDAQ": {
+   "category": "One-off in the numbers",
+   "reason": "The Adenza purchase (late 2023) changed the margin: 36% now vs 22-23% before; the history is mostly the old company."
+  },
+  "APA": {
+   "category": "Commodity producer",
+   "reason": "Sales follow oil and gas prices, not volumes: analysts' growth is a price forecast and margins are a price cycle."
+  },
+  "EOG": {
+   "category": "Commodity producer",
+   "reason": "Sales follow oil and gas prices, not volumes: analysts' growth is a price forecast and margins are a price cycle."
+  },
+  "CF": {
+   "category": "Commodity producer",
+   "reason": "Sales and margins follow nitrogen fertiliser and natural-gas prices; the five-year history includes the 2022 price spike."
+  },
+  "NEM": {
+   "category": "Commodity producer",
+   "reason": "Sales and margins follow the gold price (three-year growth 24%, margin 0% to 37%); hand scenarios assume gold flat to lower."
+  },
+  "CTRE": {
+   "category": "Property company",
+   "reason": "Grows by buying properties, which free cash flow leaves out: the rule sees a 98% margin and 28% growth and nearly triples the value."
+  },
+  "SPG": {
+   "category": "Property company",
+   "reason": "Cash flow before property purchases and redevelopment overstates what owners keep; hand margin is set lower for that."
+  },
+  "HST": {
+   "category": "Property company",
+   "reason": "Cash flow before hotel purchases and renovations overstates what owners keep; hand margin is set lower for that."
+  },
+  "MO": {
+   "category": "Shrinking or expiring business",
+   "reason": "Cigarette volumes fall every year; the rule's minimum long-run growth is 2.5%, the hand scenarios use 0%."
+  },
+  "BMY": {
+   "category": "Shrinking or expiring business",
+   "reason": "Eliquis and Opdivo lose patent protection from 2028; past margins belong to drugs that are about to face generics."
+  },
+  "INVA": {
+   "category": "Shrinking or expiring business",
+   "reason": "Most income is GSK royalties that run off in the 2030s; hand scenarios use 0% long-run growth, the rule 6.5%."
+  },
+  "ADYEY": {
+   "category": "Data problem",
+   "reason": "US ADR figures converted from euros: the history shows -33% three-year growth and 95% margins (merchant money in cash flow), neither real."
+  },
+  "FISV": {
+   "category": "One-off in the numbers",
+   "reason": "Guidance was reset in late 2025 and the cash margin fell to 13%; the five-year history (16-23%) belongs to the earlier business plan."
+  }
+ }
+}

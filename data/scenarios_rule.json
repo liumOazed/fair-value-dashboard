@@ -1,7 +1,6 @@
 {
  "as_of": "2026-11-11",
- "shadow": true,
- "rules": "base rates      S&P 500 companies 2007-2025 (data/backtest/facts.json.gz) grouped by 3-year revenue growth and\n                  revenue size (under $5B, $5-25B, over $25B; a group with under 30 cases uses all sizes)\n  year-1 growth   base = analysts' revenue growth for next fiscal year (Yahoo 'revenue_estimate' +1y; the current\n                  year if next is missing; with fewer than 2 analysts, the 3-year revenue growth rate), kept inside\n                  the 20th-80th percentile of the group's next-3-year growth\n                  bear / bull = base + the group's 20th / 80th percentile spread (vs its median)\n  year-10 growth  the group's 20th / 50th / 80th percentile growth in years 6-10; capped at 10% and at the\n                  scenario's own year-1 growth (2.5% minimum)\n  cash margin     (free cash flow - stock pay) / revenue over the last 4 fiscal years and the last 12 months:\n                  bear = 20th percentile, base = median, bull = 80th percentile. If the after-tax operating margin\n                  is higher (heavy investment now), base = halfway to it and bull = at least it.\n                  Lenders (AXP, AMP): net income\nBase rates come from companies that are in the S&P 500 today, so they flatter growth (survivorship).",
+ "rules": "base rates      S&P 500 companies 2007-2025 (data/backtest/facts.json.gz) grouped by 3-year revenue growth and\n                  revenue size (under $5B, $5-25B, over $25B; a group with under 30 cases uses all sizes)\n  year-1 growth   base = analysts' revenue growth for next fiscal year (Yahoo 'revenue_estimate' +1y; the current\n                  year if next is missing; with fewer than 2 analysts, the 3-year revenue growth rate), kept inside\n                  the 20th-80th percentile of the group's next-3-year growth\n                  bear / bull = base + the group's 20th / 80th percentile spread (vs its median)\n  year-10 growth  the group's 20th / 50th / 80th percentile growth in years 6-10, capped by size because the base\n                  rates only hold companies still in the S&P 500 (survivors): base 6.5% / 5.5% / 4.5% for revenue\n                  under $5B / $5-25B / over $25B, bull 1.5 points above, bear 1.5 points below; also capped at the\n                  scenario's own year-1 growth (2.5% minimum)\n  cash margin     (free cash flow - stock pay) / revenue over the last 4 fiscal years and the last 12 months:\n                  bear = 20th percentile, bull = 80th percentile, base = halfway between the median and the recent\n                  level (average of the latest fiscal year and the last 12 months). If the after-tax operating margin\n                  is higher (heavy investment now), base = halfway to it and bull = at least it.\n                  Lenders (AXP, AMP): net income\nBase rates come from companies that are in the S&P 500 today, so they flatter growth (survivorship).",
  "base_rates": {
   "0,0": {
    "growth": [
@@ -518,12 +517,12 @@
     },
     "base": {
      "g1": 0.0797,
-     "g10": 0.0573,
-     "m": 0.2612
+     "g10": 0.045,
+     "m": 0.2629
     },
     "bull": {
      "g1": 0.1218,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.274
     }
    },
@@ -561,10 +560,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 202.8,
+   "fair_value": 183.16,
    "bear": 118.42,
-   "base": 204.47,
-   "bull": 325.19,
+   "base": 192.26,
+   "bull": 257.54,
    "hand": {
     "scen": {
      "bear": {
@@ -583,9 +582,12 @@
       "m": 0.265
      }
     },
-    "fair_value": 181.53
+    "fair_value": 181.53,
+    "bear": 143.36,
+    "base": 183.26,
+    "bull": 234.44
    },
-   "diff": 0.1172
+   "diff": 0.009
   },
   "MSFT": {
    "scen": {
@@ -596,12 +598,12 @@
     },
     "base": {
      "g1": 0.1251,
-     "g10": 0.0499,
-     "m": 0.2937
+     "g10": 0.045,
+     "m": 0.2784
     },
     "bull": {
      "g1": 0.2109,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.3756
     }
    },
@@ -639,10 +641,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 408.52,
+   "fair_value": 353.34,
    "bear": 122.51,
-   "base": 367.46,
-   "bull": 940.21,
+   "base": 339.43,
+   "bull": 734.34,
    "hand": {
     "scen": {
      "bear": {
@@ -661,9 +663,12 @@
       "m": 0.29
      }
     },
-    "fair_value": 365.11
+    "fair_value": 365.11,
+    "bear": 209.05,
+    "base": 387.35,
+    "bull": 543.59
    },
-   "diff": 0.1189
+   "diff": -0.0322
   },
   "GOOGL": {
    "scen": {
@@ -674,12 +679,12 @@
     },
     "base": {
      "g1": 0.1037,
-     "g10": 0.0718,
-     "m": 0.2026
+     "g10": 0.045,
+     "m": 0.179
     },
     "bull": {
      "g1": 0.1638,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.2623
     }
    },
@@ -717,10 +722,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 181.72,
+   "fair_value": 147.93,
    "bear": 55.4,
-   "base": 184.94,
-   "bull": 363.17,
+   "base": 144.76,
+   "bull": 294.67,
    "hand": {
     "scen": {
      "bear": {
@@ -739,9 +744,12 @@
       "m": 0.24
      }
     },
-    "fair_value": 238.93
+    "fair_value": 238.93,
+    "bear": 121.92,
+    "base": 246.08,
+    "bull": 396.57
    },
-   "diff": -0.2394
+   "diff": -0.3809
   },
   "AMZN": {
    "scen": {
@@ -752,12 +760,12 @@
     },
     "base": {
      "g1": 0.1037,
-     "g10": 0.0718,
-     "m": 0.0351
+     "g10": 0.045,
+     "m": 0.0274
     },
     "bull": {
      "g1": 0.1638,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.0867
     }
    },
@@ -795,10 +803,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 23.59,
+   "fair_value": 11.3,
    "bear": -72.61,
-   "base": 27.12,
-   "bull": 159.06,
+   "base": 13.51,
+   "bull": 131.65,
    "hand": {
     "scen": {
      "bear": {
@@ -817,25 +825,28 @@
       "m": 0.12
      }
     },
-    "fair_value": 99.38
+    "fair_value": 99.38,
+    "bear": 36.93,
+    "base": 101.55,
+    "bull": 187.65
    },
-   "diff": -0.7626
+   "diff": -0.8863
   },
   "NVDA": {
    "scen": {
     "bear": {
      "g1": 0.248,
-     "g10": 0.0485,
+     "g10": 0.03,
      "m": 0.3164
     },
     "base": {
      "g1": 0.3757,
-     "g10": 0.1,
-     "m": 0.4544
+     "g10": 0.045,
+     "m": 0.4571
     },
     "bull": {
      "g1": 0.5812,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.5126
     }
    },
@@ -873,10 +884,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 483.16,
-   "bear": 149.16,
-   "base": 455.93,
-   "bull": 1052.21,
+   "fair_value": 371.38,
+   "bear": 134.99,
+   "base": 331.33,
+   "bull": 826.1,
    "hand": {
     "scen": {
      "bear": {
@@ -895,9 +906,12 @@
       "m": 0.5
      }
     },
-    "fair_value": 176.7
+    "fair_value": 176.7,
+    "bear": 71.97,
+    "base": 166.7,
+    "bull": 358.8
    },
-   "diff": 1.7343
+   "diff": 1.1017
   },
   "AVGO": {
    "scen": {
@@ -908,12 +922,12 @@
     },
     "base": {
      "g1": 0.1251,
-     "g10": 0.0499,
-     "m": 0.3423
+     "g10": 0.045,
+     "m": 0.3324
     },
     "bull": {
      "g1": 0.2109,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.4344
     }
    },
@@ -951,10 +965,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 163.23,
+   "fair_value": 148.93,
    "bear": 81.18,
-   "base": 147.97,
-   "bull": 324.47,
+   "base": 141.17,
+   "bull": 269.97,
    "hand": {
     "scen": {
      "bear": {
@@ -973,9 +987,12 @@
       "m": 0.43
      }
     },
-    "fair_value": 259.81
+    "fair_value": 259.81,
+    "bear": 118.73,
+    "base": 266.48,
+    "bull": 454.75
    },
-   "diff": -0.3717
+   "diff": -0.4268
   },
   "LLY": {
    "scen": {
@@ -986,12 +1003,12 @@
     },
     "base": {
      "g1": 0.1582,
-     "g10": 0.0861,
-     "m": 0.2216
+     "g10": 0.045,
+     "m": 0.2388
     },
     "bull": {
      "g1": 0.283,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.3613
     }
    },
@@ -1029,10 +1046,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 884.38,
+   "fair_value": 706.74,
    "bear": -21.81,
-   "base": 823.48,
-   "bull": 2395.94,
+   "base": 684.17,
+   "bull": 1856.01,
    "hand": {
     "scen": {
      "bear": {
@@ -1051,9 +1068,12 @@
       "m": 0.38
      }
     },
-    "fair_value": 1030.73
+    "fair_value": 1030.73,
+    "bear": 484.77,
+    "base": 1046.19,
+    "bull": 1811.03
    },
-   "diff": -0.142
+   "diff": -0.3143
   },
   "ADBE": {
    "scen": {
@@ -1064,12 +1084,12 @@
     },
     "base": {
      "g1": 0.0913,
-     "g10": 0.0718,
-     "m": 0.3269
+     "g10": 0.045,
+     "m": 0.3284
     },
     "bull": {
      "g1": 0.1514,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.3339
     }
    },
@@ -1107,10 +1127,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 515.01,
+   "fair_value": 442.72,
    "bear": 254.12,
-   "base": 543.0,
-   "bull": 836.36,
+   "base": 468.83,
+   "bull": 660.32,
    "hand": {
     "scen": {
      "bear": {
@@ -1129,9 +1149,12 @@
       "m": 0.36
      }
     },
-    "fair_value": 364.9
+    "fair_value": 364.9,
+    "bear": 204.27,
+    "base": 387.19,
+    "bull": 550.11
    },
-   "diff": 0.4114
+   "diff": 0.2133
   },
   "APP": {
    "scen": {
@@ -1143,11 +1166,11 @@
     "base": {
      "g1": 0.1557,
      "g10": 0.0449,
-     "m": 0.5843
+     "m": 0.612
     },
     "bull": {
      "g1": 0.2436,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.6401
     }
    },
@@ -1185,10 +1208,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 293.91,
+   "fair_value": 286.09,
    "bear": 102.65,
-   "base": 297.99,
-   "bull": 570.6,
+   "base": 310.19,
+   "bull": 500.99,
    "hand": {
     "scen": {
      "bear": {
@@ -1207,9 +1230,12 @@
       "m": 0.62
      }
     },
-    "fair_value": 509.81
+    "fair_value": 509.81,
+    "bear": 220.53,
+    "base": 495.05,
+    "bull": 980.63
    },
-   "diff": -0.4235
+   "diff": -0.4388
   },
   "FICO": {
    "scen": {
@@ -1220,12 +1246,12 @@
     },
     "base": {
      "g1": 0.0672,
-     "g10": 0.0672,
-     "m": 0.3193
+     "g10": 0.065,
+     "m": 0.3273
     },
     "bull": {
      "g1": 0.1398,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.3568
     }
    },
@@ -1263,10 +1289,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 849.74,
+   "fair_value": 812.79,
    "bear": 388.99,
-   "base": 824.65,
-   "bull": 1603.6,
+   "base": 830.88,
+   "bull": 1403.27,
    "hand": {
     "scen": {
      "bear": {
@@ -1285,9 +1311,12 @@
       "m": 0.42
      }
     },
-    "fair_value": 748.45
+    "fair_value": 748.45,
+    "bear": 426.45,
+    "base": 790.91,
+    "bull": 1125.32
    },
-   "diff": 0.1353
+   "diff": 0.086
   },
   "APA": {
    "scen": {
@@ -1299,7 +1328,7 @@
     "base": {
      "g1": -0.0276,
      "g10": 0.025,
-     "m": 0.1999
+     "m": 0.2012
     },
     "bull": {
      "g1": 0.0329,
@@ -1341,9 +1370,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 54.49,
+   "fair_value": 54.66,
    "bear": 22.26,
-   "base": 61.09,
+   "base": 61.43,
    "bull": 86.31,
    "hand": {
     "scen": {
@@ -1363,9 +1392,12 @@
       "m": 0.2
      }
     },
-    "fair_value": 44.94
+    "fair_value": 44.94,
+    "bear": 25.09,
+    "base": 44.54,
+    "bull": 75.69
    },
-   "diff": 0.2125
+   "diff": 0.2163
   },
   "DECK": {
    "scen": {
@@ -1376,12 +1408,12 @@
     },
     "base": {
      "g1": 0.0567,
-     "g10": 0.0567,
-     "m": 0.1846
+     "g10": 0.055,
+     "m": 0.1855
     },
     "bull": {
      "g1": 0.1244,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1962
     }
    },
@@ -1419,10 +1451,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 154.36,
+   "fair_value": 145.48,
    "bear": 86.64,
-   "base": 150.07,
-   "bull": 266.67,
+   "base": 149.36,
+   "bull": 224.02,
    "hand": {
     "scen": {
      "bear": {
@@ -1441,9 +1473,12 @@
       "m": 0.2
      }
     },
-    "fair_value": 119.56
+    "fair_value": 119.56,
+    "bear": 83.38,
+    "base": 124.28,
+    "bull": 162.03
    },
-   "diff": 0.291
+   "diff": 0.2168
   },
   "INCY": {
    "scen": {
@@ -1455,12 +1490,12 @@
     "base": {
      "g1": 0.0422,
      "g10": 0.0422,
-     "m": 0.2073
+     "m": 0.2294
     },
     "bull": {
      "g1": 0.1099,
-     "g10": 0.1,
-     "m": 0.2267
+     "g10": 0.07,
+     "m": 0.2294
     }
    },
    "why": {
@@ -1497,10 +1532,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 104.65,
+   "fair_value": 105.38,
    "bear": 39.45,
-   "base": 110.7,
-   "bull": 187.35,
+   "base": 119.83,
+   "bull": 168.15,
    "hand": {
     "scen": {
      "bear": {
@@ -1519,9 +1554,12 @@
       "m": 0.3
      }
     },
-    "fair_value": 113.97
+    "fair_value": 113.97,
+    "bear": 76.63,
+    "base": 114.19,
+    "bull": 169.41
    },
-   "diff": -0.0817
+   "diff": -0.0754
   },
   "MKC": {
    "scen": {
@@ -1533,11 +1571,11 @@
     "base": {
      "g1": 0.0287,
      "g10": 0.0287,
-     "m": 0.1135
+     "m": 0.115
     },
     "bull": {
      "g1": 0.0851,
-     "g10": 0.0741,
+     "g10": 0.07,
      "m": 0.1255
     }
    },
@@ -1575,10 +1613,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 51.57,
+   "fair_value": 51.58,
    "bear": 23.99,
-   "base": 51.67,
-   "bull": 92.73,
+   "base": 52.33,
+   "bull": 91.07,
    "hand": {
     "scen": {
      "bear": {
@@ -1597,9 +1635,12 @@
       "m": 0.14
      }
     },
-    "fair_value": 57.44
+    "fair_value": 57.44,
+    "bear": 39.46,
+    "base": 60.6,
+    "bull": 76.53
    },
-   "diff": -0.1022
+   "diff": -0.1021
   },
   "EXPE": {
    "scen": {
@@ -1610,12 +1651,12 @@
     },
     "base": {
      "g1": 0.0652,
-     "g10": 0.0564,
-     "m": 0.1841
+     "g10": 0.055,
+     "m": 0.1886
     },
     "bull": {
      "g1": 0.1179,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2028
     }
    },
@@ -1653,10 +1694,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 425.62,
+   "fair_value": 415.32,
    "bear": 224.57,
-   "base": 440.49,
-   "bull": 690.02,
+   "base": 447.02,
+   "bull": 622.19,
    "hand": {
     "scen": {
      "bear": {
@@ -1675,9 +1716,12 @@
       "m": 0.2
      }
     },
-    "fair_value": 342.15
+    "fair_value": 342.15,
+    "bear": 207.77,
+    "base": 364.63,
+    "bull": 487.51
    },
-   "diff": 0.244
+   "diff": 0.2139
   },
   "BKNG": {
    "scen": {
@@ -1688,12 +1732,12 @@
     },
     "base": {
      "g1": 0.1048,
-     "g10": 0.0499,
-     "m": 0.3073
+     "g10": 0.045,
+     "m": 0.3068
     },
     "bull": {
      "g1": 0.1906,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.3194
     }
    },
@@ -1731,10 +1775,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 301.63,
+   "fair_value": 273.91,
    "bear": 165.01,
-   "base": 281.97,
-   "bull": 555.7,
+   "base": 273.92,
+   "bull": 437.22,
    "hand": {
     "scen": {
      "bear": {
@@ -1753,9 +1797,12 @@
       "m": 0.32
      }
     },
-    "fair_value": 218.72
+    "fair_value": 218.72,
+    "bear": 152.56,
+    "base": 226.37,
+    "bull": 298.82
    },
-   "diff": 0.3791
+   "diff": 0.2523
   },
   "INTU": {
    "scen": {
@@ -1766,12 +1813,12 @@
     },
     "base": {
      "g1": 0.0905,
-     "g10": 0.0627,
-     "m": 0.2187
+     "g10": 0.055,
+     "m": 0.2469
     },
     "bull": {
      "g1": 0.1582,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.2568
     }
    },
@@ -1809,10 +1856,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 383.58,
+   "fair_value": 381.61,
    "bear": 223.78,
-   "base": 369.78,
-   "bull": 657.77,
+   "base": 398.63,
+   "bull": 575.8,
    "hand": {
     "scen": {
      "bear": {
@@ -1831,9 +1878,12 @@
       "m": 0.3
      }
     },
-    "fair_value": 390.73
+    "fair_value": 390.73,
+    "bear": 266.8,
+    "base": 407.56,
+    "bull": 534.57
    },
-   "diff": -0.0183
+   "diff": -0.0234
   },
   "ADSK": {
    "scen": {
@@ -1844,12 +1894,12 @@
     },
     "base": {
      "g1": 0.1102,
-     "g10": 0.0627,
-     "m": 0.2204
+     "g10": 0.055,
+     "m": 0.2326
     },
     "bull": {
      "g1": 0.1779,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.2701
     }
    },
@@ -1887,10 +1937,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 210.6,
+   "fair_value": 198.8,
    "bear": 87.53,
-   "base": 209.05,
-   "bull": 399.09,
+   "base": 210.33,
+   "bull": 336.86,
    "hand": {
     "scen": {
      "bear": {
@@ -1909,9 +1959,12 @@
       "m": 0.31
      }
     },
-    "fair_value": 222.81
+    "fair_value": 222.81,
+    "bear": 147.36,
+    "base": 232.71,
+    "bull": 311.24
    },
-   "diff": -0.0548
+   "diff": -0.1078
   },
   "TPR": {
    "scen": {
@@ -1923,11 +1976,11 @@
     "base": {
      "g1": 0.0518,
      "g10": 0.0518,
-     "m": 0.1776
+     "m": 0.1914
     },
     "bull": {
      "g1": 0.1045,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2138
     }
    },
@@ -1965,10 +2018,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 112.44,
+   "fair_value": 112.11,
    "bear": 53.04,
-   "base": 111.14,
-   "bull": 204.78,
+   "base": 119.39,
+   "bull": 182.52,
    "hand": {
     "scen": {
      "bear": {
@@ -1987,9 +2040,12 @@
       "m": 0.2
      }
     },
-    "fair_value": 88.47
+    "fair_value": 88.47,
+    "bear": 48.3,
+    "base": 95.64,
+    "bull": 130.77
    },
-   "diff": 0.271
+   "diff": 0.2672
   },
   "VEEV": {
    "scen": {
@@ -2000,12 +2056,12 @@
     },
     "base": {
      "g1": 0.1232,
-     "g10": 0.0719,
-     "m": 0.2376
+     "g10": 0.065,
+     "m": 0.2771
     },
     "bull": {
      "g1": 0.1958,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.3036
     }
    },
@@ -2043,10 +2099,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 167.04,
+   "fair_value": 170.24,
    "bear": 110.13,
-   "base": 156.2,
-   "bull": 279.53,
+   "base": 173.21,
+   "bull": 252.98,
    "hand": {
     "scen": {
      "bear": {
@@ -2065,9 +2121,12 @@
       "m": 0.36
      }
     },
-    "fair_value": 183.85
+    "fair_value": 183.85,
+    "bear": 136.02,
+    "base": 191.0,
+    "bull": 237.69
    },
-   "diff": -0.0914
+   "diff": -0.074
   },
   "MNST": {
    "scen": {
@@ -2078,12 +2137,12 @@
     },
     "base": {
      "g1": 0.0963,
-     "g10": 0.0564,
-     "m": 0.2096
+     "g10": 0.055,
+     "m": 0.2107
     },
     "bull": {
      "g1": 0.149,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2211
     }
    },
@@ -2121,10 +2180,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 28.31,
+   "fair_value": 27.01,
    "bear": 15.19,
-   "base": 28.92,
-   "bull": 46.45,
+   "base": 28.83,
+   "bull": 40.19,
    "hand": {
     "scen": {
      "bear": {
@@ -2143,9 +2202,12 @@
       "m": 0.23
      }
     },
-    "fair_value": 25.53
+    "fair_value": 25.53,
+    "bear": 18.07,
+    "base": 26.56,
+    "bull": 34.14
    },
-   "diff": 0.1087
+   "diff": 0.058
   },
   "ALLE": {
    "scen": {
@@ -2157,11 +2219,11 @@
     "base": {
      "g1": 0.0598,
      "g10": 0.0598,
-     "m": 0.1593
+     "m": 0.1629
     },
     "bull": {
      "g1": 0.1177,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.1716
     }
    },
@@ -2199,10 +2261,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 138.69,
+   "fair_value": 135.99,
    "bear": 96.38,
-   "base": 129.13,
-   "bull": 226.06,
+   "base": 132.63,
+   "bull": 203.79,
    "hand": {
     "scen": {
      "bear": {
@@ -2221,9 +2283,12 @@
       "m": 0.17
      }
     },
-    "fair_value": 119.29
+    "fair_value": 119.29,
+    "bear": 93.37,
+    "base": 123.55,
+    "bull": 147.5
    },
-   "diff": 0.1627
+   "diff": 0.14
   },
   "FTNT": {
    "scen": {
@@ -2235,11 +2300,11 @@
     "base": {
      "g1": 0.1148,
      "g10": 0.0449,
-     "m": 0.2794
+     "m": 0.292
     },
     "bull": {
      "g1": 0.2028,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.2936
     }
    },
@@ -2277,10 +2342,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 68.62,
+   "fair_value": 67.08,
    "bear": 40.27,
-   "base": 65.76,
-   "bull": 118.27,
+   "base": 68.29,
+   "bull": 104.26,
    "hand": {
     "scen": {
      "bear": {
@@ -2299,9 +2364,12 @@
       "m": 0.33
      }
     },
-    "fair_value": 67.91
+    "fair_value": 67.91,
+    "bear": 48.47,
+    "base": 70.04,
+    "bull": 91.72
    },
-   "diff": 0.0105
+   "diff": -0.0122
   },
   "RMD": {
    "scen": {
@@ -2312,12 +2380,12 @@
     },
     "base": {
      "g1": 0.0643,
-     "g10": 0.0627,
-     "m": 0.2634
+     "g10": 0.055,
+     "m": 0.2646
     },
     "bull": {
      "g1": 0.132,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.2763
     }
    },
@@ -2355,10 +2423,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 208.46,
+   "fair_value": 197.49,
    "bear": 124.81,
-   "base": 206.77,
-   "bull": 338.15,
+   "base": 202.28,
+   "bull": 294.54,
    "hand": {
     "scen": {
      "bear": {
@@ -2377,9 +2445,12 @@
       "m": 0.28
      }
     },
-    "fair_value": 176.72
+    "fair_value": 176.72,
+    "bear": 133.68,
+    "base": 182.64,
+    "bull": 226.49
    },
-   "diff": 0.1796
+   "diff": 0.1175
   },
   "V": {
    "scen": {
@@ -2390,12 +2461,12 @@
     },
     "base": {
      "g1": 0.1037,
-     "g10": 0.0718,
-     "m": 0.5363
+     "g10": 0.045,
+     "m": 0.5293
     },
     "bull": {
      "g1": 0.1638,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.5817
     }
    },
@@ -2433,10 +2504,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 398.99,
+   "fair_value": 336.05,
    "bear": 195.83,
-   "base": 409.36,
-   "bull": 677.81,
+   "base": 343.94,
+   "bull": 526.65,
    "hand": {
     "scen": {
      "bear": {
@@ -2455,9 +2526,12 @@
       "m": 0.47
      }
     },
-    "fair_value": 297.84
+    "fair_value": 297.84,
+    "bear": 230.79,
+    "base": 306.91,
+    "bull": 375.74
    },
-   "diff": 0.3396
+   "diff": 0.1283
   },
   "FIX": {
    "scen": {
@@ -2468,12 +2542,12 @@
     },
     "base": {
      "g1": 0.1934,
-     "g10": 0.0636,
-     "m": 0.1073
+     "g10": 0.055,
+     "m": 0.1101
     },
     "bull": {
      "g1": 0.301,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1121
     }
    },
@@ -2511,10 +2585,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 1031.29,
+   "fair_value": 984.05,
    "bear": 510.61,
-   "base": 1028.45,
-   "bull": 1819.41,
+   "base": 1018.88,
+   "bull": 1607.1,
    "hand": {
     "scen": {
      "bear": {
@@ -2533,9 +2607,12 @@
       "m": 0.12
      }
     },
-    "fair_value": 785.06
+    "fair_value": 785.06,
+    "bear": 335.19,
+    "base": 841.59,
+    "bull": 1318.56
    },
-   "diff": 0.3136
+   "diff": 0.2535
   },
   "MA": {
    "scen": {
@@ -2546,12 +2623,12 @@
     },
     "base": {
      "g1": 0.1037,
-     "g10": 0.0718,
-     "m": 0.4597
+     "g10": 0.045,
+     "m": 0.4608
     },
     "bull": {
      "g1": 0.1638,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.4785
     }
    },
@@ -2589,10 +2666,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 583.75,
+   "fair_value": 494.23,
    "bear": 283.35,
-   "base": 608.52,
-   "bull": 972.42,
+   "base": 516.95,
+   "bull": 753.74,
    "hand": {
     "scen": {
      "bear": {
@@ -2611,9 +2688,12 @@
       "m": 0.46
      }
     },
-    "fair_value": 538.18
+    "fair_value": 538.18,
+    "bear": 399.81,
+    "base": 564.51,
+    "bull": 679.91
    },
-   "diff": 0.0847
+   "diff": -0.0817
   },
   "CTAS": {
    "scen": {
@@ -2624,12 +2704,12 @@
     },
     "base": {
      "g1": 0.0753,
-     "g10": 0.0564,
-     "m": 0.1709
+     "g10": 0.055,
+     "m": 0.1704
     },
     "bull": {
      "g1": 0.128,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.1862
     }
    },
@@ -2667,10 +2747,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 121.01,
+   "fair_value": 114.34,
    "bear": 62.3,
-   "base": 121.05,
-   "bull": 208.98,
+   "base": 119.73,
+   "bull": 178.9,
    "hand": {
     "scen": {
      "bear": {
@@ -2689,9 +2769,12 @@
       "m": 0.17
      }
     },
-    "fair_value": 101.12
+    "fair_value": 101.12,
+    "bear": 75.15,
+    "base": 106.31,
+    "bull": 127.08
    },
-   "diff": 0.1968
+   "diff": 0.1308
   },
   "DXCM": {
    "scen": {
@@ -2703,11 +2786,11 @@
     "base": {
      "g1": 0.1045,
      "g10": 0.0449,
-     "m": 0.1338
+     "m": 0.1575
     },
     "bull": {
      "g1": 0.1925,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1984
     }
    },
@@ -2745,10 +2828,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 40.66,
+   "fair_value": 41.71,
    "bear": 17.06,
-   "base": 36.23,
-   "bull": 87.14,
+   "base": 41.82,
+   "bull": 78.42,
    "hand": {
     "scen": {
      "bear": {
@@ -2767,9 +2850,12 @@
       "m": 0.25
      }
     },
-    "fair_value": 53.1
+    "fair_value": 53.1,
+    "bear": 31.74,
+    "base": 56.34,
+    "bull": 77.05
    },
-   "diff": -0.2343
+   "diff": -0.2145
   },
   "IDXX": {
    "scen": {
@@ -2780,12 +2866,12 @@
     },
     "base": {
      "g1": 0.0887,
-     "g10": 0.0841,
-     "m": 0.2238
+     "g10": 0.065,
+     "m": 0.2369
     },
     "bull": {
      "g1": 0.1466,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.2528
     }
    },
@@ -2823,10 +2909,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 370.45,
+   "fair_value": 345.01,
    "bear": 192.23,
-   "base": 383.91,
-   "bull": 604.13,
+   "base": 361.14,
+   "bull": 533.86,
    "hand": {
     "scen": {
      "bear": {
@@ -2845,9 +2931,12 @@
       "m": 0.27
      }
     },
-    "fair_value": 318.06
+    "fair_value": 318.06,
+    "bear": 226.02,
+    "base": 332.56,
+    "bull": 419.84
    },
-   "diff": 0.1647
+   "diff": 0.0848
   },
   "VRSN": {
    "scen": {
@@ -2858,12 +2947,12 @@
     },
     "base": {
      "g1": 0.104,
-     "g10": 0.0841,
-     "m": 0.5229
+     "g10": 0.065,
+     "m": 0.5488
     },
     "bull": {
      "g1": 0.1619,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.558
     }
    },
@@ -2901,10 +2990,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 310.94,
+   "fair_value": 294.99,
    "bear": 210.41,
-   "base": 312.66,
-   "bull": 457.43,
+   "base": 297.86,
+   "bull": 414.69,
    "hand": {
     "scen": {
      "bear": {
@@ -2923,9 +3012,12 @@
       "m": 0.58
      }
     },
-    "fair_value": 200.76
+    "fair_value": 200.76,
+    "bear": 146.54,
+    "base": 208.91,
+    "bull": 261.73
    },
-   "diff": 0.5488
+   "diff": 0.4693
   },
   "NDAQ": {
    "scen": {
@@ -2936,13 +3028,13 @@
     },
     "base": {
      "g1": 0.0906,
-     "g10": 0.0564,
-     "m": 0.2341
+     "g10": 0.055,
+     "m": 0.2615
     },
     "bull": {
      "g1": 0.1433,
-     "g10": 0.0944,
-     "m": 0.2588
+     "g10": 0.07,
+     "m": 0.2615
     }
    },
    "why": {
@@ -2979,10 +3071,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 52.1,
+   "fair_value": 53.22,
    "bear": 29.42,
-   "base": 52.3,
-   "bull": 85.62,
+   "base": 57.52,
+   "bull": 78.16,
    "hand": {
     "scen": {
      "bear": {
@@ -3001,9 +3093,12 @@
       "m": 0.39
      }
     },
-    "fair_value": 67.47
+    "fair_value": 67.47,
+    "bear": 46.44,
+    "base": 70.61,
+    "bull": 91.16
    },
-   "diff": -0.2277
+   "diff": -0.2112
   },
   "MCO": {
    "scen": {
@@ -3014,12 +3109,12 @@
     },
     "base": {
      "g1": 0.0669,
-     "g10": 0.0627,
-     "m": 0.3267
+     "g10": 0.055,
+     "m": 0.3307
     },
     "bull": {
      "g1": 0.1346,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.3499
     }
    },
@@ -3057,10 +3152,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 320.78,
+   "fair_value": 302.11,
    "bear": 163.27,
-   "base": 322.22,
-   "bull": 553.43,
+   "base": 315.0,
+   "bull": 478.16,
    "hand": {
     "scen": {
      "bear": {
@@ -3079,9 +3174,12 @@
       "m": 0.36
      }
     },
-    "fair_value": 293.3
+    "fair_value": 293.3,
+    "bear": 206.03,
+    "base": 305.19,
+    "bull": 394.49
    },
-   "diff": 0.0937
+   "diff": 0.03
   },
   "SPGI": {
    "scen": {
@@ -3092,12 +3190,12 @@
     },
     "base": {
      "g1": 0.0683,
-     "g10": 0.0627,
-     "m": 0.3329
+     "g10": 0.055,
+     "m": 0.3348
     },
     "bull": {
      "g1": 0.136,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.3472
     }
    },
@@ -3135,10 +3233,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 313.32,
+   "fair_value": 297.91,
    "bear": 158.85,
-   "base": 322.84,
-   "bull": 521.24,
+   "base": 315.09,
+   "bull": 463.52,
    "hand": {
     "scen": {
      "bear": {
@@ -3157,9 +3255,12 @@
       "m": 0.37
      }
     },
-    "fair_value": 296.57
+    "fair_value": 296.57,
+    "bear": 218.03,
+    "base": 310.0,
+    "bull": 380.8
    },
-   "diff": 0.0565
+   "diff": 0.0045
   },
   "NFLX": {
    "scen": {
@@ -3170,12 +3271,12 @@
     },
     "base": {
      "g1": 0.1037,
-     "g10": 0.0718,
-     "m": 0.2206
+     "g10": 0.045,
+     "m": 0.2242
     },
     "bull": {
      "g1": 0.1638,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.246
     }
    },
@@ -3213,10 +3314,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 56.78,
+   "fair_value": 50.63,
    "bear": 24.32,
-   "base": 60.35,
-   "bull": 96.56,
+   "base": 54.44,
+   "bull": 80.56,
    "hand": {
     "scen": {
      "bear": {
@@ -3235,9 +3336,12 @@
       "m": 0.3
      }
     },
-    "fair_value": 61.75
+    "fair_value": 61.75,
+    "bear": 38.64,
+    "base": 65.21,
+    "bull": 87.79
    },
-   "diff": -0.0805
+   "diff": -0.1801
   },
   "CBOE": {
    "scen": {
@@ -3249,11 +3353,11 @@
     "base": {
      "g1": 0.0375,
      "g10": 0.0375,
-     "m": 0.2622
+     "m": 0.286
     },
     "bull": {
      "g1": 0.0902,
-     "g10": 0.0902,
+     "g10": 0.07,
      "m": 0.2882
     }
    },
@@ -3291,10 +3395,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 245.93,
+   "fair_value": 248.23,
    "bear": 150.05,
-   "base": 240.56,
-   "bull": 403.15,
+   "base": 258.97,
+   "bull": 368.64,
    "hand": {
     "scen": {
      "bear": {
@@ -3313,9 +3417,12 @@
       "m": 0.34
      }
     },
-    "fair_value": 263.39
+    "fair_value": 263.39,
+    "bear": 168.42,
+    "base": 275.32,
+    "bull": 376.03
    },
-   "diff": -0.0663
+   "diff": -0.0576
   },
   "GRMN": {
    "scen": {
@@ -3326,12 +3433,12 @@
     },
     "base": {
      "g1": 0.1213,
-     "g10": 0.0627,
-     "m": 0.1906
+     "g10": 0.055,
+     "m": 0.1904
     },
     "bull": {
      "g1": 0.189,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.2159
     }
    },
@@ -3369,10 +3476,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 204.28,
+   "fair_value": 191.96,
    "bear": 107.17,
-   "base": 203.49,
-   "bull": 351.93,
+   "base": 196.76,
+   "bull": 307.12,
    "hand": {
     "scen": {
      "bear": {
@@ -3391,9 +3498,12 @@
       "m": 0.21
      }
     },
-    "fair_value": 162.1
+    "fair_value": 162.1,
+    "bear": 103.02,
+    "base": 173.33,
+    "bull": 222.63
    },
-   "diff": 0.2602
+   "diff": 0.1842
   },
   "FDS": {
    "scen": {
@@ -3405,11 +3515,11 @@
     "base": {
      "g1": 0.0602,
      "g10": 0.0602,
-     "m": 0.2507
+     "m": 0.2512
     },
     "bull": {
      "g1": 0.1181,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.2516
     }
    },
@@ -3447,10 +3557,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 333.64,
+   "fair_value": 324.54,
    "bear": 223.21,
-   "base": 328.11,
-   "bull": 513.13,
+   "base": 328.71,
+   "bull": 466.1,
    "hand": {
     "scen": {
      "bear": {
@@ -3469,9 +3579,12 @@
       "m": 0.28
      }
     },
-    "fair_value": 278.08
+    "fair_value": 278.08,
+    "bear": 194.62,
+    "base": 291.44,
+    "bull": 369.87
    },
-   "diff": 0.1998
+   "diff": 0.1671
   },
   "CRM": {
    "scen": {
@@ -3482,13 +3595,13 @@
     },
     "base": {
      "g1": 0.0969,
-     "g10": 0.0573,
-     "m": 0.2441
+     "g10": 0.045,
+     "m": 0.2487
     },
     "bull": {
      "g1": 0.139,
-     "g10": 0.1,
-     "m": 0.2479
+     "g10": 0.06,
+     "m": 0.2487
     }
    },
    "why": {
@@ -3525,10 +3638,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 227.97,
+   "fair_value": 215.78,
    "bear": 126.44,
-   "base": 242.69,
-   "bull": 343.48,
+   "base": 236.8,
+   "bull": 297.23,
    "hand": {
     "scen": {
      "bear": {
@@ -3547,9 +3660,12 @@
       "m": 0.28
      }
     },
-    "fair_value": 222.43
+    "fair_value": 222.43,
+    "bear": 147.4,
+    "base": 235.88,
+    "bull": 301.33
    },
-   "diff": 0.0249
+   "diff": -0.0299
   },
   "HWM": {
    "scen": {
@@ -3560,12 +3676,12 @@
     },
     "base": {
      "g1": 0.1289,
-     "g10": 0.0627,
-     "m": 0.166
+     "g10": 0.055,
+     "m": 0.1794
     },
     "bull": {
      "g1": 0.1966,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.2091
     }
    },
@@ -3603,10 +3719,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 106.16,
+   "fair_value": 102.4,
    "bear": 38.53,
-   "base": 106.09,
-   "bull": 207.78,
+   "base": 109.72,
+   "bull": 179.91,
    "hand": {
     "scen": {
      "bear": {
@@ -3625,9 +3741,12 @@
       "m": 0.22
      }
     },
-    "fair_value": 105.3
+    "fair_value": 105.3,
+    "bear": 49.01,
+    "base": 115.62,
+    "bull": 163.94
    },
-   "diff": 0.0081
+   "diff": -0.0275
   },
   "ADP": {
    "scen": {
@@ -3638,12 +3757,12 @@
     },
     "base": {
      "g1": 0.0574,
-     "g10": 0.0564,
-     "m": 0.2017
+     "g10": 0.055,
+     "m": 0.2027
     },
     "bull": {
      "g1": 0.1101,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2032
     }
    },
@@ -3681,10 +3800,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 272.01,
+   "fair_value": 258.99,
    "bear": 151.89,
-   "base": 276.75,
-   "bull": 440.35,
+   "base": 275.66,
+   "bull": 377.98,
    "hand": {
     "scen": {
      "bear": {
@@ -3703,9 +3822,12 @@
       "m": 0.23
      }
     },
-    "fair_value": 251.23
+    "fair_value": 251.23,
+    "bear": 178.95,
+    "base": 263.3,
+    "bull": 329.47
    },
-   "diff": 0.0827
+   "diff": 0.0309
   },
   "AME": {
    "scen": {
@@ -3716,12 +3838,12 @@
     },
     "base": {
      "g1": 0.104,
-     "g10": 0.0564,
-     "m": 0.2297
+     "g10": 0.055,
+     "m": 0.2272
     },
     "bull": {
      "g1": 0.1567,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.236
     }
    },
@@ -3759,10 +3881,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 176.94,
+   "fair_value": 169.65,
    "bear": 106.86,
-   "base": 180.25,
-   "bull": 273.79,
+   "base": 177.24,
+   "bull": 244.88,
    "hand": {
     "scen": {
      "bear": {
@@ -3781,9 +3903,12 @@
       "m": 0.24
      }
     },
-    "fair_value": 153.9
+    "fair_value": 153.9,
+    "bear": 99.65,
+    "base": 161.42,
+    "bull": 216.47
    },
-   "diff": 0.1497
+   "diff": 0.1024
   },
   "AXP": {
    "scen": {
@@ -3794,12 +3919,12 @@
     },
     "base": {
      "g1": 0.0909,
-     "g10": 0.0718,
-     "m": 0.1482
+     "g10": 0.045,
+     "m": 0.1504
     },
     "bull": {
      "g1": 0.151,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.1527
     }
    },
@@ -3837,10 +3962,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 304.65,
+   "fair_value": 279.06,
    "bear": 193.42,
-   "base": 315.47,
-   "bull": 444.44,
+   "base": 290.1,
+   "bull": 379.93,
    "hand": {
     "scen": {
      "bear": {
@@ -3859,9 +3984,12 @@
       "m": 0.17
      }
     },
-    "fair_value": 280.81
+    "fair_value": 280.81,
+    "bear": 205.43,
+    "base": 297.33,
+    "bull": 352.57
    },
-   "diff": 0.0849
+   "diff": -0.0062
   },
   "SHOP": {
    "scen": {
@@ -3872,12 +4000,12 @@
     },
     "base": {
      "g1": 0.1934,
-     "g10": 0.0636,
-     "m": 0.1326
+     "g10": 0.055,
+     "m": 0.1373
     },
     "bull": {
      "g1": 0.301,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1382
     }
    },
@@ -3915,10 +4043,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 31.87,
+   "fair_value": 30.91,
    "bear": 5.58,
-   "base": 36.24,
-   "bull": 60.37,
+   "base": 36.52,
+   "bull": 54.9,
    "hand": {
     "scen": {
      "bear": {
@@ -3937,9 +4065,12 @@
       "m": 0.22
      }
     },
-    "fair_value": 56.7
+    "fair_value": 56.7,
+    "bear": 31.26,
+    "base": 59.57,
+    "bull": 87.69
    },
-   "diff": -0.438
+   "diff": -0.4548
   },
   "PYPL": {
    "scen": {
@@ -3951,11 +4082,11 @@
     "base": {
      "g1": 0.0402,
      "g10": 0.0402,
-     "m": 0.1499
+     "m": 0.1515
     },
     "bull": {
      "g1": 0.0823,
-     "g10": 0.0823,
+     "g10": 0.06,
      "m": 0.16
     }
    },
@@ -3993,10 +4124,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 93.39,
+   "fair_value": 91.2,
    "bear": 60.24,
-   "base": 93.9,
-   "bull": 141.86,
+   "base": 94.78,
+   "bull": 128.69,
    "hand": {
     "scen": {
      "bear": {
@@ -4015,9 +4146,12 @@
       "m": 0.18
      }
     },
-    "fair_value": 85.17
+    "fair_value": 85.17,
+    "bear": 46.19,
+    "base": 92.65,
+    "bull": 124.96
    },
-   "diff": 0.0965
+   "diff": 0.0708
   },
   "XYZ": {
    "scen": {
@@ -4028,12 +4162,12 @@
     },
     "base": {
      "g1": 0.1138,
-     "g10": 0.0627,
-     "m": 0.0555
+     "g10": 0.055,
+     "m": 0.0824
     },
     "bull": {
      "g1": 0.1815,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.0995
     }
    },
@@ -4071,10 +4205,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 31.97,
+   "fair_value": 34.77,
    "bear": 1.22,
-   "base": 35.09,
-   "bull": 70.31,
+   "base": 43.14,
+   "bull": 64.15,
    "hand": {
     "scen": {
      "bear": {
@@ -4093,9 +4227,12 @@
       "m": 0.28
      }
     },
-    "fair_value": 100.33
+    "fair_value": 100.33,
+    "bear": 56.84,
+    "base": 106.16,
+    "bull": 151.01
    },
-   "diff": -0.6813
+   "diff": -0.6535
   },
   "ADYEY": {
    "scen": {
@@ -4106,12 +4243,12 @@
     },
     "base": {
      "g1": 0.1653,
-     "g10": 0.0668,
-     "m": 0.3461
+     "g10": 0.065,
+     "m": 0.3412
     },
     "bull": {
      "g1": 0.2736,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.754
     }
    },
@@ -4149,10 +4286,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 13.8,
+   "fair_value": 13.04,
    "bear": 5.17,
-   "base": 9.84,
-   "bull": 36.64,
+   "base": 9.63,
+   "bull": 33.37,
    "hand": {
     "scen": {
      "bear": {
@@ -4171,9 +4308,12 @@
       "m": 0.4
      }
     },
-    "fair_value": 10.62
+    "fair_value": 10.62,
+    "bear": 5.96,
+    "base": 11.33,
+    "bull": 15.85
    },
-   "diff": 0.2989
+   "diff": 0.2276
   },
   "FISV": {
    "scen": {
@@ -4185,11 +4325,11 @@
     "base": {
      "g1": 0.0342,
      "g10": 0.0342,
-     "m": 0.2015
+     "m": 0.1963
     },
     "bull": {
      "g1": 0.0869,
-     "g10": 0.0869,
+     "g10": 0.07,
      "m": 0.2232
     }
    },
@@ -4227,10 +4367,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 91.46,
+   "fair_value": 87.68,
    "bear": 42.08,
-   "base": 89.08,
-   "bull": 171.48,
+   "base": 86.47,
+   "bull": 159.12,
    "hand": {
     "scen": {
      "bear": {
@@ -4249,25 +4389,28 @@
       "m": 0.18
      }
     },
-    "fair_value": 63.91
+    "fair_value": 63.91,
+    "bear": 37.39,
+    "base": 68.45,
+    "bull": 92.33
    },
-   "diff": 0.431
+   "diff": 0.372
   },
   "CRCL": {
    "scen": {
     "bear": {
      "g1": 0.0511,
-     "g10": 0.0511,
+     "g10": 0.05,
      "m": -0.0639
     },
     "base": {
      "g1": 0.2407,
-     "g10": 0.1,
-     "m": -0.0009
+     "g10": 0.065,
+     "m": 0.0116
     },
     "bull": {
      "g1": 0.3675,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.0914
     }
    },
@@ -4305,10 +4448,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 10.09,
-   "bear": -1.41,
-   "base": 3.04,
-   "bull": 44.98,
+   "fair_value": 11.57,
+   "bear": -1.38,
+   "base": 6.99,
+   "bull": 42.42,
    "hand": {
     "scen": {
      "bear": {
@@ -4327,9 +4470,12 @@
       "m": 0.25
      }
     },
-    "fair_value": 34.34
+    "fair_value": 34.34,
+    "bear": 12.14,
+    "base": 26.39,
+    "bull": 87.5
    },
-   "diff": -0.7061
+   "diff": -0.6631
   },
   "SPG": {
    "scen": {
@@ -4341,11 +4487,11 @@
     "base": {
      "g1": 0.0368,
      "g10": 0.0368,
-     "m": 0.5129
+     "m": 0.4981
     },
     "bull": {
      "g1": 0.0895,
-     "g10": 0.0895,
+     "g10": 0.07,
      "m": 0.5614
     }
    },
@@ -4383,10 +4529,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 160.77,
+   "fair_value": 153.44,
    "bear": 85.88,
-   "base": 153.14,
-   "bull": 292.19,
+   "base": 148.42,
+   "bull": 267.33,
    "hand": {
     "scen": {
      "bear": {
@@ -4405,9 +4551,12 @@
       "m": 0.47
      }
     },
-    "fair_value": 118.38
+    "fair_value": 118.38,
+    "bear": 78.21,
+    "base": 127.19,
+    "bull": 156.61
    },
-   "diff": 0.3581
+   "diff": 0.2962
   },
   "META": {
    "scen": {
@@ -4418,12 +4567,12 @@
     },
     "base": {
      "g1": 0.1251,
-     "g10": 0.0499,
-     "m": 0.24
+     "g10": 0.045,
+     "m": 0.2249
     },
     "bull": {
      "g1": 0.2109,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.3522
     }
    },
@@ -4461,10 +4610,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 571.63,
+   "fair_value": 481.54,
    "bear": 57.56,
-   "base": 513.82,
-   "bull": 1487.28,
+   "base": 466.63,
+   "bull": 1154.77,
    "hand": {
     "scen": {
      "bear": {
@@ -4483,9 +4632,12 @@
       "m": 0.26
      }
     },
-    "fair_value": 559.44
+    "fair_value": 559.44,
+    "bear": 225.75,
+    "base": 585.26,
+    "bull": 995.46
    },
-   "diff": 0.0218
+   "diff": -0.1393
   },
   "TT": {
    "scen": {
@@ -4496,12 +4648,12 @@
     },
     "base": {
      "g1": 0.1023,
-     "g10": 0.0627,
-     "m": 0.1402
+     "g10": 0.055,
+     "m": 0.1443
     },
     "bull": {
      "g1": 0.17,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1526
     }
    },
@@ -4539,10 +4691,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 402.24,
+   "fair_value": 374.6,
    "bear": 187.93,
-   "base": 403.22,
-   "bull": 721.26,
+   "base": 396.18,
+   "bull": 600.67,
    "hand": {
     "scen": {
      "bear": {
@@ -4561,9 +4713,12 @@
       "m": 0.17
      }
     },
-    "fair_value": 365.44
+    "fair_value": 365.44,
+    "bear": 219.63,
+    "base": 384.07,
+    "bull": 537.6
    },
-   "diff": 0.1007
+   "diff": 0.0251
   },
   "RL": {
    "scen": {
@@ -4575,11 +4730,11 @@
     "base": {
      "g1": 0.0521,
      "g10": 0.0521,
-     "m": 0.1235
+     "m": 0.1197
     },
     "bull": {
      "g1": 0.1048,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.1308
     }
    },
@@ -4617,10 +4772,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 284.92,
+   "fair_value": 270.28,
    "bear": 110.92,
-   "base": 307.55,
-   "bull": 489.36,
+   "base": 298.93,
+   "bull": 437.69,
    "hand": {
     "scen": {
      "bear": {
@@ -4639,9 +4794,12 @@
       "m": 0.13
      }
     },
-    "fair_value": 237.74
+    "fair_value": 237.74,
+    "bear": 147.49,
+    "base": 249.61,
+    "bull": 343.45
    },
-   "diff": 0.1985
+   "diff": 0.1369
   },
   "ROST": {
    "scen": {
@@ -4652,12 +4810,12 @@
     },
     "base": {
      "g1": 0.0697,
-     "g10": 0.0564,
-     "m": 0.0846
+     "g10": 0.055,
+     "m": 0.0893
     },
     "bull": {
      "g1": 0.1224,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.0926
     }
    },
@@ -4695,10 +4853,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 139.58,
+   "fair_value": 136.15,
    "bear": 68.38,
-   "base": 141.91,
-   "bull": 240.57,
+   "base": 148.16,
+   "bull": 207.76,
    "hand": {
     "scen": {
      "bear": {
@@ -4717,9 +4875,12 @@
       "m": 0.115
      }
     },
-    "fair_value": 149.53
+    "fair_value": 149.53,
+    "bear": 104.67,
+    "base": 158.83,
+    "bull": 193.57
    },
-   "diff": -0.0665
+   "diff": -0.0895
   },
   "GDDY": {
    "scen": {
@@ -4731,11 +4892,11 @@
     "base": {
      "g1": 0.0493,
      "g10": 0.0493,
-     "m": 0.2102
+     "m": 0.2388
     },
     "bull": {
      "g1": 0.102,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2593
     }
    },
@@ -4773,10 +4934,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 150.75,
+   "fair_value": 153.52,
    "bear": 74.56,
-   "base": 147.43,
-   "bull": 273.35,
+   "base": 164.6,
+   "bull": 244.23,
    "hand": {
     "scen": {
      "bear": {
@@ -4795,9 +4956,12 @@
       "m": 0.29
      }
     },
-    "fair_value": 154.29
+    "fair_value": 154.29,
+    "bear": 99.5,
+    "base": 163.2,
+    "bull": 214.18
    },
-   "diff": -0.0229
+   "diff": -0.005
   },
   "FAST": {
    "scen": {
@@ -4808,12 +4972,12 @@
     },
     "base": {
      "g1": 0.0959,
-     "g10": 0.0564,
-     "m": 0.1403
+     "g10": 0.055,
+     "m": 0.1405
     },
     "bull": {
      "g1": 0.1486,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.1534
     }
    },
@@ -4851,10 +5015,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 27.58,
+   "fair_value": 26.17,
    "bear": 14.35,
-   "base": 27.68,
-   "bull": 47.18,
+   "base": 27.49,
+   "bull": 40.59,
    "hand": {
     "scen": {
      "bear": {
@@ -4873,9 +5037,12 @@
       "m": 0.145
      }
     },
-    "fair_value": 22.13
+    "fair_value": 22.13,
+    "bear": 14.51,
+    "base": 23.55,
+    "bull": 30.01
    },
-   "diff": 0.2463
+   "diff": 0.1824
   },
   "SYK": {
    "scen": {
@@ -4886,12 +5053,12 @@
     },
     "base": {
      "g1": 0.0712,
-     "g10": 0.0712,
-     "m": 0.1527
+     "g10": 0.045,
+     "m": 0.1572
     },
     "bull": {
      "g1": 0.1313,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.1615
     }
    },
@@ -4929,10 +5096,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 191.85,
+   "fair_value": 181.9,
    "bear": 123.08,
-   "base": 189.3,
-   "bull": 301.39,
+   "base": 187.49,
+   "bull": 256.16,
    "hand": {
     "scen": {
      "bear": {
@@ -4951,9 +5118,12 @@
       "m": 0.2
      }
     },
-    "fair_value": 233.19
+    "fair_value": 233.19,
+    "bear": 174.59,
+    "base": 243.07,
+    "bull": 296.4
    },
-   "diff": -0.1773
+   "diff": -0.2199
   },
   "CMG": {
    "scen": {
@@ -4964,12 +5134,12 @@
     },
     "base": {
      "g1": 0.1063,
-     "g10": 0.0627,
-     "m": 0.1189
+     "g10": 0.055,
+     "m": 0.1188
     },
     "bull": {
      "g1": 0.174,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1266
     }
    },
@@ -5007,10 +5177,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 23.71,
+   "fair_value": 22.07,
    "bear": 11.68,
-   "base": 23.75,
-   "bull": 41.66,
+   "base": 22.8,
+   "bull": 35.8,
    "hand": {
     "scen": {
      "bear": {
@@ -5029,9 +5199,12 @@
       "m": 0.13
      }
     },
-    "fair_value": 18.88
+    "fair_value": 18.88,
+    "bear": 10.44,
+    "base": 20.29,
+    "bull": 28.04
    },
-   "diff": 0.2557
+   "diff": 0.1687
   },
   "KLAC": {
    "scen": {
@@ -5042,12 +5215,12 @@
     },
     "base": {
      "g1": 0.104,
-     "g10": 0.0564,
-     "m": 0.3225
+     "g10": 0.055,
+     "m": 0.3147
     },
     "bull": {
      "g1": 0.1567,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.3585
     }
    },
@@ -5085,10 +5258,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 72.86,
+   "fair_value": 68.52,
    "bear": 36.81,
-   "base": 73.75,
-   "bull": 124.69,
+   "base": 71.59,
+   "bull": 108.42,
    "hand": {
     "scen": {
      "bear": {
@@ -5107,9 +5280,12 @@
       "m": 0.34
      }
     },
-    "fair_value": 71.92
+    "fair_value": 71.92,
+    "bear": 34.0,
+    "base": 77.12,
+    "bull": 115.82
    },
-   "diff": 0.013
+   "diff": -0.0473
   },
   "CME": {
    "scen": {
@@ -5121,11 +5297,11 @@
     "base": {
      "g1": 0.0537,
      "g10": 0.0537,
-     "m": 0.5905
+     "m": 0.6044
     },
     "bull": {
      "g1": 0.1064,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.6119
     }
    },
@@ -5163,10 +5339,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 231.4,
+   "fair_value": 227.71,
    "bear": 150.34,
-   "base": 233.28,
-   "bull": 348.29,
+   "base": 238.09,
+   "bull": 317.8,
    "hand": {
     "scen": {
      "bear": {
@@ -5185,9 +5361,12 @@
       "m": 0.61
      }
     },
-    "fair_value": 216.6
+    "fair_value": 216.6,
+    "bear": 172.28,
+    "base": 224.22,
+    "bull": 264.04
    },
-   "diff": 0.0683
+   "diff": 0.0513
   },
   "STE": {
    "scen": {
@@ -5198,12 +5377,12 @@
     },
     "base": {
      "g1": 0.0657,
-     "g10": 0.0564,
-     "m": 0.1349
+     "g10": 0.055,
+     "m": 0.1398
     },
     "bull": {
      "g1": 0.1184,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.1441
     }
    },
@@ -5241,10 +5420,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 166.7,
+   "fair_value": 164.29,
    "bear": 87.3,
-   "base": 173.67,
-   "bull": 268.39,
+   "base": 178.61,
+   "bull": 243.96,
    "hand": {
     "scen": {
      "bear": {
@@ -5263,9 +5442,12 @@
       "m": 0.17
      }
     },
-    "fair_value": 175.27
+    "fair_value": 175.27,
+    "bear": 121.87,
+    "base": 183.87,
+    "bull": 233.88
    },
-   "diff": -0.0489
+   "diff": -0.0627
   },
   "WDAY": {
    "scen": {
@@ -5277,11 +5459,11 @@
     "base": {
      "g1": 0.1044,
      "g10": 0.0449,
-     "m": 0.0825
+     "m": 0.0991
     },
     "bull": {
      "g1": 0.1924,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1179
     }
    },
@@ -5319,10 +5501,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 61.36,
+   "fair_value": 64.67,
    "bear": 29.16,
-   "base": 54.56,
-   "bull": 126.66,
+   "base": 65.84,
+   "bull": 115.0,
    "hand": {
     "scen": {
      "bear": {
@@ -5341,9 +5523,12 @@
       "m": 0.22
      }
     },
-    "fair_value": 108.18
+    "fair_value": 108.18,
+    "bear": 66.83,
+    "base": 110.39,
+    "bull": 164.69
    },
-   "diff": -0.4328
+   "diff": -0.4022
   },
   "BR": {
    "scen": {
@@ -5355,11 +5540,11 @@
     "base": {
      "g1": 0.0469,
      "g10": 0.0469,
-     "m": 0.1427
+     "m": 0.149
     },
     "bull": {
      "g1": 0.0996,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.1535
     }
    },
@@ -5397,10 +5582,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 179.83,
+   "fair_value": 176.46,
    "bear": 103.47,
-   "base": 175.4,
-   "bull": 305.44,
+   "base": 183.01,
+   "bull": 269.55,
    "hand": {
     "scen": {
      "bear": {
@@ -5419,9 +5604,12 @@
       "m": 0.18
      }
     },
-    "fair_value": 183.93
+    "fair_value": 183.93,
+    "bear": 133.53,
+    "base": 190.32,
+    "bull": 243.55
    },
-   "diff": -0.0223
+   "diff": -0.0406
   },
   "MSI": {
    "scen": {
@@ -5432,12 +5620,12 @@
     },
     "base": {
      "g1": 0.0924,
-     "g10": 0.0564,
-     "m": 0.1853
+     "g10": 0.055,
+     "m": 0.1884
     },
     "bull": {
      "g1": 0.1451,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2001
     }
    },
@@ -5475,10 +5663,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 306.68,
+   "fair_value": 293.4,
    "bear": 157.62,
-   "base": 307.62,
-   "bull": 527.89,
+   "base": 310.58,
+   "bull": 454.1,
    "hand": {
     "scen": {
      "bear": {
@@ -5497,9 +5685,12 @@
       "m": 0.22
      }
     },
-    "fair_value": 280.24
+    "fair_value": 280.24,
+    "bear": 199.96,
+    "base": 292.35,
+    "bull": 370.37
    },
-   "diff": 0.0943
+   "diff": 0.0469
   },
   "BKR": {
    "scen": {
@@ -5510,12 +5701,12 @@
     },
     "base": {
      "g1": 0.098,
-     "g10": 0.0573,
-     "m": 0.0814
+     "g10": 0.045,
+     "m": 0.0884
     },
     "bull": {
      "g1": 0.1401,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.0962
     }
    },
@@ -5553,10 +5744,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 40.12,
+   "fair_value": 38.92,
    "bear": 19.67,
-   "base": 40.83,
-   "bull": 69.0,
+   "base": 42.42,
+   "bull": 59.02,
    "hand": {
     "scen": {
      "bear": {
@@ -5575,9 +5766,12 @@
       "m": 0.13
      }
     },
-    "fair_value": 50.64
+    "fair_value": 50.64,
+    "bear": 24.46,
+    "base": 55.56,
+    "bull": 77.63
    },
-   "diff": -0.2078
+   "diff": -0.2315
   },
   "RSG": {
    "scen": {
@@ -5589,11 +5783,11 @@
     "base": {
      "g1": 0.0498,
      "g10": 0.0498,
-     "m": 0.1411
+     "m": 0.1449
     },
     "bull": {
      "g1": 0.1025,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.1522
     }
    },
@@ -5631,10 +5825,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 119.42,
+   "fair_value": 116.78,
    "bear": 84.76,
-   "base": 108.32,
-   "bull": 199.17,
+   "base": 112.31,
+   "bull": 176.01,
    "hand": {
     "scen": {
      "bear": {
@@ -5653,9 +5847,12 @@
       "m": 0.17
      }
     },
-    "fair_value": 127.38
+    "fair_value": 127.38,
+    "bear": 112.46,
+    "base": 126.19,
+    "bull": 152.72
    },
-   "diff": -0.0624
+   "diff": -0.0832
   },
   "WAB": {
    "scen": {
@@ -5666,12 +5863,12 @@
     },
     "base": {
      "g1": 0.0689,
-     "g10": 0.0627,
-     "m": 0.1271
+     "g10": 0.055,
+     "m": 0.1297
     },
     "bull": {
      "g1": 0.1366,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1401
     }
    },
@@ -5709,10 +5906,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 177.52,
+   "fair_value": 169.86,
    "bear": 92.38,
-   "base": 177.09,
-   "bull": 306.3,
+   "base": 175.83,
+   "bull": 271.15,
    "hand": {
     "scen": {
      "bear": {
@@ -5731,9 +5928,12 @@
       "m": 0.16
      }
     },
-    "fair_value": 176.0
+    "fair_value": 176.0,
+    "bear": 114.42,
+    "base": 186.58,
+    "bull": 241.9
    },
-   "diff": 0.0087
+   "diff": -0.0349
   },
   "MRVL": {
    "scen": {
@@ -5744,12 +5944,12 @@
     },
     "base": {
      "g1": 0.1289,
-     "g10": 0.0627,
-     "m": 0.1173
+     "g10": 0.055,
+     "m": 0.1178
     },
     "bull": {
      "g1": 0.1966,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.1405
     }
    },
@@ -5787,10 +5987,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 28.42,
+   "fair_value": 27.09,
    "bear": 14.71,
-   "base": 28.41,
-   "bull": 49.03,
+   "base": 27.75,
+   "bull": 44.02,
    "hand": {
     "scen": {
      "bear": {
@@ -5809,9 +6009,12 @@
       "m": 0.26
      }
     },
-    "fair_value": 107.75
+    "fair_value": 107.75,
+    "bear": 21.19,
+    "base": 98.58,
+    "bull": 260.49
    },
-   "diff": -0.7362
+   "diff": -0.7486
   },
   "LULU": {
    "scen": {
@@ -5823,7 +6026,7 @@
     "base": {
      "g1": -0.0003,
      "g10": 0.025,
-     "m": 0.1279
+     "m": 0.1233
     },
     "bull": {
      "g1": 0.0673,
@@ -5865,9 +6068,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 148.87,
+   "fair_value": 146.33,
    "bear": 63.84,
-   "base": 152.84,
+   "base": 147.78,
    "bull": 266.46,
    "hand": {
     "scen": {
@@ -5887,25 +6090,28 @@
       "m": 0.15
      }
     },
-    "fair_value": 128.13
+    "fair_value": 128.13,
+    "bear": 76.81,
+    "base": 128.6,
+    "bull": 203.94
    },
-   "diff": 0.1618
+   "diff": 0.1421
   },
   "RDDT": {
    "scen": {
     "bear": {
      "g1": 0.0965,
-     "g10": 0.0611,
+     "g10": 0.05,
      "m": -0.2768
     },
     "base": {
      "g1": 0.2861,
-     "g10": 0.1,
-     "m": 0.0029
+     "g10": 0.065,
+     "m": 0.0963
     },
     "bull": {
      "g1": 0.4129,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.1764
     }
    },
@@ -5943,10 +6149,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 37.9,
-   "bear": -39.35,
-   "base": 26.52,
-   "bull": 182.22,
+   "fair_value": 58.96,
+   "bear": -36.89,
+   "base": 71.57,
+   "bull": 171.2,
    "hand": {
     "scen": {
      "bear": {
@@ -5965,9 +6171,12 @@
       "m": 0.34
      }
     },
-    "fair_value": 129.5
+    "fair_value": 129.5,
+    "bear": 52.85,
+    "base": 131.63,
+    "bull": 239.19
    },
-   "diff": -0.7074
+   "diff": -0.5448
   },
   "CF": {
    "scen": {
@@ -5979,7 +6188,7 @@
     "base": {
      "g1": -0.0276,
      "g10": 0.025,
-     "m": 0.2592
+     "m": 0.2589
     },
     "bull": {
      "g1": 0.0329,
@@ -6021,9 +6230,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 162.26,
+   "fair_value": 162.18,
    "bear": 105.53,
-   "base": 164.51,
+   "base": 164.34,
    "bull": 241.76,
    "hand": {
     "scen": {
@@ -6043,9 +6252,12 @@
       "m": 0.25
      }
     },
-    "fair_value": 104.91
+    "fair_value": 104.91,
+    "bear": 54.84,
+    "base": 104.0,
+    "bull": 182.31
    },
-   "diff": 0.5467
+   "diff": 0.5459
   },
   "EME": {
    "scen": {
@@ -6057,11 +6269,11 @@
     "base": {
      "g1": 0.1376,
      "g10": 0.0449,
-     "m": 0.0688
+     "m": 0.07
     },
     "bull": {
      "g1": 0.2256,
-     "g10": 0.1,
+     "g10": 0.07,
      "m": 0.0769
     }
    },
@@ -6099,10 +6311,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 721.96,
+   "fair_value": 684.24,
    "bear": 341.49,
-   "base": 675.53,
-   "bull": 1408.73,
+   "base": 686.46,
+   "bull": 1192.85,
    "hand": {
     "scen": {
      "bear": {
@@ -6121,9 +6333,12 @@
       "m": 0.08
      }
     },
-    "fair_value": 584.91
+    "fair_value": 584.91,
+    "bear": 291.48,
+    "base": 640.05,
+    "bull": 887.24
    },
-   "diff": 0.2343
+   "diff": 0.1698
   },
   "HST": {
    "scen": {
@@ -6135,7 +6350,7 @@
     "base": {
      "g1": 0.0075,
      "g10": 0.025,
-     "m": 0.1629
+     "m": 0.1608
     },
     "bull": {
      "g1": 0.0602,
@@ -6177,9 +6392,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 20.01,
+   "fair_value": 19.89,
    "bear": 11.47,
-   "base": 19.91,
+   "base": 19.67,
    "bull": 33.05,
    "hand": {
     "scen": {
@@ -6199,9 +6414,12 @@
       "m": 0.18
      }
     },
-    "fair_value": 18.58
+    "fair_value": 18.58,
+    "bear": 10.46,
+    "base": 20.3,
+    "bull": 26.46
    },
-   "diff": 0.0769
+   "diff": 0.0703
   },
   "LII": {
    "scen": {
@@ -6213,11 +6431,11 @@
     "base": {
      "g1": 0.0543,
      "g10": 0.0355,
-     "m": 0.1388
+     "m": 0.1429
     },
     "bull": {
      "g1": 0.1107,
-     "g10": 0.0741,
+     "g10": 0.07,
      "m": 0.1602
     }
    },
@@ -6255,10 +6473,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 392.27,
+   "fair_value": 394.04,
    "bear": 154.88,
-   "base": 396.22,
-   "bull": 738.49,
+   "base": 407.33,
+   "bull": 719.54,
    "hand": {
     "scen": {
      "bear": {
@@ -6277,9 +6495,12 @@
       "m": 0.17
      }
     },
-    "fair_value": 415.81
+    "fair_value": 415.81,
+    "bear": 262.82,
+    "base": 439.1,
+    "bull": 587.07
    },
-   "diff": -0.0566
+   "diff": -0.0524
   },
   "NEM": {
    "scen": {
@@ -6290,12 +6511,12 @@
     },
     "base": {
      "g1": 0.0477,
-     "g10": 0.0477,
-     "m": 0.2349
+     "g10": 0.045,
+     "m": 0.283
     },
     "bull": {
      "g1": 0.1335,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.329
     }
    },
@@ -6333,10 +6554,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 117.88,
+   "fair_value": 120.69,
    "bear": 36.16,
-   "base": 113.74,
-   "bull": 250.83,
+   "base": 131.73,
+   "bull": 219.88,
    "hand": {
     "scen": {
      "bear": {
@@ -6355,9 +6576,12 @@
       "m": 0.33
      }
     },
-    "fair_value": 85.7
+    "fair_value": 85.7,
+    "bear": 37.14,
+    "base": 92.12,
+    "bull": 142.49
    },
-   "diff": 0.3755
+   "diff": 0.4083
   },
   "REGN": {
    "scen": {
@@ -6368,12 +6592,12 @@
     },
     "base": {
      "g1": 0.0728,
-     "g10": 0.0564,
-     "m": 0.205
+     "g10": 0.055,
+     "m": 0.2017
     },
     "bull": {
      "g1": 0.1255,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2168
     }
    },
@@ -6411,10 +6635,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 681.99,
+   "fair_value": 653.34,
    "bear": 409.45,
-   "base": 695.71,
-   "bull": 1056.52,
+   "base": 681.43,
+   "bull": 948.98,
    "hand": {
     "scen": {
      "bear": {
@@ -6433,9 +6657,12 @@
       "m": 0.25
      }
     },
-    "fair_value": 770.69
+    "fair_value": 770.69,
+    "bear": 386.14,
+    "base": 817.83,
+    "bull": 1229.67
    },
-   "diff": -0.1151
+   "diff": -0.1523
   },
   "ZTS": {
    "scen": {
@@ -6447,7 +6674,7 @@
     "base": {
      "g1": 0.0054,
      "g10": 0.025,
-     "m": 0.2644
+     "m": 0.2654
     },
     "bull": {
      "g1": 0.0581,
@@ -6489,9 +6716,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 85.78,
+   "fair_value": 85.95,
    "bear": 36.73,
-   "base": 86.11,
+   "base": 86.44,
    "bull": 158.53,
    "hand": {
     "scen": {
@@ -6511,9 +6738,12 @@
       "m": 0.26
      }
     },
-    "fair_value": 81.74
+    "fair_value": 81.74,
+    "bear": 48.52,
+    "base": 84.71,
+    "bull": 124.14
    },
-   "diff": 0.0495
+   "diff": 0.0515
   },
   "MO": {
    "scen": {
@@ -6525,11 +6755,11 @@
     "base": {
      "g1": 0.0116,
      "g10": 0.025,
-     "m": 0.445
+     "m": 0.4468
     },
     "bull": {
      "g1": 0.0721,
-     "g10": 0.0721,
+     "g10": 0.07,
      "m": 0.4542
     }
    },
@@ -6567,10 +6797,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 94.04,
+   "fair_value": 93.98,
    "bear": 61.2,
-   "base": 92.97,
-   "bull": 145.99,
+   "base": 93.29,
+   "bull": 144.88,
    "hand": {
     "scen": {
      "bear": {
@@ -6589,9 +6819,12 @@
       "m": 0.43
      }
     },
-    "fair_value": 70.56
+    "fair_value": 70.56,
+    "bear": 52.84,
+    "base": 73.87,
+    "bull": 88.84
    },
-   "diff": 0.3329
+   "diff": 0.332
   },
   "HAS": {
    "scen": {
@@ -6603,11 +6836,11 @@
     "base": {
      "g1": 0.072,
      "g10": 0.0362,
-     "m": 0.1542
+     "m": 0.1625
     },
     "bull": {
      "g1": 0.1325,
-     "g10": 0.0775,
+     "g10": 0.07,
      "m": 0.1778
     }
    },
@@ -6645,10 +6878,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 100.2,
+   "fair_value": 101.59,
    "bear": 39.95,
-   "base": 104.88,
-   "bull": 178.86,
+   "base": 109.66,
+   "bull": 173.86,
    "hand": {
     "scen": {
      "bear": {
@@ -6667,9 +6900,12 @@
       "m": 0.21
      }
     },
-    "fair_value": 109.69
+    "fair_value": 109.69,
+    "bear": 62.25,
+    "base": 118.17,
+    "bull": 159.65
    },
-   "diff": -0.0865
+   "diff": -0.0739
   },
   "BMY": {
    "scen": {
@@ -6681,7 +6917,7 @@
     "base": {
      "g1": -0.0172,
      "g10": 0.025,
-     "m": 0.255
+     "m": 0.235
     },
     "bull": {
      "g1": 0.0319,
@@ -6723,9 +6959,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 81.34,
+   "fair_value": 78.25,
    "bear": 55.1,
-   "base": 83.44,
+   "base": 77.27,
    "bull": 115.41,
    "hand": {
     "scen": {
@@ -6745,9 +6981,12 @@
       "m": 0.25
      }
     },
-    "fair_value": 60.71
+    "fair_value": 60.71,
+    "bear": 33.88,
+    "base": 60.98,
+    "bull": 100.29
    },
-   "diff": 0.3397
+   "diff": 0.2888
   },
   "NRG": {
    "scen": {
@@ -6759,7 +6998,7 @@
     "base": {
      "g1": -0.0254,
      "g10": 0.025,
-     "m": 0.0343
+     "m": 0.038
     },
     "bull": {
      "g1": 0.0198,
@@ -6801,9 +7040,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 14.02,
+   "fair_value": 16.81,
    "bear": -49.12,
-   "base": 25.58,
+   "base": 31.16,
    "bull": 79.82,
    "hand": {
     "scen": {
@@ -6823,9 +7062,12 @@
       "m": 0.07
      }
     },
-    "fair_value": 117.77
+    "fair_value": 117.77,
+    "bear": 36.53,
+    "base": 127.75,
+    "bull": 214.68
    },
-   "diff": -0.881
+   "diff": -0.8573
   },
   "FIS": {
    "scen": {
@@ -6837,7 +7079,7 @@
     "base": {
      "g1": 0.0103,
      "g10": 0.025,
-     "m": 0.1542
+     "m": 0.1563
     },
     "bull": {
      "g1": 0.0667,
@@ -6879,9 +7121,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 31.24,
+   "fair_value": 31.52,
    "bear": 3.68,
-   "base": 30.15,
+   "base": 30.71,
    "bull": 75.28,
    "hand": {
     "scen": {
@@ -6901,9 +7143,12 @@
       "m": 0.2
      }
     },
-    "fair_value": 40.61
+    "fair_value": 40.61,
+    "bear": 22.23,
+    "base": 43.05,
+    "bull": 62.07
    },
-   "diff": -0.2308
+   "diff": -0.2239
   },
   "PG": {
    "scen": {
@@ -6915,11 +7160,11 @@
     "base": {
      "g1": 0.0314,
      "g10": 0.0314,
-     "m": 0.1739
+     "m": 0.174
     },
     "bull": {
      "g1": 0.0805,
-     "g10": 0.0754,
+     "g10": 0.06,
      "m": 0.1797
     }
    },
@@ -6957,10 +7202,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 124.16,
+   "fair_value": 120.28,
    "bear": 76.27,
-   "base": 120.54,
-   "bull": 205.04,
+   "base": 120.61,
+   "bull": 185.47,
    "hand": {
     "scen": {
      "bear": {
@@ -6979,9 +7224,12 @@
       "m": 0.185
      }
     },
-    "fair_value": 115.43
+    "fair_value": 115.43,
+    "bear": 91.78,
+    "base": 118.96,
+    "bull": 142.06
    },
-   "diff": 0.0757
+   "diff": 0.042
   },
   "KO": {
    "scen": {
@@ -6993,7 +7241,7 @@
     "base": {
      "g1": -0.0172,
      "g10": 0.025,
-     "m": 0.2314
+     "m": 0.2269
     },
     "bull": {
      "g1": 0.0319,
@@ -7035,9 +7283,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 37.41,
+   "fair_value": 37.06,
    "bear": 15.84,
-   "base": 41.85,
+   "base": 41.13,
    "bull": 58.7,
    "hand": {
     "scen": {
@@ -7057,9 +7305,12 @@
       "m": 0.265
      }
     },
-    "fair_value": 56.47
+    "fair_value": 56.47,
+    "bear": 43.4,
+    "base": 58.38,
+    "bull": 71.31
    },
-   "diff": -0.3375
+   "diff": -0.3438
   },
   "SHW": {
    "scen": {
@@ -7071,11 +7322,11 @@
     "base": {
      "g1": 0.0416,
      "g10": 0.0355,
-     "m": 0.1156
+     "m": 0.117
     },
     "bull": {
      "g1": 0.098,
-     "g10": 0.0741,
+     "g10": 0.07,
      "m": 0.1238
     }
    },
@@ -7113,10 +7364,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 175.01,
+   "fair_value": 174.38,
    "bear": 76.51,
-   "base": 176.9,
-   "bull": 318.02,
+   "base": 179.2,
+   "bull": 309.15,
    "hand": {
     "scen": {
      "bear": {
@@ -7135,9 +7386,12 @@
       "m": 0.135
      }
     },
-    "fair_value": 194.45
+    "fair_value": 194.45,
+    "bear": 133.32,
+    "base": 199.26,
+    "bull": 274.12
    },
-   "diff": -0.1
+   "diff": -0.1032
   },
   "JNJ": {
    "scen": {
@@ -7148,12 +7402,12 @@
     },
     "base": {
      "g1": 0.0645,
-     "g10": 0.0573,
-     "m": 0.2072
+     "g10": 0.045,
+     "m": 0.2062
     },
     "bull": {
      "g1": 0.1066,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.2236
     }
    },
@@ -7191,10 +7445,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 148.21,
+   "fair_value": 140.74,
    "bear": 118.34,
-   "base": 136.67,
-   "bull": 221.85,
+   "base": 137.47,
+   "bull": 182.49,
    "hand": {
     "scen": {
      "bear": {
@@ -7213,9 +7467,12 @@
       "m": 0.21
      }
     },
-    "fair_value": 119.12
+    "fair_value": 119.12,
+    "bear": 112.7,
+    "base": 116.43,
+    "bull": 135.47
    },
-   "diff": 0.2442
+   "diff": 0.1815
   },
   "AMGN": {
    "scen": {
@@ -7227,11 +7484,11 @@
     "base": {
      "g1": 0.0446,
      "g10": 0.0446,
-     "m": 0.2458
+     "m": 0.233
     },
     "bull": {
      "g1": 0.1047,
-     "g10": 0.1,
+     "g10": 0.06,
      "m": 0.2998
     }
    },
@@ -7269,10 +7526,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 368.32,
+   "fair_value": 332.85,
    "bear": 198.43,
-   "base": 331.92,
-   "bull": 714.13,
+   "base": 315.59,
+   "bull": 577.61,
    "hand": {
     "scen": {
      "bear": {
@@ -7291,9 +7548,12 @@
       "m": 0.28
      }
     },
-    "fair_value": 302.32
+    "fair_value": 302.32,
+    "bear": 193.03,
+    "base": 305.96,
+    "bull": 457.13
    },
-   "diff": 0.2183
+   "diff": 0.101
   },
   "VLTO": {
    "scen": {
@@ -7305,11 +7565,11 @@
     "base": {
      "g1": 0.0525,
      "g10": 0.0355,
-     "m": 0.1779
+     "m": 0.1787
     },
     "bull": {
      "g1": 0.1089,
-     "g10": 0.0741,
+     "g10": 0.07,
      "m": 0.1856
     }
    },
@@ -7347,10 +7607,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 90.58,
+   "fair_value": 90.0,
    "bear": 53.84,
-   "base": 89.37,
-   "bull": 148.71,
+   "base": 89.72,
+   "bull": 144.94,
    "hand": {
     "scen": {
      "bear": {
@@ -7369,9 +7629,12 @@
       "m": 0.195
      }
     },
-    "fair_value": 90.73
+    "fair_value": 90.73,
+    "bear": 67.28,
+    "base": 93.66,
+    "bull": 118.58
    },
-   "diff": -0.0017
+   "diff": -0.0081
   },
   "AMP": {
    "scen": {
@@ -7383,11 +7646,11 @@
     "base": {
      "g1": 0.0534,
      "g10": 0.0534,
-     "m": 0.197
+     "m": 0.1992
     },
     "bull": {
      "g1": 0.1061,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.2121
     }
    },
@@ -7425,10 +7688,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 711.32,
+   "fair_value": 694.34,
    "bear": 472.51,
-   "base": 705.96,
-   "bull": 1082.93,
+   "base": 713.13,
+   "bull": 980.08,
    "hand": {
     "scen": {
      "bear": {
@@ -7447,9 +7710,12 @@
       "m": 0.22
      }
     },
-    "fair_value": 644.75
+    "fair_value": 644.75,
+    "bear": 390.3,
+    "base": 701.65,
+    "bull": 884.16
    },
-   "diff": 0.1033
+   "diff": 0.0769
   },
   "PPG": {
    "scen": {
@@ -7461,11 +7727,11 @@
     "base": {
      "g1": 0.0301,
      "g10": 0.0301,
-     "m": 0.0876
+     "m": 0.088
     },
     "bull": {
      "g1": 0.0865,
-     "g10": 0.0741,
+     "g10": 0.07,
      "m": 0.1048
     }
    },
@@ -7503,10 +7769,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 85.63,
+   "fair_value": 85.12,
    "bear": 24.14,
-   "base": 88.04,
-   "bull": 171.83,
+   "base": 88.43,
+   "bull": 168.31,
    "hand": {
     "scen": {
      "bear": {
@@ -7525,9 +7791,12 @@
       "m": 0.105
      }
     },
-    "fair_value": 86.66
+    "fair_value": 86.66,
+    "bear": 56.94,
+    "base": 90.33,
+    "bull": 122.06
    },
-   "diff": -0.0119
+   "diff": -0.0178
   },
   "EOG": {
    "scen": {
@@ -7539,7 +7808,7 @@
     "base": {
      "g1": -0.0442,
      "g10": 0.025,
-     "m": 0.2323
+     "m": 0.2265
     },
     "bull": {
      "g1": 0.001,
@@ -7581,9 +7850,9 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 144.91,
+   "fair_value": 143.23,
    "bear": 88.39,
-   "base": 156.06,
+   "base": 152.69,
    "bull": 201.82,
    "hand": {
     "scen": {
@@ -7603,9 +7872,12 @@
       "m": 0.24
      }
     },
-    "fair_value": 118.22
+    "fair_value": 118.22,
+    "bear": 54.08,
+    "base": 115.92,
+    "bull": 220.17
    },
-   "diff": 0.2258
+   "diff": 0.2116
   },
   "PM": {
    "scen": {
@@ -7616,12 +7888,12 @@
     },
     "base": {
      "g1": 0.0479,
-     "g10": 0.0479,
-     "m": 0.2873
+     "g10": 0.045,
+     "m": 0.2877
     },
     "bull": {
      "g1": 0.09,
-     "g10": 0.09,
+     "g10": 0.06,
      "m": 0.3068
     }
    },
@@ -7659,10 +7931,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 166.48,
+   "fair_value": 154.91,
    "bear": 92.61,
-   "base": 164.87,
-   "bull": 281.27,
+   "base": 162.01,
+   "bull": 230.59,
    "hand": {
     "scen": {
      "bear": {
@@ -7681,9 +7953,12 @@
       "m": 0.3
      }
     },
-    "fair_value": 146.47
+    "fair_value": 146.47,
+    "bear": 105.57,
+    "base": 153.1,
+    "bull": 191.24
    },
-   "diff": 0.1366
+   "diff": 0.0576
   },
   "DLTR": {
    "scen": {
@@ -7694,12 +7969,12 @@
     },
     "base": {
      "g1": 0.0604,
-     "g10": 0.0564,
-     "m": 0.0828
+     "g10": 0.055,
+     "m": 0.0824
     },
     "bull": {
      "g1": 0.1131,
-     "g10": 0.0944,
+     "g10": 0.07,
      "m": 0.0864
     }
    },
@@ -7737,10 +8012,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 151.15,
+   "fair_value": 144.05,
    "bear": 69.3,
-   "base": 157.58,
-   "bull": 257.86,
+   "base": 155.63,
+   "bull": 227.22,
    "hand": {
     "scen": {
      "bear": {
@@ -7759,25 +8034,28 @@
       "m": 0.095
      }
     },
-    "fair_value": 131.13
+    "fair_value": 131.13,
+    "bear": 83.09,
+    "base": 140.79,
+    "bull": 179.02
    },
-   "diff": 0.1527
+   "diff": 0.0986
   },
   "INVA": {
    "scen": {
     "bear": {
      "g1": 0.0455,
      "g10": 0.0455,
-     "m": 0.4213
+     "m": 0.4211
     },
     "base": {
      "g1": 0.0939,
-     "g10": 0.0841,
-     "m": 0.4342
+     "g10": 0.065,
+     "m": 0.4211
     },
     "bull": {
      "g1": 0.1518,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.5144
     }
    },
@@ -7815,10 +8093,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 55.04,
-   "bear": 39.65,
-   "base": 53.86,
-   "bull": 81.04,
+   "fair_value": 51.98,
+   "bear": 39.64,
+   "base": 49.68,
+   "bull": 76.21,
    "hand": {
     "scen": {
      "bear": {
@@ -7837,9 +8115,12 @@
       "m": 0.4
      }
     },
-    "fair_value": 30.05
+    "fair_value": 30.05,
+    "bear": 19.29,
+    "base": 31.72,
+    "bull": 42.03
    },
-   "diff": 0.8314
+   "diff": 0.7295
   },
   "CTRE": {
    "scen": {
@@ -7850,12 +8131,12 @@
     },
     "base": {
      "g1": 0.2813,
-     "g10": 0.1,
-     "m": 0.9829
+     "g10": 0.065,
+     "m": 0.9856
     },
     "bull": {
      "g1": 0.3749,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.9966
     }
    },
@@ -7893,10 +8174,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 97.35,
+   "fair_value": 88.38,
    "bear": 38.24,
-   "base": 108.96,
-   "bull": 156.99,
+   "base": 95.61,
+   "bull": 145.54,
    "hand": {
     "scen": {
      "bear": {
@@ -7915,9 +8196,12 @@
       "m": 0.88
      }
     },
-    "fair_value": 30.07
+    "fair_value": 30.07,
+    "bear": 21.13,
+    "base": 32.1,
+    "bull": 38.43
    },
-   "diff": 2.2371
+   "diff": 1.939
   },
   "CVSA": {
    "scen": {
@@ -7928,12 +8212,12 @@
     },
     "base": {
      "g1": 0.0696,
-     "g10": 0.0696,
-     "m": 0.1475
+     "g10": 0.065,
+     "m": 0.1547
     },
     "bull": {
      "g1": 0.1422,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.1612
     }
    },
@@ -7971,10 +8255,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 144.38,
+   "fair_value": 142.95,
    "bear": 88.99,
-   "base": 142.26,
-   "bull": 232.76,
+   "base": 145.9,
+   "bull": 216.48,
    "hand": {
     "scen": {
      "bear": {
@@ -7993,9 +8277,12 @@
       "m": 0.18
      }
     },
-    "fair_value": 123.21
+    "fair_value": 123.21,
+    "bear": 77.03,
+    "base": 132.43,
+    "bull": 169.43
    },
-   "diff": 0.1718
+   "diff": 0.1602
   },
   "QLYS": {
    "scen": {
@@ -8006,12 +8293,12 @@
     },
     "base": {
      "g1": 0.0868,
-     "g10": 0.0719,
-     "m": 0.3007
+     "g10": 0.065,
+     "m": 0.3203
     },
     "bull": {
      "g1": 0.1594,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.3398
     }
    },
@@ -8049,10 +8336,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 107.54,
+   "fair_value": 106.69,
    "bear": 69.76,
-   "base": 106.03,
-   "bull": 167.97,
+   "base": 109.19,
+   "bull": 155.86,
    "hand": {
     "scen": {
      "bear": {
@@ -8071,9 +8358,12 @@
       "m": 0.36
      }
     },
-    "fair_value": 97.44
+    "fair_value": 97.44,
+    "bear": 74.34,
+    "base": 100.69,
+    "bull": 123.99
    },
-   "diff": 0.1036
+   "diff": 0.0949
   },
   "LAUR": {
    "scen": {
@@ -8085,11 +8375,11 @@
     "base": {
      "g1": 0.0601,
      "g10": 0.0601,
-     "m": 0.1619
+     "m": 0.1665
     },
     "bull": {
      "g1": 0.1327,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.1976
     }
    },
@@ -8127,10 +8417,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 28.72,
+   "fair_value": 28.16,
    "bear": 11.69,
-   "base": 28.12,
-   "bull": 55.75,
+   "base": 28.9,
+   "bull": 51.02,
    "hand": {
     "scen": {
      "bear": {
@@ -8149,9 +8439,12 @@
       "m": 0.16
      }
     },
-    "fair_value": 20.66
+    "fair_value": 20.66,
+    "bear": 11.35,
+    "base": 22.36,
+    "bull": 30.37
    },
-   "diff": 0.3902
+   "diff": 0.3634
   },
   "IDCC": {
    "scen": {
@@ -8163,11 +8456,11 @@
     "base": {
      "g1": 0.0454,
      "g10": 0.0454,
-     "m": 0.3534
+     "m": 0.3866
     },
     "bull": {
      "g1": 0.128,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.4898
     }
    },
@@ -8205,10 +8498,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 164.99,
+   "fair_value": 164.16,
    "bear": 83.21,
-   "base": 149.24,
-   "bull": 327.02,
+   "base": 159.48,
+   "bull": 297.31,
    "hand": {
     "scen": {
      "bear": {
@@ -8227,9 +8520,12 @@
       "m": 0.4
      }
     },
-    "fair_value": 106.15
+    "fair_value": 106.15,
+    "bear": 65.79,
+    "base": 104.93,
+    "bull": 169.74
    },
-   "diff": 0.5542
+   "diff": 0.5465
   },
   "LMAT": {
    "scen": {
@@ -8240,12 +8536,12 @@
     },
     "base": {
      "g1": 0.0993,
-     "g10": 0.0935,
-     "m": 0.1743
+     "g10": 0.065,
+     "m": 0.2002
     },
     "bull": {
      "g1": 0.1819,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.228
     }
    },
@@ -8283,10 +8579,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 53.44,
+   "fair_value": 52.29,
    "bear": 28.51,
-   "base": 54.02,
-   "bull": 89.4,
+   "base": 54.32,
+   "bull": 82.9,
    "hand": {
     "scen": {
      "bear": {
@@ -8305,9 +8601,12 @@
       "m": 0.23
      }
     },
-    "fair_value": 49.96
+    "fair_value": 49.96,
+    "bear": 36.59,
+    "base": 51.84,
+    "bull": 65.33
    },
-   "diff": 0.0696
+   "diff": 0.0465
   },
   "BOX": {
    "scen": {
@@ -8318,12 +8617,12 @@
     },
     "base": {
      "g1": 0.0887,
-     "g10": 0.0841,
-     "m": 0.0924
+     "g10": 0.065,
+     "m": 0.0866
     },
     "bull": {
      "g1": 0.1466,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.0953
     }
    },
@@ -8361,10 +8660,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 9.51,
+   "fair_value": 8.17,
    "bear": 4.23,
-   "base": 10.21,
-   "bull": 15.66,
+   "base": 8.28,
+   "bull": 13.79,
    "hand": {
     "scen": {
      "bear": {
@@ -8383,9 +8682,12 @@
       "m": 0.16
      }
     },
-    "fair_value": 9.66
+    "fair_value": 9.66,
+    "bear": 4.17,
+    "base": 10.14,
+    "bull": 16.72
    },
-   "diff": -0.0164
+   "diff": -0.1547
   },
   "ACIW": {
    "scen": {
@@ -8396,12 +8698,12 @@
     },
     "base": {
      "g1": 0.0743,
-     "g10": 0.0743,
-     "m": 0.1353
+     "g10": 0.065,
+     "m": 0.1376
     },
     "bull": {
      "g1": 0.1322,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.1486
     }
    },
@@ -8439,10 +8741,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 33.17,
+   "fair_value": 32.08,
    "bear": 14.05,
-   "base": 36.0,
-   "bull": 54.78,
+   "base": 35.34,
+   "bull": 50.99,
    "hand": {
     "scen": {
      "bear": {
@@ -8461,9 +8763,12 @@
       "m": 0.18
      }
     },
-    "fair_value": 31.23
+    "fair_value": 31.23,
+    "bear": 18.35,
+    "base": 33.61,
+    "bull": 44.58
    },
-   "diff": 0.0623
+   "diff": 0.0274
   },
   "MRSH": {
    "scen": {
@@ -8474,12 +8779,12 @@
     },
     "base": {
      "g1": 0.049,
-     "g10": 0.049,
-     "m": 0.1624
+     "g10": 0.045,
+     "m": 0.1632
     },
     "bull": {
      "g1": 0.0911,
-     "g10": 0.0911,
+     "g10": 0.06,
      "m": 0.1769
     }
    },
@@ -8517,10 +8822,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 177.17,
+   "fair_value": 167.25,
    "bear": 99.27,
-   "base": 176.46,
-   "bull": 295.81,
+   "base": 174.81,
+   "bull": 250.34,
    "hand": {
     "scen": {
      "bear": {
@@ -8539,9 +8844,12 @@
       "m": 0.185
      }
     },
-    "fair_value": 174.59
+    "fair_value": 174.59,
+    "bear": 134.95,
+    "base": 180.06,
+    "bull": 220.4
    },
-   "diff": 0.0148
+   "diff": -0.042
   },
   "WTW": {
    "scen": {
@@ -8553,11 +8861,11 @@
     "base": {
      "g1": 0.0538,
      "g10": 0.0355,
-     "m": 0.1507
+     "m": 0.1582
     },
     "bull": {
      "g1": 0.1102,
-     "g10": 0.0741,
+     "g10": 0.07,
      "m": 0.186
     }
    },
@@ -8595,10 +8903,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 334.17,
+   "fair_value": 338.95,
    "bear": 146.61,
-   "base": 330.88,
-   "bull": 623.75,
+   "base": 345.56,
+   "bull": 610.93,
    "hand": {
     "scen": {
      "bear": {
@@ -8617,9 +8925,12 @@
       "m": 0.19
      }
     },
-    "fair_value": 351.19
+    "fair_value": 351.19,
+    "bear": 250.23,
+    "base": 368.65,
+    "bull": 459.0
    },
-   "diff": -0.0485
+   "diff": -0.0348
   },
   "CRVL": {
    "scen": {
@@ -8630,12 +8941,12 @@
     },
     "base": {
      "g1": 0.1008,
-     "g10": 0.0719,
-     "m": 0.1042
+     "g10": 0.065,
+     "m": 0.1091
     },
     "bull": {
      "g1": 0.1734,
-     "g10": 0.1,
+     "g10": 0.08,
      "m": 0.1126
     }
    },
@@ -8673,10 +8984,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 58.9,
+   "fair_value": 56.89,
    "bear": 32.88,
-   "base": 59.16,
-   "bull": 97.26,
+   "base": 59.31,
+   "bull": 86.83,
    "hand": {
     "scen": {
      "bear": {
@@ -8695,9 +9006,12 @@
       "m": 0.13
      }
     },
-    "fair_value": 49.34
+    "fair_value": 49.34,
+    "bear": 35.92,
+    "base": 51.77,
+    "bull": 63.41
    },
-   "diff": 0.1936
+   "diff": 0.1528
   }
  }
 }
