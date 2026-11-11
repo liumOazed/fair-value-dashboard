@@ -663,22 +663,23 @@
    "risk": "Swipe-fee rules (Credit Card Competition Act); real-time payment systems and stablecoins.",
    "src": null,
    "source_score": 4.0,
-   "numbers_score": 4.0,
+   "numbers_score": 3.0,
    "parts": {
     "persistence": 2.0,
     "fade": 1,
-    "new_money": 1,
+    "new_money": null,
     "margins": null,
     "gm_std": null
    },
    "unknown": [
+    "new_money",
     "margins"
    ],
-   "total": 8.0,
+   "total": 7.0,
    "out_of": 10,
-   "suggested": "wide",
+   "suggested": "narrow",
    "current": "wide",
-   "differs": false
+   "differs": true
   },
   "FIX": {
    "sources": {
@@ -3296,6 +3297,410 @@
    "suggested": "none",
    "current": "narrow",
    "differs": true
+  },
+  "CPRT": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 0,
+    "c": 2,
+    "e": 2
+   },
+   "why": "Buyers and sellers of wrecked cars meet on its auction (more bidders bring higher prices, which bring more cars from insurers), and it owns storage yards near big cities that are very hard to get permits for.",
+   "risk": "IAA (now part of RB Global) winning insurer contracts; fewer total losses if repair gets cheaper or cars crash less.",
+   "src": null,
+   "source_score": 3.75,
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "margins"
+   ],
+   "total": 6.2,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "AOS": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "About 40% of US residential water heaters, sold through plumbers and wholesalers who stock few brands; most sales are urgent replacements, so price matters less.",
+   "risk": "Rheem and Bradford White, heat-pump rules changing the product, weak China.",
+   "src": null,
+   "source_score": 2.0,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0186
+   },
+   "unknown": [],
+   "total": 6.0,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "TPL": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 2,
+    "e": 2
+   },
+   "why": "Owns the land and royalty rights outright: no drilling cost, and operators on its acreage must use its surface, water and easements.",
+   "risk": "Oil and gas prices, slower Permian drilling, produced-water rules.",
+   "src": null,
+   "source_score": 3.5,
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0,
+    "new_money": 0.5,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "margins"
+   ],
+   "total": 6.0,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "VICI": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 1
+   },
+   "why": "Irreplaceable Las Vegas Strip resorts on 40-year master leases; operators cannot move a casino, and gaming licences limit new supply.",
+   "risk": "Tenant concentration (Caesars, MGM), interest rates, a long downturn in Las Vegas.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 2,
+   "parts": {
+    "persistence": 0.0,
+    "fade": 0,
+    "new_money": 1,
+    "margins": 1,
+    "gm_std": 0.0054
+   },
+   "unknown": [],
+   "total": 5.2,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "LIN": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 2,
+    "e": 2
+   },
+   "why": "Plants built on customer sites under 10-20 year take-or-pay contracts, and gas is too costly to ship far, so each region supports only a few suppliers.",
+   "risk": "Industrial downturns, clean-hydrogen projects that earn less than planned, energy costs.",
+   "src": null,
+   "source_score": 3.75,
+   "numbers_score": 1.4,
+   "parts": {
+    "persistence": 0.4,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 5.2,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "none",
+   "differs": true
+  },
+  "CL": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Colgate is in more homes than any other brand and holds about 40% of world toothpaste sales; dentists' recommendations and shelf space follow. Hill's is sold through vets.",
+   "risk": "Private label and local brands in emerging markets, currency, slow volumes.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 3.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": null,
+    "margins": 1,
+    "gm_std": 0.0107
+   },
+   "unknown": [
+    "new_money"
+   ],
+   "total": 6.2,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "ALGN": {
+   "sources": {
+    "n": 1,
+    "s": 1,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Invisalign brand, 20 million treated cases of data, and a base of trained dentists who also use its iTero scanners.",
+   "risk": "Cheaper aligners (Angel, Spark, ClearCorrect) after patents expired; consumer spending.",
+   "src": null,
+   "source_score": 3.25,
+   "numbers_score": 2.8,
+   "parts": {
+    "persistence": 1.8,
+    "fade": 0,
+    "new_money": 0,
+    "margins": 1,
+    "gm_std": 0.0261
+   },
+   "unknown": [],
+   "total": 6.0,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "ANET": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "One operating system (EOS) across all its switches that large cloud operators have built their automation on; trusted for the fastest AI networks.",
+   "risk": "Microsoft and Meta are about 40% of sales; Nvidia networking, white-box switches, Cisco.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 4.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 0.5,
+    "new_money": 0.5,
+    "margins": 1,
+    "gm_std": 0.0105
+   },
+   "unknown": [],
+   "total": 7.0,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "WSM": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 2,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Owns its brands and designs most products itself, sells about 70% online with its own supply chain, which keeps margins far above other furniture retailers.",
+   "risk": "Housing slump, tariffs on imports, fashion misses; RH, Wayfair, Amazon.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 3.5,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": 0.5,
+    "gm_std": 0.0385
+   },
+   "unknown": [
+    "new_money"
+   ],
+   "total": 6.2,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "wide",
+   "differs": true
+  },
+  "LRN": {
+   "sources": {
+    "n": 0,
+    "s": 2,
+    "i": 1,
+    "c": 1,
+    "e": 0
+   },
+   "why": "Long contracts with state-funded virtual schools that depend on its curriculum, platform and teachers; largest operator with 25 years of approvals.",
+   "risk": "State funding and charter politics, enrolment caps, platform problems, short-seller claims.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 1.5,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 5.5,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "MCRI": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 1,
+    "c": 0,
+    "e": 2
+   },
+   "why": "Gaming licences are limited: Black Hawk is one of three Colorado casino towns and its resort is the newest and largest there; Atlantis is tied to Reno's convention centre.",
+   "risk": "New casinos or online gaming in Colorado and Nevada; only two properties.",
+   "src": null,
+   "source_score": 2.75,
+   "numbers_score": 2.5,
+   "parts": {
+    "persistence": 1.5,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 5.2,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "CARG": {
+   "sources": {
+    "n": 2,
+    "s": 1,
+    "i": 1,
+    "c": 0,
+    "e": 0
+   },
+   "why": "Most-visited US car site: shoppers come for the widest choice and its price ratings, so dealers have to list there.",
+   "risk": "Dealers cutting ad budgets, Cars.com, AutoTrader, Facebook Marketplace, AI search taking traffic.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 6.0,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "USLM": {
+   "sources": {
+    "n": 0,
+    "s": 0,
+    "i": 0,
+    "c": 2,
+    "e": 2
+   },
+   "why": "Lime is heavy and cheap, so it cannot be shipped far: each kiln has a local market, and new quarries and kilns take years to permit.",
+   "risk": "Construction and steel cycles, energy costs, a large rival building nearby.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 6.0,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
+  },
+  "EPAC": {
+   "sources": {
+    "n": 0,
+    "s": 1,
+    "i": 2,
+    "c": 0,
+    "e": 1
+   },
+   "why": "Enerpac is the brand name for high-pressure hydraulic tools; safety-critical jobs and a wide distributor network keep customers from switching to save a little.",
+   "risk": "Industrial and energy spending cycles, low-cost Asian copies.",
+   "src": null,
+   "source_score": 3.0,
+   "numbers_score": 3.0,
+   "parts": {
+    "persistence": 2.0,
+    "fade": 1,
+    "new_money": null,
+    "margins": null,
+    "gm_std": null
+   },
+   "unknown": [
+    "new_money",
+    "margins"
+   ],
+   "total": 6.0,
+   "out_of": 10,
+   "suggested": "narrow",
+   "current": "narrow",
+   "differs": false
   }
  }
 }
