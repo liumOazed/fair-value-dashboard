@@ -500,60 +500,60 @@
    "reason": "ROE 9-19% over 4 years (median 16%), more than 3 points above the 10% required return; specialty niches (captives, accident and health, agriculture). Underwriter: 15 years, then halfway to the required return."
   },
   "CPRT": {
-   "moat": "wide",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "moat": "narrow",
+   "reason": "Median ROIC 22% over 4 years (20%-29%, data/returns.json), above the 9% required return by 3+ points but not 20%+ (and 10 points above it) every year. Invested capital includes $4.5B of cash, which lowers the figure."
   },
   "AOS": {
    "moat": "wide",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "ROIC 24% or more in each of the last 4 years (data/returns.json), at least 10 points above the 9% required return."
   },
   "TPL": {
    "moat": "wide",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "ROIC 45% or more in each of the last 4 years (data/returns.json), at least 10 points above the 9% required return. Tiny invested capital: the land has been owned since 1888."
   },
   "VICI": {
    "moat": "none",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "ROIC 7%-9% over 4 years (median 8%, data/returns.json), less than 3 points above the 8.5% required return. Growth comes from buying property with new shares and debt."
   },
   "LIN": {
-   "moat": "none",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "moat": "narrow",
+   "reason": "Median ROIC 13% over 4 years (8%-13%, data/returns.json), above the 8.5% required return by 3+ points but not 20%+ (and 10 points above it) every year."
   },
   "CL": {
    "moat": "wide",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "ROIC 28% or more in each of the last 4 years (data/returns.json), at least 10 points above the 8% required return."
   },
   "ALGN": {
    "moat": "narrow",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "Median ROIC 16% over 4 years (13%-17%, data/returns.json), above the 10% required return by 3+ points but not 20%+ (and 10 points above it) every year."
   },
   "ANET": {
    "moat": "wide",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "ROIC 96% or more in each of the last 4 years (data/returns.json), at least 10 points above the 10.5% required return. Small invested capital outside its cash."
   },
   "WSM": {
    "moat": "wide",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "ROIC 84% or more in each of the last 4 years (data/returns.json), at least 10 points above the 9.5% required return. Small invested capital after buybacks."
   },
   "LRN": {
    "moat": "narrow",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "Median ROIC 25% over 4 years (13%-31%, data/returns.json), above the 12% required return by 3+ points but not 20%+ (and 10 points above it) every year."
   },
   "MCRI": {
    "moat": "narrow",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "Median ROIC 17% over 4 years (15%-22%, data/returns.json), above the 11% required return by 3+ points but not 20%+ (and 10 points above it) every year."
   },
   "CARG": {
    "moat": "narrow",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "Median ROIC 25% over 4 years (19%-47%, data/returns.json), above the 11.5% required return by 3+ points but not 20%+ (and 10 points above it) every year."
   },
   "USLM": {
-   "moat": "narrow",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "moat": "wide",
+   "reason": "ROIC 23% or more in each of the last 4 years (data/returns.json), at least 10 points above the 11% required return. Pricing power in local lime markets; the cash pile is excluded."
   },
   "EPAC": {
    "moat": "narrow",
-   "reason": "Provisional (ROIC history not fetched yet)."
+   "reason": "Median ROIC 23% over 4 years (17%-25%, data/returns.json), above the 11% required return by 3+ points but not 20%+ (and 10 points above it) every year."
   }
  }
 }

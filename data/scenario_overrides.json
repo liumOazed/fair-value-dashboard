@@ -132,6 +132,18 @@
   "USLM": {
    "category": "Data problem",
    "reason": "Only one analyst covers it, so the rule would fall back on the last three years' sales growth (16% a year, mostly price rises), which has already slowed to about 4%."
+  },
+  "CPRT": {
+   "category": "One-off in the numbers",
+   "reason": "Analysts' revenue forecasts include ACV Auctions (a $1.9B cash purchase closing around the end of 2026), which adds sales with almost no profit; hand scenarios describe Copart alone."
+  },
+  "EPAC": {
+   "category": "One-off in the numbers",
+   "reason": "Analysts' revenue forecasts include SFE Group (bought for $472M on 28 October 2026), whose profit and debt are not in the data yet; hand scenarios describe Enerpac alone."
+  },
+  "ANET": {
+   "category": "Growth outside base rates",
+   "reason": "Analysts expect 40% growth after 49% this year; the rule cuts that to 19% because few large companies in the base rates have grown this fast. Hand scenarios start at 30% and stay below analysts."
   }
  }
 }
