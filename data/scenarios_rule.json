@@ -8770,6 +8770,882 @@
    },
    "diff": 0.0274
   },
+  "CPRT": {
+   "scen": {
+    "bear": {
+     "g1": 0.0851,
+     "g10": 0.0296,
+     "m": 0.2632
+    },
+    "base": {
+     "g1": 0.1328,
+     "g10": 0.065,
+     "m": 0.2632
+    },
+    "bull": {
+     "g1": 0.2054,
+     "g10": 0.08,
+     "m": 0.2632
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (3)",
+    "g1_analysts": 0.1328,
+    "g1_base": 0.1328,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0.1,
+      0.15
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 292,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.2632
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 40.3,
+   "bear": 28.77,
+   "base": 40.5,
+   "bull": 57.11,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.02,
+      "g10": 0.025,
+      "m": 0.22
+     },
+     "base": {
+      "g1": 0.07,
+      "g10": 0.045,
+      "m": 0.26
+     },
+     "bull": {
+      "g1": 0.1,
+      "g10": 0.055,
+      "m": 0.29
+     }
+    },
+    "fair_value": 27.89,
+    "bear": 19.68,
+    "base": 29.02,
+    "bull": 37.37
+   },
+   "diff": 0.4453
+  },
+  "AOS": {
+   "scen": {
+    "bear": {
+     "g1": -0.0034,
+     "g10": 0.025,
+     "m": 0.1438
+    },
+    "base": {
+     "g1": 0.0434,
+     "g10": 0.0434,
+     "m": 0.1438
+    },
+    "bull": {
+     "g1": 0.1023,
+     "g10": 0.08,
+     "m": 0.1438
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (12)",
+    "g1_analysts": 0.0434,
+    "g1_base": 0.0434,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0,
+      0.05
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 405,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.1438
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 76.71,
+   "bear": 54.66,
+   "base": 73.53,
+   "bull": 117.72,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.0,
+      "g10": 0.02,
+      "m": 0.115
+     },
+     "base": {
+      "g1": 0.035,
+      "g10": 0.03,
+      "m": 0.14
+     },
+     "bull": {
+      "g1": 0.055,
+      "g10": 0.04,
+      "m": 0.155
+     }
+    },
+    "fair_value": 61.69,
+    "bear": 44.38,
+    "base": 64.3,
+    "bull": 81.11
+   },
+   "diff": 0.2435
+  },
+  "VICI": {
+   "scen": {
+    "bear": {
+     "g1": -0.013,
+     "g10": 0.025,
+     "m": 0.6461
+    },
+    "base": {
+     "g1": 0.0338,
+     "g10": 0.0338,
+     "m": 0.6461
+    },
+    "bull": {
+     "g1": 0.0927,
+     "g10": 0.08,
+     "m": 0.6461
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (13)",
+    "g1_analysts": 0.0338,
+    "g1_base": 0.0338,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0,
+      0.05
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 405,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.6461
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 36.82,
+   "bear": 27.19,
+   "base": 33.56,
+   "bull": 59.39,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.01,
+      "g10": 0.015,
+      "m": 0.6
+     },
+     "base": {
+      "g1": 0.03,
+      "g10": 0.025,
+      "m": 0.64
+     },
+     "bull": {
+      "g1": 0.045,
+      "g10": 0.03,
+      "m": 0.66
+     }
+    },
+    "fair_value": 32.01,
+    "bear": 27.73,
+    "base": 32.97,
+    "bull": 36.03
+   },
+   "diff": 0.15
+  },
+  "LIN": {
+   "scen": {
+    "bear": {
+     "g1": 0.0005,
+     "g10": 0.0022,
+     "m": 0.1365
+    },
+    "base": {
+     "g1": 0.0471,
+     "g10": 0.0421,
+     "m": 0.1365
+    },
+    "bull": {
+     "g1": 0.0962,
+     "g10": 0.06,
+     "m": 0.1365
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (26)",
+    "g1_analysts": 0.0471,
+    "g1_base": 0.0471,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0,
+      0.05
+     ],
+     "size_b": [
+      25,
+      1000000.0
+     ],
+     "n": 347,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.1365
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 156.86,
+   "bear": 106.15,
+   "base": 160.93,
+   "bull": 222.76,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.02,
+      "g10": 0.025,
+      "m": 0.125
+     },
+     "base": {
+      "g1": 0.05,
+      "g10": 0.04,
+      "m": 0.155
+     },
+     "bull": {
+      "g1": 0.065,
+      "g10": 0.045,
+      "m": 0.18
+     }
+    },
+    "fair_value": 177.25,
+    "bear": 119.69,
+    "base": 186.44,
+    "bull": 240.61
+   },
+   "diff": -0.115
+  },
+  "CL": {
+   "scen": {
+    "bear": {
+     "g1": -0.0223,
+     "g10": -0.0047,
+     "m": 0.1701
+    },
+    "base": {
+     "g1": 0.0233,
+     "g10": 0.025,
+     "m": 0.1701
+    },
+    "bull": {
+     "g1": 0.0797,
+     "g10": 0.07,
+     "m": 0.1701
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (18)",
+    "g1_analysts": 0.0233,
+    "g1_base": 0.0233,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0,
+      0.05
+     ],
+     "size_b": [
+      5,
+      25
+     ],
+     "n": 827,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.1701
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 85.62,
+   "bear": 55.33,
+   "base": 81.83,
+   "bull": 140.5,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.01,
+      "g10": 0.02,
+      "m": 0.15
+     },
+     "base": {
+      "g1": 0.035,
+      "g10": 0.03,
+      "m": 0.17
+     },
+     "bull": {
+      "g1": 0.05,
+      "g10": 0.04,
+      "m": 0.18
+     }
+    },
+    "fair_value": 84.7,
+    "bear": 66.45,
+    "base": 87.64,
+    "bull": 104.71
+   },
+   "diff": 0.0108
+  },
+  "ALGN": {
+   "scen": {
+    "bear": {
+     "g1": -0.0182,
+     "g10": 0.025,
+     "m": 0.1041
+    },
+    "base": {
+     "g1": 0.0286,
+     "g10": 0.0286,
+     "m": 0.1041
+    },
+    "bull": {
+     "g1": 0.0875,
+     "g10": 0.08,
+     "m": 0.1041
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (15)",
+    "g1_analysts": 0.0286,
+    "g1_base": 0.0286,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0,
+      0.05
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 405,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.1041
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 96.72,
+   "bear": 80.64,
+   "base": 90.9,
+   "bull": 135.38,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.0,
+      "g10": 0.02,
+      "m": 0.08
+     },
+     "base": {
+      "g1": 0.04,
+      "g10": 0.04,
+      "m": 0.12
+     },
+     "bull": {
+      "g1": 0.07,
+      "g10": 0.05,
+      "m": 0.15
+     }
+    },
+    "fair_value": 107.83,
+    "bear": 69.91,
+    "base": 111.07,
+    "bull": 156.61
+   },
+   "diff": -0.1031
+  },
+  "ANET": {
+   "scen": {
+    "bear": {
+     "g1": 0.1157,
+     "g10": 0.04,
+     "m": 0.3789
+    },
+    "base": {
+     "g1": 0.1763,
+     "g10": 0.055,
+     "m": 0.3789
+    },
+    "bull": {
+     "g1": 0.2967,
+     "g10": 0.07,
+     "m": 0.3789
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (27)",
+    "g1_analysts": 0.4007,
+    "g1_base": 0.1763,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0.4,
+      99
+     ],
+     "size_b": [
+      5,
+      25
+     ],
+     "n": 57,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.3789
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 105.8,
+   "bear": 76.23,
+   "base": 100.26,
+   "bull": 163.97,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.15,
+      "g10": 0.04,
+      "m": 0.3
+     },
+     "base": {
+      "g1": 0.3,
+      "g10": 0.06,
+      "m": 0.35
+     },
+     "bull": {
+      "g1": 0.4,
+      "g10": 0.07,
+      "m": 0.38
+     }
+    },
+    "fair_value": 141.19,
+    "bear": 70.38,
+    "base": 146.24,
+    "bull": 234.77
+   },
+   "diff": -0.2507
+  },
+  "WSM": {
+   "scen": {
+    "bear": {
+     "g1": -0.0058,
+     "g10": 0.0055,
+     "m": 0.1527
+    },
+    "base": {
+     "g1": 0.0522,
+     "g10": 0.0522,
+     "m": 0.1527
+    },
+    "bull": {
+     "g1": 0.1049,
+     "g10": 0.07,
+     "m": 0.1527
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (21)",
+    "g1_analysts": 0.0522,
+    "g1_base": 0.0522,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0.05,
+      0.1
+     ],
+     "size_b": [
+      5,
+      25
+     ],
+     "n": 665,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.1527
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 180.25,
+   "bear": 114.34,
+   "base": 187.97,
+   "bull": 259.84,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": -0.02,
+      "g10": 0.02,
+      "m": 0.1
+     },
+     "base": {
+      "g1": 0.045,
+      "g10": 0.035,
+      "m": 0.13
+     },
+     "bull": {
+      "g1": 0.065,
+      "g10": 0.045,
+      "m": 0.15
+     }
+    },
+    "fair_value": 132.59,
+    "bear": 79.23,
+    "base": 142.68,
+    "bull": 187.38
+   },
+   "diff": 0.3595
+  },
+  "LRN": {
+   "scen": {
+    "bear": {
+     "g1": -0.0005,
+     "g10": 0.025,
+     "m": 0.151
+    },
+    "base": {
+     "g1": 0.0463,
+     "g10": 0.0463,
+     "m": 0.151
+    },
+    "bull": {
+     "g1": 0.1052,
+     "g10": 0.08,
+     "m": 0.151
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (3)",
+    "g1_analysts": 0.0463,
+    "g1_base": 0.0463,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0,
+      0.05
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 405,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.151
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 112.88,
+   "bear": 86.89,
+   "base": 111.0,
+   "bull": 156.56,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": -0.03,
+      "g10": 0.02,
+      "m": 0.1
+     },
+     "base": {
+      "g1": 0.03,
+      "g10": 0.035,
+      "m": 0.13
+     },
+     "bull": {
+      "g1": 0.07,
+      "g10": 0.045,
+      "m": 0.16
+     }
+    },
+    "fair_value": 86.71,
+    "bear": 56.38,
+    "base": 88.87,
+    "bull": 126.81
+   },
+   "diff": 0.3017
+  },
+  "MCRI": {
+   "scen": {
+    "bear": {
+     "g1": -0.0241,
+     "g10": 0.025,
+     "m": 0.2372
+    },
+    "base": {
+     "g1": 0.0227,
+     "g10": 0.025,
+     "m": 0.2372
+    },
+    "bull": {
+     "g1": 0.0816,
+     "g10": 0.08,
+     "m": 0.2372
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (6)",
+    "g1_analysts": 0.0227,
+    "g1_base": 0.0227,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0,
+      0.05
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 405,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.2372
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 98.16,
+   "bear": 78.0,
+   "base": 92.73,
+   "bull": 142.0,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.0,
+      "g10": 0.02,
+      "m": 0.19
+     },
+     "base": {
+      "g1": 0.03,
+      "g10": 0.03,
+      "m": 0.22
+     },
+     "bull": {
+      "g1": 0.05,
+      "g10": 0.035,
+      "m": 0.24
+     }
+    },
+    "fair_value": 88.25,
+    "bear": 70.58,
+    "base": 91.2,
+    "bull": 107.36
+   },
+   "diff": 0.1123
+  },
+  "CARG": {
+   "scen": {
+    "bear": {
+     "g1": 0.0347,
+     "g10": 0.0347,
+     "m": 0.2588
+    },
+    "base": {
+     "g1": 0.0831,
+     "g10": 0.065,
+     "m": 0.2588
+    },
+    "bull": {
+     "g1": 0.141,
+     "g10": 0.08,
+     "m": 0.2588
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (12)",
+    "g1_analysts": 0.0831,
+    "g1_base": 0.0831,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0.05,
+      0.1
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 507,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.2588
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 44.06,
+   "bear": 32.75,
+   "base": 44.65,
+   "bull": 59.58,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.04,
+      "g10": 0.025,
+      "m": 0.19
+     },
+     "base": {
+      "g1": 0.08,
+      "g10": 0.045,
+      "m": 0.24
+     },
+     "bull": {
+      "g1": 0.11,
+      "g10": 0.055,
+      "m": 0.27
+     }
+    },
+    "fair_value": 36.39,
+    "bear": 24.75,
+    "base": 38.11,
+    "bull": 49.57
+   },
+   "diff": 0.2108
+  },
+  "EPAC": {
+   "scen": {
+    "bear": {
+     "g1": 0.0343,
+     "g10": 0.0343,
+     "m": 0.1656
+    },
+    "base": {
+     "g1": 0.0827,
+     "g10": 0.065,
+     "m": 0.1656
+    },
+    "bull": {
+     "g1": 0.1406,
+     "g10": 0.08,
+     "m": 0.1656
+    }
+   },
+   "why": {
+    "g1_source": "analysts +1y (3)",
+    "g1_analysts": 0.0827,
+    "g1_base": 0.0827,
+    "nopat_margin": null,
+    "cell": {
+     "growth": [
+      0.05,
+      0.1
+     ],
+     "size_b": [
+      0,
+      5
+     ],
+     "n": 507,
+     "pooled": false
+    },
+    "g3": null,
+    "margins": [
+     0.1656
+    ],
+    "margin_years": [
+     "TTM"
+    ],
+    "inputs_file": "inputs_2026-11-11_add14.json"
+   },
+   "fair_value": 38.15,
+   "bear": 28.21,
+   "base": 38.67,
+   "bull": 51.75,
+   "hand": {
+    "scen": {
+     "bear": {
+      "g1": 0.0,
+      "g10": 0.02,
+      "m": 0.13
+     },
+     "base": {
+      "g1": 0.05,
+      "g10": 0.035,
+      "m": 0.165
+     },
+     "bull": {
+      "g1": 0.08,
+      "g10": 0.045,
+      "m": 0.19
+     }
+    },
+    "fair_value": 28.73,
+    "bear": 19.3,
+    "base": 30.03,
+    "bull": 39.62
+   },
+   "diff": 0.328
+  },
   "MRSH": {
    "scen": {
     "bear": {

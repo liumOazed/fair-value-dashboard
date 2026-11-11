@@ -42,6 +42,8 @@ INSURER = "Insurer valued on book value and return on equity (INSURERS in model.
 MANUAL = {
     "ADYEY": "Reports in EUR, half-yearly, FCF estimated: needs a manual update from the release.",
     "CTAS": "Revenue and cash flow use different periods in the model: needs a manual update.",
+    "TPL": "Cash flow is operating cash flow less an estimate of ordinary capital spending (land and royalty purchases are left out): needs a manual update.",
+    "LRN": "Stock pay uses the last fiscal year's figure and shares include dilution from the convertible notes: needs a manual update.",
     "CTRE": "Revenue and cash flow are a run-rate (latest quarter x 4) because acquisitions grow it fast: needs a manual update.",
     "ALL": INSURER,
     "HIG": INSURER,

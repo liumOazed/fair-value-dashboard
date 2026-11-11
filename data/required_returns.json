@@ -125,6 +125,20 @@
   "ESNT": {"r": 0.1, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point: mortgage-insurance losses come all at once in a housing downturn."},
   "UFCS": {"r": 0.1, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point for a long record of reserve charges and a young turnaround."},
   "SKWD": {"r": 0.1, "reason": "Financial Services rate (7.5%) plus the 2-point small-cap premium, plus half a point for casualty reserve risk and integrating the Apollo business."},
-  "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."}
+  "QQQ":   {"r": 0.095, "reason": "Nasdaq-100 basket: diversified but tech-heavy, so slightly above an average stock."},
+  "CPRT": {"r": 0.09, "reason": "Industrials rate: salvage-auction volumes are steady (cars get wrecked in any economy) and it holds $4.4B net cash, but fees follow used-car prices and insurers' total-loss rates."},
+  "AOS": {"r": 0.09, "reason": "Industrials rate: about 80% of North American water-heater sales are replacements, which steadies demand; China (a fifth of sales) is weak and housing-linked."},
+  "TPL": {"r": 0.09, "reason": "Above the 8.5% Energy rate: royalties carry no drilling cost and there is no debt, but income depends on oil and gas prices and on drilling in one basin (the Permian)."},
+  "VICI": {"r": 0.085, "reason": "Real Estate rate (7.5%) plus 1 point: 40-year inflation-linked leases, but two tenants (Caesars and MGM) pay about three quarters of the rent and $17.8B of debt makes the equity sensitive to rates."},
+  "LIN": {"r": 0.085, "reason": "Below the 9.5% Basic Materials rate: industrial gases are sold on 10-20 year take-or-pay contracts with price escalators, beta ~0.7; offset by $23B net debt."},
+  "CL": {"r": 0.08, "reason": "Below the 9% Consumer Defensive rate: toothpaste, soap and pet food with very stable demand and a beta near 0.3 (as for PG and KO)."},
+  "ALGN": {"r": 0.1, "reason": "Healthcare rate (9%) plus 1 point: clear aligners are an elective purchase that follows consumer confidence (beta ~1.7), with rising low-price competition; net cash."},
+  "ANET": {"r": 0.105, "reason": "Below the 11.5% chip-and-hardware group rate: $14B net cash, no debt and the leading position in data-centre switching; still depends on a few hyperscalers' AI spending (Microsoft and Meta are about 40% of sales)."},
+  "WSM": {"r": 0.095, "reason": "Consumer Cyclical rate (9%) plus half a point: home furnishings follow housing turnover and are exposed to tariffs (beta ~1.5); no borrowings."},
+  "LRN": {"r": 0.12, "reason": "Consumer Defensive rate (9%) plus the 2-point small-cap premium, plus 1 point: revenue is public school funding paid through state and charter contracts, which politics can change."},
+  "MCRI": {"r": 0.11, "reason": "Consumer Cyclical rate (9%) plus the 2-point small-cap premium: two casinos only (Reno and Black Hawk), so local competition or regulation matters, but no borrowings."},
+  "CARG": {"r": 0.115, "reason": "Communication Services rate (9%) plus the 2-point small-cap premium, plus half a point: dealer advertising follows the car market (beta ~1.2)."},
+  "USLM": {"r": 0.11, "reason": "Basic Materials rate (9.5%) plus the 2-point small-cap premium, less half a point: no debt, $0.4B cash and local lime markets with few rivals; demand follows construction, steel and oil and gas."},
+  "EPAC": {"r": 0.11, "reason": "Industrials rate (9%) plus the 2-point small-cap premium: leading brand in a niche, low debt, but orders follow industrial, energy and infrastructure spending."}
  }
 }

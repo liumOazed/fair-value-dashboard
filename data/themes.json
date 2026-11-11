@@ -96,7 +96,8 @@
     "MO",
     "HAS",
     "PM",
-    "DLTR"
+    "DLTR",
+    "WSM"
   ],
   "Travel": [
     "BKNG",
@@ -108,7 +109,8 @@
     "CCL",
     "NCLH",
     "DAL",
-    "UAL"
+    "UAL",
+    "MCRI"
   ],
   "Medical devices & diagnostics": [
     "RMD",
@@ -127,7 +129,8 @@
     "A",
     "TMO",
     "DHR",
-    "LMAT"
+    "LMAT",
+    "ALGN"
   ],
   "Industrials & services": [
     "ALLE",
@@ -154,7 +157,10 @@
     "RSG",
     "WAB",
     "LII",
-    "VLTO"
+    "VLTO",
+    "CPRT",
+    "AOS",
+    "EPAC"
   ],
   "Energy": [
     "APA",
@@ -169,7 +175,8 @@
     "SLB",
     "EQT",
     "BKR",
-    "NRG"
+    "NRG",
+    "TPL"
   ],
   "Financial data & exchanges": [
     "SPGI",
@@ -199,22 +206,27 @@
     "DIS",
     "WBD",
     "TTWO",
-    "RDDT"
+    "RDDT",
+    "CARG"
   ],
   "Real estate": [
     "SPG",
     "HST",
-    "CTRE"
+    "CTRE",
+    "VICI"
   ],
   "Materials & commodities": [
     "CF",
     "NEM",
     "SHW",
-    "PPG"
+    "PPG",
+    "LIN",
+    "USLM"
   ],
   "Education": [
     "CVSA",
-    "LAUR"
+    "LAUR",
+    "LRN"
   ],
   "Index & commodities": [
     "QQQ",

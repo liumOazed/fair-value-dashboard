@@ -116,6 +116,22 @@
   "FISV": {
    "category": "One-off in the numbers",
    "reason": "Guidance was reset in late 2025 and the cash margin fell to 13%; the five-year history (16-23%) belongs to the earlier business plan."
+  },
+  "TPL": {
+   "category": "Commodity producer",
+   "reason": "Royalty and water income follows oil and gas prices and drilling on its land, and reported free cash flow is held down by buying more acreage; only one analyst covers it."
+  },
+  "VICI": {
+   "category": "Property company",
+   "reason": "Grows by buying property with new shares and debt, which free cash flow leaves out; hand scenarios use per-share growth from rent escalators."
+  },
+  "CARG": {
+   "category": "One-off in the numbers",
+   "reason": "The wholesale business (CarOffer) was wound down: 2022-2024 revenue and margins include it, so the history shows shrinking sales and thin margins that the marketplace does not have."
+  },
+  "USLM": {
+   "category": "Data problem",
+   "reason": "Only one analyst covers it, so the rule would fall back on the last three years' sales growth (16% a year, mostly price rises), which has already slowed to about 4%."
   }
  }
 }

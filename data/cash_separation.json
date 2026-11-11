@@ -1123,6 +1123,168 @@
    "acq": 0.0,
    "interest_income": 0.0,
    "interest_income_used": 0.0
+  },
+  "CPRT": {
+   "acq_years": [
+    0.009,
+    0.008,
+    0.0,
+    0.003
+   ],
+   "acq": 0.0055,
+   "interest_income": 0.191,
+   "interest_income_used": 0.191,
+   "note": "Interest income: 3 reported quarters annualised."
+  },
+  "AOS": {
+   "acq_years": [
+    0.0,
+    0.146,
+    0.017,
+    0.008
+   ],
+   "acq": 0.0125,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "TPL": {
+   "acq_years": [
+    0.47,
+    0.39,
+    0.0,
+    0.0
+   ],
+   "acq": 0.195,
+   "interest_income": 0.01,
+   "interest_income_used": 0.01,
+   "note": "Acquisitions are an ESTIMATE: royalty and land purchases sit inside Yahoo's capital spending; taken as capital spending above $0.1B a year plus the reported business purchases (2025, 2024), about zero in 2023 and 2022."
+  },
+  "VICI": {
+   "acq_years": [
+    0.0,
+    0.0,
+    1.267,
+    4.575
+   ],
+   "acq": 0.6335,
+   "interest_income": 0.012,
+   "interest_income_used": 0.0,
+   "note": "Interest income not taken out: lending to leisure developers is part of the business."
+  },
+  "LIN": {
+   "acq_years": [
+    0.37,
+    0.147,
+    0.883,
+    0.0
+   ],
+   "acq": 0.2585,
+   "interest_income": 0.209,
+   "interest_income_used": 0.178,
+   "note": "Interest income: latest fiscal year, capped at 4.5% of cash."
+  },
+  "CL": {
+   "acq_years": [
+    0.293,
+    0.0,
+    0.0,
+    0.809
+   ],
+   "acq": 0.1465,
+   "interest_income": 0.069,
+   "interest_income_used": 0.0687
+  },
+  "ALGN": {
+   "acq_years": [
+    0.01,
+    0.183,
+    0.077,
+    0.012
+   ],
+   "acq": 0.0445,
+   "interest_income": 0.02,
+   "interest_income_used": 0.02
+  },
+  "ANET": {
+   "acq_years": [
+    0.3,
+    0.0,
+    0.0,
+    0.145
+   ],
+   "acq": 0.0725,
+   "interest_income": 0.445,
+   "interest_income_used": 0.445,
+   "note": "Interest income: 3 reported quarters annualised."
+  },
+  "WSM": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.037,
+   "interest_income_used": 0.037
+  },
+  "LRN": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.032,
+   "interest_income_used": 0.032,
+   "note": "Interest income is not in Yahoo's data: ESTIMATE, 4% of $0.79B cash."
+  },
+  "MCRI": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.004,
+   "interest_income_used": 0.004,
+   "note": "Interest income: 2 reported quarters annualised."
+  },
+  "CARG": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.006,
+   "interest_income_used": 0.006
+  },
+  "USLM": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.006
+   ],
+   "acq": 0.0,
+   "interest_income": 0.016,
+   "interest_income_used": 0.016,
+   "note": "Interest income is not in Yahoo's data: ESTIMATE, 4% of $0.40B cash."
+  },
+  "EPAC": {
+   "acq_years": [
+    0.0,
+    0.027,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
   }
  }
 }
