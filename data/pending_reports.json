@@ -3,6 +3,13 @@
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
+   "ticker": "USLM",
+   "data_through": "2026-06-30",
+   "reported_on": "2026-10-30",
+   "yahoo_latest_quarter": "2026-09-30",
+   "waiting_days": 12
+  },
+  {
    "ticker": "PLGO",
    "data_through": "2026-06-30",
    "reported_on": "2026-11-11",
@@ -17,12 +24,22 @@
    "data_through": "2026-07-31"
   },
   {
+   "ticker": "WSM",
+   "next_report": "2026-11-18",
+   "data_through": "2026-07-31"
+  },
+  {
    "ticker": "INTU",
    "next_report": "2026-11-19",
    "data_through": "2026-07-31"
   },
   {
    "ticker": "ROST",
+   "next_report": "2026-11-19",
+   "data_through": "2026-07-31"
+  },
+  {
+   "ticker": "CPRT",
    "next_report": "2026-11-19",
    "data_through": "2026-07-31"
   },
@@ -77,6 +94,11 @@
    "data_through": "2026-07-31"
   },
   {
+   "ticker": "EPAC",
+   "next_report": "2026-12-16",
+   "data_through": "2026-08-31"
+  },
+  {
    "ticker": "CTAS",
    "next_report": "2026-12-17",
    "data_through": "2026-08-31"
@@ -128,6 +150,11 @@
   },
   {
    "ticker": "PPG",
+   "next_report": "2027-01-26",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "LRN",
    "next_report": "2027-01-26",
    "data_through": "2026-09-30"
   },
@@ -222,7 +249,17 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "AOS",
+   "next_report": "2027-01-28",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "AXP",
+   "next_report": "2027-01-29",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "CL",
    "next_report": "2027-01-29",
    "data_through": "2026-09-30"
   },
@@ -302,6 +339,16 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "ALGN",
+   "next_report": "2027-02-03",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "MCRI",
+   "next_report": "2027-02-03",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "AMZN",
    "next_report": "2027-02-04",
    "data_through": "2026-09-30"
@@ -352,6 +399,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "LIN",
+   "next_report": "2027-02-04",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "CBOE",
    "next_report": "2027-02-05",
    "data_through": "2026-09-30"
@@ -398,6 +450,11 @@
   },
   {
    "ticker": "UFCS",
+   "next_report": "2027-02-09",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "ANET",
    "next_report": "2027-02-09",
    "data_through": "2026-09-30"
   },
@@ -477,6 +534,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "TPL",
+   "next_report": "2027-02-17",
+   "data_through": "2026-09-30"
+  },
+  {
    "ticker": "FIX",
    "next_report": "2027-02-18",
    "data_through": "2026-09-30"
@@ -503,6 +565,11 @@
   },
   {
    "ticker": "HG",
+   "next_report": "2027-02-18",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "CARG",
    "next_report": "2027-02-18",
    "data_through": "2026-09-30"
   },
@@ -553,6 +620,11 @@
   },
   {
    "ticker": "LMAT",
+   "next_report": "2027-02-24",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "VICI",
    "next_report": "2027-02-24",
    "data_through": "2026-09-30"
   },
