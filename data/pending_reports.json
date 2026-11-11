@@ -1,28 +1,16 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
-   "ticker": "NRG",
+   "ticker": "PLGO",
    "data_through": "2026-06-30",
-   "reported_on": "2026-11-09",
+   "reported_on": "2026-11-11",
    "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  },
-  {
-   "ticker": "QLYS",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-11-09",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
+   "waiting_days": 0
   }
  ],
  "upcoming": [
-  {
-   "ticker": "PLGO",
-   "next_report": "2026-11-11",
-   "data_through": "2026-06-30"
-  },
   {
    "ticker": "NVDA",
    "next_report": "2026-11-17",
@@ -270,6 +258,11 @@
   },
   {
    "ticker": "VLTO",
+   "next_report": "2027-02-02",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "QLYS",
    "next_report": "2027-02-02",
    "data_through": "2026-09-30"
   },
@@ -545,6 +538,11 @@
   },
   {
    "ticker": "CRCL",
+   "next_report": "2027-02-24",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "NRG",
    "next_report": "2027-02-24",
    "data_through": "2026-09-30"
   },

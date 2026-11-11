@@ -2252,6 +2252,15 @@
    "bull": 178.79,
    "price": 83.25,
    "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-10",
+   "fv": 97.68,
+   "bear": 10.1,
+   "base": 108.99,
+   "bull": 200.8,
+   "price": 97.11,
+   "method": "fcff_re"
   }
  ],
  "FIS": [
@@ -2472,6 +2481,15 @@
    "base": 103.55,
    "bull": 127.64,
    "price": 190.41,
+   "method": "fcff_re"
+  },
+  {
+   "date": "2026-11-10",
+   "fv": 104.6,
+   "bear": 80.28,
+   "base": 108.02,
+   "bull": 132.54,
+   "price": 175.11,
    "method": "fcff_re"
   }
  ],
