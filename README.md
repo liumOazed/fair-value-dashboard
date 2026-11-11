@@ -305,6 +305,7 @@ Functional changes only (layout and wording tweaks left out). Score and Top 5 ru
 | 9 Nov | Fair Value | **Rating** (Excellent, Good, Average, Bad) at the top of each drawer from intrinsic value, margin of safety and business quality, with the reason for each pillar | One summary of price and quality; information only, fair values unchanged |
 | 9 Nov | Fair Value | **Rating** dropdown filter on the table (All, Excellent, Good, Average, Bad, with counts) | Find stocks by rating without opening each drawer |
 | 10 Nov | Fair Value, Risk | **Per-engine valuation** for AAPL, MSFT, GOOGL, AMZN (own margin and advantage period per segment) and a **Growth fails** check on the Risk page for every stock | AAPL $190.12 → $185.26, MSFT $379.36 → $376.61, GOOGL $258.45 → $251.41, AMZN $101.31 → $103.88; all other fair values unchanged |
+| 11 Nov | Fair Value | **Cash-flow separation** (`data/cash_separation.json`, `model.stock_setup`): lenders (AXP, AMP) keep equity for loan growth (net income × (1 − g/ROE)); recurring acquisition spend charged as investment in proportion to growth above 2.5%; interest earned on cash taken out of FCF (the cash is already added); debt tax saving (tax rate × debt) added. Same cash flows in Monte Carlo, Risk and framework pages | Value only what the business produces and pays for; financing counted once. 61 fair values fall, 40 rise (JNJ −24%, RSG −14%, AXP −13%; FIS +24%, NRG +21%) |
 
 ## Research framework in the drawer (from November 2026)
 

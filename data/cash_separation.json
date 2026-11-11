@@ -1,0 +1,1128 @@
+{
+ "as_of": "2026-11-11",
+ "source": "Yahoo Finance via yfinance (.github/debug/snippet.py run of 2026-11-11): annual cash flow 'Net Business Purchase And Sale' / 'Purchase Of Business' (last 4 fiscal years), 'Interest Income' (last 4 quarters, else latest fiscal year), quarterly 'Common Stock Equity'.",
+ "rules": {
+  "acq": "recurring acquisition spend = median of the last 4 fiscal years (one-off mega deals drop out) / TTM revenue; charged in proportion to growth above 2.5%",
+  "interest_income": "TTM interest income, capped at 4.5% of interest-earning cash (larger of balance-sheet cash and net cash + debt). Not used when the model leaves the cash out (net cash set to zero: lenders, ADYEY's merchant money) or when interest is the business (CTRE's loans).",
+  "lender_roe": "TTM net income / average common equity of the last 5 quarters"
+ },
+ "lenders": {},
+ "stocks": {
+  "AAPL": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 3.75,
+   "interest_income_used": 3.75
+  },
+  "MSFT": {
+   "acq_years": [
+    1.743,
+    5.978,
+    69.132,
+    1.67
+   ],
+   "acq": 3.8605,
+   "interest_income": 3.069,
+   "interest_income_used": 3.069
+  },
+  "GOOGL": {
+   "acq_years": [
+    1.592,
+    2.931,
+    0.495,
+    6.969
+   ],
+   "acq": 2.2615,
+   "interest_income": 5.788,
+   "interest_income_used": 5.788
+  },
+  "AMZN": {
+   "acq_years": [
+    3.841,
+    7.082,
+    5.839,
+    8.316
+   ],
+   "acq": 6.4605,
+   "interest_income": 4.381,
+   "interest_income_used": 4.381
+  },
+  "NVDA": {
+   "acq_years": [
+    14.535,
+    1.007,
+    0.083,
+    0.049
+   ],
+   "acq": 0.545,
+   "interest_income": 2.228,
+   "interest_income_used": 2.228
+  },
+  "AVGO": {
+   "acq_years": [
+    0.0,
+    22.493,
+    0.053,
+    0.246
+   ],
+   "acq": 0.1495,
+   "interest_income": 0.347,
+   "interest_income_used": 0.347
+  },
+  "LLY": {
+   "acq_years": [
+    0.661,
+    0.948,
+    1.044,
+    0.327
+   ],
+   "acq": 0.8045,
+   "interest_income": 0.1752,
+   "interest_income_used": 0.1752
+  },
+  "ADBE": {
+   "acq_years": [
+    0.017,
+    0.0,
+    0.0,
+    0.126
+   ],
+   "acq": 0.0085,
+   "interest_income": 0.264,
+   "interest_income_used": 0.2538
+  },
+  "APP": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    1.346
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "FICO": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "APA": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.025,
+   "interest_income_used": 0.0034
+  },
+  "DECK": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.0607,
+   "interest_income_used": 0.0544
+  },
+  "INCY": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.1347,
+   "interest_income_used": 0.1347
+  },
+  "MKC": {
+   "acq_years": [
+    0.034,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0401,
+   "interest_income_used": 0.0149
+  },
+  "EXPE": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.264,
+   "interest_income_used": 0.2559
+  },
+  "BKNG": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.807,
+   "interest_income_used": 0.7116
+  },
+  "INTU": {
+   "acq_years": [
+    0.0,
+    0.184,
+    0.083,
+    0.033
+   ],
+   "acq": 0.058,
+   "interest_income": 0.18,
+   "interest_income_used": 0.18
+  },
+  "ADSK": {
+   "acq_years": [
+    0.0,
+    0.825,
+    0.07,
+    0.096
+   ],
+   "acq": 0.083,
+   "interest_income": 0.027,
+   "interest_income_used": 0.027
+  },
+  "TPR": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "VEEV": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.2672,
+   "interest_income_used": 0.2672
+  },
+  "MNST": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.363,
+    0.329
+   ],
+   "acq": 0.1647,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "ALLE": {
+   "acq_years": [
+    0.592,
+    0.137,
+    0.032,
+    0.923
+   ],
+   "acq": 0.3647,
+   "interest_income": 0.0083,
+   "interest_income_used": 0.0083
+  },
+  "FTNT": {
+   "acq_years": [
+    0.042,
+    0.276,
+    0.009,
+    0.031
+   ],
+   "acq": 0.0362,
+   "interest_income": 0.1411,
+   "interest_income_used": 0.1411
+  },
+  "RMD": {
+   "acq_years": [
+    0.351,
+    0.139,
+    0.133,
+    1.013
+   ],
+   "acq": 0.245,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "V": {
+   "acq_years": [
+    0.705,
+    0.887,
+    0.915,
+    0.0
+   ],
+   "acq": 0.796,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "FIX": {
+   "acq_years": [
+    0.28,
+    0.235,
+    0.102,
+    0.049
+   ],
+   "acq": 0.1689,
+   "interest_income": 0.0437,
+   "interest_income_used": 0.0437
+  },
+  "MA": {
+   "acq_years": [
+    0.0,
+    2.511,
+    0.0,
+    0.313
+   ],
+   "acq": 0.1565,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "CTAS": {
+   "acq_years": [
+    0.165,
+    0.233,
+    0.187,
+    0.046
+   ],
+   "acq": 0.1757,
+   "interest_income": 0.0055,
+   "interest_income_used": 0.0055
+  },
+  "DXCM": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.004
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0742,
+   "interest_income_used": 0.0742
+  },
+  "IDXX": {
+   "acq_years": [
+    0.001,
+    0.078,
+    0.0,
+    0.037
+   ],
+   "acq": 0.0186,
+   "interest_income": 0.0028,
+   "interest_income_used": 0.0028
+  },
+  "VRSN": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0215,
+   "interest_income_used": 0.0214
+  },
+  "NDAQ": {
+   "acq_years": [
+    0.0,
+    0.0,
+    5.766,
+    0.041
+   ],
+   "acq": 0.0205,
+   "interest_income": 0.031,
+   "interest_income_used": 0.031
+  },
+  "MCO": {
+   "acq_years": [
+    0.206,
+    0.223,
+    0.0,
+    0.169
+   ],
+   "acq": 0.1875,
+   "interest_income": 0.047,
+   "interest_income_used": 0.047
+  },
+  "SPGI": {
+   "acq_years": [
+    0.474,
+    0.137,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0685,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "NFLX": {
+   "acq_years": [
+    0.017,
+    0.0,
+    0.0,
+    0.757
+   ],
+   "acq": 0.0086,
+   "interest_income": 2.9923,
+   "interest_income_used": 0.37
+  },
+  "CBOE": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.708
+   ],
+   "acq": 0.0,
+   "interest_income": 0.074,
+   "interest_income_used": 0.074
+  },
+  "GRMN": {
+   "acq_years": [
+    0.176,
+    0.016,
+    0.151,
+    0.013
+   ],
+   "acq": 0.0836,
+   "interest_income": 0.1451,
+   "interest_income_used": 0.1053
+  },
+  "FDS": {
+   "acq_years": [
+    0.0,
+    0.323,
+    0.0,
+    0.024
+   ],
+   "acq": 0.0118,
+   "interest_income": 0.0041,
+   "interest_income_used": 0.0041
+  },
+  "CRM": {
+   "acq_years": [
+    9.268,
+    2.734,
+    0.082,
+    0.439
+   ],
+   "acq": 1.5865,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "HWM": {
+   "acq_years": [
+    0.0,
+    0.005,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.029,
+   "interest_income_used": 0.0228
+  },
+  "ADP": {
+   "acq_years": [
+    0.023,
+    1.165,
+    0.034,
+    0.032
+   ],
+   "acq": 0.033,
+   "interest_income": 0.4031,
+   "interest_income_used": 0.1475
+  },
+  "AME": {
+   "acq_years": [
+    0.933,
+    0.118,
+    2.238,
+    0.426
+   ],
+   "acq": 0.6796,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "AXP": {
+   "acq_years": [
+    0.633,
+    0.0,
+    0.064,
+    0.015
+   ],
+   "acq": 0.0395,
+   "interest_income": 26.712,
+   "interest_income_used": 0.0,
+   "equity_avg": 33.993,
+   "roe": 0.3367
+  },
+  "SHOP": {
+   "acq_years": [
+    0.155,
+    0.167,
+    0.395,
+    2.389
+   ],
+   "acq": 0.281,
+   "interest_income": 0.285,
+   "interest_income_used": 0.2363
+  },
+  "PYPL": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.454,
+   "interest_income_used": 0.454
+  },
+  "XYZ": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.005,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "ADYEY": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.2923,
+   "interest_income_used": 0.0,
+   "note": "cash is mostly merchants' money and net cash is set to zero, so its interest stays in"
+  },
+  "FISV": {
+   "acq_years": [
+    1.345,
+    0.801,
+    0.0,
+    0.742
+   ],
+   "acq": 0.7715,
+   "interest_income": 0.04,
+   "interest_income_used": 0.0087
+  },
+  "CRCL": {
+   "acq_years": [
+    0.008,
+    0.0,
+    0.0,
+    0.042
+   ],
+   "acq": 0.0039,
+   "interest_income": 0.0586,
+   "interest_income_used": 0.0586
+  },
+  "SPG": {
+   "acq_years": [
+    1.177,
+    0.169,
+    0.15,
+    0.439
+   ],
+   "acq": 0.304,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "META": {
+   "acq_years": [
+    1.677,
+    0.27,
+    0.629,
+    1.312
+   ],
+   "acq": 0.9705,
+   "interest_income": 3.162,
+   "interest_income_used": 3.162
+  },
+  "TT": {
+   "acq_years": [
+    0.276,
+    0.18,
+    0.863,
+    0.235
+   ],
+   "acq": 0.2554,
+   "interest_income": 0.0181,
+   "interest_income_used": 0.0181
+  },
+  "RL": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.0476,
+   "interest_income_used": 0.0476
+  },
+  "ROST": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.1644,
+   "interest_income_used": 0.1644
+  },
+  "GDDY": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.072
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "FAST": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0055,
+   "interest_income_used": 0.0055
+  },
+  "SYK": {
+   "acq_years": [
+    4.795,
+    1.628,
+    0.39,
+    2.563
+   ],
+   "acq": 2.0955,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "CMG": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0349,
+   "interest_income_used": 0.0349
+  },
+  "KLAC": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.004,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.1771,
+   "interest_income_used": 0.1771
+  },
+  "CME": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.402
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "STE": {
+   "acq_years": [
+    0.02,
+    0.0,
+    0.537,
+    0.036
+   ],
+   "acq": 0.028,
+   "interest_income": 0.0124,
+   "interest_income_used": 0.0124
+  },
+  "WDAY": {
+   "acq_years": [
+    2.079,
+    0.825,
+    0.008,
+    0.0
+   ],
+   "acq": 0.4165,
+   "interest_income": 0.231,
+   "interest_income_used": 0.1531
+  },
+  "BR": {
+   "acq_years": [
+    0.283,
+    0.194,
+    0.034,
+    0.0
+   ],
+   "acq": 0.1139,
+   "interest_income": 0.0112,
+   "interest_income_used": 0.0112
+  },
+  "MSI": {
+   "acq_years": [
+    4.916,
+    0.29,
+    0.18,
+    1.177
+   ],
+   "acq": 0.7335,
+   "interest_income": 0.029,
+   "interest_income_used": 0.029
+  },
+  "BKR": {
+   "acq_years": [
+    0.83,
+    0.0,
+    0.008,
+    0.767
+   ],
+   "acq": 0.3875,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "RSG": {
+   "acq_years": [
+    1.419,
+    0.751,
+    2.059,
+    2.988
+   ],
+   "acq": 1.739,
+   "interest_income": 0.009,
+   "interest_income_used": 0.0041
+  },
+  "WAB": {
+   "acq_years": [
+    2.512,
+    0.149,
+    0.308,
+    0.089
+   ],
+   "acq": 0.2285,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "MRVL": {
+   "acq_years": [
+    0.0,
+    0.01,
+    0.0,
+    0.112
+   ],
+   "acq": 0.0052,
+   "interest_income": 1.9263,
+   "interest_income_used": 0.177
+  },
+  "LULU": {
+   "acq_years": [
+    0.0,
+    0.154,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "RDDT": {
+   "acq_years": [
+    0.0,
+    0.017,
+    0.0,
+    0.042
+   ],
+   "acq": 0.0086,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "CF": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.162,
+   "interest_income_used": 0.1135
+  },
+  "EME": {
+   "acq_years": [
+    0.765,
+    0.228,
+    0.096,
+    0.099
+   ],
+   "acq": 0.1634,
+   "interest_income": 0.02,
+   "interest_income_used": 0.02
+  },
+  "HST": {
+   "acq_years": [
+    0.0,
+    1.503,
+    0.0,
+    0.301
+   ],
+   "acq": 0.1505,
+   "interest_income": 0.057,
+   "interest_income_used": 0.057
+  },
+  "LII": {
+   "acq_years": [
+    0.545,
+    0.006,
+    0.072,
+    0.0
+   ],
+   "acq": 0.0388,
+   "interest_income": 0.0055,
+   "interest_income_used": 0.0023
+  },
+  "NEM": {
+   "acq_years": [
+    0.0,
+    0.04,
+    0.0,
+    0.147
+   ],
+   "acq": 0.02,
+   "interest_income": 0.312,
+   "interest_income_used": 0.312
+  },
+  "REGN": {
+   "acq_years": [
+    0.003,
+    0.017,
+    0.055,
+    0.23
+   ],
+   "acq": 0.0357,
+   "interest_income": 0.7419,
+   "interest_income_used": 0.4185
+  },
+  "ZTS": {
+   "acq_years": [
+    0.028,
+    0.0,
+    0.059,
+    0.312
+   ],
+   "acq": 0.0435,
+   "interest_income": 0.079,
+   "interest_income_used": 0.069
+  },
+  "MO": {
+   "acq_years": [
+    0.0,
+    0.0,
+    1.051,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.098,
+   "interest_income_used": 0.098
+  },
+  "HAS": {
+   "acq_years": [
+    0.0,
+    0.012,
+    0.0,
+    0.146
+   ],
+   "acq": 0.006,
+   "interest_income": 0.0456,
+   "interest_income_used": 0.0456
+  },
+  "BMY": {
+   "acq_years": [
+    2.873,
+    20.722,
+    0.26,
+    2.981
+   ],
+   "acq": 2.927,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "NRG": {
+   "acq_years": [
+    0.596,
+    0.038,
+    2.523,
+    0.062
+   ],
+   "acq": 0.329,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "FIS": {
+   "acq_years": [
+    1.99,
+    0.0,
+    0.157,
+    0.0
+   ],
+   "acq": 0.0785,
+   "interest_income": 0.024,
+   "interest_income_used": 0.024
+  },
+  "PG": {
+   "acq_years": [
+    0.085,
+    0.011,
+    0.021,
+    0.765
+   ],
+   "acq": 0.053,
+   "interest_income": 0.425,
+   "interest_income_used": 0.425
+  },
+  "KO": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.877,
+   "interest_income_used": 0.877
+  },
+  "SHW": {
+   "acq_years": [
+    1.211,
+    0.079,
+    0.161,
+    1.003
+   ],
+   "acq": 0.5821,
+   "interest_income": 0.017,
+   "interest_income_used": 0.0119
+  },
+  "JNJ": {
+   "acq_years": [
+    17.541,
+    15.146,
+    0.0,
+    17.652
+   ],
+   "acq": 16.3435,
+   "interest_income": 0.871,
+   "interest_income_used": 0.7753
+  },
+  "AMGN": {
+   "acq_years": [
+    0.053,
+    0.0,
+    26.989,
+    3.839
+   ],
+   "acq": 1.946,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "VLTO": {
+   "acq_years": [
+    0.0,
+    0.363,
+    0.0,
+    0.055
+   ],
+   "acq": 0.0275,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "AMP": {
+   "acq_years": [
+    0.443,
+    0.008,
+    0.0,
+    0.312
+   ],
+   "acq": 0.16,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0,
+   "equity_avg": 6.138,
+   "roe": 0.6781
+  },
+  "PPG": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.073,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.148,
+   "interest_income_used": 0.0739
+  },
+  "EOG": {
+   "acq_years": [
+    4.451,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.21,
+   "interest_income_used": 0.21
+  },
+  "PM": {
+   "acq_years": [
+    0.033,
+    0.0,
+    0.0,
+    13.996
+   ],
+   "acq": 0.0165,
+   "interest_income": 0.621,
+   "interest_income_used": 0.3007
+  },
+  "DLTR": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "INVA": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0301,
+   "interest_income_used": 0.0266
+  },
+  "CTRE": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.1325,
+   "interest_income_used": 0.0,
+   "note": "REIT that lends to operators: interest income is operating revenue"
+  },
+  "CVSA": {
+   "acq_years": [
+    0.005,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0053,
+   "interest_income_used": 0.0053
+  },
+  "QLYS": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.0255,
+   "interest_income_used": 0.0234
+  },
+  "LAUR": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0078,
+   "interest_income_used": 0.0078
+  },
+  "IDCC": {
+   "acq_years": [
+    0.009,
+    0.004,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0021,
+   "interest_income": 0.0433,
+   "interest_income_used": 0.0433
+  },
+  "LMAT": {
+   "acq_years": [
+    0.002,
+    0.0,
+    0.001,
+    0.0
+   ],
+   "acq": 0.0004,
+   "interest_income": 0.0049,
+   "interest_income_used": 0.0049
+  },
+  "BOX": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.003,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0171,
+   "interest_income_used": 0.0171
+  },
+  "ACIW": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "acq": 0.0,
+   "interest_income": 0.0159,
+   "interest_income_used": 0.0098
+  },
+  "MRSH": {
+   "acq_years": [
+    0.63,
+    8.453,
+    0.993,
+    0.453
+   ],
+   "acq": 0.8115,
+   "interest_income": 0.043,
+   "interest_income_used": 0.043
+  },
+  "WTW": {
+   "acq_years": [
+    0.0,
+    0.0,
+    0.839,
+    0.169
+   ],
+   "acq": 0.0845,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  },
+  "CRVL": {
+   "acq_years": [],
+   "acq": 0.0,
+   "interest_income": 0.0,
+   "interest_income_used": 0.0
+  }
+ }
+}

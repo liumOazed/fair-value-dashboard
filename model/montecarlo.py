@@ -32,7 +32,8 @@ KEYS = ["bear", "base", "bull"]
 
 def moat(tk, r):
     """This stock's advantage period and terminal-return settings (data/moat.json), as model.dcf uses them."""
-    return dict(M["moat_of"](tk), r_req=r, sg=M["segments_of"](tk))
+    sep = M["stock_setup"](tk, M["STOCKS"][tk])["kw"] if tk in M["STOCKS"] else {}
+    return dict(M["moat_of"](tk), r_req=r, sg=M["segments_of"](tk), sep=sep)
 
 def tv_k(mo, gt, g_last):
     """Vectorised model.tv_factor (terminal cash flow vs the last explicit year)."""
@@ -42,12 +43,31 @@ def tv_k(mo, gt, g_last):
     return (1 - gt / rt) / (1 - np.minimum(g_last, 0.9 * rf) / rf)
 
 def inputs(tk):
-    s = M["STOCKS"][tk]; f = M["FIN"][tk]; r = M["req_return"](tk)
-    aint = 0.0 if M["DCF_METHOD"] == "equity" else f["interest"] * (1 - f["tax"])
-    add = aint / s["rev"]
-    m0 = (s["fcf"] - s["sbc"] + aint) / s["rev"]
-    sc = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}
-    return s, r, m0, sc, s["net_cash"] + s["extra"]
+    s = M["STOCKS"][tk]; r = M["req_return"](tk)
+    su = M["stock_setup"](tk, s)                   # same cash-flow separation as model.py
+    return s, r, su["m0"], su["S2"], su["nc"]
+
+def separate(fcf, k, rev, rev0, gt, mo):
+    """model.dcf's cash-flow separation on simulated paths: lenders keep 1 - g/ROE of profit, acquisition spend is
+    charged as reinvestment scaled by growth. Returns the new paths and terminal factor."""
+    sep = (mo or {}).get("sep") or {}
+    roe, acq = sep.get("roe"), sep.get("acq")
+    if not roe and not acq: return fcf, k
+    gt = np.broadcast_to(np.asarray(gt, float), (len(fcf),))
+    prev = np.concatenate([np.full((len(fcf), 1), rev0), rev[:, :-1]], axis=1)
+    g = rev / prev - 1
+    gcol = gt[:, None]
+    ch = lambda x, gg: (acq[0] * np.minimum(1.0, np.maximum(x - gg, 0.0) / np.maximum(acq[1] - gg, 1e-12)) * (acq[1] > gg)) if acq else 0.0
+    base_last = fcf[:, -1]
+    if roe:
+        rt, rq = mo.get("ronic_terminal"), mo.get("r_req")
+        rn = rq if rt == "r" else (roe + rq) / 2 if rt == "mid" else roe
+        new = fcf * (1 - g / roe) - rev * ch(g, gcol)
+        term = base_last * (1 - gt / rn) - rev[:, -1] * ch(gt, gt)
+    else:
+        new = fcf - rev * ch(g, gcol)
+        term = base_last * k - rev[:, -1] * ch(gt, gt)
+    return new, term / new[:, -1]
 
 def _growth(g1, g10, gt, n):
     t = np.arange(1, n + 1)
@@ -84,25 +104,30 @@ def paths_k(rev0, m0, g1, g10, m, gt, mo):
     if not (sg and sg.get("engines")):
         n = (mo or {}).get("cap_years", T)
         fcf, gl = paths(rev0, m0, g1, g10, m, gt, n, sg)
-        return fcf, (tv_k(mo, gt, gl) if mo else 1.0)
+        k = tv_k(mo, gt, gl) if mo else 1.0
+        if not (mo or {}).get("sep"): return fcf, k
+        one = np.ones_like(np.asarray(g1, float))
+        rev, _ = paths(rev0, 1.0, g1, g10, one, gt, n, sg)          # revenue paths (margin 1)
+        return separate(fcf, np.broadcast_to(np.asarray(k, float), (len(fcf),)), rev, rev0, gt, mo)
     E = sg["engines"]; MO = [M["eng_mo"](c, mo) for c in E["moat"]]; caps = [x.get("cap_years", T) for x in MO]
     n = max(caps + [mo.get("cap_years", T)]); t = np.arange(1, n + 1)
     gt_ = np.broadcast_to(np.asarray(gt, float), g10.shape)
     x = np.stack([np.minimum(g1 * q, sg["cap"] * g1) for q in sg["ratio"]], axis=1)
     w = np.array(sg["share"]); x = x + (g1 - x @ w)[:, None]; x = np.where((g1 > 0)[:, None], x, g1[:, None])
     mt = m0 + (m - m0)[:, None] * np.minimum(t, 5) / 5
-    fcf = np.zeros((len(g1), n)); term = np.zeros(len(g1))
+    fcf = np.zeros((len(g1), n)); term = np.zeros(len(g1)); rev = np.zeros((len(g1), n))
     for i in range(len(w)):
         c = caps[i]
         g = x[:, i][:, None] + (g10 - x[:, i])[:, None] * (np.minimum(t, 10) - 1) / 9
         if c > 10: g = np.where(t > 10, g10[:, None] + (gt_ - g10)[:, None] * (np.minimum(t, c) - 10) / (c - 10), g)
         g = np.where(t > c, gt_[:, None], g)
-        f = rev0 * w[i] * np.cumprod(1 + g, axis=1) * mt * E["x"][i]
+        ri = rev0 * w[i] * np.cumprod(1 + g, axis=1); rev += ri
+        f = ri * mt * E["x"][i]
         ki = tv_k(dict(MO[i], r_req=mo["r_req"]), gt_, g[:, c - 1])
         f = np.where(t > c, f * np.asarray(ki)[..., None] if np.ndim(ki) else f * ki, f)
         fcf += f
         term += f[:, -1] * (ki if c == n else 1.0)
-    return fcf, term / fcf[:, -1]
+    return separate(fcf, term / fcf[:, -1], rev, rev0, gt, mo)
 
 def pv_paths(fcf, gt, r, nc, shares, k=1.0):
     """Value per share of cash-flow paths; r may be a scalar or one rate per run; k = terminal cash-flow factor."""

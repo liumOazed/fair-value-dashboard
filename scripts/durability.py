@@ -128,12 +128,10 @@ def model_value(t, m_normal):
     """Fair value per share with the starting and all scenario margins set to m_normal (before the interest add-back)."""
     s = dict(STOCKS[t]); s["r"] = M["req_return"](t)
     mo = dict(M["moat_of"](t), r_req=s["r"]); sg = M["segments_of"](t)
-    f = FIN[t]
-    aint = 0.0 if M["DCF_METHOD"] == "equity" else f["interest"] * (1 - f["tax"])
-    add = aint / s["rev"]
-    nc = s["net_cash"] + s["extra"]
-    D = lambda m0, p: M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], s["r"], nc, s["shares"], mo=mo, sg=sg)
-    now = sum(PROBS[k] * D((s["fcf"] - s["sbc"] + aint) / s["rev"], dict(v, m=v["m"] + add)) for k, v in s["scen"].items())
+    su = M["stock_setup"](t, s)                     # same cash-flow separation as the model
+    add, nc = su["add"], su["nc"]
+    D = lambda m0, p: M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], s["r"], nc, s["shares"], mo=mo, sg=sg, **su["kw"])
+    now = sum(PROBS[k] * D(su["m0"], dict(v, m=v["m"] + add)) for k, v in s["scen"].items())
     norm = sum(PROBS[k] * D(m_normal + add, dict(v, m=m_normal + add)) for k, v in s["scen"].items())
     return now, norm, (s["fcf"] - s["sbc"]) / s["rev"], {k: v["m"] for k, v in s["scen"].items()}, s
 

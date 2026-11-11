@@ -87,11 +87,8 @@ def stock_values(tk):
     s, f = M["STOCKS"][tk], M["FIN"][tk]
     r = M["req_return"](tk)
     sg = M["segments_of"](tk)
-    aint = f["interest"] * (1 - f["tax"])                       # fcff_re: free cash flow before interest
-    add = aint / s["rev"]
-    m0 = (s["fcf"] - s["sbc"] + aint) / s["rev"]
-    nc = s["net_cash"] + s["extra"]
-    S2 = {k: dict(v, m=v["m"] + add) for k, v in s["scen"].items()}
+    su = M["stock_setup"](tk, s)                                # same cash-flow separation as the model
+    m0, nc, S2, X = su["m0"], su["nc"], su["S2"], su["kw"]
     cls = M["moat_of"](tk)["cls"]
 
     def mo_for(c):
@@ -106,13 +103,13 @@ def stock_values(tk):
         p = S2[k]
         if mo["cls"] == "fails":
             mo_ = dict(CLASSES[cls], cls=cls, r_req=r) if cls != "short" else dict(cap_years=10, ronic_forecast=None, cls="short")
-            return M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], mo=mo_, sg=sg, fail=fail)
+            return M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], mo=mo_, sg=sg, fail=fail, **X)
         if mo["cls"] != "end10":
-            return M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], detail=detail, mo=mo, sg=sg)
+            return M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], detail=detail, mo=mo, sg=sg, **X)
         # Edge ends at year 10: years 1-10 as in the model, then new investment earns only the required return. The
         # terminal cash flow is scaled by the value-driver factor (1 - 2.5% / r) / (1 - 2.5% / RONIC), the same
         # reinvestment the full-length model has in its last year (growth 2.5%), so cutting the period never frees cash.
-        d = M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], detail=True, mo=mo, sg=sg)
+        d = M["dcf"](s["rev"], m0, p["g1"], p["g10"], p["m"], rate, nc, s["shares"], detail=True, mo=mo, sg=sg, **X)
         rf = CLASSES[cls].get("ronic_forecast") or 0.20
         k_ = (1 - GT / r) / (1 - GT / rf)
         return d["per_share"] + (k_ - 1) * d["pv_tv"] / s["shares"]
