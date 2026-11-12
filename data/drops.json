@@ -109,21 +109,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0593,
-    "week": -0.033,
-    "high": -0.5792
+    "day": -0.0612,
+    "week": -0.035,
+    "high": -0.5801
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0098,
-    "week": 0.0058,
-    "high": -0.0159
+    "day": -0.0117,
+    "week": 0.0039,
+    "high": -0.0178
    },
    "sector_at_open": 83.9,
    "worst": {
@@ -240,14 +240,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0565,
-    "week": 0.0627,
-    "high": -0.615
+    "day": -0.0582,
+    "week": 0.0608,
+    "high": -0.6157
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
@@ -375,27 +375,27 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0522,
-    "week": -0.1326,
-    "high": -0.2481
+    "day": -0.0525,
+    "week": -0.1329,
+    "high": -0.2484
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 59.07,
    "worst": {
     "day": -0.1351,
     "week": -0.1684,
-    "high": -0.2481
+    "high": -0.2484
    },
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
@@ -506,21 +506,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0259,
-    "week": 0.1727,
-    "high": -0.4524
+    "day": -0.0296,
+    "week": 0.1682,
+    "high": -0.4545
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": -0.0077,
-    "week": 0.0324,
-    "high": -0.0518
+    "day": -0.0093,
+    "week": 0.0308,
+    "high": -0.0533
    },
    "sector_at_open": 60.55,
    "worst": {
@@ -642,21 +642,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0232,
-    "week": 0.2347,
-    "high": -0.4789
+    "day": -0.0258,
+    "week": 0.2314,
+    "high": -0.4803
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -778,21 +778,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": 0.0028,
-    "week": 0.2138,
-    "high": -0.4687
+    "day": 0.0058,
+    "week": 0.2175,
+    "high": -0.4671
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Utilities",
    "sector_etf": "RSPU",
    "sector_moves": {
-    "day": 0.0006,
-    "week": 0.0139,
-    "high": -0.0777
+    "day": -0.0003,
+    "week": 0.013,
+    "high": -0.0785
    },
    "sector_at_open": 77.67,
    "worst": {
@@ -801,7 +801,7 @@
     "high": -0.5642
    },
    "provisional": {
-    "cause": "Sector-wide: Utilities fell 0% too (rates, recession worries or sector rotation)",
+    "cause": "Sector-wide: Utilities fell -0% too (rates, recession worries or sector rotation)",
     "lean": "unclear"
    }
   },
@@ -914,21 +914,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": 0.0082,
-    "week": 0.0542,
-    "high": -0.3368
+    "day": 0.0112,
+    "week": 0.0574,
+    "high": -0.3348
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -1211,142 +1211,6 @@
    }
   },
   {
-   "id": "NVDA-2026-11-05",
-   "ticker": "NVDA",
-   "name": "NVIDIA Corp.",
-   "opened": "2026-11-05",
-   "price_at_open": 182.96,
-   "spy_at_open": 736.33,
-   "fair_value_at_open": 179.38,
-   "buy_below_at_open": 125.57,
-   "valued_on": "2026-11-05",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "AI-chip and data-centre sell-off after the midterms (-9% on 5 Nov, ~24% below the October record): data-centre permit pauses and doubts about how customers finance AI build-outs",
-    "summary": "None of the drivers is an NVIDIA operating problem: analysts are still raising estimates (7 up, 0 down in 30 days), Amazon committed to more GPUs and Rubin has orders from major clouds; the known pressure is gross margin falling to ~71-72% on memory costs, already guided. The fall tracks the whole sector. Watch the 17 Nov report and any sign that permits or financing delay deployments; the price (~82) is about at the model fair value (~79).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-12",
-    "earnings_on": null,
-    "last_report": "2026-08-26",
-    "peers": {
-     "basis": "industry: Semiconductors",
-     "n": 8,
-     "median": {
-      "day": 0.00532768076467377,
-      "week": -0.03913608529031476,
-      "high": -0.30966516061623345
-     },
-     "tickers": [
-      "AVGO",
-      "MU",
-      "AMD",
-      "INTC",
-      "TXN",
-      "ADI",
-      "MRVL",
-      "QCOM"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 9.31674,
-      "d30": 9.31242,
-      "chg": 0.00046389660260159893
-     },
-     "+1y": {
-      "current": 15.90883,
-      "d30": 15.9146,
-      "chg": -0.0003625601648800103
-     },
-     "revisions_30d": {
-      "up": 7,
-      "down": 0
-     }
-    },
-    "news": [
-     {
-      "title": "Nvidia Board May Vote to Remove Jensen Huang as CEO Tonight. Here\u2019s What Investors Need to Know.",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUzhSRWxqYzNXX3ZudGc0SWl2SU1kNFVjMmVTNThhV3NJMTRCdzhtVzFWV1JJS3NfWUpqVmhYTzBLd2pMdWJyS1RRVUI0elFPN0lPdk5KUEJTbzJhQnJXOGZGZVk3Z25VWWpfS1l5ODMyNDUwV3g1ckxjQWFZVW1WV3NqVmZNOFdsYmNxYVJpUE5EZjVVNHo3RA?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "Nvidia\u2019s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYmdkdUluVHVQWUhGdnVOemo1NFU2N3RwV3dYY1Qta0RNckhBeVZXejVkb1RsdzdUeDlzUEV1XzQ3N0dPcFhPNVRRTTN5TTJXRktBYWdvcVBmWm9veUNoR2U2VHJJN0FzbC04TzBiTW5raWdOWk5CZ2djQTJjMlJ6bGRPR3lJbG1BOEhJbWh5X2xLMzMxazlxZzNBT0ZuUmJtZG80akFMUkFVSHV5LUdUaEplOGtvYU1RdDY4TFEzOA?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "Nvidia Stock Tumbles. Jensen Huang Could Be Out Soon.",
-      "publisher": "Barron's",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTmY5c05oNmptS3d1Z1B6aUtOaEkwMGxxbjBkendjRzNqU2lrclhPNlkxWEdlU2c5NnhUVVQ4a09vSVFOX3ZhNnNpUy1VeHo3aFlHdlAzZVdSLXQyWml3VE0xMnNNUnU5T2NCM2pHNjE2end6NjlRNVBYbkxKOGZOSTR3MU1aYk9IaWtMLQ?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "Nvidia Board May Vote to Remove Jensen Huang as CEO Tonight. Here\u2019s What Investors Need to Know.",
-      "publisher": "The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbC00Z3I5ZUhkWkp5RkpxalNEMkh0UDQyQ0wteWxQTk1tMXFVY2FNNkVJYnItTXhfMUhod2ZxY3UtUWl0RnZyZXFPZnZkRDNnMmhramsyWHl1WnJxYzFVYjhiRlZlSHVmNUd5UU9RcjA5enYyamlHMkpjNXpjdjB0VGdRdDFYTjZCR2F5ZEZTYmZjUWJIcmlpYjk0dUxGUzlRa2VOajRpT012YzY0VkJYbzZkcFZBWjZ6UjJxTk4yeTQyck5CX0Z2RDhmUUlWdnZ2QlZF?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
-      "publisher": "CNBC",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaW1tUGR6WFlEVmNGLXlEaVd2UnBSdkRKRlRxYUtieXVsbHh5WWRpNWUtMnp3WTRNUHhaYllYdG5MZEN4czNyUXJ6TVpyc2F6U0NBN3ZvM1pxWkJWSDREa0dJSlctQXQ1eGl4R3BHUTU3WEVIdTZWeGdOT0hVcHNzcVp5NklibXIwalRQWTkxcHBOdjNlXy1nSDVR?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "Nvidia shares plunge amid reports board to discuss CEO Huang\u2019s future",
-      "publisher": "Al Jazeera",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNHVDc0MwMi02LVVoYnBFeGowTnN1dWJEeld1bkNFajhxbXdkekR0enhMOXFCMV92LUFSMGF2UkNzaUVIeDA3Qml5X2FsSjZWUVdZNUVleEFlZHFHZkthQU9tRHhjekFNNUt5SHc4MWM5XzdqLWM5TmRTZVVXMTk4djFhZ3ZheklQQjl5Wkt6VEx2R0NyV3lHRV92SDVQOEtrUkoyY29IQ3cyejhoV3RNd1NNZ9IBuAFBVV95cUxNOXF5RXFqV3RkNlFGNjFmUFFzUVFmZGpyOUdJV1R3NUw2YXlacktFQmhkMXRNUVdpYTFWSHhSYkhUclJsbDNOMGpCc29BbWJxdldXZ1B6SUN3VVdhNDF4d3VsTkNxY1ppRVFxS0hDdFhBN21YcTFXYTdkV0pPTTkxQ0lnUGF2Ri1YQTYwRkxudlV6RUlqaFk4U1lRcFlqeEdVejJwTlU5MG5sODRVOUJaazFKcURFTGN5?oc=5",
-      "date": "2026-11-12"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-12",
-   "moves": {
-    "day": -0.053,
-    "week": -0.094,
-    "high": -0.3123
-   },
-   "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
-   },
-   "sector": "Information Technology",
-   "sector_etf": "RSPT",
-   "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
-   },
-   "sector_at_open": 57.58,
-   "worst": {
-    "day": -0.0926,
-    "week": -0.1862,
-    "high": -0.3264
-   },
-   "provisional": {
-    "cause": "Company-specific, no clear cause in the data: read the headlines",
-    "lean": "unclear"
-   }
-  },
-  {
    "id": "CRCL-2026-10-30",
    "ticker": "CRCL",
    "name": "Circle Internet Group",
@@ -1452,27 +1316,27 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0457,
-    "week": -0.0782,
-    "high": -0.5178
+    "day": -0.0495,
+    "week": -0.0818,
+    "high": -0.5197
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0098,
-    "week": 0.0058,
-    "high": -0.0159
+    "day": -0.0117,
+    "week": 0.0039,
+    "high": -0.0178
    },
    "sector_at_open": 82.34,
    "worst": {
     "day": -0.0934,
     "week": -0.1556,
-    "high": -0.5178
+    "high": -0.5197
    },
    "provisional": {
     "cause": "Company-specific: next-year EPS forecasts cut -9% in 30 days",
@@ -1610,106 +1474,107 @@
    }
   },
   {
-   "id": "ADYEY-2026-10-30",
-   "ticker": "ADYEY",
-   "name": "Adyen N.V. (ADR)",
-   "opened": "2026-10-30",
-   "price_at_open": 9.16,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 10.44,
-   "buy_below_at_open": 7.31,
-   "valued_on": "2026-10-30",
+   "id": "NVDA-2026-11-05",
+   "ticker": "NVDA",
+   "name": "NVIDIA Corp.",
+   "opened": "2026-11-05",
+   "price_at_open": 182.96,
+   "spy_at_open": 736.33,
+   "fair_value_at_open": 179.38,
+   "buy_below_at_open": 125.57,
+   "valued_on": "2026-11-05",
    "triggers": [
+    "day",
     "week",
     "high"
    ],
    "emergency": false,
    "needs_verdict": false,
    "verdict": {
-    "label": "lasting",
+    "label": "temporary",
     "confidence": "medium",
-    "cause": "Q3 revenue +22% but Adyen cut its 2026 EBITDA margin to ~50% and dropped its >55% medium-term target to invest more",
-    "summary": "Adyen fell ~11% on Oct 28 while financials and peers rose: net revenue grew 23% and the 21-23% growth guide held, but the 2026 EBITDA margin is now ~50% (2025: 53%) and the medium-term >55% margin target was withdrawn to speed up hiring, products and acquisitions. That is a lasting reset of the margin path by management choice, not a loss of business, though volume grew faster than revenue (lower take rate) and Digital slowed to +16%. The model already assumed a flat ~36% FCF margin, so its numbers were not changed (notes updated); watch the 2027 targets in February and the take rate.",
+    "cause": "AI-chip and data-centre sell-off after the midterms (-9% on 5 Nov, ~24% below the October record): data-centre permit pauses and doubts about how customers finance AI build-outs",
+    "summary": "None of the drivers is an NVIDIA operating problem: analysts are still raising estimates (7 up, 0 down in 30 days), Amazon committed to more GPUs and Rubin has orders from major clouds; the known pressure is gross margin falling to ~71-72% on memory costs, already guided. The fall tracks the whole sector. Watch the 17 Nov report and any sign that permits or financing delay deployments; the price (~82) is about at the model fair value (~79).",
     "model_changed": false,
-    "date": "2026-11-03",
+    "date": "2026-11-06",
     "by": "Claude"
    },
    "evidence": {
     "v": 5,
     "updated": "2026-11-12",
     "earnings_on": null,
-    "last_report": "2025-08-14",
+    "last_report": "2026-08-26",
     "peers": {
-     "basis": "industry: Software - Infrastructure",
+     "basis": "industry: Semiconductors",
      "n": 8,
      "median": {
-      "day": -0.014361750136031859,
-      "week": -0.036476240039398145,
-      "high": -0.191430042204068
+      "day": 0.00532768076467377,
+      "week": -0.03913608529031476,
+      "high": -0.30966516061623345
      },
      "tickers": [
-      "MSFT",
-      "PLTR",
-      "ORCL",
-      "PANW",
-      "CRWD",
-      "FTNT",
-      "SNPS",
-      "XYZ"
+      "AVGO",
+      "MU",
+      "AMD",
+      "INTC",
+      "TXN",
+      "ADI",
+      "MRVL",
+      "QCOM"
      ]
     },
     "estimates": {
      "0y": {
-      "current": 0.4265,
-      "d30": 0.45298,
-      "chg": -0.05845732703430617
+      "current": 9.31674,
+      "d30": 9.31242,
+      "chg": 0.00046389660260159893
      },
      "+1y": {
-      "current": 0.50656,
-      "d30": 0.55124,
-      "chg": -0.08105362455554743
+      "current": 15.90883,
+      "d30": 15.9146,
+      "chg": -0.0003625601648800103
      },
      "revisions_30d": {
-      "up": 0,
-      "down": 3
+      "up": 7,
+      "down": 0
      }
     },
     "news": [
      {
-      "title": "Adyen stock gains fresh Sage role in French banking rollout",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVXNLZnRVdW5RRGNCX1dyOXk0V1RHUHF1WU9uUjZybWxWVENsMWpPYmFFSHZOdWd6OVJWZExCRFdQMi1tc2VZaXNqRmgwTnRILVMyRTY3YVFtQWJlNnozQjBReFM1MUR3TkZiYUJ4VFBhXzFFTTU0LXVydVE4RWg5QmFRSGJWRDJGZVM4VHFqeE9NQlRHa0lsMUNYTWVsOFdCMC1ROFZwQ3QyVTlXM1dFci1HQ1hhQ0hncG8yVmtSZw?oc=5",
-      "date": "2026-11-11"
+      "title": "Nvidia Board May Vote to Remove Jensen Huang as CEO Tonight. Here\u2019s What Investors Need to Know.",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUzhSRWxqYzNXX3ZudGc0SWl2SU1kNFVjMmVTNThhV3NJMTRCdzhtVzFWV1JJS3NfWUpqVmhYTzBLd2pMdWJyS1RRVUI0elFPN0lPdk5KUEJTbzJhQnJXOGZGZVk3Z25VWWpfS1l5ODMyNDUwV3g1ckxjQWFZVW1WV3NqVmZNOFdsYmNxYVJpUE5EZjVVNHo3RA?oc=5",
+      "date": "2026-11-12"
      },
      {
-      "title": "Adyen stock at EUR 885.20, up 1.32% before Xetra",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOLU14dWxwMHFKZFh0eEtvajJVc2dhcjhFb0R6Z21PNUhidDZ2V1RKSzFOendDQ2ZQbmx6cGVBRDBiVjJWeUY4R2liZFJ4dERtVDRmMzVEWi1iSTNFTjhpUzlza3NMb3BkQ1JzNktuaXc1aThzR3pHRmN3OExtOFJzd3NJNkdBbkluTjkxZ3BjMTZYWnhlZ0tyVWRfdkV1SmJkeHowOF9ubw?oc=5",
-      "date": "2026-11-11"
+      "title": "Nvidia\u2019s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYmdkdUluVHVQWUhGdnVOemo1NFU2N3RwV3dYY1Qta0RNckhBeVZXejVkb1RsdzdUeDlzUEV1XzQ3N0dPcFhPNVRRTTN5TTJXRktBYWdvcVBmWm9veUNoR2U2VHJJN0FzbC04TzBiTW5raWdOWk5CZ2djQTJjMlJ6bGRPR3lJbG1BOEhJbWh5X2xLMzMxazlxZzNBT0ZuUmJtZG80akFMUkFVSHV5LUdUaEplOGtvYU1RdDY4TFEzOA?oc=5",
+      "date": "2026-11-12"
      },
      {
-      "title": "Adyen stock gains Sage banking role in French rollout",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMktQLVFrVnJoSWxCYXU4NkI0Sm1LR2JYODFfQjVoaW9nZUstYzlJU3lfeHJzUFpJaFgxMzB6V1ZHdW5VVzUxS0RmbEV6ZWNZV2Y2NFFOSWdBYzAwQm9UTURDaEdwa1N3aWpUa0E4dFZ2N0M4aXFaVlhhajZQUlZzR2dMUjZJaG01Q3hhUHI5S1BEUXplREdab2EyUzQ5OUJIaE1jdTlVbUFld090MFlZQkpHTVFHcjQ?oc=5",
-      "date": "2026-11-10"
+      "title": "Nvidia Stock Tumbles. Jensen Huang Could Be Out Soon.",
+      "publisher": "Barron's",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTmY5c05oNmptS3d1Z1B6aUtOaEkwMGxxbjBkendjRzNqU2lrclhPNlkxWEdlU2c5NnhUVVQ4a09vSVFOX3ZhNnNpUy1VeHo3aFlHdlAzZVdSLXQyWml3VE0xMnNNUnU5T2NCM2pHNjE2end6NjlRNVBYbkxKOGZOSTR3MU1aYk9IaWtMLQ?oc=5",
+      "date": "2026-11-12"
      },
      {
-      "title": "Sage Group Partners with Adyen, Mastercard to Offer Business Accounts, Debit Cards to SMEs",
-      "publisher": "www.marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbGxVMlhwQ3NoX1VRd3owQ19fU0hGRE4wM1NIUnVzaXlOekdHcHBNb1BpN003QjRGbE9tTExMZEI0TDVxU2psMHhpSE0wVmhCWk5zMWxWNE9yRl90QzF5MXhEdnJOR1RTVXR4V1B3UzgyZzZpb2FfWW9FbDBqZWxXczVlYm5ZSGZoaUx3eTRLS3RHY1FqejZjZC1XZGMwaFU0N2hPekw5WExUQUM3SUR3dkg2YnExYXdVSWphSVZZRmMxQkVvRzkyVUoyRDBDNkl2b3pKdmhsbjc?oc=5",
-      "date": "2026-11-10"
+      "title": "Nvidia Board May Vote to Remove Jensen Huang as CEO Tonight. Here\u2019s What Investors Need to Know.",
+      "publisher": "The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbC00Z3I5ZUhkWkp5RkpxalNEMkh0UDQyQ0wteWxQTk1tMXFVY2FNNkVJYnItTXhfMUhod2ZxY3UtUWl0RnZyZXFPZnZkRDNnMmhramsyWHl1WnJxYzFVYjhiRlZlSHVmNUd5UU9RcjA5enYyamlHMkpjNXpjdjB0VGdRdDFYTjZCR2F5ZEZTYmZjUWJIcmlpYjk0dUxGUzlRa2VOajRpT012YzY0VkJYbzZkcFZBWjZ6UjJxTk4yeTQyck5CX0Z2RDhmUUlWdnZ2QlZF?oc=5",
+      "date": "2026-11-12"
      },
      {
-      "title": "Adyen stock gains banking role in Sage's French launch",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc3k0aUpDdjRkR0h4Q3hrUFRCUEhFSXQ0cWxEUVQ1VGU2LTBqOWhacG5BUEdIcGRvNHU1M1B1blpJTENqVXAxNC0zS1hGYkxPZUNTWmtTMVNOWHlTLXRydWZKbXNlajdQMzJJeFZuLVlsTmJFUEFaWVBBR1Mtc3hSRVc2elFvWjhCcExLS082SkhTWDlJY1NUOVQ1aHVLeVhUZU5scVhkR3BXLWU2YXpCV2gzeGp4UHRH?oc=5",
-      "date": "2026-11-10"
+      "title": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
+      "publisher": "CNBC",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaW1tUGR6WFlEVmNGLXlEaVd2UnBSdkRKRlRxYUtieXVsbHh5WWRpNWUtMnp3WTRNUHhaYllYdG5MZEN4czNyUXJ6TVpyc2F6U0NBN3ZvM1pxWkJWSDREa0dJSlctQXQ1eGl4R3BHUTU3WEVIdTZWeGdOT0hVcHNzcVp5NklibXIwalRQWTkxcHBOdjNlXy1nSDVR?oc=5",
+      "date": "2026-11-12"
      },
      {
-      "title": "Sage partners with Adyen and Mastercard to deliver business accounts with debit cards for small businesses",
-      "publisher": "www.marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSTBrVURzanVJeUV6azdXdTRHdUF2UzcwSVBoVkRvc19WU0V1NUxIeU1yN25UTkNrX1ZOUUtPTFBJNUJBekliNzRacUlpN1Q2V20wMW9OVkhaZy1vdG5GTUg0ZmNTYVJRcDFsY2UxNGV3NXltWlltOTZuYTJmTW5FTUE1c2ZNQzhRR1V2ZU1sYW5KakhvMTlETUhNSDM4RF9OcjU4YnpMRENCV1VhLUd2R3l0bE1yUmFzRElQdzlsZjc0aER3SXlQQW45S2RiMUlDdE1YUUxtSDZXbVZlTV91MWNmY3dqRjZa?oc=5",
-      "date": "2026-11-10"
+      "title": "Nvidia shares plunge amid reports board to discuss CEO Huang\u2019s future",
+      "publisher": "Al Jazeera",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNHVDc0MwMi02LVVoYnBFeGowTnN1dWJEeld1bkNFajhxbXdkekR0enhMOXFCMV92LUFSMGF2UkNzaUVIeDA3Qml5X2FsSjZWUVdZNUVleEFlZHFHZkthQU9tRHhjekFNNUt5SHc4MWM5XzdqLWM5TmRTZVVXMTk4djFhZ3ZheklQQjl5Wkt6VEx2R0NyV3lHRV92SDVQOEtrUkoyY29IQ3cyejhoV3RNd1NNZ9IBuAFBVV95cUxNOXF5RXFqV3RkNlFGNjFmUFFzUVFmZGpyOUdJV1R3NUw2YXlacktFQmhkMXRNUVdpYTFWSHhSYkhUclJsbDNOMGpCc29BbWJxdldXZ1B6SUN3VVdhNDF4d3VsTkNxY1ppRVFxS0hDdFhBN21YcTFXYTdkV0pPTTkxQ0lnUGF2Ri1YQTYwRkxudlV6RUlqaFk4U1lRcFlqeEdVejJwTlU5MG5sODRVOUJaazFKcURFTGN5?oc=5",
+      "date": "2026-11-12"
      }
     ]
    },
@@ -1717,30 +1582,30 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0247,
-    "week": -0.0425,
-    "high": -0.4458
+    "day": -0.0434,
+    "week": -0.0849,
+    "high": -0.3053
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
+   "sector": "Information Technology",
+   "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0098,
-    "week": 0.0058,
-    "high": -0.0159
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
-   "sector_at_open": 82.34,
+   "sector_at_open": 57.58,
    "worst": {
-    "day": -0.0276,
-    "week": -0.1301,
-    "high": -0.4665
+    "day": -0.0926,
+    "week": -0.1862,
+    "high": -0.3264
    },
    "provisional": {
-    "cause": "Industry-wide: peers fell -4% too (rates, sector rotation or an industry worry)",
+    "cause": "Company-specific, no clear cause in the data: read the headlines",
     "lean": "unclear"
    }
   },
@@ -1853,21 +1718,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0243,
-    "week": 0.1091,
-    "high": -0.4616
+    "day": -0.0274,
+    "week": 0.1055,
+    "high": -0.4634
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -1877,6 +1742,141 @@
    },
    "provisional": {
     "cause": "Company-specific, no clear cause in the data: read the headlines",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "ADYEY-2026-10-30",
+   "ticker": "ADYEY",
+   "name": "Adyen N.V. (ADR)",
+   "opened": "2026-10-30",
+   "price_at_open": 9.16,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 10.44,
+   "buy_below_at_open": 7.31,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Q3 revenue +22% but Adyen cut its 2026 EBITDA margin to ~50% and dropped its >55% medium-term target to invest more",
+    "summary": "Adyen fell ~11% on Oct 28 while financials and peers rose: net revenue grew 23% and the 21-23% growth guide held, but the 2026 EBITDA margin is now ~50% (2025: 53%) and the medium-term >55% margin target was withdrawn to speed up hiring, products and acquisitions. That is a lasting reset of the margin path by management choice, not a loss of business, though volume grew faster than revenue (lower take rate) and Digital slowed to +16%. The model already assumed a flat ~36% FCF margin, so its numbers were not changed (notes updated); watch the 2027 targets in February and the take rate.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-12",
+    "earnings_on": null,
+    "last_report": "2025-08-14",
+    "peers": {
+     "basis": "industry: Software - Infrastructure",
+     "n": 8,
+     "median": {
+      "day": -0.014361750136031859,
+      "week": -0.036476240039398145,
+      "high": -0.191430042204068
+     },
+     "tickers": [
+      "MSFT",
+      "PLTR",
+      "ORCL",
+      "PANW",
+      "CRWD",
+      "FTNT",
+      "SNPS",
+      "XYZ"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 0.4265,
+      "d30": 0.45298,
+      "chg": -0.05845732703430617
+     },
+     "+1y": {
+      "current": 0.50656,
+      "d30": 0.55124,
+      "chg": -0.08105362455554743
+     },
+     "revisions_30d": {
+      "up": 0,
+      "down": 3
+     }
+    },
+    "news": [
+     {
+      "title": "Adyen stock gains fresh Sage role in French banking rollout",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVXNLZnRVdW5RRGNCX1dyOXk0V1RHUHF1WU9uUjZybWxWVENsMWpPYmFFSHZOdWd6OVJWZExCRFdQMi1tc2VZaXNqRmgwTnRILVMyRTY3YVFtQWJlNnozQjBReFM1MUR3TkZiYUJ4VFBhXzFFTTU0LXVydVE4RWg5QmFRSGJWRDJGZVM4VHFqeE9NQlRHa0lsMUNYTWVsOFdCMC1ROFZwQ3QyVTlXM1dFci1HQ1hhQ0hncG8yVmtSZw?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Adyen stock at EUR 885.20, up 1.32% before Xetra",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOLU14dWxwMHFKZFh0eEtvajJVc2dhcjhFb0R6Z21PNUhidDZ2V1RKSzFOendDQ2ZQbmx6cGVBRDBiVjJWeUY4R2liZFJ4dERtVDRmMzVEWi1iSTNFTjhpUzlza3NMb3BkQ1JzNktuaXc1aThzR3pHRmN3OExtOFJzd3NJNkdBbkluTjkxZ3BjMTZYWnhlZ0tyVWRfdkV1SmJkeHowOF9ubw?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Adyen stock gains Sage banking role in French rollout",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMktQLVFrVnJoSWxCYXU4NkI0Sm1LR2JYODFfQjVoaW9nZUstYzlJU3lfeHJzUFpJaFgxMzB6V1ZHdW5VVzUxS0RmbEV6ZWNZV2Y2NFFOSWdBYzAwQm9UTURDaEdwa1N3aWpUa0E4dFZ2N0M4aXFaVlhhajZQUlZzR2dMUjZJaG01Q3hhUHI5S1BEUXplREdab2EyUzQ5OUJIaE1jdTlVbUFld090MFlZQkpHTVFHcjQ?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Sage Group Partners with Adyen, Mastercard to Offer Business Accounts, Debit Cards to SMEs",
+      "publisher": "www.marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbGxVMlhwQ3NoX1VRd3owQ19fU0hGRE4wM1NIUnVzaXlOekdHcHBNb1BpN003QjRGbE9tTExMZEI0TDVxU2psMHhpSE0wVmhCWk5zMWxWNE9yRl90QzF5MXhEdnJOR1RTVXR4V1B3UzgyZzZpb2FfWW9FbDBqZWxXczVlYm5ZSGZoaUx3eTRLS3RHY1FqejZjZC1XZGMwaFU0N2hPekw5WExUQUM3SUR3dkg2YnExYXdVSWphSVZZRmMxQkVvRzkyVUoyRDBDNkl2b3pKdmhsbjc?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Adyen stock gains banking role in Sage's French launch",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc3k0aUpDdjRkR0h4Q3hrUFRCUEhFSXQ0cWxEUVQ1VGU2LTBqOWhacG5BUEdIcGRvNHU1M1B1blpJTENqVXAxNC0zS1hGYkxPZUNTWmtTMVNOWHlTLXRydWZKbXNlajdQMzJJeFZuLVlsTmJFUEFaWVBBR1Mtc3hSRVc2elFvWjhCcExLS082SkhTWDlJY1NUOVQ1aHVLeVhUZU5scVhkR3BXLWU2YXpCV2gzeGp4UHRH?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Sage partners with Adyen and Mastercard to deliver business accounts with debit cards for small businesses",
+      "publisher": "www.marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSTBrVURzanVJeUV6azdXdTRHdUF2UzcwSVBoVkRvc19WU0V1NUxIeU1yN25UTkNrX1ZOUUtPTFBJNUJBekliNzRacUlpN1Q2V20wMW9OVkhaZy1vdG5GTUg0ZmNTYVJRcDFsY2UxNGV3NXltWlltOTZuYTJmTW5FTUE1c2ZNQzhRR1V2ZU1sYW5KakhvMTlETUhNSDM4RF9OcjU4YnpMRENCV1VhLUd2R3l0bE1yUmFzRElQdzlsZjc0aER3SXlQQW45S2RiMUlDdE1YUUxtSDZXbVZlTV91MWNmY3dqRjZa?oc=5",
+      "date": "2026-11-10"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-12",
+   "moves": {
+    "day": -0.0258,
+    "week": -0.0435,
+    "high": -0.4464
+   },
+   "spy": {
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
+   },
+   "sector": "Financials",
+   "sector_etf": "RSPF",
+   "sector_moves": {
+    "day": -0.0117,
+    "week": 0.0039,
+    "high": -0.0178
+   },
+   "sector_at_open": 82.34,
+   "worst": {
+    "day": -0.0276,
+    "week": -0.1301,
+    "high": -0.4665
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -4% too (rates, sector rotation or an industry worry)",
     "lean": "unclear"
    }
   },
@@ -1985,21 +1985,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0228,
-    "week": 0.2122,
-    "high": -0.4785
+    "day": -0.023,
+    "week": 0.2119,
+    "high": -0.4786
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -2120,21 +2120,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.022,
-    "week": 0.0076,
-    "high": -0.6137
+    "day": -0.0152,
+    "week": 0.0147,
+    "high": -0.611
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -2143,139 +2143,8 @@
     "high": -0.63
    },
    "provisional": {
-    "cause": "Company-specific: next-year EPS forecasts cut -12% in 30 days",
+    "cause": "Industry-wide: peers fell 1% too (rates, sector rotation or an industry worry)",
     "lean": "unclear"
-   }
-  },
-  {
-   "id": "EME-2026-11-02",
-   "ticker": "EME",
-   "name": "EMCOR Group Inc.",
-   "opened": "2026-11-02",
-   "price_at_open": 682.76,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 583.93,
-   "buy_below_at_open": 379.55,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "temporary",
-    "confidence": "medium",
-    "cause": "Industry-wide de-rating of data-centre builders (peers -12% too), deepened by the 5 Nov AI sell-off; results beat and raised",
-    "summary": "Q3 revenue rose 29% (25% organic), adjusted EPS beat, backlog hit a record $18.6B (+47%, data-centre backlog more than doubled) and guidance was raised a third time; no cancellations are reported. The market is pricing concentration risk (data centres ~half of backlog) and local permit pauses, which is fear rather than evidence of decline. Watch data-centre order cancellations or deferrals, hyperscaler capex and mechanical-construction margins (dipped to 12.1%).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-12",
-    "earnings_on": "2026-10-29",
-    "last_report": "2026-10-29",
-    "peers": {
-     "basis": "industry: Engineering & Construction",
-     "n": 3,
-     "median": {
-      "day": -0.006557429179852581,
-      "week": -0.11242006902825341,
-      "high": -0.2573735139566893
-     },
-     "tickers": [
-      "PWR",
-      "FIX",
-      "J"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 34.91161,
-      "d30": 32.85695,
-      "chg": 0.06253349747922443
-     },
-     "+1y": {
-      "current": 40.90654,
-      "d30": 36.75424,
-      "chg": 0.11297472073970227
-     },
-     "revisions_30d": {
-      "up": 7,
-      "down": 0
-     }
-    },
-    "news": [
-     {
-      "title": "EMCOR Group, Inc. (EME) Stock Forecasts",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOE5BOTdUVjg2MXFZQlFBQ1V6WWxfTmVvbEhrdlZlbEVxT0gxV1BHNl92WDJDNWw2ako4d1ZiUEFKOWs4U2xHZE1OeGdKSmFodm9FVi1xUkl0UkFUZHR1UndSWmUtNFpFR2dKM0pKd0JRWFhaNjNEbndGWkk4cm45OXN4LWZwWk1mNHpITURqdw?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "EMCOR Group Inc (EME) Stock Up 3.3% and Still Undervalued -- GF Score: 96/100",
-      "publisher": "GuruFocus",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR0hjZUczRWtySk8yT3hNQjl2VW5VaFlTdTFWV2VXdGYyQTV2OEl3VlhwRnRURkxIZFVqZUU2S2ktN0EtbElNdHprc09Mcm9Wd1k4SngwZExiSGVPOURRT2dZZ0RfSGp1VDdUa1IxYUVnV3VoT0VlSm5fdEhqbUhETlk5WjdxSjl5Vi1XTVRMSDRrZjYxTFNUdTYtdV9DTUZ2dmFCSjRqSzJKdkE?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "EMCOR Stock Plunges 17% in a Month: Buy the Low Now or Wait?",
-      "publisher": "TradingView",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMG1fX1l6SlRxRGZvMDJvV3ppcVdWQTJtcjlCZWlCYWVFeGR3Sy1KMjg5b3h5RWlCb2FVbGxXMnpuclR6a3pTZGxUS09QSzVBY3BLVEV1a213NG4zdnptMlZabzNlMVRCYWhFZEtCcURMWWpHSFVSZ1B4Nm4wUEREYVVHT1dRaUtCSVBaYWE1WUFEY2dqR29zT2pFaWNROEhWbzVNMG5WSVNtc3hPVXJ2RzVCVQ?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "EMCOR Stock Plunges 17% in a Month: Buy the Low Now or Wait?",
-      "publisher": "Zacks Investment Research",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX1Z1ejgtUU1uNnltbnhlc0RjbkJRSEdtNjJjRmRybkN0djBUdEtHNVAxWGdWNldlUUg2M2s1UTBwVlFHblpRODJDX2pNRWFMNHZ4M094WER4djctQmFXWmRuMWNFLVlCUm5hRFpnUGRGUkEwYmdrcjBGcy1RMjA4ZVZfb0ZfWUd4Q2d4eUNmZ01IalRabUxmbjZrUTkzRWs?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "JPMorgan initiates EMCOR Group stock at neutral on valuation",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbXdPZ1RoWGJDcWw4bWRCY0toRVdjZXBtaDJPMDNsYkRSUWl6eGh0LUt1TnMzQ1FBLVFTbUZmNUZQbnk5czJYOXVwLThYTXpxMTMyRXFSR2FsVkdseE5FUjRsT0dLVXdiakJoaVpHbS1WWUc5cWxOQksxZWh0bnpSLWJCMlFkS0R1LVhBeHlkZVVzS3JSaUtIaFVnMHkxbDdhUldmU29iY093dUdDaVdoN19aN2VwVjUtajh2Ng?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "JPMorgan initiates EMCOR Group stock at Neutral on valuation",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbzAyVHRuRmNUYnp0dTIwaVpZV3I0RXVyUzBpTDBZc0pxNmdDczRLNTJ6Z05Ydm1uWUp1YnVQSWp3X0hpbG5NWXN2UG8tX21MamlITzR0NVAzN3hRNWxuR2F4aW14RldWLTJKNExJZjMtNzI2eEpZNjNCOVhVNkc1NnJfblN1ZWlGek5hNEpmWWd2RjhadmxLZWg1ZFF2R0JNdXNHZWNtTXQ0NUNGRkVfUkxNc0tWSWZVczBNdg?oc=5",
-      "date": "2026-11-10"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-12",
-   "moves": {
-    "day": -0.0092,
-    "week": 0.1097,
-    "high": -0.3
-   },
-   "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
-   },
-   "sector": "Industrials",
-   "sector_etf": "RSPN",
-   "sector_moves": {
-    "day": -0.0077,
-    "week": 0.0324,
-    "high": -0.0518
-   },
-   "sector_at_open": 61.72,
-   "worst": {
-    "day": -0.0964,
-    "week": -0.1412,
-    "high": -0.3727
-   },
-   "provisional": {
-    "cause": "Sector-wide: Industrials fell -1% too (rates, recession worries or sector rotation)",
-    "lean": "temporary"
    }
   },
   {
@@ -2386,21 +2255,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0087,
-    "week": 0.0602,
-    "high": -0.297
+    "day": -0.0111,
+    "week": 0.0576,
+    "high": -0.2987
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
    "sector_moves": {
-    "day": 0.0124,
-    "week": 0.0529,
-    "high": -0.0788
+    "day": 0.0111,
+    "week": 0.0515,
+    "high": -0.08
    },
    "sector_at_open": 108.59,
    "worst": {
@@ -2410,6 +2279,137 @@
    },
    "provisional": {
     "cause": "Industry-wide: peers fell -6% too (rates, sector rotation or an industry worry)",
+    "lean": "temporary"
+   }
+  },
+  {
+   "id": "EME-2026-11-02",
+   "ticker": "EME",
+   "name": "EMCOR Group Inc.",
+   "opened": "2026-11-02",
+   "price_at_open": 682.76,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 583.93,
+   "buy_below_at_open": 379.55,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Industry-wide de-rating of data-centre builders (peers -12% too), deepened by the 5 Nov AI sell-off; results beat and raised",
+    "summary": "Q3 revenue rose 29% (25% organic), adjusted EPS beat, backlog hit a record $18.6B (+47%, data-centre backlog more than doubled) and guidance was raised a third time; no cancellations are reported. The market is pricing concentration risk (data centres ~half of backlog) and local permit pauses, which is fear rather than evidence of decline. Watch data-centre order cancellations or deferrals, hyperscaler capex and mechanical-construction margins (dipped to 12.1%).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-12",
+    "earnings_on": "2026-10-29",
+    "last_report": "2026-10-29",
+    "peers": {
+     "basis": "industry: Engineering & Construction",
+     "n": 3,
+     "median": {
+      "day": -0.006557429179852581,
+      "week": -0.11242006902825341,
+      "high": -0.2573735139566893
+     },
+     "tickers": [
+      "PWR",
+      "FIX",
+      "J"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 34.91161,
+      "d30": 32.85695,
+      "chg": 0.06253349747922443
+     },
+     "+1y": {
+      "current": 40.90654,
+      "d30": 36.75424,
+      "chg": 0.11297472073970227
+     },
+     "revisions_30d": {
+      "up": 7,
+      "down": 0
+     }
+    },
+    "news": [
+     {
+      "title": "EMCOR Group, Inc. (EME) Stock Forecasts",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOE5BOTdUVjg2MXFZQlFBQ1V6WWxfTmVvbEhrdlZlbEVxT0gxV1BHNl92WDJDNWw2ako4d1ZiUEFKOWs4U2xHZE1OeGdKSmFodm9FVi1xUkl0UkFUZHR1UndSWmUtNFpFR2dKM0pKd0JRWFhaNjNEbndGWkk4cm45OXN4LWZwWk1mNHpITURqdw?oc=5",
+      "date": "2026-11-12"
+     },
+     {
+      "title": "EMCOR Group Inc (EME) Stock Up 3.3% and Still Undervalued -- GF Score: 96/100",
+      "publisher": "GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR0hjZUczRWtySk8yT3hNQjl2VW5VaFlTdTFWV2VXdGYyQTV2OEl3VlhwRnRURkxIZFVqZUU2S2ktN0EtbElNdHprc09Mcm9Wd1k4SngwZExiSGVPOURRT2dZZ0RfSGp1VDdUa1IxYUVnV3VoT0VlSm5fdEhqbUhETlk5WjdxSjl5Vi1XTVRMSDRrZjYxTFNUdTYtdV9DTUZ2dmFCSjRqSzJKdkE?oc=5",
+      "date": "2026-11-12"
+     },
+     {
+      "title": "EMCOR Stock Plunges 17% in a Month: Buy the Low Now or Wait?",
+      "publisher": "TradingView",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMG1fX1l6SlRxRGZvMDJvV3ppcVdWQTJtcjlCZWlCYWVFeGR3Sy1KMjg5b3h5RWlCb2FVbGxXMnpuclR6a3pTZGxUS09QSzVBY3BLVEV1a213NG4zdnptMlZabzNlMVRCYWhFZEtCcURMWWpHSFVSZ1B4Nm4wUEREYVVHT1dRaUtCSVBaYWE1WUFEY2dqR29zT2pFaWNROEhWbzVNMG5WSVNtc3hPVXJ2RzVCVQ?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "EMCOR Stock Plunges 17% in a Month: Buy the Low Now or Wait?",
+      "publisher": "Zacks Investment Research",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX1Z1ejgtUU1uNnltbnhlc0RjbkJRSEdtNjJjRmRybkN0djBUdEtHNVAxWGdWNldlUUg2M2s1UTBwVlFHblpRODJDX2pNRWFMNHZ4M094WER4djctQmFXWmRuMWNFLVlCUm5hRFpnUGRGUkEwYmdrcjBGcy1RMjA4ZVZfb0ZfWUd4Q2d4eUNmZ01IalRabUxmbjZrUTkzRWs?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "JPMorgan initiates EMCOR Group stock at neutral on valuation",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbXdPZ1RoWGJDcWw4bWRCY0toRVdjZXBtaDJPMDNsYkRSUWl6eGh0LUt1TnMzQ1FBLVFTbUZmNUZQbnk5czJYOXVwLThYTXpxMTMyRXFSR2FsVkdseE5FUjRsT0dLVXdiakJoaVpHbS1WWUc5cWxOQksxZWh0bnpSLWJCMlFkS0R1LVhBeHlkZVVzS3JSaUtIaFVnMHkxbDdhUldmU29iY093dUdDaVdoN19aN2VwVjUtajh2Ng?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "JPMorgan initiates EMCOR Group stock at Neutral on valuation",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbzAyVHRuRmNUYnp0dTIwaVpZV3I0RXVyUzBpTDBZc0pxNmdDczRLNTJ6Z05Ydm1uWUp1YnVQSWp3X0hpbG5NWXN2UG8tX21MamlITzR0NVAzN3hRNWxuR2F4aW14RldWLTJKNExJZjMtNzI2eEpZNjNCOVhVNkc1NnJfblN1ZWlGek5hNEpmWWd2RjhadmxLZWg1ZFF2R0JNdXNHZWNtTXQ0NUNGRkVfUkxNc0tWSWZVczBNdg?oc=5",
+      "date": "2026-11-10"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-12",
+   "moves": {
+    "day": -0.0059,
+    "week": 0.1133,
+    "high": -0.2977
+   },
+   "spy": {
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
+   },
+   "sector": "Industrials",
+   "sector_etf": "RSPN",
+   "sector_moves": {
+    "day": -0.0093,
+    "week": 0.0308,
+    "high": -0.0533
+   },
+   "sector_at_open": 61.72,
+   "worst": {
+    "day": -0.0964,
+    "week": -0.1412,
+    "high": -0.3727
+   },
+   "provisional": {
+    "cause": "Sector-wide: Industrials fell -1% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
    }
   },
@@ -2512,9 +2512,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0026,
-    "week": -0.1202,
-    "high": -0.1479
+    "day": -0.0044,
+    "week": -0.1218,
+    "high": -0.1494
    },
    "spy": {
     "day": -0.0034,
@@ -2524,9 +2524,9 @@
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0051,
-    "week": -0.005,
-    "high": -0.0062
+    "day": -0.0117,
+    "week": 0.0039,
+    "high": -0.0178
    },
    "sector_at_open": 84.7,
    "worst": {
@@ -2639,21 +2639,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0015,
-    "week": 0.0324,
-    "high": -0.4794
+    "day": -0.001,
+    "week": 0.0329,
+    "high": -0.4792
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
    "sector_moves": {
-    "day": 0.0124,
-    "week": 0.0529,
-    "high": -0.0788
+    "day": 0.0111,
+    "week": 0.0515,
+    "high": -0.08
    },
    "sector_at_open": 109.68,
    "worst": {
@@ -2774,9 +2774,9 @@
     "high": -0.2581
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
@@ -3335,6 +3335,140 @@
    }
   },
   {
+   "id": "DECK-2026-10-30",
+   "ticker": "DECK",
+   "name": "Deckers Outdoor Corp.",
+   "opened": "2026-10-30",
+   "price_at_open": 81.99,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 122.8,
+   "buy_below_at_open": 85.96,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "HOKA growth keeps slowing (+7% vs 24% in FY25) in a heavily discounted US running market, FY27 sales guide cut to $5.70-5.725B",
+    "summary": "Margins and the balance sheet are healthy (no debt, $1.2B cash) and management blames rivals' discounting it won't match, which would be cyclical; but the slowdown has run for ~18 months, management concedes share loss below $120 and On keeps growing much faster, which would be competitive. The facts don't yet settle which dominates. Watch HOKA growth after the spring launches and US wholesale expansion, and US direct-to-consumer comparable sales (-6.4%).",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-12",
+    "earnings_on": null,
+    "last_report": "2026-10-22",
+    "peers": {
+     "basis": "group: Consumer brands",
+     "n": 8,
+     "median": {
+      "day": -0.006394730133803317,
+      "week": 0.027117502211617683,
+      "high": -0.1673132384202588
+     },
+     "tickers": [
+      "AAPL",
+      "TPR",
+      "MNST",
+      "MKC",
+      "NKE",
+      "LULU",
+      "KO",
+      "PEP"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 7.84839,
+      "d30": 7.52756,
+      "chg": 0.04262071640744147
+     },
+     "+1y": {
+      "current": 8.097,
+      "d30": 8.37488,
+      "chg": -0.03318017690999753
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 16
+     }
+    },
+    "news": [
+     {
+      "title": "Deckers Outdoor stock: Tariff refunds lift fiscal 2027 EPS outlook",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVENLMUFqcGgtZ3QzRjJOSlNXMXYyZ0RoYkdQSE92TFkxVnNzZWluNWctN2tqTXFiNTBWdzh0Y3dkNTlZUmw3Tk1LTzFPdmZJUThXajNKTjg3bE5HbG9tY3U5VXJrOWw2REZiaXVJLXJ5N0JuVS1hVV9hbERvZWlKVzUyUWlvQlp6U0RfeGdaRFpfMTB3MDdjUmpHTFVvVTNQazZRdkFWTzdjVDdmVm9tTjNUQTFGc1VONlo4UTBkUFl4dw?oc=5",
+      "date": "2026-11-12"
+     },
+     {
+      "title": "Outdoor Stocks To Keep An Eye On - November 10th",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMjFfWHlZMVRsU19NNGxPRnlEaTBXd192UXltT2FKSkkyT0t2ZG8tZ0xYajAzSUNyRTRrSU9vYnNoZkRCOEpDN0J1Vm44MWphY1NCcEdwNkpZWlB2U1otODdNalh6M0x6ZVdQeWlZWFlxQWo1ekRYUlpBbFBJQnJfMFlCdll3VmNobG5jRWt2TmRvT2k5LVhsamZ1YVFza3pOXzVJRmMwbEc?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Cantor Fitzgerald Initiates Coverage on Deckers Outdoor (NYSE:DECK)",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNWh4QkMwVW9uYTVXblhmVlpYWmhOLVRLbFJmZTE0WFYtR25JTG51RU1ldDJ1ckNPT1pmQTI1eDZwcDdsaC02NC1HV1I2NVdsb2x5NkItcDVKSmFFVFhqWjlZOE5HMndJMy1TNHFyZ3QyWVdpOFJSSW4tUHo5RV85VU9GMFdPWW1ZOUJmUDd5WC0zbEVFRUkzMXQ1MzNvMk4zRy1MeDdtQklFY0RfSy1mS2plWGtuNll0b2M0Nm5Vd2t6RXpvZUE?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Freeport-McMoRan, State Street, Deckers Outdoor And More On CNBC\u2019s \u2018Final Trades\u2019",
+      "publisher": "Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNblVKTTQ3eHpOZWhHYnNqdExDamtfLXJlMXdmSy1aczQzOGhyOXVkXzZnU2FLZWwxX2k5WDFVZUctSEZqT01OSUg1NUZyRm9ISzJZMG5DUHc5dXp3SFlHRWpQSmJfbGlNZGlmelhOdUFzbWN0Q3BlSGxEN3RpblVDQmpmUE5CZzdwUEVleTlxUTgwWXBXbkIwYW1fS1Vpb3NHVWF5LVhMcGNsM0JjUXBma3B4NHg5UjZ4UlRJTW5MdGpMUG5mOVdV?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Deckers Outdoor Corp. stock outperforms competitors on strong trading day",
+      "publisher": "MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVlM2N1k1S2JnZmRiZlE5VHdxc285SW8xeV9fUlduQlhkZEdWeFRMZ3FtRHhyRjNMM3BJb2FVenpwN29uNFpsWGg2M2lpWVNhMW9haFhpSmQ0dHBXLU94d1hpRDJGXzdnNDB5WXVONFpsX250OERoZ25MbVU5dEVBTHBtbWJlOGZ0clpnSlVLd2N4X1VWTVlnSUFQQzBObFUzT2tpYk0wX0lkRV9FaUlpbF90bDRSb2psWk9HVFVOMDdsbm53alNPdEQ4dlZaYTVlcm9HbW9rQjdxcWhJdllLSG5JMzk?oc=5",
+      "date": "2026-11-09"
+     },
+     {
+      "title": "Deckers Outdoor (NYSE:DECK): A GARP Case Built on Debt-Free, High-ROIC Growth",
+      "publisher": "ChartMill",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR2RLbGpBNW1mZDdZUkVNbkJZSHIxcHNWWTZVdG1jMjN1elgxX2gybEd2b3dnMjN4S3NoQ01HYzJia0JPT3NKSW1TdkFYQm5keThkZ3hpNFhBT1NuenQ4Y0dRdjJfMkVwVVQzbjdRWnBuQ2FqTE84MWNIR0JhTUJBQnM2T1ZfanhwdFVoU0Q4OER0RnF4UWotTDE5blRjeWlOUDJVSzhGUDByZW9PdXZpQ1VXYTg4LW1fTGRjY1cwTUluUQ?oc=5",
+      "date": "2026-11-09"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-12",
+   "moves": {
+    "day": -0.0434,
+    "week": -0.0365,
+    "high": -0.301
+   },
+   "spy": {
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
+   },
+   "sector": "Consumer Discretionary",
+   "sector_etf": "RSPD",
+   "sector_moves": {
+    "day": -0.0157,
+    "week": -0.0116,
+    "high": -0.0478
+   },
+   "sector_at_open": 55.55,
+   "worst": {
+    "day": -0.0434,
+    "week": -0.0365,
+    "high": -0.3221
+   },
+   "provisional": {
+    "cause": "Long slide: -30% below its 52-week high (S&P 500 -3%, Consumer Discretionary -5%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
    "id": "IDXX-2026-10-30",
    "ticker": "IDXX",
    "name": "IDEXX Laboratories Inc.",
@@ -3469,140 +3603,6 @@
    }
   },
   {
-   "id": "DECK-2026-10-30",
-   "ticker": "DECK",
-   "name": "Deckers Outdoor Corp.",
-   "opened": "2026-10-30",
-   "price_at_open": 81.99,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 122.8,
-   "buy_below_at_open": 85.96,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "HOKA growth keeps slowing (+7% vs 24% in FY25) in a heavily discounted US running market, FY27 sales guide cut to $5.70-5.725B",
-    "summary": "Margins and the balance sheet are healthy (no debt, $1.2B cash) and management blames rivals' discounting it won't match, which would be cyclical; but the slowdown has run for ~18 months, management concedes share loss below $120 and On keeps growing much faster, which would be competitive. The facts don't yet settle which dominates. Watch HOKA growth after the spring launches and US wholesale expansion, and US direct-to-consumer comparable sales (-6.4%).",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-12",
-    "earnings_on": null,
-    "last_report": "2026-10-22",
-    "peers": {
-     "basis": "group: Consumer brands",
-     "n": 8,
-     "median": {
-      "day": -0.006394730133803317,
-      "week": 0.027117502211617683,
-      "high": -0.1673132384202588
-     },
-     "tickers": [
-      "AAPL",
-      "TPR",
-      "MNST",
-      "MKC",
-      "NKE",
-      "LULU",
-      "KO",
-      "PEP"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 7.84839,
-      "d30": 7.52756,
-      "chg": 0.04262071640744147
-     },
-     "+1y": {
-      "current": 8.097,
-      "d30": 8.37488,
-      "chg": -0.03318017690999753
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 16
-     }
-    },
-    "news": [
-     {
-      "title": "Deckers Outdoor stock: Tariff refunds lift fiscal 2027 EPS outlook",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVENLMUFqcGgtZ3QzRjJOSlNXMXYyZ0RoYkdQSE92TFkxVnNzZWluNWctN2tqTXFiNTBWdzh0Y3dkNTlZUmw3Tk1LTzFPdmZJUThXajNKTjg3bE5HbG9tY3U5VXJrOWw2REZiaXVJLXJ5N0JuVS1hVV9hbERvZWlKVzUyUWlvQlp6U0RfeGdaRFpfMTB3MDdjUmpHTFVvVTNQazZRdkFWTzdjVDdmVm9tTjNUQTFGc1VONlo4UTBkUFl4dw?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "Outdoor Stocks To Keep An Eye On - November 10th",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMjFfWHlZMVRsU19NNGxPRnlEaTBXd192UXltT2FKSkkyT0t2ZG8tZ0xYajAzSUNyRTRrSU9vYnNoZkRCOEpDN0J1Vm44MWphY1NCcEdwNkpZWlB2U1otODdNalh6M0x6ZVdQeWlZWFlxQWo1ekRYUlpBbFBJQnJfMFlCdll3VmNobG5jRWt2TmRvT2k5LVhsamZ1YVFza3pOXzVJRmMwbEc?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Cantor Fitzgerald Initiates Coverage on Deckers Outdoor (NYSE:DECK)",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNWh4QkMwVW9uYTVXblhmVlpYWmhOLVRLbFJmZTE0WFYtR25JTG51RU1ldDJ1ckNPT1pmQTI1eDZwcDdsaC02NC1HV1I2NVdsb2x5NkItcDVKSmFFVFhqWjlZOE5HMndJMy1TNHFyZ3QyWVdpOFJSSW4tUHo5RV85VU9GMFdPWW1ZOUJmUDd5WC0zbEVFRUkzMXQ1MzNvMk4zRy1MeDdtQklFY0RfSy1mS2plWGtuNll0b2M0Nm5Vd2t6RXpvZUE?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Freeport-McMoRan, State Street, Deckers Outdoor And More On CNBC\u2019s \u2018Final Trades\u2019",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNblVKTTQ3eHpOZWhHYnNqdExDamtfLXJlMXdmSy1aczQzOGhyOXVkXzZnU2FLZWwxX2k5WDFVZUctSEZqT01OSUg1NUZyRm9ISzJZMG5DUHc5dXp3SFlHRWpQSmJfbGlNZGlmelhOdUFzbWN0Q3BlSGxEN3RpblVDQmpmUE5CZzdwUEVleTlxUTgwWXBXbkIwYW1fS1Vpb3NHVWF5LVhMcGNsM0JjUXBma3B4NHg5UjZ4UlRJTW5MdGpMUG5mOVdV?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Deckers Outdoor Corp. stock outperforms competitors on strong trading day",
-      "publisher": "MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVlM2N1k1S2JnZmRiZlE5VHdxc285SW8xeV9fUlduQlhkZEdWeFRMZ3FtRHhyRjNMM3BJb2FVenpwN29uNFpsWGg2M2lpWVNhMW9haFhpSmQ0dHBXLU94d1hpRDJGXzdnNDB5WXVONFpsX250OERoZ25MbVU5dEVBTHBtbWJlOGZ0clpnSlVLd2N4X1VWTVlnSUFQQzBObFUzT2tpYk0wX0lkRV9FaUlpbF90bDRSb2psWk9HVFVOMDdsbm53alNPdEQ4dlZaYTVlcm9HbW9rQjdxcWhJdllLSG5JMzk?oc=5",
-      "date": "2026-11-09"
-     },
-     {
-      "title": "Deckers Outdoor (NYSE:DECK): A GARP Case Built on Debt-Free, High-ROIC Growth",
-      "publisher": "ChartMill",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR2RLbGpBNW1mZDdZUkVNbkJZSHIxcHNWWTZVdG1jMjN1elgxX2gybEd2b3dnMjN4S3NoQ01HYzJia0JPT3NKSW1TdkFYQm5keThkZ3hpNFhBT1NuenQ4Y0dRdjJfMkVwVVQzbjdRWnBuQ2FqTE84MWNIR0JhTUJBQnM2T1ZfanhwdFVoU0Q4OER0RnF4UWotTDE5blRjeWlOUDJVSzhGUDByZW9PdXZpQ1VXYTg4LW1fTGRjY1cwTUluUQ?oc=5",
-      "date": "2026-11-09"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-12",
-   "moves": {
-    "day": -0.0402,
-    "week": -0.0332,
-    "high": -0.2986
-   },
-   "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
-   },
-   "sector": "Consumer Discretionary",
-   "sector_etf": "RSPD",
-   "sector_moves": {
-    "day": -0.0153,
-    "week": -0.0112,
-    "high": -0.0475
-   },
-   "sector_at_open": 55.55,
-   "worst": {
-    "day": -0.0402,
-    "week": -0.0332,
-    "high": -0.3221
-   },
-   "provisional": {
-    "cause": "Long slide: -30% below its 52-week high (S&P 500 -3%, Consumer Discretionary -5%): read why",
-    "lean": "unclear"
-   }
-  },
-  {
    "id": "NFLX-2026-10-30",
    "ticker": "NFLX",
    "name": "Netflix Inc.",
@@ -3709,14 +3709,14 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0288,
-    "week": -0.0439,
-    "high": -0.4585
+    "day": -0.0287,
+    "week": -0.0438,
+    "high": -0.4569
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
@@ -3843,30 +3843,30 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0253,
-    "week": -0.063,
-    "high": -0.5149
+    "day": -0.0278,
+    "week": -0.0654,
+    "high": -0.5161
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0153,
-    "week": -0.0112,
-    "high": -0.0475
+    "day": -0.0157,
+    "week": -0.0116,
+    "high": -0.0478
    },
    "sector_at_open": 57.04,
    "worst": {
     "day": -0.0381,
-    "week": -0.063,
-    "high": -0.5149
+    "week": -0.0654,
+    "high": -0.5161
    },
    "provisional": {
-    "cause": "Long slide: -51% below its 52-week high (S&P 500 -3%, Consumer Discretionary -5%): read why",
+    "cause": "Long slide: -52% below its 52-week high (S&P 500 -3%, Consumer Discretionary -5%): read why",
     "lean": "unclear"
    }
   },
@@ -3959,27 +3959,27 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0231,
-    "week": 0.0063,
-    "high": -0.2616
+    "day": -0.0233,
+    "week": 0.006,
+    "high": -0.2618
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0153,
-    "week": -0.0112,
-    "high": -0.0475
+    "day": -0.0157,
+    "week": -0.0116,
+    "high": -0.0478
    },
    "sector_at_open": 57.94,
    "worst": {
-    "day": -0.0231,
+    "day": -0.0233,
     "week": 0,
-    "high": -0.2616
+    "high": -0.2618
    },
    "provisional": {
     "cause": "Long slide: -26% below its 52-week high (S&P 500 -3%, Consumer Discretionary -5%): read why",
@@ -4093,27 +4093,27 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0185,
-    "week": -0.0679,
-    "high": -0.3371
+    "day": -0.0207,
+    "week": -0.0699,
+    "high": -0.3385
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0082,
-    "week": 0.0094,
-    "high": -0.0144
+    "day": -0.0104,
+    "week": 0.0071,
+    "high": -0.0166
    },
    "sector_at_open": 41.5,
    "worst": {
     "day": -0.0288,
     "week": -0.1035,
-    "high": -0.3371
+    "high": -0.3385
    },
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
@@ -4223,21 +4223,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0098,
-    "week": -0.0715,
-    "high": -0.3513
+    "day": -0.0109,
+    "week": -0.0725,
+    "high": -0.352
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Consumer Staples",
    "sector_etf": "RSPS",
    "sector_moves": {
-    "day": -0.0046,
-    "week": -0.0031,
-    "high": -0.0301
+    "day": -0.0062,
+    "week": -0.0046,
+    "high": -0.0316
    },
    "sector_at_open": 31.53,
    "worst": {
@@ -4247,6 +4247,136 @@
    },
    "provisional": {
     "cause": "Long slide: -35% below its 52-week high (S&P 500 -3%, Consumer Staples -3%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "LII-2026-11-02",
+   "ticker": "LII",
+   "name": "Lennox International",
+   "opened": "2026-11-02",
+   "price_at_open": 353.64,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 395.29,
+   "buy_below_at_open": 276.7,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Second straight 2026 guidance cut (EPS $23-24 to $21.00-21.50): price increase failed, share lost to Carrier/Trane, tariffs",
+    "summary": "Lennox missed Q3 (adjusted EPS $6.84 vs $7.18) and cut guidance for the second quarter running; residential (Home Comfort) margin fell 490 basis points as a mid-year price increase did not stick and Lennox cut prices to win back share lost to Carrier, Trane and new low-cost overseas entrants, while tariffs and weak housing affordability added cost and volume pressure. Some of this is cyclical (housing, mortgage rates, tariff timing that management calls a short-term mismatch), but losing pricing power and share in its core dealer channel is a possible lasting competitive change, and the 2027 recovery plan depends on competitors following a price increase. Watch 2027 pricing realisation, HCS margins and share data from distributors such as Watsco.",
+    "model_changed": false,
+    "date": "2026-11-10",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-12",
+    "earnings_on": "2026-10-28",
+    "last_report": "2026-10-28",
+    "peers": {
+     "basis": "industry: Building Products & Equipment",
+     "n": 4,
+     "median": {
+      "day": -0.004307769827022634,
+      "week": -0.017262693426860543,
+      "high": -0.1376276025239918
+     },
+     "tickers": [
+      "JCI",
+      "TT",
+      "CARR",
+      "MAS"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 21.46697,
+      "d30": 23.59699,
+      "chg": -0.09026659756180777
+     },
+     "+1y": {
+      "current": 23.46673,
+      "d30": 26.07682,
+      "chg": -0.10009234254790278
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 15
+     }
+    },
+    "news": [
+     {
+      "title": "Lennox International, Inc. (LII) Stock Forecasts",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObE5MRG93SUlYTi1jRlpsdUo1ZW14OWJoUDNETDczSzVoaGItXzZTMVcxMlVmZUs4dmFySGpGMlk5R3NXYlo0MzN0T3IyVmE2TzByTDlBZkx0NDVhbFFsVHVqSzVnMHA3dEp5RXhIOGRKR2dMSGEyVWVIRHlYWW1XVTRvRFVCOHluVHItQUd2VQ?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Insider Unloading: Daniel M Sessa Sells $1.78M Worth Of Lennox International Shares",
+      "publisher": "Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPREJQQjhjRGR5akxham9HVjVLekRIdWo0bjh4bE9zYUk4RFpsUjQ1RGxEZjFxVUJSYmxndEIwN0lNZWxvdFVONnJhb0FYeXB1WENMZW0zR2hSaTdac29rSFB6YnprUHhGTTUyMjIwc3NTQUVVUHBOYVYwdkx2SlY2WjVsMnc1UmpqcTlScEI3S2FXbkdzYUpTUVI5RDNlMWotcDVqMVhpNkVDQXZpWk5xVGFvSGJNalJpV1pyUDFRWGY?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Lennox International evp Sessa sells $292,773 of stock By Investing.com",
+      "publisher": "Investing.com Nigeria",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWVFxX0ZtREFTYTJLb0VMaE1CX1d5YUpFUUVmYk1feHB0ZmVMUVlNOWdXSmo0OWlMQ05qMnBsRFhUdmV2U1J4Rko5b2xXM0swNHJ6QkVyZldtV3M4LU5uVGdxbW5RY3htazFYU2w2VjR5TEc1WFE0WFRVdVhjX0VaNGRkSFpkYnFfb1liNU50WW93Vm0wU3ZySnJRLTJyWktSSy1YMGJKd0lDRkxoNVBSZGtVOA?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Lennox International EVP Nassab sells $85,814 in stock",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRDZKSVRGYmx0QjZvSjZGVXhiem82UnBaYmp5ZEhSc1NZaVQtRlpVRUhOb0l2LURUaWFoSHhVVHRBV3BQQ3Y0d1kzZEZLUG5DRzktUGF0ZmtjWUdqSEljNU0taDB3OUtERDB5elh2S29RbGE4Rms1LS0yc3BpWkloNmFkWUd0dnBWY2xOVkZ2TVhyVllmc3BIcXR4VlVUYm9EaEpKVjh0cmRwaWx5bU02QTEyc1EwYW1a?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "Lennox International (LII) Could Be 20% Undervalued After Q3 Results And New Guidance",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVENXMlFicVA5SnN4ZXRDalZhMlF1MFNoR2dNTTRKc1JqdVl2THlfTm9QNGZJbHEyMGRrYW9La2VEOG5XUlpDcVBCeG80cHNZendKeE9Cc3h3ZzZVQVdla2lvWXgtbVhXRjVXdUpLZjVqaE1ZVWt0cmRFMGZ6RENzaVZsZ053NEMyT040S2laRTVvYTFvbFZIbWl5VGNUcy1MeXhXNmFEZ25wTk5vTFJIa1pOeVVFellETkkxQzFzWmV2Mmwza2xERXhYYW1EOUxOaDJ6d2dBUU7SAd4BQVVfeXFMTlRtbW9Ka0Nrbm5sa3RVNk5uTG83a1JJeW42TlBPaUZpblB5NHhTaVY0M3F5SkZ1ejZoWk8zLVJLbWxYSG9TQlR4SWxUTU55Qi1lNzVrbk9VbW14blBEUkZIa21MQWxvbE12RldpODN6WnRiUm0wbUl2d3VVcTNuMG5DRG15S003MktrWU9menNqTUNmVGRoY0JiejNkUFZzZWNqSXZxSXdLVVoyR1plQlptdUFUUUN0c1pFd3MwaVo5QzZZeWFjM0ZNSnQxS0dKeDlQM1V0dkRFa1dtTC13?oc=5",
+      "date": "2026-11-10"
+     },
+     {
+      "title": "An EVP sells 245 shares and returns 1,272 to Lennox International (LII).",
+      "publisher": "Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOWNaVGtjMXBRdHVZdGRHM0hmT2R4SE5aYlp0T1FyZk1vYjBmS0EwOVV4RkRMRVBtbUNTd0ZrclJDSTF2SjJoOTRlb19QaGV2dTVlNEZNR0Zad2hmelFydTdyTDJXTkg2MWQzVERwVGhjaWxmd3Z4aGdDVHI5anR2Vjc2RFl4YW5lTGV6X1JZVTViQUtrYThWU0Q2Y01JREhmbkt0OEVzaUNMVjN1RFVJVG0ySUFXMmhK?oc=5",
+      "date": "2026-11-10"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-12",
+   "moves": {
+    "day": -0.0076,
+    "week": -0.0021,
+    "high": -0.3925
+   },
+   "spy": {
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
+   },
+   "sector": "Industrials",
+   "sector_etf": "RSPN",
+   "sector_moves": {
+    "day": -0.0093,
+    "week": 0.0308,
+    "high": -0.0533
+   },
+   "sector_at_open": 61.72,
+   "worst": {
+    "day": -0.0303,
+    "week": -0.07,
+    "high": -0.4082
+   },
+   "provisional": {
+    "cause": "Earnings reaction and next-year EPS forecasts cut -10%: check whether the setback lasts",
     "lean": "unclear"
    }
   },
@@ -4357,21 +4487,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": -0.0093,
-    "week": -0.0433,
-    "high": -0.4982
+    "day": -0.0072,
+    "week": -0.0413,
+    "high": -0.4972
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -4381,136 +4511,6 @@
    },
    "provisional": {
     "cause": "Long slide: -50% below its 52-week high (S&P 500 -3%, Information Technology -12%): read why",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "LII-2026-11-02",
-   "ticker": "LII",
-   "name": "Lennox International",
-   "opened": "2026-11-02",
-   "price_at_open": 353.64,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 395.29,
-   "buy_below_at_open": 276.7,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "Second straight 2026 guidance cut (EPS $23-24 to $21.00-21.50): price increase failed, share lost to Carrier/Trane, tariffs",
-    "summary": "Lennox missed Q3 (adjusted EPS $6.84 vs $7.18) and cut guidance for the second quarter running; residential (Home Comfort) margin fell 490 basis points as a mid-year price increase did not stick and Lennox cut prices to win back share lost to Carrier, Trane and new low-cost overseas entrants, while tariffs and weak housing affordability added cost and volume pressure. Some of this is cyclical (housing, mortgage rates, tariff timing that management calls a short-term mismatch), but losing pricing power and share in its core dealer channel is a possible lasting competitive change, and the 2027 recovery plan depends on competitors following a price increase. Watch 2027 pricing realisation, HCS margins and share data from distributors such as Watsco.",
-    "model_changed": false,
-    "date": "2026-11-10",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-12",
-    "earnings_on": "2026-10-28",
-    "last_report": "2026-10-28",
-    "peers": {
-     "basis": "industry: Building Products & Equipment",
-     "n": 4,
-     "median": {
-      "day": -0.004307769827022634,
-      "week": -0.017262693426860543,
-      "high": -0.1376276025239918
-     },
-     "tickers": [
-      "JCI",
-      "TT",
-      "CARR",
-      "MAS"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 21.46697,
-      "d30": 23.59699,
-      "chg": -0.09026659756180777
-     },
-     "+1y": {
-      "current": 23.46673,
-      "d30": 26.07682,
-      "chg": -0.10009234254790278
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 15
-     }
-    },
-    "news": [
-     {
-      "title": "Lennox International, Inc. (LII) Stock Forecasts",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObE5MRG93SUlYTi1jRlpsdUo1ZW14OWJoUDNETDczSzVoaGItXzZTMVcxMlVmZUs4dmFySGpGMlk5R3NXYlo0MzN0T3IyVmE2TzByTDlBZkx0NDVhbFFsVHVqSzVnMHA3dEp5RXhIOGRKR2dMSGEyVWVIRHlYWW1XVTRvRFVCOHluVHItQUd2VQ?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "Insider Unloading: Daniel M Sessa Sells $1.78M Worth Of Lennox International Shares",
-      "publisher": "Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPREJQQjhjRGR5akxham9HVjVLekRIdWo0bjh4bE9zYUk4RFpsUjQ1RGxEZjFxVUJSYmxndEIwN0lNZWxvdFVONnJhb0FYeXB1WENMZW0zR2hSaTdac29rSFB6YnprUHhGTTUyMjIwc3NTQUVVUHBOYVYwdkx2SlY2WjVsMnc1UmpqcTlScEI3S2FXbkdzYUpTUVI5RDNlMWotcDVqMVhpNkVDQXZpWk5xVGFvSGJNalJpV1pyUDFRWGY?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "Lennox International evp Sessa sells $292,773 of stock By Investing.com",
-      "publisher": "Investing.com Nigeria",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWVFxX0ZtREFTYTJLb0VMaE1CX1d5YUpFUUVmYk1feHB0ZmVMUVlNOWdXSmo0OWlMQ05qMnBsRFhUdmV2U1J4Rko5b2xXM0swNHJ6QkVyZldtV3M4LU5uVGdxbW5RY3htazFYU2w2VjR5TEc1WFE0WFRVdVhjX0VaNGRkSFpkYnFfb1liNU50WW93Vm0wU3ZySnJRLTJyWktSSy1YMGJKd0lDRkxoNVBSZGtVOA?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "Lennox International EVP Nassab sells $85,814 in stock",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRDZKSVRGYmx0QjZvSjZGVXhiem82UnBaYmp5ZEhSc1NZaVQtRlpVRUhOb0l2LURUaWFoSHhVVHRBV3BQQ3Y0d1kzZEZLUG5DRzktUGF0ZmtjWUdqSEljNU0taDB3OUtERDB5elh2S29RbGE4Rms1LS0yc3BpWkloNmFkWUd0dnBWY2xOVkZ2TVhyVllmc3BIcXR4VlVUYm9EaEpKVjh0cmRwaWx5bU02QTEyc1EwYW1a?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "Lennox International (LII) Could Be 20% Undervalued After Q3 Results And New Guidance",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVENXMlFicVA5SnN4ZXRDalZhMlF1MFNoR2dNTTRKc1JqdVl2THlfTm9QNGZJbHEyMGRrYW9La2VEOG5XUlpDcVBCeG80cHNZendKeE9Cc3h3ZzZVQVdla2lvWXgtbVhXRjVXdUpLZjVqaE1ZVWt0cmRFMGZ6RENzaVZsZ053NEMyT040S2laRTVvYTFvbFZIbWl5VGNUcy1MeXhXNmFEZ25wTk5vTFJIa1pOeVVFellETkkxQzFzWmV2Mmwza2xERXhYYW1EOUxOaDJ6d2dBUU7SAd4BQVVfeXFMTlRtbW9Ka0Nrbm5sa3RVNk5uTG83a1JJeW42TlBPaUZpblB5NHhTaVY0M3F5SkZ1ejZoWk8zLVJLbWxYSG9TQlR4SWxUTU55Qi1lNzVrbk9VbW14blBEUkZIa21MQWxvbE12RldpODN6WnRiUm0wbUl2d3VVcTNuMG5DRG15S003MktrWU9menNqTUNmVGRoY0JiejNkUFZzZWNqSXZxSXdLVVoyR1plQlptdUFUUUN0c1pFd3MwaVo5QzZZeWFjM0ZNSnQxS0dKeDlQM1V0dkRFa1dtTC13?oc=5",
-      "date": "2026-11-10"
-     },
-     {
-      "title": "An EVP sells 245 shares and returns 1,272 to Lennox International (LII).",
-      "publisher": "Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOWNaVGtjMXBRdHVZdGRHM0hmT2R4SE5aYlp0T1FyZk1vYjBmS0EwOVV4RkRMRVBtbUNTd0ZrclJDSTF2SjJoOTRlb19QaGV2dTVlNEZNR0Zad2hmelFydTdyTDJXTkg2MWQzVERwVGhjaWxmd3Z4aGdDVHI5anR2Vjc2RFl4YW5lTGV6X1JZVTViQUtrYThWU0Q2Y01JREhmbkt0OEVzaUNMVjN1RFVJVG0ySUFXMmhK?oc=5",
-      "date": "2026-11-10"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-12",
-   "moves": {
-    "day": -0.0055,
-    "week": 0.0001,
-    "high": -0.3912
-   },
-   "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
-   },
-   "sector": "Industrials",
-   "sector_etf": "RSPN",
-   "sector_moves": {
-    "day": -0.0077,
-    "week": 0.0324,
-    "high": -0.0518
-   },
-   "sector_at_open": 61.72,
-   "worst": {
-    "day": -0.0303,
-    "week": -0.07,
-    "high": -0.4082
-   },
-   "provisional": {
-    "cause": "Earnings reaction and next-year EPS forecasts cut -10%: check whether the setback lasts",
     "lean": "unclear"
    }
   },
@@ -4649,137 +4649,6 @@
    }
   },
   {
-   "id": "BKNG-2026-10-30",
-   "ticker": "BKNG",
-   "name": "Booking Holdings Inc.",
-   "opened": "2026-10-30",
-   "price_at_open": 148.13,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 217.63,
-   "buy_below_at_open": 152.34,
-   "valued_on": "2026-10-24",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "Year-long slide on Middle East war demand hits and fears that AI agents (e.g. Meta's) let travellers bypass booking sites; Q4 guide weak (room nights +1-3%)",
-    "summary": "Q3 was solid (room nights +7%, gross bookings +10%, adjusted EPS +17%) and the war effect looks temporary, but the AI-disintermediation fear would be lasting if true and would hit Booking's core advantage (owned traffic and the two-sided network). Evidence so far is reassuring (AI referrals under 1% of room nights, direct traffic mid-60%s) but doesn't settle it. Watch AI-agent booking share, direct-traffic share and 2027 room-night growth.",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-12",
-    "earnings_on": null,
-    "last_report": "2026-11-03",
-    "peers": {
-     "basis": "industry: Travel Services",
-     "n": 5,
-     "median": {
-      "day": -0.002271979748055375,
-      "week": 0.0625717650869142,
-      "high": -0.0956164091456212
-     },
-     "tickers": [
-      "ABNB",
-      "RCL",
-      "CCL",
-      "EXPE",
-      "NCLH"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 10.42356,
-      "d30": 10.45361,
-      "chg": -0.0028746050407466583
-     },
-     "+1y": {
-      "current": 12.25704,
-      "d30": 12.37827,
-      "chg": -0.0097937757053288
-     },
-     "revisions_30d": {
-      "up": 2,
-      "down": 7
-     }
-    },
-    "news": [
-     {
-      "title": "United Airlines bars AI agents from booking tickets, sending Meta shares tumbling",
-      "publisher": "New York Post",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSF9hYno4a3pad19ITGtRQjJNX2d1ZWkzNE0yNjJrN1ZTclJvTzQ1bndGNDk4MGtnSHNoX3VjTGRTZkk1WFRhWFMwUlhBN0FsV2VOUUJocFU3bDh2NnExN1ZzUU96WGYwQzFqWFBpMEhuWEpaTlk3aDdFU3UtOWgyRl9PMVBtMEQ1aUNha0otZjRZWlA4UGNIOG9JMk1hUG9JLS1pZy02bWpVOVota2RoUkFTNHp6ZzRRM1BiZA?oc=5",
-      "date": "2026-11-12"
-     },
-     {
-      "title": "Bots don't fly here: United Airlines restricts AI agents from booking flights",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZnpEczhyWU5zaEdRZDd1b3Y0eVhuZ2hROFkyRkxTNmNPeEVXQmY5ZnYyeEJrMnpFdnd0NlktWGpCQ0hqVUdDNkJtZ3pjeVgtYkxxWGVUUWYzeGZ6UkJScDAtX2ZjVTNhU2FibDFvbUNFX01STzAwQkR6bTZ3dWZBVmlScjBqdkVqNnU2TGZWdngzMzhmT3l5eU1VU0FBeXozOXlyTk94dmNtajJOUHd3WTJmWUpfdWx4cllJdWNfYTZTUExWUXZyRGhxNGl2eU5qY015MEtR?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "Booking Holdings vs. Target: Which Consumer Stock Is a Better Buy for 2027?",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS19JUDJDamt1WTdHSTBfRVBBcUJ4S2Zwejg4RFlXeUs5dFJQaXFUMUpvUnIzUTBpYnFCc25IeXpxWFl4XzJYZzJwOGZITk5Gb0ZBX3V0WEpPbnZtb05PZFA4YVBiTGJxNjBNR2xURzZCanQzYUNYREpiV0xld0xHcllZczZ0T2FvUDhTQnlkbUJrYUxRamFaSmo4TC1LcTQ5V0E?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "Expedia and Booking shares rise after United Airlines blocks AI booking",
-      "publisher": "Yahoo Finance Singapore",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSElwMGcyOE41c0xVTW5oVkNER3BqYVpOQmVrMGJ6dlFxQ0JnTFJSZ3V1UkNCQTZhTWFkSHpORHRFQTAxb3RLajd5NGR5LVZ5d2F0NXh0OWNTWUxUZWM0WkRpTG9pNlhfVmN4VXpMUUtOaW9hc3lZREMxQmN5dXM3THlCa2hHOFpkUDJB?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "Expedia and Booking shares rise after United Airlines blocks AI booking",
-      "publisher": "Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMVp2Z05xdTROdlZaWXlSV2hoTzA1ZEotLXRuR3ZCS1F4SEkxc2pTcy02OVlFOVF1S0JYa3d5ZkJSd3lLRU1PckNVSVJzeUpONGlBeDBIam5SQWE4YnNWWG0wV3I3UGppRjJFNTZCMEpORmtUaHBmaVhWdDljU2lzYXFLWkg4REYyU1RiRXJZakU2RU0wSUNuZTNZT0t6SFA2VTNlaDVodmZKV0gxenlYenpqTVd5RFBQbjlxX043el9QazdpRl9v?oc=5",
-      "date": "2026-11-11"
-     },
-     {
-      "title": "Sensex jumps 773 points, Nifty tops 25,250; profit booking trims gains",
-      "publisher": "Business Today",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOX3ZpbUdCbjdPR1FKN3YyRDBLM1htajFqN2JZam5QQ25PZ0RCcTBTZUNNclJjb1d4a1FCbDB3SGtUNlFHMVVBb3RvQVNqZ1Ztc0E5UlV3V0dKN0VCWTBXT1FMU0pSQnRJWTQzb2NGemxOWHRoWExBaW9maFVPai1wa1FRRDUxS0tob0xBT0EzTjBueG9hQmZuZE9NTlA2ZUptdnE1b3ZzYktDQnpHUGtZRG1md3JRWmtUVHk0N2RicHRmVEpUanVHRmFXX2hBZEJ40gHWAUFVX3lxTFByWW1iWG9FdUNhaHJvWVhhUXBvSDBOYjdvN2FUNk5TSEtaY3R5amJjSzEtSC1INEFncWN3SExXaUEtWWR2eHJsNklvTXA3STVkcUlRTmZjMmlSNXpzYnVxb2dzTU1wS1hUdkhkbUYzVHhqR0Y4dTMzNFF1N3VYMkRjeF9kck1TY21kQ0pMSndBZnlkQ1Rfc29ZTlUyTWM4aFVkVDFYd1FFQUxUdW9oblNHTlJvUVFVbFhvTEJYeUZPSTNjSlU4bGduZENnRWVPS0syU0dTYUE?oc=5",
-      "date": "2026-11-11"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-12",
-   "moves": {
-    "day": 0.0031,
-    "week": -0.0475,
-    "high": -0.2684
-   },
-   "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
-   },
-   "sector": "Consumer Discretionary",
-   "sector_etf": "RSPD",
-   "sector_moves": {
-    "day": -0.0153,
-    "week": -0.0112,
-    "high": -0.0475
-   },
-   "sector_at_open": 55.55,
-   "worst": {
-    "day": -0.0478,
-    "week": -0.0821,
-    "high": -0.3257
-   },
-   "provisional": {
-    "cause": "Long slide: -27% below its 52-week high (S&P 500 -3%, Consumer Discretionary -5%): read why",
-    "lean": "unclear"
-   }
-  },
-  {
    "id": "ADBE-2026-10-30",
    "ticker": "ADBE",
    "name": "Adobe Inc.",
@@ -4886,21 +4755,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": 0.0054,
-    "week": -0.0306,
-    "high": -0.3318
+    "day": 0.004,
+    "week": -0.0321,
+    "high": -0.3328
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0059,
-    "week": 0.0709,
-    "high": -0.1191
+    "day": -0.0054,
+    "week": 0.0714,
+    "high": -0.1186
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -5020,21 +4889,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-12",
    "moves": {
-    "day": 0.0059,
-    "week": 0.0116,
-    "high": -0.3664
+    "day": 0.0048,
+    "week": 0.0105,
+    "high": -0.3671
    },
    "spy": {
-    "day": -0.0036,
-    "week": 0.0329,
-    "high": -0.0282
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0082,
-    "week": 0.0094,
-    "high": -0.0144
+    "day": -0.0104,
+    "week": 0.0071,
+    "high": -0.0166
    },
    "sector_at_open": 39.9,
    "worst": {
@@ -5043,7 +4912,138 @@
     "high": -0.4238
    },
    "provisional": {
-    "cause": "Long slide: -37% below its 52-week high (S&P 500 -3%, Health Care -1%): read why",
+    "cause": "Long slide: -37% below its 52-week high (S&P 500 -3%, Health Care -2%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "BKNG-2026-10-30",
+   "ticker": "BKNG",
+   "name": "Booking Holdings Inc.",
+   "opened": "2026-10-30",
+   "price_at_open": 148.13,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 217.63,
+   "buy_below_at_open": 152.34,
+   "valued_on": "2026-10-24",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Year-long slide on Middle East war demand hits and fears that AI agents (e.g. Meta's) let travellers bypass booking sites; Q4 guide weak (room nights +1-3%)",
+    "summary": "Q3 was solid (room nights +7%, gross bookings +10%, adjusted EPS +17%) and the war effect looks temporary, but the AI-disintermediation fear would be lasting if true and would hit Booking's core advantage (owned traffic and the two-sided network). Evidence so far is reassuring (AI referrals under 1% of room nights, direct traffic mid-60%s) but doesn't settle it. Watch AI-agent booking share, direct-traffic share and 2027 room-night growth.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-12",
+    "earnings_on": null,
+    "last_report": "2026-11-03",
+    "peers": {
+     "basis": "industry: Travel Services",
+     "n": 5,
+     "median": {
+      "day": -0.002271979748055375,
+      "week": 0.0625717650869142,
+      "high": -0.0956164091456212
+     },
+     "tickers": [
+      "ABNB",
+      "RCL",
+      "CCL",
+      "EXPE",
+      "NCLH"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 10.42356,
+      "d30": 10.45361,
+      "chg": -0.0028746050407466583
+     },
+     "+1y": {
+      "current": 12.25704,
+      "d30": 12.37827,
+      "chg": -0.0097937757053288
+     },
+     "revisions_30d": {
+      "up": 2,
+      "down": 7
+     }
+    },
+    "news": [
+     {
+      "title": "United Airlines bars AI agents from booking tickets, sending Meta shares tumbling",
+      "publisher": "New York Post",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSF9hYno4a3pad19ITGtRQjJNX2d1ZWkzNE0yNjJrN1ZTclJvTzQ1bndGNDk4MGtnSHNoX3VjTGRTZkk1WFRhWFMwUlhBN0FsV2VOUUJocFU3bDh2NnExN1ZzUU96WGYwQzFqWFBpMEhuWEpaTlk3aDdFU3UtOWgyRl9PMVBtMEQ1aUNha0otZjRZWlA4UGNIOG9JMk1hUG9JLS1pZy02bWpVOVota2RoUkFTNHp6ZzRRM1BiZA?oc=5",
+      "date": "2026-11-12"
+     },
+     {
+      "title": "Bots don't fly here: United Airlines restricts AI agents from booking flights",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZnpEczhyWU5zaEdRZDd1b3Y0eVhuZ2hROFkyRkxTNmNPeEVXQmY5ZnYyeEJrMnpFdnd0NlktWGpCQ0hqVUdDNkJtZ3pjeVgtYkxxWGVUUWYzeGZ6UkJScDAtX2ZjVTNhU2FibDFvbUNFX01STzAwQkR6bTZ3dWZBVmlScjBqdkVqNnU2TGZWdngzMzhmT3l5eU1VU0FBeXozOXlyTk94dmNtajJOUHd3WTJmWUpfdWx4cllJdWNfYTZTUExWUXZyRGhxNGl2eU5qY015MEtR?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Booking Holdings vs. Target: Which Consumer Stock Is a Better Buy for 2027?",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS19JUDJDamt1WTdHSTBfRVBBcUJ4S2Zwejg4RFlXeUs5dFJQaXFUMUpvUnIzUTBpYnFCc25IeXpxWFl4XzJYZzJwOGZITk5Gb0ZBX3V0WEpPbnZtb05PZFA4YVBiTGJxNjBNR2xURzZCanQzYUNYREpiV0xld0xHcllZczZ0T2FvUDhTQnlkbUJrYUxRamFaSmo4TC1LcTQ5V0E?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Expedia and Booking shares rise after United Airlines blocks AI booking",
+      "publisher": "Yahoo Finance Singapore",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSElwMGcyOE41c0xVTW5oVkNER3BqYVpOQmVrMGJ6dlFxQ0JnTFJSZ3V1UkNCQTZhTWFkSHpORHRFQTAxb3RLajd5NGR5LVZ5d2F0NXh0OWNTWUxUZWM0WkRpTG9pNlhfVmN4VXpMUUtOaW9hc3lZREMxQmN5dXM3THlCa2hHOFpkUDJB?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Expedia and Booking shares rise after United Airlines blocks AI booking",
+      "publisher": "Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMVp2Z05xdTROdlZaWXlSV2hoTzA1ZEotLXRuR3ZCS1F4SEkxc2pTcy02OVlFOVF1S0JYa3d5ZkJSd3lLRU1PckNVSVJzeUpONGlBeDBIam5SQWE4YnNWWG0wV3I3UGppRjJFNTZCMEpORmtUaHBmaVhWdDljU2lzYXFLWkg4REYyU1RiRXJZakU2RU0wSUNuZTNZT0t6SFA2VTNlaDVodmZKV0gxenlYenpqTVd5RFBQbjlxX043el9QazdpRl9v?oc=5",
+      "date": "2026-11-11"
+     },
+     {
+      "title": "Sensex jumps 773 points, Nifty tops 25,250; profit booking trims gains",
+      "publisher": "Business Today",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOX3ZpbUdCbjdPR1FKN3YyRDBLM1htajFqN2JZam5QQ25PZ0RCcTBTZUNNclJjb1d4a1FCbDB3SGtUNlFHMVVBb3RvQVNqZ1Ztc0E5UlV3V0dKN0VCWTBXT1FMU0pSQnRJWTQzb2NGemxOWHRoWExBaW9maFVPai1wa1FRRDUxS0tob0xBT0EzTjBueG9hQmZuZE9NTlA2ZUptdnE1b3ZzYktDQnpHUGtZRG1md3JRWmtUVHk0N2RicHRmVEpUanVHRmFXX2hBZEJ40gHWAUFVX3lxTFByWW1iWG9FdUNhaHJvWVhhUXBvSDBOYjdvN2FUNk5TSEtaY3R5amJjSzEtSC1INEFncWN3SExXaUEtWWR2eHJsNklvTXA3STVkcUlRTmZjMmlSNXpzYnVxb2dzTU1wS1hUdkhkbUYzVHhqR0Y4dTMzNFF1N3VYMkRjeF9kck1TY21kQ0pMSndBZnlkQ1Rfc29ZTlUyTWM4aFVkVDFYd1FFQUxUdW9oblNHTlJvUVFVbFhvTEJYeUZPSTNjSlU4bGduZENnRWVPS0syU0dTYUE?oc=5",
+      "date": "2026-11-11"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-12",
+   "moves": {
+    "day": 0.0062,
+    "week": -0.0446,
+    "high": -0.2662
+   },
+   "spy": {
+    "day": -0.0034,
+    "week": 0.0331,
+    "high": -0.028
+   },
+   "sector": "Consumer Discretionary",
+   "sector_etf": "RSPD",
+   "sector_moves": {
+    "day": -0.0157,
+    "week": -0.0116,
+    "high": -0.0478
+   },
+   "sector_at_open": 55.55,
+   "worst": {
+    "day": -0.0478,
+    "week": -0.0821,
+    "high": -0.3257
+   },
+   "provisional": {
+    "cause": "Long slide: -27% below its 52-week high (S&P 500 -3%, Consumer Discretionary -5%): read why",
     "lean": "unclear"
    }
   },
@@ -5323,6 +5323,6 @@
   "TPL",
   "LRN"
  ],
- "updated": "2026-11-12T20:48:29Z",
+ "updated": "2026-11-12T21:13:28Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
