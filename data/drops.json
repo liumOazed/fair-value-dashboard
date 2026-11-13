@@ -2427,8 +2427,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Q3 2026 EPS missed (adjusted $1.23 vs ~$1.32 expected) as claims rose: new defaults 2,943 vs 2,529, loss ratio 18.7% vs 12.3%, smaller reserve release.",
+    "summary": "The miss came from credit costs normalising from very low levels and a smaller reserve release, while insurance in force hit a record $229.7B, book value per share rose 14% and ROE stayed ~14%, so it looks like a cyclical earnings dip rather than damage to the business. Watch whether new defaults and cure rates keep worsening into Q4-Q1, and how FHFA acts on the October 2026 housing order (a possible automatic mortgage-insurance cancellation pilot would shorten policy lives across the industry).",
+    "model_changed": false,
+    "date": "2026-11-13",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-13",
@@ -2554,8 +2562,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Premium multiple for a data-centre land, water and power story unwinding: Texas paused data-centre permits in August and the new governor-elect pledged a moratorium, while Q3 brought no hyperscale deal; royalties at a record.",
+    "summary": "The core royalty business is at record levels (Q3 revenue +35%, no debt), so the fall is valuation compression around the data-centre growth option rather than oil or the business itself; water sales did fall on lower prices and volumes. Whether the setback lasts depends on Texas policy after 19 January and on any signed data-centre contract. Note the 3-for-1 split in December 2025 when comparing old prices.",
+    "model_changed": false,
+    "date": "2026-11-13",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-13",
@@ -3884,8 +3900,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Enrolment fell 2.5% after a second straight school-year launch hit by platform problems, the Texas Lone Star contract loss (~3,000 students) and a CEO change with a strategic reset.",
+    "summary": "Results beat forecasts on revenue per student and FY27 guidance was kept, with analysts nudging estimates up, but two failed launches in a row and a lost district contract point to execution problems that could erode its lead as the largest virtual-school operator. Not yet clear whether this is a fixable stumble or lasting; watch in-year enrolment, fall 2027 applications, the reset plan and further contract renewals.",
+    "model_changed": false,
+    "date": "2026-11-13",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-13",
@@ -5323,6 +5347,6 @@
   "TPL",
   "LRN"
  ],
- "updated": "2026-11-13T01:49:26Z",
+ "updated": "2026-11-13T02:56:40Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }

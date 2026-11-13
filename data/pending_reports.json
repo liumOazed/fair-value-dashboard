@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
- "pending": [
-  {
-   "ticker": "USLM",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-10-30",
-   "yahoo_latest_quarter": "2026-09-30",
-   "waiting_days": 13
-  },
-  {
-   "ticker": "PLGO",
-   "data_through": "2026-06-30",
-   "reported_on": "2026-11-11",
-   "yahoo_latest_quarter": "2026-06-30",
-   "waiting_days": 1
-  }
- ],
+ "pending": [],
  "upcoming": [
   {
    "ticker": "NVDA",
@@ -345,6 +330,11 @@
   },
   {
    "ticker": "MCRI",
+   "next_report": "2027-02-03",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "USLM",
    "next_report": "2027-02-03",
    "data_through": "2026-09-30"
   },

@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "VLTO",
-  "AMP",
-  "PPG",
-  "EOG",
-  "PM",
   "DLTR",
   "INVA",
   "CTRE",
@@ -134,7 +129,12 @@
   "KO",
   "SHW",
   "JNJ",
-  "AMGN"
+  "AMGN",
+  "VLTO",
+  "AMP",
+  "PPG",
+  "EOG",
+  "PM"
  ],
  "notes": {
   "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
@@ -223,6 +223,11 @@
   "KO": "All 4 KPIs for Q4 2025-Q3 2026 plus year-ago comparable operating margin. Price/mix = 'price/mix' growth stated in the organic revenue sentence (whole %). Year-ago organic growth/volume/price-mix not stated. Q1-Q3 periods are KO fiscal quarter ends (Apr 3, Jul 3, Oct 2, 2026); year-ago ends Mar 28, Jun 27, Sep 26, 2025.",
   "SHW": "All 4 KPIs for Q4 2025-Q3 2026; year-ago same-store sales and gross margin taken from the release tables' prior-year column. Segment sales growth = reported net sales % change (CBG growth ~19-25% includes the Suvinil acquisition). Gross margin = GAAP gross profit 'Percent to Net sales'. Q4 2025 values read from copies of the Jan 29, 2026 release (last10k / dfcfw PDF mirror); source set to the SEC 8-K filing, which could not be fetched directly.",
   "JNJ": "Segment operational growth from the release segment tables. Stelara/Tremfya = reported worldwide % change: Q4 2025 from the release product schedule on the IR site; Q1-Q3 2026 from the 10-Q Note 9 (the 8-K press-release exhibits contain no product sales lines). Q1 2026 table % (-59.7, 68.3) differ by 0.1 from rounded-$M arithmetic; table values used. No year-ago growth rates stated. Periods are J&J fiscal quarter ends (Dec 28, 2025; Mar 29, Jun 28, Sep 27, 2026).",
-  "AMGN": "Product sales and Repatha growth as stated (whole %). Prolia + Xgeva growth computed from the product sales table (not stated by Amgen). Non-GAAP operating margin = non-GAAP operating income as % of product sales; year-ago Q4 2024 from the reconciliation table, Q1-Q3 2025 year-ago derived from the stated percentage-point change (the Q3 value matches the reconciliation table). Year-ago growth rates not stated."
+  "AMGN": "Product sales and Repatha growth as stated (whole %). Prolia + Xgeva growth computed from the product sales table (not stated by Amgen). Non-GAAP operating margin = non-GAAP operating income as % of product sales; year-ago Q4 2024 from the reconciliation table, Q1-Q3 2025 year-ago derived from the stated percentage-point change (the Q3 value matches the reconciliation table). Year-ago growth rates not stated.",
+  "VLTO": "Q4 2025-Q3 2026 filled; adjusted operating margin also year-earlier (8 quarters). Prior-year core sales growth (total, Water Quality, PQI) not stated in releases. Periods are Veralto fiscal quarter ends (Apr 3, Jul 3, Oct 2, 2026; Apr 4, Jul 4, Oct 3, 2025). Q4 2025 via boardroomalpha copy of the 8-K, Q1 2026 via finviz reprint.",
+  "PPG": "Q4 2025-Q3 2026 filled, all 5 KPIs (three segments: Global Architectural, Performance, Industrial Coatings). Segment growth = stated rounded y/y net sales change. No year-earlier growth rates stated. Q2 2026 adjusted EPS growth shown as '—%': computed 2.23/2.22-1 = 0.5%.",
+  "PM": "Q4 2025-Q3 2026 filled; adjusted OI margin also year-earlier. Q3 2026 smoke-free share skipped ('more than 40%'); PM resegmented in 2026 and stopped giving a smoke-free $ total. Nicotine pouch growth not like-for-like: Q4 2025 total PMI nicotine pouch cans (+18.1%), 2026 quarters U.S. ZYN shipments. Q4 2025 smoke-free share computed from rounded $4.4bn/$10.4bn. Year-earlier HTU/pouch growth not stated.",
+  "AMP": "Q4 2025-Q3 2026 filled, all 4 KPIs; ROE and net flows % also year-earlier. Net flows % = quarterly AWM client net flows / client assets at previous quarter end (not annualized); Q3 2026 -$8.5B includes the Comerica transition (+$5.3B ex Comerica). Client asset and EPS growth computed to 2 decimals (stated whole % in quotes). Year-earlier growth rates not stated.",
+  "EOG": "Q4 2025-Q3 2026 filled (Q3 2026 added in the earnings review); FCF margin also year-earlier Q4 2024-Q3 2025. Cash operating cost per Boe on non-GAAP basis. Year-earlier growth/cost-change not stated. Sources are finviz/boereport reprints of the releases."
  }
 }

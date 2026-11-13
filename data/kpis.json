@@ -21018,6 +21018,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm",
      "quote": "Table 1 (In millions) | 6/30/2026 | 6/30/2025 (three months) | 6/30/2026 | 6/30/2025 (six months): Adjusted EBITDAa | $1,217 | $909 | $2,297 | $2,035",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 2.013,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000022/nrgq32026ex991.htm",
+     "quote": "Table 1 (In millions) | Three months 9/30/2026 | 9/30/2025: Adjusted EBITDA | $2,013 | $1,205",
+     "added": "2026-11-13"
     }
    ],
    "free_cash_flow_before_growth": [
@@ -21084,6 +21092,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000018/nrgq22026ex991.htm",
      "quote": "Table 1 (In millions) | 6/30/2026 | 6/30/2025 (three months) | 6/30/2026 | 6/30/2025 (six months): Free Cash Flow Before Growth Investments (FCFbG)a | $1,025 | $914 | $959 | $1,207",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.242,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001013871/000101387126000022/nrgq32026ex991.htm",
+     "quote": "Free Cash Flow before Growth Investments (FCFbG) | $ 1,242 | $ 828 (three months ended 9/30/2026 vs 9/30/2025)",
+     "added": "2026-11-13"
     }
    ]
   },
@@ -21616,6 +21632,30 @@
   "EOG": {
    "total_production_growth": [
     {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 27.68,
+     "source": "https://boereport.com/2026/02/24/eog-resources-reports-fourth-quarter-and-full-year-2025-results-announces-2026-capital-plan/",
+     "quote": "Total Crude Oil Equivalent (MBoed): Q4 2025 1,399.0 vs Q4 2024 1,095.7 -> (1399.0/1095.7 - 1) x 100 = 27.68%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 26.91,
+     "source": "https://finviz.com/news/350966/eog-resources-reports-first-quarter-2026-results",
+     "quote": "Total Crude Oil Equivalent (MBoed): Q1 2026 1,383.8 vs Q1 2025 1,090.4 -> (1383.8/1090.4 - 1) x 100 = 26.91%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 24.36,
+     "source": "https://finviz.com/news/377119/eog-resources-reports-second-quarter-2026-results",
+     "quote": "Total Crude Oil Equivalent (MBoed): Q2 2026 1,410.4 vs Q2 2025 1,134.1 -> (1410.4/1134.1 - 1) x 100 = 24.36%",
+     "added": "2026-11-13"
+    },
+    {
      "period": "2026-09-30",
      "label": "Q3 2026",
      "value": 10.1,
@@ -21625,6 +21665,30 @@
     }
    ],
    "crude_oil_production_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 10.41,
+     "source": "https://boereport.com/2026/02/24/eog-resources-reports-fourth-quarter-and-full-year-2025-results-announces-2026-capital-plan/",
+     "quote": "Crude Oil and Condensate (MBod): Q4 2025 546.1 vs Q4 2024 494.6 -> (546.1/494.6 - 1) x 100 = 10.41%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9.24,
+     "source": "https://finviz.com/news/350966/eog-resources-reports-first-quarter-2026-results",
+     "quote": "Crude Oil and Condensate (MBod): Q1 2026 548.5 vs Q1 2025 502.1 -> (548.5/502.1 - 1) x 100 = 9.24%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 8.85,
+     "source": "https://finviz.com/news/377119/eog-resources-reports-second-quarter-2026-results",
+     "quote": "Crude Oil and Condensate (MBod): Q2 2026 548.8 vs Q2 2025 504.2 -> (548.8/504.2 - 1) x 100 = 8.85%",
+     "added": "2026-11-13"
+    },
     {
      "period": "2026-09-30",
      "label": "Q3 2026",
@@ -21636,6 +21700,30 @@
    ],
    "cash_operating_cost_per_boe_change": [
     {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.69,
+     "source": "https://boereport.com/2026/02/24/eog-resources-reports-fourth-quarter-and-full-year-2025-results-announces-2026-capital-plan/",
+     "quote": "Cash Operating Costs ($/Boe) (Non-GAAP): Q4 2025 10.22 vs Q4 2024 10.15 -> (10.22/10.15 - 1) x 100 = 0.69%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1.36,
+     "source": "https://finviz.com/news/350966/eog-resources-reports-first-quarter-2026-results",
+     "quote": "Cash Operating Costs ($/Boe) (Non-GAAP): Q1 2026 10.45 vs Q1 2025 10.31 -> (10.45/10.31 - 1) x 100 = 1.36%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6.34,
+     "source": "https://finviz.com/news/377119/eog-resources-reports-second-quarter-2026-results",
+     "quote": "Cash Operating Costs ($/Boe) (Non-GAAP): Q2 2026 10.57 vs Q2 2025 9.94 -> (10.57/9.94 - 1) x 100 = 6.34%",
+     "added": "2026-11-13"
+    },
+    {
      "period": "2026-09-30",
      "label": "Q3 2026",
      "value": 5.6,
@@ -21646,12 +21734,60 @@
    ],
    "free_cash_flow_margin": [
     {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 22.86,
+     "source": "https://boereport.com/2026/02/24/eog-resources-reports-fourth-quarter-and-full-year-2025-results-announces-2026-capital-plan/",
+     "quote": "Free Cash Flow (Non-GAAP) $1,277MM / Total Operating Revenues and Other $5,585MM (Q4 2024, year-earlier columns of the Q4 2025 release) x 100 = 22.86%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 23.44,
+     "source": "https://finviz.com/news/350966/eog-resources-reports-first-quarter-2026-results",
+     "quote": "Free Cash Flow (Non-GAAP) $1,329MM / Total Operating Revenues and Other $5,669MM (Q1 2025, year-earlier columns of the Q1 2026 release) x 100 = 23.44%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 17.76,
+     "source": "https://finviz.com/news/377119/eog-resources-reports-second-quarter-2026-results",
+     "quote": "Free Cash Flow (Non-GAAP) $973MM / Total Operating Revenues and Other $5,478MM (Q2 2025, year-earlier columns of the Q2 2026 release) x 100 = 17.76%",
+     "added": "2026-11-13"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q3 2025",
      "value": 23.7,
      "source": "https://finviz.com/news/417814/eog-resources-reports-third-quarter-2026-results-and-raises-regular-dividend-8",
      "quote": "Free Cash Flow (Non-GAAP) 1,383 (3Q 2025); Total operating revenues and other 5,847 (3Q 2025) -> 1,383 / 5,847 = 23.7%",
      "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 17.35,
+     "source": "https://boereport.com/2026/02/24/eog-resources-reports-fourth-quarter-and-full-year-2025-results-announces-2026-capital-plan/",
+     "quote": "Free Cash Flow (Non-GAAP) $978MM / Total Operating Revenues and Other $5,638MM (Q4 2025) x 100 = 17.35%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 21.57,
+     "source": "https://finviz.com/news/350966/eog-resources-reports-first-quarter-2026-results",
+     "quote": "Free Cash Flow (Non-GAAP) $1,493MM / Total Operating Revenues and Other $6,921MM (Q1 2026) x 100 = 21.57%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 32.47,
+     "source": "https://finviz.com/news/377119/eog-resources-reports-second-quarter-2026-results",
+     "quote": "Free Cash Flow (Non-GAAP) $2,799MM / Total Operating Revenues and Other $8,620MM (Q2 2026) x 100 = 32.47%",
+     "added": "2026-11-13"
     },
     {
      "period": "2026-09-30",
@@ -22804,6 +22940,1064 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000318154/000031815426000153/amgn-20260930earningsrelea.htm",
      "quote": "Operating Margin as a percentage of product sales increased 0.2 percentage points for the third quarter to 47.3%.",
      "added": "2026-11-10"
+    }
+   ]
+  },
+  "QLYS": {
+   "revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 10,
+     "source": "https://qualys.gcs-web.com/static-files/fa509928-0dc3-4c39-84cf-dc7106b4a9a0",
+     "quote": "Revenue $175.3M vs $159.2M a year earlier, up 10% (175.3 / 159.2 - 1 = 10.1%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000013/qlys-20260505xex991.htm",
+     "quote": "Revenue $175.6M vs $159.9M a year earlier, up 10% (175.6 / 159.9 - 1 = 9.8%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 11,
+     "source": "https://www.placera.se/pressmeddelanden/qualys-qualys-announces-second-quarter-2026-financial-results-20260804",
+     "quote": "Revenue $182.2M vs $164.1M a year earlier, up 11% (182.2 / 164.1 - 1 = 11.0%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 11,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000043/qlys-20261109xex991.htm",
+     "quote": "Revenues $188.049M vs $169.882M, up 11% (188.049 / 169.882 - 1 = 10.7%)",
+     "added": "2026-11-13"
+    }
+   ],
+   "net_dollar_expansion": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 103,
+     "source": "https://www.sec.gov/Archives/edgar/data/1107843/000110784326000008/qlys-20251231.htm",
+     "quote": "Our net dollar expansion rate was 103% for both the years ended December 31, 2025 and 2024",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 103,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000015/qlys-20260331.htm",
+     "quote": "104% and 103% as of March 31, 2026 and March 31, 2025",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 104,
+     "source": "https://investor.qualys.com/static-files/1996a5ea-3dd0-4eb6-8409-00ad4ce37eef",
+     "quote": "105% and 104% as of June 30, 2026 and June 30, 2025",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 104,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000044/qlys-20260930.htm",
+     "quote": "Our net dollar expansion rates were 105% and 104% as of September 30, 2026 and September 30, 2025, respectively.",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 103,
+     "source": "https://www.sec.gov/Archives/edgar/data/1107843/000110784326000008/qlys-20251231.htm",
+     "quote": "Our net dollar expansion rate was 103% for both the years ended December 31, 2025 and 2024",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 104,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000015/qlys-20260331.htm",
+     "quote": "104% and 103% as of March 31, 2026 and March 31, 2025",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 105,
+     "source": "https://investor.qualys.com/static-files/1996a5ea-3dd0-4eb6-8409-00ad4ce37eef",
+     "quote": "105% and 104% as of June 30, 2026 and June 30, 2025",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 105,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000044/qlys-20260930.htm",
+     "quote": "Our net dollar expansion rates were 105% and 104% as of September 30, 2026 and September 30, 2025, respectively.",
+     "added": "2026-11-13"
+    }
+   ],
+   "customers_500k": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 215,
+     "source": "https://qualys.gcs-web.com/static-files/fa509928-0dc3-4c39-84cf-dc7106b4a9a0",
+     "quote": "customers spending $500K or more: 215, up 4% year over year",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 221,
+     "source": "https://investor.qualys.com/static-files/2f04240f-dd80-4fed-84f2-aed64a294091",
+     "quote": "customers spending $500K or more: 221, up 9% year over year",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 229,
+     "source": "https://investor.qualys.com/static-files/8179a070-a818-40b5-8f74-af7bc1596ed0",
+     "quote": "customers spending $500K or more: 229, up 8% year over year",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 243,
+     "source": "https://investor.qualys.com/static-files/8c6aabee-cab9-47b1-94f2-40e0ff2b563d",
+     "quote": "customers spending $500K or more: 243, up 15% year over year",
+     "added": "2026-11-13"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 47,
+     "source": "https://qualys.gcs-web.com/static-files/fa509928-0dc3-4c39-84cf-dc7106b4a9a0",
+     "quote": "Adjusted EBITDA $82.6M, 47% of revenues (vs $74.2M, 47% in Q4 2024)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 47,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000013/qlys-20260505xex991.htm",
+     "quote": "Adjusted EBITDA $83.3M, 47% of revenues (vs $74.8M, 47% in Q1 2025)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 45,
+     "source": "https://www.placera.se/pressmeddelanden/qualys-qualys-announces-second-quarter-2026-financial-results-20260804",
+     "quote": "Adjusted EBITDA $83.8M, 46% of revenues (vs $73.4M, 45% in Q2 2025)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 49,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000043/qlys-20261109xex991.htm",
+     "quote": "Adjusted EBITDA $89.927M, 48% of revenues (vs $82.600M, 49% in Q3 2025)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 47,
+     "source": "https://qualys.gcs-web.com/static-files/fa509928-0dc3-4c39-84cf-dc7106b4a9a0",
+     "quote": "Adjusted EBITDA $82.6M, 47% of revenues (vs $74.2M, 47%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 47,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000013/qlys-20260505xex991.htm",
+     "quote": "Adjusted EBITDA $83.3M, 47% of revenues (vs $74.8M, 47%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 46,
+     "source": "https://www.placera.se/pressmeddelanden/qualys-qualys-announces-second-quarter-2026-financial-results-20260804",
+     "quote": "Adjusted EBITDA $83.8M, 46% of revenues (vs $73.4M, 45%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 48,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001107843/000110784326000043/qlys-20261109xex991.htm",
+     "quote": "Adjusted EBITDA $89.927M, 48% of revenues (vs $82.600M, 49%)",
+     "added": "2026-11-13"
+    }
+   ]
+  },
+  "USLM": {
+   "revenue_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000082020/000110465926120672/uslm-ex99d1.htm",
+     "quote": "Revenues $106,188 (Q3 2026) vs $102,016 (Q3 2025), in thousands -> 106,188 / 102,016 - 1 = +4.1%",
+     "added": "2026-11-13"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 51.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000082020/000110465926120672/uslm-ex99d1.htm",
+     "quote": "Gross profit $52,189 / revenues $102,016 (Q3 2025, thousands) = 51.2%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 47.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000082020/000110465926120672/uslm-ex99d1.htm",
+     "quote": "Gross profit $50,768 / revenues $106,188 (Q3 2026, thousands) = 47.8%",
+     "added": "2026-11-13"
+    }
+   ],
+   "capital_spending": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.014,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000082020/000110465926120712/uslm-20260930x10q.htm",
+     "quote": "Purchase of property, plant and equipment: 9 months 2026 $50,221 minus 6 months 2026 $36,247 (Q2 10-Q) = $13,974 thousand",
+     "added": "2026-11-13"
+    }
+   ],
+   "cash_and_equivalents": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.439,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000082020/000110465926120712/uslm-20260930x10q.htm",
+     "quote": "Cash and cash equivalents $439,248 (thousands) at September 30, 2026",
+     "added": "2026-11-13"
+    }
+   ]
+  },
+  "PLGO": {
+   "combined_ratio": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 79.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001636639/000162828026073047/ex-991earningspressrelease.htm",
+     "quote": "Combined ratio 91.5% for the three months ended September 30, 2026 compared to 79.0%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 91.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001636639/000162828026073047/ex-991earningspressrelease.htm",
+     "quote": "Combined ratio 91.5% for the three months ended September 30, 2026 compared to 79.0%",
+     "added": "2026-11-13"
+    }
+   ],
+   "net_premiums_written_growth": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 17.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001636639/000162828026073047/ex-991earningspressrelease.htm",
+     "quote": "Net premiums written $592.3M (Q3 2026) vs $504.2M (Q3 2025) -> 592.3 / 504.2 - 1 = +17.5%",
+     "added": "2026-11-13"
+    }
+   ],
+   "catastrophe_losses": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.0574,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001636639/000162828026073047/ex-991earningspressrelease.htm",
+     "quote": "Catastrophe and large losses $115.9M in Q3 2026 vs $57.4M in Q3 2025 (company reports catastrophe and large losses together)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.1159,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001636639/000162828026073047/ex-991earningspressrelease.htm",
+     "quote": "Catastrophe and large losses $115.9M in Q3 2026 vs $57.4M in Q3 2025 (company reports catastrophe and large losses together)",
+     "added": "2026-11-13"
+    }
+   ],
+   "book_value_per_share": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.29,
+     "source": "https://www.sec.gov/Archives/edgar/data/1636639/000162828025051612/ex-991earningspressrelease.htm",
+     "quote": "Diluted book value per share of $23.29 as of September 30, 2025",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 26.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001636639/000162828026073047/ex-991earningspressrelease.htm",
+     "quote": "Diluted book value per share of $26.60 as of September 30, 2026, up 8.1% from $24.61 at December 31, 2025",
+     "added": "2026-11-13"
+    }
+   ]
+  },
+  "VLTO": {
+   "core_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.6,
+     "source": "https://app.boardroomalpha.com/sec_feed/2026/QTR1/0001967680-26-000003/vlto-202625xex991.htm",
+     "quote": "Sales increased 3.8% year-over-year to $1,396 million, with non-GAAP core sales growth of 1.6%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": 1.9,
+     "source": "https://finviz.com/news/348500/veralto-reports-first-quarter-2026-results",
+     "quote": "Sales increased 6.7% year-over-year to $1,422 million, with non-GAAP core sales growth of 1.9%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 4.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000043/vlto-20260728xex991.htm",
+     "quote": "Sales increased 7.6% year-over-year to $1,474 million, with non-GAAP core sales growth of 4.2%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 5.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000047/vlto-20261029xex991.htm",
+     "quote": "Sales increased 7.5% year-over-year to $1,509 million, with non-GAAP core sales growth of 5.1%",
+     "added": "2026-11-13"
+    }
+   ],
+   "water_quality_core_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.4,
+     "source": "https://app.boardroomalpha.com/sec_feed/2026/QTR1/0001967680-26-000003/vlto-202625xex991.htm",
+     "quote": "Core sales growth reconciliation, three months ended Dec 31, 2025 (Total Company | Water Quality | PQI): Core sales growth (non-GAAP) | 1.6% | 1.4% | 1.8%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": 3.8,
+     "source": "https://finviz.com/news/348500/veralto-reports-first-quarter-2026-results",
+     "quote": "Core sales growth (decline) (non-GAAP) | 1.9 % | 3.8 % | (1.0) % (Total Company | Water Quality | Product Quality and Innovation)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 5.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000043/vlto-20260728xex991.htm",
+     "quote": "Sales increased 7.6% year-over-year to $1,474 million, with non-GAAP core sales growth of 4.2% ... led by Water Quality at 5.7%; table: Core sales growth (non-GAAP) | 4.2% | 5.7% | 2.0%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 6.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000047/vlto-20261029xex991.htm",
+     "quote": "Core sales grew 5.1%, led by Water Quality at 6.4%, while acquisitions contributed 2.3% to total sales growth",
+     "added": "2026-11-13"
+    }
+   ],
+   "pqi_core_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.8,
+     "source": "https://app.boardroomalpha.com/sec_feed/2026/QTR1/0001967680-26-000003/vlto-202625xex991.htm",
+     "quote": "Core sales growth reconciliation, three months ended Dec 31, 2025 (Total Company | Water Quality | PQI): Core sales growth (non-GAAP) | 1.6% | 1.4% | 1.8%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": -1.0,
+     "source": "https://finviz.com/news/348500/veralto-reports-first-quarter-2026-results",
+     "quote": "Core sales growth (decline) (non-GAAP) | 1.9 % | 3.8 % | (1.0) % (Total Company | Water Quality | Product Quality and Innovation)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 2.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000043/vlto-20260728xex991.htm",
+     "quote": "Core sales growth (non-GAAP) | 4.2% | 5.7% | 2.0% (Total Company | Water Quality | Product Quality and Innovation)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 3.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000047/vlto-20261029xex991.htm",
+     "quote": "Core sales growth (non-GAAP) | 5.1% | 6.4% | 3.2% (Total Company | Water Quality | Product Quality and Innovation)",
+     "added": "2026-11-13"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 23.8,
+     "source": "https://app.boardroomalpha.com/sec_feed/2026/QTR1/0001967680-26-000003/vlto-202625xex991.htm",
+     "quote": "Adjusted (Non-GAAP), three months ended Dec 31, 2024: operating profit $320 | operating profit margin 23.8%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-04-04",
+     "label": "Q1 2025",
+     "value": 25.0,
+     "source": "https://finviz.com/news/348500/veralto-reports-first-quarter-2026-results",
+     "quote": "Three-Month Period Ended April 4, 2025: Adjusted (Non-GAAP) | $ 1,332 | $ 333 | 25.0 %",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-07-04",
+     "label": "Q2 2025",
+     "value": 23.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000043/vlto-20260728xex991.htm",
+     "quote": "Three-Month Period Ended July 4, 2025: Adjusted (Non-GAAP) | $1,371 | $325 | 23.7% | $232 | $0.93",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-10-03",
+     "label": "Q3 2025",
+     "value": 23.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000047/vlto-20261029xex991.htm",
+     "quote": "Adjusted (Non-GAAP) | $1,404 | $336 | 23.9% | $247 | $0.99",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 24.6,
+     "source": "https://app.boardroomalpha.com/sec_feed/2026/QTR1/0001967680-26-000003/vlto-202625xex991.htm",
+     "quote": "Operating profit margin was 22.6% and non-GAAP adjusted operating profit margin was 24.6%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-04-03",
+     "label": "Q1 2026",
+     "value": 25.1,
+     "source": "https://finviz.com/news/348500/veralto-reports-first-quarter-2026-results",
+     "quote": "Operating profit margin was 23.8% and non-GAAP adjusted operating profit margin was 25.1%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-07-03",
+     "label": "Q2 2026",
+     "value": 24.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000043/vlto-20260728xex991.htm",
+     "quote": "Operating profit margin was 21.4% and non-GAAP adjusted operating profit margin was 24.6%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-10-02",
+     "label": "Q3 2026",
+     "value": 25.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001967680/000196768026000047/vlto-20261029xex991.htm",
+     "quote": "Adjusted (Non-GAAP) | $1,509 | $386 | 25.6% | $290 | $1.18",
+     "added": "2026-11-13"
+    }
+   ]
+  },
+  "PPG": {
+   "organic_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000025/exhibit99-4q2025earningsre.htm",
+     "quote": "Organic sales growth of 3% year over year due to higher selling prices and sales volume growth in all regions",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1,
+     "source": "https://investor.ppg.com/news/news-details/2026/PPG-reports-first-quarter-2026-financial-results/default.aspx",
+     "quote": "Organic sales increased 1% year over year driven by higher selling prices",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000246/exhibit99-2q2026earningsre.htm",
+     "quote": "Organic sales increased 4% year over year with growth in 8 of 9 businesses led by our differentiated aerospace business",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000315/exhibit99-3q2026earningsre.htm",
+     "quote": "Organic sales increased 5% year over year with growth led by our differentiated aerospace and architectural coatings Latin America businesses",
+     "added": "2026-11-13"
+    }
+   ],
+   "global_architectural_coatings_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000025/exhibit99-4q2025earningsre.htm",
+     "quote": "Global Architectural Coatings segment table (4Q 2025 | 4Q 2024 | YOY change): Net sales | $951 | $881 | +8%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 13,
+     "source": "https://investor.ppg.com/news/news-details/2026/PPG-reports-first-quarter-2026-financial-results/default.aspx",
+     "quote": "Global Architectural Coatings segment table (1Q 2026 | 1Q 2025 | YOY change): Net sales | $965 | $857 | +13%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000246/exhibit99-2q2026earningsre.htm",
+     "quote": "Global Architectural Coatings segment table (2Q 2026 | 2Q 2025 | YOY change): Net sales | $1,098 | $1,018 | +8%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000315/exhibit99-3q2026earningsre.htm",
+     "quote": "Global Architectural Coatings segment table (3Q 2026 | 3Q 2025 | YOY change): Net sales | $1,055 | $1,012 | +4%",
+     "added": "2026-11-13"
+    }
+   ],
+   "performance_coatings_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000025/exhibit99-4q2025earningsre.htm",
+     "quote": "Performance Coatings segment table (4Q 2025 | 4Q 2024 | YOY change): Net sales | $1,322 | $1,262 | +5%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5,
+     "source": "https://investor.ppg.com/news/news-details/2026/PPG-reports-first-quarter-2026-financial-results/default.aspx",
+     "quote": "Performance Coatings segment table (1Q 2026 | 1Q 2025 | YOY change): Net sales | $1,334 | $1,265 | +5%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000246/exhibit99-2q2026earningsre.htm",
+     "quote": "Performance Coatings segment table (2Q 2026 | 2Q 2025 | YOY change): Net sales | $1,619 | $1,512 | +7%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000315/exhibit99-3q2026earningsre.htm",
+     "quote": "Performance Coatings segment table (3Q 2026 | 3Q 2025 | YOY change): Net sales | $1,554 | $1,414 | +10%",
+     "added": "2026-11-13"
+    }
+   ],
+   "industrial_coatings_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000025/exhibit99-4q2025earningsre.htm",
+     "quote": "Industrial Coatings segment table (4Q 2025 | 4Q 2024 | YOY change): Net sales | $1,641 | $1,586 | +3%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4,
+     "source": "https://investor.ppg.com/news/news-details/2026/PPG-reports-first-quarter-2026-financial-results/default.aspx",
+     "quote": "Industrial Coatings segment table (1Q 2026 | 1Q 2025 | YOY change): Net sales | $1,631 | $1,562 | +4%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000246/exhibit99-2q2026earningsre.htm",
+     "quote": "Industrial Coatings segment table (2Q 2026 | 2Q 2025 | YOY change): Net sales | $1,778 | $1,665 | +7%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000315/exhibit99-3q2026earningsre.htm",
+     "quote": "Industrial Coatings segment table (3Q 2026 | 3Q 2025 | YOY change): Net sales | $1,744 | $1,656 | +5%",
+     "added": "2026-11-13"
+    }
+   ],
+   "adjusted_eps_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": -6,
+     "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000025/exhibit99-4q2025earningsre.htm",
+     "quote": "Adjusted EPS(a)(b) | $1.51 | $1.61 | (6)%  (4Q 2025 | 4Q 2024 | YOY change)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6,
+     "source": "https://investor.ppg.com/news/news-details/2026/PPG-reports-first-quarter-2026-financial-results/default.aspx",
+     "quote": "Adjusted EPS(a)(b) | $1.83 | $1.72 | +6%  (1Q 2026 | 1Q 2025 | YOY change)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000246/exhibit99-2q2026earningsre.htm",
+     "quote": "Adjusted EPS (a)(b) | $2.23 | $2.22 | —%  (2Q 2026 | 2Q 2025 | YOY change); computed: (2.23 / 2.22 - 1) x 100 = 0.45% -> 0.5",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000079879/000007987926000315/exhibit99-3q2026earningsre.htm",
+     "quote": "Adjusted EPS (a)(b) | $2.25 | $2.13 | +6%  (3Q 2026 | 3Q 2025 | YOY change)",
+     "added": "2026-11-13"
+    }
+   ]
+  },
+  "PM": {
+   "organic_net_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 3.7,
+     "source": "https://www.businesswire.com/news/home/20260205612890/en/Philip-Morris-International-Reports-2025-Fourth-Quarter-Full-Year-Results",
+     "quote": "Net revenues increased by 3.7% on an organic basis, mainly reflecting:",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026026385/earningsreleasepm-ex991xq1.htm",
+     "quote": "Net revenues increased by 9.1% (2.7% organically) to $10.1 billion",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 7.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026049107/earningsreleasepm-ex991xq2.htm",
+     "quote": "Net revenues increased by 10.4% (7.6% organically) to $11.2 billion",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 7.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026066596/earningsreleasepm-ex991xq3.htm",
+     "quote": "Net revenues increased by 5.5% (7.1% organically) to $11.4 billion",
+     "added": "2026-11-13"
+    }
+   ],
+   "smoke_free_share_of_revenue": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 42.3,
+     "source": "https://www.businesswire.com/news/home/20260205612890/en/Philip-Morris-International-Reports-2025-Fourth-Quarter-Full-Year-Results",
+     "quote": "PMI | Smoke-Free Business | Combustibles: Net Revenues ($ bn) $10.4 $4.4 $6.0; computed: 4.4 / 10.4 x 100 = 42.3% (inputs rounded to $0.1bn)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 43,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026026385/earningsreleasepm-ex991xq1.htm",
+     "quote": "Our smoke-free business accounted for 43% of total net revenues (up by 1.3pp)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 42,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026049107/earningsreleasepm-ex991xq2.htm",
+     "quote": "Our smoke-free business accounted for approximately 42% of total net revenues (up by 0.5pp vs. Q2 last year)",
+     "added": "2026-11-13"
+    }
+   ],
+   "heated_tobacco_shipment_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7.5,
+     "source": "https://www.businesswire.com/news/home/20260205612890/en/Philip-Morris-International-Reports-2025-Fourth-Quarter-Full-Year-Results",
+     "quote": "Heated Tobacco Units 38,398 16,289 9,236 12,681 192 vs. Q4 2024 7.5% 7.2% 9.6% 6.2% 28.0%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 11.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026026385/earningsreleasepm-ex991xq1.htm",
+     "quote": "wholesaler inventory movements, grew by 10.9%, broadly in line with shipment volume growth of 11.3%. (table: HTU | 41.3 | 11.3%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 7.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026049107/earningsreleasepm-ex991xq2.htm",
+     "quote": "IQOS gained 0.2pp to reach 9.2% of combined cigarette and HTU industry volumes in markets where present, and grew shipment volumes by 7.6%. (table: HTU | 41.8 | 7.6%)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026066596/earningsreleasepm-ex991xq3.htm",
+     "quote": "IQOS HTUs gained 1.0pp to reach 9.9% of combined cigarette and HTU industry volumes in markets where present and grew shipment volumes by 1.5% to 41.5 billion units",
+     "added": "2026-11-13"
+    }
+   ],
+   "nicotine_pouch_shipment_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 18.1,
+     "source": "https://www.businesswire.com/news/home/20260205612890/en/Philip-Morris-International-Reports-2025-Fourth-Quarter-Full-Year-Results",
+     "quote": "Nicotine Pouches 217.0 11.7 6.3 1.0 198.0 / vs. Q4 2024 18.1% (13.5)% 63.2% (22.7)% 19.9% (PMI total nicotine pouch cans, millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -23.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026026385/earningsreleasepm-ex991xq1.htm",
+     "quote": "Total smoke-free shipment volumes decreased by 21.2%, including a 23.5% decline in ZYN shipments to 2.3 billion pouches or 155 million cans.",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026049107/earningsreleasepm-ex991xq2.htm",
+     "quote": "ZYN shipments increased by 1.8% to 2.9 billion pouches, despite an inventory tailwind in Q2 2025.",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026066596/earningsreleasepm-ex991xq3.htm",
+     "quote": "In the U.S., total ZYN shipments grew by 4.2% to 3.2 billion pouches",
+     "added": "2026-11-13"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 36.3,
+     "source": "https://www.businesswire.com/news/home/20260205612890/en/Philip-Morris-International-Reports-2025-Fourth-Quarter-Full-Year-Results",
+     "quote": "Adjusted Operating Income Margin 35.9 % 36.3 % (0.4 )pp 0.3 pp",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 40.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026026385/earningsreleasepm-ex991xq1.htm",
+     "quote": "Adj. OI Margin | 41.1% | 40.7% | 0.4pp (2026 | 2025 | Change)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 41.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026049107/earningsreleasepm-ex991xq2.htm",
+     "quote": "Adj. OI Margin | 42.6% | 41.9% | 0.7pp (Q2 2026 | Q2 2025 | Change)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 43.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026066596/earningsreleasepm-ex991xq3.htm",
+     "quote": "Adj. OI Margin | 44.7% | 43.1% | 1.6pp",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 35.9,
+     "source": "https://www.businesswire.com/news/home/20260205612890/en/Philip-Morris-International-Reports-2025-Fourth-Quarter-Full-Year-Results",
+     "quote": "Adjusted Operating Income Margin 35.9 % 36.3 % (0.4 )pp 0.3 pp",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 41.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026026385/earningsreleasepm-ex991xq1.htm",
+     "quote": "Adj. OI Margin | 41.1% | 40.7% | 0.4pp (2026 | 2025 | Change)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 42.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026049107/earningsreleasepm-ex991xq2.htm",
+     "quote": "Adj. OI Margin | 42.6% | 41.9% | 0.7pp (Q2 2026 | Q2 2025 | Change)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 44.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001413329/000162828026066596/earningsreleasepm-ex991xq3.htm",
+     "quote": "Adj. OI Margin | 44.7% | 43.1% | 1.6pp",
+     "added": "2026-11-13"
+    }
+   ]
+  },
+  "AMP": {
+   "total_client_assets_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 13.26,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+     "quote": "AWM Total Client Assets | $ 1,165,367 | $ 1,028,943 | 13% | $ 1,138,392 | 2% -> (1,165,367/1,028,943 - 1) x 100 = 13.26% ($ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 12.32,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-First-Quarter-2026-Results/default.aspx",
+     "quote": "AWM Total Client Assets | $ 1,148,514 | $ 1,022,520 | 12% | $ 1,165,367 | (1)% -> (1,148,514/1,022,520 - 1) x 100 = 12.32% ($ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 15.11,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000038/q22026er.htm",
+     "quote": "AWM Total Client Assets | $1,247,579 | $1,083,821 | 15% | $1,148,514 | 9% -> (1,247,579/1,083,821 - 1) x 100 = 15.11% ($ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8.13,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000050/q32026er.htm",
+     "quote": "AWM Total Client Assets | $1,230,948 | $1,138,392 | 8% (Total client assets were $1.2 trillion, up $93 billion, or 8 percent) -> (1,230,948/1,138,392 - 1) x 100 = 8.13% ($ millions)",
+     "added": "2026-11-13"
+    }
+   ],
+   "wealth_net_flows_pct_assets": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 1.1,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+     "quote": "Total Client Flows | $ 13,335 | $ 11,261 (4Q 2024 column); beginning assets: Sep 30, 2024 AWM Total Client Assets $1,024,467 (3 Qtr 2024 column of Q4 2024 release: https://www.sec.gov/Archives/edgar/data/820027/000082002725000003/q42024er.htm) -> 11,261 / 1,024,467 x 100 = 1.099% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 1.0,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-First-Quarter-2026-Results/default.aspx",
+     "quote": "Total Client Flows | $ 4,226 | $ 10,275 (1Q 2025 column); beginning assets: Dec 31, 2024 AWM Total Client Assets $1,028,943 (4Q 2024 column of Q4 2025 release) -> 10,275 / 1,028,943 x 100 = 0.999% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.42,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000038/q22026er.htm",
+     "quote": "Total Client Flows | $3,053 | $4,281 (2Q 2025 column); beginning assets: Mar 31, 2025 AWM Total Client Assets $1,022,520 (1Q 2025 column of Q1 2026 release) -> 4,281 / 1,022,520 x 100 = 0.419% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.32,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000050/q32026er.htm",
+     "quote": "Total Client Flows | $(8,458) | $3,442 (3Q 2025 column); beginning assets: Jun 30, 2025 AWM Total Client Assets $1,083,821 (2Q 2025 column of Q2 2026 release) -> 3,442 / 1,083,821 x 100 = 0.318% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 1.17,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+     "quote": "Total Client Flows | $ 13,335 | $ 11,261 | 18% | $ 3,442 | NM; beginning assets: Sep 30, 2025 AWM Total Client Assets $1,138,392 (3 Qtr 2025 column) -> 13,335 / 1,138,392 x 100 = 1.171% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.36,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-First-Quarter-2026-Results/default.aspx",
+     "quote": "Total Client Flows | $ 4,226 | $ 10,275 | (59)% | $ 13,335 | (68)%; beginning assets: Dec 31, 2025 AWM Total Client Assets $1,165,367 (4 Qtr 2025 column) -> 4,226 / 1,165,367 x 100 = 0.363% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.27,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000038/q22026er.htm",
+     "quote": "Total Client Flows | $3,053 | $4,281 | (29)% | $4,226 | (28)%; beginning assets: Mar 31, 2026 AWM Total Client Assets $1,148,514 (1 Qtr 2026 column) -> 3,053 / 1,148,514 x 100 = 0.266% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": -0.68,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000050/q32026er.htm",
+     "quote": "Total Client Flows | $(8,458) | $3,442 | NM | $3,053 | NM (incl. Comerica transition; ex. Comerica net inflows $5.3B); beginning assets: Jun 30, 2026 AWM Total Client Assets $1,247,579 (2 Qtr 2026 column) -> -8,458 / 1,247,579 x 100 = -0.678% (quarterly, not annualized; $ millions)",
+     "added": "2026-11-13"
+    }
+   ],
+   "adjusted_operating_roe": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 51.6,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 53.2% | 51.6% (Q4 2025 vs Q4 2024, trailing 12 months; year-earlier column)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 52.0,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-First-Quarter-2026-Results/default.aspx",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 54.3% | 52.0% (Q1 2026 vs Q1 2025, trailing 12 months; year-earlier column)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 51.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000038/q22026er.htm",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 55.0% | 51.5% (Q2 2026 vs Q2 2025, trailing 12 months; year-earlier column)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 52.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000050/q32026er.htm",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 55.3% | 52.8% (Q3 2026 vs Q3 2025, trailing 12 months; year-earlier column)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 53.2,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 53.2% | 51.6% (Q4 2025 vs Q4 2024, trailing 12 months)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 54.3,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-First-Quarter-2026-Results/default.aspx",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 54.3% | 52.0% (Q1 2026 vs Q1 2025, trailing 12 months)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 55.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000038/q22026er.htm",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 55.0% | 51.5% (Q2 2026 vs Q2 2025, trailing 12 months)",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 55.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000050/q32026er.htm",
+     "quote": "Adjusted Operating Return on Equity, ex. AOCI | 55.3% | 52.8% (Q3 2026 vs Q3 2025, trailing 12 months)",
+     "added": "2026-11-13"
+    }
+   ],
+   "adjusted_operating_eps_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 15.71,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+     "quote": "Adjusted operating earnings per diluted share | $10.83 | $9.36 | 16% -> (10.83/9.36 - 1) x 100 = 15.71%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 18.53,
+     "source": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Reports-First-Quarter-2026-Results/default.aspx",
+     "quote": "Adjusted operating earnings per diluted share | $11.26 | $9.50 | 19% -> (11.26/9.5 - 1) x 100 = 18.53%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 21.51,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000038/q22026er.htm",
+     "quote": "Adjusted operating earnings per diluted share | $11.07 | $9.11 | 22% -> (11.07/9.11 - 1) x 100 = 21.51%",
+     "added": "2026-11-13"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 14.08,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000050/q32026er.htm",
+     "quote": "Adjusted operating earnings per diluted share | $11.26 | $9.87 | 14% -> (11.26/9.87 - 1) x 100 = 14.08%",
+     "added": "2026-11-13"
     }
    ]
   }
