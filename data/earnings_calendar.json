@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "source": "Yahoo Finance via yfinance",
  "stocks": {
   "AAPL": {
@@ -251,7 +251,7 @@
   },
   "VEEV": {
    "last_report": "2026-08-26",
-   "next_report": "2026-11-25",
+   "next_report": "2026-12-03",
    "yahoo_latest_quarter": "2026-07-31",
    "past": [
     "2025-05-28",
@@ -1442,7 +1442,7 @@
   },
   "PLGO": {
    "last_report": "2026-11-11",
-   "next_report": null,
+   "next_report": "2027-02-24",
    "yahoo_latest_quarter": "2026-06-30",
    "past": [
     "2025-08-13",

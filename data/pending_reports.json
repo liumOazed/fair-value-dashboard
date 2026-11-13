@@ -44,11 +44,6 @@
    "data_through": "2026-07-31"
   },
   {
-   "ticker": "VEEV",
-   "next_report": "2026-11-25",
-   "data_through": "2026-07-31"
-  },
-  {
    "ticker": "MRVL",
    "next_report": "2026-12-01",
    "data_through": "2026-07-31"
@@ -61,6 +56,11 @@
   {
    "ticker": "CRM",
    "next_report": "2026-12-02",
+   "data_through": "2026-07-31"
+  },
+  {
+   "ticker": "VEEV",
+   "next_report": "2026-12-03",
    "data_through": "2026-07-31"
   },
   {
@@ -610,6 +610,11 @@
   },
   {
    "ticker": "LMAT",
+   "next_report": "2027-02-24",
+   "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "PLGO",
    "next_report": "2027-02-24",
    "data_through": "2026-09-30"
   },
