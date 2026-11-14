@@ -1,16 +1,11 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [],
  "upcoming": [
   {
    "ticker": "NVDA",
    "next_report": "2026-11-17",
-   "data_through": "2026-07-31"
-  },
-  {
-   "ticker": "WSM",
-   "next_report": "2026-11-18",
    "data_through": "2026-07-31"
   },
   {
@@ -25,6 +20,11 @@
   },
   {
    "ticker": "CPRT",
+   "next_report": "2026-11-19",
+   "data_through": "2026-07-31"
+  },
+  {
+   "ticker": "WSM",
    "next_report": "2026-11-19",
    "data_through": "2026-07-31"
   },

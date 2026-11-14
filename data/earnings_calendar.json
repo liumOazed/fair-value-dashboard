@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "source": "Yahoo Finance via yfinance",
  "stocks": {
   "AAPL": {
@@ -1443,7 +1443,7 @@
   "PLGO": {
    "last_report": "2026-11-11",
    "next_report": "2027-02-24",
-   "yahoo_latest_quarter": "2026-06-30",
+   "yahoo_latest_quarter": "2026-09-30",
    "past": [
     "2025-08-13",
     "2025-11-12",
@@ -1637,7 +1637,7 @@
   },
   "WSM": {
    "last_report": "2026-08-26",
-   "next_report": "2026-11-18",
+   "next_report": "2026-11-19",
    "yahoo_latest_quarter": "2026-08-02",
    "past": [
     "2025-05-22",
