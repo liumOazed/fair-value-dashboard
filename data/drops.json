@@ -240,9 +240,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0564,
-    "week": -0.0783,
-    "high": -0.6412
+    "day": -0.0567,
+    "week": -0.0786,
+    "high": -0.6413
    },
    "spy": {
     "day": -0.0191,
@@ -252,9 +252,9 @@
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": -0.0131,
-    "week": -0.0088,
-    "high": -0.0976
+    "day": -0.0123,
+    "week": -0.008,
+    "high": -0.0969
    },
    "sector_at_open": 34.17,
    "worst": {
@@ -371,9 +371,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0497,
-    "week": -0.0503,
-    "high": -0.4884
+    "day": -0.0493,
+    "week": -0.0499,
+    "high": -0.4882
    },
    "spy": {
     "day": -0.0191,
@@ -507,9 +507,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0413,
-    "week": -0.0007,
-    "high": -0.5807
+    "day": -0.042,
+    "week": -0.0014,
+    "high": -0.581
    },
    "spy": {
     "day": -0.0191,
@@ -519,9 +519,9 @@
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0066,
-    "week": 0.0011,
-    "high": -0.0155
+    "day": -0.0067,
+    "week": 0.0009,
+    "high": -0.0156
    },
    "sector_at_open": 83.9,
    "worst": {
@@ -655,9 +655,9 @@
    "sector": "Utilities",
    "sector_etf": "RSPU",
    "sector_moves": {
-    "day": 0.0009,
-    "week": 0.0093,
-    "high": -0.0721
+    "day": 0.0015,
+    "week": 0.0099,
+    "high": -0.0715
    },
    "sector_at_open": 77.67,
    "worst": {
@@ -1182,9 +1182,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0728,
-    "week": -0.1464,
-    "high": -0.5659
+    "day": -0.0732,
+    "week": -0.1467,
+    "high": -0.566
    },
    "spy": {
     "day": -0.0191,
@@ -1194,15 +1194,15 @@
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0066,
-    "week": 0.0011,
-    "high": -0.0155
+    "day": -0.0067,
+    "week": 0.0009,
+    "high": -0.0156
    },
    "sector_at_open": 82.34,
    "worst": {
     "day": -0.0934,
     "week": -0.1616,
-    "high": -0.5659
+    "high": -0.566
    },
    "provisional": {
     "cause": "Company-specific: next-year EPS forecasts cut -9% in 30 days",
@@ -1857,9 +1857,9 @@
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": -0.0131,
-    "week": -0.0088,
-    "high": -0.0976
+    "day": -0.0123,
+    "week": -0.008,
+    "high": -0.0969
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -2112,9 +2112,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0311,
-    "week": -0.0215,
-    "high": -0.3231
+    "day": -0.0313,
+    "week": -0.0217,
+    "high": -0.3232
    },
    "spy": {
     "day": -0.0191,
@@ -2382,9 +2382,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0209,
-    "week": -0.0448,
-    "high": -0.4499
+    "day": -0.024,
+    "week": -0.0478,
+    "high": -0.4517
    },
    "spy": {
     "day": -0.0191,
@@ -2394,9 +2394,9 @@
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": -0.0066,
-    "week": 0.0011,
-    "high": -0.0155
+    "day": -0.0067,
+    "week": 0.0009,
+    "high": -0.0156
    },
    "sector_at_open": 82.34,
    "worst": {
@@ -2527,9 +2527,9 @@
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0068,
-    "week": -0.0292,
-    "high": -0.0516
+    "day": -0.0058,
+    "week": -0.0281,
+    "high": -0.0506
    },
    "sector_at_open": 57.62,
    "worst": {
@@ -2784,9 +2784,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0034,
-    "week": -0.0083,
-    "high": -0.611
+    "day": -0.004,
+    "week": -0.009,
+    "high": -0.6112
    },
    "spy": {
     "day": -0.0191,
@@ -2919,9 +2919,9 @@
    "kind": "alert",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": 0.0014,
-    "week": 0.0505,
-    "high": -0.4585
+    "day": 0.0009,
+    "week": 0.0499,
+    "high": -0.4588
    },
    "spy": {
     "day": -0.0191,
@@ -3580,9 +3580,9 @@
    "kind": "slide",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.0471,
-    "week": -0.0401,
-    "high": -0.4145
+    "day": -0.0474,
+    "week": -0.0404,
+    "high": -0.4147
    },
    "spy": {
     "day": -0.0191,
@@ -3598,9 +3598,9 @@
    },
    "sector_at_open": 61.72,
    "worst": {
-    "day": -0.0471,
+    "day": -0.0474,
     "week": -0.07,
-    "high": -0.4145
+    "high": -0.4147
    },
    "provisional": {
     "cause": "Earnings reaction and next-year EPS forecasts cut -9%: check whether the setback lasts",
@@ -3848,9 +3848,9 @@
    "kind": "slide",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": -0.038,
-    "week": -0.0764,
-    "high": -0.3094
+    "day": -0.0387,
+    "week": -0.0771,
+    "high": -0.3099
    },
    "spy": {
     "day": -0.0191,
@@ -3860,14 +3860,14 @@
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0068,
-    "week": -0.0292,
-    "high": -0.0516
+    "day": -0.0058,
+    "week": -0.0281,
+    "high": -0.0506
    },
    "sector_at_open": 55.55,
    "worst": {
     "day": -0.0436,
-    "week": -0.0764,
+    "week": -0.0771,
     "high": -0.3221
    },
    "provisional": {
@@ -4128,9 +4128,9 @@
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": -0.0131,
-    "week": -0.0088,
-    "high": -0.0976
+    "day": -0.0123,
+    "week": -0.008,
+    "high": -0.0969
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -4262,9 +4262,9 @@
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0037,
-    "week": -0.0126,
-    "high": -0.0164
+    "day": -0.0044,
+    "week": -0.0133,
+    "high": -0.0171
    },
    "sector_at_open": 41.5,
    "worst": {
@@ -4393,9 +4393,9 @@
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0068,
-    "week": -0.0292,
-    "high": -0.0516
+    "day": -0.0058,
+    "week": -0.0281,
+    "high": -0.0506
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -4527,9 +4527,9 @@
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0068,
-    "week": -0.0292,
-    "high": -0.0516
+    "day": -0.0058,
+    "week": -0.0281,
+    "high": -0.0506
    },
    "sector_at_open": 57.04,
    "worst": {
@@ -4677,136 +4677,6 @@
    }
   },
   {
-   "id": "MKC-2026-10-30",
-   "ticker": "MKC",
-   "name": "McCormick & Co.",
-   "opened": "2026-10-30",
-   "price_at_open": 47.29,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 62.27,
-   "buy_below_at_open": 43.59,
-   "valued_on": "2026-10-23",
-   "triggers": [
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "medium",
-    "cause": "Marked down for the pending Unilever Foods deal: holders keep 35% of the combined company, which takes on ~$15.7B of new debt plus integration risk",
-    "summary": "The core spice and flavour business is intact (Q3 FY26 beat, gross margin +190bp, guidance kept; volumes slightly negative), so the brand advantage is not hit. The lasting part is the change in what shareholders own and in the balance sheet (2-3 years of deleveraging expected), which the model's standalone fair value does not include. Watch leverage and financing terms at the mid-2027 close, synergy progress (~$600M) and Consumer volumes.",
-    "model_changed": false,
-    "date": "2026-11-06",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-16",
-    "earnings_on": null,
-    "last_report": "2026-10-01",
-    "peers": {
-     "basis": "industry: Packaged Foods",
-     "n": 4,
-     "median": {
-      "day": 0.017400256305397876,
-      "week": 0.012162009508755678,
-      "high": -0.11456427359662147
-     },
-     "tickers": [
-      "KHC",
-      "GIS",
-      "SJM",
-      "HRL"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 3.08974,
-      "d30": 3.08974,
-      "chg": 0.0
-     },
-     "+1y": {
-      "current": 3.21389,
-      "d30": 3.22139,
-      "chg": -0.0023281875215356296
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 9
-     }
-    },
-    "news": [
-     {
-      "title": "McCormick & Company, Incorporated (NYSE:MKC) Stock Has Average Target Price of $55.30 According to Brokerages",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM1B4ak1KWVZkNTdDRURLSGxnLTE3RkNkRV8zZlNqTEUxc2xsMzZ6bjV4dDVTcTNpaFBnREYwSTdwRi1PaWVxNDNSc3RGY2l1ODdOdGhDUUYzVEpOS281UnlkZkUzb2NIdDBISzVuZ1ZURUVhUW9MeGhOak5wYWI4QzNqWnRpR2pFd0pkWWlTeDdwOENGZFB1d2RxN0JGdkllZDFMVUJBalE0NlZMRG82d3VXQmxyUV8yOGVXVnQ5SDFLNVhtd09SYVlRZHB1RmdmY3JwOS00ZWhzVk9aLUZTSDNjcVhScHU1WWY4X3RkRkhRdnRvQ2JVM3pB?oc=5",
-      "date": "2026-11-15"
-     },
-     {
-      "title": "MCCORMICK & CO. INC. R (MCX0.MU) Q2 FY2026 earnings call transcript",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQWZSb2FGclRCS055M2pZT0tBb3hNUnI5N0NxU2NpQ19IdDNsTjNaekhNMC0wRjdsS3Q5Yng0U0k5SmJlM1M2eFZIQWJwazdrWWpvdnBqS2FmQ3pNSzNNemVxM1FLM1h6M29DUzJvVV8yUkpiOW5qaUhDSGpsck0waTVocGxQY3V0cDNLSGQ4MEFPSkZX?oc=5",
-      "date": "2026-11-14"
-     },
-     {
-      "title": "Mccormick & Company Stock Price Forecast. Should You Buy MKC?",
-      "publisher": "StockInvest.us",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9Kb0xseGlFWkt1R1hka0pyZGFyQlpVRTZnRXhjTVVXWHVsMGVCRGs4akN5T3BhdEZpd1RsSTBlQWFtUnE5WHFV?oc=5",
-      "date": "2026-11-13"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
-      "publisher": "Yahoo Finance UK",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9pZlUzZF9wNkFMQVJnZGk4OElhY2tjUXFRZTFoZDR1RmcxdnRQQVFhWVVVNGV5TWZKeG1tZ3M5VENYNkJTSkdQM3Jzb09BVk9F?oc=5",
-      "date": "2026-11-13"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (MKC-V) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtdUtVTy1qaUVLcVlqemt2R25tMVc2UGs3Qkg2U0VqaFlRNldrWUZ4NHlTWlF0aUFma2NEYmRsN3NJd3RQTFZ2X0tuTHV2eDQ3WThn?oc=5",
-      "date": "2026-11-13"
-     },
-     {
-      "title": "McCormick & Company, Incorporated (MKC) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIRm9XbWZRRFlwLTNNblNhdG1hVlJKUlhGTTN4NHF2bUNBNG1KNVU0N3N0WERPLUNsTFQ5UnFybnptR0g3ZWVVWHFac3EwbkVo?oc=5",
-      "date": "2026-11-13"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "slide",
-   "last_triggered": "2026-11-16",
-   "moves": {
-    "day": 0.003,
-    "week": -0.0163,
-    "high": -0.3426
-   },
-   "spy": {
-    "day": -0.0191,
-    "week": -0.0169,
-    "high": -0.0502
-   },
-   "sector": "Consumer Staples",
-   "sector_etf": "RSPS",
-   "sector_moves": {
-    "day": 0.0049,
-    "week": 0.0149,
-    "high": -0.015
-   },
-   "sector_at_open": 31.53,
-   "worst": {
-    "day": -0.0384,
-    "week": -0.0955,
-    "high": -0.3627
-   },
-   "provisional": {
-    "cause": "Long slide: -34% below its 52-week high (S&P 500 -5%, Consumer Staples -2%): read why",
-    "lean": "unclear"
-   }
-  },
-  {
    "id": "LRN-2026-11-12",
    "ticker": "LRN",
    "name": "Stride Inc.",
@@ -4931,6 +4801,136 @@
    }
   },
   {
+   "id": "MKC-2026-10-30",
+   "ticker": "MKC",
+   "name": "McCormick & Co.",
+   "opened": "2026-10-30",
+   "price_at_open": 47.29,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 62.27,
+   "buy_below_at_open": 43.59,
+   "valued_on": "2026-10-23",
+   "triggers": [
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Marked down for the pending Unilever Foods deal: holders keep 35% of the combined company, which takes on ~$15.7B of new debt plus integration risk",
+    "summary": "The core spice and flavour business is intact (Q3 FY26 beat, gross margin +190bp, guidance kept; volumes slightly negative), so the brand advantage is not hit. The lasting part is the change in what shareholders own and in the balance sheet (2-3 years of deleveraging expected), which the model's standalone fair value does not include. Watch leverage and financing terms at the mid-2027 close, synergy progress (~$600M) and Consumer volumes.",
+    "model_changed": false,
+    "date": "2026-11-06",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-16",
+    "earnings_on": null,
+    "last_report": "2026-10-01",
+    "peers": {
+     "basis": "industry: Packaged Foods",
+     "n": 4,
+     "median": {
+      "day": 0.017400256305397876,
+      "week": 0.012162009508755678,
+      "high": -0.11456427359662147
+     },
+     "tickers": [
+      "KHC",
+      "GIS",
+      "SJM",
+      "HRL"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 3.08974,
+      "d30": 3.08974,
+      "chg": 0.0
+     },
+     "+1y": {
+      "current": 3.21389,
+      "d30": 3.22139,
+      "chg": -0.0023281875215356296
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 9
+     }
+    },
+    "news": [
+     {
+      "title": "McCormick & Company, Incorporated (NYSE:MKC) Stock Has Average Target Price of $55.30 According to Brokerages",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM1B4ak1KWVZkNTdDRURLSGxnLTE3RkNkRV8zZlNqTEUxc2xsMzZ6bjV4dDVTcTNpaFBnREYwSTdwRi1PaWVxNDNSc3RGY2l1ODdOdGhDUUYzVEpOS281UnlkZkUzb2NIdDBISzVuZ1ZURUVhUW9MeGhOak5wYWI4QzNqWnRpR2pFd0pkWWlTeDdwOENGZFB1d2RxN0JGdkllZDFMVUJBalE0NlZMRG82d3VXQmxyUV8yOGVXVnQ5SDFLNVhtd09SYVlRZHB1RmdmY3JwOS00ZWhzVk9aLUZTSDNjcVhScHU1WWY4X3RkRkhRdnRvQ2JVM3pB?oc=5",
+      "date": "2026-11-15"
+     },
+     {
+      "title": "MCCORMICK & CO. INC. R (MCX0.MU) Q2 FY2026 earnings call transcript",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQWZSb2FGclRCS055M2pZT0tBb3hNUnI5N0NxU2NpQ19IdDNsTjNaekhNMC0wRjdsS3Q5Yng0U0k5SmJlM1M2eFZIQWJwazdrWWpvdnBqS2FmQ3pNSzNNemVxM1FLM1h6M29DUzJvVV8yUkpiOW5qaUhDSGpsck0waTVocGxQY3V0cDNLSGQ4MEFPSkZX?oc=5",
+      "date": "2026-11-14"
+     },
+     {
+      "title": "Mccormick & Company Stock Price Forecast. Should You Buy MKC?",
+      "publisher": "StockInvest.us",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9Kb0xseGlFWkt1R1hka0pyZGFyQlpVRTZnRXhjTVVXWHVsMGVCRGs4akN5T3BhdEZpd1RsSTBlQWFtUnE5WHFV?oc=5",
+      "date": "2026-11-13"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC) stock price, news, quote and history",
+      "publisher": "Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9pZlUzZF9wNkFMQVJnZGk4OElhY2tjUXFRZTFoZDR1RmcxdnRQQVFhWVVVNGV5TWZKeG1tZ3M5VENYNkJTSkdQM3Jzb09BVk9F?oc=5",
+      "date": "2026-11-13"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC-V) Stock Price, News, Quote & History",
+      "publisher": "Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtdUtVTy1qaUVLcVlqemt2R25tMVc2UGs3Qkg2U0VqaFlRNldrWUZ4NHlTWlF0aUFma2NEYmRsN3NJd3RQTFZ2X0tuTHV2eDQ3WThn?oc=5",
+      "date": "2026-11-13"
+     },
+     {
+      "title": "McCormick & Company, Incorporated (MKC) Stock Price, News, Quote & History",
+      "publisher": "Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIRm9XbWZRRFlwLTNNblNhdG1hVlJKUlhGTTN4NHF2bUNBNG1KNVU0N3N0WERPLUNsTFQ5UnFybnptR0g3ZWVVWHFac3EwbkVo?oc=5",
+      "date": "2026-11-13"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "slide",
+   "last_triggered": "2026-11-16",
+   "moves": {
+    "day": 0.0036,
+    "week": -0.0157,
+    "high": -0.3422
+   },
+   "spy": {
+    "day": -0.0191,
+    "week": -0.0169,
+    "high": -0.0502
+   },
+   "sector": "Consumer Staples",
+   "sector_etf": "RSPS",
+   "sector_moves": {
+    "day": 0.0052,
+    "week": 0.0152,
+    "high": -0.0147
+   },
+   "sector_at_open": 31.53,
+   "worst": {
+    "day": -0.0384,
+    "week": -0.0955,
+    "high": -0.3627
+   },
+   "provisional": {
+    "cause": "Long slide: -34% below its 52-week high (S&P 500 -5%, Consumer Staples -1%): read why",
+    "lean": "unclear"
+   }
+  },
+  {
    "id": "ZTS-2026-11-02",
    "ticker": "ZTS",
    "name": "Zoetis Inc.",
@@ -5037,9 +5037,9 @@
    "kind": "slide",
    "last_triggered": "2026-11-16",
    "moves": {
-    "day": 0.0072,
-    "week": 0.0255,
-    "high": -0.3561
+    "day": 0.0068,
+    "week": 0.0251,
+    "high": -0.3563
    },
    "spy": {
     "day": -0.0191,
@@ -5049,9 +5049,9 @@
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0037,
-    "week": -0.0126,
-    "high": -0.0164
+    "day": -0.0044,
+    "week": -0.0133,
+    "high": -0.0171
    },
    "sector_at_open": 39.9,
    "worst": {
@@ -5472,6 +5472,6 @@
  "review_pending": [
   "IDCC"
  ],
- "updated": "2026-11-16T21:12:49Z",
+ "updated": "2026-11-16T22:53:33Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
