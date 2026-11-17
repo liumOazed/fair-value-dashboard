@@ -1,13 +1,16 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
- "pending": [],
- "upcoming": [
+ "pending": [
   {
    "ticker": "NVDA",
-   "next_report": "2026-11-17",
-   "data_through": "2026-07-31"
-  },
+   "data_through": "2026-07-31",
+   "reported_on": "2026-11-17",
+   "yahoo_latest_quarter": "2026-07-26",
+   "waiting_days": 0
+  }
+ ],
+ "upcoming": [
   {
    "ticker": "INTU",
    "next_report": "2026-11-19",

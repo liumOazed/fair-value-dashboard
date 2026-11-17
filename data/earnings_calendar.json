@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "source": "Yahoo Finance via yfinance",
  "stocks": {
   "AAPL": {
@@ -55,16 +55,16 @@
    ]
   },
   "NVDA": {
-   "last_report": "2026-08-26",
-   "next_report": "2026-11-17",
+   "last_report": "2026-11-17",
+   "next_report": null,
    "yahoo_latest_quarter": "2026-07-26",
    "past": [
-    "2025-05-28",
     "2025-08-27",
     "2025-11-19",
     "2026-02-25",
     "2026-05-20",
-    "2026-08-26"
+    "2026-08-26",
+    "2026-11-17"
    ]
   },
   "AVGO": {
