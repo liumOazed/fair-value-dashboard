@@ -5847,17 +5847,14 @@
   }
  ],
  "log": [],
- "emergency_pending": [
-  "CRCL"
- ],
+ "emergency_pending": [],
  "review_pending": [
-  "CRCL",
   "ACIW",
   "NEM",
   "INTU",
   "CRM",
   "IDCC"
  ],
- "updated": "2026-11-19T02:25:16Z",
+ "updated": "2026-11-19T02:48:32Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
