@@ -95,27 +95,27 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.1505,
-    "week": -0.1175,
-    "high": -0.1819
+    "day": -0.1516,
+    "week": -0.1187,
+    "high": -0.183
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0293,
-    "week": -0.0325,
-    "high": -0.0788
+    "day": -0.0316,
+    "week": -0.0348,
+    "high": -0.081
    },
    "sector_at_open": 55.29,
    "worst": {
-    "day": -0.1505,
-    "week": -0.1175,
-    "high": -0.1819
+    "day": -0.1516,
+    "week": -0.1187,
+    "high": -0.183
    },
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
@@ -236,16 +236,16 @@
     "high": -0.5624
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -362,27 +362,27 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0444,
-    "week": -0.0968,
-    "high": -0.6528
+    "day": -0.0447,
+    "week": -0.0971,
+    "high": -0.6529
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": -0.0171,
-    "week": -0.0304,
-    "high": -0.1241
+    "day": -0.0289,
+    "week": -0.042,
+    "high": -0.1345
    },
    "sector_at_open": 34.17,
    "worst": {
     "day": -0.0793,
     "week": -0.3429,
-    "high": -0.6528
+    "high": -0.6529
    },
    "provisional": {
     "cause": "Earnings reaction, but analysts have not cut next year's forecasts (yet)",
@@ -503,9 +503,9 @@
     "high": -0.6159
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
@@ -631,14 +631,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0263,
-    "week": -0.1866,
-    "high": -0.6092
+    "day": -0.0268,
+    "week": -0.1871,
+    "high": -0.6095
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
@@ -651,7 +651,7 @@
    "worst": {
     "day": -0.0934,
     "week": -0.2058,
-    "high": -0.6092
+    "high": -0.6095
    },
    "provisional": {
     "cause": "Sector-wide: Financials fell -2% too (rates, recession worries or sector rotation)",
@@ -762,14 +762,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.024,
-    "week": -0.0132,
-    "high": -0.4613
+    "day": -0.0233,
+    "week": -0.0125,
+    "high": -0.4609
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
@@ -1039,16 +1039,16 @@
     "high": -0.325
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -1170,14 +1170,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": 0.0021,
-    "week": -0.0427,
+    "day": 0.002,
+    "week": -0.0428,
     "high": -0.49
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Utilities",
    "sector_etf": "RSPU",
@@ -1445,16 +1445,16 @@
     "high": -0.2636
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 61.8,
    "worst": {
@@ -1571,16 +1571,16 @@
     "high": -0.1861
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0203,
-    "week": -0.0431,
-    "high": -0.0592
+    "day": -0.0198,
+    "week": -0.0426,
+    "high": -0.0587
    },
    "sector_at_open": 39.1,
    "worst": {
@@ -1698,16 +1698,16 @@
     "high": -0.1835
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 57.64,
    "worst": {
@@ -1947,21 +1947,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0437,
-    "week": -0.1126,
-    "high": -0.2603
+    "day": -0.0429,
+    "week": -0.1118,
+    "high": -0.2597
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Materials",
    "sector_etf": "RSPM",
    "sector_moves": {
-    "day": -0.019,
-    "week": -0.0546,
-    "high": -0.0866
+    "day": -0.02,
+    "week": -0.0556,
+    "high": -0.0876
    },
    "sector_at_open": 38.48,
    "worst": {
@@ -2082,14 +2082,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0405,
-    "week": -0.072,
-    "high": -0.4862
+    "day": -0.0416,
+    "week": -0.073,
+    "high": -0.4868
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
@@ -2100,9 +2100,9 @@
    },
    "sector_at_open": 82.34,
    "worst": {
-    "day": -0.0405,
+    "day": -0.0416,
     "week": -0.1301,
-    "high": -0.4862
+    "high": -0.4868
    },
    "provisional": {
     "cause": "Industry-wide: peers fell -5% too (rates, sector rotation or an industry worry)",
@@ -2210,27 +2210,27 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0367,
-    "week": -0.157,
-    "high": -0.311
+    "day": -0.0372,
+    "week": -0.1575,
+    "high": -0.3115
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 57.43,
    "worst": {
     "day": -0.0945,
-    "week": -0.157,
-    "high": -0.311
+    "week": -0.1575,
+    "high": -0.3115
    },
    "provisional": {
     "cause": "Industry-wide: peers fell -4% too (rates, sector rotation or an industry worry)",
@@ -2345,16 +2345,16 @@
     "high": -0.3228
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": -0.0171,
-    "week": -0.0304,
-    "high": -0.1241
+    "day": -0.0289,
+    "week": -0.042,
+    "high": -0.1345
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -2481,16 +2481,16 @@
     "high": -0.3898
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 57.58,
    "worst": {
@@ -2617,16 +2617,16 @@
     "high": -0.4833
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -2747,14 +2747,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0281,
-    "week": -0.0117,
-    "high": -0.4852
+    "day": -0.0286,
+    "week": -0.0123,
+    "high": -0.4855
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
@@ -2765,7 +2765,7 @@
    },
    "sector_at_open": 109.68,
    "worst": {
-    "day": -0.0281,
+    "day": -0.0286,
     "week": -0.1523,
     "high": -0.4865
    },
@@ -2885,16 +2885,16 @@
     "high": -0.2947
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0293,
-    "week": -0.0325,
-    "high": -0.0788
+    "day": -0.0316,
+    "week": -0.0348,
+    "high": -0.081
    },
    "sector_at_open": 57.62,
    "worst": {
@@ -3017,16 +3017,16 @@
     "high": -0.5311
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -3153,16 +3153,16 @@
     "high": -0.2802
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -3279,14 +3279,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0155,
-    "week": -0.0401,
-    "high": -0.3259
+    "day": -0.0157,
+    "week": -0.0403,
+    "high": -0.326
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
@@ -3419,9 +3419,9 @@
     "high": -0.3301
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
@@ -3554,16 +3554,16 @@
     "high": -0.5418
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -3818,21 +3818,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": 0.0,
-    "week": -0.0552,
-    "high": -0.6326
+    "day": -0.0002,
+    "week": -0.0554,
+    "high": -0.6327
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -4221,21 +4221,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0557,
-    "week": -0.026,
-    "high": -0.3837
+    "day": -0.0559,
+    "week": -0.0262,
+    "high": -0.3838
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0203,
-    "week": -0.0431,
-    "high": -0.0592
+    "day": -0.0198,
+    "week": -0.0426,
+    "high": -0.0587
    },
    "sector_at_open": 39.9,
    "worst": {
@@ -4355,27 +4355,27 @@
    "kind": "slide",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0554,
-    "week": -0.0658,
-    "high": -0.347
+    "day": -0.0556,
+    "week": -0.066,
+    "high": -0.3472
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0293,
-    "week": -0.0325,
-    "high": -0.0788
+    "day": -0.0316,
+    "week": -0.0348,
+    "high": -0.081
    },
    "sector_at_open": 55.55,
    "worst": {
-    "day": -0.0554,
+    "day": -0.0556,
     "week": -0.0925,
-    "high": -0.347
+    "high": -0.3472
    },
    "provisional": {
     "cause": "Long slide: -35% below its 52-week high (S&P 500 -8%, Consumer Discretionary -8%): read why",
@@ -4494,16 +4494,16 @@
     "high": -0.5112
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0293,
-    "week": -0.0325,
-    "high": -0.0788
+    "day": -0.0316,
+    "week": -0.0348,
+    "high": -0.081
    },
    "sector_at_open": 57.04,
    "worst": {
@@ -4759,16 +4759,16 @@
     "high": -0.3294
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0293,
-    "week": -0.0325,
-    "high": -0.0788
+    "day": -0.0316,
+    "week": -0.0348,
+    "high": -0.081
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -4885,16 +4885,16 @@
     "high": -0.2582
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 56.87,
    "worst": {
@@ -5019,16 +5019,16 @@
     "high": -0.4654
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": -0.0171,
-    "week": -0.0304,
-    "high": -0.1241
+    "day": -0.0289,
+    "week": -0.042,
+    "high": -0.1345
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -5037,7 +5037,7 @@
     "high": -0.4769
    },
    "provisional": {
-    "cause": "Long slide: -47% below its 52-week high (S&P 500 -8%, Communication Services -12%): read why",
+    "cause": "Long slide: -47% below its 52-week high (S&P 500 -8%, Communication Services -13%): read why",
     "lean": "unclear"
    }
   },
@@ -5145,16 +5145,16 @@
     "high": -0.2857
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 58.86,
    "worst": {
@@ -5264,21 +5264,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0201,
-    "week": 0.0124,
-    "high": -0.253
+    "day": -0.0203,
+    "week": 0.0121,
+    "high": -0.2532
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": -0.0293,
-    "week": -0.0325,
-    "high": -0.0788
+    "day": -0.0316,
+    "week": -0.0348,
+    "high": -0.081
    },
    "sector_at_open": 57.94,
    "worst": {
@@ -5403,16 +5403,16 @@
     "high": -0.38
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": -0.0134,
-    "week": -0.0691,
-    "high": -0.1792
+    "day": -0.0135,
+    "week": -0.0692,
+    "high": -0.1794
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -5529,9 +5529,9 @@
     "high": -0.2571
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
@@ -5658,14 +5658,14 @@
    "kind": "slide",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": -0.0132,
-    "week": -0.0218,
-    "high": -0.2543
+    "day": -0.0135,
+    "week": -0.0221,
+    "high": -0.2545
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
@@ -5677,7 +5677,7 @@
    "sector_at_open": 60.55,
    "worst": {
     "day": -0.0593,
-    "week": -0.0218,
+    "week": -0.0221,
     "high": -0.3193
    },
    "provisional": {
@@ -5793,9 +5793,9 @@
     "high": -0.3604
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Consumer Staples",
    "sector_etf": "RSPS",
@@ -5927,16 +5927,16 @@
     "high": -0.3623
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0203,
-    "week": -0.0431,
-    "high": -0.0592
+    "day": -0.0198,
+    "week": -0.0426,
+    "high": -0.0587
    },
    "sector_at_open": 41.5,
    "worst": {
@@ -6052,14 +6052,14 @@
    "kind": "slide",
    "last_triggered": "2026-11-19",
    "moves": {
-    "day": 0.0004,
-    "week": -0.0154,
-    "high": -0.4018
+    "day": 0.0001,
+    "week": -0.0157,
+    "high": -0.402
    },
    "spy": {
-    "day": -0.0197,
+    "day": -0.0196,
     "week": -0.0545,
-    "high": -0.0812
+    "high": -0.0811
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
@@ -6363,6 +6363,6 @@
   "IDCC",
   "CPRT"
  ],
- "updated": "2026-11-19T21:13:23Z",
+ "updated": "2026-11-19T21:27:48Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
