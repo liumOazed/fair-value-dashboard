@@ -152,14 +152,14 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
+   "needs_verdict": false,
    "verdict": {
     "label": "unclear",
     "confidence": "medium",
-    "cause": "Crypto sell-off after the ~$6B Binance hack (Oct 30) on top of long-running worries about USDC growth, falling rates and stablecoin rules",
-    "summary": "Circle fell ~10% in a week while payments peers rose, leaving it ~46% below its high; the trigger was the Oct 30 Binance hack and crypto sell-off (Circle froze $800M+ of USDC), which looks like temporary sentiment. The longer slide rests on unsettled structural questions: USDC circulation slipped in Q2, Morgan Stanley cut its circulation forecasts by a third to a half, lower rates cut reserve income and draft rules would limit stablecoin rewards. Watch USDC circulation and reserve income in the November Q3 report and the CLARITY Act; the price (~$72) is above the fair value (~$49).",
+    "cause": "Crypto sell-off (bitcoin ~$64K, COIN/MSTR down 6-7% on Nov 16) and Fed-hike fears on top of a weak-quality Q3 (beat flattered by the $182M ARC presale, flat USDC circulation, Binance-renewal margin hit)",
+    "summary": "Circle fell ~18% in a week vs -3% for Financials (RSPF): the Nov 16 leg came with a crypto-wide sell-off and rate-hike worries, which look temporary, but it follows a Nov 5 drop after Q3 where analysts said the beat relied on the one-off ARC presale, USDC circulation has stalled (~$74B, flat YoY) and the renewed Binance deal squeezes Q4/2027 margins; seven brokers cut targets and Circle cut ~5% of staff. Whether this is sentiment or a lasting growth reset depends on USDC circulation turning up again, distribution-cost margins and the CLARITY Act. At ~$57 the price is still above our ~$49 fair value, so it does not look like a bargain yet.",
     "model_changed": false,
-    "date": "2026-11-03",
+    "date": "2026-11-19",
     "by": "Claude"
    },
    "evidence": {
@@ -5858,6 +5858,6 @@
   "CRM",
   "IDCC"
  ],
- "updated": "2026-11-19T01:05:06Z",
+ "updated": "2026-11-19T02:25:16Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
