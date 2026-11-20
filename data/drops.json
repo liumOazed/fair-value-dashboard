@@ -1353,8 +1353,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Risk-off week: bitcoin -14% in a week toward $60-63K on December Fed-hike bets and ETF outflows; no company news (last results Nov 3)",
+    "summary": "Block fell 13% in a week while the S&P 500 fell 5% and bitcoin about 14%; it moves with bitcoin (Cash App bitcoin sales and its own holdings) and with fintech risk appetite. Nothing company-specific changed: analysts raised this and next year's EPS forecasts in the last 30 days (27 up, 2 down). Watch bitcoin, Cash App gross profit and the Fed; the price (~$74) is below our fair value (~$100).",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -1615,8 +1623,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Software and market sell-off (AI-agent fears hitting SaaS, Fed-hike bets); no Veeva news before its Dec 3 results",
+    "summary": "Veeva fell 14% in a week with software peers (median -6% week, -28% from highs) after the Nov 17 AI-agent scare and a risk-off market; there was no company news, forecasts are unchanged and Wells Fargo raised its target while UBS trimmed. Veeva's life-sciences niche (CRM migration to Vault, data) is not shown to be losing customers. Watch the Dec 3 results and Vault CRM wins vs Salesforce; the price (~$263) is still well above our fair value (~$170).",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -1742,8 +1758,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "CEO Thomas Warsop resigned to run another public company; CFO Robert Leibrock named interim CEO; 2026 guidance reaffirmed",
+    "summary": "ACI fell about 10% on Nov 18 when its CEO left for another company's top job, with no permanent successor; the board reaffirmed the 2026 revenue and EBITDA guidance given Nov 5 and the CFO steps in as interim CEO. A leadership gap is a risk to watch, but nothing in the business changed. Watch the CEO search and Q4 results; the price (~$53) is well above our fair value (~$32).",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -1999,8 +2023,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Gold fell ~3% to a 14-month low below $3,700 on hawkish Fed minutes, December rate-hike bets and a strong dollar; gold miners fell with it",
+    "summary": "Newmont fell 11% in a week and is 26% below its high because gold dropped to its lowest in over a year (hawkish Fed minutes, ~96% odds of a December hike, 10-year yield above 5%, dollar near a 19-month high); miners move 2-3x gold. This is the commodity cycle, not damage to Newmont's mines, though forecasts for next year were cut (10 down, 2 up) as gold falls. Watch the gold price and 2027 cost guidance; the price (~$105) is above our fair value (~$86).",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -2259,8 +2291,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "AI-agent scare: OpenAI's Nov 17 model that builds slides/spreadsheets/docs hit seat-based software (CRM -9.5%, worst day since 2024), plus a report ServiceNow is targeting Salesforce customers; market risk-off",
+    "summary": "Salesforce is 31% below its high and fell 16% in a week with software peers on fears that AI agents shrink paid seats; its own numbers have not turned (current RPO +14% to $33.5B, FY27 revenue guide $46.1-46.4B, Agentforce ARR above $1.5B, forecasts unchanged). Whether seat erosion is real will show in results, so the cause is not settled yet. Watch the Dec 2 results: current RPO growth, seat counts, Agentforce adoption and guidance.",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -3590,14 +3630,14 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
+   "needs_verdict": false,
    "verdict": {
     "label": "lasting",
     "confidence": "medium",
-    "cause": "AI-native tax rivals squeezing TurboTax: price cuts, price now the top churn reason, FY27 Consumer growth guided to 4-6%",
-    "summary": "Intuit is ~48% below its high on fears that AI agents take over tax and bookkeeping, and unlike Adobe this is showing up: TurboTax guidance was cut in May, management says price is now the top reason customers leave and accepts lower revenue per customer, and FY27 Consumer growth is guided to 4-6% (11% in FY26), total 9-10%. The damage is so far limited to consumer tax: QuickBooks and Global Business Solutions are guided +13-14% and Credit Karma +11-13%. The model's base case already uses the 9-10% guide and the bear case halves growth, so it was not changed; watch the 2027 tax season (units and revenue per customer) and QuickBooks customer growth. The price (~$341) is below the fair value (~$393).",
+    "cause": "Q1 FY27: TurboTax +1%, Q2 revenue guided only +6-7%, FY27 revenue guide trimmed for a Credit Karma change; Mailchimp sold for $3.68B; plus the Nov 17 AI-agent software sell-off",
+    "summary": "Intuit's Q1 (revenue +12%, business solutions +15%, QuickBooks Online +19%) was fine, but the outlook is soft: Q2 revenue +6-7%, TurboTax revenue +1%, and FY27 revenue now $23.1-23.4B (+8-9%) after a Credit Karma change, with profit guidance held; it also sells Mailchimp to Bending Spoons for $3.68B and will use the cash for buybacks. This keeps the earlier lasting call: consumer tax is under AI and price pressure while the business side grows. Model not changed now; the quarter update (pending) will roll the numbers. Watch the 2027 tax season and QuickBooks growth.",
     "model_changed": false,
-    "date": "2026-11-03",
+    "date": "2026-11-20",
     "by": "Claude"
    },
    "evidence": {
@@ -4917,8 +4957,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "low",
+    "cause": "Slide with software on AI-agent fears and market risk-off (peers -29% from highs, IT -18%); no Workday-specific news before Nov 24 results",
+    "summary": "Workday is 26% below its high, in line with seat-based software peers, as investors fear AI agents cut HR and finance seats; forecasts are unchanged and Barclays cut its target to $223. No company evidence yet that customers are leaving, so it is too early to call. Watch the Nov 24 results (subscription backlog, retention, guidance); the price (~$173) is well above our fair value (~$108).",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -5177,8 +5225,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Slide with tech (IT -18%) after a run-up; 2027 profit forecasts cut ~13% because 2026 included catch-up licence payments; Samsung seeking a new arbitration over terms of its $1.05B deal",
+    "summary": "InterDigital is 29% below its high although Q3 beat guidance and the 2026 outlook was raised; analysts lowered next year's EPS because 2026 revenue was boosted by one-off catch-up payments from new licences (Samsung, Amazon), and Samsung has asked for a new arbitration on some terms. That is lumpy licensing income and a legal overhang, not a loss of the patent business. Watch the Samsung arbitration and renewals; the price (~$283) is far above our fair value (~$106).",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -5561,8 +5617,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Long slide: falling US insurance unit volumes (Q4 FY26 US units -5.7%, insurance -7.5%, one large insurer lost), lower Q4 profit and a surprise CEO change in June",
+    "summary": "Copart is 26% below its high (Industrials -9%) after its Sept report showed US insurance units down 7.5%, mostly from losing one big insurance customer, and net income down 17%, following a surprise CEO change in June. Gross margins held and total-loss rates are at records, but whether the customer loss is a one-off or the start of share loss to RB Global/IAA is not yet clear. Watch insurance unit growth in the December results; the price (~$31) is above our fair value (~$27).",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-20",
@@ -6483,6 +6547,6 @@
   "IDCC",
   "CPRT"
  ],
- "updated": "2026-11-20T02:35:59Z",
+ "updated": "2026-11-20T02:53:44Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }

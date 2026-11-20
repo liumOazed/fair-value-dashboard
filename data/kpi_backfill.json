@@ -1,11 +1,6 @@
 {
  "_about": "Business-driver backfill queue: the KPI backfill task takes the next 5 tickers from 'todo', fills the last 4 quarterly releases (plus year-earlier figures they state), then moves them to 'done'. 'notes' records KPIs a company does not disclose.",
  "todo": [
-  "DLTR",
-  "INVA",
-  "CTRE",
-  "CVSA",
-  "QLYS",
   "LAUR",
   "IDCC",
   "LMAT",
@@ -134,7 +129,12 @@
   "AMP",
   "PPG",
   "EOG",
-  "PM"
+  "PM",
+  "DLTR",
+  "INVA",
+  "CTRE",
+  "CVSA",
+  "QLYS"
  ],
  "notes": {
   "MSFT": "Q2 FY25-Q1 FY27 filled. Commercial RPO growth as stated by CFO (Q2 FY26 110% to $625B inflated by OpenAI, ~45% of balance). Capex incl. finance leases from CFO remarks: from Q4 FY25 CFO quotes total capex with finance leases stated separately (still total incl. leases). Operating margin GAAP from release figures.",
@@ -228,6 +228,11 @@
   "PPG": "Q4 2025-Q3 2026 filled, all 5 KPIs (three segments: Global Architectural, Performance, Industrial Coatings). Segment growth = stated rounded y/y net sales change. No year-earlier growth rates stated. Q2 2026 adjusted EPS growth shown as '—%': computed 2.23/2.22-1 = 0.5%.",
   "PM": "Q4 2025-Q3 2026 filled; adjusted OI margin also year-earlier. Q3 2026 smoke-free share skipped ('more than 40%'); PM resegmented in 2026 and stopped giving a smoke-free $ total. Nicotine pouch growth not like-for-like: Q4 2025 total PMI nicotine pouch cans (+18.1%), 2026 quarters U.S. ZYN shipments. Q4 2025 smoke-free share computed from rounded $4.4bn/$10.4bn. Year-earlier HTU/pouch growth not stated.",
   "AMP": "Q4 2025-Q3 2026 filled, all 4 KPIs; ROE and net flows % also year-earlier. Net flows % = quarterly AWM client net flows / client assets at previous quarter end (not annualized); Q3 2026 -$8.5B includes the Comerica transition (+$5.3B ex Comerica). Client asset and EPS growth computed to 2 decimals (stated whole % in quotes). Year-earlier growth rates not stated.",
-  "EOG": "Q4 2025-Q3 2026 filled (Q3 2026 added in the earnings review); FCF margin also year-earlier Q4 2024-Q3 2025. Cash operating cost per Boe on non-GAAP basis. Year-earlier growth/cost-change not stated. Sources are finviz/boereport reprints of the releases."
+  "EOG": "Q4 2025-Q3 2026 filled (Q3 2026 added in the earnings review); FCF margin also year-earlier Q4 2024-Q3 2025. Cash operating cost per Boe on non-GAAP basis. Year-earlier growth/cost-change not stated. Sources are finviz/boereport reprints of the releases.",
+  "DLTR": "Q3 2025-Q2 2026 filled (continuing ops after the Family Dollar sale); gross and adjusted operating margin also year-earlier. Q1 2026/Q1 2025 gross margin computed from net sales and cost of sales (release gives only +120bp); other year-earlier gross margins derived from the stated bp change. Store count growth computed from the release tables. Q2 2026 margins include a large tariff-refund benefit (~650bp on operating margin): not like-for-like. Year-earlier comps stated only for Q2 2025.",
+  "INVA": "Q4 2025-Q3 2026 filled, plus year-earlier royalty, specialty sales and operating margin. Specialty sales = total net product sales line (U.S.+ex-U.S., now incl. XACDURO); the Giapreza+Xerava+Zevtera sum is not disclosed. Growth and operating margin computed from the tables (inputs in the quotes). Some quotes joined from fragments.",
+  "CTRE": "Q4 2025-Q3 2026 filled (Q3 2026 was already in), plus year-earlier normalized FFO/share and net debt/EBITDA. Rent coverage only in the financial supplements, one quarter behind (period = quarter it covers; Q2 2026 is the latest). Investments closed year-earlier not stated.",
+  "CVSA": "Q2 FY26-Q1 FY27 filled, all 4 KPIs; adjusted operating margin also year-earlier. Year-earlier enrolment growth rates not stated (only prior-year counts). Q3 FY26 source is the BusinessWire copy of the release.",
+  "QLYS": "Q4 2025-Q3 2026 already filled except gross dollar retention, which the releases do not state as a % (calls only say it 'improved'). Year-earlier $500K+ customer counts found only in third-party transcripts, so not added. Year-earlier revenue growth not stated."
  }
 }

@@ -21574,12 +21574,60 @@
   "CTRE": {
    "normalized_ffo_per_share": [
     {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.4,
+     "source": "https://investor.caretrustreit.com/news/news-details/2026/CareTrust-REIT-Announces-Fourth-Quarter--Full-Year-2025-Operating-Results/",
+     "quote": "Normalized FFO per share attributable to CareTrust REIT, Inc. | $0.47 | $0.40 | $1.76 | $1.50 (three months ended Dec 31, 2025 | 2024 | twelve months 2025 | 2024)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.42,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026032150/ex991-ctreq12026er.htm",
+     "quote": "Normalized FFO per share attributable to CareTrust REIT, Inc. | $0.48 | $0.42",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.43,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026054348/ex991-ctreq22026er.htm",
+     "quote": "Normalized FFO per share attributable to CareTrust REIT, Inc. | $0.51 | $0.43 | $0.99 | $0.85",
+     "added": "2026-11-20"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q3 2025",
      "value": 0.45,
      "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/exhibit992-ctreq32026fin.htm",
      "quote": "Normalized FFO per share attributable to CareTrust REIT, Inc. $ 0.54 $ 0.45 (three months ended September 30, 2026 and 2025)",
      "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.47,
+     "source": "https://investor.caretrustreit.com/news/news-details/2026/CareTrust-REIT-Announces-Fourth-Quarter--Full-Year-2025-Operating-Results/",
+     "quote": "Normalized FFO per diluted weighted average share of $0.47",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.48,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026032150/ex991-ctreq12026er.htm",
+     "quote": "Normalized FFO per diluted weighted average share of $0.48, an increase of $0.06, or 14%, over the prior year quarter;",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.51,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026054348/ex991-ctreq22026er.htm",
+     "quote": "Normalized FFO per diluted weighted average share of $0.51, an increase of $0.08, or 19%",
+     "added": "2026-11-20"
     },
     {
      "period": "2026-09-30",
@@ -21592,6 +21640,30 @@
    ],
    "investments_closed": [
     {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.5615,
+     "source": "https://investor.caretrustreit.com/news/news-details/2026/CareTrust-REIT-Announces-Fourth-Quarter--Full-Year-2025-Operating-Results/",
+     "quote": "$561.5 million of investment activity closed at a blended stabilized yield of 8.8%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.2451,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026032150/ex991-ctreq12026er.htm",
+     "quote": "$245.1 million of investment activity closed at a blended stabilized yield of 8.8%;",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.8996,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026054348/ex991-ctreq22026er.htm",
+     "quote": "$899.6 million of investment activity closed at a blended stabilized yield of 8.9%;",
+     "added": "2026-11-20"
+    },
+    {
      "period": "2026-09-30",
      "label": "Q3 2026",
      "value": 0.7395,
@@ -21602,12 +21674,60 @@
    ],
    "net_debt_ebitda": [
     {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.5,
+     "source": "https://investor.caretrustreit.com/news/news-details/2026/CareTrust-REIT-Announces-Fourth-Quarter--Full-Year-2025-Operating-Results/",
+     "quote": "Net Debt to Annualized Normalized Run Rate EBITDA attributable to CareTrust REIT, Inc. | 0.7x | 0.5x (Dec 31, 2025 | Dec 31, 2024)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026032150/ex991-ctreq12026er.htm",
+     "quote": "Net Debt to Annualized Normalized Run Rate EBITDA attributable to CareTrust REIT, Inc. | 0.6x | 0.5x",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 2.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026054348/ex991-ctreq22026er.htm",
+     "quote": "Net Debt to Annualized Normalized Run Rate EBITDA attributable to CareTrust REIT, Inc. | 1.01x | 2.0x",
+     "added": "2026-11-20"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q3 2025",
      "value": 0.42,
      "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026071039/exhibit992-ctreq32026fin.htm",
      "quote": "Net debt to Annualized Normalized Run Rate EBITDA attributable to CareTrust REIT, Inc. 1.37x 0.42x (Q3'26, Q3'25); net debt $187,520 / $446,788",
      "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.7,
+     "source": "https://investor.caretrustreit.com/news/news-details/2026/CareTrust-REIT-Announces-Fourth-Quarter--Full-Year-2025-Operating-Results/",
+     "quote": "Net Debt to Annualized Normalized Run Rate EBITDA of 0.7x",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026032150/ex991-ctreq12026er.htm",
+     "quote": "Net Debt to Annualized Normalized Run Rate EBITDA attributable to CareTrust REIT, Inc. | 0.6x | 0.5x",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.01,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001590717/000162828026054348/ex991-ctreq22026er.htm",
+     "quote": "Net Debt to Annualized Normalized Run Rate EBITDA of 1.01x;",
+     "added": "2026-11-20"
     },
     {
      "period": "2026-09-30",
@@ -21619,6 +21739,30 @@
     }
    ],
    "rent_coverage": [
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 2.78,
+     "source": "https://s21.q4cdn.com/798411034/files/doc_earnings/2026/q2/presentation/Exhibit-99-2-CTRE-Q2-2026-Financial-Supplement.pdf",
+     "quote": "EBITDARM Rent Coverage 3.21x 2.16x 2.85x 2.79x 2.78x (stabilized TTM; columns SNF, SH, Total As of Q1 '26, Q4 '25, Q3 '25) - value is the Q3 '25 column, period as labeled in Q2 2026 supplement",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2.79,
+     "source": "https://s21.q4cdn.com/798411034/files/doc_earnings/2026/q1/presentation/Exhibit-99-2-CTRE-Q1-2026-Financial-Supplement.pdf",
+     "quote": "EBITDARM Coverage total 2.79x, \"As of Q4 '25\" (trailing twelve months, stabilized triple-net portfolio) in the Q1 2026 supplement; period = the period the coverage refers to",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.85,
+     "source": "https://s21.q4cdn.com/798411034/files/doc_earnings/2026/q2/presentation/Exhibit-99-2-CTRE-Q2-2026-Financial-Supplement.pdf",
+     "quote": "EBITDARM Rent Coverage 3.21x 2.16x 2.85x 2.79x 2.78x (Total \"As of Q1 '26\", trailing twelve months) in the Q2 2026 supplement; period = the period the coverage refers to",
+     "added": "2026-11-20"
+    },
     {
      "period": "2026-06-30",
      "label": "Q2 2026",
@@ -23998,6 +24142,620 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000820027/000082002726000050/q32026er.htm",
      "quote": "Adjusted operating earnings per diluted share | $11.26 | $9.87 | 14% -> (11.26/9.87 - 1) x 100 = 14.08%",
      "added": "2026-11-13"
+    }
+   ]
+  },
+  "DLTR": {
+   "same_store_sales_growth": [
+    {
+     "period": "2025-08-02",
+     "label": "Q2 2025",
+     "value": 6.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000108/ex991q2-26earningspressrel.htm",
+     "quote": "Comparable store net sales increased 3.7% on top of 6.5% last year",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-11-01",
+     "label": "Q3 2025",
+     "value": 4.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570325000104/ex991q3-25earningspressrel.htm",
+     "quote": "Same-store net sales increased by 4.2%, driven by a 4.5% increase in average ticket and a 0.3% decline in traffic.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 2025",
+     "value": 5.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000024/ex991q4-25earningspressrel.htm",
+     "quote": "Same-store net sales increased 5.0%, driven by a 6.3% increase in average ticket,",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 2026",
+     "value": 3.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000064/ex991q1-26earningspressrel.htm",
+     "quote": "Comparable store net sales increased 3.5%, driven by a 4.5% increase in average ticket",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 2026",
+     "value": 3.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000108/ex991q2-26earningspressrel.htm",
+     "quote": "Comparable store net sales increased 3.7% on top of 6.5% last year",
+     "added": "2026-11-20"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-11-02",
+     "label": "Q3 2024",
+     "value": 35.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570325000104/ex991q3-25earningspressrel.htm",
+     "quote": "Gross profit increased 10.8% to $1.7 billion and gross margin increased 40 basis points to 35.8%. (35.8-0.4=35.4%; net sales 4,338.0, cost of sales 2,803.9: (4338.0-2803.9)/4338.0=35.4%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-02-01",
+     "label": "Q4 2024",
+     "value": 37.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000024/ex991q4-25earningspressrel.htm",
+     "quote": "Gross profit increased 13.3% and gross profit margin increased 150 basis points to 39.1%. (39.1-1.5=37.6%; net sales $4,996.7, cost of sales $3,116.9: (4996.7-3116.9)/4996.7=37.6%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-05-03",
+     "label": "Q1 2025",
+     "value": 35.58,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000064/ex991q1-26earningspressrel.htm",
+     "quote": "Net sales | $4,970.5 | $4,636.5; Cost of sales | 3,141.0 | 2,987.0 ((4636.5-2987.0)/4636.5=35.58%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-08-02",
+     "label": "Q2 2025",
+     "value": 34.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000108/ex991q2-26earningspressrel.htm",
+     "quote": "Gross profit margin increased 850 basis points to 42.9% (42.9-8.5=34.4%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-11-01",
+     "label": "Q3 2025",
+     "value": 35.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570325000104/ex991q3-25earningspressrel.htm",
+     "quote": "Gross profit increased 10.8% to $1.7 billion and gross margin increased 40 basis points to 35.8%.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 2025",
+     "value": 39.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000024/ex991q4-25earningspressrel.htm",
+     "quote": "Gross profit increased 13.3% and gross profit margin increased 150 basis points to 39.1%.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 2026",
+     "value": 36.81,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000064/ex991q1-26earningspressrel.htm",
+     "quote": "Net sales | $4,970.5 | $4,636.5; Cost of sales | 3,141.0 | 2,987.0 ((4970.5-3141.0)/4970.5=36.81%); \"Gross profit margin increased 120 basis points.\"",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 2026",
+     "value": 42.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000108/ex991q2-26earningspressrel.htm",
+     "quote": "Gross profit margin increased 850 basis points to 42.9%",
+     "added": "2026-11-20"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-11-02",
+     "label": "Q3 2024",
+     "value": 7.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570325000104/ex991q3-25earningspressrel.htm",
+     "quote": "Reconciliation of Adjusted Operating Income - Continuing Operations: Adjusted operating income margin (Non-GAAP) | 7.3 % | 7.6 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-02-01",
+     "label": "Q4 2024",
+     "value": 12.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000024/ex991q4-25earningspressrel.htm",
+     "quote": "Continuing Operations (T-7a): Adjusted operating income margin (Non-GAAP) | 12.8 % | 12.6 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-05-03",
+     "label": "Q1 2025",
+     "value": 8.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000064/ex991q1-26earningspressrel.htm",
+     "quote": "Adjusted operating income margin (Non-GAAP) | 9.5% | 8.4%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-08-02",
+     "label": "Q2 2025",
+     "value": 5.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000108/ex991q2-26earningspressrel.htm",
+     "quote": "Adjusted operating income margin (Non-GAAP) | 14.1% | 5.2% | 11.8% | 6.8%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-11-01",
+     "label": "Q3 2025",
+     "value": 7.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570325000104/ex991q3-25earningspressrel.htm",
+     "quote": "Reconciliation of Adjusted Operating Income - Continuing Operations: Adjusted operating income margin (Non-GAAP) | 7.3 % | 7.6 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 2025",
+     "value": 12.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000024/ex991q4-25earningspressrel.htm",
+     "quote": "Continuing Operations (T-7a): Adjusted operating income margin (Non-GAAP) | 12.8 % | 12.6 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 2026",
+     "value": 9.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000064/ex991q1-26earningspressrel.htm",
+     "quote": "Adjusted operating income margin (Non-GAAP) | 9.5% | 8.4%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 2026",
+     "value": 14.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000108/ex991q2-26earningspressrel.htm",
+     "quote": "Adjusted operating income margin (Non-GAAP) | 14.1% | 5.2% | 11.8% | 6.8%",
+     "added": "2026-11-20"
+    }
+   ],
+   "store_count_growth": [
+    {
+     "period": "2025-11-01",
+     "label": "Q3 2025",
+     "value": 4.52,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570325000104/ex991q3-25earningspressrel.htm",
+     "quote": "Store Count (Dollar Tree Segment) Ending: 9,269 (13 weeks ended November 1, 2025) vs 8,868 (November 2, 2024) (9269/8868-1=4.52%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 2025",
+     "value": 4.52,
+     "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000024/ex991q4-25earningspressrel.htm",
+     "quote": "Store Count (Dollar Tree Segment) Ending: 9,282 (13 weeks ended January 31, 2026) vs 8,881 (February 1, 2025) (9282/8881-1=4.52%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-05-02",
+     "label": "Q1 2026",
+     "value": 4.06,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000064/ex991q1-26earningspressrel.htm",
+     "quote": "Store count Ending | 9,382 | 9,016 (13 weeks ended May 2, 2026 vs May 3, 2025) (9382/9016-1=4.06%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-08-01",
+     "label": "Q2 2026",
+     "value": 3.15,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935703/000093570326000108/ex991q2-26earningspressrel.htm",
+     "quote": "Store count Ending | 9,436 | 9,148 (13 weeks ended Aug 1, 2026 vs Aug 2, 2025) (9436/9148-1=3.15%)",
+     "added": "2026-11-20"
+    }
+   ]
+  },
+  "INVA": {
+   "royalty_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.066,
+     "source": "https://investor.inva.com/node/21011",
+     "quote": "Fourth quarter 2025 gross royalty revenue from Glaxo Group Limited (\"GSK\") was $58.4 million ... compared to $66.0 million for the fourth quarter 2024.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.0613,
+     "source": "https://investor.inva.com/node/21056",
+     "quote": "gross royalty revenue from Glaxo Group Limited (“GSK”) was $58.6 million, compared to $61.3 million for the first quarter 2025.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.0673,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526335192/d228097dex991.htm",
+     "quote": "Royalties: 59,790 (Q2 2026) / 67,336 (Q2 2025), in thousands",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.0634,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526447366/d177079dex991.htm",
+     "quote": "Royalties: $58,113 (three months 2026) / $63,352 (three months 2025), in thousands",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.0584,
+     "source": "https://investor.inva.com/node/21011",
+     "quote": "Fourth quarter 2025 gross royalty revenue from Glaxo Group Limited (\"GSK\") was $58.4 million ... compared to $66.0 million for the fourth quarter 2024.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.0586,
+     "source": "https://investor.inva.com/node/21056",
+     "quote": "gross royalty revenue from Glaxo Group Limited (“GSK”) was $58.6 million, compared to $61.3 million for the first quarter 2025.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.0598,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526335192/d228097dex991.htm",
+     "quote": "gross royalty revenue from GSK remains stable at $59.8 million | Royalties: 59,790 (Q2 2026) / 67,336 (Q2 2025), in thousands",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.0581,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526447366/d177079dex991.htm",
+     "quote": "gross royalty revenue from Glaxo Group Limited (“GSK”) remained stable at $58.1 million. | Royalties: $58,113 (three months 2026) / $63,352 (three months 2025), in thousands",
+     "added": "2026-11-20"
+    }
+   ],
+   "specialty_product_sales": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.0289,
+     "source": "https://investor.inva.com/node/21011",
+     "quote": "Fourth quarter 2025 net product sales were $59.1 million, more than doubling from $28.9 million in the same quarter of 2024.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.0303,
+     "source": "https://investor.inva.com/node/21056",
+     "quote": "$41.4 million ($34.2 million U.S. and $7.2 million ex-US), representing 37% growth compared to $30.3 million in the same quarter of 2025.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.0355,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526335192/d228097dex991.htm",
+     "quote": "Net product sales: 51,771 (Q2 2026) / 35,493 (Q2 2025), in thousands",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.0473,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526447366/d177079dex991.htm",
+     "quote": "Net product sales: 49,444 (three months 2026) / 47,294 (three months 2025), in thousands",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.0591,
+     "source": "https://investor.inva.com/node/21011",
+     "quote": "Fourth quarter 2025 net product sales were $59.1 million, more than doubling from $28.9 million in the same quarter of 2024.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.0414,
+     "source": "https://investor.inva.com/node/21056",
+     "quote": "$41.4 million ($34.2 million U.S. and $7.2 million ex-US), representing 37% growth compared to $30.3 million in the same quarter of 2025.",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.0518,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526335192/d228097dex991.htm",
+     "quote": "Net product sales: 51,771 (Q2 2026) / 35,493 (Q2 2025), in thousands; total net product sales of $51.8 million ($36.6 million U.S. and $15.2 million ex-U.S.)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.0494,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526447366/d177079dex991.htm",
+     "quote": "Net product sales: $49.4 million, comprising $43.3 million in U.S. net product sales and $6.1 million in ex-U.S. sales. | Net product sales: 49,444 (three months 2026) / 47,294 (three months 2025), in thousands",
+     "added": "2026-11-20"
+    }
+   ],
+   "specialty_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 104.13,
+     "source": "https://investor.inva.com/node/21011",
+     "quote": "Fourth quarter 2025 net product sales were $59.1 million, more than doubling from $28.9 million in the same quarter of 2024. Net product sales $59,064 vs $28,935 in thousands (59,064/28,935-1=104.13%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 36.63,
+     "source": "https://investor.inva.com/node/21056",
+     "quote": "$41.4 million ($34.2 million U.S. and $7.2 million ex-US), representing 37% growth compared to $30.3 million in the same quarter of 2025. Net product sales 41,371 vs 30,279 in thousands (41,371/30,279-1=36.63%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 45.86,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526335192/d228097dex991.htm",
+     "quote": "Net product sales: 51,771 (Q2 2026) / 35,493 (Q2 2025), in thousands (51,771/35,493-1=45.86%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4.55,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526447366/d177079dex991.htm",
+     "quote": "Net product sales: 49,444 (three months 2026) / 47,294 (three months 2025), in thousands (49,444/47,294-1=4.55%)",
+     "added": "2026-11-20"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 46.99,
+     "source": "https://investor.inva.com/node/21011",
+     "quote": "Income from operations $43,139K; total revenue $91,806K (Q4 2024) (43,139/91,806=46.99%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 46.74,
+     "source": "https://investor.inva.com/node/21056",
+     "quote": "Income from operations $41,428K; total revenue $88,632K (Q1 2025) (41,428/88,632=46.74%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 48.61,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526335192/d228097dex991.htm",
+     "quote": "Income from operations $48,751K; total revenue $100,283K (Q2 2025) (48,751/100,283=48.61%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 32.08,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526447366/d177079dex991.htm",
+     "quote": "Income from operations $34,578K; total revenue $107,800K (three months ended Sept 30, 2025) (34,578/107,800=32.08%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 34.02,
+     "source": "https://investor.inva.com/node/21011",
+     "quote": "Income from operations $38,988K; total revenue $114,613K (Q4 2025) (38,988/114,613=34.02%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 38.94,
+     "source": "https://investor.inva.com/node/21056",
+     "quote": "Income from operations $38,154K; total revenue $97,994K (Q1 2026) (38,154/97,994=38.94%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 42.52,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526335192/d228097dex991.htm",
+     "quote": "Income from operations $50,855K; total revenue $119,591K (Q2 2026) (50,855/119,591=42.52%)",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 39.72,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001080014/000119312526447366/d177079dex991.htm",
+     "quote": "Income from operations $42,153K; total revenue $106,120K (three months ended Sept 30, 2026) (42,153/106,120=39.72%)",
+     "added": "2026-11-20"
+    }
+   ]
+  },
+  "CVSA": {
+   "total_enrollment_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 6.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/730464/000073046426000003/atge-20260128xex99d1.htm",
+     "quote": "Total student enrollment 97,010, up 6.3% year-over-year, achieved tenth straight quarter of growth",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 6.8,
+     "source": "https://www.businesswire.com/news/home/20260507293091/en",
+     "quote": "Total student enrollment 100,585, up 6.8% year-over-year, achieved 11th straight quarter of growth",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 8.4,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2026/q4/earnings-result/PR-4Q26.pdf",
+     "quote": "Total student enrollment 99,472, up 8.4% year-over-year, achieved 12th straight quarter of growth",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 7.6,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2027/q1/earnings-result/PR-1Q27.pdf",
+     "quote": "Total student enrollment of 104,713, up 7.6% year-over-year, achieved 13th straight quarter of growth",
+     "added": "2026-11-20"
+    }
+   ],
+   "chamberlain_enrollment_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": -1.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/730464/000073046426000003/atge-20260128xex99d1.htm",
+     "quote": "Total student enrollment decreased (1.0)% compared with the prior year, declines in post-licensure nursing partially offset by growth in pre-licensure nursing. | Total Students1 39,278 39,691 (1.0)%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 0.5,
+     "source": "https://www.businesswire.com/news/home/20260507293091/en",
+     "quote": "Total student enrollment increased 0.5% compared with the prior year, driven by growth in pre-licensure nursing. | Total Students (2) 40,767 40,564 0.5%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 1.6,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2026/q4/earnings-result/PR-4Q26.pdf",
+     "quote": "Total student enrollment increased 1.6% compared with the prior year, driven by growth in prelicensure nursing. | Total Students (2) 39,501 38,891 1.6%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 1.3,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2027/q1/earnings-result/PR-1Q27.pdf",
+     "quote": "Total student enrollment increased 1.3% compared with the prior year, driven by growth in prelicensure nursing. | Total Students (2) 40,351 39,846 1.3%",
+     "added": "2026-11-20"
+    }
+   ],
+   "walden_enrollment_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 13.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/730464/000073046426000003/atge-20260128xex99d1.htm",
+     "quote": "Total student enrollment increased 13.0% compared with the prior year, driven by growth in healthcare and non-healthcare programs. | Total Students1 52,435 46,399 13.0%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 12.3,
+     "source": "https://www.businesswire.com/news/home/20260507293091/en",
+     "quote": "Total student enrollment increased 12.3% compared with the prior year, driven by growth in healthcare and non-healthcare programs. | Total Students (2) 54,474 48,526 12.3%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 14.0,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2026/q4/earnings-result/PR-4Q26.pdf",
+     "quote": "Total Students (2) 54,851 48,116 14.0%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 12.8,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2027/q1/earnings-result/PR-1Q27.pdf",
+     "quote": "Total student enrollment increased 12.8% compared with the prior year | Total Students (2) 58,881 52,216 12.8%",
+     "added": "2026-11-20"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q2 FY25",
+     "value": 22.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/730464/000073046426000003/atge-20260128xex99d1.htm",
+     "quote": "Adjusted operating margin (non-GAAP) 25.0 % 22.7 % 22.4 % 20.5 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q3 FY25",
+     "value": 22.6,
+     "source": "https://www.businesswire.com/news/home/20260507293091/en",
+     "quote": "Adjusted operating margin (non-GAAP) (1) 21.0% 22.6% 21.9% 21.2%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q4 FY25",
+     "value": 19.1,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2026/q4/earnings-result/PR-4Q26.pdf",
+     "quote": "Adjusted operating margin (non-GAAP) 20.1 % 19.1 % 21.5 % 20.7 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q1 FY26",
+     "value": 19.5,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2027/q1/earnings-result/PR-1Q27.pdf",
+     "quote": "Adjusted operating margin (non-GAAP) 20.8 % 19.5 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q2 FY26",
+     "value": 25.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/730464/000073046426000003/atge-20260128xex99d1.htm",
+     "quote": "Adjusted operating margin (non-GAAP) 25.0 % 22.7 % 22.4 % 20.5 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q3 FY26",
+     "value": 21.0,
+     "source": "https://www.businesswire.com/news/home/20260507293091/en",
+     "quote": "Adjusted operating margin (non-GAAP) (1) 21.0% 22.6% 21.9% 21.2%",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q4 FY26",
+     "value": 20.1,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2026/q4/earnings-result/PR-4Q26.pdf",
+     "quote": "Adjusted operating margin (non-GAAP) 20.1 % 19.1 % 21.5 % 20.7 %",
+     "added": "2026-11-20"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q1 FY27",
+     "value": 20.8,
+     "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2027/q1/earnings-result/PR-1Q27.pdf",
+     "quote": "Adjusted operating margin (non-GAAP) 20.8 % 19.5 %",
+     "added": "2026-11-20"
     }
    ]
   }
