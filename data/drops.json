@@ -14,8 +14,16 @@
     "day"
    ],
    "emergency": true,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Q3 results only in line (1-cent EPS miss, revenue ~0.5% short, guidance held not raised) and Pottery Barn comp slowed to +1.8% on deliberate markdown cuts, with housing weakness",
+    "summary": "WSM fell 15% (sector RSPD -3%) after a Q3 that was solid but not good enough for the price: comps +5.1%, operating margin up 0.4 pts to 17.4%, full-year guidance merely reiterated, and Pottery Barn slowing to +1.8% because management cut markdowns on seasonal non-furniture goods. That looks like a reset of high expectations plus housing/diesel-cost headwinds rather than lasting damage: margins rose, analysts' next-year EPS is unchanged, no debt. Watch Pottery Barn furniture demand, housing, tariff and freight costs, and the FY2027 guide in March; even after the drop the price (~$221) is still well above our fair value ($158), so the model is not too high.",
+    "model_changed": false,
+    "date": "2026-11-20",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-19",
@@ -6363,6 +6371,6 @@
   "IDCC",
   "CPRT"
  ],
- "updated": "2026-11-19T21:27:48Z",
+ "updated": "2026-11-20T02:25:06Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
