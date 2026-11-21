@@ -1,5 +1,52 @@
 {
- "items": [],
- "updated": "2026-11-20",
+ "items": [
+  {
+   "ticker": "INTU",
+   "status": "auto_updated",
+   "quarter_end": "2026-10-31",
+   "auto_date": "2026-11-21",
+   "fv_old": 381.61,
+   "fv_new": 388.83,
+   "changes": {
+    "price": [
+     343.39,
+     270.44
+    ],
+    "rev": [
+     21.448,
+     21.917
+    ],
+    "fcf": [
+     7.3,
+     7.46
+    ],
+    "sbc": [
+     2.056,
+     2.008
+    ],
+    "net_cash": [
+     -1.221,
+     -0.824
+    ],
+    "fin.debt": [
+     8.421,
+     7.711
+    ],
+    "fin.interest": [
+     0.256,
+     0.27
+    ],
+    "fin.rd": [
+     0.0304,
+     0.035
+    ]
+   },
+   "flags": [
+    "FCF NORMALISED: kept the normalised margin on the new revenue - check one-offs / working capital in the release"
+   ],
+   "data_through_before": "2026-07-31"
+  }
+ ],
+ "updated": "2026-11-21",
  "how": "Written by scripts/auto_update.py. status auto_updated = numbers rolled forward from Yahoo, the text review (guidance, assumptions, notes, KPIs) is still to do; manual = not auto-updated, needs a full update from the release. The twice-weekly Claude review removes items when done."
 }

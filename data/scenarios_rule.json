@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-11",
+ "as_of": "2026-11-21",
  "rules": "base rates      S&P 500 companies 2007-2025 (data/backtest/facts.json.gz) grouped by 3-year revenue growth and\n                  revenue size (under $5B, $5-25B, over $25B; a group with under 30 cases uses all sizes)\n  year-1 growth   base = analysts' revenue growth for next fiscal year (Yahoo 'revenue_estimate' +1y; the current\n                  year if next is missing; with fewer than 2 analysts, the 3-year revenue growth rate), kept inside\n                  the 20th-80th percentile of the group's next-3-year growth\n                  bear / bull = base + the group's 20th / 80th percentile spread (vs its median)\n  year-10 growth  the group's 20th / 50th / 80th percentile growth in years 6-10, capped by size because the base\n                  rates only hold companies still in the S&P 500 (survivors): base 6.5% / 5.5% / 4.5% for revenue\n                  under $5B / $5-25B / over $25B, bull 1.5 points above, bear 1.5 points below; also capped at the\n                  scenario's own year-1 growth (2.5% minimum)\n  cash margin     (free cash flow - stock pay) / revenue over the last 4 fiscal years and the last 12 months:\n                  bear = 20th percentile, bull = 80th percentile, base = halfway between the median and the recent\n                  level (average of the latest fiscal year and the last 12 months). If the after-tax operating margin\n                  is higher (heavy investment now), base = halfway to it and bull = at least it.\n                  Lenders (AXP, AMP): net income\nBase rates come from companies that are in the S&P 500 today, so they flatter growth (survivorship).",
  "base_rates": {
   "0,0": {
@@ -1807,25 +1807,25 @@
   "INTU": {
    "scen": {
     "bear": {
-     "g1": 0.0289,
+     "g1": 0.0254,
      "g10": 0.0118,
      "m": 0.2042
     },
     "base": {
-     "g1": 0.0905,
+     "g1": 0.087,
      "g10": 0.055,
-     "m": 0.2469
+     "m": 0.2479
     },
     "bull": {
-     "g1": 0.1582,
+     "g1": 0.1547,
      "g10": 0.07,
-     "m": 0.2568
+     "m": 0.2602
     }
    },
    "why": {
-    "g1_source": "analysts +1y (29)",
-    "g1_analysts": 0.0905,
-    "g1_base": 0.0905,
+    "g1_source": "analysts +1y (28)",
+    "g1_analysts": 0.087,
+    "g1_base": 0.087,
     "nopat_margin": 0.2189,
     "cell": {
      "growth": [
@@ -1845,7 +1845,7 @@
      0.1654,
      0.2185,
      0.3059,
-     0.2445
+     0.2488
     ],
     "margin_years": [
      "2023-07-31",
@@ -1854,12 +1854,12 @@
      "2026-07-31",
      "TTM"
     ],
-    "inputs_file": "inputs_2026-11-11_scenarios.json"
+    "inputs_file": "inputs_2026-11-21_earnings.json"
    },
-   "fair_value": 381.61,
-   "bear": 223.78,
-   "base": 398.63,
-   "bull": 575.8,
+   "fair_value": 388.83,
+   "bear": 227.4,
+   "base": 405.27,
+   "bull": 589.9,
    "hand": {
     "scen": {
      "bear": {
@@ -1878,12 +1878,12 @@
       "m": 0.3
      }
     },
-    "fair_value": 390.73,
-    "bear": 266.8,
-    "base": 407.56,
-    "bull": 534.57
+    "fair_value": 401.42,
+    "bear": 274.59,
+    "base": 418.65,
+    "bull": 548.58
    },
-   "diff": -0.0234
+   "diff": -0.0313
   },
   "ADSK": {
    "scen": {
@@ -7040,10 +7040,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 16.81,
-   "bear": -49.12,
-   "base": 31.16,
-   "bull": 79.82,
+   "fair_value": 16.83,
+   "bear": -49.07,
+   "base": 31.17,
+   "bull": 79.81,
    "hand": {
     "scen": {
      "bear": {
@@ -7062,12 +7062,12 @@
       "m": 0.07
      }
     },
-    "fair_value": 117.77,
-    "bear": 36.53,
-    "base": 127.75,
-    "bull": 214.68
+    "fair_value": 117.75,
+    "bear": 36.54,
+    "base": 127.72,
+    "bull": 214.61
    },
-   "diff": -0.8573
+   "diff": -0.8571
   },
   "FIS": {
    "scen": {
@@ -8336,10 +8336,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_scenarios.json"
    },
-   "fair_value": 106.69,
-   "bear": 69.76,
-   "base": 109.19,
-   "bull": 155.86,
+   "fair_value": 106.61,
+   "bear": 69.7,
+   "base": 109.1,
+   "bull": 155.75,
    "hand": {
     "scen": {
      "bear": {
@@ -8358,12 +8358,12 @@
       "m": 0.36
      }
     },
-    "fair_value": 97.44,
-    "bear": 74.34,
-    "base": 100.69,
-    "bull": 123.99
+    "fair_value": 97.36,
+    "bear": 74.27,
+    "base": 100.6,
+    "bull": 123.89
    },
-   "diff": 0.0949
+   "diff": 0.095
   },
   "LAUR": {
    "scen": {
@@ -9752,7 +9752,7 @@
     "base": {
      "g1": 0.1643,
      "g10": 0.065,
-     "m": 0.2855
+     "m": 0.2909
     },
     "bull": {
      "g1": 0.2469,
@@ -9783,7 +9783,7 @@
      0.1949,
      0.295,
      0.2526,
-     0.2255
+     0.2399
     ],
     "margin_years": [
      "2022-12-31",
@@ -9794,10 +9794,10 @@
     ],
     "inputs_file": "inputs_2026-11-11_add14.json"
    },
-   "fair_value": 94.89,
-   "bear": 46.92,
-   "base": 96.59,
-   "bull": 162.59,
+   "fair_value": 98.08,
+   "bear": 48.81,
+   "base": 100.64,
+   "bull": 165.6,
    "hand": {
     "scen": {
      "bear": {
@@ -9816,12 +9816,12 @@
       "m": 0.29
      }
     },
-    "fair_value": 53.91,
-    "bear": 37.72,
-    "base": 55.6,
-    "bull": 73.99
+    "fair_value": 55.83,
+    "bear": 39.46,
+    "base": 57.54,
+    "bull": 76.12
    },
-   "diff": 0.76
+   "diff": 0.7567
   },
   "EPAC": {
    "scen": {

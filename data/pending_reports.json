@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
@@ -7,28 +7,21 @@
    "data_through": "2026-07-31",
    "reported_on": "2026-11-17",
    "yahoo_latest_quarter": "2026-10-25",
-   "waiting_days": 3
-  },
-  {
-   "ticker": "INTU",
-   "data_through": "2026-07-31",
-   "reported_on": "2026-11-19",
-   "yahoo_latest_quarter": "2026-07-31",
-   "waiting_days": 1
+   "waiting_days": 4
   },
   {
    "ticker": "ROST",
    "data_through": "2026-07-31",
    "reported_on": "2026-11-19",
    "yahoo_latest_quarter": "2026-08-01",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "WSM",
    "data_through": "2026-07-31",
    "reported_on": "2026-11-19",
    "yahoo_latest_quarter": "2026-08-02",
-   "waiting_days": 1
+   "waiting_days": 2
   }
  ],
  "upcoming": [
@@ -631,6 +624,11 @@
    "ticker": "VICI",
    "next_report": "2027-02-24",
    "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "INTU",
+   "next_report": "2027-02-25",
+   "data_through": "2026-10-31"
   },
   {
    "ticker": "MNST",

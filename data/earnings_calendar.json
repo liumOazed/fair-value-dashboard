@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "source": "Yahoo Finance via yfinance",
  "stocks": {
   "AAPL": {
@@ -212,8 +212,8 @@
   },
   "INTU": {
    "last_report": "2026-11-19",
-   "next_report": null,
-   "yahoo_latest_quarter": "2026-07-31",
+   "next_report": "2027-02-25",
+   "yahoo_latest_quarter": "2026-10-31",
    "past": [
     "2025-08-21",
     "2025-11-20",
@@ -688,7 +688,7 @@
   },
   "ROST": {
    "last_report": "2026-11-19",
-   "next_report": null,
+   "next_report": "2027-03-04",
    "yahoo_latest_quarter": "2026-08-01",
    "past": [
     "2025-08-21",
@@ -1637,7 +1637,7 @@
   },
   "WSM": {
    "last_report": "2026-11-19",
-   "next_report": null,
+   "next_report": "2027-03-17",
    "yahoo_latest_quarter": "2026-08-02",
    "past": [
     "2025-08-27",
