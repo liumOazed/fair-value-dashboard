@@ -16,14 +16,14 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
+   "needs_verdict": false,
    "verdict": {
-    "label": "temporary",
+    "label": "unclear",
     "confidence": "medium",
-    "cause": "AI-chip and data-centre sell-off after the midterms (-9% on 5 Nov, ~24% below the October record): data-centre permit pauses and doubts about how customers finance AI build-outs",
-    "summary": "None of the drivers is an NVIDIA operating problem: analysts are still raising estimates (7 up, 0 down in 30 days), Amazon committed to more GPUs and Rubin has orders from major clouds; the known pressure is gross margin falling to ~71-72% on memory costs, already guided. The fall tracks the whole sector. Watch the 17 Nov report and any sign that permits or financing delay deployments; the price (~82) is about at the model fair value (~79).",
+    "cause": "Company-specific: Reuters report (20 Nov) of an SEC enforcement inquiry into possible accounting issues, on top of CEO Jensen Huang's 12 Nov resignation, a California AG subpoena and a broad AI sell-off",
+    "summary": "NVDA fell 14% on 20 Nov (sector RSPT -6%, S&P -3.6%) and 24% in a week after Reuters reported SEC staff are examining possible accounting issues; this followed Huang's exit over affairs linked to a reported Chinese intelligence contact, a board inquiry and a California AG subpoena on China chip leakage. The business itself still looks strong (Q3 revenue $115.8B, +103%; Q4 guide $130B, gross margin 71-72%), so the fall may prove temporary, but the facts can't settle it yet: the practice under review is unknown and $118B of customer credit guarantees ($105B for one campus) could matter. Watch the probe's scope, any restatement, the CEO search and the guarantee disclosures; the model fair value (~$179, valued 5 Nov) would be too high if reported revenue or customer financing proves weaker than stated.",
     "model_changed": false,
-    "date": "2026-11-06",
+    "date": "2026-11-21",
     "by": "Claude"
    },
    "evidence": {
@@ -6923,6 +6923,6 @@
   "META",
   "USLM"
  ],
- "updated": "2026-11-21T02:10:24Z",
+ "updated": "2026-11-21T02:25:52Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
