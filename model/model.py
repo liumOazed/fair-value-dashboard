@@ -884,12 +884,16 @@ def implied_cap(price, rev0, m0, g1, m_target, r, nc, shares, **kw):
             return n
     return CAP_MAX + 1          # read as "more than CAP_MAX years"
 
-def nopat_margin(t, tax):
-    """After-tax operating margin, latest fiscal year (data/snapshot_raw.json), taxed at the model's rate."""
+def nopat_margin(t, tax, aint_share=0.0):
+    """After-tax operating margin, latest fiscal year (data/snapshot_raw.json), taxed at the model's rate.
+    Lenders and asset managers (AXP, AMP) report no operating income line: there pre-tax profit stands in, with the
+    after-tax interest the model adds back (aint_share = aint / revenue; 0 when, as for them, the model treats the
+    company's debt as part of the business), so NOPAT and the cash flow being discounted stay on the same footing."""
     inc = (_SNAP.get(t) or {}).get("annual", {}).get("inc") or {}
-    rows = [v for _, v in sorted(inc.items()) if v.get("op") is not None and v.get("rev")]
+    rows = [v for _, v in sorted(inc.items()) if v.get("rev") and (v.get("op") is not None or v.get("pretax") is not None)]
     if not rows: return None
-    m = rows[-1]["op"] / rows[-1]["rev"] * (1 - tax)
+    x = rows[-1]
+    m = x["op"] / x["rev"] * (1 - tax) if x.get("op") is not None else x["pretax"] / x["rev"] * (1 - tax) + aint_share
     return m if m > 0 else None
 
 def growth_check(d, rev0, nm, m_target, r, gt=GT):
@@ -1059,7 +1063,7 @@ for tk, s in STOCKS.items():
     rate_table = [RT(r, W(r)) for r in rates]
     wacc_row = RT(wacc_of(tk, s, s["r"]), wacc_of(tk, s, s["r"]))   # the same cash flows discounted at the blended WACC (Capital and returns card)
     cap = implied_cap(s["price"], s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"], **su["kw"])
-    nm = nopat_margin(tk, f["tax"])
+    nm = nopat_margin(tk, f["tax"], aint / s["rev"])
     gchk = {k: growth_check(res[k]["detail"], s["rev"], nm, S2[k]["m"], w) for k in res}   # NOPAT and FCFF are both before interest
     E_ = s["price"] * s["shares"]
     out["assets"][tk] = dict(

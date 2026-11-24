@@ -110,7 +110,7 @@ function open(t){if(PAGE==="risk")return openRisk(t);const r=rows.find(x=>x.tick
   const rows=G?["bear","base","bull"].filter(k=>G[k]).map(k=>{const g=G[k],f=g.forecast,t=g.terminal,fx=x=>x==null?"–":x>1?"over 100%":pc(x);
    return `<tr><td style="text-align:left">${k[0].toUpperCase()+k.slice(1)}</td><td class="${g.flag==="below_hurdle"?"down":""}">${fx(f)}</td><td>${fx(t)}</td><td style="text-align:left" class="muted">${g.flag?NOTE[g.flag]:"Plausible."}</td></tr>`}).join(""):"";
   capH=`<h3>How long the edge must last</h3><p>${capTxt}</p>${piP}`+(rows?`<p class="muted">Return on new investment each case implies, using after-tax operating margin ${gm!=null?pc(gm):"–"} (latest year, held flat) and reinvestment = operating profit − cash flow. Compare with the ${rr} required return: growth only adds value above it.</p><div class="scroll"><table class="s"><tr><th style="text-align:left">Case</th><th>Forecast years</th><th>After the forecast</th><th style="text-align:left">Reading</th></tr>${rows}</table></div>`:
-   (G===null||gm==null?`<p class="muted">Return on new investment not shown: no operating profit figure for this company.</p>`:""))}
+   (G===null||gm==null?`<p class="muted">Return on new investment not shown: the latest year has no positive operating profit to measure it against.</p>`:""))}
  // ---------- growth engines (segments): each segment's own year-1 growth, all fading to the scenario's year-10 rate
  let segH="";if(r.segments&&r.segments.names){const S=r.segments,EN=S.engines,pc=x=>(x*100).toFixed(1).replace(".0","")+"%";
   segH=`<h3>Growth engines</h3><p class="muted">Revenue is split into the company's reported segments (${S.period}; <a href="${S.source}" target="_blank" rel="noopener">source</a>). Each segment's year-1 growth follows its reported growth relative to the company's (${pc(S.reported)}), capped at twice the company rate, and still adds up to the scenario's year-1 growth. ${EN?`Each segment is valued as its own engine: it fades to the scenario's year-10 rate, then to 2.5% over its own advantage period, and earns its own share of the cash margin (× company margin; today's company margin is unchanged, so only the mix moves it). The company value is the sum of the engines.`:`All segments fade to the same year-10 rate, so faster segments gain share and lift growth in years 2-9. One company-wide margin.`}</p><div class="scroll"><table class="s"><tr><th style="text-align:left">Segment</th><th>Share now</th><th>Bear yr 1</th><th>Base yr 1</th><th>Bull yr 1</th>${EN?`<th>Margin × company</th><th style="text-align:left">Edge</th>`:""}</tr>`+
@@ -120,7 +120,7 @@ function open(t){if(PAGE==="risk")return openRisk(t);const r=rows.find(x=>x.tick
  const SN0=snapHTML(r),scH=`<h3>Scenarios</h3><table class="s"><tr><th style="text-align:left">Case</th><th>Value</th><th>Weight</th><th style="text-align:left">Assumptions</th></tr>${sc}</table>${RULEH(r)}`;
  // Ex-post = looking back at reported results and history; ex-ante = looking forward with the model's forecasts
  const POST=[...SN0.post,capRetHTML(r,"post"),retHTML(r),bondHTML(r,"post")].filter(Boolean);   // risk sections live on the Risk page
- const ANTE=[...SN0.ante,capRetHTML(r,"ante"),bondHTML(r,"ante"),assumesHTML(r),capH?"":piH,capH,scH,segH,fc,rt].filter(Boolean);
+ const ANTE=[...SN0.ante,capRetHTML(r,"ante"),bondHTML(r,"ante"),assumesHTML(r),capH?"":piH,capH,farSumHTML(r),scH,segH,fc,rt].filter(Boolean);
  const nP=POST.length,nA=ANTE.length,sh=nP+nA?Math.round(nP/(nP+nA)*100):0;
  const grp=(id,k,t,sub,A)=>A.length?`<section class="tgrp ${k}" id="${id}"><div class="tgh"><span class="tgk">${t}</span><span class="tgs">${sub}</span><span class="tgn">${A.length} section${A.length>1?"s":""}</span></div>${A.join("")}</section>`:"";
  $("#dr").innerHTML=`<button class="x" id="cl">✕</button><h2 style="font-size:22px">${r.ticker} <span class="muted">${r.name}</span></h2>
@@ -831,26 +831,46 @@ $("#ratingsel").onchange=e=>{rf=e.target.value;render()};
 function refresh(){applyHurdle();ratingUI();myUI();riskAll();kpis();render()}
 refresh();
 if(PAGE==="fv")dropUI();
-if(location.hash.length>1&&rows.some(r=>r.ticker===location.hash.slice(1).toUpperCase()))open(location.hash.slice(1).toUpperCase());
+const hashT=()=>location.hash.slice(1).split(":")[0].toUpperCase(),hashGo=()=>{const k=location.hash.split(":")[1],g=k&&$("#g-rs-"+k.replace(/\W/g,""));if(g)g.scrollIntoView({block:"start"})};
+if(location.hash.length>1&&rows.some(r=>r.ticker===hashT())){open(hashT());hashGo()}
 $("#scrim").onclick=close;document.addEventListener("keydown",e=>e.key==="Escape"&&close());
 // 5- and 20-year holds for My horizon (model/montecarlo.py -> data/mc_horizon.json), loaded after the page is up
-fetch("data/mc_horizon.json?"+Date.now()).then(x=>x.ok?x.json():null).then(H=>{if(!H||!H.stocks)return;rows.forEach(r=>{const x=H.stocks[r.ticker],I=r.mc&&r.mc.irr;if(x&&I&&Math.abs(x.fair_value-I.fair_value)<1e-6){I.hold5=x.hold5;I.hold20=x.hold20}});if(MY.hz===5||MY.hz===20)refresh();const t=location.hash.slice(1).toUpperCase();if($("#drawer").classList.contains("on")&&rows.some(r=>r.ticker===t))open(t)}).catch(()=>{});
+fetch("data/mc_horizon.json?"+Date.now()).then(x=>x.ok?x.json():null).then(H=>{if(!H||!H.stocks)return;rows.forEach(r=>{const x=H.stocks[r.ticker],I=r.mc&&r.mc.irr;if(x&&I&&Math.abs(x.fair_value-I.fair_value)<1e-6){I.hold5=x.hold5;I.hold20=x.hold20}});if(MY.hz===5||MY.hz===20)refresh();const t=hashT();if($("#drawer").classList.contains("on")&&rows.some(r=>r.ticker===t))open(t)}).catch(()=>{});
+
+// Shared by the Risk section below and the Fair Value drawer summary (farSumHTML).
+function farPc(v){return (v*100).toFixed(0)+"%"}
+function farBar(b){const FAR_OP=[1,.78,.58,.4,.24],Bk=DN.buckets||["1-5","6-10","11-20","21-30","30+"],pc=farPc;
+ return `<div class="hzbar" role="img" aria-label="Share of base value by years: ${Bk.map((k,i)=>`years ${k} ${pc(b.shares[i])}`).join(", ")}">${b.shares.map((v,i)=>`<i style="width:${Math.max(v,0)*100}%;opacity:${FAR_OP[i]}" title="Years ${Bk[i]}: ${pc(v)}"></i>`).join("")}</div>
+  <div class="hzlg">${Bk.map((k,i)=>`<span><i style="opacity:${FAR_OP[i]}"></i>Years ${k} · ${pc(b.shares[i])}</span>`).join("")}</div>`}
+function farConcerns(x){const R=x.reliability||{},CN=DN.concerns||{};
+ return (R.concerns||[]).map(k=>`${esc(CN[k]||k)}${k==="price"&&R.implied_cap!=null?` (${R.implied_cap>80?"more than 80":R.implied_cap} years against ${x.cap_years})`:k==="fade"&&R.half_life!=null?` (about ${R.half_life.toFixed(1)} years)`:k==="score"&&R.suggested?` (${MOATN[R.suggested]||R.suggested}, score ${R.score}/10)`:""}`)}
+function farTone(l){return {"well supported":"ok","some reliance on distant cash":"warn","leans on distant cash":"bad"}[l]||"warn"}
+// ---------- Fair Value drawer: "How much of the value is distant cash?" (framework check: how much value depends on remote
+// future cash flows). A short version of the Risk page section, next to "How long the edge must last". Information only.
+function farSumHTML(r){const x=(DN.stocks||{})[r.ticker];if(r.type!=="stock"||!x||!x.horizon||!x.horizon.base)return "";
+ const b=x.horizon.base,R=x.reliability||{},pc=farPc,p1=v=>(v*100).toFixed(1).replace(".0","")+"%",Mo=x.mos,MR=DN.mos_rule||{},ins=x.kind==="insurer";
+ const cs=farConcerns(x),hz=MY.hz,cum=hz==null?null:b.shares.slice(0,hz===5?1:hz===10?2:3).reduce((a,v)=>a+v,0);
+ const bbS=Mo&&Mo.extra>0?r.fair_value*(1-Mo.suggested):null;
+ return `<h3>How much of the value is distant cash?</h3><p><span class="pill ${farTone(R.label)}">${R.label?R.label[0].toUpperCase()+R.label.slice(1):"–"}</span> Half of the base value arrives by <b>year ${b.half_year??"–"}</b>. <b>${pc(b.beyond10)}</b> of it comes after year 10 and <b>${pc(b.beyond20)}</b> after year 20.</p>
+ ${farBar(b)}
+ <p>${cs.length?`What makes the distant cash less certain: ${cs.map(c=>c[0].toLowerCase()+c.slice(1)).join("; ")}.`:"No concerns about the distant cash flows on our five checks."}${hz!=null?` Within your ${hz}-year horizon you would collect about <b>${pc(cum)}</b> of it as ${ins?"cash it can pay out":"free cash flow"}; the rest depends on the price the next buyer pays.`:""}</p>
+ ${bbS!=null?`<p><b>Price to pay:</b> with ${Mo.counted.length>1?`${Mo.counted.length} distant-cash concerns`:"a distant-cash concern"}, the suggested margin of safety is <b>${p1(Mo.suggested)}</b> (ours ${p1(Mo.current)}), so buy below <b>${usd(bbS)}</b> instead of ${usd(r.buy_below)}. <span class="muted">Not applied yet${MR.review?`: to be reviewed ${esc(MR.review)}`:""}.</span></p>`:""}
+ <p class="muted">Share of ${ins?"value":"operating value (before net debt)"} by when the cash arrives, at the ${p1(x.r)} required return. Information only: the fair value, rating and margin of safety are unchanged. <a href="risk.html#${r.ticker}:far">Duration, edge-ending test and the full split by case on the Risk page →</a></p>`}
 
 // ---------- How far away is the value? (scripts/duration.py -> data/duration.json). Durand's Petersburg-paradox questions:
 // how much of the value is distant cash, how hard a rate rise hits it, and how much is lost if the edge ends early.
 // Information only: the fair value, rating and margin of safety are unchanged.
 function farHTML(r){const x=(DN.stocks||{})[r.ticker];if(r.type!=="stock"||!x||!x.horizon||!x.horizon.base)return "";
  const T=DN.treasury||{},Bk=DN.buckets||["1-5","6-10","11-20","21-30","30+"],pc=v=>(v*100).toFixed(0)+"%",ch=v=>(v>=0?"+":"−")+Math.abs(v*100).toFixed(0)+"%",rr=(x.r*100).toFixed(1).replace(".0","")+"%";
- const OP=[1,.78,.58,.4,.24],H=x.horizon,b=H.base,R=x.reliability||{},D=x.duration,S=x.stress,ins=x.kind==="insurer";
+ const H=x.horizon,b=H.base,R=x.reliability||{},D=x.duration,S=x.stress,ins=x.kind==="insurer";
  const hz=MY.hz,cum=hz==null?1:b.shares.slice(0,hz===5?1:hz===10?2:3).reduce((a,v)=>a+v,0),cash=ins?"cash it can pay out":"free cash flow";
  const hzP=hz==null?`<p><b>Your horizon: hold for good</b> (My settings). You collect all of the cash yourself, so the price along the way matters less than whether the distant ${cash} arrives.</p>`
   :`<p><b>Your horizon: ${hz} years</b> (My settings). Within it you would collect about <b>${pc(cum)}</b> of the base value as ${cash}; the other <b>${pc(1-cum)}</b> depends on the price the next buyer pays at the end of year ${hz}, which is only as good as their belief in the cash still to come. ${b.half_year!=null&&b.half_year<=hz?"Your horizon covers where half of the value comes from.":`Half of the value arrives after your horizon (year ${b.half_year??"–"}): a long-duration asset for a shorter holding period, so the sale price carries most of your return.`}</p>`;
  const p1=v=>(v*100).toFixed(1).replace(".0","")+"%",Mo=x.mos,MR=DN.mos_rule||{},bbS=Mo?r.fair_value*(1-Mo.suggested):null;
  const mosP=!Mo?"":Mo.extra>0?`<p><b>Suggested margin of safety: ${p1(Mo.suggested)}</b> (ours ${p1(Mo.current)} + ${(Mo.extra*100).toFixed(1).replace(".0","")} points: ${(MR.step*100).toFixed(1).replace(".0","")} ${Mo.counted.length>1?`for each of the ${Mo.counted.length} concerns above`:"for the concern above"}${(R.concerns||[]).includes("price")?", leaving out the price one":""}), so buy below <b>${usd(bbS)}</b> instead of ${usd(r.buy_below)}.${r.price!=null&&(r.price<=r.buy_below)!==(r.price<=bbS)?` At today's ${usd(r.price)} that would change: the price is below one but not the other.`:""} <span class="muted">Not applied yet: the table, status and rating use ${p1(Mo.current)}. To be reviewed ${esc(MR.review||"later")}.</span></p>`
   :`<p class="muted">Suggested margin of safety: unchanged at ${p1(Mo.current)} (no distant-cash concern other than price).</p>`;
- const tone={"well supported":"ok","some reliance on distant cash":"warn","leans on distant cash":"bad"}[R.label]||"warn";
- const bar=`<div class="hzbar" role="img" aria-label="Share of base value by years: ${Bk.map((k,i)=>`years ${k} ${pc(b.shares[i])}`).join(", ")}">${b.shares.map((v,i)=>`<i style="width:${Math.max(v,0)*100}%;opacity:${OP[i]}" title="Years ${Bk[i]}: ${pc(v)}"></i>`).join("")}</div>
-  <div class="hzlg">${Bk.map((k,i)=>`<span><i style="opacity:${OP[i]}"></i>Years ${k} · ${pc(b.shares[i])}</span>`).join("")}</div>`;
+ const tone=farTone(R.label);
+ const bar=farBar(b);
  const rows=["bear","base","bull"].filter(k=>H[k]).map(k=>`<tr><td style="text-align:left" class="${k==="base"?"hl":""}">${k[0].toUpperCase()+k.slice(1)}</td>${H[k].shares.map(v=>`<td>${pc(v)}</td>`).join("")}<td>${H[k].half_year??"–"}</td></tr>`).join("");
  const CL={wide:"wide moat, 20 years",narrow:"narrow moat, 15 years",none:"no moat, 12 years",end10:"edge ends at year 10"};
  const st=S?`<div class="scroll"><table class="s"><tr><th style="text-align:left">If the edge…</th><th>Fair value</th><th>Change</th></tr>
@@ -858,7 +878,7 @@ function farHTML(r){const x=(DN.stocks||{})[r.ticker];if(r.type!=="stock"||!x||!
   ${S.lower!=="end10"?`<tr><td style="text-align:left">is one class shorter (${CL[S.lower]})</td><td>${usd(S.lower_fv)}</td><td class="${S.lower_chg<0?"down":""}">${ch(S.lower_chg)}</td></tr>`:""}
   <tr><td style="text-align:left">${ins?`ends at year 11 (book growth fades by then; ROE then falls to ${rr})`:`ends at year 10 (growth fades by then; later investment earns only ${rr})`}</td><td>${usd(S.end10_fv)}</td><td class="${S.end10_chg<0?"down":""}">${ch(S.end10_chg)}</td></tr></table></div>`
   :`<p class="muted">Not tested: a short-advantage stock is already valued over 10 years, with growth at or below 2.5%.</p>`;
- const CN=DN.concerns||{},cl=(R.concerns||[]).map(k=>`<li>${esc(CN[k]||k)}${k==="price"&&R.implied_cap!=null?` (${R.implied_cap>80?"more than 80":R.implied_cap} years against ${x.cap_years})`:k==="fade"&&R.half_life!=null?` (about ${R.half_life.toFixed(1)} years)`:k==="score"&&R.suggested?` (${MOATN[R.suggested]||R.suggested}, score ${R.score}/10)`:""}</li>`).join("");
+ const cl=farConcerns(x).map(c=>`<li>${c}</li>`).join("");
  return `<h3>How far away is the value?</h3><p><span class="pill ${tone}">${R.label?R.label[0].toUpperCase()+R.label.slice(1):"–"}</span> Half of the base value arrives by <b>year ${b.half_year??"–"}</b>. <b>${pc(b.beyond10)}</b> of it comes after year 10 and <b>${pc(b.beyond20)}</b> after year 20.</p>
  ${bar}
  ${hzP}
