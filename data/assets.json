@@ -156575,11 +156575,26 @@
     }
    },
    "implied_cap": 20,
-   "nopat_margin": null,
+   "nopat_margin": 0.148,
    "growth_check": {
-    "bear": null,
-    "base": null,
-    "bull": null
+    "bear": {
+     "forecast": 0.1752,
+     "terminal": 0.4246,
+     "reinvest_share": 0.0904,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.3528,
+     "terminal": null,
+     "reinvest_share": 0.1388,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": 0.3488,
+     "terminal": null,
+     "reinvest_share": 0.1883,
+     "flag": "free"
+    }
    },
    "moat": "narrow",
    "cap_years": 15,
@@ -318287,11 +318302,26 @@
    "moat_note": "Edge lasts about 15 years; returns on new investment fade halfway from 20% to the required return.",
    "segments": null,
    "implied_cap": 1,
-   "nopat_margin": null,
+   "nopat_margin": 0.1913,
    "growth_check": {
-    "bear": null,
-    "base": null,
-    "bull": null
+    "bear": {
+     "forecast": 0.3988,
+     "terminal": 1.1328,
+     "reinvest_share": 0.0155,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.7832,
+     "terminal": null,
+     "reinvest_share": 0.0563,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": 1.7863,
+     "terminal": null,
+     "reinvest_share": 0.0345,
+     "flag": "free"
+    }
    },
    "rate_table": [
     {

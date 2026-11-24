@@ -30686,11 +30686,26 @@
   },
   "AXP": {
    "implied_cap": 20,
-   "nopat_margin": null,
+   "nopat_margin": 0.14801502145922749,
    "growth_check": {
-    "bear": null,
-    "base": null,
-    "bull": null
+    "bear": {
+     "forecast": 0.17521249287337726,
+     "terminal": 0.4245974096326207,
+     "reinvest_share": 0.09041231125956445,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.35283083002189564,
+     "terminal": null,
+     "reinvest_share": 0.13876985205856632,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": 0.3487634253145268,
+     "terminal": null,
+     "reinvest_share": 0.18833744291329374,
+     "flag": "free"
+    }
    },
    "moat": "narrow",
    "cap_years": 15,
@@ -60149,11 +60164,26 @@
   },
   "AMP": {
    "implied_cap": 1,
-   "nopat_margin": null,
+   "nopat_margin": 0.19132251082251084,
    "growth_check": {
-    "bear": null,
-    "base": null,
-    "bull": null
+    "bear": {
+     "forecast": 0.39880128985902075,
+     "terminal": 1.1327532294443254,
+     "reinvest_share": 0.015492099988427313,
+     "flag": null
+    },
+    "base": {
+     "forecast": 0.7832420003484115,
+     "terminal": null,
+     "reinvest_share": 0.05627564407910819,
+     "flag": "free"
+    },
+    "bull": {
+     "forecast": 1.7863290389990427,
+     "terminal": null,
+     "reinvest_share": 0.03452231327791747,
+     "flag": "free"
+    }
    },
    "moat": "narrow",
    "cap_years": 15,
