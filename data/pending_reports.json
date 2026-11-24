@@ -1,29 +1,7 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
- "pending": [
-  {
-   "ticker": "NVDA",
-   "data_through": "2026-07-31",
-   "reported_on": "2026-11-17",
-   "yahoo_latest_quarter": "2026-10-25",
-   "waiting_days": 6
-  },
-  {
-   "ticker": "ROST",
-   "data_through": "2026-07-31",
-   "reported_on": "2026-11-19",
-   "yahoo_latest_quarter": "2026-10-31",
-   "waiting_days": 4
-  },
-  {
-   "ticker": "WSM",
-   "data_through": "2026-07-31",
-   "reported_on": "2026-11-19",
-   "yahoo_latest_quarter": "2026-11-01",
-   "waiting_days": 4
-  }
- ],
+ "pending": [],
  "upcoming": [
   {
    "ticker": "ADSK",
@@ -586,6 +564,11 @@
    "data_through": "2026-09-30"
   },
   {
+   "ticker": "NVDA",
+   "next_report": "2027-02-24",
+   "data_through": "2026-10-31"
+  },
+  {
    "ticker": "APA",
    "next_report": "2027-02-24",
    "data_through": "2026-09-30"
@@ -664,6 +647,16 @@
    "ticker": "XYZ",
    "next_report": "2027-03-01",
    "data_through": "2026-09-30"
+  },
+  {
+   "ticker": "ROST",
+   "next_report": "2027-03-04",
+   "data_through": "2026-10-31"
+  },
+  {
+   "ticker": "WSM",
+   "next_report": "2027-03-17",
+   "data_through": "2026-10-31"
   }
  ]
 }

@@ -1810,6 +1810,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27cfocommentary.htm",
      "quote": "Data Center revenue for the second quarter was a record $89.0 billion, up 117% from a year ago and up 18% sequentially. Table: Data Center | $89,023 | $75,246 | $41,096 | 117%",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q3 FY27",
+     "value": 110,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm",
+     "quote": "Data Center: Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
+     "added": "2026-11-24"
     }
    ],
    "gross_margin": [
@@ -1876,6 +1884,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
      "quote": "GAAP: Gross margin | 75.0% | 74.9% | 72.4% | 0.1 pts | 2.6 pts (Q2 FY27 | Q1 FY27 | Q2 FY26)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q3 FY27",
+     "value": 74.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm",
+     "quote": "GAAP: Gross margin | 74.8% | 75.0% | 73.4% (Q3 FY27 | Q2 FY27 | Q3 FY26)",
+     "added": "2026-11-24"
     }
    ],
    "r_d_revenue": [
@@ -1942,6 +1958,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
      "quote": "Condensed consolidated statement of income, three months (Q2 FY27, $M): Revenue $96,221 ... Research and development $7,054 (7054/96221 = 7.3%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q3 FY27",
+     "value": 6.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm",
+     "quote": "Condensed consolidated statement of income, three months (Q3 FY27, $M): Revenue $115,844 ... Research and development $7,454 (7454/115844 = 6.4%)",
+     "added": "2026-11-24"
     }
    ],
    "inventory_supply_commitments_vs_revenue": [
@@ -2008,6 +2032,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27cfocommentary.htm",
      "quote": "Inventory was $31.6 billion, up from $25.8 billion sequentially, as we prepare for the introduction of Vera Rubin ... Our commitments increased from $119 billion last quarter to $279 billion, primarily related to the procurement of memory. (supply and capacity category of commitments table = $279B). Balance sheet (Q2 FY27 PR) Inventories $31,575M; Revenue $96,221M ((31,575 + 279,000)/96,221 = 322.8%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q3 FY27",
+     "value": 371.0,
+     "source": "https://www.nasdaq.com/articles/nvidia-nvda-q3-2027-earnings-call-transcript",
+     "quote": "CFO Colette Kress, Q3 FY27 earnings call: \"our purchase commitments increased to $390 billion\" (up from $279B in Q2, same basis). Balance sheet (Q3 FY27 PR) Inventories $39,724M; Revenue $115,844M ((39,724 + 390,000)/115,844 = 371.0%)",
+     "added": "2026-11-24"
     }
    ],
    "top_customer_concentration_10_k": [
@@ -4226,6 +4258,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
      "quote": "Online Ecosystem revenue increased 17 percent to $2.6 billion.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q1 FY27",
+     "value": 20,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000043/fy27q1earningspressrelease.htm",
+     "quote": "Online Ecosystem revenue increased 20 percent to $2.4 billion.",
+     "added": "2026-11-24"
     }
    ],
    "consumer_turbotax_revenue_growth": [
@@ -4292,6 +4332,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
      "quote": "TurboTax revenue increased 3 percent to $153 million.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q1 FY27",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000043/fy27q1earningspressrelease.htm",
+     "quote": "TurboTax revenue increased 1 percent to $199 million.",
+     "added": "2026-11-24"
     }
    ],
    "credit_karma_revenue_growth": [
@@ -4358,6 +4406,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
      "quote": "Credit Karma revenue increased 16 percent to $743 million",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q1 FY27",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000043/fy27q1earningspressrelease.htm",
+     "quote": "Credit Karma revenue increased 9 percent to $708 million.",
+     "added": "2026-11-24"
     }
    ],
    "quickbooks_online_accounting_growth": [
@@ -4424,6 +4480,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
      "quote": "QuickBooks Online Accounting revenue increased 20 percent driven by higher effective prices, customer growth, and mix shift.",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q1 FY27",
+     "value": 19,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000043/fy27q1earningspressrelease.htm",
+     "quote": "QuickBooks Online Accounting revenue increased 19 percent to $1.4 billion, driven by higher effective prices, mix shift, and customer growth.",
+     "added": "2026-11-24"
     }
    ],
    "sbc_revenue": [
@@ -4490,6 +4554,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000029/fy26q4earningspressrelease.htm",
      "quote": "Q4 FY26 release Table A (current-year three-month column): Total share-based compensation expense $507M ... Total net revenue $4,354M (507/4354 = 11.6%)",
      "added": "2026-10-30"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q1 FY27",
+     "value": 11.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000896878/000089687826000043/fy27q1earningspressrelease.htm",
+     "quote": "Q1 FY27 release Table A (current-year three-month column): Total share-based compensation expense $495M ... Total net revenue $4,354M (495/4354 = 11.4%)",
+     "added": "2026-11-24"
     }
    ]
   },
@@ -14146,6 +14218,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
      "quote": "Comparable store sales rose a very strong 10% for the quarter on top of a 2% gain last year.",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q3 2026",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000047/q326exhibit991.htm",
+     "quote": "Comparable store sales rose a strong 8% for the quarter on top of a 7% gain last year.",
+     "added": "2026-11-24"
     }
    ],
    "operating_margin": [
@@ -14212,6 +14292,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
      "quote": "Not stated as a % level (release: 'Operating margin increased 610 basis points, including 405 basis points from the tariff refunds.'). Computed from table, three months ended August 1, 2026: 'Operating income | 1,103,618' / 'Sales | $6,264,886' = 17.62%",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q3 2026",
+     "value": 12.26,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000047/q326exhibit991.htm",
+     "quote": "Computed from table, three months ended October 31, 2026: Sales $6,255,954 - Cost of goods sold 4,460,469 - SG&A 1,028,698 = Operating income 766,787 (= EBT 802,118 - net interest income 35,331); 766,787 / 6,255,954 = 12.26%. Release: 'Third quarter operating margin of 12.3% increased 70 basis points compared to last year'",
+     "added": "2026-11-24"
     }
    ],
    "stores_at_quarter_end": [
@@ -14278,6 +14366,14 @@
      "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000038/q226exhibit991.htm",
      "quote": "Store count at end of period | 2,328 | 2,233 (August 1, 2026 | August 2, 2025)",
      "added": "2026-11-02"
+    },
+    {
+     "period": "2026-10-31",
+     "label": "Q3 2026",
+     "value": 2377,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000745732/000074573226000047/q326exhibit991.htm",
+     "quote": "Number of stores at end of period: 2,377 (vs 2,273); 'During the quarter, opened 51 new stores, including 41 Ross and 10 dd's DISCOUNTS'",
+     "added": "2026-11-24"
     }
    ]
   },
@@ -21404,6 +21500,30 @@
   "ACIW": {
    "biller_revenue_growth": [
     {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 13.0,
+     "source": "https://investor.aciworldwide.com/node/26226",
+     "quote": "Segment Information (millions), Revenue: Biller | 203.6 | 180.2 | 817.7 | 726.5 -> 203.6 / 180.2 - 1 = 13.0%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000019/aciw-20260507_exx991.htm",
+     "quote": "Biller revenue in Q1 2026 was $212 million, up 10% from Q1 2025 on a reported and constant currency basis. (Table: Biller | 212.3 | 193.9) -> 212.3 / 193.9 - 1 = 9.5%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000026/aciw-20260806_exx991.htm",
+     "quote": "Biller revenue in Q2 2026 was $234 million, up 5% from Q2 2025 on a reported and constant currency basis. (Table: Biller | 234.1 | 221.9 | 446.3 | 415.7) -> 234.1 / 221.9 - 1 = 5.5%",
+     "added": "2026-11-24"
+    },
+    {
      "period": "2026-09-30",
      "label": "Q3 2026",
      "value": 6.1,
@@ -21414,6 +21534,30 @@
    ],
    "adjusted_ebitda_margin": [
     {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 47,
+     "source": "https://investor.aciworldwide.com/node/26226",
+     "quote": "Net Adjusted EBITDA Margin | 47% | 47% | 42% | 41% (Three Months Ended December 31 2025 | 2024, Years Ended December 31 2025 | 2024)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 36,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000019/aciw-20260507_exx991.htm",
+     "quote": "Net adjusted EBITDA margin in Q1 2026 was 38%, up from 36% in Q1 2025.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 32,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000026/aciw-20260806_exx991.htm",
+     "quote": "Net adjusted EBITDA margin in Q2 2026 was 34%, up from 32% in Q2 2025.",
+     "added": "2026-11-24"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q3 2025",
      "value": 49,
@@ -21422,12 +21566,102 @@
      "added": "2026-11-10"
     },
     {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 47,
+     "source": "https://investor.aciworldwide.com/node/26226",
+     "quote": "Net Adjusted EBITDA Margin | 47% | 47% | 42% | 41% (Three Months Ended December 31 2025 | 2024, Years Ended December 31 2025 | 2024)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 38,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000019/aciw-20260507_exx991.htm",
+     "quote": "Net adjusted EBITDA margin in Q1 2026 was 38%, up from 36% in Q1 2025.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 34,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000026/aciw-20260806_exx991.htm",
+     "quote": "Net adjusted EBITDA margin in Q2 2026 was 34%, up from 32% in Q2 2025.",
+     "added": "2026-11-24"
+    },
+    {
      "period": "2026-09-30",
      "label": "Q3 2026",
      "value": 35,
      "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000033/aciw-20261105_exx991.htm",
      "quote": "Net adjusted EBITDA margin in Q3 2026 was 35%, down from 49% in Q3 2025. (Adjusted EBITDA divided by revenue net of pass-through interchange revenue)",
      "added": "2026-11-10"
+    }
+   ],
+   "new_bookings": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.1503,
+     "source": "https://investor.aciworldwide.com/node/26226",
+     "quote": "Annual recurring revenue (ARR) bookings | $ 24.4 | $ 35.2 | $ 70.3 | $ 65.7; License and services bookings | 65.1 | 115.1 | 254.6 | 290.0 (New Bookings (millions), Three Months Ended December 31 2025 | 2024, Years Ended December 31 2025 | 2024) -> Q4 2024 new bookings = ARR bookings 35.2 + license and services bookings 115.1 = $150.3M = $0.1503B",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.0589,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000019/aciw-20260507_exx991.htm",
+     "quote": "Annual recurring revenue (ARR) bookings | $12.4 | $8.9 | $73.8 | $68.3; License and services bookings | 49.5 | 50.0 | 254.1 | 312.8 (New Bookings (millions), Three Months Ended March 31 2026 | 2025, TTM 2026 | 2025) -> Q1 2025 new bookings = ARR bookings 8.9 + license and services bookings 50.0 = $58.9M = $0.0589B",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.0824,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000026/aciw-20260806_exx991.htm",
+     "quote": "Annual recurring revenue (ARR) bookings | $18.3 | $24.3 | $67.7 | $79.5; License and services bookings | 59.2 | 58.1 | 255.2 | 290.2 (New Bookings (millions), Three Months Ended June 30 2026 | 2025, TTM 2026 | 2025) -> Q2 2025 new bookings = ARR bookings 24.3 + license and services bookings 58.1 = $82.4M = $0.0824B",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.094,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000033/aciw-20261105_exx991.htm",
+     "quote": "Annual recurring revenue (ARR) bookings | $23.6 | $12.6 | $78.6 | $81.1; License and services bookings | 63.9 | 81.4 | 237.7 | 304.5 (New Bookings (millions), Three Months Ended Sept 30 2026 | 2025, TTM 2026 | 2025) -> Q3 2025 new bookings = ARR bookings 12.6 + license and services bookings 81.4 = $94.0M = $0.0940B",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.0895,
+     "source": "https://investor.aciworldwide.com/node/26226",
+     "quote": "Annual recurring revenue (ARR) bookings | $ 24.4 | $ 35.2 | $ 70.3 | $ 65.7; License and services bookings | 65.1 | 115.1 | 254.6 | 290.0 (New Bookings (millions), Three Months Ended December 31 2025 | 2024, Years Ended December 31 2025 | 2024) -> Q4 2025 new bookings = ARR bookings 24.4 + license and services bookings 65.1 = $89.5M = $0.0895B",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.0619,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000019/aciw-20260507_exx991.htm",
+     "quote": "Annual recurring revenue (ARR) bookings | $12.4 | $8.9 | $73.8 | $68.3; License and services bookings | 49.5 | 50.0 | 254.1 | 312.8 (New Bookings (millions), Three Months Ended March 31 2026 | 2025, TTM 2026 | 2025) -> Q1 2026 new bookings = ARR bookings 12.4 + license and services bookings 49.5 = $61.9M = $0.0619B",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.0775,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000026/aciw-20260806_exx991.htm",
+     "quote": "Annual recurring revenue (ARR) bookings | $18.3 | $24.3 | $67.7 | $79.5; License and services bookings | 59.2 | 58.1 | 255.2 | 290.2 (New Bookings (millions), Three Months Ended June 30 2026 | 2025, TTM 2026 | 2025) -> Q2 2026 new bookings = ARR bookings 18.3 + license and services bookings 59.2 = $77.5M = $0.0775B",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.0875,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000935036/000093503626000033/aciw-20261105_exx991.htm",
+     "quote": "Annual recurring revenue (ARR) bookings | $23.6 | $12.6 | $78.6 | $81.1; License and services bookings | 63.9 | 81.4 | 237.7 | 304.5 (New Bookings (millions), Three Months Ended Sept 30 2026 | 2025, TTM 2026 | 2025) -> Q3 2026 new bookings = ARR bookings 23.6 + license and services bookings 63.9 = $87.5M = $0.0875B",
+     "added": "2026-11-24"
     }
    ]
   },
@@ -24756,6 +24990,906 @@
      "source": "https://s21.q4cdn.com/400572492/files/doc_earnings/2027/q1/earnings-result/PR-1Q27.pdf",
      "quote": "Adjusted operating margin (non-GAAP) 20.8 % 19.5 %",
      "added": "2026-11-20"
+    }
+   ]
+  },
+  "WSM": {
+   "comparable_brand_revenue_growth": [
+    {
+     "period": "2025-11-02",
+     "label": "Q3 FY25",
+     "value": 4.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "Comparable brand revenue growth table, Total: Q3 2026 5.1% | Q3 2025 4.0%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-11-01",
+     "label": "Q3 FY26",
+     "value": 5.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "Comparable brand revenue of +5.1%. Net revenue growth of +5.8%.",
+     "added": "2026-11-24"
+    }
+   ],
+   "pottery_barn_comp": [
+    {
+     "period": "2025-11-02",
+     "label": "Q3 FY25",
+     "value": 1.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "Pottery Barn | $ 762,743 | $ 741,526 | 1.8 % | 1.3 %",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-11-01",
+     "label": "Q3 FY26",
+     "value": 1.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "Pottery Barn | $ 762,743 | $ 741,526 | 1.8 % | 1.3 %",
+     "added": "2026-11-24"
+    }
+   ],
+   "west_elm_comp": [
+    {
+     "period": "2025-11-02",
+     "label": "Q3 FY25",
+     "value": 3.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "West Elm | 499,578 | 468,243 | 7.0 | 3.3",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-11-01",
+     "label": "Q3 FY26",
+     "value": 7.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "West Elm | 499,578 | 468,243 | 7.0 | 3.3",
+     "added": "2026-11-24"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2025-11-02",
+     "label": "Q3 FY25",
+     "value": 17.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "Operating income Q3 2025 319.1 on net revenues 1,882.8 -> 319.1 / 1,882.8 = 16.9-17.0%; release: 18.9% GAAP is '+190bps to LY'",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-11-01",
+     "label": "Q3 FY26",
+     "value": 18.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+     "quote": "Operating income of $377 million with an operating margin of 18.9% on a GAAP basis ... or $347 million with an operating margin of 17.4% on a non-GAAP basis. +190bps to LY on a GAAP basis and +40bps to LY on a non-GAAP basis. (GAAP: 376.9 / 1,991.2 = 18.9%)",
+     "added": "2026-11-24"
+    }
+   ]
+  },
+  "LAUR": {
+   "new_enrollment_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "FY 2025",
+     "value": 8,
+     "source": "https://investors.laureate.net/news/news-details/2026/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025-and-Provides-2026-Outlook/default.aspx",
+     "quote": "Enrollment table (New Enrollments FY 2025 | FY 2024 | Change): Laureate 272,200 252,400 8%; highlights: \"New enrollments increased 8%.\"",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026028578/laur03312026earningsreleas.htm",
+     "quote": "Enrollment table (New Enrollments YTD 1Q 2026 | YTD 1Q 2025 | Total): \"Laureate | 102,700 | 94,000 | 9% | 9%\"; \"New enrollments increased 9%.\"",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026050792/laur06302026earningsreleas.htm",
+     "quote": "Enrollment table (YTD 2Q 2026 | YTD 2Q 2025 | Change): \"Laureate | 142,400 | 129,000 | 10%\"; \"New enrollments increased 10%.\"",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000091276626000004/laur09302026earningsreleas.htm",
+     "quote": "\"New enrollments for the nine months ended September 30, 2026 increased 9%\"; table YTD 3Q 2026 | YTD 3Q 2025: Laureate 281,800 | 258,800 | 9%",
+     "added": "2026-11-24"
+    }
+   ],
+   "total_enrollment_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5,
+     "source": "https://investors.laureate.net/news/news-details/2026/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025-and-Provides-2026-Outlook/default.aspx",
+     "quote": "Enrollment table (Total Enrollments As of 12/31/2025 | As of 12/31/2024 | Change): Laureate 497,700 472,000 5%; \"Total enrollments increased 5%.\"",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026028578/laur03312026earningsreleas.htm",
+     "quote": "Enrollment table (Total Enrollments As of 03/31/2026 | As of 03/31/2025 | Total): Laureate 507,700 | 477,000 | 6%; \"Total enrollments increased 6%.\"",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026050792/laur06302026earningsreleas.htm",
+     "quote": "Enrollment table (As of 06/30/2026 | As of 06/30/2025 | Change): \"Laureate | 501,400 | 472,100 | 6%\"; \"Total enrollments increased 6%.\"",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000091276626000004/laur09302026earningsreleas.htm",
+     "quote": "\"total enrollments were up 6% compared to the prior-year period.\"; table As of 09/30/2026 | As of 09/30/2025: Laureate 539,600 | 511,400 | 6%",
+     "added": "2026-11-24"
+    }
+   ],
+   "organic_cc_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 16,
+     "source": "https://investors.laureate.net/news/news-details/2026/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025-and-Provides-2026-Outlook/default.aspx",
+     "quote": "\"On an organic constant currency basis1, revenue increased by 16%\"; table: Total Revenues $ 541.4 $ 423.4 28% 16%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026028578/laur03312026earningsreleas.htm",
+     "quote": "\"On a constant currency basis, revenue increased 1%\" (Total Revenues $272.6 vs $236.2: 15% reported, 1% constant currency)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026050792/laur06302026earningsreleas.htm",
+     "quote": "\"On a constant currency basis1, revenue increased 8%.\" (Total Revenues $615.9 | $524.2 | 17% | 8%)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 14,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000091276626000004/laur09302026earningsreleas.htm",
+     "quote": "\"On a constant currency basis, revenue increased 14%\" (Total Revenues $485.1 | $400.2 | 21% | 14%)",
+     "added": "2026-11-24"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 33.3,
+     "source": "https://investors.laureate.net/news/news-details/2026/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025-and-Provides-2026-Outlook/default.aspx",
+     "quote": "Table (three months): Total Adjusted EBITDA $141.1 and Total Revenues $423.4 ($M) for Q4 2024; computed 141.1 / 423.4 = 33.33%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026028578/laur03312026earningsreleas.htm",
+     "quote": "Table (three months): Total Adjusted EBITDA $5.4 and Total Revenues $236.2 ($M) for Q1 2025; computed 5.4 / 236.2 = 2.29%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 40.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026050792/laur06302026earningsreleas.htm",
+     "quote": "Table (three months): Total Adjusted EBITDA $214.5 and Total Revenues $524.2 ($M) for Q2 2025; computed 214.5 / 524.2 = 40.92%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 23.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000091276626000004/laur09302026earningsreleas.htm",
+     "quote": "Table (three months): Total Adjusted EBITDA $94.8 and Total Revenues $400.2 ($M) for Q3 2025; computed 94.8 / 400.2 = 23.69%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 37.7,
+     "source": "https://investors.laureate.net/news/news-details/2026/Laureate-Education-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025-and-Provides-2026-Outlook/default.aspx",
+     "quote": "Table (three months): Total Adjusted EBITDA $204.3 and Total Revenues $541.4 ($M) for Q4 2025; computed 204.3 / 541.4 = 37.74%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": -0.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026028578/laur03312026earningsreleas.htm",
+     "quote": "Table (three months): Total Adjusted EBITDA $-2.3 and Total Revenues $272.6 ($M) for Q1 2026; computed -2.3 / 272.6 = -0.84%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 40.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000162828026050792/laur06302026earningsreleas.htm",
+     "quote": "Table (three months): Total Adjusted EBITDA $250.6 and Total Revenues $615.9 ($M) for Q2 2026; computed 250.6 / 615.9 = 40.69%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 30.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000912766/000091276626000004/laur09302026earningsreleas.htm",
+     "quote": "Table (three months): Total Adjusted EBITDA $146.8 and Total Revenues $485.1 ($M) for Q3 2026; computed 146.8 / 485.1 = 30.26%",
+     "added": "2026-11-24"
+    }
+   ]
+  },
+  "IDCC": {
+   "catch_up_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.1358,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Catch-up revenue $12.6 $135.8 (91)% (prior-year column, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.0848,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Catch-up revenue | $63.6 | $84.8 | (25)% (prior-year column, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.1623,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Catch-up revenue | $103.7 | $162.3 | (36)% (prior-year column, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.0177,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Catch-up revenue | $36.2 | $17.7 | 105% (prior-year column, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.0126,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Catch-up revenue $12.6 $135.8 (91)% (current-year column, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.0636,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Catch-up revenue | $63.6 | $84.8 | (25)% (current-year column, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.1037,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Catch-up revenue | $103.7 | $162.3 | (36)% (current-year column, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.0362,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Catch-up revenue | $36.2 | $17.7 | 105% (current-year column, $M)",
+     "added": "2026-11-24"
+    }
+   ],
+   "annual_recurring_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.468,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Annualized recurring revenue1 (\"ARR\") increased 24% year-over-year from $468.0 million to $582.4 million (prior-year figure, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.5029,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Annualized recurring revenue 2 | $567.2 | $502.9 | 13% (prior-year figure, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.5531,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Annualized recurring revenue 1 | $625.7 | $553.1 | 13% (prior-year figure, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.588,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Annualized recurring revenue | $628.9 | $588.0 | 7% (prior-year figure, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.5824,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Annualized recurring revenue1 (\"ARR\") increased 24% year-over-year from $468.0 million to $582.4 million (current-year figure, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.5672,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Annualized recurring revenue 2 | $567.2 | $502.9 | 13% (current-year figure, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.6257,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Annualized recurring revenue 1 | $625.7 | $553.1 | 13% (current-year figure, $M)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.6289,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Annualized recurring revenue | $628.9 | $588.0 | 7% (current-year figure, $M)",
+     "added": "2026-11-24"
+    }
+   ],
+   "adjusted_ebitda_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 78,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Adjusted EBITDA margin 2 56% 78% (22) ppt (prior-year column)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 76,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Adjusted EBITDA margin 1 | 54% | 76% | (22) ppt (prior-year column)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 79,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Adjusted EBITDA margin 2 | 71% | 79% | (8) ppt (prior-year column)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 64,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Adjusted EBITDA margin 2 | 68% | 64% | 4 ppt (prior-year column)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 56,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Adjusted EBITDA margin 2 56% 78% (22) ppt (current-year column)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 54,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Adjusted EBITDA margin 1 | 54% | 76% | (22) ppt (current-year column)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 71,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Adjusted EBITDA margin 2 | 71% | 79% | (8) ppt (current-year column)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 68,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Adjusted EBITDA margin 2 | 68% | 64% | 4 ppt (current-year column)",
+     "added": "2026-11-24"
+    }
+   ],
+   "recurring_revenue": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.117,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Computed: Revenue $158.2 $252.8 (37)% minus Catch-up revenue $12.6 $135.8 (91)% (prior-year column, $M): 252.8 - 135.8 = 117.0; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 468.0/4 = 117.00)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 0.1257,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Computed: Revenue | $205.4 | $210.5 | (2)% minus Catch-up revenue | $63.6 | $84.8 | (25)% (prior-year column, $M): 210.5 - 84.8 = 125.7; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 502.9/4 = 125.72)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 0.1383,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Computed: Revenue | $260.2 | $300.6 | (13)% minus Catch-up revenue | $103.7 | $162.3 | (36)% (prior-year column, $M): 300.6 - 162.3 = 138.3; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 553.1/4 = 138.28)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.147,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Computed: Revenue | $193.4 | $164.7 | 17% minus Catch-up revenue | $36.2 | $17.7 | 105% (prior-year column, $M): 164.7 - 17.7 = 147.0; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 588.0/4 = 147.00)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.1456,
+     "source": "https://last10k.com/sec-filings/idcc/0001405495-26-000010.htm",
+     "quote": "Computed: Revenue $158.2 $252.8 (37)% minus Catch-up revenue $12.6 $135.8 (91)% (current-year column, $M): 158.2 - 12.6 = 145.6; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 582.4/4 = 145.60)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 0.1418,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000034/ex991q133126pressrelease.htm",
+     "quote": "Computed: Revenue | $205.4 | $210.5 | (2)% minus Catch-up revenue | $63.6 | $84.8 | (25)% (current-year column, $M): 205.4 - 63.6 = 141.8; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 567.2/4 = 141.80)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 0.1565,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000065/ex991q263026pressrelease.htm",
+     "quote": "Computed: Revenue | $260.2 | $300.6 | (13)% minus Catch-up revenue | $103.7 | $162.3 | (36)% (current-year column, $M): 260.2 - 103.7 = 156.5; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 625.7/4 = 156.43)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 0.1572,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001405495/000140549526000076/ex991q393026pressrelease.htm",
+     "quote": "Computed: Revenue | $193.4 | $164.7 | 17% minus Catch-up revenue | $36.2 | $17.7 | 105% (current-year column, $M): 193.4 - 36.2 = 157.2; consistent with ARR definition 'total revenue for the quarter less catch-up revenue for the quarter, multiplied by four' (ARR 628.9/4 = 157.22)",
+     "added": "2026-11-24"
+    }
+   ]
+  },
+  "LMAT": {
+   "organic_sales_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 15,
+     "source": "https://ir.lemaitre.com/node/20076/pdf",
+     "quote": "Sales $64.5mm, +16% (+15% organic) vs. Q4 2024",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 10,
+     "source": "https://www.globenewswire.com/news-release/2026/05/05/3288240/0/en/lemaitre-q1-2026-financial-results.html",
+     "quote": "Sales $66.6mm, +11% (+10% organic) vs. Q1 2025",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 10,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526332982/d320964dex991.htm",
+     "quote": "Sales $70.4mm, +10% (+10% organic) vs. Q2 2025",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 12,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526447467/d171050dex991.htm",
+     "quote": "Sales $68.0mm, +11% (+12% organic) vs. Q3 2025",
+     "added": "2026-11-24"
+    }
+   ],
+   "gross_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 69.3,
+     "source": "https://ir.lemaitre.com/node/20076/pdf",
+     "quote": "Income statement, three months ended Q4 2024 ($000s): Gross profit 38,590; Net sales 55,717; computed 38,590 / 55,717 = 69.26%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 69.2,
+     "source": "https://www.globenewswire.com/news-release/2026/05/05/3288240/0/en/lemaitre-q1-2026-financial-results.html",
+     "quote": "Income statement, three months ended Q1 2025 ($000s): Gross profit 41,420; Net sales 59,871; computed 41,420 / 59,871 = 69.18%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 70.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526332982/d320964dex991.htm",
+     "quote": "Income statement, three months ended Q2 2025 ($000s): Gross profit 44,974; Net sales 64,232; computed 44,974 / 64,232 = 70.02%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 75.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526447467/d171050dex991.htm",
+     "quote": "Income statement, three months ended Q3 2025 ($000s): Gross profit 45,955; Net sales 61,046; computed 45,955 / 61,046 = 75.28% (release reconciliation: 'Gross margin as reported | 75.3%'; incl. Employee Retention Tax Credit benefit, adjusted 70.8%)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 71.7,
+     "source": "https://ir.lemaitre.com/node/20076/pdf",
+     "quote": "Gross margin 71.7% (+240 bps)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 72.7,
+     "source": "https://www.globenewswire.com/news-release/2026/05/05/3288240/0/en/lemaitre-q1-2026-financial-results.html",
+     "quote": "Gross margin 72.7% (+350 bps)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 72.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526332982/d320964dex991.htm",
+     "quote": "Gross margin 72.1% (+210 bps)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 71.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526447467/d171050dex991.htm",
+     "quote": "Gross margin 71.7% (-360bps, +90 bps vs. adjusted)",
+     "added": "2026-11-24"
+    }
+   ],
+   "sales_reps": [
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 171,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526447467/d171050dex991.htm",
+     "quote": "Headcount of 678 increased 7% versus 9/30/2025 while rep count increased 13% to 171.",
+     "added": "2026-11-24"
+    }
+   ],
+   "operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 23.1,
+     "source": "https://ir.lemaitre.com/node/20076/pdf",
+     "quote": "Income statement, three months ended Q4 2024 ($000s): Income from operations 12,854; Net sales 55,717; computed 12,854 / 55,717 = 23.07%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 21.1,
+     "source": "https://www.globenewswire.com/news-release/2026/05/05/3288240/0/en/lemaitre-q1-2026-financial-results.html",
+     "quote": "Income statement, three months ended Q1 2025 ($000s): Income from operations 12,626; Net sales 59,871; computed 12,626 / 59,871 = 21.09%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 25.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526332982/d320964dex991.htm",
+     "quote": "Income statement, three months ended Q2 2025 ($000s): Income from operations 16,142; Net sales 64,232; computed 16,142 / 64,232 = 25.13%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 33.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526447467/d171050dex991.htm",
+     "quote": "Income statement, three months ended Q3 2025 ($000s): Income from operations 20,312; Net sales 61,046; computed 20,312 / 61,046 = 33.27%",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 29.2,
+     "source": "https://ir.lemaitre.com/node/20076/pdf",
+     "quote": "Income statement, three months ended Q4 2025 ($000s): Income from operations 18,832; Net sales 64,453; computed 18,832 / 64,453 = 29.22% (highlights: \"Op. margin 29%\")",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 26.7,
+     "source": "https://www.globenewswire.com/news-release/2026/05/05/3288240/0/en/lemaitre-q1-2026-financial-results.html",
+     "quote": "Income statement, three months ended Q1 2026 ($000s): Income from operations 17,775; Net sales 66,551; computed 17,775 / 66,551 = 26.71% (highlights: \"Op. margin 27%\")",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 29.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526332982/d320964dex991.htm",
+     "quote": "Income statement, three months ended Q2 2026 ($000s): Income from operations 20,399; Net sales 70,382; computed 20,399 / 70,382 = 28.98% (highlights: \"Op. margin 29%\")",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 26.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001158895/000119312526447467/d171050dex991.htm",
+     "quote": "Income statement, three months ended Q3 2026 ($000s): Income from operations 17,695; Net sales 67,970; computed 17,695 / 67,970 = 26.03% (highlights: \"Op. margin 26%\")",
+     "added": "2026-11-24"
+    }
+   ]
+  },
+  "BOX": {
+   "revenue_growth": [
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 9.1,
+     "source": "https://www.businesswire.com/news/home/20251201076323/en",
+     "quote": "Revenue of $301.1 million, up 9%, or 8% on a constant currency basis. (Table: Revenue $301,107 vs $275,913 thousand -> 301107 / 275913 - 1 = 9.1%)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 9.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/1372612/000119312526088171/box-ex99_1.htm",
+     "quote": "Record revenue of $305.9 million, up 9%, or 8% on a constant currency basis. (Table: Revenue $305,875 vs $279,520 thousand -> 305875 / 279520 - 1 = 9.4%)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 10.7,
+     "source": "https://www.businesswire.com/news/home/20260525357806/en",
+     "quote": "Record revenue of $305.9 million, up 11%, or 10% on a constant currency basis. (Table: Revenue $305,941 vs $276,272 thousand -> 305941 / 276272 - 1 = 10.7%)",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 9.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001372612/000119312526365121/box-ex99_1.htm",
+     "quote": "Record revenue of $321.1 million, up 9%, or 11% on a constant currency basis. (Table: Revenue $321,147 vs $293,999 thousand -> 321147 / 293999 - 1 = 9.2%)",
+     "added": "2026-11-24"
+    }
+   ],
+   "rpo_growth": [
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 18,
+     "source": "https://www.businesswire.com/news/home/20251201076323/en",
+     "quote": "Remaining performance obligations (\"RPO\") of $1.5 billion, up 18%, or 19% on a constant currency basis.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 17,
+     "source": "https://www.sec.gov/Archives/edgar/data/1372612/000119312526088171/box-ex99_1.htm",
+     "quote": "Record remaining performance obligations (\"RPO\") of $1.711 billion, up 17%, or 16% on a constant currency basis.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 12,
+     "source": "https://www.businesswire.com/news/home/20260525357806/en",
+     "quote": "Remaining performance obligations (\"RPO\") of $1.6 billion, up 12%, or 16% on a constant currency basis.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 15,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001372612/000119312526365121/box-ex99_1.htm",
+     "quote": "Remaining performance obligations (\"RPO\") of $1.7 billion, up 15%, or 17% on a constant currency basis.",
+     "added": "2026-11-24"
+    }
+   ],
+   "non_gaap_operating_margin": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 29.1,
+     "source": "https://www.businesswire.com/news/home/20251201076323/en",
+     "quote": "Record non-GAAP operating income of $86.1 million, or 28.6% of revenue, up from $80.2 million, or 29.1% of revenue.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 27.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/1372612/000119312526088171/box-ex99_1.htm",
+     "quote": "Record non-GAAP operating income of $93.7 million, or 30.6% of revenue, up from $76.4 million, or 27.3% of revenue.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 25.3,
+     "source": "https://www.businesswire.com/news/home/20260525357806/en",
+     "quote": "Non-GAAP operating income of $84.7 million, or 27.7% of revenue, up from $69.8 million, or 25.3% of revenue.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 28.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001372612/000119312526365121/box-ex99_1.htm",
+     "quote": "Record non-GAAP operating income of $94.5 million, or 29.4% of revenue, up from $84.0 million, or 28.6% of revenue.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 28.6,
+     "source": "https://www.businesswire.com/news/home/20251201076323/en",
+     "quote": "Record non-GAAP operating income of $86.1 million, or 28.6% of revenue, up from $80.2 million, or 29.1% of revenue.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 30.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1372612/000119312526088171/box-ex99_1.htm",
+     "quote": "Record non-GAAP operating income of $93.7 million, or 30.6% of revenue, up from $76.4 million, or 27.3% of revenue.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 27.7,
+     "source": "https://www.businesswire.com/news/home/20260525357806/en",
+     "quote": "Non-GAAP operating income of $84.7 million, or 27.7% of revenue, up from $69.8 million, or 25.3% of revenue.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 29.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001372612/000119312526365121/box-ex99_1.htm",
+     "quote": "Record non-GAAP operating income of $94.5 million, or 29.4% of revenue, up from $84.0 million, or 28.6% of revenue.",
+     "added": "2026-11-24"
+    }
+   ],
+   "net_retention_rate": [
+    {
+     "period": "2024-10-31",
+     "label": "Q3 FY25",
+     "value": 102,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_earnings/2026/q3/transcript/Box-Q3FY26-earnings-prepared-remarks.pdf",
+     "quote": "We ended Q3 with a net retention rate of 104%, up from 103% in Q2 and 102% in the year ago period.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-01-31",
+     "label": "Q4 FY25",
+     "value": 102,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_earnings/2026/q4/transcript/Box-Q4-FY26-earnings-prepared-remarks.pdf",
+     "quote": "We ended Q4 with a net retention rate of 104%, up from 102% in the year ago period,",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-04-30",
+     "label": "Q1 FY26",
+     "value": 102,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_financials/2027/q1/Box-Q1-FY27-earnings-prepared-remarks-WEBSITE.pdf",
+     "quote": "Our net retention rate in Q1 was 105%, above our guidance of 104%, and up from 102% in the year ago period.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-07-31",
+     "label": "Q2 FY26",
+     "value": 103,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_earnings/2026/q3/transcript/Box-Q3FY26-earnings-prepared-remarks.pdf",
+     "quote": "We ended Q3 with a net retention rate of 104%, up from 103% in Q2 and 102% in the year ago period.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2025-10-31",
+     "label": "Q3 FY26",
+     "value": 104,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_earnings/2026/q3/transcript/Box-Q3FY26-earnings-prepared-remarks.pdf",
+     "quote": "We ended Q3 with a net retention rate of 104%, up from 103% in Q2 and 102% in the year ago period.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-01-31",
+     "label": "Q4 FY26",
+     "value": 104,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_earnings/2026/q4/transcript/Box-Q4-FY26-earnings-prepared-remarks.pdf",
+     "quote": "We ended Q4 with a net retention rate of 104%, up from 102% in the year ago period,",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 105,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_financials/2027/q1/Box-Q1-FY27-earnings-prepared-remarks-WEBSITE.pdf",
+     "quote": "Our net retention rate in Q1 was 105%, above our guidance of 104%, and up from 102% in the year ago period.",
+     "added": "2026-11-24"
+    },
+    {
+     "period": "2026-07-31",
+     "label": "Q2 FY27",
+     "value": 106,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001372612/000119312526365121/box-ex99_1.htm",
+     "quote": "Net retention rate improved to 106%, and Enterprise Advanced continues to be a key driver of growth,",
+     "added": "2026-11-24"
+    }
+   ],
+   "gross_retention": [
+    {
+     "period": "2026-04-30",
+     "label": "Q1 FY27",
+     "value": 3,
+     "source": "https://s21.q4cdn.com/328470014/files/doc_financials/2027/q1/Box-Q1-FY27-earnings-prepared-remarks-WEBSITE.pdf",
+     "quote": "Our annualized full churn rate remained at 3%.",
+     "added": "2026-11-24"
     }
    ]
   }

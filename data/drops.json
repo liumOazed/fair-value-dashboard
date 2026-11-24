@@ -1493,8 +1493,16 @@
     "week"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Caught in the 20 Nov AI/chip rout (Nasdaq -5.3%, chip index -10.7%, Nvidia -13% amid CEO exit and SEC accounting review); no Arista-specific news",
+    "summary": "Arista fell with the whole AI hardware group in a week when the Nasdaq lost about 10%, driven by Nvidia's CEO departure, a reported SEC accounting review of Nvidia and AI-bubble fears; Arista itself issued no news, and analysts raised EPS 18-0 after a Q3 beat and 2027 guidance of about $18.5B (+38-40%). That makes this market and sector fear, not a business problem, and the stock had rebounded about 7% by 23 Nov. Watch for any capex cuts at Microsoft and Meta (about 40% of sales), political moves against data-centre building, and the UBS conference on 1 Dec.",
+    "model_changed": false,
+    "date": "2026-11-24",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-24",
@@ -3634,14 +3642,14 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
+   "needs_verdict": false,
    "verdict": {
     "label": "temporary",
     "confidence": "medium",
-    "cause": "Slide with tech (IT -18%) after a run-up; 2027 profit forecasts cut ~13% because 2026 included catch-up licence payments; Samsung seeking a new arbitration over terms of its $1.05B deal",
-    "summary": "InterDigital is 29% below its high although Q3 beat guidance and the 2026 outlook was raised; analysts lowered next year's EPS because 2026 revenue was boosted by one-off catch-up payments from new licences (Samsung, Amazon), and Samsung has asked for a new arbitration on some terms. That is lumpy licensing income and a legal overhang, not a loss of the patent business. Watch the Samsung arbitration and renewals; the price (~$283) is far above our fair value (~$106).",
+    "cause": "Slide with tech after a big run-up; 2027 EPS forecasts cut ~13% because 2026 includes one-off catch-up licence payments, despite a Q3 beat and raised 2026 guidance",
+    "summary": "InterDigital beat in Q3 (revenue +17% to $193M, record recurring revenue of $629M, +7%) and raised its 2026 outlook, so the drop is not a business failure. Next year's estimates fall because 2026 was lifted by catch-up payments from new licences ($36M in Q3 alone), which the model already assumes (base year one -5%). I found no confirmed new Samsung dispute in recent sources; watch the Amazon arbitration outcome, the arbitration with an unnamed PC maker, and renewals.",
     "model_changed": false,
-    "date": "2026-11-20",
+    "date": "2026-11-24",
     "by": "Claude"
    },
    "evidence": {
@@ -4559,8 +4567,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "low",
+    "cause": "Fell with the 20 Nov AI-led market rout after an October slide on higher AI capex, negative free cash flow and debt more than doubling; Class C share issuance paused until Delaware litigation (trial April 2027)",
+    "summary": "Meta's fall from its high matches its internet peers (about -30%), and analyst estimates are unchanged (22 up, 22 down), so the recent drop is mostly AI-sector and market fear. The stock-specific worries are real but not yet settled: Q3 free cash flow was negative on $35B of capex, total debt is about $115B, and the paused Class C plan delays a planned share sale used to fund AI. Watch 2027 capex guidance, whether margins recover (the model's base needs 20%), and the April 2027 trial.",
+    "model_changed": false,
+    "date": "2026-11-24",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-24",
@@ -6396,8 +6412,16 @@
     "high"
    ],
    "emergency": false,
-   "needs_verdict": true,
-   "verdict": null,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "temporary",
+    "confidence": "medium",
+    "cause": "Q3 revenue +4% but gross margin fell to 47.8% from 51.2% on higher diesel and transport costs and start-up inefficiencies at the new Texas kiln; softer construction demand",
+    "summary": "The margin drop comes from things that pass: a jump in diesel prices and inefficiencies while the new Texas kiln was commissioned (final commissioning in Q4), and building-materials peers are down a similar amount (about -26%) from their highs. The softer construction demand is a cycle, not a loss of the local-market advantage, and estimates edged up. Watch Q4 margins after the kiln is running, diesel costs, and Texas home building.",
+    "model_changed": false,
+    "date": "2026-11-24",
+    "by": "Claude"
+   },
    "evidence": {
     "v": 5,
     "updated": "2026-11-24",
@@ -6914,6 +6938,6 @@
   "META",
   "USLM"
  ],
- "updated": "2026-11-24T00:48:14Z",
+ "updated": "2026-11-24T02:55:11Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
