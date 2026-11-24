@@ -114,9 +114,9 @@
     "high": -0.5842
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -133,6 +133,139 @@
    },
    "provisional": {
     "cause": "Company-specific, no clear cause in the data: read the headlines",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "CRCL-2026-10-30",
+   "ticker": "CRCL",
+   "name": "Circle Internet Group",
+   "opened": "2026-10-30",
+   "price_at_open": 72.54,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 48.74,
+   "buy_below_at_open": 31.68,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": true,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Crypto sell-off (bitcoin ~$64K, COIN/MSTR down 6-7% on Nov 16) and Fed-hike fears on top of a weak-quality Q3 (beat flattered by the $182M ARC presale, flat USDC circulation, Binance-renewal margin hit)",
+    "summary": "Circle fell ~18% in a week vs -3% for Financials (RSPF): the Nov 16 leg came with a crypto-wide sell-off and rate-hike worries, which look temporary, but it follows a Nov 5 drop after Q3 where analysts said the beat relied on the one-off ARC presale, USDC circulation has stalled (~$74B, flat YoY) and the renewed Binance deal squeezes Q4/2027 margins; seven brokers cut targets and Circle cut ~5% of staff. Whether this is sentiment or a lasting growth reset depends on USDC circulation turning up again, distribution-cost margins and the CLARITY Act. At ~$57 the price is still above our ~$49 fair value, so it does not look like a bargain yet.",
+    "model_changed": false,
+    "date": "2026-11-19",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-24",
+    "earnings_on": null,
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "industry: Capital Markets",
+     "n": 5,
+     "median": {
+      "day": 0.04183019261884269,
+      "week": -0.06508458188883737,
+      "high": -0.24480418377229973
+     },
+     "tickers": [
+      "MS",
+      "GS",
+      "SCHW",
+      "IBKR",
+      "HOOD"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 1.28781,
+      "d30": 1.08256,
+      "chg": 0.18959688146615417
+     },
+     "+1y": {
+      "current": 1.2944,
+      "d30": 1.42004,
+      "chg": -0.0884763809470156
+     },
+     "revisions_30d": {
+      "up": 7,
+      "down": 5
+     }
+    },
+    "news": [
+     {
+      "title": "Circle Internet Group Gains as Crypto-Linked Shares Rebound and Recent USDC Updates Support Sentiment",
+      "publisher": "Quiver Quantitative",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNT2N3bEpaMC1zV3hyMUU1LVF3R1hoRUU3ZVFWdU1sdjllOGQ2OFlEVkhvc3h6SERVREl1V0JOMXczeUdxRzRPRndrb0JFQm5qWnRXR001Q3ZYVG9Sem9DUG80VVVWN3hCdDg3UW9Gc2ZvZ3ZYYzhkbXJwUmhqNHpNSmJyeDZLT1lfQnI3WUtKR2dSNFl5RG5BYnZtSkFRVGZWWmVYUHpxU1BBQ3RmaDZpaGNkQXRxa2RDTjVGTFhyMkt5UU9ET2c1bEl5RWVxNkU?oc=5",
+      "date": "2026-11-23"
+     },
+     {
+      "title": "Circle Rises 7% As Broad-Market Rebound Lifts Stocks",
+      "publisher": "StocksToTrade",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaTJ2bFFzSVQyTG53dXRMamtNQ09FRy1pYkFXdF9KMTVBMW5MbDc1MmdpQzJ2X2F4YVBPZFoyTnRtVEdNR3ZUd0pOaVNVaHFUdTFUTnZNa21iNTdKRTZIdE5LbVZGNy1SejNDVnM2cGVkX3ROUk1yelhsV2w4TC16V1FsdE5IU205QjVjRnQ3RQ?oc=5",
+      "date": "2026-11-23"
+     },
+     {
+      "title": "Circle Internet Group (CRCL) Is Named In Abu Dhabi Crypto Freeze Order",
+      "publisher": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS3JHT1BUNi1fWWd4UHlaX3NObVluTkpGUEFZN3FUakpEeWl5d0tfcXpNNjBtQ0RmS1pIVVdaRmtPZDlLMDZtOUQzQ1hZQ0pCM2EwRUtleEtlZENkN25VcEk4SjI4NXB6bWtJU0x1RjRyWWFHeHIwTzM2MmUtNnlDdUFKUVhha1o2S2lINk0zMGU5amdOWHFOcURiVE1jUQ?oc=5",
+      "date": "2026-11-22"
+     },
+     {
+      "title": "Ark Adds Coinbase, Circle Shares as Stocks Rise",
+      "publisher": "CoinMarketCap",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTzFuTUpJNGFhbmF2MkVHcV9VZklVV1ROd3ZxeEhMRkI4TjlPeUZzcVZNZ2ZRRVlkQm5wcC0xWkxUUmZDcTdQYmNHbWdVNGRfTERfZDVfMUNiMURUQ1M2X284WXlBV1lPeDdETUo3eVJvdjY4WC1CZzhqbGR6MTYwOTc2am93ZGpxVFlpMXRUakh3Zw?oc=5",
+      "date": "2026-11-21"
+     },
+     {
+      "title": "Circle Beats Q4 Forecasts With $770M Revenue and 77% Growth",
+      "publisher": "CoinMarketCap",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNlFQbEpWY3psT1JKMzJRUVdGX3JXVXQ1NkZ6dEdZMUEwcTdyREp0Q1hRMVQyaTlKOFNsMTFIekRmNWgyb0RoY0NFMEt3R0pZbmpTN2Y5aTlfRm5HbVA5MjUyOGJNeWk0WUpDYkhINC15bUNnRW1BTVFycTVTMWlOVkx0RWVVbXpXS2YyY2FxRlBraWppVDQwdHdOQW9VV01fMGNrRVl2d0xwWUpWcE00NGxR?oc=5",
+      "date": "2026-11-21"
+     },
+     {
+      "title": "Circle Internet Group (CRCL) stock price, news, quote and history",
+      "publisher": "Yahoo Finance Australia",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XemI3SmhwWWFrTU5NRkpmelpRUURMT2JLUkxrN1JkM0h0ZnhJa0pUeVpaNGhTaWszeWdSdzVKZ2RBTUhyWFhWVEJ0SDJncU1FaFE?oc=5",
+      "date": "2026-11-21"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-24",
+   "moves": {
+    "day": -0.0705,
+    "week": -0.1265,
+    "high": -0.6408
+   },
+   "spy": {
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
+   },
+   "sector": "Financials",
+   "sector_etf": "RSPF",
+   "sector_moves": {
+    "day": 0.0101,
+    "week": -0.0095,
+    "high": -0.0441
+   },
+   "sector_at_open": 82.34,
+   "worst": {
+    "day": -0.0934,
+    "week": -0.2556,
+    "high": -0.6425
+   },
+   "provisional": {
+    "cause": "Company-specific: next-year EPS forecasts cut -9% in 30 days",
     "lean": "unclear"
    }
   },
@@ -250,9 +383,9 @@
     "high": -0.5061
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Utilities",
    "sector_etf": "RSPU",
@@ -269,139 +402,6 @@
    },
    "provisional": {
     "cause": "Company-specific: next-year EPS forecasts cut -12% in 30 days",
-    "lean": "unclear"
-   }
-  },
-  {
-   "id": "CRCL-2026-10-30",
-   "ticker": "CRCL",
-   "name": "Circle Internet Group",
-   "opened": "2026-10-30",
-   "price_at_open": 72.54,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 48.74,
-   "buy_below_at_open": 31.68,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": true,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "Crypto sell-off (bitcoin ~$64K, COIN/MSTR down 6-7% on Nov 16) and Fed-hike fears on top of a weak-quality Q3 (beat flattered by the $182M ARC presale, flat USDC circulation, Binance-renewal margin hit)",
-    "summary": "Circle fell ~18% in a week vs -3% for Financials (RSPF): the Nov 16 leg came with a crypto-wide sell-off and rate-hike worries, which look temporary, but it follows a Nov 5 drop after Q3 where analysts said the beat relied on the one-off ARC presale, USDC circulation has stalled (~$74B, flat YoY) and the renewed Binance deal squeezes Q4/2027 margins; seven brokers cut targets and Circle cut ~5% of staff. Whether this is sentiment or a lasting growth reset depends on USDC circulation turning up again, distribution-cost margins and the CLARITY Act. At ~$57 the price is still above our ~$49 fair value, so it does not look like a bargain yet.",
-    "model_changed": false,
-    "date": "2026-11-19",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-24",
-    "earnings_on": null,
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Capital Markets",
-     "n": 5,
-     "median": {
-      "day": 0.04183019261884269,
-      "week": -0.06508458188883737,
-      "high": -0.24480418377229973
-     },
-     "tickers": [
-      "MS",
-      "GS",
-      "SCHW",
-      "IBKR",
-      "HOOD"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 1.28781,
-      "d30": 1.08256,
-      "chg": 0.18959688146615417
-     },
-     "+1y": {
-      "current": 1.2944,
-      "d30": 1.42004,
-      "chg": -0.0884763809470156
-     },
-     "revisions_30d": {
-      "up": 7,
-      "down": 5
-     }
-    },
-    "news": [
-     {
-      "title": "Circle Internet Group Gains as Crypto-Linked Shares Rebound and Recent USDC Updates Support Sentiment",
-      "publisher": "Quiver Quantitative",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNT2N3bEpaMC1zV3hyMUU1LVF3R1hoRUU3ZVFWdU1sdjllOGQ2OFlEVkhvc3h6SERVREl1V0JOMXczeUdxRzRPRndrb0JFQm5qWnRXR001Q3ZYVG9Sem9DUG80VVVWN3hCdDg3UW9Gc2ZvZ3ZYYzhkbXJwUmhqNHpNSmJyeDZLT1lfQnI3WUtKR2dSNFl5RG5BYnZtSkFRVGZWWmVYUHpxU1BBQ3RmaDZpaGNkQXRxa2RDTjVGTFhyMkt5UU9ET2c1bEl5RWVxNkU?oc=5",
-      "date": "2026-11-23"
-     },
-     {
-      "title": "Circle Rises 7% As Broad-Market Rebound Lifts Stocks",
-      "publisher": "StocksToTrade",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaTJ2bFFzSVQyTG53dXRMamtNQ09FRy1pYkFXdF9KMTVBMW5MbDc1MmdpQzJ2X2F4YVBPZFoyTnRtVEdNR3ZUd0pOaVNVaHFUdTFUTnZNa21iNTdKRTZIdE5LbVZGNy1SejNDVnM2cGVkX3ROUk1yelhsV2w4TC16V1FsdE5IU205QjVjRnQ3RQ?oc=5",
-      "date": "2026-11-23"
-     },
-     {
-      "title": "Circle Internet Group (CRCL) Is Named In Abu Dhabi Crypto Freeze Order",
-      "publisher": "Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS3JHT1BUNi1fWWd4UHlaX3NObVluTkpGUEFZN3FUakpEeWl5d0tfcXpNNjBtQ0RmS1pIVVdaRmtPZDlLMDZtOUQzQ1hZQ0pCM2EwRUtleEtlZENkN25VcEk4SjI4NXB6bWtJU0x1RjRyWWFHeHIwTzM2MmUtNnlDdUFKUVhha1o2S2lINk0zMGU5amdOWHFOcURiVE1jUQ?oc=5",
-      "date": "2026-11-22"
-     },
-     {
-      "title": "Ark Adds Coinbase, Circle Shares as Stocks Rise",
-      "publisher": "CoinMarketCap",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTzFuTUpJNGFhbmF2MkVHcV9VZklVV1ROd3ZxeEhMRkI4TjlPeUZzcVZNZ2ZRRVlkQm5wcC0xWkxUUmZDcTdQYmNHbWdVNGRfTERfZDVfMUNiMURUQ1M2X284WXlBV1lPeDdETUo3eVJvdjY4WC1CZzhqbGR6MTYwOTc2am93ZGpxVFlpMXRUakh3Zw?oc=5",
-      "date": "2026-11-21"
-     },
-     {
-      "title": "Circle Beats Q4 Forecasts With $770M Revenue and 77% Growth",
-      "publisher": "CoinMarketCap",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNlFQbEpWY3psT1JKMzJRUVdGX3JXVXQ1NkZ6dEdZMUEwcTdyREp0Q1hRMVQyaTlKOFNsMTFIekRmNWgyb0RoY0NFMEt3R0pZbmpTN2Y5aTlfRm5HbVA5MjUyOGJNeWk0WUpDYkhINC15bUNnRW1BTVFycTVTMWlOVkx0RWVVbXpXS2YyY2FxRlBraWppVDQwdHdOQW9VV01fMGNrRVl2d0xwWUpWcE00NGxR?oc=5",
-      "date": "2026-11-21"
-     },
-     {
-      "title": "Circle Internet Group (CRCL) stock price, news, quote and history",
-      "publisher": "Yahoo Finance Australia",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XemI3SmhwWWFrTU5NRkpmelpRUURMT2JLUkxrN1JkM0h0ZnhJa0pUeVpaNGhTaWszeWdSdzVKZ2RBTUhyWFhWVEJ0SDJncU1FaFE?oc=5",
-      "date": "2026-11-21"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-24",
-   "moves": {
-    "day": -0.0693,
-    "week": -0.1254,
-    "high": -0.6403
-   },
-   "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
-   },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
-   "sector_moves": {
-    "day": 0.0081,
-    "week": -0.0114,
-    "high": -0.0459
-   },
-   "sector_at_open": 82.34,
-   "worst": {
-    "day": -0.0934,
-    "week": -0.2556,
-    "high": -0.6425
-   },
-   "provisional": {
-    "cause": "Company-specific: next-year EPS forecasts cut -9% in 30 days",
     "lean": "unclear"
    }
   },
@@ -519,9 +519,9 @@
     "high": -0.3505
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -645,21 +645,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": -0.0524,
-    "week": -0.0011,
-    "high": -0.4688
+    "day": -0.0535,
+    "week": -0.0022,
+    "high": -0.4694
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": -0.0015,
-    "week": -0.0081,
-    "high": -0.0825
+    "day": -0.0012,
+    "week": -0.0078,
+    "high": -0.0822
    },
    "sector_at_open": 60.55,
    "worst": {
@@ -917,16 +917,16 @@
     "high": -0.2081
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0149,
-    "week": 0.0078,
-    "high": -0.058
+    "day": 0.0156,
+    "week": 0.0086,
+    "high": -0.0573
    },
    "sector_at_open": 55.29,
    "worst": {
@@ -1053,9 +1053,9 @@
     "high": -0.3196
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -1189,9 +1189,9 @@
     "high": -0.587
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -1320,21 +1320,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": 0.0153,
-    "week": -0.012,
-    "high": -0.5982
+    "day": 0.015,
+    "week": -0.0124,
+    "high": -0.5983
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0081,
-    "week": -0.0114,
-    "high": -0.0459
+    "day": 0.0101,
+    "week": -0.0095,
+    "high": -0.0441
    },
    "sector_at_open": 83.9,
    "worst": {
@@ -1343,7 +1343,7 @@
     "high": -0.6177
    },
    "provisional": {
-    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
+    "cause": "Company-specific: next-year EPS forecasts cut -18% in 30 days",
     "lean": "unclear"
    }
   },
@@ -1456,16 +1456,16 @@
     "high": -0.6511
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.015,
-    "week": -0.0137,
-    "high": -0.1211
+    "day": 0.0182,
+    "week": -0.0106,
+    "high": -0.1183
    },
    "sector_at_open": 34.17,
    "worst": {
@@ -1856,9 +1856,9 @@
     "high": -0.557
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -2390,9 +2390,9 @@
     "high": -0.3748
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -2520,14 +2520,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": -0.0276,
-    "week": 0.0397,
+    "day": -0.0277,
+    "week": 0.0396,
     "high": -0.6188
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -2651,21 +2651,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": -0.0267,
-    "week": -0.0218,
-    "high": -0.3302
+    "day": -0.027,
+    "week": -0.0221,
+    "high": -0.3304
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": -0.0015,
-    "week": -0.0081,
-    "high": -0.0825
+    "day": -0.0012,
+    "week": -0.0078,
+    "high": -0.0822
    },
    "sector_at_open": 61.72,
    "worst": {
@@ -2785,9 +2785,9 @@
     "high": -0.3218
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -2915,14 +2915,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": -0.0265,
-    "week": -0.1272,
-    "high": -0.5346
+    "day": -0.0258,
+    "week": -0.1266,
+    "high": -0.5343
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
@@ -3056,9 +3056,9 @@
     "high": -0.2617
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -3186,16 +3186,16 @@
     "high": -0.3069
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.015,
-    "week": -0.0137,
-    "high": -0.1211
+    "day": 0.0182,
+    "week": -0.0106,
+    "high": -0.1183
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -3313,14 +3313,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": -0.0104,
-    "week": -0.1041,
-    "high": -0.2624
+    "day": -0.0103,
+    "week": -0.104,
+    "high": -0.2623
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Materials",
    "sector_etf": "RSPM",
@@ -3453,9 +3453,9 @@
     "high": -0.1669
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -3722,9 +3722,9 @@
     "high": -0.3413
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
@@ -3855,16 +3855,16 @@
     "high": -0.2945
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0149,
-    "week": 0.0078,
-    "high": -0.058
+    "day": 0.0156,
+    "week": 0.0086,
+    "high": -0.0573
    },
    "sector_at_open": 57.62,
    "worst": {
@@ -3991,9 +3991,9 @@
     "high": -0.4805
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -4390,21 +4390,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": 0.0337,
-    "week": 0.0033,
-    "high": -0.461
+    "day": 0.0348,
+    "week": 0.0044,
+    "high": -0.4605
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Financials",
    "sector_etf": "RSPF",
    "sector_moves": {
-    "day": 0.0081,
-    "week": -0.0114,
-    "high": -0.0459
+    "day": 0.0101,
+    "week": -0.0095,
+    "high": -0.0441
    },
    "sector_at_open": 82.34,
    "worst": {
@@ -4526,14 +4526,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": 0.0419,
-    "week": -0.0066,
-    "high": -0.2742
+    "day": 0.0421,
+    "week": -0.0065,
+    "high": -0.2741
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -5058,21 +5058,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": -0.0293,
-    "week": -0.0204,
-    "high": -0.2793
+    "day": -0.0296,
+    "week": -0.0207,
+    "high": -0.2795
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": -0.0015,
-    "week": -0.0081,
-    "high": -0.0825
+    "day": -0.0012,
+    "week": -0.0078,
+    "high": -0.0822
    },
    "sector_at_open": 60.55,
    "worst": {
@@ -5188,21 +5188,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": 0.0025,
-    "week": 0.0301,
-    "high": -0.4028
+    "day": 0.0018,
+    "week": 0.0293,
+    "high": -0.4032
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": -0.0015,
-    "week": -0.0081,
-    "high": -0.0825
+    "day": -0.0012,
+    "week": -0.0078,
+    "high": -0.0822
    },
    "sector_at_open": 61.72,
    "worst": {
@@ -5322,9 +5322,9 @@
     "high": -0.2558
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Materials",
    "sector_etf": "RSPM",
@@ -5721,16 +5721,16 @@
     "high": -0.3325
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0149,
-    "week": 0.0078,
-    "high": -0.058
+    "day": 0.0156,
+    "week": 0.0086,
+    "high": -0.0573
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -5855,16 +5855,16 @@
     "high": -0.4616
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.015,
-    "week": -0.0137,
-    "high": -0.1211
+    "day": 0.0182,
+    "week": -0.0106,
+    "high": -0.1183
    },
    "sector_at_open": 33.8,
    "worst": {
@@ -5989,16 +5989,16 @@
     "high": -0.5088
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0149,
-    "week": 0.0078,
-    "high": -0.058
+    "day": 0.0156,
+    "week": 0.0086,
+    "high": -0.0573
    },
    "sector_at_open": 57.04,
    "worst": {
@@ -6118,21 +6118,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": 0.0193,
-    "week": -0.024,
-    "high": -0.3785
+    "day": 0.0191,
+    "week": -0.0241,
+    "high": -0.3786
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": 0.0228,
-    "week": 0.0027,
-    "high": -0.0274
+    "day": 0.0233,
+    "week": 0.0032,
+    "high": -0.0269
    },
    "sector_at_open": 39.9,
    "worst": {
@@ -6253,16 +6253,16 @@
     "high": -0.3157
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Consumer Staples",
    "sector_etf": "RSPS",
    "sector_moves": {
-    "day": 0.016,
-    "week": 0.004,
-    "high": -0.025
+    "day": 0.0157,
+    "week": 0.0037,
+    "high": -0.0253
    },
    "sector_at_open": 31.53,
    "worst": {
@@ -6271,7 +6271,7 @@
     "high": -0.3757
    },
    "provisional": {
-    "cause": "Long slide: -32% below its 52-week high (S&P 500 -8%, Consumer Staples -2%): read why",
+    "cause": "Long slide: -32% below its 52-week high (S&P 500 -8%, Consumer Staples -3%): read why",
     "lean": "unclear"
    }
   },
@@ -6381,16 +6381,16 @@
     "high": -0.344
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": 0.0228,
-    "week": 0.0027,
-    "high": -0.0274
+    "day": 0.0233,
+    "week": 0.0032,
+    "high": -0.0269
    },
    "sector_at_open": 41.5,
    "worst": {
@@ -6634,21 +6634,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-24",
    "moves": {
-    "day": 0.0335,
-    "week": 0.0342,
-    "high": -0.3032
+    "day": 0.0337,
+    "week": 0.0345,
+    "high": -0.303
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
    "sector_moves": {
-    "day": 0.0149,
-    "week": 0.0078,
-    "high": -0.058
+    "day": 0.0156,
+    "week": 0.0086,
+    "high": -0.0573
    },
    "sector_at_open": 55.55,
    "worst": {
@@ -6773,9 +6773,9 @@
     "high": -0.3509
    },
    "spy": {
-    "day": -0.0052,
-    "week": -0.0189,
-    "high": -0.0777
+    "day": -0.0049,
+    "week": -0.0186,
+    "high": -0.0774
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
@@ -6933,6 +6933,6 @@
  "log": [],
  "emergency_pending": [],
  "review_pending": [],
- "updated": "2026-11-24T21:12:33Z",
+ "updated": "2026-11-24T23:01:03Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
