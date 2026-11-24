@@ -1,23 +1,30 @@
 {
  "updated": "2026-11-24",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
- "pending": [],
- "upcoming": [
+ "pending": [
   {
    "ticker": "ADSK",
-   "next_report": "2026-11-24",
-   "data_through": "2026-07-31"
+   "data_through": "2026-07-31",
+   "reported_on": "2026-11-24",
+   "yahoo_latest_quarter": "2026-07-31",
+   "waiting_days": 0
   },
   {
    "ticker": "WDAY",
-   "next_report": "2026-11-24",
-   "data_through": "2026-07-31"
+   "data_through": "2026-07-31",
+   "reported_on": "2026-11-24",
+   "yahoo_latest_quarter": "2026-07-31",
+   "waiting_days": 0
   },
   {
    "ticker": "DLTR",
-   "next_report": "2026-11-24",
-   "data_through": "2026-07-31"
-  },
+   "data_through": "2026-07-31",
+   "reported_on": "2026-11-24",
+   "yahoo_latest_quarter": "2026-08-01",
+   "waiting_days": 0
+  }
+ ],
+ "upcoming": [
   {
    "ticker": "MRVL",
    "next_report": "2026-12-01",
@@ -90,7 +97,7 @@
   },
   {
    "ticker": "PG",
-   "next_report": "2027-01-21",
+   "next_report": "2027-01-22",
    "data_through": "2026-09-30"
   },
   {
