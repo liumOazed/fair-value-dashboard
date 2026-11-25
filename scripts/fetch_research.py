@@ -8,12 +8,13 @@ Usage: python3 scripts/fetch_research.py
        python3 scripts/fetch_research.py --sec-only
        python3 scripts/fetch_research.py --yahoo-only
 """
-import datetime, http.cookiejar, json, pathlib, sys, time, urllib.parse, urllib.request
+import datetime, http.cookiejar, json, os, pathlib, sys, time, urllib.parse, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/research_facts.json"
 ASSETS = [a["ticker"] for a in json.load(open(ROOT / "data/assets.json"))["assets"] if a.get("type") == "stock"]
-SEC_UA = "FairValueDashboard research@liumoazed.dev"
+# SEC fair-access policy: set SEC_CONTACT to a real email address you own (same convention as scripts/bt_fetch.py).
+SEC_UA = f"fair-value-dashboard {os.environ.get('SEC_CONTACT', 'liumOazed@users.noreply.github.com')}"
 
 # US-GAAP XBRL tag priority lists (first match with 10-K annual data wins per fiscal year)
 FLOW_TAGS = {
@@ -372,11 +373,32 @@ def main():
     sec_only = "--sec-only" in sys.argv
     yahoo_only = "--yahoo-only" in sys.argv
     old = json.load(open(OUT)) if OUT.exists() else {}
-    sec = old.get("sec", {}) if yahoo_only else fetch_sec_all()
-    yahoo = old.get("yahoo", {}) if sec_only else fetch_yahoo_all()
+    old_sec, old_yh = old.get("sec", {}), old.get("yahoo", {})
+    if yahoo_only:
+        sec = old_sec
+    else:
+        fresh_sec = fetch_sec_all()
+        sec = dict(old_sec)
+        for t, v in fresh_sec.items():
+            prev = old_sec.get(t) or {}
+            # Keep previously verified 10-K footnote maturity schedules if XBRL didn't tag them
+            if not v.get("debt_maturities") and prev.get("debt_maturities"):
+                v["debt_maturities"] = prev["debt_maturities"]
+            if not v.get("debt_maturities") and not v.get("debt_maturities_partial") and prev.get("debt_maturities_partial"):
+                v["debt_maturities_partial"] = prev["debt_maturities_partial"]
+            sec[t] = v
+    if sec_only:
+        yahoo = old_yh
+    else:
+        fresh_yh = fetch_yahoo_all()
+        yahoo = dict(old_yh)
+        yahoo.update(fresh_yh)
+    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     doc = {
         "_about": "Structured SEC EDGAR XBRL facts (annual financials, 5-year debt maturities, RPO) and Yahoo Finance analyst track record & revisions for scripts/framework.py. Information only.",
-        "fetched": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "fetched": now,
+        "yahoo_fetched": old.get("yahoo_fetched") if sec_only else now,
+        "sec_fetched": old.get("sec_fetched") if yahoo_only else now,
         "sec": sec,
         "yahoo": yahoo,
     }

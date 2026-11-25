@@ -55,6 +55,7 @@ SEC_F = RF.get("sec") or {}
 YH_F = RF.get("yahoo") or {}
 CR = (J("data/company_research.json", {"stocks": {}}) or {}).get("stocks") or {}
 KPIS = (J("data/kpis.json", {"stocks": {}}) or {}).get("stocks") or {}
+KPI_DEFS = (J("data/kpi_defs.json", {"stocks": {}}) or {}).get("stocks") or {}
 DS = (J("data/debt_stress.json", {"stocks": {}}) or {}).get("stocks") or {}
 
 # ------------------------------------------------------------------ the 64 fixed questions
@@ -276,6 +277,8 @@ def build_annual_history(t, raw):
     # Top up with snapshot_raw annuals (in $) converted to $M
     inc, cfs, bal = dict(years(raw, "inc")), dict(years(raw, "cfs")), dict(years(raw, "bal"))
     all_dates = sorted(set(inc) | set(cfs) | set(bal))
+    raw_ys = [int(d[:4]) if d[5:7] > "03" else int(d[:4]) - 1 for d in all_dates]
+    raw_cutoff = (max(raw_ys) - 3) if raw_ys else 0
     for d in all_dates:
         y = int(d[:4]) if d[5:7] > "03" else int(d[:4]) - 1
         rec = merged.setdefault(y, {"end": d[:10]})
@@ -283,19 +286,19 @@ def build_annual_history(t, raw):
         m = lambda v: round(v / 1e6, 2) if v is not None else None
         # Prefer snapshot_raw for the latest ~4 years when SEC lacks a line or is slightly behind
         for sk, rk in (("rev", "rev"), ("gross", "gross"), ("op", "op"), ("ni", "ni"), ("pretax", "pretax"), ("rd", "rd")):
-            if vi.get(rk) is not None and (sk not in rec or y >= 2023):
+            if vi.get(rk) is not None and (sk not in rec or y >= raw_cutoff):
                 rec[sk] = m(vi[rk])
-        if vi.get("eps") is not None and ("eps" not in rec or y >= 2023):
+        if vi.get("eps") is not None and ("eps" not in rec or y >= raw_cutoff):
             rec["eps"] = round(float(vi["eps"]), 4)
         for sk, rk in (("ocf", "ocf"), ("capex", "capex"), ("da", "dep"), ("sbc", "sbc"), ("div", "div_paid"), ("buyback", "buyback"), ("acq", "acq"), ("issued", "issued")):
-            if vc.get(rk) is not None and (sk not in rec or y >= 2023):
+            if vc.get(rk) is not None and (sk not in rec or y >= raw_cutoff):
                 rec[sk] = m(abs(vc[rk]) if sk in ("capex", "div", "buyback") else vc[rk])
         if vc.get("fcf") is not None:
             rec["fcf"] = m(vc["fcf"])
         for sk, rk in (("cash", "cash"), ("equity", "equity"), ("shares", "shares")):
-            if vb.get(rk) is not None and (sk not in rec or y >= 2023):
+            if vb.get(rk) is not None and (sk not in rec or y >= raw_cutoff):
                 rec[sk] = m(vb[rk])
-        if vb.get("debt") is not None and y >= 2023:
+        if vb.get("debt") is not None and y >= raw_cutoff:
             rec["debt_tot"] = m(vb["debt"])
     # Fill dil_shares from ni/eps where missing or >5x off (fixes XBRL unit quirks like GRMN 2020-21), and fill fcf
     for y, rec in merged.items():
@@ -484,10 +487,10 @@ def build_growth(t, a, raw, hist, ins):
             model_cf_5y=r1(m5), model_rev_5y=r1(r5),
             base_g1=r1(((a.get("scenarios") or {}).get("base") or {}).get("g1")),
         )
-    # Demand durability (B15)
+    # Demand durability (B15 — dated research note)
     cr = CR.get(t) or {}
     if cr.get("demand"):
-        out["demand"] = cr["demand"]
+        out["demand"] = dict(cr["demand"], note=True)
     return out or None
 
 def build_analysts(t):
@@ -529,6 +532,10 @@ def build_analysts(t):
             up30=up30, dn30=dn30, n_analysts=int(ref.get("eps_n") or y.get("analysts") or 0),
             verdict=verdict, tone=tone,
         )
+    if out:
+        as_of = (RF.get("yahoo_fetched") or RF.get("fetched") or "")[:10]
+        if as_of:
+            out["as_of"] = as_of
     return out or None
 
 def build_cash_alloc(t, a, raw, hist, ins, growth):
@@ -643,46 +650,54 @@ def build_cash_alloc(t, a, raw, hist, ins, growth):
                 verdict=v, tone=tone,
             )
 
-    # --- E33: Buybacks below or above intrinsic value? (All 132 stocks) ---
+    # --- E33: Buyback price timing vs own P/E history (marked partly: historical fair values aren't recorded) ---
     cfs_raw = dict(years(raw, "cfs"))
     inc_raw = dict(years(raw, "inc"))
     mp = raw.get("monthly_prices") or {}
-    fv = a.get("fair_value")
     mcap = (raw.get("price") or a.get("price") or 0) * (raw.get("shares") or (a.get("shares", 0) * 1e9))
     bb_rows = []
     for d, vc in sorted(cfs_raw.items()):
         bb = abs(vc.get("buyback") or 0)
-        yr = d[:4]
-        yr_pxs = [v for k, v in mp.items() if k.startswith(yr) and v and v > 0]
-        avg_px = st.mean(yr_pxs) if yr_pxs else month_close(raw, d[:7])
+        end_ym = d[:7]
+        start_ym = ym_minus(end_ym, 11)
+        fy_pxs = [v for k, v in mp.items() if start_ym <= k <= end_ym and v and v > 0]
+        avg_px = st.mean(fy_pxs) if fy_pxs else month_close(raw, end_ym)
+        fy_lbl = d[:4]
         eps = (inc_raw.get(d) or {}).get("eps")
         pe = avg_px / eps if avg_px and eps and eps > 0 else None
-        if bb > 0 and avg_px:
-            bb_rows.append((yr, bb, avg_px, pe))
-    tot_bb = sum(x[1] for x in bb_rows)
+        if avg_px:
+            bb_rows.append((fy_lbl, bb, avg_px, pe))
+    active = [x for x in bb_rows if x[1] > 0]
+    tot_bb = sum(x[1] for x in active)
     ann_bb_pct = (tot_bb / max(1, len(cfs_raw))) / mcap if mcap > 0 else 0
-    if tot_bb <= 0 or ann_bb_pct < 0.0025:
+    if not cfs_raw:
+        pass
+    elif tot_bb <= 0 or ann_bb_pct < 0.0025:
         out["buyback_val"] = dict(
-            verdict="minimal or no buybacks", tone="key",
+            status="partly", verdict="minimal or no buybacks", tone="key",
             total_b=r1(tot_bb / 1e9, 2), reading="retains cash or pays dividends instead",
         )
     else:
-        w_px = sum(x[1] * x[2] for x in bb_rows) / tot_bb
-        pe_rows = [x for x in bb_rows if x[3] is not None and x[3] < 150]
+        w_px = sum(x[1] * x[2] for x in active) / tot_bb
+        s_px = st.mean(x[2] for x in active)
+        pe_rows = [x for x in active if x[3] is not None and x[3] < 150]
         w_pe = (sum(x[1] * x[3] for x in pe_rows) / sum(x[1] for x in pe_rows)) if pe_rows else None
-        vs_fv = (w_px / fv - 1) if fv and fv > 0 else None
-        if vs_fv is not None:
-            if vs_fv <= -0.05:
-                v, tone = "bought below today's fair value", "good"
-            elif vs_fv <= 0.15:
-                v, tone = "bought near fair value", "caution"
+        s_pe = st.mean(x[3] for x in pe_rows) if pe_rows else None
+        if w_pe is not None and s_pe is not None and len(pe_rows) >= 2:
+            rel = w_pe / s_pe - 1.0
+            if rel <= -0.05:
+                v, tone = f"bought more at lower P/E ({w_pe:.1f}× vs {s_pe:.1f}× avg)", "good"
+            elif rel >= 0.05:
+                v, tone = f"bought more at higher P/E ({w_pe:.1f}× vs {s_pe:.1f}× avg)", "caution"
             else:
-                v, tone = "bought above today's fair value", "bad"
+                v, tone = f"steady pace around {w_pe:.1f}× P/E", "key"
+        elif w_pe is not None:
+            v, tone = f"weighted buyback P/E {w_pe:.1f}×", "key"
         else:
-            v, tone = f"avg buyback P/E {w_pe:.1f}×" if w_pe else "active buybacks", "key"
+            v, tone = f"avg buyback price ${w_px:.2f}", "key"
         out["buyback_val"] = dict(
-            years=f"{bb_rows[0][0]}–{bb_rows[-1][0]}", total_b=r1(tot_bb / 1e9, 2),
-            avg_px=r1(w_px, 2), vs_fv=r1(vs_fv), w_pe=r1(w_pe, 1),
+            status="partly", years=f"FY{active[0][0]}–FY{active[-1][0]}", total_b=r1(tot_bb / 1e9, 2),
+            avg_px=r1(w_px, 2), period_avg_px=r1(s_px, 2), w_pe=r1(w_pe, 1), period_avg_pe=r1(s_pe, 1),
             verdict=v, tone=tone,
         )
 
@@ -765,11 +780,11 @@ def build_industry_moat(t, a, raw, hist, by_ind, by_sec, smeta):
         gm_ch = gm_pts[-1][1] - gm_pts[0][1]
         gm_info = dict(y0=gm_pts[0][0], y1=gm_pts[-1][0], gm0=r1(gm_pts[0][1]), gm1=r1(gm_pts[-1][1]), chg=r1(gm_ch))
     if cr.get("pricing"):
-        out["pricing"] = dict(cr["pricing"], **({"gm": gm_info} if gm_info else {}))
-    if cr.get("barriers"): out["barriers"] = cr["barriers"]
-    if cr.get("tech_risk"): out["tech_risk"] = cr["tech_risk"]
-    if cr.get("concentration"): out["concentration"] = cr["concentration"]
-    if cr.get("risks"): out["risks"] = cr["risks"]
+        out["pricing"] = dict(cr["pricing"], note=True, **({"gm": gm_info} if gm_info else {}))
+    if cr.get("barriers"): out["barriers"] = dict(cr["barriers"], note=True)
+    if cr.get("tech_risk"): out["tech_risk"] = dict(cr["tech_risk"], note=True)
+    if cr.get("concentration"): out["concentration"] = dict(cr["concentration"], note=True)
+    if cr.get("risks"): out["risks"] = dict(cr["risks"], note=True)
 
     # F39: 5-year Debt Maturities (ASC 470 from SEC XBRL / 10-K)
     sf = SEC_F.get(t) or {}
@@ -784,6 +799,9 @@ def build_industry_moat(t, a, raw, hist, by_ind, by_sec, smeta):
                                    answer="No financial debt due (leases only)",
                                    reading=mat.get("note") or f"Cash ${cash_b:.2f}B; no scheduled bond/loan maturities")
         else:
+            n_yrs = sum(1 for i in range(1, 6) if mat.get(f"y{i}") is not None)
+            has_full_5y = (n_yrs == 5) or bool(mat.get("note"))
+            st_mat = "answered" if has_full_5y else "partly"
             d5 = mat.get("due_5y_b") or 0.0
             tot = mat.get("total_sched_b") or d5
             cov_5y = (cash_b + max(0.0, (fcf_b or 0.0) * 5)) / d5 if d5 > 0.01 else 99.0
@@ -792,13 +810,14 @@ def build_industry_moat(t, a, raw, hist, by_ind, by_sec, smeta):
             after5 = mat.get("after5")
             if after5 is not None:
                 yrs_str = (yrs_str + " · " if yrs_str else "") + f">5y ${after5:.2f}B"
+            miss_note = f" ({n_yrs} of 5 years tagged in XBRL)" if not has_full_5y else ""
             out["debt_mat"] = dict(
-                status="answered", zero_debt=False, as_of=mat.get("as_of"),
+                status=st_mat, zero_debt=False, as_of=mat.get("as_of"), n_years_tagged=n_yrs,
                 due_5y_b=r1(d5, 2), total_b=r1(tot, 2),
                 y1=mat.get("y1"), y2=mat.get("y2"), y3=mat.get("y3"), y4=mat.get("y4"), y5=mat.get("y5"), after5=after5,
                 cash_b=r1(cash_b, 2), tone=tone,
-                answer=f"${d5:.2f}B due in 5 yrs" if d5 >= 0.01 else "$0 due in next 5 yrs",
-                reading=(mat.get("note") or yrs_str) + (f" (cash ${cash_b:.2f}B)" if cash_b else ""),
+                answer=(f"${d5:.2f}B due in 5 yrs" if has_full_5y else f"${d5:.2f}B tagged ({n_yrs}/5 yrs)") if d5 >= 0.01 else "$0 due in next 5 yrs",
+                reading=(mat.get("note") or yrs_str) + miss_note + (f" (cash ${cash_b:.2f}B)" if cash_b else ""),
             )
     elif sf.get("debt_maturities_partial"):
         tot_d = ((raw.get("info") or {}).get("totalDebt") or 0) / 1e9
@@ -972,7 +991,148 @@ def metric(key, t, raw, hist, ind_moat, rec_fb):
     if key == "debt_mat":
         dm = (ind_moat or {}).get("debt_mat")
         if not dm: return None
-        return dict(answer=dm["answer"], reading=dm["reading"], tone=dm["tone"])
+        return dict(answer=dm["answer"], reading=dm["reading"], tone=dm["tone"], status=dm["status"])
+    return None
+
+# Direct live KPI -> sector question mappings (auto-updated from quarterly filings in data/kpis.json)
+KPI_SECTOR_MAP = {
+    "Payment volume growth": [
+        "payments_volume_growth_constant", "gross_dollar_volume_growth", "billed_business_growth_fx_adjusted",
+        "total_payment_volume_growth", "square_gross_payment_volume_growth", "processed_volume_growth", "usdc_in_circulation",
+    ],
+    "Take rate holding up?": [
+        "take_rate_net_revenue_processed_volume", "client_incentives_gross_revenue",
+        "rebates_incentives_gross_revenue", "reserve_return_rate",
+    ],
+    "Credit losses and fee regulation": ["net_write_off_rate_principal"],
+    "Occupancy": ["occupancy_rate_us_malls_and_outlets", "rent_coverage"],
+    "Same-property income growth": ["domestic_property_noi_growth", "comparable_hotel_revpar_growth"],
+    "Underwriting profit: combined ratio below 100%?": ["combined_ratio"],
+    "Capital strength (risk-based capital, solvency ratios)": ["pmiers_sufficiency_ratio", "pmiers_excess_capital"],
+    "Catastrophe exposure and reinsurance cover": ["reportable_catastrophes", "catastrophe_losses"],
+    "Commodity prices behind today's earnings": ["realised_oil_price", "average_selling_price_per_ton", "average_realized_gold_price"],
+    "Breakeven production cost": ["all_in_sustaining_cost_per_ounce", "cash_operating_cost_per_boe_change"],
+    "Production and reserves": [
+        "production_boe_d_growth", "gross_ammonia_production_thousand_tons", "total_production_growth",
+        "attributable_gold_production_thousand_oz", "remaining_performance_obligations",
+    ],
+    "Order backlog and book-to-bill": [
+        "orders_and_book_to_bill", "remaining_performance_obligations", "backlog_growth", "backlog", "total_backlog",
+    ],
+    "Net revenue retention and churn": [
+        "net_revenue_retention_company_range", "software_dollar_based_net_retention",
+        "net_retention_rate", "net_dollar_expansion", "renewal_rate", "client_retention_asv_and_count",
+    ],
+    "How much revenue is recurring (subscriptions)?": [
+        "annual_recurring_revenue", "total_subscription_revenue_backlog", "digital_media_arr_subscription_revenue_growth",
+        "subscription_support_revenue_growth", "subscription_revenue_growth", "organic_asv_growth",
+        "annualized_recurring_revenue_growth", "moody_s_analytics_arr_growth", "recurring_revenue_growth_constant_currency",
+        "ratings_transaction_vs_non_transaction_revenue",
+    ],
+    "Customer retention": ["active_installed_base_annual"],
+    "Dependence on a few large customers": ["top_customer_concentration_10_k"],
+    "Product concentration": ["top_2_drugs_share_of_revenue", "non_jakafi_share_of_revenue"],
+    "When major patents expire": ["jakafi_patent_expiry_timing"],
+    "Pipeline success and trial risk": ["pipeline_milestones_e_g_orforglipron"],
+    "Growth from higher prices or more volume?": [
+        "volume_mix_vs_price", "price_vs_volume_cases", "price_mix", "pricing_contribution",
+        "average_unit_retail_growth", "transactions_growth_comparable", "smokeable_products_shipment_volume_growth",
+    ],
+    "Enrollment growth": ["total_enrollment_growth", "new_enrollment_growth"],
+}
+
+def _fmt_kpi_val(val, unit):
+    if unit == "text":
+        s = str(val)
+        return s[:64] + ("…" if len(s) > 64 else "")
+    v = float(val)
+    if unit == "pct": return f"{v:.1f}%".replace(".0%", "%")
+    if unit == "usd_b": return f"${v:.2f}B" if abs(v) < 10 else f"${v:.1f}B"
+    if unit == "usd": return f"${v:,.0f}" if abs(v) >= 100 else f"${v:.2f}"
+    if unit == "x": return f"{v:.2f}×"
+    if abs(v) >= 1e9: return f"{v/1e9:.2f}B"
+    if abs(v) >= 1e6: return f"{v/1e6:.1f}M"
+    return f"{v:,.0f}"
+
+def kpi_sector_answer(q, t):
+    """Answer a sector question directly from live quarterly filings in data/kpis.json (or live XBRL RPO)."""
+    kd_map = {d["id"]: d for d in (KPI_DEFS.get(t) or {}).get("kpis", [])}
+    kdata = KPIS.get(t) or {}
+    cands = KPI_SECTOR_MAP.get(q) or []
+    for kid in cands:
+        pts = kdata.get(kid) or []
+        if not pts: continue
+        last = sorted(pts, key=lambda p: p["period"])[-1]
+        d = kd_map.get(kid) or {"label": kid.replace("_", " "), "unit": "num", "better": "none"}
+        unit, val = d.get("unit", "num"), last["value"]
+        # Special formatting when a pair of KPIs answers the question together (e.g. KO/PG volume+price, AME book-to-bill+backlog)
+        ans = _fmt_kpi_val(val, unit)
+        lbl = d.get("label", kid)
+        rd_extra = ""
+        if kid == "combined_ratio":
+            tone = "good" if float(val) < 95 else "caution" if float(val) < 100 else "bad"
+            ans = f"{ans} combined ratio"
+        elif kid == "non_jakafi_share_of_revenue":
+            tone = "bad" if float(val) < 50 else "caution"
+            ans = f"Jakafi {100 - float(val):.1f}% of rev"
+        elif kid == "top_2_drugs_share_of_revenue":
+            tone = "bad" if float(val) > 50 else "caution"
+            ans = f"{ans} from top 2 drugs"
+        elif kid == "top_customer_concentration_10_k":
+            tone = "bad" if float(val) >= 15 else "caution"
+            ans = f"Top customer {ans} of sales"
+        elif kid == "active_installed_base_annual":
+            tone = "good"
+            ans = f"{ans} active devices"
+        elif kid == "occupancy_rate_us_malls_and_outlets":
+            tone = "good" if float(val) >= 92 else "caution"
+            ans = f"{ans} occupied"
+        elif kid == "rent_coverage":
+            tone = "good" if float(val) >= 2.0 else "caution"
+            ans = f"{ans} operator rent coverage"
+        elif kid == "pmiers_sufficiency_ratio":
+            tone = "good" if float(val) >= 130 else "caution"
+            ans = f"{ans} PMIERs sufficiency"
+        elif kid == "pmiers_excess_capital":
+            tone = "good"
+            ans = f"{ans} PMIERs excess capital"
+        elif kid == "orders_and_book_to_bill":
+            tone = "good" if float(val) >= 1.0 else "caution"
+            ans = f"{ans} book-to-bill"
+            if kdata.get("backlog"):
+                bl = sorted(kdata["backlog"], key=lambda p: p["period"])[-1]
+                rd_extra = f"; backlog ${float(bl['value']):.2f}B"
+        elif kid == "price_mix" and kdata.get("unit_case_volume_growth"):
+            vol = sorted(kdata["unit_case_volume_growth"], key=lambda p: p["period"])[-1]
+            ans = f"vol {float(vol['value']):+.0f}%, price/mix {float(val):+.0f}%"
+            tone = "good" if float(vol["value"]) > 0 else "caution"
+        elif kid == "pricing_contribution" and kdata.get("volume_growth"):
+            vol = sorted(kdata["volume_growth"], key=lambda p: p["period"])[-1]
+            ans = f"vol {float(vol['value']):+.1f}%, price {float(val):+.1f}%"
+            tone = "good" if float(vol["value"]) > 0 else "caution"
+        elif kid == "transactions_growth_comparable" and kdata.get("comparable_restaurant_sales_growth"):
+            cs = sorted(kdata["comparable_restaurant_sales_growth"], key=lambda p: p["period"])[-1]
+            ans = f"comps {float(cs['value']):+.1f}% (traffic {float(val):+.1f}%)"
+            tone = "good" if float(val) > 0 else "caution"
+        elif unit == "pct" and ("growth" in kid or "noi" in kid or "revpar" in kid):
+            v = float(val)
+            ans = f"{v:+.1f}%".replace(".0%", "%")
+            tone = "good" if v > 3 else "bad" if v < 0 else "key"
+        elif unit == "usd_b":
+            ans = f"{ans} ({lbl.split('(')[0].strip()})"
+            tone = "key"
+        elif unit == "text":
+            tone = "key"
+        else:
+            better = d.get("better", "none")
+            tone = "good" if better == "up" and isinstance(val, (int, float)) and val > 0 else "key"
+        rd = f"{lbl}: {last['label']} ({last['period']}){rd_extra}"
+        return dict(answer=ans, reading=rd, tone=tone, status="answered", url=last.get("source"), as_of=last["period"])
+    # Live XBRL RPO fallback for Industrials backlog
+    if q == "Order backlog and book-to-bill":
+        rpo = (SEC_F.get(t) or {}).get("rpo")
+        if rpo and rpo.get("val_b"):
+            return dict(answer=f"${rpo['val_b']:.2f}B RPO", reading=f"SEC 10-K remaining performance obligations as of {rpo['as_of']}", tone="key", status="answered", as_of=rpo["as_of"])
     return None
 
 # ------------------------------------------------------------------ the model (for "what the price assumes")
@@ -1024,11 +1184,26 @@ def assumes_ins(ns, t, a, price, bd):
         out["half_g1"] = r1(g / 2)
         out["half_value"] = r1(V(g / 2, B["m"]), 2)
     out["cap_needed"] = ns["ri_cap"](price, s, B, r, mo)
-    # M1: Implied 5-yr earnings/book growth needed at today's price
+    # M1: Implied earnings growth from the model's own forecast at the price-implied growth (or ROE)
+    fc_ins = (a.get("forecast") or {}).get("base") or {}
     if out["g1_needed"] is not None:
-        out["eps_g_implied"] = r1((out["g1_needed"] + B["g10"]) / 2.0)
-    elif out["m_needed"] is not None and s["roe0"] > 0:
-        out["eps_g_implied"] = r1((1 + B["g1"]) * (out["m_needed"] / s["roe0"]) ** (1 / 5.0) - 1)
+        det = ns["ri_value"](s["bv"], s["roe0"], out["g1_needed"], B["g10"], B["m"], r, s["extra"], s["shares"], mo=mo, detail=True)
+        rws_i = det["rows"]
+        if len(rws_i) >= 10 and rws_i[0]["ni"] > 0 and rws_i[9]["ni"] > 0:
+            out["eps_g_implied"] = r1(cagr(rws_i[9]["ni"], rws_i[0]["ni"], 9))
+            out["eps_g_span"] = "y1–y10 NI"
+            nis_b = fc_ins.get("ni") or []
+            if len(nis_b) >= 10 and nis_b[0] > 0 and nis_b[9] > 0:
+                out["eps_g_base"] = r1(cagr(nis_b[9], nis_b[0], 9))
+    elif out["m_needed"] is not None:
+        det = ns["ri_value"](s["bv"], s["roe0"], B["g1"], B["g10"], out["m_needed"], r, s["extra"], s["shares"], mo=mo, detail=True)
+        rws_i = det["rows"]
+        if len(rws_i) >= 10 and rws_i[0]["ni"] > 0 and rws_i[9]["ni"] > 0:
+            out["eps_g_implied"] = r1(cagr(rws_i[9]["ni"], rws_i[0]["ni"], 9))
+            out["eps_g_span"] = "y1–y10 NI"
+            nis_b = fc_ins.get("ni") or []
+            if len(nis_b) >= 10 and nis_b[0] > 0 and nis_b[9] > 0:
+                out["eps_g_base"] = r1(cagr(nis_b[9], nis_b[0], 9))
     # M7 & M8: Bear/Base/Bull 10-yr returns vs 10-yr Treasury
     h10 = mc_regime_hold10(a, price)
     t10 = (bd.get("t10_now") / 100.0) if bd and bd.get("t10_now") is not None else None
@@ -1039,12 +1214,14 @@ def assumes_ins(ns, t, a, price, bd):
         }
         out["t10"] = r1(t10)
     # M9: Return decomposition (business growth + payouts vs P/B re-rating) over 10 yrs (base case)
-    fc = (a.get("forecast") or {}).get("base") or {}
+    # Exact Year-10 equity value = PV of post-year-10 payouts + PV of terminal value, brought forward 10 yrs at r
+    fc = fc_ins
     rws = fc.get("rows") or []
     if len(rws) >= 10 and pb > 0 and s["shares"] > 0:
         bv10 = rws[9]["rev"]
-        tv10 = fc.get("tv") or 0
-        exit_pb = (tv10 / bv10) if bv10 > 0 and tv10 > 0 else None
+        rem_pv0 = sum(rw["pv"] for rw in rws[10:]) + (fc.get("pv_tv") or 0)
+        eq10 = rem_pv0 * ((1.0 + r) ** 10)
+        exit_pb = (eq10 / bv10) if bv10 > 0 and eq10 > 0 else None
         if exit_pb and exit_pb > 0:
             bv_g = cagr(bv10, s["bv"], 10)
             rerate = (exit_pb / pb) ** (1 / 10.0) - 1.0
@@ -1080,18 +1257,23 @@ def assumes(ns, t, a, price, bd):
         out["half_g1"] = r1(g / 2)
         out["half_value"] = r1(V(g / 2, B["m"]), 2)
     out["cap_needed"] = ns["implied_cap"](price, s["rev"], m0, B["g1"], B["m"], w, nc, s["shares"], **su["kw"])
-    # M1: Implied 5-yr annualized EPS / cash-flow growth along the reverse-DCF path
+    # M1: Implied cash-flow growth from the model's own forecast at g1_needed (Year 1 -> Year 10, or first positive year -> Year 10)
+    rws_b = ((a.get("forecast") or {}).get("base") or {}).get("rows") or []
     if g is not None:
-        # 5-yr revenue growth linearly fading from g toward g10, plus base margin shift from m0 to B["m"]
-        rev_mult = 1.0
-        for yr in range(1, 6):
-            gy = g + (B["g10"] - g) * (yr - 1) / 9.0
-            rev_mult *= max(0.2, 1.0 + gy)
-        if m0 > 0.01 and B["m"] > 0.01:
-            eps_g5 = (rev_mult * (B["m"] / m0)) ** (1 / 5.0) - 1.0
-        else:
-            eps_g5 = rev_mult ** (1 / 5.0) - 1.0
-        out["eps_g_implied"] = r1(eps_g5)
+        det = D(s["rev"], m0, g, B["g10"], B["m"], w, nc, s["shares"], detail=True)
+        rws_i = det["rows"]
+        if len(rws_i) >= 10 and rws_i[9]["fcf"] > 0:
+            i0 = next((i for i in range(6) if rws_i[i]["fcf"] > 0), None)
+            if i0 is not None and 9 - i0 >= 4:
+                out["eps_g_implied"] = r1(cagr(rws_i[9]["fcf"], rws_i[i0]["fcf"], 9 - i0))
+                out["eps_g_span"] = f"y{i0+1}–y10 FCF"
+                if len(rws_b) >= 10 and rws_b[i0]["fcf"] > 0 and rws_b[9]["fcf"] > 0:
+                    out["eps_g_base"] = r1(cagr(rws_b[9]["fcf"], rws_b[i0]["fcf"], 9 - i0))
+            elif rws_i[0]["rev"] > 0 and rws_i[9]["rev"] > 0:
+                out["eps_g_implied"] = r1(cagr(rws_i[9]["rev"], rws_i[0]["rev"], 9))
+                out["eps_g_span"] = "y1–y10 sales"
+                if len(rws_b) >= 10 and rws_b[0]["rev"] > 0 and rws_b[9]["rev"] > 0:
+                    out["eps_g_base"] = r1(cagr(rws_b[9]["rev"], rws_b[0]["rev"], 9))
     # M7 & M8: Bear / Base / Bull 10-yr expected returns vs 10-yr Treasury
     h10 = mc_regime_hold10(a, price)
     t10 = (bd.get("t10_now") / 100.0) if bd and bd.get("t10_now") is not None else None
@@ -1252,16 +1434,20 @@ def main():
                 asm["pe_own"] = round(st.median(own), 1); asm["pe_own_years"] = f"{(V['history']['pe'][0][0])}–{V['history']['pe'][-1][0]}"
             x["assumes"] = asm
 
-        # sector module (3-tier: statement metric -> company_research sector disclosure -> unknown)
+        # sector module (3-tier: live statements -> live data/kpis.json & XBRL -> dated company_research note [partly] -> unknown)
         mod = MODULE_OF.get(t)
         sq = []
         cr_sec = (CR.get(t) or {}).get("sector") or {}
         if mod:
             for q, key in mod["questions"]:
                 ans = metric(key, t, raw, hist, im, rfb) if key else None
+                if ans is not None:
+                    ans.setdefault("status", "answered")
+                else:
+                    ans = kpi_sector_answer(q, t)
                 if ans is None and q in cr_sec:
-                    ans = dict(cr_sec[q])
-                sq.append(dict(q=q, **(ans or {"answer": None})))
+                    ans = dict(cr_sec[q], status="partly", note=True)
+                sq.append(dict(q=q, **(ans or {"answer": None, "status": "unknown"})))
             x["sector"] = dict(module=mod["name"], questions=sq)
 
         # Dynamic, honest per-stock coverage evaluation for all 64 fixed questions!
@@ -1298,14 +1484,15 @@ def main():
             if qid == "B12": return "answered" if (an and an.get("history")) else "unknown"
             if qid == "B13": return "answered" if (gr and gr.get("trajectory")) else ("partly" if has_snap else "unknown")
             if qid == "B14": return "answered" if (gr and gr.get("decomp")) else ("partly" if has_snap else "unknown")
-            if qid == "B15": return "answered" if (gr and gr.get("demand")) else "unknown"
-            if qid == "C16": return "answered" if (im and im.get("pricing")) else ("partly" if has_snap else "unknown")
-            if qid == "C17": return "answered" if (im and im.get("pricing") and (im["pricing"].get("gm") or ins)) else ("partly" if im and im.get("pricing") else "unknown")
+            # Qualitative questions backed by dated research notes in company_research.json count strictly as "partly"
+            if qid == "B15": return "partly" if (gr and gr.get("demand")) else "unknown"
+            if qid == "C16": return "partly" if ((im and im.get("pricing")) or has_snap) else "unknown"
+            if qid == "C17": return "partly" if (im and im.get("pricing")) else "unknown"
             if qid == "C18": return "answered" if has_moat else "unknown"
-            if qid == "C19": return "answered" if (has_moat and im and im.get("barriers")) else ("partly" if has_moat else "unknown")
+            if qid == "C19": return "partly" if (has_moat or (im and im.get("barriers"))) else "unknown"
             if qid == "C20": return "answered" if (im and im.get("share")) else "unknown"
             if qid == "C21": return "answered" if (im and im.get("industry")) else "unknown"
-            if qid == "C22": return "answered" if (im and im.get("tech_risk")) else ("partly" if has_moat else "unknown")
+            if qid == "C22": return "partly" if (has_moat or (im and im.get("tech_risk"))) else "unknown"
             if qid == "C23": return "answered"
             if qid in ("D24", "D25"): return "answered" if has_snap else "unknown"
             if qid == "D26": return "answered" if (ca and ca.get("wc")) else "unknown"
@@ -1313,7 +1500,7 @@ def main():
             if qid == "D29": return "answered" if (ca and ca.get("cap_intensity")) else ("partly" if has_snap else "unknown")
             if qid == "D30": return "answered" if (ca and ca.get("self_fund")) else ("partly" if has_snap else "unknown")
             if qid in ("E31", "E32", "E35"): return "answered" if has_snap else "unknown"
-            if qid == "E33": return "answered" if (ca and ca.get("buyback_val")) else "unknown"
+            if qid == "E33": return "partly" if (ca and ca.get("buyback_val")) else "unknown"
             if qid == "E34": return "answered" if has_ret else "unknown"
             if qid == "E36": return "answered" if (ca and ca.get("per_share")) else "unknown"
             if qid == "F37": return "answered" if has_snap else "unknown"
@@ -1322,8 +1509,8 @@ def main():
                 dm = (im or {}).get("debt_mat")
                 return dm["status"] if dm else "unknown"
             if qid == "F40": return "answered" if has_snap else "unknown"
-            if qid == "F41": return "answered" if (im and im.get("concentration")) else "unknown"
-            if qid == "F42": return "answered" if (im and im.get("risks")) else ("partly" if has_moat else "unknown")
+            if qid == "F41": return "partly" if (im and im.get("concentration")) else "unknown"
+            if qid == "F42": return "partly" if (has_moat or (im and im.get("risks"))) else "unknown"
             if qid == "G44": return "answered" if has_mkt else "unknown"
             if qid in ("G45", "G47"): return "answered" if has_split else "unknown"
             if qid == "G46": return "answered" if has_bench else ("partly" if has_mkt else "unknown")
@@ -1341,14 +1528,15 @@ def main():
             return "unknown"
 
         fixed = [[qid, status_of(qid)] for qid, _ in Q]
-        n_ans = sum(1 for _, s in fixed if s == "answered") + sum(1 for q in sq if q.get("answer") is not None)
-        n_part = sum(1 for _, s in fixed if s == "partly")
-        n_unk = sum(1 for _, s in fixed if s == "unknown") + sum(1 for q in sq if q.get("answer") is None)
+        n_ans = sum(1 for _, s in fixed if s == "answered") + sum(1 for q in sq if q.get("status") == "answered")
+        n_part = sum(1 for _, s in fixed if s == "partly") + sum(1 for q in sq if q.get("status") == "partly")
+        n_unk = sum(1 for _, s in fixed if s == "unknown") + sum(1 for q in sq if q.get("status") == "unknown")
         n_na = sum(1 for _, s in fixed if s == "na")
         x["coverage"] = dict(total=len(fixed) + len(sq) - n_na, answered=n_ans, partly=n_part, unknown=n_unk, fixed=fixed, **({"na": n_na} if n_na else {}))
         stocks[t] = x
 
     doc = {"_about": __doc__.strip().split("\n\n")[0], "built": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+           "analysts_as_of": (RF.get("yahoo_fetched") or RF.get("fetched") or "")[:10] or None,
            "questions": {q[0]: q[1] for q in Q}, "sector_pe_source": spe_src, "benchmarks": BM, "stocks": stocks}
     if {k: v for k, v in OLD.items() if k != "built"} == json.loads(json.dumps({k: v for k, v in doc.items() if k != "built"}, default=float)):
         print("framework.json: no change"); return                   # keeps the daily price job a no-op outside market hours

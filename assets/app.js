@@ -686,8 +686,13 @@ function h10Of(r,px){if(!r.mc||!r.mc.regimes||!r.mc.irr||!r.mc.irr.hold10||px==n
 function cardAns(c){const ms=(c.metrics||[]).filter(m=>!m.na),bad=v=>v==null||v===""||v==="–"||/not in free data/i.test(String(v));const miss=ms.filter(m=>bad(m.value)).map(m=>m.label);
  return {n:ms.length,a:ms.length-miss.length,miss,enough:!ms.length||(ms.length-miss.length)*2>=ms.length}}
 function ansLine(c){const x=cardAns(c);if(!x.n)return "";return `<span class="ans">${x.a} of ${x.n} answered${x.miss.length?` · ${x.miss.map(l=>esc(l.toLowerCase())).join(", ")} ${UNK("unknown")}`:""}</span>`}
+const rnTag=o=>o&&o.note?'<span class="ftag est">research note</span>':"";
+const rnSrc=o=>o&&o.note&&(o.source||o.as_of)?`<div class="mnote">${esc(o.source||"Research note")}${o.as_of?` · as of ${esc(o.as_of)}`:""}</div>`:"";
 function covHTML(r){const x=fwOf(r.ticker);if(!x||!x.coverage)return "";const c=x.coverage,w=v=>(v/c.total*100).toFixed(1)+"%",Qs=FW.questions||{};
- const list=st=>c.fixed.filter(f=>f[1]===st).map(f=>`<li>${esc(Qs[f[0]]||f[0])}</li>`).join("")+(st==="unknown"?((x.sector||{}).questions||[]).filter(q=>q.answer==null).map(q=>`<li>${esc(q.q)} <span class="muted">(${esc(x.sector.module)})</span></li>`).join(""):"");
+ const sqs=(x.sector||{}).questions||[],smod=(x.sector||{}).module||"";
+ const list=st=>c.fixed.filter(f=>f[1]===st).map(f=>`<li>${esc(Qs[f[0]]||f[0])}</li>`).join("")
+  +(st==="partly"?sqs.filter(q=>q.status==="partly").map(q=>`<li>${esc(q.q)} <span class="muted">(${esc(smod)}${q.note?", research note":""})</span></li>`).join(""):"")
+  +(st==="unknown"?sqs.filter(q=>q.status==="unknown"||q.answer==null).map(q=>`<li>${esc(q.q)} <span class="muted">(${esc(smod)})</span></li>`).join(""):"");
  const pL=list("partly"),uL=list("unknown");
  const body=pL||uL?`<div class="covlist">${pL?`<div><b>Partly answered</b><ul>${pL}</ul></div>`:""}${uL?`<div><b>Unknown, not scored</b><ul>${uL}</ul></div>`:""}${c.na?`<div><b>Not applicable to this business</b><ul>${list("na")}</ul></div>`:""}</div>`
   :`<p class="muted" style="margin-top:6px">Every applicable question in the 64-question framework and this stock's sector module is answered below.${c.na?` (${c.na} cash-flow/capex questions marked not applicable to an underwriter.)`:""}</p>`;
@@ -695,7 +700,7 @@ function covHTML(r){const x=fwOf(r.ticker);if(!x||!x.coverage)return "";const c=
   <span class="covbar" aria-hidden="true"><i style="width:${w(c.answered)};background:var(--good)"></i><i style="width:${w(c.partly)};background:color-mix(in srgb,var(--warn) 45%,var(--line))"></i><i style="width:${w(c.unknown)};background:color-mix(in srgb,var(--mut) 30%,var(--line))"></i></span>
   <span class="covwhich">${pL||uL?"which ones?":"details"}</span></summary>
   ${body}
-  <p class="muted">The 64 questions every stock gets (valuation vs bonds, growth, advantage, cash flow, capital allocation, risk, market performance, what the price assumes, duration) plus the questions for its type of business. An unknown is never counted as good${c.na?`; questions that don't apply (for an insurer: free-cash-flow and debt-to-EBITDA tests) are left out of the total`:""}.</p></details>`}
+  <p class="muted">The 64 questions every stock gets (valuation vs bonds, growth, advantage, cash flow, capital allocation, risk, market performance, what the price assumes, duration) plus the questions for its type of business. Dated research notes and partial figures count as partly answered; an unknown is never counted as good${c.na?`; questions that don't apply (for an insurer: free-cash-flow and debt-to-EBITDA tests) are left out of the total`:""}.</p></details>`}
 function perfHTML(r,px,part){const x=fwOf(r.ticker);if(!x||(!x.business&&!x.market))return "";const b=x.business||{},m=x.market||{},a=x.assumes||{},sp=x.split;
  const row=(l,v)=>`<div class="r"><span>${l}</span>${v}</div>`,B=v=>v==null?UNK("–"):`<b>${sp1(v)}</b>`;
  const bm=(o,lab)=>o&&o.ytd!=null&&m.ytd!=null?row(`vs ${lab} YTD`,`<b class="${m.ytd>=o.ytd?"up":"down"}">${(m.ytd-o.ytd>=0?"+":"−")+Math.abs((m.ytd-o.ytd)*100).toFixed(1)} pts</b>`):row(`vs ${lab}`,UNK("not loaded yet"));
@@ -725,7 +730,7 @@ function earnQualHTML(r){const x=fwOf(r.ticker),g=x&&x.growth;if(!g)return "";
  }
  const tr=g.trajectory;
  if(tr)row("Is growth speeding up or slowing?",T(tr.tone,tr.label),`${tr.rev_q!=null?`latest qtr sales ${sp1(tr.rev_q,1)}`:tr.rev_1y!=null?`1y sales ${sp1(tr.rev_1y,1)}`:""} vs 3y ${tr.rev_3y!=null?sp1(tr.rev_3y,1):"–"}${tr.rev_5y!=null?` · 5y ${sp1(tr.rev_5y,1)}`:""}`);
- if(g.demand)row("Recurring demand or temporary?",T(g.demand.tone,g.demand.answer),esc(g.demand.reading));
+ if(g.demand)row("Recurring demand or temporary?"+rnTag(g.demand),T(g.demand.tone,g.demand.answer),esc(g.demand.reading)+rnSrc(g.demand));
  if(!rows.length)return "";
  return `<div class="snaphd"><b>Earnings growth &amp; quality</b><span class="muted">Split-adjusted 10-K history: where EPS growth came from</span></div><div class="scroll"><table class="s sp"><tr><th>Question</th><th class="n">Answer</th><th>Reading</th></tr>${rows.join("")}</table></div>`}
 function analystsHTML(r){const x=fwOf(r.ticker),a=x&&x.analysts;if(!a)return "";
@@ -737,7 +742,8 @@ function analystsHTML(r){const x=fwOf(r.ticker),a=x&&x.analysts;if(!a)return "";
  if(rv){const ch=rv.chg_30d!=null?`${sp1(rv.chg_30d,1)} in 30d`:rv.chg_90d!=null?`${sp1(rv.chg_90d,1)} in 90d`:"";
   row("Are analysts becoming more optimistic?",T(rv.tone,rv.verdict),`${rv.period} EPS $${rv.cur!=null?rv.cur.toFixed(2):"–"}${ch?` (${ch}${rv.chg_90d!=null&&rv.chg_30d!=null?`, ${sp1(rv.chg_90d,1)} in 90d`:""})`:""} · ${rv.up30} raised, ${rv.dn30} cut in 30d${rv.n_analysts?` (${rv.n_analysts} analysts)`:""}`)}
  if(!rows.length)return "";
- return `<div class="snaphd"><b>Analyst track record &amp; revisions</b><span class="muted">Consensus beats/misses and estimate direction</span></div><div class="scroll"><table class="s sp"><tr><th>Question</th><th class="n">Answer</th><th>Reading</th></tr>${rows.join("")}</table></div>`}
+ const dt=a.as_of||FW.analysts_as_of;
+ return `<div class="snaphd"><b>Analyst track record &amp; revisions</b><span class="muted">Consensus beats/misses and estimate direction${dt?` · fetched ${esc(dt)}`:""}</span></div><div class="scroll"><table class="s sp"><tr><th>Question</th><th class="n">Answer</th><th>Reading</th></tr>${rows.join("")}</table></div>`}
 function cashAllocHTML(r){const x=fwOf(r.ticker),c=x&&x.cash_alloc;if(!c)return "";
  const T=(k,t)=>`<span class="${TONE[k]||"key"}">${esc(t)}</span>`,$b=v=>v==null?"–":(v<0?"−$":"$")+Math.abs(v).toFixed(2)+"B",rows=[];
  const row=(q,ans,rd)=>rows.push(`<tr><td>${q}</td><td class="n">${ans}</td><td class="muted">${rd}</td></tr>`);
@@ -749,7 +755,8 @@ function cashAllocHTML(r){const x=fwOf(r.ticker),c=x&&x.cash_alloc;if(!c)return 
  if(c.self_fund){const s=c.self_fund;
   row(`Self-funded growth? (${s.years})`,T(s.tone,s.verdict),`3-yr FCF ${$b(s.fcf_b)} vs dividends ${$b(s.div_b)} + acquisitions ${$b(s.acq_b)}`)}
  if(c.buyback_val){const b=c.buyback_val;
-  row("Buybacks below or above fair value?",T(b.tone,b.verdict),b.reading?esc(b.reading):`${$b(b.total_b)} (${b.years}) at avg $${b.avg_px.toFixed(2)}${b.vs_fv!=null?` (${sp1(b.vs_fv,0)} vs today's FV)`:""}${b.w_pe!=null?`, weighted P/E ${b.w_pe}×`:""}`)}
+  const rd=b.reading?esc(b.reading):`${$b(b.total_b)} (${b.years}) at weighted avg $${b.avg_px.toFixed(2)} vs $${b.period_avg_px.toFixed(2)} period avg${b.w_pe!=null?`; weighted P/E ${b.w_pe}×${b.period_avg_pe!=null?` vs ${b.period_avg_pe}× avg`:""}`:""} — historical fair values aren't recorded`;
+  row('Buyback prices vs own P/E history<span class="ftag est">partly</span>',T(b.tone,b.verdict),rd)}
  if(c.per_share){const p=c.per_share;
   row("Creating value per share or just size?",T(p.tone,p.verdict),`${p.eps_cagr!=null?`EPS ${sp1(p.eps_cagr,1)}/yr`:""}${p.fcf_ps_cagr!=null?`, FCF/sh ${sp1(p.fcf_ps_cagr,1)}/yr`:""} vs sales ${p.rev_cagr!=null?sp1(p.rev_cagr,1)+"/yr":"–"}${p.roic!=null?` · ${p.measure} ${(p.roic*100).toFixed(0)}% vs ${(p.hurdle*100).toFixed(0)}% hurdle`:""}`)}
  if(!rows.length)return "";
@@ -762,20 +769,20 @@ function indRiskHTML(r){const x=fwOf(r.ticker),m=x&&x.industry_moat,rec=x&&x.rec
  if(m&&m.share){const s=m.share;
   row("Market share vs industry peers",T(s.tone,`${s.verdict} (${sp1(s.spread,1)} pts/yr)`),`company 3-yr sales ${sp1(s.co_cagr_3y,1)}/yr vs ${sp1(s.ind_cagr_3y,1)}/yr peer median`)}
  if(m&&m.pricing){const p=m.pricing,gm=p.gm;
-  row("Pricing power & inflation test",T(p.tone,p.answer),`${esc(p.reading)}${gm?` Gross margin ${gm.y0}–${gm.y1}: ${(gm.gm0*100).toFixed(1)}% → ${(gm.gm1*100).toFixed(1)}% (${gm.chg>=0?"+":"−"}${Math.abs(gm.chg*100).toFixed(1)} pts).`:""}`)}
- if(m&&m.barriers)row("How easily can competitors copy it?",T(m.barriers.tone,m.barriers.answer),esc(m.barriers.reading));
- if(m&&m.tech_risk)row("Technology &amp; AI disruption",T(m.tech_risk.tone,m.tech_risk.answer),esc(m.tech_risk.reading));
- if(m&&m.debt_mat)row("Debt to refinance in the next 1–5 years",T(m.debt_mat.tone,m.debt_mat.answer),esc(m.debt_mat.reading));
- if(m&&m.concentration)row("Customer, supplier &amp; market concentration",T(m.concentration.tone,m.concentration.answer),esc(m.concentration.reading));
- if(m&&m.risks)row("Regulatory, geopolitical &amp; tech risks",T(m.risks.tone,m.risks.answer),esc(m.risks.reading));
+  row("Pricing power &amp; inflation test"+rnTag(p),T(p.tone,p.answer),`${esc(p.reading)}${gm?` Gross margin ${gm.y0}–${gm.y1}: ${(gm.gm0*100).toFixed(1)}% → ${(gm.gm1*100).toFixed(1)}% (${gm.chg>=0?"+":"−"}${Math.abs(gm.chg*100).toFixed(1)} pts).`:""}`+rnSrc(p))}
+ if(m&&m.barriers)row("How easily can competitors copy it?"+rnTag(m.barriers),T(m.barriers.tone,m.barriers.answer),esc(m.barriers.reading)+rnSrc(m.barriers));
+ if(m&&m.tech_risk)row("Technology &amp; AI disruption"+rnTag(m.tech_risk),T(m.tech_risk.tone,m.tech_risk.answer),esc(m.tech_risk.reading)+rnSrc(m.tech_risk));
+ if(m&&m.debt_mat)row("Debt to refinance in the next 1–5 years"+(m.debt_mat.status==="partly"?'<span class="ftag est">partly</span>':""),T(m.debt_mat.tone,m.debt_mat.answer),esc(m.debt_mat.reading));
+ if(m&&m.concentration)row("Customer, supplier &amp; market concentration"+rnTag(m.concentration),T(m.concentration.tone,m.concentration.answer),esc(m.concentration.reading)+rnSrc(m.concentration));
+ if(m&&m.risks)row("Regulatory, geopolitical &amp; tech risks"+rnTag(m.risks),T(m.risks.tone,m.risks.answer),esc(m.risks.reading)+rnSrc(m.risks));
  if(rec){const w=rec.worst;
-  row("Recession check (10-K)",T(rec.tone,rec.label),w?`${esc(w.name)} (${w.worst_year}): profit ${sp1(w.profit_chg,0)}, sales ${sp1(w.rev_chg,0)} (${esc(rec.source)})`:`${esc(rec.episode||"")}${rec.op_chg!=null?`: profit ${sp1(rec.op_chg,0)}`:""} (${esc(rec.source)})`)}
+  row("Recession check (10-K)"+(rec.status==="partly"?'<span class="ftag est">partly</span>':""),T(rec.tone,rec.label),w?`${esc(w.name)} (${w.worst_year}): profit ${sp1(w.profit_chg,0)}, sales ${sp1(w.rev_chg,0)} (${esc(rec.source)})`:`${esc(rec.episode||"")}${rec.op_chg!=null?`: profit ${sp1(rec.op_chg,0)}`:""} (${esc(rec.source)})`)}
  if(!rows.length)return "";
- return `<div class="snaphd"><b>Industry, pricing power, debt &amp; risks</b><span class="muted">Peer benchmarks, 10-K debt maturities and competitive research</span></div><div class="scroll"><table class="s sp"><tr><th>Question</th><th class="n">Answer</th><th>Reading</th></tr>${rows.join("")}</table></div>`}
+ return `<div class="snaphd"><b>Industry, pricing power, debt &amp; risks</b><span class="muted">Peer benchmarks, 10-K debt maturities and dated research notes</span></div><div class="scroll"><table class="s sp"><tr><th>Question</th><th class="n">Answer</th><th>Reading</th></tr>${rows.join("")}</table></div>`}
 function sectorHTML(r){const x=fwOf(r.ticker);if(!x||!x.sector)return "";const S=x.sector;
  return `<div class="snaphd"><b>Sector questions</b><span class="muted">${esc(S.module)}</span></div><div class="scroll"><table class="s sp"><tr><th>Question</th><th class="n">Answer</th><th>Reading</th></tr>
- ${S.questions.map(q=>`<tr><td>${esc(q.q)}</td><td class="n">${q.answer==null?UNK():`<span class="${TONE[q.tone]||"key"}">${esc(q.answer)}</span>`}</td><td class="muted">${q.answer==null?"not disclosed in filings":esc(q.reading||"")}</td></tr>`).join("")}</table></div>
- <p class="muted">Questions for this type of business, answered from annual statements, quarterly KPIs and 10-K/20-F filings. Undisclosed items remain unknown and are never scored.</p>`}
+ ${S.questions.map(q=>`<tr><td>${esc(q.q)}${rnTag(q)}${!q.note&&q.status==="partly"?'<span class="ftag est">partly</span>':""}</td><td class="n">${q.answer==null?UNK():`<span class="${TONE[q.tone]||"key"}">${esc(q.answer)}</span>`}</td><td class="muted">${q.answer==null?"not disclosed in filings":esc(q.reading||"")+(q.url?` <a href="${esc(q.url)}" target="_blank" rel="noopener" class="src" title="Source filing">↗</a>`:"")+rnSrc(q)}</td></tr>`).join("")}</table></div>
+ <p class="muted">Questions for this type of business, answered from annual statements, live quarterly KPIs and SEC filings. Dated research notes count as partly answered; undisclosed items remain unknown and are never scored.</p>`}
 function spreadsHTML(r,part){const x=fwOf(r.ticker),b=x&&x.bonds;if(!b)return "";const h=h10Of(r,r.price),hr=hurdleOf(r),f=v=>v==null?"–":v.toFixed(2)+"%";
  const g1=v=>v==null?"–":`<span class="${v<0?"down":v<3?"warn":"up"}">${(v>=0?"+":"−")+Math.abs(v).toFixed(2)}</span>`,
   g2=v=>v==null?UNK("–"):`<span class="${v<0?"down":"warn"}">${(v>=0?"+":"−")+Math.abs(v).toFixed(1)}</span>`;
@@ -794,7 +801,7 @@ function assumesHTML(r){const x=fwOf(r.ticker),a=x&&x.assumes;if(!a)return "";co
  const row=(l,n,b,v)=>rows.push(`<tr><td>${l}</td><td class="n">${n}</td><td class="n">${b}</td><td class="n">${v}</td></tr>`);
  const ex=(x.growth||{}).expected,sr=a.scenarios_ret,rd=a.ret_decomp;
  const addExtra=()=>{
-  if(a.eps_g_implied!=null)row("Implied 5-yr EPS / cash-flow growth",`<span class="key">${sp1(a.eps_g_implied,1)}/yr</span>`,ex&&ex.model_cf_5y!=null?`${sp1(ex.model_cf_5y,1)}/yr`:"","");
+  if(a.eps_g_implied!=null)row(`Model growth at priced-in rate (${esc(a.eps_g_span||"y1–y10")})`,`<span class="key">${sp1(a.eps_g_implied,1)}/yr</span>`,a.eps_g_base!=null?`${sp1(a.eps_g_base,1)}/yr`:(ex&&ex.model_cf_5y!=null?`${sp1(ex.model_cf_5y,1)}/yr (5y)`:"") ,"");
   if(ex&&(ex.analyst_0y!=null||ex.analyst_1y!=null||ex.model_cf_5y!=null))row("Expected 3–5 yr growth (consensus &amp; model)",`0y ${ex.analyst_0y!=null?sp1(ex.analyst_0y,0):"–"} · +1y ${ex.analyst_1y!=null?sp1(ex.analyst_1y,0):"–"}`,ex.model_rev_5y!=null?`5y sales ${sp1(ex.model_rev_5y,1)}/yr`:"","");
   if(sr){const t10s=a.t10!=null?` vs ${(a.t10*100).toFixed(1)}% 10y bond`:"";
    row(`Bear / base / bull 10-yr return${t10s}`,`${sp1(sr.bear.ret10,1)} / <b>${sp1(sr.base.ret10,1)}</b> / ${sp1(sr.bull.ret10,1)}`,a.t10!=null?`${(a.t10*100).toFixed(1)}% bond`:"",
