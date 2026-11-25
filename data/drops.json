@@ -114,16 +114,16 @@
     "high": -0.3759
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 57.58,
    "worst": {
@@ -250,16 +250,16 @@
     "high": -0.5984
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -512,14 +512,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": -0.0078,
-    "week": -0.1841,
-    "high": -0.2143
+    "day": -0.0069,
+    "week": -0.1834,
+    "high": -0.2136
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
@@ -653,16 +653,16 @@
     "high": -0.5862
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -789,16 +789,16 @@
     "high": -0.3753
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -915,21 +915,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0038,
-    "week": -0.035,
-    "high": -0.4674
+    "day": 0.0028,
+    "week": -0.036,
+    "high": -0.4679
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": 0.0099,
-    "week": -0.0003,
-    "high": -0.0731
+    "day": 0.0102,
+    "week": 0.0,
+    "high": -0.0728
    },
    "sector_at_open": 60.55,
    "worst": {
@@ -940,139 +940,6 @@
    "provisional": {
     "cause": "Industry-wide: peers fell -4% too (rates, sector rotation or an industry worry)",
     "lean": "temporary"
-   }
-  },
-  {
-   "id": "CRCL-2026-10-30",
-   "ticker": "CRCL",
-   "name": "Circle Internet Group",
-   "opened": "2026-10-30",
-   "price_at_open": 72.54,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 48.74,
-   "buy_below_at_open": 31.68,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": true,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "unclear",
-    "confidence": "medium",
-    "cause": "Crypto sell-off (bitcoin ~$64K, COIN/MSTR down 6-7% on Nov 16) and Fed-hike fears on top of a weak-quality Q3 (beat flattered by the $182M ARC presale, flat USDC circulation, Binance-renewal margin hit)",
-    "summary": "Circle fell ~18% in a week vs -3% for Financials (RSPF): the Nov 16 leg came with a crypto-wide sell-off and rate-hike worries, which look temporary, but it follows a Nov 5 drop after Q3 where analysts said the beat relied on the one-off ARC presale, USDC circulation has stalled (~$74B, flat YoY) and the renewed Binance deal squeezes Q4/2027 margins; seven brokers cut targets and Circle cut ~5% of staff. Whether this is sentiment or a lasting growth reset depends on USDC circulation turning up again, distribution-cost margins and the CLARITY Act. At ~$57 the price is still above our ~$49 fair value, so it does not look like a bargain yet.",
-    "model_changed": false,
-    "date": "2026-11-19",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-25",
-    "earnings_on": null,
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Capital Markets",
-     "n": 5,
-     "median": {
-      "day": -0.03512319405547493,
-      "week": -0.09645631738887983,
-      "high": -0.2837672056948164
-     },
-     "tickers": [
-      "MS",
-      "GS",
-      "SCHW",
-      "IBKR",
-      "HOOD"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 1.28781,
-      "d30": 1.08256,
-      "chg": 0.18959688146615417
-     },
-     "+1y": {
-      "current": 1.2944,
-      "d30": 1.42004,
-      "chg": -0.0884763809470156
-     },
-     "revisions_30d": {
-      "up": 7,
-      "down": 5
-     }
-    },
-    "news": [
-     {
-      "title": "Wedbush initiated coverage on Circle Internet Group with a new price target",
-      "publisher": "Quantisnow",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNR0xSNFk2UWY4c3F5UHJGOHVlQ2xoWUxib0RQbDk4VWp5ZE50NkZsMGJWTHR5MWM5VFIwQm1FUXdtOW13MU1zVEVabDZQbUpiTU42SUZxclE3ZlZ6UTNsY3JuYnUxM2JNSy1zUWw3Zy1UZXZ1X1VKVEhIZnI0dkFfWkk0RUZJRzcyNjA0ZTBjaHV0TmdEdjREVm1fSkVjWS0wNEQ0S19zaTc?oc=5",
-      "date": "2026-11-25"
-     },
-     {
-      "title": "Circle Internet Group Tokenized bStocks price today, CRCLB to USD chart, marketcap and volume",
-      "publisher": "CryptoSlate",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5xNVRJNkJFdWRqOUtlMGp1X2JxVGFUa1FKXzVkT3JuZWNPLTFFS3pfMGcxQzA3dXEzTE5iRDBhM25qdUo5R1NwOVZMMXFkYy1Ca0VRTGNRR3NkS181c3NuY3VFOEljcFJLUmpET1JmQllZWTZnNllHTldn?oc=5",
-      "date": "2026-11-25"
-     },
-     {
-      "title": "Circle Internet initiated with a Neutral at Wedbush",
-      "publisher": "TipRanks",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbVZfMnRlSWdKcVhIREg5dkhFVVNUT1p1YlpONHJSZDNDcHZMOTk3N2xtbHdheXNxaTVaR29QeFdBVGgzdFlkWk8yd3YyQk1rTFUyZm5nWXJaS0FGZ2dUdklHWmtjWGRYcjc2dVhYdmVPYzgwcFhjLTE4eXRxbEE3LXRleE1XOFBPcUJuQ1lhV1RGdzZ6cnlwSXhqaXJNNktvRUhR?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Circle Falls 7% As Broad-Market Selling Hits Shares",
-      "publisher": "StocksToTrade",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNFpVZUV1bWlxcDhKbEJILWgwVmJWUW9QaFB2RGRPMUNNQ1p3RGdIUnpKdHBYMWlHdGx4d2xsWThyd3RlLXhVMWFqRndtc2owOEtHWExMWC1YV3BoSzltbnE1OGoxcFJFUDVUM3hxRkJ4VHpuanNaRnZETHpOQ3hySFhHYWcwdXdEcGpEdGdZSQ?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Circle Internet Group Gains as Crypto-Linked Shares Rebound and Recent USDC Updates Support Sentiment",
-      "publisher": "Quiver Quantitative",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNT2N3bEpaMC1zV3hyMUU1LVF3R1hoRUU3ZVFWdU1sdjllOGQ2OFlEVkhvc3h6SERVREl1V0JOMXczeUdxRzRPRndrb0JFQm5qWnRXR001Q3ZYVG9Sem9DUG80VVVWN3hCdDg3UW9Gc2ZvZ3ZYYzhkbXJwUmhqNHpNSmJyeDZLT1lfQnI3WUtKR2dSNFl5RG5BYnZtSkFRVGZWWmVYUHpxU1BBQ3RmaDZpaGNkQXRxa2RDTjVGTFhyMkt5UU9ET2c1bEl5RWVxNkU?oc=5",
-      "date": "2026-11-23"
-     },
-     {
-      "title": "Circle Rises 7% As Broad-Market Rebound Lifts Stocks",
-      "publisher": "StocksToTrade",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaTJ2bFFzSVQyTG53dXRMamtNQ09FRy1pYkFXdF9KMTVBMW5MbDc1MmdpQzJ2X2F4YVBPZFoyTnRtVEdNR3ZUd0pOaVNVaHFUdTFUTnZNa21iNTdKRTZIdE5LbVZGNy1SejNDVnM2cGVkX3ROUk1yelhsV2w4TC16V1FsdE5IU205QjVjRnQ3RQ?oc=5",
-      "date": "2026-11-23"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-25",
-   "moves": {
-    "day": 0.0105,
-    "week": -0.0955,
-    "high": -0.637
-   },
-   "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
-   },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
-   "sector_moves": {
-    "day": 0.0105,
-    "week": 0.0089,
-    "high": -0.0341
-   },
-   "sector_at_open": 82.34,
-   "worst": {
-    "day": -0.0934,
-    "week": -0.2556,
-    "high": -0.6703
-   },
-   "provisional": {
-    "cause": "Industry-wide: peers fell -4% too (rates, sector rotation or an industry worry)",
-    "lean": "unclear"
    }
   },
   {
@@ -1189,16 +1056,16 @@
     "high": -0.5004
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Utilities",
    "sector_etf": "RSPU",
    "sector_moves": {
-    "day": 0.0053,
-    "week": 0.0053,
-    "high": -0.0784
+    "day": 0.0059,
+    "week": 0.0059,
+    "high": -0.0778
    },
    "sector_at_open": 77.67,
    "worst": {
@@ -1208,6 +1075,139 @@
    },
    "provisional": {
     "cause": "Sector-wide: Utilities fell 1% too (rates, recession worries or sector rotation)",
+    "lean": "unclear"
+   }
+  },
+  {
+   "id": "CRCL-2026-10-30",
+   "ticker": "CRCL",
+   "name": "Circle Internet Group",
+   "opened": "2026-10-30",
+   "price_at_open": 72.54,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 48.74,
+   "buy_below_at_open": 31.68,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": true,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "unclear",
+    "confidence": "medium",
+    "cause": "Crypto sell-off (bitcoin ~$64K, COIN/MSTR down 6-7% on Nov 16) and Fed-hike fears on top of a weak-quality Q3 (beat flattered by the $182M ARC presale, flat USDC circulation, Binance-renewal margin hit)",
+    "summary": "Circle fell ~18% in a week vs -3% for Financials (RSPF): the Nov 16 leg came with a crypto-wide sell-off and rate-hike worries, which look temporary, but it follows a Nov 5 drop after Q3 where analysts said the beat relied on the one-off ARC presale, USDC circulation has stalled (~$74B, flat YoY) and the renewed Binance deal squeezes Q4/2027 margins; seven brokers cut targets and Circle cut ~5% of staff. Whether this is sentiment or a lasting growth reset depends on USDC circulation turning up again, distribution-cost margins and the CLARITY Act. At ~$57 the price is still above our ~$49 fair value, so it does not look like a bargain yet.",
+    "model_changed": false,
+    "date": "2026-11-19",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-25",
+    "earnings_on": null,
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "industry: Capital Markets",
+     "n": 5,
+     "median": {
+      "day": -0.03512319405547493,
+      "week": -0.09645631738887983,
+      "high": -0.2837672056948164
+     },
+     "tickers": [
+      "MS",
+      "GS",
+      "SCHW",
+      "IBKR",
+      "HOOD"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 1.28781,
+      "d30": 1.08256,
+      "chg": 0.18959688146615417
+     },
+     "+1y": {
+      "current": 1.2944,
+      "d30": 1.42004,
+      "chg": -0.0884763809470156
+     },
+     "revisions_30d": {
+      "up": 7,
+      "down": 5
+     }
+    },
+    "news": [
+     {
+      "title": "Wedbush initiated coverage on Circle Internet Group with a new price target",
+      "publisher": "Quantisnow",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNR0xSNFk2UWY4c3F5UHJGOHVlQ2xoWUxib0RQbDk4VWp5ZE50NkZsMGJWTHR5MWM5VFIwQm1FUXdtOW13MU1zVEVabDZQbUpiTU42SUZxclE3ZlZ6UTNsY3JuYnUxM2JNSy1zUWw3Zy1UZXZ1X1VKVEhIZnI0dkFfWkk0RUZJRzcyNjA0ZTBjaHV0TmdEdjREVm1fSkVjWS0wNEQ0S19zaTc?oc=5",
+      "date": "2026-11-25"
+     },
+     {
+      "title": "Circle Internet Group Tokenized bStocks price today, CRCLB to USD chart, marketcap and volume",
+      "publisher": "CryptoSlate",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5xNVRJNkJFdWRqOUtlMGp1X2JxVGFUa1FKXzVkT3JuZWNPLTFFS3pfMGcxQzA3dXEzTE5iRDBhM25qdUo5R1NwOVZMMXFkYy1Ca0VRTGNRR3NkS181c3NuY3VFOEljcFJLUmpET1JmQllZWTZnNllHTldn?oc=5",
+      "date": "2026-11-25"
+     },
+     {
+      "title": "Circle Internet initiated with a Neutral at Wedbush",
+      "publisher": "TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbVZfMnRlSWdKcVhIREg5dkhFVVNUT1p1YlpONHJSZDNDcHZMOTk3N2xtbHdheXNxaTVaR29QeFdBVGgzdFlkWk8yd3YyQk1rTFUyZm5nWXJaS0FGZ2dUdklHWmtjWGRYcjc2dVhYdmVPYzgwcFhjLTE4eXRxbEE3LXRleE1XOFBPcUJuQ1lhV1RGdzZ6cnlwSXhqaXJNNktvRUhR?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Circle Falls 7% As Broad-Market Selling Hits Shares",
+      "publisher": "StocksToTrade",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNFpVZUV1bWlxcDhKbEJILWgwVmJWUW9QaFB2RGRPMUNNQ1p3RGdIUnpKdHBYMWlHdGx4d2xsWThyd3RlLXhVMWFqRndtc2owOEtHWExMWC1YV3BoSzltbnE1OGoxcFJFUDVUM3hxRkJ4VHpuanNaRnZETHpOQ3hySFhHYWcwdXdEcGpEdGdZSQ?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Circle Internet Group Gains as Crypto-Linked Shares Rebound and Recent USDC Updates Support Sentiment",
+      "publisher": "Quiver Quantitative",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNT2N3bEpaMC1zV3hyMUU1LVF3R1hoRUU3ZVFWdU1sdjllOGQ2OFlEVkhvc3h6SERVREl1V0JOMXczeUdxRzRPRndrb0JFQm5qWnRXR001Q3ZYVG9Sem9DUG80VVVWN3hCdDg3UW9Gc2ZvZ3ZYYzhkbXJwUmhqNHpNSmJyeDZLT1lfQnI3WUtKR2dSNFl5RG5BYnZtSkFRVGZWWmVYUHpxU1BBQ3RmaDZpaGNkQXRxa2RDTjVGTFhyMkt5UU9ET2c1bEl5RWVxNkU?oc=5",
+      "date": "2026-11-23"
+     },
+     {
+      "title": "Circle Rises 7% As Broad-Market Rebound Lifts Stocks",
+      "publisher": "StocksToTrade",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaTJ2bFFzSVQyTG53dXRMamtNQ09FRy1pYkFXdF9KMTVBMW5MbDc1MmdpQzJ2X2F4YVBPZFoyTnRtVEdNR3ZUd0pOaVNVaHFUdTFUTnZNa21iNTdKRTZIdE5LbVZGNy1SejNDVnM2cGVkX3ROUk1yelhsV2w4TC16V1FsdE5IU205QjVjRnQ3RQ?oc=5",
+      "date": "2026-11-23"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-25",
+   "moves": {
+    "day": 0.0115,
+    "week": -0.0945,
+    "high": -0.6366
+   },
+   "spy": {
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
+   },
+   "sector": "Financials",
+   "sector_etf": "RSPF",
+   "sector_moves": {
+    "day": 0.009,
+    "week": 0.0074,
+    "high": -0.0355
+   },
+   "sector_at_open": 82.34,
+   "worst": {
+    "day": -0.0934,
+    "week": -0.2556,
+    "high": -0.6703
+   },
+   "provisional": {
+    "cause": "Industry-wide: peers fell -4% too (rates, sector rotation or an industry worry)",
     "lean": "unclear"
    }
   },
@@ -1315,14 +1315,14 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0127,
-    "week": -0.0276,
-    "high": -0.6467
+    "day": 0.013,
+    "week": -0.0274,
+    "high": -0.6466
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
@@ -1340,142 +1340,6 @@
    "provisional": {
     "cause": "Industry-wide: peers fell -7% too (rates, sector rotation or an industry worry)",
     "lean": "temporary"
-   }
-  },
-  {
-   "id": "FIS-2026-11-02",
-   "ticker": "FIS",
-   "name": "Fidelity National Information Services",
-   "opened": "2026-11-02",
-   "price_at_open": 40.15,
-   "spy_at_open": 752.1,
-   "fair_value_at_open": 45.06,
-   "buy_below_at_open": 29.29,
-   "valued_on": "2026-11-02",
-   "triggers": [
-    "day",
-    "week",
-    "high"
-   ],
-   "emergency": true,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "medium",
-    "cause": "Q3 in line but 2026 guidance cut and 2027 framework of flat revenue and EPS down high-single to low-double digits; CFO leaving; 3.5x leverage",
-    "summary": "FIS fell ~24% in a day while financials rose 3% and IT-services peers 3%, so this is company-specific: Q3 was only in line, 2026 Banking/Capital Markets growth was cut, 2027 revenue is guided at -0.5% to +1% with adjusted EPS down high-single to low-double digits, the CFO is leaving and the 2.8x leverage target is no longer confirmed (3.5x now, ~$21B debt). Management blames client delays it says fade by 2028, but the license-to-subscription shift and bank consolidation look structural, so treat it as a guidance reset rather than a blip. Watch the strategic review, 2027 bookings and debt reduction; the fair value (~$45, base case 10% growth next year) now looks too high versus the new outlook.",
-    "model_changed": false,
-    "date": "2026-11-05",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-25",
-    "earnings_on": null,
-    "last_report": "2026-11-04",
-    "peers": {
-     "basis": "industry: Information Technology Services",
-     "n": 8,
-     "median": {
-      "day": -0.002204125941979329,
-      "week": 0.010371345127128895,
-      "high": -0.24561298643334079
-     },
-     "tickers": [
-      "IBM",
-      "ACN",
-      "FISV",
-      "CTSH",
-      "BR",
-      "CDW",
-      "LDOS",
-      "IT"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 5.85755,
-      "d30": 6.19012,
-      "chg": -0.053725937461632456
-     },
-     "+1y": {
-      "current": 5.43046,
-      "d30": 6.6479,
-      "chg": -0.1831315152153311
-     },
-     "revisions_30d": {
-      "up": 1,
-      "down": 19
-     }
-    },
-    "news": [
-     {
-      "title": "A $1,500,000 Portfolio in Fidelity National Information Services, Broadstone Net Lease and Kraft Heinz Pays $96,293 a Year in Dividends. Here\u2019s What Happens if One Cuts",
-      "publisher": "TIKR.com",
-      "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNRm93aWdvamJ2YWZLd0dIN0RFa3RsS2JMRmpPZWk0Njh2UkNmRVVsaV91Q2ZfbnZBZm5GWWdENDU3T25mcGszR2lfRGZuc1BBcDNCNEU5SWptM0hBQVlReWM0QTBTdjMyRlptRVBBUG54MS1UdW5XWk9NVTJuaDBKMHM5bUlTSEZYMDVXZzE0a1owMHAxXzhfdW0zaEpNRkxna0g2aXU5N3RubkRucE41bGM1VmRFV1BicWh0Z1RJWVh4YjNfNHVTUHVkV0Y2WDJmY2EwS05oUXZQbGkySi1KWFc1YUZaeExkc1QyT2NkYjFDSUNBUGFJdW1JaVRrOEpuM3lxSmFUQ0dTN3dYUl9HTTEyVTVwWGVCTjRQX1F4OEFrMVI4SVE?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Fidelity National Information Services, Inc. $FIS Shares Sold by State Street Corp",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQakN2cDVNNTJ3SEVSUXhleDhaRVAwcTZuUk9JMjlucS1kbHdNT1Z5MnRCakY3R1Jia3lPZjdEWWF6b2dJN1cyNnRjWExwdmh3QnlVaXpUcEJNZWV3bzA1a2l6alQzc3F3OUlXMzdhaHlQYWxlREtJYldabjRzaUFTOXFpZURqXzJQYW5xTjFJNWFwa3lmMF9FOXlTU1VFUE1GYnRscW0wSlo0X0VjTDkyMEY4bTlaZDZmM3gxNHlsaGEybHdOU3hCeG5DemxickMzMmZ6UTdzQQ?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Will 2027 Revenue Pressure Change FIS Stock Narrative",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSFhJZkh1VkNBUUd5Q0dCUHdmcUlWYWpsamNsZENrY05RTDlZNFJvbjJuY1p3T25XN2JZUm1pb0laMmJqcWl1MkRGNUxDcnN5U2N3RlZ3NzNxaW5WRUpxbkY0OFB6UjhjcVI1UWQzMHl5am9QRVFNT3VVeWRFcld0ZktXLWpuM29CNE5NbmRrU285M1c0ZjRrc0RvREFSYkNiNVotc1dMX0IxUWo0a1hQM252QklMRHlLY3VvQ3NQRkxjb1RKQmtlb2wtMlRWZHhnNzdJVlRyekxBbVp5RDNMS2xTR2lfV3FtZ1B4VnBJSUtfY0XSAfgBQVVfeXFMT25QcDQyMnUydkJuTFJELTB2NGxJajVfWGUxTm5xbFpTUnFOTlRiNXRMZlM4WnhMMVhlMHN3RVJwTFBmQVprLXhUTjRrVXJJOUNmUnhSOEdVNGRVNUE0ZG1henFSOG5XRmd4Z0VoRGdRY1dtaXB5TWdrV2M1TjEzVnJqSmFIQlVacGZzdW5SYlU0TUxJclpPb3plYU9LTHV4QVhWQ0RLSE9OblJpd1NEamUyaE1PdDV4SXpIcUxiQ0RtOVk5NmpaSTBYSUd2dmNib1VsdmdTVUE4MHBycThNQVNpSjVlcnU4WERsNVpsazUtYkdUSi10Mkc?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Fidelity National Information Services stock outlook: Short-term gains face resistance at $26.76",
-      "publisher": "Traders Union",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZWNoOG5meE16VzRXY0JFa2xCSmFxTy01QWtSWkNQMlE5OGZneVhJZVBkUUxoNDVNUWNkOF93bC1hQ3lMcjFuYnc0NFZ6Rk4zMzhCeXp4M0J2U2U0TlFvUDZUaGtqVC0xNXJxc0dhc2xKd3R6a0Q2UXJKRGxhY3BybW1fNzVPU3d4YXlPM3JFU0wwTWh4V1RF?oc=5",
-      "date": "2026-11-23"
-     },
-     {
-      "title": "Fidelity National Information Services (NYSE:FIS) Stock Rated \"Market Perform\" in New Coverage at Citizens Jmp",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPR20yQUw3cWROWDZieVpKcTBpblc1S1JKaEZEWXNvcjFCY0ZZbjA2TTNVbGdsUFh2dm83QkpybnZGajlEd2MyTmxWMTZTOUcyUm5sMDZpZ0pyMGw5Nl9WYnlBdkkzOFJRbUNyalRBVEJhRVJzSFZOLWQ5RWo5TGtsM2NES3l2OFBWODZQR1hzLVlWdUlBYVFCWGk3dUV1cWtZZWR5ZmVoWi14NkFYWE9qZ1pGV0hJcXdWdWFtSkEtMV9XWDVtd0FtZHYtcUN6Wm9NZmNCZjV2dWI0elhwS3JkWEh0dWIxbHRxdmRWZGRQTVFCRHIwazMtSFlLelo?oc=5",
-      "date": "2026-11-23"
-     },
-     {
-      "title": "Barrow Hanley Mewhinney & Strauss LLC Sells 3,621,358 Shares of Fidelity National Information Services, Inc. $FIS",
-      "publisher": "MarketBeat",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPUFRhcERSbkRLekNRR2Z2U0JpZ2hFTS1ZcURvakMydXFGU1huU1hENnBQZXlqQ1JuTHhIQVVoQkp0OTFsMEUycE9kSWFTSEdmbmZqb3JicDZTT0ZLZ2NMUXRTRThLRFFCVlhzOEc5OTFDaDNwQ0ltYjFYWndqaXI3LVB3QmY4eFFMaGJlbVJjNEFjWmJ6VWNZbjlQc2laMGVYaks2dzJGN0M2b3JzLVhkNno3WXcxMi1GSWhZMUdoRERudjNocU93X0MyMER5ZGwxSFRQc0o3bHlQa0FTdmREd1BnbXhFSUswMjlvZXJpOHRBZHBFZjR0T0l4aw?oc=5",
-      "date": "2026-11-21"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-25",
-   "moves": {
-    "day": 0.0181,
-    "week": 0.0333,
-    "high": -0.5911
-   },
-   "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
-   },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
-   "sector_moves": {
-    "day": 0.0105,
-    "week": 0.0089,
-    "high": -0.0341
-   },
-   "sector_at_open": 83.9,
-   "worst": {
-    "day": -0.2367,
-    "week": -0.2946,
-    "high": -0.6177
-   },
-   "provisional": {
-    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
-    "lean": "unclear"
    }
   },
   {
@@ -1592,16 +1456,16 @@
     "high": -0.307
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -1612,6 +1476,142 @@
    "provisional": {
     "cause": "Sector-wide: Information Technology fell 1% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
+   }
+  },
+  {
+   "id": "FIS-2026-11-02",
+   "ticker": "FIS",
+   "name": "Fidelity National Information Services",
+   "opened": "2026-11-02",
+   "price_at_open": 40.15,
+   "spy_at_open": 752.1,
+   "fair_value_at_open": 45.06,
+   "buy_below_at_open": 29.29,
+   "valued_on": "2026-11-02",
+   "triggers": [
+    "day",
+    "week",
+    "high"
+   ],
+   "emergency": true,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Q3 in line but 2026 guidance cut and 2027 framework of flat revenue and EPS down high-single to low-double digits; CFO leaving; 3.5x leverage",
+    "summary": "FIS fell ~24% in a day while financials rose 3% and IT-services peers 3%, so this is company-specific: Q3 was only in line, 2026 Banking/Capital Markets growth was cut, 2027 revenue is guided at -0.5% to +1% with adjusted EPS down high-single to low-double digits, the CFO is leaving and the 2.8x leverage target is no longer confirmed (3.5x now, ~$21B debt). Management blames client delays it says fade by 2028, but the license-to-subscription shift and bank consolidation look structural, so treat it as a guidance reset rather than a blip. Watch the strategic review, 2027 bookings and debt reduction; the fair value (~$45, base case 10% growth next year) now looks too high versus the new outlook.",
+    "model_changed": false,
+    "date": "2026-11-05",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-25",
+    "earnings_on": null,
+    "last_report": "2026-11-04",
+    "peers": {
+     "basis": "industry: Information Technology Services",
+     "n": 8,
+     "median": {
+      "day": -0.002204125941979329,
+      "week": 0.010371345127128895,
+      "high": -0.24561298643334079
+     },
+     "tickers": [
+      "IBM",
+      "ACN",
+      "FISV",
+      "CTSH",
+      "BR",
+      "CDW",
+      "LDOS",
+      "IT"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 5.85755,
+      "d30": 6.19012,
+      "chg": -0.053725937461632456
+     },
+     "+1y": {
+      "current": 5.43046,
+      "d30": 6.6479,
+      "chg": -0.1831315152153311
+     },
+     "revisions_30d": {
+      "up": 1,
+      "down": 19
+     }
+    },
+    "news": [
+     {
+      "title": "A $1,500,000 Portfolio in Fidelity National Information Services, Broadstone Net Lease and Kraft Heinz Pays $96,293 a Year in Dividends. Here\u2019s What Happens if One Cuts",
+      "publisher": "TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNRm93aWdvamJ2YWZLd0dIN0RFa3RsS2JMRmpPZWk0Njh2UkNmRVVsaV91Q2ZfbnZBZm5GWWdENDU3T25mcGszR2lfRGZuc1BBcDNCNEU5SWptM0hBQVlReWM0QTBTdjMyRlptRVBBUG54MS1UdW5XWk9NVTJuaDBKMHM5bUlTSEZYMDVXZzE0a1owMHAxXzhfdW0zaEpNRkxna0g2aXU5N3RubkRucE41bGM1VmRFV1BicWh0Z1RJWVh4YjNfNHVTUHVkV0Y2WDJmY2EwS05oUXZQbGkySi1KWFc1YUZaeExkc1QyT2NkYjFDSUNBUGFJdW1JaVRrOEpuM3lxSmFUQ0dTN3dYUl9HTTEyVTVwWGVCTjRQX1F4OEFrMVI4SVE?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Fidelity National Information Services, Inc. $FIS Shares Sold by State Street Corp",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQakN2cDVNNTJ3SEVSUXhleDhaRVAwcTZuUk9JMjlucS1kbHdNT1Z5MnRCakY3R1Jia3lPZjdEWWF6b2dJN1cyNnRjWExwdmh3QnlVaXpUcEJNZWV3bzA1a2l6alQzc3F3OUlXMzdhaHlQYWxlREtJYldabjRzaUFTOXFpZURqXzJQYW5xTjFJNWFwa3lmMF9FOXlTU1VFUE1GYnRscW0wSlo0X0VjTDkyMEY4bTlaZDZmM3gxNHlsaGEybHdOU3hCeG5DemxickMzMmZ6UTdzQQ?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Will 2027 Revenue Pressure Change FIS Stock Narrative",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSFhJZkh1VkNBUUd5Q0dCUHdmcUlWYWpsamNsZENrY05RTDlZNFJvbjJuY1p3T25XN2JZUm1pb0laMmJqcWl1MkRGNUxDcnN5U2N3RlZ3NzNxaW5WRUpxbkY0OFB6UjhjcVI1UWQzMHl5am9QRVFNT3VVeWRFcld0ZktXLWpuM29CNE5NbmRrU285M1c0ZjRrc0RvREFSYkNiNVotc1dMX0IxUWo0a1hQM252QklMRHlLY3VvQ3NQRkxjb1RKQmtlb2wtMlRWZHhnNzdJVlRyekxBbVp5RDNMS2xTR2lfV3FtZ1B4VnBJSUtfY0XSAfgBQVVfeXFMT25QcDQyMnUydkJuTFJELTB2NGxJajVfWGUxTm5xbFpTUnFOTlRiNXRMZlM4WnhMMVhlMHN3RVJwTFBmQVprLXhUTjRrVXJJOUNmUnhSOEdVNGRVNUE0ZG1henFSOG5XRmd4Z0VoRGdRY1dtaXB5TWdrV2M1TjEzVnJqSmFIQlVacGZzdW5SYlU0TUxJclpPb3plYU9LTHV4QVhWQ0RLSE9OblJpd1NEamUyaE1PdDV4SXpIcUxiQ0RtOVk5NmpaSTBYSUd2dmNib1VsdmdTVUE4MHBycThNQVNpSjVlcnU4WERsNVpsazUtYkdUSi10Mkc?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Fidelity National Information Services stock outlook: Short-term gains face resistance at $26.76",
+      "publisher": "Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZWNoOG5meE16VzRXY0JFa2xCSmFxTy01QWtSWkNQMlE5OGZneVhJZVBkUUxoNDVNUWNkOF93bC1hQ3lMcjFuYnc0NFZ6Rk4zMzhCeXp4M0J2U2U0TlFvUDZUaGtqVC0xNXJxc0dhc2xKd3R6a0Q2UXJKRGxhY3BybW1fNzVPU3d4YXlPM3JFU0wwTWh4V1RF?oc=5",
+      "date": "2026-11-23"
+     },
+     {
+      "title": "Fidelity National Information Services (NYSE:FIS) Stock Rated \"Market Perform\" in New Coverage at Citizens Jmp",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPR20yQUw3cWROWDZieVpKcTBpblc1S1JKaEZEWXNvcjFCY0ZZbjA2TTNVbGdsUFh2dm83QkpybnZGajlEd2MyTmxWMTZTOUcyUm5sMDZpZ0pyMGw5Nl9WYnlBdkkzOFJRbUNyalRBVEJhRVJzSFZOLWQ5RWo5TGtsM2NES3l2OFBWODZQR1hzLVlWdUlBYVFCWGk3dUV1cWtZZWR5ZmVoWi14NkFYWE9qZ1pGV0hJcXdWdWFtSkEtMV9XWDVtd0FtZHYtcUN6Wm9NZmNCZjV2dWI0elhwS3JkWEh0dWIxbHRxdmRWZGRQTVFCRHIwazMtSFlLelo?oc=5",
+      "date": "2026-11-23"
+     },
+     {
+      "title": "Barrow Hanley Mewhinney & Strauss LLC Sells 3,621,358 Shares of Fidelity National Information Services, Inc. $FIS",
+      "publisher": "MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPUFRhcERSbkRLekNRR2Z2U0JpZ2hFTS1ZcURvakMydXFGU1huU1hENnBQZXlqQ1JuTHhIQVVoQkp0OTFsMEUycE9kSWFTSEdmbmZqb3JicDZTT0ZLZ2NMUXRTRThLRFFCVlhzOEc5OTFDaDNwQ0ltYjFYWndqaXI3LVB3QmY4eFFMaGJlbVJjNEFjWmJ6VWNZbjlQc2laMGVYaks2dzJGN0M2b3JzLVhkNno3WXcxMi1GSWhZMUdoRERudjNocU93X0MyMER5ZGwxSFRQc0o3bHlQa0FTdmREd1BnbXhFSUswMjlvZXJpOHRBZHBFZjR0T0l4aw?oc=5",
+      "date": "2026-11-21"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-25",
+   "moves": {
+    "day": 0.0188,
+    "week": 0.034,
+    "high": -0.5908
+   },
+   "spy": {
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
+   },
+   "sector": "Financials",
+   "sector_etf": "RSPF",
+   "sector_moves": {
+    "day": 0.009,
+    "week": 0.0074,
+    "high": -0.0355
+   },
+   "sector_at_open": 83.9,
+   "worst": {
+    "day": -0.2367,
+    "week": -0.2946,
+    "high": -0.6177
+   },
+   "provisional": {
+    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
+    "lean": "unclear"
    }
   },
   {
@@ -2386,21 +2386,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": -0.0272,
-    "week": -0.1545,
+    "day": -0.0271,
+    "week": -0.1544,
     "high": -0.2434
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 53.38,
    "worst": {
@@ -2521,9 +2521,9 @@
     "high": -0.3217
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
@@ -2644,16 +2644,16 @@
     "high": -0.3286
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 58.86,
    "worst": {
@@ -3049,16 +3049,16 @@
     "high": -0.4834
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -3175,21 +3175,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": -0.005,
-    "week": -0.027,
-    "high": -0.3337
+    "day": -0.0052,
+    "week": -0.0271,
+    "high": -0.3338
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": 0.0099,
-    "week": -0.0003,
-    "high": -0.0731
+    "day": 0.0102,
+    "week": 0.0,
+    "high": -0.0728
    },
    "sector_at_open": 61.72,
    "worst": {
@@ -3310,21 +3310,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": -0.0046,
-    "week": 0.0329,
-    "high": -0.6206
+    "day": -0.005,
+    "week": 0.0325,
+    "high": -0.6207
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -3447,16 +3447,16 @@
     "high": -0.5552
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 61.49,
    "worst": {
@@ -3583,16 +3583,16 @@
     "high": -0.2557
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 61.8,
    "worst": {
@@ -3716,9 +3716,9 @@
     "high": -0.2886
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
@@ -3736,141 +3736,6 @@
    "provisional": {
     "cause": "Industry-wide: peers fell -4% too (rates, sector rotation or an industry worry)",
     "lean": "temporary"
-   }
-  },
-  {
-   "id": "ADYEY-2026-10-30",
-   "ticker": "ADYEY",
-   "name": "Adyen N.V. (ADR)",
-   "opened": "2026-10-30",
-   "price_at_open": 9.16,
-   "spy_at_open": 755.72,
-   "fair_value_at_open": 10.44,
-   "buy_below_at_open": 7.31,
-   "valued_on": "2026-10-30",
-   "triggers": [
-    "week",
-    "high"
-   ],
-   "emergency": false,
-   "needs_verdict": false,
-   "verdict": {
-    "label": "lasting",
-    "confidence": "medium",
-    "cause": "Q3 revenue +22% but Adyen cut its 2026 EBITDA margin to ~50% and dropped its >55% medium-term target to invest more",
-    "summary": "Adyen fell ~11% on Oct 28 while financials and peers rose: net revenue grew 23% and the 21-23% growth guide held, but the 2026 EBITDA margin is now ~50% (2025: 53%) and the medium-term >55% margin target was withdrawn to speed up hiring, products and acquisitions. That is a lasting reset of the margin path by management choice, not a loss of business, though volume grew faster than revenue (lower take rate) and Digital slowed to +16%. The model already assumed a flat ~36% FCF margin, so its numbers were not changed (notes updated); watch the 2027 targets in February and the take rate.",
-    "model_changed": false,
-    "date": "2026-11-03",
-    "by": "Claude"
-   },
-   "evidence": {
-    "v": 5,
-    "updated": "2026-11-25",
-    "earnings_on": null,
-    "last_report": "2025-08-14",
-    "peers": {
-     "basis": "industry: Software - Infrastructure",
-     "n": 8,
-     "median": {
-      "day": -0.04207693127466067,
-      "week": -0.07650881565435613,
-      "high": -0.26924381843801887
-     },
-     "tickers": [
-      "MSFT",
-      "PLTR",
-      "ORCL",
-      "PANW",
-      "CRWD",
-      "FTNT",
-      "SNPS",
-      "XYZ"
-     ]
-    },
-    "estimates": {
-     "0y": {
-      "current": 0.4265,
-      "d30": 0.45465,
-      "chg": -0.06191575937534366
-     },
-     "+1y": {
-      "current": 0.50656,
-      "d30": 0.54983,
-      "chg": -0.07869705181601594
-     },
-     "revisions_30d": {
-      "up": 0,
-      "down": 3
-     }
-    },
-    "news": [
-     {
-      "title": "Adyen stock: Jefferies reiterates Buy rating at EUR 1,077",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQemtIUTIzRDl0NldKTHFTMFV5VmszNXJFa194cjhyN2xZUFZzdnc0OTZDVVFUenJDY0wxajZsTldISi15eEZCd1hQeUVNdU9GU3dqdG54MHJUZnpKVFJ4UEVOdXR2TjNiMkgwM3ZjSkg2eVZ6WkdZbEdqTmF4R1Y3ZzNJdnNBV0QwZGhuWTJZVlEyX29nMGpCZk1GakRwdTlHdnZtQVIxTl9zaDE5cVdqdlFTUjVaOXdyRU9R?oc=5",
-      "date": "2026-11-25"
-     },
-     {
-      "title": "Adyen (ENXTAM:ADYEN) Names Its Next Sole CEO, Is The 14% Discount Enough?",
-      "publisher": "Simply Wall St",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZm1SdXQ2bzA2eE9Rd0xtUEJsUEIzdjZNaUY3LTR0YnFYS196bkRTWVk1QnBlUjZJV0xDZnBKQ2xLOFozdDFQX3c2Q1ZYVFN2c3BfZDRXX1dKMzlWa09lQ3hMMFZPSVQ5UHRESUYxZ0lReWxBWkdEVmFDeC1DUGNmOVNNUWJ5Q0R0R2dmclYxeUlCU0tmeTRTLUxqVmlvVEtCQ0lMdGl0VUZUeHN6ODF3QXNXY3MwZThacGtOX2dpYk1sdmROeHJ4bXNiamFCLWhMOU9BcHJCR2dpWUF5eUR1S9IB4AFBVV95cUxQZm1SdXQ2bzA2eE9Rd0xtUEJsUEIzdjZNaUY3LTR0YnFYS196bkRTWVk1QnBlUjZJV0xDZnBKQ2xLOFozdDFQX3c2Q1ZYVFN2c3BfZDRXX1dKMzlWa09lQ3hMMFZPSVQ5UHRESUYxZ0lReWxBWkdEVmFDeC1DUGNmOVNNUWJ5Q0R0R2dmclYxeUlCU0tmeTRTLUxqVmlvVEtCQ0lMdGl0VUZUeHN6ODF3QXNXY3MwZThacGtOX2dpYk1sdmROeHJ4bXNiamFCLWhMOU9BcHJCR2dpWUF5eUR1Sw?oc=5",
-      "date": "2026-11-25"
-     },
-     {
-      "title": "Adyen stock: Co-founder Van der Does to retire at year-end",
-      "publisher": "ad-hoc-news.de",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRW5WUm5iVHFaeWhvZkllek9FeUw1RldUdVY3WTFTekRQb29IVFFlMDY0b1FvOXRNNzJoRTR1bkR1R0tJWmh1X0R0Q3QtM0hyaXZHSU1qSFR2c1ZRZ1VSUGxnbmJ6SUxaTkJqRGlLX0tsMU9TYjJFMXBOZnZmaFo5aktVR0VUa2JESlhjWElCVTFOTkxSd1FORnVVVjl4MGstbU4zZm1jbHI2UGtOYTZ0VnpBdmFuSlhKU2Y4bg?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Adyen payments company co-founder Van der Does to retire at year-end",
-      "publisher": "NL Times",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaVliY3B3QkZ3dVRiY19YcHlsTTFWMERsRUQtbjBfMnoyd1lNQmtidmJoSkdnTEFNRkZybE11VGxMUmhlOU1KRkVaZzBDR3Q5ai1wZW5EUW05X3V4N3RHMXd2X1VNTXdtY3F3OUNKRkFRMU9fZVdlbGQ2cXR6RnFFVnliRGRFazFGT1ZkbEhPUnA?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Adyen N.V. (ADYEN.AS) Stock Price, News, Quote & History",
-      "publisher": "Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1PSVFxMmkxa1JBYS1rV3gwOXB4a09kb0tYZDgwWTBXM1IzRlY3SXF5YVVvMTUzVnRfdjB4Qzc2RmJnVWlEOWZYeUdqUklhdF9tMGt0dm9LTQ?oc=5",
-      "date": "2026-11-24"
-     },
-     {
-      "title": "Adyen Co-CEO Plans Retirement by December-end",
-      "publisher": "www.marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVld0YTV2VFduczg2UENPOVJ6UFZCYmE2VG9FTVVkUk0wLVZhRi1HUU44ZW54eE9JUmpBWGpqTU5wZWRkdjI4OFR3SVZsTGZYbnpDVkJKYXVyb2J5SGdLXzU4NTVrT0hNdzdZSzdibVNCdEhfZllnMlBPcGFWSGRDWS1WSTRkRmpBM2tPdi1yZEtRSmlFb1hST3B4RGRsSFE?oc=5",
-      "date": "2026-11-24"
-     }
-    ]
-   },
-   "outcome": {},
-   "kind": "alert",
-   "last_triggered": "2026-11-25",
-   "moves": {
-    "day": 0.0098,
-    "week": 0.0164,
-    "high": -0.4558
-   },
-   "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
-   },
-   "sector": "Financials",
-   "sector_etf": "RSPF",
-   "sector_moves": {
-    "day": 0.0105,
-    "week": 0.0089,
-    "high": -0.0341
-   },
-   "sector_at_open": 82.34,
-   "worst": {
-    "day": -0.0416,
-    "week": -0.1301,
-    "high": -0.4991
-   },
-   "provisional": {
-    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
-    "lean": "unclear"
    }
   },
   {
@@ -3986,16 +3851,16 @@
     "high": -0.3346
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
    "sector_moves": {
-    "day": 0.0153,
-    "week": -0.0102,
-    "high": -0.13
+    "day": 0.015,
+    "week": -0.0105,
+    "high": -0.1303
    },
    "sector_at_open": 108.59,
    "worst": {
@@ -4006,6 +3871,141 @@
    "provisional": {
     "cause": "Largely market-wide: S&P 500 -2% vs this stock -2%",
     "lean": "temporary"
+   }
+  },
+  {
+   "id": "ADYEY-2026-10-30",
+   "ticker": "ADYEY",
+   "name": "Adyen N.V. (ADR)",
+   "opened": "2026-10-30",
+   "price_at_open": 9.16,
+   "spy_at_open": 755.72,
+   "fair_value_at_open": 10.44,
+   "buy_below_at_open": 7.31,
+   "valued_on": "2026-10-30",
+   "triggers": [
+    "week",
+    "high"
+   ],
+   "emergency": false,
+   "needs_verdict": false,
+   "verdict": {
+    "label": "lasting",
+    "confidence": "medium",
+    "cause": "Q3 revenue +22% but Adyen cut its 2026 EBITDA margin to ~50% and dropped its >55% medium-term target to invest more",
+    "summary": "Adyen fell ~11% on Oct 28 while financials and peers rose: net revenue grew 23% and the 21-23% growth guide held, but the 2026 EBITDA margin is now ~50% (2025: 53%) and the medium-term >55% margin target was withdrawn to speed up hiring, products and acquisitions. That is a lasting reset of the margin path by management choice, not a loss of business, though volume grew faster than revenue (lower take rate) and Digital slowed to +16%. The model already assumed a flat ~36% FCF margin, so its numbers were not changed (notes updated); watch the 2027 targets in February and the take rate.",
+    "model_changed": false,
+    "date": "2026-11-03",
+    "by": "Claude"
+   },
+   "evidence": {
+    "v": 5,
+    "updated": "2026-11-25",
+    "earnings_on": null,
+    "last_report": "2025-08-14",
+    "peers": {
+     "basis": "industry: Software - Infrastructure",
+     "n": 8,
+     "median": {
+      "day": -0.04207693127466067,
+      "week": -0.07650881565435613,
+      "high": -0.26924381843801887
+     },
+     "tickers": [
+      "MSFT",
+      "PLTR",
+      "ORCL",
+      "PANW",
+      "CRWD",
+      "FTNT",
+      "SNPS",
+      "XYZ"
+     ]
+    },
+    "estimates": {
+     "0y": {
+      "current": 0.4265,
+      "d30": 0.45465,
+      "chg": -0.06191575937534366
+     },
+     "+1y": {
+      "current": 0.50656,
+      "d30": 0.54983,
+      "chg": -0.07869705181601594
+     },
+     "revisions_30d": {
+      "up": 0,
+      "down": 3
+     }
+    },
+    "news": [
+     {
+      "title": "Adyen stock: Jefferies reiterates Buy rating at EUR 1,077",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQemtIUTIzRDl0NldKTHFTMFV5VmszNXJFa194cjhyN2xZUFZzdnc0OTZDVVFUenJDY0wxajZsTldISi15eEZCd1hQeUVNdU9GU3dqdG54MHJUZnpKVFJ4UEVOdXR2TjNiMkgwM3ZjSkg2eVZ6WkdZbEdqTmF4R1Y3ZzNJdnNBV0QwZGhuWTJZVlEyX29nMGpCZk1GakRwdTlHdnZtQVIxTl9zaDE5cVdqdlFTUjVaOXdyRU9R?oc=5",
+      "date": "2026-11-25"
+     },
+     {
+      "title": "Adyen (ENXTAM:ADYEN) Names Its Next Sole CEO, Is The 14% Discount Enough?",
+      "publisher": "Simply Wall St",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZm1SdXQ2bzA2eE9Rd0xtUEJsUEIzdjZNaUY3LTR0YnFYS196bkRTWVk1QnBlUjZJV0xDZnBKQ2xLOFozdDFQX3c2Q1ZYVFN2c3BfZDRXX1dKMzlWa09lQ3hMMFZPSVQ5UHRESUYxZ0lReWxBWkdEVmFDeC1DUGNmOVNNUWJ5Q0R0R2dmclYxeUlCU0tmeTRTLUxqVmlvVEtCQ0lMdGl0VUZUeHN6ODF3QXNXY3MwZThacGtOX2dpYk1sdmROeHJ4bXNiamFCLWhMOU9BcHJCR2dpWUF5eUR1S9IB4AFBVV95cUxQZm1SdXQ2bzA2eE9Rd0xtUEJsUEIzdjZNaUY3LTR0YnFYS196bkRTWVk1QnBlUjZJV0xDZnBKQ2xLOFozdDFQX3c2Q1ZYVFN2c3BfZDRXX1dKMzlWa09lQ3hMMFZPSVQ5UHRESUYxZ0lReWxBWkdEVmFDeC1DUGNmOVNNUWJ5Q0R0R2dmclYxeUlCU0tmeTRTLUxqVmlvVEtCQ0lMdGl0VUZUeHN6ODF3QXNXY3MwZThacGtOX2dpYk1sdmROeHJ4bXNiamFCLWhMOU9BcHJCR2dpWUF5eUR1Sw?oc=5",
+      "date": "2026-11-25"
+     },
+     {
+      "title": "Adyen stock: Co-founder Van der Does to retire at year-end",
+      "publisher": "ad-hoc-news.de",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRW5WUm5iVHFaeWhvZkllek9FeUw1RldUdVY3WTFTekRQb29IVFFlMDY0b1FvOXRNNzJoRTR1bkR1R0tJWmh1X0R0Q3QtM0hyaXZHSU1qSFR2c1ZRZ1VSUGxnbmJ6SUxaTkJqRGlLX0tsMU9TYjJFMXBOZnZmaFo5aktVR0VUa2JESlhjWElCVTFOTkxSd1FORnVVVjl4MGstbU4zZm1jbHI2UGtOYTZ0VnpBdmFuSlhKU2Y4bg?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Adyen payments company co-founder Van der Does to retire at year-end",
+      "publisher": "NL Times",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaVliY3B3QkZ3dVRiY19YcHlsTTFWMERsRUQtbjBfMnoyd1lNQmtidmJoSkdnTEFNRkZybE11VGxMUmhlOU1KRkVaZzBDR3Q5ai1wZW5EUW05X3V4N3RHMXd2X1VNTXdtY3F3OUNKRkFRMU9fZVdlbGQ2cXR6RnFFVnliRGRFazFGT1ZkbEhPUnA?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Adyen N.V. (ADYEN.AS) Stock Price, News, Quote & History",
+      "publisher": "Yahoo! Finance Canada",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1PSVFxMmkxa1JBYS1rV3gwOXB4a09kb0tYZDgwWTBXM1IzRlY3SXF5YVVvMTUzVnRfdjB4Qzc2RmJnVWlEOWZYeUdqUklhdF9tMGt0dm9LTQ?oc=5",
+      "date": "2026-11-24"
+     },
+     {
+      "title": "Adyen Co-CEO Plans Retirement by December-end",
+      "publisher": "www.marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVld0YTV2VFduczg2UENPOVJ6UFZCYmE2VG9FTVVkUk0wLVZhRi1HUU44ZW54eE9JUmpBWGpqTU5wZWRkdjI4OFR3SVZsTGZYbnpDVkJKYXVyb2J5SGdLXzU4NTVrT0hNdzdZSzdibVNCdEhfZllnMlBPcGFWSGRDWS1WSTRkRmpBM2tPdi1yZEtRSmlFb1hST3B4RGRsSFE?oc=5",
+      "date": "2026-11-24"
+     }
+    ]
+   },
+   "outcome": {},
+   "kind": "alert",
+   "last_triggered": "2026-11-25",
+   "moves": {
+    "day": 0.012,
+    "week": 0.0186,
+    "high": -0.4546
+   },
+   "spy": {
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
+   },
+   "sector": "Financials",
+   "sector_etf": "RSPF",
+   "sector_moves": {
+    "day": 0.009,
+    "week": 0.0074,
+    "high": -0.0355
+   },
+   "sector_at_open": 82.34,
+   "worst": {
+    "day": -0.0416,
+    "week": -0.1301,
+    "high": -0.4991
+   },
+   "provisional": {
+    "cause": "Sector-wide: Financials fell 1% too (rates, recession worries or sector rotation)",
+    "lean": "unclear"
    }
   },
   {
@@ -4117,21 +4117,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0203,
-    "week": 0.0356,
-    "high": -0.2594
+    "day": 0.0204,
+    "week": 0.0358,
+    "high": -0.2592
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 57.43,
    "worst": {
@@ -4521,21 +4521,21 @@
    "kind": "alert",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0395,
-    "week": -0.0859,
-    "high": -0.5159
+    "day": 0.0397,
+    "week": -0.0858,
+    "high": -0.5158
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Energy",
    "sector_etf": "RSPG",
    "sector_moves": {
-    "day": 0.0153,
-    "week": -0.0102,
-    "high": -0.13
+    "day": 0.015,
+    "week": -0.0105,
+    "high": -0.1303
    },
    "sector_at_open": 109.68,
    "worst": {
@@ -5291,16 +5291,16 @@
     "high": -0.3483
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0037,
-    "week": 0.0095,
-    "high": -0.0306
+    "day": -0.0025,
+    "week": 0.0108,
+    "high": -0.0294
    },
    "sector_at_open": 41.5,
    "worst": {
@@ -5420,21 +5420,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0007,
-    "week": -0.0459,
-    "high": -0.279
+    "day": 0.0011,
+    "week": -0.0456,
+    "high": -0.2788
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": 0.0099,
-    "week": -0.0003,
-    "high": -0.0731
+    "day": 0.0102,
+    "week": 0.0,
+    "high": -0.0728
    },
    "sector_at_open": 60.55,
    "worst": {
@@ -5559,16 +5559,16 @@
     "high": -0.3488
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Information Technology",
    "sector_etf": "RSPT",
    "sector_moves": {
-    "day": 0.0065,
-    "week": -0.0321,
-    "high": -0.1948
+    "day": 0.006,
+    "week": -0.0326,
+    "high": -0.1953
    },
    "sector_at_open": 62.95,
    "worst": {
@@ -5827,9 +5827,9 @@
     "high": -0.4567
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Communication Services",
    "sector_etf": "RSPC",
@@ -5961,9 +5961,9 @@
     "high": -0.5023
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
@@ -6090,21 +6090,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0137,
-    "week": -0.0348,
-    "high": -0.37
+    "day": 0.0139,
+    "week": -0.0347,
+    "high": -0.3699
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Health Care",
    "sector_etf": "RSPH",
    "sector_moves": {
-    "day": -0.0037,
-    "week": 0.0095,
-    "high": -0.0306
+    "day": -0.0025,
+    "week": 0.0108,
+    "high": -0.0294
    },
    "sector_at_open": 39.9,
    "worst": {
@@ -6224,14 +6224,14 @@
    "kind": "slide",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0158,
-    "week": 0.0242,
-    "high": -0.292
+    "day": 0.0151,
+    "week": 0.0234,
+    "high": -0.2925
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
@@ -6354,21 +6354,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0175,
-    "week": 0.0768,
-    "high": -0.3037
+    "day": 0.0167,
+    "week": 0.076,
+    "high": -0.3043
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Consumer Staples",
    "sector_etf": "RSPS",
    "sector_moves": {
-    "day": 0.0083,
-    "week": 0.0118,
-    "high": -0.0171
+    "day": 0.008,
+    "week": 0.0115,
+    "high": -0.0174
    },
    "sector_at_open": 31.53,
    "worst": {
@@ -6490,9 +6490,9 @@
     "high": -0.3195
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Consumer Discretionary",
    "sector_etf": "RSPD",
@@ -6615,21 +6615,21 @@
    "kind": "slide",
    "last_triggered": "2026-11-25",
    "moves": {
-    "day": 0.0237,
-    "week": 0.0217,
-    "high": -0.3891
+    "day": 0.0235,
+    "week": 0.0216,
+    "high": -0.3892
    },
    "spy": {
-    "day": -0.0027,
-    "week": -0.0183,
-    "high": -0.0799
+    "day": -0.0029,
+    "week": -0.0185,
+    "high": -0.0801
    },
    "sector": "Industrials",
    "sector_etf": "RSPN",
    "sector_moves": {
-    "day": 0.0099,
-    "week": -0.0003,
-    "high": -0.0731
+    "day": 0.0102,
+    "week": 0.0,
+    "high": -0.0728
    },
    "sector_at_open": 61.72,
    "worst": {
@@ -6908,6 +6908,6 @@
  "review_pending": [
   "AVGO"
  ],
- "updated": "2026-11-25T21:13:08Z",
+ "updated": "2026-11-25T22:29:17Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
