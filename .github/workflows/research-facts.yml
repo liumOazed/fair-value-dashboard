@@ -1,0 +1,47 @@
+name: Research facts (weekly)
+# Refreshes Yahoo Finance analyst beat/miss history & 30d/90d EPS revisions weekly (and optionally SEC XBRL
+# facts on manual dispatch or the first Monday of the month), then rebuilds data/framework.json.
+# Set the SEC_CONTACT repository variable or secret to a real email address for SEC EDGAR fair-access headers.
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Fetch mode"
+        type: choice
+        default: "yahoo-only"
+        options:
+          - "yahoo-only"
+          - "full"
+permissions:
+  contents: write
+concurrency: { group: research-facts, cancel-in-progress: false }
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Fetch Yahoo analyst data (and monthly SEC XBRL facts)
+        env:
+          SEC_CONTACT: ${{ vars.SEC_CONTACT }}
+        run: |
+          DOM=$(date -u +%-d)
+          if [ "${{ inputs.mode }}" = "full" ] || { [ -z "${{ inputs.mode }}" ] && [ "$DOM" -le 7 ]; }; then
+            python scripts/fetch_research.py
+          else
+            python scripts/fetch_research.py --yahoo-only
+          fi
+      - name: Rebuild research framework blocks
+        run: python scripts/framework.py --offline
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research_facts.json data/framework.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Research facts $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
