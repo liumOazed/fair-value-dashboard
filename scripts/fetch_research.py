@@ -274,6 +274,7 @@ def fetch_sec_all():
             out[t] = {
                 "cik": cik,
                 "entity": cf.get("entityName"),
+                "fetched": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
                 "annual": annual,
                 "debt_maturities": mat,
                 "rpo": rpo,
@@ -352,6 +353,7 @@ def fetch_yahoo_all():
             fd = r0.get("financialData") or {}
             ap = r0.get("assetProfile") or {}
             out[t] = {
+                "fetched": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
                 "history": hist,
                 "trend": trend,
                 "analysts": (fd.get("numberOfAnalystOpinions") or {}).get("raw"),
@@ -374,11 +376,14 @@ def main():
     yahoo_only = "--yahoo-only" in sys.argv
     old = json.load(open(OUT)) if OUT.exists() else {}
     old_sec, old_yh = old.get("sec", {}), old.get("yahoo", {})
+    prev_sec_dt = (old.get("sec_fetched") or old.get("fetched") or "")[:10]
+    prev_yh_dt = (old.get("yahoo_fetched") or old.get("fetched") or "")[:10]
     if yahoo_only:
         sec = old_sec
     else:
         fresh_sec = fetch_sec_all()
-        sec = dict(old_sec)
+        # Preserve each unrefreshed ticker's prior fetch date before updating top-level timestamp
+        sec = {t: (dict(v, fetched=v.get("fetched") or prev_sec_dt) if prev_sec_dt else dict(v)) for t, v in old_sec.items()}
         for t, v in fresh_sec.items():
             prev = old_sec.get(t) or {}
             # Keep previously verified 10-K footnote maturity schedules if XBRL didn't tag them
@@ -391,7 +396,7 @@ def main():
         yahoo = old_yh
     else:
         fresh_yh = fetch_yahoo_all()
-        yahoo = dict(old_yh)
+        yahoo = {t: (dict(v, fetched=v.get("fetched") or prev_yh_dt) if prev_yh_dt else dict(v)) for t, v in old_yh.items()}
         yahoo.update(fresh_yh)
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     doc = {

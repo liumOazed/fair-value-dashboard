@@ -533,7 +533,7 @@ def build_analysts(t):
             verdict=verdict, tone=tone,
         )
     if out:
-        as_of = (RF.get("yahoo_fetched") or RF.get("fetched") or "")[:10]
+        as_of = (y.get("fetched") or RF.get("yahoo_fetched") or RF.get("fetched") or "")[:10]
         if as_of:
             out["as_of"] = as_of
     return out or None
@@ -994,27 +994,27 @@ def metric(key, t, raw, hist, ind_moat, rec_fb):
         return dict(answer=dm["answer"], reading=dm["reading"], tone=dm["tone"], status=dm["status"])
     return None
 
-# Direct live KPI -> sector question mappings (auto-updated from quarterly filings in data/kpis.json)
+# Direct live KPI -> sector question mappings (auto-updated from quarterly filings in data/kpis.json).
+# Only KPIs that directly answer the question are mapped; partial proxies are marked status="partly".
 KPI_SECTOR_MAP = {
     "Payment volume growth": [
         "payments_volume_growth_constant", "gross_dollar_volume_growth", "billed_business_growth_fx_adjusted",
-        "total_payment_volume_growth", "square_gross_payment_volume_growth", "processed_volume_growth", "usdc_in_circulation",
+        "total_payment_volume_growth", "square_gross_payment_volume_growth", "processed_volume_growth",
     ],
     "Take rate holding up?": [
-        "take_rate_net_revenue_processed_volume", "client_incentives_gross_revenue",
-        "rebates_incentives_gross_revenue", "reserve_return_rate",
+        "take_rate_net_revenue_processed_volume", "reserve_return_rate",
     ],
     "Credit losses and fee regulation": ["net_write_off_rate_principal"],
-    "Occupancy": ["occupancy_rate_us_malls_and_outlets", "rent_coverage"],
+    "Occupancy": ["occupancy_rate_us_malls_and_outlets"],
     "Same-property income growth": ["domestic_property_noi_growth", "comparable_hotel_revpar_growth"],
     "Underwriting profit: combined ratio below 100%?": ["combined_ratio"],
     "Capital strength (risk-based capital, solvency ratios)": ["pmiers_sufficiency_ratio", "pmiers_excess_capital"],
     "Catastrophe exposure and reinsurance cover": ["reportable_catastrophes", "catastrophe_losses"],
     "Commodity prices behind today's earnings": ["realised_oil_price", "average_selling_price_per_ton", "average_realized_gold_price"],
-    "Breakeven production cost": ["all_in_sustaining_cost_per_ounce", "cash_operating_cost_per_boe_change"],
+    "Breakeven production cost": ["all_in_sustaining_cost_per_ounce"],
     "Production and reserves": [
         "production_boe_d_growth", "gross_ammonia_production_thousand_tons", "total_production_growth",
-        "attributable_gold_production_thousand_oz", "remaining_performance_obligations",
+        "attributable_gold_production_thousand_oz",
     ],
     "Order backlog and book-to-bill": [
         "orders_and_book_to_bill", "remaining_performance_obligations", "backlog_growth", "backlog", "total_backlog",
@@ -1024,12 +1024,8 @@ KPI_SECTOR_MAP = {
         "net_retention_rate", "net_dollar_expansion", "renewal_rate", "client_retention_asv_and_count",
     ],
     "How much revenue is recurring (subscriptions)?": [
-        "annual_recurring_revenue", "total_subscription_revenue_backlog", "digital_media_arr_subscription_revenue_growth",
-        "subscription_support_revenue_growth", "subscription_revenue_growth", "organic_asv_growth",
-        "annualized_recurring_revenue_growth", "moody_s_analytics_arr_growth", "recurring_revenue_growth_constant_currency",
-        "ratings_transaction_vs_non_transaction_revenue",
+        "annual_recurring_revenue", "ratings_transaction_vs_non_transaction_revenue",
     ],
-    "Customer retention": ["active_installed_base_annual"],
     "Dependence on a few large customers": ["top_customer_concentration_10_k"],
     "Product concentration": ["top_2_drugs_share_of_revenue", "non_jakafi_share_of_revenue"],
     "When major patents expire": ["jakafi_patent_expiry_timing"],
@@ -1039,6 +1035,13 @@ KPI_SECTOR_MAP = {
         "average_unit_retail_growth", "transactions_growth_comparable", "smokeable_products_shipment_volume_growth",
     ],
     "Enrollment growth": ["total_enrollment_growth", "new_enrollment_growth"],
+}
+
+# Live KPIs that inform the question but only answer half of it (counted as "partly", never "answered")
+KPI_PARTLY_IDS = {
+    "renewal_rate",                               # gross domain renewal rate, not net revenue retention (VRSN)
+    "smokeable_products_shipment_volume_growth",  # volume only, no price split (MO)
+    "average_unit_retail_growth",                 # AUR price/mix only, no volume split (RL)
 }
 
 def _fmt_kpi_val(val, unit):
@@ -1054,7 +1057,7 @@ def _fmt_kpi_val(val, unit):
     if abs(v) >= 1e6: return f"{v/1e6:.1f}M"
     return f"{v:,.0f}"
 
-def kpi_sector_answer(q, t):
+def kpi_sector_answer(q, t, hist=None):
     """Answer a sector question directly from live quarterly filings in data/kpis.json (or live XBRL RPO)."""
     kd_map = {d["id"]: d for d in (KPI_DEFS.get(t) or {}).get("kpis", [])}
     kdata = KPIS.get(t) or {}
@@ -1069,6 +1072,7 @@ def kpi_sector_answer(q, t):
         ans = _fmt_kpi_val(val, unit)
         lbl = d.get("label", kid)
         rd_extra = ""
+        st_kpi = "partly" if kid in KPI_PARTLY_IDS else "answered"
         if kid == "combined_ratio":
             tone = "good" if float(val) < 95 else "caution" if float(val) < 100 else "bad"
             ans = f"{ans} combined ratio"
@@ -1081,21 +1085,47 @@ def kpi_sector_answer(q, t):
         elif kid == "top_customer_concentration_10_k":
             tone = "bad" if float(val) >= 15 else "caution"
             ans = f"Top customer {ans} of sales"
-        elif kid == "active_installed_base_annual":
-            tone = "good"
-            ans = f"{ans} active devices"
         elif kid == "occupancy_rate_us_malls_and_outlets":
             tone = "good" if float(val) >= 92 else "caution"
             ans = f"{ans} occupied"
-        elif kid == "rent_coverage":
-            tone = "good" if float(val) >= 2.0 else "caution"
-            ans = f"{ans} operator rent coverage"
         elif kid == "pmiers_sufficiency_ratio":
             tone = "good" if float(val) >= 130 else "caution"
             ans = f"{ans} PMIERs sufficiency"
         elif kid == "pmiers_excess_capital":
             tone = "good"
             ans = f"{ans} PMIERs excess capital"
+        elif kid == "take_rate_net_revenue_processed_volume":
+            tone = "key"
+            ans = f"{float(val)*100:.1f} bps ({float(val):.2f}%)"
+        elif kid == "renewal_rate":
+            tone = "key"
+            ans = f"{ans} domain renewal rate"
+        elif kid == "gross_ammonia_production_thousand_tons":
+            tone = "key"
+            ans = f"{float(val):,.0f}k tons ammonia"
+        elif kid == "attributable_gold_production_thousand_oz":
+            tone = "key"
+            ans = f"{float(val):,.0f}k oz gold"
+        elif kid == "average_realized_gold_price":
+            tone = "key"
+            ans = f"${float(val):,.0f}/oz"
+        elif kid == "all_in_sustaining_cost_per_ounce":
+            tone = "key"
+            ans = f"${float(val):,.0f}/oz AISC"
+        elif kid == "realised_oil_price":
+            tone = "key"
+            ans = f"${float(val):.2f}/bbl"
+        elif kid == "average_selling_price_per_ton":
+            tone = "key"
+            ans = f"${float(val):,.0f}/ton"
+        elif kid == "smokeable_products_shipment_volume_growth":
+            v = float(val)
+            tone = "bad" if v < 0 else "good"
+            ans = f"volume {v:+.1f}%"
+        elif kid == "average_unit_retail_growth":
+            v = float(val)
+            tone = "good" if v > 0 else "bad"
+            ans = f"AUR {v:+.1f}%".replace(".0%", "%")
         elif kid == "orders_and_book_to_bill":
             tone = "good" if float(val) >= 1.0 else "caution"
             ans = f"{ans} book-to-bill"
@@ -1127,12 +1157,18 @@ def kpi_sector_answer(q, t):
             better = d.get("better", "none")
             tone = "good" if better == "up" and isinstance(val, (int, float)) and val > 0 else "key"
         rd = f"{lbl}: {last['label']} ({last['period']}){rd_extra}"
-        return dict(answer=ans, reading=rd, tone=tone, status="answered", url=last.get("source"), as_of=last["period"])
-    # Live XBRL RPO fallback for Industrials backlog
+        return dict(answer=ans, reading=rd, tone=tone, status=st_kpi, url=last.get("source"), as_of=last["period"])
+    # Live XBRL RPO fallback for Industrials backlog (skip tiny ASC 606 >1y practical-expedient footnotes <15% of sales)
     if q == "Order backlog and book-to-bill":
         rpo = (SEC_F.get(t) or {}).get("rpo")
         if rpo and rpo.get("val_b"):
-            return dict(answer=f"${rpo['val_b']:.2f}B RPO", reading=f"SEC 10-K remaining performance obligations as of {rpo['as_of']}", tone="key", status="answered", as_of=rpo["as_of"])
+            rev_b = None
+            if hist:
+                ry = [y for y in sorted(hist) if hist[y].get("rev") and hist[y]["rev"] > 0]
+                if ry:
+                    rev_b = hist[ry[-1]]["rev"] / 1e3
+            if rev_b is None or rpo["val_b"] >= 0.15 * rev_b:
+                return dict(answer=f"${rpo['val_b']:.2f}B RPO", reading=f"SEC 10-K remaining performance obligations as of {rpo['as_of']}", tone="key", status="answered", as_of=rpo["as_of"])
     return None
 
 # ------------------------------------------------------------------ the model (for "what the price assumes")
@@ -1444,7 +1480,7 @@ def main():
                 if ans is not None:
                     ans.setdefault("status", "answered")
                 else:
-                    ans = kpi_sector_answer(q, t)
+                    ans = kpi_sector_answer(q, t, hist)
                 if ans is None and q in cr_sec:
                     ans = dict(cr_sec[q], status="partly", note=True)
                 sq.append(dict(q=q, **(ans or {"answer": None, "status": "unknown"})))
