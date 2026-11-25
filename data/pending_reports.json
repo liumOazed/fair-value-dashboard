@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
@@ -7,21 +7,21 @@
    "data_through": "2026-07-31",
    "reported_on": "2026-11-24",
    "yahoo_latest_quarter": "2026-07-31",
-   "waiting_days": 0
+   "waiting_days": 1
   },
   {
    "ticker": "WDAY",
    "data_through": "2026-07-31",
    "reported_on": "2026-11-24",
    "yahoo_latest_quarter": "2026-07-31",
-   "waiting_days": 0
+   "waiting_days": 1
   },
   {
    "ticker": "DLTR",
    "data_through": "2026-07-31",
    "reported_on": "2026-11-24",
-   "yahoo_latest_quarter": "2026-08-01",
-   "waiting_days": 0
+   "yahoo_latest_quarter": "2026-10-31",
+   "waiting_days": 1
   }
  ],
  "upcoming": [
@@ -51,6 +51,11 @@
    "data_through": "2026-07-31"
   },
   {
+   "ticker": "LULU",
+   "next_report": "2026-12-08",
+   "data_through": "2026-07-31"
+  },
+  {
    "ticker": "AVGO",
    "next_report": "2026-12-09",
    "data_through": "2026-08-31"
@@ -59,11 +64,6 @@
    "ticker": "ADBE",
    "next_report": "2026-12-09",
    "data_through": "2026-08-31"
-  },
-  {
-   "ticker": "LULU",
-   "next_report": "2026-12-10",
-   "data_through": "2026-07-31"
   },
   {
    "ticker": "EPAC",
