@@ -1,27 +1,27 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "rule": "reported on d with d - 70 days after data_through (or Yahoo already shows a newer quarter)",
  "pending": [
   {
    "ticker": "ADSK",
    "data_through": "2026-07-31",
    "reported_on": "2026-11-24",
-   "yahoo_latest_quarter": "2026-07-31",
-   "waiting_days": 1
+   "yahoo_latest_quarter": "2026-10-31",
+   "waiting_days": 2
   },
   {
    "ticker": "WDAY",
    "data_through": "2026-07-31",
    "reported_on": "2026-11-24",
    "yahoo_latest_quarter": "2026-07-31",
-   "waiting_days": 1
+   "waiting_days": 2
   },
   {
    "ticker": "DLTR",
    "data_through": "2026-07-31",
    "reported_on": "2026-11-24",
    "yahoo_latest_quarter": "2026-10-31",
-   "waiting_days": 1
+   "waiting_days": 2
   }
  ],
  "upcoming": [
