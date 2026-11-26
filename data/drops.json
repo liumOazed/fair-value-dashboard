@@ -691,14 +691,14 @@
     "high"
    ],
    "emergency": true,
-   "needs_verdict": true,
+   "needs_verdict": false,
    "verdict": {
-    "label": "temporary",
+    "label": "unclear",
     "confidence": "medium",
-    "cause": "Fell another 10% in the 5 Nov AI-chip rout (SOX -8-11%) on post-midterm fears of AI rules and slower data-centre building; no new operating news",
-    "summary": "There was no guidance change or customer loss and EPS estimates are flat to slightly up; Broadcom fell about as much as its chip peers. A new contingent risk is its backing of chip residual values behind ~2B of debt in Anthropic's 3B financing (and leases in an earlier Apollo package), which ties its biggest custom-chip customer to off-balance-sheet credit exposure. Watch AI-lab financing, Anthropic's health and Q4 FY26 results in December; the price (~92) is still above the fair value (~57).",
+    "cause": "Fell 12% on 20 Nov on an unconfirmed Kuo report that Google cut 2027 Broadcom-designed TPU 8i orders ~20% in favour of the MediaTek-designed 8t, amid a broad AI-chip rout",
+    "summary": "The week's -15% is in line with semiconductor peers (median -16%), so most of it is the sector-wide AI-chip selloff, but the Google TPU report is company-specific: if true it shifts share at its biggest customer to MediaTek; neither company has confirmed it and analyst EPS estimates are flat. Watch Q4 FY26 results on 9 Dec for whether the ~115B FY27 AI revenue outlook and Google volumes hold, plus margin pressure (73% guide) and its AI-lab financing guarantees. The price (~301) is still above the fair value (~257), so there is no margin of safety yet.",
     "model_changed": false,
-    "date": "2026-11-06",
+    "date": "2026-11-26",
     "by": "Claude"
    },
    "evidence": {
@@ -6908,6 +6908,6 @@
  "review_pending": [
   "AVGO"
  ],
- "updated": "2026-11-25T22:29:17Z",
+ "updated": "2026-11-26T02:25:15Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
