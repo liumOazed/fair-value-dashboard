@@ -369,3 +369,6 @@ table.s.sp td,table.s.sp th{text-align:left;vertical-align:top;white-space:norma
 #dr a{color:var(--acc)}
 .rbok{display:inline-block;margin-top:3px;padding:1px 8px;border-radius:999px;font-size:11px;font-weight:600;background:var(--hl-mint);color:var(--good)}
 .rbline{margin:10px 0 0;padding:8px 12px;border-radius:10px;background:color-mix(in srgb,var(--line) 35%,transparent);font-size:13px}.rbline.ok{background:var(--hl-mint)}
+
+/* Capital allocation & financial flexibility: answers wrap so the reading column keeps its width */
+table.s.sp.cf td.n{white-space:normal;min-width:84px;max-width:190px}table.s.sp.cf td:first-child{min-width:110px}

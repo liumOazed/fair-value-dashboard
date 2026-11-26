@@ -2,7 +2,8 @@
 """Research framework blocks for each stock's Fair Value drawer -> data/framework.json. Information only: nothing here
 changes a fair value.
 
-The drawer answers a fixed set of 64 questions (50 universal + 10 on what the market prices in + 4 on duration) plus 6–8 sector
+The drawer answers a fixed set of 78 questions (50 universal + 10 on what the market prices in + 4 on duration + 14 on capital
+allocation and financial flexibility) plus 6–8 sector
 questions per stock, chosen by business model (SECTOR_MODULES below), not by official sector. Every question is
 "answered", "partly" or "unknown"; an unknown question is shown in grey as "not scored" and never counts as positive.
 
@@ -27,12 +28,17 @@ Per stock:
                 the implied rate, advantage period needed, sector & own median P/E, Bear/Base/Bull 10-yr returns vs 10-yr bond,
                 and 10-yr return decomposition (business growth + cash yield vs multiple re-rating)
   sector        the stock's module and each question's answer from statements, live KPIs (data/kpis.json), XBRL or 10-K research
+  cap_flex      capital allocation & financial flexibility (K1-K12): Apreda's sources and uses of cash, Stewart's cash to
+                lenders and shareholders, Jensen's cash left after investing, cash + FCF + borrowing room (float), and
+                Apreda's ten float decisions (sunk costs, strategic investment, asset replacement, tight budgets,
+                incentives, interest-rate, currency, commodity and credit risk, covenants). Hedges, covenant limits,
+                credit ratings, credit lines and impairments aren't collected, so those stay unknown.
   coverage      counts of answered / partly / unknown questions (underwriters: free-cash-flow and capex questions are "na")
 
 Usage: python scripts/framework.py            (after model/model.py, the snapshot refresh and scripts/durability.py)
        python scripts/framework.py --offline  (skip the benchmark download and keep the previous benchmark prices)
 """
-import csv, datetime, glob, json, math, pathlib, statistics as st, sys
+import csv, datetime, glob, json, math, pathlib, re, statistics as st, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data/framework.json"
@@ -57,8 +63,9 @@ CR = (J("data/company_research.json", {"stocks": {}}) or {}).get("stocks") or {}
 KPIS = (J("data/kpis.json", {"stocks": {}}) or {}).get("stocks") or {}
 KPI_DEFS = (J("data/kpi_defs.json", {"stocks": {}}) or {}).get("stocks") or {}
 DS = (J("data/debt_stress.json", {"stocks": {}}) or {}).get("stocks") or {}
+DS_REF = (J("data/debt_stress.json", {}) or {}).get("ref_yield") or {}      # today's Moody's Baa yield (credit-risk row)
 
-# ------------------------------------------------------------------ the 64 fixed questions
+# ------------------------------------------------------------------ the 78 fixed questions
 # Each question's status is determined dynamically per stock from real data availability.
 Q = [
  ("A1", "Earnings yield vs high-quality company bonds"),
@@ -126,11 +133,28 @@ Q = [
  ("T2", "How much the value moves if interest rates change"),
  ("T3", "Does your holding period cover where the value comes from?"),
  ("T4", "How reliable are the assumptions behind distant cash flows?"),
+ # Capital allocation & financial flexibility (from November 2026): Apreda's float, with Stewart's and Jensen's questions.
+ # K1-K12 are looking back (filings); K13-K14 are looking forward (the model). Three of Apreda's ten float decisions
+ # (strategic investment, asset replacement, tight budgets) are already D28, D27 and F43, so they have no K number.
+ ("K1", "Where the money came from and where it went (Apreda)"),
+ ("K2", "Cash paid to lenders and shareholders (Stewart)"),
+ ("K3", "Cash left after investing: did the cash kept earn its cost? (Jensen)"),
+ ("K4", "How much financial flexibility (float) it has"),
+ ("K5", "Float compared with free cash flow"),
+ ("K6", "Funding for failed projects (sunk costs)"),
+ ("K7", "Rewarding management without destroying value"),
+ ("K8", "Hedging borrowing costs (interest-rate risk)"),
+ ("K9", "Managing currency exposure"),
+ ("K10", "Protecting against input price swings (commodity risk)"),
+ ("K11", "Defaults and rating changes: cost of refinancing (credit risk)"),
+ ("K12", "Staying within bond covenants"),
+ ("K13", "NPV of the company's planned investment"),
+ ("K14", "Value split: existing business, new investment, net cash (Apreda)"),
 ]
 
 # Questions that don't apply to an underwriter (valued on book value and ROE): its cash flow mixes in premiums held for
 # future claims, and its capex and working capital say little. Marked "na": not answered, not unknown, not counted.
-NA_INSURER = {"D24", "D25", "D26", "D27", "D28", "D29", "D30", "F40"}
+NA_INSURER = {"D24", "D25", "D26", "D27", "D28", "D29", "D30", "F40", "K1", "K3", "K4", "K5"}
 
 # ------------------------------------------------------------------ sector modules (by business model, all 132 stocks)
 M_ = lambda name, tickers, qs: dict(name=name, tickers=tickers.split(), questions=qs)
@@ -732,6 +756,195 @@ def build_cash_alloc(t, a, raw, hist, ins, growth):
             verdict=v, tone=tone,
         )
     return out or None
+
+# ------------------------------------------------------------------ capital allocation & financial flexibility (K1-K12)
+CUR_RE = r"currenc|\bFX\b|foreign exchange|exchange rate|strong dollar|dollar strength|devaluation"
+
+def build_cap_flex(t, a, raw, hist, ins, ca, im, sq, fin=None):
+    """Apreda's float, Stewart's and Jensen's questions, from the same 10-K cash-flow, balance-sheet and income lines the
+    Cash flow card uses (data/snapshot_raw.json, last up to 4 fiscal years, with the balance sheet from the year before).
+    Only figures we collect are used; anything else (hedges, covenant limits, ratings, credit lines, impairments) is left
+    unknown and never scored."""
+    ok = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool) and math.isfinite(v)
+    inc, cfs, bal = dict(years(raw, "inc")), dict(years(raw, "cfs")), dict(years(raw, "bal"))
+    gv = lambda src, d, k: (src.get(d) or {}).get(k) if ok((src.get(d) or {}).get(k)) else None
+    z = lambda v: v if v is not None else 0.0
+    b = lambda v: r1(v / 1e9, 3) if v is not None else None
+    ys = sorted(d for d in cfs if ok(cfs[d].get("fcf")))
+    win, y0 = [], None
+    if len(ys) >= 2:
+        win = (ys[1:] if ys[0] in bal else ys)[-4:]
+        prev = sorted(d for d in bal if d < win[0])
+        y0 = prev[-1] if prev else None
+    elif ys:
+        win = ys
+    lbl = (f"{win[0][:4]}–{win[-1][:4]}" if len(win) > 1 else win[0][:4]) if win else None
+    S = lambda k, src=cfs: sum(z(gv(src, d, k)) for d in win)
+    fcf, ocf = S("fcf"), S("ocf")
+    capex = sum(abs(z(gv(cfs, d, "capex"))) for d in win)
+    acq_raw = S("acq")                                                     # negative = cash paid for businesses
+    div = -S("div_paid")
+    bb = -S("buyback")
+    iss = sum(max(0.0, z(gv(cfs, d, "issued"))) for d in win)
+    sbc = sum(abs(z(gv(cfs, d, "sbc"))) for d in win)
+    last_b = sorted(bal)[-1] if bal else None
+    debt0, debt1 = (gv(bal, y0, "debt") if y0 else None), (gv(bal, win[-1], "debt") if win else None)
+    cash0, cash1 = (gv(bal, y0, "cash") if y0 else None), (gv(bal, win[-1], "cash") if win else None)
+    debt_now, cash_now = gv(bal, last_b, "debt"), gv(bal, last_b, "cash")
+    last_i = sorted(inc)[-1] if inc else None
+    rev_now, op_now, ebitda_now = gv(inc, last_i, "rev"), gv(inc, last_i, "op"), gv(inc, last_i, "ebitda")
+    int_now = gv(inc, last_i, "interest")
+    rx = RET.get(t) or {}
+    inc_r, hurdle = rx.get("inc_recent"), rx.get("r") or a.get("required_return")
+    out = dict(years=lbl, n=len(win))
+    pc0 = lambda v: f"{v * 100:.0f}%"
+    B = lambda v: (("−" if v < 0 else "") + (f"${abs(v) / 1e9:,.2f}B" if abs(v) >= 1e8 else f"${abs(v) / 1e6:,.0f}M")) if v is not None else "–"
+
+    # K1 (Apreda): where the money came from and where it went
+    if not ins and win and y0 and None not in (debt0, debt1, cash0, cash1):
+        d_debt, d_cash = debt1 - debt0, cash1 - cash0
+        src = {"operations": max(0.0, ocf), "new debt": max(0.0, d_debt), "new shares": iss,
+               "cash drawn down": max(0.0, -d_cash), "businesses sold": max(0.0, acq_raw)}
+        use = {"capex": capex, "acquisitions": max(0.0, -acq_raw), "dividends": div, "buybacks": bb,
+               "debt repaid": max(0.0, -d_debt), "cash built up": max(0.0, d_cash), "operating cash burn": max(0.0, -ocf)}
+        other = sum(src.values()) - sum(use.values())
+        (use if other > 0 else src)["investments and other" if other > 0 else "other sources"] = abs(other)
+        tot = sum(src.values())
+        if tot > 0:
+            sh = lambda d: [[k, b(v), r1(v / tot, 3)] for k, v in sorted(d.items(), key=lambda kv: -kv[1]) if v >= 0.02 * tot]
+            ops = src["operations"] / tot
+            ext = max(("new debt", "new shares", "cash drawn down"), key=lambda k: src[k])
+            v, tone = (("funded by its own operations", "good") if ops >= 0.85 else
+                       (f"leaned on {ext}", "caution") if ops >= 0.60 else (f"relied on {ext}", "bad"))
+            out["sources_uses"] = dict(status="partly", total_b=b(tot), ops_share=r1(ops, 3), sources=sh(src), uses=sh(use),
+                                       answer=f"{pc0(ops)} from operations", verdict=v, tone=tone)
+
+    # K2 (Stewart): cash paid to the providers of capital
+    if win:
+        n_int = [gv(inc, d, "interest") for d in win]
+        have_int = all(x is not None for x in n_int)
+        pre, tax = S("pretax", inc), S("tax", inc)
+        tr = min(max(tax / pre, 0.0), 0.35) if pre > 0 and tax else 0.21
+        at_int = sum(abs(z(x)) for x in n_int) * (1 - tr)
+        to_sh = div + bb - iss
+        net_repaid = (debt0 - debt1) if None not in (debt0, debt1) else None
+        to_len = at_int + (net_repaid or 0.0)
+        fcff = fcf + at_int
+        st_k2 = "answered" if (have_int and net_repaid is not None) else "partly"
+        share = (to_sh + to_len) / fcff if fcff > 0 and not ins else None    # an underwriter's cash flow includes premiums held
+        tone = "key" if share is None else "good" if 0.5 <= share <= 1.2 else "caution"
+        out["stewart"] = dict(status=st_k2, to_shareholders_b=b(to_sh), to_lenders_b=b(to_len), interest_after_tax_b=b(at_int),
+                              net_debt_repaid_b=b(net_repaid), fcff_b=b(fcff), share=r1(share, 3), tax_rate=r1(tr, 3),
+                              answer=f"{B(to_sh)} to owners · {B(to_len)} to lenders", tone=tone)
+
+    # K3 (Jensen): cash left after investing, and what the cash kept has earned
+    if not ins and win:
+        kept = fcf - div - (bb - iss)
+        kshare = kept / fcf if fcf > 0 else None
+        if fcf <= 0:
+            v, tone = "no free cash after investing", "caution"
+        elif kshare <= 0.10:
+            v, tone = "paid out almost all", "good"
+        elif ok(inc_r) and ok(hurdle):
+            v, tone = (("kept, earned above its cost", "good") if inc_r > hurdle else ("kept, earned below its cost", "bad"))
+        else:
+            v, tone = "kept, return not measurable", "caution"
+        out["jensen"] = dict(status="partly", fcf_b=b(fcf), kept_b=b(kept), kept_share=r1(kshare, 3),
+                             inc_return=r1(inc_r, 3) if ok(inc_r) else None, hurdle=r1(hurdle, 3) if ok(hurdle) else None,
+                             inc_window=(rx.get("windows") or [None, None])[1], verdict=v, tone=tone)
+
+    # K4 and K5: financial flexibility (float) and how it compares with free cash flow
+    if not ins and win and cash_now is not None:
+        fcf_yr = fcf / len(win)
+        nd = (debt_now or 0.0) - cash_now
+        room = max(0.0, 3.5 * ebitda_now - nd) if ok(ebitda_now) and ebitda_now > 0 else None
+        flex = cash_now + max(0.0, fcf_yr)
+        tone = "bad" if fcf_yr <= 0 and not room else "good" if room and fcf_yr > 0 else "key"
+        out["float"] = dict(status="partly", cash_b=b(cash_now), fcf_yr_b=b(fcf_yr), net_debt_b=b(nd), borrow_room_b=b(room),
+                            flex_b=b(flex), answer=f"{B(flex)}: cash + a year of FCF", tone=tone)
+        if fcf_yr > 0:
+            yrs = cash_now / fcf_yr
+            v, tone = (("runs lean: relies on cash flow and borrowing", "key") if yrs < 0.5 else
+                       ("large cash reserve: Jensen would ask it to justify it", "caution") if yrs > 2 else ("moderate reserve", "good"))
+            out["float_vs_fcf"] = dict(status="partly", years_of_fcf=r1(yrs, 2), answer=f"cash = {yrs:.1f} years of FCF", verdict=v, tone=tone)
+        else:
+            out["float_vs_fcf"] = dict(status="partly", years_of_fcf=None, answer="FCF negative", tone="bad",
+                                       verdict=f"cash covers {cash_now / -fcf_yr:.1f} years of cash burn" if fcf_yr < 0 else "no free cash flow")
+
+    # Apreda's ten float decisions. Strategic investment (D28), asset replacement (D27) and tight budgets (F43) reuse
+    # existing answers; the other seven are K6-K12.
+    dec = {}
+    dec["sunk"] = dict(status="unknown", reading="Write-offs of failed projects (impairments) aren't in our data.")
+    cs = (ca or {}).get("capex_split")
+    rd = [z(hist[y].get("rd")) for y in sorted(hist)[-3:] if hist[y].get("rd") is not None]
+    rd_yr = (st.mean(rd) * 1e6) if rd else None
+    acq_yr = max(0.0, -acq_raw) / len(win) if win else None
+    if cs and not ins:
+        tot = cs["growth_b"] * 1e9 + z(rd_yr) + z(acq_yr)
+        dec["strategic"] = dict(ref="D28", growth_capex_b=cs["growth_b"], rd_b=b(rd_yr), acq_b=b(acq_yr), total_b=b(tot),
+                                inc_return=r1(inc_r, 3) if ok(inc_r) else None, hurdle=r1(hurdle, 3) if ok(hurdle) else None,
+                                tone="good" if ok(inc_r) and ok(hurdle) and inc_r > hurdle else "bad" if ok(inc_r) and ok(hurdle) else "key")
+        dec["replacement"] = dict(ref="D27", maint_b=cs["maint_b"], maint_pct_ocf=cs.get("maint_pct_ocf"), method=cs["method"],
+                                  tone="good" if (cs.get("maint_pct_ocf") or 1) < 0.5 else "caution")
+    dz = DS.get(t) or {}
+    if dz.get("q1") and dz.get("q4"):
+        q1, q4 = dz["q1"], dz["q4"]
+        dec["budget"] = dict(ref="F43", gap_b=q4.get("gap_b"), cash_b=q4.get("cash_b"), months=q4.get("v"), need_b=q1.get("need_b"),
+                             stressed_fcf_b=q1.get("fcf_b"), episode=dz.get("episode"), estimate=dz.get("estimate"),
+                             tone="good" if (q4.get("gap_b") or 0) <= 0 or (q4.get("v") or 0) >= 24 else "caution" if (q4.get("v") or 0) >= 12 else "bad")
+    # K7 management incentives
+    pso = (ca or {}).get("per_share") or {}
+    sbc_last = gv(cfs, ys[-1], "sbc") if ys else None
+    if sbc_last is not None and ok(rev_now) and rev_now > 0:
+        sbc_rev = abs(sbc_last) / rev_now
+        sbc_fcf = sbc / fcf if fcf > 0 else None
+        shg = pso.get("shares_cagr")
+        if shg is not None and shg > 0.02:
+            v, tone = "diluting owners", "bad"
+        elif sbc_fcf is not None and sbc_fcf > 0.25:
+            v, tone = "heavy against free cash flow", "caution"
+        elif sbc_rev <= 0.02 and (shg is None or shg <= 0.005):
+            v, tone = "modest, no dilution", "good"
+        else:
+            v, tone = "offset by buybacks", "key"
+        dec["incentives"] = dict(status="partly", sbc_rev=r1(sbc_rev, 4), sbc_fcf=r1(sbc_fcf, 3), shares_cagr=shg,
+                                 fcf_ps_cagr=pso.get("fcf_ps_cagr"), eps_cagr=pso.get("eps_cagr"), ps_years=pso.get("years"),
+                                 verdict=v, tone=tone)
+    # K8, K11, K12: debt-side decisions
+    dm = (im or {}).get("debt_mat") or {}
+    no_debt = bool(dm.get("zero_debt")) or (debt_now is not None and debt_now <= 0.005 * max(1.0, z(rev_now)))
+    avg_debt = st.mean([x for x in (debt0, debt1) if x]) if any((debt0, debt1)) else debt_now
+    cost_debt = abs(int_now) / avg_debt if ok(int_now) and avg_debt and avg_debt > 0 else None
+    cd_src = "interest ÷ average total debt, latest year"
+    if cost_debt is None and fin and ok(fin.get("rd")):              # the model's capital-structure input (model/model.py FIN)
+        cost_debt, cd_src = fin["rd"], "the model's cost-of-debt input"
+    if no_debt:
+        for k in ("rates", "credit", "covenants"):
+            dec[k] = dict(status="answered", no_debt=True, tone="good")
+    else:
+        dec["rates"] = dict(status="unknown", debt_b=b(debt_now), cost_debt=r1(cost_debt, 4), cost_src=cd_src)
+        baa = (DS_REF.get("y") or 0) / 100 or None
+        d5 = dm.get("due_5y_b")
+        if d5 is not None and baa and cost_debt is not None:
+            extra = d5 * 1e9 * max(0.0, baa - cost_debt)
+            of_op = extra / op_now if ok(op_now) and op_now > 0 else None
+            dec["credit"] = dict(status="partly", due_5y_b=d5, baa=r1(baa, 4), baa_month=DS_REF.get("month"), cost_debt=r1(cost_debt, 4), cost_src=cd_src,
+                                 extra_b=b(extra), of_op=r1(of_op, 4), mat_status=dm.get("status"),
+                                 tone="good" if of_op is not None and of_op < 0.02 else "caution" if of_op is not None and of_op < 0.05 else "bad" if of_op is not None else "key")
+        else:
+            dec["credit"] = dict(status="unknown", debt_b=b(debt_now))
+        sn = lambda lab: (snap_metric(t, lab) or {}).get("value")
+        dec["covenants"] = dict(status="unknown", nd_ebitda=sn("Net debt / EBITDA"), int_cover=sn("Interest coverage"))
+    # K9 currency, K10 commodity
+    notes = [((im or {}).get(k) or {}) for k in ("risks", "concentration")]
+    hit = next((n for n in notes if n and re.search(CUR_RE, f"{n.get('answer', '')} {n.get('reading', '')}", re.I)), None)
+    dec["fx"] = dict(status="unknown", note=(dict(answer=hit.get("answer"), source=hit.get("source"), as_of=hit.get("as_of")) if hit else None))
+    cq = next((q for q in (sq or []) if q.get("q", "").startswith("Commodity prices") and q.get("answer")), None)
+    dec["commodity"] = (dict(status="partly", answer=cq["answer"], reading=cq.get("reading"), tone=cq.get("tone") or "key") if cq
+                        else dict(status="unknown"))
+    out["decisions"] = dec
+    return out
+
 
 def build_industry_moat(t, a, raw, hist, by_ind, by_sec, smeta):
     out = {}
@@ -1486,7 +1699,11 @@ def main():
                 sq.append(dict(q=q, **(ans or {"answer": None, "status": "unknown"})))
             x["sector"] = dict(module=mod["name"], questions=sq)
 
-        # Dynamic, honest per-stock coverage evaluation for all 64 fixed questions!
+        # capital allocation & financial flexibility (K1-K12; K13-K14 come from the model's own outputs)
+        cf = build_cap_flex(t, a, raw, hist, ins, ca, im, sq, (ns.get("FIN") or {}).get(t))
+        x["cap_flex"] = cf
+
+        # Dynamic, honest per-stock coverage evaluation for all 78 fixed questions!
         has_snap = t in SNAP
         has_moat = t in MS
         has_ret = t in RET
@@ -1561,6 +1778,19 @@ def main():
             if qid == "M8": return "answered" if (asm and asm.get("scenarios_ret") and asm.get("t10") is not None) else ("partly" if has_mc else "unknown")
             if qid == "M9": return "answered" if (asm and asm.get("ret_decomp")) else "unknown"
             if qid in ("T1", "T2", "T3", "T4"): return "answered" if has_dur else "unknown"
+            if qid.startswith("K"):
+                dcs = cf.get("decisions") or {}
+                blk = {"K1": cf.get("sources_uses"), "K2": cf.get("stewart"), "K3": cf.get("jensen"), "K4": cf.get("float"),
+                       "K5": cf.get("float_vs_fcf"), "K6": dcs.get("sunk"), "K7": dcs.get("incentives"), "K8": dcs.get("rates"),
+                       "K9": dcs.get("fx"), "K10": dcs.get("commodity"), "K11": dcs.get("credit"), "K12": dcs.get("covenants")}
+                if qid in blk: return (blk[qid] or {}).get("status") or "unknown"
+                F = a.get("forecast") or {}
+                if qid == "K13":   # discounted value of the planned reinvestment (drawer, from the forecast rows)
+                    if ins: return "answered" if all((F.get(k) or {}).get("ni") for k in ("bear", "base", "bull")) else "unknown"
+                    return "answered" if F.get("base") and a.get("nopat_margin") is not None else "unknown"
+                if qid == "K14":   # no-growth value vs growth vs net cash (book value vs excess returns for an underwriter)
+                    if ins: return "partly" if (F.get("base") or {}).get("bv0") is not None else "unknown"
+                    return "partly" if a.get("epv") is not None and a.get("fair_value") is not None else "unknown"
             return "unknown"
 
         fixed = [[qid, status_of(qid)] for qid, _ in Q]
