@@ -1060,8 +1060,8 @@
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0156,
-    "week": 0.0511,
+    "day": 0.0317,
+    "week": 0.0207,
     "high": -0.0904
    },
    "sector_at_open": 34.17,
@@ -1071,7 +1071,7 @@
     "high": -0.6716
    },
    "provisional": {
-    "cause": "Industry-wide: peers fell 1% too (rates, sector rotation or an industry worry)",
+    "cause": "Sector-wide: Communication Services fell 2% too (rates, recession worries or sector rotation)",
     "lean": "temporary"
    }
   },
@@ -2933,8 +2933,8 @@
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0156,
-    "week": 0.0511,
+    "day": 0.0317,
+    "week": 0.0207,
     "high": -0.0904
    },
    "sector_at_open": 33.8,
@@ -6653,8 +6653,8 @@
    "sector": "Communication Services",
    "sector_etf": "RSPC",
    "sector_moves": {
-    "day": 0.0156,
-    "week": 0.0511,
+    "day": 0.0317,
+    "week": 0.0207,
     "high": -0.0904
    },
    "sector_at_open": 33.8,
@@ -6940,6 +6940,6 @@
  "log": [],
  "emergency_pending": [],
  "review_pending": [],
- "updated": "2026-11-27T21:13:13Z",
+ "updated": "2026-11-27T21:57:24Z",
  "rules": "Trigger: down 7%+ in a day, 12%+ in 5 sessions or 25%+ below the 52-week high, each at least 5 points worse than the S&P 500 (SPY). Emergency: 12%+ in a day or 20%+ in a week and 10+ points worse than the S&P 500. Why: compared with the stock's sector (S&P 500 equal-weight sector ETF) and its industry peers."
 }
