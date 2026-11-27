@@ -21742,6 +21742,30 @@
   "CRVL": {
    "revenue_growth": [
     {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 3.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Revenues, three months ended December 31, 2025 vs prior year: $235,625 vs $227,973 (thousands) -> (235,625/227,973-1)*100 = 3.36",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 7.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526237024/crvl-20260331.htm ; nine-month YTD from https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Q4 Revenues derived. Q4 FY26 revenues: FY2026 (10-K) $958,527 - nine months ended Dec 31, 2025 (10-Q) $709,979 = $248,548 (thousands); Q4 FY25 revenues: FY2025 (10-K) $895,589 - nine months ended Dec 31, 2024 (10-Q) $664,075 = $231,514 (thousands) -> (248,548/231,514-1)*100 = 7.36",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 10.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526338216/crvl-20260630.htm",
+     "quote": "Revenues, three months ended June 30, 2026 vs prior year: $259,925 vs $234,711 (thousands) -> (259,925/234,711-1)*100 = 10.74",
+     "added": "2026-11-27"
+    },
+    {
      "period": "2026-09-30",
      "label": "Q2 FY27",
      "value": 11.5,
@@ -21752,12 +21776,60 @@
    ],
    "patient_management_revenue": [
     {
+     "period": "2024-12-31",
+     "label": "Q3 FY25",
+     "value": 0.1459,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Patient management services revenue, three months ended December 31, 2024: $145,860 (thousands) -> 0.1459",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q4 FY25",
+     "value": 0.149,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526237024/crvl-20260331.htm ; nine-month YTD from https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Patient management services revenue, three months ended March 31 derived: Patient management services: FY2025 (10-K) $581,192 - nine months ended Dec 31, 2024 (10-Q) $432,206 = $148,986 (thousands) -> 0.149",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q1 FY26",
+     "value": 0.1468,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526338216/crvl-20260630.htm",
+     "quote": "Patient management services revenue, three months ended June 30, 2025: $146,767 (thousands) -> 0.1468",
+     "added": "2026-11-27"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q2 FY26",
      "value": 0.1508,
      "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526449982/crvl-20260930.htm",
      "quote": "Patient management services revenue, three months ended September 30, 2025: $150,795 (thousands) -> 0.1508",
      "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 0.1461,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Patient management services revenue, three months ended December 31, 2025: $146,059 (thousands) -> 0.1461",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 0.1531,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526237024/crvl-20260331.htm ; nine-month YTD from https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Patient management services revenue, three months ended March 31 derived: Patient management services: FY2026 (10-K) $596,703 - nine months ended Dec 31, 2025 (10-Q) $443,622 = $153,081 (thousands) -> 0.1531",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 0.1593,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526338216/crvl-20260630.htm",
+     "quote": "Patient management services revenue, three months ended June 30, 2026: $159,292 (thousands) -> 0.1593",
+     "added": "2026-11-27"
     },
     {
      "period": "2026-09-30",
@@ -21770,12 +21842,60 @@
    ],
    "network_solutions_revenue": [
     {
+     "period": "2024-12-31",
+     "label": "Q3 FY25",
+     "value": 0.0821,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Network solutions services revenue, three months ended December 31, 2024: $82,113 (thousands) -> 0.0821",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q4 FY25",
+     "value": 0.0825,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526237024/crvl-20260331.htm ; nine-month YTD from https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Network solutions services revenue, three months ended March 31 derived: Network solutions services: FY2025 (10-K) $314,397 - nine months ended Dec 31, 2024 (10-Q) $231,869 = $82,528 (thousands) -> 0.0825",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q1 FY26",
+     "value": 0.0879,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526338216/crvl-20260630.htm",
+     "quote": "Network solutions services revenue, three months ended June 30, 2025: $87,944 (thousands) -> 0.0879",
+     "added": "2026-11-27"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q2 FY26",
      "value": 0.0888,
      "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526449982/crvl-20260930.htm",
      "quote": "Network solutions services revenue, three months ended September 30, 2025: $88,848 (thousands) -> 0.0888",
      "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 0.0896,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Network solutions services revenue, three months ended December 31, 2025: $89,566 (thousands) -> 0.0896",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 0.0955,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526237024/crvl-20260331.htm ; nine-month YTD from https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Network solutions services revenue, three months ended March 31 derived: Network solutions services: FY2026 (10-K) $361,824 - nine months ended Dec 31, 2025 (10-Q) $266,357 = $95,467 (thousands) -> 0.0955",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 0.1006,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526338216/crvl-20260630.htm",
+     "quote": "Network solutions services revenue, three months ended June 30, 2026: $100,633 (thousands) -> 0.1006",
+     "added": "2026-11-27"
     },
     {
      "period": "2026-09-30",
@@ -21788,12 +21908,60 @@
    ],
    "gross_margin": [
     {
+     "period": "2024-12-31",
+     "label": "Q3 FY25",
+     "value": 23.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Gross profit / Revenues, three months ended December 31, 2024: $52,858 / $227,973 (thousands) -> 23.19",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q4 FY25",
+     "value": 25.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526237024/crvl-20260331.htm ; nine-month YTD from https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Gross profit derived: Gross profit: FY2025 (10-K) $209,728 - nine months ended Dec 31, 2024 (10-Q) $151,547 = $58,181 (thousands); Revenues derived: Revenues: FY2025 (10-K) $895,589 - nine months ended Dec 31, 2024 (10-Q) $664,075 = $231,514 (thousands) -> 58,181/231,514*100 = 25.13",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q1 FY26",
+     "value": 24.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526338216/crvl-20260630.htm",
+     "quote": "Gross profit / Revenues, three months ended June 30, 2025: $56,761 / $234,711 (thousands) -> 24.18",
+     "added": "2026-11-27"
+    },
+    {
      "period": "2025-09-30",
      "label": "Q2 FY26",
      "value": 24.3,
      "source": "https://www.sec.gov/Archives/edgar/data/0000874866/000119312526444065/crvl-ex99_1.htm",
      "quote": "Three months ended September 30, 2025: Revenues $239,643; Gross profit $58,177 (thousands). 58,177 / 239,643 = 24.3%",
      "added": "2026-11-10"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q3 FY26",
+     "value": 23.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Gross profit / Revenues, three months ended December 31, 2025: $54,916 / $235,625 (thousands) -> 23.31",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q4 FY26",
+     "value": 25.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526237024/crvl-20260331.htm ; nine-month YTD from https://www.sec.gov/Archives/edgar/data/874866/000119312526039480/crvl-20251231.htm",
+     "quote": "Gross profit derived: Gross profit: FY2026 (10-K) $232,863 - nine months ended Dec 31, 2025 (10-Q) $169,854 = $63,009 (thousands); Revenues derived: Revenues: FY2026 (10-K) $958,527 - nine months ended Dec 31, 2025 (10-Q) $709,979 = $248,548 (thousands) -> 63,009/248,548*100 = 25.35",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q1 FY27",
+     "value": 26.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/874866/000119312526338216/crvl-20260630.htm",
+     "quote": "Gross profit / Revenues, three months ended June 30, 2026: $67,794 / $259,925 (thousands) -> 26.08",
+     "added": "2026-11-27"
     },
     {
      "period": "2026-09-30",
@@ -25890,6 +26058,946 @@
      "source": "https://s21.q4cdn.com/328470014/files/doc_financials/2027/q1/Box-Q1-FY27-earnings-prepared-remarks-WEBSITE.pdf",
      "quote": "Our annualized full churn rate remained at 3%.",
      "added": "2026-11-24"
+    }
+   ]
+  },
+  "MRSH": {
+   "organic_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 4,
+     "source": "https://www.businesswire.com/news/home/20260128020560/en/Marsh-Reports-Solid-Fourth-Quarter-and-Full-Year-2025-Results/",
+     "quote": "Consolidated revenue in the fourth quarter of 2025 was $6.6 billion, an increase of 9% compared with the fourth quarter of 2024, or 4% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000096/mmc1q2026ex991newsrelease.htm",
+     "quote": "an increase of 8% compared with the first quarter of 2025, or 4% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5,
+     "source": "https://www.businesswire.com/news/home/20260720007280/en/",
+     "quote": "an increase of 6% compared with the second quarter of 2025, or 5% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000062709/000006270926000256/mmc3q2026ex991newsrelease.htm",
+     "quote": "an increase of 8% compared with the third quarter of 2025, or 5% on an underlying basis",
+     "added": "2026-11-27"
+    }
+   ],
+   "risk_insurance_organic_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2,
+     "source": "https://www.businesswire.com/news/home/20260128020560/en/Marsh-Reports-Solid-Fourth-Quarter-and-Full-Year-2025-Results/",
+     "quote": "Risk & Insurance Services revenue was $4.0 billion in the fourth quarter of 2025, an increase of 9%, or 2% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000096/mmc1q2026ex991newsrelease.htm",
+     "quote": "Risk & Insurance Services revenue ... an increase of 6%, or 3% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 3,
+     "source": "https://www.businesswire.com/news/home/20260720007280/en/",
+     "quote": "Risk & Insurance Services revenue ... an increase of 4%, or 3% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000062709/000006270926000256/mmc3q2026ex991newsrelease.htm",
+     "quote": "Risk & Insurance Services revenue ... an increase of 7%, or 3% on an underlying basis.",
+     "added": "2026-11-27"
+    }
+   ],
+   "consulting_organic_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 5,
+     "source": "https://www.businesswire.com/news/home/20260128020560/en/Marsh-Reports-Solid-Fourth-Quarter-and-Full-Year-2025-Results/",
+     "quote": "Consulting revenue was $2.6 billion in the fourth quarter of 2025, an increase of 8%, or 5% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000096/mmc1q2026ex991newsrelease.htm",
+     "quote": "Consulting revenue ... an increase of 11%, or 5% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 8,
+     "source": "https://www.businesswire.com/news/home/20260720007280/en/",
+     "quote": "Consulting revenue ... an increase of 10%, or 8% on an underlying basis.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000062709/000006270926000256/mmc3q2026ex991newsrelease.htm",
+     "quote": "Consulting revenue ... an increase of 9%, or 8% on an underlying basis.",
+     "added": "2026-11-27"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 23.3,
+     "source": "https://www.businesswire.com/news/home/20260128020560/en/Marsh-Reports-Solid-Fourth-Quarter-and-Full-Year-2025-Results/",
+     "quote": "Q4 2024 reconciliation table: Adjusted operating margin 27.0 % 20.7 % N/A 23.3 % (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 31.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000096/mmc1q2026ex991newsrelease.htm",
+     "quote": "Q1 2025 reconciliation table: Adjusted operating margin 38.2 % 21.2 % N/A 31.8 % (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 29.5,
+     "source": "https://www.businesswire.com/news/home/20260720007280/en/",
+     "quote": "Q2 2025 reconciliation table: Adjusted operating margin 35.6 % 20.2 % N/A 29.5 % (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 22.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000062709/000006270926000256/mmc3q2026ex991newsrelease.htm",
+     "quote": "Q3 2025 reconciliation table: Adjusted operating margin | 24.7% | 22.1% | N/A | 22.7% (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 23.7,
+     "source": "https://www.businesswire.com/news/home/20260128020560/en/Marsh-Reports-Solid-Fourth-Quarter-and-Full-Year-2025-Results/",
+     "quote": "Q4 2025 reconciliation table: Adjusted operating margin 27.6 % 20.8 % N/A 23.7 % (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 31.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000096/mmc1q2026ex991newsrelease.htm",
+     "quote": "Q1 2026 reconciliation table: Adjusted operating margin 38.3 % 21.6 % N/A 31.8 % (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 29.3,
+     "source": "https://www.businesswire.com/news/home/20260720007280/en/",
+     "quote": "Q2 2026 reconciliation table: Adjusted operating margin 35.3 % 20.5 % N/A 29.3 % (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 22.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000062709/000006270926000256/mmc3q2026ex991newsrelease.htm",
+     "quote": "Q3 2026 reconciliation table: Adjusted operating margin | 24.6% | 22.1% | N/A | 22.7% (RIS | Consulting | Corporate | Total)",
+     "added": "2026-11-27"
+    }
+   ]
+  },
+  "WTW": {
+   "organic_revenue_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1140536/000117184326000577/exh_991.htm",
+     "quote": "On an organic basis, revenue increased 6%.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3,
+     "source": "https://investors.wtwco.com/node/30326/pdf",
+     "quote": "Organic Revenue growth of 3% for the quarter",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5,
+     "source": "https://investors.wtwco.com/node/30586/pdf",
+     "quote": "Organic Revenue growth of 5% for the quarter",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001140536/000117184326006942/exh_991.htm",
+     "quote": "Organic Revenue growth of 4% for the quarter",
+     "added": "2026-11-27"
+    }
+   ],
+   "risk_broking_organic_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7,
+     "source": "https://www.sec.gov/Archives/edgar/data/1140536/000117184326000577/exh_991.htm",
+     "quote": "The R&B segment had revenue of $1.25 billion in the fourth quarter of 2025, an increase of 10% ... (7% increase constant currency and organic)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2,
+     "source": "https://investors.wtwco.com/node/30326/pdf",
+     "quote": "The R&B segment had revenue of $1.12 billion in the first quarter of 2026, an increase of 9% (3% increase constant currency and organic growth of 2%)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 7,
+     "source": "https://investors.wtwco.com/node/30586/pdf",
+     "quote": "The R&B segment had revenue of $1.16 billion in the second quarter of 2026, an increase of 11% (10% increase constant currency and organic growth of 7%)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 5,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001140536/000117184326006942/exh_991.htm",
+     "quote": "The R&B segment had revenue of $1.09 billion in the third quarter of 2026, an increase of 8% (8% increase constant currency and organic growth of 5%)",
+     "added": "2026-11-27"
+    }
+   ],
+   "hwc_organic_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/1140536/000117184326000577/exh_991.htm",
+     "quote": "The HWC segment had revenue of $1.65 billion in the fourth quarter of 2025, a decrease of 11% (12% decrease constant currency and organic growth of 6%)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 3,
+     "source": "https://investors.wtwco.com/node/30326/pdf",
+     "quote": "The HWC segment had revenue of $1.27 billion in the first quarter of 2026, an increase of 9% (5% increase constant currency and organic growth of 3%)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 4,
+     "source": "https://investors.wtwco.com/node/30586/pdf",
+     "quote": "The HWC segment had revenue of $1.27 billion in the second quarter of 2026, an increase of 8% (7% increase constant currency and organic growth of 4%)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001140536/000117184326006942/exh_991.htm",
+     "quote": "The HWC segment had revenue of $1.35 billion in the third quarter of 2026, an increase of 7% (7% increase constant currency and organic growth of 4%)",
+     "added": "2026-11-27"
+    }
+   ],
+   "adjusted_operating_margin": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 36.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/1140536/000117184326000577/exh_991.htm",
+     "quote": "Adjusted Operating Margin % | 36.9% | 36.1% | 80 bps (Q4-25 vs Q4-24)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 21.6,
+     "source": "https://investors.wtwco.com/node/30326/pdf",
+     "quote": "Adjusted Operating Margin % 22.3% 21.6% 70 bps (Q1-26 vs Q1-25)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 18.5,
+     "source": "https://investors.wtwco.com/node/30586/pdf",
+     "quote": "Adjusted Operating Margin % 19.5% 18.5% 100 bps (Q2-26 vs Q2-25)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 20.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001140536/000117184326006942/exh_991.htm",
+     "quote": "Adjusted Operating Margin % | 21.9% | 20.4% | 150 bps (Q3-26 vs Q3-25)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 36.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/1140536/000117184326000577/exh_991.htm",
+     "quote": "Adjusted Operating Margin % | 36.9% | 36.1% | 80 bps",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 22.3,
+     "source": "https://investors.wtwco.com/node/30326/pdf",
+     "quote": "Adjusted Operating Margin was 22.3% for the quarter, up 70 basis points from prior year",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 19.5,
+     "source": "https://investors.wtwco.com/node/30586/pdf",
+     "quote": "Adjusted Operating Margin was 19.5% for the quarter, up 100 basis points from prior year",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 21.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001140536/000117184326006942/exh_991.htm",
+     "quote": "Adjusted Operating Margin was 21.9% for the quarter, up 150 basis points from prior year",
+     "added": "2026-11-27"
+    }
+   ]
+  },
+  "ALL": {
+   "property_liability_combined_ratio": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 86.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Property-Liability table (Q4 2025 vs Q4 2024): Recorded combined ratio | 72.9 | 86.9",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 97.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Property-Liability table (Q1 2026 vs Q1 2025): Recorded combined ratio | 82.0 | 97.4",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 91.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Property-Liability table (Q2 2026 vs Q2 2025): Recorded combined ratio | 86.6 | 91.1",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 80.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Property-Liability table (Q3 2026 vs Q3 2025): Recorded combined ratio | 86.6 | 80.1",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 72.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Property-Liability table (Q4 2025 vs Q4 2024): Recorded combined ratio | 72.9 | 86.9",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 82.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Property-Liability table (Q1 2026 vs Q1 2025): Recorded combined ratio | 82.0 | 97.4",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 86.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Property-Liability table (Q2 2026 vs Q2 2025): Recorded combined ratio | 86.6 | 91.1",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 86.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Property-Liability table (Q3 2026 vs Q3 2025): Recorded combined ratio | 86.6 | 80.1",
+     "added": "2026-11-27"
+    }
+   ],
+   "auto_combined_ratio": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 93.5,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q4 2025 vs Q4 2024): Recorded combined ratio | 80.8 | 93.5",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 91.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q1 2026 vs Q1 2025): Recorded combined ratio | 81.9 | 91.3",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 86.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q2 2026 vs Q2 2025): Recorded combined ratio | 83.3 | 86.0",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 82.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q3 2026 vs Q3 2025): Recorded combined ratio | 83.2 | 82.0",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 80.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q4 2025 vs Q4 2024): Recorded combined ratio | 80.8 | 93.5",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 81.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q1 2026 vs Q1 2025): Recorded combined ratio | 81.9 | 91.3",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 83.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q2 2026 vs Q2 2025): Recorded combined ratio | 83.3 | 86.0",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 83.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Auto insurance table (total Allstate Protection auto; release no longer separates Allstate brand) (Q3 2026 vs Q3 2025): Recorded combined ratio | 83.2 | 82.0",
+     "added": "2026-11-27"
+    }
+   ],
+   "catastrophe_losses": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 0.41,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Property-Liability table ($ millions, Q4 2025 vs Q4 2024): Catastrophe losses | $209 | $410; 410/1000 = 0.410 $B",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 2.202,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Property-Liability table ($ millions, Q1 2026 vs Q1 2025): Catastrophe losses | $1,240 | $2,202; 2,202/1000 = 2.202 $B",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 1.99,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Property-Liability table ($ millions, Q2 2026 vs Q2 2025): Catastrophe losses | $1,722 | $1,990; 1,990/1000 = 1.990 $B",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 0.558,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Property-Liability table ($ millions, Q3 2026 vs Q3 2025): Catastrophe losses | $1,650 | $558; 558/1000 = 0.558 $B",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 0.209,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Property-Liability table ($ millions, Q4 2025 vs Q4 2024): Catastrophe losses | $209 | $410; 209/1000 = 0.209 $B",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 1.24,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Property-Liability table ($ millions, Q1 2026 vs Q1 2025): Catastrophe losses | $1,240 | $2,202; 1,240/1000 = 1.240 $B",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 1.722,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Property-Liability table ($ millions, Q2 2026 vs Q2 2025): Catastrophe losses | $1,722 | $1,990; 1,722/1000 = 1.722 $B",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 1.65,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Property-Liability table ($ millions, Q3 2026 vs Q3 2025): Catastrophe losses | $1,650 | $558; 1,650/1000 = 1.650 $B",
+     "added": "2026-11-27"
+    }
+   ],
+   "adjusted_roe": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 26.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Twelve months ended Q4 2025 vs Q4 2024: Adjusted net income return on Allstate common shareholders' equity | 38.3% | 26.8%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 23.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Twelve months ended Q1 2026 vs Q1 2025: Adjusted net income return on Allstate common shareholders' equity | 44.4% | 23.7%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 28.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Twelve months ended Q2 2026 vs Q2 2025: Adjusted net income return on Allstate common shareholders' equity | 44.2% | 28.6%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 34.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Twelve months ended Q3 2026 vs Q3 2025: Adjusted net income return on Allstate common shareholders' equity | 39.7% | 34.7%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 38.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Twelve months ended Q4 2025 vs Q4 2024: Adjusted net income return on Allstate common shareholders' equity | 38.3% | 26.8%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 44.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Twelve months ended Q1 2026 vs Q1 2025: Adjusted net income return on Allstate common shareholders' equity | 44.4% | 23.7%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 44.2,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Twelve months ended Q2 2026 vs Q2 2025: Adjusted net income return on Allstate common shareholders' equity | 44.2% | 28.6%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 39.7,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Twelve months ended Q3 2026 vs Q3 2025: Adjusted net income return on Allstate common shareholders' equity | 39.7% | 34.7%",
+     "added": "2026-11-27"
+    }
+   ],
+   "policies_in_force_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 2.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125earningsrelea.htm",
+     "quote": "Policies in force increased by 2.0%, led by growth in auto and homeowners insurance policies.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 2.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000074/allcorp33126earningsreleas.htm",
+     "quote": "Policies in force increased by 2.3%, led by growth in auto and homeowners insurance policies.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 2.6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000117/allcorp63026earningsreleas.htm",
+     "quote": "Policies in force increased by 2.6%, led by growth in auto and homeowners insurance policies.",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 3.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000899051/000089905126000156/allcorp93026earningsreleas.htm",
+     "quote": "Policies in force increased by 3.3%, reflecting growth in auto and homeowners insurance policies.",
+     "added": "2026-11-27"
+    }
+   ]
+  },
+  "HIG": {
+   "business_insurance_combined_ratio": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 87.4,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Business Insurance: Combined ratio of 83.6 compared with 87.4 in fourth quarter 2024",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 94.4,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Business Insurance: Combined ratio 94.8 94.4 0.4 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 87.0,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Business Insurance: Combined ratio 91.4 87.0 4.4 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 88.8,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Business Insurance: Combined ratio | 91.3 | 88.8 | 2.5 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 83.6,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Business Insurance: Combined ratio of 83.6 compared with 87.4 in fourth quarter 2024",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 94.8,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Business Insurance: Combined ratio 94.8 94.4 0.4",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 91.4,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Business Insurance: Combined ratio 91.4 87.0 4.4",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 91.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Business Insurance: Combined ratio | 91.3 | 88.8 | 2.5",
+     "added": "2026-11-27"
+    }
+   ],
+   "business_insurance_underlying_cr": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 87.1,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Business Insurance: Underlying combined ratio of 88.1 compared with 87.1 in fourth quarter 2024",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 88.4,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Business Insurance: Underlying combined ratio 89.2 88.4 0.8 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 88.0,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Business Insurance: Underlying combined ratio 89.3 88.0 1.3 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 89.4,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Business Insurance: Underlying combined ratio | 90.1 | 89.4 | 0.7 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 88.1,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Business Insurance: Underlying combined ratio of 88.1 compared with 87.1 in fourth quarter 2024",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 89.2,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Business Insurance: Underlying combined ratio 89.2 88.4 0.8",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 89.3,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Business Insurance: Underlying combined ratio 89.3 88.0 1.3",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 90.1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Business Insurance: Underlying combined ratio | 90.1 | 89.4 | 0.7",
+     "added": "2026-11-27"
+    }
+   ],
+   "written_premium_growth": [
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 7,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Business Insurance: Written premiums | $3,381 | $3,174 | 7%; Fourth quarter 2025 written premiums of $3.4 billion were up 7% from fourth quarter 2024",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 6,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Business Insurance: Written premiums $3,904 $3,686 6%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 5,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Business Insurance: Written premiums $4,022 $3,816 5%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 6,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Business Insurance: Written premiums | $3,772 | $3,573 | 6%",
+     "added": "2026-11-27"
+    }
+   ],
+   "core_earnings_roe": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 16.7,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Core earnings ROE3, last 12-months | 19.4% | 16.7% | 2.7 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 16.2,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Core earnings ROE3, last 12-months 20.3% 16.2% 4.1 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 16.0,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Core earnings ROE3, last 12-months 18.7% 16.0% 2.7 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 17.3,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Core earnings ROE3, last 12-months | 17.9% | 17.3% | 0.6 (prior-year column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 19.4,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Core earnings ROE3, last 12-months | 19.4% | 16.7% | 2.7",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 20.3,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Core earnings ROE3, last 12-months 20.3% 16.2% 4.1",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 18.7,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Core earnings ROE3, last 12-months 18.7% 16.0% 2.7",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 17.9,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Core earnings ROE3, last 12-months | 17.9% | 17.3% | 0.6",
+     "added": "2026-11-27"
+    }
+   ],
+   "book_value_per_share_ex_aoci": [
+    {
+     "period": "2024-12-31",
+     "label": "Q4 2024",
+     "value": 64.95,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Book value per diluted share (ex. accumulated other comprehensive income (AOCI))2 | $73.62 | $64.95 | 13% (Dec 31, 2024 column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-03-31",
+     "label": "Q1 2025",
+     "value": 65.99,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Book value per diluted share (ex. accumulated other comprehensive income (AOCI))2 $75.25 $65.99 14% (Mar 31, 2025 column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-06-30",
+     "label": "Q2 2025",
+     "value": 68.35,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Book value per diluted share (excluding AOCI) $78.91 $68.35 15.4% (Jun 30, 2025 column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-09-30",
+     "label": "Q3 2025",
+     "value": 70.92,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Book value per diluted share (ex. accumulated other comprehensive income (AOCI))2 | $82.47 | $70.92 | 16% (Sept. 30, 2025 column)",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2025-12-31",
+     "label": "Q4 2025",
+     "value": 73.62,
+     "source": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Outstanding-Fourth-Quarter-Earnings-Of-1-1-Billion-And-Full-Year-2025-Earnings-Of-3-8-Billion",
+     "quote": "Book value per diluted share (ex. accumulated other comprehensive income (AOCI))2 | $73.62 | $64.95 | 13%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-03-31",
+     "label": "Q1 2026",
+     "value": 75.25,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q1/v2/1Q26-Earnings-News-Release-Final.pdf",
+     "quote": "Book value per diluted share (ex. accumulated other comprehensive income (AOCI))2 $75.25 $65.99 14%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-06-30",
+     "label": "Q2 2026",
+     "value": 78.91,
+     "source": "https://s203.q4cdn.com/260861639/files/doc_financials/2026/q2/2Q26-Earnings-Release-Final.pdf",
+     "quote": "Book value per diluted share (excluding AOCI) $78.91 $68.35 15.4%",
+     "added": "2026-11-27"
+    },
+    {
+     "period": "2026-09-30",
+     "label": "Q3 2026",
+     "value": 82.47,
+     "source": "https://www.sec.gov/Archives/edgar/data/0000874766/000087476626000079/ex991earningsnewsrelease93.htm",
+     "quote": "Book value per diluted share (ex. accumulated other comprehensive income (AOCI))2 | $82.47 | $70.92 | 16%",
+     "added": "2026-11-27"
     }
    ]
   }
